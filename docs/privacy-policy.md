@@ -1,6 +1,6 @@
 # Privacy policy for Sudoku Buddy
 
-Last updated 8 September 2026.
+Last updated 8 October 2026.
 
 Sudoku Buddy is published by **Freevia**.
 Questions about this policy or the app's handling of data can be sent to
@@ -8,7 +8,7 @@ Questions about this policy or the app's handling of data can be sent to
 
 ## The short version
 
-Freevia does not collect or receive personal data from Sudoku Buddy. The app has no account,
+Freevia does not automatically collect personal data from Sudoku Buddy. The app has no account,
 ads, analytics or internet permission. Camera processing and puzzle history stay on your
 device. A photograph leaves the app only when you deliberately share it with another app.
 
@@ -43,9 +43,17 @@ There is no crash reporting, no analytics and no advertising identifier.
 
 ## Sharing is your choice
 
-The app can hand a photograph to another app — a mail client, a messaging app — when you
-press Share. That happens only when you press it, one file at a time, and the receiving
-app is granted read access to exactly the file you chose and to nothing else.
+When you choose Share, the app can hand a saved puzzle photograph or a refused scan to
+another app, such as a mail client or messaging app. Send diagnostics can hand over the
+retained refused photographs together with a text report, or the report alone if there
+are no refused photographs. The report includes the app version, date, phone manufacturer
+and model, Android version, and scan outcomes. You choose the receiving app in Android's
+share sheet. File access is read-only and limited to the photographs included in that
+share action.
+
+Nothing is sent automatically. If you choose to send these materials to Freevia for
+support, Freevia receives the information you include. Do not include photographs or
+other information you do not want the recipient to see.
 
 Once a photograph reaches another app, this policy stops applying to it and that app's own
 policy takes over.
@@ -63,8 +71,9 @@ Uninstalling the app removes everything it stored, including the photographs. Th
 
 ## Children
 
-Sudoku Buddy is intended for a general audience aged 13 and over. Freevia does not collect
-personal data from users of any age through the app.
+Sudoku Buddy is intended for a general audience aged 13 and over. Freevia does not
+automatically collect personal data from users of any age through the app. The voluntary
+support-sharing flow described above applies to all users.
 
 ## Changes to this policy
 
@@ -74,4 +83,4 @@ is public in the repository it lives in.
 ## Contact
 
 Email [info@freevia.org](mailto:info@freevia.org). You can also raise a public technical
-issue at https://github.com/tony-xmelon/sudoku-buddy/issues.
+issue at https://github.com/freevia-org/sudoku-buddy/issues.
