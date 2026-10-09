@@ -103,11 +103,18 @@ object GridLineFitter {
 
     fun fit(rectified: GrayImage): CellGeometry? {
         val binary = Mat()
+        val source = rectified.toMat()
+        val profiles = try {
         Imgproc.adaptiveThreshold(
-            rectified.toMat(), binary, 255.0,
+            source, binary, 255.0,
             Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 10.0,
         )
-        val (columns, rows) = GridScorer.projections(binary)
+            GridScorer.projections(binary)
+        } finally {
+            source.release()
+            binary.release()
+        }
+        val (columns, rows) = profiles
         val vertical = fitAxis(columns) ?: return null
         val horizontal = fitAxis(rows) ?: return null
         return CellGeometry(vertical, horizontal)

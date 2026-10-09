@@ -61,6 +61,9 @@ data class Overlay(
      * mean something in order, and tinting them all the same says the opposite.
      */
     val chain: Chain? = null,
+    /** Small pencil digits for the cells involved in the current argument. */
+    val candidates: Map<Int, List<Int>> = emptyMap(),
+    val removed: Map<Int, Set<Int>> = emptyMap(),
 )
 
 /** One entry in the key shown under the photograph. */
@@ -77,6 +80,7 @@ enum class LegendKey {
 
     /** Where a forcing chain runs out of room: the wall the assumption walks into. */
     DEAD_END,
+    REMOVED,
 }
 
 /**
@@ -135,6 +139,43 @@ data class Guidance(
  */
 object PuzzleLogic {
 
+    data class PracticeResult(val correct: Boolean, val message: String)
+
+    fun practiceAnswer(
+        step: Deduction, cell: Int, digit: Int, before: Map<Int, List<Int>>,
+        alternatives: List<Deduction> = emptyList(),
+    ): PracticeResult {
+        fun matches(move: Deduction): Boolean = when (move) {
+            is Deduction.Placement -> cell == move.index && digit == move.digit
+            is Deduction.Elimination -> cell in move.fromCells && digit == move.digit
+        }
+        if (matches(step)) return PracticeResult(true, "Correct. Compare your reasoning with the explanation below.")
+        if (alternatives.any { it.technique == step.technique && matches(it) }) {
+            return PracticeResult(true, "That is also a valid ${step.technique.lowercase()} move. " +
+                "This route illustrates a different move; compare its proof below.")
+        }
+        val candidates = before[cell]
+        val message = when {
+            candidates == null -> "That square is already filled. Choose an empty square."
+            digit !in candidates -> "$digit is already ruled out of that square. Its candidates are " +
+                candidates.joinToString(", ", "{", "}.")
+            step is Deduction.Placement && candidates.size > 1 ->
+                "That square allows ${candidates.joinToString(", ", "{", "}")}. " +
+                    "Look for the move justified by this step's technique, or reveal its explanation."
+            else -> "That is not the move selected for this step. There may be other valid moves; " +
+                "look again or reveal this step's explanation."
+        }
+        return PracticeResult(false, message)
+    }
+
+    fun reasoningNote(grid: Grid): String? {
+        val wrong = (AnswerChecker.check(grid) as? AnswerCheck.Checked)?.incorrect?.size ?: 0
+        if (wrong == 0) return null
+        return "This reasoning excludes $wrong existing " +
+            (if (wrong == 1) "entry that disagrees" else "entries that disagree") +
+            " with the solution. Use Check to inspect them."
+    }
+
     /**
      * How far an explained hint can be pushed before it simply gives the answer.
      *
@@ -162,8 +203,7 @@ object PuzzleLogic {
      *
      * Pressing Hint again walks down the staircase, so asking for more help needs no
      * second control and no explanation of where to find it. Once there is nothing left
-     * to reveal, that same press turns the layer off, which is what a second press does
-     * everywhere else.
+     * to reveal, keep the final explanation visible until explicitly closed.
      */
     fun press(
         showing: OverlayMode,
@@ -175,6 +215,8 @@ object PuzzleLogic {
 
         pressed == OverlayMode.HINT && style == HintStyle.EXPLAIN &&
             hintDepth < HINT_DEPTHS - 1 -> LayerPress(pressed, hintDepth + 1)
+
+        pressed == OverlayMode.HINT && style == HintStyle.EXPLAIN -> LayerPress(pressed, hintDepth)
 
         else -> LayerPress(OverlayMode.NONE, 0)
     }
@@ -217,6 +259,8 @@ object PuzzleLogic {
         entered: Set<Int> = emptySet(),
         /** Which answer to show, when the puzzle has more than one. */
         answerShown: Int = 0,
+        lessonBefore: Boolean = false,
+        concealMove: Boolean = false,
     ): Overlay {
         val drawn = when (mode) {
             OverlayMode.NONE -> NOTHING
@@ -229,7 +273,7 @@ object PuzzleLogic {
             OverlayMode.SOLUTION -> solutionLayer(grid, answerShown)
             OverlayMode.CHECK -> checkLayer(grid)
             OverlayMode.HINT -> hintLayer(grid, style, hintDepth)
-            OverlayMode.LESSON -> lessonLayer(walkthrough, lessonStep)
+            OverlayMode.LESSON -> lessonLayer(walkthrough, lessonStep, lessonBefore, concealMove)
         }
 
         // What the user has written, wherever the layer on top has not already said
@@ -275,7 +319,10 @@ object PuzzleLogic {
                         digits[i] = OverlayDigit(chosen[i].digit!!, OverlayRole.SOLUTION)
                     }
                 }
-                return Overlay(digits, solved.ambiguousCells)
+                val differing = (0 until 81).filterTo(mutableSetOf()) { index ->
+                    answers.any { it[index].digit != answers.first()[index].digit }
+                }
+                return Overlay(digits, differing)
             }
 
             // Nothing can be drawn in the squares, so what is drawn is the diagnosis: the
@@ -320,12 +367,13 @@ object PuzzleLogic {
 
         // Asked for the digit and nothing else. Highlighting a region as well would be
         // answering a question this style exists to skip.
-        if (style == HintStyle.REVEAL) {
+        if (style == HintStyle.REVEAL || found !is Hint.Explained) {
             return Overlay(mapOf(found.index to OverlayDigit(found.digit, OverlayRole.HINT)),
                 emptySet())
         }
 
-        val supporting = (found as? Hint.Explained)?.supportingCells.orEmpty() - found.index
+        val supporting = (if (hintDepth == 1) found.proof.firstOrNull()?.deduction?.supportingCells
+            ?: found.supportingCells else found.supportingCells) - found.index
         val evidence = if (hintDepth == 0 || supporting.isEmpty()) {
             Coordinates.boxIndices[Coordinates.boxOf(found.index)].toSet() - found.index
         } else {
@@ -345,7 +393,9 @@ object PuzzleLogic {
      * Nothing is drawn for the introduction: it is about the route, not about any one
      * square, and highlighting something would be pointing at the wrong thing.
      */
-    private fun lessonLayer(walkthrough: Walkthrough?, lessonStep: Int): Overlay {
+    private fun lessonLayer(
+        walkthrough: Walkthrough?, lessonStep: Int, before: Boolean, conceal: Boolean,
+    ): Overlay {
         val route = walkthrough?.takeIf { it.steps.isNotEmpty() } ?: return NOTHING
         val at = stepIndex(lessonStep, route) ?: return NOTHING
 
@@ -355,12 +405,29 @@ object PuzzleLogic {
         // being looked at is drawn.
         val digits = mutableMapOf<Int, OverlayDigit>()
         val from = if (route.cumulative) 0 else at
-        for (i in from..at) {
+        val through = if (before || conceal) at - 1 else at
+        for (i in from..through) {
             val placement = route.steps[i] as? Deduction.Placement ?: continue
             digits[placement.index] = OverlayDigit(placement.digit, OverlayRole.SOLUTION)
         }
 
         val step = route.steps[at]
+        val lesson = route.lessons.getOrNull(at)
+        val targets = when (step) {
+            is Deduction.Placement -> setOf(step.index)
+            is Deduction.Elimination -> step.fromCells
+        }
+        val relevant = if (conceal) {
+            // Practice starts from the position before the move, without pointing at its answer.
+            lesson?.before?.keys.orEmpty()
+        } else step.supportingCells + targets
+        val snapshot = if (before || conceal) lesson?.before else lesson?.after
+        val candidates = snapshot.orEmpty().filterKeys { it in relevant && it !in digits }
+        val removed = if (!before && !conceal && step is Deduction.Elimination) {
+            step.fromCells.associateWith { setOf(step.digit) }
+        } else emptyMap()
+
+        if (conceal) return Overlay(digits, emptySet(), candidates = candidates)
         var focus = (step as? Deduction.Placement)?.index
 
         // A chain draws its own squares, in order and with arrows between them. The flat
@@ -378,7 +445,7 @@ object PuzzleLogic {
         // nowhere to start on a trail of a dozen arrows.
         chain?.links?.firstOrNull()?.let { focus = it.index }
 
-        return Overlay(digits, evidence, focus, chain)
+        return Overlay(digits, evidence, focus, if (before) null else chain, candidates, removed)
     }
 
     /** The squares the user typed in, added wherever the layer left them blank. */
@@ -414,6 +481,7 @@ object PuzzleLogic {
         if (OverlayRole.WRITTEN in roles && mode != OverlayMode.READING) keys += LegendKey.WRITTEN
         if (overlay.evidence.isNotEmpty() || overlay.chain != null) keys += LegendKey.EVIDENCE
         if (overlay.chain?.deadEnd?.isNotEmpty() == true) keys += LegendKey.DEAD_END
+        if (overlay.removed.isNotEmpty()) keys += LegendKey.REMOVED
         if (hasUncertain) keys += LegendKey.UNCERTAIN
         return keys
     }
@@ -442,8 +510,9 @@ object PuzzleLogic {
      * app kept asking about squares it had no remaining reason to doubt.
      *
      * So once the puzzle solves, a flag survives only if the classifier put it there.
-     * Confidence is what tells them apart: a square the reader flagged while the
-     * classifier was sure of it was flagged by the solver.
+     * Digit confidence and uncertainty about notes tell them apart: a square flagged
+     * with a clear digit and role was flagged by the solver. Doubt about whether the
+     * strokes are notes survives even when their closest digit is clear.
      */
     fun stillInQuestion(
         flagged: Set<Int>,
@@ -453,7 +522,7 @@ object PuzzleLogic {
         if (Solver.solve(grid) !is SolveResult.Unique) return flagged
         return flagged.filterTo(mutableSetOf()) { index ->
             val report = reports?.getOrNull(index) ?: return@filterTo true
-            report.confidence < CellReport.SURE_ENOUGH_TO_SAY
+            report.roleUncertain || report.confidence < CellReport.SURE_ENOUGH_TO_SAY
         }
     }
 
@@ -563,7 +632,10 @@ object PuzzleLogic {
         OverlayMode.HINT -> when {
             style == HintStyle.REVEAL -> null
             hintDepth == 0 -> "Box"
-            else -> (hint(grid, style) as? Hint.Explained)?.technique
+            else -> (hint(grid, style) as? Hint.Explained)?.let {
+                if (hintDepth == 1) it.proof.firstOrNull()?.deduction?.technique ?: it.technique
+                else it.technique
+            }
         }
 
         else -> null
@@ -646,14 +718,14 @@ object PuzzleLogic {
             walkthrough.triedOut == 0 -> "That is the rest of the puzzle, start to finish."
 
             walkthrough.triedOut == 1 -> "That is the rest of the puzzle. One square in it " +
-                "yields to no technique at all and has to be settled by trying its " +
-                "candidates out, which is what makes this a hard one."
+                "needs a solver-assisted answer because the app's supported techniques " +
+                "did not find a move. Its detailed search proof is unavailable."
 
             else -> "That is the rest of the puzzle. ${walkthrough.triedOut} squares in it " +
-                "yield to no technique at all and have to be settled by trying their " +
-                "candidates out, which is what makes this a hard one."
+                "need solver-assisted answers because the app's supported techniques " +
+                "did not find a move. Their detailed search proofs are unavailable."
         }
-        return "$total steps can be reasoned out from here, the hardest a $hardest. " +
+        return "$total steps make up this route, the hardest supported technique a $hardest. " +
             "$shape $ending"
     }
 
@@ -702,7 +774,7 @@ object PuzzleLogic {
                     val count = if (many < MOST_ANSWERS_OFFERED) "$many" else "at least $many"
                     "This puzzle has more than one answer, so a printed digit was probably " +
                         "missed. Showing answer $nth of $count - press Solve again for the " +
-                        "next. The ringed squares are the ones the answers disagree about."
+                        "next. The ringed squares differ among the answers shown."
                 }
 
                 is SolveResult.None -> when (val fix = MinimalFix.find(grid)) {
@@ -766,9 +838,17 @@ object PuzzleLogic {
     private fun hintGuidance(grid: Grid, style: HintStyle, depth: Int): Guidance {
         val hint = hint(grid, style) ?: return Guidance("Nothing left to work out.")
         if (style == HintStyle.REVEAL || hint !is Hint.Explained) {
-            return Guidance("Row ${hint.index / 9 + 1}, column ${hint.index % 9 + 1}.")
+            val answer = "Place ${hint.digit} in row ${hint.index / 9 + 1}, column ${hint.index % 9 + 1}."
+            return Guidance(answer + if (style == HintStyle.EXPLAIN) {
+                "\n\nSolver-assisted answer: the app's supported techniques did not find " +
+                    "a move. A detailed proof is unavailable."
+            } else "")
         }
-        val rule = Techniques.byName(hint.technique)?.rule.orEmpty()
+        val firstTechnique = hint.proof.firstOrNull()?.deduction?.technique ?: hint.technique
+        val rule = Techniques.byName(firstTechnique)?.rule.orEmpty()
+        val prerequisites = if (hint.proof.size > 1) {
+            "\n\nThis is the first of ${hint.proof.size} deductions leading to the answer."
+        } else ""
         return Guidance(
             when (depth) {
                 0 -> "There is a square you can fill in the highlighted box.\n\n" +
@@ -776,12 +856,12 @@ object PuzzleLogic {
 
                 // The technique is named in the key, beside the colour of the very squares
                 // that prove it, so what is said here is the rule rather than its name.
-                1 -> "$rule\n\nThe highlighted squares are what proves it.\n\n" +
+                1 -> "$rule$prerequisites\n\nThe highlighted squares are what proves it.\n\n" +
                     "Press Hint again to be shown which square."
 
                 2 -> "It is the ringed square.\n\nPress Hint again for the digit."
 
-                else -> hint.explanation
+                else -> hint.fullExplanation
             }
         )
     }

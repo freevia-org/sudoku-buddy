@@ -99,6 +99,19 @@ class CellReportTest {
     }
 
     @Test
+    fun `a clear digit shape does not claim certainty about notes`() {
+        val p = FloatArray(9).also { it[7] = 0.99f }
+        val report = CellReport.of(reading(Ink.ANSWER, *p).copy(roleUncertain = true))
+
+        assertEquals(8, report.digit)
+        assertEquals(0.99f, report.confidence)
+        assertTrue(report.roleUncertain)
+        assertEquals("This square may contain candidate notes rather than a full digit. Please check it.", report.describe())
+        assertTrue(!report.describe().contains("99%"))
+        assertTrue(!report.describe().contains("Read as a handwritten"))
+    }
+
+    @Test
     fun `the line between a reading and a guess sits where it is documented`() {
         fun sureness(value: Float) =
             CellReport.of(reading(Ink.PRINTED, *FloatArray(9).also { it[0] = value })).onlyAGuess

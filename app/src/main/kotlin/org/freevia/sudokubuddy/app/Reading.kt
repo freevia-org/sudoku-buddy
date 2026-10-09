@@ -17,6 +17,8 @@ data class CellReport(
     val confidence: Float,
     val runnerUp: Int?,
     val runnerUpConfidence: Float,
+    /** The strokes may be notes even when their closest digit is clear. */
+    val roleUncertain: Boolean = false,
 ) {
     /**
      * Whether the classifier was really only guessing at this square.
@@ -29,6 +31,8 @@ data class CellReport(
 
     /** One line for the cell editor. */
     fun describe(): String = when {
+        roleUncertain -> "This square may contain candidate notes rather than a full digit. Please check it."
+
         onlyAGuess -> "Not read with any confidence - the closest guess is " +
             "${if (ink == Ink.PRINTED) "a printed" else "a handwritten"} $digit at " +
             "${percent(confidence)}. Please set this square yourself."
@@ -61,7 +65,7 @@ data class CellReport(
 
         fun of(reading: CellReading): CellReport {
             val p = reading.probabilities
-                ?: return CellReport(reading.ink, null, 1f, null, 0f)
+                ?: return CellReport(reading.ink, null, 1f, null, 0f, reading.roleUncertain)
             val ranked = p.indices.sortedByDescending { p[it] }
             return CellReport(
                 ink = reading.ink,
@@ -69,6 +73,7 @@ data class CellReport(
                 confidence = p[ranked[0]],
                 runnerUp = ranked[1] + 1,
                 runnerUpConfidence = p[ranked[1]],
+                roleUncertain = reading.roleUncertain,
             )
         }
     }

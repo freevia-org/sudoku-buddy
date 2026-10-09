@@ -11,7 +11,8 @@ Project number: **`1032115531436`**
 Firebase Android App ID: **`1:1032115531436:android:a1c0f2b6d7edbea2257909`**
 
 Firebase App Distribution is a build-time service only. The application does not include
-Firebase SDKs, has no `INTERNET` permission, and sends no user data to Firebase.
+Firebase SDKs and sends no user data to Firebase. The app's `INTERNET` permission
+supports the separate, voluntary private puzzle-report service.
 
 ## Required Firebase setup
 
@@ -36,12 +37,14 @@ The repository needs these Actions secrets:
 Set the values with:
 
 ```bash
-gh secret set FIREBASE_APP_ID --repo tony-xmelon/sudoku-buddy
-gh secret set FIREBASE_TOKEN --repo tony-xmelon/sudoku-buddy
+gh secret set FIREBASE_APP_ID --repo freevia-org/sudoku-buddy
+gh secret set FIREBASE_TOKEN --repo freevia-org/sudoku-buddy
 ```
 
-The workflow first checks that both values exist. A push to `main` then builds the
-signed arm64 APK and distributes it to the `testers` group.
+Pushes and ordinary manual CI runs build without distributing to testers. Distribution
+requires an explicitly authorized manual CI run on `main` with the
+`distribute_firebase` input enabled (default: false). The distribution job checks
+credentials before sending the signed arm64 APK to the `testers` group.
 
 ## Distributing from this machine
 
@@ -60,8 +63,11 @@ $env:FIREBASE_APP_ID = "<generated-app-id>"
 .\gradlew.bat :app:distributeLocal
 ```
 
-The task deliberately refuses to upload when `FIREBASE_APP_ID` is absent. This prevents
-a renamed build from being sent to an obsolete Firebase app registration.
+Configure the stable signing key and all three signing variables described in
+[signing.md](signing.md), and set `BUILD_NUMBER` to the intended version code. The task
+refuses to upload without the Firebase App ID or complete stable signing configuration.
+It also checks native alignment and sends release notes headed by the app's actual
+version name and code.
 
 ## Testers
 

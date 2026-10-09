@@ -64,6 +64,8 @@ class CellInk(
      * nothing else beside them, against 15% of the squares that hold only marks.
      */
     val company: Int,
+    /** All measured components, retained for distinguishing a glyph from a group of notes. */
+    val pieces: List<Blob> = listOf(blob),
 )
 
 /**
@@ -146,17 +148,20 @@ object CellAnalyzer {
      */
     fun inspect(cells: List<GrayImage>): List<CellInk?> {
         val masks = cells.map { cell ->
-            labelInk(Mat(cell.height, cell.width, CvType.CV_8UC1).also { it.put(0, 0, cell.pixels) })
+            val gray = Mat(cell.height, cell.width, CvType.CV_8UC1)
+            try {
+                gray.put(0, 0, cell.pixels)
+                labelInk(gray)
+            } finally {
+                gray.release()
+            }
         }
         val combed = combed(masks, cells)
-
         return cells.mapIndexed { index, cell ->
             val ink = masks[index]
             val blobs = findBlobs(ink, cell, combed)
             val largest = blobs.maxByOrNull { it.area } ?: return@mapIndexed null
-
             val darkest = blobs.minOf { it.darkness }
-
             CellInk(
                 blob = largest,
                 normalised = normalise(ink, largest, wholeGlyph(largest, blobs, cell), cell),
@@ -164,6 +169,7 @@ object CellAnalyzer {
                 company = blobs.count {
                     it !== largest && it.heightRatio >= largest.heightRatio / 2
                 },
+                pieces = blobs,
             )
         }
     }
@@ -228,39 +234,51 @@ object CellAnalyzer {
      * thrown away. Two of the four are convolutions over every pixel of every one of
      * eighty-one cells.
      */
-    private class InkMask(val labels: Mat, val stats: Mat, val count: Int)
+    // Copy each native matrix once. Per-pixel Mat.get allocates a DoubleArray and
+    // crosses JNI on every visit; these labels are visited several times per cell.
+    private class InkMask(val labels: IntArray, val stats: IntArray, val count: Int)
 
     private fun labelInk(gray: Mat): InkMask {
         val grayF = Mat()
-        gray.convertTo(grayF, CvType.CV_32F)
-
         val local = Mat()
-        Imgproc.blur(grayF, local, Size(LOCAL_WINDOW.toDouble(), LOCAL_WINDOW.toDouble()),
-            org.opencv.core.Point(-1.0, -1.0), Core.BORDER_REFLECT)
-
         val threshold = Mat()
-        Core.subtract(local, org.opencv.core.Scalar(INK_MARGIN), threshold)
-
         val mask = Mat()
-        Core.compare(grayF, threshold, mask, Core.CMP_LT)
-
         // Remove single-pixel speckle from paper texture before labelling.
         val opened = Mat()
-        Imgproc.morphologyEx(
-            mask, opened, Imgproc.MORPH_OPEN,
-            Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(2.0, 2.0)),
-        )
-
+        val kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(2.0, 2.0))
+        val centroids = Mat()
         val labels = Mat()
         val stats = Mat()
-        return InkMask(
-            labels, stats,
-            Imgproc.connectedComponentsWithStats(opened, labels, stats, Mat()),
-        )
+        try {
+            gray.convertTo(grayF, CvType.CV_32F)
+            Imgproc.blur(grayF, local, Size(LOCAL_WINDOW.toDouble(), LOCAL_WINDOW.toDouble()),
+                org.opencv.core.Point(-1.0, -1.0), Core.BORDER_REFLECT)
+            Core.subtract(local, org.opencv.core.Scalar(INK_MARGIN), threshold)
+            Core.compare(grayF, threshold, mask, Core.CMP_LT)
+            Imgproc.morphologyEx(mask, opened, Imgproc.MORPH_OPEN, kernel)
+            val count = Imgproc.connectedComponentsWithStats(opened, labels, stats, centroids)
+            return InkMask(
+                IntArray(gray.rows() * gray.cols()).also { labels.get(0, 0, it) },
+                IntArray(count * Imgproc.CC_STAT_MAX).also { stats.get(0, 0, it) },
+                count,
+            )
+        } finally {
+            labels.release()
+            stats.release()
+            grayF.release()
+            local.release()
+            threshold.release()
+            mask.release()
+            opened.release()
+            kernel.release()
+            centroids.release()
+        }
     }
 
-    internal fun findBlobs(gray: Mat, cell: GrayImage): List<Blob> =
-        findBlobs(labelInk(gray), cell, combed = false)
+    internal fun findBlobs(gray: Mat, cell: GrayImage): List<Blob> {
+        val mask = labelInk(gray)
+        return findBlobs(mask, cell, combed = false)
+    }
 
     private fun findBlobs(ink: InkMask, cell: GrayImage, combed: Boolean): List<Blob> {
         // The median of the cell is its paper: ink is the minority of any square, even a
@@ -272,11 +290,12 @@ object CellAnalyzer {
 
         val out = mutableListOf<Blob>()
         for (label in 1 until count) {
-            val left = stats.get(label, Imgproc.CC_STAT_LEFT)[0].toInt()
-            val top = stats.get(label, Imgproc.CC_STAT_TOP)[0].toInt()
-            val width = stats.get(label, Imgproc.CC_STAT_WIDTH)[0].toInt()
-            val height = stats.get(label, Imgproc.CC_STAT_HEIGHT)[0].toInt()
-            val area = stats.get(label, Imgproc.CC_STAT_AREA)[0].toInt()
+            val offset = label * Imgproc.CC_STAT_MAX
+            val left = stats[offset + Imgproc.CC_STAT_LEFT]
+            val top = stats[offset + Imgproc.CC_STAT_TOP]
+            val width = stats[offset + Imgproc.CC_STAT_WIDTH]
+            val height = stats[offset + Imgproc.CC_STAT_HEIGHT]
+            val area = stats[offset + Imgproc.CC_STAT_AREA]
             if (area < MIN_BLOB_AREA) continue
 
             val lineLike =
@@ -285,7 +304,7 @@ object CellAnalyzer {
             if (lineLike) continue
 
             val darkness = meanDarkness(cell, labels, label, left, top, width, height)
-            val body = if (combed) body(labels, label, left, top, width, height)
+            val body = if (combed) body(labels, cell.width, label, left, top, width, height)
             else top until top + height
             val bodyTop = body.first
             val bodyHeight = body.last - body.first + 1
@@ -344,7 +363,7 @@ object CellAnalyzer {
             for (x in 0 until cell.width) {
                 var down = 0
                 for (y in 0 until cell.height) {
-                    if (labels.get(y, x)[0].toInt() != 0) down++
+                    if (labels[y * cell.width + x] != 0) down++
                 }
                 if (down >= cell.height * A_COLUMN_OF_INK) crossed++
             }
@@ -377,7 +396,8 @@ object CellAnalyzer {
      * that was wrong.
      */
     private fun body(
-        labels: Mat,
+        labels: IntArray,
+        cellWidth: Int,
         label: Int,
         left: Int,
         top: Int,
@@ -388,7 +408,7 @@ object CellAnalyzer {
         for (y in 0 until height) {
             var count = 0
             for (x in left until left + width) {
-                if (labels.get(top + y, x)[0].toInt() == label) count++
+                if (labels[(top + y) * cellWidth + x] == label) count++
             }
             widths[y] = count
         }
@@ -401,14 +421,14 @@ object CellAnalyzer {
     }
 
     private fun meanDarkness(
-        cell: GrayImage, labels: Mat, label: Int,
+        cell: GrayImage, labels: IntArray, label: Int,
         left: Int, top: Int, width: Int, height: Int,
     ): Double {
         var total = 0L
         var n = 0
         for (y in top until top + height) {
             for (x in left until left + width) {
-                if (labels.get(y, x)[0].toInt() == label) {
+                if (labels[y * cell.width + x] == label) {
                     total += cell[x, y]
                     n++
                 }
@@ -445,7 +465,7 @@ object CellAnalyzer {
         var bottom = blob.top + blob.height
         for (y in 0 until cell.height) {
             for (x in 0 until cell.width) {
-                if (labels.get(y, x)[0].toInt() in parts) {
+                if (labels[y * cell.width + x] in parts) {
                     if (x < left) left = x
                     if (y < top) top = y
                     if (x + 1 > right) right = x + 1
@@ -456,17 +476,16 @@ object CellAnalyzer {
         val width = right - left
         val height = bottom - top
 
-        val ink = Mat.zeros(height, width, CvType.CV_32F)
+        val glyph = FloatArray(height * width)
         for (y in 0 until height) {
             for (x in 0 until width) {
-                if (labels.get(top + y, left + x)[0].toInt() in parts) ink.put(y, x, 1.0)
+                if (labels[(top + y) * cell.width + left + x] in parts) glyph[y * width + x] = 1f
             }
         }
 
         val scale = 20.0 / maxOf(width, height)
         val newWidth = maxOf(1, Math.round(width * scale).toInt())
         val newHeight = maxOf(1, Math.round(height * scale).toInt())
-        val small = Mat()
         // INTER_AREA, not INTER_LINEAR. A cell is around ninety pixels across and this
         // shrinks it to twenty, and at that reduction INTER_LINEAR is the wrong operation:
         // it samples a two-by-two neighbourhood wherever it lands, so a one-pixel stroke is
@@ -477,16 +496,24 @@ object CellAnalyzer {
         // Worth about a third of a cell on the corpus, which is inside the noise of a
         // single run - it is here because it is the right operation for the reduction, and
         // because over three seeds it was never worse, not because the number proves it.
-        Imgproc.resize(
-            ink, small, Size(newWidth.toDouble(), newHeight.toDouble()),
-            0.0, 0.0, Imgproc.INTER_AREA,
-        )
+        val buffer = FloatArray(newWidth * newHeight)
+        val glyphMat = Mat(height, width, CvType.CV_32F)
+        val small = Mat()
+        try {
+            glyphMat.put(0, 0, glyph)
+            Imgproc.resize(
+                glyphMat, small, Size(newWidth.toDouble(), newHeight.toDouble()),
+                0.0, 0.0, Imgproc.INTER_AREA,
+            )
+            small.get(0, 0, buffer)
+        } finally {
+            glyphMat.release()
+            small.release()
+        }
 
         var massY = 0.0
         var massX = 0.0
         var mass = 0.0
-        val buffer = FloatArray(newWidth * newHeight)
-        small.get(0, 0, buffer)
         for (y in 0 until newHeight) {
             for (x in 0 until newWidth) {
                 val v = buffer[y * newWidth + x]

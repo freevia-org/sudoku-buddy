@@ -27,6 +27,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -37,6 +38,8 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import org.freevia.sudokubuddy.solver.AnswerCheck
 import org.freevia.sudokubuddy.solver.AnswerChecker
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 /**
  * Every puzzle read so far, newest first, under day headings.
@@ -50,7 +53,6 @@ import org.freevia.sudokubuddy.solver.AnswerChecker
  */
 @Composable
 fun HistoryList(
-    history: History,
     entries: List<HistoryEntry>,
     currentId: Long?,
     onOpen: (HistoryEntry) -> Unit,
@@ -151,7 +153,13 @@ fun HistoryList(
                         verticalAlignment = Alignment.CenterVertically,
                     ) {
                         Box(modifier = Modifier.size(52.dp)) {
-                            history.loadPhoto(entry)?.let {
+                            val thumbnail by produceState<android.graphics.Bitmap?>(null, entry.photo) {
+                                value = withContext(Dispatchers.IO) {
+                                    runCatching { BitmapFactory.decodeFile(entry.photo.absolutePath,
+                                        BitmapFactory.Options().apply { inSampleSize = 4 }) }.getOrNull()
+                                }
+                            }
+                            thumbnail?.let {
                                 Image(
                                     bitmap = it.asImageBitmap(),
                                     contentDescription = null,
@@ -170,7 +178,10 @@ fun HistoryList(
                                     MaterialTheme.colorScheme.onSurface
                                 },
                             )
-                            Text(summarise(entry), style = MaterialTheme.typography.bodySmall)
+                            val summary by produceState("${entry.grid.givenCount} printed", entry.grid) {
+                                value = withContext(Dispatchers.Default) { summarise(entry) }
+                            }
+                            Text(summary, style = MaterialTheme.typography.bodySmall)
                         }
                         IconButton(onClick = { Diagnostics.share(context, listOf(entry.photo)) }) {
                             Icon(Icons.Filled.Share, contentDescription = "Send this photo")
@@ -261,9 +272,11 @@ private fun RefusedRow(
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Box(modifier = Modifier.size(52.dp)) {
-            val thumbnail = remember(scan.file) {
-                runCatching { BitmapFactory.decodeFile(scan.file.absolutePath, thumbnailOptions()) }
-                    .getOrNull()
+            val thumbnail by produceState<android.graphics.Bitmap?>(null, scan.file) {
+                value = withContext(Dispatchers.IO) {
+                    runCatching { BitmapFactory.decodeFile(scan.file.absolutePath, thumbnailOptions()) }
+                        .getOrNull()
+                }
             }
             thumbnail?.let {
                 Image(

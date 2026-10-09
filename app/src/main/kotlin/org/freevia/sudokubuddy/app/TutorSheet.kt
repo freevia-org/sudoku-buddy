@@ -5,6 +5,7 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.gestures.draggable
@@ -16,7 +17,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBarsPadding
@@ -34,6 +34,8 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.Switch
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -44,7 +46,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.geometry.CornerRadius
@@ -58,7 +59,11 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import org.freevia.sudokubuddy.solver.Walkthrough
+import org.freevia.sudokubuddy.solver.Deduction
+import org.freevia.sudokubuddy.solver.hasTeachingProof
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 /*
  * The tutor: a panel that pulls up from the bottom over the layer buttons.
  *
@@ -88,6 +93,13 @@ private fun Handle() {
 @Composable
 internal fun ColumnScope.Lesson(state: PuzzleState, trailing: @Composable () -> Unit = {}) {
     val guidance = state.guidance ?: return
+
+    if (state.overlay == OverlayMode.HINT || state.overlay == OverlayMode.LESSON) {
+        state.reasoningNote?.let {
+            Text(it, style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+    }
 
     if (guidance.effect == null) {
         Trailing(guidance.body, MaterialTheme.typography.bodyMedium, null, trailing)
@@ -149,8 +161,10 @@ internal fun BoxScope.TutorPanel(
     full: Dp,
 ) {
     val density = LocalDensity.current
-    val peekPx = with(density) { peek.toPx() }
-    val fullPx = with(density) { full.toPx() }
+    val fullPx = with(density) { full.toPx() }.coerceAtLeast(0f)
+    // A short split-screen window can leave less space than the normal handle.
+    // Keep the drag range valid while the window is resized through that state.
+    val peekPx = with(density) { peek.toPx() }.coerceIn(0f, fullPx)
     val open = state.overlay == OverlayMode.LESSON
     val scope = rememberCoroutineScope()
 
@@ -176,9 +190,11 @@ internal fun BoxScope.TutorPanel(
 
     // Whether the how-to is showing. Closes itself when the technique changes, which is
     // the moment it would have become the wrong text.
-    var asking by remember(state.evidenceLabel) { mutableStateOf(false) }
+    var asking by remember(state.evidenceLabel, at) { mutableStateOf(false) }
     val scroll = rememberScrollState()
-    val bar = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.3f)
+    LaunchedEffect(at, state.tutorTechnique, state.tutorHintProof, state.lessonBefore, state.practicing) {
+        scroll.scrollTo(0)
+    }
 
     fun stepBy(by: Int) {
         val to = at + by
@@ -251,7 +267,7 @@ internal fun BoxScope.TutorPanel(
                 // panel and not of whatever is left over beside the title.
                 Box(modifier = Modifier.fillMaxWidth()) {
                     Text(
-                        "Tutor",
+                        if (state.tutorHintProof) "Hint proof" else "Tutor",
                         style = MaterialTheme.typography.titleSmall,
                         maxLines = 1,
                         modifier = Modifier.align(Alignment.CenterStart),
@@ -312,11 +328,12 @@ private fun Stepping(at: Int, last: Int, steps: Int, onStep: (Int) -> Unit, modi
  * A thread of a scrollbar, so it is visible that there is more below without anything
  * being spent on saying so.
  */
-private fun Modifier.scrollThread(scroll: ScrollState, colour: Color) = drawWithContent {
+internal fun Modifier.scrollThread(scroll: ScrollState, colour: Color) = drawWithContent {
     drawContent()
     if (scroll.maxValue <= 0) return@drawWithContent
     val track = size.height
-    val thumb = (track * track / (track + scroll.maxValue)).coerceAtLeast(24.dp.toPx())
+    if (track <= 0f) return@drawWithContent
+    val thumb = (track * track / (track + scroll.maxValue)).coerceIn(minOf(24.dp.toPx(), track), track)
     val width = 3.dp.toPx()
     drawRoundRect(
         color = colour,
@@ -347,6 +364,10 @@ private fun ColumnScope.OpenPanel(
     stepAt: Float,
     onStep: (Int) -> Unit,
 ) {
+    val practiceScope = rememberCoroutineScope()
+    val latestState = rememberUpdatedState(state)
+    val latestChange = rememberUpdatedState(onChange)
+    var checking by remember(state) { mutableStateOf(false) }
     // One line for what is being walked, what the colours mean, and how far through this
     // run of the technique you are. The technique's name was being printed twice - once
     // here and once in the key beside the colour of its own squares - and the key is the
@@ -390,8 +411,101 @@ private fun ColumnScope.OpenPanel(
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
         Spacer(Modifier.height(2.dp))
-        Lesson(state) {
-            state.guidance?.howTo?.let { HowTo(asking, onAsk) }
+        if (at == 0) {
+            Text(if (state.tutorTechnique == null) {
+                "Follow a route where each move builds on the previous one."
+            } else "Examples available now: each starts from your current board.",
+                style = MaterialTheme.typography.bodySmall)
+        }
+        if (at > 0 && state.currentDeduction?.hasTeachingProof == true) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text("Try it yourself", modifier = Modifier.weight(1f),
+                    style = MaterialTheme.typography.labelLarge)
+                Switch(checked = state.practice, onCheckedChange = {
+                    onChange(state.copy(practice = it, practiceRevealed = false,
+                        practiceCell = null, practiceFeedback = null, lessonBefore = false))
+                })
+            }
+        }
+        if (state.practicing) {
+            state.reasoningNote?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+            val move = state.currentDeduction
+            Text(if (move is Deduction.Elimination) {
+                "Using ${move.technique}, tap one square where a candidate can be removed, then choose that digit."
+            } else {
+                "Using ${move?.technique}, tap the square you can fill, then choose its digit."
+            })
+            state.practiceCell?.let {
+                Text("Selected: row ${it / 9 + 1}, column ${it % 9 + 1}",
+                    style = MaterialTheme.typography.labelLarge)
+            }
+            Row(modifier = Modifier.fillMaxWidth().horizontalScroll(rememberScrollState())) {
+                for (digit in 1..9) TextButton(enabled = !checking, onClick = {
+                    checking = true
+                    practiceScope.launch {
+                        val answer = withContext(Dispatchers.Default) { state.practiceAnswer(digit) }
+                        if (latestState.value === state) {
+                            checking = false
+                            latestChange.value(answer)
+                        }
+                    }
+                }) {
+                    Text("$digit")
+                }
+            }
+            state.practiceFeedback?.let { Text(it) }
+            Row {
+                TextButton(onClick = {
+                    onChange(state.copy(practiceRevealed = true, lessonBefore = false))
+                }) { Text("Reveal explanation") }
+                state.guidance?.howTo?.let { HowTo(asking, onAsk) }
+            }
+        } else {
+            if (at > 0 && state.walkthrough?.lessons?.getOrNull(at - 1) != null) {
+                Row {
+                    TextButton(onClick = { onChange(state.copy(lessonBefore = true)) },
+                        enabled = !state.lessonBefore) { Text("Before") }
+                    TextButton(onClick = { onChange(state.copy(lessonBefore = false)) },
+                        enabled = state.lessonBefore) { Text("After") }
+                    Text(if (state.lessonBefore) "Before this move" else "After this move",
+                        style = MaterialTheme.typography.labelSmall,
+                        modifier = Modifier.align(Alignment.CenterVertically))
+                }
+                if (state.lessonBefore) {
+                    Text("Switch to After to see the move and its consequences on the grid.",
+                        style = MaterialTheme.typography.bodySmall)
+                }
+            }
+            state.practiceFeedback?.let { Text(it) }
+            Lesson(state) {
+                state.guidance?.howTo?.let { HowTo(asking, onAsk) }
+            }
+            state.walkthrough?.lessons?.getOrNull(at - 1)?.dependencies?.takeIf { it.isNotEmpty() }?.let {
+                Text("Earlier steps used in this proof", style = MaterialTheme.typography.labelLarge)
+                for (dependency in it.sorted()) {
+                    val earlier = state.walkthrough?.steps?.getOrNull(dependency)
+                    val reason = if (earlier is Deduction.Elimination) {
+                        val target = (state.currentDeduction as? Deduction.Placement)?.index
+                        if (target != null && target in earlier.fromCells) {
+                            "Why ${earlier.digit} was removed from r${target / 9 + 1}c${target % 9 + 1}"
+                        } else "${earlier.technique}: remove ${earlier.digit}"
+                    } else earlier?.technique.orEmpty()
+                    TextButton(onClick = { onChange(state.visitReason(dependency + 1)) }) {
+                        Text("Step ${dependency + 1}: $reason")
+                    }
+                }
+            }
+            state.returnToStep?.let { step ->
+                TextButton(onClick = { onChange(state.stepTo(step)) }) { Text("Return to step $step") }
+            }
+            if (state.tutorHintProof && at == state.walkthrough?.steps?.size) {
+                TextButton(onClick = { onChange(state.tutor()) }) { Text("Continue with the full route") }
+            }
+            if (!state.tutorHintProof && state.walkthrough?.cumulative == true &&
+                state.walkthrough?.finishes == true && at == state.walkthrough?.steps?.size) {
+                Text("Route complete. Go back to review any move, or try the steps yourself.",
+                    style = MaterialTheme.typography.bodySmall)
+            }
         }
 
         if (asking) {
@@ -440,12 +554,7 @@ private fun HowTo(open: Boolean, onToggle: () -> Unit) {
 internal val TUTOR_PEEK = 56.dp
 
 /**
- * The whole route as one line, a block per run of the same technique.
- *
- * Sixty steps drawn one mark each comes out finer than a fingertip and says nothing about
- * what the marks are. A dozen blocks can be hit, and the puzzle's shape shows in them: a
- * wide block is a long grind of one technique, a narrow one is a move that only worked
- * once. Tapping a block jumps to where that run begins.
+ * Scrollable chapter names and step ranges, with a full button-sized touch target.
  */
 @Composable
 private fun ChapterStrip(chapters: List<Chapter>, at: Int, onJump: (Int) -> Unit) {
@@ -454,28 +563,17 @@ private fun ChapterStrip(chapters: List<Chapter>, at: Int, onJump: (Int) -> Unit
 
     Row(
         horizontalArrangement = Arrangement.spacedBy(2.dp),
-        modifier = Modifier.fillMaxWidth().height(18.dp),
+        modifier = Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),
     ) {
         for (chapter in chapters) {
             val colour = when {
                 chapter === here -> MaterialTheme.colorScheme.primary
                 chapter.until <= at -> MaterialTheme.colorScheme.primary.copy(alpha = 0.35f)
-                else -> MaterialTheme.colorScheme.onSurface.copy(alpha = 0.15f)
+                else -> MaterialTheme.colorScheme.onSurfaceVariant
             }
-            Box(
-                modifier = Modifier
-                    .weight(chapter.count.toFloat())
-                    .fillMaxHeight()
-                    .clickable { onJump(chapter.from) },
-                contentAlignment = Alignment.Center,
-            ) {
-                Box(
-                    Modifier
-                        .fillMaxWidth()
-                        .height(8.dp)
-                        .clip(RoundedCornerShape(3.dp))
-                        .background(colour)
-                )
+            TextButton(onClick = { onJump(chapter.from) }) {
+                Text("${chapter.technique} (${chapter.from + 1}–${chapter.until})",
+                    color = colour, style = MaterialTheme.typography.labelSmall)
             }
         }
     }

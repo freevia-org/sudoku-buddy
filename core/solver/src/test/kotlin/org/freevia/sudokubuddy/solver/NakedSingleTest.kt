@@ -83,12 +83,12 @@ class NakedSingleTest {
                     .toSet() - step.digit
                 val gone = (1..9) - step.digit - visible
 
-                if (gone.isEmpty()) {
+                if (gone.isEmpty() && step.supportingCells.all { state.isReported(it) }) {
                     assertTrue(
                         step.explanation.contains("every other digit already appears"),
                         step.explanation,
                     )
-                } else {
+                } else if (gone.isNotEmpty()) {
                     checked++
                     assertFalse(
                         step.explanation.contains("every other digit already appears"),
@@ -107,6 +107,8 @@ class NakedSingleTest {
                         step.supportingCells.size,
                         "the highlight should show every digit it claims to: " + step.explanation,
                     )
+                } else {
+                    assertTrue(step.explanation.contains("forced single candidates"), step.explanation)
                 }
             }
             TechniqueSolver.apply(state, step)

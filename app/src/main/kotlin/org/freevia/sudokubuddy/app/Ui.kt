@@ -112,6 +112,7 @@ object Overlays {
         LegendKey.WRITTEN -> written
         LegendKey.MARKS -> marks
         LegendKey.DEAD_END -> incorrect
+        LegendKey.REMOVED -> incorrect
     }
 
     /**
@@ -134,6 +135,7 @@ object Overlays {
         LegendKey.WRITTEN -> "Written"
         LegendKey.MARKS -> "Marks"
         LegendKey.DEAD_END -> "Dead end"
+        LegendKey.REMOVED -> "Removed"
     }
 
     /** True when this is drawn as an outline on the photograph rather than a fill. */
@@ -250,6 +252,7 @@ fun OverflowMenu(
     glass: Boolean = false,
 ) {
     var open by remember { mutableStateOf(false) }
+    var feedbackOpen by remember { mutableStateOf(false) }
     val context = LocalContext.current
 
     // Counted when the menu opens rather than on every recomposition: it is a directory
@@ -294,6 +297,13 @@ fun OverflowMenu(
             // "nothing was refused" is answered before the menu is even used.
             HorizontalDivider()
             DropdownMenuItem(
+                text = { Text("Report a bug or idea on GitHub") },
+                onClick = {
+                    open = false
+                    feedbackOpen = true
+                },
+            )
+            DropdownMenuItem(
                 text = {
                     Text(
                         if (kept == 0) "Send diagnostics" else "Send diagnostics ($kept)"
@@ -311,6 +321,9 @@ fun OverflowMenu(
                 },
             )
         }
+    }
+    if (feedbackOpen) {
+        GitHubFeedbackDialog(onDismiss = { feedbackOpen = false })
     }
 }
 

@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
+import androidx.compose.foundation.layout.absoluteOffset
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,27 +26,113 @@ import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.AbsoluteAlignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.semantics.CollectionInfo
+import androidx.compose.ui.semantics.CollectionItemInfo
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.collectionInfo
+import androidx.compose.ui.semantics.collectionItemInfo
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.isTraversalGroup
+import androidx.compose.ui.semantics.onClick
+import androidx.compose.ui.semantics.role
+import androidx.compose.ui.semantics.selected
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
+import androidx.compose.ui.semantics.traversalIndex
 import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import org.freevia.sudokubuddy.BuildConfig
+import org.freevia.sudokubuddy.model.CellSource
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.withContext
+
+/** Keep the last drawn frame while the next immutable state is computed off the UI thread. */
+@Composable
+fun PreparedPuzzleScreen(
+    state: PuzzleState,
+    onChange: (PuzzleState) -> Unit,
+    onMenu: () -> Unit,
+    onRetake: () -> Unit,
+    onStrategies: () -> Unit,
+    onSettings: () -> Unit,
+    onAbout: () -> Unit,
+    autoShareUncertain: Boolean,
+    submissionInFlight: Boolean,
+    onSubmitReading: (PuzzleState, Boolean) -> Unit,
+) {
+    var prepared by remember { mutableStateOf<PuzzleState?>(null) }
+    var failed by remember(state) { mutableStateOf(false) }
+    var showProgress by remember(state) { mutableStateOf(prepared?.photo !== state.photo) }
+    LaunchedEffect(state) {
+        val result = withContext(Dispatchers.Default) { runCatching { state.prepareForDisplay() } }
+        result.onSuccess { prepared = it }.onFailure { failed = true }
+    }
+    val ready = prepared
+    LaunchedEffect(state, ready === state) {
+        if (ready !== state && !showProgress) {
+            delay(150)
+            showProgress = true
+        }
+    }
+    Box(Modifier.fillMaxSize()) {
+        if (ready != null && ready.photo === state.photo) {
+            PuzzleScreen(ready, { if (ready === state) onChange(it) }, onMenu, onRetake,
+                onStrategies, onSettings, onAbout, autoShareUncertain, submissionInFlight,
+                onSubmitReading,
+                showCellEditor = ready === state)
+        }
+        if (ready !== state) {
+            Surface(Modifier.fillMaxSize().pointerInput(Unit) {
+                awaitPointerEventScope {
+                    while (true) awaitPointerEvent().changes.forEach { it.consume() }
+                }
+            }, color = if (showProgress || failed) MaterialTheme.colorScheme.surface.copy(alpha = 0.9f)
+                else Color.Transparent) {
+                if (showProgress || failed) {
+                    Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally) {
+                        if (failed) {
+                            Text("This puzzle could not be prepared.")
+                            TextButton(onClick = onRetake) { Text("Take another photo") }
+                            TextButton(onClick = onMenu) { Text("Your puzzles") }
+                        } else {
+                            CircularProgressIndicator()
+                            Text("Preparing puzzle…", Modifier.padding(16.dp))
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -57,9 +144,15 @@ fun PuzzleScreen(
     onStrategies: () -> Unit,
     onSettings: () -> Unit,
     onAbout: () -> Unit,
+    autoShareUncertain: Boolean,
+    submissionInFlight: Boolean,
+    onSubmitReading: (PuzzleState, Boolean) -> Unit,
+    showCellEditor: Boolean = true,
 ) {
     val measurer = rememberTextMeasurer()
-    val sheetState = rememberModalBottomSheetState()
+    val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+    var submitOpen by remember(state.photo) { mutableStateOf(false) }
+    var receiptsOpen by remember(state.photo) { mutableStateOf(false) }
 
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val arrangement = PuzzleLayout.forWindow(maxWidth.value, maxHeight.value)
@@ -94,22 +187,37 @@ fun PuzzleScreen(
                         ),
                 ) {
                     PhotoPane(state, onChange, photoSide, measurer)
-                    ControlsPane(state, onChange, Modifier.weight(1f).fillMaxHeight())
+                    ControlsPane(state, onChange, { submitOpen = true }, { receiptsOpen = true },
+                        submissionInFlight, Modifier.weight(1f).fillMaxHeight())
                 }
             } else {
                 PhotoPane(state, onChange, photoSide, measurer, Modifier.fillMaxWidth())
-                ControlsPane(state, onChange, Modifier.weight(1f).fillMaxWidth())
+                ControlsPane(state, onChange, { submitOpen = true }, { receiptsOpen = true },
+                    submissionInFlight, Modifier.weight(1f).fillMaxWidth())
             }
         }
     }
 
-    state.selectedCell?.let { index ->
+    state.selectedCell?.takeIf { showCellEditor }?.let { index ->
         ModalBottomSheet(
             onDismissRequest = { onChange(state.copy(selectedCell = null)) },
             sheetState = sheetState,
         ) {
             CellEditor(state, index, onChange)
         }
+    }
+    if (submitOpen) {
+        MisreadSubmissionDialog(
+            autoShare = autoShareUncertain,
+            onDismiss = { submitOpen = false },
+            onSubmit = { auto ->
+                submitOpen = false
+                onSubmitReading(state, auto)
+            },
+        )
+    }
+    if (receiptsOpen) {
+        SubmissionReceiptsDialog(state.submissionReceipts) { receiptsOpen = false }
     }
 }
 
@@ -133,6 +241,13 @@ private fun PhotoPane(
     // neither, so the next tap anywhere on the photograph handed back a state from
     // before the square was settled and every issue already dealt with came back.
     val latest = rememberUpdatedState(state)
+    val latestOnChange = rememberUpdatedState(onChange)
+    fun selectCell(index: Int) {
+        val now = latest.value
+        latestOnChange.value(if (now.practicing) {
+            now.copy(practiceCell = index, practiceFeedback = null)
+        } else now.copy(selectedCell = index))
+    }
     Column(
         modifier = modifier.padding(horizontal = 12.dp, vertical = 8.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -149,7 +264,7 @@ private fun PhotoPane(
                         val row = now.lines.horizontal
                             .indexOfLast { it * size.height <= offset.y }
                             .coerceIn(0, 8)
-                        onChange(now.copy(selectedCell = row * 9 + column))
+                        selectCell(row * 9 + column)
                     }
                 }
                 .drawWithContent {
@@ -159,10 +274,11 @@ private fun PhotoPane(
         ) {
             Image(
                 bitmap = state.photo.asImageBitmap(),
-                contentDescription = "The puzzle you photographed",
+                contentDescription = null,
                 contentScale = ContentScale.FillBounds,
                 modifier = Modifier.fillMaxSize(),
             )
+            AccessiblePuzzleCells(state, ::selectCell, Modifier.matchParentSize())
         }
 
         // How many squares are still empty, in the corner under the grid it counts. It
@@ -179,6 +295,60 @@ private fun PhotoPane(
     }
 }
 
+/** Individual semantic targets follow the same fitted bounds as the photograph overlay. */
+@Composable
+private fun AccessiblePuzzleCells(state: PuzzleState, onSelect: (Int) -> Unit, modifier: Modifier) {
+    val shown = state.overlayDigits()
+    BoxWithConstraints(modifier.semantics {
+        collectionInfo = CollectionInfo(9, 9)
+        isTraversalGroup = true
+    }, contentAlignment = AbsoluteAlignment.TopLeft) {
+        for (index in 0 until 81) {
+            val row = index / 9
+            val column = index % 9
+            // The fitter can place an obscured outer rule just outside the image.
+            // Clip only the accessibility hit area; preserve the actual grid geometry.
+            val left = state.lines.vertical[column].coerceIn(0f, 1f)
+            val right = state.lines.vertical[column + 1].coerceIn(0f, 1f)
+            val top = state.lines.horizontal[row].coerceIn(0f, 1f)
+            val bottom = state.lines.horizontal[row + 1].coerceIn(0f, 1f)
+            val cell = state.grid[index]
+            val description = buildString {
+                append("Row ${row + 1}, column ${column + 1}, ")
+                append(when (cell.source) {
+                    CellSource.EMPTY -> "empty"
+                    CellSource.GIVEN -> "${cell.digit}, printed clue"
+                    CellSource.GUESS -> "${cell.digit}, entry"
+                })
+                shown[index]?.let { digit ->
+                    append(when (digit.role) {
+                        OverlayRole.CORRECT -> ", checked correct"
+                        OverlayRole.INCORRECT -> ", does not match the solution"
+                        OverlayRole.SOLUTION -> ", solution ${digit.digit}"
+                        OverlayRole.HINT -> ", hint ${digit.digit}"
+                        OverlayRole.WRITTEN -> ""
+                    })
+                }
+            }
+            Box(Modifier
+                .absoluteOffset(maxWidth * left, maxHeight * top)
+                .size(maxWidth * (right - left), maxHeight * (bottom - top))
+                .semantics {
+                    contentDescription = description
+                    role = Role.Button
+                    collectionItemInfo = CollectionItemInfo(row, 1, column, 1)
+                    traversalIndex = index.toFloat()
+                    selected = if (state.practicing) state.practiceCell == index else state.selectedCell == index
+                    if (index in state.openQuestions) stateDescription = "Needs confirmation"
+                    onClick(if (state.practicing) "Select for practice" else "Edit cell") {
+                        onSelect(index)
+                        true
+                    }
+                })
+        }
+    }
+}
+
 /**
  * Everything said about the photograph, with the tutor panel pulling up over it. The
  * panel fills this pane and no more, which is why it is the pane - not the screen - that
@@ -188,6 +358,9 @@ private fun PhotoPane(
 private fun ControlsPane(
     state: PuzzleState,
     onChange: (PuzzleState) -> Unit,
+    onSubmit: () -> Unit,
+    onReceipts: () -> Unit,
+    submissionInFlight: Boolean,
     modifier: Modifier = Modifier,
 ) {
     BoxWithConstraints(modifier = modifier) {
@@ -198,6 +371,9 @@ private fun ControlsPane(
         Controls(
             state,
             onChange,
+            onSubmit,
+            onReceipts,
+            submissionInFlight,
             modifier = Modifier
                 .fillMaxSize()
                 .padding(bottom = if (route != null) peek else 0.dp),
@@ -210,8 +386,12 @@ private fun ControlsPane(
 private fun Controls(
     state: PuzzleState,
     onChange: (PuzzleState) -> Unit,
+    onSubmit: () -> Unit,
+    onReceipts: () -> Unit,
+    submissionInFlight: Boolean,
     modifier: Modifier = Modifier,
 ) {
+    val scroll = rememberScrollState()
     Column(modifier = modifier.fillMaxWidth()) {
         // Everything whose height depends on what is being said goes above the buttons and
         // scrolls in its own space. A banner appearing used to push the buttons down the
@@ -220,12 +400,13 @@ private fun Controls(
             modifier = Modifier
                 .weight(1f)
                 .fillMaxWidth()
-                .verticalScroll(rememberScrollState())
+                .scrollThread(scroll, MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.3f))
+                .verticalScroll(scroll)
                 .padding(horizontal = 16.dp, vertical = 4.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp),
         ) {
-            if (state.openQuestions.isNotEmpty()) {
-                ReadingBanner(state, onChange)
+            if (state.openQuestions.isNotEmpty() || state.originalUncertainCells.isNotEmpty()) {
+                ReadingBanner(state, onChange, onSubmit, onReceipts, submissionInFlight)
             }
 
             // A lesson says all of this in the sheet instead. The sheet is only as tall as
@@ -248,6 +429,18 @@ private fun Controls(
                 // The key names the technique, so the pane does not have to.
                 Legend(state.legend, evidenceLabel = state.evidenceLabel)
 
+                if (state.overlay == OverlayMode.HINT && state.hintStyle == HintStyle.EXPLAIN &&
+                    state.hintDepth == PuzzleLogic.HINT_DEPTHS - 1) {
+                    Row {
+                        if ((state.hint as? org.freevia.sudokubuddy.solver.Hint.Explained)
+                                ?.proof?.isNotEmpty() == true) {
+                            TextButton(onClick = { onChange(state.showHintProof()) }) {
+                                Text("Replay reasoning")
+                            }
+                        }
+                        TextButton(onClick = { onChange(state.close()) }) { Text("Close hint") }
+                    }
+                }
                 Lesson(state)
             }
         }

@@ -16,7 +16,7 @@
 
 These were tested before writing the plan; do not re-litigate them.
 
-- Gradle 9.4.0 is cached at `C:\Users\anton\.gradle\wrapper\dists\gradle-9.4.0-bin\lcvyxq3t37f6mx9miaydrrgs\gradle-9.4.0\bin\gradle`. Use that absolute path for Task 1 only, to generate the wrapper. Every later task uses `./gradlew`.
+- Use an installed Gradle 9.4.0 executable for Task 1 only, to generate the wrapper. Every later task uses `./gradlew`. Local cache locations vary by machine and are not part of this plan.
 - The only installed JDK is 25, which Gradle 9.4.0 runs on happily. The build targets JDK 21 via a toolchain, and the `foojay-resolver-convention` plugin downloads it automatically on first build. **Do not ask the user to install a JDK.**
 - Maven Central is reachable.
 - The first build downloads a JDK and takes a few minutes. Later builds are fast.
@@ -182,7 +182,7 @@ tasks.test {
 Run, from the repository root, using the cached distribution:
 
 ```bash
-"/c/Users/anton/.gradle/wrapper/dists/gradle-9.4.0-bin/lcvyxq3t37f6mx9miaydrrgs/gradle-9.4.0/bin/gradle" wrapper --gradle-version 9.4.0
+gradle wrapper --gradle-version 9.4.0
 ```
 
 Expected: `BUILD SUCCESSFUL`, and `gradlew`, `gradlew.bat`, `gradle/wrapper/gradle-wrapper.jar`, `gradle/wrapper/gradle-wrapper.properties` now exist.

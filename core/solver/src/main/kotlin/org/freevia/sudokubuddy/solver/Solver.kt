@@ -13,8 +13,8 @@ sealed interface SolveResult {
     data object None : SolveResult
 
     /**
-     * At least two solutions. Both are carried because the cells where they disagree
-     * are exactly the under-determined ones, which is useful diagnostic information.
+     * At least two solutions. Their differences prove ambiguity at those cells; further
+     * solutions may differ at additional cells, so this is not an exhaustive list.
      */
     data class Multiple(val first: Grid, val second: Grid) : SolveResult {
         val ambiguousCells: Set<Int>

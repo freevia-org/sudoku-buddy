@@ -25,6 +25,7 @@ tasks.test {
     // Gradle does not forward -D to the forked test JVM, so ExportNormalisedTest would
     // never see it. Passed through explicitly, as in :core:vision.
     systemProperty("dump", providers.systemProperty("dump").getOrElse("false"))
+    systemProperty("benchmarkLabelledOnly", providers.systemProperty("benchmarkLabelledOnly").getOrElse("false"))
 
     // The corpus is an input to these tests even though it is not on the compile path,
     // and Gradle cannot know that. Without it a task stays up to date when a photograph

@@ -3,6 +3,8 @@ package org.freevia.sudokubuddy.app
 import java.io.File
 import java.util.Calendar
 import java.util.TimeZone
+import java.util.concurrent.Callable
+import java.util.concurrent.Executors
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNull
@@ -53,5 +55,27 @@ class DiagnosticsNameTest {
         assertNull(refused("scan-notadate-174233-blurred.jpg"), "unparseable date")
         assertNull(refused("holiday.jpg"), "not one of ours at all")
         assertNull(refused("scan-.jpg"), "prefix and nothing else")
+    }
+
+    @Test
+    fun `concurrent history reads preserve every refused photo timestamp`() {
+        val readers = Executors.newFixedThreadPool(4)
+        try {
+            val work = (1..8).map { day ->
+                Callable {
+                    val expected = Calendar.getInstance().apply {
+                        clear()
+                        set(2026, Calendar.SEPTEMBER, day, 17, 42, 33)
+                    }.time
+                    repeat(100) {
+                        val name = "scan-202609${day.toString().padStart(2, '0')}-174233-blurred.jpg"
+                        assertEquals(expected, requireNotNull(refused(name)).at)
+                    }
+                }
+            }
+            readers.invokeAll(work).forEach { it.get() }
+        } finally {
+            readers.shutdownNow()
+        }
     }
 }

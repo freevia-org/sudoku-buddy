@@ -10,10 +10,11 @@ package org.freevia.sudokubuddy.vision
 class GrayImage(val width: Int, val height: Int, val pixels: ByteArray) {
 
     init {
-        require(pixels.size == width * height) {
-            "a ${width}x$height image needs ${width * height} bytes but got ${pixels.size}"
-        }
         require(width > 0 && height > 0) { "image dimensions must be positive" }
+        val expectedSize = width.toLong() * height
+        require(pixels.size.toLong() == expectedSize) {
+            "a ${width}x$height image needs $expectedSize bytes but got ${pixels.size}"
+        }
     }
 
     /** The pixel at ([x], [y]) as an unsigned value in `0..255`. */

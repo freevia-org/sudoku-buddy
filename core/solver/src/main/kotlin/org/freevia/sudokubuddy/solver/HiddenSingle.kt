@@ -33,12 +33,36 @@ object HiddenSingle : Technique {
                 val index = places[0]
                 if (state.isReported(index)) continue
 
+                val blockers = mutableSetOf<Int>()
+                val excluded = unit.filter { it != index }.joinToString("\n") { other ->
+                    val value = state.valueAt(other)
+                    if (value != null) {
+                        "${cellName(other)} " +
+                            (if (state.isReported(other)) "contains" else "can only hold") +
+                            " $value."
+                    } else {
+                        val peer = Coordinates.peers[other].firstOrNull { state.valueAt(it) == digit }
+                        if (peer != null) {
+                            blockers += peer
+                            "${cellName(other)} cannot hold $digit because ${cellName(peer)} " +
+                                (if (state.isReported(peer)) "contains" else "can only hold") +
+                                " $digit in the same ${sharedUnit(other, peer)}."
+                        } else {
+                            "$digit was removed from ${cellName(other)} by earlier candidate reasoning."
+                        }
+                    }
+                }
+
                 out += Deduction.Placement(
                     technique = name,
                     difficulty = difficulty,
                     explanation = "$digit has to go here: it is the only cell in this " +
-                        "${unitName(unitIndex)} that can still take a $digit.",
-                    supportingCells = unit.toSet(),
+                        "${unitName(unitIndex)} ${unitIndex % 9 + 1} that can still take a $digit.\n\n" +
+                        "$excluded\n\n${cellName(index)} currently allows " +
+                        "${candidateList(state.candidatesAt(index).digits())}, but every " +
+                        "${unitName(unitIndex)} must contain $digit exactly once. " +
+                        "Therefore place $digit in row ${index / 9 + 1}, column ${index % 9 + 1}.",
+                    supportingCells = unit.toSet() + blockers,
                     index = index,
                     digit = digit,
                 )

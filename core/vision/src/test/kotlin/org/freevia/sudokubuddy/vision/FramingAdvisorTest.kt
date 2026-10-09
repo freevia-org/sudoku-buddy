@@ -74,4 +74,50 @@ class FramingAdvisorTest {
             "expected an explanation of what does not read as a grid, but got: $message",
         )
     }
+
+    private fun centeredQuad(scale: Double = 1.0, dx: Double = 0.0) = Quad(
+        Corner((120.0 + dx) * scale, 180.0 * scale),
+        Corner((600.0 + dx) * scale, 180.0 * scale),
+        Corner((600.0 + dx) * scale, 660.0 * scale),
+        Corner((120.0 + dx) * scale, 660.0 * scale),
+    )
+
+    private fun quality(sharpness: Double = 100.0, ratio: Double = 0.7) =
+        ImageQuality(sharpness, 200.0, 0.0, ratio)
+
+    @Test
+    fun `auto capture waits through whole grid and partial focus regression`() {
+        val advisor = FramingAdvisor(stableFramesRequired = 2)
+        val frame = flat(200, 720, 960)
+        val quad = centeredQuad()
+        advisor.adviseLocated(frame, quad, quality())
+        advisor.adviseLocated(frame, quad, quality())
+        assertFalse(advisor.adviseLocated(frame, quad, quality(40.0, ratio = 1.0)).readyToCapture)
+        assertFalse(advisor.adviseLocated(frame, quad, quality(ratio = 0.3)).readyToCapture)
+        assertTrue(advisor.adviseLocated(frame, quad, quality()).readyToCapture)
+    }
+
+    @Test
+    fun `motion tolerance behaves the same at different analysis resolutions`() {
+        for (scale in listOf(0.5, 1.0, 2.0)) {
+            val frame = flat(200, (720 * scale).toInt(), (960 * scale).toInt())
+            val advisor = FramingAdvisor(stableFramesRequired = 1)
+            advisor.adviseLocated(frame, centeredQuad(scale), quality())
+            assertTrue(advisor.adviseLocated(frame, centeredQuad(scale, 10.0), quality()).readyToCapture)
+            assertFalse(advisor.adviseLocated(frame, centeredQuad(scale, 25.0), quality()).readyToCapture)
+        }
+    }
+
+    @Test
+    fun `focus history expires and resets on movement instead of locking shutter indefinitely`() {
+        val advisor = FramingAdvisor(stableFramesRequired = 2)
+        val frame = flat(200, 720, 960)
+        val quad = centeredQuad()
+        repeat(3) { advisor.adviseLocated(frame, quad, quality()) }
+        assertFalse(advisor.adviseLocated(frame, quad, quality(40.0)).readyToCapture)
+        repeat(8) { advisor.adviseLocated(frame, quad, quality(40.0)) }
+        assertTrue(advisor.adviseLocated(frame, quad, quality(40.0)).readyToCapture)
+        advisor.reset()
+        assertFalse(advisor.adviseLocated(frame, quad, quality(40.0)).readyToCapture)
+    }
 }

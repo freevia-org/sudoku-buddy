@@ -96,3 +96,7 @@ sealed interface Deduction {
         }
     }
 }
+
+/** Search results without a displayable argument are useful help, but not practice exercises. */
+val Deduction.hasTeachingProof: Boolean get() = technique != TechniqueSolver.TRIED_OUT &&
+    !(this is Deduction.Elimination && technique == ForcingChain.name && chain == null)

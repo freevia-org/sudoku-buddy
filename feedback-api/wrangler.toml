@@ -1,0 +1,22 @@
+name = "sudoku-buddy-feedback"
+main = "src/index.js"
+compatibility_date = "2026-10-09"
+workers_dev = true
+
+# No request logs, traces, or analytics are enabled by this Worker configuration.
+[observability]
+enabled = false
+
+[[kv_namespaces]]
+binding = "REPORTS"
+# Private intake namespace; do not replace without checking the live service first.
+id = "efb279361d4e4a658075e0a1f1683f27"
+
+[[ratelimits]]
+name = "SUBMISSION_LIMITER"
+# Account-scoped rate limiter identifier; keep stable for this service.
+namespace_id = "739162845017"
+
+  [ratelimits.simple]
+  limit = 30
+  period = 60

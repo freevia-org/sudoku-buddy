@@ -15,6 +15,7 @@ data class HistoryEntry(
     val id: Long,
     val photo: File,
     val grid: Grid,
+    val details: HistoryDetails = HistoryDetails(),
 ) {
     val date: Date get() = Date(id)
 }
@@ -34,32 +35,82 @@ class History(context: Context) {
 
     private val directory = File(context.filesDir, "history").apply { mkdirs() }
 
-    fun save(photo: Bitmap, grid: Grid): HistoryEntry {
-        val id = System.currentTimeMillis()
+    @Synchronized
+    fun save(state: PuzzleState): HistoryEntry {
+        var id = System.currentTimeMillis()
+        while (File(directory, "$id.jpg").exists() || File(directory, "$id.txt").exists()) id++
         val image = File(directory, "$id.jpg")
-        image.outputStream().use { photo.compress(Bitmap.CompressFormat.JPEG, 85, it) }
-        File(directory, "$id.txt").writeText(HistoryFormat.encode(grid))
-        return HistoryEntry(id, image, grid)
+        val details = HistoryDetails.of(state)
+        atomicWrite(image) { check(state.photo.compress(Bitmap.CompressFormat.JPEG, 85, it)) }
+        try {
+            atomicWrite(File(directory, "$id.txt")) {
+                it.write(HistoryFormat.encode(state.grid, details).toByteArray(Charsets.UTF_8))
+            }
+        } catch (failure: Exception) {
+            image.delete()
+            throw failure
+        }
+        return HistoryEntry(id, image, state.grid, details)
     }
 
     /**
      * Records a correction, so a puzzle reopened later is where the user left it rather
      * than where recognition first put it.
      */
-    fun update(id: Long, grid: Grid) {
+    @Synchronized
+    fun update(id: Long, state: PuzzleState) {
         val text = File(directory, "$id.txt")
-        if (text.isFile) text.writeText(HistoryFormat.encode(grid))
+        if (!text.isFile) return
+        val saved = runCatching { text.readText() }.getOrNull()
+        val savedGrid = saved?.let { runCatching { HistoryFormat.decode(it) }.getOrNull() }
+        val savedDetails = saved?.let { runCatching { HistoryFormat.details(it) }.getOrNull() }
+        val incomingDetails = HistoryDetails.of(state)
+        val keepSaved = savedDetails != null &&
+            savedDetails.corrections.size > incomingDetails.corrections.size
+        val selectedGrid = if (keepSaved) savedGrid ?: state.grid else state.grid
+        val selectedDetails = (if (keepSaved) savedDetails!! else incomingDetails).copy(
+            submittedCorrectionCount = maxOf(
+                incomingDetails.submittedCorrectionCount,
+                savedDetails?.submittedCorrectionCount ?: -1,
+            ),
+            receipts = (incomingDetails.receipts + (savedDetails?.receipts ?: emptyList()))
+                .distinctBy { it.digest },
+        )
+        atomicWrite(text) {
+            it.write(HistoryFormat.encode(selectedGrid, selectedDetails).toByteArray(Charsets.UTF_8))
+        }
+    }
+
+    /** Records the accepted report revision without replacing a newer puzzle edit. */
+    @Synchronized
+    fun markSubmitted(id: Long, correctionCount: Int, receipt: SubmissionReceipt) {
+        require(correctionCount >= 0)
+        val text = File(directory, "$id.txt")
+        if (!text.isFile) return
+        val saved = text.readText()
+        val grid = HistoryFormat.decode(saved)
+        val details = HistoryFormat.details(saved)
+        val marked = details.copy(
+            submittedCorrectionCount = maxOf(details.submittedCorrectionCount, correctionCount),
+            receipts = if (details.receipts.any { it.digest == receipt.digest }) details.receipts
+                else details.receipts + receipt,
+        )
+        atomicWrite(text) {
+            it.write(HistoryFormat.encode(grid, marked).toByteArray(Charsets.UTF_8))
+        }
     }
 
     /** Newest first. */
+    @Synchronized
     fun list(): List<HistoryEntry> =
         directory.listFiles { f: File -> f.extension == "txt" }
             ?.mapNotNull { text ->
                 val id = text.nameWithoutExtension.toLongOrNull() ?: return@mapNotNull null
                 val image = File(directory, "$id.jpg")
                 if (!image.isFile) return@mapNotNull null
-                val grid = runCatching { HistoryFormat.decode(text.readText()) }.getOrNull() ?: return@mapNotNull null
-                HistoryEntry(id, image, grid)
+                val saved = runCatching { text.readText() }.getOrNull() ?: return@mapNotNull null
+                val grid = runCatching { HistoryFormat.decode(saved) }.getOrNull() ?: return@mapNotNull null
+                HistoryEntry(id, image, grid, HistoryFormat.details(saved))
             }
             ?.sortedByDescending { it.id }
             ?: emptyList()
@@ -67,6 +118,7 @@ class History(context: Context) {
     fun loadPhoto(entry: HistoryEntry): Bitmap? =
         runCatching { BitmapFactory.decodeFile(entry.photo.absolutePath) }.getOrNull()
 
+    @Synchronized
     fun delete(entry: HistoryEntry) {
         entry.photo.delete()
         File(directory, "${entry.id}.txt").delete()

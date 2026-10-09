@@ -36,6 +36,12 @@ object Puzzles {
         ".9....4..",
     )
 
+    /** A verified position along HARDEST where eliminations must precede the next placement. */
+    val ELIMINATION_HINT: Grid = Grid.fromRows(
+        "8........", "..36.....", ".7..9.2..", ".5...7...", "....457..",
+        "...1...3.", "5.1...368", "..85..91.", ".9....4..",
+    )
+
     /**
      * EASY with the two givens of row 0 removed, leaving 28. Verified to have more than
      * one solution, so the solver must report ambiguity rather than pick a favourite.

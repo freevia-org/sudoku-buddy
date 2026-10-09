@@ -8,6 +8,7 @@ corpus/*.png
 
 # Android / Gradle
 .gradle/
+.kotlin/
 build/
 local.properties
 *.apk
@@ -47,4 +48,19 @@ feedback/
 # the repository's secrets. See docs/signing.md.
 *.jks
 *.keystore
+# Local environment credentials and private-key exports.
+.env
+.env.*
+!.env.example
+!.env.template
+id_rsa
+id_ed25519
+*.p12
+*.pfx
+*.pem
+*.key
 corpus-rectified/*.jpg
+
+# Wrangler local account and deployment state
+.wrangler/
+feedback-api/.wrangler/

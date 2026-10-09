@@ -58,6 +58,30 @@ class SolverStateTest {
     }
 
     @Test
+    fun `an assignment cannot revive an eliminated candidate`() {
+        val state = assertNotNull(SolverState.from(Grid.Empty))
+        assertTrue(state.removeCandidate(0, 5))
+        assertFalse(state.assign(0, 5))
+        assertFalse(5 in state.candidatesAt(0))
+    }
+
+    @Test
+    fun `non-propagating placement cannot revive an eliminated candidate`() {
+        val state = assertNotNull(SolverState.candidatesOnly(Grid.Empty))
+        assertTrue(state.removeCandidate(0, 5))
+        assertFalse(state.place(0, 5))
+        assertFalse(5 in state.candidatesAt(0))
+    }
+
+    @Test
+    fun `singleton candidates that conflict are not a solved board`() {
+        val state = assertNotNull(SolverState.candidatesOnly(Grid.Empty))
+        for (index in 0 until 81) state.fixOnly(index, index % 9 + 1)
+        assertEquals(81, state.solvedCount)
+        assertFalse(state.isSolved, "each column repeats a digit nine times")
+    }
+
+    @Test
     fun `a grid that breaks the rules cannot start a state`() {
         val broken = Grid.Empty.with(0, Cell.given(5)).with(1, Cell.given(5))
         assertNull(SolverState.from(broken))

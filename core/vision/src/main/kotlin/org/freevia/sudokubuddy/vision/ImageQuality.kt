@@ -25,40 +25,49 @@ data class ImageQuality(
 
         private const val CLIPPED_WHITE_THRESHOLD = 250
 
-        fun of(image: GrayImage): ImageQuality = ImageQuality(
-            sharpness = laplacianVariance(image.toMat()),
-            meanLuma = image.pixels.sumOf { (it.toInt() and 0xFF).toLong() }.toDouble() / image.pixels.size,
-            clippedWhiteFraction = image.pixels.count { (it.toInt() and 0xFF) >= CLIPPED_WHITE_THRESHOLD }
-                .toDouble() / image.pixels.size,
-            worstQuadrantSharpnessRatio = quadrantRatio(image),
-        )
+        fun of(image: GrayImage): ImageQuality {
+            val mat = image.toMat()
+            return try {
+                ImageQuality(
+                    sharpness = laplacianVariance(mat),
+                    meanLuma = image.pixels.sumOf { (it.toInt() and 0xFF).toLong() }
+                        .toDouble() / image.pixels.size,
+                    clippedWhiteFraction = image.pixels.count {
+                        (it.toInt() and 0xFF) >= CLIPPED_WHITE_THRESHOLD
+                    }.toDouble() / image.pixels.size,
+                    worstQuadrantSharpnessRatio = quadrantRatio(mat),
+                )
+            } finally {
+                mat.release()
+            }
+        }
 
         internal fun laplacianVariance(mat: Mat): Double {
             val laplacian = Mat()
-            Imgproc.Laplacian(mat, laplacian, CvType.CV_64F)
             val mean = MatOfDouble()
             val stdDev = MatOfDouble()
-            Core.meanStdDev(laplacian, mean, stdDev)
-            val sd = stdDev.toArray()[0]
-            return sd * sd
+            return try {
+                Imgproc.Laplacian(mat, laplacian, CvType.CV_64F)
+                Core.meanStdDev(laplacian, mean, stdDev)
+                val sd = stdDev.toArray()[0]
+                sd * sd
+            } finally {
+                laplacian.release()
+                mean.release()
+                stdDev.release()
+            }
         }
 
-        private fun quadrantRatio(image: GrayImage): Double {
-            val halfWidth = image.width / 2
-            val halfHeight = image.height / 2
+        private fun quadrantRatio(mat: Mat): Double {
+            val halfWidth = mat.cols() / 2
+            val halfHeight = mat.rows() / 2
             if (halfWidth < 8 || halfHeight < 8) return 1.0
 
             val sharpnesses = listOf(0 to 0, 1 to 0, 0 to 1, 1 to 1).map { (cx, cy) ->
                 val left = cx * halfWidth
                 val top = cy * halfHeight
-                val pixels = ByteArray(halfWidth * halfHeight)
-                for (y in 0 until halfHeight) {
-                    System.arraycopy(
-                        image.pixels, (top + y) * image.width + left,
-                        pixels, y * halfWidth, halfWidth,
-                    )
-                }
-                laplacianVariance(GrayImage(halfWidth, halfHeight, pixels).toMat())
+                val quadrant = mat.submat(top, top + halfHeight, left, left + halfWidth)
+                try { laplacianVariance(quadrant) } finally { quadrant.release() }
             }.sorted()
 
             val median = (sharpnesses[1] + sharpnesses[2]) / 2.0

@@ -1,6 +1,7 @@
 package org.freevia.sudokubuddy.solver
 
 import org.freevia.sudokubuddy.model.Cell
+import org.freevia.sudokubuddy.model.CellSource
 import org.freevia.sudokubuddy.model.Coordinates
 import org.freevia.sudokubuddy.model.Grid
 
@@ -40,15 +41,17 @@ object MinimalFix {
      * which is worth saying differently from naming the squares.
      */
     fun find(grid: Grid, most: Int = MOST_CHANGES): Set<Int>? {
-        if (Solver.solve(grid) !is SolveResult.None) return emptySet()
+        // A repair only needs one completion; proving uniqueness adds a second search
+        // to every attempted removal without changing the answer.
+        if (Solver.solutions(grid, 1).isNotEmpty()) return emptySet()
 
-        val givens = (0 until Coordinates.CELL_COUNT).filter { grid[it].digit != null }
+        val givens = (0 until Coordinates.CELL_COUNT).filter { grid[it].source == CellSource.GIVEN }
         if (givens.isEmpty()) return null
 
         // Anything sharing a row, column or box with an identical digit is already a
         // contradiction on its own, and where such a pair exists the fault is one of them.
         // Trying those first is not only faster - it is the answer a person would give.
-        val clashing = clashes(grid)
+        val clashing = clashes(grid.givensOnly())
         val ordered = givens.sortedByDescending { it in clashing }
 
         for (size in 1..most.coerceAtMost(2)) {
@@ -92,6 +95,6 @@ object MinimalFix {
     private fun solvableWithout(grid: Grid, cells: List<Int>): Boolean {
         var attempt = grid
         for (cell in cells) attempt = attempt.with(cell, Cell.Empty)
-        return Solver.solve(attempt) !is SolveResult.None
+        return Solver.solutions(attempt, 1).isNotEmpty()
     }
 }

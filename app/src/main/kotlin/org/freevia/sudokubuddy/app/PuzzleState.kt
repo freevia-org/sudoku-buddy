@@ -5,6 +5,7 @@ import org.freevia.sudokubuddy.model.Cell
 import org.freevia.sudokubuddy.model.CellSource
 import org.freevia.sudokubuddy.model.Grid
 import org.freevia.sudokubuddy.solver.Chain
+import org.freevia.sudokubuddy.solver.Deduction
 import org.freevia.sudokubuddy.solver.Hint
 import org.freevia.sudokubuddy.solver.RouteStyle
 import org.freevia.sudokubuddy.solver.SolveResult
@@ -12,6 +13,7 @@ import org.freevia.sudokubuddy.solver.Solver
 import org.freevia.sudokubuddy.solver.TechniqueSolver
 import org.freevia.sudokubuddy.solver.Techniques
 import org.freevia.sudokubuddy.solver.Walkthrough
+import org.freevia.sudokubuddy.solver.hasTeachingProof
 
 /**
  * Where the grid lines really are, as fractions of the photograph's width and height.
@@ -70,6 +72,15 @@ data class PuzzleState(
      * is then no longer what is there, and saying otherwise is worse than saying nothing.
      */
     val reports: List<CellReport?>? = null,
+    /** Immutable recognition result, retained when the user corrects a cell. */
+    val originalGrid: Grid = grid,
+    val originalReports: List<CellReport?>? = reports,
+    val originalUncertainCells: Set<Int> = uncertainCells,
+    /** Every user correction to a cell that came from the photographed reading. */
+    val readingCorrections: List<ReadingCorrection> = emptyList(),
+    /** Number of corrections included in the last successful submission; -1 means never sent. */
+    val submittedCorrectionCount: Int = -1,
+    val submissionReceipts: List<SubmissionReceipt> = emptyList(),
     val overlay: OverlayMode = OverlayMode.NONE,
     val hintStyle: HintStyle = HintStyle.EXPLAIN,
     val selectedCell: Int? = null,
@@ -105,14 +116,22 @@ data class PuzzleState(
      * their thumb.
      */
     val answerShown: Int = 0,
+    val tutorHintProof: Boolean = false,
+    val lessonBefore: Boolean = false,
+    val practice: Boolean = false,
+    val practiceRevealed: Boolean = false,
+    val practiceCell: Int? = null,
+    val practiceFeedback: String? = null,
+    val returnToStep: Int? = null,
 ) {
-    // Computed once per state rather than once per read. Every one of these runs the
-    // solver, and Compose asks for them again on every recomposition - including one per
-    // tap on the photograph. The state is immutable, so caching is free of risk.
-    val hint: Hint? by lazy { PuzzleLogic.hint(grid, hintStyle) }
+    // Copies made for taps and tutor navigation share grid-dependent work. The cache
+    // never retains photos and is bounded so editing/reopening puzzles cannot grow it.
+    private val analysis: PuzzleAnalysis by lazy { PuzzleAnalyses.of(grid) }
+    val hint: Hint? by lazy { analysis.hint(hintStyle) }
 
     /** News about the puzzle, when there is any. Null is the ordinary case. */
-    val status: Status? by lazy { PuzzleLogic.status(grid) }
+    val status: Status? by lazy { analysis.status }
+    val reasoningNote: String? by lazy { analysis.reasoningNote }
 
     /**
      * The reading's own complaint, as it stands now rather than as it was first made.
@@ -120,7 +139,7 @@ data class PuzzleState(
      * The framing half always survives - it is about the photograph. The reader's half
      * only survives while the puzzle still fails to solve, which is what it was about.
      */
-    val liveNote: String? by lazy { PuzzleLogic.readingNote(framingNote, readerComplaint, grid) }
+    val liveNote: String? by lazy { analysis.readingNote(framingNote, readerComplaint) }
 
     /**
      * The flagged squares that are still worth asking about. See [PuzzleLogic.stillInQuestion].
@@ -130,26 +149,37 @@ data class PuzzleState(
      * less whatever the user has settled, so that a correction which makes the puzzle
      * solvable and a later one which breaks it again do not lose the original doubts.
      */
-    val openQuestions: Set<Int> by lazy { PuzzleLogic.stillInQuestion(uncertainCells, reports, grid) }
+    val openQuestions: Set<Int> by lazy { analysis.openQuestions(uncertainCells, reports) }
+    val readingHeadline: String by lazy { analysis.readingHeadline(openQuestions.size) }
 
     /** How much is left, for the counter under the grid. */
     val progress: String by lazy { PuzzleLogic.progress(grid) }
 
     val guidance: Guidance? by lazy {
-        PuzzleLogic.guidance(
-            grid, overlay, hintStyle, hintDepth, walkthrough, lessonStep, tutorTechnique,
-            answerShown,
-        )
+        analysis.guidance(displayKey) {
+            if (tutorHintProof && overlay == OverlayMode.LESSON && lessonStep == 0) {
+                return@guidance Guidance("This proof explains one hint, including the candidate " +
+                    "eliminations leading to its answer. Step forward to follow the reasoning " +
+                    "on the grid, then continue with the full route.")
+            }
+            PuzzleLogic.guidance(
+                grid, overlay, hintStyle, hintDepth, walkthrough, lessonStep, tutorTechnique,
+                answerShown,
+            )
+        }
     }
 
     val legend: List<LegendKey>
         get() = PuzzleLogic.legend(computed, overlay, openQuestions.isNotEmpty())
 
     /** What to call the evidence colour in the key: the technique it belongs to. */
-    val evidenceLabel: String?
-        get() = PuzzleLogic.evidenceLabel(
-            grid, overlay, hintStyle, hintDepth, walkthrough, lessonStep,
-        )
+    val evidenceLabel: String? by lazy {
+        analysis.evidenceLabel(displayKey) {
+            PuzzleLogic.evidenceLabel(
+                grid, overlay, hintStyle, hintDepth, walkthrough, lessonStep,
+            )
+        }
+    }
 
     /**
      * The whole route from here to the answer, in human steps.
@@ -158,8 +188,18 @@ data class PuzzleState(
      * something asks for it - which the button offering it does, on every recomposition.
      */
     val walkthrough: Walkthrough? by lazy {
+        if (tutorHintProof) {
+            val explained = (if (hintStyle == HintStyle.EXPLAIN) hint
+                else analysis.hint(HintStyle.EXPLAIN)) as? Hint.Explained
+            return@lazy explained?.takeIf { it.proof.isNotEmpty() }?.let {
+                Walkthrough(it.proof.map { step -> step.deduction }, it.difficulty,
+                    finishes = false, hardestTechnique = it.proof.maxBy { step ->
+                        step.deduction.difficulty
+                    }.deduction.technique, lessons = it.proof)
+            }
+        }
         val chosen = tutorTechnique?.let { Techniques.byName(it) }
-        if (chosen != null) TechniqueSolver.findings(grid, chosen)
+        if (chosen != null) analysis.findings(chosen.name)
         else route
     }
 
@@ -170,7 +210,7 @@ data class PuzzleState(
      * while showing one technique's findings, and it was reading the findings' length -
      * so "Best route" claimed however many places the technique being browsed applied.
      */
-    val route: Walkthrough? get() = Routes.of(grid, routeStyle)
+    val route: Walkthrough? get() = analysis.route(routeStyle)
 
     /** How many steps the tutor's own route runs to, whatever is being browsed. */
     val routeLength: Int get() = route?.steps?.size ?: 0
@@ -179,21 +219,51 @@ data class PuzzleState(
     val chapters: List<Chapter> by lazy { PuzzleLogic.chapters(walkthrough) }
 
     /** How many places each technique applies right now, for the tutor's own menu. */
-    val findingCounts: Map<String, Int> by lazy { TechniqueSolver.findingCounts(grid) }
+    val findingCounts: Map<String, Int> by lazy { analysis.findingCounts }
 
     private val computed: Overlay by lazy {
-        PuzzleLogic.overlay(
-            grid, overlay, hintStyle, hintDepth, walkthrough, lessonStep, entered, answerShown,
-        )
+        analysis.overlay(displayKey) {
+            PuzzleLogic.overlay(
+                grid, overlay, hintStyle, hintDepth, walkthrough, lessonStep, entered, answerShown,
+                lessonBefore, practicing,
+            )
+        }
     }
 
     /** How many answers this puzzle has, capped. One is the ordinary case. */
-    val answerCount: Int by lazy {
-        when (Solver.solve(grid)) {
-            is SolveResult.Unique -> 1
-            is SolveResult.None -> 0
-            is SolveResult.Multiple -> Solver.solutions(grid, PuzzleLogic.MOST_ANSWERS_OFFERED).size
+    val answerCount: Int by lazy { analysis.answerCount }
+
+    private val displayKey: PuzzleDisplayKey by lazy {
+        PuzzleDisplayKey(overlay, hintStyle, hintDepth, lessonStep, tutorTechnique, routeStyle,
+            tutorHintProof, answerShown, entered, lessonBefore, practicing)
+    }
+
+    private val practiceAlternatives: List<Deduction> by lazy {
+        val current = walkthrough ?: return@lazy emptyList()
+        analysis.alternatives(displayKey) {
+            TechniqueSolver.alternativesAt(grid, current, lessonStep - 1)
         }
+    }
+
+    /** Call on a worker dispatcher before handing this immutable state to Compose. */
+    fun prepareForDisplay(): PuzzleState {
+        hint
+        status
+        reasoningNote
+        liveNote
+        openQuestions
+        readingHeadline
+        progress
+        route
+        walkthrough
+        chapters
+        findingCounts
+        answerCount
+        guidance
+        computed
+        evidenceLabel
+        if (practicing) practiceAlternatives
+        return this
     }
 
     fun overlayDigits(): Map<Int, OverlayDigit> = computed.digits
@@ -204,6 +274,35 @@ data class PuzzleState(
 
     /** The forcing chain being walked, when the step showing is one. */
     fun chain(): Chain? = computed.chain
+    fun candidateMarks(): Map<Int, List<Int>> = computed.candidates
+    fun removedCandidates(): Map<Int, Set<Int>> = computed.removed
+
+    val currentDeduction: Deduction? get() =
+        PuzzleLogic.stepIndex(lessonStep, walkthrough)?.let { walkthrough?.steps?.get(it) }
+
+    val practicing: Boolean get() = overlay == OverlayMode.LESSON && practice &&
+        !practiceRevealed && currentDeduction?.hasTeachingProof == true
+
+    fun practiceAnswer(digit: Int): PuzzleState {
+        val step = currentDeduction ?: return this
+        val cell = practiceCell ?: return copy(practiceFeedback = "Tap a square on the grid first.")
+        val route = walkthrough ?: return this
+        val before = route.lessons.getOrNull(lessonStep - 1)?.before.orEmpty()
+        var result = PuzzleLogic.practiceAnswer(step, cell, digit, before)
+        if (!result.correct && digit in before[cell].orEmpty()) {
+            result = PuzzleLogic.practiceAnswer(step, cell, digit, before,
+                practiceAlternatives)
+        }
+        return copy(practiceRevealed = result.correct, practiceFeedback = result.message,
+            lessonBefore = false)
+    }
+
+    fun showHintProof(): PuzzleState = copy(overlay = OverlayMode.LESSON,
+        tutorHintProof = true, tutorTechnique = null, lessonStep = 1,
+        lessonBefore = true, practice = false, practiceCell = null,
+        practiceFeedback = null, returnToStep = null, selectedCell = null)
+
+    fun visitReason(step: Int): PuzzleState = stepTo(step).copy(returnToStep = lessonStep)
 
     /**
      * Turning a layer on, or - for a hint - pushing the one already showing one step
@@ -211,20 +310,22 @@ data class PuzzleState(
      *
      * Pressing Hint again is what walks down the staircase, so that asking for more help
      * needs no second control and no explanation of where to find it. Once there is
-     * nothing left to reveal, the same press turns it off, which is what every other
-     * layer's second press does.
+     * nothing left to reveal, the explanation stays open until explicitly closed.
      */
     fun show(mode: OverlayMode): PuzzleState {
         // Solve pressed again on a puzzle with several answers steps through them instead
         // of putting the layer away. Every other button toggles, and this one would too if
         // there were only ever one answer to show.
-        PuzzleLogic.steppedAnswer(overlay, mode, answerShown, answerCount)?.let { next ->
-            return copy(answerShown = next, selectedCell = null)
+        if (overlay == OverlayMode.SOLUTION && mode == OverlayMode.SOLUTION) {
+            PuzzleLogic.steppedAnswer(overlay, mode, answerShown, answerCount)?.let { next ->
+                return copy(answerShown = next, selectedCell = null)
+            }
         }
         val next = PuzzleLogic.press(overlay, mode, hintDepth, hintStyle)
         return copy(
             overlay = next.mode,
-            hintDepth = next.hintDepth,
+            hintDepth = if (next.mode == OverlayMode.HINT && hintStyle == HintStyle.EXPLAIN &&
+                hint is Hint.Reveal) PuzzleLogic.HINT_DEPTHS - 1 else next.hintDepth,
             lessonStep = if (next.mode == overlay) lessonStep else 0,
             selectedCell = null,
         )
@@ -254,6 +355,12 @@ data class PuzzleState(
         overlay = OverlayMode.LESSON,
         lessonStep = 0,
         selectedCell = null,
+        tutorHintProof = false,
+        lessonBefore = false,
+        practiceRevealed = false,
+        practiceCell = null,
+        practiceFeedback = null,
+        returnToStep = null,
     )
 
     /**
@@ -273,6 +380,11 @@ data class PuzzleState(
     fun stepTo(step: Int): PuzzleState = copy(
         lessonStep = step.coerceIn(0, PuzzleLogic.lastStep(walkthrough)),
         selectedCell = null,
+        lessonBefore = false,
+        practiceRevealed = false,
+        practiceCell = null,
+        practiceFeedback = null,
+        returnToStep = null,
     )
 
     fun withCell(index: Int, digit: Int?, source: CellSource): PuzzleState {
@@ -281,8 +393,15 @@ data class PuzzleState(
             source == CellSource.GIVEN -> Cell.given(digit)
             else -> Cell.guess(digit)
         }
+        val nextGrid = grid.with(index, cell)
+        val readingCell = originalReports?.getOrNull(index) != null
+        val corrections = if (readingCell && grid[index] != cell) {
+            readingCorrections + ReadingCorrection(index, grid[index].digit, cell.digit,
+                grid[index].source.name, cell.source.name, System.currentTimeMillis())
+        } else readingCorrections
         return copy(
-            grid = grid.with(index, cell),
+            grid = nextGrid,
+            readingCorrections = corrections,
             uncertainCells = uncertainCells - index,
             // A square the user has answered is theirs now, and is drawn as theirs.
             // Clearing it hands it back.
@@ -291,6 +410,12 @@ data class PuzzleState(
             // changed underneath them.
             hintDepth = 0,
             lessonStep = 0,
+            tutorHintProof = false,
+            lessonBefore = false,
+            practiceRevealed = false,
+            practiceCell = null,
+            practiceFeedback = null,
+            returnToStep = null,
             // The reader's account of this square is now out of date - the user has just
             // overruled it - so it goes. Keeping it left the reading layer colouring the
             // square as whatever it had been read as, after being told it is empty.
@@ -302,29 +427,85 @@ data class PuzzleState(
     fun acceptReading(): PuzzleState = copy(uncertainCells = emptySet())
 }
 
-/**
- * The last route worked out, kept so that stepping through one does not work it out again.
- *
- * A [PuzzleState] is copied on every press - each step of the tutor is a new instance -
- * and its lazy route would be recomputed from scratch each time. That is a full technique
- * solve per press: tens of milliseconds on this machine and rather more on a phone, for an
- * answer that cannot have changed, because the route depends on the grid and nothing else.
- *
- * One entry is enough. Only one puzzle is on screen, and the grid changes far less often
- * than the state around it.
- */
-private object Routes {
-    private var forGrid: Grid? = null
-    private var forStyle: RouteStyle? = null
-    private var found: Walkthrough? = null
+/** Only inputs used by derived display data; selection and feedback do not affect it. */
+private data class PuzzleDisplayKey(
+    val overlay: OverlayMode,
+    val hintStyle: HintStyle,
+    val hintDepth: Int,
+    val lessonStep: Int,
+    val technique: String?,
+    val routeStyle: RouteStyle,
+    val hintProof: Boolean,
+    val answerShown: Int,
+    val entered: Set<Int>,
+    val before: Boolean,
+    val conceal: Boolean,
+)
 
-    @Synchronized
-    fun of(grid: Grid, style: RouteStyle): Walkthrough? {
-        if (grid != forGrid || style != forStyle) {
-            forGrid = grid
-            forStyle = style
-            found = TechniqueSolver.walkthrough(grid, style)
-        }
-        return found
+/** Completed results only: a slow solve never holds the cache's monitor. */
+internal class PuzzleAnalysisCache<K, V>(private val capacity: Int) {
+    private data class Entry<V>(val value: V)
+    private val entries = LinkedHashMap<K, Entry<V>>(capacity, 0.75f, true)
+
+    init {
+        require(capacity > 0)
     }
+
+    fun get(key: K, compute: () -> V): V {
+        synchronized(entries) { entries[key]?.let { return it.value } }
+        val value = compute()
+        return synchronized(entries) {
+            entries[key]?.let { return@synchronized it.value }
+            entries[key] = Entry(value)
+            if (entries.size > capacity) entries.remove(entries.keys.first())
+            value
+        }
+    }
+}
+
+private object PuzzleAnalyses {
+    private val cache = PuzzleAnalysisCache<Grid, PuzzleAnalysis>(4)
+    fun of(grid: Grid): PuzzleAnalysis = cache.get(grid) { PuzzleAnalysis(grid) }
+}
+
+private class PuzzleAnalysis(private val grid: Grid) {
+    val status: Status? by lazy { PuzzleLogic.status(grid) }
+    val reasoningNote: String? by lazy { PuzzleLogic.reasoningNote(grid) }
+    val findingCounts: Map<String, Int> by lazy { TechniqueSolver.findingCounts(grid) }
+    val answerCount: Int by lazy {
+        when (Solver.solve(grid)) {
+            is SolveResult.Unique -> 1
+            is SolveResult.None -> 0
+            is SolveResult.Multiple -> Solver.solutions(grid, PuzzleLogic.MOST_ANSWERS_OFFERED).size
+        }
+    }
+    private val hints = PuzzleAnalysisCache<HintStyle, Hint?>(2)
+    private val routes = PuzzleAnalysisCache<RouteStyle, Walkthrough?>(2)
+    private val findings = PuzzleAnalysisCache<String, Walkthrough?>(Techniques.all.size)
+    private val overlays = PuzzleAnalysisCache<PuzzleDisplayKey, Overlay>(32)
+    private val guidance = PuzzleAnalysisCache<PuzzleDisplayKey, Guidance?>(32)
+    private val labels = PuzzleAnalysisCache<PuzzleDisplayKey, String?>(32)
+    private val alternatives = PuzzleAnalysisCache<PuzzleDisplayKey, List<Deduction>>(8)
+    private val readingNotes = PuzzleAnalysisCache<Pair<String?, String?>, String?>(4)
+    private val questions = PuzzleAnalysisCache<Pair<Set<Int>, List<CellReport?>?>, Set<Int>>(4)
+    private val headlines = PuzzleAnalysisCache<Int, String>(4)
+
+    fun hint(style: HintStyle): Hint? = hints.get(style) { PuzzleLogic.hint(grid, style) }
+    fun route(style: RouteStyle): Walkthrough? = routes.get(style) {
+        TechniqueSolver.walkthrough(grid, style)
+    }
+    fun findings(technique: String): Walkthrough? = findings.get(technique) {
+        Techniques.byName(technique)?.let { TechniqueSolver.findings(grid, it) }
+    }
+    fun overlay(key: PuzzleDisplayKey, compute: () -> Overlay): Overlay = overlays.get(key, compute)
+    fun guidance(key: PuzzleDisplayKey, compute: () -> Guidance?): Guidance? = guidance.get(key, compute)
+    fun evidenceLabel(key: PuzzleDisplayKey, compute: () -> String?): String? = labels.get(key, compute)
+    fun alternatives(key: PuzzleDisplayKey, compute: () -> List<Deduction>): List<Deduction> =
+        alternatives.get(key, compute)
+    fun readingNote(framing: String?, complaint: String?): String? =
+        readingNotes.get(framing to complaint) { PuzzleLogic.readingNote(framing, complaint, grid) }
+    fun openQuestions(flagged: Set<Int>, reports: List<CellReport?>?): Set<Int> =
+        questions.get(flagged to reports) { PuzzleLogic.stillInQuestion(flagged, reports, grid) }
+    fun readingHeadline(count: Int): String =
+        headlines.get(count) { PuzzleLogic.readingHeadline(count, grid) }
 }

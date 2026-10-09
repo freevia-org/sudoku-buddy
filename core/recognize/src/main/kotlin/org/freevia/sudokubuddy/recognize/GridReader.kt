@@ -5,6 +5,7 @@ import org.freevia.sudokubuddy.model.Grid
 import org.freevia.sudokubuddy.solver.SolveResult
 import org.freevia.sudokubuddy.solver.Solver
 import org.freevia.sudokubuddy.vision.GrayImage
+import org.freevia.sudokubuddy.vision.RgbImage
 import kotlin.math.abs
 
 /**
@@ -24,6 +25,10 @@ data class CellReading(
     val probabilities: FloatArray?,
     val heightRatio: Double,
     val darkness: Double,
+    /** Paper-relative chroma retained as evidence; null for grayscale-only reading. */
+    val colorChroma: Double? = null,
+    /** The digit can be confident while its answer-versus-notes role is unresolved. */
+    val roleUncertain: Boolean = false,
 ) {
     val digit: Int? get() = probabilities?.let { p -> p.indices.maxBy { p[it] } + 1 }
 
@@ -79,8 +84,12 @@ sealed interface ReadResult {
  */
 class GridReader(private val classifier: DigitClassifier = DigitClassifier.load()) {
 
-    fun read(cells: List<GrayImage>): ReadResult {
+    fun read(cells: List<GrayImage>, colorCells: List<RgbImage>? = null): ReadResult {
         require(cells.size == 81) { "expected 81 cells but got ${cells.size}" }
+        require(colorCells == null || colorCells.size == 81)
+        require(colorCells == null || colorCells.indices.all {
+            colorCells[it].width == cells[it].width && colorCells[it].height == cells[it].height
+        }) { "color and grayscale cells must use the same geometry" }
 
         val ink = CellAnalyzer.inspect(cells)
         val core = findPrintedCore(ink.mapNotNull { it?.blob })
@@ -88,13 +97,19 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
                 "Could not find the printed digits in that photo.", emptySet(),
             )
 
+        // The size and ink passes can reconsider a role, but the glyph has not changed.
+        // Infer it once; candidate-only cells still never invoke the classifier.
+        val probabilities = ink.map { cell -> lazy(LazyThreadSafetyMode.NONE) {
+            cell?.let { classifier.classify(it.normalised) }
+        } }
+
         fun readAll(sortByInk: Boolean) = ink.mapIndexed { index, cell ->
             val kind = if (cell == null) Ink.NONE else classify(cell, core, sortByInk)
             CellReading(
                 index = index,
                 ink = kind,
                 probabilities = if (cell == null || kind == Ink.MARK || kind == Ink.NONE) null
-                else classifier.classify(cell.normalised),
+                else probabilities[index].value,
                 heightRatio = cell?.blob?.heightRatio ?: 0.0,
                 darkness = cell?.blob?.darkness ?: 255.0,
             )
@@ -116,9 +131,26 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
             }
         }
 
-        val settled = sortWhatALargeHandCannotHaveWritten(
+        val grayscale = sortWhatALargeHandCannotHaveWritten(
             takeBackAFigureRank(putBackPencilThatSatLow(readings, ink, core), ink, core), ink, core,
         )
+        val colored = if (colorCells == null) grayscale else separateColoredInk(grayscale, ink, colorCells, core)
+        val settled = colored.map { reading ->
+            if (reading.digit == null) return@map reading
+            val cell = ink[reading.index] ?: return@map reading
+            val evidence = InkLayout.evidence(cell)
+            when {
+                evidence == InkLayout.Evidence.NOTE_ROW -> reading.copy(ink = Ink.MARK, probabilities = null)
+                // A full answer can have two remaining candidates beside it. The same
+                // existing pen-weight boundary that guards isPencilledMark separates
+                // weak pencil groups; stronger current handwriting retains its value.
+                evidence == InkLayout.Evidence.STACKED_GROUP && inkOf(cell.blob, core) < MARK_INK ->
+                    reading.copy(ink = Ink.MARK, probabilities = null)
+                evidence == InkLayout.Evidence.AMBIGUOUS_GROUP || evidence == InkLayout.Evidence.STACKED_GROUP ->
+                    reading.copy(roleUncertain = true)
+                else -> reading
+            }
+        }
 
         val printed = settled.filter { it.ink == Ink.PRINTED }
         if (printed.size < MIN_GIVENS) {
@@ -130,7 +162,7 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
 
         val grid = assemble(settled)
         val weak = settled
-            .filter { it.digit != null && it.margin < CONFIDENT_MARGIN }
+            .filter { it.digit != null && (it.margin < CONFIDENT_MARGIN || it.roleUncertain) }
             .map { it.index }
             .toSet()
 
@@ -141,13 +173,45 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
                 } else {
                     ReadResult.NeedsConfirmation(
                         grid, settled, weak,
-                        "Some digits were not read confidently.",
+                        if (settled.any { it.roleUncertain }) "Some cells may contain notes rather than a full digit."
+                        else "Some digits were not read confidently.",
                     )
                 }
 
             else -> repair(settled, grid, weak, core)
         }
     }
+
+    /** Color supplies evidence; shape guards neutral promotion and contradictions veto it. */
+    private fun separateColoredInk(
+        readings: List<CellReading>, ink: List<CellInk?>, cells: List<RgbImage>, core: PrintedCore,
+    ): List<CellReading> {
+        val chroma = ink.mapIndexed { index, cell -> cell?.let { InkColor.chroma(cells[index], it) } ?: 0.0 }
+        val measured = readings.map { it.copy(colorChroma = chroma[it.index]) }
+        val digits = measured.filter { it.digit != null }
+        if (!InkColor.separated(digits.map { chroma[it.index] }, COLOR_CHROMA)) return measured
+        val candidate = measured.map { reading ->
+            when {
+                reading.digit == null -> reading
+                chroma[reading.index] > COLOR_CHROMA -> reading.copy(ink = Ink.ANSWER)
+                ink[reading.index]?.let { classify(it, core) } == Ink.PRINTED -> reading.copy(ink = Ink.PRINTED)
+                else -> reading
+            }
+        }
+        val printed = candidate.count { it.ink == Ink.PRINTED }
+        if (printed !in MIN_GIVENS..PLAUSIBLE_GIVENS) return measured
+        // A multi-solution illustration still has readable clues. Sudoku validates the
+        // evidence against contradictions; it is not the source of the role decision.
+        var clues = Grid.Empty
+        for (reading in candidate) if (reading.ink == Ink.PRINTED) {
+            clues = clues.with(reading.index, Cell.given(requireNotNull(reading.digit)))
+        }
+        if (Solver.solve(clues) is SolveResult.None) return measured
+        return candidate
+    }
+
+    /** Chromatic channel separation must be substantial, rather than a compression fringe. */
+    private val COLOR_CHROMA = 0.25
 
     /**
      * The print and the handwriting told apart by where they actually fall, not by a bar.

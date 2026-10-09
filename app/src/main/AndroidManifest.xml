@@ -3,12 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-    <!--
-      A dependency pulls this in transitively. The app never checks connectivity - it has
-      no INTERNET permission and makes no network calls at all - so it is removed rather
-      than left sitting in the permission list contradicting that.
-    -->
+    <!-- Network state is not needed for the explicit, one-shot report upload. -->
     <uses-permission
         android:name="android.permission.ACCESS_NETWORK_STATE"
         tools:node="remove" />

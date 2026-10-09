@@ -9,8 +9,10 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
 import org.freevia.sudokubuddy.BuildConfig
 
@@ -22,6 +24,7 @@ import org.freevia.sudokubuddy.BuildConfig
  */
 @Composable
 fun AboutScreen(onClose: () -> Unit) {
+    val uriHandler = LocalUriHandler.current
     Column(modifier = Modifier.fillMaxSize()) {
         AppBar(title = "About", subtitle = "Sudoku Buddy ${BuildConfig.VERSION_NAME}", onBack = onClose)
         LazyColumn(
@@ -38,11 +41,10 @@ fun AboutScreen(onClose: () -> Unit) {
                         style = MaterialTheme.typography.bodyMedium,
                     )
                     Text(
-                        "It reads printed digits reliably. Handwriting is harder - expect the " +
-                            "odd misread, and tap any square to correct it. When the app is " +
-                            "unsure it says so and asks, rather than guessing: a confidently " +
-                            "wrong grid is the worst thing it could hand you. \"What was read\" " +
-                            "shows exactly what it made of every square, and how sure it was.",
+                        "Recognition can make mistakes, especially with handwriting. " +
+                            "Use Read to compare the recognised digits with the photo, and " +
+                            "tap any square to correct it. The app marks uncertain readings " +
+                            "for review; a confident reading can still be wrong.",
                         style = MaterialTheme.typography.bodyMedium,
                     )
                 }
@@ -53,10 +55,13 @@ fun AboutScreen(onClose: () -> Unit) {
             item {
                 Section("Your photos and your privacy") {
                     Text(
-                        "Everything happens on this phone. The app has no internet permission " +
-                            "at all, and nothing is collected, tracked or uploaded. The app " +
-                            "only hands a photograph to another app when you explicitly press " +
-                            "Share. There are no accounts and no analytics.",
+                        "Puzzles are read and solved on this phone. If you submit an uncertain " +
+                            "reading, or enable automatic sharing, the puzzle photo, original " +
+                            "readings, uncertainty flags and your corrections are sent securely " +
+                            "to Freevia for recognition analysis. Reports do not include your " +
+                            "device model or diagnostics. Automatic sharing is optional; there " +
+                            "are no accounts or analytics. Submitted reports are kept for up " +
+                            "to 90 days; use Submission receipts in Settings to copy a deletion request.",
                         style = MaterialTheme.typography.bodyMedium,
                     )
                     Text(
@@ -65,11 +70,12 @@ fun AboutScreen(onClose: () -> Unit) {
                         style = MaterialTheme.typography.bodyMedium,
                     )
                     Text(
-                        "Sudoku Buddy is published by Freevia. " +
-                            "Privacy policy: https://freevia.org/sudoku-buddy/privacy\n" +
-                            "Contact: info@freevia.org",
+                        "Sudoku Buddy is published by Freevia. Contact: info@freevia.org",
                         style = MaterialTheme.typography.bodyMedium,
                     )
+                    TextButton(onClick = {
+                        uriHandler.openUri("https://freevia.org/sudoku-buddy/privacy")
+                    }) { Text("Privacy policy") }
                 }
             }
 

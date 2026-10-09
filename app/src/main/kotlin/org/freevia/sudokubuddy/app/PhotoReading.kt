@@ -1,10 +1,12 @@
 package org.freevia.sudokubuddy.app
 
 import android.content.Context
+import org.freevia.sudokubuddy.BuildConfig
 import org.freevia.sudokubuddy.recognize.GridReader
 import org.freevia.sudokubuddy.recognize.ReadResult
 import org.freevia.sudokubuddy.vision.GateVerdict
 import org.freevia.sudokubuddy.vision.StructuralGate
+import org.freevia.sudokubuddy.vision.ColorCells
 
 /** What came of pointing the reader at one photograph. */
 sealed interface PhotoOutcome {
@@ -58,7 +60,9 @@ object PhotoReading {
     }
 
     fun read(context: Context, bytes: ByteArray, rotationDegrees: Int): PhotoOutcome {
-        val image = Images.fromJpeg(bytes, rotationDegrees)
+        val capturedAtMillis = if (BuildConfig.DEBUG) System.currentTimeMillis() else 0L
+        val photograph = Images.photograph(bytes, rotationDegrees)
+        val image = photograph.gray
 
         return when (val verdict = StructuralGate.assess(image)) {
             is GateVerdict.Rejected ->
@@ -100,7 +104,13 @@ object PhotoReading {
                 // "The grid was small" is the likeliest explanation for a page of wrong
                 // digits, and it is worth saying beside them - but it was never a good
                 // reason to refuse a photograph the app had already straightened.
-                when (val result = GridReader().read(verdict.cells)) {
+                val colorCells = ColorCells.extract(photograph.rgb, verdict)
+                val result = GridReader().read(verdict.cells, colorCells)
+                if (BuildConfig.DEBUG) DebugCaptureEvidence.keep(
+                    context, bytes, rotationDegrees, capturedAtMillis,
+                    image.width, image.height, verdict, colorCells, result,
+                )
+                when (result) {
                     // Kept for the same reason a photograph the gate turned away is
                     // kept. This path refuses a photograph the gate was happy with -
                     // the grid was found, and the digits in it could not be made into a

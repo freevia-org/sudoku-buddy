@@ -19,6 +19,14 @@ import org.freevia.sudokubuddy.model.Grid
 object HistoryFormat {
 
     private const val SEPARATOR = "\n--\n"
+    private const val DETAILS = "\n==details==\n"
+
+    fun encode(grid: Grid, details: HistoryDetails): String = encode(grid) + DETAILS + details.encode()
+
+    /** Old entries have no details; a damaged details block must not hide a usable grid. */
+    fun details(text: String): HistoryDetails = text.substringAfter(DETAILS, "")
+        .takeIf(String::isNotEmpty)?.let { runCatching { HistoryDetails.decode(it) }.getOrNull() }
+        ?: HistoryDetails()
 
     fun encode(grid: Grid): String {
         fun rows(predicate: (Cell) -> Boolean) = (0 until 9).joinToString("\n") { r ->
@@ -35,7 +43,7 @@ object HistoryFormat {
      * the caller drops the entry, and half a puzzle would be worse than none.
      */
     fun decode(text: String): Grid {
-        val blocks = text.split(SEPARATOR)
+        val blocks = text.substringBefore(DETAILS).replace("\r\n", "\n").split(SEPARATOR)
         require(blocks.size == 2) { "expected two blocks, found ${blocks.size}" }
         val givens = blocks[0].filterNot { it.isWhitespace() }
         val written = blocks[1].filterNot { it.isWhitespace() }

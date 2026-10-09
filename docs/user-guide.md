@@ -63,10 +63,18 @@ uninstalling the app removes its app-specific data.
 
 ## Sharing and support
 
+The release-preparation build can submit an uncertain reading directly to Freevia for
+private analysis. The report includes the straightened puzzle photo, recognition results and
+corrections. Automatic sharing is optional and off by default; enabling it sends the open
+uncertain reading if there is one, then future uncertain readings and corrections. This build has not completed
+device qualification, so the feature is not yet part of the public release. See the draft
+privacy policy for its data handling; the public privacy page still describes the current
+released build.
+
 You can deliberately share a saved puzzle photograph or an unsuccessful scan through
 Android's share sheet. Send diagnostics can include retained unsuccessful scans and a
 text report containing app version, date, phone manufacturer/model, Android version and
-scan outcomes. Choose the receiving app and recipient yourself; nothing is sent automatically.
+scan outcomes. Choose the receiving app and recipient yourself.
 
 Email [info@freevia.org](mailto:info@freevia.org) for support. If you report a bug in
 [GitHub Issues](https://github.com/freevia-org/sudoku-buddy/issues), the report and its

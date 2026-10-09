@@ -1,7 +1,8 @@
 First release of Sudoku Buddy.
 
-- Scan printed Sudoku grids and handwritten progress
-- Correct digits the camera misreads
-- Check handwritten answers with clear color highlights
-- Reveal human-style hints one step at a time
-- Reopen scanned puzzles from on-device history
+- Scan standard 9x9 Sudoku grids and review the recognized digits
+- Check handwritten answers when the clues define one solution
+- Reveal hints and explore Tutor routes with Before, After and Try it yourself
+- See labeled solver assistance when a detailed proof is unavailable
+- Reopen puzzles and corrections from on-device history
+- Work offline, with optional photo and diagnostic sharing through another app

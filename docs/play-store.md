@@ -1,19 +1,28 @@
 # Getting Sudoku Buddy onto Google Play
 
-What is done, what needs a developer account, and what still needs a decision. Updated
-against the state of the repository on 8 September 2026.
+The store-description text below is a draft. Review it against the release build, published
+privacy policy and final Play Data safety answers before saving or submitting it.
+
+Current status (10 October 2026): the app record, listing, privacy URL, declarations and
+IARC rating were previously completed per the release handoff. The release-preparation
+branch now integrates the report intake; saved answers and the live privacy page must be
+reconciled with the final signed app before submission. Use
+[the final-build checklist](play-release-readiness.md) for remaining work and blockers.
+The notes below are historical preparation references, not authorization to upload or publish.
+
+This reference is updated to the release-preparation state on 10 October 2026.
 
 ## Done in the repository
 
 | Item | State |
 | --- | --- |
 | App bundle | `./gradlew :app:bundleRelease` produces `app/build/outputs/bundle/release/app-release.aab` |
-| 16 KB page alignment | every native library passes; guarded by `checkNativeAlignment` |
+| 16 KB page alignment | `checkNativeAlignment` checks the arm64 APK; the final bundle and 16 KB runtime still require qualification |
 | Target API level | 36, Play's requirement for new phone apps from 31 August 2026 |
 | Minimum API level | 26 |
-| Signing | release builds are signed with the key in `docs/signing.md` |
-| Version code | `github.run_number`, so it only ever increases |
-| Permissions | `CAMERA` only; `ACCESS_NETWORK_STATE` is explicitly removed |
+| Signing | distribution requires the key in `docs/signing.md`; local builds can still fall back to debug signing |
+| Version code | `BUILD_NUMBER`; select a code greater than all previous Play uploads, since separate workflows have separate run numbers |
+| Permissions | Release-preparation branch requires `CAMERA` and `INTERNET` for opt-in report submission. Verify the final merged manifest |
 | Privacy policy | Live at `https://freevia.org/sudoku-buddy/privacy` with source in `docs/privacy-policy.md` |
 | Store icon | `docs/store/icon-512.png` |
 | Feature graphic | `docs/store/feature-graphic-1024x500.png` |
@@ -36,25 +45,14 @@ Note that the JVM tests link against `org.openpnp:opencv`, a different artifact,
 test suite does **not** exercise the Android library. The bump is verified for alignment
 and for compilation, not for behaviour — that check is a scan on a real phone.
 
-## Needs the developer account
+## Remaining account-owner steps
 
-These cannot be done from the repository.
-
-1. **Register**, pay the one-off fee, and complete identity verification. Verification can
-   take a few days, so it is worth starting before the listing is ready.
-2. **Create the app** with package name `org.freevia.sudokubuddy`. This is permanent
-   — it cannot be changed after the first upload, and it is the identity every future
-   update is matched against.
-3. **Enrol in Play App Signing.** Play then holds the *app signing key* and the key in
-   `docs/signing.md` becomes the *upload key* — it keeps signing what we send, and Play
-   re-signs for distribution. Keep it exactly as safe as before: losing it means asking
-   Google to reset the upload key.
-4. **Add the privacy policy** URL `https://freevia.org/sudoku-buddy/privacy` to the listing.
-   It is already public and available as a non-PDF web page.
-5. **Data safety form.** The honest answers are: no data collected, no data shared, no
-   data sent off the device. The camera is used but nothing from it leaves the phone.
-6. **Content rating questionnaire.** A sudoku reader with no ads, no purchases, no user
-   content and no communication rates at the lowest category everywhere.
+The Play account, app record, listing, Play App Signing enrollment and IARC rating
+already exist. Before Play submission, merge the reviewed candidate workflow to `main`,
+dispatch a signed candidate with a version code above every uploaded code, install and
+qualify that exact candidate, then publish the matching privacy policy and reconcile the
+saved Data safety answers. Complete internal testing and Play delivery checks before
+starting review. The detailed gates are in [`play-release-readiness.md`](play-release-readiness.md).
 
 ## Store listing assets still to make
 
@@ -88,8 +86,10 @@ checking handwritten answers, hints, and on-device history.
 > the deduction rests on rather than simply filling a number in, so the point is to
 > understand the move rather than to be given it.
 >
-> Nothing leaves your phone. The app has no internet permission at all, no accounts, no
-> analytics and no advertising.
+> Processing and puzzle history stay on your phone. If you choose to submit an uncertain
+> reading, its puzzle photo and recognition results can be sent to Freevia for private review
+> to improve recognition. Automatic submission is optional and off unless you enable it.
+> There is no account, analytics or advertising.
 
 ## Deciding before the first upload
 

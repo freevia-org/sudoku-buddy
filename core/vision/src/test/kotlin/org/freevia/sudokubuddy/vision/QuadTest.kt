@@ -51,4 +51,15 @@ class QuadTest {
         )
         assertEquals(square, Quad.ordering(scrambled))
     }
+
+    @Test
+    fun `a diamond keeps four distinct corners despite tied extrema`() {
+        val points = listOf(Corner(50.0, 0.0), Corner(100.0, 50.0),
+            Corner(50.0, 100.0), Corner(0.0, 50.0))
+        val ordered = Quad.ordering(points)
+        assertEquals(4, ordered.corners.distinct().size)
+        assertEquals(5_000.0, ordered.area, 0.001)
+        assertEquals(0.0, ordered.maxCornerAngleDeviation, 0.001)
+        assertEquals(ordered, Quad.ordering(points.reversed()))
+    }
 }

@@ -2,8 +2,12 @@ package org.freevia.sudokubuddy.app
 
 import android.Manifest
 import android.content.pm.PackageManager
+import android.content.Intent
+import android.net.Uri
+import android.provider.Settings as AndroidSettings
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.BackHandler
@@ -19,6 +23,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.material3.Button
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalDrawerSheet
@@ -29,6 +36,7 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -43,6 +51,12 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import org.freevia.sudokubuddy.vision.OpenCvNatives
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LifecycleEventEffect
 import org.opencv.android.OpenCVLoader
 
 class MainActivity : ComponentActivity() {
@@ -81,6 +95,10 @@ private fun AppRoot() {
     val context = LocalContext.current
     val history = remember { History(context) }
     val scope = rememberCoroutineScope()
+    val storage = remember { Mutex() }
+    var storageBusy by remember { mutableStateOf(false) }
+    var storageError by remember { mutableStateOf<String?>(null) }
+    var puzzleGeneration by remember { mutableStateOf(0L) }
 
     var hasCamera by remember {
         mutableStateOf(
@@ -91,18 +109,55 @@ private fun AppRoot() {
     val request = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { granted -> hasCamera = granted }
+    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) {
+        hasCamera = ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) ==
+            PackageManager.PERMISSION_GRANTED
+    }
 
     var settings by remember { mutableStateOf(Settings.load(context)) }
+    var submissionReceipts by remember { mutableStateOf(SubmissionReceiptStore.list(context)) }
     var puzzle by remember { mutableStateOf<PuzzleState?>(null) }
-    var entries by remember { mutableStateOf(history.list()) }
+    var submissionInFlight by remember { mutableStateOf(false) }
+    val pendingAutoSubmissions = remember { AutoSubmissionQueue<PuzzleState>() }
+    var entries by remember { mutableStateOf(emptyList<HistoryEntry>()) }
     // Photographs the app refused. Looked up with the puzzles, since the drawer shows both.
-    var refused by remember { mutableStateOf(Diagnostics.refused(context)) }
+    var refused by remember { mutableStateOf(emptyList<Diagnostics.Refused>()) }
     var nav by remember { mutableStateOf(Navigation(Screen.CAMERA)) }
     val screen = nav.screen
 
     // Which history entry the puzzle on screen belongs to, so corrections are written
     // back to it. Without this, reopening a puzzle undoes every fix the user made.
-    var entryId by remember { mutableStateOf<Long?>(null) }
+    var entryId by rememberSaveable { mutableStateOf<Long?>(null) }
+
+    fun restore(entry: HistoryEntry, photo: android.graphics.Bitmap): PuzzleState = PuzzleState(
+        photo = photo, grid = entry.grid, uncertainCells = entry.details.uncertain,
+        framingNote = entry.details.framingNote, readerComplaint = entry.details.readerComplaint,
+        lines = entry.details.lines, entered = entry.details.entered, reports = entry.details.reports,
+        originalGrid = entry.details.originalGrid ?: entry.grid,
+        originalReports = entry.details.originalReports ?: entry.details.reports,
+        originalUncertainCells = entry.details.originalUncertain.ifEmpty { entry.details.uncertain },
+        readingCorrections = entry.details.corrections,
+        submittedCorrectionCount = entry.details.submittedCorrectionCount,
+        submissionReceipts = entry.details.receipts,
+        hintStyle = settings.hintStyle, routeStyle = settings.routeStyle,
+    )
+
+    LaunchedEffect(history) {
+        val generation = puzzleGeneration
+        val restoreId = entryId
+        val initialNavigation = nav
+        val saved = withContext(Dispatchers.IO) { history.list() }
+        entries = saved
+        refused = withContext(Dispatchers.IO) { Diagnostics.refused(context) }
+        saved.firstOrNull { it.id == restoreId }?.let { entry ->
+            withContext(Dispatchers.IO) { history.loadPhoto(entry) }?.let { photo ->
+                if (generation == puzzleGeneration && nav == initialNavigation && puzzle == null) {
+                    puzzle = restore(entry, photo)
+                    nav = Navigation(Screen.PUZZLE, listOf(Screen.CAMERA))
+                }
+            }
+        }
+    }
 
     val drawer = rememberDrawerState(DrawerValue.Closed)
 
@@ -130,17 +185,182 @@ private fun AppRoot() {
     }
 
     fun openDrawer() {
-        entries = history.list()
-        refused = Diagnostics.refused(context)
+        if (storageBusy) return
         scope.launch { drawer.open() }
     }
 
+    LaunchedEffect(drawer) {
+        snapshotFlow { drawer.isOpen }.collect { open ->
+            if (open) {
+                entries = storage.withLock { withContext(Dispatchers.IO) { history.list() } }
+                refused = withContext(Dispatchers.IO) { Diagnostics.refused(context) }
+            }
+        }
+    }
+
+    suspend fun recordSuccessfulSubmission(
+        snapshot: PuzzleState,
+        id: Long?,
+        receipt: SubmissionReceipt,
+    ) {
+        SubmissionReceiptStore.add(context, receipt)
+        submissionReceipts = SubmissionReceiptStore.list(context)
+        id?.let {
+            pendingAutoSubmissions.markSubmitted(
+                it, snapshot.readingCorrections.size,
+            )
+        }
+        val active = puzzle?.takeIf {
+            if (id != null) entryId == id else it.photo === snapshot.photo
+        }
+        if (active != null) {
+            puzzle = active.copy(submittedCorrectionCount = maxOf(
+                active.submittedCorrectionCount, snapshot.readingCorrections.size,
+            ), submissionReceipts = if (active.submissionReceipts.any { it.digest == receipt.digest }) {
+                active.submissionReceipts
+            } else active.submissionReceipts + receipt)
+        }
+        if (id != null) {
+            storage.withLock {
+                withContext(Dispatchers.IO) {
+                    history.markSubmitted(id, snapshot.readingCorrections.size, receipt)
+                }
+            }
+            entries = withContext(Dispatchers.IO) { history.list() }
+        }
+    }
+
+    suspend fun uploadSnapshot(snapshot: PuzzleState, id: Long?): Boolean {
+        val result = MisreadUploader.upload(snapshot)
+        val receipt = result.getOrNull()
+        if (receipt != null) {
+            recordSuccessfulSubmission(snapshot, id, receipt)
+            return true
+        }
+        id?.let {
+            pendingAutoSubmissions.discardThrough(it, snapshot.readingCorrections.size)
+        }
+        Toast.makeText(context,
+            "Could not submit the reading. Please try again when connected.",
+            Toast.LENGTH_LONG).show()
+        return false
+    }
+
+    fun isPendingAutoSubmission(state: PuzzleState): Boolean =
+        state.originalUncertainCells.isNotEmpty() &&
+            (state.submittedCorrectionCount < 0 ||
+                state.readingCorrections.size > state.submittedCorrectionCount)
+
+    fun enqueueAutoSubmission(id: Long?, state: PuzzleState) {
+        if (id != null && isPendingAutoSubmission(state)) {
+            pendingAutoSubmissions.offer(
+                id, state.photo, state.readingCorrections.size, state,
+            )
+        }
+    }
+
+    var drainQueuedAutoSubmission: () -> Unit = {}
+
+    fun submitAutomatically(
+        id: Long?,
+        expectedPhoto: android.graphics.Bitmap? = null,
+        queuedSnapshot: PuzzleState? = null,
+    ) {
+        if (!settings.autoShareWhenUncertain || !MisreadSubmission.available) return
+        val initial = queuedSnapshot ?: puzzle ?: return
+        if (expectedPhoto != null && initial.photo !== expectedPhoto) return
+        if (!isPendingAutoSubmission(initial)) return
+        if (submissionInFlight) {
+            enqueueAutoSubmission(id, initial)
+            return
+        }
+        submissionInFlight = true
+        scope.launch {
+            try {
+                while (settings.autoShareWhenUncertain) {
+                    val active = puzzle?.takeIf { entryId == id && it.photo === initial.photo }
+                    val snapshot = active ?: initial
+                    if (!isPendingAutoSubmission(snapshot)) break
+                    if (!uploadSnapshot(snapshot, id)) break
+                    if (active == null || puzzle?.photo !== initial.photo || entryId != id) break
+                }
+            } finally {
+                submissionInFlight = false
+                drainQueuedAutoSubmission()
+            }
+        }
+    }
+
+    drainQueuedAutoSubmission = drain@{
+        if (!settings.autoShareWhenUncertain) {
+            pendingAutoSubmissions.clear()
+            return@drain
+        }
+        while (true) {
+            val item = pendingAutoSubmissions.poll() ?: return@drain
+            val active = puzzle?.takeIf {
+                entryId == item.entryId && it.photo === item.photo
+            }
+            val snapshot = active ?: item.payload
+            if (!isPendingAutoSubmission(snapshot)) continue
+            submitAutomatically(item.entryId, snapshot.photo, snapshot)
+            return@drain
+        }
+    }
+
+    // Re-attempt an opted-in report that was left pending by an interrupted/offline send
+    // when its history entry is restored in a later app session.
+    LaunchedEffect(puzzle?.photo, entryId, settings.autoShareWhenUncertain) {
+        if (entryId != null && settings.autoShareWhenUncertain) submitAutomatically(entryId)
+    }
+
+    fun submitManually(snapshot: PuzzleState, shareAutomatically: Boolean) {
+        settings = settings.copy(autoShareWhenUncertain = shareAutomatically)
+        Settings.save(context, settings)
+        if (!shareAutomatically) pendingAutoSubmissions.clear()
+        if (!MisreadSubmission.available || submissionInFlight) return
+        val submissionId = entryId
+        submissionInFlight = true
+        scope.launch {
+            try {
+                if (uploadSnapshot(snapshot, submissionId)) {
+                    Toast.makeText(context, "Reading submitted. Thank you!", Toast.LENGTH_SHORT).show()
+                }
+            } finally {
+                submissionInFlight = false
+                drainQueuedAutoSubmission()
+            }
+        }
+    }
+
     fun editPuzzle(updated: PuzzleState) {
+        val previous = puzzle
         puzzle = updated
-        entryId?.let { history.update(it, updated.grid) }
+        if (settings.autoShareWhenUncertain &&
+            isPendingAutoSubmission(updated)) {
+            submitAutomatically(entryId)
+        }
+        if (previous != null && previous.grid == updated.grid &&
+                HistoryDetails.of(previous) == HistoryDetails.of(updated)) return
+        entryId?.let { id ->
+            entries = entries.map { entry ->
+                if (entry.id == id) entry.copy(grid = updated.grid, details = HistoryDetails.of(updated))
+                else entry
+            }
+            scope.launch {
+                val result = storage.withLock {
+                    withContext(Dispatchers.IO) {
+                        runCatching { history.update(id, updated) }
+                    }
+                }
+                if (result.isFailure) storageError = "Your changes are visible, but could not be saved. " +
+                    "Free some storage and try editing the puzzle again."
+            }
+        }
     }
 
     fun applySettings(updated: Settings) {
+        if (!updated.autoShareWhenUncertain) pendingAutoSubmissions.clear()
         settings = updated
         Settings.save(context, updated)
         // A puzzle already on screen should follow the setting rather than keep the old one.
@@ -166,19 +386,16 @@ private fun AppRoot() {
      * the app". A photograph that is actually taken replaces it.
      */
     fun takePhoto() {
+        puzzleGeneration++
         go(Screen.CAMERA)
     }
 
     /** The puzzle on screen is gone - deleted - so there is nothing to go back to. */
     fun discardPuzzle() {
+        puzzleGeneration++
         puzzle = null
         entryId = null
         nav = nav.reset(Screen.CAMERA)
-    }
-
-    if (!hasCamera) {
-        PermissionScreen { request.launch(Manifest.permission.CAMERA) }
-        return
     }
 
     // Back has to mean something everywhere it can. Every one of these was, at some
@@ -203,38 +420,51 @@ private fun AppRoot() {
         puzzle = puzzle?.close()
     }
     BackHandler(enabled = drawer.isOpen) { closeDrawer() }
+    BackHandler(enabled = storageBusy) { /* Finish the current save/load before navigating. */ }
 
     ModalNavigationDrawer(
         drawerState = drawer,
         // A settings or about screen is somewhere you went on purpose; sliding history in
         // over it would be answering a question nobody asked.
-        gesturesEnabled = drawer.isOpen || screen == Screen.CAMERA || screen == Screen.PUZZLE,
+        gesturesEnabled = !storageBusy &&
+            (drawer.isOpen || screen == Screen.CAMERA || screen == Screen.PUZZLE),
         // A reading page is somewhere you went on purpose; sliding history in over it
         // would be answering a question nobody asked.
         drawerContent = {
             HistoryDrawer(
-                history = history,
                 entries = entries,
                 currentId = entryId,
                 refused = refused,
                 onOpen = { entry ->
-                    history.loadPhoto(entry)?.let { photo ->
-                        entryId = entry.id
-                        puzzle = PuzzleState(
-                            photo = photo,
-                            grid = entry.grid,
-                            uncertainCells = emptySet(),
-                            framingNote = null,
-                            hintStyle = settings.hintStyle,
-                            routeStyle = settings.routeStyle,
-                        )
-                        go(Screen.PUZZLE)
+                    if (!storageBusy) {
+                        val generation = ++puzzleGeneration
+                        storageBusy = true
+                        scope.launch {
+                            val saved = storage.withLock {
+                                withContext(Dispatchers.IO) {
+                                    history.list().firstOrNull { it.id == entry.id }?.let { current ->
+                                        history.loadPhoto(current)?.let { current to it }
+                                    }
+                                }
+                            }
+                            if (saved != null && generation == puzzleGeneration) {
+                                entryId = saved.first.id
+                                puzzle = restore(saved.first, saved.second)
+                                go(Screen.PUZZLE)
+                            } else if (generation == puzzleGeneration) {
+                                storageError = "This puzzle's photo could not be opened."
+                            }
+                            storageBusy = false
+                        }
+                        closeDrawer()
                     }
-                    closeDrawer()
                 },
                 onDelete = { entry ->
-                    history.delete(entry)
-                    entries = history.list()
+                    scope.launch {
+                        entries = storage.withLock {
+                            withContext(Dispatchers.IO) { history.delete(entry); history.list() }
+                        }
+                    }
                     // The puzzle on screen has just been thrown away, so leave it.
                     if (entryId == entry.id) discardPuzzle()
                 },
@@ -243,13 +473,18 @@ private fun AppRoot() {
                     closeDrawer()
                 },
                 onDiscard = { scan ->
-                    Diagnostics.discard(scan)
-                    refused = Diagnostics.refused(context)
+                    scope.launch {
+                        refused = withContext(Dispatchers.IO) {
+                            Diagnostics.discard(scan)
+                            Diagnostics.refused(context)
+                        }
+                    }
                 },
                 onClose = ::closeDrawer,
             )
         },
     ) {
+        Box(Modifier.fillMaxSize()) {
         when {
             screen == Screen.STRATEGIES -> StrategiesScreen(
                 // PuzzleState already caches this; calling the solver here instead ran
@@ -267,11 +502,12 @@ private fun AppRoot() {
 
             screen == Screen.SETTINGS -> SettingsScreen(
                 settings = settings,
+                submissionReceipts = submissionReceipts,
                 onChange = ::applySettings,
                 onClose = ::leaveOverlay,
             )
 
-            screen == Screen.PUZZLE && puzzle != null -> PuzzleScreen(
+            screen == Screen.PUZZLE && puzzle != null -> PreparedPuzzleScreen(
                 state = puzzle!!,
                 onChange = ::editPuzzle,
                 onMenu = ::openDrawer,
@@ -279,19 +515,48 @@ private fun AppRoot() {
                 onStrategies = { go(Screen.STRATEGIES) },
                 onSettings = { go(Screen.SETTINGS) },
                 onAbout = { go(Screen.ABOUT) },
+                autoShareUncertain = settings.autoShareWhenUncertain,
+                submissionInFlight = submissionInFlight,
+                onSubmitReading = ::submitManually,
+            )
+
+            !hasCamera -> PermissionScreen(
+                onRequest = { request.launch(Manifest.permission.CAMERA) },
+                onSettings = {
+                    context.startActivity(Intent(AndroidSettings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                        Uri.parse("package:${context.packageName}")))
+                },
+                onMenu = ::openDrawer,
             )
 
             else -> CameraScreen(
-                autoCapture = settings.autoCapture,
+                autoCapture = settings.autoCapture && drawer.isClosed && !drawer.isAnimationRunning,
                 onRead = { state ->
+                    val generation = ++puzzleGeneration
                     // Saved as soon as it is read, so a puzzle is never lost by backing out.
-                    entryId = history.save(state.photo, state.grid).id
-                    entries = history.list()
+                    entryId = null
                     puzzle = state.copy(
                         hintStyle = settings.hintStyle,
                         routeStyle = settings.routeStyle,
                     )
                     go(Screen.PUZZLE)
+                    storageBusy = true
+                    val captured = puzzle!!
+                    scope.launch {
+                        val result = storage.withLock {
+                            withContext(Dispatchers.IO) { runCatching { history.save(captured) to history.list() } }
+                        }
+                        result.onSuccess { (entry, saved) ->
+                            if (generation == puzzleGeneration) entryId = entry.id
+                            entries = saved
+                            if (generation == puzzleGeneration && captured.originalUncertainCells.isNotEmpty()) {
+                                submitAutomatically(entry.id)
+                            }
+                        }
+                            .onFailure { storageError = "This puzzle could not be saved. " +
+                                "You can still use it now. Free some storage before taking another photo." }
+                        storageBusy = false
+                    }
                 },
                 onMenu = ::openDrawer,
                 onStrategies = { go(Screen.STRATEGIES) },
@@ -299,6 +564,16 @@ private fun AppRoot() {
                 onAbout = { go(Screen.ABOUT) },
             )
         }
+        if (storageBusy) Surface(Modifier.fillMaxSize()) {
+            Box(contentAlignment = Alignment.Center) { CircularProgressIndicator() }
+        }
+        }
+    }
+    storageError?.let { message ->
+        AlertDialog(onDismissRequest = { storageError = null }, title = { Text("Puzzle storage") },
+            text = { Text(message) }, confirmButton = {
+                TextButton(onClick = { storageError = null }) { Text("OK") }
+            })
     }
 }
 
@@ -311,7 +586,6 @@ private fun AppRoot() {
  */
 @Composable
 private fun HistoryDrawer(
-    history: History,
     entries: List<HistoryEntry>,
     currentId: Long?,
     refused: List<Diagnostics.Refused>,
@@ -323,7 +597,6 @@ private fun HistoryDrawer(
 ) {
     ModalDrawerSheet(modifier = Modifier.fillMaxWidth(0.84f)) {
         HistoryList(
-            history = history,
             entries = entries,
             currentId = currentId,
             onOpen = onOpen,
@@ -337,7 +610,7 @@ private fun HistoryDrawer(
 }
 
 @Composable
-private fun PermissionScreen(onRequest: () -> Unit) {
+private fun PermissionScreen(onRequest: () -> Unit, onSettings: () -> Unit, onMenu: () -> Unit) {
     Box(modifier = Modifier.fillMaxSize().safeDrawingPadding(), contentAlignment = Alignment.Center) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -350,6 +623,8 @@ private fun PermissionScreen(onRequest: () -> Unit) {
                 style = MaterialTheme.typography.bodyLarge,
             )
             Button(onClick = onRequest) { Text("Allow camera") }
+            TextButton(onClick = onSettings) { Text("Open app settings") }
+            TextButton(onClick = onMenu) { Text("Your saved puzzles") }
         }
     }
 }
