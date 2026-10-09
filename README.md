@@ -66,8 +66,11 @@ but no report-uploading build has been published. Its final behavior, device
 test, Play disclosures and matching public policy must be verified before
 distribution. The app has no account, ads or analytics.
 
-The repository is publicly viewable; it does not currently include a
-top-level license granting reuse rights.
+Sudoku Buddy's original source code and documentation are licensed under
+[Apache License 2.0](LICENSE). Freevia and Sudoku Buddy names and logos remain
+subject to their respective trademark rights; the license does not grant branding
+or endorsement rights. Third-party components retain their own licenses; see
+[the notices](NOTICE) and [bundled license texts](app/src/main/assets/licenses).
 
 ## For contributors
 

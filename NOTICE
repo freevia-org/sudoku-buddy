@@ -1,0 +1,20 @@
+Sudoku Buddy
+Copyright 2026 Sudoku Buddy contributors
+Published by Freevia: https://freevia.org/
+
+Original source code and documentation are licensed under Apache License 2.0.
+This license does not grant permission to use Freevia or Sudoku Buddy trademarks,
+names or logos to imply affiliation or endorsement. Third-party code, datasets
+and other third-party material retain their respective terms; this notice does
+not relicense them. Private user submissions are not licensed by this repository.
+
+Third-party license texts and attribution notices are distributed in the app at
+app/src/main/assets/licenses and can be read offline under About > Licenses.
+They include notices extracted from resolved Android runtime artifacts and
+licenses for OpenCV's bundled native components, Kotlin and the LLVM C++ runtime.
+See sources.json and runtime-dependencies.txt there for provenance.
+
+This software is based in part on the work of the Independent JPEG Group.
+The digit recogniser was trained using the MNIST handwritten-digit database by
+Yann LeCun, Corinna Cortes and Christopher J. C. Burges, along with synthetic
+digits. Dataset attribution does not imply endorsement.

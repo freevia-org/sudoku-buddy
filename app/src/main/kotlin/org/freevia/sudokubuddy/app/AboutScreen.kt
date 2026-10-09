@@ -11,6 +11,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
@@ -24,6 +28,11 @@ import org.freevia.sudokubuddy.BuildConfig
  */
 @Composable
 fun AboutScreen(onClose: () -> Unit) {
+    var licensesOpen by remember { mutableStateOf(false) }
+    if (licensesOpen) {
+        LicenseScreen(onClose = { licensesOpen = false })
+        return
+    }
     val uriHandler = LocalUriHandler.current
     Column(modifier = Modifier.fillMaxSize()) {
         AppBar(title = "About", subtitle = "Sudoku Buddy ${BuildConfig.VERSION_NAME}", onBack = onClose)
@@ -83,6 +92,9 @@ fun AboutScreen(onClose: () -> Unit) {
 
             item {
                 Section("Open source notices") {
+                    Text("Sudoku Buddy source code is licensed under Apache License 2.0. " +
+                        "Freevia branding is subject to separate trademark rights.")
+                    TextButton(onClick = { licensesOpen = true }) { Text("Licenses") }
                     Text(
                         "OpenCV - Apache License 2.0. Used for finding and straightening the " +
                             "grid.\n\n" +
