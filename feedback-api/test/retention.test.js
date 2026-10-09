@@ -1,8 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
+import { exportReportItem } from "../scripts/export-lifecycle.mjs";
 import {
   REPORT_TTL_SECONDS,
   ensureManagedWorkspace,
@@ -75,6 +77,40 @@ test("export startup purges expired report folders before preparing the workspac
     assert.equal(await prepareExportWorkspace(workspace, deadline), path.resolve(workspace));
     await assert.rejects(readFile(path.join(reportDir, "report.zip")));
     await assert.rejects(readFile(path.join(reportDir, "review", "derived", "labels.csv")));
+  });
+});
+
+test("export retries preserve existing receipts and finish newer reports after a partial run", async () => {
+  await withWorkspace(async (workspace) => {
+    const now = 1_800_000_000;
+    await ensureManagedWorkspace(workspace, now);
+    const zipA = new Uint8Array([0x50, 0x4b, 0x03, 0x04, 0x41]);
+    const zipB = new Uint8Array([0x50, 0x4b, 0x03, 0x04, 0x42]);
+    const receiptFor = (bytes) => createHash("sha256").update(bytes).digest("hex");
+    const itemA = { name: `reports/${receiptFor(zipA)}.zip`, expiration: now + REPORT_TTL_SECONDS };
+    const itemB = { name: `reports/${receiptFor(zipB)}.zip`, expiration: now + REPORT_TTL_SECONDS };
+    const fetchCounts = new Map();
+    const fetch = async (item) => {
+      fetchCounts.set(item.name, (fetchCounts.get(item.name) ?? 0) + 1);
+      if (item === itemB && fetchCounts.get(item.name) === 1) throw new Error("temporary API failure");
+      return item === itemA ? zipA : zipB;
+    };
+
+    assert.equal(await exportReportItem(workspace, itemA, fetch, now), true);
+    const aDir = path.join(workspace, receiptFor(zipA));
+    const aDeadline = JSON.parse(await readFile(path.join(aDir, "retention.json"), "utf8")).deleteByEpochSeconds;
+    await writeFile(path.join(aDir, "reviewer-note.txt"), "keep this working copy");
+
+    assert.equal(await exportReportItem(workspace, itemA, fetch, now), false);
+    await assert.rejects(exportReportItem(workspace, itemB, fetch, now), /temporary API failure/);
+    assert.equal(await exportReportItem(workspace, itemA, fetch, now), false);
+    assert.equal(await exportReportItem(workspace, itemB, fetch, now), true);
+
+    assert.equal(JSON.parse(await readFile(path.join(aDir, "retention.json"), "utf8")).deleteByEpochSeconds, aDeadline);
+    assert.equal(await readFile(path.join(aDir, "reviewer-note.txt"), "utf8"), "keep this working copy");
+    assert.deepEqual(new Uint8Array(await readFile(path.join(workspace, receiptFor(zipB), "report.zip"))), zipB);
+    assert.equal(fetchCounts.get(itemA.name), 1);
+    assert.equal(fetchCounts.get(itemB.name), 2);
   });
 });
 

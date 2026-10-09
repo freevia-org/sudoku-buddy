@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-import { createHash } from "node:crypto";
-import { mkdir, open, rm, writeFile } from "node:fs/promises";
-import path from "node:path";
-import { prepareExportWorkspace, retentionRecord } from "./retention.mjs";
+import { mkdir } from "node:fs/promises";
+import { exportReportItem } from "./export-lifecycle.mjs";
+import { prepareExportWorkspace } from "./retention.mjs";
 
 const api = "https://api.cloudflare.com/client/v4";
 const accountId = process.env.CF_ACCOUNT_ID;
@@ -37,38 +36,11 @@ do {
   if (!listing.success || !Array.isArray(listing.result)) throw new Error("Cloudflare returned an invalid key listing.");
 
   for (const item of listing.result) {
-    if (typeof item.name !== "string" || !/^reports\/[a-f0-9]{64}\.zip$/.test(item.name)) continue;
-    const receipt = item.name.slice("reports/".length, -".zip".length);
-    const retention = retentionRecord(receipt, item.expiration);
-    if (Date.parse(retention.deleteBy) <= Date.now()) {
-      console.log(`Skipped expired report ${receipt}; no local copy was created.`);
-      continue;
-    }
-    const valueUrl = `${prefix}/values/${encodeURIComponent(item.name)}`;
-    const bytes = new Uint8Array(await (await cloudflare(valueUrl)).arrayBuffer());
-    const digest = createHash("sha256").update(bytes).digest("hex");
-    if (digest !== receipt || bytes.length < 4 || bytes[0] !== 0x50 || bytes[1] !== 0x4b) {
-      throw new Error(`Stored report ${receipt} failed integrity or ZIP signature validation.`);
-    }
-    const reportDirectory = path.join(outputDir, receipt);
-    await mkdir(reportDirectory, { mode: 0o700 });
-    try {
-      await writeFile(path.join(reportDirectory, "retention.json"), `${JSON.stringify(retention, null, 2)}\n`, {
-        flag: "wx",
-        mode: 0o600,
-      });
-      const handle = await open(path.join(reportDirectory, "report.zip"), "wx", 0o600);
-      try {
-        await handle.writeFile(bytes);
-      } finally {
-        await handle.close();
-      }
-    } catch (error) {
-      await rm(reportDirectory, { recursive: true, force: true });
-      throw error;
-    }
-    count += 1;
-    console.log(`Exported ${receipt}; delete all local copies by ${retention.deleteBy}.`);
+    const created = await exportReportItem(outputDir, item, async (report) => {
+      const valueUrl = `${prefix}/values/${encodeURIComponent(report.name)}`;
+      return new Uint8Array(await (await cloudflare(valueUrl)).arrayBuffer());
+    });
+    if (created) count += 1;
   }
   cursor = listing.result_info?.cursor || undefined;
 } while (cursor);
