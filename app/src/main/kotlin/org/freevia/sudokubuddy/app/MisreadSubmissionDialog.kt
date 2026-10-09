@@ -39,7 +39,7 @@ internal fun MisreadSubmissionDialog(
             Column(Modifier.heightIn(max = 280.dp).verticalScroll(rememberScrollState())) {
                 Text(
                     "Thank you for helping us improve the reading algorithm. Your report " +
-                        "shares the puzzle photo and reading results, which we will use to " +
+                        "shares the puzzle photo and reading results, which we’ll use to " +
                         "perfect the reading algorithm."
                 )
                 if (!MisreadSubmission.available) {
@@ -61,8 +61,16 @@ internal fun MisreadSubmissionDialog(
                     Checkbox(checked = shareAutomatically, onCheckedChange = {
                         shareAutomatically = it
                     })
-                    Text("Share automatically when uncertain", style = MaterialTheme.typography.bodySmall)
+                    Text(
+                        "Also auto-share future uncertain puzzle photos, readings and corrections",
+                        style = MaterialTheme.typography.bodySmall,
+                    )
                 }
+                Text(
+                    "Sent privately to Freevia; kept up to 90 days. Turn off anytime in Settings.",
+                    modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp),
+                    style = MaterialTheme.typography.bodySmall,
+                )
                 Button(
                     enabled = MisreadSubmission.available,
                     onClick = { onSubmit(shareAutomatically) },
