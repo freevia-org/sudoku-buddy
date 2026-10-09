@@ -34,16 +34,18 @@ export function retentionRecord(receipt, expiration, nowSeconds = Math.floor(Dat
   };
 }
 
-export function isValidRetentionRecord(record, receipt) {
+export function isValidRetentionRecord(record, receipt, nowSeconds = Math.floor(Date.now() / 1000)) {
   const uploadedAt = Date.parse(record?.uploadedAt) / 1000;
   return record?.receipt === receipt &&
     Number.isSafeInteger(record?.deleteByEpochSeconds) &&
     record.deleteByEpochSeconds === Date.parse(record.deleteBy) / 1000 &&
     Number.isFinite(uploadedAt) &&
-    record.deleteByEpochSeconds - uploadedAt === REPORT_TTL_SECONDS;
+    record.deleteByEpochSeconds - uploadedAt === REPORT_TTL_SECONDS &&
+    uploadedAt <= nowSeconds + 60 &&
+    record.deleteByEpochSeconds <= nowSeconds + REPORT_TTL_SECONDS + 60;
 }
 
-export async function ensureManagedWorkspace(workspace) {
+export async function ensureManagedWorkspace(workspace, nowSeconds = Math.floor(Date.now() / 1000)) {
   const root = path.resolve(workspace);
   await mkdir(root, { recursive: true, mode: 0o700 });
   const marker = path.join(root, WORKSPACE_MARKER);
@@ -77,7 +79,7 @@ export async function ensureManagedWorkspace(workspace) {
     } catch {
       throw new Error(`Report workspace ${entry.name} has no readable retention record. Delete that report directory immediately.`);
     }
-    if (!isValidRetentionRecord(record, entry.name)) {
+    if (!isValidRetentionRecord(record, entry.name, nowSeconds)) {
       throw new Error(`Report workspace ${entry.name} has an invalid retention record. Delete that report directory immediately.`);
     }
   }
@@ -86,7 +88,7 @@ export async function ensureManagedWorkspace(workspace) {
 
 export async function prepareExportWorkspace(workspace, nowSeconds = Math.floor(Date.now() / 1000)) {
   await purgeExpiredCopies(workspace, nowSeconds);
-  return ensureManagedWorkspace(workspace);
+  return ensureManagedWorkspace(workspace, nowSeconds);
 }
 
 export async function removeReceiptCopies(workspace, receipt) {
@@ -149,7 +151,7 @@ export async function purgeExpiredCopies(workspace, nowSeconds = Math.floor(Date
       removed.push(entry.name);
       continue;
     }
-    if (!isValidRetentionRecord(record, entry.name)) {
+    if (!isValidRetentionRecord(record, entry.name, nowSeconds)) {
       await rm(directory, { recursive: true, force: false });
       removed.push(entry.name);
       continue;

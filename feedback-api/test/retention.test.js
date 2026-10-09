@@ -6,6 +6,7 @@ import path from "node:path";
 import {
   REPORT_TTL_SECONDS,
   ensureManagedWorkspace,
+  isValidRetentionRecord,
   prepareExportWorkspace,
   purgeExpiredCopies,
   removeReceiptCopies,
@@ -31,6 +32,14 @@ test("requires a valid KV expiry and caps the local deadline at the 90-day expir
   const record = retentionRecord(receiptA, expiration, now);
   assert.equal(Date.parse(record.uploadedAt) / 1000, now);
   assert.equal(record.deleteByEpochSeconds, expiration);
+  assert.equal(isValidRetentionRecord(record, receiptA, now), true);
+  const futureUpload = retentionRecord(receiptA, now + REPORT_TTL_SECONDS + 3600, now + 3600);
+  assert.equal(isValidRetentionRecord(futureUpload, receiptA, now), false);
+  const extendedDeadline = {
+    ...record,
+    uploadedAt: new Date((now - 3600) * 1000).toISOString(),
+  };
+  assert.equal(isValidRetentionRecord(extendedDeadline, receiptA, now), false);
   assert.throws(() => retentionRecord(receiptA, undefined, now), /no valid KV expiry/);
   assert.throws(() => retentionRecord(receiptA, now + REPORT_TTL_SECONDS + 61, now), /90-day policy/);
 });
