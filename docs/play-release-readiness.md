@@ -27,6 +27,14 @@ TalkBack and 16 KB runtime qualification; publish the matching privacy policy; u
 listing and Data safety form; and complete Play's internal test and delivery checks. The
 Console upload/review action remains separate from this preparation.
 
+Report-copy retention is not yet operationally verified. The Worker assigns each KV revision
+a 90-day expiry, and the private review tooling now records that deadline and can remove all
+copies under one receipt folder. Before accepting real reports, Freevia must designate the
+private, non-synced review workspace, install and verify its daily expiry task, and inventory
+and remove legacy exports or report-derived corpus items. Until those controls are evidenced,
+the 90-day limit is a required policy rather than a verified operational guarantee; do not
+enable report intake for general release.
+
 The current status and remaining gates below supersede the historical review snapshots
 later in this document. The older 343-test run and debug-signed version-code-1 artifact
 are historical evidence only. This document does not approve distribution.

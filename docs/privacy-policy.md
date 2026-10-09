@@ -11,14 +11,11 @@ Questions about this policy or the app's handling of data can be sent to
 Sudoku Buddy has no account, ads, routine usage analytics, or ad tracking. Camera processing
 and puzzle history stay on your device. The app sends a puzzle report to Freevia only when
 you submit it or enable optional automatic sharing for uncertain readings. A report contains
-the straightened puzzle photo, original recognition results, uncertainty markers, and any corrections recorded
-for that reading. Reports are held for private review to improve recognition; they are not
-posted publicly or automatically added to the training corpus.
-
-**Release gate:** the intake endpoint and app integration are implemented, but the app has
-not yet completed device-level upload verification, and this text has not been published.
-Verify a final signed build against the live service and confirm these disclosures before
-submitting the Play release.
+the straightened puzzle photo, original recognition results, uncertainty markers, and any
+corrections recorded for that reading. Reports are held for private review to improve
+recognition; they are not posted publicly, retained in a training corpus, or used to train a
+model. Review findings may inform code changes, but reports and report-derived examples are
+deleted within the retention period below.
 
 ## What stays on your device
 
@@ -44,7 +41,7 @@ delete any of them from the puzzle history at any time.
 
 Scanning, recognition, solving and tutoring run on the device. Report submission requires
 an internet connection and the Android `INTERNET` permission. Other app functions remain
-available offline. The final signed build must be checked before publication.
+available offline. Only report submission needs a network connection.
 
 Opening a website link or choosing a receiving app in the share sheet hands that action
 to another app. That app may use the internet under its own permissions and policies.
@@ -86,24 +83,21 @@ grid geometry, and the sequence of corrections with their times. This can show h
 marks or other details visible on the page. Do not submit a page containing information you
 do not want Freevia to review.
 
-Reports are intended for Freevia's private recognition analysis and improvement work. They
-are not public posts and are not automatically added to a public corpus or used to train a
-model without review. Each upload, including a later corrected revision, is a separate
-content-addressed report in a private Cloudflare Workers KV queue. Each revision expires
-within 90 days of its upload. The app keeps the receipt for each revision in Settings, even
-if you delete the puzzle from history. Open **Submission receipts** there and copy the
-deletion request to ask Freevia to remove the listed reports earlier; email
-[info@freevia.org](mailto:info@freevia.org). Deleting a puzzle from History removes its local
-copy but does not delete reports already sent. Freevia reviews reports privately and may use
-reviewed examples to improve recognition. Cloudflare processes the network request under its
-own service terms. The Worker does not store submitter identity or source IP in the report
-record, but this does not mean Cloudflare itself processes no network/security telemetry.
-
-The intake endpoint and Android client are implemented, but device-level upload verification
-is still pending. Before publishing this revision with a Play release, Freevia must verify the
-final payload, consent behavior, Data safety classification and deletion-request process in
-the signed app. Until a successful upload is confirmed, the app must not claim that a report
-was submitted.
+Reports are intended for Freevia's private recognition analysis. They are not public posts,
+retained in a training corpus, or used to train a model. Each upload, including a later
+corrected revision, is a separate content-addressed report in a private Cloudflare Workers
+KV queue. Freevia deletes the uploaded revision and all Freevia-controlled photo, export,
+review and working copies no later than 90 days after that revision's upload. Reviewers keep
+all report material and derived working files together in a designated private workspace;
+they do not copy report material into the repository, a persistent corpus, model-training
+data, or another storage system. The app keeps the receipt for each revision in Settings,
+even if you delete the puzzle from History. Open **Submission receipts** there and copy the
+deletion request to ask Freevia to remove the matching KV report and all associated private
+review/export copies earlier; email [info@freevia.org](mailto:info@freevia.org). Deleting a
+puzzle from History removes its local copy but does not delete reports already sent. Cloudflare
+processes the network request under its own service terms. The Worker does not store submitter
+identity or source IP in the report record, but this does not mean Cloudflare itself processes
+no network/security telemetry.
 
 ### GitHub feedback drafts
 

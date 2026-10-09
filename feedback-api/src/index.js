@@ -1,6 +1,8 @@
+import { REPORT_TTL_SECONDS } from "./retention.js";
+
 const MiB = 1024 * 1024;
 export const MAX_REPORT_BYTES = 20 * MiB;
-export const REPORT_TTL_SECONDS = 90 * 24 * 60 * 60;
+export { REPORT_TTL_SECONDS };
 const REPORT_PREFIX = "reports/";
 
 function json(status, body, headers = {}) {

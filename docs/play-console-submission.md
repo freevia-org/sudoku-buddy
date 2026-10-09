@@ -135,8 +135,9 @@ enter the Families programme and reassesses the listing against those policies.
   with their times. Manual submission is user initiated. The optional “Share automatically
   when uncertain” setting first explains the photo and results that will be sent; enabling
   it sends the currently open uncertain reading and later sends future uncertain readings
-  and corrections without a separate prompt. Reports are stored in a private Cloudflare KV queue for up to 90 days per revision;
-  each revision has a receipt that can be copied from Settings for an early deletion request.
+  and corrections without a separate prompt. Each revision has a receipt. Its KV object and
+  all Freevia-controlled export/review copies are deleted within 90 days of upload; a request
+  from Settings receipts removes the matching KV object and private working copies earlier.
   The endpoint is deployed. Complete physical-device upload, receipt, correction-update and
   deletion-request verification for the exact signed Play candidate before rollout.
 - The app has no account-creation mechanism.
