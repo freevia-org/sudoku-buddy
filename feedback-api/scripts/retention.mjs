@@ -34,6 +34,15 @@ export function retentionRecord(receipt, expiration, nowSeconds = Math.floor(Dat
   };
 }
 
+export function isValidRetentionRecord(record, receipt) {
+  const uploadedAt = Date.parse(record?.uploadedAt) / 1000;
+  return record?.receipt === receipt &&
+    Number.isSafeInteger(record?.deleteByEpochSeconds) &&
+    record.deleteByEpochSeconds === Date.parse(record.deleteBy) / 1000 &&
+    Number.isFinite(uploadedAt) &&
+    record.deleteByEpochSeconds - uploadedAt === REPORT_TTL_SECONDS;
+}
+
 export async function ensureManagedWorkspace(workspace) {
   const root = path.resolve(workspace);
   await mkdir(root, { recursive: true, mode: 0o700 });
@@ -68,11 +77,16 @@ export async function ensureManagedWorkspace(workspace) {
     } catch {
       throw new Error(`Report workspace ${entry.name} has no readable retention record. Delete that report directory immediately.`);
     }
-    if (record.receipt !== entry.name || !Number.isSafeInteger(record.deleteByEpochSeconds)) {
+    if (!isValidRetentionRecord(record, entry.name)) {
       throw new Error(`Report workspace ${entry.name} has an invalid retention record. Delete that report directory immediately.`);
     }
   }
   return root;
+}
+
+export async function prepareExportWorkspace(workspace, nowSeconds = Math.floor(Date.now() / 1000)) {
+  await purgeExpiredCopies(workspace, nowSeconds);
+  return ensureManagedWorkspace(workspace);
 }
 
 export async function removeReceiptCopies(workspace, receipt) {
@@ -135,13 +149,7 @@ export async function purgeExpiredCopies(workspace, nowSeconds = Math.floor(Date
       removed.push(entry.name);
       continue;
     }
-    const uploadedAt = Date.parse(record.uploadedAt) / 1000;
-    const validRecord = record.receipt === entry.name &&
-      Number.isSafeInteger(record.deleteByEpochSeconds) &&
-      record.deleteByEpochSeconds === Date.parse(record.deleteBy) / 1000 &&
-      Number.isFinite(uploadedAt) &&
-      record.deleteByEpochSeconds - uploadedAt === REPORT_TTL_SECONDS;
-    if (!validRecord) {
+    if (!isValidRetentionRecord(record, entry.name)) {
       await rm(directory, { recursive: true, force: false });
       removed.push(entry.name);
       continue;

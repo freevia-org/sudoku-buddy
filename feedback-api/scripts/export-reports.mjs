@@ -2,7 +2,7 @@
 import { createHash } from "node:crypto";
 import { mkdir, open, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { ensureManagedWorkspace, retentionRecord } from "./retention.mjs";
+import { prepareExportWorkspace, retentionRecord } from "./retention.mjs";
 
 const api = "https://api.cloudflare.com/client/v4";
 const accountId = process.env.CF_ACCOUNT_ID;
@@ -24,7 +24,7 @@ async function cloudflare(url) {
 }
 
 const prefix = `${api}/accounts/${encodeURIComponent(accountId)}/storage/kv/namespaces/${encodeURIComponent(namespaceId)}`;
-const outputDir = await ensureManagedWorkspace(outputDirArgument);
+const outputDir = await prepareExportWorkspace(outputDirArgument);
 await mkdir(outputDir, { recursive: true, mode: 0o700 });
 let cursor;
 let count = 0;

@@ -6,6 +6,7 @@ import path from "node:path";
 import {
   REPORT_TTL_SECONDS,
   ensureManagedWorkspace,
+  prepareExportWorkspace,
   purgeExpiredCopies,
   removeReceiptCopies,
   retentionRecord,
@@ -47,6 +48,23 @@ test("purges an expired report folder and every nested reviewed working copy", a
 
     assert.deepEqual(await purgeExpiredCopies(workspace, deadline - 1), []);
     assert.deepEqual(await purgeExpiredCopies(workspace, deadline), [receiptA]);
+    await assert.rejects(readFile(path.join(reportDir, "review", "derived", "labels.csv")));
+  });
+});
+
+test("export startup purges expired report folders before preparing the workspace", async () => {
+  await withWorkspace(async (workspace) => {
+    await ensureManagedWorkspace(workspace);
+    const reportDir = path.join(workspace, receiptA);
+    const deadline = 1_800_000_000;
+    const record = retentionRecord(receiptA, deadline, deadline - REPORT_TTL_SECONDS);
+    await mkdir(path.join(reportDir, "review", "derived"), { recursive: true });
+    await writeFile(path.join(reportDir, "retention.json"), JSON.stringify(record));
+    await writeFile(path.join(reportDir, "report.zip"), "expired report");
+    await writeFile(path.join(reportDir, "review", "derived", "labels.csv"), "expired working copy");
+
+    assert.equal(await prepareExportWorkspace(workspace, deadline), path.resolve(workspace));
+    await assert.rejects(readFile(path.join(reportDir, "report.zip")));
     await assert.rejects(readFile(path.join(reportDir, "review", "derived", "labels.csv")));
   });
 });
