@@ -136,8 +136,9 @@ enter the Families programme and reassesses the listing against those policies.
 - A report includes the straightened puzzle photograph, original/current grids, per-cell
   recognition results and confidence, uncertainty markers, geometry, and user corrections
   with their times. Manual submission is user initiated. The optional “Share automatically
-  when uncertain” setting sends uncertain readings and later corrections without a separate
-  prompt. Reports are stored in a private Cloudflare KV queue for up to 90 days per revision;
+  when uncertain” setting first explains the photo and results that will be sent; enabling
+  it sends the currently open uncertain reading and later sends future uncertain readings
+  and corrections without a separate prompt. Reports are stored in a private Cloudflare KV queue for up to 90 days per revision;
   each revision has a receipt that can be copied from Settings for an early deletion request.
   The endpoint is deployed and synthetic upload/deduplication was tested, but app-to-service
   upload on a device still needs verification.

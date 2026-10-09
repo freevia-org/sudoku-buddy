@@ -60,8 +60,24 @@ class History(context: Context) {
     @Synchronized
     fun update(id: Long, state: PuzzleState) {
         val text = File(directory, "$id.txt")
-        if (text.isFile) atomicWrite(text) {
-            it.write(HistoryFormat.encode(state.grid, HistoryDetails.of(state)).toByteArray(Charsets.UTF_8))
+        if (!text.isFile) return
+        val saved = runCatching { text.readText() }.getOrNull()
+        val savedGrid = saved?.let { runCatching { HistoryFormat.decode(it) }.getOrNull() }
+        val savedDetails = saved?.let { runCatching { HistoryFormat.details(it) }.getOrNull() }
+        val incomingDetails = HistoryDetails.of(state)
+        val keepSaved = savedDetails != null &&
+            savedDetails.corrections.size > incomingDetails.corrections.size
+        val selectedGrid = if (keepSaved) savedGrid ?: state.grid else state.grid
+        val selectedDetails = (if (keepSaved) savedDetails!! else incomingDetails).copy(
+            submittedCorrectionCount = maxOf(
+                incomingDetails.submittedCorrectionCount,
+                savedDetails?.submittedCorrectionCount ?: -1,
+            ),
+            receipts = (incomingDetails.receipts + (savedDetails?.receipts ?: emptyList()))
+                .distinctBy { it.digest },
+        )
+        atomicWrite(text) {
+            it.write(HistoryFormat.encode(selectedGrid, selectedDetails).toByteArray(Charsets.UTF_8))
         }
     }
 
@@ -74,7 +90,6 @@ class History(context: Context) {
         val saved = text.readText()
         val grid = HistoryFormat.decode(saved)
         val details = HistoryFormat.details(saved)
-        if (correctionCount > details.corrections.size) return
         val marked = details.copy(
             submittedCorrectionCount = maxOf(details.submittedCorrectionCount, correctionCount),
             receipts = if (details.receipts.any { it.digest == receipt.digest }) details.receipts

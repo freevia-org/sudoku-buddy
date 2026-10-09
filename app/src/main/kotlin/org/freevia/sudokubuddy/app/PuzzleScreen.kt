@@ -85,6 +85,7 @@ fun PreparedPuzzleScreen(
     onSettings: () -> Unit,
     onAbout: () -> Unit,
     autoShareUncertain: Boolean,
+    submissionInFlight: Boolean,
     onSubmitReading: (PuzzleState, Boolean) -> Unit,
 ) {
     var prepared by remember { mutableStateOf<PuzzleState?>(null) }
@@ -104,7 +105,8 @@ fun PreparedPuzzleScreen(
     Box(Modifier.fillMaxSize()) {
         if (ready != null && ready.photo === state.photo) {
             PuzzleScreen(ready, { if (ready === state) onChange(it) }, onMenu, onRetake,
-                onStrategies, onSettings, onAbout, autoShareUncertain, onSubmitReading,
+                onStrategies, onSettings, onAbout, autoShareUncertain, submissionInFlight,
+                onSubmitReading,
                 showCellEditor = ready === state)
         }
         if (ready !== state) {
@@ -143,6 +145,7 @@ fun PuzzleScreen(
     onSettings: () -> Unit,
     onAbout: () -> Unit,
     autoShareUncertain: Boolean,
+    submissionInFlight: Boolean,
     onSubmitReading: (PuzzleState, Boolean) -> Unit,
     showCellEditor: Boolean = true,
 ) {
@@ -185,12 +188,12 @@ fun PuzzleScreen(
                 ) {
                     PhotoPane(state, onChange, photoSide, measurer)
                     ControlsPane(state, onChange, { submitOpen = true }, { receiptsOpen = true },
-                        Modifier.weight(1f).fillMaxHeight())
+                        submissionInFlight, Modifier.weight(1f).fillMaxHeight())
                 }
             } else {
                 PhotoPane(state, onChange, photoSide, measurer, Modifier.fillMaxWidth())
                 ControlsPane(state, onChange, { submitOpen = true }, { receiptsOpen = true },
-                    Modifier.weight(1f).fillMaxWidth())
+                    submissionInFlight, Modifier.weight(1f).fillMaxWidth())
             }
         }
     }
@@ -357,6 +360,7 @@ private fun ControlsPane(
     onChange: (PuzzleState) -> Unit,
     onSubmit: () -> Unit,
     onReceipts: () -> Unit,
+    submissionInFlight: Boolean,
     modifier: Modifier = Modifier,
 ) {
     BoxWithConstraints(modifier = modifier) {
@@ -369,6 +373,7 @@ private fun ControlsPane(
             onChange,
             onSubmit,
             onReceipts,
+            submissionInFlight,
             modifier = Modifier
                 .fillMaxSize()
                 .padding(bottom = if (route != null) peek else 0.dp),
@@ -383,6 +388,7 @@ private fun Controls(
     onChange: (PuzzleState) -> Unit,
     onSubmit: () -> Unit,
     onReceipts: () -> Unit,
+    submissionInFlight: Boolean,
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
@@ -400,7 +406,7 @@ private fun Controls(
             verticalArrangement = Arrangement.spacedBy(10.dp),
         ) {
             if (state.openQuestions.isNotEmpty() || state.originalUncertainCells.isNotEmpty()) {
-                ReadingBanner(state, onChange, onSubmit, onReceipts)
+                ReadingBanner(state, onChange, onSubmit, onReceipts, submissionInFlight)
             }
 
             // A lesson says all of this in the sheet instead. The sheet is only as tall as

@@ -73,8 +73,9 @@ support-sharing description above still applies to what you send to Freevia.
 
 You can submit an uncertain reading from the puzzle screen. Submitting is optional and
 requires your action. If you turn on **Share automatically when uncertain**, the app sends
-reports for uncertain readings and later corrections without asking you each time. You can
-turn this setting off in Settings.
+the currently open uncertain reading immediately, then sends future uncertain readings and
+later corrections without asking you each time. Settings explains what is sent before the
+option is enabled. You can turn this setting off in Settings.
 
 A report includes the straightened square puzzle photograph, app version, original and
 current digit grids, each cell's recognition classification and confidence, uncertain cells,

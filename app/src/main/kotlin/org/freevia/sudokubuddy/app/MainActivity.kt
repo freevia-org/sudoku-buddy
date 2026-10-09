@@ -118,6 +118,7 @@ private fun AppRoot() {
     var submissionReceipts by remember { mutableStateOf(SubmissionReceiptStore.list(context)) }
     var puzzle by remember { mutableStateOf<PuzzleState?>(null) }
     var submissionInFlight by remember { mutableStateOf(false) }
+    val pendingAutoSubmissions = remember { AutoSubmissionQueue<PuzzleState>() }
     var entries by remember { mutableStateOf(emptyList<HistoryEntry>()) }
     // Photographs the app refused. Looked up with the puzzles, since the drawer shows both.
     var refused by remember { mutableStateOf(emptyList<Diagnostics.Refused>()) }
@@ -204,7 +205,14 @@ private fun AppRoot() {
     ) {
         SubmissionReceiptStore.add(context, receipt)
         submissionReceipts = SubmissionReceiptStore.list(context)
-        val active = puzzle?.takeIf { it.photo === snapshot.photo }
+        id?.let {
+            pendingAutoSubmissions.markSubmitted(
+                it, snapshot.readingCorrections.size,
+            )
+        }
+        val active = puzzle?.takeIf {
+            if (id != null) entryId == id else it.photo === snapshot.photo
+        }
         if (active != null) {
             puzzle = active.copy(submittedCorrectionCount = maxOf(
                 active.submittedCorrectionCount, snapshot.readingCorrections.size,
@@ -229,30 +237,74 @@ private fun AppRoot() {
             recordSuccessfulSubmission(snapshot, id, receipt)
             return true
         }
+        id?.let {
+            pendingAutoSubmissions.discardThrough(it, snapshot.readingCorrections.size)
+        }
         Toast.makeText(context,
             "Could not submit the reading. Please try again when connected.",
             Toast.LENGTH_LONG).show()
         return false
     }
 
-    fun submitAutomatically(id: Long?, expectedPhoto: android.graphics.Bitmap? = null) {
-        if (!settings.autoShareWhenUncertain || !MisreadSubmission.available || submissionInFlight) return
-        val photo = puzzle?.photo ?: return
-        if (expectedPhoto != null && photo !== expectedPhoto) return
+    fun isPendingAutoSubmission(state: PuzzleState): Boolean =
+        state.originalUncertainCells.isNotEmpty() &&
+            (state.submittedCorrectionCount < 0 ||
+                state.readingCorrections.size > state.submittedCorrectionCount)
+
+    fun enqueueAutoSubmission(id: Long?, state: PuzzleState) {
+        if (id != null && isPendingAutoSubmission(state)) {
+            pendingAutoSubmissions.offer(
+                id, state.photo, state.readingCorrections.size, state,
+            )
+        }
+    }
+
+    var drainQueuedAutoSubmission: () -> Unit = {}
+
+    fun submitAutomatically(
+        id: Long?,
+        expectedPhoto: android.graphics.Bitmap? = null,
+        queuedSnapshot: PuzzleState? = null,
+    ) {
+        if (!settings.autoShareWhenUncertain || !MisreadSubmission.available) return
+        val initial = queuedSnapshot ?: puzzle ?: return
+        if (expectedPhoto != null && initial.photo !== expectedPhoto) return
+        if (!isPendingAutoSubmission(initial)) return
+        if (submissionInFlight) {
+            enqueueAutoSubmission(id, initial)
+            return
+        }
         submissionInFlight = true
         scope.launch {
             try {
                 while (settings.autoShareWhenUncertain) {
-                    if (puzzle?.photo !== photo || (id != null && entryId != id)) break
-                    val snapshot = puzzle?.takeIf { it.photo === photo } ?: break
-                    val pending = snapshot.originalUncertainCells.isNotEmpty() &&
-                        (snapshot.submittedCorrectionCount < 0 ||
-                            snapshot.readingCorrections.size > snapshot.submittedCorrectionCount)
-                    if (!pending || !uploadSnapshot(snapshot, id)) break
+                    val active = puzzle?.takeIf { entryId == id && it.photo === initial.photo }
+                    val snapshot = active ?: initial
+                    if (!isPendingAutoSubmission(snapshot)) break
+                    if (!uploadSnapshot(snapshot, id)) break
+                    if (active == null || puzzle?.photo !== initial.photo || entryId != id) break
                 }
             } finally {
                 submissionInFlight = false
+                drainQueuedAutoSubmission()
             }
+        }
+    }
+
+    drainQueuedAutoSubmission = drain@{
+        if (!settings.autoShareWhenUncertain) {
+            pendingAutoSubmissions.clear()
+            return@drain
+        }
+        while (true) {
+            val item = pendingAutoSubmissions.poll() ?: return@drain
+            val active = puzzle?.takeIf {
+                entryId == item.entryId && it.photo === item.photo
+            }
+            val snapshot = active ?: item.payload
+            if (!isPendingAutoSubmission(snapshot)) continue
+            submitAutomatically(item.entryId, snapshot.photo, snapshot)
+            return@drain
         }
     }
 
@@ -265,6 +317,7 @@ private fun AppRoot() {
     fun submitManually(snapshot: PuzzleState, shareAutomatically: Boolean) {
         settings = settings.copy(autoShareWhenUncertain = shareAutomatically)
         Settings.save(context, settings)
+        if (!shareAutomatically) pendingAutoSubmissions.clear()
         if (!MisreadSubmission.available || submissionInFlight) return
         val submissionId = entryId
         submissionInFlight = true
@@ -275,8 +328,8 @@ private fun AppRoot() {
                 }
             } finally {
                 submissionInFlight = false
+                drainQueuedAutoSubmission()
             }
-            if (shareAutomatically) submitAutomatically(submissionId, snapshot.photo)
         }
     }
 
@@ -284,9 +337,7 @@ private fun AppRoot() {
         val previous = puzzle
         puzzle = updated
         if (settings.autoShareWhenUncertain &&
-            updated.originalUncertainCells.isNotEmpty() &&
-            (updated.submittedCorrectionCount < 0 ||
-                updated.readingCorrections.size > updated.submittedCorrectionCount)) {
+            isPendingAutoSubmission(updated)) {
             submitAutomatically(entryId)
         }
         if (previous != null && previous.grid == updated.grid &&
@@ -298,10 +349,8 @@ private fun AppRoot() {
             }
             scope.launch {
                 val result = storage.withLock {
-                    val latest = puzzle?.takeIf { entryId == id }
-                    if (latest == null) Result.success(Unit)
-                    else withContext(Dispatchers.IO) {
-                        runCatching { history.update(id, latest) }
+                    withContext(Dispatchers.IO) {
+                        runCatching { history.update(id, updated) }
                     }
                 }
                 if (result.isFailure) storageError = "Your changes are visible, but could not be saved. " +
@@ -311,7 +360,7 @@ private fun AppRoot() {
     }
 
     fun applySettings(updated: Settings) {
-        val turnedOnAutoShare = !settings.autoShareWhenUncertain && updated.autoShareWhenUncertain
+        if (!updated.autoShareWhenUncertain) pendingAutoSubmissions.clear()
         settings = updated
         Settings.save(context, updated)
         // A puzzle already on screen should follow the setting rather than keep the old one.
@@ -319,7 +368,6 @@ private fun AppRoot() {
             hintStyle = updated.hintStyle,
             routeStyle = updated.routeStyle,
         )
-        if (turnedOnAutoShare) submitAutomatically(entryId)
     }
 
     fun go(target: Screen) {
@@ -468,6 +516,7 @@ private fun AppRoot() {
                 onSettings = { go(Screen.SETTINGS) },
                 onAbout = { go(Screen.ABOUT) },
                 autoShareUncertain = settings.autoShareWhenUncertain,
+                submissionInFlight = submissionInFlight,
                 onSubmitReading = ::submitManually,
             )
 

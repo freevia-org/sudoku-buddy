@@ -36,9 +36,14 @@ internal fun MisreadSubmissionDialog(
         onDismissRequest = onDismiss,
         title = { Text("Submit uncertain reading for analysis") },
         text = {
-            Column {
-                Text("Thank you for helping us improve recognition. Your report shares the " +
-                    "puzzle photo and reading results, which we will use to improve the reading algorithm.")
+            Column(Modifier.heightIn(max = 280.dp).verticalScroll(rememberScrollState())) {
+                Text(
+                    "Thank you for helping us improve recognition. Your report shares the " +
+                        "puzzle photo, reading results and corrections with Freevia for private " +
+                        "analysis; reports are kept for up to 90 days, and automatic sharing " +
+                        "sends future uncertain readings and later corrections until you turn " +
+                        "it off in Settings."
+                )
                 if (!MisreadSubmission.available) {
                     Text(
                         "Submissions are not available in this build.",

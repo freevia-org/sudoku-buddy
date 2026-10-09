@@ -65,7 +65,8 @@ uninstalling the app removes its app-specific data.
 
 The release-preparation build can submit an uncertain reading directly to Freevia for
 private analysis. The report includes the straightened puzzle photo, recognition results and
-corrections. Automatic sharing is optional and off by default. This build has not completed
+corrections. Automatic sharing is optional and off by default; enabling it sends the open
+uncertain reading if there is one, then future uncertain readings and corrections. This build has not completed
 device qualification, so the feature is not yet part of the public release. See the draft
 privacy policy for its data handling; the public privacy page still describes the current
 released build.

@@ -5,10 +5,15 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.selection.toggleable
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
@@ -38,6 +43,7 @@ fun SettingsScreen(
     onClose: () -> Unit,
 ) {
     var receiptsOpen by remember { mutableStateOf(false) }
+    var confirmAutoShare by remember { mutableStateOf(false) }
     Column(modifier = Modifier.fillMaxSize()) {
         AppBar(title = "Settings", onBack = onClose)
         LazyColumn(
@@ -95,10 +101,13 @@ fun SettingsScreen(
             item {
                 SettingRow(
                     title = "Share automatically when uncertain",
-                    detail = "Send uncertain readings and later corrections for analysis. " +
-                        "You can turn this off any time.",
+                    detail = "Automatically send the square puzzle photo and reading results " +
+                        "to Freevia for analysis. Off by default.",
                     checked = settings.autoShareWhenUncertain,
-                    onChange = { onChange(settings.copy(autoShareWhenUncertain = it)) },
+                    onChange = {
+                        if (it) confirmAutoShare = true
+                        else onChange(settings.copy(autoShareWhenUncertain = false))
+                    },
                 )
             }
 
@@ -110,6 +119,33 @@ fun SettingsScreen(
                 }
             }
         }
+    }
+    if (confirmAutoShare) {
+        AlertDialog(
+            onDismissRequest = { confirmAutoShare = false },
+            title = { Text("Share uncertain readings automatically?") },
+            text = {
+                Column(Modifier.heightIn(max = 320.dp).verticalScroll(rememberScrollState())) {
+                    Text(
+                        "Future uncertain readings will send the straightened puzzle photo, " +
+                            "recognition results and corrections to Freevia for private analysis. " +
+                            "If an uncertain puzzle is open when you turn this on, it will be sent " +
+                            "immediately too. Reports may be kept for up to 90 days, and later " +
+                            "corrections are shared while this setting is on. You can turn it off " +
+                            "in Settings."
+                    )
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    confirmAutoShare = false
+                    onChange(settings.copy(autoShareWhenUncertain = true))
+                }) { Text("Turn on") }
+            },
+            dismissButton = {
+                TextButton(onClick = { confirmAutoShare = false }) { Text("Cancel") }
+            },
+        )
     }
     if (receiptsOpen) SubmissionReceiptsDialog(submissionReceipts) { receiptsOpen = false }
 }

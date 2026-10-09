@@ -119,6 +119,7 @@ internal fun ReadingBanner(
     onChange: (PuzzleState) -> Unit,
     onSubmit: () -> Unit,
     onReceipts: () -> Unit,
+    submissionInFlight: Boolean = false,
 ) {
     Column(
         modifier = Modifier
@@ -151,10 +152,11 @@ internal fun ReadingBanner(
             val hasUpdate = state.readingCorrections.size > state.submittedCorrectionCount
             FilledTonalButton(
                 onClick = onSubmit,
-                enabled = !submitted || hasUpdate,
+                enabled = !submissionInFlight && (!submitted || hasUpdate),
                 modifier = Modifier.weight(1f),
             ) {
                 Text(when {
+                    submissionInFlight -> "Submitting…"
                     !submitted -> "Submit reading"
                     hasUpdate -> "Submit update"
                     else -> "Submitted"
