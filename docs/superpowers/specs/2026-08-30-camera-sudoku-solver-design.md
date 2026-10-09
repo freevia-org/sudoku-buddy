@@ -36,7 +36,7 @@ tapping the cell.
 | Cell geometry | Detected interior grid lines | Also from the corpus: paper curls and bows, so dividing the rectified square into ninths crops digits near the edges. |
 | Error correction | The solver validates the read | A published sudoku has exactly one solution, so a read that is unsolvable or ambiguous is provably wrong. This replaces the cloud safety net. |
 | Photo acceptance | Judged on extraction certainty, not on image metrics | A confidently wrong grid is the worst failure this app has: the user cannot detect it until the puzzle is ruined. But image metrics reject usable photos and pass unusable ones, so the gate asks whether the pipeline actually produced a grid it can stand behind. |
-| Training and data | Entirely local | Corpus photographs and model training stay on the development machine; nothing is uploaded and the corpus is not committed. |
+| Training and data | Local by default, with optional private reports | The development corpus and model training stay local. Users may explicitly submit a puzzle photo and recognition/correction data to Freevia's private review queue; reports are reviewed before any example is added to the corpus. |
 | Hint style | User setting | Both a plain reveal and a technique explanation are built; the user picks in settings. |
 | Working surface | The rectified photo | The captured photo, straightened. Overlay geometry becomes trivial and it looks better than a tilted original. |
 

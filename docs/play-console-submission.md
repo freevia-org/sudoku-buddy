@@ -1,8 +1,8 @@
 # Sudoku Buddy — Play Console submission sheet
 
 Current status (10 October 2026): app creation, listing, privacy URL, declarations and IARC
-rating were previously complete per the task handoff. The planned opt-in report intake changes
-network access and data handling. Reconcile the saved listing, privacy policy and Data safety
+rating were previously complete per the task handoff. The release-preparation branch implements
+opt-in report intake, which changes network access and data handling. Reconcile the saved listing, privacy policy and Data safety
 answers against the final build and verified service before any AAB/APK upload or testing rollout; follow
 [the final-build checklist](play-release-readiness.md), including its explicit authorization
 gate and final privacy-text reconciliation. The answers below remain reference copy.
