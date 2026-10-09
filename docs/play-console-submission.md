@@ -78,7 +78,7 @@ Private by design:
 - Camera processing happens on your phone
 - No account
 - No ads
-- No analytics
+- No routine usage analytics or ad tracking
 - Puzzle reports go to Freevia only when submitted, or when the user has enabled optional automatic sharing for uncertain readings
 
 You can choose to submit a puzzle photo with its recognition results and corrections for
@@ -108,7 +108,8 @@ replacement game.
   > All functionality is available without an account or login. Grant camera permission,
   > point the camera at a printed Sudoku. After scanning, every recognized digit can be
   > corrected before the user checks handwritten answers, requests a hint or views the
-  > solution. Processing and puzzle history stay on the device.
+  > solution. Recognition and puzzle history stay on the device. Users can optionally send
+  > an uncertain-reading photo and its recognition results to Freevia for private analysis.
 
 ### Target audience and content
 
@@ -123,12 +124,8 @@ enter the Families programme and reassesses the listing against those policies.
 
 ### Data safety
 
-- **Previously recorded answer to collection/sharing:** No, based on an earlier offline-only
-  build. That answer is stale for the release-preparation build and must not be reused
-  until the current Google Play Data safety definitions have been applied to the shipped app.
-- The release-preparation build sends an opt-in report to Freevia over HTTPS. Verify the
-  final merged manifest and endpoint before release; the previous candidate declared no `INTERNET`
-  permission and made no network requests.
+- The current release candidate has `INTERNET` permission and sends an opt-in report to
+  Freevia over HTTPS. Do not reuse the earlier offline-only candidate's declarations.
 - Camera preview frames are processed on the device and are not saved. Captured puzzle
   photographs, recognized digits, corrections, history and settings are stored on the
   device, except for material the user deliberately shares. Backup and device-transfer
@@ -140,24 +137,23 @@ enter the Families programme and reassesses the listing against those policies.
   it sends the currently open uncertain reading and later sends future uncertain readings
   and corrections without a separate prompt. Reports are stored in a private Cloudflare KV queue for up to 90 days per revision;
   each revision has a receipt that can be copied from Settings for an early deletion request.
-  The endpoint is deployed and synthetic upload/deduplication was tested, but app-to-service
-  upload on a device still needs verification.
+  The endpoint is deployed. Complete physical-device upload, receipt, correction-update and
+  deletion-request verification for the exact signed Play candidate before rollout.
 - The app has no account-creation mechanism.
 - Privacy policy: `https://freevia.org/sudoku-buddy/privacy`.
 
-Google defines collection for this form as transmitting data off the user's device.
-The earlier user-initiated third-party share-sheet flow does not describe this first-party
-intake to Freevia. The Data safety answer must be reassessed using
-[Google's current guidance](https://support.google.com/googleplay/android-developer/answer/10787469)
-and the service's real handling before submission. At minimum, assess whether the uploaded
-whole-grid image is the **Photos** data type; classify OCR readings, correction history and
-any diagnostics from the final ZIP rather than guessing. For each applicable type, record the
-actual purpose, whether collection is optional, and whether Cloudflare acts only as Freevia's
-service provider. Verify HTTPS for all report data and the email-based deletion request path.
-Google's guidance says optional can include opt-in/opt-out collection and that a service
-provider processing on the developer's behalf may qualify for a sharing exception. Confirm
-those conditions for this service in Play Console. This document does not assert the final
-form answers. Update the live privacy policy before enabling client uploads.
+Google defines collection for this form as transmitting data off the user's device. The
+current report flow is first-party collection by Freevia; it is separate from optional
+third-party share-sheet actions. For this release candidate, declare the report photo under
+**Photos**, recognition readings and corrections under **Other user-generated content**,
+automatic/manual report activity under **App activity / Other actions**, and submitted
+diagnostic fields under **App info and performance / Diagnostics**. Mark collection
+optional, non-ephemeral, and for **Analytics** (improving recognition); declare no sharing
+only while Cloudflare acts solely as Freevia's service provider under Google's current
+definition. Verify these answers against the exact uploaded payload and service behavior.
+The app has no account, routine usage analytics, crash reporting or ad tracking; report
+analysis is limited to reports the user submits or has elected to submit automatically.
+Complete physical-device verification and publish the matching privacy policy before rollout.
 
 ### Content rating questionnaire
 

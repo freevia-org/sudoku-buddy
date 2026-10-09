@@ -60,11 +60,12 @@ example you do not want to post publicly.
 [Privacy policy](https://freevia.org/sudoku-buddy/privacy) ·
 [Local-data deletion](https://freevia.org/sudoku-buddy/privacy#uninstalling)
 
-The public policy describes the earlier offline-only build. A separate
-release-preparation branch contains optional private puzzle-report submission,
-but no report-uploading build has been published. Its final behavior, device
-test, Play disclosures and matching public policy must be verified before
-distribution. The app has no account, ads or analytics.
+Camera recognition and puzzle history stay on the device. Users can submit an
+uncertain-reading report to Freevia for private recognition analysis; reports
+include the puzzle photo, recognition results and corrections. Automatic sharing
+is optional and off by default. The app has no account, ads, routine usage
+analytics or ad tracking. See the [privacy policy](https://freevia.org/sudoku-buddy/privacy)
+for report handling and deletion details.
 
 Sudoku Buddy's original source code and documentation are licensed under
 [Apache License 2.0](LICENSE). Freevia and Sudoku Buddy names and logos remain

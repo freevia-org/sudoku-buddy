@@ -46,8 +46,8 @@
           a time and read-only. It grants nothing by itself: the receiving app is given
           permission to the exact files named in the share, and to nothing else.
 
-          Sharing needs no internet permission of its own - this app still has none, and
-          whatever the user picks does the sending.
+          This provider only grants read-only access to selected scan files. Report
+          submission uses the app's separate HTTPS client and INTERNET permission.
         -->
         <provider
             android:name="androidx.core.content.FileProvider"
