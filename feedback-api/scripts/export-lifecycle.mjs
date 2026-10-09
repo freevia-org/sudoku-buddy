@@ -47,10 +47,15 @@ export async function exportReportItem(outputDir, item, fetchBytes, nowSeconds =
       // reviewer files and finish the original receipt using its existing deadline.
     }
   } else {
-    await writeFile(path.join(reportDirectory, "retention.json"), `${JSON.stringify(expected, null, 2)}\n`, {
-      flag: "wx",
-      mode: 0o600,
-    });
+    try {
+      await writeFile(path.join(reportDirectory, "retention.json"), `${JSON.stringify(expected, null, 2)}\n`, {
+        flag: "wx",
+        mode: 0o600,
+      });
+    } catch (error) {
+      await rm(reportDirectory, { recursive: true, force: true });
+      throw error;
+    }
   }
 
   try {
