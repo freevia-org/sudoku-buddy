@@ -25,6 +25,16 @@ class MinimalFixTest {
         assertEquals(emptySet(), MinimalFix.find(Puzzles.EASY))
     }
 
+    @Test
+    fun `handwritten guesses do not change the repair of printed digits`() {
+        val broken = Puzzles.EASY.with(2, Cell.given(5))
+        val guesses = Grid.of(broken.cells.mapIndexed { index, cell ->
+            if (cell.isFilled) cell else Cell.guess(index % 9 + 1)
+        })
+        assertEquals(MinimalFix.find(broken), MinimalFix.find(guesses))
+        assertTrue(assertNotNull(MinimalFix.find(guesses)).all { broken[it].isFilled })
+    }
+
     /**
      * One digit changed to something that contradicts, which is what a misread looks like.
      *

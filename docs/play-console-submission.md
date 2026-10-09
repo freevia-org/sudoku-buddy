@@ -1,7 +1,14 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Prepared 8 September 2026. Use this as the copy-and-paste checklist after the Freevia
-organization account is verified.
+Current status (10 October 2026): app creation, listing, privacy URL, declarations and IARC
+rating were previously complete per the task handoff. The planned opt-in report intake changes
+network access and data handling. Reconcile the saved listing, privacy policy and Data safety
+answers against the final build and verified service before any AAB/APK upload or testing rollout; follow
+[the final-build checklist](play-release-readiness.md), including its explicit authorization
+gate and final privacy-text reconciliation. The answers below remain reference copy.
+
+Originally prepared 8 September 2026; product copy reviewed against the local source on
+8 October 2026. Local edits do not update the saved Play Console listing or public website.
 
 ## Create app
 
@@ -14,9 +21,15 @@ organization account is verified.
 | Support email | `info@freevia.org` |
 | Package name | `org.freevia.sudokubuddy` |
 
-Accept the Developer Program Policies, US export laws, and Play App Signing terms.
-Enrol in Play App Signing when the first bundle is uploaded. The existing release key is
-the upload key.
+Account setup is already saved. On 8 October, the user-authorized existing-key import
+was completed through the Console's Java-keystore/PEPK encrypted-key flow. The downloaded
+App signing key certificate and registered Upload key certificate both match the existing
+Firebase/local SHA-256:
+`A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`.
+No AAB/APK, tester changes or rollout accompanied that operation. Actual Play-delivered
+installation, certificate and upgrade/data retention remain untested; follow
+`play-release-readiness.md`. Do not repeat enrollment or accept agreements as a routine
+preparation step.
 
 ## Main store listing
 
@@ -27,7 +40,7 @@ the upload key.
 | Full description | Use the text under **Full description** below |
 | App icon | `docs/store/icon-512.png` |
 | Feature graphic | `docs/store/feature-graphic-1024x500.png` |
-| Phone screenshots | Five files listed in the release package's `screenshots/README.md` |
+| Phone screenshots | Five files listed in the release package's `store/screenshots/README.md` |
 | App category | Education |
 | Tags | Sudoku; Puzzle; Education, where those tags are offered |
 | Support email | `info@freevia.org` |
@@ -38,27 +51,39 @@ The feature graphic was created with generative image tooling. If Play Console s
 asset-level AI-content checkbox, enable the AI label for that graphic. The app icon is
 derived from the app's existing artwork and real in-app screenshots are not AI-generated.
 
-### Full description
+### Proposed full description — not yet saved to Play Console
 
-Sudoku Buddy is a camera companion for Sudoku puzzles in newspapers, books and magazines.
-It is not another Sudoku game: it helps you check and understand the puzzle already on paper.
+Sudoku Buddy is a camera companion for standard 9x9 Sudoku puzzles in newspapers, books
+and magazines. It helps you check and understand the puzzle already on paper.
 
-Point your camera at a printed grid. Sudoku Buddy reads the printed clues and your handwritten
-progress, then lets you correct any digit it misread.
+Point your camera at a printed grid. Sudoku Buddy reads the printed clues and handwritten
+answers, then lets you correct a digit or mark it as printed or handwritten. Review the
+reading first: lighting, pencil marks, erasures and handwriting can affect recognition.
 
-Use Check to see which handwritten answers are right and which need another look. When you are
-stuck, ask for a hint. The app highlights the relevant cells, names the human solving technique
-and explains the next deduction. You choose how much help to reveal.
+When the printed clues define one solution, use Check to see which handwritten answers
+are right and which need another look. With explained hints, reveal a region, a technique,
+a square and then its digit at your own pace.
 
-You can also view the solution and reopen scanned puzzles from your on-device history.
+Explore the Tutor's full route or browse examples of a technique. Inspect candidate changes
+with Before and After, revisit earlier reasoning, or use Try it yourself on supported steps.
+Some difficult positions need solver-assisted help; the app labels it when a detailed proof
+is unavailable.
+
+Use Solve to view a solution. If the clues allow several answers, browse a limited set of
+them and inspect their differences. If no solution exists, the app can suggest printed
+digits to review. Reopen saved scans and corrections from your on-device history.
 
 Private by design:
+
 - Camera processing happens on your phone
 - No account
 - No ads
 - No analytics
-- No internet permission
-- No puzzle photographs or progress uploaded to Freevia
+- Puzzle reports go to Freevia only when submitted, or when the user has enabled optional automatic sharing for uncertain readings
+
+You can choose to submit a puzzle photo with its recognition results and corrections for
+private analysis to improve reading. Automatic sharing is optional. Scanning, checking and
+tutoring work offline; submitting a report requires an internet connection.
 
 Sudoku Buddy is for people who enjoy solving on paper and want a second pair of eyes, not a
 replacement game.
@@ -98,18 +123,40 @@ enter the Families programme and reassesses the listing against those policies.
 
 ### Data safety
 
-- **Does the app collect or share any required user data types?** No.
-- The app transmits no data off the device and declares no `INTERNET` permission.
-- Camera frames, captured puzzle photographs, recognized digits, corrections, history,
-  and settings are processed and stored only on the device.
-- Sharing a selected diagnostic photograph happens only when the user invokes Android's
-  share sheet. The receiving app is chosen by the user; Sudoku Buddy does not transmit it.
+- **Previously recorded answer to collection/sharing:** No, based on an earlier offline-only
+  build. That answer is stale for the release-preparation build and must not be reused
+  until the current Google Play Data safety definitions have been applied to the shipped app.
+- The release-preparation build sends an opt-in report to Freevia over HTTPS. Verify the
+  final merged manifest and endpoint before release; the previous candidate declared no `INTERNET`
+  permission and made no network requests.
+- Camera preview frames are processed on the device and are not saved. Captured puzzle
+  photographs, recognized digits, corrections, history and settings are stored on the
+  device, except for material the user deliberately shares. Backup and device-transfer
+  rules exclude the app's data.
+- A report includes the straightened puzzle photograph, original/current grids, per-cell
+  recognition results and confidence, uncertainty markers, geometry, and user corrections
+  with their times. Manual submission is user initiated. The optional “Share automatically
+  when uncertain” setting sends uncertain readings and later corrections without a separate
+  prompt. Reports are stored in a private Cloudflare KV queue for up to 90 days per revision;
+  each revision has a receipt that can be copied from Settings for an early deletion request.
+  The endpoint is deployed and synthetic upload/deduplication was tested, but app-to-service
+  upload on a device still needs verification.
 - The app has no account-creation mechanism.
 - Privacy policy: `https://freevia.org/sudoku-buddy/privacy`.
 
 Google defines collection for this form as transmitting data off the user's device.
-On-device-only access does not count as collection. Recheck this declaration if an SDK,
-analytics, crash reporting, advertising, cloud backup, or any network feature is added.
+The earlier user-initiated third-party share-sheet flow does not describe this first-party
+intake to Freevia. The Data safety answer must be reassessed using
+[Google's current guidance](https://support.google.com/googleplay/android-developer/answer/10787469)
+and the service's real handling before submission. At minimum, assess whether the uploaded
+whole-grid image is the **Photos** data type; classify OCR readings, correction history and
+any diagnostics from the final ZIP rather than guessing. For each applicable type, record the
+actual purpose, whether collection is optional, and whether Cloudflare acts only as Freevia's
+service provider. Verify HTTPS for all report data and the email-based deletion request path.
+Google's guidance says optional can include opt-in/opt-out collection and that a service
+provider processing on the developer's behalf may qualify for a sharing exception. Confirm
+those conditions for this service in Play Console. This document does not assert the final
+form answers. Update the live privacy policy before enabling client uploads.
 
 ### Content rating questionnaire
 
@@ -149,7 +196,8 @@ not this checklist, assigns the final regional ratings.
 ## Countries and availability
 
 - Make the app available worldwide except where Google Play or applicable law prevents it.
-- No device exclusion is needed beyond the manifest requirement for a camera.
+- The app requires Android 8.0 or later and uses a rear camera. Review the final bundle's
+  supported devices and native architectures in Play Console against the tested devices.
 - The app is free and has no in-app products or subscriptions.
 
 ## Testing and release
@@ -162,10 +210,18 @@ not this checklist, assigns the final regional ratings.
    organization account.
 5. Use `docs/play-release-notes-en-US.txt` for the first release notes.
 
-Do not upload a locally debug-signed bundle. Use the signed GitHub Actions artifact and
-confirm its application ID is `org.freevia.sudokubuddy` before upload.
+Use the verified signed candidate recorded in `play-release-readiness.md`, checking its
+SHA-256 and application ID `org.freevia.sudokubuddy` before upload. Candidate 1.0.0 (120)
+was built locally with the stable release key; the prepared GitHub candidate workflow has
+not been run. Upload and rollout require explicit authorization for the build and track.
+The current test phone already has 120; an actual upgrade test needs an agreed same-key
+lower-version baseline or a future higher-code Play build. Preserve existing app data;
+do not uninstall or clear storage to bypass a signing mismatch.
 
-## Items still requiring a person or Play Console
+## Account and policy details to confirm in Play Console
+
+The original registration checklist below is retained for reference. Earlier handoffs
+report account/app setup complete; do not treat these as newly discovered missing items.
 
 - D-U-N-S number and organization verification
 - The organization's main telephone number, matching public or D&B records
@@ -173,3 +229,5 @@ confirm its application ID is `org.freevia.sudokubuddy` before upload.
 - A private contact telephone number for Google
 - One-time developer registration payment
 - Final answers to any new declarations Play Console adds after this checklist was prepared
+- Reconcile the updated listing and public privacy policy with the final app, including
+  voluntary support reports, their retention and deletion handling, and the Data safety answer

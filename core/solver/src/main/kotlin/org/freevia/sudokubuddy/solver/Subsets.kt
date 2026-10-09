@@ -36,7 +36,7 @@ class NakedSubset(private val size: Int) : Technique {
         val out = mutableListOf<Deduction>()
         for (unit in Coordinates.units) {
             val open = state.openCells(unit).filter { state.candidatesAt(it).size in 2..size }
-            if (open.size <= size) continue
+            if (open.size < size) continue
 
             for (group in combinations(open, size)) {
                 val shared = state.candidateUnion(group)

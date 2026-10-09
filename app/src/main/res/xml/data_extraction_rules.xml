@@ -2,12 +2,9 @@
 <!--
   Nothing leaves the phone, including by being backed up off it.
 
-  android:allowBackup="false" already stops both of these, but it is deprecated from
-  Android 12 and the replacement is per-path rather than all-or-nothing - so saying it
-  once here keeps the behaviour explicit rather than inherited from a deprecated
-  attribute. It matches what docs/privacy-policy.md promises: the puzzles, the
-  photographs and the settings are on this phone and nowhere else, and uninstalling takes
-  them with it.
+  Some Android 12+ manufacturers allow device transfer despite allowBackup="false".
+  Exclude each storage domain explicitly, including externally stored refused photos,
+  to keep the behavior consistent with docs/privacy-policy.md.
 
   Device transfer is excluded as well as cloud backup. Carrying a puzzle history to a new
   phone would be a kindness, but it is a different promise from the one already made, and
@@ -16,9 +13,25 @@
 -->
 <data-extraction-rules>
     <cloud-backup>
-        <exclude domain="root" />
+        <exclude domain="root" path="." />
+        <exclude domain="file" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="external" path="." />
+        <exclude domain="device_root" path="." />
+        <exclude domain="device_file" path="." />
+        <exclude domain="device_database" path="." />
+        <exclude domain="device_sharedpref" path="." />
     </cloud-backup>
     <device-transfer>
-        <exclude domain="root" />
+        <exclude domain="root" path="." />
+        <exclude domain="file" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="external" path="." />
+        <exclude domain="device_root" path="." />
+        <exclude domain="device_file" path="." />
+        <exclude domain="device_database" path="." />
+        <exclude domain="device_sharedpref" path="." />
     </device-transfer>
 </data-extraction-rules>

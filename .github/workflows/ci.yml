@@ -5,6 +5,15 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      distribute_firebase:
+        description: Explicitly distribute this main-branch build to Firebase testers
+        type: boolean
+        default: false
+        required: false
+
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -20,6 +29,9 @@ jobs:
       - uses: android-actions/setup-android@v3
 
       - uses: gradle/actions/setup-gradle@v4
+
+      - name: Test release safeguards
+        run: python3 -m unittest discover -s tools/release -p 'test_*.py' -v
 
       # Corpus photographs are not in the repository, so every test that needs one
       # skips here. That is expected: see docs/superpowers/plans.
@@ -84,7 +96,7 @@ jobs:
   distribute:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.distribute_firebase == true
     steps:
       - uses: actions/checkout@v4
 
@@ -97,8 +109,7 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
-      # The app id is committed, so the only thing CI is missing is a credential.
-      # Either kind works; FIREBASE_TOKEN is far easier to obtain.
+      # The app id and credentials are supplied explicitly for this registration.
       - name: Check a Firebase credential is configured
         id: firebase
         env:
@@ -154,8 +165,9 @@ jobs:
           SIGNING_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
-          printf '%s' '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > "$RUNNER_TEMP/firebase-key.json"
+          trap 'rm -f "$RUNNER_TEMP/firebase-key.json"' EXIT
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/firebase-key.json"
           export FIREBASE_CREDENTIALS_FILE="$RUNNER_TEMP/firebase-key.json"
           ./gradlew :app:assembleRelease appDistributionUploadRelease --console=plain
-          rm -f "$RUNNER_TEMP/firebase-key.json"

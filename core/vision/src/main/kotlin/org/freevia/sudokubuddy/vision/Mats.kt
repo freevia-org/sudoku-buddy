@@ -18,3 +18,10 @@ internal fun Mat.toGrayImage(): GrayImage {
     get(0, 0, buffer)
     return GrayImage(cols(), rows(), buffer)
 }
+
+/** Native pixel buffers are not reclaimed promptly by the JVM's heap collector. */
+internal inline fun <M : Mat, T> M.releasing(block: (M) -> T): T = try {
+    block(this)
+} finally {
+    release()
+}

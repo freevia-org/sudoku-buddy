@@ -18,8 +18,11 @@ android {
         targetSdk = 36
         // CI supplies a build number so every distributed build is distinct;
         // locally it stays 1.
-        versionCode = (System.getenv("BUILD_NUMBER") ?: "1").toInt()
+        versionCode = (System.getenv("BUILD_NUMBER") ?: "1").toIntOrNull()
+            ?.takeIf { it in 1..2_100_000_000 }
+            ?: error("BUILD_NUMBER must be a positive Play version code, at most 2100000000")
         versionName = "1.0.0"
+        buildConfigField("String", "MISREAD_SUBMISSION_ENDPOINT", "\"\"")
     }
 
     // OpenCV ships native libraries for four ABIs. Only arm64 matters for real phones,
@@ -72,10 +75,17 @@ android {
         debug {
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-debug"
+            val endpoint = providers.gradleProperty("misreadSubmissionEndpoint")
+                .orElse("").get().replace("\\", "\\\\").replace("\"", "\\\"")
+            buildConfigField("String", "MISREAD_SUBMISSION_ENDPOINT", "\"$endpoint\"")
         }
 
         release {
             isMinifyEnabled = false
+            val endpoint = providers.gradleProperty("misreadSubmissionEndpoint")
+                .orElse("https://sudoku-buddy-feedback.antoni-ivanov.workers.dev/v1/reports")
+                .get().replace("\\", "\\\\").replace("\"", "\\\"")
+            buildConfigField("String", "MISREAD_SUBMISSION_ENDPOINT", "\"$endpoint\"")
             signingConfig = signingConfigs.findByName("release")
                 ?: signingConfigs.getByName("debug")
         }
@@ -189,6 +199,12 @@ tasks.register("checkReleaseSigning") {
                 "and lose their puzzles and photographs. The signing secrets are missing. " +
                 "See docs/signing.md."
         }
+        val missing = listOf(
+            "SIGNING_KEYSTORE_PASSWORD", "SIGNING_KEY_ALIAS", "SIGNING_KEY_PASSWORD",
+        ).filter { System.getenv(it).isNullOrBlank() }
+        check(missing.isEmpty()) {
+            "Missing release signing configuration: ${missing.joinToString()}. See docs/signing.md."
+        }
     }
 }
 
@@ -248,10 +264,13 @@ tasks.register("composeReleaseNotes") {
     description = "Prepend the version and the last change to the notes sent to testers"
     val source = releaseNotes
     val target = composedNotes
-    val version = "0.1." + (System.getenv("BUILD_NUMBER") ?: "0")
+    val version = "${android.defaultConfig.versionName} (${android.defaultConfig.versionCode})"
     val root = rootProject.layout.projectDirectory.asFile
     inputs.file(source)
     outputs.file(target)
+    // The git subject can change even when the handwritten notes do not. Regenerate
+    // this tiny file for each distribution so its build identity never goes stale.
+    outputs.upToDateWhen { false }
     doLast {
         val subject = runCatching {
             val process = ProcessBuilder("git", "log", "-1", "--pretty=%s")
@@ -267,7 +286,8 @@ tasks.register("composeReleaseNotes") {
         file.writeText(
             buildString {
                 appendLine("Sudoku Buddy $version")
-                if (!subject.isNullOrBlank()) appendLine(subject)
+                // Keep the generated header inside checkReleaseNotes' 200-character allowance.
+                if (!subject.isNullOrBlank()) appendLine(subject.take(150))
                 appendLine()
                 append(source.asFile.readText())
             }
@@ -288,10 +308,10 @@ tasks.matching { it.name.startsWith("appDistributionUpload") }
 tasks.register<Exec>("distributeLocal") {
     group = "publishing"
     description = "Build a release APK and distribute it via the signed-in Firebase CLI"
-    dependsOn("assembleRelease")
+    dependsOn("assembleRelease", "checkReleaseSigning", "checkNativeAlignment", "composeReleaseNotes")
 
     val apk = layout.buildDirectory.file("outputs/apk/release/app-arm64-v8a-release.apk")
-    val notes = releaseNotes
+    val notes = composedNotes
     dependsOn("checkReleaseNotes")
 
     // Windows resolves `firebase` to a .cmd shim, which needs a shell to launch.
@@ -311,7 +331,7 @@ tasks.register<Exec>("distributeLocal") {
             firebase + listOf(
             "appdistribution:distribute", apk.get().asFile.absolutePath,
             "--app", appId,
-            "--release-notes-file", notes.asFile.absolutePath,
+            "--release-notes-file", notes.get().asFile.absolutePath,
             "--groups", "testers",
             "--project", "sudoku-buddy-freevia",
             )

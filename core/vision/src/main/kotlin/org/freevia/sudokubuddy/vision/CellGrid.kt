@@ -77,30 +77,35 @@ internal object CellGrid {
 
     /** Candidate grids the cells suggest, at one working size. */
     fun detect(image: GrayImage, workingEdge: Double): List<Quad> =
-        lattices(image, workingEdge).map { it.quad() }
+        lattices(image, workingEdge).let { lattices ->
+            try { lattices.map { it.quad() } } finally { lattices.forEach { it.close() } }
+        }
 
     /** The same, with each cell's place still attached, for measuring what went on. */
     internal fun lattices(image: GrayImage, workingEdge: Double): List<Lattice> {
+        require(workingEdge.isFinite() && workingEdge > 0.0) { "working edge must be positive and finite" }
         val full = image.toMat()
         val scale = workingEdge / maxOf(full.width(), full.height()).toDouble()
 
         val small = Mat()
-        Imgproc.resize(full, small, Size(full.width() * scale, full.height() * scale))
         val blurred = Mat()
-        Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
         val binary = Mat()
+        val closed = Mat()
+        val kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(3.0, 3.0))
+        val contours = mutableListOf<MatOfPoint>()
+        val hierarchy = Mat()
+        val found = mutableListOf<Lattice>()
+        try {
+        Imgproc.resize(full, small, Size(
+            (full.width() * scale).coerceAtLeast(1.0),
+            (full.height() * scale).coerceAtLeast(1.0),
+        ))
+        Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
         Imgproc.adaptiveThreshold(
             blurred, binary, 255.0,
             Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 7.0,
         )
-        val closed = Mat()
-        Imgproc.morphologyEx(
-            binary, closed, Imgproc.MORPH_CLOSE,
-            Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(3.0, 3.0)),
-        )
-
-        val contours = mutableListOf<MatOfPoint>()
-        val hierarchy = Mat()
+        Imgproc.morphologyEx(binary, closed, Imgproc.MORPH_CLOSE, kernel)
         Imgproc.findContours(closed, contours, hierarchy, Imgproc.RETR_CCOMP, Imgproc.CHAIN_APPROX_SIMPLE)
         val frameArea = small.width().toDouble() * small.height()
 
@@ -119,8 +124,17 @@ internal object CellGrid {
             .map { Cell(it.first) }
         if (alike.size < ENOUGH_CELLS) return emptyList()
 
-        return group(alike, Math.sqrt(median) * SAME_GRID_SPACING)
-            .mapNotNull { cells -> latticeFor(cells, scale) }
+        for (cells in group(alike, Math.sqrt(median) * SAME_GRID_SPACING)) {
+            latticeFor(cells, scale)?.let { found += it }
+        }
+        return found
+        } catch (failure: Throwable) {
+            found.forEach { it.close() }
+            throw failure
+        } finally {
+            contours.forEach { it.release() }
+            listOf(full, small, blurred, binary, closed, kernel, hierarchy).forEach { it.release() }
+        }
     }
 
     /**
@@ -145,7 +159,7 @@ internal object CellGrid {
             // every photograph that reads today on exactly the mapping it reads with.
             val upright = Imgproc.boundingRect(contour)
             centre = Point(upright.x + upright.width / 2.0, upright.y + upright.height / 2.0)
-            val box = Imgproc.minAreaRect(MatOfPoint2f(*contour.toArray()))
+            val box = MatOfPoint2f(*contour.toArray()).releasing { Imgproc.minAreaRect(it) }
             span = (box.size.width + box.size.height) / 2
             points = Array(4) { Point() }.also { box.points(it) }
         }
@@ -229,15 +243,23 @@ internal object CellGrid {
         val pitch: Double,
         private val scale: Double,
         private val curve: Mat?,
-    ) {
+    ) : AutoCloseable {
+        override fun close() {
+            flat.release()
+            curve?.release()
+        }
+
         /** Half a cell out from the end cells' centres, every way, is the grid's own edge. */
         fun quad(): Quad {
             val edge = MatOfPoint2f()
+            val source = MatOfPoint2f(Point(-0.5, -0.5), Point(8.5, -0.5), Point(8.5, 8.5), Point(-0.5, 8.5))
+            try {
             Core.perspectiveTransform(
-                MatOfPoint2f(Point(-0.5, -0.5), Point(8.5, -0.5), Point(8.5, 8.5), Point(-0.5, 8.5)),
+                source,
                 edge, flat,
             )
             return Quad.ordering(edge.toArray().map { Corner(it.x / scale, it.y / scale) })
+            } finally { source.release(); edge.release() }
         }
 
         /**
@@ -302,11 +324,21 @@ internal object CellGrid {
                     ys[row * size + column] = atY.toFloat()
                 }
             }
-            val mapX = Mat(size, size, org.opencv.core.CvType.CV_32F).also { it.put(0, 0, xs) }
-            val mapY = Mat(size, size, org.opencv.core.CvType.CV_32F).also { it.put(0, 0, ys) }
+            val mapX = Mat(size, size, org.opencv.core.CvType.CV_32F)
+            val mapY = Mat(size, size, org.opencv.core.CvType.CV_32F)
             val out = Mat()
-            Imgproc.remap(full, out, mapX, mapY, Imgproc.INTER_LINEAR, Core.BORDER_REPLICATE)
-            return out
+            try {
+                mapX.put(0, 0, xs)
+                mapY.put(0, 0, ys)
+                Imgproc.remap(full, out, mapX, mapY, Imgproc.INTER_LINEAR, Core.BORDER_REPLICATE)
+                return out
+            } catch (failure: Throwable) {
+                out.release()
+                throw failure
+            } finally {
+                mapX.release()
+                mapY.release()
+            }
         }
     }
 
@@ -369,7 +401,7 @@ internal object CellGrid {
 
         // The cloud's own two directions, the flatter one taken as the rows.
         val corners = Array(4) { Point() }
-            .also { Imgproc.minAreaRect(MatOfPoint2f(*centres.toTypedArray())).points(it) }
+            .also { corners -> MatOfPoint2f(*centres.toTypedArray()).releasing { Imgproc.minAreaRect(it).points(corners) } }
 
         fun unit(a: Point, b: Point): Pair<Double, Double> {
             val dx = b.x - a.x
@@ -389,7 +421,7 @@ internal object CellGrid {
         )
 
         var fitted: Mat? = null
-
+        try {
         // Fit, read each cell's place back through the fit, and fit again. The first guess
         // spreads the cells evenly between the two extremes, which a photograph taken at an
         // angle is not; reading the places back off the fit corrects for that. A couple of
@@ -411,15 +443,21 @@ internal object CellGrid {
             // Dropping the cells that fit worst did the same, for a related reason - the
             // cells that sit furthest off the lattice are where the page bends, which is
             // the part of the shape the corners most need to know about.
-            val fit = Calib3d.findHomography(
-                MatOfPoint2f(*lattice.toTypedArray()), MatOfPoint2f(*onPage.toTypedArray()),
-            )
-            if (fit.empty()) return@repeat
+            val fit = MatOfPoint2f(*lattice.toTypedArray()).releasing { source ->
+                MatOfPoint2f(*onPage.toTypedArray()).releasing { target ->
+                    Calib3d.findHomography(source, target)
+                }
+            }
+            if (fit.empty()) { fit.release(); return@repeat }
+            fitted?.release()
             fitted = fit
 
-            val read = MatOfPoint2f()
-            Core.perspectiveTransform(MatOfPoint2f(*centres.toTypedArray()), read, fit.inv())
-            places = claimPlaces(read.toArray().toList())
+            places = MatOfPoint2f().releasing { read ->
+                MatOfPoint2f(*centres.toTypedArray()).releasing { source ->
+                    fit.inv().releasing { inverse -> Core.perspectiveTransform(source, read, inverse) }
+                }
+                claimPlaces(read.toArray().toList())
+            }
         }
 
         val solved = fitted ?: return null
@@ -429,6 +467,10 @@ internal object CellGrid {
         }.sorted().let { it.getOrElse(it.size / 2) { 0.0 } }
 
         return Lattice(centres, places, solved, pitch, scale, curveThrough(cells, places, scale))
+        } catch (failure: Throwable) {
+            fitted?.release()
+            throw failure
+        }
     }
 
     /** Where a cell falls along one direction, with the cells spread evenly over the nine. */
@@ -528,13 +570,21 @@ internal object CellGrid {
 
         val a = Mat(rows.size, TERMS, org.opencv.core.CvType.CV_64F)
         val b = Mat(rows.size, 2, org.opencv.core.CvType.CV_64F)
-        for (i in rows.indices) {
-            a.put(i, 0, *rows[i])
-            b.put(i, 0, targets[i].x / scale, targets[i].y / scale)
-        }
         val coefficients = Mat()
-        val solvable = Core.solve(a, b, coefficients, Core.DECOMP_QR or Core.DECOMP_NORMAL)
-        return if (solvable) coefficients else null
+        try {
+            for (i in rows.indices) {
+                a.put(i, 0, *rows[i])
+                b.put(i, 0, targets[i].x / scale, targets[i].y / scale)
+            }
+            val solvable = Core.solve(a, b, coefficients, Core.DECOMP_QR or Core.DECOMP_NORMAL)
+            return if (solvable) coefficients else { coefficients.release(); null }
+        } catch (failure: Throwable) {
+            coefficients.release()
+            throw failure
+        } finally {
+            a.release()
+            b.release()
+        }
     }
 
     /** Which of the nine a cell falls in, along one direction. */

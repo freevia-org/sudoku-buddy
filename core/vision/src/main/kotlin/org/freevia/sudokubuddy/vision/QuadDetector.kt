@@ -68,31 +68,31 @@ object QuadDetector {
     fun workingEdges(): List<Double> = WORKING_EDGES
 
     fun detect(image: GrayImage, workingEdge: Double): List<Quad> {
+        require(workingEdge.isFinite() && workingEdge > 0.0) { "working edge must be positive and finite" }
         val full = image.toMat()
         val scale = workingEdge / maxOf(full.width(), full.height()).toDouble()
 
         val small = Mat()
-        Imgproc.resize(full, small, Size(full.width() * scale, full.height() * scale))
-
         val blurred = Mat()
-        Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
-
-        // Inverted, so ink becomes white and the grid lines form a connected structure.
         val binary = Mat()
+        val closed = Mat()
+        val kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(3.0, 3.0))
+        val contours = mutableListOf<MatOfPoint>()
+        val hierarchy = Mat()
+        try {
+        Imgproc.resize(full, small, Size(
+            (full.width() * scale).coerceAtLeast(1.0),
+            (full.height() * scale).coerceAtLeast(1.0),
+        ))
+        Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
+        // Inverted, so ink becomes white and the grid lines form a connected structure.
         Imgproc.adaptiveThreshold(
             blurred, binary, 255.0,
             Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 7.0,
         )
-
         // Close small gaps where a printed line is broken by paper texture or a fold.
-        val closed = Mat()
-        Imgproc.morphologyEx(
-            binary, closed, Imgproc.MORPH_CLOSE,
-            Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(3.0, 3.0)),
-        )
-
-        val contours = mutableListOf<MatOfPoint>()
-        Imgproc.findContours(closed, contours, Mat(), Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE)
+        Imgproc.morphologyEx(binary, closed, Imgproc.MORPH_CLOSE, kernel)
+        Imgproc.findContours(closed, contours, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE)
 
         val frameArea = small.width().toDouble() * small.height()
 
@@ -117,7 +117,47 @@ object QuadDetector {
             .sortedByDescending { Imgproc.contourArea(it) }
             .take(MAX_CANDIDATES)
             .map { contour -> toQuad(contour, scale) }
+        } finally {
+            contours.forEach { it.release() }
+            listOf(full, small, blurred, binary, closed, kernel, hierarchy).forEach { it.release() }
+        }
     }
+
+    /** Long rules survive where thresholding welds a grid border to surrounding ink. */
+    internal fun detectRules(image: GrayImage, workingEdge: Double): List<Quad> =
+        image.toMat().releasing { full ->
+            val scale = workingEdge / maxOf(image.width, image.height)
+            val small = Mat()
+            val binary = Mat()
+            val horizontal = Mat()
+            val vertical = Mat()
+            val rules = Mat()
+            val hierarchy = Mat()
+            val length = (minOf(image.width, image.height) * scale / 12).coerceAtLeast(15.0)
+            val hKernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(length, 1.0))
+            val vKernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(1.0, length))
+            val contours = mutableListOf<MatOfPoint>()
+            try {
+                Imgproc.resize(full, small, Size(
+                    (image.width * scale).coerceAtLeast(1.0),
+                    (image.height * scale).coerceAtLeast(1.0),
+                ))
+                Imgproc.adaptiveThreshold(small, binary, 255.0,
+                    Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 7.0)
+                Imgproc.morphologyEx(binary, horizontal, Imgproc.MORPH_OPEN, hKernel)
+                Imgproc.morphologyEx(binary, vertical, Imgproc.MORPH_OPEN, vKernel)
+                org.opencv.core.Core.bitwise_or(horizontal, vertical, rules)
+                Imgproc.findContours(rules, contours, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE)
+                val minimum = small.total() * MIN_AREA_FRACTION
+                contours.filter { Imgproc.contourArea(it) > minimum }
+                    .sortedByDescending { Imgproc.contourArea(it) }
+                    .take(MAX_CANDIDATES).map { toQuad(it, scale) }
+            } finally {
+                contours.forEach { it.release() }
+                listOf(small, binary, horizontal, vertical, rules, hierarchy, hKernel, vKernel)
+                    .forEach { it.release() }
+            }
+        }
 
     /**
      * Square enough and upright enough to be worth drawing on screen.
@@ -143,8 +183,9 @@ object QuadDetector {
      */
     private fun toQuad(contour: MatOfPoint, scale: Double): Quad {
         val asFloat = MatOfPoint2f(*contour.toArray())
-        val perimeter = Imgproc.arcLength(asFloat, true)
         val approximated = MatOfPoint2f()
+        try {
+        val perimeter = Imgproc.arcLength(asFloat, true)
         Imgproc.approxPolyDP(asFloat, approximated, 0.02 * perimeter, true)
 
         // Four corners from the approximation when it gives them, and the smallest
@@ -156,5 +197,9 @@ object QuadDetector {
                 Array(4) { org.opencv.core.Point() }.also { box.points(it) }
             }
         return Quad.ordering(points.map { Corner(it.x / scale, it.y / scale) })
+        } finally {
+            asFloat.release()
+            approximated.release()
+        }
     }
 }

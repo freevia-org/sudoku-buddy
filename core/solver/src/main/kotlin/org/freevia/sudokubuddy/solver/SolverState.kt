@@ -34,7 +34,10 @@ class SolverState private constructor(private val candidates: IntArray) {
 
     val solvedCount: Int get() = candidates.count { CandidateSet(it).size == 1 }
 
-    val isSolved: Boolean get() = candidates.all { CandidateSet(it).size == 1 }
+    val isSolved: Boolean get() = candidates.all { CandidateSet(it).size == 1 } &&
+        Coordinates.units.all { unit ->
+            unit.fold(0) { digits, index -> digits or candidates[index] } == CandidateSet.ALL.bits
+        }
 
     fun copy(): SolverState = SolverState(candidates.copyOf()).also {
         reported.copyInto(it.reported)
@@ -42,6 +45,7 @@ class SolverState private constructor(private val candidates: IntArray) {
 
     /** Fix [digit] in [index] by eliminating every other digit there. */
     fun assign(index: Int, digit: Int): Boolean {
+        if (digit !in CandidateSet(candidates[index])) return false
         val others = CandidateSet(candidates[index]).minus(digit)
         for (other in others.digits()) {
             if (!eliminate(index, other)) return false
@@ -106,6 +110,7 @@ class SolverState private constructor(private val candidates: IntArray) {
      * any further consequences. The non-propagating counterpart of [assign].
      */
     fun place(index: Int, digit: Int): Boolean {
+        if (digit !in CandidateSet(candidates[index])) return false
         candidates[index] = CandidateSet.NONE.plus(digit).bits
         for (peer in Coordinates.peers[index]) {
             if (!removeCandidate(peer, digit)) return false

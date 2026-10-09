@@ -23,7 +23,33 @@ sealed interface Hint {
         val difficulty: Difficulty,
         override val index: Int,
         override val digit: Int,
-    ) : Hint
+        /** All eliminations and placements leading to this answer, in replay order. */
+        val proof: List<TeachingStep> = emptyList(),
+    ) : Hint {
+        val fullExplanation: String get() = buildString {
+            append("Place $digit in row ${index / 9 + 1}, column ${index % 9 + 1}.")
+            proof.firstOrNull()?.before?.get(index)?.let {
+                append("\n\nStarting candidates: ${candidateList(it)}.")
+            }
+            if (proof.size > 1) {
+                append("\n\nHow we get there:")
+                proof.forEachIndexed { at, step ->
+                    append("\n\n${at + 1}. ${step.deduction.technique}\n${step.deduction.explanation}")
+                    if (step.deduction is Deduction.Elimination) {
+                        append("\nRemove ${step.deduction.digit} from ")
+                        append(step.deduction.fromCells.sorted().joinToString(", ") { cellName(it) })
+                        append(".")
+                        for (cell in step.deduction.fromCells.sorted()) {
+                            append("\n${cellName(cell)}: ${candidateList(step.before[cell].orEmpty())} " +
+                                "→ ${candidateList(step.after[cell].orEmpty())}.")
+                        }
+                    }
+                }
+            } else {
+                append("\n\n$explanation")
+            }
+        }
+    }
 }
 
 /** Produces the next hint for a puzzle, or null when there is nothing useful to say. */
@@ -92,6 +118,7 @@ object ExplainedHintEngine : HintEngine {
         if (open.isEmpty()) return null
 
         val state = SolverState.candidatesOnly(progressGrid(grid, solution)) ?: return null
+        val proof = mutableListOf<TeachingStep>()
 
         // Bounded by construction: every deduction strictly reduces the candidates left
         // on the board, so this cannot run longer than there are candidates.
@@ -100,16 +127,21 @@ object ExplainedHintEngine : HintEngine {
                 ?: return RevealHintEngine.nextHint(grid)
 
             if (deduction is Deduction.Placement && deduction.index in open) {
+                val recorded = teachingStep(state, deduction, proof)
+                    ?: return RevealHintEngine.nextHint(grid)
+                proof += recorded
                 return Hint.Explained(
                     technique = deduction.technique,
                     explanation = deduction.explanation,
                     supportingCells = deduction.supportingCells,
-                    difficulty = deduction.difficulty,
+                    difficulty = proof.maxOf { it.deduction.difficulty },
                     index = deduction.index,
                     digit = deduction.digit,
+                    proof = proof.toList(),
                 )
             }
-            if (!TechniqueSolver.apply(state, deduction)) return RevealHintEngine.nextHint(grid)
+            proof += teachingStep(state, deduction, proof)
+                ?: return RevealHintEngine.nextHint(grid)
         }
         return RevealHintEngine.nextHint(grid)
     }

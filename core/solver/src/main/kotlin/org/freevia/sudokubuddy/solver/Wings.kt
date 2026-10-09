@@ -23,7 +23,7 @@ object YWing : Technique {
     override val howTo = "Hunt for squares with exactly two candidates - a Y-wing is made " +
         "of three of them and nothing else.\n\nTake one as the pivot, say {2,5}. Look for a " +
         "square it can see holding {2,9}, and another it can see holding {5,9}. The pivot " +
-        "is either 2 or 5. If it is 2, the second pincer must be 9; if it is 5, the first " +
+        "is either 2 or 5. If it is 2, the first pincer must be 9; if it is 5, the second " +
         "must be 9. Either way a 9 appears in one of the pincers - you do not know which, " +
         "and you do not need to.\n\nSo no square that can see both pincers can be a 9. " +
         "Those squares are usually the two corners that complete the rectangle."

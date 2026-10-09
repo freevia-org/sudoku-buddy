@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-08",
+  "kind": "fixed-geometry synthetic focus-regression replay",
+  "command": ".\\gradlew.bat :core:vision:test --tests '*FramingAdvisorTest*' --tests '*ImageQualityTest*' --tests '*CaptureQualityCorpusTest*' -Ddump=true --console=plain",
+  "photos": 110,
+  "gridsLocated": 110,
+  "framingEligibleOriginals": 63,
+  "ineligibleOriginals": 47,
+  "wholeGridBlur": {
+    "method": "19x19 Gaussian blur applied to the accepted rectified grid",
+    "oldPolicyWouldCapture": 63,
+    "newPolicyDeferred": 63,
+    "newPolicyWouldCapture": 0
+  },
+  "quadrantBlur": {
+    "method": "top-left quadrant replaced with the corresponding blurred pixels",
+    "oldPolicyWouldCapture": 63,
+    "newPolicyDeferred": 63,
+    "newPolicyWouldCapture": 0
+  },
+  "recoveredAfterRestoringOriginal": 63,
+  "referencePolicy": "Compare sharpness and worst-quadrant ratio against the same sharpest frame in an eight-sample stationary window; both must retain at least 85 percent. Reset on motion and after autofocus completes.",
+  "limitations": [
+    "This is synthetic blur applied at fixed detected geometry, not a live camera or physical-device benchmark.",
+    "The replay reuses original lighting and camera geometry; grid re-detection on blurred frames is not measured.",
+    "The prior policy ignored sharpness and partial-focus measurements, so all 63 otherwise eligible stable geometries would have remained shutter-ready.",
+    "Only 63 of 110 original photographs met the existing lighting, edge, size and shape guidance limits; this replay makes no claim about capture readiness for the remaining 47.",
+    "Relative measurements cannot reject uniformly blurry initial frames and permit a new lower-quality reference after the eight-sample window expires.",
+    "Autofocus, exposure metering, final JPEG crispness, capture latency and sustained-device memory/thermal behavior require physical tests."
+  ]
+}

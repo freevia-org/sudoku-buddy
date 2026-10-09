@@ -69,6 +69,8 @@ data class Walkthrough(
      * not, or the second example is being shown in a position the first one created.
      */
     val cumulative: Boolean = true,
+    /** Candidate states and proof dependencies, aligned with [steps]. */
+    val lessons: List<TeachingStep> = emptyList(),
 ) {
     val isEmpty: Boolean get() = steps.isEmpty()
 }
@@ -87,6 +89,7 @@ object TechniqueSolver {
         val state = SolverState.candidatesOnly(progressGrid(grid, solution)) ?: return null
 
         val steps = mutableListOf<Deduction>()
+        val lessons = mutableListOf<TeachingStep>()
         var triedOut = 0
 
         // Reason as far as reasoning goes; when it stops, settle one square by trying its
@@ -105,8 +108,9 @@ object TechniqueSolver {
             val reasoned = nextDeduction(state, style)
             val step = reasoned ?: triedOut(state, solution)?.also { triedOut++ } ?: break
             val told = crossReferenced(step, state, steps)
-            if (!apply(state, step)) break
+            val lesson = teachingStep(state, told, lessons) ?: break
             steps += told
+            lessons += lesson
         }
 
         // Trying candidates out is not a technique and should not be reported as the
@@ -118,6 +122,7 @@ object TechniqueSolver {
             finishes = state.isSolved,
             hardestTechnique = hardest?.technique,
             triedOut = triedOut,
+            lessons = lessons,
         )
     }
 
@@ -154,7 +159,8 @@ object TechniqueSolver {
             1 -> where[0]
             else -> where.dropLast(1).joinToString(", ") + " and " + where.last()
         }
-        return step.copy(explanation = step.explanation + " Press Back to see how: $said.")
+        return step.copy(explanation = step.explanation +
+            " Earlier eliminations: $said. Use the earlier-step links to inspect their proofs.")
     }
 
     /** The name given to a square that no technique here could justify. */
@@ -178,18 +184,14 @@ object TechniqueSolver {
         val answer = solution[square].digit ?: return null
 
         val others = state.candidatesAt(square).digits().filter { it != answer }
-        val rejected = when {
-            others.isEmpty() -> ""
-            others.size == 1 -> " ${others[0]} leads to a dead end."
-            else -> " ${others.joinToString(", ")} each lead to a dead end."
-        }
+        val options = candidateList((others + answer).sorted())
         return Deduction.Placement(
             technique = TRIED_OUT,
             difficulty = Difficulty.VERY_HARD,
-            explanation = "No technique here can justify a move from this position, so this " +
-                "square has to be settled by trying its candidates out - which is what the " +
-                "app did to find the solution in the first place. Only $answer survives." +
-                rejected,
+            explanation = "Solver-assisted answer: place $answer in ${cellName(square)}. " +
+                "The candidates are $options. The app's supported techniques did not find " +
+                "a move from this position. Its search found $answer in the unique solution; " +
+                "a detailed proof of the search branches is unavailable.",
             supportingCells = setOf(square),
             index = square,
             digit = answer,
@@ -207,12 +209,14 @@ object TechniqueSolver {
     fun findings(grid: Grid, technique: Technique): Walkthrough? {
         val solution = (Solver.solve(grid) as? SolveResult.Unique)?.solution ?: return null
         val state = SolverState.candidatesOnly(progressGrid(grid, solution)) ?: return null
+        val lessons = technique.findAll(state).mapNotNull { teachingStep(state.copy(), it, emptyList()) }
         return Walkthrough(
-            steps = technique.findAll(state),
+            steps = lessons.map { it.deduction },
             hardest = technique.difficulty,
             finishes = false,
             hardestTechnique = technique.name,
             cumulative = false,
+            lessons = lessons,
         )
     }
 
@@ -221,6 +225,19 @@ object TechniqueSolver {
         val solution = (Solver.solve(grid) as? SolveResult.Unique)?.solution ?: return emptyMap()
         val state = SolverState.candidatesOnly(progressGrid(grid, solution)) ?: return emptyMap()
         return ALL_TECHNIQUES.associate { it.name to it.findAll(state).size }
+    }
+
+    /** Other valid moves of the current technique, in the exact position being taught. */
+    fun alternativesAt(grid: Grid, route: Walkthrough, index: Int): List<Deduction> {
+        val step = route.steps.getOrNull(index) ?: return emptyList()
+        if (!step.hasTeachingProof) return emptyList()
+        val technique = Techniques.byName(step.technique) ?: return emptyList()
+        val solution = (Solver.solve(grid) as? SolveResult.Unique)?.solution ?: return emptyList()
+        val state = SolverState.candidatesOnly(progressGrid(grid, solution)) ?: return emptyList()
+        if (route.cumulative) {
+            for (earlier in route.steps.take(index)) if (!apply(state, earlier)) return emptyList()
+        }
+        return technique.findAll(state).filter { it.hasTeachingProof }
     }
 
     fun solve(grid: Grid): TechniqueOutcome {

@@ -8,12 +8,18 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import org.freevia.sudokubuddy.solver.RouteStyle
 
@@ -27,9 +33,11 @@ import org.freevia.sudokubuddy.solver.RouteStyle
 @Composable
 fun SettingsScreen(
     settings: Settings,
+    submissionReceipts: List<SubmissionReceipt>,
     onChange: (Settings) -> Unit,
     onClose: () -> Unit,
 ) {
+    var receiptsOpen by remember { mutableStateOf(false) }
     Column(modifier = Modifier.fillMaxSize()) {
         AppBar(title = "Settings", onBack = onClose)
         LazyColumn(
@@ -57,12 +65,8 @@ fun SettingsScreen(
                 // hardest puzzle in the test set, measured both ways.
                 SettingRow(
                     title = "Keep forcing chains short",
-                    detail = "A forcing chain is the technique of last resort, and its " +
-                        "length is how much work it is to follow. Weighing several and " +
-                        "walking the shortest keeps any one of them down to about ten " +
-                        "squares, at the cost of needing more of them: on the hardest " +
-                        "puzzle tested, 110 steps this way against 87 the other, where " +
-                        "one chain ran to fifteen squares.",
+                    detail = "Compare forcing chains and prefer ones with fewer squares to " +
+                        "follow. Shorter chains can mean more steps in the full solution.",
                     checked = settings.routeStyle == RouteStyle.SHORT_CHAINS,
                     onChange = {
                         onChange(
@@ -87,8 +91,27 @@ fun SettingsScreen(
                     onChange = { onChange(settings.copy(autoCapture = it)) },
                 )
             }
+
+            item {
+                SettingRow(
+                    title = "Share automatically when uncertain",
+                    detail = "Send uncertain readings and later corrections for analysis. " +
+                        "You can turn this off any time.",
+                    checked = settings.autoShareWhenUncertain,
+                    onChange = { onChange(settings.copy(autoShareWhenUncertain = it)) },
+                )
+            }
+
+            if (submissionReceipts.isNotEmpty()) {
+                item {
+                    androidx.compose.material3.TextButton(onClick = { receiptsOpen = true }) {
+                        Text("Submission receipts (${submissionReceipts.size})")
+                    }
+                }
+            }
         }
     }
+    if (receiptsOpen) SubmissionReceiptsDialog(submissionReceipts) { receiptsOpen = false }
 }
 
 @Composable
@@ -99,7 +122,8 @@ private fun SettingRow(
     onChange: (Boolean) -> Unit,
 ) {
     Row(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth().toggleable(
+            value = checked, role = Role.Switch, onValueChange = onChange),
         horizontalArrangement = Arrangement.spacedBy(16.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
@@ -107,6 +131,6 @@ private fun SettingRow(
             Text(title, style = MaterialTheme.typography.titleMedium)
             Text(detail, style = MaterialTheme.typography.bodySmall)
         }
-        Switch(checked = checked, onCheckedChange = onChange)
+        Switch(checked = checked, onCheckedChange = null)
     }
 }

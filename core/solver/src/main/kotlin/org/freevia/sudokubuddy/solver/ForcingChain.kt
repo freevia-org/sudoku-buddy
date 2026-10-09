@@ -62,8 +62,9 @@ object ForcingChain : Technique {
         "candidates left at all, or a row with nowhere to put some digit. That is " +
         "impossible, so the digit you pencilled in was wrong, and you can rule it out for " +
         "good.\n\nThis is the one to reach for when everything else has dried up. It is " +
-        "slower and it is bookkeeping rather than pattern-spotting, but it always applies, " +
-        "and one elimination is usually enough to start the easy techniques working again."
+        "slower and it is bookkeeping rather than pattern-spotting, but it can uncover " +
+        "moves the patterns miss. One elimination is often enough to start the easy " +
+        "techniques working again; some positions still need a deeper search."
 
     /**
      * The solver only ever wants the first, and each trial is a full propagation, so
@@ -125,12 +126,13 @@ object ForcingChain : Technique {
 
     private fun explain(digit: Int, chain: Chain?): String = when {
         chain == null ->
-            "Suppose this square were $digit. Following that through the grid leaves some " +
-                "square with no digit at all, which cannot happen - so it is not $digit."
+            "Solver-assisted elimination: a search rules out $digit in the highlighted " +
+                "square, but the app could not produce a short contradiction trace to " +
+                "display. A detailed proof is unavailable."
 
         chain.missing != null ->
-            "Suppose this square were $digit. Follow the arrows: each square is forced by " +
-                "the one it points from - either that digit is the only one it can still " +
+            "Suppose this square were $digit. Follow the arrows in order: each square is " +
+                "forced by the earlier placements - either that digit is the only one it can still " +
                 "hold, or that square is the only place the digit can still go.\n\nThat " +
                 "leaves the ${chain.deadEndUnit ?: "unit"} in red with nowhere to put " +
                 "${chain.missing}. The ${chain.missing}s marked in it are the places it " +
@@ -139,8 +141,8 @@ object ForcingChain : Technique {
                 "it is not $digit."
 
         else ->
-            "Suppose this square were $digit. Follow the arrows: each square is forced by " +
-                "the one it points from - either that digit is the only one it can still " +
+            "Suppose this square were $digit. Follow the arrows in order: each square is " +
+                "forced by the earlier placements - either that digit is the only one it can still " +
                 "hold, or that square is the only place the digit can still go. The square " +
                 "in red is then left with no digit at all, which cannot happen - so it is " +
                 "not $digit."
@@ -155,7 +157,7 @@ object ForcingChain : Technique {
      * a wall, those records give the placements the wall actually rests on, and their
      * ancestors: the argument, with nothing in it that the conclusion does not need.
      *
-     * That closure is a tree rather than a line, and the first version of this drew the
+     * That closure is a graph rather than a line, and the first version of this drew the
      * line instead - the single path back from whatever hit the wall. It looked like an
      * argument and was not one: the wall leaned on side branches too, and replaying only
      * the path did not reach it. The test that replays every trail is what says so.
@@ -174,6 +176,9 @@ object ForcingChain : Technique {
         val state = start.copy()
         val forced = HashMap<Int, Int>()
         val cause = HashMap<Int, Int>()
+        // The arrow shows the placement that completed an inference. The proof also
+        // needs earlier placements that removed its other candidates or other homes.
+        val prerequisites = HashMap<Int, Set<Int>>()
         val order = HashMap<Int, Int>()
         // Which placement struck each candidate out. Keyed square-then-digit.
         val struck = HashMap<Int, Int>()
@@ -208,7 +213,7 @@ object ForcingChain : Technique {
                     val places = unit.filter { other in state.candidatesAt(it) }
                     when (places.size) {
                         0 -> return chain(
-                            forced, cause, order, from,
+                            forced, cause, prerequisites, order, from,
                             roots(unit, other, start, struck), unit.toSet(), other, null,
                             couldHave(unit, other, start),
                         )
@@ -218,6 +223,7 @@ object ForcingChain : Technique {
                             if (only !in forced && state.candidatesAt(only).size > 1) {
                                 forced[only] = other
                                 cause[only] = at
+                                prerequisites[only] = roots(unit, other, start, struck).toSet()
                                 order[only] = order.size
                                 queue += only
                             }
@@ -239,7 +245,8 @@ object ForcingChain : Technique {
                     val emptied = start.candidatesAt(peer).digits()
                         .mapNotNull { struck[peer * 10 + it] }
                     return chain(
-                        forced, cause, order, from, emptied, setOf(peer), null, at, setOf(peer),
+                        forced, cause, prerequisites, order, from,
+                        emptied, setOf(peer), null, at, setOf(peer),
                     )
                 }
 
@@ -248,6 +255,8 @@ object ForcingChain : Technique {
                     state.candidatesAt(peer).single?.let {
                         forced[peer] = it
                         cause[peer] = at
+                        prerequisites[peer] = start.candidatesAt(peer).minus(it).digits()
+                            .mapNotNull { removed -> struck[peer * 10 + removed] }.toSet()
                         order[peer] = order.size
                         queue += peer
                     }
@@ -260,7 +269,7 @@ object ForcingChain : Technique {
                     val places = unit.filter { value in state.candidatesAt(it) }
                     when (places.size) {
                         0 -> return chain(
-                            forced, cause, order, from,
+                            forced, cause, prerequisites, order, from,
                             roots(unit, value, start, struck), unit.toSet(), value, null,
                             couldHave(unit, value, start),
                         )
@@ -270,6 +279,7 @@ object ForcingChain : Technique {
                             if (only !in forced && state.candidatesAt(only).size > 1) {
                                 forced[only] = value
                                 cause[only] = at
+                                prerequisites[only] = roots(unit, value, start, struck).toSet()
                                 order[only] = order.size
                                 queue += only
                             }
@@ -304,6 +314,7 @@ object ForcingChain : Technique {
     private fun chain(
         forced: Map<Int, Int>,
         cause: Map<Int, Int>,
+        prerequisites: Map<Int, Set<Int>>,
         order: Map<Int, Int>,
         from: Int,
         roots: List<Int>,
@@ -318,6 +329,7 @@ object ForcingChain : Technique {
             val at = stack.removeLast()
             if (!needed.add(at)) continue
             cause[at]?.let { stack += it }
+            stack.addAll(prerequisites[at].orEmpty())
         }
         if (needed.size > MOST_LINKS) return null
 

@@ -62,6 +62,23 @@ class PuzzleLogicTest {
     }
 
     @Test
+    fun `solution browsing marks differences introduced after the first two answers`() {
+        val ambiguous = Grid.Empty
+        val answers = Solver.solutions(ambiguous, PuzzleLogic.MOST_ANSWERS_OFFERED)
+        val firstTwo = assertIs<SolveResult.Multiple>(Solver.solve(ambiguous)).ambiguousCells
+        val varying = (0 until 81).filterTo(mutableSetOf()) { index ->
+            answers.any { it[index].digit != answers.first()[index].digit }
+        }
+        assertTrue((varying - firstTwo).isNotEmpty(), "fixture needs variation beyond the first pair")
+        for (shown in answers.indices) {
+            val overlay = PuzzleLogic.overlay(ambiguous, OverlayMode.SOLUTION, HintStyle.EXPLAIN,
+                answerShown = shown)
+            assertEquals(varying, overlay.evidence)
+            for (index in 0 until 81) assertEquals(answers[shown][index].digit, overlay.digits[index]?.digit)
+        }
+    }
+
+    @Test
     fun `checking marks a right answer green and a wrong one red`() {
         val empty = (0 until 81).first { !puzzle[it].isFilled }
         val wrongDigit = (1..9).first { it != solution[empty].digit }
@@ -312,7 +329,7 @@ class PuzzleLogicTest {
     }
 
     @Test
-    fun `each press of Hint goes one step down, then turns it off`() {
+    fun `each press of Hint goes one step down and keeps the final explanation visible`() {
         var mode = OverlayMode.NONE
         var depth = 0
         val seen = mutableListOf<Int>()
@@ -322,8 +339,8 @@ class PuzzleLogicTest {
             depth = next.hintDepth
             if (mode == OverlayMode.HINT) seen += depth
         }
-        assertEquals((0 until PuzzleLogic.HINT_DEPTHS).toList(), seen)
-        assertEquals(OverlayMode.NONE, mode, "the press after the last step turns it off")
+        assertEquals((0 until PuzzleLogic.HINT_DEPTHS).toList() + (PuzzleLogic.HINT_DEPTHS - 1), seen)
+        assertEquals(OverlayMode.HINT, mode, "the final proof stays visible until closed")
     }
 
     @Test
@@ -611,6 +628,22 @@ class PuzzleLogicTest {
             PuzzleLogic.stillInQuestion(flagged, reports, solvable),
             "the classifier's own doubt survives; the solver's does not",
         )
+    }
+
+    @Test
+    fun `uncertain notes remain a question even when the digit shape and puzzle are clear`() {
+        val solvable = Grid.fromRows(
+            "53..7....", "6..195...", ".98....6.", "8...6...3", "4..8.3..1",
+            "7...2...6", ".6....28.", "...419..5", "....8..79",
+        )
+        val reports = List<CellReport?>(81) { index ->
+            when (index) {
+                10 -> CellReport(Ink.ANSWER, 8, 0.99f, 3, 0.01f, roleUncertain = true)
+                20 -> CellReport(Ink.PRINTED, 5, 0.99f, 3, 0.01f)
+                else -> null
+            }
+        }
+        assertEquals(setOf(10), PuzzleLogic.stillInQuestion(setOf(10, 20), reports, solvable))
     }
 
     @Test

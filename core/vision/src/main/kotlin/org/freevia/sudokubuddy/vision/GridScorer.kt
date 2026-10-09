@@ -27,11 +27,15 @@ internal object GridScorer {
 
     fun score(rectified: Mat, obscuredAllowed: Int = 0): Double {
         val binary = Mat()
-        Imgproc.adaptiveThreshold(
-            rectified, binary, 255.0,
-            Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 10.0,
-        )
-        val (columns, rows) = projections(binary)
+        val (columns, rows) = try {
+            Imgproc.adaptiveThreshold(
+                rectified, binary, 255.0,
+                Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 10.0,
+            )
+            projections(binary)
+        } finally {
+            binary.release()
+        }
         return minOf(axisScore(columns, obscuredAllowed), axisScore(rows, obscuredAllowed))
     }
 

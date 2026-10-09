@@ -4,6 +4,7 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.camera.core.ImageProxy
 import org.freevia.sudokubuddy.vision.GrayImage
+import org.freevia.sudokubuddy.vision.RgbImage
 
 /**
  * Conversions from what Android hands us into the one type the vision module accepts.
@@ -33,13 +34,53 @@ object Images {
         return GrayImage(width, height, pixels)
     }
 
-    /** A captured JPEG, rotated upright and converted to grayscale. */
-    fun fromJpeg(bytes: ByteArray, rotationDegrees: Int): GrayImage {
-        val decoded = BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
+    data class Photograph(val gray: GrayImage, val rgb: RgbImage)
+
+    /** Inspect dimensions before allocating pixels, then retain grayscale and color. */
+    fun photograph(bytes: ByteArray, rotationDegrees: Int): Photograph {
+        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        BitmapFactory.decodeByteArray(bytes, 0, bytes.size, bounds)
+        check(bounds.outWidth > 0 && bounds.outHeight > 0) { "could not decode the captured image" }
+        val options = BitmapFactory.Options().apply {
+            inSampleSize = CaptureSampling.sampleSize(bounds.outWidth, bounds.outHeight)
+            inPreferredConfig = Bitmap.Config.ARGB_8888
+        }
+        val decoded = BitmapFactory.decodeByteArray(bytes, 0, bytes.size, options)
             ?: error("could not decode the captured image")
-        val upright = if (rotationDegrees == 0) decoded else rotate(decoded, rotationDegrees)
-        return fromBitmap(upright)
+        var upright = decoded
+        return try {
+            if (rotationDegrees != 0) {
+                upright = rotate(decoded, rotationDegrees)
+                if (upright !== decoded) decoded.recycle()
+            }
+            val width = upright.width
+            val height = upright.height
+            // A row buffer avoids another full ARGB photograph beside the bitmap and RGB.
+            val row = IntArray(width)
+            val gray = ByteArray(width * height)
+            val rgb = ByteArray(width * height * 3)
+            for (y in 0 until height) {
+                upright.getPixels(row, 0, width, 0, y, width, 1)
+                for (x in 0 until width) {
+                    val i = y * width + x
+                    val p = row[x]
+                    val r = (p shr 16) and 0xFF
+                    val g = (p shr 8) and 0xFF
+                    val b = p and 0xFF
+                    gray[i] = ((r * 299 + g * 587 + b * 114) / 1000).toByte()
+                    rgb[i * 3] = r.toByte()
+                    rgb[i * 3 + 1] = g.toByte()
+                    rgb[i * 3 + 2] = b.toByte()
+                }
+            }
+            Photograph(GrayImage(width, height, gray), RgbImage(width, height, rgb))
+        } finally {
+            upright.recycle()
+        }
     }
+
+    fun fromJpeg(bytes: ByteArray, rotationDegrees: Int): GrayImage =
+        photograph(bytes, rotationDegrees).gray
 
     fun fromBitmap(bitmap: Bitmap): GrayImage {
         val width = bitmap.width

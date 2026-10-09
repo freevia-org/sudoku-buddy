@@ -91,15 +91,30 @@ data class Quad(
          *
          * The top left has the smallest x+y and the bottom right the largest; the top
          * right has the smallest y-x and the bottom left the largest. This holds for any
-         * convex quad that is not rotated past 45 degrees, which the gate requires anyway.
+         * convex quad that is not rotated past 45 degrees. At that angle the extrema can
+         * tie, so four distinct input corners are ordered around their centre instead.
          */
         fun ordering(points: List<Corner>): Quad {
             require(points.size >= 4) { "need at least 4 points but got ${points.size}" }
-            return Quad(
+            val extreme = Quad(
                 topLeft = points.minBy { it.x + it.y },
                 topRight = points.minBy { it.y - it.x },
                 bottomRight = points.maxBy { it.x + it.y },
                 bottomLeft = points.maxBy { it.y - it.x },
+            )
+            if (extreme.corners.distinct().size == 4 || points.size != 4 || points.distinct().size != 4) {
+                return extreme
+            }
+            // Independent extrema must not reuse one point for two corners: that creates
+            // a singular perspective transform even though the photographed quad is valid.
+            val centreX = points.sumOf { it.x } / 4
+            val centreY = points.sumOf { it.y } / 4
+            val clockwise = points.sortedBy { atan2(it.y - centreY, it.x - centreX) }
+            val first = clockwise.indices.minWith(compareBy<Int> { clockwise[it].x + clockwise[it].y }
+                .thenBy { clockwise[it].y }.thenBy { clockwise[it].x })
+            return Quad(
+                clockwise[first], clockwise[(first + 1) % 4],
+                clockwise[(first + 2) % 4], clockwise[(first + 3) % 4],
             )
         }
     }

@@ -48,6 +48,7 @@ sealed interface GateVerdict {
          * to refuse the photograph.
          */
         val complaint: RejectionReason? = null,
+        val curved: Boolean = false,
     ) : GateVerdict
 
     data class Rejected(val reason: RejectionReason) : GateVerdict
@@ -136,6 +137,7 @@ object StructuralGate {
             cells = CellExtractor.extract(located.rectified, geometry),
             quality = ImageQuality.of(located.rectified),
             complaint = complain(quad, image),
+            curved = located.curved,
         )
     }
 

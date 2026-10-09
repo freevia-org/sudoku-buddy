@@ -31,9 +31,13 @@ class ExportNormalisedTest {
         var written = 0
 
         for (file in CorpusFixtures.photos) {
+            val directory = File(root, file.nameWithoutExtension).apply { mkdirs() }
+            // A formerly detected blob may now be absent. Leaving its old file behind
+            // would silently train on ink that the current reader no longer extracts.
+            directory.listFiles()?.filter { it.name.matches(Regex("cell_[0-9]{2}\\.f32")) }
+                ?.forEach { check(it.delete()) { "could not remove stale export $it" } }
             val verdict = StructuralGate.assess(CorpusFixtures.load(file))
             if (verdict !is GateVerdict.Usable) continue
-            val directory = File(root, file.nameWithoutExtension).apply { mkdirs() }
 
             CellAnalyzer.inspect(verdict.cells).forEachIndexed { index, ink ->
                 if (ink == null) return@forEachIndexed

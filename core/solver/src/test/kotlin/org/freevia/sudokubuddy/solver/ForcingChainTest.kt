@@ -93,6 +93,27 @@ class ForcingChainTest {
         assertTrue(checked > 0, "no chain carried a trail at all")
     }
 
+    @Test
+    fun `each derived link is forced by the displayed predecessors`() {
+        val found = trails()
+        assertTrue(found.isNotEmpty(), "this puzzle no longer exercises forcing chains")
+        for ((position, step) in found) {
+            val chain = assertNotNull(step.chain)
+            val replay = position.copy()
+            for ((at, link) in chain.links.withIndex()) {
+                if (at > 0) {
+                    val single = replay.candidatesAt(link.index).single == link.digit
+                    val hidden = Coordinates.unitsOf[link.index].any { unit ->
+                        unit.filter { link.digit in replay.candidatesAt(it) } == listOf(link.index)
+                    }
+                    assertTrue(single || hidden,
+                        "${link.index}=${link.digit} is not forced by the first $at displayed links")
+                }
+                replay.place(link.index, link.digit)
+            }
+        }
+    }
+
     /**
      * Reported from the phone: "not all arrows can be traced back from the original cell".
      * Every square must hang off the assumption, or an arrow is drawn from nowhere.

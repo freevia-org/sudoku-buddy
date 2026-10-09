@@ -32,6 +32,29 @@ class GridTest {
     }
 
     @Test
+    fun `grid snapshots a mutable input list`() {
+        val cells = MutableList(81) { Cell.Empty }
+        val grid = Grid.of(cells)
+        val originalHash = grid.hashCode()
+
+        cells[0] = Cell.given(5)
+        cells.clear()
+
+        assertEquals(Cell.Empty, grid[0])
+        assertEquals(81, grid.cells.size)
+        assertEquals(originalHash, grid.hashCode())
+    }
+
+    @Test
+    fun `grid cells cannot be mutated through a writable view`() {
+        val grid = Grid.of(List(81) { Cell.Empty })
+        assertFailsWith<UnsupportedOperationException> {
+            (grid.cells as MutableList<Cell>)[0] = Cell.given(5)
+        }
+        assertEquals(Cell.Empty, grid[0])
+    }
+
+    @Test
     fun `parses nine rows of givens using dot for empty`() {
         val grid = Grid.fromRows(
             "12345678.",

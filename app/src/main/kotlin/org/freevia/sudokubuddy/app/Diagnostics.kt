@@ -40,7 +40,9 @@ object Diagnostics {
 
     private const val PREFIX = "scan-"
 
-    private val stamp = SimpleDateFormat("yyyyMMdd-HHmmss", Locale.UK)
+    // Capture writes, drawer reads and sharing can run on different dispatchers.
+    // SimpleDateFormat mutates its calendar during both formatting and parsing.
+    private val stamp get() = SimpleDateFormat("yyyyMMdd-HHmmss", Locale.UK)
 
     /**
      * Writes [bytes] to a file named after what became of it.

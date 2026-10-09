@@ -11,6 +11,8 @@ import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material3.Button
@@ -57,7 +59,7 @@ internal fun TutorPicker(
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
-                    state.tutorTechnique ?: "Best route",
+                    if (state.tutorHintProof) "Hint reasoning" else state.tutorTechnique ?: "Full route",
                     style = MaterialTheme.typography.labelLarge,
                     maxLines = 1,
                 )
@@ -71,7 +73,7 @@ internal fun TutorPicker(
 
         DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
             DropdownMenuItem(
-                text = { Text("Best route") },
+                text = { Text("Full route") },
                 trailingIcon = { Text("$steps") },
                 onClick = {
                     open = false
@@ -112,8 +114,12 @@ internal fun TutorPicker(
  * every one, which read as though the app had not noticed.
  */
 @Composable
-internal fun ReadingBanner(state: PuzzleState, onChange: (PuzzleState) -> Unit) {
-    val count = state.openQuestions.size
+internal fun ReadingBanner(
+    state: PuzzleState,
+    onChange: (PuzzleState) -> Unit,
+    onSubmit: () -> Unit,
+    onReceipts: () -> Unit,
+) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -122,7 +128,7 @@ internal fun ReadingBanner(state: PuzzleState, onChange: (PuzzleState) -> Unit) 
         verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
         Text(
-            PuzzleLogic.readingHeadline(count, state.grid),
+            state.readingHeadline,
             style = MaterialTheme.typography.titleSmall,
             color = Overlays.uncertain,
         )
@@ -136,8 +142,27 @@ internal fun ReadingBanner(state: PuzzleState, onChange: (PuzzleState) -> Unit) 
                 "it, or accept the reading as it stands.",
             style = MaterialTheme.typography.bodySmall,
         )
-        FilledTonalButton(onClick = { onChange(state.acceptReading()) }) {
-            Text("All correct")
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            FilledTonalButton(
+                onClick = { onChange(state.acceptReading()) },
+                modifier = Modifier.weight(1f),
+            ) { Text("All correct") }
+            val submitted = state.submittedCorrectionCount >= 0
+            val hasUpdate = state.readingCorrections.size > state.submittedCorrectionCount
+            FilledTonalButton(
+                onClick = onSubmit,
+                enabled = !submitted || hasUpdate,
+                modifier = Modifier.weight(1f),
+            ) {
+                Text(when {
+                    !submitted -> "Submit reading"
+                    hasUpdate -> "Submit update"
+                    else -> "Submitted"
+                })
+            }
+        }
+        if (state.submissionReceipts.isNotEmpty()) {
+            TextButton(onClick = onReceipts) { Text("Submission receipt") }
         }
     }
 }
@@ -152,12 +177,17 @@ internal fun ReadingBanner(state: PuzzleState, onChange: (PuzzleState) -> Unit) 
 @Composable
 internal fun CellEditor(state: PuzzleState, index: Int, onChange: (PuzzleState) -> Unit) {
     val cell = state.grid[index]
+    val scroll = rememberScrollState()
     Column(
         modifier = Modifier
             .fillMaxWidth()
             // The sheet insets its top but not its bottom, so its last button was landing
             // underneath the system navigation buttons.
             .navigationBarsPadding()
+            // The modal bounds this viewport. Long recognition explanations and large
+            // text must scroll instead of hiding the keypad's final actions off-screen.
+            .scrollThread(scroll, MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.3f))
+            .verticalScroll(scroll)
             .padding(horizontal = 24.dp)
             .padding(bottom = 16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),

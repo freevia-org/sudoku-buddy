@@ -73,9 +73,13 @@ object NakedSingle : Technique {
                 // digits with nothing to point at are named rather than left as a hole in
                 // the argument.
                 explanation = when {
-                    gone.isEmpty() ->
+                    gone.isEmpty() && why.cells.all { state.isReported(it) } ->
                         "Only $digit can go here - every other digit already appears in " +
                             "this row, column or box."
+
+                    gone.isEmpty() ->
+                        "Only $digit can go here. The other eight digits are excluded by " +
+                            "filled squares or forced single candidates in this row, column or box."
 
                     why.cells.isEmpty() ->
                         "Only $digit can go here, though nothing around it shows why: all " +
@@ -87,7 +91,13 @@ object NakedSingle : Technique {
                             "${counts[8 - gone.size]} of the other eight digits; " +
                             "${list(gone)} ${if (gone.size == 1) "was" else "were"} ruled " +
                             "out of this square earlier, not by anything you can see around it."
-                },
+                } + "\n\n" + why.cells.sortedBy { state.valueAt(it) }.joinToString("\n") { peer ->
+                    val value = state.valueAt(peer)
+                    "$value is excluded by ${cellName(peer)}, which " +
+                        (if (state.isReported(peer)) "contains" else "can only hold") +
+                        " $value in the same ${sharedUnit(index, peer)}."
+                } + "\n\nThe remaining candidates at ${cellName(index)} are {$digit}. " +
+                    "Place $digit in row ${index / 9 + 1}, column ${index % 9 + 1}.",
                 supportingCells = why.cells,
                 index = index,
                 digit = digit,

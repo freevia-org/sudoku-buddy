@@ -31,13 +31,14 @@ data class Guidance(
 class FramingAdvisor(
     /** Consecutive good frames required before the shutter fires. */
     private val stableFramesRequired: Int = 5,
-    /** How far a corner may drift between frames and still count as steady, in pixels. */
+    /** Corner drift tolerance at a 720-pixel frame short side; scales with resolution. */
     private val steadyTolerance: Double = 12.0,
 ) {
 
     private var lastQuad: Quad? = null
     private var stableFrames = 0
     private var missedFrames = 0
+    private val recentQuality = ArrayDeque<ImageQuality>()
 
     private companion object {
         /** Mean luma below which the lines are lost in the dark, on a 0..255 scale. */
@@ -61,6 +62,7 @@ class FramingAdvisor(
         lastQuad = null
         stableFrames = 0
         missedFrames = 0
+        recentQuality.clear()
     }
 
     /**
@@ -106,6 +108,11 @@ class FramingAdvisor(
 
         val quad = located.quad
         val quality = ImageQuality.of(located.rectified)
+        return adviseLocated(frame, quad, quality)
+    }
+
+    /** Shared geometry/quality policy, also exercised independently of grid detection. */
+    internal fun adviseLocated(frame: GrayImage, quad: Quad, quality: ImageQuality): Guidance {
 
         val shortestSide = minOf(quad.topEdge, quad.rightEdge, quad.bottomEdge, quad.leftEdge)
         val frameShortSide = minOf(frame.width, frame.height).toDouble()
@@ -127,15 +134,29 @@ class FramingAdvisor(
 
         missedFrames = 0
         val previous = lastQuad
+        val tolerance = steadyTolerance * frameShortSide / 720.0
         val steady = previous != null && quad.corners.zip(previous.corners).all { (a, b) ->
-            abs(a.x - b.x) <= steadyTolerance && abs(a.y - b.y) <= steadyTolerance
+            abs(a.x - b.x) <= tolerance && abs(a.y - b.y) <= tolerance
         }
         stableFrames = if (steady) stableFrames + 1 else 0
+        if (!steady) recentQuality.clear()
+        recentQuality.addLast(quality)
+        if (recentQuality.size > 8) recentQuality.removeFirst()
         lastQuad = quad
 
+        // Relative to this same stationary grid, not an absolute Laplacian threshold:
+        // paper texture, line weight and handwriting all change the measured scale.
+        // Wait through autofocus regression, including focus lost on only part of a page.
+        // Both measurements must come from one reference frame. Uniform blur can
+        // improve the ratio by flattening all quadrants; it must not raise the target
+        // ratio and then prevent recovery to the sharper original.
+        val reference = recentQuality.maxBy { it.sharpness }
+        val focusSettled = quality.sharpness >= reference.sharpness * 0.85 &&
+            quality.worstQuadrantSharpnessRatio >= reference.worstQuadrantSharpnessRatio * 0.85
+
         return Guidance(
-            "Hold still...",
-            readyToCapture = stableFrames >= stableFramesRequired,
+            if (focusSettled) "Hold still..." else "Hold still while the camera focuses...",
+            readyToCapture = stableFrames >= stableFramesRequired && focusSettled,
             outline = outline,
             outlineAccepted = true,
         )

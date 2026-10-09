@@ -1,7 +1,7 @@
 # Camera Sudoku Solver — Design
 
 **Date:** 2026-08-30
-**Repo:** https://github.com/tony-xmelon/sudoku-buddy
+**Repo:** https://github.com/freevia-org/sudoku-buddy
 **Status:** Approved, ready for implementation planning
 
 ## 1. Purpose
@@ -584,4 +584,3 @@ Two things to get right when that work starts:
 Nothing here implies analytics, Crashlytics or any other Firebase service. The app makes no network
 calls (section 2); distribution is a build-time concern only, and adding a Firebase SDK to the app
 itself would contradict that.
-

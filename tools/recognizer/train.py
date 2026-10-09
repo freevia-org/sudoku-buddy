@@ -41,6 +41,7 @@ from cells import (  # noqa: E402
     load_labels,
     normalised_cells,
 )
+from benchmark import puzzle_groups  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
@@ -533,7 +534,7 @@ def corpus_cells():
     """
     if export_is_stale():
         raise SystemExit(
-            "CellAnalyzer.kt is newer than the exported bitmaps, so training would "
+            "Extraction sources changed or exported bitmaps are missing/stale, so training would "
             "use images the reader no longer produces. Re-export first: ./gradlew "
             ":core:recognize:test --tests '*ExportNormalisedTest*' -Ddump=true "
             "--rerun-tasks")
@@ -683,9 +684,13 @@ def main():
     given = ~guess
     print(f"  corpus {len(xc)} real digits ({given.sum()} printed, {guess.sum()} handwritten)")
 
-    if "--lopo" in sys.argv:
-        print("\n=== leave-one-photograph-out ===")
-        print("A model that has never seen the photograph it is scored on.\n")
+    if "--lopo" in sys.argv or "--lopg" in sys.argv:
+        grouped = "--lopg" in sys.argv
+        groups = puzzle_groups(os.path.join(os.path.dirname(HERE), "..", "corpus-labels"))
+        split = [groups[p] if grouped else p for p in photos]
+        print("\n=== leave-one-%s-out ===" % ("puzzle-group" if grouped else "photograph"))
+        print("Puzzle holdout keeps related photographs together; writer independence is unverified.\n"
+              if grouped else "Photo holdout can leak related photos of the same puzzle and writer.\n")
         total_right = total = tta_right = 0
         lopo_wrong = []
         # --only <text> holds out just the photographs whose name contains <text>. A
@@ -697,10 +702,12 @@ def main():
         if "--only" in sys.argv:
             only = sys.argv[sys.argv.index("--only") + 1]
             print("(only photographs matching %r)" % only)
-        for stem in sorted(set(photos)):
-            if only is not None and only not in stem:
+        for group in sorted(set(split)):
+            stems = sorted({p for p, g in zip(photos, split) if g == group})
+            stem = ", ".join(stems)
+            if only is not None and not any(only in p for p in stems):
                 continue
-            held = np.array([p == stem for p in photos])
+            held = np.array([g == group for g in split])
             keep = ~held
             ax, ay = amplify_chosen(xc[keep][:, None], yc[keep], CORPUS_TIMES)
             model = fit(np.concatenate([base_x, ax[:, None]]), np.concatenate([base_y, ay]))
@@ -724,9 +731,10 @@ def main():
             with torch.no_grad():
                 pred = model(tx.to(DEVICE)).argmax(1).cpu()
             held_squares = [s for s, keep in zip(squares, held) if keep]
+            held_photos = [p for p, keep in zip(photos, held) if keep]
             for i, (pv, tv, hv) in enumerate(zip(pred.tolist(), ty.tolist(), hand.tolist())):
                 if pv != tv:
-                    lopo_wrong.append((tv + 1, pv + 1, "hand" if hv else "print", stem,
+                    lopo_wrong.append((tv + 1, pv + 1, "hand" if hv else "print", held_photos[i],
                                        held_squares[i]))
         print(f"\n  handwriting, unseen photographs: {total_right}/{total} = "
               f"{total_right / max(1, total):.3f}")
@@ -742,6 +750,9 @@ def main():
             print(f"    {tv} -> {pv}  ({kind}): {n}")
         for tv, pv, kind, stem, square in lopo_wrong:
             print(f"      MISS	{stem}	{square}	{tv}	{pv}	{kind}")
+
+        if "--validation-only" in sys.argv:
+            return
 
     print("\n=== the shipped model, trained on everything ===")
     ax, ay = amplify_chosen(xc[:, None], yc, CORPUS_TIMES)

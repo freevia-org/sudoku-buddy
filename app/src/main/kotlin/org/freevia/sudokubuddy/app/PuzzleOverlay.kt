@@ -18,7 +18,6 @@ import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.drawText
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.sp
 import org.freevia.sudokubuddy.model.CellSource
 import org.freevia.sudokubuddy.recognize.Ink
 import org.freevia.sudokubuddy.solver.Chain
@@ -137,7 +136,7 @@ private fun DrawScope.drawCorner(
         text,
         style = TextStyle(
             color = Color.White,
-            fontSize = (squares.unit * 0.26f / 2.2f).sp,
+            fontSize = (squares.unit * 0.26f).toSp(),
             fontWeight = FontWeight.Bold,
         ),
     )
@@ -164,7 +163,7 @@ private fun DrawScope.drawGhost(
         digit.toString(),
         style = TextStyle(
             color = Overlays.incorrect,
-            fontSize = (squares.unit * 0.62f / 2.2f).sp,
+            fontSize = (squares.unit * 0.62f).toSp(),
             fontWeight = FontWeight.Bold,
             drawStyle = Stroke(width = squares.unit * 0.045f),
         ),
@@ -256,7 +255,26 @@ private fun DrawScope.drawOverlayInLayer(state: PuzzleState, measurer: TextMeasu
         squares.fill(this, index, Overlays.evidence.copy(alpha = 0.28f))
     }
 
-    state.chain()?.let { drawChain(it, squares, measurer) }
+    val chainCells = state.chain()?.let { chain ->
+        chain.links.map { it.index }.toSet() + chain.deadEnd
+    }.orEmpty()
+    val candidates = state.candidateMarks()
+    val removed = state.removedCandidates()
+    for (index in candidates.keys + removed.keys) {
+        if (index in chainCells || index in state.overlayDigits()) continue
+        drawCandidates(measurer, squares, index, candidates[index].orEmpty(), removed[index].orEmpty())
+    }
+
+    state.chain()?.let { chain ->
+        drawChain(chain, squares, measurer)
+        // The assumed digit is rejected by the contradiction, rather than placed for real.
+        for (index in removed.keys.intersect(chainCells)) {
+            val centre = squares.centre(index)
+            val half = squares.unit * 0.23f
+            drawLine(Overlays.incorrect, centre + Offset(-half, half), centre + Offset(half, -half),
+                strokeWidth = squares.unit * 0.05f, cap = StrokeCap.Round)
+        }
+    }
 
     for ((index, digit) in state.overlayDigits()) {
         val colour = Overlays.colour(digit.role)
@@ -322,6 +340,38 @@ private fun DrawScope.drawOverlayInLayer(state: PuzzleState, measurer: TextMeasu
 
     state.selectedCell?.let { index ->
         drawRect(Color.White, squares.topLeft(index), squares.size(index), style = Stroke(width = 4f))
+    }
+    if (state.practicing) state.practiceCell?.let { index ->
+        squares.outline(this, index, Overlays.hint, squares.unit * 0.06f, inset = 0.04f)
+    }
+}
+
+/** A stable 3 by 3 pencil layout; crossed digits are the current step's consequences. */
+private fun DrawScope.drawCandidates(
+    measurer: TextMeasurer, squares: Squares, index: Int, candidates: List<Int>, removed: Set<Int>,
+) {
+    val at = squares.topLeft(index)
+    val cell = squares.size(index)
+    val inset = squares.unit * 0.07f
+    drawRect(Color.White.copy(alpha = 0.88f), at + Offset(inset, inset),
+        Size(cell.width - inset * 2, cell.height - inset * 2))
+    for (digit in candidates.toSet() + removed) {
+        val crossed = digit in removed
+        val colour = if (crossed) Overlays.incorrect else Color(0xFF174C37)
+        val layout = measurer.measure(digit.toString(), style = TextStyle(
+            color = colour, fontSize = (squares.unit * 0.27f).toSp(),
+            fontWeight = FontWeight.Bold,
+        ))
+        val centre = at + Offset(
+            cell.width * ((digit - 1) % 3 + 0.5f) / 3,
+            cell.height * ((digit - 1) / 3 + 0.5f) / 3,
+        )
+        drawText(layout, topLeft = centre - Offset(layout.size.width / 2f, layout.size.height / 2f))
+        if (crossed) {
+            val half = squares.unit * 0.1f
+            drawLine(colour, centre + Offset(-half, half), centre + Offset(half, -half),
+                strokeWidth = squares.unit * 0.035f, cap = StrokeCap.Round)
+        }
     }
 }
 
@@ -448,7 +498,7 @@ private fun DrawScope.drawReadDigit(
         style = TextStyle(
             // Irrelevant under BlendMode.Clear - only the glyph's shape is used.
             color = Color.Black,
-            fontSize = (squares.unit * 0.62f / 2.2f).sp,
+            fontSize = (squares.unit * 0.62f).toSp(),
             fontWeight = FontWeight.Bold,
         ),
     )
@@ -517,7 +567,7 @@ private fun DrawScope.drawCentred(
         text,
         style = TextStyle(
             color = colour,
-            fontSize = (squares.unit * 0.62f / 2.2f).sp,
+            fontSize = (squares.unit * 0.62f).toSp(),
             fontWeight = FontWeight.Bold,
         ),
     )

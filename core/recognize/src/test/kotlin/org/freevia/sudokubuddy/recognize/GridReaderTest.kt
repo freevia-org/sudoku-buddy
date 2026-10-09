@@ -12,6 +12,13 @@ import kotlin.test.assertTrue
 /** End to end: a photograph in, a grid the reader stands behind out. */
 class GridReaderTest {
 
+    // This is a result-screen screenshot with colored reading overlays, confidence
+    // bars and duplicate white digits covering the photographed originals. It is a
+    // negative recognition fixture, not an ordinary puzzle whose clues must be read.
+    private val expectedRefusals = setOf(
+        "0-02-05-3c2309bc39761674fc696fed1abdc1d89ec9436d7f340d0b6332481fc818fb42_b2fcb79a0899d6dc.jpg",
+    )
+
     private fun setUp() {
         CorpusLabels.requireLabels()
         CorpusFixtures.requireCorpus()
@@ -19,18 +26,30 @@ class GridReaderTest {
     }
 
     @Test
-    fun `reads every corpus photo into a grid, and reports the outcome`() {
+    fun `reads corpus puzzles and explicitly rejects annotated result screenshots`() {
         setUp()
         val reader = GridReader()
         var accepted = 0
         var confirmable = 0
+        var expectedRefused = 0
+        var excluded = 0
         val report = StringBuilder("\n=== grid reader over the corpus ===\n")
 
         var considered = 0
         for (file in CorpusFixtures.photos) {
-            if (file.name in CorpusLabels.sameSizeHandwriting) continue
+            if (file.name in CorpusLabels.sameSizeHandwriting) {
+                excluded++
+                continue
+            }
             val verdict = assertIs<GateVerdict.Usable>(StructuralGate.assess(CorpusFixtures.load(file)))
             val result = reader.read(verdict.cells)
+            if (file.name in expectedRefusals) {
+                val refusal = assertIs<ReadResult.Unreadable>(result,
+                    "${file.name}: an annotated result screenshot must not invent a fresh puzzle")
+                expectedRefused++
+                report.append("${file.name} EXPECTED REFUSAL  ${refusal.reason}\n")
+                continue
+            }
             considered++
 
             // A photograph with no hand-written label still has to yield a grid; it just
@@ -86,12 +105,13 @@ class GridReaderTest {
             )
         }
         report.append("$accepted accepted, $confirmable need confirmation, " +
-            "${CorpusFixtures.photos.size - accepted - confirmable} unreadable\n")
+            "${considered - accepted - confirmable} unexpectedly unreadable, " +
+            "$expectedRefused expected refusals, $excluded excluded from this acceptance test\n")
         println(report)
 
         assertTrue(
             accepted + confirmable == considered,
-            "every corpus photo should yield a grid:\n$report",
+            "every ordinary corpus puzzle should yield a grid:\n$report",
         )
     }
 

@@ -67,13 +67,17 @@ before the first release.
 Recognition, checking and hints run on your device. Puzzle photographs, progress and
 history stay in app-specific storage.
 
-- Works offline; the app has no internet permission.
+- Scanning, recognition, solving and tutoring work offline. Sending an uncertain-reading report requires an internet connection and the user's explicit submission, or the optional automatic-sharing setting.
 - No account, ads, analytics or automatic crash reporting.
-- Sharing is deliberate: you choose whether to share a puzzle photograph or diagnostics
-  through Android's share sheet.
+- Photo and diagnostics sharing through Android's share sheet remains user-directed. Puzzle
+  reports can also be sent privately to Freevia from the reading screen; automatic sharing
+  for uncertain readings is off by default and can be changed in Settings.
 
 Diagnostics can include retained unsuccessful scans and a report with app/device
-information. Freevia receives those materials only if you choose to send them to Freevia.
+information. The current released build shares these through Android's share sheet when you
+choose to send them. Direct private report submission is implemented in the release-preparation
+branch but has not yet completed device qualification or been released. See the draft privacy
+policy and release checklist.
 Read the [privacy policy](https://freevia.org/sudoku-buddy/privacy) for storage, retention,
 sharing and deletion details.
 

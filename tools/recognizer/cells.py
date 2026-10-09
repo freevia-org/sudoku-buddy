@@ -17,8 +17,6 @@ which makes the two agree by construction rather than by vigilance:
 import json
 import os
 import numpy as np
-from PIL import Image
-from scipy import ndimage
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CELLS = os.path.join(REPO, "core", "vision", "build", "cell-export")
@@ -70,12 +68,12 @@ def normalised_cells(stem):
 
 #: The Kotlin that produces those bitmaps. If it changes, they are out of date.
 ANALYZER = os.path.join(
-    REPO, "core", "recognize", "src", "main", "kotlin", "io", "github",
+    REPO, "core", "recognize", "src", "main", "kotlin", "org",
     "freevia", "sudokubuddy", "recognize", "CellAnalyzer.kt")
 
 
 def export_is_stale():
-    """Whether CellAnalyzer has been edited since the bitmaps were exported.
+    """Whether any extraction input is newer than any exported bitmap.
 
     Reading the reader's output makes the two agree by construction, but only for as long
     as the output is current. Editing the ink margin and training without re-exporting
@@ -83,9 +81,16 @@ def export_is_stale():
     bitmaps would still load and still look like digits.
     """
     if not os.path.isdir(NORMALISED) or not os.path.isfile(ANALYZER):
-        return False
-    newest = max(
+        return True
+    oldest = min(
         (os.path.getmtime(os.path.join(root, name))
          for root, _, names in os.walk(NORMALISED) for name in names if name.endswith(".f32")),
         default=None)
-    return newest is not None and os.path.getmtime(ANALYZER) > newest
+    vision = os.path.join(REPO, "core", "vision", "src", "main", "kotlin",
+                          "org", "freevia", "sudokubuddy", "vision")
+    sources = [ANALYZER] + [os.path.join(vision, name) for name in (
+        "CellExtractor.kt", "GridLocator.kt", "GridLineFitter.kt", "StructuralGate.kt",
+        "CellGrid.kt", "GrayImage.kt", "GrayImageOps.kt", "Mats.kt", "Quad.kt",
+        "QuadDetector.kt", "GridScorer.kt")]
+    return oldest is None or any(os.path.getmtime(path) > oldest
+                                 for path in sources if os.path.isfile(path))

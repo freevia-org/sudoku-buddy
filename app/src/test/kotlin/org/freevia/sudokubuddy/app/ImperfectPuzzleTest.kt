@@ -66,8 +66,11 @@ class ImperfectPuzzleTest {
     fun `the squares the answers disagree about are marked`() {
         val shown = PuzzleLogic.overlay(ambiguous, OverlayMode.SOLUTION, HintStyle.EXPLAIN)
         assertTrue(shown.evidence.isNotEmpty(), "nothing marked as under-determined")
-        val solved = Solver.solve(ambiguous) as SolveResult.Multiple
-        assertEquals(solved.ambiguousCells, shown.evidence)
+        val answers = Solver.solutions(ambiguous, PuzzleLogic.MOST_ANSWERS_OFFERED)
+        for (index in 0 until 81) {
+            val varies = answers.map { it[index].digit }.distinct().size > 1
+            assertEquals(varies, index in shown.evidence, "ambiguity marker at cell $index")
+        }
     }
 
     @Test

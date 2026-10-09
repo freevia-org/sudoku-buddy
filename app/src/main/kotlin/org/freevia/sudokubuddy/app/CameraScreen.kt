@@ -2,7 +2,11 @@ package org.freevia.sudokubuddy.app
 
 import android.annotation.SuppressLint
 import android.hardware.display.DisplayManager
+import android.os.SystemClock
+import androidx.camera.core.Camera
 import androidx.camera.core.CameraSelector
+import androidx.camera.core.FocusMeteringAction
+import androidx.camera.core.SurfaceOrientedMeteringPointFactory
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
@@ -35,6 +39,7 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
@@ -51,19 +56,20 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.Role
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
-import org.freevia.sudokubuddy.recognize.GridReader
-import org.freevia.sudokubuddy.recognize.ReadResult
 import org.freevia.sudokubuddy.vision.FramingAdvisor
-import org.freevia.sudokubuddy.vision.GateVerdict
-import org.freevia.sudokubuddy.vision.StructuralGate
 import java.util.concurrent.Executors
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.atomic.AtomicBoolean
+import java.util.concurrent.TimeUnit
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -90,16 +96,28 @@ fun CameraScreen(
 ) {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
+    val latestOnRead = rememberUpdatedState(onRead)
 
     var guidance by remember { mutableStateOf("Point the camera at a sudoku puzzle") }
     // What the reader is looking at, so the screen can draw it.
     var sighting by remember { mutableStateOf<Sighting?>(null) }
     var busy by remember { mutableStateOf(false) }
     var failure by remember { mutableStateOf<String?>(null) }
+    var cameraFailed by remember { mutableStateOf(false) }
+    var bindingAttempt by remember { mutableStateOf(0) }
 
     val analysisExecutor = remember { Executors.newSingleThreadExecutor() }
     val advisor = remember { FramingAdvisor() }
     val capturing = remember { AtomicBoolean(false) }
+    val active = remember { AtomicBoolean(true) }
+    val mainExecutor = remember(context) { ContextCompat.getMainExecutor(context) }
+    var camera by remember { mutableStateOf<Camera?>(null) }
+    var focusPending by remember { mutableStateOf(false) }
+    var focusFailed by remember { mutableStateOf(false) }
+    var focusCenter by remember { mutableStateOf<Fraction?>(null) }
+    var focusSpan by remember { mutableStateOf(0f) }
+    var focusMisses by remember { mutableStateOf(0) }
+    val analysisCadence = remember { AnalysisCadence() }
     val scope = rememberCoroutineScope()
     val capture = remember {
         ImageCapture.Builder()
@@ -107,6 +125,13 @@ fun CameraScreen(
             .build()
     }
     val analysisUseCase = rememberAnalysis()
+    DisposableEffect(Unit) {
+        active.set(true)
+        onDispose {
+            active.set(false)
+            analysisExecutor.shutdown()
+        }
+    }
 
     // FILL_CENTER is not just the default here, it is the geometry [Framing] undoes to
     // put the outline back over the thing it outlines. Set it where it can be seen.
@@ -115,6 +140,23 @@ fun CameraScreen(
     }
 
     FollowDisplayRotation(previewView, capture, analysisUseCase)
+
+    fun resumeAnalysis() {
+        if (!active.get()) return
+        runCatching {
+            analysisExecutor.execute {
+                advisor.reset()
+                // Old ready advice was posted before this task. Keep the capture gate
+                // closed until that advice drains, then start from the reset run.
+                mainExecutor.execute {
+                    if (active.get()) {
+                        busy = false
+                        capturing.set(false)
+                    }
+                }
+            }
+        }
+    }
 
     /**
      * Hands the photograph to a background thread, and only the result back to this one.
@@ -126,6 +168,10 @@ fun CameraScreen(
      *
      */
     fun handleCaptured(proxy: ImageProxy) {
+        if (!active.get()) {
+            proxy.close()
+            return
+        }
         // Both of these have to be taken before the proxy is closed, and the proxy has to
         // be closed before the slow part starts, or the camera stalls holding its buffer.
         val rotation = proxy.imageInfo.rotationDegrees
@@ -134,8 +180,7 @@ fun CameraScreen(
             ByteArray(buffer.remaining()).also { buffer.get(it) }
         } catch (e: Exception) {
             failure = e.message ?: "Something went wrong reading that photo."
-            busy = false
-            capturing.set(false)
+            resumeAnalysis()
             return
         } finally {
             proxy.close()
@@ -148,40 +193,60 @@ fun CameraScreen(
             outcome
                 .onSuccess { result ->
                     when (result) {
-                        is PhotoOutcome.Read -> onRead(result.state)
+                        is PhotoOutcome.Read -> latestOnRead.value(result.state)
                         is PhotoOutcome.Refused -> failure = result.message
                     }
                 }
                 .onFailure { failure = it.message ?: "Something went wrong reading that photo." }
-            busy = false
-            capturing.set(false)
-            advisor.reset()
+            resumeAnalysis()
         }
     }
 
     fun takePicture() {
+        if (!active.get() || camera == null) return
         if (!capturing.compareAndSet(false, true)) return
         busy = true
         failure = null
-        capture.takePicture(
+        try { capture.takePicture(
             ContextCompat.getMainExecutor(context),
             object : ImageCapture.OnImageCapturedCallback() {
-                override fun onCaptureSuccess(image: ImageProxy) = handleCaptured(image)
+                override fun onCaptureSuccess(image: ImageProxy) {
+                    try {
+                        handleCaptured(image)
+                    } catch (_: Exception) {
+                        runCatching { image.close() }
+                        if (active.get()) {
+                            failure = "Something went wrong reading that photo."
+                            resumeAnalysis()
+                        }
+                    }
+                }
 
                 override fun onError(exception: ImageCaptureException) {
+                    if (!active.get()) return
                     failure = "The camera could not take that photo."
-                    busy = false
-                    capturing.set(false)
+                    resumeAnalysis()
                 }
             },
-        )
+        ) } catch (_: Exception) {
+            failure = "The camera could not take that photo."
+            resumeAnalysis()
+        }
     }
 
-    BindCamera(previewView, analysisUseCase, capture, analysisExecutor) { proxy ->
-        if (capturing.get()) return@BindCamera
+    BindCamera(previewView, analysisUseCase, capture, analysisExecutor, bindingAttempt,
+        onCamera = { camera = it; cameraFailed = false },
+        onFailure = {
+            camera = null
+            cameraFailed = true
+            failure = "The camera is unavailable. Close other camera apps, then try again."
+        },
+    ) { proxy ->
+        if (capturing.get() || !analysisCadence.shouldAnalyze(SystemClock.elapsedRealtime())) {
+            return@BindCamera
+        }
         val advice = advisor.advise(Images.fromPreview(proxy))
-        guidance = advice.message
-        sighting = advice.outline?.let { corners ->
+        val seen = advice.outline?.let { corners ->
             Sighting(
                 corners = corners.map { Fraction(it.x.toFloat(), it.y.toFloat()) },
                 accepted = advice.outlineAccepted,
@@ -190,7 +255,79 @@ fun CameraScreen(
                 frameHeight = proxy.height,
             )
         }
-        if (autoCapture && advice.readyToCapture) takePicture()
+        // Neither Compose state nor CameraX control calls belong on the analysis thread.
+        // Copy frame metadata before its proxy is closed and discard callbacks after disposal.
+        mainExecutor.execute {
+            if (!active.get() || capturing.get() ||
+                !lifecycleOwner.lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED)) return@execute
+            guidance = if (focusFailed && advice.message == "Hold still...") {
+                "Hold still, or tap the shutter"
+            } else advice.message
+            sighting = seen
+            if (seen?.accepted == true) {
+                focusMisses = 0
+                val center = Fraction(
+                    seen.corners.map { it.x }.average().toFloat(),
+                    seen.corners.map { it.y }.average().toFloat(),
+                )
+                val span = minOf(
+                    seen.corners.maxOf { it.x } - seen.corners.minOf { it.x },
+                    seen.corners.maxOf { it.y } - seen.corners.minOf { it.y },
+                )
+                val previous = focusCenter
+                if (!focusPending && (previous == null ||
+                        kotlin.math.abs(center.x - previous.x) > 0.08f ||
+                        kotlin.math.abs(center.y - previous.y) > 0.08f ||
+                        kotlin.math.abs(span - focusSpan) > focusSpan * 0.2f)) {
+                    val control = camera?.cameraControl
+                    val point = SurfaceOrientedMeteringPointFactory(
+                        seen.frameWidth.toFloat(), seen.frameHeight.toFloat(), analysisUseCase,
+                    ).createPoint(center.x * seen.frameWidth, center.y * seen.frameHeight, 0.25f)
+                    val action = FocusMeteringAction.Builder(
+                        point, FocusMeteringAction.FLAG_AF or FocusMeteringAction.FLAG_AE,
+                    ).setAutoCancelDuration(5, TimeUnit.SECONDS).build()
+                    if (control != null && camera?.cameraInfo?.isFocusMeteringSupported(action) == true) {
+                        focusPending = true
+                        focusFailed = false
+                        focusCenter = center
+                        focusSpan = span
+                        val metering = runCatching { control.startFocusAndMetering(action) }
+                            .getOrElse {
+                                focusPending = false
+                                focusFailed = true
+                                return@execute
+                            }
+                        metering.addListener({
+                            val focusLocked = runCatching { metering.get().isFocusSuccessful }
+                                .getOrDefault(false)
+                            if (active.get()) runCatching {
+                                analysisExecutor.execute {
+                                    // Start the steady/quality run after autofocus completes.
+                                    // Unlock on the main queue after pre-focus advice has drained.
+                                    advisor.reset()
+                                    mainExecutor.execute {
+                                        if (active.get()) {
+                                            // AF can fail on fixed-focus lenses or quiet paper.
+                                            // Fall back to a fresh stable quality run, keeping
+                                            // the manual shutter available, without AF loops.
+                                            focusFailed = !focusLocked
+                                            focusPending = false
+                                        }
+                                    }
+                                }
+                            }
+                        }, mainExecutor)
+                    } else {
+                        focusCenter = center
+                        focusSpan = span
+                    }
+                }
+            } else {
+                focusMisses++
+                if (focusMisses > 2) focusCenter = null
+            }
+            if (autoCapture && advice.readyToCapture && !focusPending) takePicture()
+        }
     }
 
     Box(modifier = Modifier.fillMaxSize().background(Color.Black)) {
@@ -219,6 +356,7 @@ fun CameraScreen(
                 wrong = failure != null,
                 busy = busy,
                 onShutter = { takePicture() },
+                onRetry = if (cameraFailed) ({ failure = null; bindingAttempt++ }) else null,
             )
         }
     }
@@ -241,38 +379,57 @@ private fun BindCamera(
     analysis: ImageAnalysis,
     capture: ImageCapture,
     executor: ExecutorService,
+    bindingAttempt: Int,
+    onCamera: (Camera) -> Unit,
+    onFailure: () -> Unit,
     onFrame: (ImageProxy) -> Unit,
 ) {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
     val latest = rememberUpdatedState(onFrame)
+    val latestCamera = rememberUpdatedState(onCamera)
+    val latestFailure = rememberUpdatedState(onFailure)
 
-    DisposableEffect(Unit) {
-        val future = ProcessCameraProvider.getInstance(context)
-        future.addListener({
+    DisposableEffect(lifecycleOwner, previewView, analysis, capture, bindingAttempt) {
+        val disposed = AtomicBoolean(false)
+        var boundProvider: ProcessCameraProvider? = null
+        var boundPreview: Preview? = null
+        val future = runCatching { ProcessCameraProvider.getInstance(context) }.getOrNull()
+        if (future == null) latestFailure.value()
+        future?.addListener({
+            if (disposed.get()) return@addListener
+            try {
             val provider = future.get()
+            boundProvider = provider
             val preview = Preview.Builder().build().also {
                 it.surfaceProvider = previewView.surfaceProvider
             }
+            boundPreview = preview
 
             analysis.setAnalyzer(executor) { proxy ->
                 try {
-                    latest.value(proxy)
+                    if (!disposed.get()) latest.value(proxy)
                 } catch (_: Exception) {
                 } finally {
                     proxy.close()
                 }
             }
 
-            provider.unbindAll()
-            provider.bindToLifecycle(
+            val camera = provider.bindToLifecycle(
                 lifecycleOwner, CameraSelector.DEFAULT_BACK_CAMERA, preview, analysis, capture,
             )
+            latestCamera.value(camera)
+            } catch (_: Exception) {
+                analysis.clearAnalyzer()
+                boundPreview?.let { boundProvider?.unbind(it, analysis, capture) }
+                latestFailure.value()
+            }
         }, ContextCompat.getMainExecutor(context))
 
         onDispose {
-            ProcessCameraProvider.getInstance(context).get().unbindAll()
-            executor.shutdown()
+            disposed.set(true)
+            analysis.clearAnalyzer()
+            boundPreview?.let { boundProvider?.unbind(it, analysis, capture) }
         }
     }
 }
@@ -364,6 +521,7 @@ private fun CameraFooter(
     wrong: Boolean,
     busy: Boolean,
     onShutter: () -> Unit,
+    onRetry: (() -> Unit)?,
 ) {
     Column(
         modifier = Modifier
@@ -383,7 +541,9 @@ private fun CameraFooter(
             )
         }
 
-        if (busy) {
+        if (onRetry != null) {
+            TextButton(onClick = onRetry) { Text("Retry camera") }
+        } else if (busy) {
             Box(Modifier.size(76.dp), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(color = Color.White)
             }
@@ -424,7 +584,8 @@ private fun Shutter(onClick: () -> Unit) {
     Box(
         modifier = Modifier
             .size(76.dp)
-            .clickable(onClick = onClick)
+            .semantics { contentDescription = "Take photo" }
+            .clickable(role = Role.Button, onClick = onClick)
             .background(Color.Transparent, CircleShape),
         contentAlignment = Alignment.Center,
     ) {
