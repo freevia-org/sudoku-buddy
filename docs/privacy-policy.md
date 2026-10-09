@@ -1,6 +1,6 @@
 # Privacy policy for Sudoku Buddy
 
-Draft for the opt-in report-intake release. **Publish this revision before submitting a Play release; first complete device-level upload verification and the Play Data safety declaration.** The currently published page describes the earlier offline-only build. Last reviewed 10 October 2026.
+This is the source for the live [Sudoku Buddy privacy policy](https://freevia.org/sudoku-buddy/privacy). Last reviewed 10 October 2026. Verify the published page still matches this source before each app release.
 
 Sudoku Buddy is published by **Freevia**.
 Questions about this policy or the app's handling of data can be sent to
@@ -9,9 +9,9 @@ Questions about this policy or the app's handling of data can be sent to
 ## The short version
 
 Sudoku Buddy has no account, ads, routine usage analytics, or ad tracking. Camera processing
-and puzzle history stay on your device. The app sends a puzzle report to Freevia only when you submit it or enable
-optional automatic sharing for uncertain readings. The report contains the straightened
-puzzle photo, original recognition results, uncertainty markers, and any corrections recorded
+and puzzle history stay on your device. The app sends a puzzle report to Freevia only when
+you submit it or enable optional automatic sharing for uncertain readings. A report contains
+the straightened puzzle photo, original recognition results, uncertainty markers, and any corrections recorded
 for that reading. Reports are held for private review to improve recognition; they are not
 posted publicly or automatically added to the training corpus.
 
