@@ -1,8 +1,3 @@
-First release of Sudoku Buddy.
-
-- Scan standard 9x9 Sudoku grids and review the recognized digits
-- Check handwritten answers when the clues define one solution
-- Reveal hints and explore Tutor routes with Before, After and Try it yourself
-- See labeled solver assistance when a detailed proof is unavailable
-- Reopen puzzles and corrections from on-device history
-- Work offline, with optional photo and diagnostic sharing through another app
+Submit uncertain Sudoku readings for analysis to help improve recognition. Reports include
+the puzzle photo, reading results and corrections. Submit a report manually or enable
+optional automatic sharing in Settings; corrections made after submission can update it.
