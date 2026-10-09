@@ -619,7 +619,10 @@ private fun PermissionScreen(onRequest: () -> Unit, onSettings: () -> Unit, onMe
         ) {
             Text(
                 "Sudoku Buddy reads puzzles through the camera, so it needs camera access. " +
-                    "Nothing leaves your phone - the app has no internet permission at all.",
+                    "Recognition and puzzle history stay on your phone. If you choose to submit " +
+                    "an uncertain reading, its photo and results are sent securely to Freevia " +
+                    "to improve recognition. Automatic sharing is optional and can be turned " +
+                    "off in Settings.",
                 style = MaterialTheme.typography.bodyLarge,
             )
             Button(onClick = onRequest) { Text("Allow camera") }

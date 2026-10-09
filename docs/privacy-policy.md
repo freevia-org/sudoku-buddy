@@ -8,8 +8,8 @@ Questions about this policy or the app's handling of data can be sent to
 
 ## The short version
 
-Sudoku Buddy has no account, ads, or analytics. Camera processing and puzzle history stay on
-your device. The app sends a puzzle report to Freevia only when you submit it or enable
+Sudoku Buddy has no account, ads, routine usage analytics, or ad tracking. Camera processing
+and puzzle history stay on your device. The app sends a puzzle report to Freevia only when you submit it or enable
 optional automatic sharing for uncertain readings. The report contains the straightened
 puzzle photo, original recognition results, uncertainty markers, and any corrections recorded
 for that reading. Reports are held for private review to improve recognition; they are not
@@ -49,7 +49,10 @@ available offline. The final signed build must be checked before publication.
 Opening a website link or choosing a receiving app in the share sheet hands that action
 to another app. That app may use the internet under its own permissions and policies.
 
-There is no crash reporting, no analytics and no advertising identifier.
+Sudoku Buddy does not run routine usage analytics, crash reporting, or ad tracking.
+If you choose to submit a puzzle report, Freevia analyzes its recognition results and any
+corrections to improve recognition. This report analysis is described above and is not a
+background usage-analytics service.
 
 ## Sharing is your choice
 

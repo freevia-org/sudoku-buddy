@@ -89,7 +89,8 @@ checking handwritten answers, hints, and on-device history.
 > Processing and puzzle history stay on your phone. If you choose to submit an uncertain
 > reading, its puzzle photo and recognition results can be sent to Freevia for private review
 > to improve recognition. Automatic submission is optional and off unless you enable it.
-> There is no account, analytics or advertising.
+> There is no account, routine usage analytics, ad tracking or advertising. Optional puzzle
+> reports are analyzed to improve recognition as described in the privacy policy.
 
 ## Deciding before the first upload
 

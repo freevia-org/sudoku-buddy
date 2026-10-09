@@ -69,7 +69,8 @@ fun AboutScreen(onClose: () -> Unit) {
                             "readings, uncertainty flags and your corrections are sent securely " +
                             "to Freevia for recognition analysis. Reports do not include your " +
                             "device model or diagnostics. Automatic sharing is optional; there " +
-                            "are no accounts or analytics. Submitted reports are kept for up " +
+                            "are no accounts, routine usage analytics or ad tracking. " +
+                            "Submitted reports are analyzed only to improve recognition and are kept for up " +
                             "to 90 days; use Submission receipts in Settings to copy a deletion request.",
                         style = MaterialTheme.typography.bodyMedium,
                     )
