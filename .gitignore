@@ -64,3 +64,4 @@ corpus-rectified/*.jpg
 # Wrangler local account and deployment state
 .wrangler/
 feedback-api/.wrangler/
+feedback-api/private-reports/
