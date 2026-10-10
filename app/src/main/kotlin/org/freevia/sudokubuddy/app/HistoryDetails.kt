@@ -48,6 +48,8 @@ data class HistoryDetails(
     val corrections: List<ReadingCorrection> = emptyList(),
     val submittedCorrectionCount: Int = -1,
     val receipts: List<SubmissionReceipt> = emptyList(),
+    val trainingConsent: Boolean = false,
+    val trainIfAutoShared: Boolean = false,
 ) {
     fun encode(): String = Properties().apply {
         setProperty("entered", entered.sorted().joinToString(","))
@@ -67,6 +69,8 @@ data class HistoryDetails(
         if (receipts.isNotEmpty()) setProperty("receipts", receipts.joinToString(";") {
             "${it.digest},${it.status},${it.receivedAtMillis}"
         })
+        setProperty("trainingConsent", trainingConsent.toString())
+        setProperty("trainIfAutoShared", trainIfAutoShared.toString())
         reports?.let { values ->
             setProperty("reports", encodeReports(values))
         }
@@ -76,7 +80,8 @@ data class HistoryDetails(
         fun of(state: PuzzleState) = HistoryDetails(state.entered, state.uncertainCells,
             state.lines, state.reports, state.framingNote, state.readerComplaint,
             state.originalGrid, state.originalReports, state.originalUncertainCells,
-            state.readingCorrections, state.submittedCorrectionCount, state.submissionReceipts)
+            state.readingCorrections, state.submittedCorrectionCount, state.submissionReceipts,
+            state.trainingConsent, state.trainIfAutoShared)
 
         private fun encodeReports(values: List<CellReport?>) = values.joinToString(";") { report ->
             report?.let {
@@ -128,11 +133,13 @@ data class HistoryDetails(
                     require(parts.size == 3)
                     SubmissionReceipt(parts[0], parts[1], parts[2].toLong())
                 }
+            fun consent(key: String) = properties.getProperty(key, "false").toBooleanStrict()
             return HistoryDetails(indices("entered"), indices("uncertain"),
                 GridLines(lines("vertical"), lines("horizontal")), decodeReports("reports"),
                 properties.getProperty("framing"), properties.getProperty("complaint"),
                 originalGrid, decodeReports("originalReports"), originalUncertain,
-                corrections, submitted, receipts)
+                corrections, submitted, receipts, consent("trainingConsent"),
+                consent("trainIfAutoShared"))
         }
     }
 }

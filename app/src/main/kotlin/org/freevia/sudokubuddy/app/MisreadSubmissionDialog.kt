@@ -24,14 +24,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.runtime.LaunchedEffect
 
 @Composable
 internal fun MisreadSubmissionDialog(
     autoShare: Boolean,
+    trainingConsent: Boolean,
+    trainingConsentLocked: Boolean,
     onDismiss: () -> Unit,
-    onSubmit: (Boolean) -> Unit,
+    onSubmit: (Boolean, Boolean) -> Unit,
 ) {
     var shareAutomatically by remember { mutableStateOf(autoShare) }
+    var trainThisReport by remember { mutableStateOf(trainingConsent) }
     AlertDialog(
         onDismissRequest = onDismiss,
         title = { Text("Submit uncertain reading for analysis") },
@@ -43,6 +47,39 @@ internal fun MisreadSubmissionDialog(
                         "later corrections can be added when you submit an update or enable " +
                         "automatic sharing."
                 )
+                if (trainingConsentLocked) {
+                    Text(
+                        if (trainingConsent) {
+                            "This reading was opted in to private training. You can request " +
+                                "deletion from Submission receipts. A model already trained " +
+                                "on it may not be retroactively unlearnable. Later corrections " +
+                                "keep this reading's choice."
+                        } else {
+                            "This reading is analysis-only. Later corrections keep this choice."
+                        },
+                        modifier = Modifier.padding(top = 8.dp),
+                        style = MaterialTheme.typography.bodySmall,
+                    )
+                } else {
+                    Row(
+                        modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Checkbox(checked = trainThisReport, onCheckedChange = {
+                            trainThisReport = it
+                        })
+                        Text(
+                            "Keep this report as a private training example",
+                            style = MaterialTheme.typography.bodySmall,
+                        )
+                    }
+                    Text(
+                        "Training examples can be deleted by receipt. If already used to " +
+                            "train a model, its learned changes may remain.",
+                        modifier = Modifier.padding(start = 48.dp),
+                        style = MaterialTheme.typography.bodySmall,
+                    )
+                }
                 if (!MisreadSubmission.available) {
                     Text(
                         "Submissions are not available in this build.",
@@ -68,13 +105,20 @@ internal fun MisreadSubmissionDialog(
                     )
                 }
                 Text(
-                    "Sent privately to Freevia; kept up to 90 days. Turn off anytime in Settings.",
+                    if (trainingConsentLocked && trainingConsent ||
+                        !trainingConsentLocked && trainThisReport) {
+                        "Training copies can be deleted by receipt. Turn off future auto-sharing " +
+                            "in Settings; trained models may retain learned changes."
+                    } else {
+                        "Analysis copies are kept up to 90 days. Turn off future auto-sharing " +
+                            "in Settings."
+                    },
                     modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp),
                     style = MaterialTheme.typography.bodySmall,
                 )
                 Button(
                     enabled = MisreadSubmission.available,
-                    onClick = { onSubmit(shareAutomatically) },
+                    onClick = { onSubmit(shareAutomatically, trainThisReport) },
                 ) { Text("Submit") }
             }
         },
@@ -87,9 +131,18 @@ internal fun MisreadSubmissionDialog(
 @Composable
 internal fun SubmissionReceiptsDialog(
     receipts: List<SubmissionReceipt>,
+    onDelete: (SubmissionReceipt) -> Unit,
+    deletingReceipt: String?,
+    deleteError: String?,
     onDismiss: () -> Unit,
 ) {
     val context = LocalContext.current
+    var pendingDelete by remember { mutableStateOf<SubmissionReceipt?>(null) }
+    LaunchedEffect(receipts, pendingDelete) {
+        if (pendingDelete != null && receipts.none { it.digest == pendingDelete?.digest }) {
+            pendingDelete = null
+        }
+    }
     val request = "Please delete my Sudoku Buddy recognition submissions. Receipt IDs: " +
         receipts.joinToString(", ") { it.digest }
     AlertDialog(
@@ -97,11 +150,24 @@ internal fun SubmissionReceiptsDialog(
         title = { Text("Submission receipts") },
         text = {
             Column(Modifier.heightIn(max = 280.dp).verticalScroll(rememberScrollState())) {
-                Text("Each receipt identifies one submitted puzzle revision. Email " +
-                    "info@freevia.org to request deletion.")
+                Text("Each receipt identifies one submitted puzzle revision. Delete it here " +
+                    "to remove the report and any private training copy from Freevia.")
                 receipts.forEach { receipt ->
-                    Text(receipt.digest, style = MaterialTheme.typography.labelSmall,
-                        modifier = Modifier.padding(top = 6.dp))
+                    Row(
+                        modifier = Modifier.fillMaxWidth().padding(top = 6.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Text(receipt.digest, style = MaterialTheme.typography.labelSmall,
+                            modifier = Modifier.weight(1f))
+                        TextButton(
+                            enabled = deletingReceipt == null && MisreadSubmission.available,
+                            onClick = { pendingDelete = receipt },
+                        ) { Text(if (deletingReceipt == receipt.digest) "Deleting…" else "Delete") }
+                    }
+                }
+                deleteError?.let {
+                    Text(it, color = MaterialTheme.colorScheme.error,
+                        style = MaterialTheme.typography.bodySmall)
                 }
             }
         },
@@ -116,4 +182,33 @@ internal fun SubmissionReceiptsDialog(
         },
         dismissButton = { TextButton(onClick = onDismiss) { Text("Close") } },
     )
+    pendingDelete?.let { receipt ->
+        AlertDialog(
+            onDismissRequest = { if (deletingReceipt == null) pendingDelete = null },
+            title = { Text("Delete this submission?") },
+            text = {
+                Column {
+                    Text("Freevia will delete this report revision and its private training " +
+                        "copy. Future corrections may create a new report under your sharing " +
+                        "settings. A model already trained on it may retain learned changes.")
+                    deleteError?.let {
+                        Text(it, color = MaterialTheme.colorScheme.error,
+                            style = MaterialTheme.typography.bodySmall,
+                            modifier = Modifier.padding(top = 8.dp))
+                    }
+                }
+            },
+            confirmButton = {
+                TextButton(enabled = deletingReceipt == null,
+                    onClick = { onDelete(receipt) }) {
+                    Text(if (deletingReceipt == receipt.digest) "Deleting…" else "Delete report")
+                }
+            },
+            dismissButton = {
+                TextButton(enabled = deletingReceipt == null, onClick = { pendingDelete = null }) {
+                    Text("Cancel")
+                }
+            },
+        )
+    }
 }

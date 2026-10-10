@@ -86,7 +86,10 @@ fun PreparedPuzzleScreen(
     onAbout: () -> Unit,
     autoShareUncertain: Boolean,
     submissionInFlight: Boolean,
-    onSubmitReading: (PuzzleState, Boolean) -> Unit,
+    onDeleteReceipt: (SubmissionReceipt) -> Unit,
+    deletingReceipt: String?,
+    deleteError: String?,
+    onSubmitReading: (PuzzleState, Boolean, Boolean) -> Unit,
 ) {
     var prepared by remember { mutableStateOf<PuzzleState?>(null) }
     var failed by remember(state) { mutableStateOf(false) }
@@ -106,7 +109,7 @@ fun PreparedPuzzleScreen(
         if (ready != null && ready.photo === state.photo) {
             PuzzleScreen(ready, { if (ready === state) onChange(it) }, onMenu, onRetake,
                 onStrategies, onSettings, onAbout, autoShareUncertain, submissionInFlight,
-                onSubmitReading,
+                onDeleteReceipt, deletingReceipt, deleteError, onSubmitReading,
                 showCellEditor = ready === state)
         }
         if (ready !== state) {
@@ -146,7 +149,10 @@ fun PuzzleScreen(
     onAbout: () -> Unit,
     autoShareUncertain: Boolean,
     submissionInFlight: Boolean,
-    onSubmitReading: (PuzzleState, Boolean) -> Unit,
+    onDeleteReceipt: (SubmissionReceipt) -> Unit,
+    deletingReceipt: String?,
+    deleteError: String?,
+    onSubmitReading: (PuzzleState, Boolean, Boolean) -> Unit,
     showCellEditor: Boolean = true,
 ) {
     val measurer = rememberTextMeasurer()
@@ -210,14 +216,18 @@ fun PuzzleScreen(
         MisreadSubmissionDialog(
             autoShare = autoShareUncertain,
             onDismiss = { submitOpen = false },
-            onSubmit = { auto ->
+            trainingConsent = state.trainingConsent,
+            trainingConsentLocked = state.submittedCorrectionCount >= 0,
+            onSubmit = { auto, train ->
                 submitOpen = false
-                onSubmitReading(state, auto)
+                onSubmitReading(state, auto, train)
             },
         )
     }
     if (receiptsOpen) {
-        SubmissionReceiptsDialog(state.submissionReceipts) { receiptsOpen = false }
+        SubmissionReceiptsDialog(
+            state.submissionReceipts, onDeleteReceipt, deletingReceipt, deleteError,
+        ) { receiptsOpen = false }
     }
 }
 

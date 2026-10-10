@@ -118,6 +118,8 @@ private fun AppRoot() {
     var submissionReceipts by remember { mutableStateOf(SubmissionReceiptStore.list(context)) }
     var puzzle by remember { mutableStateOf<PuzzleState?>(null) }
     var submissionInFlight by remember { mutableStateOf(false) }
+    var deletingReceipt by remember { mutableStateOf<String?>(null) }
+    var receiptDeleteError by remember { mutableStateOf<String?>(null) }
     val pendingAutoSubmissions = remember { AutoSubmissionQueue<PuzzleState>() }
     var entries by remember { mutableStateOf(emptyList<HistoryEntry>()) }
     // Photographs the app refused. Looked up with the puzzles, since the drawer shows both.
@@ -139,6 +141,8 @@ private fun AppRoot() {
         readingCorrections = entry.details.corrections,
         submittedCorrectionCount = entry.details.submittedCorrectionCount,
         submissionReceipts = entry.details.receipts,
+        trainingConsent = entry.details.trainingConsent,
+        trainIfAutoShared = entry.details.trainIfAutoShared,
         hintStyle = settings.hintStyle, routeStyle = settings.routeStyle,
     )
 
@@ -184,6 +188,41 @@ private fun AppRoot() {
         scope.launch { drawer.close() }
     }
 
+    fun deleteReceipt(receipt: SubmissionReceipt) {
+        if (deletingReceipt != null) return
+        deletingReceipt = receipt.digest
+        receiptDeleteError = null
+        scope.launch {
+            val remote = MisreadUploader.delete(receipt)
+            if (remote.isSuccess) {
+                val local = runCatching {
+                    storage.withLock {
+                        withContext(Dispatchers.IO) {
+                            history.removeReceipt(receipt.digest)
+                            SubmissionReceiptStore.remove(context, receipt.digest)
+                            history.list()
+                        }
+                    }
+                }
+                local.onSuccess { savedEntries ->
+                    entries = savedEntries
+                    submissionReceipts = SubmissionReceiptStore.list(context)
+                    puzzle = puzzle?.let { state -> state.copy(
+                        submissionReceipts = state.submissionReceipts.filterNot {
+                            it.digest == receipt.digest
+                        },
+                    ) }
+                }.onFailure {
+                    receiptDeleteError = "Freevia confirmed deletion, but this phone could not " +
+                        "remove the local receipt. Retry to finish local cleanup."
+                }
+            } else {
+                receiptDeleteError = "Deletion could not be confirmed. Check your connection and try again."
+            }
+            deletingReceipt = null
+        }
+    }
+
     fun openDrawer() {
         if (storageBusy) return
         scope.launch { drawer.open() }
@@ -218,12 +257,14 @@ private fun AppRoot() {
                 active.submittedCorrectionCount, snapshot.readingCorrections.size,
             ), submissionReceipts = if (active.submissionReceipts.any { it.digest == receipt.digest }) {
                 active.submissionReceipts
-            } else active.submissionReceipts + receipt)
+            } else active.submissionReceipts + receipt,
+                trainingConsent = snapshot.trainingConsent)
         }
         if (id != null) {
             storage.withLock {
                 withContext(Dispatchers.IO) {
-                    history.markSubmitted(id, snapshot.readingCorrections.size, receipt)
+                    history.markSubmitted(id, snapshot.readingCorrections.size, receipt,
+                        snapshot.trainingConsent)
                 }
             }
             entries = withContext(Dispatchers.IO) { history.list() }
@@ -279,8 +320,25 @@ private fun AppRoot() {
             try {
                 while (settings.autoShareWhenUncertain) {
                     val active = puzzle?.takeIf { entryId == id && it.photo === initial.photo }
-                    val snapshot = active ?: initial
+                    var snapshot = active ?: initial
                     if (!isPendingAutoSubmission(snapshot)) break
+                    if (snapshot.submittedCorrectionCount < 0) {
+                        snapshot = snapshot.copy(trainingConsent =
+                            ReportTrainingConsent.forAutomaticSubmission(
+                                hasAcceptedSubmission = snapshot.submittedCorrectionCount >= 0,
+                                existingConsent = snapshot.trainingConsent,
+                                scanOptIn = snapshot.trainIfAutoShared,
+                                trainingEnabledNow = settings.trainAutoSharedReports,
+                            ))
+                        puzzle = puzzle?.takeIf { it.photo === snapshot.photo }?.copy(
+                            trainingConsent = snapshot.trainingConsent,
+                        )
+                        if (id != null) {
+                            storage.withLock {
+                                withContext(Dispatchers.IO) { history.update(id, snapshot) }
+                            }
+                        }
+                    }
                     if (!uploadSnapshot(snapshot, id)) break
                     if (active == null || puzzle?.photo !== initial.photo || entryId != id) break
                 }
@@ -314,16 +372,30 @@ private fun AppRoot() {
         if (entryId != null && settings.autoShareWhenUncertain) submitAutomatically(entryId)
     }
 
-    fun submitManually(snapshot: PuzzleState, shareAutomatically: Boolean) {
+    fun submitManually(snapshot: PuzzleState, shareAutomatically: Boolean, trainThisReport: Boolean) {
         settings = settings.copy(autoShareWhenUncertain = shareAutomatically)
         Settings.save(context, settings)
         if (!shareAutomatically) pendingAutoSubmissions.clear()
         if (!MisreadSubmission.available || submissionInFlight) return
+        val reportSnapshot = snapshot.copy(trainingConsent =
+            ReportTrainingConsent.forManualSubmission(
+                hasAcceptedSubmission = snapshot.submittedCorrectionCount >= 0,
+                existingConsent = snapshot.trainingConsent,
+                userConsented = trainThisReport,
+            ))
+        puzzle = puzzle?.takeIf { it.photo === snapshot.photo }?.copy(
+            trainingConsent = reportSnapshot.trainingConsent,
+        )
         val submissionId = entryId
         submissionInFlight = true
         scope.launch {
             try {
-                if (uploadSnapshot(snapshot, submissionId)) {
+                if (submissionId != null) {
+                    storage.withLock {
+                        withContext(Dispatchers.IO) { history.update(submissionId, reportSnapshot) }
+                    }
+                }
+                if (uploadSnapshot(reportSnapshot, submissionId)) {
                     Toast.makeText(context, "Reading submitted. Thank you!", Toast.LENGTH_SHORT).show()
                 }
             } finally {
@@ -360,14 +432,28 @@ private fun AppRoot() {
     }
 
     fun applySettings(updated: Settings) {
+        val revokePendingTraining = settings.trainAutoSharedReports &&
+            !updated.trainAutoSharedReports
         if (!updated.autoShareWhenUncertain) pendingAutoSubmissions.clear()
         settings = updated
         Settings.save(context, updated)
         // A puzzle already on screen should follow the setting rather than keep the old one.
-        puzzle = puzzle?.copy(
+        val current = puzzle
+        val changed = current?.copy(
             hintStyle = updated.hintStyle,
             routeStyle = updated.routeStyle,
+            trainIfAutoShared = if (revokePendingTraining && current.submittedCorrectionCount < 0) {
+                false
+            } else current.trainIfAutoShared,
         )
+        puzzle = changed
+        if (changed != null && changed != current) entryId?.let { id ->
+            scope.launch {
+                storage.withLock {
+                    withContext(Dispatchers.IO) { history.update(id, changed) }
+                }
+            }
+        }
     }
 
     fun go(target: Screen) {
@@ -503,6 +589,9 @@ private fun AppRoot() {
             screen == Screen.SETTINGS -> SettingsScreen(
                 settings = settings,
                 submissionReceipts = submissionReceipts,
+                onDeleteReceipt = ::deleteReceipt,
+                deletingReceipt = deletingReceipt,
+                deleteError = receiptDeleteError,
                 onChange = ::applySettings,
                 onClose = ::leaveOverlay,
             )
@@ -517,6 +606,9 @@ private fun AppRoot() {
                 onAbout = { go(Screen.ABOUT) },
                 autoShareUncertain = settings.autoShareWhenUncertain,
                 submissionInFlight = submissionInFlight,
+                onDeleteReceipt = ::deleteReceipt,
+                deletingReceipt = deletingReceipt,
+                deleteError = receiptDeleteError,
                 onSubmitReading = ::submitManually,
             )
 
@@ -538,6 +630,7 @@ private fun AppRoot() {
                     puzzle = state.copy(
                         hintStyle = settings.hintStyle,
                         routeStyle = settings.routeStyle,
+                        trainIfAutoShared = settings.trainAutoSharedReports,
                     )
                     go(Screen.PUZZLE)
                     storageBusy = true

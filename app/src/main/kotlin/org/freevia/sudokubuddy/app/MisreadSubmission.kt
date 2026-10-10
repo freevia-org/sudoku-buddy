@@ -101,6 +101,9 @@ internal object MisreadUploader {
                 connection.readTimeout = 20_000
                 connection.doOutput = true
                 connection.setRequestProperty("Content-Type", "application/zip")
+                trainingConsentHeader(state.trainingConsent)?.let {
+                    connection.setRequestProperty("X-Sudoku-Training-Consent", it)
+                }
                 connection.setFixedLengthStreamingMode(body.size)
                 connection.outputStream.use { it.write(body) }
                 val httpStatus = connection.responseCode
@@ -125,5 +128,38 @@ internal object MisreadUploader {
             "Submission response status is invalid."
         }
         return SubmissionReceipt(digest, status, System.currentTimeMillis())
+    }
+
+    internal fun trainingConsentHeader(consented: Boolean): String? =
+        if (consented) "yes" else null
+
+    internal fun parseDeletionResponse(httpStatus: Int, json: String, expectedReceipt: String) {
+        require(expectedReceipt.matches(Regex("[a-f0-9]{64}")))
+        check(httpStatus == 200) { "Deletion service returned HTTP $httpStatus." }
+        val receipt = Regex("\\\"receipt\\\"\\s*:\\s*\\\"([a-f0-9]{64})\\\"")
+            .find(json)?.groupValues?.get(1)
+        val status = Regex("\\\"status\\\"\\s*:\\s*\\\"(deleted|already_deleted)\\\"")
+            .find(json)?.groupValues?.get(1)
+        check(receipt == expectedReceipt && status != null) {
+            "Deletion response did not confirm this receipt."
+        }
+    }
+
+    suspend fun delete(receipt: SubmissionReceipt): Result<Unit> = withContext(Dispatchers.IO) {
+        runCatching {
+            check(MisreadSubmission.available) { "Submission service is not configured." }
+            val url = "${MisreadSubmission.endpoint.trimEnd('/')}/${receipt.digest}"
+            val connection = URL(url).openConnection() as HttpURLConnection
+            try {
+                connection.requestMethod = "DELETE"
+                connection.connectTimeout = 12_000
+                connection.readTimeout = 20_000
+                val status = connection.responseCode
+                val body = connection.inputStream.bufferedReader().use { it.readText() }
+                parseDeletionResponse(status, body, receipt.digest)
+            } finally {
+                connection.disconnect()
+            }
+        }
     }
 }

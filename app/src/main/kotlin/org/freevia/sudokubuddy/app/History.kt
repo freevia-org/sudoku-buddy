@@ -73,6 +73,12 @@ class History(context: Context) {
                 incomingDetails.submittedCorrectionCount,
                 savedDetails?.submittedCorrectionCount ?: -1,
             ),
+            trainingConsent = if ((savedDetails?.submittedCorrectionCount ?: -1) >= 0) {
+                savedDetails!!.trainingConsent
+            } else incomingDetails.trainingConsent,
+            trainIfAutoShared = if ((savedDetails?.submittedCorrectionCount ?: -1) >= 0) {
+                savedDetails!!.trainIfAutoShared
+            } else incomingDetails.trainIfAutoShared,
             receipts = (incomingDetails.receipts + (savedDetails?.receipts ?: emptyList()))
                 .distinctBy { it.digest },
         )
@@ -83,7 +89,12 @@ class History(context: Context) {
 
     /** Records the accepted report revision without replacing a newer puzzle edit. */
     @Synchronized
-    fun markSubmitted(id: Long, correctionCount: Int, receipt: SubmissionReceipt) {
+    fun markSubmitted(
+        id: Long,
+        correctionCount: Int,
+        receipt: SubmissionReceipt,
+        trainingConsent: Boolean,
+    ) {
         require(correctionCount >= 0)
         val text = File(directory, "$id.txt")
         if (!text.isFile) return
@@ -92,11 +103,27 @@ class History(context: Context) {
         val details = HistoryFormat.details(saved)
         val marked = details.copy(
             submittedCorrectionCount = maxOf(details.submittedCorrectionCount, correctionCount),
+            trainingConsent = trainingConsent,
             receipts = if (details.receipts.any { it.digest == receipt.digest }) details.receipts
                 else details.receipts + receipt,
         )
         atomicWrite(text) {
             it.write(HistoryFormat.encode(grid, marked).toByteArray(Charsets.UTF_8))
+        }
+    }
+
+    /** Removes a server-deleted receipt from every local puzzle copy. */
+    @Synchronized
+    fun removeReceipt(digest: String) {
+        directory.listFiles { file -> file.extension == "txt" }?.forEach { text ->
+            val saved = runCatching { text.readText() }.getOrNull() ?: return@forEach
+            val grid = runCatching { HistoryFormat.decode(saved) }.getOrNull() ?: return@forEach
+            val details = runCatching { HistoryFormat.details(saved) }.getOrNull() ?: return@forEach
+            if (details.receipts.none { it.digest == digest }) return@forEach
+            val updated = details.copy(receipts = details.receipts.filterNot { it.digest == digest })
+            atomicWrite(text) {
+                it.write(HistoryFormat.encode(grid, updated).toByteArray(Charsets.UTF_8))
+            }
         }
     }
 

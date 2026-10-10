@@ -9,6 +9,8 @@ data class Settings(
     val hintStyle: HintStyle = HintStyle.EXPLAIN,
     val autoCapture: Boolean = false,
     val autoShareWhenUncertain: Boolean = false,
+    /** Explicit consent for training use of newly read reports that are auto-shared. */
+    val trainAutoSharedReports: Boolean = false,
     /** What the tutor's route should be good at. See [RouteStyle]. */
     val routeStyle: RouteStyle = RouteStyle.SHORT_CHAINS,
 ) {
@@ -17,6 +19,7 @@ data class Settings(
         private const val KEY_HINT_STYLE = "hintStyle"
         private const val KEY_AUTO_CAPTURE = "autoCapture"
         private const val KEY_AUTO_SHARE = "autoShareWhenUncertain"
+        private const val KEY_TRAIN_AUTO_SHARED = "trainAutoSharedReports"
         private const val KEY_ROUTE_STYLE = "routeStyle"
 
         fun load(context: Context): Settings {
@@ -27,6 +30,7 @@ data class Settings(
                 }.getOrDefault(HintStyle.EXPLAIN),
                 autoCapture = prefs.getBoolean(KEY_AUTO_CAPTURE, false),
                 autoShareWhenUncertain = prefs.getBoolean(KEY_AUTO_SHARE, false),
+                trainAutoSharedReports = prefs.getBoolean(KEY_TRAIN_AUTO_SHARED, false),
                 routeStyle = runCatching {
                     RouteStyle.valueOf(
                         prefs.getString(KEY_ROUTE_STYLE, null) ?: RouteStyle.SHORT_CHAINS.name
@@ -40,6 +44,7 @@ data class Settings(
                 putString(KEY_HINT_STYLE, settings.hintStyle.name)
                 putBoolean(KEY_AUTO_CAPTURE, settings.autoCapture)
                 putBoolean(KEY_AUTO_SHARE, settings.autoShareWhenUncertain)
+                putBoolean(KEY_TRAIN_AUTO_SHARED, settings.trainAutoSharedReports)
                 putString(KEY_ROUTE_STYLE, settings.routeStyle.name)
             }
         }
