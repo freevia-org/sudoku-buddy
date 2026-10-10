@@ -1,18 +1,18 @@
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 10 October 2026. **Training-consent source is merged in PR #18 at
-`46831610f88d37ee4d73867da14b2bc0c182710f`. Candidate 1.0.0 (125) completed its
-non-distributing build workflow, but embeds the earlier handoff documents. Build a fresh
-candidate after this documentation refresh merges. Play still holds inactive draft 124;
-no tester distribution, review submission or public publication is authorized here.**
+Updated 10 October 2026. **Training-consent source is merged in PR #18. For a packaged
+candidate, its exact source, version, AAB hash, signing and bundle evidence come from the
+sealed package records described below. Play's last audited release remains inactive draft
+124; no tester distribution, review submission or public publication is authorized here.**
 
 ## Current training-release evidence
 
 | Area | Evidence and limit |
 | --- | --- |
 | Reviewed source | PR #18 adds separate optional training consent, receipt deletion and backend storage changes. Candidate 124 lacks these changes and is historical for this release. |
-| Candidate 125 | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) succeeded from full SHA `46831610f88d37ee4d73867da14b2bc0c182710f`. Artifacts are `sudoku-buddy-play-candidate-125` and `sudoku-buddy-candidate-checks-125`. Workflow success does not establish physical qualification, deployed backend behavior, local independent artifact verification or Play validation. Its embedded handoff documents predate this refresh. |
-| Replacement candidate | After this PR merges, freeze the final reviewed full SHA and use `play-candidate.yml` with an unused version code above every Play upload. Code 125 was unused at the last Console audit; use a new code for the replacement package and check the inventory again before upload. No replacement candidate is claimed built here. |
+| Packaged candidate identity | Use the sealed package's `release-record.json` for the exact source/version and build provenance, `SHA256SUMS.json` to verify every packaged file, and `evidence/` for bundle validation, manifest/config audit, certificate/signature and generated APK alignment checks. Independently hash the AAB and match its identity to these records. These prose documents do not identify a particular newly built package by a predicted run or hash. |
+| Build and review process | Finalize and merge the reviewed source, privacy, notes and handoff documents before building with `play-candidate.yml`. Supply the final full SHA and a version code greater than every Play upload; check the Console inventory before upload. Download the matching `sudoku-buddy-play-candidate-<code>` and `sudoku-buddy-candidate-checks-<code>` from the recorded run. Workflow success alone does not establish device qualification, deployed backend behavior, independent local verification or Play validation. |
+| Superseded initial training build | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) built code 125 from `46831610f88d37ee4d73867da14b2bc0c182710f` before the handoff refresh. That specific package embeds the earlier documents and is superseded as a publishing handoff. This historical limitation does not describe every later package using code 125. Preserve that run's inventory unchanged and distinguish builds by source, run and AAB hash, not version code alone. |
 | Signing | Keep the existing stable upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key is needed. |
 | Play state | Internal testing is **Inactive / Draft**, release `1.0.0 (124) — Internal test`, candidate 124 only, 2 of 3 tasks complete. Its preview showed zero errors and two warnings (missing mapping and native debug symbols). Entering preview did not distribute it; the separate final **Save and publish** action publishes immediately and remains untaken. These diagnostics do not validate candidate 125 or its replacement. |
 | Listing and declarations | Required en-US listing fields and all ten app-content declarations are completed. Saved Data Safety marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics, with no third-party sharing, encrypted transit and a deletion request URL. Changes remain unsubmitted; **Send app for review** is disabled pending dashboard tasks. |

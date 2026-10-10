@@ -1,14 +1,16 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status (10 October 2026): PR #18's training-consent source is merged at
-`46831610f88d37ee4d73867da14b2bc0c182710f`. Candidate 125's
-[non-distributing workflow](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369)
-succeeded, but its embedded handoff documents predate this refresh. Build a fresh candidate
-from the final reviewed SHA after these documents merge. Candidate 124 remains the only
-bundle in the inactive Internal testing draft (2 of 3 tasks complete); no rollout occurred.
-Store-listing and declaration changes remain unsubmitted. **Send app for review** is
-disabled until dashboard tasks are complete. Production is inactive with 0 of 5 tasks
-complete. Follow [release readiness](play-release-readiness.md) for current evidence and gates.
+Current status snapshot (10 October 2026): PR #18's training-consent source is merged.
+For any packaged candidate, read `release-record.json`, `SHA256SUMS.json` and `evidence/`
+for its exact source, version, AAB hash, signing and validation provenance. Do not infer
+package identity from this prose or from version code alone. Finalize and merge all reviewed
+release inputs before using the non-distributing workflow, then verify the resulting package.
+
+Candidate 124 remains the only bundle in the last audited inactive Internal testing draft
+(2 of 3 tasks complete); no rollout occurred. Store-listing and declaration changes remain
+unsubmitted. **Send app for review** is disabled until dashboard tasks are complete.
+Production is inactive with 0 of 5 tasks complete. Follow
+[release readiness](play-release-readiness.md) for evidence, limits and gates.
 
 The text below is repository-side preparation, not proof of saved Console values. The last
 live audit found blanket 90-day retention in the saved listing and old email deletion
@@ -232,14 +234,16 @@ not this checklist, assigns the final regional ratings.
 
 1. Complete consent, service lifecycle, privacy/listing alignment and final-candidate
    device qualification in `play-release-readiness.md`.
-2. Build a fresh candidate after this documentation PR merges using `play-candidate.yml`,
+2. Finalize and merge reviewed release inputs, then build using `play-candidate.yml`,
    the final full reviewed SHA and a new version code above every Play upload. The workflow
    validates a positive code and SHA ancestry but does not query Play's highest code.
 3. Download `sudoku-buddy-play-candidate-<code>` and
    `sudoku-buddy-candidate-checks-<code>`. Verify the package inventory, exact AAB hash,
    source/code/package, stable certificate, tests/lint and bundle/APK alignment evidence.
-   Candidate 125's successful run is source evidence, not a complete publishing handoff:
-   its embedded documents are stale. Do not rewrite sealed candidate 124 or 125 artifacts.
+   Initial training workflow 38017589369 specifically built code 125 before the handoff
+   refresh and embeds older documents; that run is superseded as a publishing handoff.
+   A later package's identity and evidence come from its own sealed records. Preserve
+   historical inventories; do not rewrite their embedded files or checksums.
 4. With authorized draft-upload scope, replace the superseded bundle in the existing
    internal draft, update its name/notes accurately, save as draft and inspect that new
    candidate's preview diagnostics. Current release notes describe analysis only; revise
