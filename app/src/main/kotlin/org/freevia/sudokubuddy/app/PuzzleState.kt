@@ -85,7 +85,7 @@ data class PuzzleState(
     val trainingConsent: Boolean = false,
     /** Snapshot of the separate setting at scan time; only used for first auto submission. */
     val trainIfAutoShared: Boolean = false,
-    val overlay: OverlayMode = OverlayMode.NONE,
+    val overlay: OverlayMode = if (uncertainCells.isNotEmpty()) OverlayMode.READING else OverlayMode.NONE,
     val hintStyle: HintStyle = HintStyle.EXPLAIN,
     val selectedCell: Int? = null,
     /** How far the current hint has been pushed. See [PuzzleLogic.HINT_DEPTHS]. */
@@ -511,5 +511,5 @@ private class PuzzleAnalysis(private val grid: Grid) {
     fun openQuestions(flagged: Set<Int>, reports: List<CellReport?>?): Set<Int> =
         questions.get(flagged to reports) { PuzzleLogic.stillInQuestion(flagged, reports, grid) }
     fun readingHeadline(count: Int): String =
-        headlines.get(count) { PuzzleLogic.readingHeadline(count, grid) }
+        headlines.get(count) { PuzzleLogic.readingHeadline(count) }
 }

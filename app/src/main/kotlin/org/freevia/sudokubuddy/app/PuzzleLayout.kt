@@ -23,7 +23,7 @@ object PuzzleLayout {
      */
     private const val UPRIGHT_SHARE = 0.52f
 
-    /** The app bar, the empty-count under the grid, and the padding around them. */
+    /** The app bar (including progress) and padding around the photograph. */
     private const val CHROME = 94f
 
     /** Four buttons in a row and a sentence of tutoring; less is not worth the split. */
@@ -46,14 +46,17 @@ object PuzzleLayout {
      * stays above the controls, which is the arrangement that has been tested on a real
      * phone.
      */
-    fun forWindow(width: Float, height: Float): PuzzleArrangement {
-        val stacked = minOf(width - MARGIN, height * UPRIGHT_SHARE)
+    fun forWindow(width: Float, height: Float, fontScale: Float = 1f): PuzzleArrangement {
+        // Enlarged text needs more of the lower pane. Keep the grid stable at normal
+        // text sizes, then give that space to review instructions and their buttons.
+        val textScale = fontScale.coerceAtLeast(1f)
+        val stacked = minOf(width - MARGIN, height * UPRIGHT_SHARE / textScale)
             .coerceAtMost(MAX_PHOTO)
             .coerceAtLeast(0f)
 
         // Side by side, the photograph is bounded by the height left under the app bar,
         // and by the width left once the controls have taken theirs.
-        val beside = minOf(height - CHROME, width - MIN_CONTROLS_WIDTH - MARGIN)
+        val beside = minOf(height - CHROME, width - MIN_CONTROLS_WIDTH * textScale - MARGIN)
             .coerceAtMost(MAX_PHOTO)
             .coerceAtLeast(0f)
 

@@ -138,16 +138,23 @@ internal fun ReadingBanner(
         state.liveNote?.let {
             Text(it, style = MaterialTheme.typography.bodySmall)
         }
-        Text(
-            "Look for the thick bar under a square on the photo. Tap that square to fix " +
-                "it, or accept the reading as it stands.",
-            style = MaterialTheme.typography.bodySmall,
-        )
+        if (state.openQuestions.isNotEmpty()) {
+            Text(
+                "Tap a marked square to review it, or confirm all readings are correct.",
+                style = MaterialTheme.typography.bodySmall,
+            )
+        }
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            FilledTonalButton(
-                onClick = { onChange(state.acceptReading()) },
-                modifier = Modifier.weight(1f),
-            ) { Text("All correct") }
+            if (state.openQuestions.isNotEmpty()) {
+                val showingReading = state.overlay == OverlayMode.READING
+                FilledTonalButton(
+                    onClick = {
+                        onChange(if (showingReading) state.acceptReading()
+                            else state.copy(overlay = OverlayMode.READING))
+                    },
+                    modifier = Modifier.weight(1f),
+                ) { Text(if (showingReading) "All correct" else "Review reading") }
+            }
             val submitted = state.submittedCorrectionCount >= 0
             val hasUpdate = state.readingCorrections.size > state.submittedCorrectionCount
             FilledTonalButton(

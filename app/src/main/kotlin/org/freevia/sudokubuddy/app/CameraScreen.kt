@@ -20,6 +20,7 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -27,9 +28,11 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -38,6 +41,7 @@ import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -88,11 +92,13 @@ import kotlinx.coroutines.withContext
 @Composable
 fun CameraScreen(
     autoCapture: Boolean,
+    onAutoCaptureChange: (Boolean) -> Unit,
     onRead: (PuzzleState) -> Unit,
     onMenu: () -> Unit,
     onStrategies: () -> Unit,
     onSettings: () -> Unit,
     onAbout: () -> Unit,
+    autoCaptureAllowed: Boolean = true,
 ) {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
@@ -326,7 +332,7 @@ fun CameraScreen(
                 focusMisses++
                 if (focusMisses > 2) focusCenter = null
             }
-            if (autoCapture && advice.readyToCapture && !focusPending) takePicture()
+            if (autoCapture && autoCaptureAllowed && advice.readyToCapture && !focusPending) takePicture()
         }
     }
 
@@ -341,7 +347,8 @@ fun CameraScreen(
         sighting?.let { seen -> Sighted(seen, Modifier.fillMaxSize()) }
 
         Column(modifier = Modifier.fillMaxSize()) {
-            CameraTopBar(onMenu, onStrategies, onSettings, onAbout)
+            CameraTopBar(onMenu, onStrategies, onSettings, onAbout,
+                autoCapture, onAutoCaptureChange, !busy && !cameraFailed)
 
             BoxWithConstraints(
                 modifier = Modifier.weight(1f).fillMaxWidth().padding(20.dp),
@@ -503,12 +510,34 @@ private fun CameraTopBar(
     onStrategies: () -> Unit,
     onSettings: () -> Unit,
     onAbout: () -> Unit,
+    autoCapture: Boolean,
+    onAutoCaptureChange: (Boolean) -> Unit,
+    captureToggleEnabled: Boolean,
 ) {
     Row(
         modifier = Modifier.fillMaxWidth().statusBarsPadding().padding(8.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         GlassIconButton(onMenu, Icons.Filled.Menu, "Your puzzles")
+        Box(Modifier.weight(1f))
+        Surface(color = Color(0x99000000), shape = CircleShape) {
+            Row(
+                modifier = Modifier
+                    .widthIn(max = 220.dp)
+                    .heightIn(min = 48.dp)
+                    .toggleable(value = autoCapture, enabled = captureToggleEnabled,
+                        role = Role.Switch, onValueChange = onAutoCaptureChange)
+                    .padding(start = 16.dp, end = 8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                Text("Auto photo", color = Color.White,
+                    modifier = Modifier.weight(1f),
+                    style = MaterialTheme.typography.labelLarge)
+                Switch(checked = autoCapture, onCheckedChange = null,
+                    enabled = captureToggleEnabled)
+            }
+        }
         Box(Modifier.weight(1f))
         OverflowMenu(onStrategies, onSettings, onAbout, glass = true)
     }
