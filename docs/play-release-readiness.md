@@ -1,11 +1,75 @@
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 10 October 2026. Status: **signed candidate 1.0.0 (124) is uploaded and saved in the
-existing Internal testing draft, which remains inactive. No tester distribution, review
-submission or public publication has occurred.** This preparation does not approve
-distribution.
+Updated 10 October 2026. **Training-consent source is merged in PR #18 at
+`46831610f88d37ee4d73867da14b2bc0c182710f`. Candidate 1.0.0 (125) completed its
+non-distributing build workflow, but embeds the earlier handoff documents. Build a fresh
+candidate after this documentation refresh merges. Play still holds inactive draft 124;
+no tester distribution, review submission or public publication is authorized here.**
 
-## Current candidate and Console state
+## Current training-release evidence
+
+| Area | Evidence and limit |
+| --- | --- |
+| Reviewed source | PR #18 adds separate optional training consent, receipt deletion and backend storage changes. Candidate 124 lacks these changes and is historical for this release. |
+| Candidate 125 | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) succeeded from full SHA `46831610f88d37ee4d73867da14b2bc0c182710f`. Artifacts are `sudoku-buddy-play-candidate-125` and `sudoku-buddy-candidate-checks-125`. Workflow success does not establish physical qualification, deployed backend behavior, local independent artifact verification or Play validation. Its embedded handoff documents predate this refresh. |
+| Replacement candidate | After this PR merges, freeze the final reviewed full SHA and use `play-candidate.yml` with an unused version code above every Play upload. Code 125 was unused at the last Console audit; use a new code for the replacement package and check the inventory again before upload. No replacement candidate is claimed built here. |
+| Signing | Keep the existing stable upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key is needed. |
+| Play state | Internal testing is **Inactive / Draft**, release `1.0.0 (124) — Internal test`, candidate 124 only, 2 of 3 tasks complete. Its preview showed zero errors and two warnings (missing mapping and native debug symbols). Entering preview did not distribute it; the separate final **Save and publish** action publishes immediately and remains untaken. These diagnostics do not validate candidate 125 or its replacement. |
+| Listing and declarations | Required en-US listing fields and all ten app-content declarations are completed. Saved Data Safety marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics, with no third-party sharing, encrypted transit and a deletion request URL. Changes remain unsubmitted; **Send app for review** is disabled pending dashboard tasks. |
+| Production | Inactive, 0 of 5 tasks complete: select countries/regions, create release, preview/confirm, send for review, publish. Managed publishing is off. These are later owner-authorized actions, not draft preparation. |
+| Public copy | The last live-page and listing audit still showed universal 90-day retention and email deletion. Merged repository policy now distinguishes analysis-only reports from separately consented training examples. Publishing the matching policy and updating listing copy remain prerequisites. |
+
+## Consent, retention and backend gates
+
+1. **Align the actual release and public disclosures.** Manual training consent starts
+   unchecked; automatic training is a separate choice from automatic report submission.
+   Analysis-only revisions expire within 90 days. Explicitly consented training examples
+   remain private until receipt deletion. Later corrected revisions have separate receipts
+   and retain that reading's choice. Do not convert earlier analysis reports into training
+   examples without new explicit consent. Describe that deleting a source example may not
+   reverse influence already learned by a future model; this does not waive data deletion.
+2. **Provision and validate the backend before relying on it.** Merging source does not
+   create the private `TRAINING_EXAMPLES` R2 bucket or deploy the consent-enabled Worker.
+   Confirm the `REPORT_RECEIPTS` Durable Object binding and `v1` migration. Follow
+   `feedback-api/README.md` for the cutover: pause intake, inventory legacy KV key names and
+   absolute expirations without downloading values, and verify complete expiry import.
+   Use synthetic data for local Wrangler checks of 20 MiB uploads, deletion races, partial
+   failure/retry and tombstones; verify deployed behavior within an authorized test scope.
+3. **Keep report exports disabled.** App receipt DELETE removes service-side KV and R2
+   records, not local downloads, derived files or backups. Inventory historical exports and
+   prove receipt-complete deletion before enabling local review. The historical hourly
+   workstation purge does not establish either a hard 90-day deadline or request-based
+   deletion of all copies. Preserve analysis expiry across retries and restarts.
+4. **Reconcile Data Safety and listing text.** Existing optional, non-ephemeral collection
+   categories can remain if actual payloads and purposes still match. Check any new identity
+   or device identifiers and whether all providers act only on Freevia's behalf. Encryption
+   and deletion answers require working service behavior. Replace the listing's blanket
+   90-day report claim with the two retention choices. The live privacy URL must match the
+   app, service and repository, including receipt deletion and model limitations.
+5. **Qualify the final candidate.** Test manual and automatic consent, refusal/back behavior,
+   per-reading correction revisions, upload receipts, offline/retry, opting out and receipt
+   deletion. Complete fully framed real-grid capture/OCR with independent ground truth,
+   TalkBack and large text. Earlier v124 debug startup and clipped-preview observations,
+   130% text checks on v122, and x86_64 16 KB no-grid smoke are historical partial evidence;
+   they do not qualify this release or establish 16 KB real-grid/arm64 recognition.
+6. **Verify and preserve a fresh package.** Build from the final merged full SHA with the
+   non-distributing workflow. Download both candidate and checks artifacts; independently
+   verify `SHA256SUMS.json`, AAB hash, version code, package, source, certificate, test/lint
+   reports, bundle and generated APK evidence. Keep QA additions outside the sealed folder.
+   The package must include current privacy, release notes and handoff documents. Preserve
+   candidate 124 and 125 inventories without rewriting their embedded files or checksums.
+7. **Hold distribution separately.** A later authorized draft upload may replace candidate
+   124 and save the new release as draft; inspect its own preview diagnostics. Stop before
+   final **Save and publish** until the exact AAB and tester scope are authorized. Verify
+   Play-delivered signing, installation and upgrade/data retention after an authorized
+   internal rollout. Do not uninstall or clear the existing QA-signed app to bypass a
+   certificate mismatch. Production market selection, review and publication follow later.
+
+Firebase distribution remains disabled for pushes and ordinary manual CI. The snapshots
+below preserve earlier evidence and unresolved gates as recorded; their references to
+current source, policy and candidate status apply only to those historical snapshots.
+
+## Historical candidate-124 handoff (superseded for training release)
 
 | Area | Current evidence and limit |
 | --- | --- |
@@ -22,7 +86,7 @@ Firebase distribution is disabled for pushes and ordinary manual CI; an explicit
 main-branch opt-in is required. The sealed candidate-120 handoffs below are historical and
 must not be substituted for the current candidate.
 
-## Current physical verification
+### Candidate-124 physical verification snapshot
 
 The attached OnePlus CPH2449 (Android 16/API 36) still has release-package version 1.0.0 (122),
 installed with a temporary QA certificate. The separate debug package was safely updated to version code 124
@@ -50,7 +114,7 @@ shipped classifier was trained on this corpus, so these are regression/pipeline 
 not independent generalization. The explicit candidate-note labels remain partial; 29/30
 were ignored as notes and the six positive artifact labels are not a complete artifact set.
 
-## Remaining release gates
+### Candidate-124 gate snapshot
 
 1. Retention controls are only **partly qualified**. A non-OneDrive workspace at
    `C:\Users\anton\AppData\Local\Temp\Freevia\SudokuBuddy\ReportReview` is EFS-encrypted

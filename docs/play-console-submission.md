@@ -1,19 +1,22 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status (10 October 2026): signed candidate 1.0.0 (124) is built from merged main,
-uploaded and saved in the existing Internal testing draft, which remains inactive. The track
-has 2 of 3 setup tasks complete. Store-listing and declaration changes are not submitted for review;
-**Send app for review** is disabled until required dashboard tasks are complete. The live
-privacy policy says reports are not automatically added to a training corpus but may be used
-as reviewed examples to improve recognition; repository policy says reports are not retained
-in a corpus or used to train a model. Clarify whether long-term training use is intended, then
-align consent, retention and saved Data safety answers before review or rollout. The copy
-below is reference material; verify the exact current
-Console values before submitting. Follow the [final-build checklist](play-release-readiness.md)
-and its authorization gate.
+Current status (10 October 2026): PR #18's training-consent source is merged at
+`46831610f88d37ee4d73867da14b2bc0c182710f`. Candidate 125's
+[non-distributing workflow](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369)
+succeeded, but its embedded handoff documents predate this refresh. Build a fresh candidate
+from the final reviewed SHA after these documents merge. Candidate 124 remains the only
+bundle in the inactive Internal testing draft (2 of 3 tasks complete); no rollout occurred.
+Store-listing and declaration changes remain unsubmitted. **Send app for review** is
+disabled until dashboard tasks are complete. Production is inactive with 0 of 5 tasks
+complete. Follow [release readiness](play-release-readiness.md) for current evidence and gates.
 
-Originally prepared 8 September 2026; product copy reviewed against the local source on
-8 October 2026. Local edits do not update the saved Play Console listing or public website.
+The text below is repository-side preparation, not proof of saved Console values. The last
+live audit found blanket 90-day retention in the saved listing and old email deletion
+instructions in the public policy. Publish the matching policy and obtain appropriate scope before saving
+listing changes. Source merge does not provision training storage or deploy the new Worker.
+
+Originally prepared 8 September 2026; refreshed for the merged training-consent source on
+10 October 2026. Local edits do not update Play Console or the public website.
 
 ## Create app
 
@@ -87,8 +90,12 @@ Private by design:
 - Puzzle reports go to Freevia only when submitted, or when the user has enabled optional automatic sharing for uncertain readings
 
 You can choose to submit a puzzle photo with its recognition results and corrections for
-private analysis to improve reading. Automatic sharing is optional. Scanning, checking and
-tutoring work offline; submitting a report requires an internet connection.
+private analysis to improve reading. Automatic sharing is optional. Training is a separate
+optional choice: analysis-only reports expire within 90 days; opted-in training examples
+stay private until you delete them through Submission receipts. Each corrected revision
+has its own receipt. Deleting an example may not reverse learned changes if a model is
+trained on it later. Scanning, checking and tutoring work offline and remain available
+without sharing; submitting or deleting a report requires an internet connection.
 
 Sudoku Buddy is for people who enjoy solving on paper and want a second pair of eyes, not a
 replacement game.
@@ -113,8 +120,13 @@ replacement game.
   > All functionality is available without an account or login. Grant camera permission,
   > point the camera at a printed Sudoku. After scanning, every recognized digit can be
   > corrected before the user checks handwritten answers, requests a hint or views the
-  > solution. Recognition and puzzle history stay on the device. Users can optionally send
-  > an uncertain-reading photo and its recognition results to Freevia for private analysis.
+  > solution. Recognition runs on the device and history is local. Users can optionally send
+  > an uncertain-reading photo and results for analysis. The manual submission dialog has a
+  > separate unchecked training choice; Settings has independent automatic submission and
+  > training choices, both off by default. Analysis-only reports expire within 90 days;
+  > training examples remain private until receipt deletion. Each corrected revision has
+  > its own receipt. Settings → Submission receipts deletes the matching service record.
+  > Verify this flow against the final app and deployed service before supplying this note.
 
 ### Target audience and content
 
@@ -135,22 +147,24 @@ enter the Families programme and reassesses the listing against those policies.
   photographs, recognized digits, corrections, history and settings are stored on the
   device, except for material the user deliberately shares. Backup and device-transfer
   rules exclude the app's data.
-- A report includes the straightened puzzle photograph, original/current grids, per-cell
-  recognition results and confidence, uncertainty markers, geometry, and user corrections
-  with their times. Manual submission is user initiated. The optional “Share automatically
-  when uncertain” setting first explains the photo and results that will be sent; enabling
-  it sends the currently open uncertain reading and later sends future uncertain readings
-  and corrections without a separate prompt. Each revision has a receipt. The published
-  policy says each report is retained for up to 90 days. The Workers KV expiry is bounded.
-  A local cleanup task now runs hourly and at user logon, starts when available, and retries
-  once. The hourly interval can leave a copy for nearly an hour past expiry, and a powered-off
-  computer cannot delete its local copies; those copies can remain longer until it returns
-  and a user logs in. Verify all-copy deletion by the promised deadline before relying on
-  this statement.
-  A request from Settings receipts is intended to remove the matching server record and
-  private working copies earlier. The endpoint is deployed. Complete physical-device upload,
-  receipt, correction-update and deletion-request verification for the exact Play candidate
-  before rollout.
+- A report includes the straightened photo, original/current grids, per-cell readings and
+  confidence, uncertainty, geometry and corrections with timestamps. Submission is optional.
+  Automatic sharing explains its payload before enabling it and sends the current uncertain
+  reading, future uncertain readings and later corrections without another prompt each time.
+- Training requires a separate unchecked manual choice or separate automatic training
+  setting; automatic submission alone is not training consent. Analysis-only revisions
+  retain their original 90-day KV expiry across retries. Consented examples also enter a
+  private R2 archive until receipt deletion. Do not migrate old analysis-only reports into
+  training without new consent. Corrections preserve the reading's choice and each revision
+  has a separate receipt.
+- Settings receipt DELETE is designed to remove the matching service KV and R2 objects;
+  it does not remove local exported copies or undo influence learned by a future model.
+  The privacy policy must explain these limits accurately. Keep exports disabled until
+  historical copies are inventoried and receipt-complete deletion is proven.
+- Backend provisioning/deployment and real-device upload, correction, retry, opt-out and
+  deletion qualification remain gates. Source merge does not create the private R2 bucket,
+  apply the Durable Object migration or deploy the consent-enabled endpoint. Follow
+  `feedback-api/README.md` for legacy expiry inventory and cutover validation.
 - The app has no account-creation mechanism.
 - Privacy policy: `https://freevia.org/sudoku-buddy/privacy`.
 
@@ -166,7 +180,11 @@ definition. Verify these answers against the exact uploaded payload and service 
 The app has no account, routine usage analytics, crash reporting or ad tracking; report
 analysis is limited to reports the user submits or has elected to submit automatically.
 Verify the live privacy policy and saved Data safety answers against the exact app payload
-before rollout; the public report-enabled policy is already live.
+before rollout. The last live policy audit still had universal 90-day retention and email
+request wording; publishing the merged two-choice policy is a prerequisite. Longer training
+retention alone has no separate duration selector in Data Safety. Preserve optional collection
+only if all users can decline it; verify actual purposes, any new identifiers, providers,
+encrypted transport and working deletion before retaining the saved answers.
 
 ### Content rating questionnaire
 
@@ -212,26 +230,40 @@ not this checklist, assigns the final regional ratings.
 
 ## Testing and release
 
-1. Upload the signed `app-release.aab` to **Internal testing** first.
-2. Add Freevia-controlled tester accounts and verify installation, camera permission,
-   scanning, editing, hints, history, sharing, and uninstall behavior.
-3. Review Play's automated pre-launch report.
-4. Promote the tested bundle to a closed or production track as appropriate for the
-   organization account.
-5. Use `docs/play-release-notes-en-US.txt` for the first release notes.
+1. Complete consent, service lifecycle, privacy/listing alignment and final-candidate
+   device qualification in `play-release-readiness.md`.
+2. Build a fresh candidate after this documentation PR merges using `play-candidate.yml`,
+   the final full reviewed SHA and a new version code above every Play upload. The workflow
+   validates a positive code and SHA ancestry but does not query Play's highest code.
+3. Download `sudoku-buddy-play-candidate-<code>` and
+   `sudoku-buddy-candidate-checks-<code>`. Verify the package inventory, exact AAB hash,
+   source/code/package, stable certificate, tests/lint and bundle/APK alignment evidence.
+   Candidate 125's successful run is source evidence, not a complete publishing handoff:
+   its embedded documents are stale. Do not rewrite sealed candidate 124 or 125 artifacts.
+4. With authorized draft-upload scope, replace the superseded bundle in the existing
+   internal draft, update its name/notes accurately, save as draft and inspect that new
+   candidate's preview diagnostics. Current release notes describe analysis only; revise
+   them for the final training candidate before packaging. Do not click **Save and publish**.
+5. Obtain separate authorization for the exact AAB and selected internal testers before
+   distribution. Then verify Play-delivered signing, installation and upgrade/data retention
+   and inspect any available pre-launch report. Preserve existing app data.
+6. Production remains inactive: select countries/regions, create a release, preview/confirm,
+   send for review and publish are five separate later tasks. Managed publishing is off;
+   review and publication require the owner's release scope.
 
-Use the verified signed candidate recorded in `play-release-readiness.md`, checking its
-SHA-256 and application ID `org.freevia.sudokubuddy`. Candidate 1.0.0 (124) was built by
-the successful GitHub candidate workflow and uploaded to the Internal testing draft; the
-Console displays it as `1.0.0 (124) — Internal test`. The track remains inactive. The
-candidate-only **Preview and confirm** page was opened for diagnostics: Play reported zero
-errors and two non-blocking warnings (no deobfuscation mapping and no native debug symbols).
-Opening the preview did not distribute the build. The separate final **Save and publish**
-button says changes publish immediately to the selected testers; it has not been clicked.
-The attached OnePlus has a local QA-signed version 122 and a separate v124-source debug
-package, not a Play-delivered install. A Play-install upgrade test still needs an internal
-rollout and must preserve existing app data; do not uninstall or clear storage to bypass a
-signing mismatch.
+### Historical candidate-124 Console evidence
+
+Candidate 124 (`1.0.0`, package `org.freevia.sudokubuddy`) was uploaded and saved as
+`1.0.0 (124) — Internal test`, candidate 124 only. Its track remains inactive at the last
+Console audit. The candidate-only preview showed zero errors and two warnings (no mapping
+and no native debug symbols). Entering preview did not distribute it. The separate final
+**Save and publish** button says changes publish immediately; it was not clicked. These
+checks do not validate candidate 125 or its replacement. Candidate 124 lacks PR #18's
+training consent and must not be used for the new training release.
+
+The OnePlus has a QA-signed release-package v122 and a separate v124-source debug package,
+not a Play-delivered install. Do not uninstall or clear storage to bypass a signing mismatch.
+The earlier camera, text-size and emulator checks remain partial historical evidence.
 
 ## Account and policy details to confirm in Play Console
 
