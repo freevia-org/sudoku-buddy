@@ -28,6 +28,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -519,13 +520,14 @@ private fun CameraTopBar(
     ) {
         GlassIconButton(onMenu, Icons.Filled.Menu, "Your puzzles")
         Box(Modifier.weight(1f))
-        Surface(color = Color(0x99000000), shape = RoundedCornerShape(20.dp)) {
+        Surface(color = Color(0x99000000), shape = CircleShape) {
             Row(
                 modifier = Modifier
                     .widthIn(max = 220.dp)
+                    .heightIn(min = 48.dp)
                     .toggleable(value = autoCapture, enabled = captureToggleEnabled,
                         role = Role.Switch, onValueChange = onAutoCaptureChange)
-                    .padding(horizontal = 12.dp),
+                    .padding(start = 16.dp, end = 8.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
             ) {
