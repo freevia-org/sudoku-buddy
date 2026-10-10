@@ -31,13 +31,16 @@ visually compared all 81 values on the pre-capture live page with the resulting 
 grid and reported that they matched.
 
 This is one real-page camera/rectification/recognition smoke test, not a corpus benchmark
-or external accuracy estimate. It does not qualify uncertainty or report submission,
-TalkBack, a Play-signed candidate installation, or the release backend; none of those was
-tested in this session. A follow-up on the same phone confirmed debug code 125, opened and
-closed the app menu and puzzle history, and returned to the solved puzzle without triggering
-sharing. Auto-capture and auto-share-when-uncertain remained off. The saved puzzles checked
-had no uncertain cells, so the **Submit reading** button and its popup could not be exercised
-using the unchanged saved puzzles available during this check. The debug package is source-
+or external accuracy estimate. A later manual capture of the framed paper puzzle produced a
+genuine uncertainty result: one square was flagged for review and an answer disagreed with
+the solution. In the debug build, the tester opened **Submit reading** and verified the exact
+dialog title, the copy about sharing the puzzle photo/readings/corrections, both training and
+future auto-share checkboxes unchecked, and a visible Cancel action. They canceled without
+submitting and removed only that temporary debug reading from history; the earlier saved
+entry remained. The debug build has an empty submission endpoint, so the dialog showed
+“Submissions are not available in this build” and Submit was disabled. The release build
+configuration supplies the production endpoint, but it currently points to the old Worker.
+This does not qualify actual submission or the live backend. The debug package is source-
 level evidence and does not replace qualification of the fresh signed publishing candidate.
 The latest follow-up confirmed the debug app remains alive at code 125, with no recent crash
 or ANR. Auto-capture, auto-share-when-uncertain and automatic training consent were all off.
@@ -46,8 +49,8 @@ and the Settings page scrolled to expose the auto-capture, auto-share and traini
 with their descriptions. The original 100% font scale was restored, then the debug app was
 relaunched and confirmed in the foreground. A Back action briefly surfaced the installed
 production app; no action was taken there and its data was not changed. No photos or screenshots
-are included in this repository update. The uncertain-reading popup, TalkBack and Play-signed
-installation remain untested.
+are included in this repository update. The debug popup's layout and defaults are verified;
+active submission, TalkBack and Play-signed installation remain untested.
 
 ## Consent, retention and backend gates
 
