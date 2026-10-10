@@ -9,12 +9,13 @@ or public publication has occurred.** This preparation does not approve distribu
 | Area | Current evidence and limit |
 | --- | --- |
 | Android source | Merged commit `7f8ab56ca663e305a4a50140ec621d8a89d6f7bc`, including the automatic-report consent fix. |
-| Candidate | Package `org.freevia.sudokubuddy`, version `1.0.0`, code `122`. AAB SHA-256: `69CDAF89EC2895110FE474284ECC733FBC2FF6939328D07E138D05FDDEB3A1FB`. The [manual candidate run](https://github.com/freevia-org/sudoku-buddy/actions/runs/38004804993) passed. |
+| Candidate | Package `org.freevia.sudokubuddy`, version `1.0.0`, code `122`. AAB SHA-256: `69CDAF89EC2895110FE474284ECC733FBC2FF6939328D07E138D05FDDEB3A1FB`. The [manual candidate run](https://github.com/freevia-org/sudoku-buddy/actions/runs/38004804993) passed. The workflow artifact was downloaded again on 10 October and every file matched its packaged `SHA256SUMS.json` inventory. |
 | Signing | Signed with the existing stable Play upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key was created. |
-| Play draft | The exact hash-verified AAB was uploaded and saved in the existing `1.0.0 (122) — Internal test` draft. Play displays `122 (1.0.0)`, minSdk 26, targetSdk 36 and four ABIs. Save confirmation was observed; the track is **Inactive / Draft**, with 2 of 3 setup tasks complete. No preview confirmation, review submission or rollout was performed. |
-| Static page-size checks | Bundle/native alignment checks passed; Play displays **Supports 16 KB**. This does not establish successful execution on a 16 KB Android runtime. |
-| Later repository changes | PR #7 merged as `52a42e581ab0d11f96c0d2fc4957dae9f0fd4e53` and affects backend tooling/docs only; it does not change this Android candidate. PR #8's exporter retry fix is merged as `de5941f7e642fdc713b8da3773ab3de75300e2b5`. |
-| Data safety and public policy | Data safety answers are saved and reviewed: optional collection of Photos, Diagnostics, Other user-generated content and Other actions for Analytics; encrypted transit, no account and a deletion-request mechanism. The public privacy page deliberately describes the earlier offline build until report-retention controls can be substantiated. The saved declaration, published policy and proposed report-enabled release therefore are not yet reconciled for distribution. |
+| Play draft | The exact AAB is saved in the existing `1.0.0 (122) — Internal test` draft. Play displays `122 (1.0.0)`, minSdk 26, targetSdk 36 and four ABIs. The track remains **Inactive / Draft**, with 2 of 3 setup tasks complete. The preview shows two non-blocking diagnostics warnings (no R8 mapping file and no native debug symbols) and no blocking validation error. The final **Save and publish** action was not taken; it would publish immediately to internal testers. No review submission or rollout occurred. |
+| Static page-size checks | Bundle/native alignment checks passed; Play displays **Supports 16 KB**. Runtime evidence is recorded separately below and does not establish real-grid recognition at 16 KB. |
+| 16 KB runtime smoke | Candidate 122's QA-signed universal APK ran on an Android 16/API 36 x86_64 emulator reporting `getconf PAGE_SIZE` = `16384`. OpenCV 4.12 loaded, camera preview started and shutter capture followed the expected no-grid “Would not read” path without an app crash. The emulator's virtual scene contained no Sudoku, so this does not validate grid rectification/OCR, and no 16 KB arm64 runtime was tested. See `runtime-smoke-report.txt` in the host's temporary `sudokubuddy-16kb-runtime-20261010` directory. |
+| Later repository changes | PRs #7–#9 are merged (`52a42e5`, `de5941f`, `a47df7f`) and affect backend tooling or release documentation only; they do not change this Android candidate. |
+| Data safety and public policy | The live [privacy policy](https://freevia.org/sudoku-buddy/privacy) describes optional photo, reading and correction reports to Freevia for private analysis and says each report is retained for up to 90 days; reports are not automatically added to a training corpus. The Console currently shows store-listing and declaration changes under **Changes not yet submitted for review**. The saved Data safety answers still need a final payload-and-service comparison before they are submitted. |
 
 Firebase distribution is disabled for pushes and ordinary manual CI; an explicit
 main-branch opt-in is required. The sealed candidate-120 handoffs below are historical and
@@ -23,41 +24,54 @@ must not be substituted for the current candidate.
 ## Current physical verification
 
 Handset checks used a local QA-signed APK generated from candidate 122's AAB. They verify
-the app code and UI, not the Play-delivered signature, installation or upgrade behavior.
-Camera preview and manual capture were checked: a captured puzzle was
-recognized with 24 printed clues and solved. Camera permission denial, rationale, the
-system permission prompt and regrant were checked, as was background/resume. Settings'
-automatic-sharing disclosure and cancellation were checked; automatic sharing remains off.
-
-The separate manual **Submit reading** popup has not been physically verified. Live app
-upload, receipt persistence, subsequent correction uploads and deletion requests have not
-been physically verified either. No report was uploaded during these physical checks.
-Earlier synthetic infrastructure tests are not evidence that the Android flow passed.
+app code and UI, not the Play-delivered signature, installation or upgrade behavior. Earlier
+testing checked camera capture, a 24-clue printed puzzle, permission denial/rationale/regrant,
+and background/resume. On 10 October the OnePlus CPH2449 (Android 16/API 36) detected a live
+grid in preview, relaunched to the app, and showed both automatic capture and automatic
+sharing off; no crash or ANR was found in the sampled log. The preview grid nearly touched
+the image edges, and the shutter was not pressed, so this pass makes no capture/crop/OCR
+quality claim. A confident saved cell showed 100% certainty and no **Submit reading** action.
+No cell was changed, no report was uploaded, and no deletion request was sent. Evidence is
+in `device-smoke-report.txt` under the host's temporary `sudokubuddy-device-smoke-20261010`
+directory.
 
 ## Remaining release gates
 
-1. Verify a designated encrypted, private, non-synced report-review workspace and its daily
-   cleanup task. EFS setup failed and BitLocker status was unavailable; encryption and the
-   scheduled cleanup are **unverified**. No exports were made during this preparation;
-   inventory historical exports/report-derived files before intake. General report intake
-   is not enabled. The Worker's KV expiry and merged retention tooling alone do not
-   establish that every exported or report-derived copy is deleted within 90 days.
-2. Qualify the retention/deletion process with PR #8's merged exporter retry fix,
-   including original expiry deadlines and all copies associated with each receipt. Keep
-   report exports and general intake on hold until those controls are evidenced.
+1. Retention controls are only **partly qualified**. A non-OneDrive workspace at
+   `C:\Users\anton\AppData\Local\Temp\Freevia\SudokuBuddy\ReportReview` is EFS-encrypted
+   (AES-256) with an ACL limited to the current user, SYSTEM and Administrators. The
+   `SudokuBuddy-ReportRetention` task is configured daily at 03:15 with `StartWhenAvailable`;
+   a synthetic-only run removed an expired receipt tree and preserved an unexpired one
+   (Task Scheduler result 0). However, the task is interactive, runs only on AC power,
+   cannot wake the host, and has no retry; when it runs daily it can already leave an export
+   almost 24 hours past its recorded expiry, or longer if the computer is off or no user
+   logs in. This does not enforce the live policy's **up to 90 days for each report** promise
+   across working copies. The workspace is under Temp and Windows may delete copies early;
+   the EFS key has no recovery certificate and BitLocker could not be verified. Inventory
+   historical report exports/derived files before intake. Do not export or retain reports
+   locally until an all-copy deletion deadline and a dependable cleanup mechanism are proven.
+2. Qualify PR #8's exporter retry fix with the operational process, including original
+   expiry deadlines and every copy associated with a receipt. Keep exports and general
+   intake on hold until historical inventory and deletion coverage are evidenced.
 3. Verify the final signed candidate's manual submission popup, opt-in behavior, successful
    upload/receipt, later correction revisions, offline/retry and opt-out behavior, and
    receipt-based deletion. Any real report test requires its own authorized scope; no
    successful Android upload is claimed here.
-4. Reconcile and publish the report-enabled privacy policy only after retention claims are
-   supportable, then recheck the saved Data safety answers against the final behavior.
-5. Complete remaining camera/device, TalkBack/large-text and 16 KB runtime qualification.
-   Record a runtime reporting page size 16384 and exercise OpenCV capture without relying
-   on compatibility mode; static alignment and Play's compatibility label do not close this gate.
-6. Obtain explicit authorization for the exact candidate and internal rollout/tester scope,
-   inspect the release preview and its warnings, and qualify Play-delivered certificate,
-   installation and upgrade/data retention. The saved draft does not make the app available
-   to testers. Production countries, review and public publication are separate later actions.
+4. The privacy policy is already live and describes report handling, including retention
+   of each report for up to 90 days. The Workers KV TTL is bounded, but the local export
+   cleanup can run late; prove every copy is deleted by the policy deadline and reconcile
+   the app's consent text and saved Data safety answers with the exact report payload and
+   service controls. The Play Console currently lists these edits as not yet submitted for
+   review.
+5. Complete camera capture/OCR quality checks with a real Sudoku on the phone, plus spoken
+   TalkBack and large-text checks. The x86_64 16 KB runtime smoke passed for startup, native
+   OpenCV load, camera preview and capture/no-grid handling; validate real-grid recognition
+   on a 16 KB device/image if available. The current physical OnePlus uses 4 KB pages.
+6. Before any rollout, obtain explicit authorization for this exact AAB and internal tester
+   scope. The preview has two diagnostic-symbol warnings but no blocking error. Verify
+   Play-delivered signing, install and upgrade/data retention after an authorized internal
+   rollout. Production countries, review submission and public publication are separate
+   later actions.
 
 This current-status section supersedes the historical snapshots below. The candidate-120
 evidence, older 343-test run and debug-signed version-code-1 artifact remain historical;
