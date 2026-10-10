@@ -4,9 +4,11 @@ Current status (10 October 2026): signed candidate 1.0.0 (124) is built from mer
 but has not been uploaded. The existing Play Internal testing draft still contains candidate
 122 and remains inactive. Store-listing and declaration changes are not submitted for review;
 **Send app for review** is disabled until required dashboard tasks are complete. The live
-privacy policy and repository policy currently disagree about using reviewed reports as
-training examples. Reconcile that purpose, retention controls and saved Data safety answers
-before review or rollout. The copy below is reference material; verify the exact current
+privacy policy says reports are not automatically added to a training corpus but may be used
+as reviewed examples to improve recognition; repository policy says reports are not retained
+in a corpus or used to train a model. Clarify whether long-term training use is intended, then
+align consent, retention and saved Data safety answers before review or rollout. The copy
+below is reference material; verify the exact current
 Console values before submitting. Follow the [final-build checklist](play-release-readiness.md)
 and its authorization gate.
 

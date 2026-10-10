@@ -12,11 +12,11 @@ preparation does not approve distribution.
 | Android source | Current main commit `1deb1e75ecdf9222544a564b0585545d07fbd98f`. PR #11 updates the report disclosure to name cell corrections; PR #12 makes camera auto-capture off for new/unset preferences while preserving saved choices. |
 | Candidate | Package `org.freevia.sudokubuddy`, version `1.0.0`, code `124`. AAB SHA-256: `CA99BA8B63185CC13844D2D3DCA309D8CEB720F664261587F535D1F44872F6B7`. The [non-distributing candidate workflow](https://github.com/freevia-org/sudoku-buddy/actions/runs/38010684105) passed. The artifact was downloaded on 10 October and every file matched its packaged `SHA256SUMS.json` inventory. |
 | Signing | Signed with the existing stable Play upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key was created. |
-| Play draft | The exact AAB is saved in the existing `1.0.0 (122) — Internal test` draft. Play displays `122 (1.0.0)`, minSdk 26, targetSdk 36 and four ABIs. The track remains **Inactive / Draft**, with 2 of 3 setup tasks complete. The preview shows two non-blocking diagnostics warnings (no R8 mapping file and no native debug symbols) and no blocking validation error. The final **Save and publish** action was not taken; it would publish immediately to internal testers. No review submission or rollout occurred. |
+| Play draft | Candidate 122's AAB is saved in the existing `1.0.0 (122) — Internal test` draft. Play displays `122 (1.0.0)`, minSdk 26, targetSdk 36 and four ABIs. The track remains **Inactive / Draft**, with 2 of 3 setup tasks complete. The preview shows two non-blocking diagnostics warnings (no R8 mapping file and no native debug symbols) and no blocking validation error. The final **Save and publish** action was not taken; it would publish immediately to internal testers. No review submission or rollout occurred. |
 | Static page-size checks | Bundle/native alignment checks passed; Play displays **Supports 16 KB**. Runtime evidence is recorded separately below and does not establish real-grid recognition at 16 KB. |
 | 16 KB runtime smoke | Candidate 124 was extracted from its AAB as a local debug-signed universal APK and ran on an Android 16/API 36 x86_64 emulator reporting `getconf PAGE_SIZE` = `16384`. Camera permission, preview and capture/no-grid refusal completed without an app crash or ANR. The virtual scene contained no Sudoku, so this does not validate grid rectification/OCR; the installed APK used a local debug certificate, not the Play upload signature. No 16 KB arm64 runtime was tested. Evidence is in the host's temporary `sudoku-buddy-candidate124` directory. |
 | Later repository changes | PRs #7–#12 are merged. PR #11 changes sharing disclosure and PR #12 changes the fresh-install camera default, so candidate 122 in Play does not contain these changes. Candidate 124 does. |
-| Data safety and public policy | The saved form currently marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics, with no third-party sharing. The live [privacy policy](https://freevia.org/sudoku-buddy/privacy) says reviewed examples may improve recognition; repository policy says submitted reports are not retained in a training corpus or used to train a model. Resolve this mismatch and verify retention/deletion controls before review. Console listing/declaration changes remain unsubmitted. |
+| Data safety and public policy | The saved form currently marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics, with no third-party sharing. The live [privacy policy](https://freevia.org/sudoku-buddy/privacy) says reports are not automatically added to a training corpus but may be used as reviewed examples to improve recognition; repository policy says reports are not retained in a corpus or used to train a model. Clarify whether the live wording permits persistent training use and make consent, retention and policy wording explicit before review. Console listing/declaration changes remain unsubmitted. |
 
 Firebase distribution is disabled for pushes and ordinary manual CI; an explicit
 main-branch opt-in is required. The sealed candidate-120 handoffs below are historical and
@@ -58,10 +58,12 @@ uses candidate 124 source but does not replace physical real-grid qualification.
    upload/receipt, later correction revisions, offline/retry and opt-out behavior, and
    receipt-based deletion. Any real report test requires its own authorized scope; no
    successful Android upload is claimed here.
-4. Resolve the report-purpose mismatch before review: the live privacy policy allows reviewed
-   examples to improve recognition, while the repository policy prohibits corpus retention
-   and model training. Confirm intended use and retention with product consent, align both
-   policies and saved Data safety answers, then verify the live revision. The report ZIP
+4. Resolve the report-purpose ambiguity before review: the live privacy policy says reports
+   are not automatically added to a training corpus but may be used as reviewed examples to
+   improve recognition; repository policy prohibits corpus retention and model training.
+   Confirm whether long-term training use is intended. If yes, align in-app consent, retention
+   controls and both policies; if no, clarify that reviewed examples will not enter a corpus
+   or train a model. Reconcile saved Data safety answers and verify the live revision. The report ZIP
    contains a full puzzle photo and per-cell readings/corrections; submitted reports are
    optional, and the form currently marks their data as not shared with third parties. The
    Play Console currently lists edits as not submitted for review.
