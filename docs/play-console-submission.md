@@ -1,21 +1,17 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status snapshot (10 October 2026): PR #18's training-consent source is merged.
-For any packaged candidate, read `release-record.json`, `SHA256SUMS.json` and `evidence/`
-for its exact source, version, AAB hash, signing and validation provenance. Do not infer
-package identity from this prose or from version code alone. Finalize and merge all reviewed
-release inputs before using the non-distributing workflow, then verify the resulting package.
+Current status snapshot (10 October 2026): PRs #18–#21 are merged. Candidate 125 is the
+only bundle in the inactive Internal testing draft (2 of 3 tasks complete); it has not been
+distributed. Its exact source, AAB hash, signing and validation provenance are in the sealed
+candidate records summarized in [release readiness](play-release-readiness.md). The live
+backend and privacy policy are not aligned with the training-consent build; do not distribute
+this candidate or request review until those gates and final device qualification pass.
+Production is inactive with 0 of 5 tasks complete.
 
-Candidate 124 remains the only bundle in the last audited inactive Internal testing draft
-(2 of 3 tasks complete); no rollout occurred. Store-listing and declaration changes remain
-unsubmitted. **Send app for review** is disabled until dashboard tasks are complete.
-Production is inactive with 0 of 5 tasks complete. Follow
-[release readiness](play-release-readiness.md) for evidence, limits and gates.
-
-The text below is repository-side preparation, not proof of saved Console values. The last
-live audit found blanket 90-day retention in the saved listing and old email deletion
-instructions in the public policy. Publish the matching policy and obtain appropriate scope before saving
-listing changes. Source merge does not provision training storage or deploy the new Worker.
+The text below is repository-side preparation, not proof of saved Console values. The live
+listing still has blanket 90-day retention, and the public policy still describes old email
+deletion instructions. Publish the matching policy and reconcile the listing before candidate
+distribution. Source merge does not provision training storage or deploy the new Worker.
 
 Originally prepared 8 September 2026; refreshed for the merged training-consent source on
 10 October 2026. Local edits do not update Play Console or the public website.
@@ -149,8 +145,11 @@ enter the Families programme and reassesses the listing against those policies.
   photographs, recognized digits, corrections, history and settings are stored on the
   device, except for material the user deliberately shares. Backup and device-transfer
   rules exclude the app's data.
-- A report includes the straightened photo, original/current grids, per-cell readings and
-  confidence, uncertainty, geometry and corrections with timestamps. Submission is optional.
+- The report ZIP includes the straightened photo and a manifest with the app version,
+  original/current grids, uncertain-cell indices, 81 per-cell readings (ink, digit,
+  confidence, runner-up and role uncertainty), board-line coordinates, and correction events
+  (cell, old/new value and source, and timestamp). It does not include device model, crash
+  logs, performance metrics, or a log of settings toggles. Submission is optional.
   Automatic sharing explains its payload before enabling it and sends the current uncertain
   reading, future uncertain readings and later corrections without another prompt each time.
 - Training requires a separate unchecked manual choice or separate automatic training
@@ -170,23 +169,27 @@ enter the Families programme and reassesses the listing against those policies.
 - The app has no account-creation mechanism.
 - Privacy policy: `https://freevia.org/sudoku-buddy/privacy`.
 
-Google defines collection for this form as transmitting data off the user's device. The
-current report flow is first-party collection by Freevia; it is separate from optional
-third-party share-sheet actions. For this release candidate, declare the report photo under
-**Photos**, recognition readings and corrections under **Other user-generated content**,
-automatic/manual report activity under **App activity / Other actions**, and submitted
-diagnostic fields under **App info and performance / Diagnostics**. Mark collection
-optional, non-ephemeral, and for **Analytics** (improving recognition); declare no sharing
-only while Cloudflare acts solely as Freevia's service provider under Google's current
-definition. Verify these answers against the exact uploaded payload and service behavior.
-The app has no account, routine usage analytics, crash reporting or ad tracking; report
-analysis is limited to reports the user submits or has elected to submit automatically.
-Verify the live privacy policy and saved Data safety answers against the exact app payload
-before rollout. The last live policy audit still had universal 90-day retention and email
-request wording; publishing the merged two-choice policy is a prerequisite. Longer training
-retention alone has no separate duration selector in Data Safety. Preserve optional collection
-only if all users can decline it; verify actual purposes, any new identifiers, providers,
-encrypted transport and working deletion before retaining the saved answers.
+Google's [Data safety guidance](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en)
+defines collection for this form as transmitting data off the user's device and exempts apps
+active only on the internal-testing track from inclusion. The report flow is first-party
+collection by Freevia and is separate from optional third-party share-sheet actions. Declare
+the report photo under **Photos** and the puzzle, readings and
+correction content under **Other user-generated content**. Because the manifest also records
+cell-correction events and timestamps, assess **App activity / Other actions** against
+Google's definition. Also assess whether recognition confidence, runner-up results and role
+uncertainty qualify as **App info and performance / Diagnostics** under Google's technical-
+diagnostics definition; do not infer exclusion solely from the absence of crash logs or
+timing metrics.
+Mark collection optional, non-ephemeral, and for **Analytics** (improving recognition), and
+declare no sharing only if Cloudflare acts solely as Freevia's service provider under
+Google's current definition. Do not characterize automatic/manual toggles as collected
+analytics: the request may include a one-bit training-consent header, but no settings or
+toggle history is uploaded. Verify these answers against the exact release payload, all SDKs
+and live service behavior. The app has no account, routine usage analytics, crash reporting
+or ad tracking. Keep the privacy policy and saved Data safety answers aligned before
+distribution. Longer training retention alone has no separate duration selector in Data
+Safety. Preserve optional collection only if all users can decline it; confirm actual
+purposes, providers, encrypted transport and working deletion before saving the form.
 
 ### Content rating questionnaire
 
@@ -244,10 +247,10 @@ not this checklist, assigns the final regional ratings.
    refresh and embeds older documents; that run is superseded as a publishing handoff.
    A later package's identity and evidence come from its own sealed records. Preserve
    historical inventories; do not rewrite their embedded files or checksums.
-4. With authorized draft-upload scope, replace the superseded bundle in the existing
-   internal draft, update its name/notes accurately, save as draft and inspect that new
-   candidate's preview diagnostics. Current release notes describe analysis only; revise
-   them for the final training candidate before packaging. Do not click **Save and publish**.
+4. Candidate 125 is already saved as the only bundle in the internal-test draft; preview
+   shows no errors and two non-blocking diagnostics warnings. Any new candidate must use a
+   higher version code, and its own notes and preview must be checked. Do not click
+   **Save and publish** until the owner authorizes distribution to the named testers.
 5. Obtain separate authorization for the exact AAB and selected internal testers before
    distribution. Then verify Play-delivered signing, installation and upgrade/data retention
    and inspect any available pre-launch report. Preserve existing app data.
