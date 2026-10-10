@@ -65,13 +65,12 @@ fun AboutScreen(onClose: () -> Unit) {
                 Section("Your photos and your privacy") {
                     Text(
                         "Puzzles are read and solved on this phone. If you submit an uncertain " +
-                            "reading, or enable automatic sharing, the puzzle photo, original " +
+                        "reading, or enable automatic sharing, the puzzle photo, original " +
                             "readings, uncertainty flags and your corrections are sent securely " +
-                            "to Freevia for recognition analysis. Reports do not include your " +
+                            "to Freevia for recognition analysis and private training. Reports do not include your " +
                             "device model or diagnostics. Automatic sharing is optional; there " +
-                            "are no accounts, routine usage analytics or ad tracking. " +
-                            "Analysis-only reports are kept up to 90 days. Training is a separate " +
-                            "opt-in; those private examples can be deleted by receipt, though a " +
+                            "are no accounts, routine usage analytics or ad tracking. Training " +
+                            "copies can be deleted by receipt, though a " +
                             "model already trained may retain learned changes. Use Submission " +
                             "receipts in Settings to delete a report.",
                         style = MaterialTheme.typography.bodyMedium,

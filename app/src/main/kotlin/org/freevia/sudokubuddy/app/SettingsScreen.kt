@@ -47,7 +47,6 @@ fun SettingsScreen(
 ) {
     var receiptsOpen by remember { mutableStateOf(false) }
     var confirmAutoShare by remember { mutableStateOf(false) }
-    var confirmTraining by remember { mutableStateOf(false) }
     Column(modifier = Modifier.fillMaxSize()) {
         AppBar(title = "Settings", onBack = onClose)
         LazyColumn(
@@ -106,24 +105,12 @@ fun SettingsScreen(
                 SettingRow(
                     title = "Share automatically when uncertain",
                     detail = "Automatically share uncertain puzzle photos, reading results and " +
-                        "later cell corrections with Freevia for recognition analysis. Off by default.",
+                        "later cell corrections with Freevia for recognition analysis and training. " +
+                        "Off by default.",
                     checked = settings.autoShareWhenUncertain,
                     onChange = {
                         if (it) confirmAutoShare = true
                         else onChange(settings.copy(autoShareWhenUncertain = false))
-                    },
-                )
-            }
-
-            item {
-                SettingRow(
-                    title = "Use future auto-shared reports for training",
-                    detail = "Separate, optional consent. Applies only to puzzles scanned " +
-                        "after you turn it on; analysis-only sharing does not include training.",
-                    checked = settings.trainAutoSharedReports,
-                    onChange = {
-                        if (it) confirmTraining = true
-                        else onChange(settings.copy(trainAutoSharedReports = false))
                     },
                 )
             }
@@ -145,12 +132,11 @@ fun SettingsScreen(
                 Column(Modifier.heightIn(max = 320.dp).verticalScroll(rememberScrollState())) {
                     Text(
                         "Future uncertain readings will send the straightened puzzle photo, " +
-                            "recognition results and corrections to Freevia for private analysis. " +
-                        "If an uncertain puzzle is open when you turn this on, it will be sent " +
-                        "immediately too. Analysis-only copies are kept for up to 90 days. " +
-                        "Training use is a separate choice in Settings. Later " +
-                        "corrections are shared while this setting is on. You can turn it off " +
-                        "in Settings."
+                            "recognition results and corrections to Freevia for analysis and " +
+                            "training. Training copies remain until deleted from Submission " +
+                            "receipts; a trained model may retain learned changes. If an " +
+                            "uncertain puzzle is already open, it will be sent now. You can " +
+                            "turn this off in Settings."
                     )
                 }
             },
@@ -162,35 +148,6 @@ fun SettingsScreen(
             },
             dismissButton = {
                 TextButton(onClick = { confirmAutoShare = false }) { Text("Cancel") }
-            },
-        )
-    }
-    if (confirmTraining) {
-        AlertDialog(
-            onDismissRequest = { confirmTraining = false },
-            title = { Text("Include future auto-shared reports in training?") },
-            text = {
-                Column(Modifier.heightIn(max = 320.dp).verticalScroll(rememberScrollState())) {
-                    Text(
-                        "When automatic sharing is also on, newly scanned uncertain puzzles " +
-                            "will send the full puzzle photo, readings and later corrections to " +
-                            "Freevia as private training examples. Each report can be deleted " +
-                            "by receipt in Submission receipts. Training copies remain until " +
-                            "you request deletion. A model already trained on a report may " +
-                            "not be retroactively unlearnable. This does not change the current " +
-                            "puzzle or reports already sent. You can turn this off for future " +
-                            "scans in Settings."
-                    )
-                }
-            },
-            confirmButton = {
-                TextButton(onClick = {
-                    confirmTraining = false
-                    onChange(settings.copy(trainAutoSharedReports = true))
-                }) { Text("Allow training") }
-            },
-            dismissButton = {
-                TextButton(onClick = { confirmTraining = false }) { Text("Cancel") }
             },
         )
     }
