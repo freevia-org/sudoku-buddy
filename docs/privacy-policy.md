@@ -12,11 +12,10 @@ Sudoku Buddy has no account, ads, routine usage analytics, or ad tracking. Camer
 and puzzle history stay on your device. The app sends a puzzle report to Freevia only when
 you submit it or enable optional automatic sharing for uncertain readings. A report contains
 the straightened puzzle photo, original recognition results, uncertainty markers, and any
-corrections recorded for that reading. A separate optional training choice controls whether
-the report is kept as a private training example. Analysis-only reports expire within 90 days;
-training examples are kept until you delete them by receipt. Reports are not public. Sudoku
-Buddy does not currently train a model from submitted reports; learned changes in a model may
-remain if model training is introduced later.
+corrections recorded for that reading. Submitted reports are used for recognition analysis and
+kept as private training examples until you delete them by receipt. Reports are not public.
+Sudoku Buddy does not currently train a model from submitted reports; learned changes in a
+model may remain if model training is introduced later.
 
 ## What stays on your device
 
@@ -49,8 +48,8 @@ to another app. That app may use the internet under its own permissions and poli
 
 Sudoku Buddy does not run routine usage analytics, crash reporting, or ad tracking.
 If you choose to submit a puzzle report, Freevia can analyze its recognition results and any
-corrections to improve recognition. You can separately choose whether to retain the report as
-a private training example. This report processing is not routine tracking of app use.
+corrections to improve recognition, and keep a private training copy until you request deletion.
+This report processing is not routine tracking of app use.
 
 ## Sharing is your choice
 
@@ -73,12 +72,10 @@ support-sharing description above still applies to what you send to Freevia.
 ### Puzzle reports for recognition analysis
 
 You can submit an uncertain reading from the puzzle screen. Submitting is optional and
-requires your action. A separate unchecked choice on the submission dialog lets you keep
-that report as a private training example. In Settings, another separate training choice can
-apply to future reports shared automatically. Turning on **Share automatically when uncertain**
-sends the currently open uncertain reading and future uncertain readings and corrections
-without asking each time; it does not by itself give training consent. Both automatic choices
-are off by default and can be turned off in Settings.
+requires your action; submitted reports are used for recognition analysis and private training.
+The single option on the submission dialog can also turn on automatic submission for future
+uncertain readings and corrections. You can turn automatic submission off in Settings.
+Automatic submission is off by default.
 
 A report includes the straightened square puzzle photograph, app version, original and
 current digit grids, each cell's recognition classification and confidence, uncertain cells,
@@ -86,13 +83,10 @@ grid geometry, and the sequence of corrections with their times. This can show h
 marks or other details visible on the page. Do not submit a page containing information you
 do not want Freevia to review.
 
-Reports are private and are not posted publicly. Unless you choose the separate training
-option, each uploaded revision is held in a private Cloudflare Workers KV analysis queue and
-expires within 90 days. A training choice applies only to that reading; its later correction
-revisions keep the same choice. Each revision has its own receipt. Analysis-only revisions
-are not copied into the training archive. A report opted in to training is kept in a private
-Cloudflare R2 archive until you delete it from **Submission receipts**. A successful deletion
-removes that revision from Freevia's KV and R2 service storage. Sudoku Buddy does not
+Reports are private and are not posted publicly. Each uploaded revision is held in a private
+Cloudflare Workers KV analysis queue for up to 90 days and in a private Cloudflare R2 training
+archive until you delete it from **Submission receipts**. Each revision has its own receipt.
+A successful deletion removes that revision from Freevia's KV and R2 service storage. Sudoku Buddy does not
 currently train a model from submitted reports; if a model is trained on an example later,
 deleting that example may not remove learned changes from the model.
 

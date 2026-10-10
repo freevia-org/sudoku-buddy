@@ -142,7 +142,6 @@ private fun AppRoot() {
         submittedCorrectionCount = entry.details.submittedCorrectionCount,
         submissionReceipts = entry.details.receipts,
         trainingConsent = entry.details.trainingConsent,
-        trainIfAutoShared = entry.details.trainIfAutoShared,
         hintStyle = settings.hintStyle, routeStyle = settings.routeStyle,
     )
 
@@ -322,14 +321,8 @@ private fun AppRoot() {
                     val active = puzzle?.takeIf { entryId == id && it.photo === initial.photo }
                     var snapshot = active ?: initial
                     if (!isPendingAutoSubmission(snapshot)) break
-                    if (snapshot.submittedCorrectionCount < 0) {
-                        snapshot = snapshot.copy(trainingConsent =
-                            ReportTrainingConsent.forAutomaticSubmission(
-                                hasAcceptedSubmission = snapshot.submittedCorrectionCount >= 0,
-                                existingConsent = snapshot.trainingConsent,
-                                scanOptIn = snapshot.trainIfAutoShared,
-                                trainingEnabledNow = settings.trainAutoSharedReports,
-                            ))
+                    if (!snapshot.trainingConsent) {
+                        snapshot = snapshot.copy(trainingConsent = true)
                         puzzle = updateIfSamePhoto(puzzle, snapshot.photo, PuzzleState::photo) {
                             it.copy(trainingConsent = snapshot.trainingConsent)
                         }
@@ -372,17 +365,12 @@ private fun AppRoot() {
         if (entryId != null && settings.autoShareWhenUncertain) submitAutomatically(entryId)
     }
 
-    fun submitManually(snapshot: PuzzleState, shareAutomatically: Boolean, trainThisReport: Boolean) {
+    fun submitManually(snapshot: PuzzleState, shareAutomatically: Boolean) {
         settings = settings.copy(autoShareWhenUncertain = shareAutomatically)
         Settings.save(context, settings)
         if (!shareAutomatically) pendingAutoSubmissions.clear()
         if (!MisreadSubmission.available || submissionInFlight) return
-        val reportSnapshot = snapshot.copy(trainingConsent =
-            ReportTrainingConsent.forManualSubmission(
-                hasAcceptedSubmission = snapshot.submittedCorrectionCount >= 0,
-                existingConsent = snapshot.trainingConsent,
-                userConsented = trainThisReport,
-            ))
+        val reportSnapshot = snapshot.copy(trainingConsent = true)
         puzzle = updateIfSamePhoto(puzzle, snapshot.photo, PuzzleState::photo) {
             it.copy(trainingConsent = reportSnapshot.trainingConsent)
         }
@@ -432,8 +420,6 @@ private fun AppRoot() {
     }
 
     fun applySettings(updated: Settings) {
-        val revokePendingTraining = settings.trainAutoSharedReports &&
-            !updated.trainAutoSharedReports
         if (!updated.autoShareWhenUncertain) pendingAutoSubmissions.clear()
         settings = updated
         Settings.save(context, updated)
@@ -442,9 +428,6 @@ private fun AppRoot() {
         val changed = current?.copy(
             hintStyle = updated.hintStyle,
             routeStyle = updated.routeStyle,
-            trainIfAutoShared = if (revokePendingTraining && current.submittedCorrectionCount < 0) {
-                false
-            } else current.trainIfAutoShared,
         )
         puzzle = changed
         if (changed != null && changed != current) entryId?.let { id ->
@@ -632,7 +615,6 @@ private fun AppRoot() {
                     puzzle = state.copy(
                         hintStyle = settings.hintStyle,
                         routeStyle = settings.routeStyle,
-                        trainIfAutoShared = settings.trainAutoSharedReports,
                     )
                     go(Screen.PUZZLE)
                     storageBusy = true

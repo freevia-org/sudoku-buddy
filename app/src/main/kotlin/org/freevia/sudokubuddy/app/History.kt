@@ -73,12 +73,7 @@ class History(context: Context) {
                 incomingDetails.submittedCorrectionCount,
                 savedDetails?.submittedCorrectionCount ?: -1,
             ),
-            trainingConsent = if ((savedDetails?.submittedCorrectionCount ?: -1) >= 0) {
-                savedDetails!!.trainingConsent
-            } else incomingDetails.trainingConsent,
-            trainIfAutoShared = if ((savedDetails?.submittedCorrectionCount ?: -1) >= 0) {
-                savedDetails!!.trainIfAutoShared
-            } else incomingDetails.trainIfAutoShared,
+            trainingConsent = incomingDetails.trainingConsent || savedDetails?.trainingConsent == true,
             receipts = (incomingDetails.receipts + (savedDetails?.receipts ?: emptyList()))
                 .distinctBy { it.digest },
         )
