@@ -326,6 +326,16 @@ private fun AccessiblePuzzleCells(state: PuzzleState, onSelect: (Int) -> Unit, m
                         OverlayRole.WRITTEN -> ""
                     })
                 }
+                if (state.hintTarget() == index) append(", destination of this hint")
+                if (index in state.evidenceCells()) append(", supporting evidence")
+                state.candidateMarks()[index]?.takeIf { it.isNotEmpty() }?.let {
+                    append(", candidates ${it.joinToString(", ")}")
+                }
+                state.removedCandidates()[index]?.let { append(", ruled out ${it.joinToString(", ")}") }
+                state.chain()?.links?.firstOrNull { it.index == index }?.let {
+                    append(", hypothetical ${it.digit}, not an entered answer")
+                }
+                if (index in state.chain()?.deadEnd.orEmpty()) append(", contradiction")
             }
             Box(Modifier
                 .absoluteOffset(maxWidth * left, maxHeight * top)
@@ -389,6 +399,9 @@ private fun Controls(
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
+    LaunchedEffect(state.hintDepth, state.hintNavigation.frame.step, state.hintNavigation.parents.size) {
+        if (state.visualHint != null) scroll.scrollTo(0)
+    }
     Column(modifier = modifier.fillMaxWidth()) {
         // Everything whose height depends on what is being said goes above the buttons and
         // scrolls in its own space. A banner appearing used to push the buttons down the
@@ -423,7 +436,7 @@ private fun Controls(
                     )
                 }
 
-                if (state.overlay == OverlayMode.HINT && state.hintStyle == HintStyle.EXPLAIN &&
+                if (state.visualHint == null && state.overlay == OverlayMode.HINT && state.hintStyle == HintStyle.EXPLAIN &&
                     state.hintDepth == PuzzleLogic.HINT_DEPTHS - 1) {
                     Row {
                         if ((state.hint as? org.freevia.sudokubuddy.solver.Hint.Explained)
@@ -438,14 +451,14 @@ private fun Controls(
                 // The review banner already explains the current action. Repeating the
                 // general reading guide below it crowds the confirmation controls.
                 if (state.overlay != OverlayMode.READING || state.openQuestions.isEmpty()) {
-                    Lesson(state)
+                    if (state.visualHint != null) VisualHintPanel(state, onChange) else Lesson(state)
                 }
             }
         }
 
         // Keep the colour key outside the scrolling messages so it cannot be partly
         // hidden at their bottom edge, just above the fixed action row.
-        if (state.overlay != OverlayMode.LESSON) {
+        if (state.overlay != OverlayMode.LESSON && state.visualHint == null) {
             Legend(state.legend, Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
                 evidenceLabel = state.evidenceLabel)
         }

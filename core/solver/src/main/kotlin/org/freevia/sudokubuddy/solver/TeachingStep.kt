@@ -22,7 +22,16 @@ internal fun teachingStep(
     previous: List<TeachingStep>,
 ): TeachingStep? {
     val before = state.candidateSnapshot()
-    val affected = deduction.supportingCells + when (deduction) {
+    val chain = (deduction as? Deduction.Elimination)?.chain
+    // A hidden single in a hypothetical chain depends on the absence of the
+    // digit elsewhere in its unit, not just on the cells that receive digits.
+    // Retain a conservative superset so backward browsing never hides premises.
+    val chainPremises = chain?.let {
+        (it.links.map { link -> link.index } + it.deadEnd).flatMap { cell ->
+            Coordinates.unitsOf[cell].flatten()
+        }.toSet()
+    }.orEmpty()
+    val affected = chainPremises + deduction.supportingCells + when (deduction) {
         is Deduction.Placement -> setOf(deduction.index)
         is Deduction.Elimination -> deduction.fromCells
     }

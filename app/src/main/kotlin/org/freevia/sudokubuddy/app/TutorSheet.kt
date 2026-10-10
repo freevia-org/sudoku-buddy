@@ -411,6 +411,11 @@ private fun ColumnScope.OpenPanel(
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
         Spacer(Modifier.height(2.dp))
+        if (state.tutorHintProof) {
+            TextButton(onClick = { onChange(state.copy(overlay = OverlayMode.HINT,
+                hintStyle = HintStyle.EXPLAIN, tutorHintProof = false, practice = false,
+                practiceCell = null, practiceFeedback = null)) }) { Text("Back to visual hint") }
+        }
         if (at == 0) {
             Text(if (state.tutorTechnique == null) {
                 "Follow a route where each move builds on the previous one."
