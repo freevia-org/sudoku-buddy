@@ -40,13 +40,13 @@ directory.
 1. Retention controls are only **partly qualified**. A non-OneDrive workspace at
    `C:\Users\anton\AppData\Local\Temp\Freevia\SudokuBuddy\ReportReview` is EFS-encrypted
    (AES-256) with an ACL limited to the current user, SYSTEM and Administrators. The
-   `SudokuBuddy-ReportRetention` task is configured daily at 03:15 with `StartWhenAvailable`;
-   a synthetic-only run removed an expired receipt tree and preserved an unexpired one
-   (Task Scheduler result 0). However, the task is interactive, runs only on AC power,
-   cannot wake the host, and has no retry; when it runs daily it can already leave an export
-   almost 24 hours past its recorded expiry, or longer if the computer is off or no user
-   logs in. This does not enforce the live policy's **up to 90 days for each report** promise
-   across working copies. The workspace is under Temp and Windows may delete copies early;
+   `SudokuBuddy-ReportRetention` task now runs hourly and at user logon, starts when
+   available, runs on battery, and retries once after five minutes. A synthetic-only run
+   removed an expired receipt tree and preserved an unexpired one (Task Scheduler result 0).
+   However, it is interactive and cannot delete local copies while the computer is off; if
+   the host remains offline, copies can outlive their recorded expiry until it returns and
+   the user logs in. This does not enforce the live policy's **up to 90 days for each report**
+   promise across working copies. The workspace is under Temp and Windows may delete copies early;
    the EFS key has no recovery certificate and BitLocker could not be verified. Inventory
    historical report exports/derived files before intake. Do not export or retain reports
    locally until an all-copy deletion deadline and a dependable cleanup mechanism are proven.
