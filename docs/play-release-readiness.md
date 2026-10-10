@@ -20,7 +20,7 @@ before distributing a fresh candidate. Build any replacement with code 126 or hi
 | Listing and declarations | Required en-US listing fields and app-content declarations are saved. Data Safety currently marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics. Reconcile those categories against the actual ZIP payload and confirm Cloudflare's service-provider role before closed/open testing or production. |
 | Production | Inactive, 0 of 5 tasks complete: select countries/regions, create release, preview/confirm, send for review, publish. Managed publishing is off. These are later owner-authorized actions, not draft preparation. |
 | Public copy | The Website session prepared a matching policy update; the live page still needs deployment and HTTPS verification. The current Wrangler login lacks Pages write permission. After that narrow permission is approved and the page is live, reconcile the Play listing/Data Safety answers with the full-puzzle photo, readings, and corrections before distributing a fresh candidate. |
-| Feedback API verification | The Worker passes 27/27 API tests; Wrangler 4.149.0 dry-run packages all four expected bindings. On 10 October, private Standard bucket `sudoku-buddy-training-examples` was created and Worker version `f40e9ee7-18c7-492e-96c9-e150c519a1a1` deployed. A synthetic 8-byte ZIP with exact training consent returned `201 accepted`; DELETE for its SHA-256 receipt returned `200 deleted`. A second synthetic ZIP without consent also returned `201 accepted` and `200 deleted`. No real photo was uploaded. A KV key listing found no `reports/` keys during cutover verification. This does not test Android submission, retry behavior on the live service, or expiry timing. |
+| Feedback API verification | The Worker passes 27/27 API tests; Wrangler 4.149.0 dry-run packages all four expected bindings. On 10 October, private Standard bucket `sudoku-buddy-training-examples` was created and Worker version `f40e9ee7-18c7-492e-96c9-e150c519a1a1` deployed. A synthetic 8-byte ZIP with exact training consent returned `201 accepted`; DELETE for its SHA-256 receipt returned `200 deleted`. A second synthetic ZIP without consent also returned `201 accepted` and `200 deleted`. No real photo was uploaded. A KV key listing found no `reports/` keys during cutover verification. The R2 dashboard confirmed public access disabled and 0 B stored after the tests. This does not test Android submission, live retries, partial failures, concurrent upload/delete, or expiry timing. |
 
 ## Current physical camera smoke test
 
@@ -66,10 +66,12 @@ active submission, TalkBack and Play-signed installation remain untested.
 2. **Provision and validate the backend before relying on it.** The private `TRAINING_EXAMPLES`
    bucket and consent-enabled Worker are live. Wrangler confirmed the `REPORT_RECEIPTS`
    Durable Object binding, `v1` migration, private KV namespace, R2 bucket, and rate limiter.
-   The synthetic live consented upload and receipt deletion passed. Continue to keep report
+   Synthetic live consented and analysis-only upload/delete checks passed; the R2 dashboard
+   showed public access disabled and 0 B stored after both tests. Continue to keep report
    exports disabled; do not upload real photos until the public policy and Play declarations
    match the app. Local tests cover retry, partial failure, expiry preservation, concurrent
-   delete/upload, and tombstones; live expiry timing and Android submission remain untested.
+   delete/upload, and tombstones; those failure/retry cases, live expiry timing, and Android
+   submission remain untested against the live service.
 3. **Keep report exports disabled.** App receipt DELETE removes service-side KV and R2
    records, not local downloads, derived files or backups. Inventory historical exports and
    prove receipt-complete deletion before enabling local review. The historical hourly
