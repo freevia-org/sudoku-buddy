@@ -140,9 +140,10 @@ enter the Families programme and reassesses the listing against those policies.
   and corrections without a separate prompt. Each revision has a receipt. The published
   policy says each report is retained for up to 90 days. The Workers KV expiry is bounded.
   A local cleanup task now runs hourly and at user logon, starts when available, and retries
-  once, but a powered-off computer cannot delete its local copies; those copies can therefore
-  outlive their recorded deadline. Verify all-copy deletion by the promised deadline before
-  relying on this statement.
+  once. The hourly interval can leave a copy for nearly an hour past expiry, and a powered-off
+  computer cannot delete its local copies; those copies can remain longer until it returns
+  and a user logs in. Verify all-copy deletion by the promised deadline before relying on
+  this statement.
   A request from Settings receipts is intended to remove the matching server record and
   private working copies earlier. The endpoint is deployed. Complete physical-device upload,
   receipt, correction-update and deletion-request verification for the exact Play candidate

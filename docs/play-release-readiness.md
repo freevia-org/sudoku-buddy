@@ -43,10 +43,11 @@ directory.
    `SudokuBuddy-ReportRetention` task now runs hourly and at user logon, starts when
    available, runs on battery, and retries once after five minutes. A synthetic-only run
    removed an expired receipt tree and preserved an unexpired one (Task Scheduler result 0).
-   However, it is interactive and cannot delete local copies while the computer is off; if
-   the host remains offline, copies can outlive their recorded expiry until it returns and
-   the user logs in. This does not enforce the live policy's **up to 90 days for each report**
-   promise across working copies. The workspace is under Temp and Windows may delete copies early;
+   However, its hourly cadence can leave copies for almost an hour past expiry. It is
+   interactive and cannot delete local copies while the computer is off; if the host remains
+   offline, copies can outlive their recorded expiry until it returns and the user logs in.
+   This does not enforce the live policy's **up to 90 days for each report** promise across
+   working copies. The workspace is under Temp and Windows may delete copies early;
    the EFS key has no recovery certificate and BitLocker could not be verified. Inventory
    historical report exports/derived files before intake. Do not export or retain reports
    locally until an all-copy deletion deadline and a dependable cleanup mechanism are proven.
