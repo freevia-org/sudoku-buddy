@@ -1,9 +1,7 @@
-import { REPORT_TTL_SECONDS } from "./retention.js";
+import { MAX_REPORT_BYTES } from "./limits.js";
+import { ReportReceipt } from "./report-receipt.js";
 
-const MiB = 1024 * 1024;
-export const MAX_REPORT_BYTES = 20 * MiB;
-export { REPORT_TTL_SECONDS };
-const REPORT_PREFIX = "reports/";
+const RECEIPT_PATTERN = /^[a-f0-9]{64}$/;
 
 function json(status, body, headers = {}) {
   return new Response(JSON.stringify(body), {
@@ -60,19 +58,25 @@ async function sha256Hex(bytes) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname.startsWith("/v1/reports/")) {
+      if (request.method !== "DELETE") return json(405, { error: "method_not_allowed" }, { allow: "DELETE" });
+      const receipt = url.pathname.slice("/v1/reports/".length);
+      if (!RECEIPT_PATTERN.test(receipt)) return json(400, { error: "invalid_receipt" });
+      const rateLimitResponse = await enforceRateLimit(env);
+      if (rateLimitResponse) return rateLimitResponse;
+      if (!env.REPORT_RECEIPTS) return json(503, { error: "deletion_incomplete", retry: true });
+      try {
+        return await env.REPORT_RECEIPTS.get(env.REPORT_RECEIPTS.idFromName(receipt))
+          .fetch(new Request(`https://receipt.internal/${receipt}`, { method: "DELETE" }));
+      } catch {
+        return json(503, { error: "deletion_incomplete", retry: true });
+      }
+    }
     if (url.pathname !== "/v1/reports") return json(404, { error: "not_found" });
     if (request.method !== "POST") return json(405, { error: "method_not_allowed" }, { allow: "POST" });
 
-    // One account-wide counter avoids receiving or persisting client IP addresses.
-    // Cloudflare's rate-limit binding is intentionally only a coarse abuse brake.
-    if (!env.SUBMISSION_LIMITER) return json(503, { error: "submission_temporarily_unavailable" });
-    let success;
-    try {
-      ({ success } = await env.SUBMISSION_LIMITER.limit({ key: "all-report-submissions" }));
-    } catch {
-      return json(503, { error: "submission_temporarily_unavailable" });
-    }
-    if (!success) return json(429, { error: "rate_limited" }, { "retry-after": "60" });
+    const rateLimitResponse = await enforceRateLimit(env);
+    if (rateLimitResponse) return rateLimitResponse;
 
     if (request.headers.get("content-type") !== "application/zip") {
       return json(415, { error: "content_type_must_be_application_zip" });
@@ -93,23 +97,35 @@ export default {
     if (!isZipSignature(bytes)) return json(415, { error: "zip_signature_required" });
 
     const digest = await sha256Hex(bytes);
-    const key = `${REPORT_PREFIX}${digest}.zip`;
+    const trainingConsent = request.headers.get("X-Sudoku-Training-Consent") === "yes";
+    if (!env.REPORT_RECEIPTS) {
+      return json(503, { error: "submission_temporarily_unavailable" });
+    }
+    const object = env.REPORT_RECEIPTS.get(env.REPORT_RECEIPTS.idFromName(digest));
     try {
-      // The digest is both the receipt and the content-addressed dedup key. Concurrent
-      // identical uploads can only replace the same bytes under the same key.
-      const existing = await env.REPORTS.get(key, { type: "arrayBuffer" });
-      if (existing === null) {
-        await env.REPORTS.put(key, bytes, { expirationTtl: REPORT_TTL_SECONDS });
-      }
-      return json(existing === null ? 201 : 200, {
-        receipt: digest,
-        status: existing === null ? "accepted" : "already_received",
-      });
+      return await object.fetch(new Request(`https://receipt.internal/${digest}`, {
+        method: "POST",
+        headers: trainingConsent ? { "X-Sudoku-Training-Consent": "yes" } : {},
+        body: bytes,
+      }));
     } catch {
-      // Do not include request data or platform errors in logs or responses.
       return json(503, { error: "submission_temporarily_unavailable" });
     }
   },
 };
 
-export const __test = { isZipSignature, readBoundedBody, sha256Hex };
+async function enforceRateLimit(env) {
+  // One account-wide counter avoids receiving or persisting client IP addresses.
+  // Cloudflare's rate-limit binding is intentionally only a coarse abuse brake.
+  if (!env.SUBMISSION_LIMITER) return json(503, { error: "submission_temporarily_unavailable" });
+  let success;
+  try {
+    ({ success } = await env.SUBMISSION_LIMITER.limit({ key: "all-report-submissions" }));
+  } catch {
+    return json(503, { error: "submission_temporarily_unavailable" });
+  }
+  if (!success) return json(429, { error: "rate_limited" }, { "retry-after": "60" });
+  return null;
+}
+
+export { ReportReceipt };

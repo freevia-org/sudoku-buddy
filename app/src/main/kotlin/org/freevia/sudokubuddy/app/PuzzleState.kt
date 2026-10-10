@@ -81,6 +81,10 @@ data class PuzzleState(
     /** Number of corrections included in the last successful submission; -1 means never sent. */
     val submittedCorrectionCount: Int = -1,
     val submissionReceipts: List<SubmissionReceipt> = emptyList(),
+    /** Consent fixed for this report on its first submission; corrections inherit it. */
+    val trainingConsent: Boolean = false,
+    /** Snapshot of the separate setting at scan time; only used for first auto submission. */
+    val trainIfAutoShared: Boolean = false,
     val overlay: OverlayMode = OverlayMode.NONE,
     val hintStyle: HintStyle = HintStyle.EXPLAIN,
     val selectedCell: Int? = null,

@@ -12,6 +12,20 @@ binding = "REPORTS"
 # Private intake namespace; do not replace without checking the live service first.
 id = "efb279361d4e4a658075e0a1f1683f27"
 
+[[r2_buckets]]
+binding = "TRAINING_EXAMPLES"
+# Create this bucket as private before deploying the consent-enabled Worker.
+bucket_name = "sudoku-buddy-training-examples"
+
+[durable_objects]
+bindings = [
+  { name = "REPORT_RECEIPTS", class_name = "ReportReceipt" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ReportReceipt"]
+
 [[ratelimits]]
 name = "SUBMISSION_LIMITER"
 # Account-scoped rate limiter identifier; keep stable for this service.

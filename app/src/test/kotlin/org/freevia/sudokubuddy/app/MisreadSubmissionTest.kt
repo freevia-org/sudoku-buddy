@@ -38,4 +38,36 @@ class MisreadSubmissionTest {
             MisreadUploader.parseReceipt(201, "{\"receipt\":\"$digest\",\"status\":\"already_received\"}")
         }
     }
+
+    @Test
+    fun `training consent header is sent only for an explicitly opted in report`() {
+        assertEquals("yes", MisreadUploader.trainingConsentHeader(true))
+        assertEquals(null, MisreadUploader.trainingConsentHeader(false))
+    }
+
+    @Test
+    fun `deletion response must confirm the exact receipt and completed status`() {
+        val receipt = "b".repeat(64)
+        MisreadUploader.parseDeletionResponse(
+            200, "{\"receipt\":\"$receipt\",\"status\":\"deleted\"}", receipt,
+        )
+        MisreadUploader.parseDeletionResponse(
+            200, "{\"receipt\":\"$receipt\",\"status\":\"already_deleted\"}", receipt,
+        )
+        assertFailsWith<IllegalStateException> {
+            MisreadUploader.parseDeletionResponse(
+                200, "{\"receipt\":\"${"c".repeat(64)}\",\"status\":\"deleted\"}", receipt,
+            )
+        }
+        assertFailsWith<IllegalStateException> {
+            MisreadUploader.parseDeletionResponse(
+                200, "{\"receipt\":\"$receipt\",\"status\":\"queued\"}", receipt,
+            )
+        }
+        assertFailsWith<IllegalStateException> {
+            MisreadUploader.parseDeletionResponse(
+                503, "{\"receipt\":\"$receipt\",\"status\":\"deleted\"}", receipt,
+            )
+        }
+    }
 }

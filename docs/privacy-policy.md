@@ -12,10 +12,11 @@ Sudoku Buddy has no account, ads, routine usage analytics, or ad tracking. Camer
 and puzzle history stay on your device. The app sends a puzzle report to Freevia only when
 you submit it or enable optional automatic sharing for uncertain readings. A report contains
 the straightened puzzle photo, original recognition results, uncertainty markers, and any
-corrections recorded for that reading. Reports are held for private review to improve
-recognition; they are not posted publicly, retained in a training corpus, or used to train a
-model. Review findings may inform code changes, but reports and report-derived examples are
-deleted within the retention period below.
+corrections recorded for that reading. A separate optional training choice controls whether
+the report is kept as a private training example. Analysis-only reports expire within 90 days;
+training examples are kept until you delete them by receipt. Reports are not public. Sudoku
+Buddy does not currently train a model from submitted reports; learned changes in a model may
+remain if model training is introduced later.
 
 ## What stays on your device
 
@@ -47,9 +48,9 @@ Opening a website link or choosing a receiving app in the share sheet hands that
 to another app. That app may use the internet under its own permissions and policies.
 
 Sudoku Buddy does not run routine usage analytics, crash reporting, or ad tracking.
-If you choose to submit a puzzle report, Freevia analyzes its recognition results and any
-corrections to improve recognition. This report analysis is described above and is not a
-background usage-analytics service.
+If you choose to submit a puzzle report, Freevia can analyze its recognition results and any
+corrections to improve recognition. You can separately choose whether to retain the report as
+a private training example. This report processing is not routine tracking of app use.
 
 ## Sharing is your choice
 
@@ -72,10 +73,12 @@ support-sharing description above still applies to what you send to Freevia.
 ### Puzzle reports for recognition analysis
 
 You can submit an uncertain reading from the puzzle screen. Submitting is optional and
-requires your action. If you turn on **Share automatically when uncertain**, the app sends
-the currently open uncertain reading immediately, then sends future uncertain readings and
-later corrections without asking you each time. Settings explains what is sent before the
-option is enabled. You can turn this setting off in Settings.
+requires your action. A separate unchecked choice on the submission dialog lets you keep
+that report as a private training example. In Settings, another separate training choice can
+apply to future reports shared automatically. Turning on **Share automatically when uncertain**
+sends the currently open uncertain reading and future uncertain readings and corrections
+without asking each time; it does not by itself give training consent. Both automatic choices
+are off by default and can be turned off in Settings.
 
 A report includes the straightened square puzzle photograph, app version, original and
 current digit grids, each cell's recognition classification and confidence, uncertain cells,
@@ -83,21 +86,22 @@ grid geometry, and the sequence of corrections with their times. This can show h
 marks or other details visible on the page. Do not submit a page containing information you
 do not want Freevia to review.
 
-Reports are intended for Freevia's private recognition analysis. They are not public posts,
-retained in a training corpus, or used to train a model. Each upload, including a later
-corrected revision, is a separate content-addressed report in a private Cloudflare Workers
-KV queue. Freevia deletes the uploaded revision and all Freevia-controlled photo, export,
-review and working copies no later than 90 days after that revision's upload. Reviewers keep
-all report material and derived working files together in a designated private workspace;
-they do not copy report material into the repository, a persistent corpus, model-training
-data, or another storage system. The app keeps the receipt for each revision in Settings,
-even if you delete the puzzle from History. Open **Submission receipts** there and copy the
-deletion request to ask Freevia to remove the matching KV report and all associated private
-review/export copies earlier; email [info@freevia.org](mailto:info@freevia.org). Deleting a
-puzzle from History removes its local copy but does not delete reports already sent. Cloudflare
-processes the network request under its own service terms. The Worker does not store submitter
-identity or source IP in the report record, but this does not mean Cloudflare itself processes
-no network/security telemetry.
+Reports are private and are not posted publicly. Unless you choose the separate training
+option, each uploaded revision is held in a private Cloudflare Workers KV analysis queue and
+expires within 90 days. A training choice applies only to that reading; its later correction
+revisions keep the same choice. Each revision has its own receipt. Analysis-only revisions
+are not copied into the training archive. A report opted in to training is kept in a private
+Cloudflare R2 archive until you delete it from **Submission receipts**. A successful deletion
+removes that revision from Freevia's KV and R2 service storage. Sudoku Buddy does not
+currently train a model from submitted reports; if a model is trained on an example later,
+deleting that example may not remove learned changes from the model.
+
+The app keeps receipts in Settings, even if you delete a puzzle from History. Open
+**Submission receipts** to delete a submitted revision. Corrected revisions have separate
+receipts and must be deleted separately. Deleting a puzzle from History removes its local
+copy but does not delete reports already sent. Cloudflare provides storage and request
+infrastructure on Freevia's behalf and may process network/security telemetry under its own
+terms. The report record does not store your identity or source IP.
 
 ### GitHub feedback drafts
 

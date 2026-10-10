@@ -70,8 +70,10 @@ fun AboutScreen(onClose: () -> Unit) {
                             "to Freevia for recognition analysis. Reports do not include your " +
                             "device model or diagnostics. Automatic sharing is optional; there " +
                             "are no accounts, routine usage analytics or ad tracking. " +
-                            "Submitted reports are analyzed only to improve recognition and are kept for up " +
-                            "to 90 days; use Submission receipts in Settings to copy a deletion request.",
+                            "Analysis-only reports are kept up to 90 days. Training is a separate " +
+                            "opt-in; those private examples can be deleted by receipt, though a " +
+                            "model already trained may retain learned changes. Use Submission " +
+                            "receipts in Settings to delete a report.",
                         style = MaterialTheme.typography.bodyMedium,
                     )
                     Text(

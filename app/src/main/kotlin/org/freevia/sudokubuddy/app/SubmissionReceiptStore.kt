@@ -35,4 +35,14 @@ internal object SubmissionReceiptStore {
             })
         }
     }
+
+    @Synchronized
+    fun remove(context: Context, digest: String) {
+        val receipts = list(context).filterNot { it.digest == digest }
+        context.getSharedPreferences(FILE, Context.MODE_PRIVATE).edit {
+            putString(KEY, receipts.joinToString("\n") {
+                "${it.digest},${it.status},${it.receivedAtMillis}"
+            })
+        }
+    }
 }

@@ -4,6 +4,7 @@
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "dev:local": "npx wrangler dev --local --ip 127.0.0.1 --port 8787"
   }
 }
