@@ -63,13 +63,13 @@ active submission, TalkBack and Play-signed installation remain untested.
 
 ## Consent, retention and backend gates
 
-1. **Align the actual release and public disclosures.** Manual training consent starts
-   unchecked; automatic training is a separate choice from automatic report submission.
-   Analysis-only revisions expire within 90 days. Explicitly consented training examples
-   remain private until receipt deletion. Later corrected revisions have separate receipts
-   and retain that reading's choice. Do not convert earlier analysis reports into training
-   examples without new explicit consent. Describe that deleting a source example may not
-   reverse influence already learned by a future model; this does not waive data deletion.
+1. **Align the actual release and public disclosures.** Submitting a report opts it into
+   private recognition analysis and training. One optional setting enables automatic
+   submission of future uncertain readings; it is off by default and requires confirmation.
+   Each revision has a receipt; training copies remain private until receipt deletion.
+   Preserve the disclosure that deleting a source example may not reverse influence already
+   learned by a future model. Older automatic analysis preferences are disabled on upgrade
+   unless the user had also enabled training, so the changed purpose is never silently applied.
 2. **Provision and validate the backend before relying on it.** The private `TRAINING_EXAMPLES`
    bucket and consent-enabled Worker are live. Wrangler confirmed the `REPORT_RECEIPTS`
    Durable Object binding, `v1` migration, private KV namespace, R2 bucket, and rate limiter.

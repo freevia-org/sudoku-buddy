@@ -94,12 +94,12 @@ Private by design:
 - Puzzle reports go to Freevia only when submitted, or when the user has enabled optional automatic sharing for uncertain readings
 
 You can choose to submit a puzzle photo with its recognition results and corrections for
-private analysis to improve reading. Automatic sharing is optional. Training is a separate
-optional choice: analysis-only reports expire within 90 days; opted-in training examples
-stay private until you delete them through Submission receipts. Each corrected revision
-has its own receipt. Deleting an example may not reverse learned changes if a model is
-trained on it later. Scanning, checking and tutoring work offline and remain available
-without sharing; submitting or deleting a report requires an internet connection.
+private recognition analysis and training. One optional setting automates submission of
+future uncertain readings. Training copies stay private until you delete them through
+Submission receipts. Each corrected revision has its own receipt. Deleting an example may
+not reverse learned changes if a model is trained on it later. Scanning, checking and tutoring
+work offline and remain available without sharing; submitting or deleting a report requires
+an internet connection.
 
 Sudoku Buddy is for people who enjoy solving on paper and want a second pair of eyes, not a
 replacement game.
@@ -125,11 +125,11 @@ replacement game.
   > point the camera at a printed Sudoku. After scanning, every recognized digit can be
   > corrected before the user checks handwritten answers, requests a hint or views the
   > solution. Recognition runs on the device and history is local. Users can optionally send
-  > an uncertain-reading photo and results for analysis. The manual submission dialog has a
-  > separate unchecked training choice; Settings has independent automatic submission and
-  > training choices, both off by default. Analysis-only reports expire within 90 days;
-  > training examples remain private until receipt deletion. Each corrected revision has
-  > its own receipt. Settings → Submission receipts deletes the matching service record.
+  > an uncertain-reading photo and results for analysis and training. Submitting is an
+  > explicit opt-in; the dialog has one optional checkbox to automate future submissions.
+  > Automatic submission is off by default. Training examples remain private until receipt
+  > deletion. Each corrected revision has its own receipt. Settings → Submission receipts
+  > deletes the matching service record.
   > Verify this flow against the final app and deployed service before supplying this note.
 
 ### Target audience and content
@@ -158,12 +158,12 @@ enter the Families programme and reassesses the listing against those policies.
   logs, performance metrics, or a log of settings toggles. Submission is optional.
   Automatic sharing explains its payload before enabling it and sends the current uncertain
   reading, future uncertain readings and later corrections without another prompt each time.
-- Training requires a separate unchecked manual choice or separate automatic training
-  setting; automatic submission alone is not training consent. Analysis-only revisions
-  retain their original 90-day KV expiry across retries. Consented examples also enter a
-  private R2 archive until receipt deletion. Do not migrate old analysis-only reports into
-  training without new consent. Corrections preserve the reading's choice and each revision
-  has a separate receipt.
+- Submitting manually opts the report into recognition analysis and private training.
+  Enabling automatic submission opts future uncertain readings into the same processing;
+  it is off by default and requires confirmation. Keep the report photo, readings, corrections,
+  training retention and deletion behavior accurately described. Older automatic analysis
+  preferences are turned off on upgrade unless training had also been enabled; users can
+  enable the new behavior after reviewing its disclosure. Each revision has a separate receipt.
 - Settings receipt DELETE is designed to remove the matching service KV and R2 objects;
   it does not remove local exported copies or undo influence learned by a future model.
   The privacy policy must explain these limits accurately. Keep exports disabled until

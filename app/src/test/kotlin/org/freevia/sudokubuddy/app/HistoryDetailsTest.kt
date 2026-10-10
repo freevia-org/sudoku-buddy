@@ -32,7 +32,6 @@ class HistoryDetailsTest {
             submittedCorrectionCount = 0,
             receipts = listOf(SubmissionReceipt("a".repeat(64), "accepted", 2345)),
             trainingConsent = true,
-            trainIfAutoShared = true,
         )
         val saved = HistoryFormat.encode(original.with(0, Cell.given(8)), details)
         val restored = HistoryFormat.details(saved)
@@ -44,7 +43,6 @@ class HistoryDetailsTest {
         assertEquals(0, restored.submittedCorrectionCount)
         assertEquals(details.receipts, restored.receipts)
         assertEquals(true, restored.trainingConsent)
-        assertEquals(true, restored.trainIfAutoShared)
     }
 
     @Test
@@ -70,15 +68,14 @@ class HistoryDetailsTest {
     }
 
     @Test
-    fun `legacy reading defaults to analysis only and never inherits training consent`() {
+    fun `legacy reading keeps its recorded training consent`() {
         val grid = Grid.Empty.with(0, Cell.given(5))
         val legacy = HistoryFormat.encode(grid, HistoryDetails())
             .replace("trainingConsent=false\n", "")
-            .replace("trainIfAutoShared=false\n", "")
+            .plus("trainIfAutoShared=true\n")
 
         val restored = HistoryFormat.details(legacy)
         assertEquals(false, restored.trainingConsent)
-        assertEquals(false, restored.trainIfAutoShared)
         assertEquals(HistoryDetails(), restored)
     }
 

@@ -88,7 +88,7 @@ fun PreparedPuzzleScreen(
     onDeleteReceipt: (SubmissionReceipt) -> Unit,
     deletingReceipt: String?,
     deleteError: String?,
-    onSubmitReading: (PuzzleState, Boolean, Boolean) -> Unit,
+    onSubmitReading: (PuzzleState, Boolean) -> Unit,
 ) {
     var prepared by remember { mutableStateOf<PuzzleState?>(null) }
     var failed by remember(state) { mutableStateOf(false) }
@@ -151,7 +151,7 @@ fun PuzzleScreen(
     onDeleteReceipt: (SubmissionReceipt) -> Unit,
     deletingReceipt: String?,
     deleteError: String?,
-    onSubmitReading: (PuzzleState, Boolean, Boolean) -> Unit,
+    onSubmitReading: (PuzzleState, Boolean) -> Unit,
     showCellEditor: Boolean = true,
 ) {
     val measurer = rememberTextMeasurer()
@@ -216,11 +216,9 @@ fun PuzzleScreen(
         MisreadSubmissionDialog(
             autoShare = autoShareUncertain,
             onDismiss = { submitOpen = false },
-            trainingConsent = state.trainingConsent,
-            trainingConsentLocked = state.submittedCorrectionCount >= 0,
-            onSubmit = { auto, train ->
+            onSubmit = { auto ->
                 submitOpen = false
-                onSubmitReading(state, auto, train)
+                onSubmitReading(state, auto)
             },
         )
     }

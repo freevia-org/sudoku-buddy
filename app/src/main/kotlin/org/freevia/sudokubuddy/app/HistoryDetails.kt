@@ -49,7 +49,6 @@ data class HistoryDetails(
     val submittedCorrectionCount: Int = -1,
     val receipts: List<SubmissionReceipt> = emptyList(),
     val trainingConsent: Boolean = false,
-    val trainIfAutoShared: Boolean = false,
 ) {
     fun encode(): String = Properties().apply {
         setProperty("entered", entered.sorted().joinToString(","))
@@ -70,7 +69,6 @@ data class HistoryDetails(
             "${it.digest},${it.status},${it.receivedAtMillis}"
         })
         setProperty("trainingConsent", trainingConsent.toString())
-        setProperty("trainIfAutoShared", trainIfAutoShared.toString())
         reports?.let { values ->
             setProperty("reports", encodeReports(values))
         }
@@ -81,7 +79,7 @@ data class HistoryDetails(
             state.lines, state.reports, state.framingNote, state.readerComplaint,
             state.originalGrid, state.originalReports, state.originalUncertainCells,
             state.readingCorrections, state.submittedCorrectionCount, state.submissionReceipts,
-            state.trainingConsent, state.trainIfAutoShared)
+            state.trainingConsent)
 
         private fun encodeReports(values: List<CellReport?>) = values.joinToString(";") { report ->
             report?.let {
@@ -138,8 +136,7 @@ data class HistoryDetails(
                 GridLines(lines("vertical"), lines("horizontal")), decodeReports("reports"),
                 properties.getProperty("framing"), properties.getProperty("complaint"),
                 originalGrid, decodeReports("originalReports"), originalUncertain,
-                corrections, submitted, receipts, consent("trainingConsent"),
-                consent("trainIfAutoShared"))
+                corrections, submitted, receipts, consent("trainingConsent"))
         }
     }
 }
