@@ -10,7 +10,7 @@ public privacy disclosures are deployed and verified.**
 
 | Area | Evidence and limit |
 | --- | --- |
-| Reviewed source | `main` is `6763b8fc01c3338e57de799f2aedb3e9f6b71683`; PRs #18–#24 are merged. Candidate 125's Android source remains `a1e311c2f97d17bd1acfe0b289b8d9aa5abece18`. PR #23 makes consented R2 retries idempotent across a Durable Object marker-write failure; PR #24 locks Wrangler for repeatable local checks. Neither PR changes the Android candidate source. |
+| Reviewed source | Main snapshot after PR #25: `ce7ac393cc9579691dcc6b61267ec24779629f31`; PRs #18–#25 were merged at that point. Candidate 125's Android source remains `a1e311c2f97d17bd1acfe0b289b8d9aa5abece18`. PR #23 makes consented R2 retries idempotent across a Durable Object marker-write failure; PR #24 locks Wrangler for repeatable local checks; PR #25 refreshes this release evidence. None changes the Android candidate source. CI for this snapshot passed. |
 | Packaged candidate identity | Workflow [38018608861](https://github.com/freevia-org/sudoku-buddy/actions/runs/38018608861) built code 125 from source `a1e311c2f97d17bd1acfe0b289b8d9aa5abece18`. Use the sealed `sudoku-buddy-candidate-125-reviewed` package; its AAB SHA-256 is `59A0287D0980F7DB632C1603634EBBAAEDBADF800D5A01AEDC3B7BD54FB875BE`. `release-record.json`, `SHA256SUMS.json` and `evidence/` verify provenance, package contents, signature and bundle checks. Candidate verification passed locally. |
 | Build and review process | After any release-relevant source or disclosure change, build with `play-candidate.yml` using a code greater than every code uploaded to Play; verify the sealed candidate and checks artifacts independently. A successful workflow does not establish device qualification, live backend behavior or Play-delivered installation. |
 | Superseded initial training build | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) built code 125 from `46831610f88d37ee4d73867da14b2bc0c182710f` before the handoff refresh. That specific package embeds the earlier documents and is superseded as a publishing handoff. This historical limitation does not describe every later package using code 125. Preserve that run's inventory unchanged and distinguish builds by source, run and AAB hash, not version code alone. |
@@ -104,8 +104,8 @@ active submission, TalkBack and Play-signed installation remain untested.
    sidecars from final `main` and use a code greater than 125 (already uploaded to Play).
    Preserve candidate 124 and 125 inventories without rewriting their embedded files or
    checksums.
-7. **Hold distribution separately.** A later authorized draft upload may replace candidate
-   124 and save the new release as draft; inspect its own preview diagnostics. Stop before
+7. **Hold distribution separately.** A later authorized draft upload may replace the current
+   candidate 125 draft and save the new release as draft; inspect its own preview diagnostics. Stop before
    final **Save and publish** until the exact AAB and tester scope are authorized. Verify
    Play-delivered signing, installation and upgrade/data retention after an authorized
    internal rollout. Do not uninstall or clear the existing QA-signed app to bypass a
