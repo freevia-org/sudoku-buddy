@@ -164,7 +164,8 @@ enter the Families programme and reassesses the listing against those policies.
   training retention and deletion behavior accurately described. Older automatic analysis
   preferences are turned off on upgrade unless training had also been enabled; users can
   enable the new behavior after reviewing its disclosure. Each revision has a separate receipt.
-- Settings receipt DELETE is designed to remove the matching service KV and R2 objects;
+- Each submitted revision is stored once privately in R2, with no automatic expiry.
+  Settings receipt DELETE removes the matching stored report;
   it does not remove local exported copies or undo influence learned by a future model.
   The privacy policy must explain these limits accurately. Keep exports disabled until
   historical copies are inventoried and receipt-complete deletion is proven.

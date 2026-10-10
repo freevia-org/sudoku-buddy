@@ -125,7 +125,7 @@ internal fun SubmissionReceiptsDialog(
         text = {
             Column(Modifier.heightIn(max = 280.dp).verticalScroll(rememberScrollState())) {
                 Text("Each receipt identifies one submitted puzzle revision. Delete it here " +
-                    "to remove the report and any private training copy from Freevia.")
+                    "to remove the privately stored report from Freevia.")
                 receipts.forEach { receipt ->
                     Row(
                         modifier = Modifier.fillMaxWidth().padding(top = 6.dp),
