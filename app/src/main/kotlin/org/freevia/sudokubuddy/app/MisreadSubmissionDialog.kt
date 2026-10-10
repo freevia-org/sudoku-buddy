@@ -38,9 +38,10 @@ internal fun MisreadSubmissionDialog(
         text = {
             Column(Modifier.heightIn(max = 280.dp).verticalScroll(rememberScrollState())) {
                 Text(
-                    "Share this puzzle photo, reading results and any cell corrections " +
-                        "with Freevia for recognition analysis. Later corrections are shared " +
-                        "when you submit an update or enable automatic sharing."
+                    "Thanks for helping us improve recognition. Your report shares the " +
+                        "puzzle photo, reading results and cell corrections with Freevia; " +
+                        "later corrections can be added when you submit an update or enable " +
+                        "automatic sharing."
                 )
                 if (!MisreadSubmission.available) {
                     Text(
