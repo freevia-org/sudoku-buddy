@@ -223,13 +223,15 @@ not this checklist, assigns the final regional ratings.
 Use the verified signed candidate recorded in `play-release-readiness.md`, checking its
 SHA-256 and application ID `org.freevia.sudokubuddy`. Candidate 1.0.0 (124) was built by
 the successful GitHub candidate workflow and uploaded to the Internal testing draft; the
-Console displays it as `1.0.0 (124) — Internal test`. The track remains inactive. The next
-**Preview and confirm** step distributes it immediately to the selected testers, so do not
-complete that step until the privacy/retention gates and tester scope are resolved. The
-attached OnePlus has a local QA-signed version 122 and a separate v124-source debug package,
-not a Play-delivered install. A Play-install upgrade test still needs an internal rollout
-and must preserve existing app data; do not uninstall or clear storage to bypass a signing
-mismatch.
+Console displays it as `1.0.0 (124) — Internal test`. The track remains inactive. The
+candidate-only **Preview and confirm** page was opened for diagnostics: Play reported zero
+errors and two non-blocking warnings (no deobfuscation mapping and no native debug symbols).
+Opening the preview did not distribute the build. The separate final **Save and publish**
+button says changes publish immediately to the selected testers; it has not been clicked.
+The attached OnePlus has a local QA-signed version 122 and a separate v124-source debug
+package, not a Play-delivered install. A Play-install upgrade test still needs an internal
+rollout and must preserve existing app data; do not uninstall or clear storage to bypass a
+signing mismatch.
 
 ## Account and policy details to confirm in Play Console
 
