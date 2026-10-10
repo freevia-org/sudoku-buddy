@@ -4,6 +4,7 @@ const MiB = 1024 * 1024;
 export const MAX_REPORT_BYTES = 20 * MiB;
 export { REPORT_TTL_SECONDS };
 const REPORT_PREFIX = "reports/";
+const RECEIPT_PATTERN = /^[a-f0-9]{64}$/;
 
 function json(status, body, headers = {}) {
   return new Response(JSON.stringify(body), {
@@ -60,6 +61,12 @@ async function sha256Hex(bytes) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname.startsWith("/v1/reports/")) {
+      if (request.method !== "DELETE") return json(405, { error: "method_not_allowed" }, { allow: "DELETE" });
+      const receipt = url.pathname.slice("/v1/reports/".length);
+      if (!RECEIPT_PATTERN.test(receipt)) return json(400, { error: "invalid_receipt" });
+      return deleteReport(receipt, env);
+    }
     if (url.pathname !== "/v1/reports") return json(404, { error: "not_found" });
     if (request.method !== "POST") return json(405, { error: "method_not_allowed" }, { allow: "POST" });
 
@@ -94,6 +101,10 @@ export default {
 
     const digest = await sha256Hex(bytes);
     const key = `${REPORT_PREFIX}${digest}.zip`;
+    const trainingConsent = request.headers.get("X-Sudoku-Training-Consent") === "yes";
+    if (trainingConsent && !env.TRAINING_EXAMPLES) {
+      return json(503, { error: "submission_temporarily_unavailable" });
+    }
     try {
       // The digest is both the receipt and the content-addressed dedup key. Concurrent
       // identical uploads can only replace the same bytes under the same key.
@@ -101,6 +112,9 @@ export default {
       if (existing === null) {
         await env.REPORTS.put(key, bytes, { expirationTtl: REPORT_TTL_SECONDS });
       }
+      // Only an explicit exact `yes` copies the report to the private, long-lived
+      // training bucket. Repeating the same upload safely overwrites the same digest.
+      if (trainingConsent) await env.TRAINING_EXAMPLES.put(digest, bytes);
       return json(existing === null ? 201 : 200, {
         receipt: digest,
         status: existing === null ? "accepted" : "already_received",
@@ -111,5 +125,35 @@ export default {
     }
   },
 };
+
+async function deleteReport(receipt, env) {
+  if (!env.REPORTS || !env.TRAINING_EXAMPLES) {
+    return json(503, { error: "deletion_incomplete", retry: true });
+  }
+
+  const kvKey = `${REPORT_PREFIX}${receipt}.zip`;
+  let existed;
+  try {
+    const [kvValue, trainingObject] = await Promise.all([
+      env.REPORTS.get(kvKey, { type: "stream" }),
+      env.TRAINING_EXAMPLES.head(receipt),
+    ]);
+    existed = kvValue !== null || trainingObject !== null;
+    if (kvValue && typeof kvValue.cancel === "function") await kvValue.cancel();
+  } catch {
+    return json(503, { error: "deletion_incomplete", retry: true });
+  }
+
+  // Always attempt both stores. If either operation fails, clients must retry the
+  // same receipt; repeating successful deletes is safe and idempotent.
+  const results = await Promise.allSettled([
+    env.REPORTS.delete(kvKey),
+    env.TRAINING_EXAMPLES.delete(receipt),
+  ]);
+  if (results.some((result) => result.status === "rejected")) {
+    return json(503, { error: "deletion_incomplete", retry: true });
+  }
+  return json(200, { receipt, status: existed ? "deleted" : "already_deleted" });
+}
 
 export const __test = { isZipSignature, readBoundedBody, sha256Hex };

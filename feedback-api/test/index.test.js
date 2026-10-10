@@ -6,12 +6,19 @@ function makeZip(payload = [0x50, 0x4b, 0x03, 0x04, 0x01, 0x02]) {
   return new Uint8Array(payload);
 }
 
-function makeEnv({ throttled = false, fail = false } = {}) {
+function makeEnv({ throttled = false, fail = false, failTrainingPut = false, failDelete = false } = {}) {
   const values = new Map();
   const writes = [];
+  const trainingValues = new Map();
+  const trainingWrites = [];
+  const failures = { failTrainingPut, failDelete };
   const env = {
     REPORTS: {
       async get(key, options) {
+        if (options.type === "stream") {
+          const value = values.get(key);
+          return value ? new ReadableStream({ start(controller) { controller.close(); } }) : null;
+        }
         assert.deepEqual(options, { type: "arrayBuffer" });
         return values.get(key) ?? null;
       },
@@ -19,6 +26,22 @@ function makeEnv({ throttled = false, fail = false } = {}) {
         if (fail) throw new Error("storage error detail must not escape");
         values.set(key, value.slice().buffer);
         writes.push({ key, options });
+      },
+      async delete(key) {
+        if (failures.failDelete === true || failures.failDelete === "kv") throw new Error("delete error");
+        values.delete(key);
+      },
+    },
+    TRAINING_EXAMPLES: {
+      async put(key, value) {
+        if (failures.failTrainingPut) throw new Error("training storage error");
+        trainingValues.set(key, value.slice());
+        trainingWrites.push(key);
+      },
+      async head(key) { return trainingValues.has(key) ? { key } : null; },
+      async delete(key) {
+        if (failures.failDelete === true || failures.failDelete === "r2") throw new Error("delete error");
+        trainingValues.delete(key);
       },
     },
     SUBMISSION_LIMITER: {
@@ -28,7 +51,7 @@ function makeEnv({ throttled = false, fail = false } = {}) {
       },
     },
   };
-  return { env, values, writes };
+  return { env, values, writes, trainingValues, trainingWrites, failures };
 }
 
 function post(body, headers = {}) {
@@ -142,4 +165,81 @@ test("does not leak storage errors or log request data", async () => {
   assert.equal(response.status, 503);
   assert.deepEqual(await response.json(), { error: "submission_temporarily_unavailable" });
   assert.equal(response.headers.get("cache-control"), "no-store");
+});
+
+test("copies to private training storage only for the exact consent value", async () => {
+  for (const value of [undefined, "no", "YES", "true"]) {
+    const { env, trainingWrites } = makeEnv();
+    const headers = value === undefined ? {} : { "X-Sudoku-Training-Consent": value };
+    const response = await worker.fetch(post(makeZip(), headers), env);
+    assert.equal(response.status, 201);
+    assert.deepEqual(trainingWrites, []);
+  }
+
+  const { env, trainingWrites, trainingValues } = makeEnv();
+  const body = makeZip();
+  const response = await worker.fetch(post(body, { "X-Sudoku-Training-Consent": "yes" }), env);
+  const result = await response.json();
+  assert.equal(response.status, 201);
+  assert.deepEqual(trainingWrites, [result.receipt]);
+  assert.deepEqual([...trainingValues.get(result.receipt)], [...body]);
+});
+
+test("consented submission fails closed without R2 or when the training copy fails", async () => {
+  const noBucket = makeEnv();
+  delete noBucket.env.TRAINING_EXAMPLES;
+  const response = await worker.fetch(post(makeZip(), { "X-Sudoku-Training-Consent": "yes" }), noBucket.env);
+  assert.equal(response.status, 503);
+  assert.equal(noBucket.values.size, 0);
+
+  const failing = makeEnv({ failTrainingPut: true });
+  const failedResponse = await worker.fetch(post(makeZip(), { "X-Sudoku-Training-Consent": "yes" }), failing.env);
+  assert.equal(failedResponse.status, 503);
+  assert.deepEqual(await failedResponse.json(), { error: "submission_temporarily_unavailable" });
+  // KV remains a normal 90-day analysis report; retrying the same upload can finish R2.
+  assert.equal(failing.values.size, 1);
+  failing.failures.failTrainingPut = false;
+  const retry = await worker.fetch(post(makeZip(), { "X-Sudoku-Training-Consent": "yes" }), failing.env);
+  assert.equal(retry.status, 200);
+  assert.equal(failing.trainingValues.size, 1);
+  assert.equal(failing.writes.length, 1);
+});
+
+test("deletes both stores by validated receipt and is idempotent", async () => {
+  const { env, values, trainingValues } = makeEnv();
+  const body = makeZip();
+  const submitted = await worker.fetch(post(body, { "X-Sudoku-Training-Consent": "yes" }), env);
+  const { receipt } = await submitted.json();
+  const request = () => new Request(`https://example.test/v1/reports/${receipt}`, { method: "DELETE" });
+
+  const deleted = await worker.fetch(request(), env);
+  assert.equal(deleted.status, 200);
+  assert.deepEqual(await deleted.json(), { receipt, status: "deleted" });
+  assert.equal(values.size, 0);
+  assert.equal(trainingValues.size, 0);
+
+  const repeated = await worker.fetch(request(), env);
+  assert.equal(repeated.status, 200);
+  assert.deepEqual(await repeated.json(), { receipt, status: "already_deleted" });
+});
+
+test("delete rejects malformed receipts and partial store failure never reports success", async () => {
+  const { env, values, trainingValues, failures } = makeEnv();
+  const malformed = await worker.fetch(new Request(`https://x/v1/reports/${"a".repeat(63)}g`, { method: "DELETE" }), env);
+  assert.equal(malformed.status, 400);
+  const wrongMethod = await worker.fetch(new Request(`https://x/v1/reports/${"a".repeat(64)}`, { method: "GET" }), env);
+  assert.equal(wrongMethod.status, 405);
+  const receipt = "a".repeat(64);
+  values.set(`reports/${receipt}.zip`, makeZip().buffer);
+  trainingValues.set(receipt, makeZip());
+  failures.failDelete = "r2";
+  const failed = await worker.fetch(new Request(`https://x/v1/reports/${receipt}`, { method: "DELETE" }), env);
+  assert.equal(failed.status, 503);
+  assert.deepEqual(await failed.json(), { error: "deletion_incomplete", retry: true });
+  failures.failDelete = false;
+  const retry = await worker.fetch(new Request(`https://x/v1/reports/${receipt}`, { method: "DELETE" }), env);
+  assert.equal(retry.status, 200);
+  assert.deepEqual(await retry.json(), { receipt, status: "deleted" });
+  assert.equal(values.size, 0);
+  assert.equal(trainingValues.size, 0);
 });
