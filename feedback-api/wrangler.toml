@@ -17,6 +17,15 @@ binding = "TRAINING_EXAMPLES"
 # Create this bucket as private before deploying the consent-enabled Worker.
 bucket_name = "sudoku-buddy-training-examples"
 
+[durable_objects]
+bindings = [
+  { name = "REPORT_RECEIPTS", class_name = "ReportReceipt" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ReportReceipt"]
+
 [[ratelimits]]
 name = "SUBMISSION_LIMITER"
 # Account-scoped rate limiter identifier; keep stable for this service.

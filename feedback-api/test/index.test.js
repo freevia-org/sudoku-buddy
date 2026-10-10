@@ -1,20 +1,27 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import worker, { MAX_REPORT_BYTES, REPORT_TTL_SECONDS } from "../src/index.js";
+import worker, { MAX_REPORT_BYTES, REPORT_TTL_SECONDS, ReportReceipt } from "../src/index.js";
 
 function makeZip(payload = [0x50, 0x4b, 0x03, 0x04, 0x01, 0x02]) {
   return new Uint8Array(payload);
 }
 
-function makeEnv({ throttled = false, fail = false, failTrainingPut = false, failDelete = false } = {}) {
+function makeEnv({ throttled = false, limiterError = false, fail = false, failTrainingPut = false, failDelete = false, pauseKvPut = false } = {}) {
   const values = new Map();
   const writes = [];
   const trainingValues = new Map();
   const trainingWrites = [];
   const failures = { failTrainingPut, failDelete };
+  const calls = { kvGet: 0, kvPut: 0, kvDelete: 0, r2Put: 0, r2Head: 0, r2Delete: 0 };
+  let markKvPutStarted;
+  let releaseKvPut;
+  const kvPutStarted = new Promise((resolve) => { markKvPutStarted = resolve; });
+  const kvPutGate = new Promise((resolve) => { releaseKvPut = resolve; });
+  const objects = new Map();
   const env = {
     REPORTS: {
       async get(key, options) {
+        calls.kvGet++;
         if (options.type === "stream") {
           const value = values.get(key);
           return value ? new ReadableStream({ start(controller) { controller.close(); } }) : null;
@@ -23,23 +30,31 @@ function makeEnv({ throttled = false, fail = false, failTrainingPut = false, fai
         return values.get(key) ?? null;
       },
       async put(key, value, options) {
+        calls.kvPut++;
         if (fail) throw new Error("storage error detail must not escape");
+        if (pauseKvPut) {
+          markKvPutStarted();
+          await kvPutGate;
+        }
         values.set(key, value.slice().buffer);
         writes.push({ key, options });
       },
       async delete(key) {
+        calls.kvDelete++;
         if (failures.failDelete === true || failures.failDelete === "kv") throw new Error("delete error");
         values.delete(key);
       },
     },
     TRAINING_EXAMPLES: {
       async put(key, value) {
+        calls.r2Put++;
         if (failures.failTrainingPut) throw new Error("training storage error");
         trainingValues.set(key, value.slice());
         trainingWrites.push(key);
       },
-      async head(key) { return trainingValues.has(key) ? { key } : null; },
+      async head(key) { calls.r2Head++; return trainingValues.has(key) ? { key } : null; },
       async delete(key) {
+        calls.r2Delete++;
         if (failures.failDelete === true || failures.failDelete === "r2") throw new Error("delete error");
         trainingValues.delete(key);
       },
@@ -47,11 +62,35 @@ function makeEnv({ throttled = false, fail = false, failTrainingPut = false, fai
     SUBMISSION_LIMITER: {
       async limit(input) {
         assert.deepEqual(input, { key: "all-report-submissions" });
+        if (limiterError) throw new Error("limiter unavailable");
         return { success: !throttled };
       },
     },
+    REPORT_RECEIPTS: {
+      idFromName(name) { return name; },
+      get(id) {
+        if (!objects.has(id)) {
+          let objectQueue = Promise.resolve();
+          const storageValues = new Map();
+          const state = {
+            storage: {
+              async get(key) { return storageValues.get(key); },
+              async put(key, value) { storageValues.set(key, value); },
+            },
+            blockConcurrencyWhile(callback) {
+              const current = objectQueue.then(callback);
+              objectQueue = current.catch(() => {});
+              return current;
+            },
+          };
+          objects.set(id, new ReportReceipt(state, env));
+        }
+        const object = objects.get(id);
+        return { fetch: (request) => object.fetch(request) };
+      },
+    },
   };
-  return { env, values, writes, trainingValues, trainingWrites, failures };
+  return { env, values, writes, trainingValues, trainingWrites, failures, calls, kvPutStarted, releaseKvPut };
 }
 
 function post(body, headers = {}) {
@@ -241,5 +280,46 @@ test("delete rejects malformed receipts and partial store failure never reports 
   assert.equal(retry.status, 200);
   assert.deepEqual(await retry.json(), { receipt, status: "deleted" });
   assert.equal(values.size, 0);
+  assert.equal(trainingValues.size, 0);
+});
+
+test("rate-limits valid deletion before reading or changing either store", async () => {
+  const receipt = "b".repeat(64);
+  const throttled = makeEnv({ throttled: true });
+  const request = () => new Request(`https://x/v1/reports/${receipt}`, { method: "DELETE" });
+  const limited = await worker.fetch(request(), throttled.env);
+  assert.equal(limited.status, 429);
+  assert.deepEqual(throttled.calls, { kvGet: 0, kvPut: 0, kvDelete: 0, r2Put: 0, r2Head: 0, r2Delete: 0 });
+
+  const unavailable = makeEnv({ limiterError: true });
+  const failed = await worker.fetch(request(), unavailable.env);
+  assert.equal(failed.status, 503);
+  assert.deepEqual(await failed.json(), { error: "submission_temporarily_unavailable" });
+  assert.deepEqual(unavailable.calls, { kvGet: 0, kvPut: 0, kvDelete: 0, r2Put: 0, r2Head: 0, r2Delete: 0 });
+});
+
+test("serializes a delete behind an in-flight consented write and keeps a durable tombstone", async () => {
+  const { env, values, trainingValues, calls, kvPutStarted, releaseKvPut } = makeEnv({ pauseKvPut: true });
+  const body = makeZip();
+  const upload = worker.fetch(post(body, { "X-Sudoku-Training-Consent": "yes" }), env);
+  await kvPutStarted;
+  const receipt = await crypto.subtle.digest("SHA-256", body).then((digest) =>
+    [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join(""));
+  const deletion = worker.fetch(new Request(`https://x/v1/reports/${receipt}`, { method: "DELETE" }), env);
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  assert.equal(calls.r2Head, 0);
+  assert.equal(calls.kvDelete, 0);
+  assert.equal(calls.r2Delete, 0);
+
+  releaseKvPut();
+  const [uploadResponse, deleteResponse] = await Promise.all([upload, deletion]);
+  assert.equal(uploadResponse.status, 201);
+  assert.equal(deleteResponse.status, 200);
+  assert.deepEqual(await deleteResponse.json(), { receipt, status: "deleted" });
+  assert.equal(values.size, 0);
+  assert.equal(trainingValues.size, 0);
+
+  const retry = await worker.fetch(post(body, { "X-Sudoku-Training-Consent": "yes" }), env);
+  assert.equal(retry.status, 410);
   assert.equal(trainingValues.size, 0);
 });
