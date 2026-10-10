@@ -41,7 +41,7 @@ delete any of them from the puzzle history at any time.
 
 Scanning, recognition, solving and tutoring run on the device. Report submission requires
 an internet connection and the Android `INTERNET` permission. Other app functions remain
-available offline. Only report submission needs a network connection.
+available offline. Report submission and receipt-based server deletion need a network connection.
 
 Opening a website link or choosing a receiving app in the share sheet hands that action
 to another app. That app may use the internet under its own permissions and policies.
