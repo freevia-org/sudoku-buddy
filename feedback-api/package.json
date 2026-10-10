@@ -5,6 +5,6 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "dev:local": "wrangler dev --local --ip 127.0.0.1 --port 8787"
+    "dev:local": "npx wrangler dev --local --ip 127.0.0.1 --port 8787"
   }
 }
