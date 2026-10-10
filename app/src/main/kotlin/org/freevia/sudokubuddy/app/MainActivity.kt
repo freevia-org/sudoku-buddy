@@ -330,9 +330,9 @@ private fun AppRoot() {
                                 scanOptIn = snapshot.trainIfAutoShared,
                                 trainingEnabledNow = settings.trainAutoSharedReports,
                             ))
-                        puzzle = puzzle?.takeIf { it.photo === snapshot.photo }?.copy(
-                            trainingConsent = snapshot.trainingConsent,
-                        )
+                        puzzle = updateIfSamePhoto(puzzle, snapshot.photo, PuzzleState::photo) {
+                            it.copy(trainingConsent = snapshot.trainingConsent)
+                        }
                         if (id != null) {
                             storage.withLock {
                                 withContext(Dispatchers.IO) { history.update(id, snapshot) }
@@ -383,9 +383,9 @@ private fun AppRoot() {
                 existingConsent = snapshot.trainingConsent,
                 userConsented = trainThisReport,
             ))
-        puzzle = puzzle?.takeIf { it.photo === snapshot.photo }?.copy(
-            trainingConsent = reportSnapshot.trainingConsent,
-        )
+        puzzle = updateIfSamePhoto(puzzle, snapshot.photo, PuzzleState::photo) {
+            it.copy(trainingConsent = reportSnapshot.trainingConsent)
+        }
         val submissionId = entryId
         submissionInFlight = true
         scope.launch {
