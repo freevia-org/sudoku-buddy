@@ -35,6 +35,15 @@ jobs:
       - name: Test release safeguards
         run: python3 -m unittest discover -s tools/release -p 'test_*.py' -v
 
+      # Keep the report intake, retention and export lifecycle covered by the same
+      # required check as the app; these tests use local fakes and need no secrets.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Test feedback API
+        run: npm test --prefix feedback-api
+
       # Corpus photographs are not in the repository, so every test that needs one
       # skips here. That is expected: see docs/superpowers/plans.
       - name: Build and test
