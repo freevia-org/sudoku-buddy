@@ -9,13 +9,13 @@ preparation does not approve distribution.
 
 | Area | Current evidence and limit |
 | --- | --- |
-| Android source | Current main commit `1deb1e75ecdf9222544a564b0585545d07fbd98f`. PR #11 updates the report disclosure to name cell corrections; PR #12 makes camera auto-capture off for new/unset preferences while preserving saved choices. |
-| Candidate | Package `org.freevia.sudokubuddy`, version `1.0.0`, code `124`. AAB SHA-256: `CA99BA8B63185CC13844D2D3DCA309D8CEB720F664261587F535D1F44872F6B7`. The [non-distributing candidate workflow](https://github.com/freevia-org/sudoku-buddy/actions/runs/38010684105) passed. The artifact was downloaded on 10 October and every file matched its packaged `SHA256SUMS.json` inventory. |
+| Android source | Current main commit `b7e0bc7b144aee178cfbcfe76f0ba0c30933489d`. Android source is byte-for-byte unchanged from candidate source commit `1deb1e75ecdf9222544a564b0585545d07fbd98f`; later changes are release documentation and CI only. PR #11 updates the report disclosure to name cell corrections; PR #12 makes camera auto-capture off for new/unset preferences while preserving saved choices. |
+| Candidate | Package `org.freevia.sudokubuddy`, version `1.0.0`, code `124`. AAB SHA-256: `CA99BA8B63185CC13844D2D3DCA309D8CEB720F664261587F535D1F44872F6B7`. The [non-distributing candidate workflow](https://github.com/freevia-org/sudoku-buddy/actions/runs/38010684105) passed. The downloaded artifact and all manifest files match `SHA256SUMS.json`; a clean handoff at `C:\Users\anton\AppData\Local\Temp\sudoku-buddy-candidate124-sealed` contains only the inventory files and passes `package_candidate.py verify`. The original QA folder contains additional unlisted emulator files and must not be used as the sealed handoff. |
 | Signing | Signed with the existing stable Play upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key was created. |
-| Play draft | Candidate 122's AAB is saved in the existing `1.0.0 (122) — Internal test` draft. Play displays `122 (1.0.0)`, minSdk 26, targetSdk 36 and four ABIs. The track remains **Inactive / Draft**, with 2 of 3 setup tasks complete. The preview shows two non-blocking diagnostics warnings (no R8 mapping file and no native debug symbols) and no blocking validation error. The final **Save and publish** action was not taken; it would publish immediately to internal testers. No review submission or rollout occurred. |
+| Play draft | Candidate 122's AAB is saved in the existing `1.0.0 (122) — Internal test` draft. Play displays `122 (1.0.0)`, minSdk 26, targetSdk 36 and four ABIs. The track remains **Inactive / Draft**, with 2 of 3 setup tasks complete. Candidate 122's preview shows two non-blocking diagnostics warnings (no R8 mapping file and no native debug symbols) and no blocking validation error. Candidate 124 still requires its own Play validation after an authorized upload. The final **Save and publish** action was not taken; it would publish immediately to internal testers. No review submission or rollout occurred. |
 | Static page-size checks | Bundle/native alignment checks passed; Play displays **Supports 16 KB**. Runtime evidence is recorded separately below and does not establish real-grid recognition at 16 KB. |
 | 16 KB runtime smoke | Candidate 124 was extracted from its AAB as a local debug-signed universal APK and ran on an Android 16/API 36 x86_64 emulator reporting `getconf PAGE_SIZE` = `16384`. Camera permission, preview and capture/no-grid refusal completed without an app crash or ANR. The virtual scene contained no Sudoku, so this does not validate grid rectification/OCR; the installed APK used a local debug certificate, not the Play upload signature. No 16 KB arm64 runtime was tested. Evidence is in the host's temporary `sudoku-buddy-candidate124` directory. |
-| Later repository changes | PRs #7–#12 are merged. PR #11 changes sharing disclosure and PR #12 changes the fresh-install camera default, so candidate 122 in Play does not contain these changes. Candidate 124 does. |
+| Later repository changes | PRs #7–#14 are merged. PR #11 changes sharing disclosure and PR #12 changes the fresh-install camera default, so candidate 122 in Play does not contain these changes. Candidate 124 does. PR #14 adds the feedback API's intake, retention, deletion and export tests to required CI; it does not change Android source. `main` requires an up-to-date successful `build` check, enforced for administrators. |
 | Data safety and public policy | The saved form currently marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics, with no third-party sharing. The live [privacy policy](https://freevia.org/sudoku-buddy/privacy) says reports are not automatically added to a training corpus but may be used as reviewed examples to improve recognition; repository policy says reports are not retained in a corpus or used to train a model. Clarify whether the live wording permits persistent training use and make consent, retention and policy wording explicit before review. Console listing/declaration changes remain unsubmitted. |
 
 Firebase distribution is disabled for pushes and ordinary manual CI; an explicit
@@ -28,12 +28,23 @@ The attached OnePlus CPH2449 (Android 16/API 36) still has version 1.0.0 (122), 
 with a temporary QA certificate. Its saved puzzle list includes a finished board marked
 “24 printed”; the app displays “Solved, and every answer is right.” Tapping handwritten
 R1C2 shows a 2 at 100% confidence and no **Submit reading** action. These are app outputs,
-not an independent ground-truth comparison. The live preview drew a grid outline over the
-paper, but its left edge extended beyond the frame, so I did not capture it. The phone's
-saved settings showed auto-capture and auto-share off; no puzzle was changed and no report
-or deletion request was sent. Candidate 124 was not installed on this phone because its
-existing QA certificate differs from the Play upload certificate. The emulator test above
-uses candidate 124 source but does not replace physical real-grid qualification.
+not an independent ground-truth comparison. The live preview tracked the photographed grid,
+but its outline ran beyond both the left and right image edges, so I did not capture a
+partial board. A temporary 130% system font-scale check on the saved-puzzle screen kept the
+title, status, legend and action labels visible; the original 100% setting was restored.
+TalkBack was not tested. The phone's saved settings showed auto-capture and auto-share off;
+no puzzle was changed and no report or deletion request was sent. Candidate 124 was not
+installed on this phone because its existing QA certificate differs from the Play upload
+certificate. The emulator test above uses candidate 124 source but does not replace
+physical real-grid qualification. The most recent preview screenshot is
+`C:\Users\anton\AppData\Local\Temp\sudoku-camera-preview-current.png`.
+
+The local corpus replay was rerun against current main's unchanged recognition source on
+10 October: 110/110 grids detected; color-aware role classification 2,762/2,835 cells;
+grayscale role classification 2,741/2,835; and digit classification 1,882/1,897. The
+shipped classifier was trained on this corpus, so these are regression/pipeline metrics,
+not independent generalization. The explicit candidate-note labels remain partial; 29/30
+were ignored as notes and the six positive artifact labels are not a complete artifact set.
 
 ## Remaining release gates
 
@@ -68,12 +79,15 @@ uses candidate 124 source but does not replace physical real-grid qualification.
    optional, and the form currently marks their data as not shared with third parties. The
    Play Console currently lists edits as not submitted for review.
 5. Complete fresh real-grid capture/OCR checks with the updated source on the phone, plus
-   spoken TalkBack and large-text checks. Candidate 124's x86_64 16 KB smoke covers camera
+   spoken TalkBack and large-text checks on the final candidate. A 130% large-text smoke
+   passed on the installed QA-signed v122, but is not a final-candidate qualification.
+   Candidate 124's x86_64 16 KB smoke covers camera
    startup and capture/no-grid handling only; it had no Sudoku scene. The physical preview
    found a grid but the page edge was outside the frame, so there is no fresh capture result.
    The current physical OnePlus uses 4 KB pages.
 6. Before any rollout, obtain explicit authorization for this exact AAB and internal tester
-   scope. The preview has two diagnostic-symbol warnings but no blocking error. Verify
+   scope. Candidate 122's preview has two diagnostic-symbol warnings but no blocking error;
+   candidate 124 still needs its own Play validation after an authorized upload. Verify
    Play-delivered signing, install and upgrade/data retention after an authorized internal
    rollout. Production countries, review submission and public publication are separate
    later actions.
