@@ -93,7 +93,17 @@ export class ReportReceipt {
         await this.state.storage.put("kvStored", true);
       }
       if (request.headers.get("X-Sudoku-Training-Consent") === "yes") {
-        await this.env.TRAINING_EXAMPLES.put(receipt, bytes);
+        // A client retry after a lost success response must not pay for another
+        // R2 write. Check R2 if the durable marker is absent so a restart after
+        // the object write but before the marker commit also stays idempotent.
+        let trainingStored = Boolean(await this.state.storage.get("trainingStored"));
+        if (!trainingStored) {
+          const existingTrainingCopy = await this.env.TRAINING_EXAMPLES.head(receipt);
+          if (existingTrainingCopy === null) {
+            await this.env.TRAINING_EXAMPLES.put(receipt, bytes);
+          }
+          await this.state.storage.put("trainingStored", true);
+        }
       }
       return json(alreadyStored ? 200 : 201, {
         receipt,

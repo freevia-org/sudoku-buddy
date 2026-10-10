@@ -8,13 +8,13 @@ function makeZip(payload = [0x50, 0x4b, 0x03, 0x04, 0x01, 0x02]) {
   return new Uint8Array(payload);
 }
 
-function makeEnv({ throttled = false, limiterError = false, fail = false, failTrainingPut = false, failDelete = false, pauseKvPut = false, staleNegative = false, staleList = false } = {}) {
+function makeEnv({ throttled = false, limiterError = false, fail = false, failTrainingPut = false, failTrainingMarker = false, failDelete = false, pauseKvPut = false, staleNegative = false, staleList = false } = {}) {
   const values = new Map();
   const expirations = new Map();
   const writes = [];
   const trainingValues = new Map();
   const trainingWrites = [];
-  const failures = { failTrainingPut, failDelete };
+  const failures = { failTrainingPut, failTrainingMarker, failDelete };
   const calls = { kvGet: 0, kvPut: 0, kvDelete: 0, r2Put: 0, r2Head: 0, r2Delete: 0 };
   let markKvPutStarted;
   let releaseKvPut;
@@ -90,7 +90,10 @@ function makeEnv({ throttled = false, limiterError = false, fail = false, failTr
           const state = {
             storage: {
               async get(key) { return storageValues.get(key); },
-              async put(key, value) { storageValues.set(key, value); },
+              async put(key, value) {
+                if (key === "trainingStored" && failures.failTrainingMarker) throw new Error("durable storage error");
+                storageValues.set(key, value);
+              },
             },
           };
           objects.set(id, new ReportReceipt(state, env));
@@ -239,6 +242,58 @@ test("copies to private training storage only for the exact consent value", asyn
   assert.equal(response.status, 201);
   assert.deepEqual(trainingWrites, [result.receipt]);
   assert.deepEqual([...trainingValues.get(result.receipt)], [...body]);
+});
+
+test("consented retries do not repeat successful or already-committed R2 writes", async () => {
+  const state = makeEnv();
+  const { calls } = state;
+  const body = makeZip();
+  const request = () => post(body, { "X-Sudoku-Training-Consent": "yes" });
+
+  const first = await worker.fetch(request(), state.env);
+  const { receipt } = await first.json();
+  assert.equal(first.status, 201);
+  assert.deepEqual(state.trainingWrites, [receipt]);
+  assert.equal(calls.r2Put, 1);
+
+  // Normal client retry after the success response was lost.
+  const retry = await worker.fetch(request(), state.env);
+  assert.equal(retry.status, 200);
+  assert.deepEqual(state.trainingWrites, [receipt]);
+  assert.equal(calls.r2Put, 1);
+
+  // Simulate a runtime stop after R2 accepted the object but before the DO
+  // persisted its marker. R2's strong head consistency lets the restart recover.
+  state.forgetDurableState(receipt, "trainingStored");
+  state.restart(receipt);
+  const recoveredRetry = await worker.fetch(request(), state.env);
+  assert.equal(recoveredRetry.status, 200);
+  assert.deepEqual(state.trainingWrites, [receipt]);
+  assert.equal(calls.r2Put, 1);
+  assert.equal(state.durableState(receipt, "trainingStored"), true);
+});
+
+test("recovers when the training marker fails after R2 accepts the object", async () => {
+  const state = makeEnv({ failTrainingMarker: true });
+  const body = makeZip();
+  const request = () => post(body, { "X-Sudoku-Training-Consent": "yes" });
+
+  const failed = await worker.fetch(request(), state.env);
+  const receipt = [...new Uint8Array(await crypto.subtle.digest("SHA-256", body))]
+    .map((byte) => byte.toString(16).padStart(2, "0")).join("");
+  assert.deepEqual(await failed.json(), { error: "submission_temporarily_unavailable" });
+  assert.equal(failed.status, 503);
+  assert.equal(state.calls.r2Put, 1);
+  assert.equal(state.durableState(receipt, "trainingStored"), undefined);
+
+  // A restarted object checks R2, finds the accepted copy, then commits its marker.
+  state.failures.failTrainingMarker = false;
+  state.restart(receipt);
+  const recovered = await worker.fetch(request(), state.env);
+  assert.equal(recovered.status, 200);
+  assert.equal(state.calls.r2Put, 1);
+  assert.equal(state.calls.r2Head, 2);
+  assert.equal(state.durableState(receipt, "trainingStored"), true);
 });
 
 test("consented submission fails closed without R2 or when the training copy fails", async () => {
