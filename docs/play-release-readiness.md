@@ -13,7 +13,7 @@ or public publication has occurred.** This preparation does not approve distribu
 | Signing | Signed with the existing stable Play upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key was created. |
 | Play draft | The exact hash-verified AAB was uploaded and saved in the existing `1.0.0 (122) — Internal test` draft. Play displays `122 (1.0.0)`, minSdk 26, targetSdk 36 and four ABIs. Save confirmation was observed; the track is **Inactive / Draft**, with 2 of 3 setup tasks complete. No preview confirmation, review submission or rollout was performed. |
 | Static page-size checks | Bundle/native alignment checks passed; Play displays **Supports 16 KB**. This does not establish successful execution on a 16 KB Android runtime. |
-| Later repository changes | PR #7 merged as `52a42e581ab0d11f96c0d2fc4957dae9f0fd4e53` and affects backend tooling/docs only; it does not change this Android candidate. PR #8's exporter retry fix is pending review/merge at this status snapshot. |
+| Later repository changes | PR #7 merged as `52a42e581ab0d11f96c0d2fc4957dae9f0fd4e53` and affects backend tooling/docs only; it does not change this Android candidate. PR #8's exporter retry fix is merged as `de5941f7e642fdc713b8da3773ab3de75300e2b5`. |
 | Data safety and public policy | Data safety answers are saved and reviewed: optional collection of Photos, Diagnostics, Other user-generated content and Other actions for Analytics; encrypted transit, no account and a deletion-request mechanism. The public privacy page deliberately describes the earlier offline build until report-retention controls can be substantiated. The saved declaration, published policy and proposed report-enabled release therefore are not yet reconciled for distribution. |
 
 Firebase distribution is disabled for pushes and ordinary manual CI; an explicit
@@ -22,7 +22,9 @@ must not be substituted for the current candidate.
 
 ## Current physical verification
 
-Camera preview and manual capture were checked on the candidate: a captured puzzle was
+Handset checks used a local QA-signed APK generated from candidate 122's AAB. They verify
+the app code and UI, not the Play-delivered signature, installation or upgrade behavior.
+Camera preview and manual capture were checked: a captured puzzle was
 recognized with 24 printed clues and solved. Camera permission denial, rationale, the
 system permission prompt and regrant were checked, as was background/resume. Settings'
 automatic-sharing disclosure and cancellation were checked; automatic sharing remains off.
@@ -36,10 +38,11 @@ Earlier synthetic infrastructure tests are not evidence that the Android flow pa
 
 1. Verify a designated encrypted, private, non-synced report-review workspace and its daily
    cleanup task. EFS setup failed and BitLocker status was unavailable; encryption and the
-   scheduled cleanup are **unverified**. No report exports have occurred and general report
-   intake is not enabled. The Worker's KV expiry and merged retention tooling alone do not
+   scheduled cleanup are **unverified**. No exports were made during this preparation;
+   inventory historical exports/report-derived files before intake. General report intake
+   is not enabled. The Worker's KV expiry and merged retention tooling alone do not
    establish that every exported or report-derived copy is deleted within 90 days.
-2. Complete review of PR #8's exporter retry fix and qualify the retention/deletion process,
+2. Qualify the retention/deletion process with PR #8's merged exporter retry fix,
    including original expiry deadlines and all copies associated with each receipt. Keep
    report exports and general intake on hold until those controls are evidenced.
 3. Verify the final signed candidate's manual submission popup, opt-in behavior, successful
