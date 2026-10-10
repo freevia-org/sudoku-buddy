@@ -1,11 +1,13 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status (10 October 2026): app creation, listing, privacy URL, declarations and IARC
-rating were previously complete per the task handoff. The release-preparation branch implements
-opt-in report intake, which changes network access and data handling. Reconcile the saved listing, privacy policy and Data safety
-answers against the final build and verified service before any AAB/APK upload or testing rollout; follow
-[the final-build checklist](play-release-readiness.md), including its explicit authorization
-gate and final privacy-text reconciliation. The answers below remain reference copy.
+Current status (10 October 2026): signed candidate 1.0.0 (122) is saved in an inactive
+Internal testing draft. The Play Console shows the store listing and several declarations
+as changes not yet submitted for review; **Send app for review** is disabled until required
+dashboard tasks are complete. The live privacy policy now describes optional reports, but
+the report payload, retention operations and saved Data safety answers still need a final
+cross-check before review or rollout. The copy below is reference material; verify the exact
+current Console values before submitting. Follow the [final-build checklist](play-release-readiness.md)
+and its authorization gate.
 
 Originally prepared 8 September 2026; product copy reviewed against the local source on
 8 October 2026. Local edits do not update the saved Play Console listing or public website.
@@ -51,7 +53,7 @@ The feature graphic was created with generative image tooling. If Play Console s
 asset-level AI-content checkbox, enable the AI label for that graphic. The app icon is
 derived from the app's existing artwork and real in-app screenshots are not AI-generated.
 
-### Proposed full description — not yet saved to Play Console
+### Reference full description — verify against the current Play listing before review
 
 Sudoku Buddy is a camera companion for standard 9x9 Sudoku puzzles in newspapers, books
 and magazines. It helps you check and understand the puzzle already on paper.
@@ -135,11 +137,17 @@ enter the Families programme and reassesses the listing against those policies.
   with their times. Manual submission is user initiated. The optional “Share automatically
   when uncertain” setting first explains the photo and results that will be sent; enabling
   it sends the currently open uncertain reading and later sends future uncertain readings
-  and corrections without a separate prompt. Each revision has a receipt. Its KV object and
-  all Freevia-controlled export/review copies are deleted within 90 days of upload; a request
-  from Settings receipts removes the matching KV object and private working copies earlier.
-  The endpoint is deployed. Complete physical-device upload, receipt, correction-update and
-  deletion-request verification for the exact signed Play candidate before rollout.
+  and corrections without a separate prompt. Each revision has a receipt. The published
+  policy says each report is retained for up to 90 days. The Workers KV expiry is bounded.
+  A local cleanup task now runs hourly and at user logon, starts when available, and retries
+  once. The hourly interval can leave a copy for nearly an hour past expiry, and a powered-off
+  computer cannot delete its local copies; those copies can remain longer until it returns
+  and a user logs in. Verify all-copy deletion by the promised deadline before relying on
+  this statement.
+  A request from Settings receipts is intended to remove the matching server record and
+  private working copies earlier. The endpoint is deployed. Complete physical-device upload,
+  receipt, correction-update and deletion-request verification for the exact Play candidate
+  before rollout.
 - The app has no account-creation mechanism.
 - Privacy policy: `https://freevia.org/sudoku-buddy/privacy`.
 
@@ -154,7 +162,8 @@ only while Cloudflare acts solely as Freevia's service provider under Google's c
 definition. Verify these answers against the exact uploaded payload and service behavior.
 The app has no account, routine usage analytics, crash reporting or ad tracking; report
 analysis is limited to reports the user submits or has elected to submit automatically.
-Complete physical-device verification and publish the matching privacy policy before rollout.
+Verify the live privacy policy and saved Data safety answers against the exact app payload
+before rollout; the public report-enabled policy is already live.
 
 ### Content rating questionnaire
 
@@ -209,12 +218,13 @@ not this checklist, assigns the final regional ratings.
 5. Use `docs/play-release-notes-en-US.txt` for the first release notes.
 
 Use the verified signed candidate recorded in `play-release-readiness.md`, checking its
-SHA-256 and application ID `org.freevia.sudokubuddy` before upload. Candidate 1.0.0 (120)
-was built locally with the stable release key; the prepared GitHub candidate workflow has
-not been run. Upload and rollout require explicit authorization for the build and track.
-The current test phone already has 120; an actual upgrade test needs an agreed same-key
-lower-version baseline or a future higher-code Play build. Preserve existing app data;
-do not uninstall or clear storage to bypass a signing mismatch.
+SHA-256 and application ID `org.freevia.sudokubuddy` before upload. Candidate 1.0.0 (122)
+was built by the successful GitHub candidate workflow and is already saved in an inactive
+Internal testing draft. The attached OnePlus has a local QA-signed APK built from that
+candidate, not a Play-delivered install. Do not use the draft's **Save and publish** action
+until the exact build and tester scope are explicitly authorized. A Play-install upgrade
+test still needs an approved internal rollout and must preserve existing app data; do not
+uninstall or clear storage to bypass a signing mismatch.
 
 ## Account and policy details to confirm in Play Console
 
