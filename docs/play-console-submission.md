@@ -1,17 +1,20 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status snapshot (10 October 2026): PRs #18–#24 are merged. Candidate 125 is the
+Current status snapshot (10 October 2026): PRs #18–#26 are merged. Candidate 125 is the
 only bundle in the inactive Internal testing draft (2 of 3 tasks complete); it has not been
 distributed. Its exact source, AAB hash, signing and validation provenance are in the sealed
-candidate records summarized in [release readiness](play-release-readiness.md). The live
-backend and privacy policy are not aligned with the training-consent build; do not distribute
-this candidate or request review until those gates and final device qualification pass.
+candidate records summarized in [release readiness](play-release-readiness.md). The private
+R2 bucket and consent-enabled Worker are deployed; a synthetic upload and receipt deletion
+passed. The live privacy page and saved listing still need reconciliation, and real Android
+submission and final candidate qualification remain open. Do not distribute this candidate
+or request review until those gates pass.
 Production is inactive with 0 of 5 tasks complete.
 
 The text below is repository-side preparation, not proof of saved Console values. The live
-listing still has blanket 90-day retention, and the public policy still describes old email
-deletion instructions. Publish the matching policy and reconcile the listing before candidate
-distribution. Source merge does not provision training storage or deploy the new Worker.
+listing still has blanket 90-day retention, and the public policy update is prepared but not
+yet deployed. The Pages deployment needs a narrow `pages:write` permission. Verify and publish
+the matching policy, then reconcile the listing before candidate distribution. The live
+Worker has passed synthetic checks; real app submissions remain unverified.
 
 Originally prepared 8 September 2026; refreshed for the merged training-consent source on
 10 October 2026. Local edits do not update Play Console or the public website.
@@ -162,10 +165,11 @@ enter the Families programme and reassesses the listing against those policies.
   it does not remove local exported copies or undo influence learned by a future model.
   The privacy policy must explain these limits accurately. Keep exports disabled until
   historical copies are inventoried and receipt-complete deletion is proven.
-- Backend provisioning/deployment and real-device upload, correction, retry, opt-out and
-  deletion qualification remain gates. Source merge does not create the private R2 bucket,
-  apply the Durable Object migration or deploy the consent-enabled endpoint. Follow
-  `feedback-api/README.md` for legacy expiry inventory and cutover validation.
+- Backend provisioning/deployment is complete: private R2 and the consent-enabled Worker are
+  live. Synthetic consented and analysis-only uploads followed by receipt deletion passed.
+  Real-device upload, correction revisions, retry, opt-out and app-driven deletion remain
+  gates. Keep the website, listing and Data Safety answers aligned before distributing a
+  fresh candidate.
 - The app has no account-creation mechanism.
 - Privacy policy: `https://freevia.org/sudoku-buddy/privacy`.
 
