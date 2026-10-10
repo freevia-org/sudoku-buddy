@@ -1,8 +1,8 @@
 # Sudoku Buddy — Play Console submission sheet
 
 Current status (10 October 2026): signed candidate 1.0.0 (124) is built from merged main,
-but has not been uploaded. The existing Play Internal testing draft still contains candidate
-122 and remains inactive. Store-listing and declaration changes are not submitted for review;
+uploaded and saved in the existing Internal testing draft, which remains inactive. The track
+has 2 of 3 setup tasks complete. Store-listing and declaration changes are not submitted for review;
 **Send app for review** is disabled until required dashboard tasks are complete. The live
 privacy policy says reports are not automatically added to a training corpus but may be used
 as reviewed examples to improve recognition; repository policy says reports are not retained
@@ -221,14 +221,17 @@ not this checklist, assigns the final regional ratings.
 5. Use `docs/play-release-notes-en-US.txt` for the first release notes.
 
 Use the verified signed candidate recorded in `play-release-readiness.md`, checking its
-SHA-256 and application ID `org.freevia.sudokubuddy` before upload. Candidate 1.0.0 (124)
-was built by the successful GitHub candidate workflow and is the latest verified artifact;
-it has not been uploaded. The existing inactive Internal testing draft still contains
-candidate 122. The attached OnePlus also has a local QA-signed version 122, not a
-Play-delivered install. Do not use **Save and publish** until the privacy/retention gates,
-exact build and tester scope are resolved. A Play-install upgrade test still needs an
-approved internal rollout and must preserve existing app data; do not uninstall or clear
-storage to bypass a signing mismatch.
+SHA-256 and application ID `org.freevia.sudokubuddy`. Candidate 1.0.0 (124) was built by
+the successful GitHub candidate workflow and uploaded to the Internal testing draft; the
+Console displays it as `1.0.0 (124) — Internal test`. The track remains inactive. The
+candidate-only **Preview and confirm** page was opened for diagnostics: Play reported zero
+errors and two non-blocking warnings (no deobfuscation mapping and no native debug symbols).
+Opening the preview did not distribute the build. The separate final **Save and publish**
+button says changes publish immediately to the selected testers; it has not been clicked.
+The attached OnePlus has a local QA-signed version 122 and a separate v124-source debug
+package, not a Play-delivered install. A Play-install upgrade test still needs an internal
+rollout and must preserve existing app data; do not uninstall or clear storage to bypass a
+signing mismatch.
 
 ## Account and policy details to confirm in Play Console
 
