@@ -1,20 +1,25 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status snapshot (10 October 2026): PRs #18–#26 are merged. Candidate 125 is the
-only bundle in the inactive Internal testing draft (2 of 3 tasks complete); it has not been
-distributed. Its exact source, AAB hash, signing and validation provenance are in the sealed
-candidate records summarized in [release readiness](play-release-readiness.md). The private
-R2 bucket and consent-enabled Worker are deployed; a synthetic upload and receipt deletion
-passed. The live privacy page and saved listing still need reconciliation, and real Android
-submission and final candidate qualification remain open. Do not distribute this candidate
-or request review until those gates pass.
+Current status snapshot (10 October 2026): PR #27 is merged at
+`7765711b336d59793ae71316098c253f09bc7a11`. Candidate workflow 38027607238 passed for code
+126; its AAB SHA-256 is
+`90F4688441D1C438A3D25E1D4CFC8E904BDF2175F538297CE3873EF82DF99C92`. Candidate 126 is an
+offline artifact only. The Console still has candidate 125 as the only bundle in the inactive
+Internal testing draft (2 of 3 tasks complete); no new bundle was uploaded or distributed.
+The full store description was saved as a draft, not submitted for review. The private R2
+bucket and consent-enabled Worker are deployed; synthetic upload and receipt deletion passed.
+The live privacy page is still outdated, and Data Safety, actual Android submission/deletion,
+and signed-candidate device qualification remain open. Do not distribute or request review
+until those gates pass.
 Production is inactive with 0 of 5 tasks complete.
 
-The text below is repository-side preparation, not proof of saved Console values. The live
-listing still has blanket 90-day retention, and the public policy update is prepared but not
-yet deployed. The Pages deployment needs a narrow `pages:write` permission. Verify and publish
-the matching policy, then reconcile the listing before candidate distribution. The live
-Worker has passed synthetic checks; real app submissions remain unverified.
+The text below is repository-side preparation. The full description has been saved in Play
+Console as a draft, but has not been submitted for review. The live privacy page still has
+blanket 90-day retention; the matching update is prepared but not deployed. Wrangler lacks
+`pages:write`, and its login requested unrelated extra scopes that were not accepted. Deploy
+the policy with a narrowly scoped Pages permission, verify the live URL, then reconcile the
+listing and Data Safety answers before distribution. The Worker has passed synthetic checks;
+real app submissions remain unverified.
 
 Originally prepared 8 September 2026; refreshed for the merged training-consent source on
 10 October 2026. Local edits do not update Play Console or the public website.
@@ -241,20 +246,22 @@ not this checklist, assigns the final regional ratings.
 
 1. Complete consent, service lifecycle, privacy/listing alignment and final-candidate
    device qualification in `play-release-readiness.md`.
-2. Finalize and merge reviewed release inputs, then build using `play-candidate.yml`,
-   the final full reviewed SHA and a new version code above every Play upload. The workflow
-   validates a positive code and SHA ancestry but does not query Play's highest code.
-3. Download `sudoku-buddy-play-candidate-<code>` and
-   `sudoku-buddy-candidate-checks-<code>`. Verify the package inventory, exact AAB hash,
+2. Candidate 126 was already built by `play-candidate.yml` from reviewed SHA
+   `7765711b336d59793ae71316098c253f09bc7a11`, code 126. Its AAB SHA-256 is
+   `90F4688441D1C438A3D25E1D4CFC8E904BDF2175F538297CE3873EF82DF99C92`. Verify this exact
+   sealed artifact rather than rebuilding it; build a higher code only if release-relevant
+   source or disclosures change. The workflow does not query Play's highest uploaded code.
+3. Download `sudoku-buddy-play-candidate-126` and
+   `sudoku-buddy-candidate-checks-126`. Verify the package inventory, exact AAB hash,
    source/code/package, stable certificate, tests/lint and bundle/APK alignment evidence.
    Initial training workflow 38017589369 specifically built code 125 before the handoff
    refresh and embeds older documents; that run is superseded as a publishing handoff.
    A later package's identity and evidence come from its own sealed records. Preserve
    historical inventories; do not rewrite their embedded files or checksums.
-4. Candidate 125 is already saved as the only bundle in the internal-test draft; preview
-   shows no errors and two non-blocking diagnostics warnings. Any new candidate must use a
-   higher version code, and its own notes and preview must be checked. Do not click
-   **Save and publish** until the owner authorizes distribution to the named testers.
+4. Candidate 125 remains the only bundle in the internal-test draft; preview shows no
+   errors and two non-blocking diagnostics warnings. Candidate 126 is not uploaded. Any
+   later candidate must use a higher code and have its notes and preview checked. Do not click
+   **Save and publish** until the owner authorizes distribution to named testers.
 5. Obtain separate authorization for the exact AAB and selected internal testers before
    distribution. Then verify Play-delivered signing, installation and upgrade/data retention
    and inspect any available pre-launch report. Preserve existing app data.
