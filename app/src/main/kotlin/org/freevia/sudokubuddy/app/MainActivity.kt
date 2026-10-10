@@ -622,7 +622,9 @@ private fun AppRoot() {
             )
 
             else -> CameraScreen(
-                autoCapture = settings.autoCapture && drawer.isClosed && !drawer.isAnimationRunning,
+                autoCapture = settings.autoCapture,
+                onAutoCaptureChange = { applySettings(settings.copy(autoCapture = it)) },
+                autoCaptureAllowed = drawer.isClosed && !drawer.isAnimationRunning,
                 onRead = { state ->
                     val generation = ++puzzleGeneration
                     // Saved as soon as it is read, so a puzzle is never lost by backing out.
