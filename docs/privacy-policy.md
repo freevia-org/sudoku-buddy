@@ -48,7 +48,7 @@ to another app. That app may use the internet under its own permissions and poli
 
 Sudoku Buddy does not run routine usage analytics, crash reporting, or ad tracking.
 If you choose to submit a puzzle report, Freevia can analyze its recognition results and any
-corrections to improve recognition, and keep a private training copy until you request deletion.
+corrections to improve recognition, and retain the report privately until you request deletion.
 This report processing is not routine tracking of app use.
 
 ## Sharing is your choice
@@ -84,9 +84,10 @@ marks or other details visible on the page. Do not submit a page containing info
 do not want Freevia to review.
 
 Reports are private and are not posted publicly. Each uploaded revision is held in a private
-Cloudflare Workers KV analysis queue for up to 90 days and in a private Cloudflare R2 training
-archive until you delete it from **Submission receipts**. Each revision has its own receipt.
-A successful deletion removes that revision from Freevia's KV and R2 service storage. Sudoku Buddy does not
+Cloudflare R2 store until you delete it from **Submission receipts**. The same stored report
+supports recognition analysis and training; there is no separate analysis copy or automatic expiry.
+Each revision has its own receipt.
+A successful deletion removes that revision from Freevia's report service storage. Sudoku Buddy does not
 currently train a model from submitted reports; if a model is trained on an example later,
 deleting that example may not remove learned changes from the model.
 

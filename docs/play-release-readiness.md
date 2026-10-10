@@ -1,3 +1,5 @@
+> Current retention update (10 October 2026): the report service uses one private R2 object per receipt, retained until removal. References below to a 90-day KV queue or two copies describe historical release checks and are superseded. Local exports remain disabled.
+
 # Sudoku Buddy: final build and Google Play handoff
 
 Updated 10 October 2026, after renewed release work. **Main is at
