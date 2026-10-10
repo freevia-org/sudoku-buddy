@@ -1,6 +1,6 @@
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 10 October 2026. **Training-consent source is merged in PR #18. Candidate 125 is
+Updated 10 October 2026. **Training-consent source is merged through PR #24. Candidate 125 is
 saved as an inactive internal-testing draft and has not been distributed. Its exact source,
 version, AAB hash, signing and bundle evidence are recorded below. No production release has
 been submitted. Do not distribute this candidate until the consented-report backend and
@@ -10,7 +10,7 @@ public privacy disclosures are deployed and verified.**
 
 | Area | Evidence and limit |
 | --- | --- |
-| Reviewed source | PRs #18–#20 are merged; candidate 125 was built from `main` HEAD `a1e311c2f97d17bd1acfe0b289b8d9aa5abece18`. PR #18 adds optional training consent, receipt deletion and backend storage changes. |
+| Reviewed source | `main` is `6763b8fc01c3338e57de799f2aedb3e9f6b71683`; PRs #18–#24 are merged. Candidate 125's Android source remains `a1e311c2f97d17bd1acfe0b289b8d9aa5abece18`. PR #23 makes consented R2 retries idempotent across a Durable Object marker-write failure; PR #24 locks Wrangler for repeatable local checks. Neither PR changes the Android candidate source. |
 | Packaged candidate identity | Workflow [38018608861](https://github.com/freevia-org/sudoku-buddy/actions/runs/38018608861) built code 125 from source `a1e311c2f97d17bd1acfe0b289b8d9aa5abece18`. Use the sealed `sudoku-buddy-candidate-125-reviewed` package; its AAB SHA-256 is `59A0287D0980F7DB632C1603634EBBAAEDBADF800D5A01AEDC3B7BD54FB875BE`. `release-record.json`, `SHA256SUMS.json` and `evidence/` verify provenance, package contents, signature and bundle checks. Candidate verification passed locally. |
 | Build and review process | After any release-relevant source or disclosure change, build with `play-candidate.yml` using a code greater than every code uploaded to Play; verify the sealed candidate and checks artifacts independently. A successful workflow does not establish device qualification, live backend behavior or Play-delivered installation. |
 | Superseded initial training build | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) built code 125 from `46831610f88d37ee4d73867da14b2bc0c182710f` before the handoff refresh. That specific package embeds the earlier documents and is superseded as a publishing handoff. This historical limitation does not describe every later package using code 125. Preserve that run's inventory unchanged and distinguish builds by source, run and AAB hash, not version code alone. |
@@ -19,6 +19,7 @@ public privacy disclosures are deployed and verified.**
 | Listing and declarations | Required en-US listing fields and app-content declarations are saved. Data Safety currently marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics. Reconcile those categories against the actual ZIP payload and confirm Cloudflare's service-provider role before closed/open testing or production. |
 | Production | Inactive, 0 of 5 tasks complete: select countries/regions, create release, preview/confirm, send for review, publish. Managed publishing is off. These are later owner-authorized actions, not draft preparation. |
 | Public copy | The live privacy page remains stale: it describes universal 90-day retention, KV storage and email-only deletion. Repository policy distinguishes 90-day analysis-only reports from separately consented training examples retained until receipt deletion. Update and verify the live page and reconcile listing copy before distributing candidate 125 or requesting review. |
+| Feedback API verification | The merged Worker passes 27/27 API tests. Wrangler 4.149.0 `deploy --dry-run` packages all four expected bindings. Local-only synthetic tests accepted a 20 MiB report and deleted it (`201 → 200`), rejected 20 MiB + 1 byte (`413`), and raced a 20 MiB POST with DELETE (`201 → 200`, then retry `410`). This does not test the live service. The latest live deployment listing is still version `6e85fb5a-e02a-47ba-bd6f-34472c6a8f2c` (9 October); R2 bucket listing returns Cloudflare error 10042 (“Please enable R2 through the Cloudflare Dashboard”). No new Worker is deployed. |
 
 ## Current physical camera smoke test
 
@@ -38,7 +39,15 @@ sharing. Auto-capture and auto-share-when-uncertain remained off. The saved puzz
 had no uncertain cells, so the **Submit reading** button and its popup could not be exercised
 using the unchanged saved puzzles available during this check. The debug package is source-
 level evidence and does not replace qualification of the fresh signed publishing candidate.
-No photos or screenshots are included in this repository update.
+The latest follow-up confirmed the debug app remains alive at code 125, with no recent crash
+or ANR. Auto-capture, auto-share-when-uncertain and automatic training consent were all off.
+At 150% font scale, the puzzle and result stayed legible, puzzle actions remained visible,
+and the Settings page scrolled to expose the auto-capture, auto-share and training controls
+with their descriptions. The original 100% font scale was restored, then the debug app was
+relaunched and confirmed in the foreground. A Back action briefly surfaced the installed
+production app; no action was taken there and its data was not changed. No photos or screenshots
+are included in this repository update. The uncertain-reading popup, TalkBack and Play-signed
+installation remain untested.
 
 ## Consent, retention and backend gates
 
@@ -49,17 +58,21 @@ No photos or screenshots are included in this repository update.
    and retain that reading's choice. Do not convert earlier analysis reports into training
    examples without new explicit consent. Describe that deleting a source example may not
    reverse influence already learned by a future model; this does not waive data deletion.
-2. **Provision and validate the backend before relying on it.** The current Worker has not
-   been upgraded and the private R2 bucket is not enabled. The release endpoint therefore
-   cannot yet honor the app's consented archive and receipt-deletion behavior. R2 activation
+2. **Provision and validate the backend before relying on it.** PR #23's source is merged,
+   but the current Worker has not been upgraded and the private R2 bucket is not enabled.
+   The release endpoint therefore cannot yet honor the app's consented archive and
+   receipt-deletion behavior. R2 activation
    is an account billing step with usage-based overages; do not accept it without explicit
    authorization. Merging source does not
    create the private `TRAINING_EXAMPLES` R2 bucket or deploy the consent-enabled Worker.
    Confirm the `REPORT_RECEIPTS` Durable Object binding and `v1` migration. Follow
    `feedback-api/README.md` for the cutover: pause intake, inventory legacy KV key names and
    absolute expirations without downloading values, and verify complete expiry import.
-   Use synthetic data for local Wrangler checks of 20 MiB uploads, deletion races, partial
-   failure/retry and tombstones; verify deployed behavior within an authorized test scope.
+   Local Wrangler checks are complete: 27/27 API tests pass, dry-run bindings resolve, the
+   exact 20 MiB upload and 20 MiB + 1 rejection work, and a synthetic upload/delete race
+   leaves a tombstone (`201 → 200 → 410`). These are not live-service evidence. After R2 is
+   enabled and the Worker is deployed, repeat synthetic-only tests for upload, expiry,
+   deletion, retry, partial failure and tombstones before enabling real submissions.
 3. **Keep report exports disabled.** App receipt DELETE removes service-side KV and R2
    records, not local downloads, derived files or backups. Inventory historical exports and
    prove receipt-complete deletion before enabling local review. The historical hourly
@@ -82,8 +95,12 @@ No photos or screenshots are included in this repository update.
    non-distributing workflow. Download both candidate and checks artifacts; independently
    verify `SHA256SUMS.json`, AAB hash, version code, package, source, certificate, test/lint
    reports, bundle and generated APK evidence. Keep QA additions outside the sealed folder.
-   The package must include current privacy, release notes and handoff documents. Preserve
-   candidate 124 and 125 inventories without rewriting their embedded files or checksums.
+   The package must include current privacy, release notes and handoff documents. Candidate
+   125's sealed package and companion documents predate PRs #21–#24; keep that inventory
+   immutable as historical evidence. Any new sealed publishing package must carry refreshed
+   sidecars from final `main` and use a code greater than 125 (already uploaded to Play).
+   Preserve candidate 124 and 125 inventories without rewriting their embedded files or
+   checksums.
 7. **Hold distribution separately.** A later authorized draft upload may replace candidate
    124 and save the new release as draft; inspect its own preview diagnostics. Stop before
    final **Save and publish** until the exact AAB and tester scope are authorized. Verify

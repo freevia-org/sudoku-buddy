@@ -1,6 +1,6 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status snapshot (10 October 2026): PRs #18–#21 are merged. Candidate 125 is the
+Current status snapshot (10 October 2026): PRs #18–#24 are merged. Candidate 125 is the
 only bundle in the inactive Internal testing draft (2 of 3 tasks complete); it has not been
 distributed. Its exact source, AAB hash, signing and validation provenance are in the sealed
 candidate records summarized in [release readiness](play-release-readiness.md). The live
