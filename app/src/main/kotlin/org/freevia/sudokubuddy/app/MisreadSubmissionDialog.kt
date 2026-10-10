@@ -74,8 +74,15 @@ internal fun MisreadSubmissionDialog(
                         )
                     }
                     Text(
-                        "Training examples can be deleted by receipt. If already used to " +
-                            "train a model, its learned changes may remain.",
+                        if (trainThisReport) {
+                            "Training copies are retained until you request deletion from " +
+                                "Submission receipts. If already used to train a model, its " +
+                                "learned changes may remain."
+                        } else {
+                            "If you later opt in, training copies are retained until you " +
+                                "request deletion from Submission receipts. A model already " +
+                                "trained may retain learned changes."
+                        },
                         modifier = Modifier.padding(start = 48.dp),
                         style = MaterialTheme.typography.bodySmall,
                     )
