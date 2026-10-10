@@ -437,7 +437,11 @@ private fun Controls(
                         TextButton(onClick = { onChange(state.close()) }) { Text("Close hint") }
                     }
                 }
-                Lesson(state)
+                // The review banner already explains the current action. Repeating the
+                // general reading guide below it crowds the confirmation controls.
+                if (state.overlay != OverlayMode.READING || state.openQuestions.isEmpty()) {
+                    Lesson(state)
+                }
             }
         }
 
