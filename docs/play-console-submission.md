@@ -261,8 +261,9 @@ and no native debug symbols). Entering preview did not distribute it. The separa
 checks do not validate candidate 125 or its replacement. Candidate 124 lacks PR #18's
 training consent and must not be used for the new training release.
 
-The OnePlus has a QA-signed release-package v122 and a separate v124-source debug package,
-not a Play-delivered install. Do not uninstall or clear storage to bypass a signing mismatch.
+At the candidate-124 audit, the OnePlus had a QA-signed release-package v122 and a
+separate v124-source debug package, not a Play-delivered install. The later v125-source
+physical smoke is recorded separately in `play-release-readiness.md`. Do not uninstall or clear storage to bypass a signing mismatch.
 The earlier camera, text-size and emulator checks remain partial historical evidence.
 
 ## Account and policy details to confirm in Play Console
