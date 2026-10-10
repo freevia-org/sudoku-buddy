@@ -19,6 +19,22 @@ no tester distribution, review submission or public publication is authorized he
 | Production | Inactive, 0 of 5 tasks complete: select countries/regions, create release, preview/confirm, send for review, publish. Managed publishing is off. These are later owner-authorized actions, not draft preparation. |
 | Public copy | The last live-page and listing audit still showed universal 90-day retention and email deletion. Merged repository policy now distinguishes analysis-only reports from separately consented training examples. Publishing the matching policy and updating listing copy remain prerequisites. |
 
+## Current physical camera smoke test
+
+On 10 October, the OnePlus CPH2449 running Android 16/API 36 was tested with the
+separate v125-source debug package. Camera auto-capture remained off. A manual capture
+of one paper puzzle produced a straightened square 9x9 board containing printed and
+handwritten digits. The app displayed “Solved, and every answer is right.” The tester
+visually compared all 81 values on the pre-capture live page with the resulting recognized
+grid and reported that they matched.
+
+This is one real-page camera/rectification/recognition smoke test, not a corpus benchmark
+or external accuracy estimate. It does not qualify uncertainty or report submission,
+TalkBack, a Play-signed candidate installation, or the release backend; none of those was
+tested in this session. The debug package is source-level evidence and does not replace
+qualification of the fresh signed publishing candidate. No photos or screenshots are
+included in this repository update.
+
 ## Consent, retention and backend gates
 
 1. **Align the actual release and public disclosures.** Manual training consent starts
@@ -48,8 +64,9 @@ no tester distribution, review submission or public publication is authorized he
    app, service and repository, including receipt deletion and model limitations.
 5. **Qualify the final candidate.** Test manual and automatic consent, refusal/back behavior,
    per-reading correction revisions, upload receipts, offline/retry, opting out and receipt
-   deletion. Complete fully framed real-grid capture/OCR with independent ground truth,
-   TalkBack and large text. Earlier v124 debug startup and clipped-preview observations,
+   deletion. Repeat real-grid capture/OCR on the final publishing candidate and complete
+   TalkBack and large text. The v125-source one-page smoke above is partial evidence, not
+   final signed-candidate qualification. Earlier v124 debug startup and clipped-preview observations,
    130% text checks on v122, and x86_64 16 KB no-grid smoke are historical partial evidence;
    they do not qualify this release or establish 16 KB real-grid/arm64 recognition.
 6. **Verify and preserve a fresh package.** Build from the final merged full SHA with the
