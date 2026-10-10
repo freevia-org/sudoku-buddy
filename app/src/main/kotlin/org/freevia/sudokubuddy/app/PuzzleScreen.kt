@@ -50,6 +50,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.CollectionInfo
 import androidx.compose.ui.semantics.CollectionItemInfo
 import androidx.compose.ui.semantics.Role
@@ -65,10 +66,8 @@ import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.semantics.traversalIndex
 import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.rememberTextMeasurer
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import org.freevia.sudokubuddy.BuildConfig
 import org.freevia.sudokubuddy.model.CellSource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -161,13 +160,14 @@ fun PuzzleScreen(
     var receiptsOpen by remember(state.photo) { mutableStateOf(false) }
 
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
-        val arrangement = PuzzleLayout.forWindow(maxWidth.value, maxHeight.value)
+        val arrangement = PuzzleLayout.forWindow(maxWidth.value, maxHeight.value,
+            LocalDensity.current.fontScale)
         val photoSide = arrangement.photoSide.dp
 
         Column(modifier = Modifier.fillMaxSize()) {
             AppBar(
                 title = "Sudoku Buddy",
-                subtitle = BuildConfig.VERSION_NAME,
+                subtitle = "${state.progress} empty",
                 onMenu = onMenu,
             ) {
                 IconButton(onClick = onRetake) {
@@ -232,7 +232,7 @@ fun PuzzleScreen(
 }
 
 /**
- * The photograph, at the size [PuzzleLayout] chose, with the empty-count under it.
+ * The photograph, at the size [PuzzleLayout] chose. Progress lives in the app bar.
  *
  * Its size comes from the window rather than from what is left over, so that the grid
  * stays exactly where it is while the tutor panel grows and shrinks beside or below it.
@@ -291,17 +291,6 @@ private fun PhotoPane(
             AccessiblePuzzleCells(state, ::selectCell, Modifier.matchParentSize())
         }
 
-        // How many squares are still empty, in the corner under the grid it counts. It
-        // was a sentence in the pane below, where it was the only thing said most of the
-        // time and cost a line that the reasoning needed.
-        Text(
-            state.progress,
-            style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            textAlign = TextAlign.End,
-            maxLines = 1,
-            modifier = Modifier.width(photoSide).padding(top = 2.dp),
-        )
     }
 }
 
@@ -436,9 +425,6 @@ private fun Controls(
                     )
                 }
 
-                // The key names the technique, so the pane does not have to.
-                Legend(state.legend, evidenceLabel = state.evidenceLabel)
-
                 if (state.overlay == OverlayMode.HINT && state.hintStyle == HintStyle.EXPLAIN &&
                     state.hintDepth == PuzzleLogic.HINT_DEPTHS - 1) {
                     Row {
@@ -453,6 +439,13 @@ private fun Controls(
                 }
                 Lesson(state)
             }
+        }
+
+        // Keep the colour key outside the scrolling messages so it cannot be partly
+        // hidden at their bottom edge, just above the fixed action row.
+        if (state.overlay != OverlayMode.LESSON) {
+            Legend(state.legend, Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+                evidenceLabel = state.evidenceLabel)
         }
 
         // Pinned, so they are in the same place whatever is being said above them. Read,

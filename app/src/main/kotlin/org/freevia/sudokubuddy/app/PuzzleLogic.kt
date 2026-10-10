@@ -496,7 +496,7 @@ object PuzzleLogic {
      * Null when there is none, which is most of the time. It used to say "46 cells to go"
      * in that case, which is a number rather than news: it cost a line of the pane on
      * every screen, and the pane is the scarcest space in the app. That number now sits
-     * in small type under the grid, where it is read at a glance and costs nothing.
+     * in the app bar, where it is read at a glance without using the controls' space.
      */
     /**
      * Which flagged squares are still in question, now that the grid says what it says.
@@ -526,24 +526,11 @@ object PuzzleLogic {
         }
     }
 
-    /**
-     * The headline over the squares the reading wants looked at, as things stand.
-     *
-     * The count alone was the whole message, so the banner said the same thing after
-     * eight corrections as before them, and said nothing at all about the one change that
-     * matters: a puzzle that would not solve when it was read can solve now, and that is
-     * the news. Once it does, the squares left are worth a glance rather than a worry,
-     * and the words say which.
-     */
-    fun readingHeadline(count: Int, grid: Grid): String {
-        val squares = if (count == 1) "one square" else "$count squares"
-        return if (Solver.solve(grid) is SolveResult.Unique) {
-            val opening = squares.replaceFirstChar { it.uppercase() }
-            "The puzzle solves now. $opening ${if (count == 1) "is" else "are"} " +
-                "still worth a check."
-        } else {
-            "The app is not sure about $squares."
-        }
+    /** Ask for reading review without implying a correction or a completed puzzle. */
+    fun readingHeadline(count: Int): String = when (count) {
+        0 -> "Reading reviewed."
+        1 -> "Check one uncertain square."
+        else -> "Check $count uncertain squares."
     }
 
     /**

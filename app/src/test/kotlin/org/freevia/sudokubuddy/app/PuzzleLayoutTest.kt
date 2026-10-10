@@ -89,6 +89,15 @@ class PuzzleLayoutTest {
     }
 
     @Test
+    fun `large text leaves more room for reading confirmation controls`() {
+        val largeText = PuzzleLayout.forWindow(392f, 850f, fontScale = 1.5f)
+        assertTrue(!largeText.sideBySide)
+        assertTrue(largeText.photoSide < portraitPhone.photoSide - 48f,
+            "large text must reclaim usable space below the grid")
+        assertTrue(largeText.photoSide > 240f, "the grid should remain usable")
+    }
+
+    @Test
     fun `an upright phone is sized exactly as it was before landscape existed`() {
         // The one arrangement Tony has actually been looking at for a fortnight. The
         // old rule was `(width - 24).coerceAtMost(height * 0.52)`; this pins it, so

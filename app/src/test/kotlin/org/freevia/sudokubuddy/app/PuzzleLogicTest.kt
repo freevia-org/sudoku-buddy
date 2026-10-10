@@ -568,29 +568,10 @@ class PuzzleLogicTest {
     }
 
     @Test
-    fun `the reading banner says when the puzzle has started solving`() {
-        val broken = Grid.fromRows(
-            "1179852.4", ".25934718", "..3176952", "...685371", "....13294",
-            ".....9586", "......147", ".......25", "........9",
-        )
-        assertEquals(
-            "The app is not sure about 3 squares.",
-            PuzzleLogic.readingHeadline(3, broken),
-        )
-
-        val solvable = Grid.fromRows(
-            "53..7....", "6..195...", ".98....6.", "8...6...3", "4..8.3..1",
-            "7...2...6", ".6....28.", "...419..5", "....8..79",
-        )
-        assertEquals(
-            "The puzzle solves now. 3 squares are still worth a check.",
-            PuzzleLogic.readingHeadline(3, solvable),
-            "the one change worth reporting is that it solves",
-        )
-        assertEquals(
-            "The puzzle solves now. One square is still worth a check.",
-            PuzzleLogic.readingHeadline(1, solvable),
-        )
+    fun `reading review headlines describe uncertain squares without implying a correction`() {
+        assertEquals("Check 3 uncertain squares.", PuzzleLogic.readingHeadline(3))
+        assertEquals("Check one uncertain square.", PuzzleLogic.readingHeadline(1))
+        assertEquals("Reading reviewed.", PuzzleLogic.readingHeadline(0))
     }
 
     @Test
