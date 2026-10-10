@@ -1,25 +1,23 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status snapshot (10 October 2026): PR #27 is merged at
-`7765711b336d59793ae71316098c253f09bc7a11`. Candidate workflow 38027607238 passed for code
-126; its AAB SHA-256 is
-`90F4688441D1C438A3D25E1D4CFC8E904BDF2175F538297CE3873EF82DF99C92`. Candidate 126 is an
-offline artifact only. The Console still has candidate 125 as the only bundle in the inactive
-Internal testing draft (2 of 3 tasks complete); no new bundle was uploaded or distributed.
-The full store description was saved as a draft, not submitted for review. The private R2
-bucket and consent-enabled Worker are deployed; synthetic upload and receipt deletion passed.
-The live privacy page is still outdated, and Data Safety, actual Android submission/deletion,
-and signed-candidate device qualification remain open. Do not distribute or request review
-until those gates pass.
-Production is inactive with 0 of 5 tasks complete.
+Current status snapshot (10 October 2026, after renewed release work): main is clean at
+`786402d57b01bc623cc6940492ff75deb658e96e`. Candidate workflow [38038748245](https://github.com/freevia-org/sudoku-buddy/actions/runs/38038748245)
+passed for code 126 from that commit; its AAB SHA-256 is
+`AF1CA3B6E979745213DF54D55AFA84A518DC5AA999B8ABC2A1014A82425125F0`. It is still an offline
+artifact and contains privacy text from before today's location-disclosure update; rebuild
+code 126 from the reviewed policy update before distribution. The live policy at
+`https://freevia.org/sudoku-buddy/privacy/` now describes Cloudflare's possible IP-derived
+approximate-location processing and its service-provider role. Data Safety answers are saved
+as a draft in Publishing overview: optional approximate location for security; optional Photos,
+Other user-generated content and Other actions for Analytics; no data shared with third parties;
+no Diagnostics. The listing remains a draft. Internal testing is still inactive with candidate
+125 in the draft track and 2 of 3 setup tasks complete. Real Android submission/deletion and
+Play-delivered installation are not yet verified. Production remains inactive at 0 of 5 tasks.
 
-The text below is repository-side preparation. The full description has been saved in Play
-Console as a draft, but has not been submitted for review. The live privacy page still has
-blanket 90-day retention; the matching update is prepared but not deployed. Wrangler lacks
-`pages:write`, and its login requested unrelated extra scopes that were not accepted. Deploy
-the policy with a narrowly scoped Pages permission, verify the live URL, then reconcile the
-listing and Data Safety answers before distribution. The Worker has passed synthetic checks;
-real app submissions remain unverified.
+The full description and Data Safety answers are saved in Play Console as drafts. Neither has
+been sent for review. The live privacy policy is published and verified. The Worker has passed
+synthetic upload/deletion checks; real app submissions remain unverified. This status snapshot
+supersedes older release-state notes retained below for history.
 
 Originally prepared 8 September 2026; refreshed for the merged training-consent source on
 10 October 2026. Local edits do not update Play Console or the public website.
@@ -179,26 +177,19 @@ enter the Families programme and reassesses the listing against those policies.
 - Privacy policy: `https://freevia.org/sudoku-buddy/privacy`.
 
 Google's [Data safety guidance](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en)
-defines collection for this form as transmitting data off the user's device and exempts apps
-active only on the internal-testing track from inclusion. The report flow is first-party
-collection by Freevia and is separate from optional third-party share-sheet actions. Declare
-the report photo under **Photos** and the puzzle, readings and
-correction content under **Other user-generated content**. Because the manifest also records
-cell-correction events and timestamps, assess **App activity / Other actions** against
-Google's definition. Also assess whether recognition confidence, runner-up results and role
-uncertainty qualify as **App info and performance / Diagnostics** under Google's technical-
-diagnostics definition; do not infer exclusion solely from the absence of crash logs or
-timing metrics.
-Mark collection optional, non-ephemeral, and for **Analytics** (improving recognition), and
-declare no sharing only if Cloudflare acts solely as Freevia's service provider under
-Google's current definition. Do not characterize automatic/manual toggles as collected
-analytics: the request may include a one-bit training-consent header, but no settings or
-toggle history is uploaded. Verify these answers against the exact release payload, all SDKs
-and live service behavior. The app has no account, routine usage analytics, crash reporting
-or ad tracking. Keep the privacy policy and saved Data safety answers aligned before
-distribution. Longer training retention alone has no separate duration selector in Data
-Safety. Preserve optional collection only if all users can decline it; confirm actual
-purposes, providers, encrypted transport and working deletion before saving the form.
+defines collection for this form as transmitting data off the user's device. The saved draft
+declares the report photo under **Photos**, puzzle/readings/corrections under **Other
+user-generated content**, correction actions under **Other actions**, and Cloudflare's
+possible IP-derived approximate location under **Location** for security. All are optional;
+photos and puzzle content are non-ephemeral and used for **Analytics** (recognition improvement),
+while approximate location is non-ephemeral and used for fraud prevention/security. Diagnostics
+is not selected because the manifest carries puzzle-recognition outputs, not app/system
+diagnostics. No third-party sharing is declared because Cloudflare operates as Freevia's
+service provider. The policy and saved draft now align on that processing. Verify the exact
+candidate payload, all SDKs and real service behavior before sending the draft for review.
+Settings toggles are not uploaded; the request may include only a one-bit training-consent
+header. The app has no account, routine usage analytics, crash reporting or ad tracking.
+Longer training retention has no separate duration selector in Data Safety.
 
 ### Content rating questionnaire
 
@@ -244,30 +235,21 @@ not this checklist, assigns the final regional ratings.
 
 ## Testing and release
 
-1. Complete consent, service lifecycle, privacy/listing alignment and final-candidate
-   device qualification in `play-release-readiness.md`.
-2. Candidate 126 was already built by `play-candidate.yml` from reviewed SHA
-   `7765711b336d59793ae71316098c253f09bc7a11`, code 126. Its AAB SHA-256 is
-   `90F4688441D1C438A3D25E1D4CFC8E904BDF2175F538297CE3873EF82DF99C92`. Verify this exact
-   sealed artifact rather than rebuilding it; build a higher code only if release-relevant
-   source or disclosures change. The workflow does not query Play's highest uploaded code.
-3. Download `sudoku-buddy-play-candidate-126` and
-   `sudoku-buddy-candidate-checks-126`. Verify the package inventory, exact AAB hash,
-   source/code/package, stable certificate, tests/lint and bundle/APK alignment evidence.
-   Initial training workflow 38017589369 specifically built code 125 before the handoff
-   refresh and embeds older documents; that run is superseded as a publishing handoff.
-   A later package's identity and evidence come from its own sealed records. Preserve
-   historical inventories; do not rewrite their embedded files or checksums.
-4. Candidate 125 remains the only bundle in the internal-test draft; preview shows no
-   errors and two non-blocking diagnostics warnings. Candidate 126 is not uploaded. Any
-   later candidate must use a higher code and have its notes and preview checked. Do not click
-   **Save and publish** until the owner authorizes distribution to named testers.
-5. Obtain separate authorization for the exact AAB and selected internal testers before
-   distribution. Then verify Play-delivered signing, installation and upgrade/data retention
-   and inspect any available pre-launch report. Preserve existing app data.
-6. Production remains inactive: select countries/regions, create a release, preview/confirm,
-   send for review and publish are five separate later tasks. Managed publishing is off;
-   review and publication require the owner's release scope.
+1. Merge the current privacy-policy/Data Safety documentation update and build a fresh code-126
+   candidate from that reviewed revision. Code 126 is still free because no version-126 bundle
+   has been uploaded to Play.
+2. Download `sudoku-buddy-play-candidate-126` and `sudoku-buddy-candidate-checks-126`. Verify
+   the package inventory, exact AAB hash, source/code/package, stable certificate, tests/lint and
+   bundle/APK alignment evidence. Preserve historical artifact inventories unchanged.
+3. Replace candidate 125 in the inactive internal-test draft with the verified code-126 AAB,
+   inspect its release notes and preview, then save and roll out to the existing authorized
+   internal testers. The user has authorized this release work and device verification.
+4. Install the Play-delivered build on the attached OnePlus and verify signing, install/upgrade
+   behavior, report submission, correction revisions, retry/opt-out and receipt deletion using a
+   synthetic test puzzle. Preserve existing user data.
+5. Reconcile any new Play Console declaration or review feedback against the verified app,
+   service and live policy. Production remains inactive; complete its remaining track tasks and
+   send the release for review under the user's explicit Play Store publication request.
 
 ### Historical candidate-124 Console evidence
 

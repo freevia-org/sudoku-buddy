@@ -1,30 +1,32 @@
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 10 October 2026. **PR #27 is merged at `7765711b336d59793ae71316098c253f09bc7a11`.
-Candidate workflow [38027607238](https://github.com/freevia-org/sudoku-buddy/actions/runs/38027607238)
-passed for code 126; its AAB SHA-256 is
-`90f4688441d1c438a3d25e1d4cfc8e904bdf2175f538297ce3873ef82df99c92`, signed with the existing
-upload certificate. Candidate 126 is an offline artifact only: the Console still has candidate
-125 in its inactive Internal testing draft, and no bundle has been uploaded, distributed or
-submitted for review. The full store description was saved as a draft on 10 October, not
-submitted for review. The consented-report backend is live and passed synthetic upload/deletion
-checks. The live privacy page is still outdated; publish the matching policy and reconcile the
-Play listing and Data Safety answers before any tester distribution. Actual Android submission,
-receipt deletion and final signed-candidate device qualification also remain open.**
+Updated 10 October 2026, after renewed release work. **Main is at
+`786402d57b01bc623cc6940492ff75deb658e96e`. Candidate workflow [38038748245](https://github.com/freevia-org/sudoku-buddy/actions/runs/38038748245)
+passed for code 126, AAB SHA-256
+`af1ca3b6e979745213df54d55afa84a518dc5aa999b8abc2a1014a82425125f0`; this artifact predates
+the current location-disclosure update and must be replaced by a fresh code-126 candidate after
+the documentation change is merged. The live privacy page now describes Cloudflare's possible
+IP-derived approximate location processing and its service-provider role. Data Safety answers
+are saved as a draft in Publishing overview: optional approximate location for security;
+optional Photos, Other user-generated content and Other actions for Analytics; no third-party
+sharing and no Diagnostics. Internal testing is still inactive with candidate 125 in the draft
+track and 2 of 3 setup tasks complete. Real app submission/deletion and Play-delivered install
+remain untested. The full store description remains a draft. Production is inactive, 0 of 5
+tasks complete.**
 
 ## Current training-release evidence
 
 | Area | Evidence and limit |
 | --- | --- |
-| Reviewed source | PR #27 is merged at `7765711b336d59793ae71316098c253f09bc7a11`; main CI passed. Candidate 126 was built from this exact clean source revision. |
-| Packaged candidate identity | Workflow [38027607238](https://github.com/freevia-org/sudoku-buddy/actions/runs/38027607238) passed for code 126. Its sealed `sudoku-buddy-play-candidate-126` artifact contains the AAB and handoff evidence; AAB SHA-256 is `90F4688441D1C438A3D25E1D4CFC8E904BDF2175F538297CE3873EF82DF99C92`. The release record marks it **NOT APPROVED FOR DISTRIBUTION**. The stable upload certificate matches SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. Static bundle checks passed; device tests and Play approval are separate. |
+| Reviewed source | Current main is `786402d57b01bc623cc6940492ff75deb658e96e`; the pending policy-doc update must be merged before rebuilding the distributable candidate. |
+| Packaged candidate identity | Workflow [38038748245](https://github.com/freevia-org/sudoku-buddy/actions/runs/38038748245) passed for code 126; AAB SHA-256 `AF1CA3B6E979745213DF54D55AFA84A518DC5AA999B8ABC2A1014A82425125F0`. It is an offline artifact predating the location-disclosure update. The release record marks it **NOT APPROVED FOR DISTRIBUTION**. The stable upload certificate matches SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. Static bundle checks passed; device tests and Play approval are separate. |
 | Build and review process | After any release-relevant source or disclosure change, build with `play-candidate.yml` using a code greater than every code uploaded to Play; verify the sealed candidate and checks artifacts independently. A successful workflow does not establish device qualification, live backend behavior or Play-delivered installation. |
 | Superseded initial training build | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) built code 125 from `46831610f88d37ee4d73867da14b2bc0c182710f` before the handoff refresh. That specific package embeds the earlier documents and is superseded as a publishing handoff. This historical limitation does not describe every later package using code 125. Preserve that run's inventory unchanged and distinguish builds by source, run and AAB hash, not version code alone. |
 | Signing | Keep the existing stable upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key is needed. |
 | Play state | Internal testing remains **Inactive / Draft**, release `1.0.0 (125) — Internal test`, candidate 125 only, 2 of 3 tasks complete. Candidate 126 has not been uploaded. Preview shows no errors and two non-blocking warnings (no deobfuscation mapping and no native debug symbols). The final **Save and publish** action has not been taken. |
-| Listing and declarations | The full en-US store description was saved as a draft on 10 October with distinct analysis-only and opted-in training retention. It has not been submitted for review. Data Safety currently marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics. Reconcile those categories against the actual ZIP payload and confirm Cloudflare's service-provider role before testing or production. |
-| Production | Inactive, 0 of 5 tasks complete: select countries/regions, create release, preview/confirm, send for review, publish. Managed publishing is off. These are later owner-authorized actions, not draft preparation. |
-| Public copy | The Website session prepared a matching policy update, but `https://freevia.org/sudoku-buddy/privacy/` still serves the old blanket-retention text. Wrangler lacks `pages:write`; its login offered unrelated extra scopes, which were not accepted. Deploy the reviewed policy through a narrowly scoped Pages permission, then verify the live URL and reconcile listing/Data Safety against the full-puzzle photo, readings and corrections. |
+| Listing and declarations | The full en-US store description and updated Data Safety declaration are saved as drafts; neither has been sent for review. The draft lists Approximate location as optional/security; Photos, Other user-generated content and Other actions as optional/Analytics; no third-party sharing; no Diagnostics. |
+| Production | Inactive, 0 of 5 tasks complete: select countries/regions, create release, preview/confirm, send for review, publish. Managed publishing is off. The user explicitly requested Play Store publication; continue through these tasks after internal-test qualification. |
+| Public copy | `https://freevia.org/sudoku-buddy/privacy/` was updated and verified on 10 October. It explains report payload/retention/deletion and Cloudflare's possible IP-derived approximate location handling. The tracked policy source is being updated to match. |
 | Feedback API verification | The Worker passes 27/27 API tests; Wrangler 4.149.0 dry-run packages all four expected bindings. On 10 October, private Standard bucket `sudoku-buddy-training-examples` was created and Worker version `f40e9ee7-18c7-492e-96c9-e150c519a1a1` deployed. A synthetic 8-byte ZIP with exact training consent returned `201 accepted`; DELETE for its SHA-256 receipt returned `200 deleted`. A second synthetic ZIP without consent also returned `201 accepted` and `200 deleted`. No real photo was uploaded. A KV key listing found no `reports/` keys during cutover verification. The R2 dashboard confirmed public access disabled and 0 B stored after the tests. This does not test Android submission, live retries, partial failures, concurrent upload/delete, or expiry timing. |
 
 ## Current physical camera smoke test
