@@ -101,8 +101,8 @@ fun SettingsScreen(
             item {
                 SettingRow(
                     title = "Share automatically when uncertain",
-                    detail = "Automatically send the square puzzle photo and reading results " +
-                        "to Freevia for analysis. Off by default.",
+                    detail = "Automatically share uncertain puzzle photos, reading results and " +
+                        "later cell corrections with Freevia for recognition analysis. Off by default.",
                     checked = settings.autoShareWhenUncertain,
                     onChange = {
                         if (it) confirmAutoShare = true
