@@ -6,7 +6,7 @@ function makeZip(payload = [0x50, 0x4b, 0x03, 0x04, 0x01, 0x02]) {
   return new Uint8Array(payload);
 }
 
-function makeEnv({ throttled = false, limiterError = false, fail = false, failTrainingPut = false, failDelete = false, pauseKvPut = false } = {}) {
+function makeEnv({ throttled = false, limiterError = false, fail = false, failTrainingPut = false, failDelete = false, pauseKvPut = false, staleNegative = false } = {}) {
   const values = new Map();
   const writes = [];
   const trainingValues = new Map();
@@ -18,6 +18,7 @@ function makeEnv({ throttled = false, limiterError = false, fail = false, failTr
   const kvPutStarted = new Promise((resolve) => { markKvPutStarted = resolve; });
   const kvPutGate = new Promise((resolve) => { releaseKvPut = resolve; });
   const objects = new Map();
+  const objectStorage = new Map();
   const env = {
     REPORTS: {
       async get(key, options) {
@@ -27,6 +28,7 @@ function makeEnv({ throttled = false, limiterError = false, fail = false, failTr
           return value ? new ReadableStream({ start(controller) { controller.close(); } }) : null;
         }
         assert.deepEqual(options, { type: "arrayBuffer" });
+        if (staleNegative) return null;
         return values.get(key) ?? null;
       },
       async put(key, value, options) {
@@ -70,17 +72,12 @@ function makeEnv({ throttled = false, limiterError = false, fail = false, failTr
       idFromName(name) { return name; },
       get(id) {
         if (!objects.has(id)) {
-          let objectQueue = Promise.resolve();
-          const storageValues = new Map();
+          if (!objectStorage.has(id)) objectStorage.set(id, new Map());
+          const storageValues = objectStorage.get(id);
           const state = {
             storage: {
               async get(key) { return storageValues.get(key); },
               async put(key, value) { storageValues.set(key, value); },
-            },
-            blockConcurrencyWhile(callback) {
-              const current = objectQueue.then(callback);
-              objectQueue = current.catch(() => {});
-              return current;
             },
           };
           objects.set(id, new ReportReceipt(state, env));
@@ -90,7 +87,12 @@ function makeEnv({ throttled = false, limiterError = false, fail = false, failTr
       },
     },
   };
-  return { env, values, writes, trainingValues, trainingWrites, failures, calls, kvPutStarted, releaseKvPut };
+  return {
+    env, values, writes, trainingValues, trainingWrites, failures, calls, kvPutStarted, releaseKvPut,
+    restart(id) { objects.delete(id); },
+    durableState(id, key) { return objectStorage.get(id)?.get(key); },
+    forgetDurableState(id, key) { objectStorage.get(id)?.delete(key); },
+  };
 }
 
 function post(body, headers = {}) {
@@ -114,7 +116,9 @@ test("accepts a ZIP, returns a stable receipt, and applies a 90-day expiry", asy
   assert.equal(response.status, 201);
   assert.equal(result.status, "accepted");
   assert.match(result.receipt, /^[a-f0-9]{64}$/);
-  assert.deepEqual(writes, [{ key: `reports/${result.receipt}.zip`, options: { expirationTtl: REPORT_TTL_SECONDS } }]);
+  assert.deepEqual(writes, [{ key: `reports/${result.receipt}.zip`, options: { expiration: writes[0].options.expiration } }]);
+  assert.ok(writes[0].options.expiration > Math.floor(Date.now() / 1000));
+  assert.ok(writes[0].options.expiration <= Math.floor(Date.now() / 1000) + REPORT_TTL_SECONDS + 1);
   assert.equal(REPORT_TTL_SECONDS, 90 * 24 * 60 * 60);
 });
 
@@ -244,6 +248,46 @@ test("consented submission fails closed without R2 or when the training copy fai
   assert.equal(failing.writes.length, 1);
 });
 
+test("persists the original absolute expiry across stale-negative KV reads", async () => {
+  const state = makeEnv({ staleNegative: true });
+  const { env, writes } = state;
+  const body = makeZip();
+  const first = await worker.fetch(post(body), env);
+  assert.equal(first.status, 201);
+  const { receipt } = await first.clone().json();
+  const originalExpiry = writes[0].options.expiration;
+  // Simulate a restart after KV accepted its write but before the DO persisted
+  // the kvStored marker. The remote read then remains stale-negative.
+  state.forgetDurableState(receipt, "kvStored");
+  state.restart(receipt);
+  const retry = await worker.fetch(post(body), env);
+  assert.equal(retry.status, 201);
+  assert.equal(writes.length, 2);
+  assert.equal(writes[0].options.expiration, originalExpiry);
+  assert.equal(writes[1].options.expiration, originalExpiry);
+  assert.equal(state.durableState(receipt, "analysisDeleteBy"), originalExpiry);
+});
+
+test("preserves expiry and completes a partial consented upload after object restart", async () => {
+  const state = makeEnv({ failTrainingPut: true });
+  const body = makeZip();
+  const failed = await worker.fetch(post(body, { "X-Sudoku-Training-Consent": "yes" }), state.env);
+  assert.equal(failed.status, 503);
+  assert.equal(state.writes.length, 1);
+  const originalExpiry = state.writes[0].options.expiration;
+  const receipt = await crypto.subtle.digest("SHA-256", body).then((digest) =>
+    [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join(""));
+
+  state.restart(receipt);
+  state.failures.failTrainingPut = false;
+  const retry = await worker.fetch(post(body, { "X-Sudoku-Training-Consent": "yes" }), state.env);
+  assert.equal(retry.status, 200);
+  assert.equal(state.writes.length, 1);
+  assert.equal(state.writes[0].options.expiration, originalExpiry);
+  assert.equal(state.trainingValues.size, 1);
+  assert.equal(state.durableState(receipt, "analysisDeleteBy"), originalExpiry);
+});
+
 test("deletes both stores by validated receipt and is idempotent", async () => {
   const { env, values, trainingValues } = makeEnv();
   const body = makeZip();
@@ -263,7 +307,8 @@ test("deletes both stores by validated receipt and is idempotent", async () => {
 });
 
 test("delete rejects malformed receipts and partial store failure never reports success", async () => {
-  const { env, values, trainingValues, failures } = makeEnv();
+  const state = makeEnv();
+  const { env, values, trainingValues, failures } = state;
   const malformed = await worker.fetch(new Request(`https://x/v1/reports/${"a".repeat(63)}g`, { method: "DELETE" }), env);
   assert.equal(malformed.status, 400);
   const wrongMethod = await worker.fetch(new Request(`https://x/v1/reports/${"a".repeat(64)}`, { method: "GET" }), env);
@@ -276,6 +321,7 @@ test("delete rejects malformed receipts and partial store failure never reports 
   assert.equal(failed.status, 503);
   assert.deepEqual(await failed.json(), { error: "deletion_incomplete", retry: true });
   failures.failDelete = false;
+  state.restart(receipt);
   const retry = await worker.fetch(new Request(`https://x/v1/reports/${receipt}`, { method: "DELETE" }), env);
   assert.equal(retry.status, 200);
   assert.deepEqual(await retry.json(), { receipt, status: "deleted" });

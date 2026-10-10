@@ -2,6 +2,7 @@ import { REPORT_TTL_SECONDS } from "./retention.js";
 
 const RECEIPT_PATTERN = /^[a-f0-9]{64}$/;
 const REPORT_PREFIX = "reports/";
+const ANALYSIS_TTL_SECONDS = REPORT_TTL_SECONDS;
 
 function json(status, body) {
   return new Response(JSON.stringify(body), {
@@ -20,6 +21,7 @@ export class ReportReceipt {
   constructor(state, env) {
     this.state = state;
     this.env = env;
+    this.operationQueue = Promise.resolve();
   }
 
   async fetch(request) {
@@ -30,24 +32,20 @@ export class ReportReceipt {
       return json(503, { error: "receipt_service_unavailable" });
     }
 
-    // Each receipt has its own object. blockConcurrencyWhile covers the KV and R2
-    // awaits, which otherwise allow concurrent requests to interleave. Keep all
-    // exceptions inside the callback so a storage failure does not reset the object.
-    let result;
-    try {
-      await this.state.blockConcurrencyWhile(async () => {
-        result = request.method === "POST"
-          ? await this.accept(receipt, request)
-          : request.method === "DELETE"
-            ? await this.delete(receipt)
-            : json(405, { error: "method_not_allowed" });
-      });
-    } catch {
-      return request.method === "DELETE"
-        ? json(503, { error: "deletion_incomplete", retry: true })
-        : json(503, { error: "submission_temporarily_unavailable" });
-    }
+    // Each receipt has its own in-memory promise queue. This serializes external
+    // KV/R2 I/O without blockConcurrencyWhile's 30-second callback timeout or a
+    // global bottleneck. Durable state makes retries safe after an object restart.
+    const result = this.operationQueue.then(() => this.dispatch(request, receipt));
+    this.operationQueue = result.then(() => undefined, () => undefined);
     return result;
+  }
+
+  async dispatch(request, receipt) {
+    return request.method === "POST"
+      ? this.accept(receipt, request)
+      : request.method === "DELETE"
+        ? this.delete(receipt)
+        : json(405, { error: "method_not_allowed" });
   }
 
   async accept(receipt, request) {
@@ -58,17 +56,34 @@ export class ReportReceipt {
       const bytes = new Uint8Array(await request.arrayBuffer());
       if (await digestHex(bytes) !== receipt) return json(400, { error: "receipt_mismatch" });
 
+      let deleteBy = await this.state.storage.get("analysisDeleteBy");
+      if (deleteBy === undefined) {
+        deleteBy = Math.floor(Date.now() / 1000) + ANALYSIS_TTL_SECONDS;
+        // This is persisted before the first KV read/write so a partial failure or
+        // object restart cannot extend the analysis window on retry.
+        await this.state.storage.put("analysisDeleteBy", deleteBy);
+      }
+
       const key = `${REPORT_PREFIX}${receipt}.zip`;
-      const existing = await this.env.REPORTS.get(key, { type: "arrayBuffer" });
-      if (existing === null) {
-        await this.env.REPORTS.put(key, bytes, { expirationTtl: REPORT_TTL_SECONDS });
+      let alreadyStored = Boolean(await this.state.storage.get("kvStored"));
+      if (!alreadyStored) {
+        const existing = await this.env.REPORTS.get(key, { type: "arrayBuffer" });
+        if (existing === null) {
+          if (deleteBy <= Math.floor(Date.now() / 1000) + 60) {
+            return json(410, { error: "analysis_window_expired" });
+          }
+          await this.env.REPORTS.put(key, bytes, { expiration: deleteBy });
+        } else {
+          alreadyStored = true;
+        }
+        await this.state.storage.put("kvStored", true);
       }
       if (request.headers.get("X-Sudoku-Training-Consent") === "yes") {
         await this.env.TRAINING_EXAMPLES.put(receipt, bytes);
       }
-      return json(existing === null ? 201 : 200, {
+      return json(alreadyStored ? 200 : 201, {
         receipt,
-        status: existing === null ? "accepted" : "already_received",
+        status: alreadyStored ? "already_received" : "accepted",
       });
     } catch {
       return json(503, { error: "submission_temporarily_unavailable" });
