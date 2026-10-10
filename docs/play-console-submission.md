@@ -1,12 +1,13 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status (10 October 2026): signed candidate 1.0.0 (122) is saved in an inactive
-Internal testing draft. The Play Console shows the store listing and several declarations
-as changes not yet submitted for review; **Send app for review** is disabled until required
-dashboard tasks are complete. The live privacy policy now describes optional reports, but
-the report payload, retention operations and saved Data safety answers still need a final
-cross-check before review or rollout. The copy below is reference material; verify the exact
-current Console values before submitting. Follow the [final-build checklist](play-release-readiness.md)
+Current status (10 October 2026): signed candidate 1.0.0 (124) is built from merged main,
+but has not been uploaded. The existing Play Internal testing draft still contains candidate
+122 and remains inactive. Store-listing and declaration changes are not submitted for review;
+**Send app for review** is disabled until required dashboard tasks are complete. The live
+privacy policy and repository policy currently disagree about using reviewed reports as
+training examples. Reconcile that purpose, retention controls and saved Data safety answers
+before review or rollout. The copy below is reference material; verify the exact current
+Console values before submitting. Follow the [final-build checklist](play-release-readiness.md)
 and its authorization gate.
 
 Originally prepared 8 September 2026; product copy reviewed against the local source on
@@ -218,13 +219,14 @@ not this checklist, assigns the final regional ratings.
 5. Use `docs/play-release-notes-en-US.txt` for the first release notes.
 
 Use the verified signed candidate recorded in `play-release-readiness.md`, checking its
-SHA-256 and application ID `org.freevia.sudokubuddy` before upload. Candidate 1.0.0 (122)
-was built by the successful GitHub candidate workflow and is already saved in an inactive
-Internal testing draft. The attached OnePlus has a local QA-signed APK built from that
-candidate, not a Play-delivered install. Do not use the draft's **Save and publish** action
-until the exact build and tester scope are explicitly authorized. A Play-install upgrade
-test still needs an approved internal rollout and must preserve existing app data; do not
-uninstall or clear storage to bypass a signing mismatch.
+SHA-256 and application ID `org.freevia.sudokubuddy` before upload. Candidate 1.0.0 (124)
+was built by the successful GitHub candidate workflow and is the latest verified artifact;
+it has not been uploaded. The existing inactive Internal testing draft still contains
+candidate 122. The attached OnePlus also has a local QA-signed version 122, not a
+Play-delivered install. Do not use **Save and publish** until the privacy/retention gates,
+exact build and tester scope are resolved. A Play-install upgrade test still needs an
+approved internal rollout and must preserve existing app data; do not uninstall or clear
+storage to bypass a signing mismatch.
 
 ## Account and policy details to confirm in Play Console
 
