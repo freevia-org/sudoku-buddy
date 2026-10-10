@@ -18,7 +18,7 @@ This is the private upload endpoint for Sudoku Buddy report ZIP files. It is dep
 
 ## Create and deploy
 
-Prerequisites: Node.js 20 or later, Wrangler 4.36.0 or later (for `ratelimits`), a Cloudflare account with Workers, Workers KV, R2, and Durable Objects enabled, and an account-scoped API token with only the permissions needed for the operation. No credentials belong in this folder or repository. Before deploying this version, create the configured `sudoku-buddy-training-examples` R2 bucket as private; do not enable public access. The `v1` migration provisions the SQLite-backed `ReportReceipt` class. This change does not create the bucket or deploy the Worker.
+Prerequisites: Node.js 20 or later, Wrangler 4.36.0 or later (for `ratelimits`), a Cloudflare account with Workers, Workers KV, R2, and Durable Objects enabled, and an account-scoped API token with only the permissions needed for the operation. Install the locked toolchain with `npm ci`. No credentials belong in this folder or repository. Before deploying this version, create the configured `sudoku-buddy-training-examples` R2 bucket as private; do not enable public access. The `v1` migration provisions the SQLite-backed `ReportReceipt` class. This change does not create the bucket or deploy the Worker.
 
 The private namespace and current Worker are already created and deployed. The endpoint is `https://sudoku-buddy-feedback.antoni-ivanov.workers.dev/v1/reports`; the private KV namespace ID and rate-limit configuration are recorded in `wrangler.toml`. This source change is not deployed, and the configured private R2 bucket must exist before deployment. Do not send corpus or personal test photos during infrastructure checks. Before replacing the live Worker, pause submissions for at least 60 seconds, inventory `reports/` key names and absolute expirations without downloading values, and confirm the inventory is complete. Cloudflare documents that KV listing changes can take up to 60 seconds to appear. On first access to a legacy receipt, its Durable Object imports the existing absolute expiry from KV's key listing and marks the key stored; if the key exists without an expiry, the upload fails closed. Do not resume submissions if the cutover inventory or expiry import is incomplete. This source change does not establish whether legacy keys currently exist; verify the live inventory before deployment.
 
@@ -41,6 +41,14 @@ npm test
 ```
 
 Tests use in-memory KV, R2, and rate-limit mocks and do not contact Cloudflare.
+
+Validate Wrangler's bundle and configured binding/export shape without deploying:
+
+```sh
+npm exec -- wrangler deploy --dry-run
+```
+
+This checks packaging and binding configuration only; it does not prove that remote resources exist or that the Worker is deployed.
 
 To verify the real Worker export shape and start the local KV/R2/Durable Object bindings, run:
 
