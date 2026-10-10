@@ -1,23 +1,24 @@
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 10 October 2026. **Training-consent source is merged in PR #18. For a packaged
-candidate, its exact source, version, AAB hash, signing and bundle evidence come from the
-sealed package records described below. Play's last audited release remains inactive draft
-124; no tester distribution, review submission or public publication is authorized here.**
+Updated 10 October 2026. **Training-consent source is merged in PR #18. Candidate 125 is
+saved as an inactive internal-testing draft and has not been distributed. Its exact source,
+version, AAB hash, signing and bundle evidence are recorded below. No production release has
+been submitted. Do not distribute this candidate until the consented-report backend and
+public privacy disclosures are deployed and verified.**
 
 ## Current training-release evidence
 
 | Area | Evidence and limit |
 | --- | --- |
-| Reviewed source | PR #18 adds separate optional training consent, receipt deletion and backend storage changes. Candidate 124 lacks these changes and is historical for this release. |
-| Packaged candidate identity | Use the sealed package's `release-record.json` for the exact source/version and build provenance, `SHA256SUMS.json` to verify every packaged file, and `evidence/` for bundle validation, manifest/config audit, certificate/signature and generated APK alignment checks. Independently hash the AAB and match its identity to these records. These prose documents do not identify a particular newly built package by a predicted run or hash. |
-| Build and review process | Finalize and merge the reviewed source, privacy, notes and handoff documents before building with `play-candidate.yml`. Supply the final full SHA and a version code greater than every Play upload; check the Console inventory before upload. Download the matching `sudoku-buddy-play-candidate-<code>` and `sudoku-buddy-candidate-checks-<code>` from the recorded run. Workflow success alone does not establish device qualification, deployed backend behavior, independent local verification or Play validation. |
+| Reviewed source | PRs #18–#20 are merged; candidate 125 was built from `main` HEAD `a1e311c2f97d17bd1acfe0b289b8d9aa5abece18`. PR #18 adds optional training consent, receipt deletion and backend storage changes. |
+| Packaged candidate identity | Workflow [38018608861](https://github.com/freevia-org/sudoku-buddy/actions/runs/38018608861) built code 125 from source `a1e311c2f97d17bd1acfe0b289b8d9aa5abece18`. Use the sealed `sudoku-buddy-candidate-125-reviewed` package; its AAB SHA-256 is `59A0287D0980F7DB632C1603634EBBAAEDBADF800D5A01AEDC3B7BD54FB875BE`. `release-record.json`, `SHA256SUMS.json` and `evidence/` verify provenance, package contents, signature and bundle checks. Candidate verification passed locally. |
+| Build and review process | After any release-relevant source or disclosure change, build with `play-candidate.yml` using a code greater than every code uploaded to Play; verify the sealed candidate and checks artifacts independently. A successful workflow does not establish device qualification, live backend behavior or Play-delivered installation. |
 | Superseded initial training build | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) built code 125 from `46831610f88d37ee4d73867da14b2bc0c182710f` before the handoff refresh. That specific package embeds the earlier documents and is superseded as a publishing handoff. This historical limitation does not describe every later package using code 125. Preserve that run's inventory unchanged and distinguish builds by source, run and AAB hash, not version code alone. |
 | Signing | Keep the existing stable upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key is needed. |
-| Play state | Internal testing is **Inactive / Draft**, release `1.0.0 (124) — Internal test`, candidate 124 only, 2 of 3 tasks complete. Its preview showed zero errors and two warnings (missing mapping and native debug symbols). Entering preview did not distribute it; the separate final **Save and publish** action publishes immediately and remains untaken. These diagnostics do not validate candidate 125 or its replacement. |
-| Listing and declarations | Required en-US listing fields and all ten app-content declarations are completed. Saved Data Safety marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics, with no third-party sharing, encrypted transit and a deletion request URL. Changes remain unsubmitted; **Send app for review** is disabled pending dashboard tasks. |
+| Play state | Internal testing is **Inactive / Draft**, release `1.0.0 (125) — Internal test`, candidate 125 only, 2 of 3 tasks complete. Preview shows no errors and two non-blocking warnings (no deobfuscation mapping and no native debug symbols). The final **Save and publish** action publishes immediately; it has not been taken. |
+| Listing and declarations | Required en-US listing fields and app-content declarations are saved. Data Safety currently marks Photos, Diagnostics, Other user-generated content and Other actions as optional/Analytics. Reconcile those categories against the actual ZIP payload and confirm Cloudflare's service-provider role before closed/open testing or production. |
 | Production | Inactive, 0 of 5 tasks complete: select countries/regions, create release, preview/confirm, send for review, publish. Managed publishing is off. These are later owner-authorized actions, not draft preparation. |
-| Public copy | The last live-page and listing audit still showed universal 90-day retention and email deletion. Merged repository policy now distinguishes analysis-only reports from separately consented training examples. Publishing the matching policy and updating listing copy remain prerequisites. |
+| Public copy | The live privacy page remains stale: it describes universal 90-day retention, KV storage and email-only deletion. Repository policy distinguishes 90-day analysis-only reports from separately consented training examples retained until receipt deletion. Update and verify the live page and reconcile listing copy before distributing candidate 125 or requesting review. |
 
 ## Current physical camera smoke test
 
@@ -31,9 +32,13 @@ grid and reported that they matched.
 This is one real-page camera/rectification/recognition smoke test, not a corpus benchmark
 or external accuracy estimate. It does not qualify uncertainty or report submission,
 TalkBack, a Play-signed candidate installation, or the release backend; none of those was
-tested in this session. The debug package is source-level evidence and does not replace
-qualification of the fresh signed publishing candidate. No photos or screenshots are
-included in this repository update.
+tested in this session. A follow-up on the same phone confirmed debug code 125, opened and
+closed the app menu and puzzle history, and returned to the solved puzzle without triggering
+sharing. Auto-capture and auto-share-when-uncertain remained off. The saved puzzles checked
+had no uncertain cells, so the **Submit reading** button and its popup could not be exercised
+using the unchanged saved puzzles available during this check. The debug package is source-
+level evidence and does not replace qualification of the fresh signed publishing candidate.
+No photos or screenshots are included in this repository update.
 
 ## Consent, retention and backend gates
 
@@ -44,7 +49,11 @@ included in this repository update.
    and retain that reading's choice. Do not convert earlier analysis reports into training
    examples without new explicit consent. Describe that deleting a source example may not
    reverse influence already learned by a future model; this does not waive data deletion.
-2. **Provision and validate the backend before relying on it.** Merging source does not
+2. **Provision and validate the backend before relying on it.** The current Worker has not
+   been upgraded and the private R2 bucket is not enabled. The release endpoint therefore
+   cannot yet honor the app's consented archive and receipt-deletion behavior. R2 activation
+   is an account billing step with usage-based overages; do not accept it without explicit
+   authorization. Merging source does not
    create the private `TRAINING_EXAMPLES` R2 bucket or deploy the consent-enabled Worker.
    Confirm the `REPORT_RECEIPTS` Durable Object binding and `v1` migration. Follow
    `feedback-api/README.md` for the cutover: pause intake, inventory legacy KV key names and
