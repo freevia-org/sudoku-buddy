@@ -100,8 +100,11 @@ The app keeps receipts in Settings, even if you delete a puzzle from History. Op
 **Submission receipts** to delete a submitted revision. Corrected revisions have separate
 receipts and must be deleted separately. Deleting a puzzle from History removes its local
 copy but does not delete reports already sent. Cloudflare provides storage and request
-infrastructure on Freevia's behalf and may process network/security telemetry under its own
-terms. The report record does not store your identity or source IP.
+infrastructure on Freevia's behalf. When a report request passes through Cloudflare, it may
+process the request's IP address and infer an approximate location, such as country or
+region, for network routing and security under its own terms. The report service does not
+access or store the IP address or inferred location in its application records, and the
+report record does not store your identity.
 
 ### GitHub feedback drafts
 
