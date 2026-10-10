@@ -7,7 +7,7 @@ This is the private upload endpoint for Sudoku Buddy report ZIP files. It is dep
 - `POST /v1/reports` accepts only `application/zip` with a decimal `Content-Length` that exactly matches the streamed body.
 - The body is read incrementally and stopped as soon as it exceeds the declared length or the 20 MiB hard cap. It is buffered only after bounded collection so it can be hashed and written to Workers KV.
 - The first four bytes must match a ZIP local-file, empty-archive, or spanning signature. This is a quick format check, not a full ZIP safety scan; moderators must treat all report contents as untrusted.
-- The SHA-256 digest is the receipt and KV key (`reports/<sha256>.zip`), making identical submissions idempotent. No submitter name, email, app installation ID, timestamp, or source IP is stored in a separate record.
+- The SHA-256 digest is the receipt and KV key (`reports/<sha256>.zip`), making identical submissions idempotent. No submitter name, email, or app installation ID is stored. The per-receipt Durable Object stores only operational state (`analysisDeleteBy`, `kvStored`, and `deletionState`); it does not store report content or user identity. No source IP is used in an application record.
 - Each report receipt stores its original absolute 90-day expiry in its Durable Object before the first KV write, and writes that same timestamp to KV on retries. A stale-negative KV read or a Durable Object restart cannot reset the analysis deadline. Cloudflare deletes an expiring key when its deadline is reached. Every corrected revision has a distinct receipt and its own deadline.
 - The KV account value limit is 25 MiB; this service caps values at 20 MiB. This queue is intended for a bounded, low-volume pilot. KV is eventually consistent and does not provide an atomic compare-and-set; identical simultaneous submissions still converge on the same content-addressed key, but only one request may report `accepted`.
 - Training retention is enabled only when `X-Sudoku-Training-Consent` is exactly `yes`. Missing, differently cased, or any other value leaves the report in the 90-day KV analysis queue only. With consent, the Worker also writes the ZIP to the private `TRAINING_EXAMPLES` R2 binding under the lowercase 64-character SHA-256 receipt. R2 has no public URL or read/list API in this Worker. The bucket is long-lived and the consented copy remains until its receipt is deleted; never enable public access for it.
@@ -20,7 +20,7 @@ This is the private upload endpoint for Sudoku Buddy report ZIP files. It is dep
 
 Prerequisites: Node.js 20 or later, Wrangler 4.36.0 or later (for `ratelimits`), a Cloudflare account with Workers, Workers KV, R2, and Durable Objects enabled, and an account-scoped API token with only the permissions needed for the operation. No credentials belong in this folder or repository. Before deploying this version, create the configured `sudoku-buddy-training-examples` R2 bucket as private; do not enable public access. The `v1` migration provisions the SQLite-backed `ReportReceipt` class. This change does not create the bucket or deploy the Worker.
 
-The private namespace and current Worker are already created and deployed. The endpoint is `https://sudoku-buddy-feedback.antoni-ivanov.workers.dev/v1/reports`; the private KV namespace ID and rate-limit configuration are recorded in `wrangler.toml`. This source change is not deployed, and the configured private R2 bucket must exist before deployment. Do not send corpus or personal test photos during infrastructure checks. Future deployments require an authorized Wrangler session and a review of the current account configuration.
+The private namespace and current Worker are already created and deployed. The endpoint is `https://sudoku-buddy-feedback.antoni-ivanov.workers.dev/v1/reports`; the private KV namespace ID and rate-limit configuration are recorded in `wrangler.toml`. This source change is not deployed, and the configured private R2 bucket must exist before deployment. Do not send corpus or personal test photos during infrastructure checks. Before replacing the live Worker, pause submissions for at least 60 seconds, inventory `reports/` key names and absolute expirations without downloading values, and confirm the inventory is complete. Cloudflare documents that KV listing changes can take up to 60 seconds to appear. On first access to a legacy receipt, its Durable Object imports the existing absolute expiry from KV's key listing and marks the key stored; if the key exists without an expiry, the upload fails closed. Do not resume submissions if the cutover inventory or expiry import is incomplete. This source change does not establish whether legacy keys currently exist; verify the live inventory before deployment.
 
 ## Private review and export
 
@@ -41,3 +41,11 @@ npm test
 ```
 
 Tests use in-memory KV, R2, and rate-limit mocks and do not contact Cloudflare.
+
+To verify the real Worker export shape and start the local KV/R2/Durable Object bindings, run:
+
+```sh
+npm run dev:local
+```
+
+Wrangler starts on `http://127.0.0.1:8787`; a `404` for `/` confirms the Worker loaded. Use only synthetic ZIP data for local binding checks. This command runs local emulation and does not deploy or access the Cloudflare account.

@@ -1,9 +1,6 @@
-import { REPORT_TTL_SECONDS } from "./retention.js";
+import { MAX_REPORT_BYTES } from "./limits.js";
 import { ReportReceipt } from "./report-receipt.js";
 
-const MiB = 1024 * 1024;
-export const MAX_REPORT_BYTES = 20 * MiB;
-export { REPORT_TTL_SECONDS };
 const RECEIPT_PATTERN = /^[a-f0-9]{64}$/;
 
 function json(status, body, headers = {}) {
@@ -131,5 +128,4 @@ async function enforceRateLimit(env) {
   return null;
 }
 
-export const __test = { isZipSignature, readBoundedBody, sha256Hex };
 export { ReportReceipt };

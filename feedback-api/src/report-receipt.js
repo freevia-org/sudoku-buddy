@@ -58,10 +58,24 @@ export class ReportReceipt {
 
       let deleteBy = await this.state.storage.get("analysisDeleteBy");
       if (deleteBy === undefined) {
-        deleteBy = Math.floor(Date.now() / 1000) + ANALYSIS_TTL_SECONDS;
-        // This is persisted before the first KV read/write so a partial failure or
-        // object restart cannot extend the analysis window on retry.
-        await this.state.storage.put("analysisDeleteBy", deleteBy);
+        const key = `${REPORT_PREFIX}${receipt}.zip`;
+        const listing = await this.env.REPORTS.list({ prefix: key, limit: 1 });
+        const legacyEntry = listing.keys.find((entry) => entry.name === key);
+        if (legacyEntry) {
+          if (!Number.isSafeInteger(legacyEntry.expiration)) {
+            return json(503, { error: "submission_temporarily_unavailable" });
+          }
+          deleteBy = legacyEntry.expiration;
+          // Import the pre-DO expiry rather than assigning the legacy report a
+          // fresh 90-day window. KV key listing exposes expiry without report data.
+          await this.state.storage.put("analysisDeleteBy", deleteBy);
+          await this.state.storage.put("kvStored", true);
+        } else {
+          deleteBy = Math.floor(Date.now() / 1000) + ANALYSIS_TTL_SECONDS;
+          // Persist before the first KV read/write so a partial failure or object
+          // restart cannot extend the analysis window on retry.
+          await this.state.storage.put("analysisDeleteBy", deleteBy);
+        }
       }
 
       const key = `${REPORT_PREFIX}${receipt}.zip`;

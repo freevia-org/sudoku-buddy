@@ -1,13 +1,16 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import worker, { MAX_REPORT_BYTES, REPORT_TTL_SECONDS, ReportReceipt } from "../src/index.js";
+import worker, { ReportReceipt } from "../src/index.js";
+import { MAX_REPORT_BYTES } from "../src/limits.js";
+import { REPORT_TTL_SECONDS } from "../src/retention.js";
 
 function makeZip(payload = [0x50, 0x4b, 0x03, 0x04, 0x01, 0x02]) {
   return new Uint8Array(payload);
 }
 
-function makeEnv({ throttled = false, limiterError = false, fail = false, failTrainingPut = false, failDelete = false, pauseKvPut = false, staleNegative = false } = {}) {
+function makeEnv({ throttled = false, limiterError = false, fail = false, failTrainingPut = false, failDelete = false, pauseKvPut = false, staleNegative = false, staleList = false } = {}) {
   const values = new Map();
+  const expirations = new Map();
   const writes = [];
   const trainingValues = new Map();
   const trainingWrites = [];
@@ -39,12 +42,22 @@ function makeEnv({ throttled = false, limiterError = false, fail = false, failTr
           await kvPutGate;
         }
         values.set(key, value.slice().buffer);
+        expirations.set(key, options.expiration);
         writes.push({ key, options });
       },
       async delete(key) {
         calls.kvDelete++;
         if (failures.failDelete === true || failures.failDelete === "kv") throw new Error("delete error");
         values.delete(key);
+        expirations.delete(key);
+      },
+      async list({ prefix }) {
+        if (staleList) return { keys: [], list_complete: true, cursor: "" };
+        return {
+          keys: [...values.keys()].filter((key) => key.startsWith(prefix)).map((name) => ({ name, expiration: expirations.get(name) })),
+          list_complete: true,
+          cursor: "",
+        };
       },
     },
     TRAINING_EXAMPLES: {
@@ -88,7 +101,7 @@ function makeEnv({ throttled = false, limiterError = false, fail = false, failTr
     },
   };
   return {
-    env, values, writes, trainingValues, trainingWrites, failures, calls, kvPutStarted, releaseKvPut,
+    env, values, expirations, writes, trainingValues, trainingWrites, failures, calls, kvPutStarted, releaseKvPut,
     restart(id) { objects.delete(id); },
     durableState(id, key) { return objectStorage.get(id)?.get(key); },
     forgetDurableState(id, key) { objectStorage.get(id)?.delete(key); },
@@ -248,7 +261,7 @@ test("consented submission fails closed without R2 or when the training copy fai
   assert.equal(failing.writes.length, 1);
 });
 
-test("persists the original absolute expiry across stale-negative KV reads", async () => {
+test("persists the original absolute expiry across stale-negative KV reads and restarts", async () => {
   const state = makeEnv({ staleNegative: true });
   const { env, writes } = state;
   const body = makeZip();
@@ -266,6 +279,33 @@ test("persists the original absolute expiry across stale-negative KV reads", asy
   assert.equal(writes[0].options.expiration, originalExpiry);
   assert.equal(writes[1].options.expiration, originalExpiry);
   assert.equal(state.durableState(receipt, "analysisDeleteBy"), originalExpiry);
+});
+
+test("imports the existing absolute expiry for a legacy KV report without downloading its contents", async () => {
+  const state = makeEnv({ staleNegative: true });
+  const body = makeZip();
+  const receipt = await crypto.subtle.digest("SHA-256", body).then((digest) =>
+    [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join(""));
+  const key = `reports/${receipt}.zip`;
+  const oldExpiry = Math.floor(Date.now() / 1000) + 86400;
+  state.values.set(key, body.slice().buffer);
+  state.expirations.set(key, oldExpiry);
+  const response = await worker.fetch(post(body), state.env);
+  assert.equal(response.status, 200);
+  assert.equal(state.writes.length, 0);
+  assert.equal(state.durableState(receipt, "analysisDeleteBy"), oldExpiry);
+  assert.equal(state.durableState(receipt, "kvStored"), true);
+});
+
+test("fails closed when a legacy key is listed without an absolute expiry", async () => {
+  const state = makeEnv();
+  const body = makeZip();
+  const receipt = await crypto.subtle.digest("SHA-256", body).then((digest) =>
+    [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join(""));
+  state.values.set(`reports/${receipt}.zip`, body.slice().buffer);
+  const response = await worker.fetch(post(body), state.env);
+  assert.equal(response.status, 503);
+  assert.equal(state.writes.length, 0);
 });
 
 test("preserves expiry and completes a partial consented upload after object restart", async () => {
