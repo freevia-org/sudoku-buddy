@@ -7,7 +7,7 @@ import org.freevia.sudokubuddy.solver.RouteStyle
 /** Preferences that survive restarts. Deliberately few. */
 data class Settings(
     val hintStyle: HintStyle = HintStyle.EXPLAIN,
-    val autoCapture: Boolean = true,
+    val autoCapture: Boolean = false,
     val autoShareWhenUncertain: Boolean = false,
     /** What the tutor's route should be good at. See [RouteStyle]. */
     val routeStyle: RouteStyle = RouteStyle.SHORT_CHAINS,
@@ -25,7 +25,7 @@ data class Settings(
                 hintStyle = runCatching {
                     HintStyle.valueOf(prefs.getString(KEY_HINT_STYLE, null) ?: HintStyle.EXPLAIN.name)
                 }.getOrDefault(HintStyle.EXPLAIN),
-                autoCapture = prefs.getBoolean(KEY_AUTO_CAPTURE, true),
+                autoCapture = prefs.getBoolean(KEY_AUTO_CAPTURE, false),
                 autoShareWhenUncertain = prefs.getBoolean(KEY_AUTO_SHARE, false),
                 routeStyle = runCatching {
                     RouteStyle.valueOf(
