@@ -127,6 +127,7 @@ data class PuzzleState(
     val practiceCell: Int? = null,
     val practiceFeedback: String? = null,
     val returnToStep: Int? = null,
+    val hintNavigation: HintNavigation = HintNavigation(),
 ) {
     // Copies made for taps and tutor navigation share grid-dependent work. The cache
     // never retains photos and is bounded so editing/reopening puzzles cannot grow it.
@@ -226,6 +227,10 @@ data class PuzzleState(
     val findingCounts: Map<String, Int> by lazy { analysis.findingCounts }
 
     private val computed: Overlay by lazy {
+        visualHint?.let {
+            val shown = VisualHint.overlay(it, hintDepth, hintNavigation.frame)
+            return@lazy VisualHint.withWritten(shown, grid, entered)
+        }
         analysis.overlay(displayKey) {
             PuzzleLogic.overlay(
                 grid, overlay, hintStyle, hintDepth, walkthrough, lessonStep, entered, answerShown,
@@ -281,6 +286,12 @@ data class PuzzleState(
     fun candidateMarks(): Map<Int, List<Int>> = computed.candidates
     fun removedCandidates(): Map<Int, Set<Int>> = computed.removed
 
+    val visualHint: Hint.Explained? get() = if (overlay == OverlayMode.HINT &&
+        hintStyle == HintStyle.EXPLAIN) (hint as? Hint.Explained)?.takeIf { it.proof.isNotEmpty() } else null
+
+    fun hintTarget(): Int? = visualHint?.index ?: if (overlay == OverlayMode.LESSON &&
+        tutorHintProof && !practicing) (analysis.hint(HintStyle.EXPLAIN) as? Hint.Explained)?.index else null
+
     val currentDeduction: Deduction? get() =
         PuzzleLogic.stepIndex(lessonStep, walkthrough)?.let { walkthrough?.steps?.get(it) }
 
@@ -332,6 +343,7 @@ data class PuzzleState(
                 hint is Hint.Reveal) PuzzleLogic.HINT_DEPTHS - 1 else next.hintDepth,
             lessonStep = if (next.mode == overlay) lessonStep else 0,
             selectedCell = null,
+            hintNavigation = HintNavigation(),
         )
     }
 
@@ -347,7 +359,12 @@ data class PuzzleState(
         overlay = OverlayMode.NONE,
         hintDepth = 0,
         selectedCell = null,
+        hintNavigation = HintNavigation(),
     )
+
+    fun backFromOverlay(): PuzzleState = if (visualHint != null && hintNavigation.parents.isNotEmpty()) {
+        copy(hintNavigation = hintNavigation.back())
+    } else close()
 
     /**
      * Starting the tutor on one technique the user picked, from the beginning of it.
@@ -413,6 +430,7 @@ data class PuzzleState(
             // The route and the hint were both worked out from a grid that has just
             // changed underneath them.
             hintDepth = 0,
+            hintNavigation = HintNavigation(),
             lessonStep = 0,
             tutorHintProof = false,
             lessonBefore = false,

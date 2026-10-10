@@ -32,6 +32,7 @@ import kotlin.math.sin
  * glance; below that it is not a reading at all. See the colour chosen in drawConfidence.
  */
 private const val CLEARLY_READ = 0.9f
+private val HINT_EVIDENCE = Color(0xFF176B50)
 /*
  * Everything drawn on top of the photograph, and nothing that arranges it.
  *
@@ -52,12 +53,13 @@ private const val CLEARLY_READ = 0.9f
  * through both the tint and any arrow crossing them, which is what keeps a trail of eight
  * arrows legible on a photograph of a page.
  */
-private fun DrawScope.drawChain(chain: Chain, squares: Squares, measurer: TextMeasurer) {
+private fun DrawScope.drawChain(chain: Chain, squares: Squares, measurer: TextMeasurer, visualHint: Boolean = false) {
     for (index in chain.deadEnd) {
         squares.fill(this, index, Overlays.incorrect.copy(alpha = 0.34f))
     }
     for (link in chain.links) {
-        squares.fill(this, link.index, Overlays.evidence.copy(alpha = 0.45f))
+        if (visualHint) squares.fill(this, link.index, Color.White.copy(alpha = 0.94f))
+        squares.fill(this, link.index, (if (visualHint) HINT_EVIDENCE else Overlays.evidence).copy(alpha = if (visualHint) 0.18f else 0.45f))
     }
 
     // One arrow per square, drawn from whatever forced it. The trail branches - the wall
@@ -99,14 +101,18 @@ private fun DrawScope.drawChain(chain: Chain, squares: Squares, measurer: TextMe
         )
     }
 
-    for (link in chain.links) drawReadDigit(measurer, squares, link.index, link.digit)
+    for (link in chain.links) {
+        if (visualHint) drawCentred(measurer, squares, link.index, link.digit.toString(), HINT_EVIDENCE,
+            hypothetical = true)
+        else drawReadDigit(measurer, squares, link.index, link.digit)
+    }
 
     // Numbered, because arrows alone cannot be followed once a dozen of them cross. The
     // trail is a tree, so the numbers are the order things were forced rather than a
     // single line - but every square's number is larger than its parent's, so counting up
     // always walks away from the assumption and never back towards it.
     for ((step, link) in chain.links.withIndex()) {
-        drawCorner(measurer, squares, link.index, "${step + 1}")
+        drawCorner(measurer, squares, link.index, "${step + 1}", if (visualHint) HINT_EVIDENCE else Color.White)
     }
 
     // Every square in the dead end the missing digit could have gone in, marked with it.
@@ -131,11 +137,12 @@ private fun DrawScope.drawCorner(
     squares: Squares,
     index: Int,
     text: String,
+    colour: Color = Color.White,
 ) {
     val layout = measurer.measure(
         text,
         style = TextStyle(
-            color = Color.White,
+            color = colour,
             fontSize = (squares.unit * 0.26f).toSp(),
             fontWeight = FontWeight.Bold,
         ),
@@ -201,7 +208,8 @@ private fun DrawScope.drawArrow(from: Offset, to: Offset, unit: Float) {
 
     val start = from + direction * clear + aside
     val end = to - direction * clear + aside
-    val colour = Color.White.copy(alpha = 0.92f)
+    val colour = Color(0xFF176B50)
+    drawLine(Color.White, start, end, strokeWidth = unit * 0.09f, cap = StrokeCap.Round)
     drawLine(colour, start, end, strokeWidth = unit * 0.045f, cap = StrokeCap.Round)
 
     val head = unit * 0.2f
@@ -240,6 +248,7 @@ internal fun DrawScope.drawOverlay(state: PuzzleState, measurer: TextMeasurer) {
 private fun DrawScope.drawOverlayInLayer(state: PuzzleState, measurer: TextMeasurer) {
     val squares = Squares(state.lines, size.width, size.height)
 
+
     if (state.overlay == OverlayMode.READING) {
         drawReading(state, measurer, squares)
     }
@@ -252,7 +261,7 @@ private fun DrawScope.drawOverlayInLayer(state: PuzzleState, measurer: TextMeasu
     }
 
     for (index in state.evidenceCells()) {
-        squares.fill(this, index, Overlays.evidence.copy(alpha = 0.28f))
+        squares.fill(this, index, (if (state.visualHint != null) HINT_EVIDENCE else Overlays.evidence).copy(alpha = 0.28f))
     }
 
     val chainCells = state.chain()?.let { chain ->
@@ -265,8 +274,31 @@ private fun DrawScope.drawOverlayInLayer(state: PuzzleState, measurer: TextMeasu
         drawCandidates(measurer, squares, index, candidates[index].orEmpty(), removed[index].orEmpty())
     }
 
+    state.visualHint?.let { hint ->
+        val move = state.hintNavigation.frame.step?.takeIf { state.hintDepth >= 2 }
+            ?.let { hint.proof.getOrNull(it)?.deduction }
+        if (move is org.freevia.sudokubuddy.solver.Deduction.Elimination && move.chain == null) {
+            // A shared unit connects a reserved pattern with the cells it excludes.
+            // Never invent a causal arrow for patterns whose evidence spans units.
+            val support = move.supportingCells
+            if (support.isNotEmpty()) for (target in move.fromCells) {
+                val group = support + target
+                val shared = group.all { it / 9 == target / 9 } ||
+                    group.all { it % 9 == target % 9 } || group.all {
+                        org.freevia.sudokubuddy.model.Coordinates.boxOf(it) ==
+                            org.freevia.sudokubuddy.model.Coordinates.boxOf(target)
+                    }
+                if (shared) {
+                    val centre = support.map { squares.centre(it) }.reduce { a, b -> a + b } / support.size.toFloat()
+                    drawArrow(centre, squares.centre(target), squares.unit)
+                }
+                squares.outline(this, target, HINT_EVIDENCE, squares.unit * 0.04f, 0.10f)
+            }
+        }
+    }
+
     state.chain()?.let { chain ->
-        drawChain(chain, squares, measurer)
+        drawChain(chain, squares, measurer, visualHint = state.visualHint != null)
         // The assumed digit is rejected by the contradiction, rather than placed for real.
         for (index in removed.keys.intersect(chainCells)) {
             val centre = squares.centre(index)
@@ -335,7 +367,12 @@ private fun DrawScope.drawOverlayInLayer(state: PuzzleState, measurer: TextMeasu
 
     // The square a hint or a step is pointing at, before it says what goes in it.
     state.focusCell()?.let { index ->
-        squares.outline(this, index, Overlays.hint, squares.unit * 0.06f, inset = 0.04f)
+        squares.outline(this, index, if (state.hintTarget() != null && state.hintTarget() != index)
+            HINT_EVIDENCE else Overlays.hint, squares.unit * 0.06f, inset = 0.04f)
+    }
+    state.hintTarget()?.let { index ->
+        // A second, outer outline keeps the original destination visible in branches.
+        squares.outline(this, index, Overlays.hint, squares.unit * 0.08f, inset = 0.01f)
     }
 
     state.selectedCell?.let { index ->
@@ -562,6 +599,7 @@ private fun DrawScope.drawCentred(
     index: Int,
     text: String,
     colour: Color,
+    hypothetical: Boolean = false,
 ) {
     val layout = measurer.measure(
         text,
@@ -569,6 +607,7 @@ private fun DrawScope.drawCentred(
             color = colour,
             fontSize = (squares.unit * 0.62f).toSp(),
             fontWeight = FontWeight.Bold,
+            fontStyle = if (hypothetical) androidx.compose.ui.text.font.FontStyle.Italic else androidx.compose.ui.text.font.FontStyle.Normal,
         ),
     )
     val at = squares.topLeft(index)

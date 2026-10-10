@@ -10,6 +10,28 @@ import kotlin.test.assertTrue
 
 class TeachingStepTest {
     @Test
+    fun `chain dependencies retain earlier removals elsewhere in hidden single units`() {
+        val hint = assertIs<Hint.Explained>(ExplainedHintEngine.nextHint(Puzzles.ELIMINATION_HINT))
+        val branch = hint.proof.indexOfFirst {
+            val move = it.deduction
+            move is Deduction.Elimination && move.digit == 4 && hint.index in move.fromCells
+        }
+        assertTrue(branch > 0)
+        val lesson = hint.proof[branch]
+        val chain = assertNotNull((lesson.deduction as Deduction.Elimination).chain)
+        val premises = (chain.links.map { it.index } + chain.deadEnd).flatMap {
+            org.freevia.sudokubuddy.model.Coordinates.unitsOf[it].flatten()
+        }.toSet()
+        for (earlier in 0 until branch) {
+            if (premises.any { hint.proof[earlier].before[it] != hint.proof[earlier].after[it] }) {
+                assertTrue(earlier in lesson.dependencies, "Missing earlier premise $earlier")
+            }
+        }
+        assertTrue(0 in lesson.dependencies)
+        assertTrue(19 in lesson.dependencies)
+    }
+
+    @Test
     fun `a difficult hint retains and explains the eliminations before its answer`() {
         val puzzle = Puzzles.ELIMINATION_HINT
         val hint = assertIs<Hint.Explained>(ExplainedHintEngine.nextHint(puzzle))

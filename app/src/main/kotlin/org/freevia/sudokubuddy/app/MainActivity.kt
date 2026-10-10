@@ -503,7 +503,7 @@ private fun AppRoot() {
             screen == Screen.PUZZLE &&
             puzzle?.overlay?.let { it != OverlayMode.NONE } == true,
     ) {
-        puzzle = puzzle?.close()
+        puzzle = puzzle?.backFromOverlay()
     }
     BackHandler(enabled = drawer.isOpen) { closeDrawer() }
     BackHandler(enabled = storageBusy) { /* Finish the current save/load before navigating. */ }
