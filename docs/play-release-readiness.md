@@ -1,43 +1,64 @@
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 10 October 2026. Status: **release-preparation branch integrates the camera,
-recognition, tutor and opt-in private report work. No signed candidate for these changes has
-been built, uploaded, or published.** The existing upload certificate remains in use; no new
-certificate is needed.
+Updated 10 October 2026. Status: **signed candidate 1.0.0 (122) is built and saved only in
+the existing Internal test draft. The track remains inactive; no rollout, review submission
+or public publication has occurred.** This preparation does not approve distribution.
 
-The earlier signed 1.0.0 (120) candidate is sealed and predates report submission. Do not use
-it for the current release. The private intake Worker is live at
-`https://sudoku-buddy-feedback.antoni-ivanov.workers.dev/v1/reports`. A synthetic ZIP upload
-returned 201, an identical retry returned 200 with the same receipt, and the test object was
-deleted. The app now has manual submission, a default-off automatic-sharing setting, durable
-reading/correction history, and receipt-based deletion requests. App unit tests and release
-Kotlin compilation pass, but no device-level upload has been verified. The privacy-policy and
-Play declaration drafts are local only; the public policy and Play Console answers still need
-updating after device verification.
+## Current candidate and Console state
 
-The manual Play candidate workflow takes an immutable commit SHA and explicit version code
-121. It requires the existing signing secrets and verifies bundle identity, certificate and
-generated APK alignment. It cannot run until this feature branch is merged because GitHub
-requires a manual workflow to exist on the default branch. Firebase distribution is now
-disabled for pushes and ordinary manual CI; an explicit main-branch opt-in is required.
+| Area | Current evidence and limit |
+| --- | --- |
+| Android source | Merged commit `7f8ab56ca663e305a4a50140ec621d8a89d6f7bc`, including the automatic-report consent fix. |
+| Candidate | Package `org.freevia.sudokubuddy`, version `1.0.0`, code `122`. AAB SHA-256: `69CDAF89EC2895110FE474284ECC733FBC2FF6939328D07E138D05FDDEB3A1FB`. The [manual candidate run](https://github.com/freevia-org/sudoku-buddy/actions/runs/38004804993) passed. |
+| Signing | Signed with the existing stable Play upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key was created. |
+| Play draft | The exact hash-verified AAB was uploaded and saved in the existing `1.0.0 (122) — Internal test` draft. Play displays `122 (1.0.0)`, minSdk 26, targetSdk 36 and four ABIs. Save confirmation was observed; the track is **Inactive / Draft**, with 2 of 3 setup tasks complete. No preview confirmation, review submission or rollout was performed. |
+| Static page-size checks | Bundle/native alignment checks passed; Play displays **Supports 16 KB**. This does not establish successful execution on a 16 KB Android runtime. |
+| Later repository changes | PR #7 merged as `52a42e581ab0d11f96c0d2fc4957dae9f0fd4e53` and affects backend tooling/docs only; it does not change this Android candidate. PR #8's exporter retry fix is pending review/merge at this status snapshot. |
+| Data safety and public policy | Data safety answers are saved and reviewed: optional collection of Photos, Diagnostics, Other user-generated content and Other actions for Analytics; encrypted transit, no account and a deletion-request mechanism. The public privacy page deliberately describes the earlier offline build until report-retention controls can be substantiated. The saved declaration, published policy and proposed report-enabled release therefore are not yet reconciled for distribution. |
 
-Remaining before Play submission: run the candidate on a physical device and verify real
-report upload, receipts, correction updates and deletion requests; run the remaining camera,
-TalkBack and 16 KB runtime qualification; publish the matching privacy policy; update the
-listing and Data safety form; and complete Play's internal test and delivery checks. The
-Console upload/review action remains separate from this preparation.
+Firebase distribution is disabled for pushes and ordinary manual CI; an explicit
+main-branch opt-in is required. The sealed candidate-120 handoffs below are historical and
+must not be substituted for the current candidate.
 
-Report-copy retention is not yet operationally verified. The Worker assigns each KV revision
-a 90-day expiry, and the private review tooling now records that deadline and can remove all
-copies under one receipt folder. Before accepting real reports, Freevia must designate the
-private, non-synced review workspace, install and verify its daily expiry task, and inventory
-and remove legacy exports or report-derived corpus items. Until those controls are evidenced,
-the 90-day limit is a required policy rather than a verified operational guarantee; do not
-enable report intake for general release.
+## Current physical verification
 
-The current status and remaining gates below supersede the historical review snapshots
-later in this document. The older 343-test run and debug-signed version-code-1 artifact
-are historical evidence only. This document does not approve distribution.
+Camera preview and manual capture were checked on the candidate: a captured puzzle was
+recognized with 24 printed clues and solved. Camera permission denial, rationale, the
+system permission prompt and regrant were checked, as was background/resume. Settings'
+automatic-sharing disclosure and cancellation were checked; automatic sharing remains off.
+
+The separate manual **Submit reading** popup has not been physically verified. Live app
+upload, receipt persistence, subsequent correction uploads and deletion requests have not
+been physically verified either. No report was uploaded during these physical checks.
+Earlier synthetic infrastructure tests are not evidence that the Android flow passed.
+
+## Remaining release gates
+
+1. Verify a designated encrypted, private, non-synced report-review workspace and its daily
+   cleanup task. EFS setup failed and BitLocker status was unavailable; encryption and the
+   scheduled cleanup are **unverified**. No report exports have occurred and general report
+   intake is not enabled. The Worker's KV expiry and merged retention tooling alone do not
+   establish that every exported or report-derived copy is deleted within 90 days.
+2. Complete review of PR #8's exporter retry fix and qualify the retention/deletion process,
+   including original expiry deadlines and all copies associated with each receipt. Keep
+   report exports and general intake on hold until those controls are evidenced.
+3. Verify the final signed candidate's manual submission popup, opt-in behavior, successful
+   upload/receipt, later correction revisions, offline/retry and opt-out behavior, and
+   receipt-based deletion. Any real report test requires its own authorized scope; no
+   successful Android upload is claimed here.
+4. Reconcile and publish the report-enabled privacy policy only after retention claims are
+   supportable, then recheck the saved Data safety answers against the final behavior.
+5. Complete remaining camera/device, TalkBack/large-text and 16 KB runtime qualification.
+   Record a runtime reporting page size 16384 and exercise OpenCV capture without relying
+   on compatibility mode; static alignment and Play's compatibility label do not close this gate.
+6. Obtain explicit authorization for the exact candidate and internal rollout/tester scope,
+   inspect the release preview and its warnings, and qualify Play-delivered certificate,
+   installation and upgrade/data retention. The saved draft does not make the app available
+   to testers. Production countries, review and public publication are separate later actions.
+
+This current-status section supersedes the historical snapshots below. The candidate-120
+evidence, older 343-test run and debug-signed version-code-1 artifact remain historical;
+they do not establish qualification of candidate 122.
 
 ## Historical candidate-120 evidence (not the current release candidate)
 
