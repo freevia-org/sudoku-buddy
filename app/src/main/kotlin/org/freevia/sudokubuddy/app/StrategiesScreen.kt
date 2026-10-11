@@ -47,11 +47,11 @@ fun StrategiesScreen(
         ) {
             item {
                 Text(
-                    "Every sudoku with one answer can be reached by reasoning; guessing is " +
+                    localized("Every sudoku with one answer can be reached by reasoning; guessing is " +
                         "never required and rarely helps. These are the ways of reasoning " +
                         "this app can recognise and explain, easiest first. Where one of " +
                         "them applies to the puzzle you have open, it will show you every " +
-                        "place it does.",
+                        "place it does."),
                     style = MaterialTheme.typography.bodyMedium,
                 )
             }
@@ -68,12 +68,12 @@ fun StrategiesScreen(
 
             item {
                 Text(
-                    "A technique list is never complete, and the hardest puzzles are built " +
+                    localized("A technique list is never complete, and the hardest puzzles are built " +
                         "to defeat whatever is on it. So when every one of these comes up " +
                         "empty, the tutor settles a single square by trying its candidates " +
                         "out, says plainly that is what it has done, and carries on " +
                         "reasoning from there. It always reaches the end of a puzzle, and it " +
-                        "never pretends a lookup was a deduction.",
+                        "never pretends a lookup was a deduction."),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -91,12 +91,12 @@ private fun Strategy(technique: Technique, available: Int?, onExplore: () -> Uni
             modifier = Modifier.fillMaxWidth(),
         ) {
             Text(
-                technique.name,
+                localized(technique.name),
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier.weight(1f),
             )
             Text(
-                label(technique.difficulty),
+                localized(label(technique.difficulty)),
                 style = MaterialTheme.typography.labelSmall,
                 color = colour(technique.difficulty),
                 modifier = Modifier
@@ -107,9 +107,9 @@ private fun Strategy(technique: Technique, available: Int?, onExplore: () -> Uni
                     .padding(horizontal = 8.dp, vertical = 3.dp),
             )
         }
-        Text(technique.rule, style = MaterialTheme.typography.bodyMedium)
+        Text(localized(technique.rule), style = MaterialTheme.typography.bodyMedium)
         Text(
-            technique.howTo,
+            localized(technique.howTo),
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
@@ -120,15 +120,15 @@ private fun Strategy(technique: Technique, available: Int?, onExplore: () -> Uni
             available == null -> Unit
 
             available == 0 -> Text(
-                "None on your puzzle at the moment.",
+                localized("None on your puzzle at the moment."),
                 style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
 
             else -> FilledTonalButton(onClick = onExplore) {
                 Text(
-                    if (available == 1) "Show me the one on your puzzle"
-                    else "Show me all $available on your puzzle"
+                    localized(if (available == 1) "Show me the one on your puzzle"
+                    else "Show me all $available on your puzzle")
                 )
             }
         }

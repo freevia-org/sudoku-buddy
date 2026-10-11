@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nWuzběhnjene pola su dopokaz za to.\n\nTłóč hišće raz na Pokiw, zo by so pokazało, kotre polo."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s a %2$s wobaj jenož %3$s a %4$s wobsahujetej. W tutej jednotce %5$s ma %6$s jenož dwě městnje, kóžde wot jednoho z njeju widźane – tohodla je jedne z tuteju dweju %7$s a kónc, kotryž je widźi, dyrbi %8$s być. W woběmaj padomaj je jedyn kónc %9$s, štož %10$s ze wšitkeho wuzamknje, kotrež wobaj widźi."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s a %2$s móžetej wobě jenož %3$s a %4$s wobsahować. W tutym kašćiku ma %5$s jenož dwě móžnej městnje, z kotrejuž kóžde z tuteju polow jedne widźi – potajkim je jedne z tuteju městnow %6$s a kónc, kotryž je widźi, dyrbi %7$s być. W kóždym padźe je jedyn kónc %8$s, štož %9$s ze wšěch polow wuzamknje, kotrež wobaj kóncaj widźa."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s a %2$s móžetej wobě jenož %3$s a %4$s wobsahować. W tutej špalće ma %5$s jenož dwě móžnej městnje, z kotrejuž kóžde z tuteju polow jedne widźi – potajkim je jedne z tuteju městnow %6$s a kónc, kotryž je widźi, dyrbi %7$s być. W kóždym padźe je jedyn kónc %8$s, štož %9$s ze wšěch polow wuzamknje, kotrež wobaj kóncaj widźa."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s a %2$s móžetej wobě jenož %3$s a %4$s wobsahować. W tutej lince ma %5$s jenož dwě móžnej městnje, z kotrejuž kóžde z tuteju polow jedne widźi – potajkim je jedne z tuteju městnow %6$s a kónc, kotryž je widźi, dyrbi %7$s być. W kóždym padźe je jedyn kónc %8$s, štož %9$s ze wšěch polow wuzamknje, kotrež wobaj kóncaj widźa."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s w rjadce %2$s, stołpiku %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s při kroku %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s móže jenož %2$s wobsahować."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s njemóže %2$s wobsahować, dokelž %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s njemóže %2$s wobsahować, dokelž %3$s móže jenož %4$s w samsnym stołpje %5$s wobsahować."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s njemóže %2$s wobsahować, dokelž %3$s móže jenož %4$s w samsnym bloku %5$s wobsahować."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s njemóže %2$s wobsahować, dokelž %3$s móže jenož %4$s w samsnym rjedźe %5$s wobsahować."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s njemóže %2$s wobsahować, dokelž %3$s wobsahuje %4$s w samsnym bloku %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s njemóže %2$s wobsahować, dokelž %3$s wobsahuje %4$s w samsnym stołpje %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s njemóže %2$s wobsahować, dokelž %3$s wobsahuje %4$s w samsnym rjedźe %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s wobsahuje %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s prózdnych"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, zapisk"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s dyrbi tu stać: to je jeničke polo w tutej špalće %2$s, kotrež móže hišće %3$s wobsahować.\n\n%4$s\n\n%5$s tuchwilu %6$s dowola, ale kóžda špalta dyrbi %7$s dokładnje jónu wobsahować. Tohodla zasadź %8$s do linki %9$s, špalty %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s dyrbi tu być: to je jeničke polo w tutej jednotce %2$s %3$s, kotrež hišće móže %4$s wobsahować.\n\n%5$s\n\n%6$s tuchwilu %7$s dowola, ale kóžda jednotka %8$s dyrbi %9$s runje jónu wobsahować. Zasadź tohodla %10$s do rjadki %11$s, stołpika %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s dyrbi tu stać: to je jeničke polo w tutym kašćiku %2$s, kotrež móže hišće %3$s wobsahować.\n\n%4$s\n\n%5$s tuchwilu %6$s dowola, ale kóždy kašćik dyrbi %7$s dokładnje jónu wobsahować. Tohodla zasadź %8$s do linki %9$s, špalty %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s dyrbi tu stać: to je jeničke polo w tutej lince %2$s, kotrež móže hišće %3$s wobsahować.\n\n%4$s\n\n%5$s tuchwilu %6$s dowola, ale kóžda linka dyrbi %7$s dokładnje jónu wobsahować. Tohodla zasadź %8$s do linki %9$s, špalty %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s ma dwě městnje w tutej rjadce a dwě w tutym stołpiku. %2$s a %3$s samsny kašćik dźělitej, tohodla njemóžetej wobě %4$s być – tak jedne z %5$s a %6$s tutu cyfru wobsahuje a %7$s so ze wšitkeho wuzamknje, kotrež wobě widźi."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s w samsnej jednotce %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s w samsnym kašćiku."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s w samsnej špalće."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s w samsnej lince."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s je hižo z toho pola wuzamknjene. Jeho kandidaty su "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s je přez %2$s wuzamknjene, kotrež "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%2$s wuzamknje %1$s, dokelž móže jenož %3$s w samsnym stołpje %4$s wobsahować."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%2$s wuzamknje %1$s, dokelž móže jenož %3$s w samsnym rjedźe %4$s wobsahować."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%2$s wuzamknje %1$s, dokelž móže jenož %3$s w samsnym bloku %4$s wobsahować."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%2$s wuzamknje %1$s, dokelž wobsahuje %3$s w samsnym bloku %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%2$s wuzamknje %1$s, dokelž wobsahuje %3$s w samsnym stołpje %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%2$s wuzamknje %1$s, dokelž wobsahuje %3$s w samsnym rjedźe %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s je w najnowšim číslowanym polu wunuzowane (rjadka %2$s, stołpik %3$s). %4$s Šipka slěduje zasadźenju, kotrež k tomu přinošuje; tež prjedawše wuslědki su wažne."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s w classpath faluje"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s z %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s z nich polo wupjelni; zbytk najprjedy kandidaty z puća wotstroni."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s porik"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s ćišćanych, %2$s, %3$s wopak"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s ćišćanych, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s ćišćanych"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, ćišćana předpodaća"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s štwórka"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s wotpokazanych fotow, najnowše najprjedy:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: %2$s wotstronić"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Ličba polow: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s krokow tutón postup wutworja, najćeša podpěrana technika je %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s trójka"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s bu přez prjedawše wuwodźenje wo kandidatach z %2$s wotstronjene."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s zapisanych"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"wobraz %1$sx%2$s trjeba %3$s bajtow, ale dósta %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"polo njebě ani cyfra ani dypk"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Rjećaz pólkow z dwěmaj kandidatomaj, kotryž so ze samsnej cyfru započina a kónči, staja tutu cyfru na jedyn abo druhi kónc."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Cyfra, kotraž ma w lince, stołpiku abo bloku jenož hišće jedne městno, słuša na tute městno."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Ručnje napisane %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Ćišćane %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Čerwjene pólko pokazuje cyfru, kotruž je aplikacija tam přečitała. Jeli to njeje to, štož sy napisał, podótkń so pólka, zo by to poprawił."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Pólko z jenož jednej zbywacej cyfru dyrbi tutu cyfru wobsahować."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Lisćina technikow njeje ženje dospołna, a najćeše hódančka so tak tworja, zo žana z tutych technikow njepomha. Hdyž tuž žana z nich ničo njenamaka, postaji wućer jednu cyfru přez wuspytowanje kandidatow w jednym pólku, praji jasnje, što je činił, a pokročuje wot tam z logiskim wusudźowanjom. Wón přeco dóńdźe ke kóncej hódančka a ženje njepředstaja wuhladanu wotmołwu jako logiski wusud."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Wuchadne pólko z třomi kandidatami a dwaj wotpowědowacej křidłowej pólkaj z dwěmaj kandidatomaj wuzamknu cyfru ze wšěch pólkow, kotrež wšě tři widźa."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Wuchadne pólko z dwěmaj kandidatomaj a dwaj křidłowej pólkaj z dwěmaj kandidatomaj móža cyfru ze wšěch pólkow wuzamknyć, kotrež wobě křidłowej pólce widźa."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Wo aplikaciji"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Po"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Po tutym kroku"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Wšitko prawidłowe"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Wšě tři tute pólka móža %1$s być, a jedne z nich dyrbi to być. Tuž žane pólko, kotrež wšě tři widźi, njemóže %2$s być."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Kameru dowolić"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Nimale — dźerž stronu runje a paralelnje ke kamerje"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"wuzamknjenje, kotrež ničo njewotstroni, wuwod njeje"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" a "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Wotmołwa"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Aplikacija a grat (předwupjelnjene)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Aplikacija: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"poměr bokow dyrbi pozitiwny być, ale bě %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Předpokład · hypotetiska cyfra"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Předpokład wotpokazany · woprawdźite kandidaty wobnowjene"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"znajmjeńša %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Awtomatiske foto"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Njewěste fota hódančkow, wuslědki čitanja a pozdźiše korektury pólkow awtomatisce z Freevia dźělić za analyzu a trenowanje spóznawanja. Standardnje znjemóžnjene."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Wobeńdź swětłowym wotbłyšćam"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Wróćo"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Wróćo k předchadźacej prašenju"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Wróćo k wizuelnemu pokiwej"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Wróćo k twojemu pólku"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Před"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Před tutym krokom"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Módre cyfry su rozrisanje. Podótkń so někajkeho pólka, zo by přečitane poprawił."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"kašćik %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"kašćik"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Blok"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Redukcija blok–linka"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"móže jenož wobsahować"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Přetorhnyć"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidaty %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"DopokazFotografowanja"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Zwjazaj cyfru do rjećaza přez jednotki, w kotrychž ma jenož dwě městnje, wobarbi rjećaz wotměnje z dwěmaj barbomaj, a jedna barba je po cyłym rjećazu prawdziwa."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Rjećazowanje %1$s přez jednotki, w kotrychž ma jenož dwě móžnej městnje, woznamjenja tute pola z dwěmaj wotměnjatej so barbomaj, z kotrejuž je jedna wšudźe prawidłowa. Dwě poli druheje barby ležitej w samsnej lince, štož móžne njeje – potajkim je ta barba wopačna a %2$s so ze wšěch polow tuteje barby wotstroni."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Rjećazowanje %1$s přez jednotki, w kotrychž ma jenož dwě móžnej městnje, woznamjenja tute pola z dwěmaj wotměnjatej so barbomaj, z kotrejuž je jedna wšudźe prawidłowa. Dwě poli druheje barby ležitej w samsnym kašćiku, štož móžne njeje – potajkim je ta barba wopačna a %2$s so ze wšěch polow tuteje barby wotstroni."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Rjećazowanje %1$s přez jednotki, w kotrychž ma jenož dwě móžnej městnje, woznamjenja tute pola z dwěmaj wotměnjatej so barbomaj, z kotrejuž je jedna wšudźe prawidłowa. Dwě poli druheje barby ležitej w samsnej špalće, štož móžne njeje – potajkim je ta barba wopačna a %2$s so ze wšěch polow tuteje barby wotstroni."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Zwjazanje %1$s do rjećaza přez jednotki, w kotrychž ma jenož dwě městnje, wobarbi tute pólka wotměnje z dwěmaj barbomaj, z kotrejuž je jedna po cyłym rjećazu prawdziwa. Dwě pólce z barbu %2$s stej w samsnej jednotce %3$s, štož njeje móžne — tuž je tuta barba wopačna a %4$s so ze wšěch pólkow z tutej barbu wotstroni."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Zwjazanje %1$s do rjećaza přez jednotki, w kotrychž ma jenož dwě městnje, wobarbi tute pólka wotměnje z dwěmaj barbomaj, a jedna barba je po cyłym rjećazu prawdziwa. Tute pólka widźa wobě barbje, tuž njech je rjećaz tak abo hinak prawdziwy, jedne z pólkow, kotrež widźa, wobsahuje %2$s — štož woznamjenja, zo same tutu cyfru wobsahować njemóža."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Rjećazowanje %1$s přez jednotki, w kotrychž ma jenož dwě móžnej městnje, woznamjenja tute pola z dwěmaj wotměnjatej so barbomaj, z kotrejuž je jedna wšudźe prawidłowa. Dwě poli jednej barby ležitej w samsnym kašćiku, štož móžne njeje – potajkim je ta barba wopačna a %2$s so ze wšěch polow tuteje barby wotstroni."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Rjećazowanje %1$s přez jednotki, w kotrychž ma jenož dwě móžnej městnje, woznamjenja tute pola z dwěmaj wotměnjatej so barbomaj, z kotrejuž je jedna wšudźe prawidłowa. Dwě poli jednej barby ležitej w samsnej špalće, štož móžne njeje – potajkim je ta barba wopačna a %2$s so ze wšěch polow tuteje barby wotstroni."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Rjećazowanje %1$s přez jednotki, w kotrychž ma jenož dwě móžnej městnje, woznamjenja tute pola z dwěmaj wotměnjatej so barbomaj, z kotrejuž je jedna wšudźe prawidłowa. Dwě poli jednej barby ležitej w samsnej lince, štož móžne njeje – potajkim je ta barba wopačna a %2$s so ze wšěch polow tuteje barby wotstroni."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Njewěste pola za přepruwowanje: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Přepruwować"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Přepruwuj jedne njewěste pólko."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", jako prawidłowe přepruwowane"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Wubjer kandidat, zo by widźał, čehodla njemóže w twojim pólku stać."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Rěč wubrać"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Wubrać, što so pokazuje"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Začinić"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Pokiw začinić"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Přehlad čitanja schować"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"barbne pola a pola w stopnjach šěrje dyrbja samsnu geometriju wužiwać"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"stołpik %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"stołpik"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"stołpiki"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Přirunaj wunuzowace rjećazy a daj přednosć tym, při kotrychž dyrbiš mjenje pólkow slědować. Krótše rjećazy móža w dospołnym rozrisanju wjace krokow woznamjenić."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Sćěh %1$s z %2$s · hypotetiske cyfry"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"wobsahuje"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Typ-wobsaha"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Z dospołnym pućom pokročować"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Přećiwnosć · předpokład njepłaći"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", přećiwnosć"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Přećiwnosć: čerwjena jednotka %1$s nima žane městno za %2$s wjace. To je njemóžne, tuž dyrbi spočatny předpokład wopačny być."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Přećiwnosć: čerwjene pólko nima žadyn kandidat wjace. To je njemóžne, tuž dyrbi spočatny předpokład wopačny być."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Prośbu wo zhašenje kopěrować"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Prawidłowe. Přirunaj swoje wusudźowanje z rozjasnjenjom deleka."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"sčinjeny wobraz njeda so dekodować"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Ćišćane cyfry njedachu so na tutym foće namakać."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Linije mriježe njedachu so spóznać — spytaj hišće raz."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHub njeda so wočinić. Wobroć so na podpěru pod %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Dopokazy fotografowanja za pytanje zmylkow njedachu so wobchować"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Wuslědk čitanja njeda so wotpósłać. Spytaj prošu hišće raz, hdyž sy zwjazany."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Slepy puć"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"ZHAŠEĆ"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Zhašeć"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Rozprawu zhašeć"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Tute foto zhašeć"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Tute hódančko zhašeć"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Tute hódančko zhašeć?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Tute zapodaće zhašeć?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Haša so…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Zhašenje njeda so wobkrućić. Přepruwuj swój zwisk a spytaj hišće raz."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Prośba wo zhašenje"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Wotmołwa na zhašenje njeje tute wobkrućenje zapodaća wobkrućiła."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Słužba za zhašenje je HTTP %1$s wróćiła."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Wopisaj, što je so stało a kotre kroki to wospjetuja. Podaj, hač sy spóznate cyfry najprjedy přepruwował a poprawił. Za ideju napisaj ‚Njetrjechi‘."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", cil tutoho pokiwa"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Grat: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostika je so skrótšiła, zo by so do naćiska we wobhladowaku hodźała. Akcija aplikacije Diagnostiku pósłać móže dospołnu rozprawu dźělić."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"cyfra dyrbi 1..9 być, ale bě %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Cyfry njepřečitane"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Wobchowanje dopokazow na disku wobwliwuje časy; njeje měrjenje latence."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", njewotpowěduje rozrisanju"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Kóžde wobkrućenje zapodaća identifikuje jednu zapodatu wersiju hódančka. Zhaš je tu, zo by priwatnje składowanu rozprawu z Freevia wotstronił."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Prjedawše wuzamknjenja: %1$s. Wužij wotkazy na prjedawše kroki, zo by jich dopokazy přehladał."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← prjedawši dopokaz (hłubokosć %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Prjedawše hypotetiske zapisy wostajeja mu jenož jedyn kandidat."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Prjedawše kroki wužite w tutym dopokazu"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Pólko wobdźěłać"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"wosom"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"prózdne"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Prózdne."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Prózdne"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Jendźelšćina"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"njewotpowědowace zapiski"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"njewotpowědowacy zapisk"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Kóžda z nich wupjelni jedne pólko."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Kóžde pólko je wupjelnjene, ale %1$s wotmołwow njewotpowěduje rozrisanju."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Kóžde pólko je wupjelnjene, ale jedna wotmołwa njewotpowěduje rozrisanju."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Kóžde sudoku z jednym rozrisanjom da so přez logiske wusudźowanje rozrisać; hódanjenje njeje ženje trěbne a zrědka pomha. To su wašnja wusudźowanja, kotrež tuta aplikacija móže spóznać a rozjasnić, najlóše najprjedy. Hdźež so někajka z nich na wočinjene hódančko hodźi, pokaza ći wšě městna, hdźež so hodźi."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Wšitko, štož sy dotal napisał, je prawidłowe."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Nětko přistupne přikłady: kóždy wuchadźa z twojeho aktualneho hranišća."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 horicontalnych linijow wočakowanych, %1$s dóstanych"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"10 wertikalnych linijow wočakowanych, %1$s dóstanych"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81 polow wočakowanych, ale %1$s dóstanych"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"81 polow w kóždym bloku wočakowanych, %1$s a %2$s namakanych"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"8-bitowy jednotny kanal wočakowany, ale %1$s dóstane"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"wobraz 28x28 wočakowany, ale %1$s hódnotow dóstanych"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Wočakowane zadźerženje abo namjet na polěpšenje"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"dźesać linijow w kóždym směrje wočakowanych"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"dwaj blokaj wočakowanaj, %1$s namakanych"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Prjedawše wotstronjenja kandidatow rozjasnić (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Pokiwy rozjasnić"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Namakaj pólko z jenož dwěmaj abo třomi zbywacymi kandidatami — čim mjenje, ćim lěpje, a čim wjace je linka, stołpik a blok wokoło wupjelnjeny, ćim lěpje.\n\nWubjer jedyn z jeho kandidatow a zapisaj jón lochko z wołojnikom. Slěduj nětko sćěham: tuta cyfra so ze wšěch pólkow wotstroni, kotrež tute pólko widźi, štož móže jednomu z nich jenož jedyn kandidat wostajić, kotryž dalši wusud wunuzuje, a tak dale. Pokročuj.\n\nJedna z dweju wěcow so stanie. Pak so rjećaz skónči a njejsy ničo zhonił — wotšmórń zapis a spytaj druhi kandidat. Abo dóńdźeš k pólku bjez žaneho kandidata abo k lince bjez městna za někajku cyfru. To je njemóžne, tuž bě cyfra, kotruž sy z wołojnikom zapisał, wopačna a móžeš ju definitywnje wuzamknyć.\n\nTutu techniku wužij, hdyž wšitko druhe wjace njepomha. Je pomałša a wjace dokumentowanje hač pytanje mustrow, ale móže kroki wotkryć, kotrež mustry přehladuja. Jedne wuzamknjenje často dosaha, zo bychu lóše techniki zaso fungowali; někotre pozicije hišće hłubše pytanje wužaduja."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Namakaj dwě pólce ze samsnymaj dwěmaj kandidatomaj, na přikład {3,7}, kotrejž so njewidźitej — zwjetša stej daloko wot so.\n\nPytaj nětko linku, stołpik abo blok, hdźež ma 7 jenož dwě móžnej pólce, z kotrejuž prěnje pólko twojeho para jedne widźi a druhe pólko druhe widźi. To je zwjazk.\n\nJedne z tuteju dweju pólkow je 7. Njech je to kotrežkuli, pólko twojeho para, kotrež je widźi, njemóže 7 być, tuž dyrbi 3 być. Njewěš, kotry kónc je 3, jenož zo jedyn z njeju to je — a to dosaha, zo by 3 ze wšěch pólkow wuzamknył, kotrež wobaj kóncaj widźa.\n\nĆežki dźěl je zwjazk, tuž pytaj jón z druheje strony: najprjedy woznamjeń jednotki, hdźež ma cyfra jenož dwě městnje, a potom pytaj wotpowědowacy por na woběmaj bokomaj."</string>
+    <string name="msg_finished_05343e98" formatted="false">"dokónčene"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Wuspušć fotografowanje, hdyž je mriježa we wobłuku bjez perspektiwiskeho skřiwjenja a měrna. Tłóčatko w kóždym padźe funguje."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Zapřimń cyłu mriježu do wobraza."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Zapřimń cyłu mriježu do wobraza"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"pjeć"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Slěduj pućej, na kotrymž kóždy krok na předchadźacym twari."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Dospołnemu dopokazej po porjedźe slědować"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Slěduj tutomu rjećazej pólkow z dwěmaj kandidatomaj: jeli %1$s njeje %2$s, potom so kóžde pólko po rjećazu přez předchadźace wunuzuje a %3$s je na kóncu %4$s. Tuž jedyn abo druhi kónc wobsahuje %5$s, štož tutu cyfru ze wšěch pólkow wuzamknje, kotrež wobaj widźa."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Wunuzowacy rjećaz"</string>
+    <string name="msg_four_04efaf08" formatted="false">"štyri"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Štyri pólka w dwěmaj linkomaj, dwěmaj stołpikomaj a dwěmaj blokomaj njemóža wšě samsnaj dwaj kandidataj wobsahować, hewak by hódančko dwě rozrisani měło."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia je zhašenje wobkrućiła, ale tutón telefon njemóžeše lokalne wobkrućenje zapodaća wotstronić. Spytaj hišće raz, zo by lokalne rjedźenje dokónčił."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia zhaša tutu wersiju rozprawy a jeje priwatnu trenowansku kopiju. Přichodne korektury móža po twojich nastajenjach dźělenja nowu rozprawu wutworić. Model, kotryž je so z njej hižo trenował, móže nawuknjene změny wobchować."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Dospołny puć"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Přichodne njewěste čitanja budu wunane foto hódančka, wuslědki spóznawanja a korektury do Freevia za analyzu a trenowanje słać. Trenowanske kopije wostanu, doniž so přez Wobkrućenja zapodaćow njezhašeja; trenowany model móže nawuknjene změny wobchować. Jeli je njewěste hódančko hižo wočinjene, so nětko pósćele. Móžeš to w Nastajenjach znjemóžnić."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Lochke"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Swětłowe wotbłyšće linije zakrywaja — nachil stronu preč wot swětła"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ŠěryWobraz(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Šěre pólka wobsahuja noticy z wołojnikom, kotrež aplikacija ignoruje. Paska pod cyfru pokazuje, kak wěsta bě. Podótkń so pólka za podrobnosće."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Ručnje napisane"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Ćežke"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Schowane"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Schowany por"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Schowana štwórka"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Schowany jednotliwy kandidat"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Schowana trójka"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Prjedawše dopokazy schować"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Nawod k namakanju schować"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", pokiw %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Pokiw"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Dopokaz pokiwa"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Wusudźowanje pokiwa"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Dźerž měrnje..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Dźerž měrnje abo podótkń so wuspušćaka"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Dźerž měrnje, mjeztym zo kamera fokusuje..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Dźerž telefon runje"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Dźerž telefon runje nad hódančkom."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Dźerž telefon runje nad hódančkom"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horicontalnje\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Kak tutu techniku namakać"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nKak k tomu dóńdźemy:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Pytaj pólka z dokładnje dwěmaj kandidatomaj — Y-křidło wobsteji z třoch takich pólkow a ničoho druheho.\n\nWubjer jedne jako wuchadne pólko, na přikład {2,5}. Pytaj pólko, kotrež widźi a kotrež {2,9} wobsahuje, a druhe, kotrež widźi a kotrež {5,9} wobsahuje. Wuchadne pólko je pak 2 abo 5. Jeli je 2, dyrbi prěnje křidłowe pólko 9 być; jeli je 5, dyrbi druhe 9 być. W kóždym padźe so 9 w jednym z křidłowych pólkow jewi — njewěš w kotrym, a njetrjebaš to wědźeć.\n\nTuž žane pólko, kotrež wobě křidłowej pólce widźi, njemóže 9 być. Tute pólka stej zwjetša dwaj róžkaj, kotrejž praworóžk wudospołnitej."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hypotetiske %1$s, njeje zapisana wotmołwa"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Jeli móža %1$s cyfrow w jednej lince, stołpiku abo bloku jenož w samsnych %2$s pólkach stać, njemóža tute pólka ničo druhe wobsahować."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Jeli maja %1$s pólkow w jednej lince, stołpiku abo bloku dohromady dokładnje %2$s kandidatow, słušeja tute cyfry do tutych pólkow a do žanych druhich w jednotce."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Jeli ma cyfra dwě městnje w lince a dwě w stołpiku a jedne z kóždeje jednotki stej w samsnym bloku, dyrbi jedne z druheju dweju pólkow tutu cyfru wobsahować."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Jeli ma cyfra w kóždej z dweju linkow dwě městnje a jedne z kóždeje stej w samsnym stołpiku, dyrbi jedne z druheju dweju městnow tutu cyfru wobsahować."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Jeli su wšě móžne městna cyfry po jednej lince abo stołpiku w jednym bloku, móže so tuta cyfra ze zbytka bloka wuzamknyć."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Jeli su wšě móžne městna cyfry w %1$s linkach w samsnych %2$s stołpikach, móže so wona wšudźe druhe w tutych stołpikach wuzamknyć — a samsne płaći z wuměnjenymi linkami a stołpikami."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Jeli su wšě móžne městna cyfry we bloku w jednej lince abo stołpiku, móže so tuta cyfra ze zbytka tuteje linki abo tutoho stołpika wuzamknyć."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Jeli předpokład cyfry k pólku wjedźe, kotrež žanu cyfru wobsahować njemóže, bě tuta cyfra wopačna."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"wobrazowe wuměry dyrbja pozitiwne być"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"W rjećazu pólkow, kotrež wšě samsnaj dwaj kandidataj wobsahuja, wobsahujetej wobaj kóncaj rjećaza z njerunej dołhosću rozdźělnej cyfrje."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"W tutych %1$s jednotkach %2$s móže %3$s jenož w tutych %4$s jednotkach %5$s stać. Dohromady wužiwaja kóždu z nich, tuž móže so %6$s wšudźe druhe z tutych jednotkow %7$s wuzamknyć."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"W tutych %1$s špaltach móže %2$s jenož w tutych %3$s linkach stać. Hromadźe wobsadźa kóždu z nich, tak zo so %4$s w tutych linkach wšudźe druhdźe wuzamknyć móže."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"W tutych %1$s linkach móže %2$s jenož w tutych %3$s špaltach stać. Hromadźe wobsadźa kóždu z nich, tak zo so %4$s w tutych špaltach wšudźe druhdźe wuzamknyć móže."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"W tuteju dweju jednotkomaj %1$s ma %2$s w kóždej jenož dwě městnje, a %3$s a %4$s stej w samsnej jednotce %5$s — tuž njemóžetej wobě %6$s być. Jedne z %7$s a %8$s tuž to je, štož %9$s ze wšěch pólkow wuzamknje, kotrež wobě widźa."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"W tutych dwěmaj špaltomaj ma %1$s w kóždej jenož dwě móžnej městnje a %2$s a %3$s ležitej w samsnej lince – potajkim njemóžetej wobě %4$s być. Tohodla dyrbi jedne z polow %5$s a %6$s tutu cifru měć, štož %7$s ze wšěch polow wuzamknje, kotrež wobě widźa."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"W tutych dwěmaj linkomaj ma %1$s w kóždej jenož dwě móžnej městnje a %2$s a %3$s ležitej w samsnej špalće – potajkim njemóžetej wobě %4$s być. Tohodla dyrbi jedne z polow %5$s a %6$s tutu cifru měć, štož %7$s ze wšěch polow wuzamknje, kotrež wobě widźa."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"W tutej jednotce %1$s móže %2$s jenož w tutych %3$s pólkach stać, tuž su tute pólka wobsadźene. To z nich %4$s wuzamknje."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"W tutej jednotce %1$s móže %2$s jenož w jednym bloku stać. Tuž je %3$s w tutym bloku na tutej jednotce %4$s a móže so ze zbytka bloka wuzamknyć."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"W tutym kašćiku móže %1$s jenož w tutych %2$s polach stać, tak zo su tute pola hižo wobsadźene. To z nich %3$s wuzamknje."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"W tutej špalće móže %1$s jenož w tutych %2$s polach stać, tak zo su tute pola hižo wobsadźene. To z nich %3$s wuzamknje."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"W tutej lince móže %1$s jenož w tutych %2$s polach stać, tak zo su tute pola hižo wobsadźene. To z nich %3$s wuzamknje."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Zapřimuje jich fota, wuslědki čitanja a korektury. Znjemóžń to w Nastajenjach."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Namakaj w jednym bloku cyfru, kotraž móže jenož w dwěmaj abo třoch pólkach stać, a přepruwuj, hač su wšě w samsnej lince abo samsnym stołpiku. Jeli tak je, je cyfra wěsće něhdźe po tutej lince abo tutym stołpiku — njewěš hdźe, ale wěš, zo je w tutym bloku. Tuž njemóže nihdźe druhe po samsnej lince abo samsnym stołpiku zwonka bloka być.\n\nTo samo žanu cyfru njezapisa. Wotstronja kandidaty z puća, zo by so něhdźe druhe jednotliwy kandidat jewił."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"W tutym bloku móže %1$s jenož w tutej jednotce %2$s stać. Tuž je %3$s něhdźe tu a móže so ze zbytka jednotki %4$s wuzamknyć."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem abo ideja"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Hodźi so tu na %1$s městnach. Pokročuj, zo by je po porjedźe přehladał."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Hodźi so tu na jednym městnje. Pokročuj, zo by je widźał."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Njehodźi so nihdźe w tutej poziciji."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"To je jeničke zbywace městno za %1$s we wuzběhnjenej jednotce %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"To je wobkružene pólko.\n\nStłóč Pokiw hišće raz za cyfru."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Meduza"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Wobchować"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Wunuzowace rjećazy krótke dźeržeć"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Rěč"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licency"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Pytaj po jednej lince, stołpiku abo bloku pólka z jenož mało zbywacymi kandidatami. Wubjer %1$s z nich a zjednoć jich kandidaty. Jeli tuta zjednoćena móžnosć dokładnje %2$s cyfrow wobsahuje, su tute %3$s cyfry wobsadźene: dyrbja w tutych %4$s pólkach w někajkim porjedźe stać, hačrunjež hišće njemóžeš prajić, kotra hdźe słuša.\n\nTo dosaha. Kóžde druhe pólko w jednotce móže tute cyfry wuzamknyć, a zwjetša so potom w jednym z tutych pólkow jednotliwy kandidat jewi.\n\nPólka njetrjebaja wšě samsne kandidaty měć — {2,7}, {2,9} a {7,9} su cyle dobra trójka a práwje ta, kotruž ludźo přehladuja."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Pytaj pólka ze samsnymaj dwěmaj kandidatomaj — na přikład {4,9} — kotrež rjećaz tworja, w kotrymž kóžde přichodne widźi. Tři njedosahaja; trjebaš znajmjeńša štyri.\n\nWobarbi je po puću wotměnje. Dokelž kóžde pólko přichodne widźi, njemóžetej dwaj susodaj samsnu cyfru wobsahować, tuž je rjećaz po cyłym puću 4, 9, 4, 9 — abo 9, 4, 9, 4, a njemóžeš prajić kotry.\n\nW kóždym padźe wobsahujetej dwě pólce přećiwnych barbow rozdźělnej cyfrje: jedne je 4 a druhe 9. Tuž pólko, kotrež wobě widźi, njemóže ani jednu ani druhu być a zhubi wobaj kandidataj naraz.\n\nMustrowe wobrazy su lochko spóznać práwje dokelž kóžde pólko w nich samsne wupada. Slěduj identiskim poram po mriježi a hladaj, hdźež so dótkaja."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Pytaj tři pólka ze samsnymaj dwěmaj kandidatomaj — na přikład {1,6} — na třoch róžkach praworóžka. Praworóžk dyrbi w dokładnje dwěmaj blokomaj ležeć: dwě lince a dwaj stołpikaj, kotrež dwaj blokaj křižuja, nic štyri.\n\nHladź nětko na štwórty róžk. Jeli by tež jenož 1 a 6 wobsahował, měło by hódančko dwě rozrisani — móhł by 1 a 6 po praworóžku wuměnić a wšitko druhe by dale fungowało. Prawidłowje stajene hódančko ma jedne rozrisanje, tuž dyrbi štwórty róžk něšto druhe wužiwać: jeho druhe kandidaty wostanu, a 1 a 6 so wotstronitej.\n\nTo je jenički argument w knize, kotryž so na awtora hódančka poćahuje město na mriježu. Je spušćomny při wozjewjenym hódančku a bjezhódnotny při takim, kotrež sy hižo wopačnje wupjelnił, dokelž potom snano docyła žane rozrisanje njeeksistuje, kotrež móhło jeničke być."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Hladź do tutoho bloka. Slěduj wobrysej k pólku, kotrež tutón pokiw rozjasni."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Noticy"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Srjedźnje ćežke"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Wjace"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Wjace swětła trěbne"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Wjace hač jedne rozrisanje, tuž so jedna ćišćana cyfra přehlada. Stłóč Rozrisać, zo by rozrisanja a jich rozdźěle widźał."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Wotstup"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Přińdź bliže"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Přińdź bliže — mriježa je za čitanje přemała."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Nahe"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Nahi por"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Naha štwórka"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Nahi jednotliwy kandidat"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Naha trójka"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Techniku pomjenować a pólka pokazać, kotrež ju dopokazuja, město jenož cyfru podać."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"znajmjeńša 4 dypki trěbne, ale %1$s dóstanych"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Wužaduje wobkrućenje"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Nowe sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Přichodny sćěh"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Přichodny krok"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Wobrazy so awtomatisce njepřipowěšuja. Tu zapodate zdźělenki a přiwěški su zjawne. Přikłady, kotrež chceće radšo priwatnje pósłać, pósćelće na info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Wot poslednjeje instalacije aplikacije njeje so žane foto wotpokazało."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Žana diagnostika skenowanja k dispoziciji."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Žana technika so tu njehodźi"</string>
+    <string name="msg_none_140bedbf" formatted="false">"žana"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Žana z nich njezapisa cyfru do pólka: wotstronjeja kandidaty z puća, a tak so ćežke hódančko wočini."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Tuchwilu žane na twojim hódančku."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"dataja modela cyfrow njeje"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Bjez wěstoty přečitane — najbliši předpokład je %1$s %2$s při %3$s. Postaj prošu tute pólko sam."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Hišće so nječita jako mriježa 9 króć 9 — spytaj wobłuk jenož z mriježu wupjelnić abo prosće foto sčiń"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"njezapočate"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Z tutoho telefona njeda so ničo pósłać."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Njezběra ničo k rozrisanju."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Z technikami, kotrež tuta aplikacija znaje, njeda so tu ničo dalše logisce wusudźić."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"ničo njewšědne"</string>
+    <string name="msg_ok_565339bc" formatted="false">"W porjadku"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"jedna"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Jedne pólko wupadaše kaž ćišćana cyfra, ale njeje."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Jedna ćišćana cyfra je so awtomatisce poprawiła."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"jedne polo"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Jenož %1$s móže tu stać — kóžda druha cyfra so hižo w tutej lince, tutym stołpiku abo bloku jewi."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Tu móže jenož %1$s stać. Wuzběhnjene pola wobsadźa %2$s z druhich wosom cyfrow; %3$s bu z tutoho pola hižo prjedy wuzamknjena, nic přez něšto, štož móžeš w jeho wokolinje widźeć."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Sem hodźi so jenož %1$s. Wuzběhnjene pola zaběraja štyri z wosom druhich cyfrow; %2$s buchu z tutoho pola hižo prjedy wuzamknjene, nic na zakładźe něčeho, što wokoło njeho widźiš."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Sem hodźi so jenož %1$s. Wuzběhnjene pola zaběraja šěsć z wosom druhich cyfrow; %2$s buchu z tutoho pola hižo prjedy wuzamknjene, nic na zakładźe něčeho, što wokoło njeho widźiš."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Sem hodźi so jenož %1$s. Wuzběhnjene pola zaběraja jednu z wosom druhich cyfrow; %2$s buchu z tutoho pola hižo prjedy wuzamknjene, nic na zakładźe něčeho, što wokoło njeho widźiš."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Sem hodźi so jenož %1$s. Wuzběhnjene pola zaběraja sydom z wosom druhich cyfrow; %2$s bu z tutoho pola hižo prjedy wuzamknjena, nic na zakładźe něčeho, što wokoło njeho widźiš."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Sem hodźi so jenož %1$s. Wuzběhnjene pola zaběraja pjeć z wosom druhich cyfrow; %2$s buchu z tutoho pola hižo prjedy wuzamknjene, nic na zakładźe něčeho, što wokoło njeho widźiš."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Jenož %1$s móže tu stać. Wuzběhnjene pólka wužiwaja %2$s z druhich wosom cyfrow; %3$s %4$s bu prjedy z tutoho pólka wuzamknjene, nic přez něšto, štož móžeš wokoło widźeć."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Sem hodźi so jenož %1$s. Wuzběhnjene pola zaběraja dwě z wosom druhich cyfrow; %2$s buchu z tutoho pola hižo prjedy wuzamknjene, nic na zakładźe něčeho, što wokoło njeho widźiš."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Tu móže jenož %1$s stać. Wuzběhnjene pola wobsadźa %2$s z druhich wosom cyfrow; %3$s buchu z tutoho pola hižo prjedy wuzamknjene, nic přez něšto, štož móžeš w jeho wokolinje widźeć."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Sem hodźi so jenož %1$s. Wuzběhnjene pola zaběraja tři z wosom druhich cyfrow; %2$s buchu z tutoho pola hižo prjedy wuzamknjene, nic na zakładźe něčeho, što wokoło njeho widźiš."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Jenož %1$s móže tu stać. Druhe wosom cyfrow so přez wupjelnjene pólka abo wunuzowane jednotliwe kandidaty w tutej lince, tutym stołpiku abo bloku wuzamknu."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Jenož %1$s móže tu stać, hačrunjež ničo wokoło njepokazuje čehodla: wšě wosom druhich cyfrow bu přez prjedawše wusudźowanje z tutoho pólka wuzamknjene, nic přez to, zo su w jeho lince, stołpiku abo bloku zapisane."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Jenož %1$s ćišćanych cyfrow bu namakane, štož je za hódančko přemało."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"jenož wobroćenja wo štwórć wobrota so podpěruja, nic %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Wočiń naćisk w swojim wobhladowaku z předwupjelnjenej wersiju aplikacije, modelom telefona, wersiju Android a najnowšej diagnostiku skenowanja. Přidaj sam dospołny wopis a přihódne fota wobrazowki.\n\nPřizjewjenje do GitHub je trěbne. Móžeš naćisk před wotpósłanjom přehladać a wobdźěłać. Zapodate rozprawy a přiwěški su zjawne. Žane fota so awtomatisce njepřiwěšuja."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Nastajenja aplikacije wočinić"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"GitHub wočinić"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Pokazy k wotewrjenemu žórłu"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Wočiń ‚Čehodla tute pólko?‘, zo by dopokaz za kónčny zapis widźał, abo wubjer wuzamknjeny kandidat, zo by jeho dopokaz slědował."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV — licenca Apache 2.0. Wužiwane za namakanje a wunanjenje mriježe.\n\nAndroidX, Jetpack Compose a CameraX — licenca Apache 2.0.\n\nKotlin — licenca Apache 2.0.\n\nSpóznawar cyfrow je so z datowej banku MNIST ručnje pisanych cyfrow wot LeCun, Cortes a Burges trenował, hromadźe z cyframi zwobraznjenymi z wotewrjenych systemowych pismow a programowo rysowanymi cyframi."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Natiwne biblioteki OpenCV njedachu so začitać"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografuj druhe hódančko."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Fota, kotrež wobchowuješ, so w priwatnym składowaku tuteje aplikacije składuja a so wotstronja, hdyž je zhašeš abo aplikaciju wotinstaluješ."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Fota, z kotrychž aplikacija njemóžeše hódančko wutworić. Pósćel jedne, zo by so mohło přehladać."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Wubjer cyfru a pytaj po linkach te, hdźež ma wona dokładnje dwě pólce hišće k dispoziciji. Wubjer dwě tajkej lince a hladaj, hač jedne z jeju pólkow w samsnym stołpiku leži.\n\nJeli tak je, stej tutej dwě pólce w samsnym stołpiku a njemóžetej wobě tutu cyfru wobsahować. Tuž ju znajmjeńša jedyn z dalokich kóncow wobsahuje — jedne z dweju pólkow na druhej stronje. Njewěš kotre, a njetrjebaš to wědźeć: kóžde pólko, kotrež wobaj dalokaj kóncaj widźi, móže tutu cyfru wuzamknyć.\n\nPotom to hišće raz ze stołpikami město linkow sčiń. Twar je wysoke twarjenje z krótkim pódla, wottam pochadźa mjeno a tak je spóznaš, hdyž sy hižo někotre widźał."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Wubjer cyfru. Namakaj linku, hdźež ma wona dokładnje dwě městnje, a stołpik, hdźež ma wona dokładnje dwě městnje. Přepruwuj nětko, hač jedne pólko linki a jedne pólko stołpika w samsnym bloku stej.\n\nJeli tak je, njemóžetej wobě tutu cyfru wobsahować — jedyn blok, jedna cyfra. Tuž ju znajmjeńša jedyn z dweju zbywacych kóncow wobsahuje, a kóžde pólko, kotrež wobaj kóncaj widźi, móže tutu cyfru wuzamknyć.\n\nLudźo tutu techniku přehladuja, dokelž njeje ničo, štož by so w jednjej liniji wusměriło: štyri pólka tworja njerunoměrnu twar a jenički zwjazk je blok, kotryž wobaj nutřkownej kóncaj zhromadnje matej."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Wubjer prózdne pólko a přeńdź cyfry wot 1 do 9, při čimž wotšmórnješ wšitko, štož so hižo w jeho lince, stołpiku abo bloku jewi. Jeli dokładnje jedna cyfra wostanje, słuša tam.\n\nTo je technika, kotruž wšě druhe přihotuja. Wšitko ćeše je wašnje, zo by někajke pólko na jedyn kandidat redukowało, tuž hdyž ćeša technika wuspěch přinjese, hladaj jako přichodne tu."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Wubjer jednu cyfru a ignoruj wšě druhe. Přeńdź linki a woznamjeń te, hdźež ma tuta cyfra jenož dwě abo tři móžne pólka hišće k dispoziciji. Pytaj %1$s tajkich linkow, kotrychž pólka so w samsnych %2$s stołpikach wusměrjeja.\n\nJeli je namakaš, dyrbi kóžda z tutych %3$s linkow cyfru do jednoho z tutych stołpikow stajić, a žane dwě njemóžetej samsny stołpik wužiwać. Tuž dohromady tutu cyfru we wšěch %4$s stołpikach wužiwaja — a kóžde druhe pólko w tutych stołpikach móže ju wuzamknyć.\n\nPotom cyły postup hišće raz z wuměnjenymi stołpikami a linkami sčiń. Połojca tutych mustrow so po druhim wašnju namaka, a to je połojca, kotruž najwjace ludźi ženje njepyta."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"%1$s zapisać"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Zapisaj %1$s do linki %2$s, stołpika %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Zapisaj %1$s do swojeho wobrysowaneho pólka."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Přiwěs prošu přihódne fota wobrazowki z pomocu wodźenskeho elementa GitHub za přiwěški: hódančko, spóznate cyfry, wuslědk přepruwowanja abo schodźenk pokiwa, kotryž problem pokazuje. Přidaj wočakowane a woprawdźite wuslědki, hdźež to pomha."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Prošu zhašće moje zapodaća spóznawanja Sudoku Buddy. ID wobkrućenjow zapodaća: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Wuměń prošu tutu namołwu z dospołnym wopisom problema abo ideje. Daj tutej rozprawje krótke, wopisowace mjeno."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Nasměr kameru na sudoku hódančko"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Nasměr kameru na sudoku hódančko."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Nasměr kameru na sudoku hódančko na papjerje. Aplikacija přečita ćišćane cyfry a wšitko, štož sy zapisał, rozrisa je a móže ći pokiw dać, twoje wotmołwy přepruwować abo cyłe rozrisanje pokazać."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Pokazowacy por"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"PÓSŁAĆ"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Hódančko so přihotuje…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Předchadne"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Předchadny krok"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Ćišćane"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Prawidła priwatnosće"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Składowanje hódančkow"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Hódančka"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Hódančka so na tutym telefonje čitaja a rozrisuja. Jeli njewěste přečitanje zapodaš abo awtomatiske dźělenje zmóžniš, so foto hódančka, prěnjotne přečitanja, markěrowanja njewěstoty a twoje korektury wěsće na Freevia za analyzu spóznawanja a priwatne trenowanje pósćelu. Rozprawy njewobsahuja model twojeho grata ani diagnostiske daty. Awtomatiske dźělenje je dobrowólne; konta, prawidłowna analyza wužiwanja ani slědowanje za wabjenje njejsu. Kopije za trenowanje hodźa so z pomocu wobkrućenki zhašeć, hačrunjež hižo trenowany model móže nawuknjene změny wobchować. Wužij Wobkrućenki zapodaćow w Nastajenjach, zo by rozprawu zhašał."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Hódančka fotografowane za testowanje pochadźachu z sudoku.cba.si. Tuta aplikacija z nimi zwjazana njeje."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Hódančka, kotrež fotografuješ, so tu składuja, zo by móhł pozdźišo zaso z nimi pokročować."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Čitać"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Jako ručnje pisane %1$s přečitane, wěstota %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Jako ćišćane %1$s přečitane, wěstota %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Jako prózdne přečitane – žana barwa njenamakana."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Jako wołojnikowe markěrowanja kandidatow přečitane a ignorowane."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Přečitanje přepruwowane."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Přečitanje zapodate. Dźakujemy so!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Najnowša diagnostika skenowanja (předwupjelnjena)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Spóznawanje móže so mylić, předewšěm při ručnym pismje. Wužij Čitać, zo by spóznate cyfry z fotom přirunał, a podótkń so někajkeho pola, zo by je skorigował. Aplikacija markěruje njewěste přečitanja za přepruwowanje; tež přečitanje z wysokej wěstotu móže wopak być."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Předpokład wotpokazać"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Zdalene poriki"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$s wotstronić"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nWotstroń %1$s z "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Wotstronjene"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Wuwodźenje znowa přehrać"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Zmylk abo ideju na GitHub zdźělić"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Kameru znowa spytać"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Wróćić so ke krokej %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Wujasnjenje pokazać"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Přečitanje přepruwować abo zapodać"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Přečitanje přepruwować"</string>
+    <string name="msg_right_883361d5" formatted="false">"Prawje"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Postup dokónčeny. Wróć so, zo by někajki ćah přepruwował, abo spytaj kroki sam."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"rjadka %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Rjadka %1$s, stołpik %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Rjadka %1$s, stołpik %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"rjadka $1, stołpik $2"</string>
+    <string name="msg_row_634768da" formatted="false">"rjadka"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"rjadki"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", wuzamknjene %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Diagnostiske daty skenowanja njedachu so přečitać."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Fota wobrazowki abo přikłady hódančkow"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Druhi předpokład: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Za zwučowanje wubrać"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Wubrane: rjadka %1$s, stołpik %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Diagnostiske daty pósłać (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Diagnostiske daty pósłać"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Tute skeny pósłać"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Tute foto pósłać"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Nastajenja"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"sydom"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Při njewěstosći awtomatisce dźělić"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Njewěste přečitanja awtomatisce dźělić?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Přećiwnosć pokazać"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Pokaž mi wšě %1$s na swojim hódančku"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Pokaž mi to jedne na swojim hódančku"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Jednore barbenje"</string>
+    <string name="msg_six_44778d82" formatted="false">"šěsć"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Mrokodrapak"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", rozrisanje %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Rozrisać"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Rozrisane a wšě wotmołwy su prawe."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Wotmołwa z pomocu rozrisowarja: zasadź %1$s do %2$s. Kandidaty su %3$s. Techniki, kotrež aplikacija podpěruje, z tuteje pozicije žadyn ćah njenamakachu. Jeje pytanje namaka %4$s w jeničkim rozrisanju; nadrobny dopokaz hałzow pytanja k dispoziciji njesteji."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nWot rozrisowarja podpěrana wotmołwa: techniki, kotrež aplikacija podpěruje, njejsu žadyn krok namakali. Podrobny dopokaz njeje k dispoziciji."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Wuzamknjenje z pomocu rozrisowarja: pytanje wuzamknje %1$s we wuzběhnjenym polu, ale aplikacija njemóžeše krótki postup k přećiwnosći za zwobraznjenje wutworić. Nadrobny dopokaz k dispoziciji njesteji."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Někotre pola móža zapisanki město dospołneje cyfry wobsahować."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Někotre cyfry njebuchu z wěstotu přečitane."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Při čitanju tutoho fota je so něšto nimokuliło."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Polo"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nSpočatne kandidaty: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Krok %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Wurunać"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategije"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Wobkrućenka zapodaća"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Wobkrućenka zapodaća je njepłaćiwa."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Wobkrućenki zapodaćow (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Wobkrućenki zapodaćow"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"We wotmołwje na zapodaće %1$s faluje."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Status wotmołwy na zapodaće je njepłaćiwy."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Słužba za zapodaće konfigurowana njeje."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Słužba za zapodaće je HTTP %1$s wróćiła."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Zapodaća w tutej wersiji k dispoziciji njejsu."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Zapodać"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Přichodne njewěste přečitanja awtomatisce zapodać"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Přečitanje zapodać"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Njewěste přečitanje za analyzu zapodać"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Aktualizaciju zapodać"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Zapodate"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Zapodawa so…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Diagnostiske daty Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Wozjewjenje za Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy wudawa Freevia. Kontakt: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy čita hódančka přez kameru, tohodla trjeba přistup ke kamerje. Spóznawanje a historija hódančkow wostanu na twojim telefonje. Jeli so rozsudźiš njewěste přečitanje zapodać, so jeho foto a wuslědki wěsće na Freevia pósćelu, zo by so spóznawanje polěpšiło. Awtomatiske dźělenje je dobrowólne a hodźi so w Nastajenjach znjemóžnić."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sken Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Skeny Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Žórłowy kod Sudoku Buddy je pod Apache License 2.0 licencowany. Znamka Freevia podleži wosebitym prawam na tworne znamki."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku je forma hódančka w zjawnym wobsydstwje. Tuta aplikacija rozrisuje hódančka, kotrež hižo maš; wona žane hódančka druhich njereprodukuje ani njerozdźěluje."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", podpěrowacy dopokaz"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Předpokładaj, zo markěrowane polo %1$s wobsahuje. Číslowane cyfry su hypotetiske."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Předstaj sej, zo by w tutym polu %1$s stało. Slěduj šipkam po porjedźe: kóžde polo je přez předchadźace zasadźenja postajene – pak je ta cifra jenička, kotruž móže hišće wobsahować, pak je to polo jeničke městno, hdźež móže ta cifra hišće stać.\n\nPotom w čerwjenej jednotce žane městno za %2$s njezwostanje. Z %3$s w njej woznamjenjene městna su te, hdźež by ta cifra stać móhła, a kóžde z nich je polo, kotrež je jedna ze šipkow runje wobsadźiła. Jednotka bjez městna za cifru móžna njeje – potajkim w tutym polu %4$s njesteji."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Předpokładaj, zo tute polo %1$s by było. Slěduj šipkam po porjedźe: kóžde polo je přez předchadne zasadźenja wunuzowane – pak je ta cyfra jenička, kotruž hišće móže wobsahować, pak je to polo jeničke městno, hdźež ta cyfra hišće móže być. Čerwjene polo potom bjez žaneje cyfry wostanje, štož njemóže nastać – tohodla to %2$s njeje."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Předstaj sej, zo by w tutym polu %1$s stało. Slěduj šipkam po porjedźe: kóžde polo je přez předchadźace zasadźenja postajene – pak je ta cifra jenička, kotruž móže hišće wobsahować, pak je to polo jeničke městno, hdźež móže ta cifra hišće stać.\n\nPotom w čerwjenej lince žane městno za %2$s njezwostanje. Z %3$s w njej woznamjenjene městna su te, hdźež by ta cifra stać móhła, a kóžde z nich je polo, kotrež je jedna ze šipkow runje wobsadźiła. Linka bjez městna za cifru móžna njeje – potajkim w tutym polu %4$s njesteji."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Předstaj sej, zo by w tutym polu %1$s stało. Slěduj šipkam po porjedźe: kóžde polo je přez předchadźace zasadźenja postajene – pak je ta cifra jenička, kotruž móže hišće wobsahować, pak je to polo jeničke městno, hdźež móže ta cifra hišće stać.\n\nPotom w čerwjenym kašćiku žane městno za %2$s njezwostanje. Z %3$s w nim woznamjenjene městna su te, hdźež by ta cifra stać móhła, a kóžde z nich je polo, kotrež je jedna ze šipkow runje wobsadźiła. Kašćik bjez městna za cifru móžny njeje – potajkim w tutym polu %4$s njesteji."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Předpokładaj, zo tute polo %1$s by było. Slěduj šipkam po porjedźe: kóžde polo je přez předchadne zasadźenja wunuzowane – pak je ta cyfra jenička, kotruž hišće móže wobsahować, pak je to polo jeničke městno, hdźež ta cyfra hišće móže być.\n\nTak wostanje čerwjene %2$s bjez městna za %3$s. Markěrowane %4$s w nim su městna, hdźež by móhło być, a kóžde z nich je polo, kotrež je jedna ze šipkow runje wobsadźiła. %5$s bjez městna za cyfru njemóže nastać – tohodla to %6$s njeje."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Předstaj sej, zo by w tutym polu %1$s stało. Slěduj šipkam po porjedźe: kóžde polo je přez předchadźace zasadźenja postajene – pak je ta cifra jenička, kotruž móže hišće wobsahować, pak je to polo jeničke městno, hdźež móže ta cifra hišće stać.\n\nPotom w čerwjenej špalće žane městno za %2$s njezwostanje. Z %3$s w njej woznamjenjene městna su te, hdźež by ta cifra stać móhła, a kóžde z nich je polo, kotrež je jedna ze šipkow runje wobsadźiła. Špalta bjez městna za cifru móžna njeje – potajkim w tutym polu %4$s njesteji."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Přeńdź k Potom, zo by ćah a jeho wuslědki na mrižce widźał."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Mječowa ryba"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Nowe foto sčinić"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Dalše foto sčinić"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Wubjer jednu cyfru a markěruj kóždu jednotku, hdźež ma runje dwě pola wostajenej. Tutej dwě stej kaž kolebawka: jedne z njeju je ta cyfra a druhe njeje.\n\nZapočń hdźežkuli a zabarb polo na přikład módře. Zabarb jeho partnera na kolebawce zelenje, potom partnera toho pola zaso módře a pokročuj, doniž rjećaz so njeskónči. Wšě módre pola su prawe abo wšě zelene – njewěš, kotre, a to za dwě wěcy dosaha.\n\nPrěnje: jeli so dwě poli samsneje barby w jednej rjadce, jednym stołpiku abo kašćiku jewitej, je ta barba njemóžna, tohodla so cyfra z kóždeho pola tuteje barby wotstroni a druha barba je wšudźe wotmołwa.\n\nDruhe: kóžde polo zwonka rjećaza, kotrež módre a zelene polo widźi, móže tutu cyfru wuzamknyć, dokelž jedne z tuteju dweju ju wobsahuje, wšojedne, kotra barba rjećaza płaći.\n\nZ wołojnikom je to pomału, ale so wupłaći: jedne barbenje husto cyfru z połojcy mrižki wotstroni."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Wobhladaj sej jednu cyfru a jednu jednotku naraz – na přikład: hdźe móže 4 w tutym kašćiku być? Přešmórń kóžde polo jednotki, kotrež hižo cyfru ma abo 4 we swojej rjadce abo swojim stołpiku widźi. Jeli jedne polo wostanje, słuša 4 tam.\n\nZadźěr je, zo to z pohladom na polo njewidźiš: móže tež pjeć druhich cyfrow přiwzać, tohodla na nim ničo wunuzowane njewupada. Wobhladaj sej cyfru město pola a hnydom so to jewi."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Foto sčinić"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Foto awtomatisce sčinić"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Podótkń so markěrowaneho pola, zo by je přepruwował, abo wobkruć, zo wšě přečitanja prawe su."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Podótkń so najprjedy pola na mrižce."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Testuj %1$s jako předpokład w markěrowanym polu. To wotmołwa njeje. Slěduj wuslědkam, zo by widźał, čehodla njepłaći."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Předpokład testować"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Dźakujemy so za pomoc při polěpšenju spóznawanja. Twoje foto hódančka, přečitanja a korektury so za analyzu a trenowanje wužija."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"To je tež płaćiwy ćah z %1$s. Tutón postup druhi ćah pokazuje; přirunaj jeho dopokaz deleka."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"To ćah njeje, kotryž je za tutón krok wubrany. Druhe płaćiwe ćahi móža eksistować; pohladaj hišće raz abo pokaž wujasnjenje tutoho kroka."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"To je prawje"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"To je zbytk hódančka. %1$s polow w nim trjeba wotmołwy z pomocu rozrisowarja, dokelž techniki, kotrež aplikacija podpěruje, žadyn ćah njenamakachu. Jich nadrobne dopokazy pytanja k dispoziciji njesteja."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"To je zbytk hódančka. Jedne polo w nim trjeba wotmołwu z pomocu rozrisowarja, dokelž techniki, kotrež aplikacija podpěruje, žadyn ćah njenamakachu. Jeho nadrobny dopokaz pytanja k dispoziciji njesteji."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"To je zbytk hódančka wot spočatka hač do kónca."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Tute foto njeda so wobchować, tuž njeje ničo k pósłanju."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"To polo %1$s dowola. Pytaj ćah, kotryž technika tutoho kroka wopodstatnja, abo pokaž jeho wujasnjenje."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"To polo je hižo wupjelnjene. Wubjer prózdne polo."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Předpokład je wotpokazany. Wróćimy so k woprawdźitym kandidatam a přešmórnjemy %1$s w markěrowanym polu. Hypotetiske cyfry so wotstronja."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Kamera njemóžeše to foto sčinić."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kamera k dispoziciji njesteji. Začiń druhe kamerowe aplikacije a spytaj potom hišće raz."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"druhe"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Foto z %1$s a wšitko, štož bu z njeho přečitane, so z tutoho telefona wotstroni. To njeda so cofnyć."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Foto je w twojej lisćinje hódančkow pod „Njeda so přečitać“."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Srjedźišćowe polo je tu %1$s abo %2$s. W woběmaj padomaj je jedne z druheju dweju polow na %3$s wunuzowane, tohodla žane polo, kotrež wobě widźi, njemóže %4$s być."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Pokazowacy porik naopak čitany. Wubjer rjadku abo stołpik a cyfru, kotraž tam hišće městno trjeba. Markěruj kóžde polo tuteje linije, kotrež móže tutu cyfru wobsahować. Jeli wšě w jednym kašćiku leža, dyrbi cyfra w dźělu linije tutoho kašćika być – tohodla nikhdźe druhdźe w kašćiku njeje, tež nic w jeho druhej rjadce abo druhej stołpiku, kotrež sej njewobhladowaše.\n\nKaž pokazowacy porik to samo ničo njezasadźi; wutwori rum za něšto, štož to čini."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Ćišćane cyfry rozrisajomne hódančko njewutworja."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nZbywace kandidaty w %1$s su {%2$s}. Zapisaj %3$s do linki %4$s, stołpika %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Rozprawa je přewulka za zapodaće."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-křidło, kotrehož srjedźišćowe polo jedneho kandidata wjace wobsahuje. Pytaj polo z runje třomi kandidatami, na přikład {1,4,7}, kotrež dwě poli z dwěmaj kandidatami widźi – jedne {1,7} a druhe {4,7}.\n\nNětko móža wšě tři 7 być a jedne z nich dyrbi to być. Polo dyrbi potajkim wšě tři widźeć, zo by so 7 wuzamknyło, nic jenož dwaj kóncaj – štož w praksu rěka, zo w samsnym kašćiku kaž srjedźišćowe polo a na jednej liniji z kóncom leži.\n\nMjenje wuzamknjenjow hač při Y-křidle a ze samsneje přičiny lóšo přehladnyć: srjedźišćowe polo njepadnje do wočow."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"We wuzběhnjenym kašćiku je polo, kotrež móžeš wupjelnić.\n\nTłóč hišće raz na Pokiw, zo by zhonił, kotra technika je namaka."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Tu hižo ničo za wuwodźenje njezwostaje."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Tute %1$s pola wšě jenož %2$s a %3$s wobsahuja a kóžde přichodne widźi, tohodla so po cyłej rjećazowej cestě wotměnjeja. Mjez %4$s a %5$s je njerune ličba zwjazkow, tohodla wobsahujetej rozdźělnej cyfrje – štož %6$s ze wšitkeho wuzamknje, kotrež wobě widźi."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Tute %1$s pola hromadźe jenož %2$s wobsahuja, tohodla je tute cyfry w někajkim porjedźe wupjelnja. To %3$s ze zbytka tuteje jednotki %4$s wuzamknje."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Tute %1$s pola móža hromadźe jenož %2$s wobsahować, tak zo je tute cyfry w někajkim porjedźe wupjelnja. To %3$s ze zbytnych polow tuteje linki wuzamknje."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Tute %1$s pola móža hromadźe jenož %2$s wobsahować, tak zo je tute cyfry w někajkim porjedźe wupjelnja. To %3$s ze zbytnych polow tuteje špalty wuzamknje."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Tute %1$s pola móža hromadźe jenož %2$s wobsahować, tak zo je tute cyfry w někajkim porjedźe wupjelnja. To %3$s ze zbytnych polow tutoho kašćika wuzamknje."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"To su spočatne kandidaty za twoje polo. Slěd wujasni, kotre móžnosće hodźa so wuzamknyć."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Tute cyfry njemóža hódančko wutworić a přewjele je wopak, zo by so dało prajić, kotre. Podótkń so někajkeho pola, zo by přečitane skorigował, abo sčiń foto hišće raz."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Tute cyfry njemóža hódančko wutworić. Změna %1$s wobkruženych polow by to porjedźiła – podótkń so jednoho, zo by přečitane skorigował."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Tute cyfry njemóža hódančko wutworić. Změna jednoho wobkruženeho pola by to porjedźiła – podótkń so jeho, zo by přečitane skorigował."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Tute cyfry hódančko njewutworja, tohodla bu jedna wopak přečitana. Tłóč na Rozrisać, zo by widźał, kotre pola dyrbiš skorigować."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Tute štyri pola wutworja praworóžk přez dwaj kašćikaj a tři z nich jenož %1$s wobsahuja. Jeli by %2$s tež jenož tutej dwě wobsahowało, hodźeli so cyfry po praworóžku wuměnić a hódančko by dwě rozrisani měło. Ma jedne, tohodla dyrbi %3$s něšto druhe wužiwać – a %4$s so wotstroni."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Njedóstanu so ke kóncej: něšto tu je aplikaciju dospołnje přewinyło."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"To ničo njewupjelni. Wuzamknje %1$s z %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"To ničo njezapisa. To wuzamknje %1$s z %2$s polow."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"To ničo njezapisa. To wuzamknje %1$s z jednoho pola."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nTo je prěni z %1$s logiskich wusudow, kotrež k wotmołwje wjedu."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Tutón dopokaz wujasni jedyn pokiw, inkluziwnje wuzamknjenja kandidatow, kotrež k jeho wotmołwje wjedu. Postupuj doprědka, zo by wuwodźenju na mrižce slědował, a pokročuj potom z cyłym postupom."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Tute hódančko njeda so přihotować."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Tute hódančko njeda so składować. Móžeš je nětko hišće wužiwać. Sčini składowanski rum swobodny, prjedy hač dalše foto sčiniš."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Tute hódančko ma wjace hač jedne rozrisanje, tohodla bu ćišćana cyfra najskerje přehladnuta. Pokazuje so rozrisanje %1$s z %2$s – tłóč hišće raz na Rozrisać za přichodne. Wobkružene pola so mjez pokazanymi rozrisanjemi rozeznawaja."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Foto tutoho hódančka njeda so wočinić."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Tute wuwodźenje wuzamknje %1$s eksistowacych "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Tute polo móže zapisanki kandidatow město dospołneje cyfry wobsahować. Prošu přepruwuj je."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Tutón napohlad wobsahuje prjedawše wotstronjenja kandidatow. Wočiń jich dopokazy deleka, zo by je přepruwował."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tři"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Přećmowe, zo by so linije mrižki spóznali"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Slěd"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Wuspytane"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Spytaj sam"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Zmóžnić"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Wobroć telefon tak, zo hódančko runje steji."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Wučer"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"dwě"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Dwě poli ze samsnym porikom, kotrejž stej přez kolebawku na jednej z jeho cyfrow zwjazanej, wunuzujetej druhu cyfru do jednoho z njeju."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Drak z dwěmaj šnóromaj"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Jednozmyslny praworóžk"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"jednotka"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable žanu lisćinu CellReading njeposkića; eksaktne zapodate pola a wuslědk so wobchowaja."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"njepodpěrana wersija modeloweho formata"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Njewěste"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Rěč grata wužiwać"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Wužij %1$s, podótkń so jednoho pola, hdźež hodźi so kandidat wotstronić, a wubjer potom tutu cyfru."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Wužij %1$s, podótkń so pola, kotrež móžeš wupjelnić, a wubjer potom jeho cyfru."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Jara ćežke"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-křidło"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"bu"</string>
+    <string name="msg_were_910adfb4" formatted="false">"buštej"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Što sy wočakował, abo kak by twoja ideja pomhała Sudoku rozrisać abo nawuknyć?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Što je so stało a kroki k wospjetowanju (za zmylki)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Što to čini"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Hdźe"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Čehodla bu %1$s z r%2$sc%3$s wotstronjene"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Čehodla"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Čehodla nic %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Čehodla tute polo? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" z rozrisanjom. Wužij Přepruwować, zo by je přehladał."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Postupuj wot swojeho pola wróćo. Wubjer prašenje deleka."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Postupuj cyfra po cyfrje město polo po polu. Zapisaj za jednu jednotku, hdźež kóžda falowaca cyfra hišće móže być. Pytaj potom %1$s cyfrow, kotrychž lisćiny hromadźe jenož %2$s polow wobsahuja.\n\nTute %3$s cyfry dyrbja tute %4$s pola wupjelnić, tohodla hodźi so wšitko druhe w nich přešmórnyć – štož husto jedne z nich hnydom do naheho jednotnika abo naheho porika přeměni.\n\nTuta technika je za ludźi najćeša, dokelž při pohladźe na pola ničo njewidźa: maja hišće tójšto kandidatow. Muster je w cyfrač."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Dźěłaj jenož z polemi, kotrež maja runje dwaj kandidataj wostajenaj.\n\nZapočń z jednym, na přikład {2,6}, a předpokładaj, zo to 2 njeje – potom je to 6. Přeńdź k polu, kotrež widźi a kotrež tež 6 ma, na přikład {6,4}: to njemóže 6 być, tohodla je to 4. Přeńdź k polu, kotrež tute polo widźi a kotrež 4 wobsahuje, a pokročuj, při čimž je kóždy krok přez předchadny wunuzowany.\n\nJeli k polu dóńdźeš, kotrehož druha cyfra je 2 – cyfra, kotruž sy na spočatku wuzamknył – sy hotowy. Pak bě prěnje polo tola 2, pak je rjećaz płaćił a poslednje polo je 2. Jedyn abo druhi kónc ju wobsahuje, tohodla ničo, štož wobaj kóncaj widźi, ju njemóže wobsahować.\n\nDźerž rjećazy krótke. Štyri abo pjeć polow hodźi so z wołojnikom namakać; za tym hižo knihi wjedźeš a wunuzowacy rjećaz je za to poćiwe mjeno."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"dźěłowa kroma dyrbi pozitiwna a kónčna być"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Njeda so přečitać"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Pisane"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Wopak"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-křidło"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-rjećaz"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-křidło"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-křidło"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Sy tute polo wuprózdnił."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Sy to na ručnje pisane %1$s stajił."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Sy to na ćišćane %1$s stajił."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Twoje změny su widźomne, ale njedachu so składować. Sčini składowanski rum swobodny a spytaj hódančko znowa wobdźěłać."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Twoje fota a twoja priwatnosć"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Twoje hódančka"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Twoje składowane hódančka"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Twoje polo ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Twoje polo wostanje wobramikowane. Zelene pola pokazuja dopokazy; přešmórnjene cyfry su wuzamknjene."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

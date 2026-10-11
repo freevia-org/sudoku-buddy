@@ -19,6 +19,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.text.rememberTextMeasurer
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 
 /*
@@ -68,7 +71,7 @@ internal fun HintButton(
 }
 
 /** How tall a pill stands. Material's own button height, stated because it has to be. */
-private val PILL_HEIGHT = 40.dp
+private val PILL_HEIGHT = 48.dp
 
 /**
  * One of the five. The selected one is filled, so which is on can be seen without reading.
@@ -87,6 +90,10 @@ private fun Pill(
     onClick: () -> Unit,
 ) {
     val shading = MaterialTheme.colorScheme.primary.copy(alpha = 0.35f)
+    val translatedLabel = localized(label)
+    val labelStyle = MaterialTheme.typography.labelLarge
+    val labelHeight = rememberTextMeasurer().measure(translatedLabel, labelStyle).size.height
+    val height = maxOf(PILL_HEIGHT, with(LocalDensity.current) { labelHeight.toDp() } + 12.dp)
 
     // The shading is drawn by the content, inside the button, and never by a modifier
     // wrapped around it. A button's own node is grown to the minimum touch target, which
@@ -107,10 +114,11 @@ private fun Pill(
             contentAlignment = Alignment.Center,
         ) {
             Text(
-                label,
-                style = MaterialTheme.typography.labelLarge,
+                translatedLabel,
+                style = labelStyle,
                 maxLines = 1,
                 softWrap = false,
+                overflow = TextOverflow.Ellipsis,
             )
         }
     }
@@ -122,7 +130,7 @@ private fun Pill(
     // height it is given, and a button is given whatever its parent will allow - which in
     // the row these sit in is the whole of the rest of the screen. They grew to half of it.
     // Filling a bounded height is what was meant; filling an unbounded one is what it said.
-    val sized = modifier.height(PILL_HEIGHT)
+    val sized = modifier.height(height)
     if (selected) {
         Button(onClick, sized, enabled, contentPadding = PaddingValues(0.dp), content = content)
     } else {

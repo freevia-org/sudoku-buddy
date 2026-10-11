@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nОзначените полиња го докажуваат тоа.\n\nПритиснете Совет повторно за да ви се покаже кое поле."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s и %2$s содржат само %3$s и %4$s. Во овој %5$s, %6$s има само две места, по едно видливо од секое од нив — па едно од тие две е %7$s, а крајот што го гледа мора да биде %8$s. Во двата случаи, еден крај е %9$s, што ја исклучува %10$s од сè што ги гледа двата."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"И %1$s и %2$s ги имаат само кандидатите %3$s и %4$s. Во овој блок, %5$s има само две можни места, при што секое од тие две полиња гледа по едно место - затоа едно од тие места е %6$s, а крајното поле што го гледа мора да биде %7$s. Во секој случај, едно крајно поле е %8$s, со што %9$s се исклучува од сите полиња што ги гледаат двата краја."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"И %1$s и %2$s ги имаат само кандидатите %3$s и %4$s. Во оваа колона, %5$s има само две можни места, при што секое од тие две полиња гледа по едно место - затоа едно од тие места е %6$s, а крајното поле што го гледа мора да биде %7$s. Во секој случај, едно крајно поле е %8$s, со што %9$s се исклучува од сите полиња што ги гледаат двата краја."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"И %1$s и %2$s ги имаат само кандидатите %3$s и %4$s. Во овој ред, %5$s има само две можни места, при што секое од тие две полиња гледа по едно место - затоа едно од тие места е %6$s, а крајното поле што го гледа мора да биде %7$s. Во секој случај, едно крајно поле е %8$s, со што %9$s се исклучува од сите полиња што ги гледаат двата краја."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s во ред %2$s, колона %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s во чекор %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s може да содржи само %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s не може да содржи %2$s бидејќи %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s не може да содржи %2$s бидејќи %3$s може да содржи само %4$s во истата колона %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s не може да содржи %2$s бидејќи %3$s може да содржи само %4$s во истиот блок %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s не може да содржи %2$s бидејќи %3$s може да содржи само %4$s во истиот ред %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s не може да содржи %2$s бидејќи %3$s содржи %4$s во истиот блок %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s не може да содржи %2$s бидејќи %3$s содржи %4$s во истата колона %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s не може да содржи %2$s бидејќи %3$s содржи %4$s во истиот ред %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s содржи %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s празни"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, внес"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s мора да се постави тука: ова е единственото поле во оваа колона %2$s во кое сè уште може да се постави %3$s.\n\n%4$s\n\n%5$s моментално дозволува %6$s, но секоја колона мора да содржи %7$s точно еднаш. Затоа поставете %8$s во ред %9$s, колона %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s мора да оди тука: ова е единственото поле во овој %2$s %3$s што сè уште може да прими %4$s.\n\n%5$s\n\n%6$s моментално дозволува %7$s, но секој %8$s мора да содржи %9$s точно еднаш. Затоа поставете %10$s во ред %11$s, колона %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s мора да се постави тука: ова е единственото поле во овој блок %2$s во кое сè уште може да се постави %3$s.\n\n%4$s\n\n%5$s моментално дозволува %6$s, но секој блок мора да содржи %7$s точно еднаш. Затоа поставете %8$s во ред %9$s, колона %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s мора да се постави тука: ова е единственото поле во овој ред %2$s во кое сè уште може да се постави %3$s.\n\n%4$s\n\n%5$s моментално дозволува %6$s, но секој ред мора да содржи %7$s точно еднаш. Затоа поставете %8$s во ред %9$s, колона %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s има две места во овој ред и две во оваа колона. %2$s и %3$s се во ист блок, па не можат двете да бидат %4$s — затоа едно од %5$s и %6$s ја содржи, а %7$s се исклучува од сè што ги гледа двете."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s во истиот %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s во истиот блок."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s во истата колона."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s во истиот ред."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s е веќе исклучена од тоа поле. Неговите кандидати се "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s е исклучена поради %2$s, што "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s се исклучува поради %2$s, што може да содржи само %3$s во истата колона %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s се исклучува поради %2$s, што може да содржи само %3$s во истиот ред %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s се исклучува поради %2$s, што може да содржи само %3$s во истиот блок %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s се исклучува поради %2$s, што содржи %3$s во истиот блок %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s се исклучува поради %2$s, што содржи %3$s во истата колона %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s се исклучува поради %2$s, што содржи %3$s во истиот ред %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s е принудена во најновото нумерирано поле (ред %2$s, колона %3$s). %4$s Стрелката следи поставување што придонесува за тоа; важни се и претходните последици."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s недостасува во патеката на класите"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s од %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s од нив пополнуваат поле; останатите прво ги отстрануваат кандидатите што пречат."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s пар"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s печатени, %2$s, %3$s погрешни"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s печатени, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s печатени"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, печатена зададена цифра"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s четворка"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s одбиени фотографии, најновите први:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: отстранете %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Број на полиња: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Оваа постапка има %1$s чекори, а најтешката поддржана техника е %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s тројка"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s беше отстранет од %2$s со претходно логичко заклучување за кандидатите."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s впишано"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"за слика %1$sx%2$s се потребни %3$s бајти, но добиени се %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"едно поле не беше ниту цифра ниту точка"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Синџир од полиња со по два кандидата што почнува и завршува со иста цифра ја поставува таа цифра на едниот или на другиот крај."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Цифра со само едно преостанато место во ред, колона или блок припаѓа на тоа место."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Рачно напишана %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Печатена %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Црвено поле ја покажува цифрата што апликацијата ја прочитала таму. Ако тоа не е она што сте го напишале, допрете го полето за да го исправите."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Поле со само една преостаната цифра мора да ја содржи таа цифра."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Списокот на техники никогаш не е целосен, а најтешките загатки се создадени да ги надмудрат сите техники во него. Затоа, кога ниедна од нив не дава резултат, туторот решава едно поле со испробување на неговите кандидати, јасно кажува дека го направил тоа и продолжува со логичко заклучување оттаму. Секогаш ја решава загатката до крај и никогаш не претставува преземен одговор како логички заклучок."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Стожер со три кандидата и две соодветни клешти со по два кандидата исклучуваат една цифра од секое поле што ги гледа сите три."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Стожер со два кандидата и две клешти со по два кандидата можат да исклучат една цифра од секое поле што ги гледа двете клешти."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"За апликацијата"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"По"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"По овој потег"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Сè е точно"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Сите три полиња можат да бидат %1$s, а едно од нив мора да биде. Затоа, секое поле што ги гледа сите три не може да биде %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Дозволи камера"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Речиси — држете го листот рамен и паралелен со камерата"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"елиминација што не отстранува ништо не е заклучок"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" и "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Одговор"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Апликација и уред (однапред пополнето)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Апликација: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"соодносот мора да биде позитивен, но беше %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Претпоставка · хипотетичка цифра"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Претпоставката е отфрлена · вистинските кандидати се вратени"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"најмалку %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Автоматска фотографија"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Автоматски споделувајте фотографии од загатки со несигурно препознавање, резултати од читањето и подоцнежни исправки на полињата со Freevia за анализа и обучување на препознавањето. Стандардно е исклучено."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Избегнете го отсјајот"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Назад"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Назад до претходното прашање"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Назад до визуелниот совет"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Назад до вашето поле"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Пред"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Пред овој потег"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Сините цифри се решението. Допрете кое било поле за да го исправите прочитаното."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"блок %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"блок"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Блок"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Редукција блок–линија"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Камера"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"може да содржи само"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Откажи"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", кандидати %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"ДоказОдСнимањето"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Поврзете една цифра во синџир низ единиците каде што има само две можни места, обојте го синџирот наизменично со две бои и едната боја ќе биде точна низ целиот синџир."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Поврзувањето на %1$s во синџир низ единиците во кои има само две можни места ги обојува овие полиња наизменично во две бои, од кои едната е точна насекаде. Две полиња со другата боја се во истиот ред, што е невозможно - затоа таа боја е неточна, а %2$s се исклучува од секое поле со таа боја."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Поврзувањето на %1$s во синџир низ единиците во кои има само две можни места ги обојува овие полиња наизменично во две бои, од кои едната е точна насекаде. Две полиња со другата боја се во истиот блок, што е невозможно - затоа таа боја е неточна, а %2$s се исклучува од секое поле со таа боја."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Поврзувањето на %1$s во синџир низ единиците во кои има само две можни места ги обојува овие полиња наизменично во две бои, од кои едната е точна насекаде. Две полиња со другата боја се во истата колона, што е невозможно - затоа таа боја е неточна, а %2$s се исклучува од секое поле со таа боја."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Поврзувањето на %1$s во синџир низ единиците каде што има само две можни места ги обојува овие полиња наизменично со две бои, од кои едната е точна низ целиот синџир. Две полиња со боја %2$s се во истиот %3$s, што е невозможно — затоа таа боја е неточната, а %4$s се отстранува од секое поле со таа боја."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Поврзувањето на %1$s во синџир низ единиците каде што има само две можни места ги обојува овие полиња наизменично со две бои, а едната боја е точна низ целиот синџир. Овие полиња ги гледаат двете бои, па како и да се разреши синџирот, едно од полињата што ги гледаат содржи %2$s — што значи дека тие не можат."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Поврзувањето на %1$s во синџир низ единиците во кои има само две можни места ги обојува овие полиња наизменично во две бои, од кои едната е точна насекаде. Две полиња со една боја се во истиот блок, што е невозможно - затоа таа боја е неточна, а %2$s се исклучува од секое поле со таа боја."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Поврзувањето на %1$s во синџир низ единиците во кои има само две можни места ги обојува овие полиња наизменично во две бои, од кои едната е точна насекаде. Две полиња со една боја се во истата колона, што е невозможно - затоа таа боја е неточна, а %2$s се исклучува од секое поле со таа боја."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Поврзувањето на %1$s во синџир низ единиците во кои има само две можни места ги обојува овие полиња наизменично во две бои, од кои едната е точна насекаде. Две полиња со една боја се во истиот ред, што е невозможно - затоа таа боја е неточна, а %2$s се исклучува од секое поле со таа боја."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Несигурни полиња за проверка: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Провери"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Проверете едно несигурно поле."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", проверено како точно"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Изберете кандидат за да видите зошто не може да биде во вашето поле."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Изберете јазик"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Изберете што да се прикажува"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Затвори"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Затвори го советот"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Собери го прегледот на прочитаното"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"полињата во боја и во сиви тонови мора да користат иста геометрија"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"колона %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"колона"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"колони"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Споредувајте синџири на принудување и претпочитајте ги оние со помалку полиња за следење. Пократките синџири можат да значат повеќе чекори во целосното решение."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Последица %1$s од %2$s · хипотетички цифри"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"содржи"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Тип на содржина"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Продолжи со целосната патека"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Противречност · претпоставката не важи"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", противречност"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Противречност: црвениот %1$s нема преостанато место за %2$s. Ова е невозможно, па почетната претпоставка мора да биде неточна."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Противречност: црвеното поле нема преостанат кандидат. Ова е невозможно, па почетната претпоставка мора да биде неточна."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Копирај барање за бришење"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Точно. Споредете го вашето размислување со објаснувањето подолу."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"снимената слика не можеше да се декодира"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Не можеа да се најдат печатените цифри на таа фотографија."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Не можеа да се распознаат линиите на мрежата — обидете се повторно."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Не можеше да се отвори GitHub. Контактирајте со поддршката на %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Не можеше да се зачува доказот од дијагностичкото снимање"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Прочитаното не можеше да се испрати. Обидете се повторно кога ќе имате врска."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Ќор-сокак"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"ИЗБРИШИ"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Избриши"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Избриши извештај"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Избриши ја оваа фотографија"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Избриши ја оваа загатка"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Да се избрише оваа загатка?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Да се избрише ова поднесување?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Се брише…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Бришењето не можеше да се потврди. Проверете ја врската и обидете се повторно."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Барање за бришење"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Одговорот на барањето за бришење не ја потврди оваа потврда за поднесување."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Услугата за бришење врати HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Опишете што се случи и чекорите за повторување. Наведете дали прво ги проверивте и исправивте препознаените цифри. За идеја, напишете „Не е применливо“."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", цел на овој совет"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Уред: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Дијагностиката е скратена за да се вклопи во нацртот во прелистувачот. Дејството Испрати дијагностика во апликацијата може да го сподели целиот извештај."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"цифрата мора да биде 1..9, но беше %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Цифрите не се прочитани"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Зачувувањето докази на диск влијае врз времето; ова не е мерило за доцнењето."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", не се совпаѓа со решението"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Секоја потврда идентификува една поднесена верзија на загатката. Избришете ја тука за да го отстраните приватно зачуваниот извештај од Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Претходни исклучувања: %1$s. Користете ги врските до претходните чекори за да ги разгледате нивните докази."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← претходен доказ (длабочина %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Претходните хипотетички внесувања му оставаат само еден кандидат."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Претходни чекори употребени во овој доказ"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Уреди поле"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"осум"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"празно"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Празно."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Празно"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Англиски"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"внесови што не се совпаѓаат"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"внес што не се совпаѓа"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Секоја од нив пополнува едно поле."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Сите полиња се пополнети, но %1$s одговори не се совпаѓаат со решението."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Сите полиња се пополнети, но еден одговор не се совпаѓа со решението."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Секое судоку со едно решение може да се реши со логичко заклучување; погодувањето никогаш не е потребно и ретко помага. Ова се начините на заклучување што апликацијата може да ги препознае и објасни, почнувајќи од најлесните. Кога некој од нив е применлив на отворената загатка, ќе ви го покаже секое место каде што се применува."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Сè што сте напишале досега е точно."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Сега достапни примери: секој почнува од вашата тековна табла."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"се очекуваа 10 хоризонтални линии, добиени се %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"се очекуваа 10 вертикални линии, добиени се %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"се очекуваа 81 поле, добиени се %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"се очекуваа 81 поле во секој блок, најдени се %1$s и %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"се очекуваше 8-битен единечен канал, но добиено е %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"се очекуваше слика 28x28, но добиени се %1$s вредности"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Очекувано однесување или предложено подобрување"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"се очекуваа по десет линии во двете насоки"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"се очекуваа два блока, најдени се %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Објасни претходни отстранувања на кандидати (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Објаснувај ги советите"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Најдете поле со само два или три преостанати кандидати — колку помалку, толку подобро, а уште подобро ако редот, колоната и блокот околу него се пополнети повеќе.\n\nИзберете еден од неговите кандидати и запишете го лесно со молив. Сега следете ги последиците: таа цифра се отстранува од сите полиња што ова поле ги гледа, што може да остави некое од нив со еден кандидат, кој принудува друг, и така натаму. Продолжете.\n\nСе случува едно од две нешта. Или синџирот запира и не сте научиле ништо — избришете го запишаното и испробајте го другиот кандидат. Или стигнувате до поле без ниту еден кандидат, или до ред без место за некоја цифра. Тоа е невозможно, па цифрата што ја запишавте со молив била погрешна и можете трајно да ја исклучите.\n\nПосегнете по оваа техника кога сите други се исцрпени. Таа е побавна и бара водење белешки наместо препознавање обрасци, но може да открие потези што обрасците ги пропуштаат. Едно исклучување често е доволно лесните техники повторно да проработат; некои позиции сепак бараат подлабоко пребарување."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Најдете две полиња со исти два кандидата, на пример {3,7}, што не се гледаат меѓусебно — обично се далеку едно од друго.\n\nСега побарајте ред, колона или блок каде што 7 има само две можни полиња, од кои едното го гледа првото поле од вашиот пар, а другото го гледа второто. Тоа е врската.\n\nЕдно од тие две полиња е 7. Кое и да е, полето од вашиот пар што го гледа не може да биде 7, па мора да биде 3. Не знаете кој крај е 3, само дека еден од нив е — а тоа е доволно за да ја исклучите 3 од секое поле што ги гледа двата краја.\n\nТешкиот дел е врската, затоа барајте ја во обратен редослед: прво означете ги единиците каде што една цифра има само две можни места, па побарајте соодветен пар од двете страни."</string>
+    <string name="msg_finished_05343e98" formatted="false">"завршено"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Снимајте штом мрежата е без перспективно изобличување во кадарот и е стабилна. Копчето работи во секој случај."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Опфатете ја целата мрежа во кадарот."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Опфатете ја целата мрежа во кадарот"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"пет"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Следете патека каде што секој потег се надоврзува на претходниот."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Следете го целиот доказ по ред"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Следете го овој синџир од полиња со по два кандидата: ако %1$s не е %2$s, секое поле по него е принудено од претходното, а %3$s на крај станува %4$s. Значи, едниот или другиот крај содржи %5$s, што го исклучува од секое поле што ги гледа двата."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Синџир на принудување"</string>
+    <string name="msg_four_04efaf08" formatted="false">"четири"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Четири полиња во два реда, две колони и два блока не можат сите да ги имаат истите два кандидата, инаку загатката би имала две решенија."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia го потврди бришењето, но овој телефон не можеше да ја отстрани локалната потврда. Обидете се повторно за да заврши локалното чистење."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia ќе ја избрише оваа верзија на извештајот и нејзината приватна копија за обучување. Идните исправки можат да создадат нов извештај според вашите поставки за споделување. Модел што веќе е обучен со него може да ги задржи научените промени."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Целосна патека"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Идните несигурни читања ќе ја испраќаат исправената фотографија на загатката, резултатите од препознавањето и исправките до Freevia за анализа и обучување. Копиите за обучување остануваат додека не се избришат преку Потврди за поднесување; обучен модел може да ги задржи научените промени. Ако веќе е отворена загатка со несигурно препознавање, ќе биде испратена сега. Ова можете да го исклучите во Поставки."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Лесно"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Отсјајот ги избледува линиите — навалете го листот подалеку од светлината"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"СиваСлика(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Сивите полиња содржат белешки со молив, кои апликацијата ги игнорира. Лентата под цифрата покажува колку сигурно била препознаена. Допрете поле за подробности."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Рачно напишано"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Тешко"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Скриено"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Скриен пар"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Скриена четворка"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Скриен единечен кандидат"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Скриена тројка"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Сокриј претходен доказ"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Сокриј како да се препознае"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", совет %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Помош"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Доказ за советот"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Логика на советот"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Не мрдајте..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Не мрдајте или допрете го копчето за снимање"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Не мрдајте додека камерата фокусира..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Држете го телефонот паралелно со листот"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Држете го телефонот паралелно над загатката."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Држете го телефонот паралелно над загатката"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"хоризонтално\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Како да се препознае"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nКако стигнуваме до тоа:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Барајте полиња со точно два кандидата — Y-крило се состои од три такви полиња и ништо друго.\n\nЗемете едно за стожер, на пример {2,5}. Побарајте поле што го гледа и содржи {2,9}, и друго што го гледа и содржи {5,9}. Стожерот е 2 или 5. Ако е 2, првата клешта мора да биде 9; ако е 5, втората мора да биде 9. Во секој случај, 9 се појавува во една од клештите — не знаете во која и не треба да знаете.\n\nЗатоа, ниедно поле што ги гледа двете клешти не може да биде 9. Тие полиња обично се двата агла што го дополнуваат правоаголникот."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", претпоставено %1$s, не е внесен одговор"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Ако %1$s цифри во еден ред, колона или блок можат да одат само во истите %2$s полиња, тие полиња не можат да содржат ништо друго."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Ако %1$s полиња во еден ред, колона или блок заедно имаат точно %2$s кандидати, тие цифри припаѓаат на тие полиња и на ниедно друго во единицата."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Ако една цифра има две можни места во ред и две во колона, а по едно од секоја делат блок, едно од другите две мора да ја содржи."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Ако една цифра има две можни места во секој од два реда и по едно место делат колона, едно од другите две места мора да ја содржи."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Ако сите можни места за една цифра долж линија се во еден блок, таа цифра може да се исклучи од остатокот на тој блок."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Ако единствените можни места за една цифра во %1$s редови се во истите %2$s колони, таа може да се исклучи од другите полиња во тие колони — истото важи и со заменети редови и колони."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Ако сите можни места за една цифра во блок делат една линија, таа цифра може да се исклучи од остатокот на таа линија."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Ако претпоставувањето на една цифра води до поле без можен кандидат, таа цифра била погрешна."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"димензиите на сликата мора да бидат позитивни"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Во синџир од полиња што сите ги имаат истите два кандидата, двата краја на синџир со непарна должина содржат различни цифри."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Во овие %1$s %2$s, %3$s може да оди само во овие %4$s %5$s. Заедно ги зафаќаат сите, па %6$s може да се исклучи од сите други места во тие %7$s."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Во овие %1$s колони, %2$s може да се постави само во овие %3$s редови. Заедно ги зафаќаат сите тие редови, па %4$s може да се исклучи од сите други места во нив."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Во овие %1$s редови, %2$s може да се постави само во овие %3$s колони. Заедно ги зафаќаат сите тие колони, па %4$s може да се исклучи од сите други места во нив."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Во овие два %1$s, %2$s има по само две можни места, а %3$s и %4$s делат %5$s — па не можат и двете да бидат %6$s. Затоа едно од %7$s и %8$s е, што го исклучува %9$s од секое поле што ги гледа двете."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Во овие две колони, %1$s има само по две можни места, а %2$s и %3$s се во ист ред - затоа не можат двете да бидат %4$s. Значи, едно од %5$s и %6$s е таа цифра, со што %7$s се исклучува од секое поле што ги гледа двете."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Во овие два реда, %1$s има само по две можни места, а %2$s и %3$s се во иста колона - затоа не можат двете да бидат %4$s. Значи, едно од %5$s и %6$s е таа цифра, со што %7$s се исклучува од секое поле што ги гледа двете."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Во овој %1$s, %2$s може да оди само во овие %3$s полиња, па тие полиња се резервирани. Тоа го исклучува %4$s од нив."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Во овој %1$s, %2$s може да оди само во еден блок. Значи, %3$s е во тој блок на овој %4$s и може да се исклучи од остатокот на блокот."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Во овој блок, %1$s може да се постави само во овие %2$s полиња, па тие полиња се резервирани. Со тоа %3$s се исклучува од нив."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Во оваа колона, %1$s може да се постави само во овие %2$s полиња, па тие полиња се резервирани. Со тоа %3$s се исклучува од нив."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Во овој ред, %1$s може да се постави само во овие %2$s полиња, па тие полиња се резервирани. Со тоа %3$s се исклучува од нив."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Ги вклучува нивните фотографии, читања и исправки. Исклучете го ова во Поставки."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Во еден блок, најдете цифра што може да оди само во две или три полиња и проверете дали сите се во ист ред или во иста колона. Ако е така, цифрата сигурно е некаде долж таа линија — не знаете каде, но знаете дека е во овој блок. Затоа не може да биде никаде на друго место долж истата линија надвор од блокот.\n\nОва само по себе не внесува ништо. Отстранува кандидати за на друго место да се појави единечен кандидат."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Во овој блок, %1$s може да оди само во овој %2$s. Значи, %3$s е некаде тука и може да се исклучи од остатокот на %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Проблем или идеја"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Тука се применува на %1$s места. Одете напред за да ги разгледате."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Тука се применува на едно место. Одете напред за да го видите."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Не се применува никаде во оваа позиција."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Тоа е единственото преостанато место за %1$s во означениот %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Тоа е заокруженото поле.\n\nПритиснете Совет повторно за да ја видите цифрата."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Медуза"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Зачувај"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Кратки синџири на принудување"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Јазик"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Лиценци"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Разгледајте еден ред, колона или блок за полиња со малку преостанати кандидати. Земете %1$s од нив и обединете ги нивните кандидати. Ако збирот содржи точно %2$s цифри, тие %3$s цифри се резервирани: мора да одат во тие %4$s полиња во некаков редослед, иако сè уште не можете да кажете која каде оди.\n\nТоа е доволно. Секое друго поле во единицата може да ги отфрли тие цифри, а обично едно од тие полиња потоа останува со единечен кандидат.\n\nПолињата не мора сите да ги имаат истите кандидати — {2,7}, {2,9} и {7,9} се сосема валидна тројка, а токму неа луѓето ја пропуштаат."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Барајте полиња со истите два кандидата — на пример {4,9} — што образуваат синџир, каде секое го гледа следното. Три не се доволни; потребни се најмалку четири.\n\nОбojувајте ги наизменично додека напредувате. Бидејќи секое поле го гледа следното, два соседа не можат да содржат иста цифра, па синџирот гласи 4, 9, 4, 9 по целата должина — или 9, 4, 9, 4, а не можете да знаете кое.\n\nВо секој случај, две полиња со спротивни бои содржат различни цифри: едното е 4, а другото е 9. Значи, секое поле што ги гледа двете не може да биде ниедна од нив и ги губи двата кандидата одеднаш.\n\nОбразецот лесно се препознава токму затоа што секое поле во него изгледа исто. Следете ги идентичните парови низ мрежата и видете каде се поврзуваат."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Барајте три полиња со истите два кандидата — на пример {1,6} — што се на три агла од правоаголник. Правоаголникот мора да лежи во точно два блока: два реда и две колони што преминуваат низ два блока, а не четири.\n\nСега погледнете го четвртиот агол. Ако и тој ги содржеше само 1 и 6, загатката би имала две решенија — би можеле да ги замените 1 и 6 околу правоаголникот, а сè друго сè уште би важело. Правилно составена загатка има едно решение, па четвртиот агол мора да содржи нешто друго: другите кандидати остануваат, а 1 и 6 се отстрануваат.\n\nОва е единствениот аргумент во збирката што се однесува на составувачот наместо на мрежата. Тој е валиден за објавена загатка и безвреден за загатка што веќе сте ја пополниле погрешно, бидејќи тогаш можеби воопшто нема решение што би било единствено."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Погледнете во овој блок. Следете ја контурата до полето што ќе го објасни овој совет."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Белешки"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Средно"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Повеќе"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Потребна е повеќе светлина"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Има повеќе од едно решение, па е пропуштена печатена цифра. Притиснете Реши за да ги видите решенијата и каде се разликуваат."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Оддалечете се"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Приближете се"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Приближете се — мрежата е премала за читање."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Голо"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Гол пар"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Гола четворка"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Гол единечен кандидат"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Гола тројка"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Именувајте ја техниката и покажете ги полињата што ја докажуваат, наместо само да ја дадете цифрата."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"потребни се најмалку 4 точки, но добиени се %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Потребна е потврда"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Ново судоку"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Следна последица"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Следен чекор"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Сликите не се прикачуваат автоматски. Пријавите и прилозите испратени тука се јавни. Примерите што претпочитате да ги испратите приватно, испратете ги на info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Ниедна фотографија не е одбиена од последното инсталирање на апликацијата."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Нема достапна дијагностика на скенирањето."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Тука не се применува ниедна техника"</string>
+    <string name="msg_none_140bedbf" formatted="false">"ниту една"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Ниедна од нив не внесува цифра во поле: тие отстрануваат кандидати, со што се отвора патот за решавање тешка загатка."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Моментално нема на вашата загатка."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"не е датотека со модел за цифри"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Не е прочитано со сигурност — најблиската претпоставка е %1$s %2$s на %3$s. Поставете го ова поле сами."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Сè уште не се препознава како мрежа девет на девет — обидете се да го исполните кадарот само со мрежата или едноставно фотографирајте"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"не е започнато"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Ништо не можеше да се испрати од овој телефон."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Нема ништо преостанато за решавање."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Тука ништо повеќе не може да се заклучи со техниките што ги знае апликацијата."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"ништо необично"</string>
+    <string name="msg_ok_565339bc" formatted="false">"Во ред"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"една"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Едно поле изгледаше како печатена цифра, но не е."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Една печатена цифра беше автоматски исправена."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"едно поле"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Само %1$s може да оди тука — секоја друга цифра веќе се појавува во овој ред, колона или блок."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Тука може да се постави само %1$s. Означените полиња зафаќаат %2$s од другите осум цифри; %3$s беше исклучена од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Тука може да стои само %1$s. Означените полиња содржат четири од другите осум цифри; %2$s беа исклучени од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Тука може да стои само %1$s. Означените полиња содржат шест од другите осум цифри; %2$s беа исклучени од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Тука може да стои само %1$s. Означените полиња содржат една од другите осум цифри; %2$s беа исклучени од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Тука може да стои само %1$s. Означените полиња содржат седум од другите осум цифри; %2$s беше исклучена од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Тука може да стои само %1$s. Означените полиња содржат пет од другите осум цифри; %2$s беа исклучени од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Само %1$s може да оди тука. Означените полиња зафаќаат %2$s од другите осум цифри; %3$s %4$s претходно исклучени од ова поле, а не поради нешто што можете да го видите околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Тука може да стои само %1$s. Означените полиња содржат две од другите осум цифри; %2$s беа исклучени од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Тука може да се постави само %1$s. Означените полиња зафаќаат %2$s од другите осум цифри; %3$s беа исклучени од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Тука може да стои само %1$s. Означените полиња содржат три од другите осум цифри; %2$s беа исклучени од ова поле претходно, а не поради нешто што се гледа околу него."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Само %1$s може да оди тука. Другите осум цифри се исклучени со пополнети полиња или принудени единечни кандидати во овој ред, колона или блок."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Само %1$s може да оди тука, иако ништо околу него не покажува зошто: сите други осум цифри беа исклучени од ова поле со претходно логичко заклучување, а не затоа што се напишани во неговиот ред, колона или блок."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Најдени се само %1$s печатени цифри, што е премалку за загатка."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"поддржани се само вртења за четвртина круг, не %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Отворете нацрт во прелистувачот со пополнети верзија на апликацијата, модел на телефонот, верзија на Android и неодамнешна дијагностика на скенирањето. Самите додајте целосен опис и соодветни слики од екранот.\n\nПотребно е најавување на GitHub. Можете да го прегледате и уредите нацртот пред да го поднесете. Поднесените извештаи и прилози се јавни. Фотографии не се прикачуваат автоматски."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Отвори поставки на апликацијата"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Отвори GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Известувања за отворен код"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Отворете „Зошто ова поле?“ за да го видите доказот за конечниот внес или изберете исклучен кандидат за да го проследите неговиот доказ."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV — Лиценца Apache 2.0. Се користи за наоѓање и исправување на мрежата.\n\nAndroidX, Jetpack Compose и CameraX — Лиценца Apache 2.0.\n\nKotlin — Лиценца Apache 2.0.\n\nПрепознавачот на цифри е обучен со базата MNIST на рачно напишани цифри од LeCun, Cortes и Burges, заедно со цифри исцртани со отворени системски фонтови и цифри нацртани програмски."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Не успеа вчитувањето на нативните библиотеки на OpenCV"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Фотографирајте друга загатка."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Фотографиите што ги зачувувате се чуваат во приватниот простор на оваа апликација и се отстрануваат кога ќе ги избришете или ќе ја деинсталирате апликацијата."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Фотографии од кои апликацијата не можеше да создаде загатка. Испратете една за да може да се разгледа."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Изберете цифра и разгледајте ги редовите за да ги најдете оние во кои ѝ остануваат точно две полиња. Земете два такви реда и видете дали по едно од нивните полиња е во иста колона.\n\nАко е така, тие две полиња се во иста колона и не можат двете да ја содржат цифрата. Значи, барем еден од далечните краеви ја содржи — двете полиња на другата страна. Не знаете кој и не треба да знаете: секое поле што ги гледа двата далечни краја може да ја отфрли цифрата.\n\nПотоа повторете го тоа со колони наместо редови. Формата е висока зграда со ниска покрај неа, од каде што потекнува името и така ќе ја препознавате откако ќе видите неколку."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Изберете цифра. Најдете ред во кој има точно две можни места и колона во која има точно две можни места. Сега проверете дали едно поле од редот и едно поле од колоната се во ист блок.\n\nАко е така, тие две не можат двете да бидат таа цифра — еден блок, една цифра. Значи, барем еден од двата преостанати краја е таа цифра, а секое поле што ги гледа двата краја може да ја отфрли.\n\nЛуѓето ја пропуштаат оваа техника затоа што нема што да се порамни: четирите полиња образуваат неправилна форма, а единственото нешто што ги поврзува е блокот што го делат двата внатрешни краја."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Изберете празно поле и поминете низ 1 до 9, прецртувајќи сè што веќе се појавува во неговиот ред, колона или блок. Ако остане точно една цифра, таа оди таму.\n\nОва е техниката за чие овозможување постојат сите други. Сè што е потешко служи за некое поле да се сведе на еден кандидат, па кога потешка техника ќе даде резултат, следно побарајте ја оваа."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Изберете една цифра и игнорирајте ги сите други. Разгледајте ги редовите и забележете ги оние во кои за таа цифра остануваат само две или три можни полиња. Барајте %1$s такви редови чии полиња се порамнуваат во истите %2$s колони.\n\nАко ги најдете, секој од тие %3$s редови мора да ја постави цифрата во една од тие колони, а два реда не можат да ја користат истата колона. Значи, заедно ја зафаќаат цифрата во сите %4$s колони — а секое друго поле во тие колони може да ја отфрли.\n\nПотоа повторете го сето тоа со заменети колони и редови. Половина од овие обрасци се наоѓаат на вториот начин, а тоа е половината што повеќето луѓе никогаш не ја бараат."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Внесете %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Внесете %1$s во ред %2$s, колона %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Внесете %1$s во вашето обележано поле."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Прикачете соодветни слики од екранот преку контролата за прилози на GitHub: загатката, препознаените цифри, резултатот од Проверка или фазата на советот што го покажува проблемот. Вклучете ги очекуваните и вистинските резултати каде што е корисно."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Ве молам избришете ги моите поднесувања за препознавање од Sudoku Buddy. Идентификатори на потврдите: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Заменете го овој текст со целосен опис на проблемот или идејата. Дајте му на извештајот краток, описен наслов."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Насочете ја камерата кон судоку загатка"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Насочете ја камерата кон судоку загатка."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Насочете ја камерата кон судоку загатка на хартија. Апликацијата ги чита печатените цифри и сè што сте допишале, ја решава и може да ви даде совет, да ги провери вашите одговори или да го покаже целото решение."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Насочувачки пар"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"ПОДНЕСИ"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Се подготвува загатката…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Претходно"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Претходен чекор"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Печатено"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Политика за приватност"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Складирање загатки"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Загатки"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Загатките се читаат и решаваат на овој телефон. Ако испратите несигурно читање или вклучите автоматско споделување, фотографијата на загатката, првичните читања, ознаките за несигурност и вашите поправки безбедно се испраќаат до Freevia за анализа на препознавањето и приватно тренирање. Извештаите не го вклучуваат моделот на вашиот уред ниту дијагностички податоци. Автоматското споделување е по избор; нема сметки, редовна аналитика на користењето ниту следење за реклами. Копиите за тренирање може да се избришат со потврдата, иако веќе трениран модел може да ги задржи научените промени. Користете „Потврди за испраќање“ во Поставки за да избришете извештај."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Загатките фотографирани за тестирање се од sudoku.cba.si. Оваа апликација не е поврзана со нив."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Загатките што ги фотографирате се чуваат тука, за подоцна да можете да продолжите со нив."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Препознавање"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Прочитано како рачно напишана %1$s, со сигурност %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Прочитано како печатена %1$s, со сигурност %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Прочитано како празно — не е најдена трага од пишување."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Прочитано како кандидати запишани со молив и занемарено."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Читањето е прегледано."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Читањето е испратено. Ви благодариме!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Неодамнешна дијагностика на скенирањето (однапред пополнето)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Препознавањето може да греши, особено со ракопис. Користете „Прочитај“ за да ги споредите препознаените цифри со фотографијата и допрете кое било поле за да го поправите. Апликацијата ги означува несигурните читања за преглед; и сигурно читање може да биде погрешно."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Отфрли претпоставка"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Оддалечени парови"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Отстрани %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nОтстранете %1$s од "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Отстрането"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Повтори расудување"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Пријави грешка или идеја на GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Обиди се повторно со камерата"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Врати се на чекор %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Откриј објаснување"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Прегледај или испрати читање"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Прегледај читање"</string>
+    <string name="msg_right_883361d5" formatted="false">"Точно"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Постапката е завршена. Вратете се за да прегледате кој било потег или пробајте ги чекорите сами."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"ред %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Ред %1$s, колона %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Ред %1$s, колона %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"ред $1, колона $2"</string>
+    <string name="msg_row_634768da" formatted="false">"ред"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"редови"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", исклучено %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Дијагностичките податоци од скенирањето не можеа да се прочитаат."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Слики од екранот или примери на загатки"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Втора претпоставка: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Избери за вежбање"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Избрано: ред %1$s, колона %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Испрати дијагностички податоци (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Испрати дијагностички податоци"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Испрати ги овие скенирања"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Испрати ја оваа фотографија"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Поставки"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"седум"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Споделувај автоматски кога читањето е несигурно"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Автоматски да се споделуваат несигурните читања?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Прикажи противречност"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Покажи ги сите %1$s на твојата загатка"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Покажи го тоа на твојата загатка"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Едноставно боење"</string>
+    <string name="msg_six_44778d82" formatted="false">"шест"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Облакодер"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", решение %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Реши"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Решено, и секој одговор е точен."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Одговор со помош на решавачот: поставете %1$s во %2$s. Кандидатите се %3$s. Поддржаните техники на апликацијата не најдоа потег од оваа позиција. Нејзиното пребарување најде %4$s во единственото решение; не е достапен детален доказ за гранките на пребарувањето."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nОдговор со помош на решавачот: техниките што ги поддржува апликацијата не најдоа потег. Детален доказ не е достапен."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Елиминација со помош на решавачот: пребарувањето ја исклучува %1$s од означеното поле, но апликацијата не можеше да создаде кратка низа до противречност за приказ. Детален доказ не е достапен."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Некои полиња може да содржат белешки наместо целосна цифра."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Некои цифри не беа прочитани со сигурност."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Нешто тргна наопаку при читањето на таа фотографија."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Поле"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nПочетни кандидати: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Чекор %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Порамнете"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Стратегии"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Потврда за испраќање"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Потврдата за испраќање е неважечка."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Потврди за испраќање (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Потврди за испраќање"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Во одговорот на испраќањето недостасува %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Статусот на одговорот на испраќањето е неважечки."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Услугата за испраќање не е конфигурирана."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Услугата за испраќање врати HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Испраќањето не е достапно во оваа верзија."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Испрати"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Автоматски испраќај ги идните несигурни читања"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Испрати читање"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Испрати несигурно читање за анализа"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Испрати ажурирање"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Испратено"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Се испраќа…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Дијагностички податоци за Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Повратни информации за Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy го објавува Freevia. Контакт: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy ги чита загатките преку камерата, па му треба пристап до неа. Препознавањето и историјата на загатките остануваат на вашиот телефон. Ако изберете да испратите несигурно читање, неговата фотографија и резултатите безбедно се испраќаат до Freevia за подобрување на препознавањето. Автоматското споделување е по избор и може да се исклучи во Поставки."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Скенирање од Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Скенирања од Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Изворниот код на Sudoku Buddy е лиценциран според Apache License 2.0. Брендот Freevia подлежи на посебни права на трговска марка."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Судоку е вид загатка во јавен домен. Оваа апликација решава загатки што веќе ги имате; не репродуцира ниту дистрибуира туѓи загатки."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", поткрепувачки доказ"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Да претпоставиме дека означеното поле содржи %1$s. Нумерираните цифри се хипотетички."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Да претпоставиме дека ова поле е %1$s. Следете ги стрелките по ред: секое поле е одредено од претходните поставувања - или таа цифра е единствената што сè уште може да стои во него, или тоа поле е единственото место каде што цифрата сè уште може да се постави.\n\nТака во црвената единица не останува место за %2$s. Ознаките %3$s во неа се местата каде што можеше да се постави, а секое од нив е поле што една од стрелките штотуку го зафатила. Единица без место за некоја цифра е невозможна - затоа ова поле не е %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Да претпоставиме дека ова поле е %1$s. Следете ги стрелките по ред: секое поле е принудено од претходните поставувања — или таа цифра е единствената што сè уште може да ја содржи, или тоа поле е единственото место каде што цифрата сè уште може да оди. Полето во црвено потоа останува без ниту една можна цифра, што е невозможно — затоа ова не е %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Да претпоставиме дека ова поле е %1$s. Следете ги стрелките по ред: секое поле е одредено од претходните поставувања - или таа цифра е единствената што сè уште може да стои во него, или тоа поле е единственото место каде што цифрата сè уште може да се постави.\n\nТака во црвениот ред не останува место за %2$s. Ознаките %3$s во него се местата каде што можеше да се постави, а секое од нив е поле што една од стрелките штотуку го зафатила. Ред без место за некоја цифра е невозможен - затоа ова поле не е %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Да претпоставиме дека ова поле е %1$s. Следете ги стрелките по ред: секое поле е одредено од претходните поставувања - или таа цифра е единствената што сè уште може да стои во него, или тоа поле е единственото место каде што цифрата сè уште може да се постави.\n\nТака во црвениот блок не останува место за %2$s. Ознаките %3$s во него се местата каде што можеше да се постави, а секое од нив е поле што една од стрелките штотуку го зафатила. Блок без место за некоја цифра е невозможен - затоа ова поле не е %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Да претпоставиме дека ова поле е %1$s. Следете ги стрелките по ред: секое поле е принудено од претходните поставувања — или таа цифра е единствената што сè уште може да ја содржи, или тоа поле е единственото место каде што цифрата сè уште може да оди.\n\nТака, во црвено означениот %2$s нема место за %3$s. Означените %4$s во него се местата каде што можела да оди, а секое е поле што штотуку го зафатила една од стрелките. Не може да има %5$s без место за некоја цифра — затоа ова не е %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Да претпоставиме дека ова поле е %1$s. Следете ги стрелките по ред: секое поле е одредено од претходните поставувања - или таа цифра е единствената што сè уште може да стои во него, или тоа поле е единственото место каде што цифрата сè уште може да се постави.\n\nТака во црвената колона не останува место за %2$s. Ознаките %3$s во неа се местата каде што можеше да се постави, а секое од нив е поле што една од стрелките штотуку го зафатила. Колона без место за некоја цифра е невозможна - затоа ова поле не е %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Префрлете се на „Потоа“ за да ги видите потегот и неговите последици на мрежата."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Сабјарка"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Направи нова фотографија"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Направи уште една фотографија"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Земете една цифра и означете ја секоја единица во која ѝ преостануваат точно две полиња. Тие две се како клацкалка: едното ја содржи цифрата, а другото не.\n\nПочнете каде било и обојте едно поле, на пример, сино. Обојте го неговиот партнер од клацкалката зелено, потоа партнерот на тоа поле повторно сино и продолжете додека не заврши синџирот. Или секое сино поле ја содржи цифрата, или секое зелено — не можете да знаете која боја, а тоа е доволно за две работи.\n\nПрво: ако две полиња со иста боја се појават во еден ред, колона или блок, таа боја е невозможна, па цифрата се отстранува од сите полиња со таа боја, а другата боја го дава одговорот низ целиот синџир.\n\nВторо: секое поле надвор од синџирот што гледа и сино и зелено поле може да ја отфрли цифрата, бидејќи едно од тие две ја содржи, без оглед на исходот на синџирот.\n\nСо молив е бавно, но вреди: едно боење често отстранува цифра од половина табла."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Разгледувајте по една цифра и една единица — на пример, каде може да оди 4 во овој блок? Прецртајте го секое поле во единицата што веќе има цифра или што гледа 4 во својот ред или колона. Ако остане едно поле, 4 оди таму.\n\nЗамката е што ова не можете да го видите гледајќи го полето: тоа може да прифати и пет други цифри, па ништо во него не изгледа принудено. Гледајте ја цифрата наместо полето, и веднаш ќе го забележите."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Фотографирај"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Фотографирај автоматски"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Допрете означено поле за да го прегледате или потврдете дека сите читања се точни."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Прво допрете поле на мрежата."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Проверете ја %1$s како претпоставка во означеното поле. Тоа не е одговор. Следете ги последиците за да видите зошто не успева."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Провери претпоставка"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Ви благодариме што помагате да се подобри препознавањето. Фотографијата на вашата загатка, читањата и поправките ќе се користат за анализа и тренирање."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"И тоа е валиден потег со %1$s. Оваа постапка прикажува друг потег; споредете го неговиот доказ подолу."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Тоа не е потегот избран за овој чекор. Може да има други валидни потези; погледнете повторно или откријте го објаснувањето за овој чекор."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Тоа е точно"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Тоа е остатокот од загатката. На %1$s полиња им требаат одговори со помош на решавачот, бидејќи поддржаните техники на апликацијата не најдоа потег. Нивните детални докази од пребарувањето не се достапни."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Тоа е остатокот од загатката. На едно поле му треба одговор со помош на решавачот, бидејќи поддржаните техники на апликацијата не најдоа потег. Неговиот детален доказ од пребарувањето не е достапен."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Тоа е остатокот од загатката, од почеток до крај."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Фотографијата не можеше да се зачува, па нема што да се испрати."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Тоа поле дозволува %1$s. Побарајте го потегот оправдан со техниката на овој чекор или откријте го неговото објаснување."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Тоа поле е веќе пополнето. Изберете празно поле."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Претпоставката е отфрлена. Се враќаме на вистинските кандидати и ја прецртуваме %1$s во означеното поле. Хипотетичките цифри се бришат."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Камерата не можеше да ја направи таа фотографија."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Камерата е недостапна. Затворете ги другите апликации што ја користат камерата, па обидете се повторно."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"другото"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Фотографијата од %1$s и сè што е прочитано од неа ќе се отстранат од овој телефон. Ова не може да се поништи."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Фотографијата е во списокот со ваши загатки, под „Не можеше да се прочита“."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Стожерот тука е %1$s или %2$s. Во двата случаи, едно од другите две полиња е принудено да биде %3$s, па ниедно поле што ги гледа двете не може да биде %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Насочен пар прочитан обратно. Земете ред или колона и цифра на која сè уште ѝ треба место во нив. Означете го секое поле на таа линија што може да ја содржи цифрата. Ако сите се во еден блок, цифрата мора да биде во делот од линијата што припаѓа на тој блок — па ја нема никаде на друго место во блокот, вклучувајќи ги неговите два реда или колони што не ги разгледувавте.\n\nКако и насочениот пар, ова само по себе не поставува ништо; отвора простор за потег што ќе постави цифра."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Печатените цифри не образуваат решлива загатка."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nПреостанатите кандидати во %1$s се {%2$s}. Внесете %3$s во ред %4$s, колона %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Извештајот е преголем за испраќање."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-крило чиј стожер има еден кандидат повеќе. Побарајте поле со точно три кандидати, на пример {1,4,7}, што гледа две полиња со по два кандидати — едно {1,7} и едно {4,7}.\n\nСега сите три можат да бидат 7, а едно од нив мора да биде. Затоа, за да се исклучи 7 од некое поле, тоа мора да ги гледа сите три, а не само двете клешти — што во практика значи дека е во истиот блок со стожерот и на иста линија со една клешта.\n\nИма помалку елиминации од Y-крило и полесно се пропушта од истата причина: стожерот не се истакнува."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Во означениот блок има поле што можете да го пополните.\n\nПритиснете „Совет“ повторно за да дознаете која техника го наоѓа."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Тука веќе нема ништо за расудување."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Овие %1$s полиња содржат само %2$s и %3$s, а секое го гледа следното, па цифрите се менуваат наизменично по целиот синџир. %4$s и %5$s се оддалечени за непарен број врски и затоа содржат различни цифри — со што %6$s се исклучува од сè што ги гледа двете."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Овие %1$s полиња заедно содржат само %2$s, па тие цифри ги пополнуваат по некој редослед. Со тоа %3$s се исклучува од остатокот на овој %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Овие %1$s полиња заедно ги имаат само кандидатите %2$s, па тие цифри ги пополнуваат во некаков редослед. Со тоа %3$s се исклучува од останатите полиња во овој ред."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Овие %1$s полиња заедно ги имаат само кандидатите %2$s, па тие цифри ги пополнуваат во некаков редослед. Со тоа %3$s се исклучува од останатите полиња во оваа колона."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Овие %1$s полиња заедно ги имаат само кандидатите %2$s, па тие цифри ги пополнуваат во некаков редослед. Со тоа %3$s се исклучува од останатите полиња во овој блок."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Ова се почетните кандидати за вашето поле. „Следење“ објаснува кои можности може да се исклучат."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Овие цифри не можат да образуваат загатка, а има премногу грешки за да се утврди кои се. Допрете кое било поле за да го поправите прочитаното или фотографирајте повторно."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Овие цифри не можат да образуваат загатка. Промена на %1$s заокружени полиња би го поправила тоа — допрете едно за да го поправите прочитаното."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Овие цифри не можат да образуваат загатка. Промена на заокруженото поле би го поправила тоа — допрете го за да го поправите прочитаното."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Овие цифри не образуваат загатка, па една е погрешно прочитана. Притиснете „Реши“ за да видите кои полиња да ги поправите."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Овие четири полиња образуваат правоаголник во два блока, а три од нив содржат само %1$s. Ако и %2$s ги содржеше само тие две, цифрите би можеле да се заменат околу правоаголникот и загатката би имала два одговора. Таа има еден, па %3$s мора да користи нешто друго — и %4$s се отстранува."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Не стигнуваат до крај: нешто тука целосно ја надмина апликацијата."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Ова не пополнува ништо. Ја исклучува %1$s од %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Со ова не се пополнува ништо. Се исклучува %1$s од %2$s полиња."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Со ова не се пополнува ништо. Се исклучува %1$s од едно поле."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nОва е првиот од %1$s заклучоци што водат до одговорот."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Овој доказ објаснува еден совет, вклучувајќи ги елиминациите на кандидати што водат до неговиот одговор. Одете чекор напред за да го следите расудувањето на мрежата, па продолжете со целосната постапка."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Оваа загатка не можеше да се подготви."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Оваа загатка не можеше да се зачува. Сè уште можете да ја користите сега. Ослободете простор пред да направите друга фотографија."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Оваа загатка има повеќе од еден одговор, па веројатно е пропуштена печатена цифра. Се прикажува одговор %1$s од %2$s — притиснете „Реши“ повторно за следниот. Заокружените полиња се разликуваат меѓу прикажаните одговори."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Фотографијата на оваа загатка не можеше да се отвори."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Ова расудување исклучува %1$s постојни "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Ова поле може да содржи белешки со кандидати наместо целосна цифра. Проверете го."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Овој приказ вклучува претходни отстранувања на кандидати. Отворете ги нивните докази подолу за да ги проверите."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"три"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Премногу е темно за да се распознаат линиите на мрежата"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Следење"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Испробано"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Пробај самостојно"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Вклучи"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Свртете го телефонот така што загатката ќе биде исправена."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Учител"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"две"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Две полиња со ист пар кандидати, поврзани со клацкалка за една од цифрите, ја принудуваат другата цифра во едно од нив."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Змеј со две врвки"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Единствен правоаголник"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"група"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Нечитливо не изложува листа CellReading; точните влезни полиња и исходот се задржуваат."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"ГрешкаПриНебезбедноКористењеСоСогласност"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"неподдржана верзија на форматот на моделот"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Несигурно"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Користи го јазикот на уредот"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Користејќи %1$s, допрете едно поле од кое може да се отстрани кандидат, па изберете ја таа цифра."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Користејќи %1$s, допрете го полето што можете да го пополните, па изберете ја неговата цифра."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Многу тешко"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-крило"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"беше"</string>
+    <string name="msg_were_910adfb4" formatted="false">"беа"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Што очекувавте или како вашата идеја би ви помогнала да решавате или учите судоку?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Што се случи и чекори за повторување (за грешки)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Што прави"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Каде"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Зошто %1$s е отстранета од r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Зошто"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Зошто не %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Зошто ова поле? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" со решението. Користете Проверка за да ги разгледате."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Работете наназад од вашето поле. Изберете прашање подолу."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Работете цифра по цифра наместо поле по поле. За една единица, запишете каде сè уште може да оди секоја цифра што недостасува. Потоа побарајте %1$s цифри чии списоци заедно опфаќаат само %2$s полиња.\n\nТие %3$s цифри мора да ги пополнат тие %4$s полиња, па сè друго во нив може да се прецрта — што често веднаш претвора едно од нив во гол единечен кандидат или гол пар.\n\nОва луѓето го сметаат за најтешко, бидејќи при гледање на полињата нема што да се забележи: тие сè уште имаат многу кандидати. Образецот е во цифрите."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Работете само со полиња во кои остануваат точно два кандидати.\n\nПочнете од едно, на пример {2,6}, и претпоставете дека не е 2 — тогаш е 6. Одете до поле што тоа го гледа и што исто така има 6, на пример {6,4}: тоа не може да биде 6, па е 4. Одете до поле што второто го гледа и што содржи 4, па продолжете, при што секој чекор е принуден од претходниот.\n\nАко стигнете до поле чија друга цифра е 2 — цифрата што ја исклучивте на почетокот — готово е. Или првото поле сепак било 2, или синџирот се одвивал и последното поле е 2. Едниот или другиот крај ја содржи, па ниедно поле што ги гледа двата краја не може да ја содржи.\n\nОдржувајте ги синџирите кратки. Четири или пет полиња може да се најдат со молив; над тоа веќе водите евиденција, и вистинскиот назив е принудувачки синџир."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"работниот раб мора да биде позитивен и конечен"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Не можеше да се прочита"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Напишано"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Погрешно"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-крило"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-синџир"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-крило"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-крило"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Го испразнивте ова поле."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Го поставивте ова како рачно напишана %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Го поставивте ова како печатена %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Вашите промени се видливи, но не можеа да се зачуваат. Ослободете простор и обидете се повторно да ја уредите загатката."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Вашите фотографии и вашата приватност"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Вашите загатки"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Вашите зачувани загатки"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Вашето поле ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Вашето поле останува обележано со рамка. Зелените полиња покажуваат докази; прецртаните цифри се исклучени."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

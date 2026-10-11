@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nVurğulanmış xanalar bunu sübut edir.\n\nHansı xana olduğunu görmək üçün İpucu düyməsinə yenidən basın."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s və %2$s hər ikisi yalnız %3$s və %4$s saxlayır. Bu %5$s daxilində %6$s üçün yalnız iki yer var və hər birini uclardan biri görür — deməli, həmin iki yerdən biri %7$s-dır və onu görən uc %8$s olmalıdır. Hər iki halda uclardan biri %9$s-dir, bu isə onların hər ikisini görən bütün xanalarda %10$s namizədini istisna edir."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s və %2$s xanalarının hər birində yalnız %3$s və %4$s ola bilər. Bu blokda %5$s üçün cəmi iki mümkün yer var; bu yerlərin hər biri həmin iki xanadan biri ilə ortaq sətir, sütun və ya blokdadır — deməli, həmin yerlərdən biri %6$s olur və onunla əlaqəli uc xanada mütləq %7$s olmalıdır. Hər iki halda uc xanalardan biri %8$s olur, buna görə hər iki uc xana ilə ortaq sətir, sütun və ya bloku olan bütün xanalardan %9$s silinir."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s və %2$s xanalarının hər birində yalnız %3$s və %4$s ola bilər. Bu sütunda %5$s üçün cəmi iki mümkün yer var; bu yerlərin hər biri həmin iki xanadan biri ilə ortaq sətir, sütun və ya blokdadır — deməli, həmin yerlərdən biri %6$s olur və onunla əlaqəli uc xanada mütləq %7$s olmalıdır. Hər iki halda uc xanalardan biri %8$s olur, buna görə hər iki uc xana ilə ortaq sətir, sütun və ya bloku olan bütün xanalardan %9$s silinir."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s və %2$s xanalarının hər birində yalnız %3$s və %4$s ola bilər. Bu sətirdə %5$s üçün cəmi iki mümkün yer var; bu yerlərin hər biri həmin iki xanadan biri ilə ortaq sətir, sütun və ya blokdadır — deməli, həmin yerlərdən biri %6$s olur və onunla əlaqəli uc xanada mütləq %7$s olmalıdır. Hər iki halda uc xanalardan biri %8$s olur, buna görə hər iki uc xana ilə ortaq sətir, sütun və ya bloku olan bütün xanalardan %9$s silinir."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s, sətir %2$s, sütun %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%2$s addımında %1$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s xanasında yalnız %2$s ola bilər."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s xanası %2$s saxlaya bilməz, çünki %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s xanasında %2$s ola bilməz, çünki eyni %5$s sütunundakı %3$s xanasında yalnız %4$s ola bilər."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s xanasında %2$s ola bilməz, çünki eyni %5$s blokundakı %3$s xanasında yalnız %4$s ola bilər."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s xanasında %2$s ola bilməz, çünki eyni %5$s sətrindəki %3$s xanasında yalnız %4$s ola bilər."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s xanasında %2$s ola bilməz, çünki eyni %5$s blokundakı %3$s xanasında %4$s var."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s xanasında %2$s ola bilməz, çünki eyni %5$s sütunundakı %3$s xanasında %4$s var."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s xanasında %2$s ola bilməz, çünki eyni %5$s sətrindəki %3$s xanasında %4$s var."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s xanasında %2$s var."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s boş"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, daxiletmə"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s mütləq burada olmalıdır: bu, %2$s sütununda %3$s rəqəminin hələ yerləşə biləcəyi yeganə xanadır.\n\n%4$s\n\nHazırda %5$s xanasında %6$s mümkündür, amma hər sütunda %7$s dəqiq bir dəfə olmalıdır. Buna görə %8$s rəqəmini %9$s sətrində, %10$s sütununda yerləşdirin."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s buraya yerləşməlidir: bu %2$s %3$s daxilində hələ %4$s qəbul edə bilən yeganə xana budur.\n\n%5$s\n\n%6$s hazırda %7$s qəbul edir, lakin hər %8$s daxilində %9$s dəqiq bir dəfə olmalıdır. Buna görə sətir %11$s, sütun %12$s xanasına %10$s yerləşdirin."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s mütləq burada olmalıdır: bu, %2$s blokunda %3$s rəqəminin hələ yerləşə biləcəyi yeganə xanadır.\n\n%4$s\n\nHazırda %5$s xanasında %6$s mümkündür, amma hər blokda %7$s dəqiq bir dəfə olmalıdır. Buna görə %8$s rəqəmini %9$s sətrində, %10$s sütununda yerləşdirin."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s mütləq burada olmalıdır: bu, %2$s sətrində %3$s rəqəminin hələ yerləşə biləcəyi yeganə xanadır.\n\n%4$s\n\nHazırda %5$s xanasında %6$s mümkündür, amma hər sətirdə %7$s dəqiq bir dəfə olmalıdır. Buna görə %8$s rəqəmini %9$s sətrində, %10$s sütununda yerləşdirin."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s üçün bu sətirdə iki, bu sütunda da iki yer var. %2$s və %3$s eyni blokdadır, buna görə hər ikisi %4$s ola bilməz — nəticədə %5$s və %6$s xanasından biri həmin rəqəmi saxlayır və onların hər ikisini görən bütün xanalarda %7$s istisna edilir."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" eyni %2$s daxilində %1$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" eyni blokda %1$s."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" eyni sütunda %1$s."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" eyni sətirdə %1$s."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s artıq həmin xanada istisna edilib. Onun namizədləri: "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s namizədini %2$s istisna edir; bu isə "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s istisna edilir, çünki eyni %4$s sütunundakı %2$s xanasında yalnız %3$s ola bilər."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s istisna edilir, çünki eyni %4$s sətrindəki %2$s xanasında yalnız %3$s ola bilər."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s istisna edilir, çünki eyni %4$s blokundakı %2$s xanasında yalnız %3$s ola bilər."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s istisna edilir, çünki eyni %4$s blokundakı %2$s xanasında %3$s var."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s istisna edilir, çünki eyni %4$s sütunundakı %2$s xanasında %3$s var."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s istisna edilir, çünki eyni %4$s sətrindəki %2$s xanasında %3$s var."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"Ən yeni nömrələnmiş xanada (sətir %2$s, sütun %3$s) %1$s məcburidir. %4$s Ox buna səbəb olan yerləşdirməni izləyir; əvvəlki nəticələr də əhəmiyyətlidir."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s classpath-də yoxdur"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%2$s-dən %1$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"Onlardan %1$s xananı doldurur; qalanları əvvəlcə mane olan namizədləri silir."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s cüt"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s çap olunmuş, %2$s, %3$s səhv"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s çap olunmuş, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s çap olunmuş"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, çap olunmuş ilkin rəqəm"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s dördlük"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s rədd edilmiş foto, ən yenisi əvvəl:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: %2$s namizədini sil"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Xanaların sayı: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Bu həll yolu %1$s addımdan ibarətdir, ən çətin dəstəklənən üsul %2$s-dir. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s üçlük"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s əvvəlki namizəd əsaslandırması ilə %2$s xanasından silinib."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s yazılmış"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"%1$sx%2$s təsvir üçün %3$s bayt lazımdır, lakin %4$s alınıb"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"bir xana nə rəqəm, nə də nöqtə idi"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Eyni rəqəmlə başlayıb bitən iki namizədli xanalar zəncirində həmin rəqəm uclardan birində olmalıdır."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Sətirdə, sütunda və ya blokda yalnız bir mümkün yeri qalan rəqəm həmin yerə aiddir."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Əllə yazılmış %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Çap edilmiş %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Qırmızı xana tətbiqin orada oxuduğu rəqəmi göstərir. Bu, yazdığınız rəqəm deyilsə, düzəltmək üçün xanaya toxunun."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Yalnız bir mümkün rəqəmi qalan xanada həmin rəqəm olmalıdır."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Üsullar siyahısı heç vaxt tam olmur və ən çətin tapmacalar siyahıdakı bütün üsullara qarşı dayanmaq üçün hazırlanır. Buna görə bunların heç biri nəticə vermədikdə, təlimçi namizədləri sınayaraq bir xananı müəyyənləşdirir, bunu etdiyini açıq bildirir və oradan məntiqi həllə davam edir. O, həmişə tapmacanı sona çatdırır və hazır həllə baxmağı heç vaxt məntiqi nəticə kimi təqdim etmir."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Üç namizədli dayaq xana və ona uyğun iki ikinamizədli qanad hər üçünü görən bütün xanalardan bir rəqəmi istisna edir."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"İki namizədli dayaq xana və iki ikinamizədli qanad hər iki qanadı görən bütün xanalardan bir rəqəmi istisna edə bilər."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Haqqında"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Sonra"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Bu gedişdən sonra"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Hamısı düzgündür"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Bu üç xananın hər biri %1$s ola bilər və onlardan biri mütləq elədir. Buna görə hər üçünü görən heç bir xana %2$s ola bilməz."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Kameraya icazə ver"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Az qalıb — vərəqi düz və kameraya paralel tutun"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"heç nə silməyən silmə məntiqi nəticə deyil"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" və "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Cavab"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Tətbiq və cihaz (əvvəlcədən doldurulub)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Tətbiq: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"nisbət müsbət olmalıdır, lakin %1$s idi"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Fərziyyə · ehtimal edilən rəqəm"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Fərziyyə rədd edildi · həqiqi namizədlər bərpa edildi"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"ən azı %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Avtomatik foto"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Qeyri-müəyyən tanınmış tapmaca fotolarını, oxuma nəticələrini və sonrakı xana düzəlişlərini tanımanın təhlili və model təlimi üçün avtomatik olaraq Freevia ilə paylaşın. Standart olaraq söndürülüb."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"İşıq əksindən qaçının"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Geri"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Əvvəlki suala qayıt"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Vizual ipucuna qayıt"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Xananıza qayıt"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Əvvəl"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Bu gedişdən əvvəl"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Mavi rəqəmlər həlldir. Oxunan rəqəmi düzəltmək üçün istənilən xanaya toxunun."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"blok %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"blok"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Blok"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Blok-xətt ixtisarı"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"yalnız bunu saxlaya bilər"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Ləğv et"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", namizədlər %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"Çəkiliş dəlili"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Rəqəmi yalnız iki mümkün yeri olan vahidlər boyunca zəncirə bağlayın, zənciri növbə ilə iki rəngə boyayın; rənglərdən biri bütün zəncir boyunca doğrudur."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$s rəqəmini yalnız iki mümkün yeri olan sətir, sütun və bloklar boyunca zəncirlə əlaqələndirdikdə bu xanalar növbə ilə iki rəngə boyanır; rənglərdən birinin bütün xanaları doğrudur. Digər rəngin iki xanası eyni sətirdədir, bu isə mümkün deyil — deməli, həmin rəng yanlışdır və %2$s o rəngdəki bütün xanalardan silinir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$s rəqəmini yalnız iki mümkün yeri olan sətir, sütun və bloklar boyunca zəncirlə əlaqələndirdikdə bu xanalar növbə ilə iki rəngə boyanır; rənglərdən birinin bütün xanaları doğrudur. Digər rəngin iki xanası eyni blokdadır, bu isə mümkün deyil — deməli, həmin rəng yanlışdır və %2$s o rəngdəki bütün xanalardan silinir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"%1$s rəqəmini yalnız iki mümkün yeri olan sətir, sütun və bloklar boyunca zəncirlə əlaqələndirdikdə bu xanalar növbə ilə iki rəngə boyanır; rənglərdən birinin bütün xanaları doğrudur. Digər rəngin iki xanası eyni sütundadır, bu isə mümkün deyil — deməli, həmin rəng yanlışdır və %2$s o rəngdəki bütün xanalardan silinir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"%1$s rəqəmini yalnız iki mümkün yeri olan vahidlər boyunca zəncirə bağladıqda bu xanalar növbə ilə iki rəngə ayrılır və rənglərdən biri bütün zəncir boyunca doğrudur. %2$s rəngli iki xana eyni %3$s daxilindədir; bu mümkün deyil. Deməli, həmin rəng yanlışdır və %4$s bu rəngdəki bütün xanalardan silinir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"%1$s rəqəmini yalnız iki mümkün yeri olan vahidlər boyunca zəncirə bağladıqda bu xanalar növbə ilə iki rəngə ayrılır və rənglərdən biri bütün zəncir boyunca doğrudur. Bu xanalar hər iki rəngi görür, buna görə zəncir hansı şəkildə nəticələnsə də, gördükləri xanalardan birində %2$s olur — deməli, özlərində ola bilməz."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"%1$s rəqəmini yalnız iki mümkün yeri olan sətir, sütun və bloklar boyunca zəncirlə əlaqələndirdikdə bu xanalar növbə ilə iki rəngə boyanır; rənglərdən birinin bütün xanaları doğrudur. Bir rəngin iki xanası eyni blokdadır, bu isə mümkün deyil — deməli, həmin rəng yanlışdır və %2$s o rəngdəki bütün xanalardan silinir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"%1$s rəqəmini yalnız iki mümkün yeri olan sətir, sütun və bloklar boyunca zəncirlə əlaqələndirdikdə bu xanalar növbə ilə iki rəngə boyanır; rənglərdən birinin bütün xanaları doğrudur. Bir rəngin iki xanası eyni sütundadır, bu isə mümkün deyil — deməli, həmin rəng yanlışdır və %2$s o rəngdəki bütün xanalardan silinir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"%1$s rəqəmini yalnız iki mümkün yeri olan sətir, sütun və bloklar boyunca zəncirlə əlaqələndirdikdə bu xanalar növbə ilə iki rəngə boyanır; rənglərdən birinin bütün xanaları doğrudur. Bir rəngin iki xanası eyni sətirdədir, bu isə mümkün deyil — deməli, həmin rəng yanlışdır və %2$s o rəngdəki bütün xanalardan silinir."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Yoxlanmalı qeyri-müəyyən xanalar: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Yoxla"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Bir qeyri-müəyyən xananı yoxlayın."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", düzgün olduğu yoxlanılıb"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Xananızda niyə ola bilmədiyini görmək üçün namizəd seçin."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Dil seçin"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Nəyin göstəriləcəyini seçin"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Bağla"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"İpucunu bağla"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Oxuma nəticələrinin baxışını yığ"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"rəngli və boz tonlu xanalar eyni həndəsədən istifadə etməlidir"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"sütun %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"sütun"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"sütunlar"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Məcburetmə zəncirlərini müqayisə edin və izləniləcək xanası daha az olanlara üstünlük verin. Daha qısa zəncirlər tam həlldə daha çox addım tələb edə bilər."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"%2$s nəticədən %1$s-cısı · fərziyyə rəqəmləri"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"ehtiva edir"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Məzmun növü"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Tam həll yolu ilə davam et"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Ziddiyyət · fərziyyə yanlışdır"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", ziddiyyət"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Ziddiyyət: qırmızı %1$s daxilində %2$s üçün yer qalmayıb. Bu mümkün deyil, deməli, başlanğıc fərziyyə yanlışdır."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Ziddiyyət: qırmızı xanada heç bir namizəd qalmayıb. Bu mümkün deyil, deməli, başlanğıc fərziyyə yanlışdır."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Silmə sorğusunu kopyala"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Düzdür. Məntiqinizi aşağıdakı izahla müqayisə edin."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"çəkilmiş təsvirin kodu açıla bilmədi"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Həmin fotoda çap edilmiş rəqəmlər tapılmadı."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Torun xətləri seçilmədi — yenidən cəhd edin."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHub açıla bilmədi. %1$s ünvanında dəstək xidməti ilə əlaqə saxlayın."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Sazlama üçün çəkiliş dəlili saxlanıla bilmədi"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Oxuma nəticəsi göndərilə bilmədi. Bağlantınız olduqda yenidən cəhd edin."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Çıxılmaz vəziyyət"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"SİL"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Sil"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Hesabatı sil"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Bu fotonu sil"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Bu tapmacanı sil"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Bu tapmaca silinsin?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Bu göndəriş silinsin?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Silinir…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Silinmə təsdiqlənə bilmədi. Bağlantınızı yoxlayıb yenidən cəhd edin."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Silmə sorğusu"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Silmə cavabı bu qəbzi təsdiqləmədi."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Silmə xidməti HTTP %1$s qaytardı."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Nə baş verdiyini və təkrarlamaq üçün addımları təsvir edin. Əvvəlcə tanınmış rəqəmləri yoxlayıb düzəldib-düzəltmədiyinizi bildirin. Fikir üçün \'Tətbiq edilmir\' yazın."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", bu ipucunun hədəfi"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Cihaz: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diaqnostika brauzerdəki qaralamaya sığması üçün qısaldılıb. Tətbiqin Diaqnostikanı göndər əməliyyatı tam hesabatı paylaşa bilər."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"rəqəm 1..9 olmalıdır, lakin %1$s idi"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Rəqəmlər oxunmadı"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Dəlilin diskdə saxlanması vaxt ölçmələrinə təsir edir; bu, gecikmə üzrə müqayisə testi deyil."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", həll ilə uyğun gəlmir"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Hər qəbz göndərilmiş tapmacanın bir versiyasını müəyyənləşdirir. Freevia-da məxfi saxlanılan hesabatı silmək üçün onu burada silin."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Əvvəlki istisnalar: %1$s. Sübutlarını araşdırmaq üçün əvvəlki addımların keçidlərindən istifadə edin."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← əvvəlki dəlil (dərinlik %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Əvvəlki fərziyyə yerləşdirmələri burada yalnız bir namizəd saxlayır."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Bu sübutda istifadə olunan əvvəlki addımlar"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Xananı redaktə et"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"səkkiz"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"boş"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Boş."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Boş"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"İngilis dili"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"uyğun gəlməyən daxiletmələr"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"uyğun gəlməyən daxiletmə"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Onların hər biri bir xananı doldurur."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Bütün xanalar doldurulub, amma %1$s cavab həllə uyğun gəlmir."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Bütün xanalar doldurulub, amma bir cavab həllə uyğun gəlmir."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Yeganə həlli olan hər sudoku məntiqlə həll edilə bilər; təxmin etmək heç vaxt lazım deyil və nadir hallarda kömək edir. Bunlar tətbiqin tanıyıb izah edə bildiyi məntiqi üsullardır, ən asandan başlayır. Açıq tapmacanızda onlardan biri tətbiq oluna bilirsə, tətbiq olunduğu bütün yerləri göstərəcək."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"İndiyədək yazdığınız hər şey düzgündür."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Hazırda mövcud nümunələr: hər biri indiki torunuzdan başlayır."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 üfüqi xətt gözlənilirdi, %1$s alındı"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"10 şaquli xətt gözlənilirdi, %1$s alındı"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81 xana gözlənilirdi, lakin %1$s alındı"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"hər blokda 81 xana gözlənilirdi, %1$s və %2$s tapıldı"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"8 bitlik tək kanal gözlənilirdi, lakin %1$s alındı"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"28x28 təsvir gözlənilirdi, lakin %1$s dəyər alındı"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Gözlənilən davranış və ya təklif edilən təkmilləşdirmə"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"hər istiqamətdə on xətt gözlənilirdi"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"iki blok gözlənilirdi, %1$s tapıldı"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Əvvəlki namizəd silmələrini izah et (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"İpuclarını izah et"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Yalnız iki və ya üç namizədi qalan xana tapın — nə qədər az olsa, bir o qədər yaxşıdır; ətrafındakı sətir, sütun və blok nə qədər dolu olsa, daha da yaxşıdır.\n\nNamizədlərindən birini seçib qələmlə yüngülcə yazın. İndi nəticələri izləyin: həmin rəqəm xananın gördüyü bütün xanalardan silinir; bu, onlardan birində tək namizəd saxlaya bilər, o da başqa birini məcbur edər və beləcə davam edər. Davam edin.\n\nİki haldan biri baş verir. Ya proses dayanır və heç nə öyrənmirsiniz — yazdığınızı silib digər namizədi sınayın. Ya da heç bir namizədi qalmayan xanaya və ya hansısa rəqəm üçün yer qalmayan sətirə çatırsınız. Bu mümkün deyil, deməli, qələmlə yazdığınız rəqəm yanlış idi və onu birdəfəlik istisna edə bilərsiniz.\n\nBaşqa bütün üsullar tükənəndə buna müraciət edin. Daha yavaşdır və naxış tapmaqdan çox qeydləri izləmək tələb edir, amma naxışların qaçırdığı gedişləri üzə çıxara bilər. Asan üsulların yenidən işləməsi üçün çox vaxt bir istisna kifayətdir; bəzi mövqelər isə yenə də daha dərin axtarış tələb edir."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Bir-birini görməyən, eyni iki namizədi, məsələn {3,7}, olan iki xana tapın — adətən bir-birindən xeyli uzaqda olurlar.\n\nİndi 7 üçün yalnız iki mümkün xanası olan sətir, sütun və ya blok axtarın; bunlardan birini cütünüzün birinci xanası, digərini isə ikinci xanası görməlidir. Bağlantı budur.\n\nHəmin iki xanadan birində 7 var. Hansında olursa olsun, cütünüzün onu görən xanası 7 ola bilməz, deməli, 3 olmalıdır. Hansı ucun 3 olduğunu bilmirsiniz, yalnız birinin 3 olduğunu bilirsiniz — bu isə hər iki ucu görən bütün xanalardan 3-ü istisna etmək üçün kifayətdir.\n\nÇətin hissə bağlantıdır, ona görə əks istiqamətdə axtarın: əvvəlcə bir rəqəmin yalnız iki mümkün yeri olan vahidləri qeyd edin, sonra hər iki tərəfdə uyğun cüt axtarın."</string>
+    <string name="msg_finished_05343e98" formatted="false">"tamamlanıb"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Tor kadrda perspektiv təhrifsiz və sabit olduqda çəkiliş düyməsini basın. Düymə hər halda işləyir."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Bütün toru görüntüyə sığdırın."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Bütün toru görüntüyə sığdırın"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"beş"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Hər gedişin əvvəlkinə əsaslandığı həll yolunu izləyin."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Tam sübutu ardıcıllıqla izlə"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Bu iki namizədli xanalar zəncirini izləyin: %1$s xanası %2$s deyilsə, zəncirdə hər xana əvvəlki tərəfindən məcbur edilir və sonda %3$s xanası %4$s olur. Deməli, uclardan birində %5$s var; bu da onu hər iki ucu görən bütün xanalardan istisna edir."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Məcburetmə zənciri"</string>
+    <string name="msg_four_04efaf08" formatted="false">"dörd"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"İki sətirdə, iki sütunda və iki blokda yerləşən dörd xananın hamısında eyni iki namizəd ola bilməz, yoxsa tapmacanın iki həlli olar."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia silinməni təsdiqlədi, amma bu telefon yerli qəbzi silə bilmədi. Yerli təmizləməni bitirmək üçün yenidən cəhd edin."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia bu hesabat versiyasını və onun məxfi təlim nüsxəsini siləcək. Gələcək düzəlişlər paylaşma ayarlarınıza uyğun yeni hesabat yarada bilər. Bununla artıq təlim keçmiş model öyrəndiyi dəyişiklikləri saxlaya bilər."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Tam həll yolu"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Gələcək qeyri-müəyyən oxuma nəticələri düzləndirilmiş tapmaca fotosunu, tanıma nəticələrini və düzəlişləri təhlil və model təlimi üçün Freevia-ya göndərəcək. Təlim nüsxələri Göndəriş qəbzləri bölməsindən silinənədək saxlanılır; təlim keçmiş model öyrəndiyi dəyişiklikləri saxlaya bilər. Qeyri-müəyyən tanınmış tapmaca artıq açıqdırsa, indi göndəriləcək. Bunu Ayarlarda söndürə bilərsiniz."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Asan"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"İşıq əksi xətləri görünməz edir — vərəqi işıqdan uzağa əyin"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"BozŞəkil(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Boz xanalarda qələm qeydləri var; tətbiq onları nəzərə almır. Rəqəmin altındakı zolaq tanımanın nə qədər etibarlı olduğunu göstərir. Təfərrüat üçün xanaya toxunun."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Əllə yazılmış"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Çətin"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Gizli"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Gizli cüt"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Gizli dördlük"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Gizli tək"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Gizli üçlük"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Əvvəlki dəlili gizlət"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Tapma qaydasını gizlət"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", ipucu %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"İpucu"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"İpucunun sübutu"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"İpucunun məntiqi"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Tərpənməyin..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Tərpənməyin və ya çəkiliş düyməsinə toxunun"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Kamera fokuslanarkən tərpənməyin..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Telefonu paralel tutun"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Telefonu tapmacanın üstündə ona paralel tutun."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Telefonu tapmacanın üstündə ona paralel tutun"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Necə tapmalı"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nBuna necə çatırıq:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Dəqiq iki namizədi olan xanalar axtarın — Y-qanad yalnız üç belə xanadan ibarətdir.\n\nBirini dayaq seçin, məsələn {2,5}. Onun gördüyü {2,9} namizədli bir xana və {5,9} namizədli başqa xana axtarın. Dayaq ya 2-dir, ya da 5. 2-dirsə, birinci qanad 9 olmalıdır; 5-dirsə, ikinci qanad 9 olmalıdır. Hər halda qanadlardan birində 9 yaranır — hansında olduğunu bilmirsiniz və bilməyiniz də lazım deyil.\n\nDeməli, hər iki qanadı görən heç bir xana 9 ola bilməz. Bu xanalar adətən düzbucaqlını tamamlayan iki küncdür."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", fərziyyə üzrə %1$s, daxil edilmiş cavab deyil"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Bir sətirdə, sütunda və ya blokda %1$s rəqəm yalnız eyni %2$s xanaya yerləşə bilirsə, həmin xanalarda başqa rəqəm ola bilməz."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Bir sətirdə, sütunda və ya blokda %1$s xananın birlikdə dəqiq %2$s namizədi varsa, həmin rəqəmlər bu xanalara aiddir və vahidin başqa heç bir xanasında ola bilməz."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Bir rəqəmin sətirdə iki, sütunda da iki mümkün yeri varsa və hərəsindən biri eyni blokdadırsa, digər iki yerdən birində həmin rəqəm olmalıdır."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Bir rəqəmin iki sətirin hərəsində iki mümkün yeri varsa və hər sətirdən bir yer eyni sütundadırsa, digər iki yerdən birində həmin rəqəm olmalıdır."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Bir rəqəmin xətt boyunca bütün mümkün yerləri bir blokdadırsa, həmin rəqəm blokun qalan hissəsindən istisna edilə bilər."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Bir rəqəmin %1$s sətirdəki bütün mümkün yerləri eyni %2$s sütundadırsa, həmin rəqəm bu sütunların digər yerlərindən istisna edilə bilər — sətirlə sütunun yeri dəyişdirildikdə də eynidir."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Bir rəqəmin blok daxilindəki bütün mümkün yerləri eyni xəttdədirsə, həmin rəqəm xəttin qalan hissəsindən istisna edilə bilər."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Bir rəqəmi fərz etmək heç bir rəqəm yerləşdirilə bilməyən xanaya gətirirsə, həmin rəqəm yanlış idi."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"təsvir ölçüləri müsbət olmalıdır"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Hamısında eyni iki namizəd olan xanalar zəncirində tək uzunluqlu zəncirin iki ucunda fərqli rəqəmlər olur."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Bu %1$s %2$s daxilində %3$s yalnız bu %4$s %5$s daxilinə yerləşə bilər. Birlikdə onların hamısını tuturlar, buna görə %6$s həmin %7$s daxilindəki bütün digər yerlərdən istisna edilə bilər."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Bu %1$s sütunda %2$s yalnız bu %3$s sətirdə yerləşə bilər. Birlikdə həmin sətirlərin hamısını tuturlar, buna görə %4$s həmin sətirlərin bütün digər xanalarından silinə bilər."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Bu %1$s sətirdə %2$s yalnız bu %3$s sütunda yerləşə bilər. Birlikdə həmin sütunların hamısını tuturlar, buna görə %4$s həmin sütunların bütün digər xanalarından silinə bilər."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Bu iki %1$s daxilində %2$s üçün hərəsində yalnız iki yer var və %3$s ilə %4$s eyni %5$s daxilindədir — buna görə hər ikisi %6$s ola bilməz. Deməli, %7$s və %8$s xanalarından biri həmin rəqəmdir; bu da %9$s rəqəmini hər ikisini görən bütün xanalardan istisna edir."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Bu iki sütunun hər birində %1$s üçün yalnız iki mümkün yer var və %2$s ilə %3$s eyni sətirdədir — deməli, hər ikisi %4$s ola bilməz. Buna görə %5$s və %6$s xanalarından biri həmin rəqəmdir; beləliklə, hər ikisi ilə ortaq sətir, sütun və ya bloku olan bütün xanalardan %7$s silinir."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Bu iki sətrin hər birində %1$s üçün yalnız iki mümkün yer var və %2$s ilə %3$s eyni sütundadır — deməli, hər ikisi %4$s ola bilməz. Buna görə %5$s və %6$s xanalarından biri həmin rəqəmdir; beləliklə, hər ikisi ilə ortaq sətir, sütun və ya bloku olan bütün xanalardan %7$s silinir."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Bu %1$s daxilində %2$s yalnız bu %3$s xanaya yerləşə bilər, buna görə həmin xanalar ayrılıb. Bu, %4$s namizədlərini onlardan istisna edir."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Bu %1$s daxilində %2$s yalnız bir blokda ola bilər. Deməli, %3$s həmin blokda bu %4$s üzərindədir və blokun qalan hissəsindən istisna edilə bilər."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Bu blokda %1$s yalnız bu %2$s xanada yerləşə bilər, deməli, həmin xanalar bu rəqəmlər üçün ayrılıb. Buna görə %3$s həmin xanalardan silinir."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Bu sütunda %1$s yalnız bu %2$s xanada yerləşə bilər, deməli, həmin xanalar bu rəqəmlər üçün ayrılıb. Buna görə %3$s həmin xanalardan silinir."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Bu sətirdə %1$s yalnız bu %2$s xanada yerləşə bilər, deməli, həmin xanalar bu rəqəmlər üçün ayrılıb. Buna görə %3$s həmin xanalardan silinir."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Onların fotoları, oxuma nəticələri və düzəlişləri daxildir. Bunu Ayarlarda söndürün."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Bir blok daxilində yalnız iki və ya üç xanaya yerləşə bilən rəqəm tapın və onların hamısının eyni sətirdə və ya eyni sütunda olub-olmadığını yoxlayın. Elədirsə, rəqəm mütləq həmin xəttin bir yerindədir — harada olduğunu bilmirsiniz, amma bu blokun daxilində olduğunu bilirsiniz. Buna görə eyni xəttin blokdan kənar heç bir yerində ola bilməz.\n\nBu üsul özü heç bir rəqəm yerləşdirmir. Namizədləri aradan qaldırır ki, başqa yerdə tək namizəd yaransın."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Bu blokda %1$s yalnız bu %2$s daxilində ola bilər. Deməli, %3$s buradakı bir yerdədir və %4$s daxilindəki qalan yerlərdən istisna edilə bilər."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem və ya fikir"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Burada %1$s yerdə tətbiq olunur. Onları nəzərdən keçirmək üçün irəli keçin."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Burada bir yerdə tətbiq olunur. Görmək üçün irəli keçin."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Bu mövqedə heç yerdə tətbiq olunmur."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Vurğulanmış %2$s daxilində %1$s üçün qalan yeganə yer budur."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Bu, dairəyə alınmış xanadır.\n\nRəqəm üçün İpucu düyməsini yenidən basın."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Meduza"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Saxla"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Məcburetmə zəncirlərini qısa saxla"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Dil"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Lisenziyalar"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Bir sətir, sütun və ya blok boyunca az namizədi qalan xanalar axtarın. Onlardan %1$s xana seçib namizədlərini birləşdirin. Birlikdə dəqiq %2$s rəqəm alınırsa, həmin %3$s rəqəm ayrılıb: hansının haraya getdiyini hələ bilməsəniz də, müəyyən ardıcıllıqla həmin %4$s xanaya yerləşməlidirlər.\n\nBu kifayətdir. Vahidin bütün digər xanalarından həmin rəqəmlər silinə bilər və adətən bundan sonra o xanalardan birində tək namizəd qalır.\n\nXanaların hamısında eyni namizədlər olmalı deyil — {2,7}, {2,9} və {7,9} tam uyğun üçlükdür və çoxlarının nəzərindən qaçan da budur."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Eyni iki namizədi, məsələn {4,9}, olan və hər xananın növbətini gördüyü zəncir təşkil edən xanalar axtarın. Üç kifayət deyil; ən azı dörd lazımdır.\n\nİrəlilədikcə onları növbə ilə rəngləyin. Hər xana növbətini gördüyünə görə iki qonşuda eyni rəqəm ola bilməz; deməli, zəncir boyunca 4, 9, 4, 9 — yaxud 9, 4, 9, 4 olur və hansının olduğunu bilmirsiniz.\n\nHər halda əks rəngli iki xanada fərqli rəqəmlər var: biri 4, digəri 9-dur. Buna görə hər ikisini görən xanada bunların heç biri ola bilməz və hər iki namizəd birdən silinir.\n\nNaxışı tapmaq asandır, çünki onun hər xanası eyni görünür. Tor boyunca eyni cütləri izləyin və harada əlaqələndiklərinə baxın."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Düzbucaqlının üç küncündə yerləşən, eyni iki namizədi, məsələn {1,6}, olan üç xana axtarın. Düzbucaqlı dəqiq iki blokda yerləşməlidir: dörd yox, iki blokdan keçən iki sətir və iki sütun.\n\nİndi dördüncü küncə baxın. Orada da yalnız 1 və 6 olsaydı, tapmacanın iki həlli olardı — düzbucaqlı boyunca 1-lərlə 6-ların yerini dəyişə bilərdiniz və qalan hər şey yenə uyğun olardı. Düzgün qurulmuş tapmacanın yeganə həlli var, buna görə dördüncü küncdə başqa rəqəm olmalıdır: digər namizədləri qalır, 1 və 6 isə silinir.\n\nBu, qaydalar arasında tora deyil, tapmacanı hazırlayana əsaslanan yeganə arqumentdir. Dərc olunmuş tapmacada etibarlıdır, amma artıq yanlış doldurduğunuz tapmacada yararsızdır, çünki onda yeganə olası həll bir yana, heç bir həll olmaya bilər."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Bu bloka baxın. Bu ipucunun izah edəcəyi xanaya çatmaq üçün konturu izləyin."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Qeydlər"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Orta"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Daha çox"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Daha çox işıq lazımdır"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Birdən çox həll var, deməli, çap edilmiş bir rəqəm nəzərdən qaçıb. Həlləri və fərqləndikləri yerləri görmək üçün Həll et düyməsini basın."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Uzaqlaşdırın"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Yaxınlaşdırın"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Yaxınlaşdırın — tor oxumaq üçün çox kiçikdir."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Açıq"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Açıq cüt"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Açıq dördlük"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Açıq tək"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Açıq üçlük"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Sadəcə rəqəmi vermək əvəzinə üsulun adını və onu sübut edən xanaları göstərin."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"ən azı 4 nöqtə lazımdır, lakin %1$s alındı"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Təsdiq lazımdır"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Yeni sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Növbəti nəticə"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Növbəti addım"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Şəkillər avtomatik əlavə edilmir. Burada göndərilən bildirişlər və əlavələr hamıya açıqdır. Məxfi şəkildə göndərmək istədiyiniz nümunələri info@freevia.org ünvanına göndərin."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Tətbiq son dəfə quraşdırılandan bəri heç bir foto rədd edilməyib."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Skan diaqnostikası mövcud deyil."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Burada heç bir üsul tətbiq olunmur"</string>
+    <string name="msg_none_140bedbf" formatted="false">"heç biri"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Onların heç biri xanaya rəqəm yerləşdirmir: namizədləri aradan qaldırırlar və çətin tapmacada irəliləmək belə mümkün olur."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Hazırda tapmacanızda yoxdur."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"rəqəm modeli faylı deyil"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Etibarlı şəkildə oxunmadı — ən yaxın təxmin %3$s səviyyəsində %1$s %2$s-dir. Bu xananı özünüz təyin edin."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Hələ doqquz-doqquz tor kimi oxunmur — kadrı yalnız torla doldurmağa çalışın və ya sadəcə foto çəkin"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"başlanmayıb"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Bu telefondan heç nə göndərilə bilmədi."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Həll ediləcək heç nə qalmayıb."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Tətbiqin bildiyi üsullarla burada daha heç nə məntiqi yolla müəyyən edilə bilmir."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"qeyri-adi heç nə yoxdur"</string>
+    <string name="msg_ok_565339bc" formatted="false">"Oldu"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"bir"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Bir xana çap edilmiş rəqəmə bənzəyirdi, amma deyil."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Bir çap edilmiş rəqəm avtomatik düzəldildi."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"bir xana"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Buraya yalnız %1$s yerləşə bilər — bütün digər rəqəmlər artıq bu sətirdə, sütunda və ya blokda var."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Burada yalnız %1$s ola bilər. Vurğulanmış xanalarda digər səkkiz rəqəmdən %2$s dənəsi artıq var; %3$s bu xanadan daha əvvəl silinib, ətrafında görünənlərə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Buraya yalnız %1$s yazıla bilər. Vurğulanan xanalar digər səkkiz rəqəmdən dördünü istisna edir; %2$s bu xana üçün əvvəllər istisna edilib, ətrafında gördüyünüz heç nəyə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Buraya yalnız %1$s yazıla bilər. Vurğulanan xanalar digər səkkiz rəqəmdən altısını istisna edir; %2$s bu xana üçün əvvəllər istisna edilib, ətrafında gördüyünüz heç nəyə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Buraya yalnız %1$s yazıla bilər. Vurğulanan xanalar digər səkkiz rəqəmdən birini istisna edir; %2$s bu xana üçün əvvəllər istisna edilib, ətrafında gördüyünüz heç nəyə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Buraya yalnız %1$s yazıla bilər. Vurğulanan xanalar digər səkkiz rəqəmdən yeddisini istisna edir; %2$s bu xana üçün əvvəllər istisna edilib, ətrafında gördüyünüz heç nəyə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Buraya yalnız %1$s yazıla bilər. Vurğulanan xanalar digər səkkiz rəqəmdən beşini istisna edir; %2$s bu xana üçün əvvəllər istisna edilib, ətrafında gördüyünüz heç nəyə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Buraya yalnız %1$s yerləşə bilər. Vurğulanmış xanalar digər səkkiz rəqəmdən %2$s-ni tutur; %3$s %4$s bu xanadan əvvəl istisna edilib, ətrafında gördüyünüz heç nəyə əsasən deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Buraya yalnız %1$s yazıla bilər. Vurğulanan xanalar digər səkkiz rəqəmdən ikisini istisna edir; %2$s bu xana üçün əvvəllər istisna edilib, ətrafında gördüyünüz heç nəyə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Burada yalnız %1$s ola bilər. Vurğulanmış xanalarda digər səkkiz rəqəmdən %2$s dənəsi artıq var; %3$s bu xanadan daha əvvəl silinib, ətrafında görünənlərə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Buraya yalnız %1$s yazıla bilər. Vurğulanan xanalar digər səkkiz rəqəmdən üçünü istisna edir; %2$s bu xana üçün əvvəllər istisna edilib, ətrafında gördüyünüz heç nəyə görə deyil."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Buraya yalnız %1$s yerləşə bilər. Digər səkkiz rəqəm bu sətirdə, sütunda və ya blokda doldurulmuş xanalar və ya məcburi tək namizədlər əsasında istisna edilir."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Buraya yalnız %1$s yerləşə bilər, amma ətrafında bunun səbəbini göstərən heç nə yoxdur: digər səkkiz rəqəmin hamısı bu xananın sətirində, sütununda və ya blokunda yazıldığı üçün deyil, əvvəlki məntiqi nəticələrlə istisna edilib."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Yalnız %1$s çap edilmiş rəqəm tapıldı; bu, tapmaca üçün çox azdır."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"yalnız dörddəbir dövrə dönmələr dəstəklənir, %1$s dəstəklənmir"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Tətbiq versiyası, telefon modeli, Android versiyası və son skan diaqnostikası doldurulmuş qaralamanı brauzerinizdə açın. Tam təsviri və uyğun ekran görüntülərini özünüz əlavə edin.\n\nGitHub-a daxil olmaq tələb olunur. Göndərməzdən əvvəl qaralamanı nəzərdən keçirib redaktə edə bilərsiniz. Göndərilmiş hesabatlar və əlavələr hamıya açıqdır. Heç bir foto avtomatik əlavə edilmir."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Tətbiq ayarlarını aç"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"GitHub-u aç"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Açıq mənbə bildirişləri"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Son yerləşdirmənin dəlilini görmək üçün ‘Niyə bu xana?’ bölməsini açın və ya sübutunu izləmək üçün istisna edilmiş namizəd seçin."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache Lisenziyası 2.0. Toru tapmaq və düzləndirmək üçün istifadə olunur.\n\nAndroidX, Jetpack Compose və CameraX - Apache Lisenziyası 2.0.\n\nKotlin - Apache Lisenziyası 2.0.\n\nRəqəm tanıyıcısı LeCun, Cortes və Burges tərəfindən yaradılmış MNIST əlyazma rəqəmlər bazası, açıq sistem şriftlərindən yaradılmış rəqəmlər və proqramla çəkilmiş rəqəmlərlə təlim keçib."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV-nin yerli kitabxanaları yüklənə bilmədi"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Başqa tapmacanın fotosunu çəkin."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Saxladığınız fotolar bu tətbiqin şəxsi yaddaşında saxlanılır və onları sildikdə və ya tətbiqi silib qaldırdıqda silinir."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Tətbiqin tapmacaya çevirə bilmədiyi fotolar. Birini göndərin ki, araşdırılsın."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Bir rəqəm seçin və sətirlərə baxaraq onun dəqiq iki mümkün xanası qalan sətirləri tapın. İki belə sətir seçin və hərəsindən bir xananın eyni sütuna düşüb-düşmədiyinə baxın.\n\nDüşürsə, həmin iki xana eyni sütundadır və hər ikisində bu rəqəm ola bilməz. Deməli, uzaq uclardan ən azı birində — digər tərəfdəki iki xanadan birində — həmin rəqəm var. Hansında olduğunu bilmirsiniz və bilməyiniz lazım deyil: hər iki uzaq ucu görən istənilən xanadan həmin rəqəm silinə bilər.\n\nSonra sətirlər əvəzinə sütunlarla təkrarlayın. Forma yanında qısa bina olan hündür binaya bənzəyir; adı buradan gəlir və bir neçə nümunə gördükdən sonra onu belə tanıyırsınız."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Bir rəqəm seçin. Onun dəqiq iki mümkün yeri olan sətir və dəqiq iki mümkün yeri olan sütun tapın. İndi sətirdəki bir xana ilə sütundakı bir xananın eyni blokda olub-olmadığını yoxlayın.\n\nElədirsə, hər ikisində həmin rəqəm ola bilməz — bir blokda bir rəqəm. Deməli, qalan iki ucdan ən azı birində həmin rəqəm var və hər iki ucu görən xanalardan bu rəqəm silinə bilər.\n\nİnsanların bunu gözdən qaçırmasının səbəbi düzülüşün olmamasıdır: dörd xana qeyri-simmetrik forma yaradır və onları birləşdirən yeganə şey iki daxili ucun paylaşdığı blokdur."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Boş xana seçin və 1-dən 9-a qədər rəqəmləri nəzərdən keçirərək onun sətirində, sütununda və ya blokunda artıq olanları çıxarın. Dəqiq bir rəqəm qalırsa, ora yerləşir.\n\nBütün digər üsullar bu üsula şərait yaratmaq üçün mövcuddur. Daha çətin üsulların hamısı hansısa xanada tək namizəd saxlamaq yoludur; buna görə çətin üsul nəticə verdikdə növbəti dəfə buraya baxın."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Bir rəqəm seçib bütün digərlərini nəzərə almayın. Sətirləri nəzərdən keçirin və həmin rəqəmin yalnız iki və ya üç mümkün xanası qalanları qeyd edin. Xanaları eyni %2$s sütunda düzülən %1$s belə sətir axtarın.\n\nOnları tapsanız, həmin %3$s sətirin hər biri rəqəmi bu sütunlardan birinə yerləşdirməlidir və heç ikisi eyni sütundan istifadə edə bilməz. Deməli, birlikdə bütün %4$s sütunda həmin rəqəmin yerini tuturlar — bu sütunlardakı bütün digər xanalardan həmin rəqəm silinə bilər.\n\nSonra sətirlə sütunun yerini dəyişib bütün prosesi təkrarlayın. Bu nümunələrin yarısı ikinci istiqamətdə tapılır və insanların çoxunun heç axtarmadığı yarı da budur."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"%1$s yerləşdir"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"%1$s rəqəmini %2$s-ci sətirə, %3$s-ci sütuna yerləşdirin."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"%1$s rəqəmini konturlanmış xananıza yerləşdirin."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"GitHub-un əlavəetmə vasitəsi ilə uyğun ekran görüntülərini əlavə edin: problemi göstərən tapmaca, tanınmış rəqəmlər, Yoxla nəticəsi və ya ipucu mərhələsi. Faydalı olduqda gözlənilən və faktiki nəticələri daxil edin."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Sudoku Buddy tanıma göndərişlərimi silin. Qəbz ID-ləri: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Bu göstərişi problemin və ya fikrin tam təsviri ilə əvəz edin. Hesabata qısa, təsviri başlıq verin."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Kameranı sudoku tapmacasına yönəldin"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Kameranı sudoku tapmacasına yönəldin."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Kameranı kağızdakı sudoku tapmacasına yönəldin. Tətbiq çap edilmiş rəqəmləri və yazdığınız hər şeyi oxuyur, tapmacanı həll edir və sizə ipucu verə, cavablarınızı yoxlaya və ya tam həlli göstərə bilər."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"İstiqamətləndirən cüt"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"GÖNDƏR"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Tapmaca hazırlanır…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Əvvəlki"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Əvvəlki addım"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Çap olunmuş"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Məxfilik siyasəti"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Sudokuların saxlanması"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Sudokular"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Sudokular bu telefonda oxunur və həll edilir. Qeyri-müəyyən oxunuş göndərsəniz və ya avtomatik paylaşmanı aktivləşdirsəniz, Sudoku fotosu, ilkin oxunuşlar, qeyri-müəyyənlik işarələri və düzəlişləriniz tanınma təhlili və özəl təlim üçün təhlükəsiz şəkildə Freevia-ya göndərilir. Hesabatlara cihazınızın modeli və ya diaqnostika daxil edilmir. Avtomatik paylaşma könüllüdür; hesablar, müntəzəm istifadə analitikası və ya reklam izləməsi yoxdur. Təlim nüsxələri qəbz vasitəsilə silinə bilər, lakin artıq təlim keçmiş model öyrəndiyi dəyişiklikləri saxlaya bilər. Hesabatı silmək üçün Ayarlardakı Göndəriş qəbzlərindən istifadə edin."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Sınaq üçün çəkilmiş Sudokular sudoku.cba.si saytından götürülüb. Bu tətbiqin həmin saytla əlaqəsi yoxdur."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Fotosunu çəkdiyiniz Sudokular burada saxlanır ki, sonra onlara qayıda biləsiniz."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Tanıma"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Əllə yazılmış %1$s kimi oxunub, əminlik: %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Çap olunmuş %1$s kimi oxunub, əminlik: %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Boş kimi oxunub — mürəkkəb izi tapılmayıb."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Qələmlə qeyd edilmiş namizədlər kimi oxunub və nəzərə alınmayıb."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Oxunuş nəzərdən keçirildi."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Oxunuş göndərildi. Təşəkkürlər!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Son skan diaqnostikası (əvvəlcədən doldurulub)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Tanıma, xüsusən əl yazısında, səhv edə bilər. Tanınmış rəqəmləri foto ilə müqayisə etmək üçün Oxu funksiyasından istifadə edin və düzəltmək üçün istənilən xanaya toxunun. Tətbiq qeyri-müəyyən oxunuşları nəzərdən keçirmək üçün işarələyir; əminliklə oxunmuş rəqəm də səhv ola bilər."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Fərziyyəni rədd et"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Uzaq cütlər"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$s namizədini sil"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\n%1$s rəqəmini buradan silin: "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Silindi"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Əsaslandırmanı yenidən göstər"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"GitHub-da xəta və ya ideya bildir"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Kameranı yenidən sına"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"%1$s addımına qayıt"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"İzahı göstər"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Oxunuşu nəzərdən keçir və ya göndər"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Oxunuşu nəzərdən keçir"</string>
+    <string name="msg_right_883361d5" formatted="false">"Düzgün"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Həll yolu tamamlandı. İstənilən gedişi nəzərdən keçirmək üçün geri qayıdın və ya addımları özünüz sınayın."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"sətir %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Sətir %1$s, sütun %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Sətir %1$s, sütun %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"sətir $1, sütun $2"</string>
+    <string name="msg_row_634768da" formatted="false">"sətir"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"sətirlər"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", istisna edilib: %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Skan diaqnostikası oxuna bilmədi."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Ekran görüntüləri və ya tapmaca nümunələri"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"İkinci ehtimal: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Məşq üçün seç"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Seçilib: sətir %1$s, sütun %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Diaqnostikanı göndər (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Diaqnostikanı göndər"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Bu skanları göndər"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Bu fotonu göndər"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Ayarlar"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"yeddi"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Qeyri-müəyyən olduqda avtomatik paylaş"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Qeyri-müəyyən oxunuşlar avtomatik paylaşılsın?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Ziddiyyəti göstər"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Sudokunuzdakı bütün %1$s rəqəmlərini mənə göstər"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Sudokunuzdakı həmin rəqəmi mənə göstər"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Sadə rəngləmə"</string>
+    <string name="msg_six_44778d82" formatted="false">"altı"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Göydələn"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", həll %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Həll et"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Həll edilib və bütün cavablar doğrudur."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Həlledicinin köməyi ilə cavab: %2$s xanasına %1$s yerləşdirin. Namizədlər: %3$s. Tətbiqin dəstəklədiyi üsullar bu vəziyyətdə gediş tapmadı. Onun axtarışı yeganə həldə %4$s tapdı; axtarış budaqlarının ətraflı sübutu mövcud deyil."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nHəlledicinin köməyi ilə tapılan cavab: tətbiqin dəstəklədiyi üsullar gediş tapa bilmədi. Ətraflı sübut mövcud deyil."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Həlledicinin köməyi ilə silmə: axtarış vurğulanmış xanada %1$s namizədini istisna edir, lakin tətbiq göstərmək üçün qısa ziddiyyət ardıcıllığı yarada bilmədi. Ətraflı sübut mövcud deyil."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Bəzi xanalarda tam rəqəm əvəzinə qeydlər ola bilər."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Bəzi rəqəmlər əminliklə oxunmayıb."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Həmin fotonu oxuyarkən xəta baş verdi."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Xana"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nBaşlanğıc namizədlər: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Addım %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Düz hizalayın"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategiyalar"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Göndəriş qəbzi"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Göndəriş qəbzi etibarsızdır."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Göndəriş qəbzləri (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Göndəriş qəbzləri"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Göndəriş cavabında %1$s çatışmır."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Göndəriş cavabının statusu etibarsızdır."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Göndəriş xidməti konfiqurasiya edilməyib."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Göndəriş xidməti HTTP %1$s qaytardı."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Bu yığımda göndərişlər mümkün deyil."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Göndər"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Gələcək qeyri-müəyyən oxunuşları avtomatik göndər"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Oxunuşu göndər"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Qeyri-müəyyən oxunuşu təhlil üçün göndər"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Yeniləməni göndər"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Göndərildi"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Göndərilir…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy diaqnostikası"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy rəyi - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy Freevia tərəfindən yayımlanır. Əlaqə: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy Sudokuları kamera vasitəsilə oxuyur, buna görə kameraya giriş lazımdır. Tanıma və Sudoku tarixçəsi telefonunuzda qalır. Qeyri-müəyyən oxunuş göndərməyi seçsəniz, onun fotosu və nəticələri tanımanı yaxşılaşdırmaq üçün təhlükəsiz şəkildə Freevia-ya göndərilir. Avtomatik paylaşma könüllüdür və Ayarlarda söndürülə bilər."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy skanı"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy skanları"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku Buddy mənbə kodu Apache License 2.0 əsasında lisenziyalaşdırılıb. Freevia brendi ayrıca əmtəə nişanı hüquqları ilə qorunur."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku ictimai mülkiyyətə aid tapmaca növüdür. Bu tətbiq sizdə olan Sudokuları həll edir; heç kimin Sudokularını çoxaltmır və ya yaymır."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", dəstəkləyici dəlil"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Fərz edək ki, işarələnmiş xanada %1$s var. Nömrələnmiş rəqəmlər fərziyyədir."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Fərz edək ki, bu xanada %1$s var. Oxları ardıcıllıqla izləyin: əvvəlki yerləşdirmələr hər xananın qiymətini məcburi edir — ya həmin rəqəm xanada qala bilən yeganə rəqəmdir, ya da həmin xana rəqəmin yerləşə biləcəyi yeganə yerdir.\n\nNəticədə qırmızı vahiddə %2$s üçün yer qalmır. Vahiddə işarələnmiş %3$s rəqəmləri onun yerləşə biləcəyi yerləri göstərir və bu xanaların hər birini oxlardan biri indicə tutub. Vahiddə bir rəqəm üçün heç bir yerin qalmaması mümkün deyil — deməli, bu xana %4$s deyil."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Fərz edək ki, bu xana %1$s olsun. Oxları sıra ilə izləyin: hər xana əvvəlki yerləşdirmələr nəticəsində məcburi olur — ya həmin rəqəm xanada qala bilən yeganə rəqəmdir, ya da həmin xana rəqəmin yerləşə biləcəyi yeganə yerdir. Bundan sonra qırmızı xanaya heç bir rəqəm yerləşdirmək olmur. Bu mümkün deyil — deməli, bu xana %2$s deyil."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Fərz edək ki, bu xanada %1$s var. Oxları ardıcıllıqla izləyin: əvvəlki yerləşdirmələr hər xananın qiymətini məcburi edir — ya həmin rəqəm xanada qala bilən yeganə rəqəmdir, ya da həmin xana rəqəmin yerləşə biləcəyi yeganə yerdir.\n\nNəticədə qırmızı sətirdə %2$s üçün yer qalmır. Sətirdə işarələnmiş %3$s rəqəmləri onun yerləşə biləcəyi yerləri göstərir və bu xanaların hər birini oxlardan biri indicə tutub. Sətirdə bir rəqəm üçün heç bir yerin qalmaması mümkün deyil — deməli, bu xana %4$s deyil."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Fərz edək ki, bu xanada %1$s var. Oxları ardıcıllıqla izləyin: əvvəlki yerləşdirmələr hər xananın qiymətini məcburi edir — ya həmin rəqəm xanada qala bilən yeganə rəqəmdir, ya da həmin xana rəqəmin yerləşə biləcəyi yeganə yerdir.\n\nNəticədə qırmızı blokda %2$s üçün yer qalmır. Blokda işarələnmiş %3$s rəqəmləri onun yerləşə biləcəyi yerləri göstərir və bu xanaların hər birini oxlardan biri indicə tutub. Blokda bir rəqəm üçün heç bir yerin qalmaması mümkün deyil — deməli, bu xana %4$s deyil."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Fərz edək ki, bu xana %1$s olsun. Oxları sıra ilə izləyin: hər xana əvvəlki yerləşdirmələr nəticəsində məcburi olur — ya həmin rəqəm xanada qala bilən yeganə rəqəmdir, ya da həmin xana rəqəmin yerləşə biləcəyi yeganə yerdir.\n\nBeləliklə, qırmızı rəngli %2$s daxilində %3$s yerləşdirməyə yer qalmır. Orada işarələnmiş %4$s rəqəmləri onun yerləşə biləcəyi yerlərdir və bunların hər biri oxlardan birinin indicə tutduğu xanadır. Rəqəm üçün yeri olmayan %5$s mümkün deyil — deməli, bu xana %6$s deyil."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Fərz edək ki, bu xanada %1$s var. Oxları ardıcıllıqla izləyin: əvvəlki yerləşdirmələr hər xananın qiymətini məcburi edir — ya həmin rəqəm xanada qala bilən yeganə rəqəmdir, ya da həmin xana rəqəmin yerləşə biləcəyi yeganə yerdir.\n\nNəticədə qırmızı sütunda %2$s üçün yer qalmır. Sütunda işarələnmiş %3$s rəqəmləri onun yerləşə biləcəyi yerləri göstərir və bu xanaların hər birini oxlardan biri indicə tutub. Sütunda bir rəqəm üçün heç bir yerin qalmaması mümkün deyil — deməli, bu xana %4$s deyil."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Gedişi və onun nəticələrini şəbəkədə görmək üçün Sonra görünüşünə keçin."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Qılınc balığı"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Yeni foto çək"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Başqa foto çək"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Bir rəqəm seçin və onun üçün dəqiq iki xana qalan hər vahidi işarələyin. Bu iki xana tərəzinin gözləri kimidir: birində həmin rəqəm var, digərində isə yoxdur.\n\nİstənilən yerdən başlayıb bir xananı, məsələn, mavi rəngləyin. Onun tərəfdaşını yaşıl, yaşılın tərəfdaşını yenidən mavi rəngləyin və zəncir bitənədək davam edin. Ya bütün mavi xanalar doğrudur, ya da bütün yaşıl xanalar — hansının olduğunu bilmirsiniz və bu, iki nəticə üçün kifayətdir.\n\nBirincisi: eyni rəngli iki xana bir sətirdə, sütunda və ya blokda olarsa, həmin rəng mümkün deyil. Buna görə rəqəm o rəngdəki bütün xanalardan silinir və digər rəngdəki bütün xanalarda cavab olur.\n\nİkincisi: zəncirdən kənarda həm mavi, həm də yaşıl xananı görən istənilən xanadan həmin rəqəm silinə bilər, çünki zəncir hansı tərəfə getsə də, o iki xanadan biri həmin rəqəmi saxlayır.\n\nQələmlə vaxt aparır, amma buna dəyər: bir rəngləmə çox vaxt rəqəmi şəbəkənin yarısından silir."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Hər dəfə bir rəqəm və bir vahid götürün — məsələn, bu blokda 4 harada ola bilər? Vahiddə artıq rəqəmi olan və ya öz sətirində, yaxud sütununda 4 görən hər xananın üstündən xətt çəkin. Bir xana qalarsa, 4 oraya yerləşir.\n\nÇətinlik ondadır ki, bunu xanaya baxaraq görə bilməzsiniz: xana daha beş rəqəmi də qəbul edə bilər, buna görə heç nə məcburi görünmür. Xana əvəzinə rəqəmə baxın, nəticə dərhal görünəcək."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Foto çək"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Fotonu avtomatik çək"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Nəzərdən keçirmək üçün işarələnmiş xanaya toxunun və ya bütün oxunuşların doğru olduğunu təsdiqləyin."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Əvvəlcə şəbəkədə bir xanaya toxunun."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"İşarələnmiş xanada %1$s rəqəmini fərziyyə kimi yoxlayın. Bu, cavab deyil. Niyə alınmadığını görmək üçün nəticələri izləyin."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Fərziyyəni yoxla"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Tanımanı yaxşılaşdırmağa kömək etdiyiniz üçün təşəkkürlər. Sudoku fotonuz, oxunuşlarınız və düzəlişləriniz təhlil və təlim üçün istifadə ediləcək."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Bu da düzgün %1$s gedişidir. Bu həll yolu başqa gedişi göstərir; aşağıda onun sübutunu müqayisə edin."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Bu addım üçün seçilmiş gediş bu deyil. Başqa düzgün gedişlər də ola bilər; yenidən baxın və ya bu addımın izahını açın."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Doğrudur"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Bu, Sudokunun qalan hissəsinin həllidir. Tətbiqin dəstəklədiyi üsullar gediş tapmadığı üçün %1$s xanada həlledicinin köməyi ilə cavab lazımdır. Onların ətraflı axtarış sübutları mövcud deyil."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Bu, Sudokunun qalan hissəsinin həllidir. Tətbiqin dəstəklədiyi üsullar gediş tapmadığı üçün bir xanada həlledicinin köməyi ilə cavab lazımdır. Onun ətraflı axtarış sübutu mövcud deyil."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Bu, Sudokunun qalan hissəsinin başdan sona həllidir."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Həmin foto saxlanıla bilmədi, buna görə göndəriləcək heç nə yoxdur."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Bu xana %1$s rəqəmini qəbul edir. Bu addımın üsulu ilə əsaslandırılan gedişi axtarın və ya onun izahını açın."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Bu xana artıq doldurulub. Boş xana seçin."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Fərziyyə rədd edildi. Həqiqi namizədlərə qayıdır və işarələnmiş xanada %1$s namizədinin üstündən xətt çəkirik. Fərziyyə rəqəmləri təmizlənir."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Kamera həmin fotonu çəkə bilmədi."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kamera əlçatan deyil. Digər kamera tətbiqlərini bağlayıb yenidən cəhd edin."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"digəri"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"%1$s tarixli foto və ondan oxunmuş hər şey bu telefondan silinəcək. Bunu geri qaytarmaq mümkün deyil."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Foto tapmacalar siyahınızda, \"Oxuna bilmədi\" bölməsindədir."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Buradakı dayaq %1$s və ya %2$s-dir. Hər iki halda digər iki xanadan biri məcburi olaraq %3$s olur, buna görə onların hər ikisini görən heç bir xana %4$s ola bilməz."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"İşarə edən cütün tərsinə oxunuşu. Bir sətir və ya sütun, bir də orada hələ yeri tapılmamış rəqəm götürün. Həmin xəttdə rəqəmi qəbul edə bilən bütün xanaları işarələyin. Hamısı bir blokun içindədirsə, rəqəm həmin blokun bu xəttə düşən hissəsində olmalıdır — deməli, blokun başqa heç bir yerində, o cümlədən baxmadığınız iki sətirində və ya sütununda ola bilməz.\n\nİşarə edən cüt kimi, bu da özü heç nə yerləşdirmir; yerləşdirə biləcək gedişə yer açır."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Çap olunmuş rəqəmlər həll edilə bilən Sudoku yaratmır."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s xanasında qalan namizədlər {%2$s}-dir. %3$s rəqəmini %4$s-cü sətirə, %5$s-cü sütuna yerləşdirin."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Hesabat göndərmək üçün çox böyükdür."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Dayaq xanasında bir namizəd artıq olan Y-qanad. Dəqiq üç namizədi, məsələn {1,4,7}, olan və iki namizədli iki xananı — biri {1,7}, digəri {4,7} — görən xana axtarın.\n\nİndi bu üç xananın hər biri 7 ola bilər və onlardan biri mütləq 7-dir. Buna görə bir xanadan 7-ni silmək üçün o, yalnız iki yan xananı deyil, üçünü də görməlidir — praktikada bu, onun dayaqla eyni blokda və yan xanalardan biri ilə eyni xəttdə olması deməkdir.\n\nY-qanaddan daha az namizəd silir və eyni səbəbdən gözdən qaçırmaq daha asandır: dayaq xanası seçilmir."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Vurğulanmış blokda doldura biləcəyiniz bir xana var.\n\nOnu hansı üsulun tapdığını öyrənmək üçün İpucu düyməsinə yenidən basın."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Burada əsaslandırılacaq heç nə qalmayıb."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Bu %1$s xananın hamısı yalnız %2$s və %3$s saxlayır və hər biri növbətini görür, buna görə rəqəmlər bütün zəncir boyunca növbələşir. %4$s ilə %5$s arasında tək sayda keçid var və buna görə onlar fərqli rəqəmlər saxlayır — bu isə hər ikisini görən bütün xanalarda %6$s namizədini istisna edir."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Bu %1$s xana birlikdə yalnız %2$s saxlayır, buna görə həmin rəqəmlər onları müəyyən ardıcıllıqla doldurur. Bu, həmin %4$s daxilindəki qalan xanalarda %3$s namizədini istisna edir."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Bu %1$s xanada yalnız %2$s ola bilər, deməli, həmin rəqəmlər bu xanaları müəyyən bir ardıcıllıqla doldurur. Buna görə %3$s bu sətrin qalan xanalarından silinir."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Bu %1$s xanada yalnız %2$s ola bilər, deməli, həmin rəqəmlər bu xanaları müəyyən bir ardıcıllıqla doldurur. Buna görə %3$s bu sütunun qalan xanalarından silinir."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Bu %1$s xanada yalnız %2$s ola bilər, deməli, həmin rəqəmlər bu xanaları müəyyən bir ardıcıllıqla doldurur. Buna görə %3$s bu blokun qalan xanalarından silinir."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Bunlar xananızın başlanğıc namizədləridir. Ardıcıllıq hansı imkanların istisna edilə biləcəyini izah edir."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Bu rəqəmlərlə Sudoku qurmaq mümkün deyil və səhvlər hansının yanlış olduğunu müəyyən etmək üçün həddən artıq çoxdur. Oxunuşu düzəltmək üçün istənilən xanaya toxunun və ya fotonu yenidən çəkin."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Bu rəqəmlərlə Sudoku qurmaq mümkün deyil. Dairəyə alınmış %1$s xananı dəyişmək bunu düzəldər — oxunuşu düzəltmək üçün onlardan birinə toxunun."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Bu rəqəmlərlə Sudoku qurmaq mümkün deyil. Dairəyə alınmış bir xananı dəyişmək bunu düzəldər — oxunuşu düzəltmək üçün ona toxunun."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Bu rəqəmlərlə Sudoku qurmaq mümkün deyil, deməli, bir rəqəm səhv oxunub. Hansı xanaları düzəltmək lazım olduğunu görmək üçün Həll et düyməsinə basın."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Bu dörd xana iki blok boyunca düzbucaqlı yaradır və onlardan üçü yalnız %1$s saxlayır. %2$s də yalnız həmin iki rəqəmi saxlasaydı, rəqəmlərin düzbucaqlı boyunca yerlərini dəyişmək olardı və Sudokunun iki həlli olardı. Onun bir həlli var, buna görə %3$s başqa rəqəm istifadə etməlidir — və %4$s silinir."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Onlar sona çatmır: burada bir şey tətbiqi tamamilə aciz qoyub."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Bu, heç bir xananı doldurmur. %2$s daxilində %1$s namizədini istisna edir."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Bu, heç bir xananı doldurmur. %2$s xanada %1$s namizədini istisna edir."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Bu, heç bir xananı doldurmur. Bir xanada %1$s namizədini istisna edir."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nBu, cavaba aparan %1$s məntiqi nəticədən birincisidir."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Bu sübut bir ipucunu, o cümlədən onun cavabına gətirən namizəd silmələrini izah edir. Əsaslandırmanı şəbəkədə izləmək üçün irəli addımlayın, sonra tam həll yolu ilə davam edin."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Bu Sudoku hazırlana bilmədi."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Bu Sudoku saxlanıla bilmədi. Onu indi yenə də istifadə edə bilərsiniz. Başqa foto çəkməzdən əvvəl yaddaşda yer boşaldın."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Bu Sudokunun birdən çox həlli var, buna görə yəqin ki, çap olunmuş bir rəqəm nəzərdən qaçıb. %2$s həldən %1$s-cı göstərilir — növbəti üçün Həll et düyməsinə yenidən basın. Dairəyə alınmış xanalar göstərilən həllərdə fərqlənir."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Bu Sudokunun fotosu açıla bilmədi."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Bu əsaslandırma mövcud %1$s namizədini istisna edir "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Bu xanada tam rəqəm əvəzinə namizəd qeydləri ola bilər. Zəhmət olmasa, yoxlayın."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Bu görünüşə əvvəlki namizəd silmələri daxildir. Onları yoxlamaq üçün aşağıda sübutlarını açın."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"üç"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Şəbəkə xətlərini seçmək üçün çox qaranlıqdır"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Ardıcıllıq"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Sınanıb"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Özünüz sınayın"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Aktivləşdir"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Telefonu elə çevirin ki, Sudoku düz istiqamətdə olsun."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Təlimçi"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"iki"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Eyni cütü saxlayan və rəqəmlərdən biri üzrə güclü əlaqə ilə bağlanan iki xana digər rəqəmi onlardan birində məcburi edir."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"İki simli çərpələng"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unikal düzbucaqlı"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"vahid"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable heç bir CellReading siyahısı təqdim etmir; dəqiq giriş xanaları və nəticə saxlanır."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"dəstəklənməyən model formatı versiyası"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Qeyri-müəyyən"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Cihazın dilindən istifadə et"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"%1$s üsulundan istifadə edərək namizədin silinə biləcəyi bir xanaya toxunun, sonra həmin rəqəmi seçin."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"%1$s üsulundan istifadə edərək doldura biləcəyiniz xanaya toxunun, sonra onun rəqəmini seçin."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Çox çətin"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-qanad"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"idi"</string>
+    <string name="msg_were_910adfb4" formatted="false">"idi"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Nə gözləyirdiniz və ya ideyanız Sudoku həll etməyə, yaxud öyrənməyə necə kömək edərdi?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Nə baş verdi və təkrarlamaq üçün addımlar (xətalar üçün)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Nə edir"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Harada"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Niyə %1$s r%2$sc%3$s xanasından silindi"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Niyə"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Niyə %1$s deyil? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Niyə bu xana? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" həll ilə. Onları nəzərdən keçirmək üçün Yoxla düyməsindən istifadə edin."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Xananızdan geriyə doğru araşdırın. Aşağıda bir sual seçin."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Xana-xana deyil, rəqəm-rəqəm işləyin. Bir vahiddə çatışmayan hər rəqəmin hələ harada yerləşə biləcəyini yazın. Sonra siyahıları birlikdə yalnız %2$s xananı əhatə edən %1$s rəqəm axtarın.\n\nHəmin %3$s rəqəm o %4$s xananı doldurmalıdır, buna görə bu xanalardakı bütün digər namizədlər silinə bilər — bu da çox vaxt dərhal onlardan birini açıq təkə və ya açıq cütə çevirir.\n\nİnsanların ən çətin hesab etdiyi üsul budur, çünki xanalara baxanda görünən heç nə yoxdur: onların hələ çoxlu namizədi var. Nümunə rəqəmlərdədir."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Yalnız dəqiq iki namizədi qalan xanalarla işləyin.\n\nBir xanadan, məsələn {2,6}, başlayın və fərz edin ki, o, 2 deyil — deməli, 6-dır. Onun gördüyü və 6 namizədi olan bir xanaya, məsələn {6,4}, keçin: o, 6 ola bilməz, deməli, 4-dür. Həmin xananın gördüyü və 4 namizədi olan xanaya keçin və davam edin; hər addım əvvəlki addımın məcburi nəticəsidir.\n\nDigər rəqəmi 2 olan — başlanğıcda istisna etdiyiniz rəqəm — bir xanaya çatsanız, iş bitir. Ya ilk xana əslində 2 idi, ya da zəncir davam etdi və son xana 2-dir. Uclardan biri həmin rəqəmi saxlayır, buna görə hər iki ucu görən heç bir xana onu saxlaya bilməz.\n\nZəncirləri qısa saxlayın. Dörd və ya beş xananı qələmlə tapmaq mümkündür; bundan sonra iş qeyd aparmağa çevrilir və buna məcburetmə zənciri demək daha doğrudur."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"işçi kənar ölçüsü müsbət və sonlu olmalıdır"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Oxuna bilmədi"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Yazılmış"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Səhv"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-qanad"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-zəncir"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-qanad"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-qanad"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Bu xananı təmizlədiniz."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Bunu əllə yazılmış %1$s kimi təyin etdiniz."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Bunu çap olunmuş %1$s kimi təyin etdiniz."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Dəyişiklikləriniz görünür, lakin saxlanıla bilmədi. Yaddaşda yer boşaldıb Sudokunu yenidən redaktə etməyə çalışın."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Fotolarınız və məxfiliyiniz"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Sudokularınız"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Saxladığınız Sudokular"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Xananız ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Xananızın konturu qalır. Yaşıl xanalar sübutu göstərir; üstündən xətt çəkilmiş rəqəmlər istisna edilib."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

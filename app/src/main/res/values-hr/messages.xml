@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nOznačena polja to dokazuju.\n\nPonovno pritisnite Savjet kako biste vidjeli koje polje."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s i %2$s dopuštaju samo %3$s i %4$s. U ovoj jedinici (%5$s) znamenka %6$s ima samo dva moguća mjesta, a svako od tih polja vidi po jedno — pa je jedno od ta dva mjesta %7$s, a kraj koji ga vidi mora biti %8$s. U oba slučaja jedan je kraj %9$s, što isključuje %10$s iz svega što vidi oba kraja."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s i %2$s mogu sadržavati samo %3$s i %4$s. U ovom bloku %5$s ima samo dva moguća položaja, od kojih svaki vidi jedno od tih dvaju polja, pa jedan od tih položaja sadrži %6$s, a krajnje polje koje ga vidi mora sadržavati %7$s. U oba slučaja jedno krajnje polje sadrži %8$s, čime se %9$s isključuje iz svih polja koja vide oba krajnja polja."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s i %2$s mogu sadržavati samo %3$s i %4$s. U ovom stupcu %5$s ima samo dva moguća položaja, od kojih svaki vidi jedno od tih dvaju polja, pa jedan od tih položaja sadrži %6$s, a krajnje polje koje ga vidi mora sadržavati %7$s. U oba slučaja jedno krajnje polje sadrži %8$s, čime se %9$s isključuje iz svih polja koja vide oba krajnja polja."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s i %2$s mogu sadržavati samo %3$s i %4$s. U ovom retku %5$s ima samo dva moguća položaja, od kojih svaki vidi jedno od tih dvaju polja, pa jedan od tih položaja sadrži %6$s, a krajnje polje koje ga vidi mora sadržavati %7$s. U oba slučaja jedno krajnje polje sadrži %8$s, čime se %9$s isključuje iz svih polja koja vide oba krajnja polja."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s u retku %2$s, stupcu %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s u koraku %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s može sadržavati samo %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s ne može sadržavati %2$s jer %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s ne može sadržavati %2$s jer %3$s može sadržavati samo %4$s u istom stupcu %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s ne može sadržavati %2$s jer %3$s može sadržavati samo %4$s u istom bloku %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s ne može sadržavati %2$s jer %3$s može sadržavati samo %4$s u istom retku %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s ne može sadržavati %2$s jer %3$s sadrži %4$s u istom bloku %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s ne može sadržavati %2$s jer %3$s sadrži %4$s u istom stupcu %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s ne može sadržavati %2$s jer %3$s sadrži %4$s u istom retku %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s sadrži %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s praznih"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, unos"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s mora biti ovdje: ovo je jedino polje u ovom stupcu %2$s koje još može sadržavati %3$s.\n\n%4$s\n\n%5$s trenutačno dopušta %6$s, ali svaki stupac mora sadržavati %7$s točno jednom. Stoga upišite %8$s u redak %9$s, stupac %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s mora ići ovdje: ovo je jedino polje u jedinici %2$s %3$s koje još može sadržavati %4$s.\n\n%5$s\n\n%6$s trenutačno dopušta %7$s, ali svaka jedinica (%8$s) mora sadržavati %9$s točno jednom. Zato upišite %10$s u redak %11$s, stupac %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s mora biti ovdje: ovo je jedino polje u ovom bloku %2$s koje još može sadržavati %3$s.\n\n%4$s\n\n%5$s trenutačno dopušta %6$s, ali svaki blok mora sadržavati %7$s točno jednom. Stoga upišite %8$s u redak %9$s, stupac %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s mora biti ovdje: ovo je jedino polje u ovom retku %2$s koje još može sadržavati %3$s.\n\n%4$s\n\n%5$s trenutačno dopušta %6$s, ali svaki redak mora sadržavati %7$s točno jednom. Stoga upišite %8$s u redak %9$s, stupac %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s ima dva moguća mjesta u ovom retku i dva u ovom stupcu. %2$s i %3$s dijele blok pa ne mogu oba biti %4$s — što znači da tu znamenku sadrži jedno od polja %5$s i %6$s te isključuje %7$s iz svega što vidi oba."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s u istoj jedinici: %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s u istom bloku."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s u istom stupcu."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s u istom retku."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s je već isključeno iz tog polja. Njegovi su kandidati "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s isključuje %2$s, što "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s je isključen zbog %2$s, gdje je moguć samo %3$s u istom stupcu %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s je isključen zbog %2$s, gdje je moguć samo %3$s u istom retku %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s je isključen zbog %2$s, gdje je moguć samo %3$s u istom bloku %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s je isključen zbog %2$s, gdje se nalazi %3$s u istom bloku %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s je isključen zbog %2$s, gdje se nalazi %3$s u istom stupcu %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s je isključen zbog %2$s, gdje se nalazi %3$s u istom retku %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s je nužno u najnovijem polju s brojem koraka (redak %2$s, stupac %3$s). %4$s Strelica prati upis koji pridonosi zaključku; važne su i ranije posljedice."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s nedostaje u classpathu"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s od %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"Broj poteza koji popunjavaju polje je %1$s; ostali najprije uklanjaju kandidate koji smetaju."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s par"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s tiskanih, %2$s, %3$s pogrešnih"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s tiskanih, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s tiskanih"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, tiskana zadana znamenka"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s četvorka"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s odbijenih fotografija, od najnovije:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: ukloni %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Broj polja: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Ovaj slijed čini %1$s koraka, a najteža podržana tehnika je %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s trojka"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s je uklonjeno iz %2$s ranijim zaključivanjem o kandidatima."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s upisanih"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"slika %1$sx%2$s zahtijeva %3$s bajtova, ali dobiveno je %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"polje nije bilo ni znamenka ni točka"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Lanac polja s dva kandidata koji počinje i završava istom znamenkom jamči da se ta znamenka nalazi na jednom od krajeva."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Znamenka kojoj je preostalo samo jedno mjesto u retku, stupcu ili bloku pripada tom mjestu."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Rukom napisan %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Tiskani %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Crveno polje prikazuje znamenku koju je aplikacija ondje očitala. Ako to nije ono što ste napisali, dodirnite polje da to ispravite."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Polje kojem je preostala samo jedna znamenka mora sadržavati tu znamenku."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Popis tehnika nikad nije potpun, a najteže zagonetke osmišljene su tako da nadvladaju sve na njemu. Zato, kad nijedna od ovih tehnika ne pronađe potez, tutor riješi jedno polje isprobavanjem njegovih kandidata, jasno kaže da je to učinio i odatle nastavlja zaključivati. Uvijek dolazi do kraja zagonetke i nikad ne prikazuje dohvaćeni odgovor kao logički zaključak."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Središnje polje s tri kandidata i dva odgovarajuća kraka s po dva kandidata isključuju znamenku iz svakog polja koje vidi sva tri."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Središnje polje s dva kandidata i dva kraka s po dva kandidata mogu isključiti znamenku iz svakog polja koje vidi oba kraka."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"O aplikaciji"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Poslije"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Nakon ovog poteza"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Sve je točno"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Sva tri polja mogu sadržavati %1$s, a jedno od njih mora. Zato nijedno polje koje vidi sva tri ne može sadržavati %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Dopusti kameru"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Skoro — držite stranicu ravno i paralelno s kamerom"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"eliminacija koja ništa ne uklanja nije zaključak"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" i "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Odgovor"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Aplikacija i uređaj (unaprijed popunjeno)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Aplikacija: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"omjer stranica mora biti pozitivan, ali bio je %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Pretpostavka · hipotetska znamenka"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Pretpostavka odbačena · stvarni kandidati vraćeni"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"najmanje %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Automatska fotografija"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Automatski dijelite nesigurno očitane fotografije zagonetki, rezultate očitavanja i naknadne ispravke polja s Freevia za analizu prepoznavanja i treniranje. Zadano isključeno."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Izbjegnite odsjaj"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Natrag"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Natrag na prethodno pitanje"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Natrag na vizualni savjet"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Natrag na vaše polje"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Prije"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Prije ovog poteza"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Plave znamenke prikazuju rješenje. Dodirnite bilo koje polje da ispravite očitano."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"blok %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"blok"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Blok"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Redukcija bloka linijom"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"može sadržavati samo"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Odustani"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidati %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"Dokaz snimanja"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Povežite znamenku u lanac kroz jedinice u kojima ima samo dva moguća mjesta i obojite lanac naizmjenično dvjema bojama. Jedna je boja točna u cijelom lancu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Povezivanjem kandidata %1$s u lanac kroz jedinice u kojima ima samo dva moguća položaja ova se polja označavaju dvjema naizmjeničnim bojama, od kojih je jedna svugdje točna. Dva polja druge boje nalaze se u istom retku, što nije moguće, pa je ta boja netočna i %2$s se uklanja iz svih polja te boje."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Povezivanjem kandidata %1$s u lanac kroz jedinice u kojima ima samo dva moguća položaja ova se polja označavaju dvjema naizmjeničnim bojama, od kojih je jedna svugdje točna. Dva polja druge boje nalaze se u istom bloku, što nije moguće, pa je ta boja netočna i %2$s se uklanja iz svih polja te boje."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Povezivanjem kandidata %1$s u lanac kroz jedinice u kojima ima samo dva moguća položaja ova se polja označavaju dvjema naizmjeničnim bojama, od kojih je jedna svugdje točna. Dva polja druge boje nalaze se u istom stupcu, što nije moguće, pa je ta boja netočna i %2$s se uklanja iz svih polja te boje."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Povezivanjem znamenke %1$s kroz jedinice u kojima ima samo dva moguća mjesta ova se polja naizmjenično boje dvjema bojama, od kojih je jedna točna u cijelom lancu. Dva polja boje %2$s nalaze se u istoj jedinici %3$s, što nije moguće — zato je ta boja netočna i %4$s se uklanja iz svakog polja te boje."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Povezivanjem znamenke %1$s kroz jedinice u kojima ima samo dva moguća mjesta ova se polja naizmjenično boje dvjema bojama, a jedna je boja točna u cijelom lancu. Ova polja vide obje boje, pa kako god lanac završi, jedno od polja koja vide sadrži %2$s — što znači da je ona ne mogu sadržavati."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Povezivanjem kandidata %1$s u lanac kroz jedinice u kojima ima samo dva moguća položaja ova se polja označavaju dvjema naizmjeničnim bojama, od kojih je jedna svugdje točna. Dva polja iste boje nalaze se u istom bloku, što nije moguće, pa je ta boja netočna i %2$s se uklanja iz svih polja te boje."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Povezivanjem kandidata %1$s u lanac kroz jedinice u kojima ima samo dva moguća položaja ova se polja označavaju dvjema naizmjeničnim bojama, od kojih je jedna svugdje točna. Dva polja iste boje nalaze se u istom stupcu, što nije moguće, pa je ta boja netočna i %2$s se uklanja iz svih polja te boje."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Povezivanjem kandidata %1$s u lanac kroz jedinice u kojima ima samo dva moguća položaja ova se polja označavaju dvjema naizmjeničnim bojama, od kojih je jedna svugdje točna. Dva polja iste boje nalaze se u istom retku, što nije moguće, pa je ta boja netočna i %2$s se uklanja iz svih polja te boje."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Nesigurna polja za provjeru: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Provjeri"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Provjerite jedno nesigurno polje."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", provjereno točno"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Odaberite kandidata da vidite zašto ne može biti u vašem polju."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Odaberite jezik"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Odaberite što prikazati"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Zatvori"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Zatvori savjet"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Sažmi pregled očitanih znamenki"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"polja u boji i sivim tonovima moraju imati istu geometriju"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"stupac %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"stupac"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"stupci"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Usporedite lance prisile i dajte prednost onima s manje polja za praćenje. Kraći lanci mogu značiti više koraka u cjelovitom rješenju."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Posljedica %1$s od %2$s · hipotetske znamenke"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"sadrži"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Vrsta sadržaja"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Nastavi cijelim postupkom"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Proturječje · pretpostavka ne vrijedi"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", proturječje"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Proturječje: u crvenoj jedinici %1$s nema više mjesta za %2$s. To je nemoguće, pa početna pretpostavka ne vrijedi."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Proturječje: crvenom polju nije preostao nijedan kandidat. To je nemoguće, pa početna pretpostavka ne vrijedi."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Kopiraj zahtjev za brisanje"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Točno. Usporedite svoje zaključivanje s objašnjenjem u nastavku."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"snimljena slika nije se mogla dekodirati"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Nije bilo moguće pronaći tiskane znamenke na toj fotografiji."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Nije bilo moguće razaznati linije mreže — pokušajte ponovno."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Nije bilo moguće otvoriti GitHub. Obratite se podršci na %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Nije bilo moguće sačuvati dokaz snimanja za otklanjanje pogrešaka"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Nije bilo moguće poslati očitanje. Pokušajte ponovno kad budete povezani."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Slijepa ulica"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"IZBRIŠI"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Izbriši"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Izbriši izvješće"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Izbriši ovu fotografiju"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Izbriši ovu zagonetku"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Izbrisati ovu zagonetku?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Izbrisati ovo slanje?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Brisanje…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Brisanje nije potvrđeno. Provjerite vezu i pokušajte ponovno."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Zahtjev za brisanje"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Odgovor na zahtjev za brisanje nije potvrdio ovu potvrdu slanja."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Usluga brisanja vratila je HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Opišite što se dogodilo i korake za ponavljanje. Navedite jeste li prvo provjerili i ispravili prepoznate znamenke. Za ideju napišite „Nije primjenjivo”."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", ciljno polje ovog savjeta"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Uređaj: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Dijagnostika je skraćena da stane u nacrt u pregledniku. Radnja Pošalji dijagnostiku u aplikaciji može podijeliti cijelo izvješće."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"znamenka mora biti 1..9, ali bila je %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Znamenke nisu očitane"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Čuvanje dokaza na disku utječe na trajanje; nije mjerenje latencije."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", ne odgovara rješenju"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Svaka potvrda slanja označava jednu poslanu reviziju zagonetke. Izbrišite je ovdje da uklonite privatno pohranjeno izvješće iz Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Ranija eliminiranja: %1$s. Upotrijebite poveznice na ranije korake da pregledate njihove dokaze."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← raniji dokaz (dubina %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Raniji hipotetski upisi ostavljaju mu samo jednog kandidata."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Raniji koraci korišteni u ovom dokazu"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Uredi polje"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"osam"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"prazno"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Prazno."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Prazno"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Engleski"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"nepodudarni unosi"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"nepodudaran unos"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Svaka od njih popunjava jedno polje."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Svako je polje popunjeno, ali %1$s odgovora ne odgovara rješenju."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Svako je polje popunjeno, ali jedan odgovor ne odgovara rješenju."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Svaki sudoku s jednim rješenjem može se riješiti zaključivanjem; pogađanje nikad nije potrebno i rijetko pomaže. Ovo su načini zaključivanja koje ova aplikacija može prepoznati i objasniti, počevši od najlakših. Kad se neka od njih može primijeniti na otvorenu zagonetku, pokazat će vam sva mjesta na kojima se primjenjuje."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Sve što ste dosad upisali je točno."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Trenutačno dostupni primjeri: svaki počinje od vaše trenutačne mreže."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"očekivano je 10 vodoravnih linija, dobiveno %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"očekivano je 10 okomitih linija, dobiveno %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"očekivano je 81 polje, ali dobiveno je %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"očekivano je 81 polje u svakom bloku, pronađeno %1$s i %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"očekivan je 8-bitni jedan kanal, ali dobiveno je %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"očekivana je slika 28x28, ali dobiveno je %1$s vrijednosti"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Očekivano ponašanje ili predloženo poboljšanje"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"očekivano je deset linija u svakom smjeru"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"očekivana su dva bloka, pronađeno %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Objasni ranija uklanjanja kandidata (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Objasni savjete"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Pronađite polje kojem su preostala samo dva ili tri kandidata — što manje, to bolje, a što su redak, stupac i blok oko njega popunjeniji, još bolje.\n\nOdaberite jednog od njegovih kandidata i lagano ga zapišite olovkom. Sada pratite posljedice: ta znamenka otpada iz svega što polje vidi, pa nekom od tih polja može ostati samo jedan kandidat, što prisiljava sljedeće, i tako dalje. Nastavite.\n\nDogodit će se jedno od dvoje. Ili lanac zamre, pa niste ništa saznali — izbrišite zapis i isprobajte drugog kandidata. Ili dođete do polja bez ijednog kandidata ili retka u kojem nema mjesta za neku znamenku. To je nemoguće, pa je znamenka koju ste zapisali olovkom bila pogrešna i možete je trajno isključiti.\n\nOvu tehniku upotrijebite kad su sve ostale iscrpljene. Sporija je i svodi se na praćenje zapisa umjesto prepoznavanja uzoraka, ali može otkriti poteze koje uzorci propuštaju. Jedno eliminiranje često je dovoljno da jednostavne tehnike ponovno prorade; neki položaji ipak zahtijevaju dublju pretragu."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Pronađite dva polja s ista dva kandidata, primjerice {3,7}, koja se međusobno ne vide — obično su daleko jedno od drugoga.\n\nSada potražite redak, stupac ili blok u kojem 7 ima samo dva moguća polja, od kojih prvo vidi jedno polje vašeg para, a drugo drugo polje para. To je poveznica.\n\nJedno od ta dva polja sadrži 7. Koje god bilo, polje vašeg para koje ga vidi ne može sadržavati 7, pa mora sadržavati 3. Ne znate na kojem je kraju 3, samo da je na jednom od njih — a to je dovoljno da isključite 3 iz svakog polja koje vidi oba kraja.\n\nTeži je dio pronaći poveznicu, pa tražite obrnutim redoslijedom: prvo označite jedinice u kojima znamenka ima samo dva moguća mjesta, a zatim potražite odgovarajući par s obje strane."</string>
+    <string name="msg_finished_05343e98" formatted="false">"dovršeno"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Snimite kad je mreža poravnata u kadru, bez perspektivnog izobličenja, i miruje. Gumb radi u svakom slučaju."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Smjestite cijelu mrežu u kadar."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Smjestite cijelu mrežu u kadar"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"pet"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Pratite postupak u kojem se svaki potez nadovezuje na prethodni."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Pratite cijeli dokaz redom"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Pratite ovaj lanac polja s dva kandidata: ako %1$s nije %2$s, svako polje u lancu prisiljeno je prethodnim, a %3$s na kraju postaje %4$s. Zato jedan ili drugi kraj sadrži %5$s, što ga isključuje iz svakog polja koje vidi oba kraja."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Lanac prisile"</string>
+    <string name="msg_four_04efaf08" formatted="false">"četiri"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Četiri polja u dva retka, dva stupca i dva bloka ne mogu sva sadržavati ista dva kandidata jer bi zagonetka tada imala dva rješenja."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia je potvrdila brisanje, ali ovaj telefon nije mogao ukloniti lokalnu potvrdu slanja. Pokušajte ponovno da dovršite lokalno čišćenje."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia će izbrisati ovu reviziju izvješća i njezinu privatnu kopiju za treniranje. Budući ispravci mogu stvoriti novo izvješće prema vašim postavkama dijeljenja. Model koji je već treniran na njemu može zadržati naučene promjene."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Cijeli postupak"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Buduća nesigurna očitanja slat će ispravljenu fotografiju zagonetke, rezultate prepoznavanja i ispravke Freevia za analizu i treniranje. Kopije za treniranje ostaju dok ih ne izbrišete u Potvrdama slanja; trenirani model može zadržati naučene promjene. Ako je nesigurno očitana zagonetka već otvorena, bit će poslana sada. To možete isključiti u Postavkama."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Blago"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Odsjaj zaklanja linije — nagnite stranicu od svjetla"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"SivaSlika(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Siva polja sadrže bilješke olovkom koje aplikacija zanemaruje. Traka ispod znamenke pokazuje koliko je prepoznavanje bilo pouzdano. Dodirnite polje za pojedinosti."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Rukom napisano"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Teško"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Skriveno"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Skriveni par"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Skrivena četvorka"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Skriveni jedinac"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Skrivena trojka"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Sakrij ranije dokaze"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Sakrij kako prepoznati"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", savjet %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Savjet"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Dokaz savjeta"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Obrazloženje savjeta"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Mirujte..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Mirujte ili dodirnite okidač"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Mirujte dok kamera izoštrava..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Držite telefon vodoravno"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Držite telefon vodoravno iznad zagonetke."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Držite telefon vodoravno iznad zagonetke"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Kako prepoznati"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nKako dolazimo do toga:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Potražite polja s točno dva kandidata — Y-krilo sastoji se od tri takva polja i ničega drugog.\n\nUzmite jedno kao središte, primjerice {2,5}. Potražite polje koje ono vidi s kandidatima {2,9} i drugo koje vidi s kandidatima {5,9}. Središnje polje sadrži ili 2 ili 5. Ako sadrži 2, prvi krak mora sadržavati 9; ako sadrži 5, drugi mora sadržavati 9. U oba slučaja 9 se pojavljuje u jednom od krakova — ne znate kojem i ne morate znati.\n\nZato nijedno polje koje vidi oba kraka ne može sadržavati 9. Ta su polja obično dva kuta koja dovršavaju pravokutnik."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", pretpostavljeni %1$s, nije upisani odgovor"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Ako %1$s znamenki u jednom retku, stupcu ili bloku može biti samo u istih %2$s polja, ta polja ne mogu sadržavati ništa drugo."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Ako %1$s polja u jednom retku, stupcu ili bloku zajedno dijeli točno %2$s kandidata, te znamenke pripadaju tim poljima i nijednom drugom u toj jedinici."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Ako znamenka ima dva moguća mjesta u retku i dva u stupcu, a jedno iz svakog dijeli blok, jedno od preostala dva mora je sadržavati."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Ako znamenka ima dva moguća mjesta u svakom od dva retka, a dva od tih mjesta dijele stupac, jedno od preostala dva mora je sadržavati."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Ako su sva moguća mjesta znamenke duž linije unutar jednog bloka, ta se znamenka može isključiti iz ostatka tog bloka."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Ako se sva moguća mjesta znamenke u %1$s redaka nalaze u istih %2$s stupaca, može se isključiti iz ostalih polja tih stupaca — isto vrijedi kad se retci i stupci zamijene."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Ako sva moguća mjesta znamenke unutar bloka dijele jednu liniju, ta se znamenka može isključiti iz ostatka te linije."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Ako pretpostavka znamenke dovede do polja koje ne može sadržavati ništa, ta je znamenka bila pogrešna."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"dimenzije slike moraju biti pozitivne"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"U lancu polja koja sva sadrže ista dva kandidata krajevi lanca neparne duljine sadrže različite znamenke."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"U ovih %1$s jedinica %2$s, znamenka %3$s može biti samo u ove %4$s jedinice %5$s. Zajedno ih sve zauzimaju, pa se %6$s može isključiti iz svih ostalih polja tih jedinica %7$s."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"U ovih %1$s stupaca %2$s može biti samo u ovih %3$s redaka. Zajedno zauzimaju svaki od tih redaka, pa se %4$s može isključiti iz svih ostalih polja u njima."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"U ovih %1$s redaka %2$s može biti samo u ovih %3$s stupaca. Zajedno zauzimaju svaki od tih stupaca, pa se %4$s može isključiti iz svih ostalih polja u njima."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"U ove dvije jedinice %1$s, znamenka %2$s ima po dva moguća mjesta, a %3$s i %4$s dijele jedinicu %5$s — zato ne mogu oba sadržavati %6$s. Jedno od polja %7$s i %8$s stoga ga sadrži, što isključuje %9$s iz svakog polja koje vidi oba."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"U svakom od ova dva stupca %1$s ima samo dva moguća položaja, a %2$s i %3$s nalaze se u istom retku, pa ne mogu oba biti %4$s. Stoga jedno od polja %5$s i %6$s sadrži tu znamenku, čime se %7$s isključuje iz svakog polja koje vidi oba."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"U svakom od ova dva retka %1$s ima samo dva moguća položaja, a %2$s i %3$s nalaze se u istom stupcu, pa ne mogu oba biti %4$s. Stoga jedno od polja %5$s i %6$s sadrži tu znamenku, čime se %7$s isključuje iz svakog polja koje vidi oba."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"U ovoj jedinici %1$s, znamenke %2$s mogu biti samo u ova %3$s polja, pa su ta polja rezervirana. Time se iz njih isključuje %4$s."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"U ovoj jedinici %1$s, znamenka %2$s može biti samo unutar jednog bloka. Zato je %3$s u tom bloku na ovoj liniji %4$s i može se isključiti iz ostatka bloka."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"U ovom bloku %1$s može biti samo u ovih %2$s polja, pa su ta polja rezervirana za te znamenke. Time se %3$s isključuje iz njih."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"U ovom stupcu %1$s može biti samo u ovih %2$s polja, pa su ta polja rezervirana za te znamenke. Time se %3$s isključuje iz njih."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"U ovom retku %1$s može biti samo u ovih %2$s polja, pa su ta polja rezervirana za te znamenke. Time se %3$s isključuje iz njih."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Uključuje njihove fotografije, očitanja i ispravke. Isključite to u Postavkama."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Unutar jednog bloka pronađite znamenku koja može biti samo u dva ili tri polja i provjerite jesu li sva u istom retku ili sva u istom stupcu. Ako jesu, znamenka je sigurno negdje duž te linije — ne znate gdje, ali znate da je unutar ovog bloka. Zato ne može biti nigdje drugdje duž iste linije izvan bloka.\n\nOvo samo po sebi ne upisuje ništa. Uklanja kandidate kako bi se negdje drugdje pojavio jedinac."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Unutar ovog bloka %1$s može biti samo na ovoj liniji %2$s. Zato je %3$s negdje ovdje i može se isključiti iz ostatka linije %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem ili ideja"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Ovdje se primjenjuje na %1$s mjesta. Krenite naprijed da ih prođete."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Ovdje se primjenjuje na jednom mjestu. Krenite naprijed da ga vidite."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Ne primjenjuje se nigdje u ovom položaju."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"To je jedino preostalo mjesto za %1$s u označenoj jedinici %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"To je zaokruženo polje.\n\nPonovno pritisnite Savjet za znamenku."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Meduza"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Zadrži"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Neka lanci prisile budu kratki"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Jezik"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licence"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"U jednom retku, stupcu ili bloku potražite polja s malo preostalih kandidata. Uzmite ih %1$s i spojite njihove kandidate. Ako skup sadrži točno %2$s znamenki, tih %3$s znamenki je rezervirano: moraju biti u ta %4$s polja nekim redoslijedom, iako još ne možete reći koja ide gdje.\n\nTo je dovoljno. Svako drugo polje u jedinici može odbaciti te znamenke, a obično neko od tih polja tada postane jedinac.\n\nPolja ne moraju sva imati iste kandidate — {2,7}, {2,9} i {7,9} sasvim su valjana trojka, a upravo nju ljudi često previde."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Potražite polja s ista dva kandidata — primjerice {4,9} — koja čine lanac u kojem svako vidi sljedeće. Tri nisu dovoljna; potrebna su barem četiri.\n\nBojite ih naizmjenično dok napredujete. Budući da svako polje vidi sljedeće, dva susjedna polja ne mogu sadržavati istu znamenku, pa lanac cijelom duljinom glasi 4, 9, 4, 9 — ili 9, 4, 9, 4, a ne možete znati što od toga.\n\nU oba slučaja dva polja suprotnih boja sadrže različite znamenke: jedno sadrži 4, a drugo 9. Zato nijedno polje koje vidi oba ne može sadržavati nijednu od njih i odjednom gubi oba kandidata.\n\nUzorak je lako uočiti upravo zato što svako polje u njemu izgleda isto. Pratite jednake parove po mreži i pogledajte gdje se dodiruju."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Potražite tri polja s ista dva kandidata — primjerice {1,6} — koja su u tri kuta pravokutnika. Pravokutnik mora biti u točno dva bloka: dva retka i dva stupca koja prolaze kroz dva bloka, a ne četiri.\n\nSada pogledajte četvrti kut. Kad bi i on sadržavao samo 1 i 6, zagonetka bi imala dva rješenja — mogli biste zamijeniti jedinice i šestice oko pravokutnika, a sve ostalo i dalje bi vrijedilo. Pravilno sastavljena zagonetka ima jedno rješenje, pa četvrti kut mora sadržavati nešto drugo: njegovi ostali kandidati ostaju, a 1 i 6 otpadaju.\n\nOvo je jedini argument među tehnikama koji se temelji na sastavljaču, a ne na mreži. Valjan je za objavljenu zagonetku, a bezvrijedan za onu koju ste već pogrešno popunili jer tada možda uopće nema rješenja koje bi bilo jedinstveno."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Pogledajte ovaj blok. Pratite obris do polja koje će ovaj savjet objasniti."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Bilješke"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Umjereno"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Više"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Potrebno je više svjetla"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Postoji više rješenja, pa je neka tiskana znamenka propuštena. Pritisnite Riješi da vidite rješenja i gdje se razlikuju."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Odmaknite se"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Približite se"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Približite se — mreža je premala za očitavanje."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Golo"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Goli par"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Gola četvorka"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Goli jedinac"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Gola trojka"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Navedite tehniku i pokažite polja koja je dokazuju, umjesto da samo date znamenku."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"potrebne su najmanje 4 točke, ali dobiveno je %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Potrebna je potvrda"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Novi sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Sljedeća posljedica"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Sljedeći korak"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Slike se ne prilažu automatski. Prijave i privitci poslani ovdje javni su. Primjere koje radije želite poslati privatno pošaljite na info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Nijedna fotografija nije odbijena od posljednje instalacije aplikacije."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Dijagnostika skeniranja nije dostupna."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Ovdje se ne primjenjuje nijedna tehnika"</string>
+    <string name="msg_none_140bedbf" formatted="false">"nijedna"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Nijedna od njih ne upisuje znamenku u polje: uklanjaju kandidate, čime se otvara put rješavanju teške zagonetke."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Trenutačno nijedna na vašoj zagonetki."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"nije datoteka modela znamenki"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Nije pouzdano očitano — najbliža je procjena %1$s %2$s na %3$s. Sami postavite ovo polje."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Još nije prepoznata mreža devet puta devet — pokušajte ispuniti kadar samo mrežom ili jednostavno snimite fotografiju"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"nije započeto"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"S ovog telefona nije bilo moguće ništa poslati."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Nema više ničega za riješiti."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Ovdje se više ništa ne može zaključiti tehnikama koje ova aplikacija poznaje."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"ništa neobično"</string>
+    <string name="msg_ok_565339bc" formatted="false">"U redu"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"jedna"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Jedno je polje izgledalo kao tiskana znamenka, ali to nije."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Jedna tiskana znamenka automatski je ispravljena."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"jedno polje"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Ovdje može biti samo %1$s — svaka druga znamenka već se pojavljuje u ovom retku, stupcu ili bloku."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Ovdje može biti samo %1$s. Istaknuta polja isključuju %2$s od ostalih osam znamenaka; %3$s je iz ovog polja isključen ranije, a ne zbog nečega što se može vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Ovdje može biti samo %1$s. Označena polja zauzimaju četiri od ostalih osam znamenki; %2$s su iz ovog polja isključene ranije, a ne zbog ičega što možete vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Ovdje može biti samo %1$s. Označena polja zauzimaju šest od ostalih osam znamenki; %2$s su iz ovog polja isključene ranije, a ne zbog ičega što možete vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Ovdje može biti samo %1$s. Označena polja zauzimaju jednu od ostalih osam znamenki; %2$s su iz ovog polja isključene ranije, a ne zbog ičega što možete vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Ovdje može biti samo %1$s. Označena polja zauzimaju sedam od ostalih osam znamenki; %2$s je iz ovog polja isključena ranije, a ne zbog ičega što možete vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Ovdje može biti samo %1$s. Označena polja zauzimaju pet od ostalih osam znamenki; %2$s su iz ovog polja isključene ranije, a ne zbog ičega što možete vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Ovdje može biti samo %1$s. Označena polja zauzimaju %2$s od preostalih osam znamenki; %3$s %4$s ranije isključeno iz ovog polja, a ne zbog nečega što možete vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Ovdje može biti samo %1$s. Označena polja zauzimaju dvije od ostalih osam znamenki; %2$s su iz ovog polja isključene ranije, a ne zbog ičega što možete vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Ovdje može biti samo %1$s. Istaknuta polja isključuju %2$s od ostalih osam znamenaka; %3$s su iz ovog polja isključeni ranije, a ne zbog nečega što se može vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Ovdje može biti samo %1$s. Označena polja zauzimaju tri od ostalih osam znamenki; %2$s su iz ovog polja isključene ranije, a ne zbog ičega što možete vidjeti oko njega."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Ovdje može biti samo %1$s. Preostalih osam znamenki isključuju popunjena polja ili prisilni pojedinačni kandidati u ovom retku, stupcu ili bloku."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Ovdje može biti samo %1$s, iako ništa oko njega ne pokazuje zašto: svih osam drugih znamenki isključeno je iz ovog polja ranijim zaključivanjem, a ne zato što su upisane u njegov redak, stupac ili blok."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Pronađeno je samo %1$s tiskanih znamenki, što je premalo za zagonetku."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"podržani su samo okreti za četvrtinu kruga, a ne %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Otvorite nacrt u pregledniku s unaprijed unesenom verzijom aplikacije, modelom telefona, verzijom Androida i nedavnom dijagnostikom skeniranja. Sami dodajte potpun opis i relevantne snimke zaslona.\n\nPotrebna je prijava na GitHub. Nacrt možete pregledati i urediti prije slanja. Poslana izvješća i privitci su javni. Fotografije se ne prilažu automatski."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Otvori postavke aplikacije"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Otvori GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Obavijesti o otvorenom kodu"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Otvorite „Zašto ovo polje?” da vidite dokaze za konačni upis ili odaberite isključenog kandidata da pratite njegov dokaz."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV — licenca Apache 2.0. Koristi se za pronalaženje i ispravljanje mreže.\n\nAndroidX, Jetpack Compose i CameraX — licenca Apache 2.0.\n\nKotlin — licenca Apache 2.0.\n\nModel za prepoznavanje znamenki treniran je na bazi rukom pisanih znamenki MNIST autora LeCuna, Cortesa i Burgesa, zajedno sa znamenkama prikazanima otvorenim sistemskim fontovima i programski nacrtanim znamenkama."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Izvorne biblioteke OpenCV nisu se uspjele učitati"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografirajte drugu zagonetku."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Fotografije koje zadržite pohranjuju se u privatnoj pohrani ove aplikacije i uklanjaju se kad ih izbrišete ili deinstalirate aplikaciju."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Fotografije iz kojih aplikacija nije mogla izraditi zagonetku. Pošaljite jednu kako bi se mogla pregledati."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Odaberite znamenku i pregledajte retke u kojima su joj preostala točno dva polja. Uzmite dva takva retka i pogledajte nalazi li se po jedno njihovo polje u istom stupcu.\n\nAko da, ta su dva polja u istom stupcu i ne mogu oba sadržavati tu znamenku. Zato je sadrži barem jedan od udaljenih krajeva — dva polja na drugoj strani. Ne znate koji i ne morate znati: svako polje koje vidi oba udaljena kraja može odbaciti znamenku.\n\nZatim ponovite sa stupcima umjesto redaka. Oblik izgleda kao visoka zgrada uz nižu, odakle potječe naziv i po čemu ga možete prepoznati nakon što vidite nekoliko primjera."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Odaberite znamenku. Pronađite redak u kojem ima točno dva moguća mjesta i stupac u kojem ima točno dva moguća mjesta. Sada provjerite jesu li jedno polje retka i jedno polje stupca u istom bloku.\n\nAko jesu, ne mogu oba sadržavati tu znamenku — jedan blok, jedna znamenka. Zato je sadrži barem jedan od preostala dva kraja, a svako polje koje vidi oba kraja može je odbaciti.\n\nLjudi ovo često previde jer se ništa ne treba poravnati: četiri polja čine nepravilan oblik, a povezuje ih samo blok koji dijele dva unutarnja kraja."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Odaberite prazno polje i prođite znamenke od 1 do 9, prekriživši sve koje se već pojavljuju u njegovu retku, stupcu ili bloku. Ako ostane točno jedna znamenka, upišite je ondje.\n\nSve ostale tehnike služe tome da omoguće ovu. Svaka teža tehnika način je da se neko polje svede na jednog kandidata, pa kad teža tehnika donese rezultat, zatim potražite ovo."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Odaberite jednu znamenku i zanemarite sve ostale. Pregledajte retke i zabilježite one u kojima toj znamenki preostaju samo dva ili tri moguća polja. Potražite %1$s takvih redaka čija se polja nalaze u istih %2$s stupaca.\n\nAko ih pronađete, svaki od tih %3$s redaka mora smjestiti znamenku u jedan od tih stupaca, a nijedna dva ne mogu koristiti isti stupac. Zato zajedno zauzimaju tu znamenku u sva %4$s stupca — pa je svako drugo polje u tim stupcima može odbaciti.\n\nZatim sve ponovite sa zamijenjenim stupcima i retcima. Polovica ovih uzoraka pronalazi se na drugi način, a upravo tu polovicu većina ljudi nikad ne traži."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Upiši %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Upišite %1$s u redak %2$s, stupac %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Upišite %1$s u svoje obrubljeno polje."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Priložite relevantne snimke zaslona pomoću GitHubove kontrole za privitke: zagonetku, prepoznate znamenke, rezultat provjere ili korak savjeta koji pokazuje problem. Gdje je korisno, navedite očekivane i stvarne rezultate."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Molim izbrišite moja poslana očitanja iz Sudoku Buddy. ID-ovi potvrda slanja: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Zamijenite ovaj tekst potpunim opisom problema ili ideje. Dajte izvješću kratak, opisni naslov."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Usmjerite kameru prema sudoku zagonetki"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Usmjerite kameru prema sudoku zagonetki."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Usmjerite kameru prema sudoku zagonetki na papiru. Aplikacija očitava tiskane znamenke i sve što ste upisali, rješava zagonetku i može vam dati savjet, provjeriti odgovore ili prikazati cijelo rješenje."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Usmjeravajući par"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POŠALJI"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Priprema zagonetke…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Prethodno"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Prethodni korak"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Tiskano"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Pravila privatnosti"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Pohrana zagonetki"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Zagonetke"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Zagonetke se očitavaju i rješavaju na ovom telefonu. Ako pošaljete nesigurno očitanje ili omogućite automatsko dijeljenje, fotografija zagonetke, izvorna očitanja, oznake nesigurnosti i vaši ispravci sigurno se šalju tvrtki Freevia radi analize prepoznavanja i privatnog treniranja modela. Izvješća ne uključuju model vašeg uređaja ni dijagnostičke podatke. Automatsko dijeljenje nije obavezno; nema korisničkih računa, redovite analitike upotrebe ni praćenja za oglašavanje. Kopije za treniranje mogu se izbrisati pomoću potvrde o slanju, no već trenirani model može zadržati naučene promjene. Za brisanje izvješća otvorite Potvrde o slanju u Postavkama."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Zagonetke fotografirane za testiranje preuzete su sa sudoku.cba.si. Ova aplikacija nije povezana s tom stranicom."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Zagonetke koje fotografirate čuvaju se ovdje kako biste im se mogli vratiti kasnije."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Prepoznavanje"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Očitano kao rukom napisano %1$s, sigurnost %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Očitano kao tiskano %1$s, sigurnost %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Očitano kao prazno – nisu pronađeni tragovi pisanja."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Očitano kao oznake kandidata zapisane olovkom i zanemareno."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Očitanje pregledano."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Očitanje poslano. Hvala!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Nedavna dijagnostika skeniranja (unaprijed popunjeno)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Prepoznavanje može pogriješiti, osobito kod rukopisa. Upotrijebite Očitaj za usporedbu prepoznatih znamenki s fotografijom i dodirnite bilo koje polje kako biste ga ispravili. Aplikacija označava nesigurna očitanja za pregled; čak i očitanje s visokom sigurnošću može biti pogrešno."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Odbaci pretpostavku"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Udaljeni parovi"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Ukloni %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nUklonite %1$s iz "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Uklonjeno"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Ponovno prikaži zaključivanje"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Prijavi grešku ili ideju na GitHubu"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Ponovno pokreni kameru"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Vrati se na korak %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Prikaži objašnjenje"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Pregledaj ili pošalji očitanje"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Pregledaj očitanje"</string>
+    <string name="msg_right_883361d5" formatted="false">"Desno"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Postupak dovršen. Vratite se da pregledate bilo koji potez ili sami isprobajte korake."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"redak %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Redak %1$s, stupac %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Redak %1$s, stupac %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"redak $1, stupac $2"</string>
+    <string name="msg_row_634768da" formatted="false">"redak"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"retci"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", isključeno %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Nije moguće očitati dijagnostičke podatke skeniranja."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Snimke zaslona ili primjeri zagonetki"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Druga pretpostavka: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Odaberi za vježbu"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Odabrano: redak %1$s, stupac %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Pošalji dijagnostičke podatke (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Pošalji dijagnostičke podatke"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Pošalji ova skeniranja"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Pošalji ovu fotografiju"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Postavke"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"sedam"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Automatski dijeli nesigurna očitanja"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Automatski dijeliti nesigurna očitanja?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Prikaži proturječje"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Pokaži mi sve %1$s u svojoj zagonetki"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Pokaži mi taj primjer u svojoj zagonetki"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Jednostavno bojanje"</string>
+    <string name="msg_six_44778d82" formatted="false">"šest"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Neboder"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", rješenje %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Riješi"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Riješeno, svi su odgovori točni."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Odgovor uz pomoć algoritma za rješavanje: upišite %1$s u %2$s. Kandidati su %3$s. Tehnike koje aplikacija podržava nisu pronašle potez iz ovog položaja. Pretraživanjem je pronađen %4$s u jedinstvenom rješenju; detaljan dokaz grana pretraživanja nije dostupan."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nOdgovor uz pomoć rješavača: tehnike koje aplikacija podržava nisu pronašle potez. Detaljan dokaz nije dostupan."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminacija uz pomoć algoritma za rješavanje: pretraživanje isključuje %1$s u označenoj ćeliji, ali aplikacija nije mogla izraditi kratak prikaz koraka koji vode do proturječja. Detaljan dokaz nije dostupan."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Neke ćelije možda sadrže bilješke umjesto cijele znamenke."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Neke znamenke nisu očitane s visokom sigurnošću."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Došlo je do pogreške pri očitavanju te fotografije."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Ćelija"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nPočetni kandidati: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Korak %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Poravnaj"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategije"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Potvrda o slanju"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Potvrda o slanju nije valjana."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Potvrde o slanju (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Potvrde o slanju"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"U odgovoru na slanje nedostaje %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Status odgovora na slanje nije valjan."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Usluga slanja nije konfigurirana."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Usluga slanja vratila je HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Slanje nije dostupno u ovoj verziji."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Pošalji"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Automatski šalji buduća nesigurna očitanja"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Pošalji očitanje"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Pošalji nesigurno očitanje na analizu"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Pošalji ažuriranje"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Poslano"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Slanje…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Dijagnostika aplikacije Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Povratne informacije za Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy objavljuje Freevia. Kontakt: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy očitava zagonetke pomoću kamere, pa mu je potreban pristup kameri. Prepoznavanje se odvija na vašem telefonu, a povijest zagonetki ostaje na njemu. Ako odlučite poslati nesigurno očitanje, njegova fotografija i rezultati sigurno se šalju tvrtki Freevia radi poboljšanja prepoznavanja. Automatsko dijeljenje nije obavezno i može se isključiti u Postavkama."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Snimka aplikacije Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Snimke aplikacije Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Izvorni kod aplikacije Sudoku Buddy licenciran je pod licencom Apache License 2.0. Brend Freevia podliježe zasebnim pravima na žig."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku je vrsta zagonetke u javnoj domeni. Ova aplikacija rješava zagonetke koje već imate; ne reproducira ni distribuira ničije zagonetke."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", potkrepljujući dokaz"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Pretpostavimo da označeno polje sadrži %1$s. Znamenke označene brojevima hipotetske su."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Pretpostavimo da ovo polje sadrži %1$s. Slijedite strelice redom: svako je polje određeno prethodnim upisima — ili je ta znamenka jedina koja još može biti u njemu ili je to polje jedino mjesto na koje ta znamenka još može doći.\n\nTime u crveno označenoj jedinici ne ostaje nijedno mjesto za %2$s. Oznake %3$s u njoj pokazuju mjesta na kojima je ta znamenka mogla biti, a svako je od tih polja upravo zauzeto jednom od strelica. Jedinica bez mjesta za neku znamenku nije moguća, pa ovo polje ne sadrži %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Pretpostavimo da je u ovom polju %1$s. Pratite strelice redom: svako polje određeno je prethodnim upisima – ili je ta znamenka jedina koja još može biti u njemu ili je to polje jedino mjesto na koje znamenka još može ići. Crveno polje tada ostaje bez ijedne moguće znamenke, što nije moguće – zato ovo nije %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Pretpostavimo da ovo polje sadrži %1$s. Slijedite strelice redom: svako je polje određeno prethodnim upisima — ili je ta znamenka jedina koja još može biti u njemu ili je to polje jedino mjesto na koje ta znamenka još može doći.\n\nTime u crveno označenom retku ne ostaje nijedno mjesto za %2$s. Oznake %3$s u njemu pokazuju mjesta na kojima je ta znamenka mogla biti, a svako je od tih polja upravo zauzeto jednom od strelica. Redak bez mjesta za neku znamenku nije moguć, pa ovo polje ne sadrži %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Pretpostavimo da ovo polje sadrži %1$s. Slijedite strelice redom: svako je polje određeno prethodnim upisima — ili je ta znamenka jedina koja još može biti u njemu ili je to polje jedino mjesto na koje ta znamenka još može doći.\n\nTime u crveno označenom bloku ne ostaje nijedno mjesto za %2$s. Oznake %3$s u njemu pokazuju mjesta na kojima je ta znamenka mogla biti, a svako je od tih polja upravo zauzeto jednom od strelica. Blok bez mjesta za neku znamenku nije moguć, pa ovo polje ne sadrži %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Pretpostavimo da je u ovom polju %1$s. Pratite strelice redom: svako polje određeno je prethodnim upisima – ili je ta znamenka jedina koja još može biti u njemu ili je to polje jedino mjesto na koje znamenka još može ići.\n\nTada crveno označeni %2$s ostaje bez mjesta za %3$s. Oznake %4$s u njemu mjesta su na koja je ta znamenka mogla ići, a svako je od tih polja upravo zauzela jedna od strelica. Ne može postojati %5$s bez mjesta za znamenku – zato ovo nije %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Pretpostavimo da ovo polje sadrži %1$s. Slijedite strelice redom: svako je polje određeno prethodnim upisima — ili je ta znamenka jedina koja još može biti u njemu ili je to polje jedino mjesto na koje ta znamenka još može doći.\n\nTime u crveno označenom stupcu ne ostaje nijedno mjesto za %2$s. Oznake %3$s u njemu pokazuju mjesta na kojima je ta znamenka mogla biti, a svako je od tih polja upravo zauzeto jednom od strelica. Stupac bez mjesta za neku znamenku nije moguć, pa ovo polje ne sadrži %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Prijeđite na Poslije da biste vidjeli potez i njegove posljedice na mreži."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Sabljarka"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Snimi novu fotografiju"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Snimi još jednu fotografiju"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Odaberite jednu znamenku i označite svaku jedinicu u kojoj su za nju preostala točno dva polja. Ta dva čine klackalicu: jedno sadrži znamenku, a drugo ne.\n\nPočnite bilo gdje i obojite polje, primjerice, plavo. Njegov par na klackalici obojite zeleno, zatim polje koje je s njim u paru ponovno plavo i nastavite dok lanac ne završi. Ili su sva plava polja točna ili su sva zelena – ne možete znati koja, ali to je dovoljno za dva zaključka.\n\nPrvo: ako se dva polja iste boje nađu u jednom retku, stupcu ili bloku, ta je boja nemoguća pa se znamenka uklanja iz svih polja te boje, a druga boja svugdje daje odgovor.\n\nDrugo: svako polje izvan lanca koje vidi i plavo i zeleno polje može odbaciti znamenku jer je jedno od ta dva polja sadrži, kako god lanac završio.\n\nOlovkom je sporo, ali se isplati: jedno bojanje često ukloni znamenku s pola mreže."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Promatrajte jednu znamenku i jednu jedinicu odjednom – primjerice, gdje u ovom bloku može biti 4? Prekrižite svako polje u jedinici koje već sadrži znamenku ili vidi 4 u svojem retku ili stupcu. Ako ostane jedno polje, u njega ide 4.\n\nZamka je u tome što to ne možete vidjeti promatrajući polje: ono možda dopušta još pet drugih znamenki pa ništa ne upućuje na to da je upis nužan. Promatrajte znamenku umjesto polja i odmah ćete to uočiti."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Snimi fotografiju"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Automatski snimi fotografiju"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Dodirnite označeno polje da biste ga pregledali ili potvrdite da su sva očitanja točna."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Najprije dodirnite polje na mreži."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Provjerite %1$s kao pretpostavku u označenom polju. To nije odgovor. Pratite posljedice da biste vidjeli zašto pretpostavka ne vrijedi."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Provjeri pretpostavku"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Hvala što pomažete poboljšati prepoznavanje. Vaša fotografija zagonetke, očitanja i ispravke koristit će se za analizu i treniranje."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"I to je valjan potez tehnikom %1$s. Ovaj slijed prikazuje drugi potez; usporedite njegov dokaz u nastavku."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"To nije potez odabran za ovaj korak. Možda postoje drugi valjani potezi; pogledajte ponovno ili prikažite objašnjenje ovog koraka."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Točno"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"To je ostatak zagonetke. Broj polja koja zahtijevaju odgovore uz pomoć rješavača je %1$s, jer tehnike koje aplikacija podržava nisu pronašle potez. Detaljni dokazi njihovih pretraživanja nisu dostupni."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"To je ostatak zagonetke. Jedno polje zahtijeva odgovor uz pomoć rješavača jer tehnike koje aplikacija podržava nisu pronašle potez. Detaljan dokaz njegova pretraživanja nije dostupan."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"To je ostatak zagonetke, od početka do kraja."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Tu fotografiju nije bilo moguće sačuvati, pa nema što poslati."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"To polje dopušta %1$s. Potražite potez koji opravdava tehnika ovog koraka ili prikažite njegovo objašnjenje."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"To je polje već popunjeno. Odaberite prazno polje."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Pretpostavka je odbačena. Vraćamo se stvarnim kandidatima i precrtavamo %1$s u označenom polju. Hipotetske znamenke uklanjaju se."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Kamera nije mogla snimiti tu fotografiju."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kamera nije dostupna. Zatvorite druge aplikacije koje koriste kameru pa pokušajte ponovno."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"drugi"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Fotografija od %1$s i sve što je s nje očitano uklonit će se s ovog telefona. To se ne može poništiti."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Fotografija je na vašem popisu zagonetki, pod „Nije se moglo očitati”."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Središnje polje ovdje sadrži %1$s ili %2$s. U oba slučaja jedno od druga dva polja mora sadržavati %3$s, pa nijedno polje koje vidi oba ne može sadržavati %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Usmjereni par promatran unatrag. Odaberite redak ili stupac i znamenku kojoj u njemu još treba mjesto. Označite svako polje u tom retku ili stupcu koje može sadržavati znamenku. Ako su sva unutar jednog bloka, znamenka mora biti u dijelu tog retka ili stupca koji pripada bloku – zato je nema drugdje u bloku, uključujući njegova dva retka ili stupca koja niste promatrali.\n\nKao i usmjereni par, ovo samo po sebi ne upisuje ništa; oslobađa prostor za potez koji to čini."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Tiskane znamenke ne čine rješivu zagonetku."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nPreostali kandidati u %1$s su {%2$s}. Upišite %3$s u redak %4$s, stupac %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Izvješće je preveliko za slanje."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-krilo s jednim kandidatom više u središnjem polju. Potražite polje s točno tri kandidata, primjerice {1,4,7}, koje vidi dva polja s po dva kandidata – jedno {1,7} i jedno {4,7}.\n\nSada sva tri mogu sadržavati 7, a jedno je mora sadržavati. Zato polje mora vidjeti sva tri da bi se kandidat isključio, a ne samo dva krila – što u praksi znači da je u istom bloku kao središnje polje i u istom retku ili stupcu kao jedno krilo.\n\nManje eliminacija nego kod Y-krila i lakše ga je previdjeti iz istog razloga: središnje polje ne ističe se."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"U istaknutom bloku postoji polje koje možete popuniti.\n\nPonovno pritisnite Naznaka da biste saznali koja ga tehnika pronalazi."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Ovdje više nema o čemu zaključivati."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Ova polja, kojih je %1$s, sadrže samo %2$s i %3$s, a svako vidi sljedeće, pa se znamenke izmjenjuju duž cijelog lanca. %4$s i %5$s udaljeni su za neparan broj veza pa sadrže različite znamenke – time se %6$s isključuje iz svakog polja koje vidi oba."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Ova polja, kojih je %1$s, zajedno dopuštaju samo %2$s, pa ih te znamenke popunjavaju nekim redoslijedom. Time se %3$s isključuje iz ostatka jedinice %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Ovih %1$s polja zajedno mogu sadržavati samo %2$s, pa ih te znamenke popunjavaju nekim redoslijedom. Time se %3$s isključuje iz ostalih polja ovog retka."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Ovih %1$s polja zajedno mogu sadržavati samo %2$s, pa ih te znamenke popunjavaju nekim redoslijedom. Time se %3$s isključuje iz ostalih polja ovog stupca."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Ovih %1$s polja zajedno mogu sadržavati samo %2$s, pa ih te znamenke popunjavaju nekim redoslijedom. Time se %3$s isključuje iz ostalih polja ovog bloka."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Ovo su početni kandidati za vaše polje. Slijed objašnjava koje se mogućnosti mogu isključiti."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Ove znamenke ne mogu činiti zagonetku, a previše ih je pogrešno da bi se moglo reći koje. Dodirnite bilo koje polje da biste ispravili očitanje ili ponovno snimite fotografiju."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Ove znamenke ne mogu činiti zagonetku. Ispravak zaokruženih polja, kojih je %1$s, riješio bi problem – dodirnite jedno da biste ispravili očitanje."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Ove znamenke ne mogu činiti zagonetku. Ispravak jednog zaokruženog polja riješio bi problem – dodirnite ga da biste ispravili očitanje."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Ove znamenke ne čine zagonetku, pa je jedna pogrešno očitana. Pritisnite Riješi da biste vidjeli koja polja treba ispraviti."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Ova četiri polja tvore pravokutnik preko dva bloka, a tri od njih sadrže samo %1$s. Kad bi i %2$s sadržavalo samo te dvije znamenke, znamenke bi se mogle zamijeniti duž pravokutnika i zagonetka bi imala dva rješenja. Ima jedno, pa %3$s mora sadržavati nešto drugo – zato se %4$s uklanja."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Ne dolaze do kraja: nešto je ovdje potpuno nadmašilo mogućnosti aplikacije."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Ovo ne popunjava nijedno polje. Isključuje %1$s iz %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Ovim se ništa ne upisuje. Time se %1$s isključuje iz %2$s polja."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Ovim se ništa ne upisuje. Time se %1$s isključuje iz jednog polja."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nOvo je prvi od %1$s zaključaka koji vode do odgovora."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Ovaj dokaz objašnjava jedan savjet, uključujući eliminacije kandidata koje vode do odgovora. Krenite korak naprijed kako biste pratili zaključivanje na mreži, zatim nastavite s cijelim slijedom."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Ova se zagonetka nije mogla pripremiti."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Ova se zagonetka nije mogla spremiti. I dalje je možete koristiti sada. Oslobodite prostor za pohranu prije snimanja druge fotografije."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Ova zagonetka ima više od jednog rješenja pa je vjerojatno propuštena neka tiskana znamenka. Prikazuje se rješenje %1$s od %2$s — ponovno pritisnite Riješi za sljedeće. Zaokružena polja razlikuju se među prikazanim rješenjima."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Fotografija ove zagonetke nije se mogla otvoriti."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Ovo zaključivanje isključuje %1$s postojećih "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Ovo polje možda sadrži bilješke kandidata umjesto cijele znamenke. Provjerite ga."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Ovaj prikaz uključuje ranija uklanjanja kandidata. Otvorite njihove dokaze u nastavku kako biste ih provjerili."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tri"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Pretamno za raspoznavanje linija mreže"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Trag zaključivanja"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Isprobano"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Pokušajte sami"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Uključi"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Okrenite telefon tako da zagonetka bude uspravna."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Učitelj"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"dvije"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Dva polja s istim parom kandidata, povezana klackalicom preko jedne znamenke, prisiljavaju drugu znamenku u jedno od njih."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Zmaj s dvije uzice"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Jedinstveni pravokutnik"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"jedinica"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable ne izlaže popis CellReading; točna ulazna polja i ishod zadržavaju se."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nepodržana verzija formata modela"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Nesigurno"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Koristi jezik uređaja"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Primjenjujući %1$s, dodirnite polje iz kojeg se može ukloniti kandidat, zatim odaberite tu znamenku."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Primjenjujući %1$s, dodirnite polje koje možete popuniti, zatim odaberite njegovu znamenku."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Vrlo teško"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-krilo"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"je bila"</string>
+    <string name="msg_were_910adfb4" formatted="false">"su bile"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Što ste očekivali ili kako bi vam vaša ideja pomogla rješavati ili učiti Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Što se dogodilo i koraci za ponavljanje (za pogreške)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Što radi"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Gdje"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Zašto je %1$s uklonjeno iz r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Zašto"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Zašto ne %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Zašto ovo polje? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" s rješenjem. Upotrijebite Provjeri da ih pregledate."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Krenite unatrag od svog polja. Odaberite pitanje u nastavku."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Razmatrajte znamenku po znamenku umjesto polja po polje. Za jednu jedinicu zapišite gdje bi još mogla ići svaka znamenka koja nedostaje. Zatim potražite znamenke, njih %1$s, čiji popisi zajedno obuhvaćaju samo %2$s polja.\n\nTe znamenke, njih %3$s, moraju popuniti ta polja, njih %4$s, pa se svi ostali kandidati u njima mogu precrtati — što često odmah pretvori neko od njih u goli singl ili goli par.\n\nOva je tehnika ljudima najteža jer se gledanjem polja ništa ne vidi: ona još imaju mnogo kandidata. Uzorak je u znamenkama."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Radite samo s poljima u kojima su ostala točno dva kandidata.\n\nPočnite od jednog, primjerice {2,6}, i pretpostavite da nije 2 — tada je 6. Prijeđite na polje koje ono vidi i koje također ima 6, primjerice {6,4}: ono ne može biti 6 pa je 4. Prijeđite na polje koje to polje vidi i koje ima 4 pa nastavite, pri čemu je svaki korak određen prethodnim.\n\nAko dođete do polja čija je druga znamenka 2 — znamenka koju ste na početku isključili — gotovi ste. Ili je prvo polje ipak bilo 2 ili je lanac vrijedio pa je posljednje polje 2. Jedan ili drugi kraj sadrži tu znamenku, pa je ne može sadržavati nijedno polje koje vidi oba kraja.\n\nNeka lanci budu kratki. Četiri ili pet polja može se pronaći olovkom; nakon toga vodite evidenciju i prisilni lanac prikladniji je naziv."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"radni brid mora biti pozitivan i konačan"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Nije se moglo očitati"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Napisano"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Pogrešno"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-krilo"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-lanac"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-krilo"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-krilo"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Očistili ste ovo polje."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Postavili ste ovo na rukom napisano %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Postavili ste ovo na tiskano %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Vaše su promjene vidljive, ali nisu se mogle spremiti. Oslobodite prostor za pohranu i pokušajte ponovno urediti zagonetku."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Vaše fotografije i vaša privatnost"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Vaše zagonetke"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Vaše spremljene zagonetke"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Vaše polje ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Vaše polje ostaje obrubljeno. Zelena polja prikazuju dokaze; precrtane znamenke su isključene."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

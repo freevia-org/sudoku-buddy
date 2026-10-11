@@ -1,0 +1,2330 @@
+[
+  {
+    "source": "\n\nHow we get there:",
+    "key": "msg_how_we_get_there_e7cb2cd1"
+  },
+  {
+    "source": "\n\nSolver-assisted answer: the app's supported techniques did not find a move. A detailed proof is unavailable.",
+    "key": "msg_solver_assisted_answer_the_app_s_supported_te_421bb81f"
+  },
+  {
+    "source": "\n\nStarting candidates: {0}.",
+    "key": "msg_starting_candidates_0_733ca514"
+  },
+  {
+    "source": "\n\nThe remaining candidates at {0} are {{1}}. Place {2} in row {3}, column {4}.",
+    "key": "msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9"
+  },
+  {
+    "source": "\n\nThis is the first of {0} deductions leading to the answer.",
+    "key": "msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2"
+  },
+  {
+    "source": "\nRemove {0} from ",
+    "key": "msg_remove_0_from_ff5e4030"
+  },
+  {
+    "source": " Earlier eliminations: {0}. Use the earlier-step links to inspect their proofs.",
+    "key": "msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f"
+  },
+  {
+    "source": " That photo could not be kept, so there is nothing to send.",
+    "key": "msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39"
+  },
+  {
+    "source": " The photo is in your puzzle list, under \"Would not read\".",
+    "key": "msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6"
+  },
+  {
+    "source": " and ",
+    "key": "msg_and_e3ee915a"
+  },
+  {
+    "source": " with the solution. Use Check to inspect them.",
+    "key": "msg_with_the_solution_use_check_to_inspect_them_d6b645e3"
+  },
+  {
+    "source": " {0} in the same box.",
+    "key": "msg_0_in_the_same_box_4025eb88"
+  },
+  {
+    "source": " {0} in the same column.",
+    "key": "msg_0_in_the_same_column_70040564"
+  },
+  {
+    "source": " {0} in the same row.",
+    "key": "msg_0_in_the_same_row_f60b605b"
+  },
+  {
+    "source": " {0} in the same {1}.",
+    "key": "msg_0_in_the_same_1_77d01bfc"
+  },
+  {
+    "source": " ← earlier evidence (depth {0})",
+    "key": "msg_earlier_evidence_depth_0_f1200813"
+  },
+  {
+    "source": "\"horizontal\":[{0} ]}}",
+    "key": "msg_horizontal_0_b13e8aac"
+  },
+  {
+    "source": "## App and device (prefilled)",
+    "key": "msg_app_and_device_prefilled_a4c87018"
+  },
+  {
+    "source": "## Expected behavior or proposed improvement",
+    "key": "msg_expected_behavior_or_proposed_improvement_045feb4e"
+  },
+  {
+    "source": "## Issue or idea",
+    "key": "msg_issue_or_idea_c6ec6dd8"
+  },
+  {
+    "source": "## Recent scan diagnostics (prefilled)",
+    "key": "msg_recent_scan_diagnostics_prefilled_9e23892e"
+  },
+  {
+    "source": "## Screenshots or puzzle examples",
+    "key": "msg_screenshots_or_puzzle_examples_8081414c"
+  },
+  {
+    "source": "## What happened and steps to reproduce (for bugs)",
+    "key": "msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39"
+  },
+  {
+    "source": ", candidates {0}",
+    "key": "msg_candidates_0_d3efd4d2"
+  },
+  {
+    "source": ", checked correct",
+    "key": "msg_checked_correct_c690d1c3"
+  },
+  {
+    "source": ", contradiction",
+    "key": "msg_contradiction_d15034c8"
+  },
+  {
+    "source": ", destination of this hint",
+    "key": "msg_destination_of_this_hint_f9147869"
+  },
+  {
+    "source": ", does not match the solution",
+    "key": "msg_does_not_match_the_solution_57b9c2d3"
+  },
+  {
+    "source": ", hint {0}",
+    "key": "msg_hint_0_bc1ead3f"
+  },
+  {
+    "source": ", hypothetical {0}, not an entered answer",
+    "key": "msg_hypothetical_0_not_an_entered_answer_fc97b0f9"
+  },
+  {
+    "source": ", ruled out {0}",
+    "key": "msg_ruled_out_0_99296743"
+  },
+  {
+    "source": ", solution {0}",
+    "key": "msg_solution_0_6de814bf"
+  },
+  {
+    "source": ", supporting evidence",
+    "key": "msg_supporting_evidence_c3c036e4"
+  },
+  {
+    "source": "- Android: {0}",
+    "key": "msg_android_0_dbe3f7ec"
+  },
+  {
+    "source": "- App: Sudoku Buddy {0}",
+    "key": "msg_app_sudoku_buddy_0_0e880e30"
+  },
+  {
+    "source": "- Device: {0}",
+    "key": "msg_device_0_bc265ab8"
+  },
+  {
+    "source": "A chain of two-candidate squares that begins and ends on the same digit puts that digit in one end or the other.",
+    "key": "msg_a_chain_of_two_candidate_squares_that_begins__31caf763"
+  },
+  {
+    "source": "A digit with only one place left in a row, column or box belongs in that place.",
+    "key": "msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9"
+  },
+  {
+    "source": "A handwritten {0}.",
+    "key": "msg_a_handwritten_0_31063236"
+  },
+  {
+    "source": "A printed {0}.",
+    "key": "msg_a_printed_0_244624d9"
+  },
+  {
+    "source": "A red square shows the digit the app read there. If that is not what you wrote, tap the square to fix it.",
+    "key": "msg_a_red_square_shows_the_digit_the_app_read_the_61e78677"
+  },
+  {
+    "source": "A square with only one digit left must hold that digit.",
+    "key": "msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8"
+  },
+  {
+    "source": "A technique list is never complete, and the hardest puzzles are built to defeat whatever is on it. So when every one of these comes up empty, the tutor settles a single square by trying its candidates out, says plainly that is what it has done, and carries on reasoning from there. It always reaches the end of a puzzle, and it never pretends a lookup was a deduction.",
+    "key": "msg_a_technique_list_is_never_complete_and_the_ha_a34b9979"
+  },
+  {
+    "source": "A three-candidate pivot with two matching two-candidate pincers forces a digit out of every square that sees all three.",
+    "key": "msg_a_three_candidate_pivot_with_two_matching_two_a9adc021"
+  },
+  {
+    "source": "A two-candidate pivot and two two-candidate pincers can force a digit out of every square that sees both pincers.",
+    "key": "msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733"
+  },
+  {
+    "source": "About",
+    "key": "msg_about_4efca0d1"
+  },
+  {
+    "source": "After",
+    "key": "msg_after_7b68fe55"
+  },
+  {
+    "source": "After this move",
+    "key": "msg_after_this_move_c0f01734"
+  },
+  {
+    "source": "All correct",
+    "key": "msg_all_correct_97341bb4"
+  },
+  {
+    "source": "All three of these squares can be {0}, and one of them has to be. So any square that sees all three cannot be {1}.",
+    "key": "msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85"
+  },
+  {
+    "source": "Allow camera",
+    "key": "msg_allow_camera_e18835ef"
+  },
+  {
+    "source": "Almost - hold the page flat and square to the camera",
+    "key": "msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643"
+  },
+  {
+    "source": "Answer",
+    "key": "msg_answer_b2a3aa60"
+  },
+  {
+    "source": "Assumption rejected · real candidates restored",
+    "key": "msg_assumption_rejected_real_candidates_restored_caacb3e5"
+  },
+  {
+    "source": "Assumption · hypothetical digit",
+    "key": "msg_assumption_hypothetical_digit_96359a46"
+  },
+  {
+    "source": "Auto photo",
+    "key": "msg_auto_photo_48b85e6f"
+  },
+  {
+    "source": "Automatically share uncertain puzzle photos, reading results and later cell corrections with Freevia for recognition analysis and training. Off by default.",
+    "key": "msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea"
+  },
+  {
+    "source": "Avoid the glare",
+    "key": "msg_avoid_the_glare_9511c059"
+  },
+  {
+    "source": "Back",
+    "key": "msg_back_76900f1b"
+  },
+  {
+    "source": "Back to the previous question",
+    "key": "msg_back_to_the_previous_question_1a4530a4"
+  },
+  {
+    "source": "Back to visual hint",
+    "key": "msg_back_to_visual_hint_0d0729a1"
+  },
+  {
+    "source": "Back to your square",
+    "key": "msg_back_to_your_square_0f7bb45a"
+  },
+  {
+    "source": "Before",
+    "key": "msg_before_9bb72500"
+  },
+  {
+    "source": "Before this move",
+    "key": "msg_before_this_move_426cf416"
+  },
+  {
+    "source": "Blue digits are the solution. Tap any square to correct what was read.",
+    "key": "msg_blue_digits_are_the_solution_tap_any_square_t_4809adea"
+  },
+  {
+    "source": "Box",
+    "key": "msg_box_512fd3c6"
+  },
+  {
+    "source": "Box line reduction",
+    "key": "msg_box_line_reduction_3cefbeec"
+  },
+  {
+    "source": "Camera",
+    "key": "msg_camera_03494b0d"
+  },
+  {
+    "source": "Cancel",
+    "key": "msg_cancel_19766ed6"
+  },
+  {
+    "source": "CaptureEvidence",
+    "key": "msg_captureevidence_077b226e"
+  },
+  {
+    "source": "Chain a digit through the units where it has only two homes, colour the chain in two alternating colours, and one colour is true throughout.",
+    "key": "msg_chain_a_digit_through_the_units_where_it_has__a7131e0c"
+  },
+  {
+    "source": "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, and one colour is true throughout. These squares can see both colours, so whichever way the chain falls one of the squares they see holds {1} - which means they cannot.",
+    "key": "msg_chaining_0_through_the_units_where_it_has_onl_3f84939f"
+  },
+  {
+    "source": "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of one colour sit in the same box, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.",
+    "key": "msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1"
+  },
+  {
+    "source": "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of one colour sit in the same column, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.",
+    "key": "msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d"
+  },
+  {
+    "source": "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of one colour sit in the same row, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.",
+    "key": "msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34"
+  },
+  {
+    "source": "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of the other colour sit in the same box, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.",
+    "key": "msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d"
+  },
+  {
+    "source": "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of the other colour sit in the same column, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.",
+    "key": "msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a"
+  },
+  {
+    "source": "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of the other colour sit in the same row, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.",
+    "key": "msg_chaining_0_through_the_units_where_it_has_onl_036551c6"
+  },
+  {
+    "source": "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of {1} colour sit in the same {2}, which cannot be - so that colour is the false one, and {3} goes from every square wearing it.",
+    "key": "msg_chaining_0_through_the_units_where_it_has_onl_30c96cab"
+  },
+  {
+    "source": "Check",
+    "key": "msg_check_9d60841e"
+  },
+  {
+    "source": "Check one uncertain square.",
+    "key": "msg_check_one_uncertain_square_b36ebd9c"
+  },
+  {
+    "source": "Check {0} uncertain squares.",
+    "key": "msg_check_0_uncertain_squares_09b36c83"
+  },
+  {
+    "source": "Choose a candidate to see why it cannot go in your square.",
+    "key": "msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e"
+  },
+  {
+    "source": "Choose language",
+    "key": "msg_choose_language_bba5b40b"
+  },
+  {
+    "source": "Choose what to be shown",
+    "key": "msg_choose_what_to_be_shown_f65369ae"
+  },
+  {
+    "source": "Close",
+    "key": "msg_close_7d9eb7ac"
+  },
+  {
+    "source": "Close hint",
+    "key": "msg_close_hint_7257ada8"
+  },
+  {
+    "source": "Collapse reading review",
+    "key": "msg_collapse_reading_review_1ef8fe30"
+  },
+  {
+    "source": "Compare forcing chains and prefer ones with fewer squares to follow. Shorter chains can mean more steps in the full solution.",
+    "key": "msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27"
+  },
+  {
+    "source": "Consequence {0} of {1} · hypothetical digits",
+    "key": "msg_consequence_0_of_1_hypothetical_digits_e05885a4"
+  },
+  {
+    "source": "Content-Type",
+    "key": "msg_content_type_85eb0099"
+  },
+  {
+    "source": "Continue with the full route",
+    "key": "msg_continue_with_the_full_route_3745afea"
+  },
+  {
+    "source": "Contradiction · assumption fails",
+    "key": "msg_contradiction_assumption_fails_b5ac48ac"
+  },
+  {
+    "source": "Contradiction: the red square has no candidate left. This is impossible, so the starting assumption must fail.",
+    "key": "msg_contradiction_the_red_square_has_no_candidate_599239cb"
+  },
+  {
+    "source": "Contradiction: the red {0} has nowhere left for {1}. This is impossible, so the starting assumption must fail.",
+    "key": "msg_contradiction_the_red_0_has_nowhere_left_for__245de896"
+  },
+  {
+    "source": "Copy deletion request",
+    "key": "msg_copy_deletion_request_1c03baa5"
+  },
+  {
+    "source": "Correct. Compare your reasoning with the explanation below.",
+    "key": "msg_correct_compare_your_reasoning_with_the_expla_7e786f2e"
+  },
+  {
+    "source": "Could not find the printed digits in that photo.",
+    "key": "msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc"
+  },
+  {
+    "source": "Could not make out the grid lines - try again.",
+    "key": "msg_could_not_make_out_the_grid_lines_try_again_6a86afc8"
+  },
+  {
+    "source": "Could not open GitHub. Contact support at {0}.",
+    "key": "msg_could_not_open_github_contact_support_at_0_1e6588cc"
+  },
+  {
+    "source": "Could not retain debug capture evidence",
+    "key": "msg_could_not_retain_debug_capture_evidence_0c979a6a"
+  },
+  {
+    "source": "Could not submit the reading. Please try again when connected.",
+    "key": "msg_could_not_submit_the_reading_please_try_again_d211f747"
+  },
+  {
+    "source": "DELETE",
+    "key": "msg_delete_65daeb37"
+  },
+  {
+    "source": "Dead end",
+    "key": "msg_dead_end_f2fd4044"
+  },
+  {
+    "source": "Delete",
+    "key": "msg_delete_e2d0a549"
+  },
+  {
+    "source": "Delete report",
+    "key": "msg_delete_report_c3161c04"
+  },
+  {
+    "source": "Delete this photo",
+    "key": "msg_delete_this_photo_b6f68250"
+  },
+  {
+    "source": "Delete this puzzle",
+    "key": "msg_delete_this_puzzle_1d7e3a3b"
+  },
+  {
+    "source": "Delete this puzzle?",
+    "key": "msg_delete_this_puzzle_3aa0005e"
+  },
+  {
+    "source": "Delete this submission?",
+    "key": "msg_delete_this_submission_abed7022"
+  },
+  {
+    "source": "Deleting…",
+    "key": "msg_deleting_43b5894c"
+  },
+  {
+    "source": "Deletion could not be confirmed. Check your connection and try again.",
+    "key": "msg_deletion_could_not_be_confirmed_check_your_co_26111d00"
+  },
+  {
+    "source": "Deletion request",
+    "key": "msg_deletion_request_251053b3"
+  },
+  {
+    "source": "Deletion response did not confirm this receipt.",
+    "key": "msg_deletion_response_did_not_confirm_this_receip_d7f1c29c"
+  },
+  {
+    "source": "Deletion service returned HTTP {0}.",
+    "key": "msg_deletion_service_returned_http_0_57f9239a"
+  },
+  {
+    "source": "Describe what happened and the steps to repeat it. Say whether you checked and corrected the recognized digits first. For an idea, write 'Not applicable'.",
+    "key": "msg_describe_what_happened_and_the_steps_to_repea_dea91e8a"
+  },
+  {
+    "source": "Diagnostics shortened to fit the browser draft. The app's Send diagnostics action can share the full report.",
+    "key": "msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6"
+  },
+  {
+    "source": "Digits not read",
+    "key": "msg_digits_not_read_0956924a"
+  },
+  {
+    "source": "Disk evidence retention affects timing; not a latency benchmark.",
+    "key": "msg_disk_evidence_retention_affects_timing_not_a__d38fdf64"
+  },
+  {
+    "source": "EEEE d MMMM yyyy",
+    "key": "msg_eeee_d_mmmm_yyyy_908e8688"
+  },
+  {
+    "source": "Each receipt identifies one submitted puzzle revision. Delete it here to remove the privately stored report from Freevia.",
+    "key": "msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7"
+  },
+  {
+    "source": "Earlier hypothetical placements leave it with only one candidate.",
+    "key": "msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf"
+  },
+  {
+    "source": "Earlier steps used in this proof",
+    "key": "msg_earlier_steps_used_in_this_proof_299d8def"
+  },
+  {
+    "source": "Edit cell",
+    "key": "msg_edit_cell_92b3647b"
+  },
+  {
+    "source": "Empty",
+    "key": "msg_empty_c6c094bc"
+  },
+  {
+    "source": "Empty.",
+    "key": "msg_empty_8a112150"
+  },
+  {
+    "source": "English",
+    "key": "msg_english_ba118bf7"
+  },
+  {
+    "source": "Every one of them fills a square in.",
+    "key": "msg_every_one_of_them_fills_a_square_in_551aace5"
+  },
+  {
+    "source": "Every square is filled, but one answer disagrees with the solution.",
+    "key": "msg_every_square_is_filled_but_one_answer_disagre_a733b323"
+  },
+  {
+    "source": "Every square is filled, but {0} answers disagree with the solution.",
+    "key": "msg_every_square_is_filled_but_0_answers_disagree_f302089b"
+  },
+  {
+    "source": "Every sudoku with one answer can be reached by reasoning; guessing is never required and rarely helps. These are the ways of reasoning this app can recognise and explain, easiest first. Where one of them applies to the puzzle you have open, it will show you every place it does.",
+    "key": "msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947"
+  },
+  {
+    "source": "Everything you have written so far is right.",
+    "key": "msg_everything_you_have_written_so_far_is_right_3990aa89"
+  },
+  {
+    "source": "Examples available now: each starts from your current board.",
+    "key": "msg_examples_available_now_each_starts_from_your__b7346016"
+  },
+  {
+    "source": "Explain earlier candidate removals ({0})",
+    "key": "msg_explain_earlier_candidate_removals_0_8349b1ff"
+  },
+  {
+    "source": "Explain hints",
+    "key": "msg_explain_hints_601a9eaa"
+  },
+  {
+    "source": "Find a square with only two or three candidates left - the fewer the better, and the busier the row, column and box around it the better still.\n\nPick one of its candidates and pencil it in lightly. Now follow the consequences: that digit is gone from everything the square can see, which may leave one of those squares with a single candidate, which forces another, and so on. Keep going.\n\nOne of two things happens. Either it peters out, and you have learned nothing - rub it out and try the other candidate. Or you reach a square with no candidates left at all, or a row with nowhere to put some digit. That is impossible, so the digit you pencilled in was wrong, and you can rule it out for good.\n\nThis is the one to reach for when everything else has dried up. It is slower and it is bookkeeping rather than pattern-spotting, but it can uncover moves the patterns miss. One elimination is often enough to start the easy techniques working again; some positions still need a deeper search.",
+    "key": "msg_find_a_square_with_only_two_or_three_candidat_61c730ba"
+  },
+  {
+    "source": "Find two squares with the same two candidates, say {3,7}, that cannot see each other - they are usually nowhere near each other.\n\nNow look for a row, column or box where 7 has only two possible squares, one of which is seen by the first of your pair and the other by the second. That is the link.\n\nOne of those two squares is the 7. Whichever it is, the square of your pair that sees it cannot be 7, so it must be 3. You do not know which end is the 3, only that one of them is - and that is enough to rule 3 out of every square that sees both ends.\n\nThe hard part is the link, so hunt for it the other way round: mark the units where a digit has only two homes first, then look for a matching pair either side.",
+    "key": "msg_find_two_squares_with_the_same_two_candidates_d06e3deb"
+  },
+  {
+    "source": "Fire the shutter once the grid is square in frame and steady. The button always works either way.",
+    "key": "msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d"
+  },
+  {
+    "source": "Fit the whole grid in view",
+    "key": "msg_fit_the_whole_grid_in_view_d5ab871b"
+  },
+  {
+    "source": "Fit the whole grid in view.",
+    "key": "msg_fit_the_whole_grid_in_view_7091fd48"
+  },
+  {
+    "source": "Follow a route where each move builds on the previous one.",
+    "key": "msg_follow_a_route_where_each_move_builds_on_the__11b9a909"
+  },
+  {
+    "source": "Follow the full proof in order",
+    "key": "msg_follow_the_full_proof_in_order_377cc8c2"
+  },
+  {
+    "source": "Follow this chain of two-candidate squares: if {0} is not {1} then each square along it is forced by the one before, and {2} ends up {3}. So one end or the other holds {4}, which rules it out of every square that sees them both.",
+    "key": "msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f"
+  },
+  {
+    "source": "Forcing chain",
+    "key": "msg_forcing_chain_8e2adc47"
+  },
+  {
+    "source": "Four squares in two rows, two columns and two boxes cannot all hold the same two candidates, or the puzzle would have two answers.",
+    "key": "msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da"
+  },
+  {
+    "source": "Freevia confirmed deletion, but this phone could not remove the local receipt. Retry to finish local cleanup.",
+    "key": "msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45"
+  },
+  {
+    "source": "Freevia will delete this report revision and its private training copy. Future corrections may create a new report under your sharing settings. A model already trained on it may retain learned changes.",
+    "key": "msg_freevia_will_delete_this_report_revision_and__a5e4321c"
+  },
+  {
+    "source": "Full route",
+    "key": "msg_full_route_891b475b"
+  },
+  {
+    "source": "Future uncertain readings will send the straightened puzzle photo, recognition results and corrections to Freevia for analysis and training. Training copies remain until deleted from Submission receipts; a trained model may retain learned changes. If an uncertain puzzle is already open, it will be sent now. You can turn this off in Settings.",
+    "key": "msg_future_uncertain_readings_will_send_the_strai_9cb01ee8"
+  },
+  {
+    "source": "Gentle",
+    "key": "msg_gentle_96124817"
+  },
+  {
+    "source": "Glare is washing the lines out - tilt the page away from the light",
+    "key": "msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a"
+  },
+  {
+    "source": "GrayImage({0}x{1})",
+    "key": "msg_grayimage_0_x_1_dd073136"
+  },
+  {
+    "source": "Grey squares hold pencil marks, which the app ignores. The bar under a digit is how sure it was. Tap a square for the detail.",
+    "key": "msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89"
+  },
+  {
+    "source": "HH:mm",
+    "key": "msg_hh_mm_7f135aed"
+  },
+  {
+    "source": "Handwritten",
+    "key": "msg_handwritten_6a50cef3"
+  },
+  {
+    "source": "Hard",
+    "key": "msg_hard_9e73f8fa"
+  },
+  {
+    "source": "Hidden",
+    "key": "msg_hidden_7e6fefff"
+  },
+  {
+    "source": "Hidden pair",
+    "key": "msg_hidden_pair_bab0be41"
+  },
+  {
+    "source": "Hidden quad",
+    "key": "msg_hidden_quad_56e6fb2c"
+  },
+  {
+    "source": "Hidden single",
+    "key": "msg_hidden_single_33cf031b"
+  },
+  {
+    "source": "Hidden triple",
+    "key": "msg_hidden_triple_2d57cc5e"
+  },
+  {
+    "source": "Hide earlier evidence",
+    "key": "msg_hide_earlier_evidence_10027a6c"
+  },
+  {
+    "source": "Hide how to spot one",
+    "key": "msg_hide_how_to_spot_one_c5e9271d"
+  },
+  {
+    "source": "Hint",
+    "key": "msg_hint_a7b4cf9f"
+  },
+  {
+    "source": "Hint proof",
+    "key": "msg_hint_proof_b2b8f969"
+  },
+  {
+    "source": "Hint reasoning",
+    "key": "msg_hint_reasoning_2548bea0"
+  },
+  {
+    "source": "Hold still while the camera focuses...",
+    "key": "msg_hold_still_while_the_camera_focuses_5f9d036c"
+  },
+  {
+    "source": "Hold still, or tap the shutter",
+    "key": "msg_hold_still_or_tap_the_shutter_735e39d6"
+  },
+  {
+    "source": "Hold still...",
+    "key": "msg_hold_still_0a934617"
+  },
+  {
+    "source": "Hold the phone flat",
+    "key": "msg_hold_the_phone_flat_9e9c399d"
+  },
+  {
+    "source": "Hold the phone flat above the puzzle",
+    "key": "msg_hold_the_phone_flat_above_the_puzzle_f7841772"
+  },
+  {
+    "source": "Hold the phone flat above the puzzle.",
+    "key": "msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13"
+  },
+  {
+    "source": "How to spot one",
+    "key": "msg_how_to_spot_one_50ce1373"
+  },
+  {
+    "source": "Hunt for squares with exactly two candidates - a Y-wing is made of three of them and nothing else.\n\nTake one as the pivot, say {2,5}. Look for a square it can see holding {2,9}, and another it can see holding {5,9}. The pivot is either 2 or 5. If it is 2, the first pincer must be 9; if it is 5, the second must be 9. Either way a 9 appears in one of the pincers - you do not know which, and you do not need to.\n\nSo no square that can see both pincers can be a 9. Those squares are usually the two corners that complete the rectangle.",
+    "key": "msg_hunt_for_squares_with_exactly_two_candidates__095cb731"
+  },
+  {
+    "source": "If a digit has two homes in a row and two in a column, and one from each share a box, one of the other two must hold it.",
+    "key": "msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416"
+  },
+  {
+    "source": "If a digit has two homes in each of two rows and they share a column, one of the other two homes must hold it.",
+    "key": "msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9"
+  },
+  {
+    "source": "If a digit's only homes along a line all sit inside one box, that digit can be ruled out of the rest of that box.",
+    "key": "msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8"
+  },
+  {
+    "source": "If a digit's only homes in {0} rows lie in the same {1} columns, it can be ruled out of those columns elsewhere - and the same with rows and columns swapped.",
+    "key": "msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59"
+  },
+  {
+    "source": "If a digit's only homes inside a box share one line, that digit can be ruled out of the rest of that line.",
+    "key": "msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90"
+  },
+  {
+    "source": "If assuming a digit leads to a square with nothing it can hold, that digit was wrong.",
+    "key": "msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6"
+  },
+  {
+    "source": "If {0} digits in one row, column or box can only go in the same {1} squares, those squares can hold nothing else.",
+    "key": "msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52"
+  },
+  {
+    "source": "If {0} squares in one row, column or box share exactly {1} candidates between them, those digits belong to those squares and to no others in the unit.",
+    "key": "msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3"
+  },
+  {
+    "source": "In a chain of squares that all hold the same two candidates, the two ends of an odd-length chain hold different digits.",
+    "key": "msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b"
+  },
+  {
+    "source": "In these two columns, {0} has only two homes each, and {1} and {2} share a row - so they cannot both be {3}. One of {4} and {5} therefore is, which rules {6} out of every square that sees them both.",
+    "key": "msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed"
+  },
+  {
+    "source": "In these two rows, {0} has only two homes each, and {1} and {2} share a column - so they cannot both be {3}. One of {4} and {5} therefore is, which rules {6} out of every square that sees them both.",
+    "key": "msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29"
+  },
+  {
+    "source": "In these two {0}, {1} has only two homes each, and {2} and {3} share a {4} - so they cannot both be {5}. One of {6} and {7} therefore is, which rules {8} out of every square that sees them both.",
+    "key": "msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b"
+  },
+  {
+    "source": "In these {0} columns, {1} can only go in these {2} rows. Between them they use up every one, so {3} can be ruled out of those rows everywhere else.",
+    "key": "msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0"
+  },
+  {
+    "source": "In these {0} rows, {1} can only go in these {2} columns. Between them they use up every one, so {3} can be ruled out of those columns everywhere else.",
+    "key": "msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505"
+  },
+  {
+    "source": "In these {0} {1}, {2} can only go in these {3} {4}. Between them they use up every one, so {5} can be ruled out of those {6} everywhere else.",
+    "key": "msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703"
+  },
+  {
+    "source": "In this box, {0} can only go in these {1} squares, so those squares are spoken for. That rules {2} out of them.",
+    "key": "msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25"
+  },
+  {
+    "source": "In this column, {0} can only go in these {1} squares, so those squares are spoken for. That rules {2} out of them.",
+    "key": "msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c"
+  },
+  {
+    "source": "In this row, {0} can only go in these {1} squares, so those squares are spoken for. That rules {2} out of them.",
+    "key": "msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c"
+  },
+  {
+    "source": "In this {0}, {1} can only go in these {2} squares, so those squares are spoken for. That rules {3} out of them.",
+    "key": "msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a"
+  },
+  {
+    "source": "In this {0}, {1} can only go inside one box. So {2} is in that box on this {3}, and can be ruled out of the rest of the box.",
+    "key": "msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06"
+  },
+  {
+    "source": "Includes their photos, readings and corrections. Turn this off in Settings.",
+    "key": "msg_includes_their_photos_readings_and_correction_81013c47"
+  },
+  {
+    "source": "Inside a single box, find a digit that can only go in two or three squares, and check whether they all sit in the same row, or all in the same column. If they do, the digit is definitely somewhere along that line - you do not know where, but you know it is inside this box. So it cannot be anywhere else along the same line outside the box.\n\nThis places nothing by itself. It clears candidates out of the way so that a single appears somewhere else.",
+    "key": "msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45"
+  },
+  {
+    "source": "Inside this box, {0} can only go in this {1}. So {2} is somewhere here, and can be ruled out of the rest of the {3}.",
+    "key": "msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1"
+  },
+  {
+    "source": "It applies in one place here. Step forward to see it.",
+    "key": "msg_it_applies_in_one_place_here_step_forward_to__f8774f68"
+  },
+  {
+    "source": "It applies in {0} places here. Step forward to walk through them.",
+    "key": "msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6"
+  },
+  {
+    "source": "It does not apply anywhere in this position.",
+    "key": "msg_it_does_not_apply_anywhere_in_this_position_a247d8c3"
+  },
+  {
+    "source": "It is the only remaining place for {0} in the highlighted {1}.",
+    "key": "msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e"
+  },
+  {
+    "source": "It is the ringed square.\n\nPress Hint again for the digit.",
+    "key": "msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18"
+  },
+  {
+    "source": "Jellyfish",
+    "key": "msg_jellyfish_2f0a7632"
+  },
+  {
+    "source": "Keep",
+    "key": "msg_keep_183f00f4"
+  },
+  {
+    "source": "Keep forcing chains short",
+    "key": "msg_keep_forcing_chains_short_edbf22be"
+  },
+  {
+    "source": "Language",
+    "key": "msg_language_a4fe6526"
+  },
+  {
+    "source": "Licenses",
+    "key": "msg_licenses_6d5d9004"
+  },
+  {
+    "source": "Look along one row, column or box for squares with only a few candidates left. Take {0} of them and pool their candidates. If the pool has exactly {1} digits in it, those {2} digits are spoken for: they have to go in those {3} squares in some order, even though you cannot yet say which goes where.\n\nThat is enough. Every other square in the unit can give those digits up, and it is usually one of those squares that then becomes a single.\n\nThe squares do not all need the same candidates - {2,7}, {2,9} and {7,9} is a perfectly good triple, and is the one people miss.",
+    "key": "msg_look_along_one_row_column_or_box_for_squares__4b2af927"
+  },
+  {
+    "source": "Look for squares holding the same two candidates - say {4,9} - that form a chain, each one seeing the next. Three is not enough; you need at least four.\n\nColour them alternately as you go. Because each square sees the next, no two neighbours can hold the same digit, so the chain reads 4, 9, 4, 9 the whole way along - or 9, 4, 9, 4, and you cannot tell which.\n\nEither way, two squares of opposite colours hold different digits between them: one is the 4 and one is the 9. So anything that can see both of them can be neither, and loses both candidates at once.\n\nThe pattern is easy to spot precisely because every square in it looks the same. Follow the identical pairs around the grid and see where they touch.",
+    "key": "msg_look_for_squares_holding_the_same_two_candida_6f9378bd"
+  },
+  {
+    "source": "Look for three squares holding the same two candidates - say {1,6} - that sit at three corners of a rectangle. The rectangle has to lie in exactly two boxes: two rows and two columns crossing two boxes, not four.\n\nNow look at the fourth corner. If it held only 1 and 6 as well, the puzzle would have two answers - you could swap the 1s and 6s round the rectangle and everything else would still work. A properly set puzzle has one answer, so the fourth corner must be using something else: its other candidates stay, and 1 and 6 go.\n\nThis is the one argument in the book that is about the setter rather than the grid. It is sound on a published puzzle and worthless on one you have already filled in wrongly, because then there may be no answer at all to be unique.",
+    "key": "msg_look_for_three_squares_holding_the_same_two_c_2ce1614a"
+  },
+  {
+    "source": "Look in this box. Follow the outline to the square this hint will explain.",
+    "key": "msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1"
+  },
+  {
+    "source": "Marks",
+    "key": "msg_marks_65479e3e"
+  },
+  {
+    "source": "Moderate",
+    "key": "msg_moderate_5c42afc7"
+  },
+  {
+    "source": "More",
+    "key": "msg_more_d47d7cb0"
+  },
+  {
+    "source": "More light needed",
+    "key": "msg_more_light_needed_4b4480e1"
+  },
+  {
+    "source": "More than one answer, so a printed digit was missed. Press Solve to see the answers and where they differ.",
+    "key": "msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f"
+  },
+  {
+    "source": "Move back",
+    "key": "msg_move_back_f4d6dba8"
+  },
+  {
+    "source": "Move closer",
+    "key": "msg_move_closer_1da054ae"
+  },
+  {
+    "source": "Move closer - the grid is too small to read.",
+    "key": "msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9"
+  },
+  {
+    "source": "Naked",
+    "key": "msg_naked_472fd902"
+  },
+  {
+    "source": "Naked pair",
+    "key": "msg_naked_pair_2c93e68d"
+  },
+  {
+    "source": "Naked quad",
+    "key": "msg_naked_quad_73e85f9d"
+  },
+  {
+    "source": "Naked single",
+    "key": "msg_naked_single_7205dfc4"
+  },
+  {
+    "source": "Naked triple",
+    "key": "msg_naked_triple_4f3cc595"
+  },
+  {
+    "source": "Name the technique and show the squares that prove it, instead of just giving the digit.",
+    "key": "msg_name_the_technique_and_show_the_squares_that__eb04bf34"
+  },
+  {
+    "source": "Needs confirmation",
+    "key": "msg_needs_confirmation_fe8ba9af"
+  },
+  {
+    "source": "New sudoku",
+    "key": "msg_new_sudoku_7d90b23a"
+  },
+  {
+    "source": "Next consequence",
+    "key": "msg_next_consequence_6e10f60b"
+  },
+  {
+    "source": "Next step",
+    "key": "msg_next_step_298a9207"
+  },
+  {
+    "source": "No images are attached automatically. Reports and attachments submitted here are public. Use info@freevia.org for examples you prefer to send privately.",
+    "key": "msg_no_images_are_attached_automatically_reports__e61a8511"
+  },
+  {
+    "source": "No photograph has been refused since the app was last installed.",
+    "key": "msg_no_photograph_has_been_refused_since_the_app__9007f723"
+  },
+  {
+    "source": "No scan diagnostics available.",
+    "key": "msg_no_scan_diagnostics_available_8f8c809f"
+  },
+  {
+    "source": "No technique applies here",
+    "key": "msg_no_technique_applies_here_4373528f"
+  },
+  {
+    "source": "None of them puts a digit in a square: they clear candidates out of the way, which is how a hard puzzle is opened up.",
+    "key": "msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98"
+  },
+  {
+    "source": "None on your puzzle at the moment.",
+    "key": "msg_none_on_your_puzzle_at_the_moment_233f1a27"
+  },
+  {
+    "source": "Not read with any confidence - the closest guess is {0} {1} at {2}. Please set this square yourself.",
+    "key": "msg_not_read_with_any_confidence_the_closest_gues_741f7796"
+  },
+  {
+    "source": "Not reading as a nine by nine grid yet - try filling the frame with the grid alone, or just take the photo",
+    "key": "msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c"
+  },
+  {
+    "source": "Nothing could be sent from this phone.",
+    "key": "msg_nothing_could_be_sent_from_this_phone_69e4ce4d"
+  },
+  {
+    "source": "Nothing left to work out.",
+    "key": "msg_nothing_left_to_work_out_639e7090"
+  },
+  {
+    "source": "Nothing more here can be reasoned out by the techniques this app knows.",
+    "key": "msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c"
+  },
+  {
+    "source": "OK",
+    "key": "msg_ok_565339bc"
+  },
+  {
+    "source": "One cell looked like a printed digit but is not.",
+    "key": "msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3"
+  },
+  {
+    "source": "One printed digit was corrected automatically.",
+    "key": "msg_one_printed_digit_was_corrected_automatically_367476eb"
+  },
+  {
+    "source": "Only {0} can go here - every other digit already appears in this row, column or box.",
+    "key": "msg_only_0_can_go_here_every_other_digit_already__9b72d22b"
+  },
+  {
+    "source": "Only {0} can go here, though nothing around it shows why: all eight other digits were ruled out of this square by earlier reasoning rather than by being written in its row, column or box.",
+    "key": "msg_only_0_can_go_here_though_nothing_around_it_s_20845454"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up five of the other eight digits; {1} were ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up four of the other eight digits; {1} were ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up one of the other eight digits; {1} were ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up seven of the other eight digits; {1} was ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up six of the other eight digits; {1} were ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_224f8682"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up three of the other eight digits; {1} were ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up two of the other eight digits; {1} were ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up {1} of the other eight digits; {2} was ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_124ed680"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up {1} of the other eight digits; {2} were ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_9940d197"
+  },
+  {
+    "source": "Only {0} can go here. The highlighted squares use up {1} of the other eight digits; {2} {3} ruled out of this square earlier, not by anything you can see around it.",
+    "key": "msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12"
+  },
+  {
+    "source": "Only {0} can go here. The other eight digits are excluded by filled squares or forced single candidates in this row, column or box.",
+    "key": "msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0"
+  },
+  {
+    "source": "Only {0} printed digits were found, which is too few for a puzzle.",
+    "key": "msg_only_0_printed_digits_were_found_which_is_too_e2bff2be"
+  },
+  {
+    "source": "Open GitHub",
+    "key": "msg_open_github_0d2cda15"
+  },
+  {
+    "source": "Open a draft in your browser with the app version, phone model, Android version and recent scan diagnostics filled in. Add a full description and relevant screenshots yourself.\n\nGitHub sign-in is required. You can review and edit the draft before submitting it. Submitted reports and attachments are public. No photographs are attached automatically.",
+    "key": "msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6"
+  },
+  {
+    "source": "Open app settings",
+    "key": "msg_open_app_settings_df2cdb48"
+  },
+  {
+    "source": "Open source notices",
+    "key": "msg_open_source_notices_5d6f371b"
+  },
+  {
+    "source": "Open ‘Why this square?’ to see the final placement evidence, or choose a ruled-out candidate to trace its proof.",
+    "key": "msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0"
+  },
+  {
+    "source": "OpenCV - Apache License 2.0. Used for finding and straightening the grid.\n\nAndroidX, Jetpack Compose and CameraX - Apache License 2.0.\n\nKotlin - Apache License 2.0.\n\nThe digit recogniser was trained on the MNIST database of handwritten digits by LeCun, Cortes and Burges, together with digits rendered from open system fonts and digits drawn programmatically.",
+    "key": "msg_opencv_apache_license_2_0_used_for_finding_an_907b7977"
+  },
+  {
+    "source": "OpenCV native libraries failed to load",
+    "key": "msg_opencv_native_libraries_failed_to_load_525d3f38"
+  },
+  {
+    "source": "POST",
+    "key": "msg_post_9aee6b1b"
+  },
+  {
+    "source": "Photograph another puzzle.",
+    "key": "msg_photograph_another_puzzle_c9f3d4b7"
+  },
+  {
+    "source": "Photographs you keep are stored in this app's private storage and are removed when you delete them or uninstall the app.",
+    "key": "msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a"
+  },
+  {
+    "source": "Photos the app could not make a puzzle out of. Send one and it can be looked at.",
+    "key": "msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c"
+  },
+  {
+    "source": "Pick a digit and look down the rows for the ones where it has exactly two squares left. Take two such rows and see whether one of their squares lands in the same column.\n\nIf it does, those two squares are in the same column and cannot both hold the digit. So at least one of the far ends does - the two squares at the other side. You do not know which, and you do not need to: any square that can see both far ends can give the digit up.\n\nThen do it again with columns instead of rows. The shape is a tall building with a short one beside it, which is where the name comes from and how you spot it once you have seen a few.",
+    "key": "msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c"
+  },
+  {
+    "source": "Pick a digit. Find a row where it has exactly two homes and a column where it has exactly two homes. Now check whether one square of the row and one square of the column sit in the same box.\n\nIf they do, those two cannot both be the digit - one box, one digit. So at least one of the two remaining ends is, and anything seeing both ends can give the digit up.\n\nThe reason people miss this one is that there is nothing to line up: the four squares make a lopsided shape, and the only thing holding it together is the box the two inner ends share.",
+    "key": "msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01"
+  },
+  {
+    "source": "Pick an empty square and run through 1 to 9, crossing off anything that already appears in its row, its column or its box. If exactly one digit survives, it goes there.\n\nThis is the technique every other one exists to set up. Everything harder is a way of getting some square down to a single candidate, so when a harder technique pays off, look here next.",
+    "key": "msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558"
+  },
+  {
+    "source": "Pick one digit and ignore every other. Go down the rows and note the ones where that digit has only two or three possible squares left. Look for {0} such rows whose squares line up in the same {1} columns.\n\nIf you find them, each of those {2} rows must put the digit in one of those columns, and no two can use the same column. So between them they consume the digit in all {3} columns - and every other square in those columns can give it up.\n\nThen do the whole thing again with columns and rows swapped. Half of these are found the second way round, and it is the half most people never look for.",
+    "key": "msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29"
+  },
+  {
+    "source": "Place {0}",
+    "key": "msg_place_0_45ae89ee"
+  },
+  {
+    "source": "Place {0} in row {1}, column {2}.",
+    "key": "msg_place_0_in_row_1_column_2_41233bf2"
+  },
+  {
+    "source": "Place {0} in your outlined square.",
+    "key": "msg_place_0_in_your_outlined_square_1c6c3f36"
+  },
+  {
+    "source": "Please attach relevant screenshots using GitHub's attachment control: the puzzle, recognized digits, Check result, or hint stage that shows the issue. Include expected and actual results where useful.",
+    "key": "msg_please_attach_relevant_screenshots_using_gith_4a724ab5"
+  },
+  {
+    "source": "Please delete my Sudoku Buddy recognition submissions. Receipt IDs: ",
+    "key": "msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44"
+  },
+  {
+    "source": "Please replace this prompt with a full description of the problem or idea. Give this report a short, descriptive title.",
+    "key": "msg_please_replace_this_prompt_with_a_full_descri_a3d1862d"
+  },
+  {
+    "source": "Point the camera at a sudoku puzzle",
+    "key": "msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4"
+  },
+  {
+    "source": "Point the camera at a sudoku puzzle on paper. The app reads the printed digits and anything you have written in, solves it, and can give you a hint, check your answers, or show the whole solution.",
+    "key": "msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02"
+  },
+  {
+    "source": "Point the camera at a sudoku puzzle.",
+    "key": "msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899"
+  },
+  {
+    "source": "Pointing pair",
+    "key": "msg_pointing_pair_1177a4b6"
+  },
+  {
+    "source": "Preparing puzzle…",
+    "key": "msg_preparing_puzzle_25caea7f"
+  },
+  {
+    "source": "Previous",
+    "key": "msg_previous_a57b08a4"
+  },
+  {
+    "source": "Previous step",
+    "key": "msg_previous_step_318c1da8"
+  },
+  {
+    "source": "Printed",
+    "key": "msg_printed_d8742933"
+  },
+  {
+    "source": "Privacy policy",
+    "key": "msg_privacy_policy_ba445cff"
+  },
+  {
+    "source": "Puzzle storage",
+    "key": "msg_puzzle_storage_ffa767a5"
+  },
+  {
+    "source": "Puzzles",
+    "key": "msg_puzzles_1318ec24"
+  },
+  {
+    "source": "Puzzles are read and solved on this phone. If you submit an uncertain reading, or enable automatic sharing, the puzzle photo, original readings, uncertainty flags and your corrections are sent securely to Freevia for recognition analysis and private training. Reports do not include your device model or diagnostics. Automatic sharing is optional; there are no accounts, routine usage analytics or ad tracking. Training copies can be deleted by receipt, though a model already trained may retain learned changes. Use Submission receipts in Settings to delete a report.",
+    "key": "msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55"
+  },
+  {
+    "source": "Puzzles photographed for testing came from sudoku.cba.si. This app is not affiliated with them.",
+    "key": "msg_puzzles_photographed_for_testing_came_from_su_735502d3"
+  },
+  {
+    "source": "Puzzles you photograph are kept here, so you can pick one up again later.",
+    "key": "msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479"
+  },
+  {
+    "source": "Read",
+    "key": "msg_read_9b9a8d05"
+  },
+  {
+    "source": "Read as a handwritten {0}, {1} sure.",
+    "key": "msg_read_as_a_handwritten_0_1_sure_5529ecf8"
+  },
+  {
+    "source": "Read as a printed {0}, {1} sure.",
+    "key": "msg_read_as_a_printed_0_1_sure_5b18bb9c"
+  },
+  {
+    "source": "Read as empty - no ink found.",
+    "key": "msg_read_as_empty_no_ink_found_67d05939"
+  },
+  {
+    "source": "Read as pencilled candidate marks, and ignored.",
+    "key": "msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3"
+  },
+  {
+    "source": "Reading reviewed.",
+    "key": "msg_reading_reviewed_e4f13358"
+  },
+  {
+    "source": "Reading submitted. Thank you!",
+    "key": "msg_reading_submitted_thank_you_48014bb8"
+  },
+  {
+    "source": "Recognition can make mistakes, especially with handwriting. Use Read to compare the recognised digits with the photo, and tap any square to correct it. The app marks uncertain readings for review; a confident reading can still be wrong.",
+    "key": "msg_recognition_can_make_mistakes_especially_with_69ecd7e2"
+  },
+  {
+    "source": "Reject assumption",
+    "key": "msg_reject_assumption_816f515a"
+  },
+  {
+    "source": "Remote pairs",
+    "key": "msg_remote_pairs_c62d76c2"
+  },
+  {
+    "source": "Remove {0}",
+    "key": "msg_remove_0_dfbfd0da"
+  },
+  {
+    "source": "Removed",
+    "key": "msg_removed_4118fb4f"
+  },
+  {
+    "source": "Replay reasoning",
+    "key": "msg_replay_reasoning_65ed4e7a"
+  },
+  {
+    "source": "Report a bug or idea on GitHub",
+    "key": "msg_report_a_bug_or_idea_on_github_f3737cb0"
+  },
+  {
+    "source": "Retry camera",
+    "key": "msg_retry_camera_ea2c7aee"
+  },
+  {
+    "source": "Return to step {0}",
+    "key": "msg_return_to_step_0_7b9e40e5"
+  },
+  {
+    "source": "Reveal explanation",
+    "key": "msg_reveal_explanation_f75b7c5c"
+  },
+  {
+    "source": "Review or submit reading",
+    "key": "msg_review_or_submit_reading_88e23ff2"
+  },
+  {
+    "source": "Review reading",
+    "key": "msg_review_reading_f05999a4"
+  },
+  {
+    "source": "Right",
+    "key": "msg_right_883361d5"
+  },
+  {
+    "source": "Route complete. Go back to review any move, or try the steps yourself.",
+    "key": "msg_route_complete_go_back_to_review_any_move_or__9e33e6f9"
+  },
+  {
+    "source": "Row {0}, column {1}",
+    "key": "msg_row_0_column_1_2b075ece"
+  },
+  {
+    "source": "Row {0}, column {1}, ",
+    "key": "msg_row_0_column_1_62476225"
+  },
+  {
+    "source": "SHA-256",
+    "key": "msg_sha_256_bbd07c4f"
+  },
+  {
+    "source": "SUDK",
+    "key": "msg_sudk_ae66af02"
+  },
+  {
+    "source": "Scan diagnostics could not be read.",
+    "key": "msg_scan_diagnostics_could_not_be_read_5acf0b8e"
+  },
+  {
+    "source": "Second guess: {0}, {1}.",
+    "key": "msg_second_guess_0_1_43e7046c"
+  },
+  {
+    "source": "Select for practice",
+    "key": "msg_select_for_practice_3fb8ea4d"
+  },
+  {
+    "source": "Selected: row {0}, column {1}",
+    "key": "msg_selected_row_0_column_1_a4ce1a59"
+  },
+  {
+    "source": "Send diagnostics",
+    "key": "msg_send_diagnostics_2d666083"
+  },
+  {
+    "source": "Send diagnostics ({0})",
+    "key": "msg_send_diagnostics_0_d2d8f233"
+  },
+  {
+    "source": "Send these scans",
+    "key": "msg_send_these_scans_635ce9f0"
+  },
+  {
+    "source": "Send this photo",
+    "key": "msg_send_this_photo_744e3c07"
+  },
+  {
+    "source": "Settings",
+    "key": "msg_settings_74a883a0"
+  },
+  {
+    "source": "Share automatically when uncertain",
+    "key": "msg_share_automatically_when_uncertain_be00cabd"
+  },
+  {
+    "source": "Share uncertain readings automatically?",
+    "key": "msg_share_uncertain_readings_automatically_f4ae6cc9"
+  },
+  {
+    "source": "Show contradiction",
+    "key": "msg_show_contradiction_0e27e337"
+  },
+  {
+    "source": "Show me all {0} on your puzzle",
+    "key": "msg_show_me_all_0_on_your_puzzle_68724e66"
+  },
+  {
+    "source": "Show me the one on your puzzle",
+    "key": "msg_show_me_the_one_on_your_puzzle_df0d6281"
+  },
+  {
+    "source": "Simple colouring",
+    "key": "msg_simple_colouring_d9b42ba7"
+  },
+  {
+    "source": "Skyscraper",
+    "key": "msg_skyscraper_d58752e1"
+  },
+  {
+    "source": "Solve",
+    "key": "msg_solve_451d387b"
+  },
+  {
+    "source": "Solved, and every answer is right.",
+    "key": "msg_solved_and_every_answer_is_right_9bf8e15e"
+  },
+  {
+    "source": "Solver-assisted answer: place {0} in {1}. The candidates are {2}. The app's supported techniques did not find a move from this position. Its search found {3} in the unique solution; a detailed proof of the search branches is unavailable.",
+    "key": "msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad"
+  },
+  {
+    "source": "Solver-assisted elimination: a search rules out {0} in the highlighted square, but the app could not produce a short contradiction trace to display. A detailed proof is unavailable.",
+    "key": "msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37"
+  },
+  {
+    "source": "Some cells may contain notes rather than a full digit.",
+    "key": "msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d"
+  },
+  {
+    "source": "Some digits were not read confidently.",
+    "key": "msg_some_digits_were_not_read_confidently_c1fc9cd3"
+  },
+  {
+    "source": "Something went wrong reading that photo.",
+    "key": "msg_something_went_wrong_reading_that_photo_749b25ab"
+  },
+  {
+    "source": "Square",
+    "key": "msg_square_c11092bc"
+  },
+  {
+    "source": "Step {0}: {1}",
+    "key": "msg_step_0_1_2f91f5e4"
+  },
+  {
+    "source": "Straighten up",
+    "key": "msg_straighten_up_0ddce08f"
+  },
+  {
+    "source": "Strategies",
+    "key": "msg_strategies_a959c466"
+  },
+  {
+    "source": "Submission receipt",
+    "key": "msg_submission_receipt_81e41c5f"
+  },
+  {
+    "source": "Submission receipt is invalid.",
+    "key": "msg_submission_receipt_is_invalid_e49c5317"
+  },
+  {
+    "source": "Submission receipts",
+    "key": "msg_submission_receipts_267b0a5d"
+  },
+  {
+    "source": "Submission receipts ({0})",
+    "key": "msg_submission_receipts_0_625964ee"
+  },
+  {
+    "source": "Submission response is missing {0}.",
+    "key": "msg_submission_response_is_missing_0_b3c5f265"
+  },
+  {
+    "source": "Submission response status is invalid.",
+    "key": "msg_submission_response_status_is_invalid_3f7b0111"
+  },
+  {
+    "source": "Submission service is not configured.",
+    "key": "msg_submission_service_is_not_configured_e381be7a"
+  },
+  {
+    "source": "Submission service returned HTTP {0}.",
+    "key": "msg_submission_service_returned_http_0_d2b6e46f"
+  },
+  {
+    "source": "Submissions are not available in this build.",
+    "key": "msg_submissions_are_not_available_in_this_build_2e205a7a"
+  },
+  {
+    "source": "Submit",
+    "key": "msg_submit_155f816c"
+  },
+  {
+    "source": "Submit future uncertain readings automatically",
+    "key": "msg_submit_future_uncertain_readings_automaticall_8ec792cf"
+  },
+  {
+    "source": "Submit reading",
+    "key": "msg_submit_reading_fb7b44a1"
+  },
+  {
+    "source": "Submit uncertain reading for analysis",
+    "key": "msg_submit_uncertain_reading_for_analysis_d45ee8cd"
+  },
+  {
+    "source": "Submit update",
+    "key": "msg_submit_update_2e50f9d1"
+  },
+  {
+    "source": "Submitted",
+    "key": "msg_submitted_64900440"
+  },
+  {
+    "source": "Submitting…",
+    "key": "msg_submitting_49195f55"
+  },
+  {
+    "source": "Sudoku Buddy",
+    "key": "msg_sudoku_buddy_8871c68f"
+  },
+  {
+    "source": "Sudoku Buddy diagnostics",
+    "key": "msg_sudoku_buddy_diagnostics_45022d79"
+  },
+  {
+    "source": "Sudoku Buddy feedback - {0}",
+    "key": "msg_sudoku_buddy_feedback_0_b39d035e"
+  },
+  {
+    "source": "Sudoku Buddy is published by Freevia. Contact: info@freevia.org",
+    "key": "msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354"
+  },
+  {
+    "source": "Sudoku Buddy reads puzzles through the camera, so it needs camera access. Recognition and puzzle history stay on your phone. If you choose to submit an uncertain reading, its photo and results are sent securely to Freevia to improve recognition. Automatic sharing is optional and can be turned off in Settings.",
+    "key": "msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2"
+  },
+  {
+    "source": "Sudoku Buddy scan",
+    "key": "msg_sudoku_buddy_scan_cee92f88"
+  },
+  {
+    "source": "Sudoku Buddy scans",
+    "key": "msg_sudoku_buddy_scans_9217d6ba"
+  },
+  {
+    "source": "Sudoku Buddy source code is licensed under Apache License 2.0. Freevia branding is subject to separate trademark rights.",
+    "key": "msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9"
+  },
+  {
+    "source": "Sudoku Buddy {0}",
+    "key": "msg_sudoku_buddy_0_48564e9e"
+  },
+  {
+    "source": "Sudoku is a public-domain puzzle form. This app solves puzzles you already have; it does not reproduce or distribute anyone's puzzles.",
+    "key": "msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626"
+  },
+  {
+    "source": "Suppose the marked square holds {0}. The numbered digits are hypothetical.",
+    "key": "msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe"
+  },
+  {
+    "source": "Suppose this square were {0}. Follow the arrows in order: each square is forced by the earlier placements - either that digit is the only one it can still hold, or that square is the only place the digit can still go.\n\nThat leaves the box in red with nowhere to put {1}. The {2}s marked in it are the places it could have gone, and each is a square one of the arrows has just taken. A box with nowhere for a digit cannot happen - so it is not {3}.",
+    "key": "msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8"
+  },
+  {
+    "source": "Suppose this square were {0}. Follow the arrows in order: each square is forced by the earlier placements - either that digit is the only one it can still hold, or that square is the only place the digit can still go.\n\nThat leaves the column in red with nowhere to put {1}. The {2}s marked in it are the places it could have gone, and each is a square one of the arrows has just taken. A column with nowhere for a digit cannot happen - so it is not {3}.",
+    "key": "msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4"
+  },
+  {
+    "source": "Suppose this square were {0}. Follow the arrows in order: each square is forced by the earlier placements - either that digit is the only one it can still hold, or that square is the only place the digit can still go.\n\nThat leaves the row in red with nowhere to put {1}. The {2}s marked in it are the places it could have gone, and each is a square one of the arrows has just taken. A row with nowhere for a digit cannot happen - so it is not {3}.",
+    "key": "msg_suppose_this_square_were_0_follow_the_arrows__28e280c9"
+  },
+  {
+    "source": "Suppose this square were {0}. Follow the arrows in order: each square is forced by the earlier placements - either that digit is the only one it can still hold, or that square is the only place the digit can still go.\n\nThat leaves the unit in red with nowhere to put {1}. The {2}s marked in it are the places it could have gone, and each is a square one of the arrows has just taken. A unit with nowhere for a digit cannot happen - so it is not {3}.",
+    "key": "msg_suppose_this_square_were_0_follow_the_arrows__07700f76"
+  },
+  {
+    "source": "Suppose this square were {0}. Follow the arrows in order: each square is forced by the earlier placements - either that digit is the only one it can still hold, or that square is the only place the digit can still go.\n\nThat leaves the {1} in red with nowhere to put {2}. The {3}s marked in it are the places it could have gone, and each is a square one of the arrows has just taken. A {4} with nowhere for a digit cannot happen - so it is not {5}.",
+    "key": "msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c"
+  },
+  {
+    "source": "Suppose this square were {0}. Follow the arrows in order: each square is forced by the earlier placements - either that digit is the only one it can still hold, or that square is the only place the digit can still go. The square in red is then left with no digit at all, which cannot happen - so it is not {1}.",
+    "key": "msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1"
+  },
+  {
+    "source": "Switch to After to see the move and its consequences on the grid.",
+    "key": "msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82"
+  },
+  {
+    "source": "Swordfish",
+    "key": "msg_swordfish_c6afd225"
+  },
+  {
+    "source": "Take a new photo",
+    "key": "msg_take_a_new_photo_0c788c47"
+  },
+  {
+    "source": "Take another photo",
+    "key": "msg_take_another_photo_61d1873e"
+  },
+  {
+    "source": "Take one digit and mark every unit where it has exactly two squares left. Those two are a see-saw: one of them is the digit and the other is not.\n\nStart anywhere and colour a square, say, blue. Colour its see-saw partner green, then whatever that one is paired with blue again, and keep going until the chain runs out. Every blue square is true or every green square is - you cannot tell which, and that is enough for two things.\n\nFirst: if two squares of the same colour turn up in one row, column or box, that colour is impossible, so the digit goes from every square wearing it and the other colour is the answer throughout.\n\nSecond: any square outside the chain that can see a blue and a green can give the digit up, because one of those two is holding it whichever way the chain falls.\n\nIt is slow with a pencil and worth it: one colouring often clears a digit off half the board.",
+    "key": "msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85"
+  },
+  {
+    "source": "Take one digit and one unit at a time - say, where can a 4 go in this box? Cross off every square in the unit that already has a digit, or that sees a 4 in its own row or column. If one square is left, the 4 goes there.\n\nThe trap is that you cannot see this by looking at the square: it may happily accept five other digits too, so nothing about it looks forced. Look at the digit instead of the square, and it appears immediately.",
+    "key": "msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b"
+  },
+  {
+    "source": "Take photo",
+    "key": "msg_take_photo_7100ac99"
+  },
+  {
+    "source": "Take the photo automatically",
+    "key": "msg_take_the_photo_automatically_0eb717a9"
+  },
+  {
+    "source": "Tap a marked square to review it, or confirm all readings are correct.",
+    "key": "msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b"
+  },
+  {
+    "source": "Tap a square on the grid first.",
+    "key": "msg_tap_a_square_on_the_grid_first_9e194661"
+  },
+  {
+    "source": "Test assumption",
+    "key": "msg_test_assumption_6b8b9c01"
+  },
+  {
+    "source": "Test {0} as an assumption in the marked square. It is not an answer. Follow the consequences to see why it fails.",
+    "key": "msg_test_0_as_an_assumption_in_the_marked_square__36129289"
+  },
+  {
+    "source": "Thanks for helping improve recognition. Your puzzle photo, readings and corrections will be used for analysis and training.",
+    "key": "msg_thanks_for_helping_improve_recognition_your_p_fe6d101c"
+  },
+  {
+    "source": "That is also a valid {0} move. This route illustrates a different move; compare its proof below.",
+    "key": "msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c"
+  },
+  {
+    "source": "That is not the move selected for this step. There may be other valid moves; look again or reveal this step's explanation.",
+    "key": "msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f"
+  },
+  {
+    "source": "That is right",
+    "key": "msg_that_is_right_b4d8e415"
+  },
+  {
+    "source": "That is the rest of the puzzle, start to finish.",
+    "key": "msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3"
+  },
+  {
+    "source": "That is the rest of the puzzle. One square in it needs a solver-assisted answer because the app's supported techniques did not find a move. Its detailed search proof is unavailable.",
+    "key": "msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b"
+  },
+  {
+    "source": "That is the rest of the puzzle. {0} squares in it need solver-assisted answers because the app's supported techniques did not find a move. Their detailed search proofs are unavailable.",
+    "key": "msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe"
+  },
+  {
+    "source": "That square allows {0}. Look for the move justified by this step's technique, or reveal its explanation.",
+    "key": "msg_that_square_allows_0_look_for_the_move_justif_98ac75ab"
+  },
+  {
+    "source": "That square is already filled. Choose an empty square.",
+    "key": "msg_that_square_is_already_filled_choose_an_empty_8a6c3da5"
+  },
+  {
+    "source": "The Y-wing with the pivot holding one candidate more. Look for a square with exactly three candidates, say {1,4,7}, that can see two two-candidate squares - one {1,7} and one {4,7}.\n\nNow all three of them can be 7, and one of them must be. So a square has to see all three to be ruled out, not just the two pincers - which in practice means it sits in the same box as the pivot and on a line with a pincer.\n\nFewer eliminations than a Y-wing, and easier to miss for the same reason: the pivot does not stand out.",
+    "key": "msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d"
+  },
+  {
+    "source": "The assumption has been rejected. We return to the real candidates and cross out {0} in the marked square. The hypothetical digits are cleared.",
+    "key": "msg_the_assumption_has_been_rejected_we_return_to_5e5d5138"
+  },
+  {
+    "source": "The camera could not take that photo.",
+    "key": "msg_the_camera_could_not_take_that_photo_41435fc4"
+  },
+  {
+    "source": "The camera is unavailable. Close other camera apps, then try again.",
+    "key": "msg_the_camera_is_unavailable_close_other_camera__e08a05f0"
+  },
+  {
+    "source": "The photo from {0} and everything read from it will be removed from this phone. This cannot be undone.",
+    "key": "msg_the_photo_from_0_and_everything_read_from_it__d15c98e0"
+  },
+  {
+    "source": "The pivot here is {0} or {1}. Either way one of the other two squares is forced to {2}, so no square that sees both of them can be {3}.",
+    "key": "msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0"
+  },
+  {
+    "source": "The pointing pair read backwards. Take a row or a column and a digit that still needs a home in it. Mark every square in that line which could take the digit. If all of them fall inside one box, the digit must be in that box's share of the line - so it is nowhere else in the box, including the two rows or columns of it you were not looking at.\n\nLike the pointing pair, this places nothing on its own; it makes room for something that does.",
+    "key": "msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6"
+  },
+  {
+    "source": "The printed digits do not make a solvable puzzle.",
+    "key": "msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba"
+  },
+  {
+    "source": "The report is too large to submit.",
+    "key": "msg_the_report_is_too_large_to_submit_a87c86cd"
+  },
+  {
+    "source": "There is a square you can fill in the highlighted box.\n\nPress Hint again to be told which technique finds it.",
+    "key": "msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec"
+  },
+  {
+    "source": "There is nothing left here to reason about.",
+    "key": "msg_there_is_nothing_left_here_to_reason_about_c54e0042"
+  },
+  {
+    "source": "These are the starting candidates for your square. Trace explains which possibilities can be ruled out.",
+    "key": "msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e"
+  },
+  {
+    "source": "These digits cannot make a puzzle, and too much is wrong to say which. Tap any square to correct what was read, or take the photograph again.",
+    "key": "msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4"
+  },
+  {
+    "source": "These digits cannot make a puzzle. Changing the one ringed square would fix it - tap it to correct what was read.",
+    "key": "msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d"
+  },
+  {
+    "source": "These digits cannot make a puzzle. Changing the {0} ringed squares would fix it - tap one to correct what was read.",
+    "key": "msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a"
+  },
+  {
+    "source": "These digits do not make a puzzle, so one was misread. Press Solve to see which squares to fix.",
+    "key": "msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a"
+  },
+  {
+    "source": "These four squares make a rectangle across two boxes, and three of them hold only {0}. If {1} held only those two as well, the digits could be swapped round the rectangle and the puzzle would have two answers. It has one, so {2} must be using something else - and {3} goes.",
+    "key": "msg_these_four_squares_make_a_rectangle_across_tw_267968c9"
+  },
+  {
+    "source": "These {0} squares all hold only {1} and {2}, and each sees the next, so they alternate the whole way along. {3} and {4} are an odd number of links apart and so hold different digits between them - which rules {5} out of anything that sees them both.",
+    "key": "msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2"
+  },
+  {
+    "source": "These {0} squares hold only {1} between them, so those digits fill them in some order. That rules {2} out of the rest of this box.",
+    "key": "msg_these_0_squares_hold_only_1_between_them_so_t_f3313505"
+  },
+  {
+    "source": "These {0} squares hold only {1} between them, so those digits fill them in some order. That rules {2} out of the rest of this column.",
+    "key": "msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99"
+  },
+  {
+    "source": "These {0} squares hold only {1} between them, so those digits fill them in some order. That rules {2} out of the rest of this row.",
+    "key": "msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66"
+  },
+  {
+    "source": "These {0} squares hold only {1} between them, so those digits fill them in some order. That rules {2} out of the rest of this {3}.",
+    "key": "msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba"
+  },
+  {
+    "source": "They do not reach the end: something here has defeated the app entirely.",
+    "key": "msg_they_do_not_reach_the_end_something_here_has__04ffcc86"
+  },
+  {
+    "source": "This fills nothing in. It rules {0} out of one square.",
+    "key": "msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd"
+  },
+  {
+    "source": "This fills nothing in. It rules {0} out of {1} squares.",
+    "key": "msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413"
+  },
+  {
+    "source": "This fills nothing in. It rules {0} out of {1}.",
+    "key": "msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b"
+  },
+  {
+    "source": "This proof explains one hint, including the candidate eliminations leading to its answer. Step forward to follow the reasoning on the grid, then continue with the full route.",
+    "key": "msg_this_proof_explains_one_hint_including_the_ca_3743eb49"
+  },
+  {
+    "source": "This puzzle could not be prepared.",
+    "key": "msg_this_puzzle_could_not_be_prepared_b21691aa"
+  },
+  {
+    "source": "This puzzle could not be saved. You can still use it now. Free some storage before taking another photo.",
+    "key": "msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3"
+  },
+  {
+    "source": "This puzzle has more than one answer, so a printed digit was probably missed. Showing answer {0} of {1} - press Solve again for the next. The ringed squares differ among the answers shown.",
+    "key": "msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41"
+  },
+  {
+    "source": "This puzzle's photo could not be opened.",
+    "key": "msg_this_puzzle_s_photo_could_not_be_opened_e0595b10"
+  },
+  {
+    "source": "This reasoning excludes {0} existing ",
+    "key": "msg_this_reasoning_excludes_0_existing_78d42ca5"
+  },
+  {
+    "source": "This square may contain candidate notes rather than a full digit. Please check it.",
+    "key": "msg_this_square_may_contain_candidate_notes_rathe_b2fda100"
+  },
+  {
+    "source": "This view includes earlier candidate removals. Open their evidence below to check them.",
+    "key": "msg_this_view_includes_earlier_candidate_removals_c1ab7545"
+  },
+  {
+    "source": "Too dark to make out the grid lines",
+    "key": "msg_too_dark_to_make_out_the_grid_lines_0e73228a"
+  },
+  {
+    "source": "Trace",
+    "key": "msg_trace_7e14c3d7"
+  },
+  {
+    "source": "Tried out",
+    "key": "msg_tried_out_a44e90a4"
+  },
+  {
+    "source": "Try it yourself",
+    "key": "msg_try_it_yourself_4ddaece0"
+  },
+  {
+    "source": "Turn on",
+    "key": "msg_turn_on_5a1f096a"
+  },
+  {
+    "source": "Turn the phone so the puzzle is upright.",
+    "key": "msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156"
+  },
+  {
+    "source": "Tutor",
+    "key": "msg_tutor_1555a832"
+  },
+  {
+    "source": "Two squares holding the same pair, linked by a see-saw on one of its digits, force the other digit into one of them.",
+    "key": "msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32"
+  },
+  {
+    "source": "Two-string kite",
+    "key": "msg_two_string_kite_fd558e5c"
+  },
+  {
+    "source": "UTF-8",
+    "key": "msg_utf_8_3ad3031f"
+  },
+  {
+    "source": "Unique rectangle",
+    "key": "msg_unique_rectangle_cc025da3"
+  },
+  {
+    "source": "Unreadable exposes no CellReading list; exact input cells and outcome are retained.",
+    "key": "msg_unreadable_exposes_no_cellreading_list_exact__24e19237"
+  },
+  {
+    "source": "UnsafeOptInUsageError",
+    "key": "msg_unsafeoptinusageerror_b9799ace"
+  },
+  {
+    "source": "Unsure",
+    "key": "msg_unsure_df18af6b"
+  },
+  {
+    "source": "Use device language",
+    "key": "msg_use_device_language_3fb007ba"
+  },
+  {
+    "source": "Using {0}, tap one square where a candidate can be removed, then choose that digit.",
+    "key": "msg_using_0_tap_one_square_where_a_candidate_can__9e412349"
+  },
+  {
+    "source": "Using {0}, tap the square you can fill, then choose its digit.",
+    "key": "msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844"
+  },
+  {
+    "source": "Very hard",
+    "key": "msg_very_hard_9a5c2f08"
+  },
+  {
+    "source": "W-wing",
+    "key": "msg_w_wing_750cc106"
+  },
+  {
+    "source": "What did you expect, or how would your idea help you solve or learn Sudoku?",
+    "key": "msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a"
+  },
+  {
+    "source": "What it does",
+    "key": "msg_what_it_does_c74ea9dc"
+  },
+  {
+    "source": "Where",
+    "key": "msg_where_1daaa38f"
+  },
+  {
+    "source": "Why",
+    "key": "msg_why_d3ae14a5"
+  },
+  {
+    "source": "Why not {0}? · {1}",
+    "key": "msg_why_not_0_1_3eb81faf"
+  },
+  {
+    "source": "Why this square? · {0}",
+    "key": "msg_why_this_square_0_a7f55a02"
+  },
+  {
+    "source": "Why {0} was removed from r{1}c{2}",
+    "key": "msg_why_0_was_removed_from_r_1_c_2_f695ce2b"
+  },
+  {
+    "source": "Work backwards from your square. Choose a question below.",
+    "key": "msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd"
+  },
+  {
+    "source": "Work digit by digit rather than square by square. For one unit, write down where each missing digit could still go. Then look for {0} digits whose lists between them cover only {1} squares.\n\nThose {2} digits have to fill those {3} squares, so everything else in them can be crossed out - which often turns one of them into a naked single or a naked pair on the spot.\n\nThis is the one people find hardest, because there is nothing to see when you look at the squares: they still have plenty of candidates. The pattern is in the digits.",
+    "key": "msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0"
+  },
+  {
+    "source": "Work only with squares that have exactly two candidates left.\n\nStart at one, say {2,6}, and suppose it is not the 2 - then it is the 6. Move to a square it can see that also has a 6, say {6,4}: that one cannot be the 6, so it is the 4. Move to a square that one sees holding a 4, and carry on, each step forced by the one before.\n\nIf you reach a square whose other digit is 2 - the digit you started by ruling out - you are done. Either the first square was a 2 after all, or the chain ran and the last square is a 2. One end or the other holds it, so anything seeing both ends cannot.\n\nKeep the chains short. Four or five squares is findable with a pencil; past that you are doing bookkeeping, and a forcing chain is the honest name for it.",
+    "key": "msg_work_only_with_squares_that_have_exactly_two__90ddb694"
+  },
+  {
+    "source": "Would not read",
+    "key": "msg_would_not_read_750bc135"
+  },
+  {
+    "source": "Written",
+    "key": "msg_written_4c6031d1"
+  },
+  {
+    "source": "Wrong",
+    "key": "msg_wrong_a633bed8"
+  },
+  {
+    "source": "X-Sudoku-Training-Consent",
+    "key": "msg_x_sudoku_training_consent_985a9f5e"
+  },
+  {
+    "source": "X-wing",
+    "key": "msg_x_wing_e4487586"
+  },
+  {
+    "source": "XY-chain",
+    "key": "msg_xy_chain_e9611e56"
+  },
+  {
+    "source": "XYZ-wing",
+    "key": "msg_xyz_wing_9679f694"
+  },
+  {
+    "source": "Y-wing",
+    "key": "msg_y_wing_c0f0c7d6"
+  },
+  {
+    "source": "You cleared this square.",
+    "key": "msg_you_cleared_this_square_27e36c16"
+  },
+  {
+    "source": "You set this to a handwritten {0}.",
+    "key": "msg_you_set_this_to_a_handwritten_0_029d9a4d"
+  },
+  {
+    "source": "You set this to a printed {0}.",
+    "key": "msg_you_set_this_to_a_printed_0_5c53c7ce"
+  },
+  {
+    "source": "Your changes are visible, but could not be saved. Free some storage and try editing the puzzle again.",
+    "key": "msg_your_changes_are_visible_but_could_not_be_sav_4057fca8"
+  },
+  {
+    "source": "Your photos and your privacy",
+    "key": "msg_your_photos_and_your_privacy_1790d40a"
+  },
+  {
+    "source": "Your puzzles",
+    "key": "msg_your_puzzles_80572487"
+  },
+  {
+    "source": "Your saved puzzles",
+    "key": "msg_your_saved_puzzles_aa39fbaa"
+  },
+  {
+    "source": "Your square stays outlined. Green squares show evidence; crossed digits are ruled out.",
+    "key": "msg_your_square_stays_outlined_green_squares_show_898adcb2"
+  },
+  {
+    "source": "Your square ← {0}",
+    "key": "msg_your_square_0_4430c1c2"
+  },
+  {
+    "source": "a cell was neither a digit nor a full stop",
+    "key": "msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5"
+  },
+  {
+    "source": "a {0}x{1} image needs {2} bytes but got {3}",
+    "key": "msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879"
+  },
+  {
+    "source": "an elimination that removes nothing is not a deduction",
+    "key": "msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1"
+  },
+  {
+    "source": "aspect must be positive but was {0}",
+    "key": "msg_aspect_must_be_positive_but_was_0_5e3f78a3"
+  },
+  {
+    "source": "at least {0}",
+    "key": "msg_at_least_0_97d2bf6f"
+  },
+  {
+    "source": "box",
+    "key": "msg_box_26f8567f"
+  },
+  {
+    "source": "box {0}",
+    "key": "msg_box_0_1b64af60"
+  },
+  {
+    "source": "can only hold",
+    "key": "msg_can_only_hold_fa9d5c8b"
+  },
+  {
+    "source": "color and grayscale cells must use the same geometry",
+    "key": "msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169"
+  },
+  {
+    "source": "column",
+    "key": "msg_column_881d5fb6"
+  },
+  {
+    "source": "column {0}",
+    "key": "msg_column_0_fb3d1b61"
+  },
+  {
+    "source": "columns",
+    "key": "msg_columns_0e624a1a"
+  },
+  {
+    "source": "contains",
+    "key": "msg_contains_beeb20fb"
+  },
+  {
+    "source": "could not decode the captured image",
+    "key": "msg_could_not_decode_the_captured_image_fd497fa5"
+  },
+  {
+    "source": "digit must be 1..9 but was {0}",
+    "key": "msg_digit_must_be_1_9_but_was_0_d4e45876"
+  },
+  {
+    "source": "eight",
+    "key": "msg_eight_c195d2d8"
+  },
+  {
+    "source": "empty",
+    "key": "msg_empty_2e1cfa82"
+  },
+  {
+    "source": "entries that disagree",
+    "key": "msg_entries_that_disagree_09b28420"
+  },
+  {
+    "source": "entry that disagrees",
+    "key": "msg_entry_that_disagrees_6538e508"
+  },
+  {
+    "source": "expected 10 horizontal lines, got {0}",
+    "key": "msg_expected_10_horizontal_lines_got_0_defa7dee"
+  },
+  {
+    "source": "expected 10 vertical lines, got {0}",
+    "key": "msg_expected_10_vertical_lines_got_0_68541f8c"
+  },
+  {
+    "source": "expected 8-bit single channel but got {0}",
+    "key": "msg_expected_8_bit_single_channel_but_got_0_07bffea9"
+  },
+  {
+    "source": "expected 81 cells but got {0}",
+    "key": "msg_expected_81_cells_but_got_0_f4d6810b"
+  },
+  {
+    "source": "expected 81 cells in each block, found {0} and {1}",
+    "key": "msg_expected_81_cells_in_each_block_found_0_and_1_30138a67"
+  },
+  {
+    "source": "expected a 28x28 image but got {0} values",
+    "key": "msg_expected_a_28x28_image_but_got_0_values_b5ca205e"
+  },
+  {
+    "source": "expected ten lines each way",
+    "key": "msg_expected_ten_lines_each_way_eb07f630"
+  },
+  {
+    "source": "expected two blocks, found {0}",
+    "key": "msg_expected_two_blocks_found_0_c5452eab"
+  },
+  {
+    "source": "finished",
+    "key": "msg_finished_05343e98"
+  },
+  {
+    "source": "five",
+    "key": "msg_five_222b0bd5"
+  },
+  {
+    "source": "four",
+    "key": "msg_four_04efaf08"
+  },
+  {
+    "source": "image dimensions must be positive",
+    "key": "msg_image_dimensions_must_be_positive_744004fe"
+  },
+  {
+    "source": "need at least 4 points but got {0}",
+    "key": "msg_need_at_least_4_points_but_got_0_b2e87ffd"
+  },
+  {
+    "source": "none",
+    "key": "msg_none_140bedbf"
+  },
+  {
+    "source": "not a digit model file",
+    "key": "msg_not_a_digit_model_file_6b7074b8"
+  },
+  {
+    "source": "not started",
+    "key": "msg_not_started_7a7400f4"
+  },
+  {
+    "source": "nothing unusual",
+    "key": "msg_nothing_unusual_43de65bb"
+  },
+  {
+    "source": "one",
+    "key": "msg_one_7692c3ad"
+  },
+  {
+    "source": "one square",
+    "key": "msg_one_square_238078b4"
+  },
+  {
+    "source": "only quarter turns are supported, not {0}",
+    "key": "msg_only_quarter_turns_are_supported_not_0_0dbbb733"
+  },
+  {
+    "source": "row",
+    "key": "msg_row_634768da"
+  },
+  {
+    "source": "row $1, column $2",
+    "key": "msg_row_1_column_2_645d7932"
+  },
+  {
+    "source": "row {0}",
+    "key": "msg_row_0_3c9217b3"
+  },
+  {
+    "source": "rows",
+    "key": "msg_rows_bc51e9e6"
+  },
+  {
+    "source": "seven",
+    "key": "msg_seven_3ba8d02b"
+  },
+  {
+    "source": "six",
+    "key": "msg_six_44778d82"
+  },
+  {
+    "source": "the other",
+    "key": "msg_the_other_ec8e3f15"
+  },
+  {
+    "source": "three",
+    "key": "msg_three_8b5b9db0"
+  },
+  {
+    "source": "two",
+    "key": "msg_two_3fc4ccfe"
+  },
+  {
+    "source": "unit",
+    "key": "msg_unit_385cfdbc"
+  },
+  {
+    "source": "unsupported model format version",
+    "key": "msg_unsupported_model_format_version_7e6f7d7f"
+  },
+  {
+    "source": "was",
+    "key": "msg_was_b63b99f6"
+  },
+  {
+    "source": "were",
+    "key": "msg_were_910adfb4"
+  },
+  {
+    "source": "working edge must be positive and finite",
+    "key": "msg_working_edge_must_be_positive_and_finite_99eeb34a"
+  },
+  {
+    "source": "yyyy-MM-dd HH:mm",
+    "key": "msg_yyyy_mm_dd_hh_mm_e9e64b59"
+  },
+  {
+    "source": "{0} (API {1})",
+    "key": "msg_0_api_1_4f58c1ea"
+  },
+  {
+    "source": "{0} and {1} both hold only {2} and {3}. In this box, {4} has just two homes, one seen by each of them - so one of those two is {5}, and the end that sees it must be {6}. Either way one end is {7}, which rules {8} out of everything that sees them both.",
+    "key": "msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4"
+  },
+  {
+    "source": "{0} and {1} both hold only {2} and {3}. In this column, {4} has just two homes, one seen by each of them - so one of those two is {5}, and the end that sees it must be {6}. Either way one end is {7}, which rules {8} out of everything that sees them both.",
+    "key": "msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1"
+  },
+  {
+    "source": "{0} and {1} both hold only {2} and {3}. In this row, {4} has just two homes, one seen by each of them - so one of those two is {5}, and the end that sees it must be {6}. Either way one end is {7}, which rules {8} out of everything that sees them both.",
+    "key": "msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9"
+  },
+  {
+    "source": "{0} and {1} both hold only {2} and {3}. In this {4}, {5} has just two homes, one seen by each of them - so one of those two is {6}, and the end that sees it must be {7}. Either way one end is {8}, which rules {9} out of everything that sees them both.",
+    "key": "msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2"
+  },
+  {
+    "source": "{0} at row {1}, column {2}{3} · {4}",
+    "key": "msg_0_at_row_1_column_2_3_4_8d1bc498"
+  },
+  {
+    "source": "{0} at step {1}",
+    "key": "msg_0_at_step_1_6575933c"
+  },
+  {
+    "source": "{0} can only hold {1}.",
+    "key": "msg_0_can_only_hold_1_7d4f7900"
+  },
+  {
+    "source": "{0} cannot hold {1} because {2} ",
+    "key": "msg_0_cannot_hold_1_because_2_7d7943d9"
+  },
+  {
+    "source": "{0} cannot hold {1} because {2} can only hold {3} in the same box {4}.",
+    "key": "msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22"
+  },
+  {
+    "source": "{0} cannot hold {1} because {2} can only hold {3} in the same column {4}.",
+    "key": "msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769"
+  },
+  {
+    "source": "{0} cannot hold {1} because {2} can only hold {3} in the same row {4}.",
+    "key": "msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513"
+  },
+  {
+    "source": "{0} cannot hold {1} because {2} contains {3} in the same box {4}.",
+    "key": "msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7"
+  },
+  {
+    "source": "{0} cannot hold {1} because {2} contains {3} in the same column {4}.",
+    "key": "msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970"
+  },
+  {
+    "source": "{0} cannot hold {1} because {2} contains {3} in the same row {4}.",
+    "key": "msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f"
+  },
+  {
+    "source": "{0} contains {1}.",
+    "key": "msg_0_contains_1_1a322cb6"
+  },
+  {
+    "source": "{0} empty",
+    "key": "msg_0_empty_3b007105"
+  },
+  {
+    "source": "{0} has to go here: it is the only cell in this box {1} that can still take a {2}.\n\n{3}\n\n{4} currently allows {5}, but every box must contain {6} exactly once. Therefore place {7} in row {8}, column {9}.",
+    "key": "msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b"
+  },
+  {
+    "source": "{0} has to go here: it is the only cell in this column {1} that can still take a {2}.\n\n{3}\n\n{4} currently allows {5}, but every column must contain {6} exactly once. Therefore place {7} in row {8}, column {9}.",
+    "key": "msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714"
+  },
+  {
+    "source": "{0} has to go here: it is the only cell in this row {1} that can still take a {2}.\n\n{3}\n\n{4} currently allows {5}, but every row must contain {6} exactly once. Therefore place {7} in row {8}, column {9}.",
+    "key": "msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0"
+  },
+  {
+    "source": "{0} has to go here: it is the only cell in this {1} {2} that can still take a {3}.\n\n{4}\n\n{5} currently allows {6}, but every {7} must contain {8} exactly once. Therefore place {9} in row {10}, column {11}.",
+    "key": "msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c"
+  },
+  {
+    "source": "{0} has two homes in this row and two in this column. {1} and {2} share a box, so they cannot both be {3} - which leaves one of {4} and {5} holding it, and rules {6} out of everything that sees them both.",
+    "key": "msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8"
+  },
+  {
+    "source": "{0} is already ruled out of that square. Its candidates are ",
+    "key": "msg_0_is_already_ruled_out_of_that_square_its_can_50440796"
+  },
+  {
+    "source": "{0} is excluded by {1}, which ",
+    "key": "msg_0_is_excluded_by_1_which_c332ab94"
+  },
+  {
+    "source": "{0} is excluded by {1}, which can only hold {2} in the same box {3}.",
+    "key": "msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a"
+  },
+  {
+    "source": "{0} is excluded by {1}, which can only hold {2} in the same column {3}.",
+    "key": "msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3"
+  },
+  {
+    "source": "{0} is excluded by {1}, which can only hold {2} in the same row {3}.",
+    "key": "msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201"
+  },
+  {
+    "source": "{0} is excluded by {1}, which contains {2} in the same box {3}.",
+    "key": "msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e"
+  },
+  {
+    "source": "{0} is excluded by {1}, which contains {2} in the same column {3}.",
+    "key": "msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15"
+  },
+  {
+    "source": "{0} is excluded by {1}, which contains {2} in the same row {3}.",
+    "key": "msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0"
+  },
+  {
+    "source": "{0} is forced in the newest numbered square (row {1}, column {2}). {3} The arrow follows a contributing placement; earlier consequences also matter.",
+    "key": "msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff"
+  },
+  {
+    "source": "{0} is missing from the classpath",
+    "key": "msg_0_is_missing_from_the_classpath_0e595856"
+  },
+  {
+    "source": "{0} of them fill a square in; the rest clear candidates out of the way first.",
+    "key": "msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb"
+  },
+  {
+    "source": "{0} of {1}",
+    "key": "msg_0_of_1_9fea8201"
+  },
+  {
+    "source": "{0} pair",
+    "key": "msg_0_pair_8730dc66"
+  },
+  {
+    "source": "{0} printed",
+    "key": "msg_0_printed_522101ca"
+  },
+  {
+    "source": "{0} printed, {1}",
+    "key": "msg_0_printed_1_d2b62650"
+  },
+  {
+    "source": "{0} printed, {1}, {2} wrong",
+    "key": "msg_0_printed_1_2_wrong_7d3fcd64"
+  },
+  {
+    "source": "{0} quad",
+    "key": "msg_0_quad_c9dd2280"
+  },
+  {
+    "source": "{0} refused photograph(s), newest first:",
+    "key": "msg_0_refused_photograph_s_newest_first_07d50825"
+  },
+  {
+    "source": "{0} squares",
+    "key": "msg_0_squares_57c6f9ba"
+  },
+  {
+    "source": "{0} steps make up this route, the hardest supported technique a {1}. {2} {3}",
+    "key": "msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d"
+  },
+  {
+    "source": "{0} triple",
+    "key": "msg_0_triple_ff6a8740"
+  },
+  {
+    "source": "{0} was removed from {1} by earlier candidate reasoning.",
+    "key": "msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb"
+  },
+  {
+    "source": "{0} written in",
+    "key": "msg_0_written_in_40661e10"
+  },
+  {
+    "source": "{0}, entry",
+    "key": "msg_0_entry_e2c9a9a9"
+  },
+  {
+    "source": "{0}, printed clue",
+    "key": "msg_0_printed_clue_922b97c8"
+  },
+  {
+    "source": "{0}, {1} {2}, Android {3}",
+    "key": "msg_0_1_2_android_3_c2e7a322"
+  },
+  {
+    "source": "{0}: remove {1}",
+    "key": "msg_0_remove_1_2fb6c331"
+  },
+  {
+    "source": "{0}{1}\n\nThe highlighted squares are what proves it.\n\nPress Hint again to be shown which square.",
+    "key": "msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60"
+  }
+]

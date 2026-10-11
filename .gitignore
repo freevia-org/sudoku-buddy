@@ -66,3 +66,7 @@ corpus-rectified/*.jpg
 feedback-api/.wrangler/
 feedback-api/node_modules/
 feedback-api/private-reports/
+
+# Regenerable local translation caches; bundled XML and editorial overrides are tracked.
+tools/i18n/drafts/
+tools/i18n/__pycache__/

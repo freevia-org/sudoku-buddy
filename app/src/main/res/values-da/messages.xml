@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nDe fremhævede felter er beviset.\n\nTryk på Tip igen for at få vist hvilket felt."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s og %2$s tillader begge kun %3$s og %4$s. I denne %5$s har %6$s kun to mulige pladser, som hver ses af ét af de to felter – så én af pladserne er %7$s, og det endefelt, der ser den, skal være %8$s. Uanset hvad er ét endefelt %9$s, hvilket udelukker %10$s fra alle felter, der ser dem begge."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"Både %1$s og %2$s kan kun indeholde %3$s og %4$s. I denne blok har %5$s kun to mulige placeringer, som ses af hver sit af de to felter – derfor er en af de to placeringer %6$s, og det endefelt, der ser den, må være %7$s. I begge tilfælde er et endefelt %8$s, hvilket udelukker %9$s fra alle felter, der ser dem begge."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"Både %1$s og %2$s kan kun indeholde %3$s og %4$s. I denne kolonne har %5$s kun to mulige placeringer, som ses af hver sit af de to felter – derfor er en af de to placeringer %6$s, og det endefelt, der ser den, må være %7$s. I begge tilfælde er et endefelt %8$s, hvilket udelukker %9$s fra alle felter, der ser dem begge."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"Både %1$s og %2$s kan kun indeholde %3$s og %4$s. I denne række har %5$s kun to mulige placeringer, som ses af hver sit af de to felter – derfor er en af de to placeringer %6$s, og det endefelt, der ser den, må være %7$s. I begge tilfælde er et endefelt %8$s, hvilket udelukker %9$s fra alle felter, der ser dem begge."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s i række %2$s, kolonne %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s ved trin %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s kan kun indeholde %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s kan ikke indeholde %2$s, fordi %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s kan ikke indeholde %2$s, fordi %3$s kun kan indeholde %4$s i samme kolonne %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s kan ikke indeholde %2$s, fordi %3$s kun kan indeholde %4$s i samme boks %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s kan ikke indeholde %2$s, fordi %3$s kun kan indeholde %4$s i samme række %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s kan ikke indeholde %2$s, fordi %3$s indeholder %4$s i samme boks %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s kan ikke indeholde %2$s, fordi %3$s indeholder %4$s i samme kolonne %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s kan ikke indeholde %2$s, fordi %3$s indeholder %4$s i samme række %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s indeholder %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s tomme"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, indtastning"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s skal stå her: det er det eneste felt i denne kolonne %2$s, der stadig kan indeholde %3$s.\n\n%4$s\n\n%5$s tillader i øjeblikket %6$s, men hver kolonne skal indeholde %7$s præcis én gang. Placér derfor %8$s i række %9$s, kolonne %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s skal stå her: det er det eneste felt i denne %2$s %3$s, der stadig kan indeholde %4$s.\n\n%5$s\n\n%6$s tillader i øjeblikket %7$s, men hver %8$s skal indeholde %9$s præcis én gang. Sæt derfor %10$s i række %11$s, kolonne %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s skal stå her: det er det eneste felt i denne blok %2$s, der stadig kan indeholde %3$s.\n\n%4$s\n\n%5$s tillader i øjeblikket %6$s, men hver blok skal indeholde %7$s præcis én gang. Placér derfor %8$s i række %9$s, kolonne %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s skal stå her: det er det eneste felt i denne række %2$s, der stadig kan indeholde %3$s.\n\n%4$s\n\n%5$s tillader i øjeblikket %6$s, men hver række skal indeholde %7$s præcis én gang. Placér derfor %8$s i række %9$s, kolonne %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s har to mulige pladser i denne række og to i denne kolonne. %2$s og %3$s deler en boks, så de kan ikke begge være %4$s – dermed indeholder enten %5$s eller %6$s tallet, og %7$s udelukkes fra alle felter, der ser dem begge."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s i samme %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s i samme blok."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s i samme kolonne."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s i samme række."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s er allerede udelukket fra det felt. Dets kandidater er "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s udelukkes af %2$s, som "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s udelukkes af %2$s, som kun kan indeholde %3$s i samme kolonne %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s udelukkes af %2$s, som kun kan indeholde %3$s i samme række %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s udelukkes af %2$s, som kun kan indeholde %3$s i samme boks %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s udelukkes af %2$s, som indeholder %3$s i samme boks %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s udelukkes af %2$s, som indeholder %3$s i samme kolonne %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s udelukkes af %2$s, som indeholder %3$s i samme række %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s er tvunget i det seneste nummererede felt (række %2$s, kolonne %3$s). %4$s Pilen følger en placering, der bidrager til slutningen; tidligere konsekvenser har også betydning."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s mangler i classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s af %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s af dem udfylder et felt; resten fjerner først kandidater fra vejen."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s par"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s trykte, %2$s, %3$s forkerte"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s trykte, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s trykte"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, trykt starttal"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s firling"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s afviste billeder, nyeste først:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: fjern %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Antal felter: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s trin udgør dette forløb, og den sværeste understøttede teknik er %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s triplet"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s blev fjernet fra %2$s ved tidligere ræsonnement om kandidater."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s indskrevne"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"et billede på %1$sx%2$s kræver %3$s bytes, men fik %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"et felt var hverken et tal eller et punktum"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"En kæde af felter med to kandidater, der begynder og slutter med samme ciffer, placerer dette ciffer i den ene eller den anden ende."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Et ciffer med kun én mulig placering i en række, kolonne eller boks skal stå dér."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Et håndskrevet %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Et trykt %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Et rødt felt viser det ciffer, appen aflæste dér. Hvis det ikke er det, du skrev, skal du trykke på feltet for at rette det."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Et felt med kun ét muligt ciffer tilbage skal indeholde dette ciffer."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"En liste over teknikker er aldrig fuldstændig, og de sværeste opgaver er lavet til at modstå alt på listen. Når ingen af disse teknikker giver et resultat, afgør vejlederen derfor ét felt ved at afprøve dets kandidater, fortæller klart, at det er det, den har gjort, og fortsætter ræsonnementet derfra. Den når altid til slutningen af en opgave og foregiver aldrig, at et opslag var en logisk slutning."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Et pivotfelt med tre kandidater og to matchende fløjfelter med to kandidater tvinger et ciffer ud af alle felter, der ser alle tre."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Et pivotfelt med to kandidater og to fløjfelter med to kandidater kan tvinge et ciffer ud af alle felter, der ser begge fløjfelter."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Om"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Efter"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Efter dette træk"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Alt korrekt"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Alle tre felter kan være %1$s, og ét af dem skal være det. Derfor kan intet felt, der ser alle tre, være %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Tillad kamera"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Næsten – hold siden fladt og vinkelret på kameraet"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"en eliminering, der ikke fjerner noget, er ikke en slutning"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" og "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Svar"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## App og enhed (forudfyldt)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- App: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"sideforholdet skal være positivt, men var %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Antagelse · hypotetisk ciffer"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Antagelse afvist · faktiske kandidater gendannet"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"mindst %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Automatisk foto"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Del automatisk usikre opgavebilleder, aflæsningsresultater og senere feltrettelser med Freevia til analyse og træning af genkendelsen. Slået fra som standard."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Undgå genskin"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Tilbage"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Tilbage til forrige spørgsmål"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Tilbage til visuelt tip"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Tilbage til dit felt"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Før"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Før dette træk"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Blå cifre viser løsningen. Tryk på et felt for at rette aflæsningen."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"boks %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"boks"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Boks"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Boks-linje-reduktion"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"kan kun indeholde"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Annuller"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidater %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"Optagelsesbelæg"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Dan en kæde med et ciffer gennem de enheder, hvor det kun har to mulige placeringer, farv kæden skiftevis med to farver, og den ene farve er sand hele vejen."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Når %1$s kædes sammen gennem de enheder, hvor det kun har to mulige placeringer, får disse felter to skiftende farver, hvoraf den ene er sand hele vejen. To felter med den anden farve ligger i samme række, hvilket er umuligt – derfor er den farve falsk, og %2$s fjernes fra alle felter med den farve."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Når %1$s kædes sammen gennem de enheder, hvor det kun har to mulige placeringer, får disse felter to skiftende farver, hvoraf den ene er sand hele vejen. To felter med den anden farve ligger i samme blok, hvilket er umuligt – derfor er den farve falsk, og %2$s fjernes fra alle felter med den farve."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Når %1$s kædes sammen gennem de enheder, hvor det kun har to mulige placeringer, får disse felter to skiftende farver, hvoraf den ene er sand hele vejen. To felter med den anden farve ligger i samme kolonne, hvilket er umuligt – derfor er den farve falsk, og %2$s fjernes fra alle felter med den farve."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Når %1$s kædes gennem de enheder, hvor det kun har to mulige placeringer, får disse felter to skiftende farver, hvoraf den ene er sand hele vejen. To felter med farven %2$s ligger i samme %3$s, hvilket er umuligt – derfor er denne farve falsk, og %4$s fjernes fra alle felter med den farve."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Når %1$s kædes gennem de enheder, hvor det kun har to mulige placeringer, får disse felter to skiftende farver, og den ene farve er sand hele vejen. Disse felter ser begge farver, så uanset hvordan kæden falder ud, indeholder ét af de felter, de ser, %2$s – og derfor kan de ikke selv gøre det."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Når %1$s kædes sammen gennem de enheder, hvor det kun har to mulige placeringer, får disse felter to skiftende farver, hvoraf den ene er sand hele vejen. To felter med samme farve ligger i samme blok, hvilket er umuligt – derfor er den farve falsk, og %2$s fjernes fra alle felter med den farve."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Når %1$s kædes sammen gennem de enheder, hvor det kun har to mulige placeringer, får disse felter to skiftende farver, hvoraf den ene er sand hele vejen. To felter med samme farve ligger i samme kolonne, hvilket er umuligt – derfor er den farve falsk, og %2$s fjernes fra alle felter med den farve."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Når %1$s kædes sammen gennem de enheder, hvor det kun har to mulige placeringer, får disse felter to skiftende farver, hvoraf den ene er sand hele vejen. To felter med samme farve ligger i samme række, hvilket er umuligt – derfor er den farve falsk, og %2$s fjernes fra alle felter med den farve."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Usikre felter til kontrol: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Kontrollér"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Kontrollér ét usikkert felt."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", kontrolleret som korrekt"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Vælg en kandidat for at se, hvorfor den ikke kan stå i dit felt."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Vælg sprog"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Vælg, hvad der skal vises"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Luk"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Luk tip"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Fold aflæsningsgennemgangen sammen"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"farve- og gråtonefelter skal bruge samme geometri"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"kolonne %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"kolonne"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"kolonner"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Sammenlign tvangskæder, og foretræk dem med færre felter at følge. Kortere kæder kan betyde flere trin i den samlede løsning."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Følge %1$s af %2$s · hypotetiske cifre"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"indeholder"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Indholdstype"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Fortsæt med hele forløbet"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Modstrid · antagelsen holder ikke"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", modstrid"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Modstrid: Den røde %1$s har ingen mulig placering tilbage til %2$s. Det er umuligt, så startantagelsen må være forkert."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Modstrid: Det røde felt har ingen kandidater tilbage. Det er umuligt, så startantagelsen må være forkert."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Kopiér sletningsanmodning"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Korrekt. Sammenlign dit ræsonnement med forklaringen nedenfor."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"kunne ikke afkode det optagne billede"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Kunne ikke finde de trykte cifre på billedet."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Kunne ikke skelne gitterlinjerne – prøv igen."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Kunne ikke åbne GitHub. Kontakt support på %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Kunne ikke gemme optagelsesbelæg til fejlfinding"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Kunne ikke indsende aflæsningen. Prøv igen, når der er forbindelse."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Blindgyde"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"SLET"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Slet"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Slet rapport"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Slet dette billede"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Slet denne opgave"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Slet denne opgave?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Slet denne indsendelse?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Sletter…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Sletningen kunne ikke bekræftes. Kontrollér forbindelsen, og prøv igen."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Sletningsanmodning"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Svaret på sletningsanmodningen bekræftede ikke denne kvittering."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Sletningstjenesten returnerede HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Beskriv, hvad der skete, og hvordan det gentages. Angiv, om du først kontrollerede og rettede de genkendte cifre. Ved en idé skal du skrive \'Ikke relevant\'."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", målfelt for dette tip"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Enhed: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostikken er forkortet for at passe i browserkladden. Appens handling Send diagnostik kan dele hele rapporten."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"tallet skal være 1..9, men var %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Cifre ikke aflæst"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Lagring af belæg på disk påvirker tidsmålingen; dette er ikke en latenstest."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", stemmer ikke med løsningen"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Hver kvittering identificerer én indsendt version af en opgave. Slet den her for at fjerne den privat lagrede rapport fra Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Tidligere udelukkelser: %1$s. Brug linkene til tidligere trin til at se deres beviser."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← tidligere belæg (dybde %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Tidligere hypotetiske placeringer efterlader kun én kandidat i feltet."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Tidligere trin brugt i dette bevis"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Redigér felt"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"otte"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"tom"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Tomt."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Tomt"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Engelsk"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"indtastninger, der ikke stemmer"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"indtastning, der ikke stemmer"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Hver af dem udfylder et felt."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Alle felter er udfyldt, men %1$s svar stemmer ikke med løsningen."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Alle felter er udfyldt, men ét svar stemmer ikke med løsningen."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Enhver sudoku med én løsning kan løses ved logisk ræsonnement; gæt er aldrig nødvendige og hjælper sjældent. Dette er de ræsonnementer, appen kan genkende og forklare, med de letteste først. Når et af dem kan bruges i den åbne opgave, viser appen alle steder, hvor det gælder."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Alt, hvad du har skrevet indtil nu, er rigtigt."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Tilgængelige eksempler nu: Hvert tager udgangspunkt i dit aktuelle gitter."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"forventede 10 vandrette linjer, fik %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"forventede 10 lodrette linjer, fik %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"forventede 81 felter, men fik %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"forventede 81 felter i hver blok, fandt %1$s og %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"forventede én 8-bit-kanal, men fik %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"forventede et billede på 28x28, men fik %1$s værdier"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Forventet adfærd eller foreslået forbedring"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"forventede ti linjer i hver retning"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"forventede to blokke, fandt %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Forklar tidligere kandidatfjernelser (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Forklar tip"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Find et felt med kun to eller tre kandidater tilbage – jo færre, jo bedre, og jo mere udfyldt rækken, kolonnen og boksen omkring det er, jo bedre.\n\nVælg en af kandidaterne, og skriv den svagt med blyant. Følg nu konsekvenserne: Cifferet fjernes fra alle felter, som feltet ser. Det kan efterlade ét af dem med en enkelt kandidat, som tvinger endnu en frem, og så videre. Fortsæt.\n\nÉn af to ting sker. Enten løber kæden ud, og du har ikke lært noget – visk ud, og prøv den anden kandidat. Eller du når et felt helt uden kandidater eller en række uden plads til et bestemt ciffer. Det er umuligt, så det ciffer, du skrev med blyant, var forkert og kan udelukkes endeligt.\n\nBrug denne teknik, når alle andre muligheder er udtømt. Den er langsommere og kræver bogføring frem for mønstergenkendelse, men kan finde træk, som mønstrene overser. Én udelukkelse er ofte nok til at sætte de lette teknikker i gang igen; nogle stillinger kræver stadig en dybere søgning."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Find to felter med de samme to kandidater, for eksempel {3,7}, som ikke ser hinanden – de ligger som regel langt fra hinanden.\n\nSe nu efter en række, kolonne eller boks, hvor 7 kun har to mulige felter, hvoraf det ene ses af det første felt i dit par og det andet af det andet. Det er forbindelsen.\n\nÉt af disse to felter er 7. Uanset hvilket, kan feltet i dit par, der ser det, ikke være 7 og må derfor være 3. Du ved ikke, hvilken ende der er 3, kun at én af dem er det – og det er nok til at udelukke 3 fra alle felter, der ser begge ender.\n\nDet svære er forbindelsen, så søg i omvendt rækkefølge: Markér først enhederne, hvor et ciffer kun har to mulige placeringer, og se derefter efter et matchende par på hver side."</string>
+    <string name="msg_finished_05343e98" formatted="false">"færdig"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Tag billedet, når gitteret står uden perspektivforvrængning i billedet og holdes stille. Knappen virker altid uanset hvad."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Få hele gitteret med i billedet."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Få hele gitteret med i billedet"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"fem"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Følg et forløb, hvor hvert træk bygger på det forrige."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Følg hele beviset i rækkefølge"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Følg denne kæde af felter med to kandidater: Hvis %1$s ikke er %2$s, tvinges hvert felt i kæden af det foregående, og %3$s ender som %4$s. Derfor indeholder den ene eller den anden ende %5$s, hvilket udelukker det fra alle felter, der ser begge ender."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Tvangskæde"</string>
+    <string name="msg_four_04efaf08" formatted="false">"fire"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Fire felter i to rækker, to kolonner og to bokse kan ikke alle have de samme to kandidater, da opgaven så ville have to løsninger."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia bekræftede sletningen, men denne telefon kunne ikke fjerne den lokale kvittering. Prøv igen for at afslutte den lokale oprydning."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia sletter denne rapportversion og dens private træningskopi. Fremtidige rettelser kan oprette en ny rapport afhængigt af dine delingsindstillinger. En model, der allerede er trænet på den, kan bevare indlærte ændringer."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Hele forløbet"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Fremtidige usikre aflæsninger sender det perspektivkorrigerede opgavebillede, genkendelsesresultater og rettelser til Freevia til analyse og træning. Træningskopier bevares, indtil de slettes under Indsendelseskvitteringer; en trænet model kan bevare indlærte ændringer. Hvis en usikker opgave allerede er åben, sendes den nu. Du kan slå dette fra i Indstillinger."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Blid"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Genskin udvisker linjerne – vip siden væk fra lyset"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"Gråtonebillede(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Grå felter indeholder blyantsnoter, som appen ignorerer. Bjælken under et ciffer viser, hvor sikker aflæsningen var. Tryk på et felt for at se detaljer."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Håndskrevet"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Svær"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Skjult"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Skjult par"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Skjult firling"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Skjult enkeltkandidat"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Skjult triplet"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Skjul tidligere belæg"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Skjul, hvordan du finder en"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", tip %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Tip"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Bevis for tip"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Ræsonnement bag tip"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Hold stille..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Hold stille, eller tryk på udløseren"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Hold stille, mens kameraet fokuserer..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Hold telefonen vandret"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Hold telefonen parallelt over opgaven."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Hold telefonen parallelt over opgaven"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"vandret\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Sådan finder du en"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSådan når vi frem:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Se efter felter med præcis to kandidater – en Y-wing består af tre sådanne felter og intet andet.\n\nVælg ét som pivotfelt, for eksempel {2,5}. Find et felt, det ser, med {2,9}, og et andet, det ser, med {5,9}. Pivotfeltet er enten 2 eller 5. Hvis det er 2, skal det første fløjfelt være 9; hvis det er 5, skal det andet være 9. Uanset hvad står der en 9 i ét af fløjfelterne – du ved ikke hvilket, og det behøver du heller ikke.\n\nDerfor kan intet felt, der ser begge fløjfelter, være 9. Disse felter er som regel de to hjørner, der fuldender rektanglet."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hypotetisk %1$s, ikke et indtastet svar"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Hvis %1$s cifre i én række, kolonne eller boks kun kan stå i de samme %2$s felter, kan disse felter ikke indeholde andre cifre."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Hvis %1$s felter i én række, kolonne eller boks tilsammen har præcis %2$s kandidater, tilhører disse cifre de felter og ingen andre i enheden."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Hvis et ciffer har to mulige placeringer i en række og to i en kolonne, og én fra hver deler en boks, skal én af de to andre indeholde det."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Hvis et ciffer har to mulige placeringer i hver af to rækker, og de deler en kolonne, skal én af de to andre placeringer indeholde det."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Hvis alle et ciffers mulige placeringer på en linje ligger i én boks, kan cifferet udelukkes fra resten af boksen."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Hvis et ciffers eneste mulige placeringer i %1$s rækker ligger i de samme %2$s kolonner, kan det udelukkes fra disse kolonner andre steder – og det samme gælder med rækker og kolonner byttet om."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Hvis et ciffers eneste mulige placeringer i en boks ligger på samme linje, kan cifferet udelukkes fra resten af linjen."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Hvis antagelsen af et ciffer fører til et felt uden nogen mulig kandidat, var cifferet forkert."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"billedets dimensioner skal være positive"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"I en kæde af felter med de samme to kandidater indeholder de to ender af en kæde med ulige længde forskellige cifre."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"I disse %1$s %2$s kan %3$s kun stå i disse %4$s %5$s. Tilsammen optager de dem alle, så %6$s kan udelukkes fra disse %7$s alle andre steder."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"I disse %1$s kolonner kan %2$s kun stå i disse %3$s rækker. Tilsammen optager de dem alle, så %4$s kan udelukkes fra alle andre felter i disse rækker."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"I disse %1$s rækker kan %2$s kun stå i disse %3$s kolonner. Tilsammen optager de dem alle, så %4$s kan udelukkes fra alle andre felter i disse kolonner."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"I disse to %1$s har %2$s kun to mulige placeringer i hver, og %3$s og %4$s deler en %5$s – så de kan ikke begge være %6$s. Derfor er én af %7$s og %8$s det, hvilket udelukker %9$s fra alle felter, der ser begge."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"I disse to kolonner har %1$s kun to mulige placeringer i hver, og %2$s og %3$s ligger i samme række – derfor kan de ikke begge være %4$s. Et af felterne %5$s og %6$s må derfor være det, hvilket udelukker %7$s fra alle felter, der ser dem begge."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"I disse to rækker har %1$s kun to mulige placeringer i hver, og %2$s og %3$s ligger i samme kolonne – derfor kan de ikke begge være %4$s. Et af felterne %5$s og %6$s må derfor være det, hvilket udelukker %7$s fra alle felter, der ser dem begge."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"I denne %1$s kan %2$s kun stå i disse %3$s felter, så felterne er reserveret. Det udelukker %4$s fra dem."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"I denne %1$s kan %2$s kun stå i én boks. Derfor står %3$s i den boks på denne %4$s og kan udelukkes fra resten af boksen."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"I denne blok kan %1$s kun stå i disse %2$s felter, så felterne er reserveret til dem. Det udelukker %3$s fra felterne."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"I denne kolonne kan %1$s kun stå i disse %2$s felter, så felterne er reserveret til dem. Det udelukker %3$s fra felterne."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"I denne række kan %1$s kun stå i disse %2$s felter, så felterne er reserveret til dem. Det udelukker %3$s fra felterne."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Omfatter deres billeder, aflæsninger og rettelser. Slå dette fra i Indstillinger."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Find et ciffer i én boks, som kun kan stå i to eller tre felter, og kontrollér, om de alle ligger i samme række eller samme kolonne. Hvis de gør, findes cifferet med sikkerhed et sted på den linje – du ved ikke hvor, men du ved, at det er i denne boks. Derfor kan det ikke stå andre steder på samme linje uden for boksen.\n\nDette placerer ikke noget i sig selv. Det fjerner kandidater, så en enkeltkandidat dukker op et andet sted."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"I denne boks kan %1$s kun stå i denne %2$s. Derfor står %3$s et sted her og kan udelukkes fra resten af denne %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem eller idé"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Teknikken kan bruges %1$s steder her. Gå frem for at gennemgå dem."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Teknikken kan bruges ét sted her. Gå frem for at se det."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Teknikken kan ikke bruges nogen steder i denne stilling."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Det er den eneste tilbageværende placering for %1$s i den fremhævede %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Det er feltet med en ring omkring.\n\nTryk på Tip igen for at få cifferet."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Behold"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Hold tvangskæder korte"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Sprog"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licenser"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Se langs én række, kolonne eller boks efter felter med få kandidater tilbage. Vælg %1$s af dem, og saml deres kandidater. Hvis samlingen indeholder præcis %2$s cifre, er disse %3$s cifre reserveret: De skal stå i disse %4$s felter i en eller anden rækkefølge, selvom du endnu ikke kan sige, hvilket der skal stå hvor.\n\nDet er nok. Alle andre felter i enheden kan få disse cifre fjernet, og det er som regel ét af disse felter, der så bliver en enkeltkandidat.\n\nFelterne behøver ikke alle have de samme kandidater – {2,7}, {2,9} og {7,9} er en fuldt gyldig triplet og netop den, folk overser."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Se efter felter med de samme to kandidater – for eksempel {4,9} – som danner en kæde, hvor hvert felt ser det næste. Tre er ikke nok; du skal bruge mindst fire.\n\nFarv dem skiftevis undervejs. Fordi hvert felt ser det næste, kan to nabofelter ikke indeholde samme ciffer, så kæden bliver 4, 9, 4, 9 hele vejen – eller 9, 4, 9, 4, og du kan ikke afgøre hvilken.\n\nUanset hvad indeholder to felter med modsatte farver forskellige cifre: Det ene er 4, og det andet er 9. Derfor kan ethvert felt, der ser begge, være ingen af delene og mister begge kandidater på én gang.\n\nMønstret er let at se, netop fordi alle felter i det ser ens ud. Følg de identiske par rundt i gitteret, og se, hvor de mødes."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Se efter tre felter med de samme to kandidater – for eksempel {1,6} – som ligger i tre hjørner af et rektangel. Rektanglet skal ligge i præcis to bokse: To rækker og to kolonner, der krydser to bokse, ikke fire.\n\nSe nu på det fjerde hjørne. Hvis det også kun havde 1 og 6, ville opgaven have to løsninger – du kunne bytte rundt på 1 og 6 i rektanglet, og alt andet ville stadig passe. En korrekt konstrueret opgave har én løsning, så det fjerde hjørne må bruge noget andet: Dets andre kandidater bliver, og 1 og 6 fjernes.\n\nDette er det eneste argument i samlingen, der handler om opgavens konstruktør frem for gitteret. Det er gyldigt i en offentliggjort opgave og værdiløst i en, du allerede har udfyldt forkert, fordi der så måske slet ikke findes en løsning, som kan være entydig."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Se i denne boks. Følg omridset til det felt, dette tip forklarer."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Noter"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Middel"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Mere"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Der skal mere lys til"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Der er mere end én løsning, så et trykt ciffer blev overset. Tryk på Løs for at se løsningerne, og hvor de adskiller sig."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Flyt længere væk"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Flyt tættere på"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Flyt tættere på – gitteret er for lille til at aflæse."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Nøgen"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Nøgent par"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Nøgen firling"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Nøgen enkeltkandidat"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Nøgen triplet"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Navngiv teknikken, og vis de felter, der beviser den, i stedet for kun at give cifferet."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"kræver mindst 4 punkter, men fik %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Kræver bekræftelse"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Ny sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Næste følge"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Næste trin"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Ingen billeder vedhæftes automatisk. Rapporter og vedhæftede filer, der indsendes her, er offentlige. Send eksempler, som du foretrækker at dele privat, til info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Ingen billeder er blevet afvist, siden appen sidst blev installeret."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Ingen scanningsdiagnostik tilgængelig."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Ingen teknik kan bruges her"</string>
+    <string name="msg_none_140bedbf" formatted="false">"ingen"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Ingen af dem placerer et ciffer i et felt: De fjerner kandidater, og sådan åbnes en svær opgave op."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Ingen i din opgave lige nu."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"ikke en talmodelfil"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Kunne ikke aflæses med nogen sikkerhed – det nærmeste gæt er %1$s %2$s ved %3$s. Angiv selv dette felt."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Kan endnu ikke aflæses som et 9 gange 9-gitter – prøv at fylde billedet med kun gitteret, eller tag blot billedet"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"ikke startet"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Intet kunne sendes fra denne telefon."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Intet tilbage at udlede."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Intet mere her kan udledes med de teknikker, appen kender."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"intet usædvanligt"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"ét"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Ét felt lignede et trykt ciffer, men er det ikke."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Ét trykt ciffer blev rettet automatisk."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"ét felt"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Kun %1$s kan stå her – alle andre cifre findes allerede i denne række, kolonne eller boks."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Kun %1$s kan stå her. De fremhævede felter optager %2$s af de øvrige otte cifre; %3$s blev udelukket fra dette felt tidligere, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Kun %1$s kan stå her. De fremhævede felter udelukker fire af de otte andre cifre; %2$s blev tidligere udelukket fra dette felt, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Kun %1$s kan stå her. De fremhævede felter udelukker seks af de otte andre cifre; %2$s blev tidligere udelukket fra dette felt, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Kun %1$s kan stå her. De fremhævede felter udelukker ét af de otte andre cifre; %2$s blev tidligere udelukket fra dette felt, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Kun %1$s kan stå her. De fremhævede felter udelukker syv af de otte andre cifre; %2$s blev tidligere udelukket fra dette felt, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Kun %1$s kan stå her. De fremhævede felter udelukker fem af de otte andre cifre; %2$s blev tidligere udelukket fra dette felt, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Kun %1$s kan stå her. De fremhævede felter optager %2$s af de øvrige otte cifre; %3$s %4$s udelukket fra dette felt tidligere, ikke af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Kun %1$s kan stå her. De fremhævede felter udelukker to af de otte andre cifre; %2$s blev tidligere udelukket fra dette felt, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Kun %1$s kan stå her. De fremhævede felter optager %2$s af de øvrige otte cifre; %3$s blev udelukket fra dette felt tidligere, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Kun %1$s kan stå her. De fremhævede felter udelukker tre af de otte andre cifre; %2$s blev tidligere udelukket fra dette felt, ikke på grund af noget, du kan se omkring det."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Kun %1$s kan stå her. De øvrige otte cifre udelukkes af udfyldte felter eller tvungne enkeltkandidater i denne række, kolonne eller boks."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Kun %1$s kan stå her, selvom intet omkring feltet viser hvorfor: Alle otte andre cifre blev udelukket fra feltet ved tidligere ræsonnement frem for ved at stå i dets række, kolonne eller boks."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Der blev kun fundet %1$s trykte cifre, hvilket er for få til en opgave."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"kun drejninger på en kvart omgang understøttes, ikke %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Åbn en kladde i din browser med appversion, telefonmodel, Android-version og seneste scanningsdiagnostik udfyldt. Tilføj selv en fuld beskrivelse og relevante skærmbilleder.\n\nDu skal være logget ind på GitHub. Du kan gennemgå og redigere kladden, før du indsender den. Indsendte rapporter og vedhæftninger er offentlige. Ingen billeder vedhæftes automatisk."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Åbn appindstillinger"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Åbn GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Oplysninger om open source"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Åbn ‘Hvorfor dette felt?’ for at se belægget for den endelige placering, eller vælg en udelukket kandidat for at følge dens bevis."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV – Apache-licens 2.0. Bruges til at finde gitteret og korrigere dets perspektiv.\n\nAndroidX, Jetpack Compose og CameraX – Apache-licens 2.0.\n\nKotlin – Apache-licens 2.0.\n\nCiffergenkenderen blev trænet på MNIST-databasen med håndskrevne cifre af LeCun, Cortes og Burges sammen med cifre gengivet med åbne systemskrifttyper og cifre tegnet programmatisk."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCVs native biblioteker kunne ikke indlæses"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Tag et billede af en anden opgave."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Billeder, du beholder, gemmes i appens private lager og fjernes, når du sletter dem eller afinstallerer appen."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Billeder, appen ikke kunne lave en opgave ud af. Send et, så kan det blive undersøgt."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Vælg et ciffer, og gennemgå rækkerne for at finde dem, hvor det har præcis to mulige felter tilbage. Vælg to sådanne rækker, og se, om ét felt fra hver ligger i samme kolonne.\n\nHvis de gør, ligger de to felter i samme kolonne og kan ikke begge indeholde cifferet. Derfor gør mindst én af de fjerne ender det – de to felter på den anden side. Du ved ikke hvilken, og det behøver du heller ikke: Ethvert felt, der ser begge fjerne ender, kan få cifferet fjernet.\n\nGentag derefter med kolonner i stedet for rækker. Formen er en høj bygning med en lav ved siden af, hvilket forklarer navnet og hjælper dig med at genkende den, når du har set nogle stykker."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Vælg et ciffer. Find en række, hvor det har præcis to mulige placeringer, og en kolonne, hvor det har præcis to. Kontrollér nu, om ét felt fra rækken og ét fra kolonnen ligger i samme boks.\n\nHvis de gør, kan de ikke begge være cifferet – én boks, ét ciffer. Derfor er mindst én af de to resterende ender cifferet, og ethvert felt, der ser begge ender, kan få det fjernet.\n\nGrunden til, at folk overser denne teknik, er, at intet ligger på linje: De fire felter danner en skæv form, og det eneste, der binder dem sammen, er den boks, de to indre ender deler."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Vælg et tomt felt, og gennemgå 1 til 9. Streg alt ud, som allerede findes i dets række, kolonne eller boks. Hvis præcis ét ciffer er tilbage, skal det stå dér.\n\nDette er den teknik, alle de andre skal bane vej for. Alt det sværere handler om at få et felt ned på én kandidat, så når en sværere teknik giver resultat, skal du se her igen."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Vælg ét ciffer, og ignorér alle andre. Gennemgå rækkerne, og notér dem, hvor cifferet kun har to eller tre mulige felter tilbage. Se efter %1$s sådanne rækker, hvis felter ligger i de samme %2$s kolonner.\n\nHvis du finder dem, skal hver af disse %3$s rækker placere cifferet i én af kolonnerne, og to rækker kan ikke bruge samme kolonne. Tilsammen optager de derfor cifferet i alle %4$s kolonner – og alle andre felter i disse kolonner kan få det fjernet.\n\nGentag derefter det hele med kolonner og rækker byttet om. Halvdelen af disse mønstre findes på den anden led, og det er den halvdel, de fleste aldrig leder efter."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Placér %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Placér %1$s i række %2$s, kolonne %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Placér %1$s i dit markerede felt."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Vedhæft relevante skærmbilleder med GitHubs vedhæftningsfunktion: Opgaven, de genkendte cifre, resultatet af Kontrollér eller det tiptrin, der viser problemet. Medtag forventede og faktiske resultater, hvor det er nyttigt."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Slet venligst mine indsendelser til Sudoku Buddys genkendelse. Kvitterings-id\'er: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Erstat denne tekst med en fuld beskrivelse af problemet eller idéen. Giv rapporten en kort, beskrivende titel."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Ret kameraet mod en sudokuopgave"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Ret kameraet mod en sudokuopgave."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Ret kameraet mod en sudokuopgave på papir. Appen aflæser de trykte cifre og alt, hvad du har skrevet, løser opgaven og kan give dig et tip, kontrollere dine svar eller vise hele løsningen."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Pegende par"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"SEND"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Forbereder opgave…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Forrige"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Forrige trin"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Trykt"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Privatlivspolitik"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Lagring af sudokuer"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Sudokuer"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Sudokuer aflæses og løses på denne telefon. Hvis du indsender en usikker aflæsning eller aktiverer automatisk deling, sendes sudokubilledet, de oprindelige aflæsninger, usikkerhedsmarkeringer og dine rettelser sikkert til Freevia til analyse af genkendelsen og privat træning. Rapporter indeholder ikke din enhedsmodel eller diagnostik. Automatisk deling er valgfri; der er ingen konti, løbende brugsanalyse eller annoncesporing. Træningskopier kan slettes med kvitteringen, men en allerede trænet model kan beholde det, den har lært. Brug Indsendelseskvitteringer i Indstillinger til at slette en rapport."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Sudokuer fotograferet til test kom fra sudoku.cba.si. Denne app er ikke tilknyttet dem."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Sudokuer, du fotograferer, gemmes her, så du kan fortsætte med dem senere."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Aflæsning"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Aflæst som et håndskrevet %1$s, %2$s sikker."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Aflæst som et trykt %1$s, %2$s sikker."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Aflæst som tomt – ingen skrift fundet."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Aflæst som kandidatnoter med blyant og ignoreret."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Aflæsning gennemgået."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Aflæsning indsendt. Tak!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Seneste scanningsdiagnostik (forudfyldt)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Genkendelsen kan tage fejl, især ved håndskrift. Brug Aflæs til at sammenligne de genkendte tal med billedet, og tryk på et felt for at rette det. Appen markerer usikre aflæsninger til gennemgang; selv en sikker aflæsning kan være forkert."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Forkast antagelse"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Fjerne par"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Fjern %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nFjern %1$s fra "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Fjernet"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Gennemgå ræsonnementet igen"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Indberet en fejl eller idé på GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Prøv kameraet igen"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Tilbage til trin %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Vis forklaring"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Gennemgå eller indsend aflæsning"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Gennemgå aflæsning"</string>
+    <string name="msg_right_883361d5" formatted="false">"Højre"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Forløbet er færdigt. Gå tilbage for at gennemgå et træk, eller prøv selv trinnene."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"række %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Række %1$s, kolonne %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Række %1$s, kolonne %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"række $1, kolonne $2"</string>
+    <string name="msg_row_634768da" formatted="false">"række"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"rækker"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", udelukket %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Scanningsdiagnostikken kunne ikke læses."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Skærmbilleder eller opgaveeksempler"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Næstbedste bud: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Vælg til øvelse"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Valgt: række %1$s, kolonne %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Send diagnostik (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Send diagnostik"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Send disse scanninger"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Send dette billede"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Indstillinger"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"syv"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Del automatisk ved usikkerhed"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Del usikre aflæsninger automatisk?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Vis modstrid"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Vis mig alle %1$s i din sudoku"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Vis mig den i din sudoku"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Simpel farvelægning"</string>
+    <string name="msg_six_44778d82" formatted="false">"seks"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Skyskraber"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", løsning %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Løs"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Løst, og alle svar er rigtige."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Svar med hjælp fra løseren: sæt %1$s i %2$s. Kandidaterne er %3$s. Appens understøttede teknikker fandt ikke et træk fra denne stilling. Dens søgning fandt %4$s i den entydige løsning; et detaljeret bevis for søgningens forgreninger er ikke tilgængeligt."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nSvar med hjælp fra løseren: Appens understøttede teknikker fandt intet træk. Et detaljeret bevis er ikke tilgængeligt."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminering med hjælp fra løseren: en søgning udelukker %1$s i det fremhævede felt, men appen kunne ikke lave et kort modstridsforløb til visning. Et detaljeret bevis er ikke tilgængeligt."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Nogle felter kan indeholde noter frem for et helt tal."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Nogle tal blev ikke aflæst sikkert."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Noget gik galt under aflæsningen af billedet."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Felt"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nStartkandidater: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Trin %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Ret kameraet op"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategier"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Indsendelseskvittering"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Indsendelseskvitteringen er ugyldig."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Indsendelseskvitteringer (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Indsendelseskvitteringer"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Svaret på indsendelsen mangler %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Status for svaret på indsendelsen er ugyldig."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Indsendelsestjenesten er ikke konfigureret."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Indsendelsestjenesten returnerede HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Indsendelse er ikke tilgængelig i denne build."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Indsend"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Indsend fremtidige usikre aflæsninger automatisk"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Indsend aflæsning"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Indsend usikker aflæsning til analyse"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Indsend opdatering"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Indsendt"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Indsender…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy-diagnostik"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy-feedback - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy udgives af Freevia. Kontakt: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy aflæser sudokuer med kameraet og skal derfor have adgang til det. Genkendelse og sudokuhistorik bliver på din telefon. Hvis du vælger at indsende en usikker aflæsning, sendes dens billede og resultater sikkert til Freevia for at forbedre genkendelsen. Automatisk deling er valgfri og kan slås fra i Indstillinger."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy-scanning"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy-scanninger"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku Buddys kildekode er licenseret under Apache License 2.0. Freevias branding er underlagt særskilte varemærkerettigheder."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku er en opgavetype uden ophavsret. Denne app løser sudokuer, du allerede har; den gengiver eller distribuerer ikke andres sudokuer."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", understøttende belæg"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Antag, at det markerede felt indeholder %1$s. Tallene med nummermarkeringer er hypotetiske."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Antag, at dette felt var %1$s. Følg pilene i rækkefølge: hvert felts værdi er bestemt af de tidligere placeringer – enten er det ciffer det eneste, feltet stadig kan indeholde, eller også er feltet det eneste sted, cifferet stadig kan stå.\n\nDet efterlader den røde enhed uden plads til %2$s. De markerede %3$s\'er i den viser de steder, hvor cifferet kunne have stået, og hvert af dem er et felt, som en af pilene netop har optaget. En enhed uden plads til et ciffer er umulig – derfor er dette felt ikke %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Antag, at dette felt var %1$s. Følg pilene i rækkefølge: hvert felt er tvunget af de tidligere placeringer – enten er tallet det eneste, feltet stadig kan indeholde, eller også er feltet det eneste sted, tallet stadig kan stå. Det røde felt ender så uden noget muligt tal, hvilket er umuligt – så feltet er ikke %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Antag, at dette felt var %1$s. Følg pilene i rækkefølge: hvert felts værdi er bestemt af de tidligere placeringer – enten er det ciffer det eneste, feltet stadig kan indeholde, eller også er feltet det eneste sted, cifferet stadig kan stå.\n\nDet efterlader den røde række uden plads til %2$s. De markerede %3$s\'er i den viser de steder, hvor cifferet kunne have stået, og hvert af dem er et felt, som en af pilene netop har optaget. En række uden plads til et ciffer er umulig – derfor er dette felt ikke %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Antag, at dette felt var %1$s. Følg pilene i rækkefølge: hvert felts værdi er bestemt af de tidligere placeringer – enten er det ciffer det eneste, feltet stadig kan indeholde, eller også er feltet det eneste sted, cifferet stadig kan stå.\n\nDet efterlader den røde blok uden plads til %2$s. De markerede %3$s\'er i den viser de steder, hvor cifferet kunne have stået, og hvert af dem er et felt, som en af pilene netop har optaget. En blok uden plads til et ciffer er umulig – derfor er dette felt ikke %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Antag, at dette felt var %1$s. Følg pilene i rækkefølge: hvert felt er tvunget af de tidligere placeringer – enten er tallet det eneste, feltet stadig kan indeholde, eller også er feltet det eneste sted, tallet stadig kan stå.\n\nDet efterlader den røde %2$s uden plads til %3$s. De markerede %4$s\'ere i den viser, hvor tallet kunne have stået, og hvert af disse felter er netop blevet optaget af en af pilene. En %5$s uden plads til et tal er umulig – så feltet er ikke %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Antag, at dette felt var %1$s. Følg pilene i rækkefølge: hvert felts værdi er bestemt af de tidligere placeringer – enten er det ciffer det eneste, feltet stadig kan indeholde, eller også er feltet det eneste sted, cifferet stadig kan stå.\n\nDet efterlader den røde kolonne uden plads til %2$s. De markerede %3$s\'er i den viser de steder, hvor cifferet kunne have stået, og hvert af dem er et felt, som en af pilene netop har optaget. En kolonne uden plads til et ciffer er umulig – derfor er dette felt ikke %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Skift til Efter for at se trækket og dets følger i gitteret."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Sværdfisk"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Tag et nyt billede"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Tag endnu et billede"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Vælg ét tal, og markér hver enhed, hvor det har præcis to mulige felter tilbage. De to fungerer som en vippe: det ene indeholder tallet, og det andet gør ikke.\n\nStart hvor som helst, og farv et felt for eksempel blåt. Farv dets vippemakker grønt, så dennes makker blåt igen, og fortsæt, til kæden slutter. Enten indeholder alle blå felter tallet, eller også gør alle grønne – du ved ikke hvilke, og det er nok til to ting.\n\nFor det første: Hvis to felter med samme farve optræder i én række, kolonne eller boks, er den farve umulig. Tallet fjernes derfor fra alle felter med den farve, og den anden farve giver svaret i hele kæden.\n\nFor det andet: Et felt uden for kæden, der kan se både et blåt og et grønt felt, kan få tallet fjernet, fordi ét af de to indeholder det, uanset hvilken vej kæden falder.\n\nDet går langsomt med blyant, men er umagen værd: én farvelægning fjerner ofte et tal fra halvdelen af gitteret."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Tag ét tal og én enhed ad gangen – for eksempel: Hvor kan en 4 stå i denne boks? Streg alle felter i enheden ud, som allerede indeholder et tal, eller som ser en 4 i deres egen række eller kolonne. Hvis ét felt er tilbage, skal 4 stå der.\n\nFælden er, at du ikke kan se det ved at se på feltet: det kan sagtens tillade fem andre tal, så intet ved det virker tvunget. Se på tallet i stedet for feltet, så bliver det straks tydeligt."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Tag billede"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Tag billedet automatisk"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tryk på et markeret felt for at gennemgå det, eller bekræft, at alle aflæsninger er korrekte."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Tryk først på et felt i gitteret."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Afprøv %1$s som en antagelse i det markerede felt. Det er ikke et svar. Følg konsekvenserne for at se, hvorfor antagelsen ikke holder."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Afprøv antagelse"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Tak, fordi du hjælper med at forbedre genkendelsen. Dit sudokubillede, dine aflæsninger og rettelser vil blive brugt til analyse og træning."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Det er også et gyldigt %1$s-træk. Dette forløb viser et andet træk; sammenlign dets bevis nedenfor."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Det er ikke det træk, der er valgt til dette trin. Der kan være andre gyldige træk; se igen, eller vis forklaringen til dette trin."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Det er rigtigt"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Det er resten af sudokuen. %1$s felter kræver svar med hjælp fra løseren, fordi appens understøttede teknikker ikke fandt et træk. Deres detaljerede søgebeviser er ikke tilgængelige."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Det er resten af sudokuen. Ét felt kræver et svar med hjælp fra løseren, fordi appens understøttede teknikker ikke fandt et træk. Det detaljerede søgebevis er ikke tilgængeligt."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Det er resten af sudokuen fra start til slut."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Billedet kunne ikke gemmes, så der er intet at sende."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Det felt tillader %1$s. Find det træk, som dette trins teknik begrunder, eller vis forklaringen."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Det felt er allerede udfyldt. Vælg et tomt felt."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Antagelsen er forkastet. Vi vender tilbage til de faktiske kandidater og streger %1$s ud i det markerede felt. De hypotetiske tal fjernes."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Kameraet kunne ikke tage billedet."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kameraet er ikke tilgængeligt. Luk andre kameraapps, og prøv igen."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"den anden"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Billedet fra %1$s og alt, der er aflæst fra det, fjernes fra denne telefon. Det kan ikke fortrydes."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Billedet er på din opgaveliste under \"Kunne ikke aflæses\"."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Pivotfeltet er %1$s eller %2$s. Uanset hvad tvinges ét af de to andre felter til %3$s, så intet felt, der ser dem begge, kan være %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Et pegende par læst baglæns. Vælg en række eller kolonne og et tal, der stadig mangler en plads i den. Markér alle felter på linjen, som kan indeholde tallet. Hvis de alle ligger i én boks, skal tallet stå på den del af linjen, der ligger i boksen – så det kan ikke stå andre steder i boksen, heller ikke i de to rækker eller kolonner, du ikke så på.\n\nLigesom et pegende par placerer dette ikke i sig selv noget; det skaber plads til noget, der gør."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"De trykte tal danner ikke en sudoku, der kan løses."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nDe resterende kandidater i %1$s er {%2$s}. Placér %3$s i række %4$s, kolonne %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Rapporten er for stor til at indsende."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"En Y-wing, hvor pivotfeltet har én kandidat mere. Find et felt med præcis tre kandidater, for eksempel {1,4,7}, som kan se to felter med to kandidater – ét med {1,7} og ét med {4,7}.\n\nNu kan alle tre være 7, og ét af dem skal være det. Derfor skal et felt kunne se alle tre for at få kandidaten udelukket, ikke kun de to vingefelter – i praksis betyder det, at feltet ligger i samme boks som pivotfeltet og på linje med et vingefelt.\n\nFærre elimineringer end en Y-wing og lettere at overse af samme grund: pivotfeltet skiller sig ikke ud."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Der er et felt, du kan udfylde i den fremhævede boks.\n\nTryk på Tip igen for at få at vide, hvilken teknik der finder det."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Der er ikke mere at udlede her."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Disse %1$s felter tillader alle kun %2$s og %3$s, og hvert felt ser det næste, så tallene skifter hele vejen. Der er et ulige antal forbindelser mellem %4$s og %5$s, så de indeholder forskellige tal – det udelukker %6$s fra alle felter, der ser dem begge."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Disse %1$s felter tillader tilsammen kun %2$s, så de tal udfylder dem i en eller anden rækkefølge. Det udelukker %3$s fra resten af denne %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Disse %1$s felter kan tilsammen kun indeholde %2$s, så de cifre udfylder felterne i en eller anden rækkefølge. Det udelukker %3$s fra resten af denne række."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Disse %1$s felter kan tilsammen kun indeholde %2$s, så de cifre udfylder felterne i en eller anden rækkefølge. Det udelukker %3$s fra resten af denne kolonne."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Disse %1$s felter kan tilsammen kun indeholde %2$s, så de cifre udfylder felterne i en eller anden rækkefølge. Det udelukker %3$s fra resten af denne blok."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Dette er de oprindelige kandidater til dit felt. Spor forklarer, hvilke muligheder der kan udelukkes."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Disse tal kan ikke danne en sudoku, og der er for mange fejl til at sige hvilke. Tryk på et felt for at rette aflæsningen, eller tag billedet igen."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Disse tal kan ikke danne en sudoku. Rettelser i de %1$s indrammede felter ville løse problemet – tryk på et af dem for at rette aflæsningen."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Disse tal kan ikke danne en sudoku. En rettelse i det ene indrammede felt ville løse problemet – tryk på det for at rette aflæsningen."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Disse tal danner ikke en sudoku, så et af dem er aflæst forkert. Tryk på Løs for at se, hvilke felter der skal rettes."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Disse fire felter danner et rektangel på tværs af to bokse, og tre af dem tillader kun %1$s. Hvis %2$s også kun tillod de to tal, kunne tallene byttes rundt i rektanglet, og sudokuen ville have to løsninger. Den har én, så %3$s skal indeholde noget andet – og %4$s fjernes."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"De når ikke til slutningen: noget her har sat appen helt til vægs."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Dette udfylder ingen felter. Det udelukker %1$s fra %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Dette udfylder ingen felter. Det udelukker %1$s fra %2$s felter."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Dette udfylder ingen felter. Det udelukker %1$s fra ét felt."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nDette er den første af %1$s slutninger, der fører til svaret."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Dette bevis forklarer ét tip, inklusive de kandidatelimineringer, der fører til svaret. Gå frem trin for trin for at følge ræsonnementet i gitteret, og fortsæt derefter med hele forløbet."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Denne sudoku kunne ikke klargøres."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Denne sudoku kunne ikke gemmes. Du kan stadig bruge den nu. Frigør lagerplads, før du tager et nyt billede."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Denne sudoku har mere end én løsning, så et trykt tal blev sandsynligvis overset. Viser løsning %1$s af %2$s – tryk på Løs igen for at se den næste. De indrammede felter er forskellige i de viste løsninger."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Billedet af denne sudoku kunne ikke åbnes."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Dette ræsonnement udelukker %1$s eksisterende "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Dette felt kan indeholde kandidatnoter frem for et helt tal. Kontrollér det."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Denne visning omfatter tidligere fjernede kandidater. Åbn deres begrundelser nedenfor for at kontrollere dem."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tre"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"For mørkt til at skelne gitterlinjerne"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Spor"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Afprøvet"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Prøv selv"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Slå til"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Drej telefonen, så sudokuen vender rigtigt."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Vejleder"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"to"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"To felter med samme kandidatpar, forbundet som en vippe via det ene tal, tvinger det andet tal ind i ét af dem."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Drage med to snore"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Entydigt rektangel"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"enhed"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable stiller ingen CellReading-liste til rådighed; de præcise inputfelter og resultatet bevares."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"model-formatversionen understøttes ikke"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Usikker"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Brug enhedens sprog"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Brug %1$s, tryk på et felt, hvor en kandidat kan fjernes, og vælg derefter tallet."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Brug %1$s, tryk på det felt, du kan udfylde, og vælg derefter tallet."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Meget svær"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"blev"</string>
+    <string name="msg_were_910adfb4" formatted="false">"blev"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Hvad forventede du, eller hvordan ville din idé hjælpe dig med at løse eller lære sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Hvad skete der, og hvordan gentages det (ved fejl)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Hvad det gør"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Hvor"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Hvorfor %1$s blev fjernet fra r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Hvorfor"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Hvorfor ikke %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Hvorfor dette felt? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" med løsningen. Brug Kontrollér til at se dem."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Arbejd baglæns fra dit felt. Vælg et spørgsmål nedenfor."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Arbejd tal for tal i stedet for felt for felt. Skriv for én enhed ned, hvor hvert manglende tal stadig kan stå. Find derefter %1$s tal, hvis lister tilsammen kun omfatter %2$s felter.\n\nDe %3$s tal skal udfylde de %4$s felter, så alle andre kandidater i dem kan streges ud – hvilket ofte straks skaber en nøgen single eller et nøgent par.\n\nDenne teknik synes mange er den sværeste, fordi der ikke er noget at se, når man ser på felterne: de har stadig masser af kandidater. Mønstret ligger i tallene."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Arbejd kun med felter, der har præcis to kandidater tilbage.\n\nStart ved ét, for eksempel {2,6}, og antag, at det ikke er 2 – så er det 6. Gå til et felt, det kan se, som også har en 6, for eksempel {6,4}: det kan ikke være 6, så det er 4. Gå til et felt, som dette felt ser, og som har en 4, og fortsæt, med hvert trin tvunget af det foregående.\n\nHvis du når et felt, hvis andet tal er 2 – det tal, du begyndte med at udelukke – er du færdig. Enten var det første felt alligevel 2, eller også fulgte kæden, og det sidste felt er 2. Den ene eller den anden ende indeholder tallet, så et felt, der ser begge ender, kan ikke indeholde det.\n\nHold kæderne korte. Fire eller fem felter kan findes med blyant; derefter bliver det bogføring, og en tvangskæde er det ærlige navn for det."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"arbejdskanten skal være positiv og endelig"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Kunne ikke aflæses"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Skrevet"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Forkert"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-kæde"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-wing"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Du ryddede dette felt."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Du ændrede dette til et håndskrevet %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Du ændrede dette til et trykt %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Dine ændringer er synlige, men kunne ikke gemmes. Frigør lagerplads, og prøv at redigere sudokuen igen."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Dine billeder og dit privatliv"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Dine sudokuer"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Dine gemte sudokuer"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Dit felt ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Dit felt forbliver indrammet. Grønne felter viser begrundelsen; overstregede tal er udelukket."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

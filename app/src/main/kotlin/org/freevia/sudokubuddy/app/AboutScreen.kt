@@ -43,17 +43,17 @@ fun AboutScreen(onClose: () -> Unit) {
             item {
                 Section("What it does") {
                     Text(
-                        "Point the camera at a sudoku puzzle on paper. The app reads the " +
+                        localized("Point the camera at a sudoku puzzle on paper. The app reads the " +
                             "printed digits and anything you have written in, solves it, and " +
                             "can give you a hint, check your answers, or show the whole " +
-                            "solution.",
+                            "solution."),
                         style = MaterialTheme.typography.bodyMedium,
                     )
                     Text(
-                        "Recognition can make mistakes, especially with handwriting. " +
+                        localized("Recognition can make mistakes, especially with handwriting. " +
                             "Use Read to compare the recognised digits with the photo, and " +
                             "tap any square to correct it. The app marks uncertain readings " +
-                            "for review; a confident reading can still be wrong.",
+                            "for review; a confident reading can still be wrong."),
                         style = MaterialTheme.typography.bodyMedium,
                     )
                 }
@@ -64,7 +64,7 @@ fun AboutScreen(onClose: () -> Unit) {
             item {
                 Section("Your photos and your privacy") {
                     Text(
-                        "Puzzles are read and solved on this phone. If you submit an uncertain " +
+                        localized("Puzzles are read and solved on this phone. If you submit an uncertain " +
                         "reading, or enable automatic sharing, the puzzle photo, original " +
                             "readings, uncertainty flags and your corrections are sent securely " +
                             "to Freevia for recognition analysis and private training. Reports do not include your " +
@@ -72,21 +72,21 @@ fun AboutScreen(onClose: () -> Unit) {
                             "are no accounts, routine usage analytics or ad tracking. Training " +
                             "copies can be deleted by receipt, though a " +
                             "model already trained may retain learned changes. Use Submission " +
-                            "receipts in Settings to delete a report.",
+                            "receipts in Settings to delete a report."),
                         style = MaterialTheme.typography.bodyMedium,
                     )
                     Text(
-                        "Photographs you keep are stored in this app's private storage and are " +
-                            "removed when you delete them or uninstall the app.",
+                        localized("Photographs you keep are stored in this app's private storage and are " +
+                            "removed when you delete them or uninstall the app."),
                         style = MaterialTheme.typography.bodyMedium,
                     )
                     Text(
-                        "Sudoku Buddy is published by Freevia. Contact: info@freevia.org",
+                        localized("Sudoku Buddy is published by Freevia. Contact: info@freevia.org"),
                         style = MaterialTheme.typography.bodyMedium,
                     )
                     TextButton(onClick = {
                         uriHandler.openUri("https://freevia.org/sudoku-buddy/privacy")
-                    }) { Text("Privacy policy") }
+                    }) { Text(localized("Privacy policy")) }
                 }
             }
 
@@ -94,18 +94,18 @@ fun AboutScreen(onClose: () -> Unit) {
 
             item {
                 Section("Open source notices") {
-                    Text("Sudoku Buddy source code is licensed under Apache License 2.0. " +
-                        "Freevia branding is subject to separate trademark rights.")
-                    TextButton(onClick = { licensesOpen = true }) { Text("Licenses") }
+                    Text(localized("Sudoku Buddy source code is licensed under Apache License 2.0. " +
+                        "Freevia branding is subject to separate trademark rights."))
+                    TextButton(onClick = { licensesOpen = true }) { Text(localized("Licenses")) }
                     Text(
-                        "OpenCV - Apache License 2.0. Used for finding and straightening the " +
+                        localized("OpenCV - Apache License 2.0. Used for finding and straightening the " +
                             "grid.\n\n" +
                             "AndroidX, Jetpack Compose and CameraX - Apache License 2.0.\n\n" +
                             "Kotlin - Apache License 2.0.\n\n" +
                             "The digit recogniser was trained on the MNIST database of " +
                             "handwritten digits by LeCun, Cortes and Burges, together with " +
                             "digits rendered from open system fonts and digits drawn " +
-                            "programmatically.",
+                            "programmatically."),
                         style = MaterialTheme.typography.bodySmall,
                     )
                 }
@@ -116,14 +116,14 @@ fun AboutScreen(onClose: () -> Unit) {
             item {
                 Section("Puzzles") {
                     Text(
-                        "Sudoku is a public-domain puzzle form. This app solves puzzles you " +
+                        localized("Sudoku is a public-domain puzzle form. This app solves puzzles you " +
                             "already have; it does not reproduce or distribute anyone's " +
-                            "puzzles.",
+                            "puzzles."),
                         style = MaterialTheme.typography.bodySmall,
                     )
                     Text(
-                        "Puzzles photographed for testing came from sudoku.cba.si. This app is " +
-                            "not affiliated with them.",
+                        localized("Puzzles photographed for testing came from sudoku.cba.si. This app is " +
+                            "not affiliated with them."),
                         style = MaterialTheme.typography.bodySmall,
                     )
                 }
@@ -135,7 +135,7 @@ fun AboutScreen(onClose: () -> Unit) {
 @Composable
 private fun Section(title: String, content: @Composable () -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text(title, style = MaterialTheme.typography.titleMedium)
+        Text(localized(title), style = MaterialTheme.typography.titleMedium)
         content()
     }
 }

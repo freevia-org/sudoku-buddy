@@ -61,13 +61,13 @@ internal fun TutorPicker(
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
-                    if (state.tutorHintProof) "Hint reasoning" else state.tutorTechnique ?: "Full route",
+                    localized(if (state.tutorHintProof) "Hint reasoning" else state.tutorTechnique ?: "Full route"),
                     style = MaterialTheme.typography.labelLarge,
                     maxLines = 1,
                 )
                 Icon(
                     Icons.Filled.ArrowDropDown,
-                    contentDescription = "Choose what to be shown",
+                    contentDescription = localized("Choose what to be shown"),
                     modifier = Modifier.size(18.dp),
                 )
             }
@@ -75,8 +75,8 @@ internal fun TutorPicker(
 
         DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
             DropdownMenuItem(
-                text = { Text("Full route") },
-                trailingIcon = { Text("$steps") },
+                text = { Text(localized("Full route")) },
+                trailingIcon = { Text(localized("$steps")) },
                 onClick = {
                     open = false
                     onChange(state.tutor())
@@ -89,8 +89,8 @@ internal fun TutorPicker(
             val available = Techniques.all.filter { (counts[it.name] ?: 0) > 0 }
             for (technique in available) {
                 DropdownMenuItem(
-                    text = { Text(technique.name) },
-                    trailingIcon = { Text("${counts[technique.name]}") },
+                    text = { Text(localized(technique.name)) },
+                    trailingIcon = { Text(localized("${counts[technique.name]}")) },
                     onClick = {
                         open = false
                         onChange(state.tutor(technique.name))
@@ -100,7 +100,7 @@ internal fun TutorPicker(
             if (available.isEmpty()) {
                 DropdownMenuItem(
                     enabled = false,
-                    text = { Text("No technique applies here") },
+                    text = { Text(localized("No technique applies here")) },
                     onClick = {},
                 )
             }
@@ -131,20 +131,20 @@ internal fun ReadingBanner(
         verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Text(state.readingHeadline, style = MaterialTheme.typography.titleSmall,
+            Text(localized(state.readingHeadline), style = MaterialTheme.typography.titleSmall,
                 color = Overlays.uncertain, modifier = Modifier.weight(1f))
             IconButton(onClick = { onChange(state.copy(readingReviewExpanded = false)) }) {
-                Icon(Icons.Filled.KeyboardArrowUp, contentDescription = "Collapse reading review")
+                Icon(Icons.Filled.KeyboardArrowUp, contentDescription = localized("Collapse reading review"))
             }
         }
         // The reader's own reason, when it has one. "One cell looked like a printed
         // digit but is not" says far more than a count does, and it was being thrown away.
         state.liveNote?.let {
-            Text(it, style = MaterialTheme.typography.bodySmall)
+            Text(localized(it), style = MaterialTheme.typography.bodySmall)
         }
         if (state.openQuestions.isNotEmpty()) {
             Text(
-                "Tap a marked square to review it, or confirm all readings are correct.",
+                localized("Tap a marked square to review it, or confirm all readings are correct."),
                 style = MaterialTheme.typography.bodySmall,
             )
         }
@@ -157,7 +157,7 @@ internal fun ReadingBanner(
                             else state.copy(overlay = OverlayMode.READING))
                     },
                     modifier = Modifier.weight(1f),
-                ) { Text(if (showingReading) "All correct" else "Review reading") }
+                ) { Text(localized(if (showingReading) "All correct" else "Review reading")) }
             }
             val submitted = state.submittedCorrectionCount >= 0
             val hasUpdate = state.readingCorrections.size > state.submittedCorrectionCount
@@ -166,16 +166,16 @@ internal fun ReadingBanner(
                 enabled = !submissionInFlight && (!submitted || hasUpdate),
                 modifier = Modifier.weight(1f),
             ) {
-                Text(when {
+                Text(localized(when {
                     submissionInFlight -> "Submitting…"
                     !submitted -> "Submit reading"
                     hasUpdate -> "Submit update"
                     else -> "Submitted"
-                })
+                }))
             }
         }
         if (state.submissionReceipts.isNotEmpty()) {
-            TextButton(onClick = onReceipts) { Text("Submission receipt") }
+            TextButton(onClick = onReceipts) { Text(localized("Submission receipt")) }
         }
     }
 }
@@ -206,16 +206,16 @@ internal fun CellEditor(state: PuzzleState, index: Int, onChange: (PuzzleState) 
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         Text(
-            "Row ${index / 9 + 1}, column ${index % 9 + 1}",
+            localized("Row ${index / 9 + 1}, column ${index % 9 + 1}"),
             style = MaterialTheme.typography.titleMedium,
         )
         val report = state.reports?.getOrNull(index)
         Text(
-            describeCell(cell, report, corrected = state.reports != null && report == null),
+            localized(describeCell(cell, report, corrected = state.reports != null && report == null)),
             style = MaterialTheme.typography.bodyMedium,
         )
         report?.secondGuess()?.let {
-            Text(it, style = MaterialTheme.typography.bodySmall)
+            Text(localized(it), style = MaterialTheme.typography.bodySmall)
         }
 
         Keypad(chosen = cell.digit) { digit ->
@@ -229,7 +229,7 @@ internal fun CellEditor(state: PuzzleState, index: Int, onChange: (PuzzleState) 
                     onChange(state.withCell(index, null, CellSource.EMPTY).copy(selectedCell = null))
                 },
                 modifier = Modifier.weight(1f),
-            ) { Text("Empty") }
+            ) { Text(localized("Empty")) }
 
             if (cell.isFilled) {
                 OutlinedButton(
@@ -241,7 +241,7 @@ internal fun CellEditor(state: PuzzleState, index: Int, onChange: (PuzzleState) 
                     },
                     modifier = Modifier.weight(1f),
                 ) {
-                    Text(if (cell.source == CellSource.GIVEN) "Handwritten" else "Printed")
+                    Text(localized(if (cell.source == CellSource.GIVEN) "Handwritten" else "Printed"))
                 }
             }
         }
@@ -257,7 +257,7 @@ internal fun CellEditor(state: PuzzleState, index: Int, onChange: (PuzzleState) 
                     )
                 },
                 modifier = Modifier.fillMaxWidth(),
-            ) { Text("That is right") }
+            ) { Text(localized("That is right")) }
         }
     }
 }
@@ -307,10 +307,10 @@ private fun Keypad(chosen: Int?, onPick: (Int) -> Unit) {
                 val digit = row * 3 + column + 1
                 val press = { onPick(digit) }
                 if (digit == chosen) {
-                    Button(onClick = press, modifier = Modifier.weight(1f)) { Text("$digit") }
+                    Button(onClick = press, modifier = Modifier.weight(1f)) { Text(localized("$digit")) }
                 } else {
                     OutlinedButton(onClick = press, modifier = Modifier.weight(1f)) {
-                        Text("$digit")
+                        Text(localized("$digit"))
                     }
                 }
             }

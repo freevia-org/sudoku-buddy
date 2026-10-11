@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s、%2$s %3$s、Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\n強調表示されたマスが、その証明の根拠です。\n\nもう一度「ヒント」を押すと、該当するマスを表示します。"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。この%5$sでは、%6$sを入れられる場所は2つだけで、それぞれが両端の一方と同じ行・列・ブロックにあります。したがって、その2つのどちらかは%7$sになり、それと同じ行・列・ブロックにある端は%8$sになります。どちらの場合も片方の端が%9$sになるため、両端のそれぞれと同じ行・列・ブロックにあるすべてのマスから%10$sを除外できます。"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。このボックスで%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ボックスのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ボックスのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ボックスのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。この列で%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ボックスのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ボックスのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ボックスのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。この行で%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ボックスのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ボックスのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ボックスのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s（API %2$s）"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%2$s行、%3$s列の%1$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"ステップ%2$sの%1$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$sには%2$sしか入りません。"</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%3$sため、%1$sには%2$sを入れられません "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"同じ列%5$s内の%3$sには%4$sしか入らないため、%1$sに%2$sは入りません。"</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"同じブロック%5$s内の%3$sには%4$sしか入らないため、%1$sに%2$sは入りません。"</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"同じ行%5$s内の%3$sには%4$sしか入らないため、%1$sに%2$sは入りません。"</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"同じブロック%5$s内の%3$sに%4$sが入っているため、%1$sに%2$sは入りません。"</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"同じ列%5$s内の%3$sに%4$sが入っているため、%1$sに%2$sは入りません。"</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"同じ行%5$s内の%3$sに%4$sが入っているため、%1$sに%2$sは入りません。"</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$sには%2$sが入っています。"</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"空欄%1$s"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s、入力"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"ここには%1$sが入ります。この列%2$sで、まだ%3$sを置けるマスはここだけです。\n\n%4$s\n\n%5$sの現在の候補は%6$sですが、どの列にも%7$sが必ず1つだけ入ります。したがって、行%9$s、列%10$sに%8$sを入れます。"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$sはここに入る必要があります。この%2$s %3$sで、まだ%4$sを入れられるマスはここだけです。\n\n%5$s\n\n%6$sには現在%7$sを入れられますが、すべての%8$sには%9$sがちょうど1つ必要です。したがって、%11$s行、%12$s列に%10$sを入れます。"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"ここには%1$sが入ります。このボックス%2$sで、まだ%3$sを置けるマスはここだけです。\n\n%4$s\n\n%5$sの現在の候補は%6$sですが、どのボックスにも%7$sが必ず1つだけ入ります。したがって、行%9$s、列%10$sに%8$sを入れます。"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"ここには%1$sが入ります。この行%2$sで、まだ%3$sを置けるマスはここだけです。\n\n%4$s\n\n%5$sの現在の候補は%6$sですが、どの行にも%7$sが必ず1つだけ入ります。したがって、行%9$s、列%10$sに%8$sを入れます。"</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$sを入れられる場所は、この行に2つ、この列に2つあります。%2$sと%3$sは同じブロックにあるため、両方が%4$sにはなれません。したがって、%5$sと%6$sのどちらかにその数字が入り、両方のそれぞれと同じ行・列・ブロックにあるすべてのマスから%7$sを除外できます。"</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" 同じ%2$s内の%1$s。"</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" 同じボックス内の%1$s。"</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" 同じ列内の%1$s。"</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" 同じ行内の%1$s。"</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$sはそのマスからすでに除外されています。その候補は "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$sは%2$sによって除外されます。その根拠は "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"同じ列%4$s内の%2$sには%3$sしか入らないため、%1$sは除外されます。"</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"同じ行%4$s内の%2$sには%3$sしか入らないため、%1$sは除外されます。"</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"同じブロック%4$s内の%2$sには%3$sしか入らないため、%1$sは除外されます。"</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"同じブロック%4$s内の%2$sに%3$sが入っているため、%1$sは除外されます。"</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"同じ列%4$s内の%2$sに%3$sが入っているため、%1$sは除外されます。"</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"同じ行%4$s内の%2$sに%3$sが入っているため、%1$sは除外されます。"</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"最新の番号付きマス（%2$s行、%3$s列）には%1$sが確定します。%4$s 矢印は、確定に寄与した配置から続いています。それ以前の配置による影響も関係します。"</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"クラスパスに%1$sがありません"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%2$s中%1$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"そのうち%1$s手はマスを埋める手で、残りは先に候補を除外して道を開く手です。"</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$sペア"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"印刷%1$s、%2$s、誤り%3$s"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"印刷%1$s、%2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"印刷%1$s"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s、印刷されたヒント数字"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$sクアッド"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"受け付けられなかった写真%1$s枚、新しい順："</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s：%2$sを除外"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"マスの数：%1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"この解答手順は%1$sステップで構成され、対応する解法のうち最も難しいものは%2$sです。%3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$sトリプル"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$sは、それ以前の候補に関する推論によって%2$sから除外されました。"</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"手書き%1$s"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"%1$sx%2$sの画像には%3$sバイト必要ですが、%4$sバイトでした"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"数字でもピリオドでもないマスがあります"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"候補が2つのマスをつないだ連鎖で、両端が同じ数字に対応する場合、その数字はどちらかの端に入ります。"</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"ある数字が行・列・ブロック内の1か所にしか入らない場合、その場所に入ります。"</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"手書きの%1$s。"</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"印刷された%1$s。"</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"赤いマスには、アプリがその場所で読み取った数字が表示されています。書いた数字と違う場合は、マスをタップして修正してください。"</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"候補が1つしか残っていないマスには、その数字が入ります。"</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"解法の一覧がすべてを網羅することはありません。最難関の問題は、一覧にあるどの解法でも解けないように作られています。そのため、どの解法でも次の手が見つからない場合、ガイドは1つのマスの候補を試して答えを確定し、そうしたことを明示して、そこから推論を続けます。必ず問題の最後まで到達し、答えを調べたことを推論だったと偽ることはありません。"</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"候補が3つの軸マスと、それに対応する候補が2つの挟みマス2つにより、3つすべてと同じ行・列・ブロックにあるマスから、ある数字を除外できます。"</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"候補が2つの軸マスと、候補が2つの挟みマス2つにより、両方の挟みマスと同じ行・列・ブロックにあるマスから、ある数字を除外できます。"</string>
+    <string name="msg_about_4efca0d1" formatted="false">"このアプリについて"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"後"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"この手の後"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"すべて正解"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"この3つのマスにはいずれも%1$sが入り、そのうち1つには必ず入ります。そのため、3つすべてと同じ行・列・ブロックにあるマスには%2$sを入れられません。"</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"カメラを許可"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"もう少しです。紙を平らにし、カメラに対して傾きのない状態にしてください"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"何も除外しない操作は推論ではありません"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" と "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android：%1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"答え"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## アプリと端末（入力済み）"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- アプリ：Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"アスペクト比は正の値である必要がありますが、%1$sでした"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"仮定 · 仮の数字"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"仮定を棄却 · 実際の候補を復元"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"少なくとも%1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"自動撮影"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"読み取りが不確かな問題の写真、読み取り結果、その後のマスの修正を、認識の分析と学習のためFreeviaに自動共有します。初期設定ではオフです。"</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"光の反射を避けてください"</string>
+    <string name="msg_back_76900f1b" formatted="false">"戻る"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"前の質問に戻る"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"図のヒントに戻る"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"選んだマスに戻る"</string>
+    <string name="msg_before_9bb72500" formatted="false">"前"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"この手の前"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"青い数字は解答です。マスをタップして読み取り結果を修正できます。"</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"ブロック%1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"ブロック"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"ブロック"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"ボックスライン・リダクション"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"カメラ"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"入れられるのは"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"キャンセル"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">"、候補%1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"撮影の証拠"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"ある数字が2か所にしか入らない行・列・ブロックを通して連鎖を作り、2色で交互に色分けすると、一方の色はすべて正しい配置になります。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じ行にありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じボックスにありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じ列にありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"%1$sが2か所にしか入らない行・列・ブロックを通して連鎖を作ると、これらのマスは2色に交互に分かれ、一方の色はすべて正しい配置になります。%2$s色の2つのマスが同じ%3$s内にあるのは不可能です。そのため、この色は誤りで、この色のすべてのマスから%4$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"%1$sが2か所にしか入らない行・列・ブロックを通して連鎖を作ると、これらのマスは2色に交互に分かれ、一方の色はすべて正しい配置になります。これらのマスは両方の色のマスと同じ行・列・ブロックにあるため、連鎖のどちらの色が正しくても、つながるマスの1つに%2$sが入ります。したがって、これらのマスには入りません。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じボックスにありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じ列にありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じ行にありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"確認が必要な不確かなマス：%1$s。"</string>
+    <string name="msg_check_9d60841e" formatted="false">"確認"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"不確かなマスを1つ確認してください。"</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">"、正解と確認済み"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"候補を選ぶと、その数字が選んだマスに入らない理由を確認できます。"</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"言語を選択"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"表示する内容を選択"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"閉じる"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"ヒントを閉じる"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"読み取り確認を折りたたむ"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"カラーとグレースケールのマスは同じ幾何形状である必要があります"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"列%1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"列"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"列"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"強制連鎖を比較し、たどるマスが少ないものを優先します。連鎖が短いと、解答全体の手順が増えることがあります。"</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"帰結%1$s/%2$s · 仮の数字"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"含む"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"コンテンツタイプ"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"全手順を続ける"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"矛盾 · 仮定が不成立"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">"、矛盾"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"矛盾：赤い%1$sに%2$sを入れる場所が残っていません。これは不可能なので、最初の仮定は誤りです。"</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"矛盾：赤いマスに候補が残っていません。これは不可能なので、最初の仮定は誤りです。"</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"削除依頼をコピー"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"正解です。下の説明と自分の推論を比べてください。"</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"撮影した画像をデコードできませんでした"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"写真から印刷された数字を見つけられませんでした。"</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"盤面の線を識別できませんでした。もう一度お試しください。"</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHubを開けませんでした。%1$sのサポートにお問い合わせください。"</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"デバッグ用の撮影証拠を保存できませんでした"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"読み取り結果を送信できませんでした。接続後にもう一度お試しください。"</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"行き詰まり"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"削除"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"削除"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"レポートを削除"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"この写真を削除"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"この問題を削除"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"この問題を削除しますか？"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"この送信データを削除しますか？"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"削除中…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"削除を確認できませんでした。接続を確認して、もう一度お試しください。"</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"削除依頼"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"削除の応答で、この受領証が確認されませんでした。"</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"削除サービスがHTTP %1$sを返しました。"</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"発生したことと再現手順を記入してください。認識された数字を先に確認・修正したかも記入してください。アイデアの場合は「該当なし」と記入してください。"</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">"、このヒントの対象"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- 端末：%1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"ブラウザーの下書きに収まるよう診断情報を短縮しました。アプリの「診断情報を送信」から完全なレポートを共有できます。"</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"数字は1..9である必要がありますが、%1$sでした"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"読み取れなかった数字"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"証拠のディスク保存が所要時間に影響するため、遅延のベンチマークではありません。"</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">"、解答と不一致"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"各受領証は、送信した問題の1つの版を識別します。ここで削除すると、Freeviaに非公開で保存されたレポートを削除できます。"</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" 以前の除外：%1$s。前の手順へのリンクから証明を確認できます。"</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← 前の根拠（深さ%1$s）"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"それ以前の仮の配置によって、候補が1つだけになっています。"</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"この証明で使った前の手順"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"マスを編集"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"八つ"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"空欄"</string>
+    <string name="msg_empty_8a112150" formatted="false">"空欄。"</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"空欄"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"英語"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"一致しない入力"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"一致しない入力"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"どれもマスに数字を入れる解法です。"</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"すべてのマスが埋まっていますが、%1$s個の答えが解答と一致しません。"</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"すべてのマスが埋まっていますが、1つの答えが解答と一致しません。"</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"解答が1つの数独は、どれも推論で解けます。推測は必要なく、役立つこともまれです。以下は、このアプリが認識して説明できる解法を、簡単な順に並べたものです。開いている問題に適用できる解法があれば、適用できるすべての場所を表示します。"</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"これまでに書いた答えはすべて正解です。"</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"今確認できる例：どれも現在の盤面から始まります。"</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"横線は10本のはずですが、%1$s本でした"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"縦線は10本のはずですが、%1$s本でした"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81マスのはずですが、%1$sマスでした"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"各ブロックは81マスのはずですが、%1$sマスと%2$sマスでした"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"8ビットの単一チャンネルのはずですが、%1$sでした"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"28x28の画像のはずですが、値は%1$s個でした"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## 期待する動作または改善案"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"縦横それぞれ10本の線が必要です"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"2ブロックのはずですが、%1$sブロックでした"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"前の候補除外を説明（%1$s）"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"ヒントを説明"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"候補が2つか3つだけ残っているマスを探します。候補は少ないほどよく、周りの行・列・ブロックが埋まっているほど、さらによくなります。\n\n候補を1つ選び、鉛筆で薄く書き込みます。次に、その帰結をたどります。そのマスと同じ行・列・ブロックにあるすべてのマスから、その数字が除外されます。すると、どこかのマスの候補が1つになり、さらに別のマスが確定する、といった連鎖が起こることがあります。そのまま続けます。\n\n結果は2通りです。連鎖が途切れた場合は何も分からなかったので、消して別の候補を試します。あるいは、候補がまったくないマスや、ある数字を入れる場所がない行に到達します。これは不可能なので、鉛筆で書き込んだ数字は誤りで、確実に除外できます。\n\nほかの方法で進めなくなったときに使う解法です。時間がかかり、パターンを見つけるよりも記録を追う作業ですが、パターンでは見つからない手を発見できます。1つの候補を除外するだけで、簡単な解法が再び使えることもよくあります。ただし、さらに深い探索が必要な局面もあります。"</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"同じ2つの候補、たとえば{3,7}を持ち、互いに同じ行・列・ブロックにない2つのマスを探します。通常、この2つは遠く離れています。\n\n次に、7が2つのマスにしか入らない行・列・ブロックを探します。その一方が最初のペアの1つ目と、もう一方が2つ目と同じ行・列・ブロックにあるものを探します。これがリンクです。\n\nリンクの2つのマスのどちらかに7が入ります。どちらであっても、それと同じ行・列・ブロックにあるペアのマスには7を入れられず、3が入ります。どちらの端に3が入るかは分かりませんが、どちらかに入ることは確かです。それだけで、両端と同じ行・列・ブロックにあるすべてのマスから3を除外できます。\n\n難しいのはリンクを見つけることなので、逆の順で探します。まず、ある数字が2か所にしか入らない行・列・ブロックに印を付け、その両側に対応するペアを探します。"</string>
+    <string name="msg_finished_05343e98" formatted="false">"完了"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"盤面が画面内で傾きなく写り、静止したらシャッターを押してください。状態にかかわらず、ボタンはいつでも使えます。"</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"盤面全体を画面に収めてください。"</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"盤面全体を画面に収めてください"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"五つ"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"前の手をもとに次の手を導く手順をたどります。"</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"証明全体を順にたどる"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"候補が2つのマスの連鎖をたどります。%1$sが%2$sでなければ、各マスは直前のマスによって確定し、最後に%3$sが%4$sになります。したがって、どちらかの端に%5$sが入り、両端と同じ行・列・ブロックにあるすべてのマスから除外できます。"</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"強制連鎖"</string>
+    <string name="msg_four_04efaf08" formatted="false">"四つ"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"2行・2列・2ブロックにある4つのマスが、すべて同じ2つの候補だけを持つことはありません。そうなると、問題に2つの解答ができてしまいます。"</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freeviaでの削除は確認できましたが、この端末から受領証を削除できませんでした。再試行して端末内の削除を完了してください。"</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freeviaはこの版のレポートと、非公開の学習用コピーを削除します。今後の修正により、共有設定に従って新しいレポートが作成される場合があります。すでに学習したモデルには、学習による変化が残る場合があります。"</string>
+    <string name="msg_full_route_891b475b" formatted="false">"全手順"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"今後の不確かな読み取りでは、傾きを補正した問題の写真、認識結果、修正内容を、分析と学習のためFreeviaに送信します。学習用コピーは「送信受領証」から削除するまで保持されます。学習済みモデルには、学習による変化が残る場合があります。不確かな問題がすでに開いている場合は、今すぐ送信されます。設定でオフにできます。"</string>
+    <string name="msg_gentle_96124817" formatted="false">"やさしい"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"光の反射で線が見えなくなっています。紙を光から遠ざける方向に傾けてください"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"グレー画像(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"灰色のマスは鉛筆のメモで、アプリは無視します。数字の下のバーは読み取りの確信度です。マスをタップすると詳細を確認できます。"</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"手書き"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"難しい"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"隠れた"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"隠れペア"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"隠れクアッド"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"隠れシングル"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"隠れトリプル"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"前の根拠を隠す"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"見つけ方を隠す"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">"、ヒント%1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"ヒント"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"ヒントの証明"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"ヒントの推論"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"動かさないでください..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"動かさずに待つか、シャッターをタップしてください"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"カメラがピントを合わせる間、動かさないでください..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"端末を水平にしてください"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"問題の真上で端末を水平にしてください。"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"問題の真上で端末を水平にしてください"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"見つけ方"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n答えに至る手順："</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"候補がちょうど2つのマスを探します。Yウイングは、そのようなマス3つだけで構成されます。\n\n1つを軸にします。たとえば{2,5}です。軸と同じ行・列・ブロックにあり、{2,9}を持つマスと、{5,9}を持つ別のマスを探します。軸は2か5です。2なら最初の挟みマスは9になり、5なら2つ目の挟みマスは9になります。どちらの場合も、一方の挟みマスに9が入ります。どちらかは分かりませんが、知る必要もありません。\n\nそのため、両方の挟みマスと同じ行・列・ブロックにあるマスには9を入れられません。通常、これらのマスは長方形を完成させる残り2つの角です。"</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">"、仮定の%1$s、入力した答えではありません"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"同じ行・列・ブロック内の%1$s個の数字が、同じ%2$s個のマスにしか入らない場合、それらのマスにほかの数字は入りません。"</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"同じ行・列・ブロック内の%1$s個のマスの候補を合わせて、ちょうど%2$s個になる場合、それらの数字はそのマスに入り、その行・列・ブロックのほかのマスには入りません。"</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"ある数字が1つの行で2か所、1つの列で2か所にしか入らず、それぞれの1か所が同じブロックにある場合、残り2か所のどちらかにその数字が入ります。"</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"ある数字が2つの行でそれぞれ2か所にしか入らず、それぞれの1か所が同じ列にある場合、残り2か所のどちらかにその数字が入ります。"</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"ある数字が行または列内で入れる場所がすべて1つのブロック内にある場合、そのブロックのほかのマスからその数字を除外できます。"</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"ある数字が%1$s行内で入れる場所が同じ%2$s列だけにある場合、その列のほかのマスから除外できます。行と列を入れ替えても同じです。"</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"ある数字がブロック内で入れる場所がすべて同じ行または列にある場合、その行または列のほかのマスからその数字を除外できます。"</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"ある数字を仮定すると、入れられる数字がないマスが生じる場合、その数字は誤りです。"</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"画像の寸法は正の値である必要があります"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"すべて同じ2つの候補を持つマスの連鎖で、連鎖の長さが奇数の場合、両端には異なる数字が入ります。"</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"この%1$sつの%2$sでは、%3$sがこの%4$sつの%5$sにしか入りません。それぞれが1か所ずつ使ってすべてを占めるため、その%7$sのほかのマスから%6$sを除外できます。"</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"この%1$s列では、%2$sが入る位置はこの%3$s行に限られます。これらの列で該当する行をすべて使うため、それらの行のほかのすべてのマスから%4$sを除外できます。"</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"この%1$s行では、%2$sが入る位置はこの%3$s列に限られます。これらの行で該当する列をすべて使うため、それらの列のほかのすべてのマスから%4$sを除外できます。"</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"この2つの%1$sでは、%2$sがそれぞれ2か所にしか入らず、%3$sと%4$sは同じ%5$s内にあります。そのため、両方が%6$sになることはありません。したがって、%7$sと%8$sのどちらかには入り、両方と同じ行・列・ブロックにあるすべてのマスから%9$sを除外できます。"</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"この2列では、%1$sが入る位置は各列に2か所だけです。%2$sと%3$sは同じ行にあるため、両方が%4$sになることはありません。したがって、%5$sと%6$sのどちらかがその数字になり、その両方と行・列・ボックスのいずれかを共有するすべてのマスから%7$sを除外できます。"</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"この2行では、%1$sが入る位置は各行に2か所だけです。%2$sと%3$sは同じ列にあるため、両方が%4$sになることはありません。したがって、%5$sと%6$sのどちらかがその数字になり、その両方と行・列・ボックスのいずれかを共有するすべてのマスから%7$sを除外できます。"</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"この%1$sでは、%2$sがこの%3$s個のマスにしか入らないため、これらのマスはその数字用に確保されます。そのため、これらのマスから%4$sを除外できます。"</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"この%1$sでは、%2$sが1つのブロック内にしか入りません。そのため、%3$sはそのブロックのこの%4$s上に入り、ブロックのほかのマスから除外できます。"</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"このボックスでは、%1$sが入る位置はこの%2$sマスに限られるため、これらのマスはその数字で埋まります。したがって、これらのマスから%3$sを除外できます。"</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"この列では、%1$sが入る位置はこの%2$sマスに限られるため、これらのマスはその数字で埋まります。したがって、これらのマスから%3$sを除外できます。"</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"この行では、%1$sが入る位置はこの%2$sマスに限られるため、これらのマスはその数字で埋まります。したがって、これらのマスから%3$sを除外できます。"</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"写真、読み取り結果、修正内容が含まれます。設定でオフにできます。"</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"1つのブロック内で、2つか3つのマスにしか入らない数字を探し、それらがすべて同じ行または同じ列にあるか確認します。そうであれば、その数字は必ずその行または列のどこかにあります。場所は分かりませんが、このブロック内であることは確かです。そのため、同じ行または列のブロック外には入りません。\n\nこれだけでは数字を確定できません。候補を除外することで、別の場所にシングルが現れるようにします。"</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"このブロック内では、%1$sがこの%2$sにしか入りません。そのため、%3$sはこの中のどこかに入り、%4$sのほかのマスから除外できます。"</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## 問題またはアイデア"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"ここでは%1$sか所に適用できます。次へ進むと順に確認できます。"</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"ここでは1か所に適用できます。次へ進むと確認できます。"</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"この局面では適用できる場所がありません。"</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"強調表示された%2$sで、%1$sを入れられる唯一の場所です。"</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"丸で囲まれたマスです。\n\nもう一度「ヒント」を押すと数字が表示されます。"</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"ジェリーフィッシュ"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"保存"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"強制連鎖を短くする"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"言語"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"ライセンス"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"1つの行・列・ブロックで、候補が少ないマスを探します。そのうち%1$s個を選び、候補をまとめます。候補がちょうど%2$s個なら、その%3$s個の数字は確保されています。どの数字がどこに入るかはまだ分からなくても、その%4$s個のマスに何らかの順で入る必要があります。\n\nそれだけで十分です。同じ行・列・ブロックのほかのすべてのマスから、それらの数字を除外できます。その結果、どこかのマスがシングルになることがよくあります。\n\nすべてのマスが同じ候補を持つ必要はありません。{2,7}、{2,9}、{7,9}も有効なトリプルで、見落とされがちな形です。"</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"同じ2つの候補、たとえば{4,9}を持ち、隣り合うマス同士が同じ行・列・ブロックにある連鎖を探します。3つでは足りず、少なくとも4つ必要です。\n\n順に交互に色を付けます。各マスが次のマスと同じ行・列・ブロックにあるため、隣同士に同じ数字は入りません。そのため、連鎖全体は4, 9, 4, 9、または9, 4, 9, 4となり、どちらかは分かりません。\n\nどちらの場合も、異なる色の2つのマスには異なる数字が入り、一方が4、もう一方が9になります。そのため、両方と同じ行・列・ブロックにあるマスにはどちらも入らず、両方の候補を一度に除外できます。\n\nこのパターンは、すべてのマスが同じ候補を持つため見つけやすくなっています。盤面上で同じペアをたどり、どこでつながるか確認してください。"</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"同じ2つの候補、たとえば{1,6}を持ち、長方形の3つの角にあるマスを探します。長方形はちょうど2つのブロックに収まる必要があります。2行と2列がまたぐのは2つのブロックで、4つではありません。\n\n次に4つ目の角を見ます。ここも1と6だけなら、問題に2つの解答ができてしまいます。長方形の1と6を入れ替えても、ほかはすべて成立するためです。正しく作られた問題には解答が1つしかないので、4つ目の角には別の数字が入る必要があります。ほかの候補は残し、1と6を除外します。\n\nこれは、盤面ではなく出題者を根拠とする唯一の論法です。公開された問題には有効ですが、すでに誤った数字を書き込んだ問題には役立ちません。その場合、一意である以前に、解答自体がない可能性があるためです。"</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"このブロックを見てください。枠線をたどると、このヒントで説明するマスが分かります。"</string>
+    <string name="msg_marks_65479e3e" formatted="false">"鉛筆のメモ"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"ふつう"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"もっと見る"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"明るさが足りません"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"解答が複数あるため、印刷された数字を読み落としています。「解く」を押すと、解答と異なる箇所を確認できます。"</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"少し離してください"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"近づけてください"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"近づけてください。盤面が小さすぎて読み取れません。"</string>
+    <string name="msg_naked_472fd902" formatted="false">"裸の"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"ネイキッドペア"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"ネイキッドクアッド"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"ネイキッドシングル"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"ネイキッドトリプル"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"数字だけを示すのではなく、解法名とその証明となるマスを表示します。"</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"少なくとも4点必要ですが、%1$s点でした"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"確認が必要"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"新しい数独"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"次の帰結"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"次の手順"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"画像が自動的に添付されることはありません。ここで送信した報告と添付ファイルは公開されます。非公開で送りたい事例は info@freevia.org に送信してください。"</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"アプリを最後にインストールしてから、読み取りを拒否された写真はありません。"</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"スキャン診断情報はありません。"</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"適用できる解法がありません"</string>
+    <string name="msg_none_140bedbf" formatted="false">"なし"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"どれも直接マスに数字を入れる解法ではありません。候補を除外することで、難しい問題を解き進められるようにします。"</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"現在の問題にはありません。"</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"数字認識モデルのファイルではありません"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"確信を持って読み取れませんでした。最も近い推定は、%3$sで%1$sの%2$sです。このマスは自分で設定してください。"</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"まだ9×9の盤面として読み取れません。盤面だけで画面を埋めるか、そのまま撮影してください"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"未開始"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"この端末からは何も送信できませんでした。"</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"解くべき箇所は残っていません。"</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"このアプリが対応する解法では、これ以上推論できません。"</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"異常なし"</string>
+    <string name="msg_ok_565339bc" formatted="false">"確認"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"一つ"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"1つのマスが印刷された数字に見えましたが、違いました。"</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"印刷された数字を1つ自動修正しました。"</string>
+    <string name="msg_one_square_238078b4" formatted="false">"1マス"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"ここには%1$sしか入りません。ほかの数字はすべて、この行・列・ブロックのいずれかにすでにあります。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"ここに入るのは%1$sだけです。ほかの8つの数字のうち、%2$s個は強調表示されたマスで使われています。%3$sは以前このマスから除外された候補で、周囲に見える数字によって除外されたわけではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち4種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち6種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち1種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち7種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち5種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"ここには%1$sしか入りません。強調表示されたマスによって、ほかの8つの数字のうち%2$s個が除外されます。%3$s %4$sは、周囲に見える数字によってではなく、以前にこのマスから除外されています。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち2種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"ここに入るのは%1$sだけです。ほかの8つの数字のうち、%2$s個は強調表示されたマスで使われています。%3$sは以前このマスから除外された候補で、周囲に見える数字によって除外されたわけではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち3種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"ここには%1$sしか入りません。ほかの8つの数字は、この行・列・ブロックにある入力済みのマスか、候補が1つに確定したマスによって除外されます。"</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"ここには%1$sしか入りませんが、周囲のマスだけでは理由が分かりません。ほかの8つの数字はすべて、行・列・ブロックに書かれている数字によってではなく、前の推論によってこのマスから除外されています。"</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"印刷された数字が%1$s個しか見つからず、問題としては少なすぎます。"</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"90度単位の回転のみ対応しています。%1$sには対応していません"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"アプリのバージョン、端末の機種、Androidのバージョン、最近のスキャン診断情報を入力した下書きをブラウザーで開きます。詳しい説明と関連するスクリーンショットは自分で追加してください。\n\nGitHubへのログインが必要です。送信前に下書きを確認・編集できます。送信したレポートと添付ファイルは公開されます。写真が自動で添付されることはありません。"</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"アプリの設定を開く"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"GitHubを開く"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"オープンソースの通知"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"「なぜこのマス？」を開くと、最終的な配置の根拠を確認できます。また、除外された候補を選ぶと、その証明をたどれます。"</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache License 2.0。盤面の検出と傾き補正に使用しています。\n\nAndroidX、Jetpack Compose、CameraX - Apache License 2.0。\n\nKotlin - Apache License 2.0。\n\n数字認識モデルは、LeCun、Cortes、Burgesによる手書き数字のMNISTデータベースに加え、公開システムフォントで描画した数字と、プログラムで描いた数字を使って学習しました。"</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCVのネイティブライブラリを読み込めませんでした"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"別の問題を撮影してください。"</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"保存した写真は、このアプリの非公開ストレージに保存され、写真を削除するかアプリをアンインストールすると削除されます。"</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"アプリが問題として読み取れなかった写真です。送信すると分析できます。"</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"数字を1つ選び、各行を見て、入れる場所がちょうど2つ残っている行を探します。そのような行を2つ選び、それぞれのマスの1つが同じ列にあるか確認します。\n\n同じ列にあれば、その2つのマスに両方ともその数字を入れることはできません。そのため、少なくとも反対側の端、つまり残り2つのマスのどちらかに入ります。どちらかは分かりませんが、知る必要もありません。両方の遠い端と同じ行・列・ブロックにあるマスから、その数字を除外できます。\n\n次に、行の代わりに列で同じことをします。高いビルの隣に低いビルがあるような形が名前の由来で、何度か見ると、その形で見つけられるようになります。"</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"数字を1つ選びます。その数字がちょうど2か所にしか入らない行と、ちょうど2か所にしか入らない列を探します。次に、行のマス1つと列のマス1つが同じブロックにあるか確認します。\n\n同じブロックにあれば、その2つが両方ともその数字になることはありません。1つのブロックに同じ数字は1つだけだからです。そのため、残り2つの端の少なくとも一方にその数字が入り、両端と同じ行・列・ブロックにあるマスから除外できます。\n\n見落とされる理由は、整列した形がないことです。4つのマスは不均等な形をしており、それらを結び付けているのは、内側の2つの端が共有するブロックだけです。"</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"空のマスを1つ選び、1から9まで順に調べ、同じ行・列・ブロックにすでにある数字を除外します。数字がちょうど1つ残れば、それが入ります。\n\nほかのすべての解法は、この状態を作るためにあります。難しい解法はどれも、どこかのマスの候補を1つに減らす方法なので、難しい解法で進めたら、次にこの解法を確認してください。"</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"数字を1つ選び、ほかの数字は無視します。各行を見て、その数字が入る場所が2つか3つしか残っていない行を記録します。そのマスが同じ%2$s列に並ぶ、%1$sつの行を探します。\n\n見つかった場合、その%3$sつの行はそれぞれ、その列のどれかに数字を入れる必要があり、2つの行が同じ列を使うことはできません。そのため、それらが合わせて%4$s列すべてのその数字を占め、同じ列のほかのすべてのマスから除外できます。\n\n次に、行と列を入れ替えて同じことをします。このパターンの半分は逆向きで見つかりますが、多くの人はその半分を探しません。"</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"%1$sを入れる"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"%2$s行%3$s列に%1$sを入れます。"</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"枠で囲まれたマスに%1$sを入れます。"</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"GitHubの添付機能を使い、問題、認識された数字、答えの確認結果、問題が分かるヒントの段階など、関連するスクリーンショットを添付してください。必要に応じて、期待する結果と実際の結果も記入してください。"</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"私が送信したSudoku Buddyの認識データを削除してください。受領証ID： "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"この案内を、問題またはアイデアの詳しい説明に置き換えてください。レポートには、内容が分かる短いタイトルを付けてください。"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"数独の問題にカメラを向けてください"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"数独の問題にカメラを向けてください。"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"紙の数独の問題にカメラを向けてください。アプリは印刷された数字と書き込んだ内容を読み取って問題を解き、ヒントを出したり、答えを確認したり、解答全体を表示したりできます。"</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"ポインティングペア"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"投稿"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"問題を準備中…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"前へ"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"前の手順"</string>
+    <string name="msg_printed_d8742933" formatted="false">"印刷"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"プライバシーポリシー"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"問題の保存"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"問題"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"問題の読み取りと解答はこのスマートフォン上で行います。読み取りが不確かな結果を送信するか、自動共有を有効にすると、問題の写真、元の読み取り結果、不確かさを示すフラグ、あなたの修正内容が、認識の分析と非公開の学習のためにFreeviaへ安全に送信されます。レポートに端末の機種や診断情報は含まれません。自動共有は任意です。アカウント、通常の利用状況の分析、広告追跡はありません。学習用のコピーは送信控えを使って削除できますが、学習済みのモデルには学習による変化が残る場合があります。レポートを削除するには、設定の「送信控え」を使ってください。"</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"テスト用に撮影した問題はsudoku.cba.siのものです。このアプリは同サイトと提携していません。"</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"撮影した問題はここに保存され、後で再開できます。"</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"読み取り"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"手書きの%1$sと読み取り。確信度：%2$s。"</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"印刷された%1$sと読み取り。確信度：%2$s。"</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"空欄と読み取り。インクは検出されませんでした。"</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"鉛筆で書かれた候補メモと読み取り、無視しました。"</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"読み取り結果を確認しました。"</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"読み取り結果を送信しました。ありがとうございます！"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## 最近のスキャン診断情報（入力済み）"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"認識には誤りが生じることがあり、特に手書きでは起こりやすくなります。「読み取り」で認識した数字を写真と比較し、マスをタップして修正してください。不確かな読み取りには確認用の印が付きますが、確信度が高い読み取りでも誤る場合があります。"</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"仮定を棄却"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"リモートペア"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$sを除外"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\n%1$sを除外するマス： "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"除外済み"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"推論を再生"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"GitHubで不具合やアイデアを報告"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"カメラを再試行"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"ステップ%1$sに戻る"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"解説を表示"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"読み取り結果を確認・送信"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"読み取り結果を確認"</string>
+    <string name="msg_right_883361d5" formatted="false">"正解"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"解答手順は完了です。戻って任意の手を確認するか、自分で各ステップを試してみましょう。"</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"行%1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"%1$s行、%2$s列"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"%1$s行、%2$s列、 "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"$1行、$2列"</string>
+    <string name="msg_row_634768da" formatted="false">"行"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"行"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">"、除外済み%1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"スキャンの診断情報を読み取れませんでした。"</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## スクリーンショットまたは問題の例"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"第2候補：%1$s、%2$s。"</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"練習用に選択"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"選択中：%1$s行、%2$s列"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"診断情報を送信（%1$s）"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"診断情報を送信"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"これらのスキャンを送信"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"この写真を送信"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"設定"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"七つ"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"不確かな読み取りを自動共有"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"不確かな読み取りを自動共有しますか？"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"矛盾を表示"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"問題上の%1$sをすべて表示"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"問題上の該当箇所を表示"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"シンプルカラーリング"</string>
+    <string name="msg_six_44778d82" formatted="false">"六つ"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"スカイスクレイパー"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">"、解答%1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"解く"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"解けました。すべての答えが正しいです。"</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"探索による補助解答：%2$sに%1$sを入れます。候補は%3$sです。この状態では、アプリが対応する解法で次の手を見つけられませんでした。探索により唯一の解の%4$sが見つかりましたが、探索の分岐を詳しく示す証明はありません。"</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nソルバーによる答え：アプリが対応する解法では次の手が見つかりませんでした。詳しい証明はありません。"</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"探索による補助除外：探索により強調表示されたマスから%1$sを除外できますが、アプリは表示用の短い矛盾の推論過程を生成できませんでした。詳細な証明はありません。"</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"一部のマスには、数字そのものではなくメモがある可能性があります。"</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"確信度の低い読み取りがある数字があります。"</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"写真の読み取り中に問題が発生しました。"</string>
+    <string name="msg_square_c11092bc" formatted="false">"マス"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\n初期候補：%1$s。"</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"ステップ%1$s：%2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"傾きを直す"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"解法"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"送信控え"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"送信控えが無効です。"</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"送信控え（%1$s）"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"送信控え"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"送信への応答に%1$sがありません。"</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"送信への応答ステータスが無効です。"</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"送信サービスが設定されていません。"</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"送信サービスがHTTP %1$sを返しました。"</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"このビルドでは送信できません。"</string>
+    <string name="msg_submit_155f816c" formatted="false">"送信"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"今後の不確かな読み取りを自動送信"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"読み取り結果を送信"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"不確かな読み取りを分析用に送信"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"更新を送信"</string>
+    <string name="msg_submitted_64900440" formatted="false">"送信済み"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"送信中…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddyの診断情報"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddyへのフィードバック - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy は Freevia が配信しています。お問い合わせ：info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddyはカメラで問題を読み取るため、カメラへのアクセスが必要です。認識処理と問題の履歴はスマートフォン内に留まります。不確かな読み取りの送信を選ぶと、認識を改善するために、その写真と結果がFreeviaへ安全に送信されます。自動共有は任意で、設定から無効にできます。"</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddyのスキャン"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddyのスキャン"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku BuddyのソースコードはApache License 2.0に基づいて提供されています。Freeviaのブランドには別途商標権が適用されます。"</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"数独というパズル形式はパブリックドメインです。このアプリは、すでにお持ちの問題を解くもので、他者の問題を複製・配布しません。"</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">"、裏付けとなる根拠"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"印の付いたマスが%1$sだと仮定します。番号付きの数字は仮定上のものです。"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤いユニット（行・列・ボックス）には%2$sを置ける位置がなくなります。ユニット内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がないユニットは成立しないため、このマスは%4$sではありません。"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"このマスが%1$sだと仮定します。矢印を順にたどってください。各マスは、それ以前の配置によって確定します。そのマスに入れられる数字がそれしか残っていないか、その数字を入れられる場所がそのマスしか残っていないためです。すると赤いマスには入れられる数字が1つもなくなり、これはあり得ません。したがって、このマスは%2$sではありません。"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤い行には%2$sを置ける位置がなくなります。行内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がない行は成立しないため、このマスは%4$sではありません。"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤いボックスには%2$sを置ける位置がなくなります。ボックス内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がないボックスは成立しないため、このマスは%4$sではありません。"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"このマスが%1$sだと仮定します。矢印を順にたどってください。各マスは、それ以前の配置によって確定します。そのマスに入れられる数字がそれしか残っていないか、その数字を入れられる場所がそのマスしか残っていないためです。\n\nすると、赤い%2$sには%3$sを入れる場所がなくなります。そこに記された%4$sは、入れられたはずの場所を示しており、どれも矢印の1つによって別の数字が入ったマスです。数字を入れる場所のない%5$sはあり得ません。したがって、このマスは%6$sではありません。"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤い列には%2$sを置ける位置がなくなります。列内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がない列は成立しないため、このマスは%4$sではありません。"</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"「適用後」に切り替えると、その手と盤面への影響を確認できます。"</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"ソードフィッシュ"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"新しい写真を撮る"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"もう一度撮影"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"数字を1つ選び、その数字を入れられるマスがちょうど2つ残っている行・列・ブロックをすべて印で示します。その2つはシーソーの関係です。一方にはその数字が入り、もう一方には入りません。\n\nどこからでもよいので、1つのマスを例えば青にします。シーソーの相手を緑にし、そのマスと対になる次のマスをまた青にして、つながりが途切れるまで続けます。青のマスすべてが正しいか、緑のマスすべてが正しいかのどちらかです。どちらかは分かりませんが、これだけで2つのことが分かります。\n\nまず、同じ色のマスが1つの行・列・ブロックに2つあれば、その色は不可能です。その色のすべてのマスからその数字を除外でき、もう一方の色ではすべてその数字が確定します。\n\n次に、チェーンの外で青と緑の両方と同じ行・列・ブロックにあるマスからは、その数字を除外できます。チェーンのどちらが正しくても、その2つのどちらかにその数字が入るからです。\n\n鉛筆では時間がかかりますが、やる価値があります。1回の色分けで、盤面の半分からある数字を除外できることもよくあります。"</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"数字を1つ、行・列・ブロックを1つずつ調べます。例えば、このブロックのどこに4を入れられるでしょうか？ すでに数字が入っているマスや、同じ行・列に4があるマスをすべて除外します。1マスだけ残れば、そこに4が入ります。\n\n見落としやすいのは、マスだけを見ても分からないことです。そのマスには他に5つの数字も入れられるかもしれず、何も確定しているようには見えません。マスではなく数字に注目すると、すぐに見えてきます。"</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"撮影"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"自動で撮影"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"印の付いたマスをタップして確認するか、すべての読み取りが正しいことを確認してください。"</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"まず盤面のマスをタップしてください。"</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"印の付いたマスに%1$sが入ると仮定して検証します。これは答えではありません。その結果をたどり、なぜ矛盾するか確認してください。"</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"仮定を検証"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"認識の改善へのご協力ありがとうございます。問題の写真、読み取り結果、修正内容は分析と学習に使用されます。"</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"それも%1$sによる正しい手です。この解答手順では別の手を示しています。下の証明と比較してください。"</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"このステップで選ばれた手ではありません。他にも正しい手がある可能性があります。もう一度探すか、このステップの解説を表示してください。"</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"正解です"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"これで、残りの問題を解く手順が示されました。%1$sマスは、アプリが対応する解法で次の手を見つけられなかったため、探索による補助解答が必要です。それらの詳細な探索の証明はありません。"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"これで、残りの問題を解く手順が示されました。1マスは、アプリが対応する解法で次の手を見つけられなかったため、探索による補助解答が必要です。その詳細な探索の証明はありません。"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"これで、残りの問題を最後まで解く手順がすべて示されました。"</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" 写真を保存できなかったため、送信できるものがありません。"</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"そのマスには%1$sを入れられます。このステップの解法で根拠を示せる手を探すか、解説を表示してください。"</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"そのマスはすでに埋まっています。空いているマスを選んでください。"</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"仮定は棄却されました。実際の候補に戻り、印の付いたマスから%1$sを除外します。仮定上の数字は消去されます。"</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"カメラで写真を撮影できませんでした。"</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"カメラを使用できません。他のカメラアプリを閉じてから、もう一度お試しください。"</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"もう一方"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"%1$sの写真と、その写真から読み取ったすべての情報をこのスマートフォンから削除します。元に戻すことはできません。"</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" 写真は問題一覧の「読み取れなかった写真」にあります。"</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"ここの軸は%1$sか%2$sです。どちらでも、他の2マスのどちらかが%3$sに確定するため、その両方と同じ行・列・ブロックにあるマスには%4$sを入れられません。"</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"ポインティングペアを逆から見たものです。行または列を1つ選び、まだそこに入っていない数字を選びます。その数字を入れられるマスを、その行・列ですべて印で示します。それらがすべて1つのブロック内にあれば、その数字はそのブロックと行・列が重なる部分に入る必要があります。したがって、ブロック内の他の場所には入りません。調べていなかった残りの2行または2列も含まれます。\n\nポインティングペアと同様に、これだけでは数字は確定しません。確定につながる手のために候補を整理します。"</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"印刷された数字では、解ける問題になりません。"</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$sに残る候補は{%2$s}です。%4$s行%5$s列に%3$sを入れます。"</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"レポートが大きすぎて送信できません。"</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"軸の候補が1つ多いYウィングです。候補がちょうど3つ、例えば{1,4,7}のマスを探します。そのマスが、候補が2つのマス2つ、一方は{1,7}、もう一方は{4,7}と同じ行・列・ブロックにある必要があります。\n\nこの3マスはどれも7になり得て、必ずどれか1つが7になります。したがって、候補を除外するマスは、2つの翼だけでなく3マスすべてと同じ行・列・ブロックにある必要があります。実際には、軸と同じブロック内で、翼の1つと同じ行または列にあるマスです。\n\nYウィングより除外できる候補が少なく、同じ理由で見落としやすくなります。軸が目立たないためです。"</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"強調表示されたブロックに、埋められるマスがあります。\n\nもう一度「ヒント」を押すと、そのマスを見つける解法を表示します。"</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"ここには推論することがもう残っていません。"</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"この%1$sマスの候補はすべて%2$sと%3$sだけで、隣同士が同じ行・列・ブロックにあるため、数字は全体を通して交互に並びます。%4$sと%5$sの間のリンク数は奇数なので、異なる数字が入ります。したがって、その両方と同じ行・列・ブロックにあるマスから%6$sを除外できます。"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"この%1$sマスの候補は合わせて%2$sだけなので、それらの数字が何らかの順序で入ります。したがって、この%4$sの他のマスから%3$sを除外できます。"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"この%1$sマスの候補は、合わせても%2$sだけなので、これらの数字が何らかの順序で入ります。したがって、この行の残りのマスから%3$sを除外できます。"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"この%1$sマスの候補は、合わせても%2$sだけなので、これらの数字が何らかの順序で入ります。したがって、この列の残りのマスから%3$sを除外できます。"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"この%1$sマスの候補は、合わせても%2$sだけなので、これらの数字が何らかの順序で入ります。したがって、このボックスの残りのマスから%3$sを除外できます。"</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"これらは選んだマスの初期候補です。「推論過程」で、どの候補を除外できるか説明します。"</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"これらの数字では問題が成立せず、誤りが多すぎて場所を特定できません。マスをタップして読み取りを修正するか、もう一度撮影してください。"</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"これらの数字では問題が成立しません。丸で囲まれた%1$sマスを変更すれば成立します。いずれかをタップして読み取りを修正してください。"</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"これらの数字では問題が成立しません。丸で囲まれた1マスを変更すれば成立します。タップして読み取りを修正してください。"</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"これらの数字では問題が成立しないため、読み取りに誤りがあります。「解答」を押すと、修正が必要なマスを確認できます。"</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"この4マスは2つのブロックにまたがる長方形を作り、そのうち3マスの候補は%1$sだけです。%2$sの候補もその2つだけなら、長方形内で数字を入れ替えられ、解が2つできてしまいます。解は1つなので、%3$sには別の数字が入る必要があり、%4$sを除外できます。"</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"最後までは解けません。この問題のどこかで、アプリが完全に行き詰まりました。"</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"これでは数字は確定しません。%2$sから%1$sを除外します。"</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"これではどのマスにも数字は入りません。%2$sマスの候補から%1$sを除外します。"</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"これではどのマスにも数字は入りません。1マスの候補から%1$sを除外します。"</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nこれは答えに至る%1$s回の推論の最初のものです。"</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"この証明では、1つのヒントについて、答えに至る候補の除外も含めて説明します。ステップを進めて盤面上の推論をたどり、その後、全体の解答手順を続けてください。"</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"この問題を準備できませんでした。"</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"この問題を保存できませんでした。今は引き続き使用できます。次の写真を撮る前に、ストレージの空き容量を増やしてください。"</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"この問題には複数の解があるため、印刷された数字を読み落とした可能性があります。%2$s個の解のうち%1$s個目を表示しています。もう一度「解答」を押すと次の解を表示します。丸で囲まれたマスは、表示された解の間で数字が異なります。"</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"この問題の写真を開けませんでした。"</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"この推論により除外される既存の項目数：%1$s "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"このマスには、数字そのものではなく候補メモがある可能性があります。確認してください。"</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"この表示には、それ以前に行った候補の除外が含まれます。下の根拠を開いて確認してください。"</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"三つ"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"暗すぎて枠線を識別できません"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"推論過程"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"試行済み"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"自分で試す"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"有効にする"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"問題が正しい向きになるようにスマートフォンを回してください。"</string>
+    <string name="msg_tutor_1555a832" formatted="false">"学習ガイド"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"二つ"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"同じ2候補を持つ2マスが、その一方の数字の強いリンクでつながっていると、もう一方の数字がどちらかのマスに必ず入ります。"</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"ツーストリングカイト"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"ユニークレクタングル"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"ユニット"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"読み取り不能の場合、CellReadingリストは公開されません。入力された正確なマス情報と結果は保持されます。"</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"安全でないオプトイン使用エラー"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"未対応のモデル形式バージョン"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"不確か"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"端末の言語を使用"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"%1$sを使い、候補を除外できるマスを1つタップしてから、その数字を選んでください。"</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"%1$sを使い、埋められるマスをタップしてから、その数字を選んでください。"</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"非常に難しい"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"Wウィング"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"された"</string>
+    <string name="msg_were_910adfb4" formatted="false">"された"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"どのような動作を期待していましたか？ または、そのアイデアは数独を解いたり学んだりするのにどう役立ちますか？"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## 発生したことと再現手順（不具合の場合）"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"効果"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"場所"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"r%2$sc%3$sから%1$sを除外した理由"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"理由"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"なぜ%1$sではない？ · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"なぜこのマス？ · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" が解答と一致しません。「答えを確認」で確認できます。"</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"選んだマスから逆にたどりましょう。下の質問を選んでください。"</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"マスごとではなく数字ごとに調べます。1つの行・列・ブロックについて、まだ入っていない各数字を入れられる場所を書き出します。次に、場所の一覧を合わせると%2$sマスだけになる%1$s個の数字を探します。\n\nその%3$s個の数字はその%4$sマスに入る必要があるため、それらのマスから他の候補をすべて除外できます。これにより、その場でネイキッドシングルやネイキッドペアができることもよくあります。\n\nこれは多くの人が最も難しいと感じる解法です。マスを見ても候補がたくさん残っていて、何も見えてこないからです。パターンは数字の側にあります。"</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"候補がちょうど2つ残っているマスだけを使います。\n\n例えば{2,6}のマスから始め、2ではないと仮定すると6になります。同じ行・列・ブロックにある、6を候補に持つマス、例えば{6,4}へ進みます。そのマスは6ではないので4になります。次に、そのマスと同じ行・列・ブロックにある、4を候補に持つマスへ進みます。このように、各ステップが直前のステップによって確定します。\n\nもう一方の候補が2、つまり最初に除外した数字であるマスに到達したら完了です。最初のマスが実は2だったか、チェーンが成立して最後のマスが2になるかのどちらかです。両端のどちらかに2が入るため、両端のそれぞれと同じ行・列・ブロックにあるマスには2を入れられません。\n\nチェーンは短くしましょう。4〜5マスなら鉛筆で見つけられます。それ以上は記録作業になり、フォーシングチェーンと呼ぶのが適切です。"</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"処理時の辺の長さは正の有限値である必要があります"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"読み取り不可"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"手書き"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"誤り"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"Xウィング"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XYチェーン"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZウィング"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Yウィング"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"このマスを空欄にしました。"</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"手書きの%1$sに設定しました。"</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"印刷された%1$sに設定しました。"</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"変更は表示されていますが、保存できませんでした。ストレージの空き容量を増やしてから、もう一度問題を編集してください。"</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"写真とプライバシー"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"あなたの問題"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"保存した問題"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"選んだマス ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"選んだマスの枠は表示されたままです。緑のマスは根拠を示し、取り消し線のある数字は除外済みです。"</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

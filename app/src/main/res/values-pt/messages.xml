@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nAs casas destacadas são o que o comprova.\n\nPrima Pista novamente para ver qual a casa."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s e %2$s contêm ambas apenas %3$s e %4$s. Neste %5$s, %6$s tem apenas duas posições possíveis, uma vista por cada uma delas — logo uma dessas duas é %7$s, e a extremidade que a vê tem de ser %8$s. De qualquer forma, uma extremidade é %9$s, o que elimina %10$s de tudo o que veja ambas."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s e %2$s só podem conter %3$s e %4$s. Neste bloco, %5$s só tem duas posições possíveis, cada uma vista por uma dessas células - portanto, uma dessas duas posições é %6$s, e a extremidade que a vê tem de ser %7$s. Em qualquer caso, uma extremidade é %8$s, o que elimina %9$s de todas as células que veem ambas as extremidades."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s e %2$s só podem conter %3$s e %4$s. Nesta coluna, %5$s só tem duas posições possíveis, cada uma vista por uma dessas células - portanto, uma dessas duas posições é %6$s, e a extremidade que a vê tem de ser %7$s. Em qualquer caso, uma extremidade é %8$s, o que elimina %9$s de todas as células que veem ambas as extremidades."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s e %2$s só podem conter %3$s e %4$s. Nesta linha, %5$s só tem duas posições possíveis, cada uma vista por uma dessas células - portanto, uma dessas duas posições é %6$s, e a extremidade que a vê tem de ser %7$s. Em qualquer caso, uma extremidade é %8$s, o que elimina %9$s de todas as células que veem ambas as extremidades."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s na linha %2$s, coluna %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s no passo %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s só pode conter %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s não pode conter %2$s porque %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s não pode conter %2$s porque %3$s só pode conter %4$s na mesma coluna %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s não pode conter %2$s porque %3$s só pode conter %4$s no mesmo bloco %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s não pode conter %2$s porque %3$s só pode conter %4$s na mesma linha %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s não pode conter %2$s porque %3$s contém %4$s no mesmo bloco %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s não pode conter %2$s porque %3$s contém %4$s na mesma coluna %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s não pode conter %2$s porque %3$s contém %4$s na mesma linha %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s contém %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s vazias"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, entrada"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s tem de ficar aqui: é a única célula desta coluna %2$s que ainda pode conter %3$s.\n\n%4$s\n\n%5$s permite atualmente %6$s, mas cada coluna tem de conter %7$s exatamente uma vez. Portanto, coloque %8$s na linha %9$s, coluna %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s tem de ir para aqui: é a única célula neste %2$s %3$s que ainda pode receber um %4$s.\n\n%5$s\n\n%6$s atualmente permite %7$s, mas cada %8$s tem de conter %9$s exatamente uma vez. Portanto, coloque %10$s na linha %11$s, coluna %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s tem de ficar aqui: é a única célula deste bloco %2$s que ainda pode conter %3$s.\n\n%4$s\n\n%5$s permite atualmente %6$s, mas cada bloco tem de conter %7$s exatamente uma vez. Portanto, coloque %8$s na linha %9$s, coluna %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s tem de ficar aqui: é a única célula desta linha %2$s que ainda pode conter %3$s.\n\n%4$s\n\n%5$s permite atualmente %6$s, mas cada linha tem de conter %7$s exatamente uma vez. Portanto, coloque %8$s na linha %9$s, coluna %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s tem duas posições possíveis nesta linha e duas nesta coluna. %2$s e %3$s partilham um bloco, logo não podem ser ambos %4$s — o que deixa uma de %5$s e %6$s a contê-lo, e elimina %7$s de tudo o que veja ambas."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s no mesmo %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s no mesmo bloco."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s na mesma coluna."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s na mesma linha."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s já foi eliminado dessa casa. Os seus candidatos são "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s é excluído por %2$s, que "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s é excluído por %2$s, que só pode conter %3$s na mesma coluna %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s é excluído por %2$s, que só pode conter %3$s na mesma linha %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s é excluído por %2$s, que só pode conter %3$s no mesmo bloco %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s é excluído por %2$s, que contém %3$s no mesmo bloco %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s é excluído por %2$s, que contém %3$s na mesma coluna %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s é excluído por %2$s, que contém %3$s na mesma linha %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s é forçado na casa numerada mais recente (linha %2$s, coluna %3$s). %4$s A seta segue uma colocação que contribui; as consequências anteriores também importam."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s está em falta no classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s de %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s delas preenchem uma casa; as restantes limpam candidatos do caminho primeiro."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"Par %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s impressos, %2$s, %3$s incorretos"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s impressos, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s impressos"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, pista impressa"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"Quadra %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s fotografia(s) recusada(s), as mais recentes primeiro:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: remover %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Número de células: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s passos compõem este percurso, sendo a técnica suportada mais difícil um %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"Trio %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s foi removido de %2$s por dedução anterior de candidatos."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s escritos"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"uma imagem %1$sx%2$s necessita de %3$s bytes, mas obteve %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"uma célula não era nem um dígito nem um ponto final"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Uma cadeia de casas com dois candidatos que começa e termina no mesmo dígito coloca esse dígito numa extremidade ou na outra."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Um dígito com apenas um local restante numa linha, coluna ou bloco pertence a esse local."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Um %1$s manuscrito."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Um %1$s impresso."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Uma casa vermelha mostra o dígito que a aplicação leu ali. Se não foi isso que escreveu, toque na casa para corrigir."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Se uma célula tiver apenas um candidato possível, esse é o seu algarismo."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Uma lista de técnicas nunca está completa, e os puzzles mais difíceis são concebidos para derrotar tudo o que nela conste. Assim, quando cada uma destas não dá em nada, o explicador resolve uma única casa experimentando os seus candidatos, diz com clareza que foi isso que fez e continua a raciocinar a partir daí. Chega sempre ao fim de um puzzle e nunca finge que uma consulta foi uma dedução."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Um pivô de três candidatos com duas pinças correspondentes de dois candidatos força a saída de um dígito de todas as casas que veem os três."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Um pivô de dois candidatos e duas pinças de dois candidatos podem forçar a saída de um dígito de todas as casas que veem ambas as pinças."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Sobre"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Depois"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Após esta jogada"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Tudo correto"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Todas as três destas casas podem ser %1$s, e uma delas tem de ser. Portanto, qualquer casa que veja todas as três não pode ser %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Permitir câmara"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Quase — mantenha a página plana e alinhada com a câmara"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"uma eliminação que não remove nada não é uma dedução"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" e "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Resposta"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Aplicação e dispositivo (pré-preenchido)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Aplicação: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"a proporção tem de ser positiva, mas era %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Suposição · dígito hipotético"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Suposição rejeitada · candidatos reais restaurados"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"pelo menos %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Foto automática"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Envie automaticamente para a Freevia as fotografias de sudokus com leitura incerta, os resultados do reconhecimento e as correções posteriores para análise e treino do reconhecimento. Desativado por predefinição."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Evite o reflexo"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Voltar"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Voltar à pergunta anterior"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Voltar à pista visual"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Voltar à sua casa"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Antes"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Antes desta jogada"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Os dígitos azuis são a solução. Toque em qualquer casa para corrigir o que foi lido."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"bloco %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"bloco"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Bloco"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Redução bloco-linha"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Câmara"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"só pode conter"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Cancelar"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidatos %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Encadeie um dígito através das unidades onde ele tenha apenas duas posições possíveis, pinte a cadeia com duas cores alternadas, e uma cor é verdadeira em toda a extensão."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Ao encadear %1$s pelas unidades onde só tem duas posições possíveis, estas células ficam com duas cores alternadas, sendo uma delas verdadeira em toda a cadeia. Duas células da outra cor estão na mesma linha, o que é impossível - portanto, essa cor é a falsa, e %2$s é eliminado de todas as células dessa cor."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Ao encadear %1$s pelas unidades onde só tem duas posições possíveis, estas células ficam com duas cores alternadas, sendo uma delas verdadeira em toda a cadeia. Duas células da outra cor estão no mesmo bloco, o que é impossível - portanto, essa cor é a falsa, e %2$s é eliminado de todas as células dessa cor."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Ao encadear %1$s pelas unidades onde só tem duas posições possíveis, estas células ficam com duas cores alternadas, sendo uma delas verdadeira em toda a cadeia. Duas células da outra cor estão na mesma coluna, o que é impossível - portanto, essa cor é a falsa, e %2$s é eliminado de todas as células dessa cor."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Encadear %1$s através das unidades onde tem apenas duas posições possíveis deixa estas casas com duas cores alternadas, uma das quais é verdadeira em toda a extensão. Duas casas da cor %2$s ficam no mesmo %3$s, o que não pode acontecer — logo essa cor é a falsa, e %4$s sai de todas as casas que a usam."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Encadear %1$s através das unidades onde tem apenas duas posições possíveis deixa estas casas com duas cores alternadas, e uma cor é verdadeira em toda a extensão. Estas casas conseguem ver ambas as cores, pelo que, qualquer que seja o desfecho da cadeia, uma das casas que veem contém %2$s — o que significa que não podem conter."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Ao encadear %1$s pelas unidades onde só tem duas posições possíveis, estas células ficam com duas cores alternadas, sendo uma delas verdadeira em toda a cadeia. Duas células de uma cor estão no mesmo bloco, o que é impossível - portanto, essa cor é a falsa, e %2$s é eliminado de todas as células dessa cor."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Ao encadear %1$s pelas unidades onde só tem duas posições possíveis, estas células ficam com duas cores alternadas, sendo uma delas verdadeira em toda a cadeia. Duas células de uma cor estão na mesma coluna, o que é impossível - portanto, essa cor é a falsa, e %2$s é eliminado de todas as células dessa cor."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Ao encadear %1$s pelas unidades onde só tem duas posições possíveis, estas células ficam com duas cores alternadas, sendo uma delas verdadeira em toda a cadeia. Duas células de uma cor estão na mesma linha, o que é impossível - portanto, essa cor é a falsa, e %2$s é eliminado de todas as células dessa cor."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Células com leitura incerta a verificar: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Verificar"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Verifique a célula cuja leitura é incerta."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", verificado como correto"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Escolha um candidato para ver por que motivo não pode ir para a sua casa."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Escolher idioma"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Escolher o que mostrar"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Fechar"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Fechar pista"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Recolher revisão de leitura"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"as células a cores e em escala de cinzentos têm de usar a mesma geometria"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"coluna %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"coluna"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"colunas"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Compare cadeias de forçamento e prefira aquelas com menos casas a seguir. Cadeias mais curtas podem significar mais passos na solução completa."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consequência %1$s de %2$s · dígitos hipotéticos"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"contém"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Continuar com o percurso completo"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradição · suposição falha"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", contradição"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Contradição: o %1$s vermelho não tem qualquer posição restante para %2$s. Isto é impossível, pelo que a suposição inicial tem de falhar."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Contradição: a casa vermelha não tem qualquer candidato restante. Isto é impossível, pelo que a suposição inicial tem de falhar."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Copiar pedido de eliminação"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Correto. Compare o seu raciocínio com a explicação abaixo."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"não foi possível descodificar a imagem capturada"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Não foi possível encontrar os dígitos impressos nessa fotografia."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Não foi possível distinguir as linhas da grelha — tente novamente."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Não foi possível abrir o GitHub. Contacte o suporte em %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Não foi possível reter a prova de captura de depuração"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Não foi possível enviar a leitura. Por favor, tente novamente quando estiver ligado."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Caminho sem saída"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Eliminar"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Eliminar relatório"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Eliminar esta fotografia"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Eliminar este puzzle"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Eliminar este puzzle?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Eliminar este envio?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"A eliminar…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Não foi possível confirmar a eliminação. Verifique a ligação e tente novamente."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Pedido de eliminação"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"A resposta de eliminação não confirmou este recibo."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"O serviço de eliminação devolveu HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Descreva o que aconteceu e os passos para reproduzir. Indique se verificou e corrigiu primeiro os dígitos reconhecidos. Para uma ideia, escreva \"Não aplicável\"."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", destino desta pista"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Dispositivo: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnóstico encurtado para caber no rascunho do navegador. A ação Enviar diagnóstico da aplicação pode partilhar o relatório completo."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"o dígito tem de ser 1..9, mas era %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Dígitos não lidos"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"A retenção de provas em disco afeta a temporização; não é uma referência de latência."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", não corresponde à solução"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Cada recibo identifica uma revisão de puzzle enviada. Elimine-o aqui para remover da Freevia o relatório armazenado de forma privada."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Eliminações anteriores: %1$s. Use as ligações dos passos anteriores para inspecionar as respetivas demonstrações."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← prova anterior (profundidade %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Colocações hipotéticas anteriores deixam-na com apenas um candidato."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Passos anteriores usados nesta demonstração"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Editar célula"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE, d \'de\' MMMM \'de\' yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"oito"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"vazia"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Vazia."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Vazia"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Inglês"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"entradas que divergem"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"entrada que diverge"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Cada uma delas preenche uma casa."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Todas as casas estão preenchidas, mas %1$s respostas divergem da solução."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Todas as casas estão preenchidas, mas uma resposta diverge da solução."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Todos os sudokus com uma única resposta podem ser resolvidos por dedução; adivinhar nunca é necessário e raramente ajuda. Estas são as formas de dedução que esta aplicação consegue reconhecer e explicar, das mais fáceis para as mais difíceis. Onde uma delas se aplicar ao puzzle aberto, mostrar-lhe-á todos os locais onde se aplica."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Tudo o que escreveu até agora está certo."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Exemplos disponíveis agora: cada um parte do seu tabuleiro atual."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"esperavam-se 10 linhas horizontais, obtidas %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"esperavam-se 10 linhas verticais, obtidas %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"esperavam-se 81 células, mas obtiveram-se %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"esperavam-se 81 células em cada bloco, encontradas %1$s e %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"esperava-se canal único de 8 bits, mas obteve-se %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"esperava-se uma imagem 28x28, mas obtiveram-se %1$s valores"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Comportamento esperado ou melhoria proposta"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"esperavam-se dez linhas em cada sentido"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"esperavam-se dois blocos, encontrados %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Explicar eliminações anteriores de candidatos (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Explicar as dicas"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Encontre uma casa com apenas dois ou três candidatos restantes — quanto menos, melhor, e quanto mais ocupadas estiverem a linha, a coluna e o bloco à sua volta, melhor ainda.\n\nEscolha um dos seus candidatos e anote-o a lápis com um traço leve. Agora siga as consequências: esse dígito desaparece de tudo o que a casa consegue ver, o que pode deixar uma dessas casas com um único candidato, o que força outro, e assim sucessivamente. Continue.\n\nAcontece uma de duas coisas. Ou o caminho esgota-se e não aprendeu nada — apague-o e tente o outro candidato. Ou chega a uma casa sem qualquer candidato restante, ou a uma linha sem sítio para colocar algum dígito. Isso é impossível, pelo que o dígito anotado a lápis estava errado e pode eliminá-lo em definitivo.\n\nEste é o recurso a utilizar quando tudo o resto falhar. É mais lento e é mais contabilidade do que deteção de padrões, mas pode revelar jogadas que os padrões deixam escapar. Uma eliminação costuma ser suficiente para fazer as técnicas fáceis funcionarem de novo; algumas posições continuam a necessitar de uma pesquisa mais profunda."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Encontre duas casas com os mesmos dois candidatos, por exemplo {3,7}, que não se consigam ver mutuamente — geralmente estão longe uma da outra.\n\nAgora procure uma linha, coluna ou bloco onde o 7 tenha apenas duas casas possíveis, uma das quais seja vista pela primeira casa do seu par e a outra pela segunda. Essa é a ligação.\n\nUma dessas duas casas é o 7. Seja ela qual for, a casa do seu par que a vê não pode ser 7, logo tem de ser 3. Não sabe qual das extremidades é o 3, apenas que uma delas é — e isso é suficiente para eliminar o 3 de todas as casas que veem ambas as extremidades.\n\nA parte difícil é a ligação, por isso procure-a pela ordem inversa: marque primeiro as unidades onde um dígito tem apenas duas posições possíveis e, depois, procure um par correspondente de cada lado."</string>
+    <string name="msg_finished_05343e98" formatted="false">"concluído"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Tire a fotografia automaticamente quando a grelha estiver alinhada com a câmara e imóvel. O botão de captura funciona com ambas as definições."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Enquadre toda a grelha na imagem."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Enquadre toda a grelha na imagem"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"cinco"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Siga um percurso em que cada jogada se baseia na anterior."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Seguir a demonstração completa por ordem"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Siga esta cadeia de casas com dois candidatos: se %1$s não for %2$s, então cada casa ao longo dela é forçada pela anterior, e %3$s acaba por ser %4$s. Portanto, uma extremidade ou a outra contém %5$s, o que o elimina de todas as casas que veem ambas."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Cadeia de forçamento"</string>
+    <string name="msg_four_04efaf08" formatted="false">"quatro"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Quatro casas em duas linhas, duas colunas e dois blocos não podem conter todas os mesmos dois candidatos, ou o puzzle teria duas respostas."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"A Freevia confirmou a eliminação, mas este telemóvel não conseguiu remover o recibo local. Tente novamente para concluir a limpeza local."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"A Freevia eliminará esta versão do relatório e a sua cópia privada de treino. As correções futuras podem criar um novo relatório segundo as suas definições de partilha. Um modelo já treinado com estes dados pode conservar as alterações aprendidas."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Percurso completo"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Nas futuras leituras incertas, a fotografia corrigida do sudoku, os resultados do reconhecimento e as correções serão enviados para a Freevia para análise e treino. As cópias de treino permanecem até serem eliminadas através dos recibos de envio; um modelo já treinado pode conservar as alterações aprendidas. Se já estiver aberto um sudoku com leitura incerta, será enviado agora. Pode desativar esta opção nas Definições."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Suave"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"O reflexo está a apagar as linhas — incline a página para longe da luz"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"As casas cinzentas contêm marcas a lápis, que a aplicação ignora. A barra sob um dígito indica o nível de certeza. Toque numa casa para ver detalhes."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Manuscrito"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Difícil"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Oculto"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Par oculto"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Quadruplo oculto"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Candidato único oculto"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Trio oculto"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Ocultar prova anterior"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Ocultar como identificar"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", pista %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Dica"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Demonstração da pista"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Raciocínio da pista"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Mantenha o telemóvel imóvel…"</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Mantenha imóvel ou toque no obturador"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Mantenha o telemóvel imóvel enquanto a câmara foca…"</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mantenha o telemóvel paralelo"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mantenha o telemóvel paralelo sobre o puzzle."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mantenha o telemóvel paralelo sobre o puzzle"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\\\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Como identificar"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nComo lá chegamos:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Procure casas com exatamente dois candidatos — um Y-wing é formado por três delas e nada mais.\n\nTome uma como pivô, por exemplo {2,5}. Procure uma casa que ela veja com {2,9} e outra que ela veja com {5,9}. O pivô é 2 ou 5. Se for 2, a primeira pinça tem de ser 9; se for 5, a segunda tem de ser 9. De qualquer forma, surge um 9 numa das pinças — não sabe em qual, nem precisa de saber.\n\nPortanto, nenhuma casa que consiga ver ambas as pinças pode ser um 9. Essas casas costumam ser os dois cantos que completam o retângulo."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hipotético %1$s, não é uma resposta introduzida"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Se %1$s dígitos numa linha, coluna ou bloco só puderem ir para as mesmas %2$s casas, essas casas não podem conter mais nada."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Se %1$s casas numa linha, coluna ou bloco partilharem exatamente %2$s candidatos entre si, esses dígitos pertencem a essas casas e a nenhumas outras na unidade."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Se um dígito tem duas posições possíveis numa linha e duas numa coluna, e uma de cada partilha um bloco, uma das outras duas tem de contê-lo."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Se um dígito tem duas posições possíveis em cada uma de duas linhas e estas partilham uma coluna, uma das outras duas posições tem de contê-lo."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Se as únicas posições possíveis de um dígito ao longo de uma linha estiverem todas dentro de um bloco, esse dígito pode ser eliminado do resto desse bloco."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Se as únicas posições possíveis de um dígito em %1$s linhas estiverem nas mesmas %2$s colunas, este pode ser eliminado dessas colunas noutros locais — e o mesmo trocando linhas e colunas."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Se as únicas posições possíveis de um dígito dentro de um bloco partilharem uma linha, esse dígito pode ser eliminado do resto dessa linha."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Se a suposição de um dígito levar a uma casa sem nada que ela possa conter, esse dígito estava errado."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"as dimensões da imagem têm de ser positivas"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Numa cadeia de casas que contêm todas os mesmos dois candidatos, as duas extremidades de uma cadeia de comprimento ímpar contêm dígitos diferentes."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Nestes %1$s %2$s, %3$s só pode ir para estas %4$s %5$s. Entre si ocupam todas elas, pelo que %6$s pode ser eliminado dessas %7$s em todos os outros locais."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Nestas %1$s colunas, %2$s só pode ficar nestas %3$s linhas. Em conjunto, ocupam todas elas, pelo que %4$s pode ser eliminado de todas as outras células dessas linhas."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Nestas %1$s linhas, %2$s só pode ficar nestas %3$s colunas. Em conjunto, ocupam todas elas, pelo que %4$s pode ser eliminado de todas as outras células dessas colunas."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Nestes dois %1$s, %2$s tem apenas duas posições possíveis em cada, e %3$s e %4$s partilham um %5$s — logo não podem ser ambos %6$s. Uma de %7$s e %8$s é-o, portanto, o que elimina %9$s de todas as casas que veem ambas."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Nestas duas colunas, %1$s só tem duas posições possíveis em cada uma, e %2$s e %3$s estão na mesma linha - portanto, não podem ser ambos %4$s. Assim, uma das células %5$s e %6$s tem esse dígito, o que elimina %7$s de todas as células que veem ambas."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Nestas duas linhas, %1$s só tem duas posições possíveis em cada uma, e %2$s e %3$s estão na mesma coluna - portanto, não podem ser ambos %4$s. Assim, uma das células %5$s e %6$s tem esse dígito, o que elimina %7$s de todas as células que veem ambas."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Neste %1$s, %2$s só pode ir para estas %3$s casas, pelo que essas casas estão reservadas. Isso elimina %4$s delas."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Neste %1$s, %2$s só pode ir para dentro de um bloco. Portanto, %3$s está nesse bloco neste %4$s, e pode ser eliminado do resto do bloco."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Neste bloco, %1$s só pode ficar nestas %2$s células, por isso elas ficam reservadas. Isso elimina %3$s dessas células."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Nesta coluna, %1$s só pode ficar nestas %2$s células, por isso elas ficam reservadas. Isso elimina %3$s dessas células."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Nesta linha, %1$s só pode ficar nestas %2$s células, por isso elas ficam reservadas. Isso elimina %3$s dessas células."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Inclui as suas fotografias, leituras e correções. Desative isto nas Definições."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Dentro de um único bloco, encontre um dígito que só possa ir para duas ou três casas e verifique se ficam todas na mesma linha ou todas na mesma coluna. Se ficarem, o dígito está garantidamente algures ao longo dessa linha — não sabe onde, mas sabe que está dentro deste bloco. Logo, não pode estar em mais lado nenhum ao longo da mesma linha fora do bloco.\n\nIsto não coloca nada por si só. Limpa candidatos do caminho para que surja um single noutro local."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Dentro deste bloco, %1$s só pode ir para este %2$s. Portanto, %3$s está algures aqui, e pode ser eliminado do resto do %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problema ou ideia"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Aplica-se em %1$s locais aqui. Avance um passo para percorrer cada um."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Aplica-se num local aqui. Avance um passo para ver."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Não se aplica em nenhum local nesta posição."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"É o único local restante para %1$s no %2$s destacado."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"É a casa com círculo.\n\nPrima Pista novamente para ver o dígito."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Manter"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Preferir cadeias de raciocínio curtas"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Idioma"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licenças"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Procure ao longo de uma linha, coluna ou bloco casas com apenas alguns candidatos restantes. Pegue em %1$s delas e junte os seus candidatos. Se o conjunto tiver exatamente %2$s dígitos, esses %3$s dígitos estão reservados: têm de ir para essas %4$s casas por alguma ordem, mesmo que ainda não saiba qual vai para onde.\n\nIsso é suficiente. Todas as outras casas da unidade podem prescindir desses dígitos, e é geralmente uma dessas casas que se torna depois um single.\n\nAs casas não precisam de ter todas os mesmos candidatos — {2,7}, {2,9} e {7,9} é um trio perfeitamente válido, e é aquele que as pessoas não reparam."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Procure casas que contenham os mesmos dois candidatos — por exemplo {4,9} — e que formem uma cadeia, vendo cada uma a seguinte. Três não é suficiente; precisa de pelo menos quatro.\n\nPinte-as alternadamente à medida que avança. Como cada casa vê a seguinte, duas vizinhas não podem conter o mesmo dígito, pelo que a cadeia lê-se 4, 9, 4, 9 ao longo de todo o caminho — ou 9, 4, 9, 4, e não consegue saber qual.\n\nDe qualquer forma, duas casas de cores opostas contêm dígitos diferentes entre si: uma é o 4 e a outra é o 9. Portanto, tudo o que consiga ver ambas não pode ser nenhum deles e perde ambos os candidatos de uma vez.\n\nO padrão é fácil de detetar precisamente porque todas as casas nele parecem iguais. Siga os pares idênticos pela grelha e veja onde se tocam."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Procure três casas que contenham os mesmos dois candidatos — por exemplo {1,6} — situadas em três cantos de um retângulo. O retângulo tem de ficar em exatamente dois blocos: duas linhas e duas colunas cruzando dois blocos, não quatro.\n\nAgora olhe para o quarto canto. Se contivesse apenas 1 e 6 também, o puzzle teria duas respostas — poderia trocar os 1s e os 6s em redor do retângulo e tudo o resto continuaria a funcionar. Um puzzle devidamente criado tem uma única resposta, logo o quarto canto tem de usar outra coisa: os seus outros candidatos ficam e o 1 e o 6 saem.\n\nEste é o único argumento do manual que diz respeito a quem criou o puzzle e não à grelha. É válido num puzzle publicado e inútil num que já tenha preenchido incorretamente, porque aí pode não haver de todo uma resposta para ser única."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Olhe para este bloco. Siga o contorno até à casa que esta pista vai explicar."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Marcas"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Moderado"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Mais"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"É necessária mais luz"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Mais do que uma resposta, pelo que escapou um dígito impresso. Prima Resolver para ver as respostas e onde diferem."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Afaste-se"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Aproxime-se"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Aproxime-se — a grelha é demasiado pequena para Ler."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Naked"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Par nu"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Quadruplo nu"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Candidato único"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Trio nu"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Indicar o nome da técnica e mostrar as casas que a comprovam, em vez de dar apenas o dígito."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"são necessários pelo menos 4 pontos, mas obtiveram-se %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Precisa de confirmação"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Novo sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Consequência seguinte"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Passo seguinte"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Não são anexadas imagens automaticamente. Os relatos e anexos enviados aqui são públicos. Envie para info@freevia.org os exemplos que preferir partilhar em privado."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Nenhuma fotografia foi recusada desde que a aplicação foi instalada pela última vez."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Nenhum diagnóstico de leitura disponível."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Nenhuma técnica se aplica aqui"</string>
+    <string name="msg_none_140bedbf" formatted="false">"nenhum"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Nenhuma delas coloca um dígito numa casa: limpam candidatos do caminho, que é como se abre caminho num puzzle difícil."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Nenhum no seu puzzle de momento."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"não é um ficheiro de modelo de dígitos"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Não foi lido com confiança — o palpite mais próximo é %1$s %2$s em %3$s. Por favor, defina esta casa manualmente."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Ainda não está a ser lida como uma grelha nove por nove — tente preencher o enquadramento apenas com a grelha ou tire simplesmente a fotografia"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"não iniciado"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Nada pôde ser enviado a partir deste telemóvel."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Nada resta por resolver."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Mais nada aqui pode ser deduzido pelas técnicas que esta aplicação conhece."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"nada de invulgar"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"um"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Uma célula parecia um dígito impresso, mas não é."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Um dígito impresso foi corrigido automaticamente."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"uma casa"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Apenas %1$s pode ir para aqui — todos os outros dígitos já aparecem nesta linha, coluna ou bloco."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Só %1$s pode ficar aqui. As células destacadas excluem %2$s dos outros oito dígitos; %3$s foi eliminado desta célula anteriormente, e não por algo que se possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Só %1$s pode ocupar esta célula. As células destacadas já contêm quatro dos outros oito dígitos; %2$s foram excluídos desta célula anteriormente, e não por algo que possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Só %1$s pode ocupar esta célula. As células destacadas já contêm seis dos outros oito dígitos; %2$s foram excluídos desta célula anteriormente, e não por algo que possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Só %1$s pode ocupar esta célula. As células destacadas já contêm um dos outros oito dígitos; %2$s foram excluídos desta célula anteriormente, e não por algo que possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Só %1$s pode ocupar esta célula. As células destacadas já contêm sete dos outros oito dígitos; %2$s foi excluído desta célula anteriormente, e não por algo que possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Só %1$s pode ocupar esta célula. As células destacadas já contêm cinco dos outros oito dígitos; %2$s foram excluídos desta célula anteriormente, e não por algo que possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Apenas %1$s pode ir para aqui. As casas destacadas utilizam %2$s dos outros oito dígitos; %3$s %4$s eliminado desta casa anteriormente, não por algo que consiga ver à volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Só %1$s pode ocupar esta célula. As células destacadas já contêm dois dos outros oito dígitos; %2$s foram excluídos desta célula anteriormente, e não por algo que possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Só %1$s pode ficar aqui. As células destacadas excluem %2$s dos outros oito dígitos; %3$s foram eliminados desta célula anteriormente, e não por algo que se possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Só %1$s pode ocupar esta célula. As células destacadas já contêm três dos outros oito dígitos; %2$s foram excluídos desta célula anteriormente, e não por algo que possa ver à sua volta."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Apenas %1$s pode ir para aqui. Os outros oito dígitos são excluídos por casas preenchidas ou por candidatos únicos forçados nesta linha, coluna ou bloco."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Apenas %1$s pode ir para aqui, embora nada à volta mostre porquê: todos os outros oito dígitos foram eliminados desta casa por deduções anteriores e não por estarem escritos na sua linha, coluna ou bloco."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Foram encontrados apenas %1$s dígitos impressos, o que é insuficiente para um puzzle."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"apenas são suportados quartos de volta, não %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Abra um rascunho no seu navegador com a versão da aplicação, modelo do telemóvel, versão do Android e diagnósticos recentes de leitura já preenchidos. Adicione uma descrição completa e capturas de ecrã relevantes.\n\nÉ necessário iniciar sessão no GitHub. Pode rever e editar o rascunho antes de o enviar. Os relatórios enviados e os anexos são públicos. Não são anexadas fotografias automaticamente."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Abrir definições da aplicação"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Abrir GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Avisos de código aberto"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Abra \"Porquê esta casa?\" para ver as provas da colocação final, ou escolha um candidato eliminado para rastrear a sua demonstração."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV — Apache License 2.0. Utilizado para encontrar e alinhar a grelha.\n\nAndroidX, Jetpack Compose e CameraX — Apache License 2.0.\n\nKotlin — Apache License 2.0.\n\nO reconhecedor de dígitos foi treinado na base de dados MNIST de dígitos manuscritos de LeCun, Cortes e Burges, juntamente com dígitos renderizados a partir de tipos de letra abertos do sistema e dígitos desenhados programaticamente."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Falha ao carregar as bibliotecas nativas do OpenCV"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografar outro puzzle."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"As fotografias que guardar são armazenadas no armazenamento privado desta aplicação e são removidas quando as eliminar ou desinstalar a aplicação."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Fotografias a partir das quais a aplicação não conseguiu criar um puzzle. Envie uma e poderá ser analisada."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Escolha um dígito e percorra as linhas à procura daquelas onde ele tenha exatamente duas casas restantes. Pegue em duas dessas linhas e veja se uma das suas casas calha na mesma coluna.\n\nSe calhar, essas duas casas estão na mesma coluna e não podem conter ambas o dígito. Portanto, pelo menos uma das outras extremidades contém-no — as duas casas do outro lado. Não sabe qual, nem precisa de saber: qualquer casa que veja ambas as outras extremidades pode prescindir do dígito.\n\nDepois, faça o mesmo com colunas em vez de linhas. A forma assemelha-se a um edifício alto com um baixo ao lado, daí o nome e a forma como o identifica depois de ter visto alguns."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Escolha um dígito. Encontre uma linha onde tenha exatamente duas posições possíveis e uma coluna onde tenha exatamente duas posições possíveis. Agora verifique se uma casa da linha e uma casa da coluna ficam no mesmo bloco.\n\nSe ficarem, essas duas não podem ser ambas o dígito — um bloco, um dígito. Portanto, pelo menos uma das duas extremidades restantes é-o, e qualquer casa que veja ambas as extremidades pode prescindir do dígito.\n\nA razão pela qual as pessoas não reparam nisto é que não há nada para alinhar: as quatro casas formam uma figura assimétrica, e a única coisa que a mantém unida é o bloco que as duas extremidades interiores partilham."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Escolha uma casa vazia e percorra de 1 a 9, riscando tudo o que já apareça na sua linha, na sua coluna ou no seu bloco. Se sobreviver exatamente um dígito, vai para aí.\n\nEsta é a técnica que todas as outras existem para preparar. Tudo o que é mais difícil é uma forma de reduzir alguma casa a um único candidato, por isso, quando uma técnica mais difícil compensar, procure aqui a seguir."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Escolha um dígito e ignore todos os outros. Percorra as linhas e anote aquelas onde esse dígito tem apenas duas ou três casas possíveis restantes. Procure %1$s dessas linhas cujas casas se alinhem nas mesmas %2$s colunas.\n\nSe as encontrar, cada uma dessas %3$s linhas tem de colocar o dígito numa dessas colunas, e nenhumas duas podem usar a mesma coluna. Portanto, entre si consomem o dígito em todas as %4$s colunas — e todas as outras casas nessas colunas podem prescindir dele.\n\nDepois faça tudo de novo trocando colunas e linhas. Metade destes casos é encontrada da segunda forma, e é a metade que a maioria das pessoas nunca procura."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Colocar %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Coloque %1$s na linha %2$s, coluna %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Coloque %1$s na sua casa contornada."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Por favor, anexe capturas de ecrã relevantes através do controlo de anexos do GitHub: o puzzle, os dígitos reconhecidos, o resultado de Verificar ou a etapa da pista que mostra o problema. Inclua os resultados esperados e reais onde for útil."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Por favor, elimine os meus envios de reconhecimento do Sudoku Buddy. IDs de recibo: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Por favor, substitua esta mensagem por uma descrição completa do problema ou ideia. Dê a este relatório um título curto e descritivo."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Aponte a câmara para um puzzle de sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Aponte a câmara para um puzzle de sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Aponte a câmara para um puzzle de sudoku em papel. A aplicação lê os dígitos impressos e tudo o que tiver escrito, resolve-o e pode dar-lhe uma pista, verificar as suas respostas ou mostrar a solução completa."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Par apontador"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"A preparar puzzle…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Anterior"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Passo anterior"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Impresso"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Política de privacidade"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Armazenamento de puzzles"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Puzzles"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Os puzzles são lidos e resolvidos neste telemóvel. Se enviar uma leitura incerta ou ativar a partilha automática, a fotografia do puzzle, as leituras originais, os sinalizadores de incerteza e as suas correções são enviados de forma segura para a Freevia para análise de reconhecimento e treino privado. Os relatórios não incluem o modelo do seu dispositivo nem diagnósticos. A partilha automática é opcional; não existem contas, análises de utilização de rotina nem rastreio publicitário. As cópias de treino podem ser eliminadas através do recibo, embora um modelo já treinado possa reter as alterações aprendidas. Utilize os Recibos de envio nas Definições para eliminar um relatório."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Os puzzles fotografados para teste vieram de sudoku.cba.si. Esta aplicação não tem qualquer afiliação com eles."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Os puzzles que fotografa são guardados aqui, para que possa retomar um mais tarde."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Leitura"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Lido como um %1$s manuscrito, %2$s de certeza."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Lido como um %1$s impresso, %2$s de certeza."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Lido como vazio — nenhuma tinta encontrada."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Lido como marcas de candidatos a lápis, e ignorado."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Leitura verificada."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Leitura enviada. Obrigado!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnóstico de leitura recente (pré-preenchido)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"O reconhecimento pode cometer erros, especialmente com texto manuscrito. Use Ler para comparar os dígitos reconhecidos com a fotografia e toque em qualquer casa para a corrigir. A aplicação assinala leituras incertas para revisão; uma leitura confiante pode ainda assim estar errada."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Rejeitar suposição"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Pares remotos"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Remover %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nRemover %1$s de "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Removido"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Reproduzir raciocínio"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Reportar um erro ou ideia no GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Tentar câmara novamente"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Voltar ao passo %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Revelar explicação"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Rever ou enviar leitura"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Verificar a leitura"</string>
+    <string name="msg_right_883361d5" formatted="false">"Certo"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Percurso concluído. Volte atrás para rever qualquer jogada ou experimente os passos por si mesmo."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"linha %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Linha %1$s, coluna %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Linha %1$s, coluna %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"linha $1, coluna $2"</string>
+    <string name="msg_row_634768da" formatted="false">"linha"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"linhas"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", eliminado %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Não foi possível ler os diagnósticos de leitura."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Capturas de ecrã ou exemplos de puzzles"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Segunda hipótese: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Selecionar para praticar"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Selecionada: linha %1$s, coluna %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Enviar diagnóstico (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Enviar diagnóstico"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Enviar estas leituras"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Enviar esta fotografia"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Definições"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"sete"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Partilhar automaticamente leituras incertas"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Enviar automaticamente as leituras incertas?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Mostrar contradição"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Mostrar todos os %1$s no seu puzzle"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Mostrar o que está no seu puzzle"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Coloração simples"</string>
+    <string name="msg_six_44778d82" formatted="false">"seis"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Skyscraper"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", solução %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Resolver"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Resolvido, e todas as respostas estão certas."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Resposta com assistência do resolvedor: coloque %1$s em %2$s. Os candidatos são %3$s. As técnicas suportadas pela aplicação não encontraram uma jogada a partir desta posição. A sua pesquisa encontrou %4$s na solução única; uma demonstração detalhada dos ramos de pesquisa não está disponível."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nResposta com assistência do resolvedor: as técnicas suportadas pela aplicação não encontraram nenhuma jogada. Uma demonstração detalhada não está disponível."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminação com assistência do resolvedor: uma pesquisa elimina %1$s na casa destacada, mas a aplicação não conseguiu produzir um registo curto de contradição para apresentar. Uma demonstração detalhada não está disponível."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Algumas células podem conter notas em vez de um dígito completo."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Alguns dígitos não foram lidos com confiança."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Algo correu mal ao Ler essa fotografia."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Casa"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nCandidatos iniciais: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Passo %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Alinhar"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Estratégias"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Recibo de envio"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"O recibo de envio é inválido."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Recibos de envio (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Recibos de envio"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Falta %1$s na resposta de envio."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"O estado da resposta de envio é inválido."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"O serviço de envio não está configurado."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"O serviço de envio devolveu HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Os envios não estão disponíveis nesta versão."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Enviar"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Enviar leituras incertas futuras automaticamente"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Enviar a leitura"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Enviar leitura incerta para análise"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Enviar atualização"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Enviado"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"A enviar…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Diagnóstico do Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Comentários do Sudoku Buddy — %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy é publicado pela Freevia. Contacto: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"O Sudoku Buddy lê puzzles através da câmara, pelo que necessita de acesso à câmara. O reconhecimento e o histórico de puzzles permanecem no seu telemóvel. Se optar por enviar uma leitura incerta, a respetiva fotografia e resultados são enviados em segurança para a Freevia para melhorar o reconhecimento. A partilha automática é opcional e pode ser desativada nas Definições."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Leitura do Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Leituras do Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"O código-fonte do Sudoku Buddy está licenciado sob a Apache License 2.0. A marca Freevia está sujeita a direitos de marca registada separados."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"O sudoku é uma forma de puzzle do domínio público. Esta aplicação resolve puzzles que já possui; não reproduz nem distribui puzzles de ninguém."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", prova de apoio"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Suponha que a casa marcada contém %1$s. Os dígitos numerados são hipotéticos."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Suponha que esta célula fosse %1$s. Siga as setas por ordem: cada célula é determinada pelos dígitos colocados anteriormente - ou esse dígito é o único que ainda pode conter, ou essa célula é a única posição onde o dígito ainda pode ficar.\n\nIsso deixa a unidade a vermelho sem nenhuma posição para %2$s. As marcações de %3$s nessa unidade indicam as posições onde poderia ter ficado, e cada uma é uma célula que uma das setas acabou de ocupar. Uma unidade sem nenhuma posição para um dígito é impossível - portanto, esta célula não é %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Suponha que esta casa era %1$s. Siga as setas por ordem: cada casa é forçada pelas colocações anteriores — ou esse dígito é o único que ela ainda pode conter, ou essa casa é o único local para onde o dígito ainda pode ir. A casa a vermelho fica então sem qualquer dígito, o que não pode acontecer — logo não é %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Suponha que esta célula fosse %1$s. Siga as setas por ordem: cada célula é determinada pelos dígitos colocados anteriormente - ou esse dígito é o único que ainda pode conter, ou essa célula é a única posição onde o dígito ainda pode ficar.\n\nIsso deixa a linha a vermelho sem nenhuma posição para %2$s. As marcações de %3$s nessa linha indicam as posições onde poderia ter ficado, e cada uma é uma célula que uma das setas acabou de ocupar. Uma linha sem nenhuma posição para um dígito é impossível - portanto, esta célula não é %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Suponha que esta célula fosse %1$s. Siga as setas por ordem: cada célula é determinada pelos dígitos colocados anteriormente - ou esse dígito é o único que ainda pode conter, ou essa célula é a única posição onde o dígito ainda pode ficar.\n\nIsso deixa o bloco a vermelho sem nenhuma posição para %2$s. As marcações de %3$s nesse bloco indicam as posições onde poderia ter ficado, e cada uma é uma célula que uma das setas acabou de ocupar. Um bloco sem nenhuma posição para um dígito é impossível - portanto, esta célula não é %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Suponha que esta casa era %1$s. Siga as setas por ordem: cada casa é forçada pelas colocações anteriores — ou esse dígito é o único que ela ainda pode conter, ou essa casa é o único local para onde o dígito ainda pode ir.\n\nIsso deixa o %2$s a vermelho sem sítio para colocar %3$s. Os %4$ss marcados nele são os locais para onde poderia ter ido, e cada um é uma casa que uma das setas acabou de ocupar. Um %5$s sem sítio para um dígito não pode acontecer — logo não é %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Suponha que esta célula fosse %1$s. Siga as setas por ordem: cada célula é determinada pelos dígitos colocados anteriormente - ou esse dígito é o único que ainda pode conter, ou essa célula é a única posição onde o dígito ainda pode ficar.\n\nIsso deixa a coluna a vermelho sem nenhuma posição para %2$s. As marcações de %3$s nessa coluna indicam as posições onde poderia ter ficado, e cada uma é uma célula que uma das setas acabou de ocupar. Uma coluna sem nenhuma posição para um dígito é impossível - portanto, esta célula não é %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Mude para Depois para ver a jogada e as suas consequências na grelha."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Swordfish"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Tirar uma nova fotografia"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Tirar outra fotografia"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Escolha um dígito e marque todas as unidades onde ele tenha exatamente duas casas restantes. Essas duas são um baloiço: uma delas é o dígito e a outra não é.\n\nComece em qualquer sítio e pinte uma casa, digamos, de azul. Pinte a sua parceira de baloiço de verde, depois aquela com que essa estiver emparelhada novamente de azul, e continue até a cadeia terminar. Todas as casas azuis são verdadeiras ou todas as verdes são — não consegue saber qual, e isso é suficiente para duas coisas.\n\nPrimeiro: se surgirem duas casas da mesma cor numa linha, coluna ou bloco, essa cor é impossível, pelo que o dígito sai de todas as casas que a usam e a outra cor é a resposta em toda a linha.\n\nSegundo: qualquer casa fora da cadeia que consiga ver uma azul e uma verde pode prescindir do dígito, porque uma dessas duas está a contê-lo, qualquer que seja o desfecho da cadeia.\n\nÉ lento com um lápis e vale a pena: uma coloração costuma limpar um dígito de metade do tabuleiro."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Pegue num dígito e numa unidade de cada vez — por exemplo, onde pode ir um 4 neste bloco? Risque todas as casas da unidade que já tenham um dígito, ou que vejam um 4 na sua própria linha ou coluna. Se sobrar uma casa, o 4 vai para aí.\n\nA armadilha é que não consegue ver isto olhando para a casa: ela pode aceitar alegremente outros cinco dígitos também, pelo que nada nela parece forçado. Olhe para o dígito em vez de olhar para a casa, e ele surge imediatamente."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Tirar fotografia"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Tirar a fotografia automaticamente"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Toque numa casa marcada para a rever ou confirme que todas as leituras estão corretas."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Toque primeiro numa casa na grelha."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Teste %1$s como uma suposição na casa marcada. Não é uma resposta. Siga as consequências para ver por que motivo falha."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Testar suposição"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Obrigado por ajudar a melhorar o reconhecimento. A fotografia do seu puzzle, as leituras e as correções serão utilizadas para análise e treino."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Essa também é uma jogada %1$s válida. Este percurso ilustra uma jogada diferente; compare a sua demonstração abaixo."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Essa não é a jogada selecionada para este passo. Podem existir outras jogadas válidas; procure novamente ou revele a explicação deste passo."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Está certo"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Isso é o resto do puzzle. %1$s casas nele necessitam de respostas com assistência do resolvedor porque as técnicas suportadas pela aplicação não encontraram uma jogada. As suas demonstrações detalhadas de pesquisa não estão disponíveis."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Isso é o resto do puzzle. Uma casa nele necessita de uma resposta com assistência do resolvedor porque as técnicas suportadas pela aplicação não encontraram uma jogada. A sua demonstração detalhada de pesquisa não está disponível."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Isso é o resto do puzzle, do início ao fim."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Essa fotografia não pôde ser guardada, pelo que não há nada para enviar."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Essa casa permite %1$s. Procure a jogada justificada pela técnica deste passo ou revele a sua explicação."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Essa casa já está preenchida. Escolha uma casa vazia."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"A suposição foi rejeitada. Voltamos aos candidatos reais e riscamos %1$s na casa marcada. Os dígitos hipotéticos são limpos."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"A câmara não conseguiu tirar essa fotografia."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"A câmara está indisponível. Feche outras aplicações de câmara e tente novamente."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"a outra"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"A fotografia de %1$s e tudo o que foi lido a partir dela serão removidos deste telemóvel. Esta ação não pode ser anulada."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" A fotografia está na sua lista de puzzles, em \"Não leu\"."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"O pivô aqui é %1$s ou %2$s. De qualquer forma, uma das outras duas casas é forçada a %3$s, pelo que nenhuma casa que veja ambas pode ser %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"O par apontador lido ao contrário. Pegue numa linha ou numa coluna e num dígito que ainda precise de uma posição nela. Marque todas as casas nessa linha que poderiam receber o dígito. Se todas elas ficarem dentro de um bloco, o dígito tem de estar na parte da linha pertencente a esse bloco — logo, não está em mais lado nenhum no bloco, incluindo as duas linhas ou colunas dele para as quais não estava a olhar.\n\nTal como o par apontador, isto não coloca nada por si só; abre espaço para algo que o faça."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Os dígitos impressos não formam um puzzle solucionável."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nOs candidatos restantes em %1$s são {%2$s}. Coloque %3$s na linha %4$s, coluna %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"O relatório é demasiado grande para ser enviado."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"O Y-wing com o pivô a conter mais um candidato. Procure uma casa com exatamente três candidatos, por exemplo {1,4,7}, que consiga ver duas casas de dois candidatos — uma {1,7} e uma {4,7}.\n\nAgora todas as três podem ser 7, e uma delas tem de ser. Portanto, uma casa tem de ver todas as três para ser eliminada, não apenas as duas pinças — o que na prática significa que fica no mesmo bloco que o pivô e numa linha com uma pinça.\n\nMenos eliminações do que um Y-wing e mais fácil de deixar escapar pelo mesmo motivo: o pivô não se destaca."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Existe uma casa que pode preencher no bloco destacado.\n\nPrima Pista novamente para saber qual a técnica que a encontra."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Não resta nada aqui sobre o que raciocinar."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Estas %1$s casas contêm todas apenas %2$s e %3$s, e cada uma vê a seguinte, pelo que alternam ao longo de todo o caminho. %4$s e %5$s estão separadas por um número ímpar de ligações e, portanto, contêm dígitos diferentes entre si — o que elimina %6$s de tudo o que veja ambas."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Estas %1$s casas contêm apenas %2$s entre si, pelo que esses dígitos as preenchem por alguma ordem. Isso elimina %3$s do resto deste %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Estas %1$s células só podem conter %2$s entre si, por isso esses dígitos preenchem-nas numa determinada ordem. Isso elimina %3$s das restantes células desta linha."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Estas %1$s células só podem conter %2$s entre si, por isso esses dígitos preenchem-nas numa determinada ordem. Isso elimina %3$s das restantes células desta coluna."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Estas %1$s células só podem conter %2$s entre si, por isso esses dígitos preenchem-nas numa determinada ordem. Isso elimina %3$s das restantes células deste bloco."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Estes são os candidatos iniciais para a sua casa. Rastrear explica quais as possibilidades que podem ser eliminadas."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Estes dígitos não conseguem formar um puzzle e há demasiados erros para identificar quais. Toque em qualquer casa para corrigir o que foi lido ou tire a fotografia novamente."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Estes dígitos não conseguem formar um puzzle. Alterar as %1$s casas com círculo resolveria o problema — toque numa para corrigir o que foi lido."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Estes dígitos não conseguem formar um puzzle. Alterar a casa com círculo resolveria o problema — toque nela para corrigir o que foi lido."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Estes dígitos não formam um puzzle, pelo que um foi mal lido. Prima Resolver para ver quais as casas a corrigir."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Estas quatro casas formam um retângulo através de dois blocos, e três delas contêm apenas %1$s. Se %2$s contivesse apenas esses dois também, os dígitos poderiam ser trocados em redor do retângulo e o puzzle teria duas respostas. Tem uma, logo %3$s tem de usar outra coisa — e %4$s sai."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Não chegam ao fim: algo aqui derrotou a aplicação por completo."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Isto não preenche nada. Elimina %1$s de %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Isto não preenche nenhuma célula. Elimina %1$s como candidato de %2$s células."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Isto não preenche nenhuma célula. Elimina %1$s como candidato de uma célula."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nEsta é a primeira de %1$s deduções que conduzem à resposta."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Esta demonstração explica uma pista, incluindo as eliminações de candidatos que conduzem à sua resposta. Avance um passo para seguir o raciocínio na grelha e, em seguida, continue com o percurso completo."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Não foi possível preparar este puzzle."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Não foi possível guardar este puzzle. Ainda pode usá-lo agora. Liberte algum armazenamento antes de tirar outra fotografia."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Este puzzle tem mais de uma resposta, pelo que um dígito impresso foi provavelmente omitido. A mostrar a resposta %1$s de %2$s — prima Resolver novamente para a seguinte. As casas com círculo diferem entre as respostas apresentadas."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Não foi possível abrir a fotografia deste puzzle."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Este raciocínio exclui %1$s existente "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Esta casa pode conter notas de candidatos em vez de um dígito completo. Por favor, verifique-a."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Esta vista inclui remoções anteriores de candidatos. Abra as respetivas provas abaixo para as verificar."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"três"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Demasiado escuro para distinguir as linhas da grelha"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Rastrear"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Experimentado"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Experimente você mesmo"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Ativar"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Rode o telemóvel para que o puzzle fique na vertical."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Explicador"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"dois"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Duas casas que contêm o mesmo par, ligadas por um baloiço num dos seus dígitos, forçam o outro dígito para uma delas."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Two-string kite"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Retângulo único"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"unidade"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Não legível não expõe nenhuma lista CellReading; as células de entrada exatas e o resultado são retidos."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versão de formato de modelo não suportada"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Inseguro"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Usar o idioma do dispositivo"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Utilizando %1$s, toque numa casa onde um candidato possa ser removido e, em seguida, escolha esse dígito."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Utilizando %1$s, toque na casa que pode preencher e, em seguida, escolha o respetivo dígito."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Muito difícil"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"foi"</string>
+    <string name="msg_were_910adfb4" formatted="false">"foram"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"O que esperava, ou de que forma a sua ideia o ajudaria a resolver ou aprender Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## O que aconteceu e passos para reproduzir (para erros)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"O que faz"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Onde"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Por que motivo %1$s foi removido de l%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Porquê"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Porquê não %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Porquê esta casa? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" com a solução. Use Verificar para inspecioná-las."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Trabalhe no sentido inverso a partir da sua casa. Escolha uma pergunta abaixo."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Trabalhe dígito a dígito em vez de casa a casa. Para uma unidade, anote onde cada dígito em falta ainda poderia ir. Depois procure %1$s dígitos cujas listas entre si cubram apenas %2$s casas.\n\nEsses %3$s dígitos têm de preencher essas %4$s casas, pelo que tudo o resto nelas pode ser riscado — o que muitas vezes transforma uma delas num single naked ou num par naked de imediato.\n\nEsta é a que as pessoas acham mais difícil, porque não há nada para ver quando se olha para as casas: elas ainda têm muitos candidatos. O padrão está nos dígitos."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Trabalhe apenas com casas que tenham exatamente dois candidatos restantes.\n\nComece numa, digamos {2,6}, e suponha que não é o 2 — então é o 6. Mude para uma casa que ela consiga ver e que também tenha um 6, digamos {6,4}: essa não pode ser o 6, logo é o 4. Mude para uma casa que essa veja a conter um 4, e continue, sendo cada passo forçado pelo anterior.\n\nSe chegar a uma casa cujo outro dígito seja 2 — o dígito que começou por eliminar — terminou. Ou a primeira casa era afinal um 2, ou a cadeia funcionou e a última casa é um 2. Uma extremidade ou a outra contém-no, pelo que qualquer casa que veja ambas as extremidades não pode conter.\n\nMantenha as cadeias curtas. Quatro ou cinco casas é possível de encontrar com um lápis; para além disso está a fazer contabilidade, e cadeia de forçamento é o nome honesto para isso."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"a margem de trabalho tem de ser positiva e finita"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Não foi possível ler"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Escrito"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Incorreto"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-wing"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Limpou esta casa."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Definiu isto como um %1$s manuscrito."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Definiu isto como um %1$s impresso."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"As suas alterações são visíveis, mas não puderam ser guardadas. Liberte algum armazenamento e tente editar o puzzle novamente."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"As suas fotografias e a sua privacidade"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Os seus puzzles"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Os seus puzzles guardados"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"A sua casa ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"A sua casa permanece contornada. As casas verdes mostram provas; os dígitos riscados são eliminados."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

@@ -34,6 +34,8 @@ import androidx.compose.ui.Modifier
 import android.graphics.BitmapFactory
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import org.freevia.sudokubuddy.solver.AnswerCheck
@@ -74,6 +76,7 @@ fun HistoryList(
     // composed between openings, so a scan that failed afterwards never appeared - which
     // looks exactly like the photograph never having been kept.
     val context = LocalContext.current
+    val locale = LocalConfiguration.current.locales[0]
 
     LazyColumn(
         // No inset padding here: ModalDrawerSheet already applies the system bars, and
@@ -89,12 +92,12 @@ fun HistoryList(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(
-                    "Your puzzles",
+                    localized("Your puzzles"),
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.weight(1f),
                 )
                 IconButton(onClick = onClose) {
-                    Icon(Icons.Filled.Close, contentDescription = "Close")
+                    Icon(Icons.Filled.Close, contentDescription = localized("Close"))
                 }
             }
         }
@@ -113,9 +116,9 @@ fun HistoryList(
             ) {
                 Icon(CameraIcon, contentDescription = null)
                 Column(modifier = Modifier.weight(1f)) {
-                    Text("New sudoku", style = MaterialTheme.typography.titleSmall)
+                    Text(localized("New sudoku"), style = MaterialTheme.typography.titleSmall)
                     Text(
-                        "Photograph another puzzle.",
+                        localized("Photograph another puzzle."),
                         style = MaterialTheme.typography.bodySmall,
                     )
                 }
@@ -125,7 +128,7 @@ fun HistoryList(
         if (entries.isEmpty()) {
             item {
                 Text(
-                    "Puzzles you photograph are kept here, so you can pick one up again later.",
+                    localized("Puzzles you photograph are kept here, so you can pick one up again later."),
                     style = MaterialTheme.typography.bodyMedium,
                 )
             }
@@ -133,10 +136,10 @@ fun HistoryList(
 
         item { HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp)) }
 
-        for ((day, group) in History.byDay(entries)) {
+        for ((day, group) in History.byDay(entries, locale)) {
             item {
                 Text(
-                    day,
+                    localized(day),
                     style = MaterialTheme.typography.labelLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(top = 12.dp, bottom = 4.dp),
@@ -144,33 +147,32 @@ fun HistoryList(
             }
             for (entry in group) {
                 item(key = entry.id) {
-                    Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .clickable { onOpen(entry) }
-                            .padding(vertical = 6.dp),
-                        horizontalArrangement = Arrangement.spacedBy(12.dp),
-                        verticalAlignment = Alignment.CenterVertically,
-                    ) {
-                        Box(modifier = Modifier.size(52.dp)) {
-                            val thumbnail by produceState<android.graphics.Bitmap?>(null, entry.photo) {
-                                value = withContext(Dispatchers.IO) {
-                                    runCatching { BitmapFactory.decodeFile(entry.photo.absolutePath,
-                                        BitmapFactory.Options().apply { inSampleSize = 4 }) }.getOrNull()
+                    val summary by produceState("${entry.grid.givenCount} printed", entry.grid) {
+                        value = withContext(Dispatchers.Default) { summarise(entry) }
+                    }
+                    HistoryRowContent(
+                        modifier = Modifier.fillMaxWidth().clickable { onOpen(entry) }.padding(vertical = 6.dp),
+                        thumbnail = {
+                            Box(modifier = Modifier.size(52.dp)) {
+                                val thumbnail by produceState<android.graphics.Bitmap?>(null, entry.photo) {
+                                    value = withContext(Dispatchers.IO) {
+                                        runCatching { BitmapFactory.decodeFile(entry.photo.absolutePath,
+                                            BitmapFactory.Options().apply { inSampleSize = 4 }) }.getOrNull()
+                                    }
+                                }
+                                thumbnail?.let {
+                                    Image(
+                                        bitmap = it.asImageBitmap(),
+                                        contentDescription = null,
+                                        modifier = Modifier.fillMaxSize(),
+                                        contentScale = ContentScale.Crop,
+                                    )
                                 }
                             }
-                            thumbnail?.let {
-                                Image(
-                                    bitmap = it.asImageBitmap(),
-                                    contentDescription = null,
-                                    modifier = Modifier.fillMaxSize(),
-                                    contentScale = ContentScale.Crop,
-                                )
-                            }
-                        }
-                        Column(modifier = Modifier.weight(1f)) {
+                        },
+                        heading = {
                             Text(
-                                History.timeOf(entry),
+                                localized(History.timeOf(entry, locale)),
                                 style = MaterialTheme.typography.titleSmall,
                                 color = if (entry.id == currentId) {
                                     MaterialTheme.colorScheme.primary
@@ -178,18 +180,16 @@ fun HistoryList(
                                     MaterialTheme.colorScheme.onSurface
                                 },
                             )
-                            val summary by produceState("${entry.grid.givenCount} printed", entry.grid) {
-                                value = withContext(Dispatchers.Default) { summarise(entry) }
-                            }
-                            Text(summary, style = MaterialTheme.typography.bodySmall)
-                        }
-                        IconButton(onClick = { Diagnostics.share(context, listOf(entry.photo)) }) {
-                            Icon(Icons.Filled.Share, contentDescription = "Send this photo")
-                        }
-                        IconButton(onClick = { pendingDelete = entry }) {
-                            Icon(Icons.Filled.Delete, contentDescription = "Delete this puzzle")
-                        }
-                    }
+                        },
+                        description = { Text(localized(summary), style = MaterialTheme.typography.bodySmall) },
+                        actions = {
+                            HistoryActions(
+                                onSend = { Diagnostics.share(context, listOf(entry.photo)) },
+                                onDelete = { pendingDelete = entry },
+                                deleteLabel = "Delete this puzzle",
+                            )
+                        },
+                    )
                 }
             }
         }
@@ -199,13 +199,13 @@ fun HistoryList(
                 Column(modifier = Modifier.padding(top = 16.dp, bottom = 4.dp)) {
                     HorizontalDivider(modifier = Modifier.padding(bottom = 12.dp))
                     Text(
-                        "Would not read",
+                        localized("Would not read"),
                         style = MaterialTheme.typography.labelLarge,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                     Text(
-                        "Photos the app could not make a puzzle out of. Send one and it " +
-                            "can be looked at.",
+                        localized("Photos the app could not make a puzzle out of. Send one and it " +
+                            "can be looked at."),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
@@ -231,11 +231,11 @@ fun HistoryList(
         AlertDialog(
             onDismissRequest = { pendingDelete = null },
             shape = RoundedCornerShape(20.dp),
-            title = { Text("Delete this puzzle?") },
+            title = { Text(localized("Delete this puzzle?")) },
             text = {
                 Text(
-                    "The photo from ${History.timeOf(entry)} and everything read from it " +
-                        "will be removed from this phone. This cannot be undone."
+                    localized("The photo from ${History.timeOf(entry, locale)} and everything read from it " +
+                        "will be removed from this phone. This cannot be undone.")
                 )
             },
             confirmButton = {
@@ -243,11 +243,11 @@ fun HistoryList(
                     onDelete(entry)
                     pendingDelete = null
                 }) {
-                    Text("Delete", color = Overlays.incorrect)
+                    Text(localized("Delete"), color = Overlays.incorrect)
                 }
             },
             dismissButton = {
-                TextButton(onClick = { pendingDelete = null }) { Text("Keep") }
+                TextButton(onClick = { pendingDelete = null }) { Text(localized("Keep")) }
             },
         )
     }
@@ -266,42 +266,77 @@ private fun RefusedRow(
     onSend: () -> Unit,
     onDelete: () -> Unit,
 ) {
-    Row(
+    HistoryRowContent(
         modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-        verticalAlignment = Alignment.CenterVertically,
-    ) {
-        Box(modifier = Modifier.size(52.dp)) {
-            val thumbnail by produceState<android.graphics.Bitmap?>(null, scan.file) {
-                value = withContext(Dispatchers.IO) {
-                    runCatching { BitmapFactory.decodeFile(scan.file.absolutePath, thumbnailOptions()) }
-                        .getOrNull()
+        thumbnail = {
+            Box(modifier = Modifier.size(52.dp)) {
+                val thumbnail by produceState<android.graphics.Bitmap?>(null, scan.file) {
+                    value = withContext(Dispatchers.IO) {
+                        runCatching { BitmapFactory.decodeFile(scan.file.absolutePath, thumbnailOptions()) }
+                            .getOrNull()
+                    }
+                }
+                thumbnail?.let {
+                    Image(
+                        bitmap = it.asImageBitmap(),
+                        contentDescription = null,
+                        modifier = Modifier.fillMaxSize(),
+                        contentScale = ContentScale.Crop,
+                    )
                 }
             }
-            thumbnail?.let {
-                Image(
-                    bitmap = it.asImageBitmap(),
-                    contentDescription = null,
-                    modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.Crop,
-                )
-            }
-        }
-        Column(modifier = Modifier.weight(1f)) {
+        },
+        heading = {
             Text(
-                History.timeOf(scan.at),
+                localized(History.timeOf(scan.at, LocalConfiguration.current.locales[0])),
                 style = MaterialTheme.typography.titleSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
-            Text(scan.reason, style = MaterialTheme.typography.bodySmall)
+        },
+        description = { Text(localized(scan.reason), style = MaterialTheme.typography.bodySmall) },
+        actions = { HistoryActions(onSend, onDelete, "Delete this photo") },
+    )
+}
+
+@Composable
+private fun HistoryRowContent(
+    modifier: Modifier,
+    thumbnail: @Composable () -> Unit,
+    heading: @Composable () -> Unit,
+    description: @Composable () -> Unit,
+    actions: @Composable () -> Unit,
+) {
+    if (LocalDensity.current.fontScale > 1.3f) {
+        Column(modifier, verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalAlignment = Alignment.CenterVertically) {
+                thumbnail()
+                Box(Modifier.weight(1f)) { heading() }
+                actions()
+            }
+            description()
         }
-        IconButton(onClick = onSend) {
-            Icon(Icons.Filled.Share, contentDescription = "Send this photo")
-        }
-        IconButton(onClick = onDelete) {
-            Icon(Icons.Filled.Delete, contentDescription = "Delete this photo")
+    } else {
+        Row(modifier, horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalAlignment = Alignment.CenterVertically) {
+            thumbnail()
+            Column(Modifier.weight(1f)) { heading(); description() }
+            actions()
         }
     }
+}
+
+@Composable
+private fun HistoryActions(onSend: () -> Unit, onDelete: () -> Unit, deleteLabel: String) {
+    val actions: @Composable () -> Unit = {
+        IconButton(onClick = onSend) {
+            Icon(Icons.Filled.Share, contentDescription = localized("Send this photo"))
+        }
+        IconButton(onClick = onDelete) {
+            Icon(Icons.Filled.Delete, contentDescription = localized(deleteLabel))
+        }
+    }
+    if (LocalDensity.current.fontScale > 1.3f) Column { actions() } else Row { actions() }
 }
 
 /**

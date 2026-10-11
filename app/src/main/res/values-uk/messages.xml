@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nВиділені клітинки це доводять.\n\nНатисніть Підказка знову, щоб побачити, яка саме клітинка."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s та %2$s обидві містять лише %3$s та %4$s. У цьому %5$s %6$s має лише дві позиції, по одній видно кожною з них — тому одна з цих двох є %7$s, а кінець, що її бачить, має бути %8$s. У будь-якому разі один кінець є %9$s, що виключає %10$s з усього, що бачить їх обидва."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"Клітинки %1$s і %2$s можуть містити лише %3$s та %4$s. У цьому блоці %5$s має лише дві можливі позиції, і кожна з цих клітинок бачить одну з них. Отже, одна з двох позицій містить %6$s, а кінцева клітинка, яка її бачить, мусить містити %7$s. У будь-якому разі одна з кінцевих клітинок містить %8$s, що виключає %9$s з усіх клітинок, які бачать їх обидві."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"Клітинки %1$s і %2$s можуть містити лише %3$s та %4$s. У цьому стовпці %5$s має лише дві можливі позиції, і кожна з цих клітинок бачить одну з них. Отже, одна з двох позицій містить %6$s, а кінцева клітинка, яка її бачить, мусить містити %7$s. У будь-якому разі одна з кінцевих клітинок містить %8$s, що виключає %9$s з усіх клітинок, які бачать їх обидві."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"Клітинки %1$s і %2$s можуть містити лише %3$s та %4$s. У цьому рядку %5$s має лише дві можливі позиції, і кожна з цих клітинок бачить одну з них. Отже, одна з двох позицій містить %6$s, а кінцева клітинка, яка її бачить, мусить містити %7$s. У будь-якому разі одна з кінцевих клітинок містить %8$s, що виключає %9$s з усіх клітинок, які бачать їх обидві."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s у рядку %2$s, стовпці %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s на кроці %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s може містити лише %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s не може містити %2$s, тому що %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s не може містити %2$s, оскільки %3$s може містити лише %4$s у тому самому стовпці %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s не може містити %2$s, оскільки %3$s може містити лише %4$s у тому самому блоці %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s не може містити %2$s, оскільки %3$s може містити лише %4$s у тому самому рядку %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s не може містити %2$s, оскільки %3$s містить %4$s у тому самому блоці %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s не може містити %2$s, оскільки %3$s містить %4$s у тому самому стовпці %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s не може містити %2$s, оскільки %3$s містить %4$s у тому самому рядку %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s містить %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"Порожніх: %1$s"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, запис"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s має стояти тут: це єдина клітинка в цьому стовпці %2$s, яка ще може містити %3$s.\n\n%4$s\n\n%5$s наразі допускає %6$s, але кожен стовпець має містити %7$s рівно один раз. Тому поставте %8$s у рядку %9$s, стовпці %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s має стояти тут: це єдина клітинка в цьому %2$s %3$s, яка все ще може прийняти %4$s.\n\n%5$s\n\n%6$s наразі дозволяє %7$s, але кожен %8$s мусить містити %9$s рівно один раз. Тому поставте %10$s у рядок %11$s, стовпець %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s має стояти тут: це єдина клітинка в цьому блоці %2$s, яка ще може містити %3$s.\n\n%4$s\n\n%5$s наразі допускає %6$s, але кожен блок має містити %7$s рівно один раз. Тому поставте %8$s у рядку %9$s, стовпці %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s має стояти тут: це єдина клітинка в цьому рядку %2$s, яка ще може містити %3$s.\n\n%4$s\n\n%5$s наразі допускає %6$s, але кожен рядок має містити %7$s рівно один раз. Тому поставте %8$s у рядку %9$s, стовпці %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s має дві позиції в цьому рядку та дві в цьому стовпці. %2$s та %3$s ділять спільний блок, тому вони не можуть обидві бути %4$s — що залишає одну з %5$s та %6$s з нею, і виключає %7$s з усього, що бачить їх обидві."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s у тому самому %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s у тому самому блоці."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s у тому самому стовпці."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s у тому самому рядку."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s уже виключено з цієї клітинки. Її кандидати: "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s виключається %2$s, що "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s виключається через %2$s, де може бути лише %3$s у тому самому стовпці %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s виключається через %2$s, де може бути лише %3$s у тому самому рядку %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s виключається через %2$s, де може бути лише %3$s у тому самому блоці %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s виключається через %2$s, де є %3$s у тому самому блоці %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s виключається через %2$s, де є %3$s у тому самому стовпці %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s виключається через %2$s, де є %3$s у тому самому рядку %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s вимушено в найновішій пронумерованій клітинці (рядок %2$s, стовпець %3$s). %4$s Стрілка вказує на розміщення, що спричинило це; попередні наслідки також мають значення."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s відсутній у classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s з %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s з них заповнюють клітинку; решта спершу прибирають кандидатів."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s пара"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s друкованих, %2$s, %3$s неправильних"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s друкованих, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s друкованих"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, друкована підказка"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s четвірка"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"Відхилених фотографій: %1$s, спочатку найновіші:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: вилучити %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Кількість клітинок: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Цей шлях складається з %1$s кроків, найскладніший підтримуваний метод — %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s трійка"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s було вилучено з %2$s попередніми міркуваннями щодо кандидатів."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s вписано"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"зображення %1$sx%2$s потребує %3$s байтів, але отримано %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"клітинка не була ні цифрою, ні крапкою"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Ланцюжок клітинок із двома кандидатами, який починається й закінчується тією самою цифрою, розміщує цю цифру на одному з кінців."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Цифра, для якої залишилося лише одне місце в рядку, стовпці або блоці, належить цьому місцю."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Рукописна %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Друкована %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Червона клітинка показує цифру, яку програма розпізнала там. Якщо ви написали не це, торкніться клітинки, щоб виправити її."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Якщо в клітинці залишився лише один можливий кандидат, саме його потрібно вписати."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Список методів ніколи не буває повним, а найскладніші головоломки побудовані так, щоб здолати будь-який із них. Тому коли всі вони виявляються безсилими, репетитор розв’язує одну клітинку, випробовуючи її кандидатів, прямо повідомляє, що саме це було зроблено, і продовжує міркування звідти. Він завжди доходить до кінця головоломки й ніколи не видає підбір за логічний висновок."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Опора з трьома кандидатами та дві відповідні кліщі з двома кандидатами вимушують вилучення цифри з кожної клітинки, яка бачить усі три."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Опора з двома кандидатами та дві кліщі з двома кандидатами можуть вимусити вилучення цифри з кожної клітинки, яка бачить обидві кліщі."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Про застосунок"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Після"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Після цього ходу"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Усе правильно"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Усі три з цих клітинок можуть бути %1$s, і одна з них мусить нею бути. Тому будь-яка клітинка, яка бачить усі три, не може бути %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Дозволити камеру"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Майже — тримайте сторінку рівно та прямо перед камерою без спотворень"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"вилучення, яке нічого не прибирає, не є логічним висновком"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" та "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Відповідь"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Програма та пристрій (заповнено автоматично)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Програма: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"співвідношення сторін має бути додатним, але було %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Припущення · гіпотетична цифра"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Припущення відхилено · справжні кандидати відновлено"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"щонайменше %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Автофото"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Автоматично надсилати Freevia фото судоку з невпевненим розпізнаванням, результати розпізнавання та подальші виправлення клітинок для аналізу й навчання системи розпізнавання. Типово вимкнено."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Уникайте відблисків"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Назад"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Назад до попереднього запитання"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Назад до наочної підказки"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Назад до вашої клітинки"</string>
+    <string name="msg_before_9bb72500" formatted="false">"До"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"До цього ходу"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Сині цифри — це розв’язок. Торкніться будь-якої клітинки, щоб виправити розпізнане."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"блок %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"блок"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Блок"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Виключення за блоком і лінією"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Камера"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"може містити лише"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Скасувати"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", кандидати %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"З’єднайте цифру в ланцюжок через одиниці, де вона має лише дві позиції, розфарбуйте ланцюжок у два чергові кольори, і один колір буде істинним усюди."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Якщо побудувати ланцюжок для %1$s через групи, де ця цифра має лише дві можливі позиції, ці клітинки отримають два кольори, що чергуються. Один із кольорів позначає правильні позиції в усьому ланцюжку. Дві клітинки іншого кольору розташовані в одному рядку, що неможливо. Отже, цей колір позначає хибні позиції, і %2$s виключається з усіх клітинок цього кольору."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Якщо побудувати ланцюжок для %1$s через групи, де ця цифра має лише дві можливі позиції, ці клітинки отримають два кольори, що чергуються. Один із кольорів позначає правильні позиції в усьому ланцюжку. Дві клітинки іншого кольору розташовані в одному блоці, що неможливо. Отже, цей колір позначає хибні позиції, і %2$s виключається з усіх клітинок цього кольору."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Якщо побудувати ланцюжок для %1$s через групи, де ця цифра має лише дві можливі позиції, ці клітинки отримають два кольори, що чергуються. Один із кольорів позначає правильні позиції в усьому ланцюжку. Дві клітинки іншого кольору розташовані в одному стовпці, що неможливо. Отже, цей колір позначає хибні позиції, і %2$s виключається з усіх клітинок цього кольору."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"З’єднання %1$s в ланцюжок через одиниці, де вона має лише дві позиції, залишає ці клітинки у двох чергових кольорах, один із яких є істинним усюди. Дві клітинки кольору %2$s розташовані в одному %3$s, чого бути не може — тому цей колір є хибним, і %4$s вилучається з кожної клітинки цього кольору."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"З’єднання %1$s в ланцюжок через одиниці, де вона має лише дві позиції, залишає ці клітинки у двох чергових кольорах, і один колір є істинним усюди. Ці клітинки бачать обидва кольори, тому за будь-якого результату ланцюжка одна з клітинок, яку вони бачать, містить %2$s — це означає, що вони не можуть її містити."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Якщо побудувати ланцюжок для %1$s через групи, де ця цифра має лише дві можливі позиції, ці клітинки отримають два кольори, що чергуються. Один із кольорів позначає правильні позиції в усьому ланцюжку. Дві клітинки одного кольору розташовані в одному блоці, що неможливо. Отже, цей колір позначає хибні позиції, і %2$s виключається з усіх клітинок цього кольору."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Якщо побудувати ланцюжок для %1$s через групи, де ця цифра має лише дві можливі позиції, ці клітинки отримають два кольори, що чергуються. Один із кольорів позначає правильні позиції в усьому ланцюжку. Дві клітинки одного кольору розташовані в одному стовпці, що неможливо. Отже, цей колір позначає хибні позиції, і %2$s виключається з усіх клітинок цього кольору."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Якщо побудувати ланцюжок для %1$s через групи, де ця цифра має лише дві можливі позиції, ці клітинки отримають два кольори, що чергуються. Один із кольорів позначає правильні позиції в усьому ланцюжку. Дві клітинки одного кольору розташовані в одному рядку, що неможливо. Отже, цей колір позначає хибні позиції, і %2$s виключається з усіх клітинок цього кольору."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Перевірте сумнівні клітинки: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Перевірити"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Перевірте одну сумнівну клітинку."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", перевірено як правильне"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Виберіть кандидата, щоб дізнатися, чому він не може стояти у вашій клітинці."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Виберіть мову"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Виберіть, що показувати"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Закрити"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Закрити підказку"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Згорнути огляд розпізнавання"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"кольорові та градаційні клітинки мають використовувати однакову геометрію"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"стовпець %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"стовпець"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"стовпці"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Порівнювати ланцюжки припущень і вибирати ті, у яких потрібно простежити менше клітинок. Коротші ланцюжки можуть збільшити загальну кількість кроків розв’язання."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Наслідок %1$s з %2$s · гіпотетичні цифри"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"містить"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Продовжити повний шлях"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Суперечність · припущення хибне"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", суперечність"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Суперечність: у червоному %1$s не залишилося місця для %2$s. Це неможливо, тому початкове припущення має бути хибним."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Суперечність: у червоній клітинці не залишилося кандидатів. Це неможливо, тому початкове припущення має бути хибним."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Скопіювати запит на видалення"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Правильно. Порівняйте ваші міркування з поясненням нижче."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"не вдалося декодувати зняте зображення"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Не вдалося знайти друковані цифри на цій фотографії."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Не вдалося розрізнити лінії сітки — спробуйте знову."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Не вдалося відкрити GitHub. Зверніться до служби підтримки за адресою %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Не вдалося зберегти дані фіксації для налагодження"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Не вдалося надіслати розпізнавання. Будь ласка, спробуйте знову, коли з’явиться підключення."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Глухий кут"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Видалити"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Видалити звіт"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Видалити це фото"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Видалити це судоку"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Видалити це судоку?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Видалити це надсилання?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Видалення…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Не вдалося підтвердити видалення. Перевірте з’єднання та спробуйте знову."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Запит на видалення"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Відповідь про видалення не підтвердила цю квитанцію."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Служба видалення повернула HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Опишіть, що сталося, і кроки для відтворення. Зазначте, чи ви спершу перевірили й виправили розпізнані цифри. Для ідеї напишіть «Не застосовується»."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", призначення цієї підказки"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Пристрій: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Діагностику скорочено для чернетки в браузері. Дія «Надіслати діагностику» в програмі може надіслати повний звіт."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"цифра має бути 1..9, але була %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Цифри не розпізнано"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Збереження підтверджень на диску впливає на тривалість; це не тест затримки."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", не збігається з розв’язком"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Кожна квитанція ідентифікує одну надіслану версію головоломки. Видаліть її тут, щоб вилучити конфіденційно збережений звіт із Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Попередні вилучення: %1$s. Скористайтеся посиланнями на попередні кроки, щоб оглянути їхні доведення."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← попереднє свідчення (глибина %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Попередні гіпотетичні розміщення залишають для неї лише одного кандидата."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Попередні кроки, використані в цьому доведенні"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Змінити клітинку"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE, d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"вісім"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"порожня"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Порожня."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Порожня"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Англійська"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"записів, що не збігаються"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"запис, що не збігається"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Кожен із них заповнює клітинку."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Кожну клітинку заповнено, але %1$s відповідей не збігаються з розв’язком."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Кожну клітинку заповнено, але одна відповідь не збігається з розв’язком."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Будь-яке судоку з єдиним розв’язком можна розгадати логічно; вгадування ніколи не потрібне й рідко допомагає. Це способи міркування, які ця програма вміє розпізнавати й пояснювати, від найпростіших. Якщо якийсь із них застосовний до відкритої головоломки, програма покаже кожне місце, де це можливо."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Усе, що ви написали досі, правильно."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Приклади, доступні зараз: кожен починається з поточної сітки."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"очікувалося 10 горизонтальних ліній, отримано %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"очікувалося 10 вертикальних ліній, отримано %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"очікувалася 81 клітинка, але отримано %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"очікувалася 81 клітинка в кожному блоці, знайдено %1$s та %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"очікувався 8-бітний одноканальний формат, але отримано %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"очікувалося зображення 28x28, але отримано %1$s значень"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Очікувана поведінка або запропоноване покращення"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"очікувалося по десять ліній у кожному напрямку"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"очікувалося два блоки, знайдено %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Пояснити попередні вилучення кандидатів (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Пояснювати підказки"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Знайдіть клітинку, де залишилося лише два або три кандидати — що менше, то краще, і що більше заповнені рядок, стовпець і блок навколо неї, то ще краще.\n\nВиберіть одного з її кандидатів і злегка впишіть його олівцем. Тепер простежте наслідки: ця цифра зникає з усіх клітинок, які бачить ця клітинка, через що в одній із них може залишитися один кандидат, це вимусить наступний і так далі. Продовжуйте.\n\nСтанеться одне з двох. Або все зайде в глухий кут, і ви нічого не дізнаєтеся — зітріть і спробуйте іншого кандидата. Або ви дійдете до клітинки, де зовсім не залишилося кандидатів, чи до рядка, де якусь цифру нікуди поставити. Це неможливо, тому вписана олівцем цифра була помилковою, і її можна остаточно виключити.\n\nДо цього методу вдаються тоді, коли все інше вичерпано. Він повільніший і є радше обліком, ніж пошуком закономірностей, проте здатний виявити ходи, які закономірності пропускають. Одне вилучення часто дозволяє простим технікам знову запрацювати; деякі позиції все ж потребують глибшого пошуку."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Знайдіть дві клітинки з однаковими двома кандидатами, скажімо {3,7}, які не бачать одна одну — зазвичай вони далеко одна від одної.\n\nТепер пошукайте рядок, стовпець або блок, де цифра 7 має лише дві можливі клітинки, одну з яких бачить перша клітинка вашої пари, а другу — інша. Це зв’язок.\n\nОдна з цих двох клітинок є 7. Хоч би яка це була, клітинка з вашої пари, що її бачить, не може бути 7, тому має бути 3. Ви не знаєте, на якому кінці розташована 3, а лише те, що вона є на одному з них, — і цього достатньо, щоб виключити 3 з усіх клітинок, які бачать обидва кінці.\n\nНайскладніше — знайти зв’язок, тому шукайте його у зворотному порядку: спершу позначте одиниці, де цифра має лише дві позиції, а потім шукайте відповідну пару по обидва боки."</string>
+    <string name="msg_finished_05343e98" formatted="false">"завершено"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Автоматично робити фото, коли сітка рівно розташована в кадрі й не рухається. Кнопка зйомки працює за будь-якого налаштування."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Умістіть усю сітку в кадр."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Умістіть усю сітку в кадрі"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"п’ять"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Йти шляхом, де кожен хід ґрунтується на попередньому."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Переглянути повне доведення по порядку"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Простежте цей ланцюжок двоклітинкових кандидатів: якщо %1$s — не %2$s, тоді кожна клітинка вздовж нього вимушена попередньою, і %3$s стає %4$s. Отже, один із кінців містить %5$s, що виключає цю цифру з усіх клітинок, які бачать обидва кінці."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Ланцюжок припущень"</string>
+    <string name="msg_four_04efaf08" formatted="false">"чотири"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Чотири клітинки у двох рядках, двох стовпцях і двох блоках не можуть одночасно містити ті самі два кандидати, інакше головоломка мала б два розв’язки."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia підтвердила видалення, але цей телефон не зміг видалити локальну квитанцію. Повторіть спробу, щоб завершити локальне очищення."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia видалить цю версію звіту та її приватну навчальну копію. Подальші виправлення можуть створити новий звіт відповідно до ваших налаштувань надсилання. Модель, яку вже навчали на цих даних, може зберегти засвоєні зміни."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Повний шлях"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Надалі, якщо розпізнавання буде невпевненим, випрямлене фото судоку, результати розпізнавання та виправлення надсилатимуться Freevia для аналізу й навчання. Навчальні копії зберігатимуться, доки ви не видалите їх через квитанції надсилань; уже навчена модель може зберегти засвоєні зміни. Якщо зараз відкрито судоку з невпевненим розпізнаванням, його буде надіслано одразу. Це можна вимкнути в налаштуваннях."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Легкий"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Відблиски приховують лінії — нахиліть сторінку від джерела світла"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Сірі клітинки містять позначки олівцем, які програма ігнорує. Смужка під цифрою вказує на рівень упевненості. Торкніться клітинки для подробиць."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Рукописна"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Важкий"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Прихований"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Прихована пара"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Прихована четвірка"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Прихований одиночний кандидат"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Прихована трійка"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Сховати попередні свідчення"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Сховати пояснення, як помітити"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", підказка %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Підказка"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Доведення підказки"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Обґрунтування підказки"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Тримайте нерухомо..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Тримайте нерухомо або торкніться кнопки затвора"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Тримайте нерухомо, поки камера фокусується..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Тримайте телефон прямо"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Тримайте телефон прямо над головоломкою."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Тримайте телефон паралельно сторінці над судоку"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\\\"horizontal\\\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Як знайти"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nХід міркувань:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Шукайте клітинки з рівно двома кандидатами — Y-wing складається з трьох таких клітинок і нічого іншого.\n\nВізьміть одну як опорну, скажімо {2,5}. Пошукайте клітинку, яку вона бачить, що містить {2,9}, та іншу, яку вона бачить, що містить {5,9}. Опорна клітинка дорівнює або 2, або 5. Якщо це 2, перша клітинка-кліщ має бути 9; якщо це 5, друга має бути 9. У будь-якому разі 9 з’являється в одній із кліщів — ви не знаєте, в якій саме, та це й не потрібно.\n\nТому жодна клітинка, яка бачить обидві кліщі, не може бути 9. Зазвичай це два кути, які доповнюють прямокутник."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", гіпотетична %1$s, не є введеною відповіддю"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Якщо %1$s цифр в одному рядку, стовпці чи блоці можуть стояти лише в тих самих %2$s клітинках, ці клітинки не можуть містити нічого іншого."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Якщо %1$s клітинок в одному рядку, стовпці чи блоці ділять між собою рівно %2$s кандидатів, ці цифри належать цим клітинкам і жодним іншим у цій одиниці."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Якщо цифра має дві позиції в рядку й дві в стовпці, причому по одній із них ділять спільний блок, одна з двох інших мусить містити її."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Якщо цифра має по дві позиції в кожному з двох рядків і вони мають спільний стовпець, одна з двох інших позицій мусить містити її."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Якщо всі позиції цифри на лінії розташовані всередині одного блока, цю цифру можна виключити з решти цього блока."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Якщо єдині позиції цифри в %1$s рядках лежать у тих самих %2$s стовпцях, її можна виключити з інших місць цих стовпців — і так само, якщо поміняти місцями рядки та стовпці."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Якщо єдині позиції цифри всередині блока лежать на одній лінії, цю цифру можна виключити з решти цієї лінії."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Якщо припущення щодо цифри веде до клітинки, де нічого не можна поставити, ця цифра була помилковою."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"розміри зображення мають бути додатними"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"У ланцюжку клітинок, кожна з яких містить однакові два кандидати, на двох кінцях ланцюжка непарної довжини містяться різні цифри."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"У цих %1$s %2$s цифра %3$s може стояти лише в цих %4$s %5$s. Разом вони займають кожну з них, тому %6$s можна виключити з тих %7$s в усіх інших місцях."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"У цих %1$s стовпцях %2$s може стояти лише в цих %3$s рядках. Разом ці позиції займають кожен із них, тому %4$s можна виключити з усіх інших клітинок цих рядків."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"У цих %1$s рядках %2$s може стояти лише в цих %3$s стовпцях. Разом ці позиції займають кожен із них, тому %4$s можна виключити з усіх інших клітинок цих стовпців."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"У цих двох %1$s цифра %2$s має лише по дві позиції, і %3$s та %4$s ділять спільний %5$s — тому вони не можуть обидві бути %6$s. Отже, одна з %7$s та %8$s містить її, що виключає %9$s з кожної клітинки, яка бачить їх обидві."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"У кожному з цих двох стовпців %1$s має лише дві можливі позиції, а %2$s і %3$s розташовані в одному рядку, тому обидві клітинки не можуть містити %4$s. Отже, одна з клітинок %5$s і %6$s містить цю цифру, що виключає %7$s з усіх клітинок, які бачать їх обидві."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"У кожному з цих двох рядків %1$s має лише дві можливі позиції, а %2$s і %3$s розташовані в одному стовпці, тому обидві клітинки не можуть містити %4$s. Отже, одна з клітинок %5$s і %6$s містить цю цифру, що виключає %7$s з усіх клітинок, які бачать їх обидві."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"У цьому %1$s цифра %2$s може стояти лише в цих %3$s клітинках, тому ці клітинки зайняті. Це виключає %4$s з них."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"У цьому %1$s цифра %2$s може стояти лише всередині одного блока. Отже, %3$s міститься в цьому блоці в цьому %4$s, і її можна виключити з решти блока."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"У цьому блоці %1$s може стояти лише в цих %2$s клітинках, тож вони вже відведені для цих цифр. Це виключає з них %3$s."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"У цьому стовпці %1$s може стояти лише в цих %2$s клітинках, тож вони вже відведені для цих цифр. Це виключає з них %3$s."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"У цьому рядку %1$s може стояти лише в цих %2$s клітинках, тож вони вже відведені для цих цифр. Це виключає з них %3$s."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Включає їхні фотографії, розпізнавання та виправлення. Вимкніть це в Налаштуваннях."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Всередині одного блока знайдіть цифру, яка може стояти лише у двох або трьох клітинках, і перевірте, чи всі вони лежать в одному рядку або в одному стовпці. Якщо так, ця цифра точно лежить десь уздовж цієї лінії — ви не знаєте де, але знаєте, що вона всередині цього блока. Тому вона не може стояти більше ніде вздовж цієї лінії за межами блока.\n\nСаме по собі це нічого не ставить. Це прибирає кандидатів, щоб деінде з’явився одинак."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Всередині цього блока цифра %1$s може стояти лише в цьому %2$s. Отже, %3$s стоїть десь тут і може бути виключена з решти %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Проблема або ідея"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Це застосовно тут у %1$s місцях. Зробіть крок уперед, щоб переглянути їх по черзі."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Це застосовно тут в одному місці. Зробіть крок уперед, щоб побачити його."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"У цій позиції це ніде не застосовно."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Це єдине місце, що залишилося для %1$s у виділеному %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Це обведена клітинка.\n\nНатисніть Підказка знову, щоб отримати цифру."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Медуза"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Зберегти"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Віддавати перевагу коротким ланцюжкам"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Мова"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Ліцензії"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Пошукайте вздовж одного рядка, стовпця або блока клітинки, де залишилося небагато кандидатів. Візьміть %1$s із них і об’єднайте їхніх кандидатів. Якщо об’єднання містить рівно %2$s цифр, ці %3$s цифри розподілені: вони мають стояти в цих %4$s клітинках у певному порядку, навіть якщо ви ще не знаєте, яка де саме.\n\nЦього достатньо. Кожна інша клітинка в цій одиниці може відмовитися від цих цифр, і зазвичай одна з них стає після цього одинаком.\n\nКлітинки не обов’язково мають містити однакових кандидатів — {2,7}, {2,9} та {7,9} є чудовою трійкою, і саме її люди часто пропускають."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Шукайте клітинки з однаковими двома кандидатами — скажімо {4,9}, — які утворюють ланцюжок, де кожна бачить наступну. Трьох недостатньо; потрібно щонайменше чотири.\n\nФарбуйте їх чергуванням кольорів у процесі. Оскільки кожна клітинка бачить наступну, жодні дві сусідні не можуть містити однакову цифру, тому ланцюжок читається як 4, 9, 4, 9 по всій довжині — або 9, 4, 9, 4, і ви не можете знати напевно.\n\nУ будь-якому разі дві клітинки протилежних кольорів містять між собою різні цифри: одна — 4, а друга — 9. Тому все, що бачить їх обидві, не може бути жодною з них і втрачає обох кандидатів одразу.\n\nЦю структуру легко помітити саме тому, що кожна клітинка в ній виглядає однаково. Простежте однакові пари по всій сітці та подивіться, де вони стикаються."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Шукайте три клітинки з однаковими двома кандидатами — скажімо {1,6}, — розташовані в трьох кутах прямокутника. Прямокутник має лежати рівно у двох блоках: два рядки та два стовпці перетинають два блоки, а не чотири.\n\nТепер подивіться на четвертий кут. Якби він містив лише 1 та 6, головоломка мала б два розв’язки — можна було б поміняти 1 і 6 місцями по прямокутнику, і все інше все одно працювало б. Правильно складена головоломка має один розв’язок, тому четвертий кут мусить використовувати щось інше: інші його кандидати залишаються, а 1 і 6 вилучаються.\n\nЦе єдиний аргумент у правилах, який стосується автора, а не самої сітки. Він надійний для опублікованої головоломки й марний для тієї, яку ви вже заповнили неправильно, адже тоді єдиного розв’язку взагалі може не існувати."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Подивіться в цей блок. Простежте за контуром до клітинки, яку пояснить ця підказка."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Позначки"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Середній"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Ще"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Потрібно більше світла"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Більше одного розв’язку, отже, друковану цифру було пропущено. Натисніть Розв’язати, щоб переглянути розв’язки та їхні відмінності."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Відійдіть далі"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Підійдіть ближче"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Підійдіть ближче — сітка занадто мала для розпізнавання."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Відкритий"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Відкрита пара"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Відкрита четвірка"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Єдиний кандидат у клітинці"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Відкрита трійка"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Називати прийом і показувати клітинки, що обґрунтовують відповідь, а не лише давати цифру."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"потрібно щонайменше 4 точки, але отримано %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Потрібна перевірка"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Нове судоку"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Наступний наслідок"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Наступний крок"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Зображення не додаються автоматично. Надіслані тут повідомлення та вкладення є загальнодоступними. Приклади, які ви бажаєте надіслати приватно, надсилайте на info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Жодну фотографію не було відхилено з моменту останнього встановлення програми."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Діагностика сканування недоступна."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Жоден метод тут не застосовний"</string>
+    <string name="msg_none_140bedbf" formatted="false">"жодної"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Жоден із них не ставить цифру в клітинку: вони прибирають кандидатів, саме так і розкривається складна головоломка."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Наразі немає у вашій головоломці."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"не є файлом моделі цифр"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Розпізнано без упевненості — найближчий варіант: %1$s %2$s у %3$s. Будь ласка, вкажіть цю клітинку самостійно."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Поки що не розпізнається як сітка дев’ять на дев’ять — спробуйте заповнити кадр лише сіткою або просто зробіть фотографію"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"не розпочато"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Нічого не вдалося надіслати з цього телефону."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Більше нічого розгадувати."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Більше нічого тут не можна з’ясувати методами, які відомі цій програмі."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"нічого незвичного"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"одна"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Одна клітинка була схожа на друковану цифру, але не є нею."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Одну друковану цифру було виправлено автоматично."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"одна клітинка"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Тут може стояти лише %1$s — кожна інша цифра вже присутня в цьому рядку, стовпці або блоці."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Тут може стояти лише %1$s. Виділені клітинки виключають %2$s з інших восьми цифр; %3$s було виключено з цієї клітинки раніше, а не через те, що зараз видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Тут може бути лише %1$s. Виділені клітинки виключають чотири з інших восьми цифр; %2$s було виключено з цієї клітинки раніше, а не через те, що видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Тут може бути лише %1$s. Виділені клітинки виключають шість з інших восьми цифр; %2$s було виключено з цієї клітинки раніше, а не через те, що видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Тут може бути лише %1$s. Виділені клітинки виключають одну з інших восьми цифр; %2$s було виключено з цієї клітинки раніше, а не через те, що видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Тут може бути лише %1$s. Виділені клітинки виключають сім з інших восьми цифр; %2$s було виключено з цієї клітинки раніше, а не через те, що видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Тут може бути лише %1$s. Виділені клітинки виключають п’ять з інших восьми цифр; %2$s було виключено з цієї клітинки раніше, а не через те, що видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Тут може стояти лише %1$s. Виділені клітинки вичерпують %2$s з інших восьми цифр; %3$s %4$s виключено з цієї клітинки раніше, а не чимось, що ви бачите навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Тут може бути лише %1$s. Виділені клітинки виключають дві з інших восьми цифр; %2$s було виключено з цієї клітинки раніше, а не через те, що видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Тут може стояти лише %1$s. Виділені клітинки виключають %2$s з інших восьми цифр; %3$s було виключено з цієї клітинки раніше, а не через те, що зараз видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Тут може бути лише %1$s. Виділені клітинки виключають три з інших восьми цифр; %2$s було виключено з цієї клітинки раніше, а не через те, що видно навколо неї."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Тут може стояти лише %1$s. Інші вісім цифр виключені заповненими клітинками або вимушеними одиничними кандидатами в цьому рядку, стовпці чи блоці."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Тут може стояти лише %1$s, хоча ніщо навколо не показує чому: усі вісім інших цифр були виключені з цієї клітинки попередніми міркуваннями, а не через те, що вони вписані в її рядку, стовпці чи блоці."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Знайдено лише %1$s друкованих цифр, що замало для головоломки."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"підтримуються лише повороти на чверть оберту, а не %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Відкрийте чернетку у вашому браузері з уже заповненими версією програми, моделлю телефону, версією Android та нещодавньою діагностикою сканування. Додайте повний опис і відповідні знімки екрана власноруч.\n\nПотрібен вхід у GitHub. Ви можете переглянути та відредагувати чернетку перед надсиланням. Надіслані звіти та вкладення є загальнодоступними. Жодні фотографії не прикріплюються автоматично."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Відкрити налаштування програми"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Відкрити GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Примітки щодо відкритого коду"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Відкрийте «Чому ця клітинка?», щоб побачити свідчення остаточного розміщення, або виберіть виключеного кандидата, щоб простежити його доведення."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV — ліцензія Apache License 2.0. Використовується для пошуку та вирівнювання сітки.\n\nAndroidX, Jetpack Compose та CameraX — ліцензія Apache License 2.0.\n\nKotlin — ліцензія Apache License 2.0.\n\nРозпізнавач цифр навчався на базі даних рукописних цифр MNIST від LeCun, Cortes та Burges, а також на цифрах, відтворених із відкритих системних шрифтів, і на цифрах, згенерованих програмно."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Не вдалося завантажити нативні бібліотеки OpenCV"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Сфотографувати іншу головоломку."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Фотографії, які ви зберігаєте, залишаються у приватному сховищі цієї програми та вилучаються під час їх видалення або видалення програми."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Фотографії, з яких програма не змогла створити головоломку. Надішліть одну, і її можна буде переглянути."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Виберіть цифру та перегляньте рядки, де для неї залишилося рівно дві клітинки. Візьміть два таких рядки й подивіться, чи потрапляє одна з їхніх клітинок в один стовпець.\n\nЯкщо так, ці дві клітинки розташовані в одному стовпці й не можуть обидві містити цю цифру. Отже, принаймні один із дальніх кінців містить її — дві клітинки з іншого боку. Ви не знаєте, який саме, та це й не потрібно: будь-яка клітинка, яка бачить обидва дальні кінці, може позбутися цієї цифри.\n\nПотім повторіть це зі стовпцями замість рядків. За формою це нагадує високу будівлю з низькою поруч, звідки й походить назва та як її помітити, коли ви побачите кілька таких."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Виберіть цифру. Знайдіть рядок, де вона має рівно дві позиції, і стовпець, де вона має рівно дві позиції. Тепер перевірте, чи розташовані одна клітинка рядка й одна клітинка стовпця в одному блоці.\n\nЯкщо так, вони не можуть обидві бути цією цифрою — один блок, одна цифра. Отже, принаймні один із двох кінців, що залишилися, є нею, і все, що бачить обидва кінці, може позбутися цієї цифри.\n\nЦю техніку часто пропускають тому, що тут немає прямої лінії: чотири клітинки утворюють перекошену фігуру, і єдине, що тримає її разом, — це блок, спільний для двох внутрішніх кінців."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Виберіть порожню клітинку та переберіть цифри від 1 до 9, викреслюючи все, що вже є в її рядку, стовпці або блоці. Якщо залишається рівно одна цифра, вона ставиться туди.\n\nЦе техніка, заради підготовки якої існують усі інші. Усе складніше — це спосіб звести якусь клітинку до одного кандидата, тому коли складна техніка дає результат, шукайте далі саме тут."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Виберіть одну цифру та проігноруйте всі інші. Перегляньте рядки та відзначте ті, де ця цифра має лише дві або три можливі клітинки. Знайдіть %1$s таких рядків, чиї клітинки вишикувані в тих самих %2$s стовпцях.\n\nЯкщо ви їх знайдете, кожен із цих %3$s рядків мусить містити цифру в одному з цих стовпців, і жодні два не можуть використовувати один і той самий стовпець. Отже, разом вони вичерпують цю цифру в усіх %4$s стовпцях — і кожна інша клітинка в цих стовпцях може позбутися її.\n\nПотім повторіть усе те саме, помінявши стовпці та рядки місцями. Половина таких випадків знаходиться саме другим способом, і це та половина, яку більшість людей ніколи не шукає."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Впишіть %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Впишіть %1$s у рядок %2$s, стовпець %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Поставте %1$s у виділену контуром клітинку."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Будь ласка, прикріпіть відповідні знімки екрана за допомогою елемента вкладення GitHub: головоломку, розпізнані цифри, результат дії Перевірити або етап підказки, де видно проблему. За потреби додайте очікувані та фактичні результати."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Будь ласка, видаліть мої надіслані дані розпізнавання Sudoku Buddy. Ідентифікатори квитанцій: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Будь ласка, замініть цей текст повним описом проблеми або ідеї. Дайте цьому звіту короткий описовий заголовок."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Наведіть камеру на судоку"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Наведіть камеру на судоку."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Спрямуйте камеру на паперову головоломку судоку. Програма розпізнає друковані цифри та все, що ви вписали, розв’язує її й може надати підказку, перевірити ваші відповіді або показати весь розв’язок."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Вказівна пара"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Підготовка судоку…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Назад"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Попередній крок"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Друковані"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Політика конфіденційності"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Сховище головоломок"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Судоку"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Судоку розпізнаються та розв’язуються на цьому телефоні. Якщо ви надішлете невпевнене розпізнавання або ввімкнете автоматичне надсилання, фото судоку, початкові результати розпізнавання, позначки невпевненості та ваші виправлення будуть захищено передані Freevia для аналізу розпізнавання та приватного навчання. Звіти не містять моделі вашого пристрою чи діагностики. Автоматичне надсилання необов’язкове; немає облікових записів, звичайної аналітики використання чи рекламного відстеження. Навчальні копії можна видалити за квитанцією, але вже навчена модель може зберегти засвоєні зміни. Щоб видалити звіт, відкрийте квитанції надсилань у налаштуваннях."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Головоломки, сфотографовані для тестування, взяті з sudoku.cba.si. Ця програма не пов’язана з ними."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Сфотографовані вами головоломки зберігаються тут, тож ви можете повернутися до них пізніше."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Розпізнане"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Розпізнано як рукописну %1$s, упевненість %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Розпізнано як друковану %1$s, упевненість %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Розпізнано як порожню — чорнила не знайдено."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Розпізнано як позначки кандидатів олівцем та проігноровано."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Розпізнавання перевірено."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Результат розпізнавання надіслано. Дякуємо!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Нещодавня діагностика сканування (заповнено автоматично)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Розпізнавання може помилятися, особливо з почерком. Використовуйте Переглянути розпізнавання, щоб порівняти розпізнані цифри з фотографією, і торкніться будь-якої клітинки, щоб виправити її. Програма позначає невпевнені результати для перевірки; упевнене розпізнавання також може бути помилковим."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Відхилити припущення"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Віддалені пари"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Виключіть %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nВиключіть %1$s з "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Виключені"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Повторити міркування"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Повідомити про помилку чи ідею на GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Повторити спробу камери"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Повернутися до кроку %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Показати пояснення"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Перевірити або надіслати розпізнане"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Перевірити розпізнавання"</string>
+    <string name="msg_right_883361d5" formatted="false">"Правильно"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Шлях пройдено. Поверніться назад, щоб переглянути будь-який хід, або спробуйте пройти кроки власноруч."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"рядок %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Рядок %1$s, стовпець %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Рядок %1$s, стовпець %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"рядок $1, стовпець $2"</string>
+    <string name="msg_row_634768da" formatted="false">"рядок"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"рядки"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", виключено %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Не вдалося прочитати діагностику сканування."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Знімки екрана або приклади головоломок"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Друге припущення: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Вибрати для тренування"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Вибрано: рядок %1$s, стовпець %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Надіслати діагностику (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Надіслати діагностику"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Надіслати ці скани"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Надіслати це фото"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Налаштування"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"сім"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Автоматично ділитися сумнівними розпізнаваннями"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Автоматично надсилати сумнівні розпізнавання?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Показати суперечність"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Показати всі %1$s у вашій головоломці"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Показати варіант у вашій головоломці"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Просте розфарбовування"</string>
+    <string name="msg_six_44778d82" formatted="false">"шість"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Хмарочос"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", розв’язок %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Розв’язати"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Розв’язано, і кожна відповідь правильна."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Відповідь за допомогою розв’язувача: поставте %1$s у %2$s. Кандидати: %3$s. Підтримувані програмою методи не знайшли ходу з цієї позиції. Пошук знайшов %4$s в єдиному розв’язку; детальне доведення гілок пошуку недоступне."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nВідповідь знайдено алгоритмом розв’язання: доступні в застосунку прийоми не дали наступного ходу. Докладного пояснення немає."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Вилучення за допомогою розв’язувача: пошук виключає %1$s у виділеній клітинці, але програма не змогла сформувати коротке простеження суперечності для відображення. Детальне доведення недоступне."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Деякі клітинки можуть містити нотатки замість повної цифри."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Деякі цифри не було розпізнано впевнено."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Під час розпізнавання цієї фотографії сталася помилка."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Клітинка"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nПочаткові кандидати: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Крок %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Вирівняйте прямо"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Прийоми"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Квитанція про надсилання"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Квитанція про надсилання недійсна."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Квитанції про надсилання (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Квитанції надсилань"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"У відповіді про надсилання відсутнє %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Статус відповіді про надсилання недійсний."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Службу надсилання не налаштовано."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Служба надсилання повернула HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Надсилання недоступні в цій збірці."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Надіслати"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Автоматично надсилати майбутні невпевнені розпізнавання"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Надіслати розпізнане"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Надіслати невпевнене розпізнавання для аналізу"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Надіслати оновлення"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Надіслано"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Надсилання…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Діагностика Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Відгук про Sudoku Buddy — %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Видавець Sudoku Buddy — Freevia. Контакт: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy розпізнає головоломки через камеру, тому потребує доступу до неї. Розпізнавання та історія головоломок залишаються на вашому телефоні. Якщо ви вирішите надіслати невпевнене розпізнавання, його фотографію та результати буде безпечно передано у Freevia для покращення розпізнавання. Автоматичне поширення є необов’язковим і може бути вимкнене в Налаштуваннях."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Скан Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Скани Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Вихідний код Sudoku Buddy ліцензовано за Apache License 2.0. Бренд Freevia підпадає під окремі права на торговельні марки."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Судоку є суспільним надбанням. Ця програма розв’язує головоломки, які у вас уже є; вона не відтворює й не розповсюджує чужі головоломки."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", підтвердне свідчення"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Припустімо, що позначена клітинка містить %1$s. Пронумеровані цифри є гіпотетичними."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Припустімо, що ця клітинка містить %1$s. Послідовно рухайтеся за стрілками: попередні розміщення однозначно визначають значення кожної клітинки — або ця цифра є єдиною, яку клітинка ще може містити, або ця клітинка є єдиним місцем, де цифра ще може стояти.\n\nТоді в групі, виділеній червоним, не залишається місця для %2$s. Позначки %3$s у ній вказують місця, де ця цифра могла стояти, але кожне з них щойно зайняла одна зі стрілок. Група без місця для певної цифри неможлива, отже, початкова клітинка не містить %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Припустімо, що ця клітинка дорівнює %1$s. Слідуйте за стрілками по порядку: кожна клітинка вимушена попередніми розміщеннями — або ця цифра є єдиною, яку вона все ще може містити, або ця клітинка є єдиним місцем, де ця цифра все ще може стояти. Клітинка червоним кольором тоді залишається взагалі без жодної цифри, чого бути не може — тому це не %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Припустімо, що ця клітинка містить %1$s. Послідовно рухайтеся за стрілками: попередні розміщення однозначно визначають значення кожної клітинки — або ця цифра є єдиною, яку клітинка ще може містити, або ця клітинка є єдиним місцем, де цифра ще може стояти.\n\nТоді в рядку, виділеному червоним, не залишається місця для %2$s. Позначки %3$s у ньому вказують місця, де ця цифра могла стояти, але кожне з них щойно зайняла одна зі стрілок. Рядок без місця для певної цифри неможливий, отже, початкова клітинка не містить %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Припустімо, що ця клітинка містить %1$s. Послідовно рухайтеся за стрілками: попередні розміщення однозначно визначають значення кожної клітинки — або ця цифра є єдиною, яку клітинка ще може містити, або ця клітинка є єдиним місцем, де цифра ще може стояти.\n\nТоді в блоці, виділеному червоним, не залишається місця для %2$s. Позначки %3$s у ньому вказують місця, де ця цифра могла стояти, але кожне з них щойно зайняла одна зі стрілок. Блок без місця для певної цифри неможливий, отже, початкова клітинка не містить %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Припустімо, що ця клітинка дорівнює %1$s. Слідуйте за стрілками по порядку: кожна клітинка вимушена попередніми розміщеннями — або ця цифра є єдиною, яку вона все ще може містити, або ця клітинка є єдиним місцем, де ця цифра все ще може стояти.\n\nЦе залишає %2$s червоним кольором без місця для %3$s. Позначені в ньому цифри %4$s — це місця, де вона могла б стояти, і кожне з них є клітинкою, яку щойно зайняла одна зі стрілок. %5$s без місця для цифри існувати не може — тому це не %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Припустімо, що ця клітинка містить %1$s. Послідовно рухайтеся за стрілками: попередні розміщення однозначно визначають значення кожної клітинки — або ця цифра є єдиною, яку клітинка ще може містити, або ця клітинка є єдиним місцем, де цифра ще може стояти.\n\nТоді в стовпці, виділеному червоним, не залишається місця для %2$s. Позначки %3$s у ньому вказують місця, де ця цифра могла стояти, але кожне з них щойно зайняла одна зі стрілок. Стовпець без місця для певної цифри неможливий, отже, початкова клітинка не містить %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Перейдіть до Після, щоб побачити хід і його наслідки на сітці."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Риба-меч"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Зробити нове фото"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Зробити ще одне фото"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Візьміть одну цифру та позначте кожну одиницю, де для неї залишилося рівно дві клітинки. Ці дві діють як гойдалка: одна з них є цією цифрою, а друга — ні.\n\nПочніть будь-де й пофарбуйте клітинку, скажімо, синім кольором. Пофарбуйте її пару по гойдалці зеленим, потім ту, з якою та утворює пару, знову синім, і продовжуйте, доки ланцюжок не завершиться. Кожна синя клітинка є істинною, або кожна зелена клітинка — ви не можете знати яка саме, і цього достатньо для двох речей.\n\nПо-перше: якщо дві клітинки однакового кольору опиняться в одному рядку, стовпці чи блоці, цей колір неможливий, тому цифра вилучається з кожної клітинки цього кольору, а інший колір є відповіддю всюди.\n\nПо-друге: будь-яка клітинка за межами ланцюжка, яка бачить і синю, і зелену, може позбутися цієї цифри, тому що одна з цих двох містить її за будь-якого результату ланцюжка.\n\nОлівцем це повільно, але воно того варте: одне фарбування часто вичищає цифру з половини дошки."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Беріть по одній цифрі й по одній одиниці за раз — скажімо, де може стояти 4 у цьому блоці? Викресліть кожну клітинку в цій одиниці, яка вже має цифру або бачить 4 у своєму власному рядку чи стовпці. Якщо залишилася одна клітинка, 4 ставиться туди.\n\nПастка полягає в тому, що ви не можете побачити це, дивлячись на клітинку: вона може так само приймати й п’ять інших цифр, тому ніщо в ній не виглядає вимушеним. Подивіться на цифру замість клітинки, і вона з’явиться негайно."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Зробити фото"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Фотографувати автоматично"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Торкніться позначеної клітинки, щоб перевірити її, або підтвердьте, що всі розпізнавання правильні."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Спершу торкніться клітинки на сітці."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Перевірте %1$s як припущення в позначеній клітинці. Це не відповідь. Простежте наслідки, щоб побачити, чому воно хибне."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Перевірити припущення"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Дякуємо за допомогу в покращенні розпізнавання. Фотографія вашої головоломки, розпізнавання та виправлення використовуватимуться для аналізу й навчання."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Це також допустимий хід (%1$s). Цей шлях ілюструє інший хід; порівняйте його доведення нижче."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Це не той хід, який вибрано для цього кроку. Можуть бути інші допустимі ходи; подивіться ще раз або відкрийте пояснення до цього кроку."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Правильно"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Це решта головоломки. Клітинок, які потребують відповідей за допомогою розв’язувача: %1$s, оскільки підтримувані програмою методи не знайшли ходу. Їхні детальні доведення пошуком недоступні."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Це решта головоломки. Одна клітинка в ній потребує відповіді за допомогою розв’язувача, оскільки підтримувані програмою методи не знайшли ходу. Її детальне доведення пошуком недоступне."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Це решта головоломки, від початку до кінця."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Цю фотографію не вдалося зберегти, тому надсилати нічого."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Ця клітинка дозволяє %1$s. Пошукайте хід, обґрунтований методом цього кроку, або відкрийте його пояснення."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Цю клітинку вже заповнено. Виберіть порожню клітинку."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Припущення відхилено. Ми повертаємося до справжніх кандидатів і викреслюємо %1$s у позначеній клітинці. Гіпотетичні цифри очищено."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Камера не змогла зробити цю фотографію."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Камера недоступна. Закрийте інші програми камери та спробуйте знову."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"інший"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Фотографію від %1$s та все розпізнане з неї буде вилучено з цього телефону. Цю дію не можна скасувати."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Фото збережено у списку ваших судоку, у розділі «Не вдалося розпізнати»."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Опорна клітинка тут — %1$s або %2$s. У будь-якому разі одна з двох інших клітинок вимушено стає %3$s, тому жодна клітинка, яка бачить їх обидві, не може бути %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Вказівна пара у зворотному напрямку. Візьміть рядок або стовпець і цифру, якій усе ще потрібне місце в ньому. Позначте кожну клітинку на цій лінії, яка могла б прийняти цю цифру. Якщо всі вони потрапляють у межі одного блока, цифра має бути в частині цієї лінії, що належить цьому блоку, — отже, її немає більше ніде в блоці, включно з двома його рядками чи стовпцями, на які ви не дивилися.\n\nЯк і вказівна пара, сама по собі ця техніка нічого не ставить; вона звільняє місце для того, що ставить."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Друковані цифри не утворюють головоломку, яку можна розв’язати."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nУ %1$s залишилися кандидати {%2$s}. Впишіть %3$s у рядок %4$s, стовпець %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Звіт занадто великий для надсилання."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-wing, де опорна клітинка містить на одного кандидата більше. Шукайте клітинку з рівно трьома кандидатами, скажімо {1,4,7}, яка бачить дві двоклітинкові з кандидатами — одну {1,7} та одну {4,7}.\n\nТепер усі три можуть бути 7, і одна з них мусить нею бути. Тому клітинка має бачити всі три, щоб цифру було виключено, а не лише дві кліщі — що на практиці означає, що вона лежить в одному блоці з опорною та на одній лінії з кліщею.\n\nМенше вилучень, ніж у Y-wing, і легше пропустити з тієї самої причини: опорна клітинка не виділяється."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"У виділеному блоці є клітинка, яку ви можете заповнити.\n\nНатисніть Підказка знову, щоб дізнатися, який метод її знаходить."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Тут більше нема про що міркувати."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Усі ці клітинки (%1$s) містять лише %2$s та %3$s, і кожна бачить наступну, тому вони чергуються по всій довжині. %4$s та %5$s розділені непарною кількістю ланок і тому містять різні цифри між собою — що виключає %6$s з усього, що бачить їх обидві."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Ці клітинки (%1$s) містять разом лише %2$s, тому ці цифри заповнюють їх у певному порядку. Це виключає %3$s з решти цього %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Ці %1$s клітинок разом можуть містити лише %2$s, тож ці цифри заповнюють їх у певному порядку. Це виключає %3$s з решти клітинок цього рядка."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Ці %1$s клітинок разом можуть містити лише %2$s, тож ці цифри заповнюють їх у певному порядку. Це виключає %3$s з решти клітинок цього стовпця."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Ці %1$s клітинок разом можуть містити лише %2$s, тож ці цифри заповнюють їх у певному порядку. Це виключає %3$s з решти клітинок цього блоку."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Це початкові кандидати для вашої клітинки. Простежити пояснює, які можливості можна виключити."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Ці цифри не можуть утворити головоломку, і надто багато помилок, щоб визначити які саме. Торкніться будь-якої клітинки, щоб виправити розпізнане, або зробіть фотографію знову."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Ці цифри не можуть утворити головоломку. Зміна обведених клітинок (%1$s) виправила б це — торкніться однієї з них, щоб виправити розпізнане."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Ці цифри не можуть утворити головоломку. Зміна однієї обведеної клітинки виправила б це — торкніться її, щоб виправити розпізнане."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Ці цифри не утворюють головоломку, тому одну з них було розпізнано неправильно. Натисніть Розв’язати, щоб побачити, які клітинки виправити."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Ці чотири клітинки утворюють прямокутник через два блоки, і три з них містять лише %1$s. Якби %2$s містила лише ці два кандидати також, цифри можна було б поміняти місцями по прямокутнику, і головоломка мала б два розв’язки. Вона має один, тому %3$s мусить використовувати щось інше — і %4$s вилучається."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Вони не доходять до кінця: щось тут повністю завело програму в глухий кут."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Це нічого не заповнює. Це виключає %1$s з %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Це не заповнює жодної клітинки. Це виключає %1$s з %2$s клітинок."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Це не заповнює жодної клітинки. Це виключає %1$s з однієї клітинки."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nЦе перший із %1$s логічних висновків, що ведуть до відповіді."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Це доведення пояснює одну підказку, включно з вилученнями кандидатів, що ведуть до її відповіді. Зробіть крок уперед, щоб простежити міркування на сітці, а потім продовжуйте повний шлях."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Не вдалося підготувати цю головоломку."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Не вдалося зберегти цю головоломку. Ви все ще можете користуватися нею зараз. Звільніть трохи пам’яті перед тим, як робити інше фото."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Ця головоломка має більше одного розв’язку, тому, ймовірно, було пропущено друковану цифру. Відображення розв’язку %1$s з %2$s — натисніть Розв’язати знову для наступного. Обведені клітинки відрізняються в показаних розв’язках."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Не вдалося відкрити фотографію цієї головоломки."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Це міркування виключає %1$s наявних "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Ця клітинка може містити нотатки кандидатів, а не повну цифру. Будь ласка, перевірте її."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Цей вигляд включає попередні вилучення кандидатів. Відкрийте їхні свідчення нижче, щоб перевірити їх."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"три"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Занадто темно, щоб розрізнити лінії сітки"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Простежити"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Випробувано"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Спробуйте самі"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Увімкнути"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Поверніть телефон так, щоб головоломка була вертикально."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Навчання"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"дві"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Дві клітинки з однаковою парою, зв’язані гойдалкою за однією з її цифр, вимушують іншу цифру в одну з них."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Двонитковий повітряний змій"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Унікальний прямокутник"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"група"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable не надає списку CellReading; точні вхідні клітинки та результат зберігаються."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"непідтримувана версія формату моделі"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Сумнівні"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Мова пристрою"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Використовуючи %1$s, торкніться однієї клітинки, де можна вилучити кандидата, потім виберіть цю цифру."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Використовуючи %1$s, торкніться клітинки, яку ви можете заповнити, потім виберіть її цифру."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Дуже важкий"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"було"</string>
+    <string name="msg_were_910adfb4" formatted="false">"було"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Чого ви очікували або як ваша ідея допомогла б вам розв’язувати чи вивчати судоку?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Що сталося та кроки для відтворення (для помилок)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Як це працює"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Де"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Чому %1$s було вилучено з рядка %2$s, стовпця %3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Чому"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Чому не %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Чому ця клітинка? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" з розв’язком. Використовуйте Перевірити, щоб оглянути їх."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Рухайтеся у зворотному напрямку від вашої клітинки. Виберіть питання нижче."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Працюйте за цифрами, а не за клітинками. Для однієї одиниці випишіть, де кожна відсутня цифра все ще може стояти. Потім пошукайте %1$s цифр, чиї списки разом охоплюють лише %2$s клітинок.\n\nЦі %3$s цифри мають заповнити ці %4$s клітинок, тому все інше в них можна викреслити — що часто перетворює одну з них на відкритий одинак або відкриту пару прямо на місці.\n\nЦе техніка, яку люди вважають найважчою, тому що, дивлячись на клітинки, нічого не видно: вони все ще мають багато кандидатів. Закономірність криється в цифрах."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Працюйте лише з клітинками, де залишилося рівно два кандидати.\n\nПочніть з однієї, скажімо {2,6}, і припустіть, що вона не є 2 — тоді вона є 6. Перейдіть до клітинки, яку вона бачить, що також містить 6, скажімо {6,4}: та не може бути 6, тому вона є 4. Перейдіть до клітинки, яку бачить ця, що містить 4, і продовжуйте далі, де кожен крок вимушений попереднім.\n\nЯкщо ви дійдете до клітинки, іншою цифрою якої є 2 — цифра, яку ви спершу виключили, — ви закінчили. Або перша клітинка зрештою була 2, або ланцюжок спрацював і остання клітинка є 2. Один чи інший кінець містить її, тому все, що бачить обидва кінці, не може її містити.\n\nТримайте ланцюжки короткими. Чотири або п’ять клітинок можна знайти олівцем; далі це вже облік, і вимушений ланцюжок — це чесна назва для нього."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"робочий край має бути додатним і скінченним"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Не вдалося розпізнати"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Вписані"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Помилка"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-wing"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Ви очистили цю клітинку."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Ви вказали тут рукописну %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Ви вказали тут друковану %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Ваші зміни видно, але їх не вдалося зберегти. Звільніть трохи пам’яті та спробуйте відредагувати головоломку знову."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Ваші фотографії та ваша конфіденційність"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Ваші судоку"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Збережені судоку"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Ваша клітинка ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Ваша клітинка залишається виділеною. Зелені клітинки показують свідчення; перекреслені цифри виключено."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

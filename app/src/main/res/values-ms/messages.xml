@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nSel yang diserlahkan membuktikannya.\n\nTekan Petunjuk sekali lagi untuk melihat sel yang dimaksudkan."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s dan %2$s kedua-duanya hanya mengandungi %3$s dan %4$s. Dalam %5$s ini, %6$s hanya mempunyai dua tempat, setiap satunya dilihat oleh salah satu sel tersebut - jadi salah satu daripada dua tempat itu ialah %7$s, dan hujung yang melihatnya mesti %8$s. Dalam kedua-dua keadaan, satu hujung ialah %9$s, yang menyingkirkan %10$s daripada semua sel yang melihat kedua-duanya."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s dan %2$s masing-masing hanya boleh diisi dengan %3$s dan %4$s. Dalam kotak ini, %5$s hanya mempunyai dua kedudukan yang mungkin, dengan setiap kedudukan berkongsi unit dengan salah satu daripada kedua-dua sel tadi - jadi salah satu kedudukan itu ialah %6$s, dan sel hujung yang berkongsi unit dengannya mestilah %7$s. Dalam kedua-dua keadaan, salah satu sel hujung ialah %8$s, maka %9$s disingkirkan daripada semua sel yang berkongsi unit dengan kedua-dua sel hujung."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s dan %2$s masing-masing hanya boleh diisi dengan %3$s dan %4$s. Dalam lajur ini, %5$s hanya mempunyai dua kedudukan yang mungkin, dengan setiap kedudukan berkongsi unit dengan salah satu daripada kedua-dua sel tadi - jadi salah satu kedudukan itu ialah %6$s, dan sel hujung yang berkongsi unit dengannya mestilah %7$s. Dalam kedua-dua keadaan, salah satu sel hujung ialah %8$s, maka %9$s disingkirkan daripada semua sel yang berkongsi unit dengan kedua-dua sel hujung."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s dan %2$s masing-masing hanya boleh diisi dengan %3$s dan %4$s. Dalam baris ini, %5$s hanya mempunyai dua kedudukan yang mungkin, dengan setiap kedudukan berkongsi unit dengan salah satu daripada kedua-dua sel tadi - jadi salah satu kedudukan itu ialah %6$s, dan sel hujung yang berkongsi unit dengannya mestilah %7$s. Dalam kedua-dua keadaan, salah satu sel hujung ialah %8$s, maka %9$s disingkirkan daripada semua sel yang berkongsi unit dengan kedua-dua sel hujung."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s pada baris %2$s, lajur %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s pada langkah %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s hanya boleh diisi dengan %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s tidak boleh mengandungi %2$s kerana %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s tidak boleh diisi dengan %2$s kerana %3$s hanya boleh diisi dengan %4$s dalam lajur yang sama %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s tidak boleh diisi dengan %2$s kerana %3$s hanya boleh diisi dengan %4$s dalam kotak yang sama %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s tidak boleh diisi dengan %2$s kerana %3$s hanya boleh diisi dengan %4$s dalam baris yang sama %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s tidak boleh diisi dengan %2$s kerana %3$s mengandungi %4$s dalam kotak yang sama %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s tidak boleh diisi dengan %2$s kerana %3$s mengandungi %4$s dalam lajur yang sama %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s tidak boleh diisi dengan %2$s kerana %3$s mengandungi %4$s dalam baris yang sama %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s mengandungi %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s kosong"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, isian"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s mesti diletakkan di sini: inilah satu-satunya sel dalam lajur %2$s ini yang masih boleh diisi dengan %3$s.\n\n%4$s\n\n%5$s kini membenarkan %6$s, tetapi setiap lajur mesti mengandungi %7$s tepat sekali. Oleh itu, letakkan %8$s pada baris %9$s, lajur %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s mesti diletakkan di sini: inilah satu-satunya sel dalam %2$s %3$s ini yang masih boleh menerima %4$s.\n\n%5$s\n\n%6$s kini membenarkan %7$s, tetapi setiap %8$s mesti mengandungi %9$s tepat sekali. Oleh itu, letakkan %10$s pada baris %11$s, lajur %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s mesti diletakkan di sini: inilah satu-satunya sel dalam kotak %2$s ini yang masih boleh diisi dengan %3$s.\n\n%4$s\n\n%5$s kini membenarkan %6$s, tetapi setiap kotak mesti mengandungi %7$s tepat sekali. Oleh itu, letakkan %8$s pada baris %9$s, lajur %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s mesti diletakkan di sini: inilah satu-satunya sel dalam baris %2$s ini yang masih boleh diisi dengan %3$s.\n\n%4$s\n\n%5$s kini membenarkan %6$s, tetapi setiap baris mesti mengandungi %7$s tepat sekali. Oleh itu, letakkan %8$s pada baris %9$s, lajur %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s mempunyai dua tempat dalam baris ini dan dua dalam lajur ini. %2$s dan %3$s berkongsi kotak, jadi kedua-duanya tidak boleh menjadi %4$s - maka salah satu daripada %5$s dan %6$s mengandunginya, dan %7$s disingkirkan daripada semua sel yang melihat kedua-duanya."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s dalam %2$s yang sama."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s dalam kotak yang sama."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s dalam lajur yang sama."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s dalam baris yang sama."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s sudah disingkirkan daripada sel itu. Calonnya ialah "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s disingkirkan oleh %2$s, yang "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s disingkirkan oleh %2$s, yang hanya boleh diisi dengan %3$s dalam lajur yang sama %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s disingkirkan oleh %2$s, yang hanya boleh diisi dengan %3$s dalam baris yang sama %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s disingkirkan oleh %2$s, yang hanya boleh diisi dengan %3$s dalam kotak yang sama %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s disingkirkan oleh %2$s, yang mengandungi %3$s dalam kotak yang sama %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s disingkirkan oleh %2$s, yang mengandungi %3$s dalam lajur yang sama %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s disingkirkan oleh %2$s, yang mengandungi %3$s dalam baris yang sama %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s dipaksa dalam sel bernombor terbaharu (baris %2$s, lajur %3$s). %4$s Anak panah mengikuti peletakan yang menyumbang; kesan terdahulu juga penting."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s tiada dalam classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s daripada %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s daripadanya mengisi sel; selebihnya menyingkirkan calon terlebih dahulu."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"pasangan %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s bercetak, %2$s, %3$s salah"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s bercetak, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s bercetak"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, petunjuk bercetak"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"kuartet %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s foto ditolak, yang terbaharu dahulu:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: singkirkan %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Bilangan petak: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s langkah membentuk laluan ini, dengan teknik disokong paling sukar ialah %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"triplet %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s disingkirkan daripada %2$s melalui penaakulan calon terdahulu."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s ditulis"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"imej %1$sx%2$s memerlukan %3$s bait tetapi menerima %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"satu sel bukan digit mahupun noktah"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Rantaian sel dua calon yang bermula dan berakhir dengan digit yang sama memastikan digit itu berada di salah satu hujung."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Digit yang hanya mempunyai satu tempat lagi dalam baris, lajur atau kotak mesti berada di tempat itu."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"%1$s tulisan tangan."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"%1$s bercetak."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Sel merah menunjukkan digit yang dibaca aplikasi di situ. Jika itu bukan yang anda tulis, ketik sel untuk membetulkannya."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Sel yang hanya mempunyai satu digit lagi mesti mengandungi digit itu."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Senarai teknik tidak pernah lengkap, dan teka-teki paling sukar direka untuk mengatasi apa sahaja dalam senarai itu. Jadi apabila semua teknik ini tidak membuahkan hasil, tutor menentukan satu sel dengan mencuba calonnya, menyatakan dengan jelas bahawa itulah yang dilakukannya, lalu meneruskan penaakulan dari situ. Ia sentiasa menyelesaikan teka-teki hingga akhir, dan tidak pernah berpura-pura bahawa carian jawapan ialah deduksi."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Sel pangsi tiga calon dengan dua sel penyepit dua calon yang sepadan memaksa satu digit disingkirkan daripada setiap sel yang berkongsi unit dengan ketiga-tiganya."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Sel pangsi dua calon dan dua sel penyepit dua calon boleh memaksa satu digit disingkirkan daripada setiap sel yang berkongsi unit dengan kedua-dua penyepit."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Perihal"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Selepas"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Selepas langkah ini"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Semua betul"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Ketiga-tiga sel ini boleh mengandungi %1$s, dan salah satunya mesti mengandunginya. Jadi mana-mana sel yang berkongsi unit dengan ketiga-tiganya tidak boleh mengandungi %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Benarkan kamera"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Hampir berjaya - pastikan halaman rata dan sejajar dengan kamera tanpa herotan perspektif"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"penyingkiran yang tidak menyingkirkan apa-apa bukan deduksi"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" dan "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Jawapan"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Aplikasi dan peranti (diisi awal)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Aplikasi: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"nisbah aspek mesti positif tetapi nilainya %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Andaian · digit hipotesis"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Andaian ditolak · calon sebenar dipulihkan"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"sekurang-kurangnya %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Foto automatik"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Kongsi foto teka-teki yang bacaannya tidak pasti, hasil bacaan dan pembetulan sel kemudian secara automatik dengan Freevia untuk analisis pengecaman dan latihan. Dimatikan secara lalai."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Elakkan silau"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Kembali"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Kembali ke soalan sebelumnya"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Kembali ke petunjuk visual"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Kembali ke sel anda"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Sebelum"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Sebelum langkah ini"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Digit biru ialah penyelesaian. Ketik mana-mana sel untuk membetulkan bacaan."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"kotak %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"kotak"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Kotak"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Pengurangan kotak-baris"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"hanya boleh mengandungi"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Batal"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", calon %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"BuktiTangkapan"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Rantaikan satu digit melalui unit yang hanya mempunyai dua tempat untuknya, warnakan rantaian dengan dua warna berselang-seli, dan satu warna adalah benar sepanjang rantaian."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Merantaikan %1$s melalui unit yang mempunyai hanya dua kedudukan yang mungkin untuknya memberikan dua warna berselang-seli kepada sel-sel ini, dengan salah satu warna benar di semua selnya. Dua sel dengan warna yang satu lagi berada dalam baris yang sama, yang mustahil - jadi warna itu salah, dan %2$s disingkirkan daripada setiap sel berwarna itu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Merantaikan %1$s melalui unit yang mempunyai hanya dua kedudukan yang mungkin untuknya memberikan dua warna berselang-seli kepada sel-sel ini, dengan salah satu warna benar di semua selnya. Dua sel dengan warna yang satu lagi berada dalam kotak yang sama, yang mustahil - jadi warna itu salah, dan %2$s disingkirkan daripada setiap sel berwarna itu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Merantaikan %1$s melalui unit yang mempunyai hanya dua kedudukan yang mungkin untuknya memberikan dua warna berselang-seli kepada sel-sel ini, dengan salah satu warna benar di semua selnya. Dua sel dengan warna yang satu lagi berada dalam lajur yang sama, yang mustahil - jadi warna itu salah, dan %2$s disingkirkan daripada setiap sel berwarna itu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Merantaikan %1$s melalui unit yang hanya mempunyai dua tempat untuknya membahagikan sel ini kepada dua warna berselang-seli, dan satu warna adalah benar sepanjang rantaian. Dua sel berwarna %2$s berada dalam %3$s yang sama, yang mustahil - jadi warna itu adalah palsu, dan %4$s disingkirkan daripada setiap sel berwarna itu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Merantaikan %1$s melalui unit yang hanya mempunyai dua tempat untuknya membahagikan sel ini kepada dua warna berselang-seli, dan satu warna adalah benar sepanjang rantaian. Sel ini berkongsi unit dengan kedua-dua warna, jadi apa pun hasil rantaian, salah satu sel yang berkongsi unit dengannya mengandungi %2$s - maka sel ini tidak boleh mengandunginya."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Merantaikan %1$s melalui unit yang mempunyai hanya dua kedudukan yang mungkin untuknya memberikan dua warna berselang-seli kepada sel-sel ini, dengan salah satu warna benar di semua selnya. Dua sel dengan satu warna berada dalam kotak yang sama, yang mustahil - jadi warna itu salah, dan %2$s disingkirkan daripada setiap sel berwarna itu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Merantaikan %1$s melalui unit yang mempunyai hanya dua kedudukan yang mungkin untuknya memberikan dua warna berselang-seli kepada sel-sel ini, dengan salah satu warna benar di semua selnya. Dua sel dengan satu warna berada dalam lajur yang sama, yang mustahil - jadi warna itu salah, dan %2$s disingkirkan daripada setiap sel berwarna itu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Merantaikan %1$s melalui unit yang mempunyai hanya dua kedudukan yang mungkin untuknya memberikan dua warna berselang-seli kepada sel-sel ini, dengan salah satu warna benar di semua selnya. Dua sel dengan satu warna berada dalam baris yang sama, yang mustahil - jadi warna itu salah, dan %2$s disingkirkan daripada setiap sel berwarna itu."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Petak yang tidak pasti untuk disemak: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Semak"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Semak satu sel yang tidak pasti."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", disemak betul"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Pilih calon untuk melihat sebab ia tidak boleh berada dalam sel anda."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Pilih bahasa"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Pilih perkara untuk dipaparkan"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Tutup"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Tutup petunjuk"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Runtuhkan semakan bacaan"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"sel warna dan skala kelabu mesti menggunakan geometri yang sama"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"lajur %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"lajur"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"lajur"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Bandingkan rantaian paksaan dan utamakan yang mempunyai lebih sedikit sel untuk diikuti. Rantaian lebih pendek boleh bermakna lebih banyak langkah dalam penyelesaian penuh."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Akibat %1$s daripada %2$s · digit hipotesis"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"mengandungi"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Jenis-Kandungan"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Teruskan dengan laluan penuh"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Percanggahan · andaian gagal"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", percanggahan"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Percanggahan: %1$s merah tidak mempunyai tempat lagi untuk %2$s. Ini mustahil, jadi andaian awal mesti gagal."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Percanggahan: sel merah tidak mempunyai calon lagi. Ini mustahil, jadi andaian awal mesti gagal."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Salin permintaan pemadaman"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Betul. Bandingkan penaakulan anda dengan penjelasan di bawah."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"tidak dapat menyahkod imej yang diambil"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Digit bercetak dalam foto itu tidak dapat ditemukan."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Garisan grid tidak dapat dikenal pasti - cuba lagi."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHub tidak dapat dibuka. Hubungi sokongan di %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Bukti tangkapan nyahpepijat tidak dapat disimpan"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Bacaan tidak dapat dihantar. Sila cuba lagi apabila bersambung."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Jalan buntu"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"PADAM"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Padam"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Padam laporan"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Padam foto ini"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Padam teka-teki ini"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Padam teka-teki ini?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Padam penghantaran ini?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Memadam…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Pemadaman tidak dapat disahkan. Semak sambungan anda dan cuba lagi."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Permintaan pemadaman"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Respons pemadaman tidak mengesahkan resit ini."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Perkhidmatan pemadaman mengembalikan HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Terangkan apa yang berlaku dan langkah untuk mengulanginya. Nyatakan sama ada anda menyemak dan membetulkan digit yang dikenal pasti terlebih dahulu. Untuk idea, tulis \'Tidak berkenaan\'."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", sasaran petunjuk ini"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Peranti: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostik dipendekkan supaya muat dalam draf pelayar. Tindakan Hantar diagnostik dalam aplikasi boleh berkongsi laporan penuh."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"digit mesti 1..9 tetapi nilainya %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Digit tidak dibaca"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Penyimpanan bukti pada cakera mempengaruhi masa; bukan penanda aras kependaman."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", tidak sepadan dengan penyelesaian"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Setiap resit mengenal pasti satu semakan teka-teki yang dihantar. Padamkannya di sini untuk membuang laporan yang disimpan secara peribadi daripada Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Penyingkiran terdahulu: %1$s. Gunakan pautan langkah terdahulu untuk meneliti buktinya."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← bukti terdahulu (kedalaman %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Peletakan hipotesis terdahulu meninggalkannya dengan hanya satu calon."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Langkah terdahulu yang digunakan dalam bukti ini"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Edit sel"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"lapan"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"kosong"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Kosong."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Kosong"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Bahasa Inggeris"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"isian yang tidak sepadan"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"isian yang tidak sepadan"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Setiap satunya mengisi satu sel."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Semua sel telah diisi, tetapi %1$s jawapan tidak sepadan dengan penyelesaian."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Semua sel telah diisi, tetapi satu jawapan tidak sepadan dengan penyelesaian."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Setiap sudoku dengan satu penyelesaian boleh diselesaikan melalui penaakulan; meneka tidak pernah diperlukan dan jarang membantu. Inilah cara penaakulan yang boleh dikenal pasti dan diterangkan oleh aplikasi ini, bermula dengan yang paling mudah. Jika salah satunya boleh digunakan pada teka-teki yang sedang anda buka, aplikasi akan menunjukkan setiap tempat ia boleh digunakan."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Semua yang anda tulis setakat ini betul."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Contoh yang tersedia sekarang: setiap satu bermula daripada papan semasa anda."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"menjangkakan 10 garis mendatar, menerima %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"menjangkakan 10 garis menegak, menerima %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"menjangkakan 81 sel tetapi menerima %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"menjangkakan 81 sel dalam setiap blok, menemui %1$s dan %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"menjangkakan satu saluran 8-bit tetapi menerima %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"menjangkakan imej 28x28 tetapi menerima %1$s nilai"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Tingkah laku yang dijangka atau penambahbaikan yang dicadangkan"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"menjangkakan sepuluh garis dalam setiap arah"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"menjangkakan dua blok, menemui %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Terangkan penyingkiran calon terdahulu (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Terangkan petunjuk"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Cari sel yang hanya mempunyai dua atau tiga calon lagi - lebih sedikit lebih baik, dan lebih penuh baris, lajur dan kotak di sekelilingnya, lebih baik lagi.\n\nPilih salah satu calonnya dan tulis dengan pensel secara ringan. Sekarang ikuti akibatnya: digit itu disingkirkan daripada semua sel yang berkongsi unit dengan sel tersebut, yang mungkin meninggalkan salah satu sel itu dengan satu calon, lalu memaksa sel lain, dan seterusnya. Teruskan.\n\nSatu daripada dua perkara berlaku. Sama ada rantaian itu terhenti dan anda tidak mengetahui apa-apa - padamkannya dan cuba calon yang satu lagi. Atau anda sampai ke sel yang langsung tiada calon lagi, atau baris yang tiada tempat untuk suatu digit. Itu mustahil, jadi digit yang anda tulis dengan pensel tadi salah, dan anda boleh menyingkirkannya secara muktamad.\n\nGunakan teknik ini apabila semua yang lain tidak lagi berhasil. Ia lebih perlahan dan memerlukan pencatatan berbanding pengecaman corak, tetapi boleh menemukan langkah yang terlepas daripada corak. Satu penyingkiran selalunya cukup untuk membolehkan teknik mudah berfungsi semula; sesetengah kedudukan masih memerlukan carian lebih mendalam."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Cari dua sel dengan dua calon yang sama, misalnya {3,7}, yang tidak berkongsi unit - biasanya kedua-duanya berjauhan.\n\nSekarang cari baris, lajur atau kotak yang hanya mempunyai dua sel yang mungkin untuk 7, satu berkongsi unit dengan sel pertama pasangan anda dan satu lagi dengan sel kedua. Itulah pautannya.\n\nSalah satu daripada dua sel itu mengandungi 7. Mana pun selnya, sel pasangan anda yang berkongsi unit dengannya tidak boleh mengandungi 7, jadi mesti mengandungi 3. Anda tidak tahu hujung mana mengandungi 3, hanya bahawa salah satunya mengandunginya - dan itu cukup untuk menyingkirkan 3 daripada setiap sel yang berkongsi unit dengan kedua-dua hujung.\n\nBahagian sukar ialah pautannya, jadi cari dari arah sebaliknya: tandakan dahulu unit yang hanya mempunyai dua tempat untuk satu digit, kemudian cari pasangan sepadan di kedua-dua sisinya."</string>
+    <string name="msg_finished_05343e98" formatted="false">"selesai"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Tekan pengatup apabila grid sejajar dalam bingkai tanpa herotan perspektif dan stabil. Butang sentiasa berfungsi dalam kedua-dua keadaan."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Muatkan seluruh grid dalam paparan."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Muatkan seluruh grid dalam paparan"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"lima"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Ikuti laluan yang setiap langkahnya dibina berdasarkan langkah sebelumnya."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Ikuti bukti penuh mengikut urutan"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Ikuti rantaian sel dua calon ini: jika %1$s bukan %2$s, maka setiap sel sepanjang rantaian dipaksa oleh sel sebelumnya, dan %3$s akhirnya menjadi %4$s. Jadi salah satu hujung mengandungi %5$s, yang menyingkirkannya daripada setiap sel yang berkongsi unit dengan kedua-duanya."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Rantaian paksaan"</string>
+    <string name="msg_four_04efaf08" formatted="false">"empat"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Empat sel dalam dua baris, dua lajur dan dua kotak tidak boleh semuanya hanya mempunyai dua calon yang sama, kerana teka-teki itu akan mempunyai dua penyelesaian."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia mengesahkan pemadaman, tetapi telefon ini tidak dapat membuang resit setempat. Cuba lagi untuk menyelesaikan pembersihan setempat."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia akan memadam semakan laporan ini dan salinan latihan peribadinya. Pembetulan akan datang mungkin menghasilkan laporan baharu mengikut tetapan perkongsian anda. Model yang sudah dilatih dengannya mungkin mengekalkan perubahan yang dipelajari."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Laluan penuh"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Bacaan tidak pasti akan datang akan menghantar foto teka-teki yang diluruskan, hasil pengecaman dan pembetulan kepada Freevia untuk analisis dan latihan. Salinan latihan kekal sehingga dipadam daripada Resit penghantaran; model yang telah dilatih mungkin mengekalkan perubahan yang dipelajari. Jika teka-teki dengan bacaan tidak pasti sudah dibuka, ia akan dihantar sekarang. Anda boleh mematikannya dalam Tetapan."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Mudah"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Silau mengaburkan garisan - condongkan halaman menjauhi cahaya"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ImejKelabu(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Sel kelabu mengandungi tanda pensel, yang diabaikan aplikasi. Bar di bawah digit menunjukkan tahap keyakinan bacaan. Ketik sel untuk butiran."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Tulisan tangan"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Sukar"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Tersembunyi"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Pasangan tersembunyi"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Kuad tersembunyi"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Tunggal tersembunyi"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Tripel tersembunyi"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Sembunyikan bukti terdahulu"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Sembunyikan cara mengenal pastinya"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", petunjuk %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Petunjuk"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Bukti petunjuk"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Penaakulan petunjuk"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Jangan bergerak..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Jangan bergerak, atau ketik pengatup"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Jangan bergerak semasa kamera memfokus..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Pegang telefon secara mendatar"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Pegang telefon secara mendatar di atas teka-teki."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Pegang telefon secara mendatar di atas teka-teki"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"mendatar\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Cara mengenal pastinya"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCara kita sampai ke sini:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Cari sel dengan tepat dua calon - Y-wing terdiri daripada tiga sel sebegini sahaja.\n\nAmbil satu sebagai pangsi, misalnya {2,5}. Cari sel yang berkongsi unit dengannya dan mengandungi {2,9}, serta satu lagi yang berkongsi unit dengannya dan mengandungi {5,9}. Pangsi itu sama ada 2 atau 5. Jika 2, penyepit pertama mesti 9; jika 5, penyepit kedua mesti 9. Apa pun keadaannya, 9 muncul dalam salah satu penyepit - anda tidak tahu yang mana, dan tidak perlu tahu.\n\nJadi tiada sel yang berkongsi unit dengan kedua-dua penyepit boleh mengandungi 9. Sel itu biasanya ialah dua penjuru yang melengkapkan segi empat tepat."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", andaian %1$s, bukan jawapan yang dimasukkan"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Jika %1$s digit dalam satu baris, lajur atau kotak hanya boleh berada dalam %2$s sel yang sama, sel itu tidak boleh mengandungi digit lain."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Jika %1$s sel dalam satu baris, lajur atau kotak mempunyai tepat %2$s calon secara keseluruhan, digit itu mesti berada dalam sel tersebut dan bukan sel lain dalam unit itu."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Jika satu digit mempunyai dua tempat dalam baris dan dua dalam lajur, dan satu daripada setiapnya berkongsi kotak, salah satu daripada dua tempat yang lain mesti mengandunginya."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Jika satu digit mempunyai dua tempat dalam setiap satu daripada dua baris dan satu tempat daripada setiap baris berkongsi lajur, salah satu daripada dua tempat yang lain mesti mengandunginya."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Jika semua tempat yang mungkin untuk satu digit sepanjang baris atau lajur berada dalam satu kotak, digit itu boleh disingkirkan daripada bahagian lain kotak itu."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Jika satu digit hanya boleh berada dalam %2$s lajur yang sama pada %1$s baris, ia boleh disingkirkan daripada tempat lain dalam lajur itu - begitu juga apabila baris dan lajur ditukar."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Jika semua tempat yang mungkin untuk satu digit dalam kotak berkongsi satu baris atau lajur, digit itu boleh disingkirkan daripada bahagian lain baris atau lajur itu."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Jika andaian satu digit membawa kepada sel yang tidak boleh mengandungi apa-apa, digit itu salah."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"dimensi imej mesti positif"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Dalam rantaian sel yang semuanya mempunyai dua calon yang sama, kedua-dua hujung rantaian dengan panjang ganjil mengandungi digit yang berbeza."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Dalam %1$s %2$s ini, %3$s hanya boleh berada dalam %4$s %5$s ini. Bersama-sama, semuanya digunakan, jadi %6$s boleh disingkirkan daripada semua tempat lain dalam %7$s itu."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Dalam %1$s lajur ini, %2$s hanya boleh diletakkan dalam %3$s baris ini. Kesemuanya memenuhi setiap baris tersebut, jadi %4$s boleh disingkirkan daripada semua sel lain dalam baris-baris itu."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Dalam %1$s baris ini, %2$s hanya boleh diletakkan dalam %3$s lajur ini. Kesemuanya memenuhi setiap lajur tersebut, jadi %4$s boleh disingkirkan daripada semua sel lain dalam lajur-lajur itu."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Dalam dua %1$s ini, %2$s mempunyai hanya dua tempat dalam setiap satunya, dan %3$s serta %4$s berkongsi %5$s - jadi kedua-duanya tidak boleh mengandungi %6$s. Maka salah satu daripada %7$s dan %8$s mengandunginya, yang menyingkirkan %9$s daripada setiap sel yang berkongsi unit dengan kedua-duanya."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Dalam dua lajur ini, %1$s hanya mempunyai dua kedudukan yang mungkin dalam setiap lajur, dan %2$s serta %3$s berada dalam baris yang sama - jadi kedua-duanya tidak boleh menjadi %4$s. Oleh itu, salah satu daripada %5$s dan %6$s ialah digit tersebut, maka %7$s disingkirkan daripada setiap sel yang berkongsi unit dengan kedua-duanya."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Dalam dua baris ini, %1$s hanya mempunyai dua kedudukan yang mungkin dalam setiap baris, dan %2$s serta %3$s berada dalam lajur yang sama - jadi kedua-duanya tidak boleh menjadi %4$s. Oleh itu, salah satu daripada %5$s dan %6$s ialah digit tersebut, maka %7$s disingkirkan daripada setiap sel yang berkongsi unit dengan kedua-duanya."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Dalam %1$s ini, %2$s hanya boleh berada dalam %3$s sel ini, jadi sel itu telah dikhaskan. Ini menyingkirkan %4$s daripadanya."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Dalam %1$s ini, %2$s hanya boleh berada dalam satu kotak. Jadi %3$s berada dalam kotak itu pada %4$s ini, dan boleh disingkirkan daripada bahagian lain kotak itu."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Dalam kotak ini, %1$s hanya boleh diletakkan dalam %2$s sel ini, jadi sel-sel tersebut dikhaskan untuk digit itu. Maka %3$s disingkirkan daripada sel-sel tersebut."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Dalam lajur ini, %1$s hanya boleh diletakkan dalam %2$s sel ini, jadi sel-sel tersebut dikhaskan untuk digit itu. Maka %3$s disingkirkan daripada sel-sel tersebut."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Dalam baris ini, %1$s hanya boleh diletakkan dalam %2$s sel ini, jadi sel-sel tersebut dikhaskan untuk digit itu. Maka %3$s disingkirkan daripada sel-sel tersebut."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Termasuk foto, bacaan dan pembetulannya. Matikannya dalam Tetapan."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Dalam satu kotak, cari digit yang hanya boleh berada dalam dua atau tiga sel, dan semak sama ada semuanya berada dalam baris yang sama, atau semuanya dalam lajur yang sama. Jika ya, digit itu pasti berada di suatu tempat sepanjang baris atau lajur itu - anda tidak tahu di mana, tetapi tahu ia berada dalam kotak ini. Jadi ia tidak boleh berada di tempat lain sepanjang baris atau lajur yang sama di luar kotak.\n\nIni tidak meletakkan digit dengan sendirinya. Ia menyingkirkan calon supaya calon tunggal muncul di tempat lain."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Dalam kotak ini, %1$s hanya boleh berada dalam %2$s ini. Jadi %3$s berada di suatu tempat di sini, dan boleh disingkirkan daripada bahagian lain %4$s itu."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Masalah atau idea"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Ia boleh digunakan di %1$s tempat di sini. Maju selangkah untuk menelitinya satu demi satu."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Ia boleh digunakan di satu tempat di sini. Maju selangkah untuk melihatnya."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Ia tidak boleh digunakan di mana-mana dalam kedudukan ini."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Ini satu-satunya tempat yang tinggal untuk %1$s dalam %2$s yang diserlahkan."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Sel yang dibulatkan itu.\n\nTekan Petunjuk sekali lagi untuk digitnya."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Simpan"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Pendekkan rantaian paksaan"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Bahasa"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Lesen"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Cari sel dengan hanya beberapa calon lagi dalam satu baris, lajur atau kotak. Ambil %1$s daripadanya dan gabungkan calonnya. Jika gabungan itu mempunyai tepat %2$s digit, %3$s digit itu telah dikhaskan: semuanya mesti berada dalam %4$s sel itu dalam suatu susunan, walaupun anda belum tahu digit mana berada di mana.\n\nItu sudah cukup. Setiap sel lain dalam unit itu boleh menyingkirkan digit tersebut, dan biasanya salah satu sel itu kemudian menjadi tunggal.\n\nSel itu tidak semuanya memerlukan calon yang sama - {2,7}, {2,9} dan {7,9} ialah tripel yang sah, dan sering terlepas pandang."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Cari sel yang mempunyai dua calon yang sama - misalnya {4,9} - dan membentuk rantaian, setiap satunya berkongsi unit dengan sel seterusnya. Tiga tidak cukup; anda memerlukan sekurang-kurangnya empat.\n\nWarnakan sel secara berselang-seli sepanjang rantaian. Oleh sebab setiap sel berkongsi unit dengan sel seterusnya, tiada dua sel bersebelahan boleh mengandungi digit yang sama, jadi rantaian itu ialah 4, 9, 4, 9 sepanjang rantaian - atau 9, 4, 9, 4, dan anda tidak dapat menentukan yang mana.\n\nApa pun keadaannya, dua sel dengan warna bertentangan mengandungi digit yang berbeza: satu ialah 4 dan satu ialah 9. Jadi mana-mana sel yang berkongsi unit dengan kedua-duanya tidak boleh mengandungi kedua-dua digit itu, lalu kehilangan kedua-dua calon serentak.\n\nCorak ini mudah dikenal pasti kerana setiap sel di dalamnya kelihatan sama. Ikuti pasangan yang serupa di sekeliling grid dan lihat tempat ia bersambung."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Cari tiga sel yang mempunyai dua calon yang sama - misalnya {1,6} - di tiga penjuru segi empat tepat. Segi empat tepat itu mesti berada dalam tepat dua kotak: dua baris dan dua lajur merentasi dua kotak, bukan empat.\n\nSekarang lihat penjuru keempat. Jika ia juga hanya mempunyai 1 dan 6, teka-teki itu akan mempunyai dua penyelesaian - anda boleh menukar 1 dan 6 di sekeliling segi empat tepat dan semuanya yang lain masih sah. Teka-teki yang dibina dengan betul mempunyai satu penyelesaian, jadi penjuru keempat mesti menggunakan digit lain: calon lainnya kekal, dan 1 serta 6 disingkirkan.\n\nInilah satu-satunya hujah yang berkaitan dengan pembina teka-teki dan bukannya grid. Ia sah untuk teka-teki yang diterbitkan dan tidak berguna untuk teka-teki yang sudah anda isi dengan salah, kerana mungkin langsung tiada penyelesaian untuk dianggap unik."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Lihat dalam kotak ini. Ikuti garis luar ke sel yang akan diterangkan oleh petunjuk ini."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Tanda"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Sederhana"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Lagi"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Lebih banyak cahaya diperlukan"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Terdapat lebih daripada satu penyelesaian, jadi satu digit bercetak terlepas. Tekan Selesaikan untuk melihat penyelesaian dan tempat ia berbeza."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Jauhkan"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Dekatkan"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Dekatkan - grid terlalu kecil untuk dibaca."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Terdedah"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Pasangan terdedah"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Kuad terdedah"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Tunggal terdedah"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Tripel terdedah"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Nyatakan teknik dan tunjukkan sel yang membuktikannya, bukan sekadar memberikan digit."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"memerlukan sekurang-kurangnya 4 titik tetapi menerima %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Perlu pengesahan"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Sudoku baharu"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Akibat seterusnya"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Langkah seterusnya"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Tiada imej dilampirkan secara automatik. Laporan dan lampiran yang dihantar di sini boleh dilihat oleh umum. Hantar contoh yang anda lebih suka kongsikan secara peribadi ke info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Tiada foto yang ditolak sejak aplikasi kali terakhir dipasang."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Tiada diagnostik imbasan tersedia."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Tiada teknik boleh digunakan di sini"</string>
+    <string name="msg_none_140bedbf" formatted="false">"tiada"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Tiada satu pun meletakkan digit dalam sel: semuanya menyingkirkan calon, dan itulah cara membuka jalan dalam teka-teki sukar."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Tiada pada teka-teki anda buat masa ini."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"bukan fail model digit"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Bacaan tidak meyakinkan - tekaan paling hampir ialah %1$s %2$s pada %3$s. Sila tetapkan sel ini sendiri."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Belum dapat dibaca sebagai grid sembilan kali sembilan - cuba penuhi bingkai dengan grid sahaja, atau terus ambil foto"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"belum bermula"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Tiada apa-apa dapat dihantar daripada telefon ini."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Tiada apa-apa lagi untuk ditentukan."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Tiada apa-apa lagi di sini yang dapat ditentukan melalui penaakulan menggunakan teknik yang diketahui aplikasi ini."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"tiada yang luar biasa"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"satu"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Satu sel kelihatan seperti digit bercetak tetapi sebenarnya bukan."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Satu digit bercetak dibetulkan secara automatik."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"satu sel"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Hanya %1$s boleh berada di sini - setiap digit lain sudah ada dalam baris, lajur atau kotak ini."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel-sel yang diserlahkan sudah menggunakan %2$s daripada lapan digit lain; %3$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang kelihatan di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel yang diserlahkan menggunakan empat daripada lapan digit lain; %2$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang boleh anda lihat di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel yang diserlahkan menggunakan enam daripada lapan digit lain; %2$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang boleh anda lihat di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel yang diserlahkan menggunakan satu daripada lapan digit lain; %2$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang boleh anda lihat di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel yang diserlahkan menggunakan tujuh daripada lapan digit lain; %2$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang boleh anda lihat di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel yang diserlahkan menggunakan lima daripada lapan digit lain; %2$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang boleh anda lihat di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Hanya %1$s boleh berada di sini. Sel yang diserlahkan merangkumi %2$s daripada lapan digit lain; %3$s %4$s disingkirkan daripada sel ini lebih awal, bukan oleh apa-apa yang boleh anda lihat di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel yang diserlahkan menggunakan dua daripada lapan digit lain; %2$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang boleh anda lihat di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel-sel yang diserlahkan sudah menggunakan %2$s daripada lapan digit lain; %3$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang kelihatan di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Hanya %1$s boleh diletakkan di sini. Sel yang diserlahkan menggunakan tiga daripada lapan digit lain; %2$s telah disingkirkan daripada sel ini sebelum ini, bukan berdasarkan apa-apa yang boleh anda lihat di sekelilingnya."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Hanya %1$s boleh berada di sini. Lapan digit lain disingkirkan oleh sel yang telah diisi atau calon tunggal yang dipaksa dalam baris, lajur atau kotak ini."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Hanya %1$s boleh berada di sini, walaupun tiada apa-apa di sekelilingnya menunjukkan sebabnya: kesemua lapan digit lain disingkirkan daripada sel ini melalui penaakulan terdahulu, bukannya kerana ditulis dalam baris, lajur atau kotaknya."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Hanya %1$s digit bercetak ditemukan, terlalu sedikit untuk sebuah teka-teki."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"hanya putaran suku pusingan disokong, bukan %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Buka draf dalam pelayar anda dengan versi aplikasi, model telefon, versi Android dan diagnostik imbasan terkini diisi awal. Tambahkan sendiri penerangan penuh dan tangkapan skrin yang berkaitan.\n\nLog masuk GitHub diperlukan. Anda boleh menyemak dan mengedit draf sebelum menghantarnya. Laporan dan lampiran yang dihantar boleh dilihat umum. Tiada foto dilampirkan secara automatik."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Buka tetapan aplikasi"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Buka GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Notis sumber terbuka"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Buka ‘Mengapa sel ini?’ untuk melihat bukti peletakan akhir, atau pilih calon yang disingkirkan untuk menjejaki buktinya."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Lesen Apache 2.0. Digunakan untuk mencari dan meluruskan grid.\n\nAndroidX, Jetpack Compose dan CameraX - Lesen Apache 2.0.\n\nKotlin - Lesen Apache 2.0.\n\nPengecam digit dilatih menggunakan pangkalan data MNIST digit tulisan tangan oleh LeCun, Cortes dan Burges, bersama digit yang dirender daripada fon sistem terbuka dan digit yang dilukis secara pengaturcaraan."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Pustaka natif OpenCV gagal dimuatkan"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Ambil foto teka-teki lain."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Foto yang anda simpan berada dalam storan peribadi aplikasi ini dan dibuang apabila anda memadamkannya atau menyahpasang aplikasi."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Foto yang tidak dapat dijadikan teka-teki oleh aplikasi. Hantar satu supaya ia boleh diteliti."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Pilih satu digit dan teliti baris untuk mencari yang hanya mempunyai tepat dua sel lagi untuknya. Ambil dua baris sebegini dan lihat sama ada satu sel daripada setiap baris berada dalam lajur yang sama.\n\nJika ya, dua sel itu berada dalam lajur yang sama dan tidak boleh kedua-duanya mengandungi digit tersebut. Jadi sekurang-kurangnya salah satu hujung jauh mengandunginya - dua sel di sebelah yang lain. Anda tidak tahu yang mana, dan tidak perlu tahu: mana-mana sel yang berkongsi unit dengan kedua-dua hujung jauh boleh menyingkirkan digit itu.\n\nKemudian ulangi dengan lajur menggantikan baris. Bentuknya seperti bangunan tinggi dengan bangunan pendek di sebelahnya, yang menjadi asal namanya dan cara mengenal pastinya setelah anda melihat beberapa contoh."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Pilih satu digit. Cari baris yang mempunyai tepat dua tempat untuknya dan lajur yang mempunyai tepat dua tempat untuknya. Sekarang semak sama ada satu sel daripada baris dan satu sel daripada lajur berada dalam kotak yang sama.\n\nJika ya, kedua-duanya tidak boleh mengandungi digit itu - satu kotak, satu digit. Jadi sekurang-kurangnya salah satu daripada dua hujung yang tinggal mengandunginya, dan mana-mana sel yang berkongsi unit dengan kedua-dua hujung boleh menyingkirkan digit itu.\n\nOrang sering terlepas teknik ini kerana tiada apa-apa untuk disejajarkan: empat sel itu membentuk bentuk tidak simetri, dan satu-satunya perkara yang menghubungkannya ialah kotak yang dikongsi oleh dua hujung dalaman."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Pilih sel kosong dan teliti 1 hingga 9, potong mana-mana digit yang sudah ada dalam baris, lajur atau kotaknya. Jika tepat satu digit kekal, letakkannya di situ.\n\nSemua teknik lain bertujuan membuka jalan kepada teknik ini. Semua teknik yang lebih sukar ialah cara mengurangkan calon suatu sel kepada satu sahaja, jadi apabila teknik lebih sukar membuahkan hasil, cari ini seterusnya."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Pilih satu digit dan abaikan semua yang lain. Teliti baris dan catat yang hanya mempunyai dua atau tiga sel yang mungkin lagi untuk digit itu. Cari %1$s baris sebegini yang selnya sejajar dalam %2$s lajur yang sama.\n\nJika anda menemukannya, setiap satu daripada %3$s baris itu mesti meletakkan digit dalam salah satu lajur tersebut, dan tiada dua baris boleh menggunakan lajur yang sama. Jadi bersama-sama, semuanya menggunakan digit dalam kesemua %4$s lajur - dan setiap sel lain dalam lajur itu boleh menyingkirkannya.\n\nKemudian ulangi keseluruhan proses dengan lajur dan baris ditukar. Separuh daripadanya ditemukan melalui cara kedua ini, dan itulah separuh yang tidak pernah dicari oleh kebanyakan orang."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Letakkan %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Letakkan %1$s di baris %2$s, lajur %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Letakkan %1$s dalam sel anda yang digariskan."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Sila lampirkan tangkapan skrin yang berkaitan menggunakan kawalan lampiran GitHub: teka-teki, digit yang dikenal pasti, hasil Semak, atau peringkat petunjuk yang menunjukkan masalah. Sertakan hasil yang dijangka dan sebenar jika berguna."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Sila padam penghantaran pengecaman Sudoku Buddy saya. ID resit: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Sila gantikan arahan ini dengan penerangan penuh tentang masalah atau idea. Berikan laporan ini tajuk yang ringkas dan deskriptif."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Halakan kamera pada teka-teki sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Halakan kamera pada teka-teki sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Halakan kamera pada teka-teki sudoku di atas kertas. Aplikasi membaca digit bercetak dan apa-apa yang anda tulis, menyelesaikannya, dan boleh memberikan petunjuk, menyemak jawapan anda, atau menunjukkan keseluruhan penyelesaian."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Pasangan penunjuk"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"HANTAR"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Menyediakan teka-teki…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Sebelumnya"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Langkah sebelumnya"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Bercetak"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Dasar privasi"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Storan teka-teki"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Teka-teki"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Teka-teki dibaca dan diselesaikan pada telefon ini. Jika anda menghantar bacaan yang tidak pasti, atau mengaktifkan perkongsian automatik, foto teka-teki, bacaan asal, penanda ketidakpastian dan pembetulan anda dihantar dengan selamat kepada Freevia untuk analisis pengecaman dan latihan peribadi. Laporan tidak merangkumi model peranti atau diagnostik anda. Perkongsian automatik adalah pilihan; tiada akaun, analitik penggunaan rutin atau penjejakan iklan. Salinan latihan boleh dipadam menggunakan resit, namun model yang sudah dilatih mungkin mengekalkan perubahan yang dipelajari. Gunakan Resit penghantaran dalam Tetapan untuk memadam laporan."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Teka-teki yang difoto untuk ujian berasal daripada sudoku.cba.si. Aplikasi ini tidak mempunyai kaitan dengan mereka."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Teka-teki yang anda foto disimpan di sini supaya anda boleh menyambungnya semula kemudian."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Pengecaman"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Dibaca sebagai %1$s tulisan tangan, keyakinan %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Dibaca sebagai %1$s bercetak, keyakinan %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Dibaca sebagai kosong - tiada dakwat ditemui."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Dibaca sebagai tanda calon berpensel, lalu diabaikan."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Bacaan disemak."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Bacaan dihantar. Terima kasih!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnostik imbasan terkini (diisi awal)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Pengecaman boleh tersilap, terutama bagi tulisan tangan. Gunakan Baca untuk membandingkan digit yang dikenal pasti dengan foto, dan ketik mana-mana sel untuk membetulkannya. Aplikasi menandakan bacaan yang tidak pasti untuk semakan; bacaan yang yakin masih boleh salah."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Tolak andaian"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Pasangan jauh"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Singkirkan %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nSingkirkan %1$s daripada "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Disingkirkan"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Main semula penaakulan"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Laporkan pepijat atau idea di GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Cuba semula kamera"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Kembali ke langkah %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Dedahkan penjelasan"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Semak atau hantar bacaan"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Semak bacaan"</string>
+    <string name="msg_right_883361d5" formatted="false">"Betul"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Laluan selesai. Kembali untuk menyemak mana-mana gerakan, atau cuba sendiri langkah-langkahnya."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"baris %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Baris %1$s, lajur %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Baris %1$s, lajur %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"baris $1, lajur $2"</string>
+    <string name="msg_row_634768da" formatted="false">"baris"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"baris"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s disingkirkan"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Diagnostik imbasan tidak dapat dibaca."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Tangkapan skrin atau contoh teka-teki"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Tekaan kedua: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Pilih untuk latihan"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Dipilih: baris %1$s, lajur %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Hantar diagnostik (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Hantar diagnostik"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Hantar imbasan ini"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Hantar foto ini"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Tetapan"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"tujuh"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Kongsi secara automatik apabila tidak pasti"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Kongsi bacaan yang tidak pasti secara automatik?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Tunjukkan percanggahan"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Tunjukkan semua %1$s pada teka-teki anda"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Tunjukkan yang itu pada teka-teki anda"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Pewarnaan ringkas"</string>
+    <string name="msg_six_44778d82" formatted="false">"enam"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Pencakar langit"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", penyelesaian %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Selesaikan"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Selesai, dan semua jawapan betul."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Jawapan berbantukan penyelesai: letakkan %1$s dalam %2$s. Calonnya ialah %3$s. Teknik yang disokong aplikasi tidak menemui gerakan dari kedudukan ini. Carian aplikasi menemui %4$s dalam penyelesaian tunggal; bukti terperinci bagi cabang carian tidak tersedia."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nJawapan berbantukan penyelesai: teknik yang disokong aplikasi tidak menemui langkah. Bukti terperinci tidak tersedia."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Penyingkiran berbantukan penyelesai: carian menolak %1$s dalam sel yang diserlahkan, tetapi aplikasi tidak dapat menghasilkan jejak percanggahan ringkas untuk dipaparkan. Bukti terperinci tidak tersedia."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Sesetengah sel mungkin mengandungi nota dan bukannya digit lengkap."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Sesetengah digit tidak dibaca dengan yakin."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Ralat berlaku semasa membaca foto itu."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Sel"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nCalon awal: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Langkah %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Luruskan"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategi"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Resit penghantaran"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Resit penghantaran tidak sah."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Resit penghantaran (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Resit penghantaran"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Respons penghantaran tiada %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Status respons penghantaran tidak sah."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Perkhidmatan penghantaran belum dikonfigurasi."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Perkhidmatan penghantaran mengembalikan HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Penghantaran tidak tersedia dalam binaan ini."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Hantar"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Hantar bacaan yang tidak pasti secara automatik pada masa akan datang"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Hantar bacaan"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Hantar bacaan yang tidak pasti untuk analisis"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Hantar kemas kini"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Dihantar"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Menghantar…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Diagnostik Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Maklum balas Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy diterbitkan oleh Freevia. Hubungi: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy membaca teka-teki melalui kamera, jadi aplikasi memerlukan akses kamera. Pengecaman dan sejarah teka-teki kekal pada telefon anda. Jika anda memilih untuk menghantar bacaan yang tidak pasti, foto dan hasilnya dihantar dengan selamat kepada Freevia untuk menambah baik pengecaman. Perkongsian automatik adalah pilihan dan boleh dimatikan dalam Tetapan."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Imbasan Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Imbasan Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Kod sumber Sudoku Buddy dilesenkan di bawah Lesen Apache 2.0. Penjenamaan Freevia tertakluk pada hak tanda dagangan yang berasingan."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku ialah bentuk teka-teki dalam domain awam. Aplikasi ini menyelesaikan teka-teki yang sudah anda miliki; aplikasi tidak menyalin atau mengedarkan teka-teki sesiapa."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", bukti sokongan"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Andaikan sel yang ditandakan mengandungi %1$s. Digit bernombor itu bersifat hipotesis."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Andaikan sel ini ialah %1$s. Ikuti anak panah mengikut urutan: setiap sel ditentukan oleh penempatan sebelumnya - sama ada digit itu satu-satunya digit yang masih boleh mengisinya, atau sel itu satu-satunya tempat digit tersebut masih boleh diletakkan.\n\nAkibatnya, unit berwarna merah tiada tempat untuk %2$s. Tanda %3$s di dalamnya menunjukkan tempat digit itu boleh diletakkan sebelum ini, dan setiap tempat itu ialah sel yang baru sahaja diisi melalui salah satu anak panah. Unit yang tiada tempat untuk sesuatu digit adalah mustahil - jadi sel ini bukan %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Andaikan sel ini ialah %1$s. Ikuti anak panah mengikut urutan: setiap sel dipaksa oleh peletakan terdahulu - sama ada digit itu satu-satunya yang masih boleh dikandungnya, atau sel itu satu-satunya tempat digit tersebut masih boleh diletakkan. Sel berwarna merah kemudian langsung tiada digit yang boleh diisi, yang mustahil berlaku - jadi sel ini bukan %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Andaikan sel ini ialah %1$s. Ikuti anak panah mengikut urutan: setiap sel ditentukan oleh penempatan sebelumnya - sama ada digit itu satu-satunya digit yang masih boleh mengisinya, atau sel itu satu-satunya tempat digit tersebut masih boleh diletakkan.\n\nAkibatnya, baris berwarna merah tiada tempat untuk %2$s. Tanda %3$s di dalamnya menunjukkan tempat digit itu boleh diletakkan sebelum ini, dan setiap tempat itu ialah sel yang baru sahaja diisi melalui salah satu anak panah. Baris yang tiada tempat untuk sesuatu digit adalah mustahil - jadi sel ini bukan %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Andaikan sel ini ialah %1$s. Ikuti anak panah mengikut urutan: setiap sel ditentukan oleh penempatan sebelumnya - sama ada digit itu satu-satunya digit yang masih boleh mengisinya, atau sel itu satu-satunya tempat digit tersebut masih boleh diletakkan.\n\nAkibatnya, kotak berwarna merah tiada tempat untuk %2$s. Tanda %3$s di dalamnya menunjukkan tempat digit itu boleh diletakkan sebelum ini, dan setiap tempat itu ialah sel yang baru sahaja diisi melalui salah satu anak panah. Kotak yang tiada tempat untuk sesuatu digit adalah mustahil - jadi sel ini bukan %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Andaikan sel ini ialah %1$s. Ikuti anak panah mengikut urutan: setiap sel dipaksa oleh peletakan terdahulu - sama ada digit itu satu-satunya yang masih boleh dikandungnya, atau sel itu satu-satunya tempat digit tersebut masih boleh diletakkan.\n\nIni menyebabkan %2$s berwarna merah tiada tempat untuk meletakkan %3$s. %4$s yang ditandakan di dalamnya ialah tempat yang boleh diisinya, dan setiap tempat ialah sel yang baru diisi oleh salah satu anak panah. %5$s yang tiada tempat untuk sesuatu digit adalah mustahil - jadi sel ini bukan %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Andaikan sel ini ialah %1$s. Ikuti anak panah mengikut urutan: setiap sel ditentukan oleh penempatan sebelumnya - sama ada digit itu satu-satunya digit yang masih boleh mengisinya, atau sel itu satu-satunya tempat digit tersebut masih boleh diletakkan.\n\nAkibatnya, lajur berwarna merah tiada tempat untuk %2$s. Tanda %3$s di dalamnya menunjukkan tempat digit itu boleh diletakkan sebelum ini, dan setiap tempat itu ialah sel yang baru sahaja diisi melalui salah satu anak panah. Lajur yang tiada tempat untuk sesuatu digit adalah mustahil - jadi sel ini bukan %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Beralih ke Selepas untuk melihat gerakan dan kesannya pada grid."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Swordfish"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Ambil foto baharu"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Ambil foto lain"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Pilih satu digit dan tandakan setiap unit yang mempunyai tepat dua sel yang masih boleh diisinya. Kedua-duanya seperti jongkang-jongket: satu mengandungi digit itu dan satu lagi tidak.\n\nMulakan di mana-mana dan warnakan satu sel, misalnya biru. Warnakan pasangannya hijau, kemudian pasangan sel hijau itu biru semula, dan teruskan sehingga rantai berakhir. Sama ada semua sel biru benar atau semua sel hijau benar - anda tidak tahu yang mana, dan itu sudah cukup untuk dua perkara.\n\nPertama: jika dua sel dengan warna yang sama muncul dalam satu baris, lajur atau kotak, warna itu mustahil, maka digit tersebut disingkirkan daripada setiap sel berwarna itu dan warna satu lagi memberikan jawapan di seluruh rantai.\n\nKedua: mana-mana sel di luar rantai yang dapat melihat sel biru dan sel hijau boleh menyingkirkan digit itu, kerana salah satu daripadanya mengandungi digit tersebut tanpa mengira pilihan rantai.\n\nTeknik ini lambat dengan pensel tetapi berbaloi: satu pewarnaan sering menyingkirkan satu digit daripada separuh papan."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Pertimbangkan satu digit dan satu unit pada satu masa - misalnya, di manakah 4 boleh diletakkan dalam kotak ini? Potong setiap sel dalam unit itu yang sudah mempunyai digit, atau yang melihat 4 dalam baris atau lajurnya sendiri. Jika satu sel sahaja tinggal, 4 diletakkan di situ.\n\nPerangkapnya ialah anda tidak dapat melihat ini dengan memeriksa sel itu: sel itu mungkin turut menerima lima digit lain, jadi tiada apa-apa yang kelihatan pasti. Lihat digit dan bukannya sel, dan coraknya muncul serta-merta."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Ambil foto"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Ambil foto secara automatik"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Ketik sel yang ditandakan untuk menyemaknya, atau sahkan semua bacaan betul."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Ketik sel pada grid dahulu."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Uji %1$s sebagai andaian dalam sel yang ditandakan. Ini bukan jawapan. Ikuti kesannya untuk melihat sebab andaian itu gagal."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Uji andaian"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Terima kasih kerana membantu menambah baik pengecaman. Foto teka-teki, bacaan dan pembetulan anda akan digunakan untuk analisis dan latihan."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Itu juga gerakan %1$s yang sah. Laluan ini menunjukkan gerakan lain; bandingkan buktinya di bawah."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Itu bukan gerakan yang dipilih untuk langkah ini. Mungkin ada gerakan lain yang sah; lihat semula atau dedahkan penjelasan langkah ini."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Itu betul"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Itulah baki teka-teki. %1$s sel memerlukan jawapan berbantukan penyelesai kerana teknik yang disokong aplikasi tidak menemui gerakan. Bukti carian terperincinya tidak tersedia."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Itulah baki teka-teki. Satu sel memerlukan jawapan berbantukan penyelesai kerana teknik yang disokong aplikasi tidak menemui gerakan. Bukti carian terperincinya tidak tersedia."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Itulah baki teka-teki, dari awal hingga akhir."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Foto itu tidak dapat disimpan, jadi tiada apa-apa untuk dihantar."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Sel itu membenarkan %1$s. Cari gerakan yang dibuktikan oleh teknik langkah ini, atau dedahkan penjelasannya."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Sel itu sudah diisi. Pilih sel kosong."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Andaian telah ditolak. Kita kembali kepada calon sebenar dan memotong %1$s dalam sel yang ditandakan. Digit hipotesis dikosongkan."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Kamera tidak dapat mengambil foto itu."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kamera tidak tersedia. Tutup aplikasi kamera lain, kemudian cuba lagi."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"yang satu lagi"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Foto dari %1$s dan semua yang dibaca daripadanya akan dipadam daripada telefon ini. Tindakan ini tidak boleh dibuat asal."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Foto itu ada dalam senarai teka-teki anda, di bawah \"Tidak dapat dibaca\"."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Pangsi di sini ialah %1$s atau %2$s. Dalam kedua-dua keadaan, salah satu daripada dua sel lain dipaksa menjadi %3$s, jadi tiada sel yang melihat kedua-duanya boleh menjadi %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Pasangan menunjuk yang dibaca secara terbalik. Pilih satu baris atau lajur dan digit yang masih perlu ditempatkan di dalamnya. Tandakan setiap sel dalam baris atau lajur itu yang boleh menerima digit tersebut. Jika semuanya berada dalam satu kotak, digit itu mesti berada pada bahagian baris atau lajur dalam kotak tersebut - jadi digit itu tiada di tempat lain dalam kotak, termasuk dua baris atau lajur yang tidak anda periksa.\n\nSeperti pasangan menunjuk, teknik ini tidak meletakkan digit dengan sendirinya; teknik ini memberi ruang kepada teknik lain yang boleh melakukannya."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Digit bercetak tidak membentuk teka-teki yang boleh diselesaikan."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nCalon yang tinggal di %1$s ialah {%2$s}. Letakkan %3$s di baris %4$s, lajur %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Laporan terlalu besar untuk dihantar."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-wing dengan satu calon tambahan pada sel pangsi. Cari sel yang mempunyai tepat tiga calon, misalnya {1,4,7}, yang dapat melihat dua sel dengan dua calon - satu {1,7} dan satu {4,7}.\n\nKini ketiga-tiganya boleh menjadi 7, dan salah satu daripadanya mesti 7. Jadi sesuatu sel perlu melihat ketiga-tiganya untuk menyingkirkan 7, bukan sekadar dua sel penyepit - yang dalam praktik bermakna sel itu berada dalam kotak yang sama dengan pangsi dan sebaris atau selajur dengan satu penyepit.\n\nPenyingkirannya lebih sedikit berbanding Y-wing, dan lebih mudah terlepas pandang atas sebab yang sama: pangsi tidak menonjol."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Ada sel yang boleh anda isi dalam kotak yang diserlahkan.\n\nTekan Petunjuk sekali lagi untuk mengetahui teknik yang menemuinya."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Tiada apa-apa lagi untuk ditaakul di sini."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"%1$s sel ini semuanya hanya mengandungi %2$s dan %3$s, dan setiap sel melihat sel seterusnya, jadi digitnya berselang-seli sepanjang rantai. %4$s dan %5$s dipisahkan oleh bilangan pautan ganjil, maka kedua-duanya mengandungi digit berbeza - yang menyingkirkan %6$s daripada apa-apa sel yang melihat kedua-duanya."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"%1$s sel ini hanya mengandungi %2$s secara bersama, jadi digit tersebut mengisi sel itu dalam suatu susunan. Ini menyingkirkan %3$s daripada sel lain dalam %4$s ini."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"%1$s sel ini hanya boleh diisi dengan %2$s, jadi digit-digit itu mengisinya dalam suatu susunan. Maka %3$s disingkirkan daripada sel-sel lain dalam baris ini."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"%1$s sel ini hanya boleh diisi dengan %2$s, jadi digit-digit itu mengisinya dalam suatu susunan. Maka %3$s disingkirkan daripada sel-sel lain dalam lajur ini."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"%1$s sel ini hanya boleh diisi dengan %2$s, jadi digit-digit itu mengisinya dalam suatu susunan. Maka %3$s disingkirkan daripada sel-sel lain dalam kotak ini."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Ini ialah calon awal untuk sel anda. Jejak menerangkan kemungkinan yang boleh disingkirkan."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Digit ini tidak dapat membentuk teka-teki, dan terlalu banyak yang salah untuk menentukan yang mana. Ketik mana-mana sel untuk membetulkan bacaan, atau ambil foto semula."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Digit ini tidak dapat membentuk teka-teki. Mengubah %1$s sel yang dibulatkan akan membetulkannya - ketik salah satu untuk membetulkan bacaan."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Digit ini tidak dapat membentuk teka-teki. Mengubah satu sel yang dibulatkan akan membetulkannya - ketik sel itu untuk membetulkan bacaan."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Digit ini tidak membentuk teka-teki, jadi salah satunya tersalah baca. Tekan Selesaikan untuk melihat sel yang perlu dibetulkan."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Empat sel ini membentuk segi empat tepat merentasi dua kotak, dan tiga daripadanya hanya mengandungi %1$s. Jika %2$s juga hanya mengandungi dua digit itu, digit tersebut boleh ditukar mengelilingi segi empat tepat dan teka-teki akan mempunyai dua jawapan. Teka-teki ini mempunyai satu jawapan, jadi %3$s mesti menggunakan digit lain - dan %4$s disingkirkan."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Langkah-langkah ini tidak sampai ke akhir: sesuatu di sini langsung tidak dapat diatasi oleh aplikasi."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Ini tidak mengisi mana-mana sel. Ini menyingkirkan %1$s daripada %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Langkah ini tidak mengisi mana-mana sel. Ia menyingkirkan %1$s daripada %2$s sel."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Langkah ini tidak mengisi mana-mana sel. Ia menyingkirkan %1$s daripada satu sel."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nIni ialah deduksi pertama daripada %1$s deduksi yang membawa kepada jawapan."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Bukti ini menerangkan satu petunjuk, termasuk penyingkiran calon yang membawa kepada jawapannya. Maju selangkah untuk mengikuti penaakulan pada grid, kemudian teruskan dengan laluan penuh."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Teka-teki ini tidak dapat disediakan."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Teka-teki ini tidak dapat disimpan. Anda masih boleh menggunakannya sekarang. Kosongkan sedikit storan sebelum mengambil foto lain."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Teka-teki ini mempunyai lebih daripada satu jawapan, jadi satu digit bercetak mungkin terlepas. Memaparkan jawapan %1$s daripada %2$s - tekan Selesaikan sekali lagi untuk yang seterusnya. Sel yang dibulatkan berbeza antara jawapan yang dipaparkan."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Foto teka-teki ini tidak dapat dibuka."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Penaakulan ini menolak kewujudan %1$s "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Sel ini mungkin mengandungi nota calon dan bukannya digit lengkap. Sila semak."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Paparan ini merangkumi penyingkiran calon terdahulu. Buka buktinya di bawah untuk menyemaknya."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tiga"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Terlalu gelap untuk melihat garis grid"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Jejak"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Dicuba"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Cuba sendiri"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Aktifkan"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Putar telefon supaya teka-teki tegak."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tutor"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"dua"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Dua sel yang mengandungi pasangan digit yang sama, dihubungkan oleh hubungan jongkang-jongket pada salah satu digitnya, memaksa digit yang satu lagi ke dalam salah satu sel itu."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Layang-layang dua tali"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Segi empat tepat unik"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"unit"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable tidak mendedahkan senarai CellReading; sel input tepat dan hasil dikekalkan."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versi format model tidak disokong"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Tidak pasti"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Gunakan bahasa peranti"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Dengan menggunakan %1$s, ketik satu sel yang calonnya boleh disingkirkan, kemudian pilih digit itu."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Dengan menggunakan %1$s, ketik sel yang boleh anda isi, kemudian pilih digitnya."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Sangat sukar"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"telah"</string>
+    <string name="msg_were_910adfb4" formatted="false">"telah"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Apakah yang anda jangkakan, atau bagaimanakah idea anda membantu anda menyelesaikan atau mempelajari Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Apa yang berlaku dan langkah untuk mengulanginya (bagi pepijat)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Fungsinya"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Di mana"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Mengapa %1$s disingkirkan daripada r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Mengapa"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Mengapa bukan %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Mengapa sel ini? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" dengan penyelesaian. Gunakan Semak untuk menelitinya."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Taakul secara terbalik dari sel anda. Pilih soalan di bawah."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Periksa digit demi digit dan bukannya sel demi sel. Untuk satu unit, catat tempat yang masih boleh diisi oleh setiap digit yang belum ada. Kemudian cari %1$s digit yang senarainya secara bersama hanya meliputi %2$s sel.\n\n%3$s digit itu mesti mengisi %4$s sel tersebut, jadi semua calon lain di dalamnya boleh dipotong - yang sering menjadikan salah satu sel itu calon tunggal terbuka atau pasangan terbuka serta-merta.\n\nInilah teknik yang paling sukar bagi ramai orang, kerana tiada apa-apa yang kelihatan apabila anda melihat sel: sel itu masih mempunyai banyak calon. Coraknya terletak pada digit."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Gunakan hanya sel yang mempunyai tepat dua calon yang tinggal.\n\nMulakan pada satu sel, misalnya {2,6}, dan andaikan sel itu bukan 2 - maka sel itu ialah 6. Beralih ke sel yang dilihatnya yang turut mempunyai 6, misalnya {6,4}: sel itu tidak boleh menjadi 6, jadi sel itu ialah 4. Beralih ke sel yang dilihat oleh sel itu yang mengandungi 4, dan teruskan, dengan setiap langkah dipaksa oleh langkah sebelumnya.\n\nJika anda sampai ke sel yang digit satu laginya ialah 2 - digit yang anda singkirkan pada awalnya - anda selesai. Sama ada sel pertama sebenarnya 2, atau rantai berterusan dan sel terakhir ialah 2. Salah satu hujung mengandunginya, jadi apa-apa sel yang melihat kedua-dua hujung tidak boleh mengandunginya.\n\nPastikan rantai pendek. Empat atau lima sel boleh dicari dengan pensel; lebih daripada itu memerlukan banyak pencatatan, dan rantai paksaan ialah nama yang lebih tepat untuknya."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"sisi kerja mesti positif dan terhingga"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Tidak dapat dibaca"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Bertulis"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Salah"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"Rantai XY"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-wing"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Anda mengosongkan sel ini."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Anda menetapkan ini kepada %1$s tulisan tangan."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Anda menetapkan ini kepada %1$s bercetak."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Perubahan anda kelihatan, tetapi tidak dapat disimpan. Kosongkan sedikit storan dan cuba edit teka-teki sekali lagi."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Foto dan privasi anda"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Teka-teki anda"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Teka-teki tersimpan anda"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Sel anda ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Sel anda kekal berbingkai. Sel hijau menunjukkan bukti; digit yang dipotong telah disingkirkan."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

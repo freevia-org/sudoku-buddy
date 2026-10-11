@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nThe highlighted cells are whit proves it.\n\nPress Hint again tae be shawn which cell."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s and %2$s baith haud only %3$s and %4$s. In this %5$s, %6$s has juist twa hames, ane seen by each o them - sae ane o thae twa is %7$s, and the end that sees it maun be %8$s. Either wey ane end is %9$s, which rules %10$s oot o everythin that sees them baith."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s and %2$s baith haud anely %3$s and %4$s. In this box, %5$s has juist twa places, ane seen by ilka ane o them - sae ane o thae twa is %6$s, and the end that sees it maun be %7$s. Either wey ane end is %8$s, which rules %9$s oot o everything that sees them baith."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s and %2$s baith haud anely %3$s and %4$s. In this column, %5$s has juist twa places, ane seen by ilka ane o them - sae ane o thae twa is %6$s, and the end that sees it maun be %7$s. Either wey ane end is %8$s, which rules %9$s oot o everything that sees them baith."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s and %2$s baith haud anely %3$s and %4$s. In this raw, %5$s has juist twa places, ane seen by ilka ane o them - sae ane o thae twa is %6$s, and the end that sees it maun be %7$s. Either wey ane end is %8$s, which rules %9$s oot o everything that sees them baith."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s at raw %2$s, column %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s at step %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s can anely haud %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s cannae haud %2$s because %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s cannae haud %2$s acause %3$s can anely haud %4$s in the same column %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s cannae haud %2$s acause %3$s can anely haud %4$s in the same box %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s cannae haud %2$s acause %3$s can anely haud %4$s in the same row %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s cannae haud %2$s acause %3$s has %4$s in the same box %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s cannae haud %2$s acause %3$s has %4$s in the same column %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s cannae haud %2$s acause %3$s has %4$s in the same row %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s has %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s empty"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, entry"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s has tae gang here: it is the anely cell in this column %2$s that can still tak a %3$s.\n\n%4$s\n\n%5$s allows %6$s the noo, but every column maun haud %7$s exactly ance. Therefore pit %8$s in raw %9$s, column %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s has tae gang here: it is the only cell in this %2$s %3$s that can still tak a %4$s.\n\n%5$s\n\n%6$s currently allows %7$s, but every %8$s maun contain %9$s exactly ance. Therefore place %10$s in raw %11$s, column %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s has tae gang here: it is the anely cell in this box %2$s that can still tak a %3$s.\n\n%4$s\n\n%5$s allows %6$s the noo, but every box maun haud %7$s exactly ance. Therefore pit %8$s in raw %9$s, column %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s has tae gang here: it is the anely cell in this raw %2$s that can still tak a %3$s.\n\n%4$s\n\n%5$s allows %6$s the noo, but every raw maun haud %7$s exactly ance. Therefore pit %8$s in raw %9$s, column %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s has twa hames in this raw and twa in this column. %2$s and %3$s share a box, sae they cannae baith be %4$s - which leaves ane o %5$s and %6$s haudin it, and rules %7$s oot o everythin that sees them baith."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s in the same %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s in the same box."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s in the same column."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s in the same raw."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s is awready ruled oot o that cell. Its candidates are "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s is excluded by %2$s, which "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s is ruled oot by %2$s, whilk can anely haud %3$s in the same column %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s is ruled oot by %2$s, whilk can anely haud %3$s in the same row %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s is ruled oot by %2$s, whilk can anely haud %3$s in the same box %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s is ruled oot by %2$s, whilk has %3$s in the same box %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s is ruled oot by %2$s, whilk has %3$s in the same column %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s is ruled oot by %2$s, whilk has %3$s in the same row %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s is forced in the newest numbered cell (raw %2$s, column %3$s). %4$s The arrae follaes a contributin placement; earlier consequences matter an aw."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s is missin frae the classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s o %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s o them fill a cell in; the rest clear candidates oot o the wey first."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s pair"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s prentit, %2$s, %3$s wrang"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s prentit, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s prentit"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, prentit clue"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s quad"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s refused photograph(s), newest first:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: remove %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Nummer o squares: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s steps mak up this route, the hardest supportit technique a %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s triple"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s wis removed frae %2$s by earlier candidate reasonin."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s written in"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"a %1$sx%2$s image needs %3$s bytes but got %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"a cell wis neither a digit nor a full stop"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"A chain o twa-candidate cells that starts and ends on the same digit pits that digit at ane end or the ither."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"A digit wi juist ane place left in a row, column or box belangs in that place."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"A haunwritten %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"A printit %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"A reid cell shows the digit the app read there. If that\'s no whit ye wrote, tap the cell tae sort it."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"A cell wi juist ane digit left maun haud that digit."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"A technique list is never complete, and the hardest puzzles are made tae beat whaever\'s on it. Sae when aw thir come up empty, the tutor settles ane cell by tryin its candidates oot, says plainly that\'s whit it has done, and carries on reasonin fae there. It aye reaches the end o a puzzle, and it never pretends a lookup wis a deduction."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"A three-candidate pivot wi twa matchin twa-candidate pincers forces a digit oot o every cell that sees aw three."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"A twa-candidate pivot and twa twa-candidate pincers can force a digit oot o every cell that sees baith pincers."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Aboot"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Efter"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Efter this move"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Aw correct"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Aw three o thir cells can be %1$s, and ane o them has tae be. Sae ony cell that sees aw three cannae be %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Alloo camera"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Near eneuch - haud the page flat and square tae the camera"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"an elimination that removes naethin isnae a deduction"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" and "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Answer"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## App and device (filled in awready)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- App: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"aspect maun be positive but wis %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Assumption · hypothetical digit"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Assumption rejectit · real candidates restored"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"at least %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Auto photie"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Automatically share uncertain puzzle photos, readin results and later cell corrections wi Freevia for recognition analysis and trainin. Aff by default."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Avoid the glare"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Back"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Back tae the previous question"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Back tae visual hint"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Back tae yer cell"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Afore"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Afore this move"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Blue digits are the solution. Tap ony cell tae correct whit wis read."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"box %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"box"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Box"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Box line reduction"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Camera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"can only haud"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Cancel"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidates %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Chain a digit through the units whaur it has juist twa places, colour the chain in twa alternatin colours, and ane colour is true throughout."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thae cells in twa alternatin colours, ane o which is true throughout. Twa cells o the ither colour sit in the same raw, which cannae be - sae that colour is the fause ane, and %2$s is taen oot o every cell wi that colour."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thae cells in twa alternatin colours, ane o which is true throughout. Twa cells o the ither colour sit in the same box, which cannae be - sae that colour is the fause ane, and %2$s is taen oot o every cell wi that colour."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thae cells in twa alternatin colours, ane o which is true throughout. Twa cells o the ither colour sit in the same column, which cannae be - sae that colour is the fause ane, and %2$s is taen oot o every cell wi that colour."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thir cells in twa alternatin colours, ane o which is true throughout. Twa cells o %2$s colour sit in the same %3$s, which cannae be - sae that colour is the false ane, and %4$s goes fae every cell wi that colour."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thir cells in twa alternatin colours, and ane colour is true throughout. Thir cells can see baith colours, sae whichever wey the chain falls ane o the cells they see hauds %2$s - which means they cannae."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thae cells in twa alternatin colours, ane o which is true throughout. Twa cells o ae colour sit in the same box, which cannae be - sae that colour is the fause ane, and %2$s is taen oot o every cell wi that colour."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thae cells in twa alternatin colours, ane o which is true throughout. Twa cells o ae colour sit in the same column, which cannae be - sae that colour is the fause ane, and %2$s is taen oot o every cell wi that colour."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thae cells in twa alternatin colours, ane o which is true throughout. Twa cells o ae colour sit in the same raw, which cannae be - sae that colour is the fause ane, and %2$s is taen oot o every cell wi that colour."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Uncertain squares tae check: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Check"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Check ane uncertain cell."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", checked correct"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Choose a candidate tae see why it cannae gang in yer cell."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Choose leid"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Choose whit tae show"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Close"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Close hint"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Fold awa readin review"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"colour and greyscale cells maun use the same geometry"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"column %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"column"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"columns"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Compare forcing chains and prefer anes wi fewer cells tae follae. Shorter chains can mean mair steps in the full solution."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consequence %1$s o %2$s · hypothetical digits"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"hauds"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Carry on wi the full route"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradiction · assumption fails"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", contradiction"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Contradiction: the reid %1$s has naewhaur left for %2$s. This is impossible, sae the startin assumption maun fail."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Contradiction: the reid cell has nae candidate left. This is impossible, sae the startin assumption maun fail."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Copy deletion request"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Correct. Compare yer reasonin wi the explanation below."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"couldnae decode the captured image"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Couldnae find the printit digits in that photo."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Couldnae mak oot the grid lines - try again."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Couldnae open GitHub. Contact support at %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Couldnae keep debug capture evidence"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Couldnae submit the readin. Please try again when connectit."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Deid end"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Delete"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Delete report"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Delete this photo"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Delete this puzzle"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Delete this puzzle?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Delete this submission?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Deletin…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Deletion couldnae be confirmed. Check yer connection and try again."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Deletion request"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Deletion response didnae confirm this receipt."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Deletion service returned HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Describe whit happened and the steps tae repeat it. Say whether ye checked and corrected the recognised digits first. For an idea, write \'Disnae apply\'."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", target o this hint"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Device: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostics shortened tae fit the browser draft. The app\'s Send diagnostics action can share the full report."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"digit maun be 1..9 but wis %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Digits no read"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Keepin evidence on disk affects timin; no a latency benchmark."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", disnae match the solution"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Ilk receipt identifies ane submitted puzzle revision. Delete it here tae remove the privately stored report fae Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Earlier eliminations: %1$s. Use the earlier-step links tae inspect their proofs."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← earlier evidence (depth %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Earlier hypothetical placements leave it wi juist ane candidate."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Earlier steps used in this proof"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Edit cell"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"aucht"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"empty"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Empty."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Empty"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Inglis"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"entries that disagree"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"entry that disagrees"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Ilk ane o them fills in a cell."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Every cell is filled, but %1$s answers dinnae agree wi the solution."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Every cell is filled, but ane answer disnae agree wi the solution."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Every sudoku wi ane answer can be solved by reasonin; guessin is never needed and rarely helps. Thir are the weys o reasonin this app can recognise and explain, easiest first. Whaur ane o them applies tae the puzzle ye hae open, it\'ll show ye every place it does."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Awthing ye\'ve written sae far is richt."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Examples available noo: ilk ane starts fae yer current board."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"expectit 10 horizontal lines, got %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"expectit 10 vertical lines, got %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"expectit 81 cells but got %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"expectit 81 cells in each block, fund %1$s and %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"expectit 8-bit single channel but got %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"expectit a 28x28 image but got %1$s values"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Expectit behaviour or proposed improvement"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"expectit ten lines each wey"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"expectit twa blocks, fund %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Explain earlier candidate removals (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Explain hints"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Find a cell wi juist twa or three candidates left - the fewer the better, and the busier the row, column and box roond it the better still.\n\nPick ane o its candidates and pencil it in lichtly. Noo follae the consequences: that digit is gane fae awthing the cell can see, which may leave ane o thae cells wi a single candidate, which forces anither, and sae on. Keep gaun.\n\nAne o twa things happens. Either it peters oot, and ye\'ve learnt naething - rub it oot and try the ither candidate. Or ye reach a cell wi nae candidates left at aw, or a row wi naewhaur tae pit some digit. That\'s impossible, sae the digit ye pencilled in wis wrang, and ye can rule it oot for guid.\n\nThis is the ane tae reach for when awthing else has dried up. It\'s slower and it\'s record-keepin raither than pattern-spottin, but it can uncover moves the patterns miss. Ane elimination is aften eneuch tae start the easy techniques workin again; some positions still need a deeper search."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Find twa cells wi the same twa candidates, say {3,7}, that cannae see ane anither - they\'re usually naewhaur near ane anither.\n\nNoo look for a row, column or box whaur 7 has juist twa possible cells, ane o which is seen by the first o yer pair and the ither by the second. That\'s the link.\n\nAne o thae twa cells is the 7. Whichever it is, the cell o yer pair that sees it cannae be 7, sae it maun be 3. Ye dinnae ken which end is the 3, juist that ane o them is - and that\'s eneuch tae rule 3 oot o every cell that sees baith ends.\n\nThe hard pairt is the link, sae hunt for it the ither wey roond: mark the units whaur a digit has juist twa places first, then look for a matchin pair on either side."</string>
+    <string name="msg_finished_05343e98" formatted="false">"finished"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Press the shutter ance the grid is square in the frame and steady. The button aye works either wey."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Fit the hale grid in view."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Fit the hale grid in view"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"five"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Follae a route whaur ilk move builds on the previous ane."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Follae the full proof in order"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Follae this chain o twa-candidate cells: if %1$s isnae %2$s then ilk cell alang it is forced by the ane afore, and %3$s ends up %4$s. Sae ane end or the ither hauds %5$s, which rules it oot o every cell that sees them baith."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Forcing chain"</string>
+    <string name="msg_four_04efaf08" formatted="false">"fower"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Fower cells in twa rows, twa columns and twa boxes cannae aw haud the same twa candidates, or the puzzle wad hae twa answers."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia confirmed deletion, but this phone couldnae remove the local receipt. Try again tae finish the local cleanup."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia will delete this report revision and its private trainin copy. Future corrections may create a new report unner yer sharin settins. A model awready trained on it may keep learnt changes."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Full route"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Future uncertain readins will send the straightened puzzle photo, recognition results and corrections tae Freevia for analysis and trainin. Trainin copies remain till deleted fae Submission receipts; a trained model may keep learnt changes. If an uncertain puzzle is awready open, it\'ll be sent noo. Ye can turn this aff in Settins."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Gentle"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Glare is washin the lines oot - tilt the page awa fae the licht"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Grey cells haud pencil marks, which the app ignores. The bar unner a digit shows hou sure it wis. Tap a cell for the detail."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Haunwritten"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Hard"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Hidden"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Hidden pair"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Hidden quad"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Hidden single"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Hidden triple"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Hide earlier evidence"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Hide hou tae spot ane"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", hint %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Hint"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Hint proof"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Hint reasonin"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Haud still..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Haud still, or tap the shutter"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Haud still while the camera focuses..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Haud the phone flat"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Haud the phone flat abune the puzzle."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Haud the phone flat abune the puzzle"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Hou tae spot ane"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nHou we get there:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Hunt for cells wi exactly twa candidates - a Y-wing is made o three o them and naething else.\n\nTak ane as the pivot, say {2,5}. Look for a cell it can see haudin {2,9}, and anither it can see haudin {5,9}. The pivot is either 2 or 5. If it\'s 2, the first pincer maun be 9; if it\'s 5, the second maun be 9. Either wey a 9 appears in ane o the pincers - ye dinnae ken which, and ye dinnae need tae.\n\nSae nae cell that can see baith pincers can be a 9. Thae cells are usually the twa corners that complete the rectangle."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hypothetical %1$s, no an entered answer"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"If %1$s digits in ane row, column or box can only gang in the same %2$s cells, thae cells can haud naething else."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"If %1$s cells in ane row, column or box share exactly %2$s candidates atween them, thae digits belang tae thae cells and tae nae ithers in the unit."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"If a digit has twa places in a row and twa in a column, and ane fae ilk shares a box, ane o the ither twa maun haud it."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"If a digit has twa places in ilk o twa rows and they share a column, ane o the ither twa places maun haud it."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"If a digit\'s only places alang a line aw sit inside ane box, that digit can be ruled oot o the rest o that box."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"If a digit\'s only places in %1$s rows lie in the same %2$s columns, it can be ruled oot o thae columns elsewhere - and the same wi rows and columns swapped."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"If a digit\'s only places inside a box share ane line, that digit can be ruled oot o the rest o that line."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"If assumin a digit leads tae a cell wi naething it can haud, that digit wis wrang."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"image dimensions maun be positive"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"In a chain o cells that aw haud the same twa candidates, the twa ends o an odd-length chain haud different digits."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"In thir %1$s %2$s, %3$s can only gang in thir %4$s %5$s. Atween them they use up every ane, sae %6$s can be ruled oot o thae %7$s everywhaur else."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"In thae %1$s columns, %2$s can anely gang in thae %3$s raws. Atween them they use up every ane, sae %4$s can be ruled oot o thae raws everywhaur else."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"In thae %1$s raws, %2$s can anely gang in thae %3$s columns. Atween them they use up every ane, sae %4$s can be ruled oot o thae columns everywhaur else."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"In thir twa %1$s, %2$s has juist twa places in ilk, and %3$s and %4$s share a %5$s - sae they cannae baith be %6$s. Ane o %7$s and %8$s therefore is, which rules %9$s oot o every cell that sees them baith."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"In thae twa columns, %1$s has juist twa places in ilka ane, and %2$s and %3$s share a raw - sae they cannae baith be %4$s. Ane o %5$s and %6$s therefore is, which rules %7$s oot o every cell that sees them baith."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"In thae twa raws, %1$s has juist twa places in ilka ane, and %2$s and %3$s share a column - sae they cannae baith be %4$s. Ane o %5$s and %6$s therefore is, which rules %7$s oot o every cell that sees them baith."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"In this %1$s, %2$s can only gang in thir %3$s cells, sae thae cells are spoken for. That rules %4$s oot o them."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"In this %1$s, %2$s can only gang inside ane box. Sae %3$s is in that box on this %4$s, and can be ruled oot o the rest o the box."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"In this box, %1$s can anely gang in thae %2$s cells, sae thae cells are spoken for. That rules %3$s oot o them."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"In this column, %1$s can anely gang in thae %2$s cells, sae thae cells are spoken for. That rules %3$s oot o them."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"In this raw, %1$s can anely gang in thae %2$s cells, sae thae cells are spoken for. That rules %3$s oot o them."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Includes their photos, readins and corrections. Turn this aff in Settins."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Inside ane box, find a digit that can only gang in twa or three cells, and check whether they aw sit in the same row, or aw in the same column. If they dae, the digit is definitely somewhaur alang that line - ye dinnae ken whaur, but ye ken it\'s inside this box. Sae it cannae be onywhere else alang the same line ootwith the box.\n\nThis places naething by itsel. It clears candidates oot o the wey sae that a single appears somewhaur else."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Inside this box, %1$s can only gang in this %2$s. Sae %3$s is somewhaur here, and can be ruled oot o the rest o the %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem or idea"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"It applies in %1$s places here. Step forrit tae gang through them."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"It applies in ane place here. Step forrit tae see it."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"It disnae apply onywhere in this position."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"It\'s the only place left for %1$s in the highlighted %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"It\'s the ringed cell.\n\nPress Hint again for the digit."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Keep"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Keep forcing chains short"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Leid"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licences"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Look alang ane row, column or box for cells wi juist a few candidates left. Tak %1$s o them and pool their candidates. If the pool has exactly %2$s digits in it, thae %3$s digits are spoken for: they hae tae gang in thae %4$s cells in some order, even though ye cannae yet say which goes whaur.\n\nThat\'s eneuch. Every ither cell in the unit can gie thae digits up, and it\'s usually ane o thae cells that then becomes a single.\n\nThe cells dinnae aw need the same candidates - {2,7}, {2,9} and {7,9} is a perfectly guid triple, and is the ane fowk miss."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Look for cells haudin the same twa candidates - say {4,9} - that form a chain, ilk ane seein the next. Three isnae eneuch; ye need at least fower.\n\nColour them alternately as ye gang. Because ilk cell sees the next, nae twa neighbours can haud the same digit, sae the chain reads 4, 9, 4, 9 the hale wey alang - or 9, 4, 9, 4, and ye cannae tell which.\n\nEither wey, twa cells o opposite colours haud different digits atween them: ane is the 4 and ane is the 9. Sae onything that can see baith o them can be neither, and loses baith candidates at ance.\n\nThe pattern is easy tae spot precisely because every cell in it looks the same. Follae the identical pairs roond the grid and see whaur they touch."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Look for three cells haudin the same twa candidates - say {1,6} - that sit at three corners o a rectangle. The rectangle has tae lie in exactly twa boxes: twa rows and twa columns crossin twa boxes, no fower.\n\nNoo look at the fowert corner. If it held only 1 and 6 as weel, the puzzle wad hae twa answers - ye could swap the 1s and 6s roond the rectangle and awthing else wad still work. A properly set puzzle has ane answer, sae the fowert corner maun be usin something else: its ither candidates stay, and 1 and 6 gang.\n\nThis is the ane argument in the book that\'s aboot the setter raither than the grid. It\'s sound on a published puzzle and worthless on ane ye\'ve awready filled in wrangly, because then there may be nae answer at aw tae be unique."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Look in this box. Follae the outline tae the cell this hint will explain."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Marks"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Moderate"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Mair"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Mair licht needed"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Mair than ane answer, sae a printit digit wis missed. Press Solve tae see the answers and whaur they differ."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Move back"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Move nearer"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Move nearer - the grid is ower sma tae read."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Naked"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Naked pair"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Naked quad"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Naked single"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Naked triple"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Name the technique and show the cells that prove it, instead o juist giein the digit."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"need at least 4 points but got %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Needs confirmation"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"New sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Next consequence"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Next step"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Nae images are attached automatically. Reports an attachments sent here are public. Send examples ye’d raither share privately tae info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Nae photograph has been refused since the app wis last installed."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Nae scan diagnostics available."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Nae technique applies here"</string>
+    <string name="msg_none_140bedbf" formatted="false">"nane"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Nane o them pits a digit in a cell: they clear candidates oot o the wey, which is hou a hard puzzle is opened up."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Nane on yer puzzle the noo."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"no a digit model file"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"No read wi ony confidence - the nearest guess is %1$s %2$s at %3$s. Please set this cell yersel."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"No readin as a nine by nine grid yet - try fillin the frame wi the grid alane, or juist tak the photo"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"no startit"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Naething could be sent fae this phone."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Naething left tae work oot."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Naething mair here can be reasoned oot by the techniques this app kens."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"naethin unusual"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"ane"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Ane cell looked like a printit digit but isnae."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Ane printit digit wis corrected automatically."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"ane cell"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Only %1$s can gang here - every ither digit awready appears in this row, column or box."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Anely %1$s can gang here. The highlighted cells use up %2$s o the ither echt digits; %3$s wis ruled oot o this cell earlier, no by onything ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Anely %1$s can gang here. The heichlichtit cells use up fower o the ither echt digits; %2$s war ruled oot o this cell afore, no by onythin ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Anely %1$s can gang here. The heichlichtit cells use up sax o the ither echt digits; %2$s war ruled oot o this cell afore, no by onythin ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Anely %1$s can gang here. The heichlichtit cells use up ane o the ither echt digits; %2$s war ruled oot o this cell afore, no by onythin ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Anely %1$s can gang here. The heichlichtit cells use up seiven o the ither echt digits; %2$s wis ruled oot o this cell afore, no by onythin ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Anely %1$s can gang here. The heichlichtit cells use up five o the ither echt digits; %2$s war ruled oot o this cell afore, no by onythin ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Only %1$s can gang here. The highlighted cells use up %2$s o the ither eight digits; %3$s %4$s ruled oot o this cell earlier, no by onything ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Anely %1$s can gang here. The heichlichtit cells use up twa o the ither echt digits; %2$s war ruled oot o this cell afore, no by onythin ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Anely %1$s can gang here. The highlighted cells use up %2$s o the ither echt digits; %3$s were ruled oot o this cell earlier, no by onything ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Anely %1$s can gang here. The heichlichtit cells use up three o the ither echt digits; %2$s war ruled oot o this cell afore, no by onythin ye can see roond it."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Only %1$s can gang here. The ither eight digits are excluded by filled cells or forced single candidates in this row, column or box."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Only %1$s can gang here, though naething roond it shows why: aw eight ither digits were ruled oot o this cell by earlier reasonin raither than by bein written in its row, column or box."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Only %1$s printit digits were found, which is ower few for a puzzle."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"only quarter turns are supportit, no %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Open a draft in yer browser wi the app version, phone model, Android version and recent scan diagnostics filled in. Add a full description and relevant screenshots yersel.\n\nGitHub sign-in is required. Ye can review and edit the draft afore submittin it. Submitted reports and attachments are public. Nae photographs are attached automatically."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Open app settins"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Open GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Open source notices"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Open ‘Why this cell?’ tae see the final placement evidence, or choose a ruled-oot candidate tae trace its proof."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache Licence 2.0. Used for findin and straightenin the grid.\n\nAndroidX, Jetpack Compose and CameraX - Apache Licence 2.0.\n\nKotlin - Apache Licence 2.0.\n\nThe digit recogniser wis trained on the MNIST database o haunwritten digits by LeCun, Cortes and Burges, alang wi digits rendered fae open system fonts and digits drawn programmatically."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV native libraries failed tae load"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Photograph anither puzzle."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Photographs ye keep are stored in this app\'s private storage and are removed when ye delete them or uninstall the app."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Photos the app couldnae mak a puzzle oot o. Send ane and it can be looked at."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Pick a digit and look doon the rows for the anes whaur it has exactly twa cells left. Tak twa sic rows and see whether ane o their cells lands in the same column.\n\nIf it does, thae twa cells are in the same column and cannae baith haud the digit. Sae at least ane o the far ends does - the twa cells at the ither side. Ye dinnae ken which, and ye dinnae need tae: ony cell that can see baith far ends can gie the digit up.\n\nThen dae it again wi columns instead o rows. The shape is a tall buildin wi a short ane beside it, which is whaur the name comes fae and hou ye spot it ance ye\'ve seen a few."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Pick a digit. Find a row whaur it has exactly twa places and a column whaur it has exactly twa places. Noo check whether ane cell o the row and ane cell o the column sit in the same box.\n\nIf they dae, thae twa cannae baith be the digit - ane box, ane digit. Sae at least ane o the twa remainin ends is, and onything seein baith ends can gie the digit up.\n\nThe reason fowk miss this ane is that there\'s naething tae line up: the fower cells mak a lopsided shape, and the only thing haudin it thegither is the box the twa inner ends share."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Pick an empty cell and run through 1 tae 9, crossin aff onything that awready appears in its row, its column or its box. If exactly ane digit survives, it goes there.\n\nThis is the technique every ither ane exists tae set up. Awthing harder is a wey o gettin some cell doon tae a single candidate, sae when a harder technique pays aff, look here next."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Pick ane digit and ignore every ither. Gang doon the rows and note the anes whaur that digit has juist twa or three possible cells left. Look for %1$s sic rows whase cells line up in the same %2$s columns.\n\nIf ye find them, ilk ane o thae %3$s rows maun pit the digit in ane o thae columns, and nae twa can use the same column. Sae atween them they use up the digit in aw %4$s columns - and every ither cell in thae columns can gie it up.\n\nThen dae the hale thing again wi columns and rows swapped. Hauf o thir are found the second wey roond, and it\'s the hauf maist fowk never look for."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Pit %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Pit %1$s in row %2$s, column %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Pit %1$s in yer outlined cell."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Please attach relevant screenshots usin GitHub\'s attachment control: the puzzle, recognised digits, Check result, or hint stage that shows the problem. Include expectit and actual results whaur useful."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Please delete ma Sudoku Buddy recognition submissions. Receipt IDs: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Please replace this prompt wi a full description o the problem or idea. Gie this report a short, descriptive title."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Point the camera at a sudoku puzzle"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Point the camera at a sudoku puzzle."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Point the camera at a sudoku puzzle on paper. The app reads the printit digits and onything ye\'ve written in, solves it, and can gie ye a hint, check yer answers, or show the hale solution."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Pointing pair"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Preparin puzzle…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Previous"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Previous step"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Prentit"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Privacy policy"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Puzzle storage"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Puzzles"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Puzzles are read and solved on this phone. Gin ye submit an unsure readin, or turn on automatic sharin, the puzzle photo, original readins, uncertainty flags and yer corrections are sent securely tae Freevia for recognition analysis and private trainin. Reports dinnae include yer device model or diagnostics. Automatic sharin is optional; there are nae accounts, routine usage analytics or advert trackin. Trainin copies can be deletit wi a receipt, tho a model awready trained may keep learned changes. Use Submission receipts in Settins tae delete a report."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Puzzles photographed for testin cam frae sudoku.cba.si. This app isnae affiliated wi them."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Puzzles ye photograph are kept here, sae ye can tak ane up again later."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Read"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Read as a haundwritten %1$s, %2$s sure."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Read as a prentit %1$s, %2$s sure."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Read as empty - nae ink fund."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Read as pencilled candidate marks, and ignored."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Readin reviewed."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Readin submitted. Thank ye!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Recent scan diagnostics (filled in awready)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Recognition can mak mistakes, especially wi haundwritin. Use Read tae compare the recognised digits wi the photo, and tap ony cell tae correct it. The app marks unsure readins for review; a confident readin can still be wrang."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Reject assumption"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Remote pairs"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Remove %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nTak %1$s oot o "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Removed"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Replay reasonin"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Report a bug or idea on GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Retry camera"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Return tae step %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Reveal explanation"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Review or submit readin"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Review readin"</string>
+    <string name="msg_right_883361d5" formatted="false">"Richt"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Route complete. Gang back tae review ony move, or try the steps yersel."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"raw %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Raw %1$s, column %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Raw %1$s, column %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"raw $1, column $2"</string>
+    <string name="msg_row_634768da" formatted="false">"raw"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"raws"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", ruled oot %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Scan diagnostics couldnae be read."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Screenshots or puzzle examples"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Second guess: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Select for practice"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Selected: raw %1$s, column %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Send diagnostics (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Send diagnostics"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Send thir scans"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Send this photo"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Settins"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"seiven"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Share automatically whan unsure"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Share unsure readins automatically?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Shaw contradiction"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Shaw me aw %1$s on yer puzzle"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Shaw me the ane on yer puzzle"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Simple colourin"</string>
+    <string name="msg_six_44778d82" formatted="false">"sax"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Skyscraper"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", solution %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Solve"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Solved, and every answer is richt."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Solver-assisted answer: place %1$s in %2$s. The candidates are %3$s. The app\'s supportit techniques didnae find a move frae this position. Its search fund %4$s in the unique solution; a detailed proof o the search branches isnae available."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nSolver-helpit answer: the app\'s supportit techniques didnae find a move. A detailed proof isnae available."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Solver-assisted elimination: a search rules oot %1$s in the highlighted cell, but the app couldnae produce a short contradiction trace tae display. A detailed proof isnae available."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Some cells may haud notes raither than a full digit."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Some digits werenae read confidently."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Somethin gaed wrang readin that photo."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Cell"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nStartin candidates: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Step %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Straighten up"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategies"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Submission receipt"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Submission receipt isnae valid."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Submission receipts (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Submission receipts"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Submission response is missin %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Submission response status isnae valid."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Submission service isnae configured."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Submission service returned HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Submissions arenae available in this build."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Submit"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Submit future unsure readins automatically"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Submit readin"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Submit unsure readin for analysis"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Submit update"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Submitted"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Submittin…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy diagnostics"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy feedback - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy is set furth bi Freevia. Get in touch: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy reads puzzles through the camera, sae it needs camera access. Recognition and puzzle history stay on yer phone. Gin ye choose tae submit an unsure readin, its photo and results are sent securely tae Freevia tae improve recognition. Automatic sharin is optional and can be turned aff in Settins."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy scan"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy scans"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku Buddy source code is licensed under Apache License 2.0. Freevia brandin is subject tae separate trademark richts."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku is a public-domain puzzle form. This app solves puzzles ye awready hae; it disnae reproduce or distribute onybody\'s puzzles."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", supportin evidence"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Suppose the marked cell hauds %1$s. The numbered digits are hypothetical."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Suppose this cell wis %1$s. Follae the arraes in order: ilka cell is forced by the earlier placements - either that digit is the anely ane it can still haud, or that cell is the anely place the digit can still gang.\n\nThat leaves the unit in reid wi naewhaur tae pit %2$s. The %3$ss marked in it are the places it could hae gane, and ilka ane is a cell ane o the arraes has juist taen. A unit wi naewhaur for a digit cannae happen - sae it isnae %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Suppose this cell wis %1$s. Follae the arraes in order: each cell is forced by the earlier placements - either that digit is the only ane it can still haud, or that cell is the only place the digit can still gang. The cell in reid is then left wi nae digit at aw, which cannae happen - sae it isnae %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Suppose this cell wis %1$s. Follae the arraes in order: ilka cell is forced by the earlier placements - either that digit is the anely ane it can still haud, or that cell is the anely place the digit can still gang.\n\nThat leaves the raw in reid wi naewhaur tae pit %2$s. The %3$ss marked in it are the places it could hae gane, and ilka ane is a cell ane o the arraes has juist taen. A raw wi naewhaur for a digit cannae happen - sae it isnae %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Suppose this cell wis %1$s. Follae the arraes in order: ilka cell is forced by the earlier placements - either that digit is the anely ane it can still haud, or that cell is the anely place the digit can still gang.\n\nThat leaves the box in reid wi naewhaur tae pit %2$s. The %3$ss marked in it are the places it could hae gane, and ilka ane is a cell ane o the arraes has juist taen. A box wi naewhaur for a digit cannae happen - sae it isnae %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Suppose this cell wis %1$s. Follae the arraes in order: each cell is forced by the earlier placements - either that digit is the only ane it can still haud, or that cell is the only place the digit can still gang.\n\nThat leaves the %2$s in reid wi naewhere tae pit %3$s. The %4$ss marked in it are the places it could hae gane, and each is a cell ane o the arraes has juist taen. A %5$s wi naewhere for a digit cannae happen - sae it isnae %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Suppose this cell wis %1$s. Follae the arraes in order: ilka cell is forced by the earlier placements - either that digit is the anely ane it can still haud, or that cell is the anely place the digit can still gang.\n\nThat leaves the column in reid wi naewhaur tae pit %2$s. The %3$ss marked in it are the places it could hae gane, and ilka ane is a cell ane o the arraes has juist taen. A column wi naewhaur for a digit cannae happen - sae it isnae %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Switch tae Efter tae see the move and its consequences on the grid."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Swordfish"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Tak a new photo"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Tak anither photo"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Tak ane digit and mark every unit whaur it has exactly twa cells left. Thae twa are a see-saw: ane o them is the digit and the ither isnae.\n\nStart onywhere and colour a cell, say, blue. Colour its see-saw pairtner green, then whate\'er that ane is paired wi blue again, and keep gaun till the chain runs oot. Every blue cell is true or every green cell is - ye cannae tell which, and that is eneuch for twa things.\n\nFirst: gin twa cells o the same colour turn up in ane raw, column or box, that colour is impossible, sae the digit gangs frae every cell wearin it and the ither colour is the answer throughout.\n\nSecond: ony cell ootside the chain that can see a blue and a green can gie the digit up, because ane o thae twa is haudin it whichever wey the chain faws.\n\nIt is slow wi a pencil and worth it: ane colourin aften clears a digit aff hauf the board."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Tak ane digit and ane unit at a time - say, whaur can a 4 gang in this box? Score oot every cell in the unit that awready has a digit, or that sees a 4 in its ain raw or column. Gin ane cell is left, the 4 gangs there.\n\nThe trap is that ye cannae see this by lookin at the cell: it may happily accept five ither digits tae, sae naethin aboot it looks forced. Look at the digit insteid o the cell, and it appears immediately."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Tak photo"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Tak the photo automatically"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tap a marked cell tae review it, or confirm aw readins are correct."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Tap a cell on the grid first."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Test %1$s as an assumption in the marked cell. It isnae an answer. Follae the consequences tae see why it fails."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Test assumption"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Thanks for helpin improve recognition. Yer puzzle photo, readins and corrections will be used for analysis and trainin."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"That is a valid %1$s move an aw. This route illustrates a different move; compare its proof below."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"That isnae the move selected for this step. There may be ither valid moves; look again or reveal this step\'s explanation."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"That is richt"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"That is the rest o the puzzle. %1$s cells in it need solver-assisted answers because the app\'s supportit techniques didnae find a move. Their detailed search proofs arenae available."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"That is the rest o the puzzle. Ane cell in it needs a solver-assisted answer because the app\'s supportit techniques didnae find a move. Its detailed search proof isnae available."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"That is the rest o the puzzle, start tae finish."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" That photo couldnae be kept, sae there\'s naething tae send."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"That cell allows %1$s. Look for the move justified by this step\'s technique, or reveal its explanation."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"That cell is awready filled. Choose an empty cell."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"The assumption has been rejected. We return tae the real candidates and score oot %1$s in the marked cell. The hypothetical digits are cleared."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"The camera couldnae tak that photo."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"The camera isnae available. Close ither camera apps, then try again."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"the ither"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"The photo frae %1$s and everythin read frae it will be removed frae this phone. This cannae be undone."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" The photo is in yer puzzle list, unner \"Wouldnae read\"."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"The pivot here is %1$s or %2$s. Either wey ane o the ither twa cells is forced tae %3$s, sae nae cell that sees baith o them can be %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"The pointing pair read backwarts. Tak a raw or a column and a digit that still needs a hame in it. Mark every cell in that line which could tak the digit. Gin aw o them faw inside ane box, the digit maun be in that box\'s share o the line - sae it is naewhere else in the box, includin the twa raws or columns o it ye werenae lookin at.\n\nLike the pointing pair, this places naethin on its ain; it maks room for somethin that does."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"The prentit digits dinnae mak a solvable puzzle."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nThe candidates left at %1$s are {%2$s}. Pit %3$s in row %4$s, column %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"The report is ower large tae submit."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"The Y-wing wi the pivot haudin ane candidate mair. Look for a cell wi exactly three candidates, say {1,4,7}, that can see twa twa-candidate cells - ane {1,7} and ane {4,7}.\n\nNoo aw three o them can be 7, and ane o them maun be. Sae a cell has tae see aw three tae be ruled oot, no juist the twa pincers - which in practice means it sits in the same box as the pivot and on a line wi a pincer.\n\nFewer eliminations than a Y-wing, and easier tae miss for the same reason: the pivot disnae stand oot."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"There is a cell ye can fill in the highlighted box.\n\nPress Hint again tae be telt which technique finds it."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"There is naethin left here tae reason aboot."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Thir %1$s cells aw haud only %2$s and %3$s, and each sees the next, sae they alternate the hale wey alang. %4$s and %5$s are an odd number o links apairt and sae haud different digits atween them - which rules %6$s oot o onything that sees them baith."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Thir %1$s cells haud only %2$s atween them, sae thae digits fill them in some order. That rules %3$s oot o the rest o this %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Thae %1$s cells haud anely %2$s atween them, sae thae digits fill them in some order. That rules %3$s oot o the rest o this raw."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Thae %1$s cells haud anely %2$s atween them, sae thae digits fill them in some order. That rules %3$s oot o the rest o this column."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Thae %1$s cells haud anely %2$s atween them, sae thae digits fill them in some order. That rules %3$s oot o the rest o this box."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Thir are the startin candidates for yer cell. Trace explains which possibilities can be ruled oot."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Thir digits cannae mak a puzzle, and ower muckle is wrang tae say which. Tap ony cell tae correct whit wis read, or tak the photograph again."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Thir digits cannae mak a puzzle. Changin the %1$s ringed cells wad fix it - tap ane tae correct whit wis read."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Thir digits cannae mak a puzzle. Changin the ane ringed cell wad fix it - tap it tae correct whit wis read."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Thir digits dinnae mak a puzzle, sae ane wis misread. Press Solve tae see which cells tae fix."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Thir fower cells mak a rectangle across twa boxes, and three o them haud only %1$s. Gin %2$s held only thae twa as weel, the digits could be swapped roond the rectangle and the puzzle wad hae twa answers. It has ane, sae %3$s maun be usin somethin else - and %4$s gangs."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"They dinnae reach the end: somethin here has defeated the app entirely."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"This fills naethin in. It rules %1$s oot o %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"This fills naething in. It rules %1$s oot o %2$s cells."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"This fills naething in. It rules %1$s oot o ane cell."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nThis is the first o %1$s deductions leadin tae the answer."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"This proof explains ane hint, includin the candidate eliminations leadin tae its answer. Step forrit tae follae the reasonin on the grid, then continue wi the full route."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"This puzzle couldnae be prepared."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"This puzzle couldnae be saved. Ye can still use it noo. Free some storage afore takin anither photo."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"This puzzle has mair than ane answer, sae a prentit digit wis probably missed. Shawin answer %1$s o %2$s - press Solve again for the next. The ringed cells differ amang the answers shawn."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"This puzzle\'s photo couldnae be opened."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"This reasonin excludes %1$s existin "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"This cell may haud candidate notes raither than a full digit. Please check it."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"This view includes earlier candidate removals. Open their evidence below tae check them."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"three"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Ower dark tae mak oot the grid lines"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Trace"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Tried oot"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Try it yersel"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Turn on"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Turn the phone sae the puzzle is upright."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tutor"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"twa"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Twa cells haudin the same pair, linked by a see-saw on ane o its digits, force the ither digit intae ane o them."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Two-string kite"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unique rectangle"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"unit"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable exposes nae CellReading list; exact input cells and outcome are retained."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"unsupportit model format version"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Unsure"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Use device leid"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Usin %1$s, tap ane cell whaur a candidate can be removed, then choose that digit."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Usin %1$s, tap the cell ye can fill, then choose its digit."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Very hard"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"wis"</string>
+    <string name="msg_were_910adfb4" formatted="false">"war"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Whit did ye expect, or hoo wad yer idea help ye solve or learn Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Whit happened and steps tae mak it happen again (for bugs)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Whit it does"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Whaur"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Why %1$s wis removed frae r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Why"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Why no %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Why this cell? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" wi the solution. Use Check tae inspect them."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Wark backwarts frae yer cell. Choose a question below."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Wark digit by digit raither than cell by cell. For ane unit, write doon whaur each missin digit could still gang. Then look for %1$s digits whase lists atween them cover only %2$s cells.\n\nThae %3$s digits hae tae fill thae %4$s cells, sae everythin else in them can be scored oot - which aften turns ane o them intae a naked single or a naked pair on the spot.\n\nThis is the ane folk find hardest, because there is naethin tae see whan ye look at the cells: they still hae plenty o candidates. The pattern is in the digits."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Wark only wi cells that hae exactly twa candidates left.\n\nStart at ane, say {2,6}, and suppose it isnae the 2 - then it is the 6. Move tae a cell it can see that has a 6 an aw, say {6,4}: that ane cannae be the 6, sae it is the 4. Move tae a cell that ane sees haudin a 4, and carry on, each step forced by the ane afore.\n\nGin ye reach a cell whase ither digit is 2 - the digit ye startit by rulin oot - ye are done. Either the first cell wis a 2 efter aw, or the chain ran and the last cell is a 2. Ane end or the ither hauds it, sae onything seein baith ends cannae.\n\nKeep the chains short. Fower or five cells is findable wi a pencil; past that ye are daein bookkeepin, and a forcing chain is the honest name for it."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"workin edge maun be positive and finite"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Wadnae read"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Written"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Wrang"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-wing"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Ye cleared this cell."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Ye set this tae a haundwritten %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Ye set this tae a prentit %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Yer changes are visible, but couldnae be saved. Free some storage and try editin the puzzle again."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Yer photos and yer privacy"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Yer puzzles"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Yer saved puzzles"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Yer cell ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Yer cell stays outlined. Green cells shaw evidence; scored digits are ruled oot."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

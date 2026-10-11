@@ -53,6 +53,7 @@ fun SettingsScreen(
             modifier = Modifier.fillMaxSize().navigationBarsPadding().padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(20.dp),
         ) {
+            item { LanguageSetting() }
             item {
                 SettingRow(
                     title = "Explain hints",
@@ -118,7 +119,7 @@ fun SettingsScreen(
             if (submissionReceipts.isNotEmpty()) {
                 item {
                     androidx.compose.material3.TextButton(onClick = { receiptsOpen = true }) {
-                        Text("Submission receipts (${submissionReceipts.size})")
+                        Text(localized("Submission receipts (${submissionReceipts.size})"))
                     }
                 }
             }
@@ -127,16 +128,16 @@ fun SettingsScreen(
     if (confirmAutoShare) {
         AlertDialog(
             onDismissRequest = { confirmAutoShare = false },
-            title = { Text("Share uncertain readings automatically?") },
+            title = { Text(localized("Share uncertain readings automatically?")) },
             text = {
                 Column(Modifier.heightIn(max = 320.dp).verticalScroll(rememberScrollState())) {
                     Text(
-                        "Future uncertain readings will send the straightened puzzle photo, " +
+                        localized("Future uncertain readings will send the straightened puzzle photo, " +
                             "recognition results and corrections to Freevia for analysis and " +
                             "training. Training copies remain until deleted from Submission " +
                             "receipts; a trained model may retain learned changes. If an " +
                             "uncertain puzzle is already open, it will be sent now. You can " +
-                            "turn this off in Settings."
+                            "turn this off in Settings.")
                     )
                 }
             },
@@ -144,10 +145,10 @@ fun SettingsScreen(
                 TextButton(onClick = {
                     confirmAutoShare = false
                     onChange(settings.copy(autoShareWhenUncertain = true))
-                }) { Text("Turn on") }
+                }) { Text(localized("Turn on")) }
             },
             dismissButton = {
-                TextButton(onClick = { confirmAutoShare = false }) { Text("Cancel") }
+                TextButton(onClick = { confirmAutoShare = false }) { Text(localized("Cancel")) }
             },
         )
     }
@@ -170,8 +171,8 @@ private fun SettingRow(
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Column(modifier = Modifier.weight(1f)) {
-            Text(title, style = MaterialTheme.typography.titleMedium)
-            Text(detail, style = MaterialTheme.typography.bodySmall)
+            Text(localized(title), style = MaterialTheme.typography.titleMedium)
+            Text(localized(detail), style = MaterialTheme.typography.bodySmall)
         }
         Switch(checked = checked, onCheckedChange = null)
     }

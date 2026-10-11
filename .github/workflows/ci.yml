@@ -35,6 +35,11 @@ jobs:
       - name: Test release safeguards
         run: python3 -m unittest discover -s tools/release -p 'test_*.py' -v
 
+      - name: Validate bundled translations
+        run: |
+          python3 -m unittest discover -s tools/i18n -p 'test_*.py'
+          python3 tools/i18n/validate.py
+
       # Keep the report intake, retention and export lifecycle covered by the same
       # required check as the app; these tests use local fakes and need no secrets.
       - uses: actions/setup-node@v4

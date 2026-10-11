@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nDe gemarkeerde vakjes bewijzen het.\n\nDruk nogmaals op Hint om te zien welk vakje."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s en %2$s bevatten beide alleen %3$s en %4$s. In deze %5$s heeft %6$s slechts twee plekken, een gezien door elk van hen - dus een van die twee is %7$s, en het uiteinde dat hem ziet moet %8$s zijn. Hoe dan ook is één uiteinde %9$s, wat %10$s uitsluit van alles wat ze allebei ziet."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s en %2$s kunnen allebei alleen %3$s en %4$s bevatten. In dit blok heeft %5$s maar twee mogelijke posities, waarvan elk door een van deze twee cellen wordt gezien. Eén van die posities bevat dus %6$s, en de eindcel die die positie ziet, moet %7$s bevatten. In beide gevallen bevat één eindcel %8$s, waardoor %9$s vervalt in elke cel die beide eindcellen ziet."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s en %2$s kunnen allebei alleen %3$s en %4$s bevatten. In deze kolom heeft %5$s maar twee mogelijke posities, waarvan elk door een van deze twee cellen wordt gezien. Eén van die posities bevat dus %6$s, en de eindcel die die positie ziet, moet %7$s bevatten. In beide gevallen bevat één eindcel %8$s, waardoor %9$s vervalt in elke cel die beide eindcellen ziet."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s en %2$s kunnen allebei alleen %3$s en %4$s bevatten. In deze rij heeft %5$s maar twee mogelijke posities, waarvan elk door een van deze twee cellen wordt gezien. Eén van die posities bevat dus %6$s, en de eindcel die die positie ziet, moet %7$s bevatten. In beide gevallen bevat één eindcel %8$s, waardoor %9$s vervalt in elke cel die beide eindcellen ziet."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s op rij %2$s, kolom %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s bij stap %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s kan alleen %2$s bevatten."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s kan geen %2$s bevatten omdat %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s kan geen %2$s bevatten omdat %3$s alleen %4$s kan bevatten in dezelfde kolom %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s kan geen %2$s bevatten omdat %3$s alleen %4$s kan bevatten in hetzelfde blok %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s kan geen %2$s bevatten omdat %3$s alleen %4$s kan bevatten in dezelfde rij %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s kan geen %2$s bevatten omdat %3$s al %4$s bevat in hetzelfde blok %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s kan geen %2$s bevatten omdat %3$s al %4$s bevat in dezelfde kolom %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s kan geen %2$s bevatten omdat %3$s al %4$s bevat in dezelfde rij %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s bevat %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s leeg"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, invoer"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s moet hier staan: dit is de enige cel in deze kolom %2$s die nog een %3$s kan bevatten.\n\n%4$s\n\n%5$s laat momenteel %6$s toe, maar elke kolom moet precies één keer %7$s bevatten. Plaats daarom %8$s in rij %9$s, kolom %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s moet hier: het is de enige cel in deze %2$s %3$s die nog een %4$s kan aannemen.\n\n%5$s\n\n%6$s staat momenteel %7$s toe, maar elke %8$s moet precies één keer %9$s bevatten. Plaats daarom %10$s in rij %11$s, kolom %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s moet hier staan: dit is de enige cel in dit blok %2$s die nog een %3$s kan bevatten.\n\n%4$s\n\n%5$s laat momenteel %6$s toe, maar elk blok moet precies één keer %7$s bevatten. Plaats daarom %8$s in rij %9$s, kolom %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s moet hier staan: dit is de enige cel in deze rij %2$s die nog een %3$s kan bevatten.\n\n%4$s\n\n%5$s laat momenteel %6$s toe, maar elke rij moet precies één keer %7$s bevatten. Plaats daarom %8$s in rij %9$s, kolom %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s heeft twee plekken in deze rij en twee in deze kolom. %2$s en %3$s delen een blok, dus ze kunnen niet allebei %4$s zijn - waardoor een van %5$s en %6$s het bevat, en %7$s wordt uitgesloten van alles wat ze allebei ziet."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s in dezelfde %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s in hetzelfde blok."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s in dezelfde kolom."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s in dezelfde rij."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s is al uitgesloten van dat vakje. De kandidaten zijn "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s is uitgesloten door %2$s, die "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s wordt uitgesloten door %2$s, dat alleen %3$s kan bevatten in dezelfde kolom %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s wordt uitgesloten door %2$s, dat alleen %3$s kan bevatten in dezelfde rij %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s wordt uitgesloten door %2$s, dat alleen %3$s kan bevatten in hetzelfde blok %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s wordt uitgesloten door %2$s, dat %3$s bevat in hetzelfde blok %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s wordt uitgesloten door %2$s, dat %3$s bevat in dezelfde kolom %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s wordt uitgesloten door %2$s, dat %3$s bevat in dezelfde rij %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s wordt afgedwongen in het nieuwste genummerde vakje (rij %2$s, kolom %3$s). %4$s De pijl volgt een bijdragende plaatsing; eerdere gevolgen zijn ook van belang."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s ontbreekt in het classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s van %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s van hen vullen een vakje in; de rest ruimt eerst kandidaten uit de weg."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s paar"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s gedrukt, %2$s, %3$s fout"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s gedrukt, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s gedrukt"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, gedrukte aanwijzing"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s vierling"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s geweigerde foto(\'s), nieuwste eerst:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: verwijder %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Aantal vakjes: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s stappen vormen deze route, de moeilijkste ondersteunde techniek een %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s drieling"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s werd verwijderd uit %2$s door eerdere kandidaatredenering."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s ingeschreven"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"een afbeelding van %1$sx%2$s heeft %3$s bytes nodig maar kreeg er %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"een cel was geen cijfer en geen punt"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Een keten van vakjes met twee kandidaten die begint en eindigt op hetzelfde cijfer, plaatst dat cijfer in het ene uiteinde of het andere."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Een cijfer met nog maar één resterende plek in een rij, kolom of blok hoort op die plek thuis."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Een handgeschreven %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Een gedrukte %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Een rood vakje toont het cijfer dat de app daar heeft gelezen. Als dat niet is wat je hebt geschreven, tik dan op het vakje om het te corrigeren."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Een vakje met nog maar één resterend cijfer moet dat cijfer bevatten."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Een lijst met technieken is nooit compleet, en de moeilijkste puzzels zijn gemaakt om alles wat erop staat te omzeilen. Dus wanneer al deze niets opleveren, lost de tutor één enkel vakje op door de kandidaten ervan uit te proberen, vermeldt duidelijk dat dit is wat hij heeft gedaan, en redeneert van daaruit verder. Hij bereikt altijd het einde van een puzzel, en doet nooit alsof een naslagwaarde een deductie was."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Een draaipunt met drie kandidaten en twee bijpassende knijpers met twee kandidaten dwingt een cijfer uit elk vakje dat alle drie ziet."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Een draaipunt met twee kandidaten en twee knijpers met twee kandidaten kunnen een cijfer dwingen uit elk vakje dat beide knijpers ziet."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Over"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Na"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Na deze zet"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Alles correct"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Alle drie deze vakjes kunnen %1$s zijn, en een ervan moet dat zijn. Elk vakje dat ze alle drie ziet, kan dus geen %2$s zijn."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Camera toestaan"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Bijna - houd de pagina plat en recht voor de camera"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"een eliminatie die niets verwijdert is geen deductie"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" en "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Antwoord"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## App en apparaat (vooraf ingevuld)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- App: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"beeldverhouding moet positief zijn maar was %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Aanname · hypothetisch cijfer"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Aanname verworpen · echte kandidaten hersteld"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"ten minste %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Automatische foto"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Deel onzekere puzzelfoto\'s, leesresultaten en latere celcorrecties automatisch met Freevia voor herkenningsanalyse en training. Standaard uitgeschakeld."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Vermijd schittering"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Terug"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Terug naar de vorige vraag"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Terug naar visuele hint"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Terug naar je vakje"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Voor"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Voor deze zet"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Blauwe cijfers zijn de oplossing. Tik op een vakje om te corrigeren wat er gelezen is."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"blok %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"blok"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Blok"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Blok-lijn reductie"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Camera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"kan alleen bevatten"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Annuleren"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidaten %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Koppel een cijfer door de eenheden waarin het maar twee plekken heeft, geef de keten twee afwisselende kleuren, en één kleur is overal waar."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Door %1$s te volgen door de eenheden waarin het maar twee mogelijke posities heeft, krijgen deze cellen twee afwisselende kleuren. Eén kleur is overal juist. Twee cellen van de andere kleur liggen in dezelfde rij, wat onmogelijk is. Die kleur is dus onjuist en %2$s vervalt in elke cel met die kleur."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Door %1$s te volgen door de eenheden waarin het maar twee mogelijke posities heeft, krijgen deze cellen twee afwisselende kleuren. Eén kleur is overal juist. Twee cellen van de andere kleur liggen in hetzelfde blok, wat onmogelijk is. Die kleur is dus onjuist en %2$s vervalt in elke cel met die kleur."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Door %1$s te volgen door de eenheden waarin het maar twee mogelijke posities heeft, krijgen deze cellen twee afwisselende kleuren. Eén kleur is overal juist. Twee cellen van de andere kleur liggen in dezelfde kolom, wat onmogelijk is. Die kleur is dus onjuist en %2$s vervalt in elke cel met die kleur."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Door %1$s te koppelen via de eenheden waarin het maar twee plekken heeft, krijgen deze vakjes twee afwisselende kleuren, waarvan er één overal waar is. Twee vakjes met kleur %2$s bevinden zich in dezelfde %3$s, wat onmogelijk is - dus die kleur is de onware, en %4$s verdwijnt uit elk vakje met die kleur."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Door %1$s te koppelen via de eenheden waarin het maar twee plekken heeft, krijgen deze vakjes twee afwisselende kleuren, en één kleur is overal waar. Deze vakjes kunnen beide kleuren zien, dus welke kant de keten ook op valt, een van de vakjes die ze zien bevat %2$s - wat betekent dat zij dat niet kunnen."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Door %1$s te volgen door de eenheden waarin het maar twee mogelijke posities heeft, krijgen deze cellen twee afwisselende kleuren. Eén kleur is overal juist. Twee cellen van één kleur liggen in hetzelfde blok, wat onmogelijk is. Die kleur is dus onjuist en %2$s vervalt in elke cel met die kleur."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Door %1$s te volgen door de eenheden waarin het maar twee mogelijke posities heeft, krijgen deze cellen twee afwisselende kleuren. Eén kleur is overal juist. Twee cellen van één kleur liggen in dezelfde kolom, wat onmogelijk is. Die kleur is dus onjuist en %2$s vervalt in elke cel met die kleur."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Door %1$s te volgen door de eenheden waarin het maar twee mogelijke posities heeft, krijgen deze cellen twee afwisselende kleuren. Eén kleur is overal juist. Twee cellen van één kleur liggen in dezelfde rij, wat onmogelijk is. Die kleur is dus onjuist en %2$s vervalt in elke cel met die kleur."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Onzekere vakjes om te controleren: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Controleren"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Controleer één onzeker vakje."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", gecontroleerd en correct"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Kies een kandidaat om te zien waarom deze niet in jouw vakje kan."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Kies taal"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Kies wat er getoond moet worden"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Sluiten"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Hint sluiten"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Leesbeoordeling inklappen"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"kleur- en grijswaarden-cellen moeten dezelfde geometrie gebruiken"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"kolom %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"kolom"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"kolommen"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Vergelijk forceerketens en geef de voorkeur aan ketens met minder te volgen vakjes. Kortere ketens kunnen meer stappen in de volledige oplossing betekenen."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Gevolg %1$s van %2$s · hypothetische cijfers"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"bevat"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Doorgaan met de volledige route"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Tegenspraak · aanname faalt"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", tegenspraak"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Tegenspraak: de rode %1$s heeft nergens meer plek voor %2$s. Dit is onmogelijk, dus de begin-aanname moet falen."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Tegenspraak: het rode vakje heeft geen kandidaat meer over. Dit is onmogelijk, dus de begin-aanname moet falen."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Verwijderverzoek kopiëren"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Correct. Vergelijk je redenering met de onderstaande uitleg."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"kon de vastgelegde afbeelding niet decoderen"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Kon de gedrukte cijfers op die foto niet vinden."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Kon de rasterlijnen niet onderscheiden - probeer het opnieuw."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Kon GitHub niet openen. Neem contact op met ondersteuning via %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Kon debug-opnamebewijs niet bewaren"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Kon de lezing niet verzenden. Probeer het opnieuw wanneer je verbonden bent."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Dood spoor"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Verwijderen"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Rapport verwijderen"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Deze foto verwijderen"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Deze puzzel verwijderen"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Deze puzzel verwijderen?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Deze inzending verwijderen?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Verwijderen…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Verwijdering kon niet worden bevestigd. Controleer je verbinding en probeer het opnieuw."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Verwijderverzoek"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Verwijderingsreactie heeft deze ontvangstbevestiging niet bevestigd."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Verwijderdienst retourneerde HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Beschrijf wat er gebeurde en de stappen om het te herhalen. Vermeld of je de herkende cijfers eerst hebt gecontroleerd en gecorrigeerd. Schrijf voor een idee \'Niet van toepassing\'."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", bestemming van deze hint"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Apparaat: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostiek ingekort om in het browserconcept te passen. Met de actie Diagnostiek verzenden van de app kan het volledige rapport worden gedeeld."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"cijfer moet 1..9 zijn maar was %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Cijfers niet gelezen"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Het bewaren van bewijsmateriaal op schijf beïnvloedt de timing; geen latentie-benchmark."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", komt niet overeen met de oplossing"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Elke ontvangstbevestiging identificeert één ingezonden puzzelrevisie. Verwijder deze hier om het privé opgeslagen rapport van Freevia te verwijderen."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Eerdere eliminaties: %1$s. Gebruik de links naar eerdere stappen om hun bewijzen te bekijken."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← eerder bewijs (diepte %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Eerdere hypothetische plaatsingen laten het met slechts één kandidaat over."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Eerdere stappen gebruikt in dit bewijs"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Cel bewerken"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"acht"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"leeg"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Leeg."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Leeg"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Engels"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"invoeren die niet overeenkomen"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"invoer die niet overeenkomt"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Elk van hen vult een vakje in."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Elk vakje is ingevuld, maar %1$s antwoorden komen niet overeen met de oplossing."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Elk vakje is ingevuld, maar één antwoord komt niet overeen met de oplossing."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Elke sudoku met één antwoord kan worden bereikt door te redeneren; gokken is nooit nodig en helpt zelden. Dit zijn de manieren van redeneren die deze app kan herkennen en uitleggen, eenvoudigste eerst. Waar een ervan van toepassing is op de puzzel die je open hebt staan, toont hij je elke plek waar dat zo is."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Alles wat je tot nu toe hebt geschreven klopt."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Voorbeelden nu beschikbaar: elk begint vanaf je huidige bord."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"verwachtte 10 horizontale lijnen, kreeg er %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"verwachtte 10 verticale lijnen, kreeg er %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"verwachtte 81 cellen maar kreeg er %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"verwachtte 81 cellen in elk blok, vond er %1$s en %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"verwachtte 8-bits enkel kanaal maar kreeg %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"verwachtte een 28x28 afbeelding maar kreeg %1$s waarden"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Verwacht gedrag of voorgestelde verbetering"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"verwachtte tien lijnen in elke richting"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"verwachtte twee blokken, vond er %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Eerdere kandidaatverwijderingen uitleggen (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Hints uitleggen"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Zoek een vakje met nog maar twee of drie kandidaten over - hoe minder hoe beter, en hoe voller de rij, kolom en het blok eromheen, hoe beter nog.\n\nKies een van de kandidaten en noteer deze licht met potlood. Volg nu de gevolgen: dat cijfer is weg uit alles wat het vakje kan zien, waardoor een van die vakjes mogelijk met één enkele kandidaat achterblijft, wat een volgend vakje dwingt, enzovoort. Ga zo door.\n\nEen van twee dingen gebeurt. Ofwel het loopt dood en je hebt niets geleerd - gom het uit en probeer de andere kandidaat. Of je bereikt een vakje zonder enige overgebleven kandidaat, of een rij waarin een cijfer nergens geplaatst kan worden. Dat is onmogelijk, dus het met potlood genoteerde cijfer was fout, en je kunt het voorgoed uitsluiten.\n\nDit is degene om naar te grijpen als al het andere is opgedroogd. Het is langzamer en het is boekhouden in plaats van patroonherkenning, maar het kan zetten blootleggen die patronen missen. Eén eliminatie is vaak genoeg om de makkelijke technieken weer aan de praat te krijgen; sommige posities vereisen nog steeds een diepere zoektocht."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Zoek twee vakjes met dezelfde twee kandidaten, zeg {3,7}, die elkaar niet kunnen zien - ze zijn meestal nergens bij elkaar in de buurt.\n\nZoek nu naar een rij, kolom of blok waar 7 slechts twee mogelijke vakjes heeft, waarvan er één wordt gezien door het eerste van je paar en de andere door het tweede. Dat is de link.\n\nEen van die twee vakjes is de 7. Welke het ook is, het vakje van je paar dat hem ziet kan geen 7 zijn, dus moet het 3 zijn. Je weet niet welk uiteinde de 3 is, alleen dat een ervan dat is - en dat is genoeg om 3 uit te sluiten van elk vakje dat beide uiteinden ziet.\n\nHet moeilijke deel is de link, dus zoek er andersom naar: markeer eerst de eenheden waar een cijfer maar twee plekken heeft, en zoek dan naar een passend paar aan weerszijden."</string>
+    <string name="msg_finished_05343e98" formatted="false">"afgerond"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Druk op de ontspanknop zodra het raster recht in beeld staat en stil wordt gehouden. De knop werkt altijd op beide manieren."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Plaats het hele raster in beeld."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Plaats het hele raster in beeld"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"vijf"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Volg een route waarbij elke zet voortbouwt op de vorige."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Volg het volledige bewijs op volgorde"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Volg deze keten van vakjes met twee kandidaten: als %1$s geen %2$s is, dan wordt elk vakje erlangs afgedwongen door het voorgaande, en eindigt %3$s als %4$s. Dus het ene of het andere uiteinde bevat %5$s, wat het uitsluit van elk vakje dat ze beide ziet."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Forceerketen"</string>
+    <string name="msg_four_04efaf08" formatted="false">"vier"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Vier vakjes in twee rijen, twee kolommen en twee blokken kunnen niet allemaal dezelfde twee kandidaten bevatten, anders zou de puzzel twee antwoorden hebben."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia heeft de verwijdering bevestigd, maar deze telefoon kon de lokale ontvangstbevestiging niet verwijderen. Probeer opnieuw om het lokale opschonen te voltooien."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia zal deze rapportrevisie en de bijbehorende privétrainingskopie verwijderen. Toekomstige correcties kunnen een nieuw rapport aanmaken onder je deelinstellingen. Een model dat er al op is getraind, kan geleerde wijzigingen behouden."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Volledige route"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Toekomstige onzekere lezingen sturen de rechtgetrokken puzzelfoto, herkenningsresultaten en correcties naar Freevia voor analyse en training. Trainingskopieën blijven bewaard totdat ze worden verwijderd uit Inzendingsbewijzen; een getraind model kan geleerde wijzigingen behouden. Als er al een onzekere puzzel geopend is, wordt deze nu verzonden. Je kunt dit uitschakelen in Instellingen."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Licht"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Schittering vaagt de lijnen weg - kantel de pagina weg van het licht"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Grijze vakjes bevatten potloodnotities, die de app negeert. De balk onder een cijfer geeft aan hoe zeker de app was. Tik op een vakje voor details."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Handgeschreven"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Moeilijk"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Verborgen"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Verborgen paar"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Verborgen vierling"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Verborgen single"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Verborgen drieling"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Eerder bewijs verbergen"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Verberg hoe je er een herkent"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", hint %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Hint"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Hintbewijs"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Hintredenering"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Houd stil..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Houd stil, of tik op de sluiterknop"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Houd stil terwijl de camera scherpstelt..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Houd de telefoon plat"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Houd de telefoon plat boven de puzzel."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Houd de telefoon plat boven de puzzel"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Hoe je er een herkent"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nHoe we er komen:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Zoek naar vakjes met precies twee kandidaten - een Y-wing bestaat uit drie daarvan en niets anders.\n\nNeem er één als draaipunt, zeg {2,5}. Zoek naar een vakje dat het kan zien met {2,9}, en een ander dat het kan zien met {5,9}. Het draaipunt is 2 of 5. Als het 2 is, moet de eerste knijper 9 zijn; als het 5 is, moet de tweede 9 zijn. Hoe dan ook verschijnt er een 9 in een van de knijpers - je weet niet welke, en dat hoeft ook niet.\n\nGeen enkel vakje dat beide knijpers kan zien kan dus een 9 zijn. Die vakjes zijn meestal de twee hoeken die de rechthoek compleet maken."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hypothetische %1$s, geen ingevoerd antwoord"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Als %1$s cijfers in één rij, kolom of blok alleen in dezelfde %2$s vakjes kunnen, kunnen die vakjes niets anders bevatten."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Als %1$s vakjes in één rij, kolom of blok samen precies %2$s kandidaten delen, behoren die cijfers toe aan die vakjes en aan geen andere in de eenheid."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Als een cijfer twee plekken heeft in een rij en twee in een kolom, en één uit elk een blok delen, moet een van de andere twee het bevatten."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Als een cijfer twee plekken heeft in elk van twee rijen en ze delen een kolom, moet een van de andere twee plekken het bevatten."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Als de enige plekken van een cijfer langs een lijn allemaal binnen één blok vallen, kan dat cijfer worden uitgesloten van de rest van dat blok."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Als de enige plekken van een cijfer in %1$s rijen in dezelfde %2$s kolommen liggen, kan het elders uit die kolommen worden uitgesloten - en hetzelfde met rijen en kolommen omgewisseld."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Als de enige plekken van een cijfer binnen een blok één lijn delen, kan dat cijfer worden uitgesloten van de rest van die lijn."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Als het aannemen van een cijfer leidt tot een vakje waarin niets geplaatst kan worden, was dat cijfer onjuist."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"afbeeldingsafmetingen moeten positief zijn"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"In een keten van vakjes die allemaal dezelfde twee kandidaten bevatten, bevatten de twee uiteinden van een keten met oneven lengte verschillende cijfers."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"In deze %1$s %2$s kan %3$s alleen in deze %4$s %5$s. Samen gebruiken ze ze allemaal op, dus %6$s kan overal elders uit die %7$s worden uitgesloten."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"In deze %1$s kolommen kan %2$s alleen in deze %3$s rijen staan. Samen bezetten ze al die rijen, dus %4$s vervalt overal elders in die rijen."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"In deze %1$s rijen kan %2$s alleen in deze %3$s kolommen staan. Samen bezetten ze al die kolommen, dus %4$s vervalt overal elders in die kolommen."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"In deze twee %1$s heeft %2$s elk maar twee plekken, en %3$s en %4$s delen een %5$s - dus ze kunnen niet allebei %6$s zijn. Een van %7$s en %8$s is het daarom wel, wat %9$s uitsluit van elk vakje dat ze beide ziet."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"In deze twee kolommen heeft %1$s elk maar twee mogelijke posities, en %2$s en %3$s liggen in dezelfde rij. Ze kunnen dus niet allebei %4$s zijn. Daarom is één van %5$s en %6$s dat wel, waardoor %7$s vervalt in elke cel die ze allebei ziet."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"In deze twee rijen heeft %1$s elk maar twee mogelijke posities, en %2$s en %3$s liggen in dezelfde kolom. Ze kunnen dus niet allebei %4$s zijn. Daarom is één van %5$s en %6$s dat wel, waardoor %7$s vervalt in elke cel die ze allebei ziet."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"In deze %1$s kan %2$s alleen in deze %3$s vakjes, dus die vakjes zijn bezet. Dat sluit %4$s daaruit uit."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"In deze %1$s kan %2$s alleen binnen één blok. Dus %3$s bevindt zich in dat blok op deze %4$s, en kan worden uitgesloten van de rest van het blok."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"In dit blok kan %1$s alleen in deze %2$s cellen staan, dus die cellen zijn daarvoor gereserveerd. Daardoor vervalt %3$s in die cellen."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"In deze kolom kan %1$s alleen in deze %2$s cellen staan, dus die cellen zijn daarvoor gereserveerd. Daardoor vervalt %3$s in die cellen."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"In deze rij kan %1$s alleen in deze %2$s cellen staan, dus die cellen zijn daarvoor gereserveerd. Daardoor vervalt %3$s in die cellen."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Inclusief hun foto\'s, lezingen en correcties. Schakel dit uit in Instellingen."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Zoek binnen één blok naar een cijfer dat maar in twee of drie vakjes kan, en controleer of ze allemaal in dezelfde rij liggen, of allemaal in dezelfde kolom. Als dat zo is, bevindt het cijfer zich zeker ergens langs die lijn - je weet niet waar, maar je weet dat het binnen dit blok is. Het kan dus nergens anders langs dezelfde lijn buiten het blok staan.\n\nDit plaatst op zichzelf niets. Het ruimt kandidaten uit de weg zodat er ergens anders een single ontstaat."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Binnen dit blok kan %1$s alleen in deze %2$s. Dus %3$s bevindt zich ergens hier, en kan worden uitgesloten van de rest van de %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Probleem of idee"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Het is hier op %1$s plekken van toepassing. Ga een stap vooruit om ze te doorlopen."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Het is hier op één plek van toepassing. Ga een stap vooruit om het te zien."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Het is in deze positie nergens van toepassing."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Het is de enige overgebleven plek voor %1$s in de gemarkeerde %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Het is het omcirkelde vakje.\n\nDruk nogmaals op Hint voor het cijfer."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Bewaren"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Houd forceerketens kort"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Taal"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licenties"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Zoek langs één rij, kolom of blok naar vakjes met nog maar een paar kandidaten over. Neem er %1$s en voeg hun kandidaten samen. Als de verzameling precies %2$s cijfers bevat, zijn die %3$s cijfers bezet: ze moeten in die %4$s vakjes in willekeurige volgorde komen, ook al kun je nog niet zeggen welke waar hoort.\n\nDat is genoeg. Elk ander vakje in de eenheid kan die cijfers opgeven, en meestal is het een van die vakjes die dan een single wordt.\n\nDe vakjes hoeven niet allemaal dezelfde kandidaten te hebben - {2,7}, {2,9} en {7,9} is een volkomen geldige drieling, en is degene die mensen over het hoofd zien."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Zoek naar vakjes met dezelfde twee kandidaten - zeg {4,9} - die een keten vormen waarbij elk vakje het volgende ziet. Drie is niet genoeg; je hebt er minstens vier nodig.\n\nKleur ze gaandeweg afwisselend in. Omdat elk vakje het volgende ziet, kunnen geen twee buren hetzelfde cijfer bevatten, dus luidt de keten 4, 9, 4, 9 over de hele lengte - of 9, 4, 9, 4, en je kunt niet zeggen welke.\n\nHoe dan ook bevatten twee vakjes met tegengestelde kleuren verschillende cijfers: de ene is de 4 en de andere is de 9. Alles wat ze allebei kan zien kan dus geen van beide zijn, en verliest beide kandidaten tegelijk.\n\nHet patroon is makkelijk te herkennen juist omdat elk vakje erin er hetzelfde uitziet. Volg de identieke paren over het raster en kijk waar ze elkaar raken."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Zoek naar drie vakjes met dezelfde twee kandidaten - zeg {1,6} - die op drie hoeken van een rechthoek liggen. De rechthoek moet in precies twee blokken liggen: twee rijen en twee kolommen die twee blokken doorkruisen, niet vier.\n\nKijk nu naar de vierde hoek. Als die ook alleen 1 en 6 zou bevatten, zou de puzzel twee antwoorden hebben - je zou de 1\'en en 6\'en rond de rechthoek kunnen omwisselen en al het andere zou nog steeds werken. Een correct samengestelde puzzel heeft één antwoord, dus de vierde hoek moet iets anders gebruiken: de overige kandidaten blijven staan, en 1 en 6 verdwijnen.\n\nDit is het enige argument in het boek dat over de maker gaat in plaats van het raster. Het is steekhoudend bij een gepubliceerde puzzel en waardeloos bij een die je al verkeerd hebt ingevuld, want dan is er mogelijk helemaal geen uniek antwoord."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Kijk in dit blok. Volg de omlijning naar het vakje dat deze hint zal uitleggen."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Notities"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Gemiddeld"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Meer"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Meer licht nodig"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Meer dan één antwoord, dus er is een gedrukt cijfer gemist. Druk op Oplossen om de antwoorden te zien en waar ze verschillen."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Neem afstand"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Kom dichterbij"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Kom dichterbij - het raster is te klein om te lezen."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Open"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Open paar"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Open vierling"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Open single"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Open drieling"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Noem de techniek en toon de vakjes die het bewijzen, in plaats van alleen het cijfer te geven."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"minstens 4 punten nodig maar kreeg er %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Heeft bevestiging nodig"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Nieuwe sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Volgend gevolg"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Volgende stap"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Er worden niet automatisch afbeeldingen bijgevoegd. Meldingen en bijlagen die je hier indient, zijn openbaar. Stuur voorbeelden die je liever privé deelt naar info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Er is geen foto geweigerd sinds de app voor het laatst is geïnstalleerd."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Geen scandiagnostiek beschikbaar."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Geen techniek van toepassing hier"</string>
+    <string name="msg_none_140bedbf" formatted="false">"geen"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Geen van hen plaatst een cijfer in een vakje: ze ruimen kandidaten uit de weg, wat de manier is waarop een moeilijke puzzel wordt opengebroken."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Op dit moment geen op je puzzel."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"geen cijfermodelbestand"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Niet met zekerheid gelezen - de dichtstbijzijnde schatting is %1$s %2$s op %3$s. Stel dit vakje zelf in."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Wordt nog niet gelezen als een negen-bij-negen raster - probeer het beeld alleen met het raster te vullen, of neem gewoon de foto"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"niet gestart"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Er kon niets worden verzonden vanaf deze telefoon."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Niets meer om uit te rekenen."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Niets meer hier kan worden beredeneerd met de technieken die deze app kent."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"niets ongebruikelijks"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"één"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Eén cel leek op een gedrukt cijfer maar is dat niet."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Eén gedrukt cijfer is automatisch gecorrigeerd."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"één vakje"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Alleen %1$s kan hier - elk ander cijfer komt al voor in deze rij, kolom of dit blok."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten %2$s van de andere acht cijfers uit; %3$s is eerder voor deze cel uitgesloten, niet door iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten vier van de andere acht cijfers uit; %2$s zijn eerder voor deze cel uitgesloten, niet op basis van iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten zes van de andere acht cijfers uit; %2$s zijn eerder voor deze cel uitgesloten, niet op basis van iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten één van de andere acht cijfers uit; %2$s zijn eerder voor deze cel uitgesloten, niet op basis van iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten zeven van de andere acht cijfers uit; %2$s is eerder voor deze cel uitgesloten, niet op basis van iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten vijf van de andere acht cijfers uit; %2$s zijn eerder voor deze cel uitgesloten, niet op basis van iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Alleen %1$s kan hier. De gemarkeerde vakjes gebruiken %2$s van de andere acht cijfers op; %3$s %4$s eerder uitgesloten van dit vakje, niet door iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten twee van de andere acht cijfers uit; %2$s zijn eerder voor deze cel uitgesloten, niet op basis van iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten %2$s van de andere acht cijfers uit; %3$s zijn eerder voor deze cel uitgesloten, niet door iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Hier kan alleen %1$s staan. De gemarkeerde cellen sluiten drie van de andere acht cijfers uit; %2$s zijn eerder voor deze cel uitgesloten, niet op basis van iets wat je eromheen kunt zien."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Alleen %1$s kan hier. De andere acht cijfers zijn uitgesloten door ingevulde vakjes of afgedwongen enkele kandidaten in deze rij, kolom of dit blok."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Alleen %1$s kan hier, hoewel niets eromheen toont waarom: alle acht andere cijfers werden uit dit vakje uitgesloten door eerdere redeneringen en niet doordat ze in de rij, kolom of het blok ervan geschreven zijn."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Er zijn slechts %1$s gedrukte cijfers gevonden, wat te weinig is voor een puzzel."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"alleen kwartslagen worden ondersteund, niet %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Open een concept in je browser waarin de app-versie, het telefoonmodel, de Android-versie en recente scandiagnostiek zijn ingevuld. Voeg zelf een volledige beschrijving en relevante schermafbeeldingen toe.\n\nGitHub-aanmelding is vereist. Je kunt het concept bekijken en bewerken voordat je het verzendt. Ingezonden rapporten en bijlagen zijn openbaar. Er worden niet automatisch foto\'s bijgevoegd."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"App-instellingen openen"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"GitHub openen"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Open-sourcekennisgevingen"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Open ‘Waarom dit vakje?’ om het uiteindelijke plaatsingsbewijs te zien, of kies een uitgesloten kandidaat om het bewijs ervan te traceren."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache License 2.0. Gebruikt voor het vinden en rechttrekken van het raster.\n\nAndroidX, Jetpack Compose en CameraX - Apache License 2.0.\n\nKotlin - Apache License 2.0.\n\nDe cijferherkenner is getraind op de MNIST-database van handgeschreven cijfers door LeCun, Cortes en Burges, samen met cijfers gerenderd uit openlettertypen en programmatisch getekende cijfers."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Inheems bibliotheken van OpenCV konden niet worden geladen"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografeer een andere puzzel."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Foto\'s die je bewaart, worden opgeslagen in de privéopslag van deze app en worden verwijderd wanneer je ze verwijdert of de app de-installeert."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Foto\'s waar de app geen puzzel van kon maken. Verzend er een en er kan naar gekeken worden."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Kies een cijfer en zoek omlaag langs de rijen naar degene waar het precies twee vakjes over heeft. Neem twee van zulke rijen en kijk of een van hun vakjes in dezelfde kolom terechtkomt.\n\nAls dat zo is, staan die twee vakjes in dezelfde kolom en kunnen ze niet allebei het cijfer bevatten. Dus bevat ten minste één van de verre uiteinden het wel - de twee vakjes aan de andere kant. Je weet niet welke, en dat hoeft ook niet: elk vakje dat beide verre uiteinden kan zien, kan het cijfer opgeven.\n\nDoe het vervolgens opnieuw met kolommen in plaats van rijen. De vorm is een hoog gebouw met een laag gebouw ernaast, waar de naam vandaan komt en hoe je het herkent als je er een paar hebt gezien."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Kies een cijfer. Zoek een rij waar het precies twee plekken heeft en een kolom waar het precies twee plekken heeft. Controleer nu of één vakje van de rij en één vakje van de kolom in hetzelfde blok liggen.\n\nAls dat zo is, kunnen die twee niet allebei het cijfer zijn - één blok, één cijfer. Dus ten minste één van de twee overgebleven uiteinden is het wel, en alles wat beide uiteinden ziet kan het cijfer opgeven.\n\nDe reden dat mensen deze missen is dat er niets op één lijn ligt: de vier vakjes vormen een scheve vorm, en het enige wat het bij elkaar houdt is het blok dat de twee binnenste uiteinden delen."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Kies een leeg vakje en loop 1 tot en met 9 na, waarbij je alles wegstreept wat al voorkomt in de rij, de kolom of het blok ervan. Als precies één cijfer overleeft, hoort het daar.\n\nDit is de techniek waarvoor elke andere techniek bestaat om hem voor te bereiden. Al het moeilijkere is een manier om een vakje terug te brengen tot een enkele kandidaat, dus wanneer een moeilijkere techniek zijn vruchten afwerpt, kijk dan hierna als eerste."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Kies één cijfer en negeer elk ander cijfer. Ga de rijen af en noteer degene waar dat cijfer nog maar twee of drie mogelijke vakjes over heeft. Zoek naar %1$s van dergelijke rijen waarvan de vakjes op één lijn liggen in dezelfde %2$s kolommen.\n\nAls je ze vindt, moet elk van die %3$s rijen het cijfer in een van die kolommen plaatsen, en geen twee kunnen dezelfde kolom gebruiken. Samen verbruiken ze dus het cijfer in alle %4$s kolommen - en elk ander vakje in die kolommen kan het opgeven.\n\nDoe dan het hele ding opnieuw met kolommen en rijen omgewisseld. De helft hiervan wordt op de tweede manier gevonden, en dat is de helft waar de meeste mensen nooit naar zoeken."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Plaats %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Plaats %1$s in rij %2$s, kolom %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Plaats %1$s in je omlijnde vakje."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Voeg relevante schermafbeeldingen toe met het bijlagenbeheer van GitHub: de puzzel, herkende cijfers, het Controleer-resultaat of de hintfase die het probleem toont. Vermeld waar nuttig verwachte en daadwerkelijke resultaten."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Verwijder alstublieft mijn herkenningsinzendingen voor Sudoku Buddy. Ontvangst-ID\'s: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Vervang deze instructie door een volledige beschrijving van het probleem of idee. Geef dit rapport een korte, beschrijvende titel."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Richt de camera op een sudokupuzzel"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Richt de camera op een sudokupuzzel."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Richt de camera op een sudokupuzzel op papier. De app leest de gedrukte cijfers en alles wat je hebt ingeschreven, lost hem op, en kan je een hint geven, je antwoorden controleren of de hele oplossing tonen."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Aanwijzend paar"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Puzzel voorbereiden…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Vorige"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Vorige stap"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Gedrukt"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Privacybeleid"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Puzzelopslag"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Puzzels"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Puzzels worden gelezen en opgelost op deze telefoon. Als je een onzekere lezing instuurt of automatisch delen inschakelt, worden de puzzelfoto, originele lezingen, onzekerheidsvlaggen en je correcties veilig verzonden naar Freevia voor herkenningsanalyse en privétraining. Rapporten bevatten niet je apparaatmodel of diagnostiek. Automatisch delen is optioneel; er zijn geen accounts, routinematige gebruiksanalyses of advertentietracking. Trainingskopieën kunnen worden verwijderd via ontvangstbevestiging, hoewel een reeds getraind model geleerde wijzigingen kan behouden. Gebruik Inzendingsbewijzen in Instellingen om een rapport te verwijderen."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Voor het testen gefotografeerde puzzels zijn afkomstig van sudoku.cba.si. Deze app is niet aan hen gelieerd."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Puzzels die je fotografeert worden hier bewaard, zodat je er later weer een kunt oppakken."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Herkenning"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Gelezen als een handgeschreven %1$s, %2$s zeker."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Gelezen als een gedrukte %1$s, %2$s zeker."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Gelezen als leeg - geen inkt gevonden."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Gelezen als met potlood genoteerde kandidaatmarkeringen, en genegeerd."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Lezing beoordeeld."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Lezing verzonden. Dank je wel!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Recente scandiagnostiek (vooraf ingevuld)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Herkenning kan fouten maken, vooral bij handschrift. Gebruik Lezen om de herkende cijfers te vergelijken met de foto, en tik op een vakje om het te corrigeren. De app markeert onzekere lezingen ter beoordeling; een zekere lezing kan nog steeds fout zijn."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Aanname verwerpen"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Paren op afstand"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Verwijder %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nVerwijder %1$s uit "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Verwijderd"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Redenering opnieuw afspelen"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Meld een bug of idee op GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Camera opnieuw proberen"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Terugkeren naar stap %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Uitleg onthullen"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Lezing beoordelen of verzenden"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Lezing beoordelen"</string>
+    <string name="msg_right_883361d5" formatted="false">"Rechts"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Route voltooid. Ga terug om een zet te bekijken, of probeer de stappen zelf."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"rij %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Rij %1$s, kolom %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Rij %1$s, kolom %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"rij $1, kolom $2"</string>
+    <string name="msg_row_634768da" formatted="false">"rij"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"rijen"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", uitgesloten %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Scandiagnostiek kon niet worden gelezen."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Schermafbeeldingen of puzzelvoorbeelden"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Tweede gok: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Selecteren om te oefenen"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Geselecteerd: rij %1$s, kolom %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Diagnostiek verzenden (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Diagnostiek verzenden"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Deze scans verzenden"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Deze foto verzenden"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Instellingen"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"zeven"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Automatisch delen bij onzekerheid"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Onzekere lezingen automatisch delen?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Tegenspraak tonen"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Toon me alle %1$s op je puzzel"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Toon me degene op je puzzel"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Eenvoudig inkleuren"</string>
+    <string name="msg_six_44778d82" formatted="false">"zes"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Skyscraper"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", oplossing %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Oplossen"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Opgelost, en elk antwoord klopt."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Oplosser-geassisteerd antwoord: plaats %1$s in %2$s. De kandidaten zijn %3$s. De ondersteunde technieken van de app vonden geen zet vanuit deze positie. De zoektocht vond %4$s in de unieke oplossing; een gedetailleerd bewijs van de zoektakken is niet beschikbaar."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nOplosser-geassisteerd antwoord: de ondersteunde technieken van de app hebben geen zet gevonden. Een gedetailleerd bewijs is niet beschikbaar."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Oplosser-geassisteerde eliminatie: een zoekopdracht sluit %1$s in het gemarkeerde vakje uit, maar de app kon geen kort tegenspraakspoor produceren om weer te geven. Een gedetailleerd bewijs is niet beschikbaar."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Sommige cellen kunnen notities bevatten in plaats van een volledig cijfer."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Sommige cijfers zijn niet met zekerheid gelezen."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Er ging iets mis bij het lezen van die foto."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Vakje"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nBeginkandidaten: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Stap %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Rechttrekken"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategieën"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Inzendingsbewijs"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Inzendingsbewijs is ongeldig."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Inzendingsbewijzen (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Inzendingsbewijzen"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Inzendingsreactie mist %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Status van inzendingsreactie is ongeldig."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Inzenddienst is niet geconfigureerd."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Inzenddienst retourneerde HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Inzendingen zijn niet beschikbaar in deze build."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Verzenden"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Toekomstige onzekere lezingen automatisch verzenden"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Lezing verzenden"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Onzekere lezing verzenden voor analyse"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Update verzenden"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Verzonden"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Verzenden…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy diagnostiek"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy feedback - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy wordt uitgegeven door Freevia. Contact: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy leest puzzels via de camera, dus heeft cameratoegang nodig. Herkenning en puzzelgeschiedenis blijven op je telefoon. Als je ervoor kiest om een onzekere lezing te verzenden, worden de foto en resultaten veilig naar Freevia verzonden om de herkenning te verbeteren. Automatisch delen is optioneel en kan worden uitgeschakeld in Instellingen."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy scan"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy scans"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku Buddy broncode is gelicentieerd onder Apache License 2.0. Het Freevia-merk is onderhevig aan afzonderlijke merkrechten."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku is een puzzelvorm in het publieke domein. Deze app lost puzzels op die je al hebt; hij reproduceert of verspreidt geen puzzels van anderen."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", ondersteunend bewijs"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Stel dat het gemarkeerde vakje %1$s bevat. De genummerde cijfers zijn hypothetisch."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Stel dat deze cel %1$s bevat. Volg de pijlen op volgorde: elke cel wordt bepaald door de eerdere plaatsingen. Ofwel kan die cel alleen dat cijfer nog bevatten, ofwel kan dat cijfer alleen nog in die cel staan.\n\nDaardoor is er in de rode eenheid geen plek meer voor %2$s. De daarin gemarkeerde kandidaten %3$s geven de mogelijke posities aan, en elk daarvan is een cel die een van de pijlen zojuist heeft bezet. Een eenheid zonder plek voor een cijfer is onmogelijk, dus deze cel bevat geen %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Stel dat dit vakje %1$s was. Volg de pijlen op volgorde: elk vakje wordt afgedwongen door de eerdere plaatsingen - ofwel dat cijfer is het enige dat het nog kan bevatten, of dat vakje is de enige plek waar het cijfer nog kan. Het vakje in het rood blijft dan achter zonder enig cijfer, wat niet kan voorkomen - dus het is geen %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Stel dat deze cel %1$s bevat. Volg de pijlen op volgorde: elke cel wordt bepaald door de eerdere plaatsingen. Ofwel kan die cel alleen dat cijfer nog bevatten, ofwel kan dat cijfer alleen nog in die cel staan.\n\nDaardoor is er in de rode rij geen plek meer voor %2$s. De daarin gemarkeerde kandidaten %3$s geven de mogelijke posities aan, en elk daarvan is een cel die een van de pijlen zojuist heeft bezet. Een rij zonder plek voor een cijfer is onmogelijk, dus deze cel bevat geen %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Stel dat deze cel %1$s bevat. Volg de pijlen op volgorde: elke cel wordt bepaald door de eerdere plaatsingen. Ofwel kan die cel alleen dat cijfer nog bevatten, ofwel kan dat cijfer alleen nog in die cel staan.\n\nDaardoor is er in het rode blok geen plek meer voor %2$s. De daarin gemarkeerde kandidaten %3$s geven de mogelijke posities aan, en elk daarvan is een cel die een van de pijlen zojuist heeft bezet. Een blok zonder plek voor een cijfer is onmogelijk, dus deze cel bevat geen %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Stel dat dit vakje %1$s was. Volg de pijlen op volgorde: elk vakje wordt afgedwongen door de eerdere plaatsingen - ofwel dat cijfer is het enige dat het nog kan bevatten, of dat vakje is de enige plek waar het cijfer nog kan.\n\nDat laat de %2$s in het rood achter zonder plek voor %3$s. De %4$s die erin gemarkeerd zijn, zijn de plekken waar het had gekund, en elk is een vakje dat een van de pijlen zojuist heeft ingenomen. Een %5$s zonder plek voor een cijfer kan niet voorkomen - dus het is geen %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Stel dat deze cel %1$s bevat. Volg de pijlen op volgorde: elke cel wordt bepaald door de eerdere plaatsingen. Ofwel kan die cel alleen dat cijfer nog bevatten, ofwel kan dat cijfer alleen nog in die cel staan.\n\nDaardoor is er in de rode kolom geen plek meer voor %2$s. De daarin gemarkeerde kandidaten %3$s geven de mogelijke posities aan, en elk daarvan is een cel die een van de pijlen zojuist heeft bezet. Een kolom zonder plek voor een cijfer is onmogelijk, dus deze cel bevat geen %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Schakel over naar Na om de zet en de gevolgen ervan op het raster te zien."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Swordfish"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Neem een nieuwe foto"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Neem nog een foto"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Neem één cijfer en markeer elke eenheid waarin het nog precies twee vakjes over heeft. Die twee vormen een wip: een van hen is het cijfer en de andere niet.\n\nBegin ergens en geef een vakje een kleur, bijvoorbeeld blauw. Geef zijn partner op de wip de kleur groen, en datgene waarmee die weer gekoppeld is weer blauw, en ga door tot de keten op is. Elk blauw vakje is waar of elk groen vakje is waar - je kunt niet zeggen welke, en dat is genoeg voor twee dingen.\n\nTen eerste: als twee vakjes van dezelfde kleur in één rij, kolom of blok opduiken, is die kleur onmogelijk, dus verdwijnt het cijfer uit elk vakje met die kleur en is de andere kleur overal het antwoord.\n\nTen tweede: elk vakje buiten de keten dat een blauw en een groen vakje kan zien, kan het cijfer opgeven, omdat een van die twee het bevat, hoe de keten ook valt.\n\nHet is langzaam met een potlood en de moeite waard: één kleuring wist vaak een cijfer van het halve bord."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Neem één cijfer en één eenheid tegelijk - bijvoorbeeld: waar kan een 4 in dit blok? Streep elk vakje in de eenheid door dat al een cijfer heeft, of dat een 4 in zijn eigen rij of kolom ziet. Als er één vakje overblijft, hoort de 4 daar.\n\nDe valkuil is dat je dit niet kunt zien door naar het vakje te kijken: het kan gerust ook vijf andere cijfers accepteren, dus niets eraan lijkt afgedwongen. Kijk naar het cijfer in plaats van naar het vakje, en het verschijnt meteen."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Foto nemen"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"De foto automatisch nemen"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tik op een gemarkeerd vakje om het te beoordelen, of bevestig dat alle lezingen correct zijn."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Tik eerst op een vakje op het raster."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Test %1$s als aanname in het gemarkeerde vakje. Het is geen antwoord. Volg de gevolgen om te zien waarom het faalt."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Aanname testen"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Bedankt voor het helpen verbeteren van de herkenning. Je puzzelfoto, lezingen en correcties worden gebruikt voor analyse en training."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Dat is ook een geldige %1$s-zet. Deze route illustreert een andere zet; vergelijk het bewijs hieronder."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Dat is niet de zet die voor deze stap is geselecteerd. Er kunnen andere geldige zetten zijn; kijk nog eens of onthul de uitleg van deze stap."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Dat klopt"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Dat is de rest van de puzzel. %1$s vakjes erin hebben oplosser-geassisteerde antwoorden nodig omdat de ondersteunde technieken van de app geen zet vonden. Hun gedetailleerde zoekbewijzen zijn niet beschikbaar."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Dat is de rest van de puzzel. Eén vakje erin heeft een oplosser-geassisteerd antwoord nodig omdat de ondersteunde technieken van de app geen zet vonden. Het gedetailleerde zoekbewijs is niet beschikbaar."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Dat is de rest van de puzzel, van begin tot eind."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Die foto kon niet worden bewaard, dus er is niets om te verzenden."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Dat vakje staat %1$s toe. Zoek naar de zet die wordt gerechtvaardigd door de techniek van deze stap, of onthul de uitleg."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Dat vakje is al ingevuld. Kies een leeg vakje."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"De aanname is verworpen. We keren terug naar de echte kandidaten en strepen %1$s door in het gemarkeerde vakje. De hypothetische cijfers zijn gewist."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"De camera kon die foto niet nemen."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"De camera is niet beschikbaar. Sluit andere camera-apps en probeer het opnieuw."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"de andere"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"De foto van %1$s en alles wat ervan gelezen is, wordt verwijderd van deze telefoon. Dit kan niet ongedaan worden gemaakt."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" De foto staat in je puzzellijst, onder \"Wilde niet lezen\"."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Het draaipunt hier is %1$s of %2$s. Hoe dan ook wordt een van de andere twee vakjes gedwongen tot %3$s, dus geen vakje dat beide ziet kan %4$s zijn."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Het aanwijzend paar achterstevoren gelezen. Neem een rij of een kolom en een cijfer dat er nog een plek in nodig heeft. Markeer elk vakje in die lijn dat het cijfer zou kunnen bevatten. Als ze allemaal binnen één blok vallen, moet het cijfer in het deel van de lijn van dat blok liggen - het bevindt zich dus nergens anders in het blok, inclusief de twee rijen of kolommen ervan waar je niet naar keek.\n\nNet als het aanwijzend paar plaatst dit op zichzelf niets; het maakt ruimte voor iets dat dat wel doet."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"De gedrukte cijfers vormen geen oplosbare puzzel."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nDe resterende kandidaten op %1$s zijn {%2$s}. Plaats %3$s in rij %4$s, kolom %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Het rapport is te groot om te verzenden."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"De Y-wing waarbij het draaipunt één kandidaat meer bevat. Zoek naar een vakje met precies drie kandidaten, zeg {1,4,7}, dat twee vakjes met twee kandidaten kan zien - één {1,7} en één {4,7}.\n\nNu kunnen ze alle drie 7 zijn, en een van hen moet dat zijn. Een vakje moet ze dus alle drie zien om te worden uitgesloten, niet alleen de twee knijpers - wat in de praktijk betekent dat het in hetzelfde blok als het draaipunt ligt en op één lijn met een knijper.\n\nMinder eliminaties dan een Y-wing, en om dezelfde reden makkelijker te missen: het draaipunt valt niet op."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Er is een vakje dat je kunt invullen in het gemarkeerde blok.\n\nDruk nogmaals op Hint om te horen welke techniek het vindt."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Er valt hier niets meer te beredeneren."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Deze %1$s vakjes bevatten allemaal alleen %2$s en %3$s, en elk ziet de volgende, dus wisselen ze de hele weg af. %4$s en %5$s liggen een oneven aantal schakels uit elkaar en bevatten dus verschillende cijfers - wat %6$s uitsluit van alles wat ze allebei ziet."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Deze %1$s vakjes bevatten samen alleen %2$s, dus die cijfers vullen ze in een bepaalde volgorde op. Dat sluit %3$s uit van de rest van deze %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Deze %1$s cellen kunnen samen alleen %2$s bevatten, dus die cijfers vullen ze in een bepaalde volgorde. Daardoor vervalt %3$s in de rest van deze rij."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Deze %1$s cellen kunnen samen alleen %2$s bevatten, dus die cijfers vullen ze in een bepaalde volgorde. Daardoor vervalt %3$s in de rest van deze kolom."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Deze %1$s cellen kunnen samen alleen %2$s bevatten, dus die cijfers vullen ze in een bepaalde volgorde. Daardoor vervalt %3$s in de rest van dit blok."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Dit zijn de beginkandidaten voor je vakje. Traceer legt uit welke mogelijkheden kunnen worden uitgesloten."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Deze cijfers kunnen geen puzzel vormen, en er is te veel mis om te zeggen welke. Tik op een vakje om te corrigeren wat er gelezen is, of neem de foto opnieuw."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Deze cijfers kunnen geen puzzel vormen. Het wijzigen van de %1$s omcirkelde vakjes zou het oplossen - tik op een om te corrigeren wat er gelezen is."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Deze cijfers kunnen geen puzzel vormen. Het wijzigen van het ene omcirkelde vakje zou het oplossen - tik erop om te corrigeren wat er gelezen is."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Deze cijfers vormen geen puzzel, dus er is er een verkeerd gelezen. Druk op Oplossen om te zien welke vakjes moeten worden hersteld."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Deze vier vakjes vormen een rechthoek over twee blokken, en drie ervan bevatten alleen %1$s. Als %2$s ook alleen die twee zou bevatten, zouden de cijfers rond de rechthoek kunnen worden verwisseld en zou de puzzel twee antwoorden hebben. Hij heeft er één, dus moet %3$s iets anders gebruiken - en %4$s verdwijnt."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Ze bereiken het einde niet: iets hier heeft de app volledig verslagen."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Dit vult niets in. Het sluit %1$s uit van %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Hiermee wordt niets ingevuld. Het sluit %1$s uit in %2$s cellen."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Hiermee wordt niets ingevuld. Het sluit %1$s uit in één cel."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nDit is de eerste van %1$s afleidingen die tot het antwoord leiden."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Dit bewijs legt één hint uit, inclusief de kandidaateliminaties die tot het antwoord leiden. Ga een stap vooruit om de redenering op het raster te volgen en ga dan door met de volledige route."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Deze puzzel kon niet worden voorbereid."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Deze puzzel kon niet worden opgeslagen. Je kunt hem nu nog steeds gebruiken. Maak wat opslagruimte vrij voordat je nog een foto neemt."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Deze puzzel heeft meer dan één antwoord, dus er is waarschijnlijk een gedrukt cijfer gemist. Antwoord %1$s van %2$s wordt getoond - druk nogmaals op Oplossen voor het volgende. De omcirkelde vakjes verschillen tussen de getoonde antwoorden."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"De foto van deze puzzel kon niet worden geopend."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Deze redenering sluit %1$s bestaande "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Dit vakje bevat mogelijk kandidaatnotities in plaats van een volledig cijfer. Controleer het alstublieft."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Deze weergave bevat eerdere kandidaatverwijderingen. Open hun bewijsmateriaal hieronder om ze te controleren."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"drie"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Te donker om de rasterlijnen te onderscheiden"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Traceer"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Uitgeprobeerd"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Probeer het zelf"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Inschakelen"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Draai de telefoon zodat de puzzel rechtop staat."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tutor"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"twee"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Twee vakjes die hetzelfde paar bevatten, verbonden door een wip op een van de cijfers, dwingen het andere cijfer in een van hen."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Two-string kite"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unieke rechthoek"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"eenheid"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Onleesbaar toont geen CellReading-lijst; exacte invoercellen en resultaat worden bewaard."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"niet-ondersteunde modelformaatversie"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Onzeker"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Apparaattaal gebruiken"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Tik met %1$s op één vakje waar een kandidaat kan worden verwijderd en kies vervolgens dat cijfer."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Tik met %1$s op het vakje dat je kunt invullen en kies vervolgens het cijfer."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Zeer moeilijk"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"werd"</string>
+    <string name="msg_were_910adfb4" formatted="false">"werden"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Wat had je verwacht, of hoe zou jouw idee je helpen bij het oplossen of leren van Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Wat er gebeurde en stappen om te reproduceren (voor bugs)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Wat het doet"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Waar"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Waarom %1$s werd verwijderd uit r%2$sk%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Waarom"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Waarom geen %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Waarom dit vakje? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" met de oplossing. Gebruik Controleer om ze te inspecteren."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Werk achteruit vanuit je vakje. Kies hieronder een vraag."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Werk cijfer voor cijfer in plaats van vakje voor vakje. Schrijf voor één eenheid op waar elk ontbrekend cijfer nog zou kunnen. Zoek vervolgens naar %1$s cijfers waarvan de lijsten samen slechts %2$s vakjes beslaan.\n\nDie %3$s cijfers moeten die %4$s vakjes vullen, dus al het andere erin kan worden doorgestreept - wat er vaak ter plekke eentje verandert in een open single of een open paar.\n\nDit is degene die mensen het moeilijkst vinden, omdat er niets te zien is als je naar de vakjes kijkt: ze hebben nog volop kandidaten. Het patroon zit in de cijfers."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Werk alleen met vakjes die nog precies twee kandidaten over hebben.\n\nBegin bij één, zeg {2,6}, en stel dat het niet de 2 is - dan is het de 6. Ga naar een vakje dat het kan zien en dat ook een 6 heeft, zeg {6,4}: die kan niet de 6 zijn, dus is het de 4. Ga naar een vakje dat die ziet met een 4, en ga zo door, elke stap afgedwongen door de voorgaande.\n\nAls je een vakje bereikt waarvan het andere cijfer 2 is - het cijfer dat je begon uit te sluiten - ben je klaar. Ofwel het eerste vakje was toch een 2, of de keten liep door en het laatste vakje is een 2. Het ene uiteinde of het andere bevat het, dus niets wat beide uiteinden ziet kan het bevatten.\n\nHoud de ketens kort. Vier of vijf vakjes is vindbaar met een potlood; daarboven doe je aan boekhouden, en forceerketen is de eerlijke naam ervoor."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"werkrand moet positief en eindig zijn"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Wilde niet lezen"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Geschreven"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Fout"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-wing"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Je hebt dit vakje leeggemaakt."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Je hebt dit ingesteld op een handgeschreven %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Je hebt dit ingesteld op een gedrukte %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Je wijzigingen zijn zichtbaar, maar konden niet worden opgeslagen. Maak wat opslagruimte vrij en probeer de puzzel opnieuw te bewerken."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Je foto\'s en je privacy"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Je puzzels"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Je opgeslagen puzzels"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Jouw vakje ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Je vakje blijft omlijnd. Groene vakjes tonen bewijs; doorgestreepte cijfers zijn uitgesloten."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

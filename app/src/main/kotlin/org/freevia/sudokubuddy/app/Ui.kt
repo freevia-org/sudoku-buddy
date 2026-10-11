@@ -39,6 +39,7 @@ import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 
 
@@ -175,8 +176,8 @@ fun Legend(
                     Box(Modifier.size(11.dp).background(colour, RoundedCornerShape(3.dp)))
                 }
                 Text(
-                    if (key == LegendKey.EVIDENCE) evidenceLabel ?: Overlays.label(key)
-                    else Overlays.label(key),
+                    localized(if (key == LegendKey.EVIDENCE) evidenceLabel ?: Overlays.label(key)
+                    else Overlays.label(key)),
                     style = MaterialTheme.typography.labelSmall,
                     maxLines = 1,
                 )
@@ -206,11 +207,11 @@ fun AppBar(
     ) {
         when {
             onBack != null -> IconButton(onClick = onBack) {
-                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = localized("Back"))
             }
 
             onMenu != null -> IconButton(onClick = onMenu) {
-                Icon(Icons.Filled.Menu, contentDescription = "Your puzzles")
+                Icon(Icons.Filled.Menu, contentDescription = localized("Your puzzles"))
             }
 
             else -> Box(Modifier.size(12.dp))
@@ -220,13 +221,15 @@ fun AppBar(
         // this on a small phone, so the title is a size down from where it would like to
         // be. Shrinking the buttons instead would take them under the minimum touch target.
         Column(modifier = Modifier.padding(start = 4.dp).weight(1f)) {
-            Text(title, style = MaterialTheme.typography.titleSmall, maxLines = 1)
+            Text(localized(title), style = MaterialTheme.typography.titleSmall, maxLines = 1,
+                overflow = TextOverflow.Ellipsis)
             subtitle?.let {
                 Text(
-                    it,
+                    localized(it),
                     style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
                 )
             }
         }
@@ -265,26 +268,26 @@ fun OverflowMenu(
             GlassIconButton({ open = true }, Icons.Filled.MoreVert, "More")
         } else {
             IconButton(onClick = { open = true }) {
-                Icon(Icons.Filled.MoreVert, contentDescription = "More")
+                Icon(Icons.Filled.MoreVert, contentDescription = localized("More"))
             }
         }
         DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
             DropdownMenuItem(
-                text = { Text("Strategies") },
+                text = { Text(localized("Strategies")) },
                 onClick = {
                     open = false
                     onStrategies()
                 },
             )
             DropdownMenuItem(
-                text = { Text("Settings") },
+                text = { Text(localized("Settings")) },
                 onClick = {
                     open = false
                     onSettings()
                 },
             )
             DropdownMenuItem(
-                text = { Text("About") },
+                text = { Text(localized("About")) },
                 onClick = {
                     open = false
                     onAbout()
@@ -297,7 +300,7 @@ fun OverflowMenu(
             // "nothing was refused" is answered before the menu is even used.
             HorizontalDivider()
             DropdownMenuItem(
-                text = { Text("Report a bug or idea on GitHub") },
+                text = { Text(localized("Report a bug or idea on GitHub")) },
                 onClick = {
                     open = false
                     feedbackOpen = true
@@ -306,7 +309,7 @@ fun OverflowMenu(
             DropdownMenuItem(
                 text = {
                     Text(
-                        if (kept == 0) "Send diagnostics" else "Send diagnostics ($kept)"
+                        localized(if (kept == 0) "Send diagnostics" else "Send diagnostics ($kept)")
                     )
                 },
                 onClick = {
@@ -314,7 +317,7 @@ fun OverflowMenu(
                     if (!Diagnostics.shareAll(context)) {
                         Toast.makeText(
                             context,
-                            "Nothing could be sent from this phone.",
+                            context.localized("Nothing could be sent from this phone."),
                             Toast.LENGTH_SHORT,
                         ).show()
                     }
@@ -335,7 +338,7 @@ fun GlassIconButton(
     contentDescription: String,
 ) {
     IconButton(onClick = onClick, modifier = Modifier.background(Color(0x66000000), CircleShape)) {
-        Icon(icon, contentDescription = contentDescription, tint = Color.White)
+        Icon(icon, contentDescription = localized(contentDescription), tint = Color.White)
     }
 }
 

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nDe markerade rutorna bevisar det.\n\nTryck på Ledtråd igen för att se vilken ruta."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s och %2$s innehåller båda bara %3$s och %4$s. I denna %5$s har %6$s bara två möjliga platser, varav de ser en var – så en av dessa två är %7$s, och änden som ser den måste vara %8$s. I båda fallen är en ände %9$s, vilket utesluter %10$s från alla rutor som ser båda."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s och %2$s kan båda bara innehålla %3$s och %4$s. I detta block har %5$s bara två möjliga placeringar, en som vardera rutan ser – så en av dessa två är %6$s, och den ändruta som ser den måste vara %7$s. Oavsett vilket är en ändruta %8$s, vilket utesluter %9$s från alla rutor som ser båda ändrutorna."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s och %2$s kan båda bara innehålla %3$s och %4$s. I denna kolumn har %5$s bara två möjliga placeringar, en som vardera rutan ser – så en av dessa två är %6$s, och den ändruta som ser den måste vara %7$s. Oavsett vilket är en ändruta %8$s, vilket utesluter %9$s från alla rutor som ser båda ändrutorna."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s och %2$s kan båda bara innehålla %3$s och %4$s. I denna rad har %5$s bara två möjliga placeringar, en som vardera rutan ser – så en av dessa två är %6$s, och den ändruta som ser den måste vara %7$s. Oavsett vilket är en ändruta %8$s, vilket utesluter %9$s från alla rutor som ser båda ändrutorna."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s på rad %2$s, kolumn %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s vid steg %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s kan bara innehålla %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s kan inte innehålla %2$s eftersom %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s kan inte innehålla %2$s eftersom %3$s bara kan innehålla %4$s i samma kolumn %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s kan inte innehålla %2$s eftersom %3$s bara kan innehålla %4$s i samma block %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s kan inte innehålla %2$s eftersom %3$s bara kan innehålla %4$s i samma rad %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s kan inte innehålla %2$s eftersom %3$s innehåller %4$s i samma block %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s kan inte innehålla %2$s eftersom %3$s innehåller %4$s i samma kolumn %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s kan inte innehålla %2$s eftersom %3$s innehåller %4$s i samma rad %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s innehåller %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s tomma"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, inmatning"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s måste placeras här: det är den enda rutan i denna kolumn %2$s som fortfarande kan innehålla %3$s.\n\n%4$s\n\n%5$s tillåter för närvarande %6$s, men varje kolumn måste innehålla %7$s exakt en gång. Placera därför %8$s på rad %9$s, kolumn %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s måste placeras här: det är den enda rutan i denna %2$s %3$s som fortfarande kan innehålla en %4$s.\n\n%5$s\n\n%6$s tillåter för närvarande %7$s, men varje %8$s måste innehålla %9$s exakt en gång. Placera därför %10$s på rad %11$s, kolumn %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s måste placeras här: det är den enda rutan i detta block %2$s som fortfarande kan innehålla %3$s.\n\n%4$s\n\n%5$s tillåter för närvarande %6$s, men varje block måste innehålla %7$s exakt en gång. Placera därför %8$s på rad %9$s, kolumn %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s måste placeras här: det är den enda rutan i denna rad %2$s som fortfarande kan innehålla %3$s.\n\n%4$s\n\n%5$s tillåter för närvarande %6$s, men varje rad måste innehålla %7$s exakt en gång. Placera därför %8$s på rad %9$s, kolumn %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s har två möjliga platser i den här raden och två i den här kolumnen. %2$s och %3$s delar en box, så båda kan inte vara %4$s – vilket innebär att en av %5$s och %6$s innehåller siffran och utesluter %7$s från alla rutor som ser båda."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s i samma %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s i samma block."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s i samma kolumn."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s i samma rad."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s är redan utesluten från den rutan. Dess kandidater är "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s utesluts av %2$s, som "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s utesluts av %2$s, som bara kan innehålla %3$s i samma kolumn %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s utesluts av %2$s, som bara kan innehålla %3$s i samma rad %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s utesluts av %2$s, som bara kan innehålla %3$s i samma block %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s utesluts av %2$s, som innehåller %3$s i samma block %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s utesluts av %2$s, som innehåller %3$s i samma kolumn %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s utesluts av %2$s, som innehåller %3$s i samma rad %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s är tvingad i den senast numrerade rutan (rad %2$s, kolumn %3$s). %4$s Pilen följer en bidragande placering; tidigare följder spelar också roll."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s saknas i klassökvägen"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s av %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s av dem fyller i en ruta; resten tar först bort kandidater som står i vägen."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s par"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s tryckta, %2$s, %3$s fel"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s tryckta, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s tryckta"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, tryckt ledtråd"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s fyrtal"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s avvisade foton, nyaste först:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: ta bort %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Antal rutor: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Den här vägen består av %1$s steg, och den svåraste tekniken som stöds är en %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s trippel"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s togs bort från %2$s genom tidigare kandidatresonemang."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s inskrivna"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"en bild på %1$sx%2$s behöver %3$s byte men fick %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"en ruta var varken en siffra eller en punkt"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"En kedja av rutor med två kandidater som börjar och slutar med samma siffra innebär att siffran finns i ena eller andra änden."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"En siffra som bara har en möjlig plats kvar i en rad, kolumn eller box måste stå där."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"En handskriven %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"En tryckt %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"En röd ruta visar siffran som appen läste där. Om det inte är vad du skrev, tryck på rutan för att rätta den."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"En ruta med bara en möjlig siffra kvar måste innehålla den siffran."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"En tekniklista är aldrig komplett, och de svåraste pusslen är konstruerade för att stå emot alla tekniker på den. När ingen av dessa ger något avgör därför handledaren en enda ruta genom att prova dess kandidater, berättar tydligt att det är vad den har gjort och fortsätter sedan resonera därifrån. Den når alltid fram till slutet av ett pussel och låtsas aldrig att en uppslagning var en slutledning."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"En pivotruta med tre kandidater och två matchande vingrutor med två kandidater tvingar bort en siffra från varje ruta som ser alla tre."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"En pivotruta med två kandidater och två vingrutor med två kandidater kan tvinga bort en siffra från varje ruta som ser båda vingrutorna."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Om"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Efter"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Efter detta drag"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Allt rätt"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Alla dessa tre rutor kan innehålla %1$s, och en av dem måste göra det. Därför kan ingen ruta som ser alla tre innehålla %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Tillåt kamera"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Nästan – håll sidan plan och parallell med kameran"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"en eliminering som inte tar bort något är ingen slutsats"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" och "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Svar"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## App och enhet (förifyllt)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- App: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"bildförhållandet måste vara positivt men var %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Antagande · hypotetisk siffra"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Antagandet förkastat · faktiska kandidater återställda"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"minst %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Automatiskt foto"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Dela automatiskt osäkra pusselfoton, avläsningsresultat och senare rättningar av rutor med Freevia för avläsningsanalys och träning. Avstängt som standard."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Undvik reflexer"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Tillbaka"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Tillbaka till föregående fråga"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Tillbaka till visuell ledtråd"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Tillbaka till din ruta"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Före"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Före detta drag"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Blå siffror är lösningen. Tryck på valfri ruta för att rätta avläsningen."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"box %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"box"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Box"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Box–linjereduktion"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"kan bara innehålla"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Avbryt"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidater %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"Bildtagningsunderlag"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Följ en siffra genom enheter där den bara har två möjliga platser, färga kedjan med två växlande färger, så är en färg sann genom hela kedjan."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Om vi bildar en kedja med %1$s genom de enheter där siffran bara har två möjliga placeringar får dessa rutor två växlande färger, varav den ena är sann genom hela kedjan. Två rutor med den andra färgen ligger i samma rad, vilket är omöjligt – alltså är den färgen falsk, och %2$s tas bort från alla rutor med den färgen."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Om vi bildar en kedja med %1$s genom de enheter där siffran bara har två möjliga placeringar får dessa rutor två växlande färger, varav den ena är sann genom hela kedjan. Två rutor med den andra färgen ligger i samma block, vilket är omöjligt – alltså är den färgen falsk, och %2$s tas bort från alla rutor med den färgen."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Om vi bildar en kedja med %1$s genom de enheter där siffran bara har två möjliga placeringar får dessa rutor två växlande färger, varav den ena är sann genom hela kedjan. Två rutor med den andra färgen ligger i samma kolumn, vilket är omöjligt – alltså är den färgen falsk, och %2$s tas bort från alla rutor med den färgen."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"När %1$s följs genom enheter där siffran bara har två möjliga platser får dessa rutor två växlande färger, varav en är sann genom hela kedjan. Två rutor med färgen %2$s ligger i samma %3$s, vilket är omöjligt – alltså är den färgen falsk, och %4$s tas bort från varje ruta med den färgen."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"När %1$s följs genom enheter där siffran bara har två möjliga platser får dessa rutor två växlande färger, och en färg är sann genom hela kedjan. Dessa rutor ser båda färgerna, så oavsett vilket alternativ som gäller för kedjan innehåller en av rutorna de ser %2$s – vilket innebär att de själva inte kan göra det."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Om vi bildar en kedja med %1$s genom de enheter där siffran bara har två möjliga placeringar får dessa rutor två växlande färger, varav den ena är sann genom hela kedjan. Två rutor med samma färg ligger i samma block, vilket är omöjligt – alltså är den färgen falsk, och %2$s tas bort från alla rutor med den färgen."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Om vi bildar en kedja med %1$s genom de enheter där siffran bara har två möjliga placeringar får dessa rutor två växlande färger, varav den ena är sann genom hela kedjan. Två rutor med samma färg ligger i samma kolumn, vilket är omöjligt – alltså är den färgen falsk, och %2$s tas bort från alla rutor med den färgen."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Om vi bildar en kedja med %1$s genom de enheter där siffran bara har två möjliga placeringar får dessa rutor två växlande färger, varav den ena är sann genom hela kedjan. Två rutor med samma färg ligger i samma rad, vilket är omöjligt – alltså är den färgen falsk, och %2$s tas bort från alla rutor med den färgen."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Osäkra rutor att kontrollera: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Kontrollera"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Kontrollera en osäker ruta."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", kontrollerat och rätt"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Välj en kandidat för att se varför den inte kan stå i din ruta."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Välj språk"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Välj vad som ska visas"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Stäng"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Stäng ledtråd"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Fäll ihop avläsningsgranskningen"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"rutor i färg och gråskala måste använda samma geometri"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"kolumn %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"kolumn"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"kolumner"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Jämför tvångskedjor och föredra dem som har färre rutor att följa. Kortare kedjor kan innebära fler steg i hela lösningen."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Följd %1$s av %2$s · hypotetiska siffror"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"innehåller"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Fortsätt med hela vägen"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Motsägelse · antagandet håller inte"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", motsägelse"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Motsägelse: den röda enheten (%1$s) har ingen plats kvar för %2$s. Det är omöjligt, så det ursprungliga antagandet måste vara fel."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Motsägelse: den röda rutan har ingen kandidat kvar. Det är omöjligt, så det ursprungliga antagandet måste vara fel."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Kopiera begäran om radering"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Rätt. Jämför ditt resonemang med förklaringen nedan."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"kunde inte avkoda den tagna bilden"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Kunde inte hitta de tryckta siffrorna i fotot."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Kunde inte urskilja rutnätets linjer – försök igen."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Kunde inte öppna GitHub. Kontakta supporten på %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Kunde inte spara bildtagningsunderlag för felsökning"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Kunde inte skicka avläsningen. Försök igen när du har anslutning."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Återvändsgränd"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"RADERA"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Radera"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Radera rapport"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Radera detta foto"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Radera detta pussel"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Radera detta pussel?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Radera denna inskickning?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Raderar…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Raderingen kunde inte bekräftas. Kontrollera anslutningen och försök igen."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Begäran om radering"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Svaret på raderingen bekräftade inte detta kvitto."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Raderingstjänsten returnerade HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Beskriv vad som hände och stegen för att upprepa det. Ange om du först kontrollerade och rättade de avlästa siffrorna. För en idé, skriv ”Ej tillämpligt”."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", målruta för denna ledtråd"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Enhet: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostiken kortades för att få plats i webbläsarutkastet. Appens åtgärd Skicka diagnostik kan dela hela rapporten."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"siffran måste vara 1..9 men var %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Siffror som inte lästes"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Att spara underlag på disk påverkar tidsåtgången; detta är inget prestandatest av svarstiden."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", stämmer inte med lösningen"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Varje kvitto identifierar en inskickad version av ett pussel. Radera den här för att ta bort den privat lagrade rapporten från Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Tidigare elimineringar: %1$s. Använd länkarna till tidigare steg för att granska bevisen."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← tidigare belägg (djup %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Tidigare hypotetiska placeringar lämnar den med bara en kandidat."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Tidigare steg som används i detta bevis"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Redigera ruta"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"åtta"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"tom"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Tom."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Tom"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Engelska"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"inmatningar som inte stämmer"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"inmatning som inte stämmer"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Var och en av dem fyller i en ruta."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Alla rutor är ifyllda, men %1$s svar stämmer inte med lösningen."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Alla rutor är ifyllda, men ett svar stämmer inte med lösningen."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Varje sudoku med en enda lösning kan lösas genom resonemang; gissningar behövs aldrig och hjälper sällan. Det här är de sätt att resonera som appen kan känna igen och förklara, med de enklaste först. När något av dem går att använda i pusslet du har öppet visar appen alla ställen där det gäller."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Allt du har skrivit hittills är rätt."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Exempel tillgängliga nu: varje exempel utgår från ditt aktuella rutnät."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"förväntade 10 vågräta linjer, fick %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"förväntade 10 lodräta linjer, fick %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"förväntade 81 rutor men fick %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"förväntade 81 rutor i varje block, hittade %1$s och %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"förväntade en enda 8-bitarskanal men fick %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"förväntade en bild på 28x28 men fick %1$s värden"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Förväntat beteende eller föreslagen förbättring"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"förväntade tio linjer i varje riktning"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"förväntade två block, hittade %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Förklara tidigare elimineringar av kandidater (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Förklara ledtrådar"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Hitta en ruta med bara två eller tre kandidater kvar – ju färre desto bättre, och ju mer ifyllda raden, kolumnen och boxen runt den är, desto bättre.\n\nVälj en av kandidaterna och skriv in den svagt med blyerts. Följ nu konsekvenserna: siffran försvinner från alla rutor som rutan ser, vilket kan lämna någon av dem med en enda kandidat, som tvingar fram en till, och så vidare. Fortsätt.\n\nEn av två saker händer. Antingen rinner det ut i sanden och du har inte lärt dig något – sudda ut och prova den andra kandidaten. Eller så når du en ruta helt utan kandidater, eller en rad där någon siffra inte har någon möjlig plats. Det är omöjligt, så siffran du skrev med blyerts var fel och kan uteslutas för gott.\n\nDet här är metoden att ta till när inget annat längre ger något. Den är långsammare och handlar om att hålla reda på följder snarare än att upptäcka mönster, men den kan hitta drag som mönstren missar. En eliminering räcker ofta för att få de enkla teknikerna att fungera igen; vissa lägen kräver ändå en djupare sökning."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Hitta två rutor med samma två kandidater, till exempel {3,7}, som inte ser varandra – de ligger oftast långt ifrån varandra.\n\nLeta nu efter en rad, kolumn eller box där 7 bara har två möjliga rutor, varav den ena ses av den första rutan i ditt par och den andra av den andra. Det är länken.\n\nEn av de två rutorna innehåller 7. Oavsett vilken det är kan rutan i ditt par som ser den inte innehålla 7, så den måste innehålla 3. Du vet inte vilken ände som innehåller 3, bara att en av dem gör det – och det räcker för att utesluta 3 från varje ruta som ser båda ändarna.\n\nDet svåra är länken, så leta i omvänd ordning: markera först enheterna där en siffra bara har två möjliga platser och leta sedan efter ett matchande par på varsin sida."</string>
+    <string name="msg_finished_05343e98" formatted="false">"klar"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Ta bilden när rutnätet är rakt, utan perspektivförvrängning, i bild och hålls stilla. Knappen fungerar alltid ändå."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Få med hela rutnätet i bild."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Få med hela rutnätet i bild"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"fem"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Följ en väg där varje steg bygger på det föregående."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Följ hela beviset i ordning"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Följ denna kedja av rutor med två kandidater: om %1$s inte är %2$s tvingas varje ruta i kedjan av den föregående, och %3$s blir till slut %4$s. Alltså innehåller ena eller andra änden %5$s, vilket utesluter siffran från varje ruta som ser båda."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Tvingande kedja"</string>
+    <string name="msg_four_04efaf08" formatted="false">"fyra"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Fyra rutor i två rader, två kolumner och två block kan inte alla innehålla samma två kandidater, för då skulle sudokut ha två lösningar."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia bekräftade raderingen, men den här telefonen kunde inte ta bort det lokala kvittot. Försök igen för att slutföra den lokala rensningen."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia raderar denna rapportversion och dess privata träningskopia. Framtida rättelser kan skapa en ny rapport enligt dina delningsinställningar. En modell som redan tränats på den kan behålla inlärda förändringar."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Hela vägen"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Framtida osäkra avläsningar skickar det perspektivkorrigerade sudokufotot, igenkänningsresultaten och rättelserna till Freevia för analys och träning. Träningskopiorna finns kvar tills de raderas via Inskickningskvitton; en tränad modell kan behålla inlärda förändringar. Om ett osäkert sudoku redan är öppet skickas det nu. Du kan stänga av detta i Inställningar."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Lätt"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Reflexer gör linjerna otydliga – vinkla pappret bort från ljuset"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"Gråbild(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Grå rutor innehåller blyertsanteckningar som appen ignorerar. Stapeln under en siffra visar hur säker avläsningen var. Tryck på en ruta för detaljer."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Handskrivet"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Svårt"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Dold"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Dolt par"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Dold fyrgrupp"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Dold singel"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Dold trippel"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Dölj tidigare belägg"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Dölj hur du hittar en"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", ledtråd %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Ledtråd"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Ledtrådens bevis"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Ledtrådens resonemang"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Håll stilla..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Håll stilla eller tryck på avtryckaren"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Håll stilla medan kameran fokuserar..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Håll telefonen parallellt med pappret"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Håll telefonen parallellt med pappret ovanför sudokut."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Håll telefonen parallellt med pappret ovanför sudokut"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Så hittar du en"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSå kommer vi dit:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Leta efter rutor med exakt två kandidater – en Y-wing består av tre sådana och inget annat.\n\nVälj en som nav, till exempel {2,5}. Leta efter en ruta som navet ser med {2,9}, och en annan som det ser med {5,9}. Navet är antingen 2 eller 5. Om det är 2 måste den första vingen vara 9; om det är 5 måste den andra vara 9. I båda fallen finns en 9 i någon av vingarna – du vet inte vilken, och det behöver du inte heller.\n\nAlltså kan ingen ruta som ser båda vingarna vara 9. Dessa rutor är oftast de två hörn som fullbordar rektangeln."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hypotetisk %1$s, inte ett inmatat svar"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Om %1$s siffror i en rad, kolumn eller ett block bara kan placeras i samma %2$s rutor, kan dessa rutor inte innehålla något annat."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Om %1$s rutor i en rad, kolumn eller ett block tillsammans har exakt %2$s kandidater, hör dessa siffror till dessa rutor och inga andra i enheten."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Om en siffra har två möjliga platser i en rad och två i en kolumn, och en från vardera delar ett block, måste en av de andra två innehålla siffran."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Om en siffra har två möjliga platser i vardera av två rader och en plats från vardera ligger i samma kolumn, måste en av de andra två platserna innehålla siffran."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Om en siffras enda möjliga platser längs en linje alla ligger i ett block, kan siffran uteslutas från resten av blocket."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Om en siffras enda möjliga platser i %1$s rader ligger i samma %2$s kolumner, kan den uteslutas från övriga rutor i dessa kolumner – och likadant med rader och kolumner ombytta."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Om en siffras enda möjliga platser i ett block ligger på samma linje, kan siffran uteslutas från resten av linjen."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Om antagandet av en siffra leder till en ruta som inte kan innehålla någon siffra, var antagandet fel."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"bildens mått måste vara positiva"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"I en kedja av rutor som alla har samma två kandidater innehåller ändarna olika siffror om kedjans längd är udda."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"I dessa %1$s %2$s kan %3$s bara placeras i dessa %4$s %5$s. Tillsammans tar de upp samtliga, så %6$s kan uteslutas från övriga rutor i dessa %7$s."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"I dessa %1$s kolumner kan %2$s bara placeras i dessa %3$s rader. Tillsammans tar de upp samtliga rader, så %4$s kan uteslutas från alla andra rutor i dessa rader."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"I dessa %1$s rader kan %2$s bara placeras i dessa %3$s kolumner. Tillsammans tar de upp samtliga kolumner, så %4$s kan uteslutas från alla andra rutor i dessa kolumner."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"I dessa två %1$s har %2$s bara två möjliga platser vardera, och %3$s och %4$s delar en %5$s – så båda kan inte vara %6$s. Därför är en av %7$s och %8$s det, vilket utesluter %9$s från varje ruta som ser båda."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"I dessa två kolumner har %1$s bara två möjliga placeringar i vardera, och %2$s och %3$s ligger i samma rad – så båda kan inte vara %4$s. Därför är en av %5$s och %6$s det, vilket utesluter %7$s från varje ruta som ser båda."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"I dessa två rader har %1$s bara två möjliga placeringar i vardera, och %2$s och %3$s ligger i samma kolumn – så båda kan inte vara %4$s. Därför är en av %5$s och %6$s det, vilket utesluter %7$s från varje ruta som ser båda."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"I denna %1$s kan %2$s bara placeras i dessa %3$s rutor, så rutorna är upptagna. Det utesluter %4$s från dem."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"I denna %1$s kan %2$s bara placeras inom ett block. Alltså finns %3$s i blocket på denna %4$s och kan uteslutas från resten av blocket."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"I detta block kan %1$s bara placeras i dessa %2$s rutor, så rutorna är reserverade för dem. Därmed utesluts %3$s från dem."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"I denna kolumn kan %1$s bara placeras i dessa %2$s rutor, så rutorna är reserverade för dem. Därmed utesluts %3$s från dem."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"I denna rad kan %1$s bara placeras i dessa %2$s rutor, så rutorna är reserverade för dem. Därmed utesluts %3$s från dem."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Inkluderar deras foton, avläsningar och rättelser. Stäng av detta i Inställningar."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Hitta en siffra i ett block som bara kan placeras i två eller tre rutor, och kontrollera om alla ligger i samma rad eller samma kolumn. Om de gör det finns siffran säkert någonstans längs den linjen – du vet inte var, men du vet att den finns i detta block. Därför kan den inte finnas någon annanstans längs samma linje utanför blocket.\n\nDetta placerar ingen siffra i sig. Det tar bort kandidater så att en singel uppstår någon annanstans."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"I detta block kan %1$s bara placeras i denna %2$s. Alltså finns %3$s någonstans här och kan uteslutas från resten av %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem eller idé"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Den kan användas på %1$s ställen här. Gå framåt för att gå igenom dem."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Den kan användas på ett ställe här. Gå framåt för att se det."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Den kan inte användas någonstans i detta läge."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Det är den enda återstående platsen för %1$s i markerad %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Det är den inringade rutan.\n\nTryck på Ledtråd igen för att få siffran."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Behåll"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Håll tvingande kedjor korta"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Språk"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licenser"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Leta längs en rad, kolumn eller ett block efter rutor med få kandidater kvar. Välj %1$s av dem och samla deras kandidater. Om samlingen innehåller exakt %2$s siffror är dessa %3$s siffror upptagna: de måste placeras i dessa %4$s rutor i någon ordning, även om du ännu inte kan säga vilken som hör hemma var.\n\nDet räcker. Alla andra rutor i enheten kan släppa dessa siffror, och oftast blir någon av dessa rutor då en singel.\n\nRutorna behöver inte ha samma kandidater – {2,7}, {2,9} och {7,9} är en fullt giltig trippel, och det är den som ofta förbises."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Leta efter rutor med samma två kandidater – till exempel {4,9} – som bildar en kedja där varje ruta ser nästa. Tre räcker inte; du behöver minst fyra.\n\nFärga dem växelvis längs kedjan. Eftersom varje ruta ser nästa kan två grannar inte innehålla samma siffra, så kedjan blir 4, 9, 4, 9 hela vägen – eller 9, 4, 9, 4, och du kan inte avgöra vilket.\n\nI båda fallen innehåller två rutor med motsatta färger olika siffror: den ena är 4 och den andra 9. Alltså kan en ruta som ser båda inte vara någon av dem och förlorar båda kandidaterna samtidigt.\n\nMönstret är lätt att upptäcka just för att alla rutor i det ser likadana ut. Följ de identiska paren genom rutnätet och se var de möts."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Leta efter tre rutor med samma två kandidater – till exempel {1,6} – som ligger i tre hörn av en rektangel. Rektangeln måste ligga i exakt två block: två rader och två kolumner som korsar två block, inte fyra.\n\nTitta nu på det fjärde hörnet. Om även det bara hade 1 och 6 skulle sudokut ha två lösningar – du kunde byta plats på 1 och 6 runt rektangeln och allt annat skulle fortfarande stämma. Ett korrekt konstruerat sudoku har en lösning, så det fjärde hörnet måste innehålla något annat: dess övriga kandidater blir kvar, och 1 och 6 tas bort.\n\nDetta är det enda resonemanget här som handlar om konstruktören snarare än rutnätet. Det är giltigt för ett publicerat sudoku och värdelöst för ett som du redan fyllt i fel, eftersom det då kanske inte finns någon lösning alls som kan vara unik."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Titta i detta block. Följ konturen till rutan som ledtråden förklarar."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Anteckningar"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Medelsvårt"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Mer"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Mer ljus behövs"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Fler än en lösning, så en tryckt siffra missades. Tryck på Lös för att se lösningarna och var de skiljer sig åt."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Flytta bakåt"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Flytta närmare"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Flytta närmare – rutnätet är för litet för att läsa av."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Naken"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Nakет par"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Naken fyrgrupp"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Naken singel"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Naken trippel"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Ange tekniken och visa rutorna som bevisar den, i stället för att bara ge siffran."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"behöver minst 4 punkter men fick %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Behöver bekräftas"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Nytt sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Nästa följd"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Nästa steg"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Inga bilder bifogas automatiskt. Rapporter och bilagor som skickas in här är offentliga. Skicka exempel som du föredrar att dela privat till info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Inget foto har avvisats sedan appen senast installerades."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Ingen skanningsdiagnostik tillgänglig."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Ingen teknik kan användas här"</string>
+    <string name="msg_none_140bedbf" formatted="false">"inga"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Ingen av dem placerar en siffra i en ruta: de tar bort kandidater, vilket öppnar upp ett svårt sudoku."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Inga i ditt sudoku just nu."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"inte en fil med en siffermodell"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Kunde inte läsas av med någon säkerhet – den närmaste gissningen är %1$s %2$s vid %3$s. Ange själv innehållet i denna ruta."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Kan ännu inte läsa av ett rutnät på nio gånger nio – försök fylla bilden med bara rutnätet, eller ta fotot direkt"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"inte påbörjad"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Inget kunde skickas från den här telefonen."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Inget kvar att räkna ut."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Inget mer här kan härledas med de tekniker som appen känner till."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"inget ovanligt"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"en"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"En ruta såg ut att innehålla en tryckt siffra men gör det inte."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"En tryckt siffra rättades automatiskt."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"en ruta"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Bara %1$s kan placeras här – alla andra siffror finns redan i denna rad, kolumn eller detta block."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Bara %1$s kan placeras här. De markerade rutorna tar upp %2$s av de övriga åtta siffrorna; %3$s uteslöts från denna ruta tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Endast %1$s kan stå här. De markerade rutorna utesluter fyra av de övriga åtta siffrorna; %2$s uteslöts från den här rutan tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Endast %1$s kan stå här. De markerade rutorna utesluter sex av de övriga åtta siffrorna; %2$s uteslöts från den här rutan tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Endast %1$s kan stå här. De markerade rutorna utesluter en av de övriga åtta siffrorna; %2$s uteslöts från den här rutan tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Endast %1$s kan stå här. De markerade rutorna utesluter sju av de övriga åtta siffrorna; %2$s uteslöts från den här rutan tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Endast %1$s kan stå här. De markerade rutorna utesluter fem av de övriga åtta siffrorna; %2$s uteslöts från den här rutan tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Bara %1$s kan placeras här. De markerade rutorna tar upp %2$s av de åtta andra siffrorna; %3$s %4$s uteslutna från denna ruta sedan tidigare, inte genom något du kan se runtomkring."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Endast %1$s kan stå här. De markerade rutorna utesluter två av de övriga åtta siffrorna; %2$s uteslöts från den här rutan tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Bara %1$s kan placeras här. De markerade rutorna tar upp %2$s av de övriga åtta siffrorna; %3$s uteslöts från denna ruta tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Endast %1$s kan stå här. De markerade rutorna utesluter tre av de övriga åtta siffrorna; %2$s uteslöts från den här rutan tidigare, inte på grund av något du kan se runt den."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Bara %1$s kan placeras här. De åtta andra siffrorna utesluts av ifyllda rutor eller tvingade singelkandidater i denna rad, kolumn eller detta block."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Bara %1$s kan placeras här, även om inget runtomkring visar varför: alla åtta andra siffror uteslöts från rutan genom tidigare resonemang, inte genom att stå i dess rad, kolumn eller block."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Bara %1$s tryckta siffror hittades, vilket är för få för ett sudoku."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"bara kvartsvarv stöds, inte %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Öppna ett utkast i webbläsaren med appversion, telefonmodell, Android-version och senaste skanningsdiagnostik ifyllda. Lägg själv till en fullständig beskrivning och relevanta skärmbilder.\n\nInloggning på GitHub krävs. Du kan granska och redigera utkastet innan du skickar in det. Inskickade rapporter och bilagor är offentliga. Inga foton bifogas automatiskt."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Öppna appinställningar"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Öppna GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Information om öppen källkod"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Öppna ”Varför denna ruta?” för att se de slutliga beläggen för placeringen, eller välj en utesluten kandidat för att följa dess bevis."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV – Apache License 2.0. Används för att hitta och perspektivkorrigera rutnätet.\n\nAndroidX, Jetpack Compose och CameraX – Apache License 2.0.\n\nKotlin – Apache License 2.0.\n\nSifferigenkännaren tränades på MNIST-databasen med handskrivna siffror av LeCun, Cortes och Burges, tillsammans med siffror återgivna med öppna systemtypsnitt och siffror ritade programmatiskt."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV:s inbyggda bibliotek kunde inte läsas in"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografera ett annat sudoku."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Foton som du behåller lagras i appens privata lagringsutrymme och tas bort när du raderar dem eller avinstallerar appen."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Foton som appen inte kunde skapa ett sudoku av. Skicka ett så kan det granskas."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Välj en siffra och gå igenom raderna för att hitta dem där den har exakt två rutor kvar. Välj två sådana rader och se om en ruta från vardera ligger i samma kolumn.\n\nOm de gör det ligger dessa två rutor i samma kolumn och kan inte båda innehålla siffran. Alltså gör minst en av de bortre ändarna det – de två rutorna på andra sidan. Du vet inte vilken, och det behöver du inte heller: varje ruta som ser båda de bortre ändarna kan släppa siffran.\n\nGör sedan samma sak med kolumner i stället för rader. Formen är en hög byggnad med en låg bredvid, vilket förklarar namnet och hjälper dig att upptäcka den när du sett några."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Välj en siffra. Hitta en rad där den har exakt två möjliga platser och en kolumn där den har exakt två möjliga platser. Kontrollera sedan om en ruta från raden och en från kolumnen ligger i samma block.\n\nOm de gör det kan båda inte innehålla siffran – ett block, en förekomst av siffran. Alltså gör minst en av de två återstående ändarna det, och varje ruta som ser båda ändarna kan släppa siffran.\n\nDen här tekniken förbises eftersom det inte finns något att rikta in: de fyra rutorna bildar en skev form, och det enda som håller ihop den är blocket som de två inre ändarna delar."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Välj en tom ruta och gå igenom 1 till 9. Stryk allt som redan finns i dess rad, kolumn eller block. Om exakt en siffra återstår ska den stå där.\n\nDetta är tekniken som alla andra är till för att möjliggöra. Allt svårare handlar om att få ner någon ruta till en enda kandidat, så när en svårare teknik ger resultat ska du leta härnäst efter detta."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Välj en siffra och bortse från alla andra. Gå igenom raderna och notera dem där siffran bara har två eller tre möjliga rutor kvar. Leta efter %1$s sådana rader vars rutor ligger i samma %2$s kolumner.\n\nOm du hittar dem måste var och en av dessa %3$s rader placera siffran i någon av dessa kolumner, och två rader kan inte använda samma kolumn. Tillsammans tar de alltså upp siffran i alla %4$s kolumner – och varje annan ruta i dessa kolumner kan släppa den.\n\nGör sedan om allt med kolumner och rader ombytta. Hälften av dessa mönster hittas åt det andra hållet, och det är den hälft som de flesta aldrig letar efter."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Placera %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Placera %1$s i rad %2$s, kolumn %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Placera %1$s i din ruta med kontur."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Bifoga relevanta skärmbilder med GitHubs funktion för bilagor: sudokut, igenkända siffror, resultatet från Kontrollera eller ledtrådssteget som visar problemet. Ta med förväntat och faktiskt resultat när det är till hjälp."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Radera mina inskickade igenkänningsdata från Sudoku Buddy. Kvitto-ID:n: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Ersätt denna uppmaning med en fullständig beskrivning av problemet eller idén. Ge rapporten en kort, beskrivande titel."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Rikta kameran mot ett sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Rikta kameran mot ett sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Rikta kameran mot ett sudoku på papper. Appen läser av de tryckta siffrorna och allt du har skrivit in, löser sudokut och kan ge en ledtråd, kontrollera dina svar eller visa hela lösningen."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Pekande par"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Förbereder sudoku…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Föregående"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Föregående steg"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Tryckta"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Integritetspolicy"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Lagring av pussel"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Pussel"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Pussel läses av och löses på den här telefonen. Om du skickar in en osäker avläsning eller aktiverar automatisk delning skickas pusselfotot, de ursprungliga avläsningarna, osäkerhetsmarkeringarna och dina korrigeringar säkert till Freevia för analys av sifferigenkänningen och privat träning. Rapporterna innehåller inte din enhetsmodell eller diagnostik. Automatisk delning är valfri; det finns inga konton, rutinmässig användningsanalys eller annonsspårning. Träningskopior kan raderas med hjälp av kvittot, men en modell som redan har tränats kan behålla inlärda förändringar. Använd Inskickningskvitton i Inställningar för att radera en rapport."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Pussel som fotograferades för testning kom från sudoku.cba.si. Den här appen har ingen anknytning till dem."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Pussel du fotograferar sparas här, så att du kan fortsätta med dem senare."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Avläsning"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Avläst som en handskriven %1$s, %2$s säker."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Avläst som en tryckt %1$s, %2$s säker."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Avläst som tom – inga skrivna eller tryckta tecken hittades."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Avläst som kandidatanteckningar i blyerts och ignorerat."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Avläsningen har granskats."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Avläsningen har skickats in. Tack!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnostik från senaste skanningen (förifyllt)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Sifferigenkänningen kan göra fel, särskilt med handskrift. Använd Läs av för att jämföra de igenkända siffrorna med fotot och tryck på en ruta för att korrigera den. Appen markerar osäkra avläsningar för granskning; även en säker avläsning kan vara fel."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Förkasta antagandet"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Avlägsna par"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Ta bort %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nTa bort %1$s från "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Borttaget"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Spela upp resonemanget igen"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Rapportera ett fel eller en idé på GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Försök med kameran igen"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Återgå till steg %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Visa förklaringen"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Granska eller skicka in avläsningen"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Granska avläsningen"</string>
+    <string name="msg_right_883361d5" formatted="false">"Höger"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Lösningsgången är klar. Gå tillbaka för att granska valfritt drag eller prova stegen själv."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"rad %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Rad %1$s, kolumn %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Rad %1$s, kolumn %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"rad $1, kolumn $2"</string>
+    <string name="msg_row_634768da" formatted="false">"rad"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"rader"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", utesluten %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Skanningsdiagnostiken kunde inte läsas."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Skärmbilder eller exempel på pussel"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Andrahandsförslag: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Välj för övning"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Vald: rad %1$s, kolumn %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Skicka diagnostik (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Skicka diagnostik"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Skicka dessa skanningar"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Skicka det här fotot"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Inställningar"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"sju"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Dela automatiskt vid osäkerhet"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Dela osäkra avläsningar automatiskt?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Visa motsägelsen"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Visa alla %1$s i ditt pussel"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Visa den i ditt pussel"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Enkel färgning"</string>
+    <string name="msg_six_44778d82" formatted="false">"sex"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Skyskrapa"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", lösning %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Lös"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Löst, och alla svar är rätt."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Svar med hjälp av lösaren: placera %1$s i %2$s. Kandidaterna är %3$s. Appens tekniker hittade inget drag i det här läget. Dess sökning hittade %4$s i den unika lösningen; ett detaljerat bevis för sökningens grenar finns inte tillgängligt."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nSvar med lösarhjälp: appens tekniker hittade inget drag. Ett detaljerat bevis saknas."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminering med hjälp av lösaren: en sökning utesluter %1$s i den markerade rutan, men appen kunde inte ta fram en kort motsägelsekedja att visa. Ett detaljerat bevis finns inte tillgängligt."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Vissa rutor kan innehålla anteckningar i stället för en fullständig siffra."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Vissa siffror kunde inte läsas av med säkerhet."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Något gick fel när fotot lästes av."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Ruta"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nUrsprungliga kandidater: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Steg %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Räta upp"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategier"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Inskickningskvitto"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Inskickningskvittot är ogiltigt."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Inskickningskvitton (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Inskickningskvitton"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Svaret på inskickningen saknar %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Statusen i svaret på inskickningen är ogiltig."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Inskickningstjänsten är inte konfigurerad."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Inskickningstjänsten returnerade HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Inskickning är inte tillgänglig i den här versionen."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Skicka in"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Skicka automatiskt in framtida osäkra avläsningar"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Skicka in avläsningen"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Skicka in osäker avläsning för analys"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Skicka in uppdatering"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Inskickat"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Skickar in…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy-diagnostik"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy – återkoppling – %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy ges ut av Freevia. Kontakt: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy läser av pussel med kameran och behöver därför kameraåtkomst. Sifferigenkänning och pusselhistorik stannar på din telefon. Om du väljer att skicka in en osäker avläsning skickas dess foto och resultat säkert till Freevia för att förbättra sifferigenkänningen. Automatisk delning är valfri och kan stängas av i Inställningar."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy-skanning"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy-skanningar"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku Buddys källkod är licensierad under Apache License 2.0. Freevias varumärke omfattas av separata varumärkesrättigheter."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku är en pusselform som är fri från upphovsrätt. Den här appen löser pussel du redan har; den återger eller distribuerar inte någon annans pussel."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", stödjande belägg"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Anta att den markerade rutan innehåller %1$s. De numrerade siffrorna är hypotetiska."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Anta att denna ruta är %1$s. Följ pilarna i ordning: varje rutas siffra tvingas fram av de tidigare placeringarna – antingen är siffran den enda som fortfarande kan stå där, eller så är rutan den enda plats där siffran fortfarande kan placeras.\n\nDå finns ingen plats för %2$s i den röda enheten. Markeringarna med %3$s där visar de platser där siffran kunde ha stått, och var och en är en ruta som en av pilarna just har tagit i anspråk. En enhet utan plats för en siffra är omöjlig – alltså är denna ruta inte %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Anta att den här rutan innehåller %1$s. Följ pilarna i ordning: varje ruta bestäms av de tidigare placeringarna – antingen är siffran den enda som fortfarande kan stå där, eller så är rutan den enda plats där siffran fortfarande kan stå. Den röda rutan blir då helt utan möjlig siffra, vilket är omöjligt – alltså innehåller rutan inte %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Anta att denna ruta är %1$s. Följ pilarna i ordning: varje rutas siffra tvingas fram av de tidigare placeringarna – antingen är siffran den enda som fortfarande kan stå där, eller så är rutan den enda plats där siffran fortfarande kan placeras.\n\nDå finns ingen plats för %2$s i den röda raden. Markeringarna med %3$s där visar de platser där siffran kunde ha stått, och var och en är en ruta som en av pilarna just har tagit i anspråk. En rad utan plats för en siffra är omöjlig – alltså är denna ruta inte %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Anta att denna ruta är %1$s. Följ pilarna i ordning: varje rutas siffra tvingas fram av de tidigare placeringarna – antingen är siffran den enda som fortfarande kan stå där, eller så är rutan den enda plats där siffran fortfarande kan placeras.\n\nDå finns ingen plats för %2$s i det röda blocket. Markeringarna med %3$s där visar de platser där siffran kunde ha stått, och var och en är en ruta som en av pilarna just har tagit i anspråk. Ett block utan plats för en siffra är omöjligt – alltså är denna ruta inte %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Anta att den här rutan innehåller %1$s. Följ pilarna i ordning: varje ruta bestäms av de tidigare placeringarna – antingen är siffran den enda som fortfarande kan stå där, eller så är rutan den enda plats där siffran fortfarande kan stå.\n\nDå har den rödmarkerade %2$s ingen plats för %3$s. De markerade %4$s i den är platserna där siffran kunde ha stått, och var och en är en ruta som en av pilarna just har tagit i anspråk. En %5$s utan plats för en siffra är omöjlig – alltså innehåller rutan inte %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Anta att denna ruta är %1$s. Följ pilarna i ordning: varje rutas siffra tvingas fram av de tidigare placeringarna – antingen är siffran den enda som fortfarande kan stå där, eller så är rutan den enda plats där siffran fortfarande kan placeras.\n\nDå finns ingen plats för %2$s i den röda kolumnen. Markeringarna med %3$s där visar de platser där siffran kunde ha stått, och var och en är en ruta som en av pilarna just har tagit i anspråk. En kolumn utan plats för en siffra är omöjlig – alltså är denna ruta inte %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Byt till Efter för att se draget och dess följder i rutnätet."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Svärdfisk"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Ta ett nytt foto"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Ta ett foto till"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Välj en siffra och markera varje enhet där den har exakt två möjliga rutor kvar. De två är som en gungbräda: den ena innehåller siffran och den andra gör det inte.\n\nBörja var som helst och färga en ruta, till exempel blå. Färga dess partner grön, sedan den rutans partner blå igen, och fortsätt tills kedjan tar slut. Antingen är alla blå rutor rätt eller alla gröna – du vet inte vilka, och det räcker för två slutsatser.\n\nFör det första: om två rutor med samma färg finns i en rad, kolumn eller box är den färgen omöjlig. Siffran tas då bort från varje ruta med den färgen, och den andra färgen anger rätt placeringar genom hela kedjan.\n\nFör det andra: varje ruta utanför kedjan som ser både en blå och en grön ruta kan utesluta siffran, eftersom en av dessa två innehåller den oavsett vilket håll kedjan faller åt.\n\nDet går långsamt med blyerts men är värt besväret: en enda färgning tar ofta bort en siffra som kandidat från halva rutnätet."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Ta en siffra och en enhet i taget – till exempel: var kan en 4 stå i den här boxen? Stryk varje ruta i enheten som redan innehåller en siffra eller som ser en 4 i sin rad eller kolumn. Om en enda ruta återstår ska 4 stå där.\n\nFällan är att du inte kan upptäcka detta genom att titta på rutan: den kan också tillåta fem andra siffror, så inget hos den verkar tvingande. Titta på siffran i stället för rutan, så syns det direkt."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Ta foto"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Ta fotot automatiskt"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tryck på en markerad ruta för att granska den, eller bekräfta att alla avläsningar är korrekta."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Tryck först på en ruta i rutnätet."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Pröva %1$s som ett antagande i den markerade rutan. Det är inget svar. Följ konsekvenserna för att se varför det inte fungerar."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Pröva antagandet"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Tack för att du hjälper till att förbättra sifferigenkänningen. Ditt pusselfoto, dina avläsningar och korrigeringar kommer att användas för analys och träning."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Det är också ett giltigt drag med %1$s. Den här lösningsgången visar ett annat drag; jämför dess bevis nedan."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Det är inte draget som valts för det här steget. Det kan finnas andra giltiga drag; titta igen eller visa förklaringen till steget."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Det är rätt"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Det är resten av pusslet. %1$s rutor behöver svar med hjälp av lösaren eftersom appens tekniker inte hittade något drag. Deras detaljerade sökbevis finns inte tillgängliga."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Det är resten av pusslet. En ruta behöver ett svar med hjälp av lösaren eftersom appens tekniker inte hittade något drag. Det detaljerade sökbeviset finns inte tillgängligt."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Det är resten av pusslet, från början till slut."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Fotot kunde inte sparas, så det finns inget att skicka."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Den rutan tillåter %1$s. Leta efter draget som motiveras av tekniken i det här steget, eller visa dess förklaring."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Den rutan är redan ifylld. Välj en tom ruta."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Antagandet har förkastats. Vi återgår till de verkliga kandidaterna och stryker %1$s i den markerade rutan. De hypotetiska siffrorna tas bort."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Kameran kunde inte ta fotot."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kameran är inte tillgänglig. Stäng andra kameraappar och försök igen."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"den andra"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Fotot från %1$s och allt som lästs av från det tas bort från den här telefonen. Detta kan inte ångras."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Fotot finns i din pussellista under ”Kunde inte läsas”."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Pivotrutan här innehåller %1$s eller %2$s. I båda fallen tvingas en av de andra två rutorna till %3$s, så ingen ruta som ser båda kan innehålla %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Det pekande paret läst baklänges. Välj en rad eller kolumn och en siffra som fortfarande behöver en plats där. Markera varje ruta i raden eller kolumnen som kan innehålla siffran. Om alla ligger i samma box måste siffran finnas i boxens del av raden eller kolumnen – alltså ingen annanstans i boxen, inte heller i dess två andra rader eller kolumner som du inte tittade på.\n\nLiksom det pekande paret placerar detta ingen siffra på egen hand; det skapar utrymme för något som gör det."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"De tryckta siffrorna bildar inte ett lösbart pussel."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nDe återstående kandidaterna i %1$s är {%2$s}. Sätt %3$s på rad %4$s, kolumn %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Rapporten är för stor för att skickas in."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-wing med en kandidat till i pivotrutan. Leta efter en ruta med exakt tre kandidater, till exempel {1,4,7}, som ser två rutor med två kandidater – en med {1,7} och en med {4,7}.\n\nNu kan alla tre innehålla 7, och en av dem måste göra det. En ruta måste därför se alla tre för att 7 ska kunna uteslutas, inte bara de två vingarna – vilket i praktiken betyder att den ligger i samma box som pivotrutan och på samma rad eller kolumn som en vinge.\n\nFärre elimineringar än med en Y-wing, och lättare att missa av samma skäl: pivotrutan sticker inte ut."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Det finns en ruta du kan fylla i i den markerade boxen.\n\nTryck på Ledtråd igen för att få veta vilken teknik som hittar den."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Det finns inget kvar här att resonera om."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"De här %1$s rutorna har bara %2$s och %3$s som kandidater, och varje ruta ser nästa, så siffrorna växlar längs hela kedjan. %4$s och %5$s ligger ett udda antal länkar från varandra och innehåller därför olika siffror – vilket utesluter %6$s från varje ruta som ser båda."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"De här %1$s rutorna har tillsammans bara %2$s som kandidater, så dessa siffror fyller dem i någon ordning. Det utesluter %3$s från resten av denna %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Dessa %1$s rutor kan tillsammans bara innehålla %2$s, så de siffrorna fyller rutorna i någon ordning. Därmed utesluts %3$s från resten av denna rad."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Dessa %1$s rutor kan tillsammans bara innehålla %2$s, så de siffrorna fyller rutorna i någon ordning. Därmed utesluts %3$s från resten av denna kolumn."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Dessa %1$s rutor kan tillsammans bara innehålla %2$s, så de siffrorna fyller rutorna i någon ordning. Därmed utesluts %3$s från resten av detta block."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Det här är de ursprungliga kandidaterna för din ruta. Spårning förklarar vilka möjligheter som kan uteslutas."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"De här siffrorna kan inte bilda ett pussel, och för mycket är fel för att avgöra vilka. Tryck på en ruta för att korrigera avläsningen, eller ta fotot igen."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"De här siffrorna kan inte bilda ett pussel. Om du ändrar de %1$s inringade rutorna blir det lösbart – tryck på en av dem för att korrigera avläsningen."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"De här siffrorna kan inte bilda ett pussel. Om du ändrar den inringade rutan blir det lösbart – tryck på den för att korrigera avläsningen."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"De här siffrorna bildar inte ett pussel, så någon har lästs av fel. Tryck på Lös för att se vilka rutor som behöver korrigeras."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"De här fyra rutorna bildar en rektangel över två boxar, och tre av dem har bara %1$s som kandidater. Om %2$s också bara hade dessa två skulle siffrorna kunna byta plats runt rektangeln och pusslet ha två lösningar. Det har en enda, så %3$s måste innehålla något annat – och %4$s stryks."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"De når inte slutet: något här har fått appen att gå helt bet."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Detta fyller inte i någon ruta. Det utesluter %1$s från %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Det här fyller inte i något. Det utesluter %1$s från %2$s rutor."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Det här fyller inte i något. Det utesluter %1$s från en ruta."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nDetta är den första av %1$s slutledningar som leder till svaret."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Det här beviset förklarar en ledtråd, inklusive kandidatelimineringarna som leder till svaret. Gå framåt steg för steg för att följa resonemanget i rutnätet och fortsätt sedan med hela lösningsgången."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Det här pusslet kunde inte förberedas."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Det här sudokut kunde inte sparas. Du kan fortfarande använda det nu. Frigör lagringsutrymme innan du tar ett nytt foto."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Det här sudokut har fler än en lösning, så en tryckt siffra har troligen missats. Visar lösning %1$s av %2$s – tryck på Lös igen för nästa. De inringade rutorna skiljer sig mellan de visade lösningarna."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Fotot av det här sudokut kunde inte öppnas."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Det här resonemanget utesluter %1$s från att finnas "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Den här rutan kan innehålla kandidatanteckningar i stället för en fullstor siffra. Kontrollera den."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Den här vyn visar även tidigare borttagningar av kandidater. Öppna deras belägg nedan för att kontrollera dem."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tre"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"För mörkt för att urskilja rutnätets linjer"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Spårning"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Provad"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Prova själv"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Aktivera"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Vrid telefonen så att sudokut är rättvänt."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Handledare"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"två"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Två rutor med samma par, sammanlänkade av en stark länk för en av siffrorna, tvingar den andra siffran till en av dem."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Tvåsträngad drake"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unik rektangel"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"enhet"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Oläsbar exponerar ingen CellReading-lista; de exakta indatarutorna och resultatet behålls."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"modellformatets version stöds inte"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Osäker"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Använd enhetens språk"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Använd %1$s: tryck på en ruta där en kandidat kan tas bort och välj sedan den siffran."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Använd %1$s: tryck på rutan du kan fylla i och välj sedan dess siffra."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Mycket svårt"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-vinge"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"blev"</string>
+    <string name="msg_were_910adfb4" formatted="false">"blev"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Vad förväntade du dig, eller hur skulle din idé hjälpa dig att lösa eller lära dig sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Vad som hände och steg för att återskapa det (för fel)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Vad den gör"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Var"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Varför %1$s togs bort från r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Varför"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Varför inte %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Varför den här rutan? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" med lösningen. Använd Kontrollera för att granska dem."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Arbeta bakåt från din ruta. Välj en fråga nedan."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Arbeta siffra för siffra i stället för ruta för ruta. Skriv för en enhet ner var varje saknad siffra fortfarande kan placeras. Leta sedan efter %1$s siffror vars listor tillsammans omfattar bara %2$s rutor.\n\nDessa %3$s siffror måste fylla dessa %4$s rutor, så alla andra kandidater i dem kan strykas – vilket ofta direkt gör en av dem till en naken singel eller del av ett naket par.\n\nDet här är det som många tycker är svårast, eftersom inget syns när man tittar på rutorna: de har fortfarande många kandidater. Mönstret finns i siffrorna."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Arbeta bara med rutor som har exakt två kandidater kvar.\n\nBörja med en, till exempel {2,6}, och anta att den inte är 2 – då är den 6. Gå till en ruta som den ser och som också har en 6, till exempel {6,4}: den kan inte vara 6, så den är 4. Gå till en ruta som den i sin tur ser och som innehåller en 4, och fortsätt så. Varje steg tvingas fram av det föregående.\n\nOm du når en ruta vars andra siffra är 2 – siffran du började med att utesluta – är du klar. Antingen var den första rutan ändå 2, eller så gäller hela kedjan och den sista rutan är 2. Den ena eller andra änden innehåller den, så ingen ruta som ser båda ändarna kan innehålla den.\n\nHåll kedjorna korta. Fyra eller fem rutor går att hitta med en penna; längre än så blir det bokföring, och då är tvångskedja det rätta namnet."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"arbetskanten måste vara positiv och ändlig"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Kunde inte läsas"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Skriven"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Fel"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-vinge"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-kedja"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-vinge"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-vinge"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Du tömde den här rutan."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Du ändrade detta till en handskriven %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Du ändrade detta till en tryckt %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Dina ändringar syns men kunde inte sparas. Frigör lagringsutrymme och försök redigera sudokut igen."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Dina foton och din integritet"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Dina sudokun"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Dina sparade sudokun"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Din ruta ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Din ruta förblir inramad. Gröna rutor visar belägg; överstrukna siffror är uteslutna."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

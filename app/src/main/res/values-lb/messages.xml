@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nDéi markéiert Zelle beweisen et.\n\nDréckt nach eng Kéier op Hiweis, fir ze gesinn, wéi eng Zell."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s an %2$s enthalen allebéid nëmmen %3$s an %4$s. An dëser Eenheet (%5$s) huet %6$s genee zwou Plazen, vun deenen all eng vun enger vun deenen zwou Zelle gesi gëtt – also ass eng vun deene Plazen %7$s, an d\'Enn, dat se gesäit, muss %8$s sinn. A béide Fäll ass een Enn %9$s, wat %10$s aus allem ausschléisst, wat se allebéid gesäit."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"A béiden Zellen %1$s an %2$s sinn nëmmen %3$s an %4$s méiglech. An dësem Block huet %5$s nëmmen zwou méiglech Plazen, vun deenen all Kettenenn mat jee enger eng Eenheet deelt - also ass eng vun deenen zwou Plazen %6$s, an d\'Kettenenn, dat mat hir eng Eenheet deelt, muss %7$s sinn. An all Fall ass ee Kettenenn %8$s, wat %9$s aus all Zell ausschléisst, déi mat béide Kettenennen eng Eenheet deelt."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"A béiden Zellen %1$s an %2$s sinn nëmmen %3$s an %4$s méiglech. An dëser Kolonn huet %5$s nëmmen zwou méiglech Plazen, vun deenen all Kettenenn mat jee enger eng Eenheet deelt - also ass eng vun deenen zwou Plazen %6$s, an d\'Kettenenn, dat mat hir eng Eenheet deelt, muss %7$s sinn. An all Fall ass ee Kettenenn %8$s, wat %9$s aus all Zell ausschléisst, déi mat béide Kettenennen eng Eenheet deelt."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"A béiden Zellen %1$s an %2$s sinn nëmmen %3$s an %4$s méiglech. An dëser Rei huet %5$s nëmmen zwou méiglech Plazen, vun deenen all Kettenenn mat jee enger eng Eenheet deelt - also ass eng vun deenen zwou Plazen %6$s, an d\'Kettenenn, dat mat hir eng Eenheet deelt, muss %7$s sinn. An all Fall ass ee Kettenenn %8$s, wat %9$s aus all Zell ausschléisst, déi mat béide Kettenennen eng Eenheet deelt."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s an der Rei %2$s, Kolonn %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s beim Schrëtt %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s kann nëmmen %2$s enthalen."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s kann %2$s net enthalen, well %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s kann %2$s net enthalen, well %3$s an der selwechter Kolonn %5$s nëmmen %4$s enthale kann."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s kann %2$s net enthalen, well %3$s am selwechte Block %5$s nëmmen %4$s enthale kann."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s kann %2$s net enthalen, well %3$s an der selwechter Rei %5$s nëmmen %4$s enthale kann."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s kann %2$s net enthalen, well %3$s am selwechte Block %5$s schonn %4$s enthält."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s kann %2$s net enthalen, well %3$s an der selwechter Kolonn %5$s schonn %4$s enthält."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s kann %2$s net enthalen, well %3$s an der selwechter Rei %5$s schonn %4$s enthält."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s enthält %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s eidel"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, Entrée"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s muss hei stoen: dëst ass déi eenzeg Zell an dëser Kolonn %2$s, an där nach %3$s méiglech ass.\n\n%4$s\n\n%5$s erlaabt de Moment %6$s, mee all Kolonn muss %7$s genee eemol enthalen. Setz dofir %8$s an d\'Rei %9$s, Kolonn %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s muss hei stoen: et ass déi eenzeg Zell an dëser Eenheet (%2$s %3$s), déi nach eng %4$s ophuele kann.\n\n%5$s\n\n%6$s erlaabt aktuell %7$s, mee all %8$s muss %9$s genee eemol enthalen. Setzt dofir %10$s an d\'Rei %11$s, Kolonn %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s muss hei stoen: dëst ass déi eenzeg Zell an dësem Block %2$s, an där nach %3$s méiglech ass.\n\n%4$s\n\n%5$s erlaabt de Moment %6$s, mee all Block muss %7$s genee eemol enthalen. Setz dofir %8$s an d\'Rei %9$s, Kolonn %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s muss hei stoen: dëst ass déi eenzeg Zell an dëser Rei %2$s, an där nach %3$s méiglech ass.\n\n%4$s\n\n%5$s erlaabt de Moment %6$s, mee all Rei muss %7$s genee eemol enthalen. Setz dofir %8$s an d\'Rei %9$s, Kolonn %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s huet zwou Plazen an dëser Rei an zwou an dëser Kolonn. %2$s an %3$s deelen e Block, also kënne se net allebéid %4$s sinn – doduerch enthält eng vun %5$s an %6$s d\'Ziffer, an %7$s ass aus allem ausgeschloss, wat se allebéid gesäit."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s an der selwechter %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s am selwechte Block."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s an der selwechter Kolonn."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s an der selwechter Rei."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s ass schonn aus där Zell ausgeschloss. Hir Kandidate sinn "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s gëtt duerch %2$s ausgeschloss, wat "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s gëtt duerch %2$s ausgeschloss, wou nëmmen %3$s an der selwechter Kolonn %4$s stoe kann."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s gëtt duerch %2$s ausgeschloss, wou nëmmen %3$s an der selwechter Rei %4$s stoe kann."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s gëtt duerch %2$s ausgeschloss, wou nëmmen %3$s am selwechte Block %4$s stoe kann."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s gëtt duerch %2$s ausgeschloss, wou %3$s am selwechte Block %4$s steet."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s gëtt duerch %2$s ausgeschloss, wou %3$s an der selwechter Kolonn %4$s steet."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s gëtt duerch %2$s ausgeschloss, wou %3$s an der selwechter Rei %4$s steet."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s ass an der neister nummeréierter Zell (Rei %2$s, Kolonn %3$s) festgeluecht. %4$s De Feil follegt engem Asaz, deen dozou bäidréit; fréier Konsequenze spillen och eng Roll."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s feelt am Classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s vun %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s dovu fëllen eng Zell aus; déi aner raume fir d\'éischt Kandidaten aus dem Wee."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s Puer"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s gedréckt, %2$s, %3$s falsch"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s gedréckt, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s gedréckt"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, gedréckt Virgab"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s Véierergrupp"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s refuséiert Foto(en), déi neisten als éischt:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: %2$s ewechhuelen"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Zuel vun de Felder: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s Schrëtt bilden dëse Léisungswee; déi schwéierst ënnerstëtzt Technik ass %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s Dräiergrupp"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s gouf duerch eng fréier Kandidatenofleedung aus %2$s ewechgeholl."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s ageschriwwen"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"e Bild vun %1$sx%2$s brauch %3$s Bytes, mee krut %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"eng Zell war weder eng Ziffer nach e Punkt"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Eng Kette vu Felder mat zwee Kandidaten, déi mat der selwechter Ziffer ufänkt an ophält, setzt déi Ziffer op dat eent oder dat anert Enn."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Eng Ziffer, déi nëmmen nach eng Plaz an enger Rei, Kolonn oder engem Block huet, gehéiert op déi Plaz."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Eng handgeschriwwe %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Eng gedréckte %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"E rout Feld weist d\'Ziffer, déi d\'App do gelies huet. Wann dat net ass, wat s du geschriwwen hues, tipps op d\'Feld, fir et ze korrigéieren."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"E Feld mat nëmmen enger verbleiwender Ziffer muss déi Ziffer enthalen."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Eng Techniklëscht ass ni komplett, an déi schwéierst Rätsel sinn esou opgebaut, datt se all Technik dorop ausbremsen. Wann also keng vun dësen eppes fënnt, léist den Tutor een eenzelt Feld, andeems en d\'Kandidaten ausprobéiert, seet kloer, datt en dat gemaach huet, a setzt seng logesch Iwwerleeunge vun do aus weider. En erreecht ëmmer d\'Enn vun engem Rätsel a mécht ni, wéi wann eng nogeschloen Äntwert eng Schlussfolgerung wier."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"E Pivot mat dräi Kandidaten an zwou passenden Zangen mat jee zwee Kandidaten schléisst eng Ziffer aus all Feld aus, dat all dräi gesäit."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"E Pivot mat zwee Kandidaten an zwou Zangen mat jee zwee Kandidaten kënnen eng Ziffer aus all Feld ausschléissen, dat béid Zange gesäit."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Iwwer"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Duerno"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"No dësem Schrëtt"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Alles richteg"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"All dës dräi Felder kënnen %1$s sinn, an eent dovu muss et sinn. Also kann all Feld, dat all dräi gesäit, net %2$s sinn."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Kamera erlaben"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Bal - hal d\'Säit flaach a riicht zur Kamera, ouni Perspektivverzerrung"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"eng Eliminatioun, déi näischt ewechhëlt, ass keng Ofleedung"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" an "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Äntwert"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## App an Apparat (virausgefëllt)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- App: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"d\'Säiteverhältnis muss positiv sinn, mee war %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Unhuelung · hypothetesch Ziffer"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Unhuelung verworf · tatsächlech Kandidaten erëm hiergestallt"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"op d\'mannst %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Automatesch Foto"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Onsécher Räzelfotoen, Liesresultater a spéider Feldkorrekturen automatesch mat Freevia fir Erkennungsanalys an Training deelen. Standardméisseg ausgeschalt."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Vermeid d\'Spigelungen"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Zréck"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Zréck bei déi viregt Fro"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Zréck bei de visuellen Hiweis"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Zréck bei däi Feld"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Virdrun"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Virun dësem Schrëtt"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Blo Ziffere sinn d\'Léisung. Tipp op e Feld, fir dat Geliesent ze korrigéieren."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"Block %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"Block"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Block"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Block-Linn-Reduktioun"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"kann nëmmen enthalen"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Ofbriechen"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", Kandidaten %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"Opnambeleg"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Verbann eng Ziffer duerch déi Eenheeten, wou se nëmmen zwou Plazen huet, a fierf d\'Kette ofwiesselnd an zwou Faarwen. Eng Faarf ass iwwerall richteg."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Wann een %1$s duerch d\'Eenheete verkett, an deenen et nëmmen zwou méiglech Plazen huet, kréien dës Zellen ofwiesselnd zwou Faarwen. Eng dovun ass iwwerall richteg. Zwou Zelle vun der anerer Faarf leien an der selwechter Rei, wat net méiglech ass - also ass déi Faarf falsch, an %2$s gëtt aus all Zell mat där Faarf gestrach."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Wann een %1$s duerch d\'Eenheete verkett, an deenen et nëmmen zwou méiglech Plazen huet, kréien dës Zellen ofwiesselnd zwou Faarwen. Eng dovun ass iwwerall richteg. Zwou Zelle vun der anerer Faarf leien am selwechte Block, wat net méiglech ass - also ass déi Faarf falsch, an %2$s gëtt aus all Zell mat där Faarf gestrach."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Wann een %1$s duerch d\'Eenheete verkett, an deenen et nëmmen zwou méiglech Plazen huet, kréien dës Zellen ofwiesselnd zwou Faarwen. Eng dovun ass iwwerall richteg. Zwou Zelle vun der anerer Faarf leien an der selwechter Kolonn, wat net méiglech ass - also ass déi Faarf falsch, an %2$s gëtt aus all Zell mat där Faarf gestrach."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Wann %1$s duerch déi Eenheete verbonne gëtt, wou se nëmmen zwou Plazen huet, kréien dës Felder ofwiesselnd zwou Faarwen, vun deenen eng iwwerall richteg ass. Zwee Felder mat der Faarf %2$s leien an der selwechter %3$s, wat net méiglech ass - also ass déi Faarf falsch, an %4$s gëtt aus all Feld mat där Faarf gestrach."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Wann %1$s duerch déi Eenheete verbonne gëtt, wou se nëmmen zwou Plazen huet, kréien dës Felder ofwiesselnd zwou Faarwen, an eng Faarf ass iwwerall richteg. Dës Felder gesi béid Faarwen, also enthält, egal wéi d\'Kette ausfält, eent vun de Felder, déi se gesinn, %2$s - si selwer kënnen dat also net."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Wann een %1$s duerch d\'Eenheete verkett, an deenen et nëmmen zwou méiglech Plazen huet, kréien dës Zellen ofwiesselnd zwou Faarwen. Eng dovun ass iwwerall richteg. Zwou Zelle vun enger Faarf leien am selwechte Block, wat net méiglech ass - also ass déi Faarf falsch, an %2$s gëtt aus all Zell mat där Faarf gestrach."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Wann een %1$s duerch d\'Eenheete verkett, an deenen et nëmmen zwou méiglech Plazen huet, kréien dës Zellen ofwiesselnd zwou Faarwen. Eng dovun ass iwwerall richteg. Zwou Zelle vun enger Faarf leien an der selwechter Kolonn, wat net méiglech ass - also ass déi Faarf falsch, an %2$s gëtt aus all Zell mat där Faarf gestrach."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Wann een %1$s duerch d\'Eenheete verkett, an deenen et nëmmen zwou méiglech Plazen huet, kréien dës Zellen ofwiesselnd zwou Faarwen. Eng dovun ass iwwerall richteg. Zwou Zelle vun enger Faarf leien an der selwechter Rei, wat net méiglech ass - also ass déi Faarf falsch, an %2$s gëtt aus all Zell mat där Faarf gestrach."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Onsécher Felder fir ze kontrolléieren: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Iwwerpréiwen"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Iwwerpréif een onséchert Feld."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", als richteg iwwerpréift"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Wiel e Kandidat, fir ze gesinn, firwat en net an däi Feld ka kommen."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Sprooch auswielen"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Auswielen, wat gewise gëtt"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Zoumaachen"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Hiweis zoumaachen"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Iwwerpréiwung vum Geliesenen zuklappen"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"Faarf- a Grostufenzelle mussen déiselwecht Geometrie benotzen"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"Kolonn %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"Kolonn"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"Kolonnen"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Vergläich Zwangsketten a bevorzug déi, bei deene manner Felder ze verfollege sinn. Méi kuerz Kette kënne méi Schrëtt an der kompletter Léisung bedeiten."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Konsequenz %1$s vun %2$s · hypothetesch Zifferen"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"enthält"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Inhaltstyp"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Mam komplette Wee weiderfueren"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Widdersproch · Unhuelung scheitert"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", Widdersproch"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Widdersproch: Déi rout %1$s huet keng Plaz méi fir %2$s. Dat ass onméiglech, also muss d\'Ufanksunhuelung falsch sinn."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Widdersproch: Dat rout Feld huet kee Kandidat méi. Dat ass onméiglech, also muss d\'Ufanksunhuelung falsch sinn."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Läschufro kopéieren"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Richteg. Vergläich deng Iwwerleeunge mat der Erklärung hei drënner."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"dat opgehollent Bild konnt net dekodéiert ginn"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Déi gedréckt Ziffere konnten op där Foto net fonnt ginn."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"D\'Gitterlinne konnten net erkannt ginn - probéier nach eng Kéier."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHub konnt net opgemaach ginn. Kontaktéier de Support op %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Diagnosbeleger vun der Opnam konnten net gespäichert ginn"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"D\'Liesresultat konnt net agereecht ginn. Probéier wgl. nach eng Kéier, wann s du verbonne bass."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Sakgaass"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"LÄSCHEN"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Läschen"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Rapport läschen"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Dës Foto läschen"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Dëst Rätsel läschen"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Dëst Rätsel läschen?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Dës Areechung läschen?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Gëtt geläscht…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"D\'Läsche konnt net bestätegt ginn. Iwwerpréif deng Verbindung a probéier nach eng Kéier."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Läschufro"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"D\'Äntwert op d\'Läschufro huet dëse Reçu net bestätegt."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"De Läschservice huet HTTP %1$s zeréckginn."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Beschreif, wat geschitt ass, an d\'Schrëtt, fir et ze widderhuelen. Gëff un, ob s du déi erkannt Ziffere fir d\'éischt iwwerpréift a korrigéiert hues. Fir eng Iddi schreif „Net uwendbar“."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", Zil vun dësem Hiweis"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Apparat: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"D\'Diagnostik gouf gekierzt, fir an de Browserentworf ze passen. D\'Aktioun Diagnostik schécken an der App kann de komplette Rapport deelen."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"d\'Ziffer muss 1..9 sinn, mee war %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Zifferen net gelies"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"D\'Späichere vu Beleger um Datenträger beaflosst d\'Zäitmiessung; kee Benchmark fir Latenz."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", stëmmt net mat der Léisung iwwereneen"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"All Reçu identifizéiert eng agereecht Versioun vun engem Rätsel. Läsch en hei, fir de privat gespäicherte Rapport vu Freevia ze läschen."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Fréier Eliminatiounen: %1$s. Benotz d\'Linken op déi fréier Schrëtt, fir hir Beweiser ze kucken."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← fréier Beleger (Déift %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Fréier hypothetesch Asätz loossen nëmmen ee Kandidat iwwreg."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Fréier Schrëtt, déi an dësem Beweis benotzt ginn"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Feld änneren"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"aacht"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"eidel"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Eidel."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Eidel"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Englesch"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"abweichend Entréen"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"abweichend Entrée"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"All eenzel dovu fëllt e Feld aus."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"All Feld ass ausgefëllt, mee %1$s Äntwerte stëmmen net mat der Léisung iwwereneen."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"All Feld ass ausgefëllt, mee eng Äntwert stëmmt net mat der Léisung iwwereneen."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"All Sudoku mat enger eenzeger Léisung ka mat logeschen Iwwerleeunge geléist ginn; Rode gëtt ni gebraucht an hëlleft seelen. Dëst sinn d\'Iwwerleeungsmethoden, déi dës App erkenne kann an erkläert, déi einfachst fir d\'éischt. Wann eng dovun op dat opgemaacht Rätsel uwendbar ass, weist se dir all Plaz, wou dat de Fall ass."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Alles, wat s du bis elo ageschriwwen hues, ass richteg."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Elo verfügbar Beispiller: All eent geet vun dengem aktuelle Gitter aus."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 horizontal Linnen erwaart, %1$s kritt"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"10 vertikal Linnen erwaart, %1$s kritt"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81 Zellen erwaart, mee %1$s kritt"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"81 Zellen an all Block erwaart, %1$s an %2$s fonnt"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"een eenzegen 8-Bit-Kanal erwaart, mee %1$s kritt"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"e Bild vun 28x28 erwaart, mee %1$s Wäerter kritt"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Erwaart Verhalen oder proposéiert Verbesserung"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"zéng Linnen an all Richtung erwaart"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"zwee Bléck erwaart, %1$s fonnt"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Fréier Kandidateläschungen erklären (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Hiweiser erklären"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Sich e Feld, dat nëmmen nach zwee oder dräi Kandidaten huet - wat manner, wat besser, a wat méi d\'Rei, d\'Kolonn an de Block ronderëm ausgefëllt sinn, wat nach besser.\n\nWiel ee vu senge Kandidaten a schreif en liicht mat Bläistëft an. Verfolg elo d\'Konsequenzen: Déi Ziffer fält aus allem ewech, wat d\'Feld gesäit. Doduerch kann an engem vun deene Felder nëmmen ee Kandidat bleiwen, deen en anere forcéiert, an esou weider. Maach weider.\n\nEent vun zwee Saache geschitt. Entweeder leeft et aus, an du hues näischt geléiert - radéier et aus a probéier deen anere Kandidat. Oder du erreechs e Feld ouni Kandidaten oder eng Rei ouni Plaz fir eng Ziffer. Dat ass onméiglech, also war déi mat Bläistëft ageschriwwen Ziffer falsch, an du kanns se definitiv ausschléissen.\n\nOp dës Technik gräifs du zeréck, wann alles anescht näischt méi bréngt. Si ass méi lues a verlaangt Notéieren amplaz Mustererkennung, mee si kann Schrëtt opdecken, déi d\'Mustere verpassen. Eng Eliminatioun geet dacks duer, fir déi einfach Techniken erëm a Gang ze bréngen; verschidde Positioune brauchen nach eng méi déif Sich."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Sich zwee Felder mat de selwechten zwee Kandidaten, zum Beispill {3,7}, déi sech net gesinn - si leien normalerweis wäit vuneneen ewech.\n\nSich elo eng Rei, Kolonn oder e Block, wou 7 nëmmen zwou méiglech Plazen huet, vun deenen déi eng vum éischte Feld vun dengem Puer gesi gëtt an déi aner vum zweeten. Dat ass d\'Verbindung.\n\nEent vun deenen zwee Felder ass d\'7. Egal wéi eent, d\'Feld vun dengem Puer, dat et gesäit, kann net 7 sinn, also muss et 3 sinn. Du weess net, wéi en Enn d\'3 ass, nëmmen datt eent et ass - an dat geet duer, fir 3 aus all Feld auszeschléissen, dat béid Enner gesäit.\n\nDe schwéieren Deel ass d\'Verbindung. Sich also an der ëmgedréinter Reiefolleg: Markéier fir d\'éischt déi Eenheeten, wou eng Ziffer nëmmen zwou Plazen huet, a sich dann e passend Puer op béide Säiten."</string>
+    <string name="msg_finished_05343e98" formatted="false">"fäerdeg"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Dréck den Ausléiser, wann d\'Gitter riicht, ouni Perspektivverzerrung a roueg am Bild ass. De Knäppche funktionéiert op alle Fall."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Bréng dat ganzt Gitter an d\'Bild."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Bréng dat ganzt Gitter an d\'Bild"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"fënnef"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Verfolg e Wee, wou all Schrëtt op deem viregten opbaut."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"De komplette Beweis an der Reiefolleg verfollegen"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Verfolg dës Kette vu Felder mat zwee Kandidaten: Wann %1$s net %2$s ass, gëtt all Feld laanscht d\'Kette vum viregte forcéiert, an %3$s gëtt um Enn %4$s. Also enthält dat eent oder dat anert Enn %5$s, wat dës Ziffer aus all Feld ausschléisst, dat béid gesäit."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Zwangskette"</string>
+    <string name="msg_four_04efaf08" formatted="false">"véier"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Véier Felder an zwou Reien, zwou Kolonnen an zwee Bléck kënnen net all déi selwecht zwee Kandidaten enthalen, soss hätt d\'Rätsel zwou Léisungen."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia huet d\'Läsche bestätegt, mee dësen Telefon konnt de lokale Reçu net läschen. Probéier nach eng Kéier, fir déi lokal Botz ofzeschléissen."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia läscht dës Rapportversioun an hir privat Trainingskopie. Zukünfteg Korrekture kënnen ënner dengen Deelen-Astellungen en neie Rapport erstellen. E Modell, dee schonn domat trainéiert gouf, ka geléiert Ännerunge behalen."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Komplette Wee"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Zukünfteg onsécher Liesresultater schécken déi riichtgezunne Räzelfoto, Erkennungsresultater a Korrekturen u Freevia fir Analys an Training. Trainingskopië bleiwen, bis se ënner Areechungsreçue geläscht ginn; en trainéierte Modell ka geléiert Ännerunge behalen. Wann en onséchert Rätsel schonn op ass, gëtt et elo geschéckt. Du kanns dat an den Astellungen ausschalten."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Liicht"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Spigelunge maachen d\'Linnen onsiichtbar - kipp d\'Säit vum Liicht ewech"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"Grobild(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Gro Felder enthalen Bläistëftnotizen, déi d\'App ignoréiert. De Balken ënner enger Ziffer weist, wéi sécher se war. Tipp op e Feld fir d\'Detailer."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Handgeschriwwen"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Schwéier"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Verstoppt"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Verstoppt Puer"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Verstoppt Véiererg Grupp"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Verstoppt Eenzelkandidat"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Verstoppt Dräiergrupp"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Fréier Beleger verstoppen"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Wéi een et erkennt verstoppen"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", Hiweis %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Hiweis"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Hiweisbeweis"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Hiweisbegrënnung"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Hal roueg..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Hal roueg oder tipp op den Ausléiser"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Hal roueg, wärend d\'Kamera schaarf stellt..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Hal den Telefon flaach"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Hal den Telefon flaach iwwer dem Rätsel."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Hal den Telefon flaach iwwer dem Rätsel"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Wéi een et erkennt"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nWéi mir dohikommen:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Sich Felder mat genee zwee Kandidaten - en Y-Wing besteet aus dräi esou Felder an näischt anescht.\n\nHuelt eent als Pivot, zum Beispill {2,5}. Sich e Feld, dat et gesäit a mat {2,9}, an en anert, dat et gesäit a mat {5,9}. De Pivot ass entweder 2 oder 5. Wann en 2 ass, muss déi éischt Zang 9 sinn; wann en 5 ass, muss déi zweet 9 sinn. Op alle Fall steet eng 9 an enger vun den Zangen - du weess net a wéi enger, an du brauchs et net ze wëssen.\n\nAlso kann kee Feld, dat béid Zange gesäit, eng 9 sinn. Déi Felder sinn normalerweis déi zwee Ecker, déi de Rechteck komplettéieren."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hypothetesch %1$s, keng aginn Äntwert"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Wann %1$s Zifferen an enger Rei, Kolonn oder engem Block nëmmen an déi selwecht %2$s Felder kënne kommen, kënnen déi Felder näischt anescht enthalen."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Wann %1$s Felder an enger Rei, Kolonn oder engem Block zesumme genee %2$s Kandidaten hunn, gehéieren déi Zifferen an déi Felder an a keng aner an där Eenheet."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Wann eng Ziffer zwou Plazen an enger Rei an zwou an enger Kolonn huet, an eng vun all deenen am selwechte Block läit, muss eng vun deenen aneren zwou se enthalen."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Wann eng Ziffer an all vun zwou Reien zwou Plazen huet, vun deenen zwou an der selwechter Kolonn leien, muss eng vun deenen aneren zwou Plazen se enthalen."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Wann déi eenzeg Plaze vun enger Ziffer laanscht eng Linn all an engem Block leien, kann déi Ziffer aus dem Rescht vun deem Block ausgeschloss ginn."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Wann déi eenzeg Plaze vun enger Ziffer an %1$s Reien an de selwechten %2$s Kolonne leien, kann se soss iwwerall aus deene Kolonnen ausgeschloss ginn - dat selwecht gëllt mat vertauschte Reien a Kolonnen."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Wann déi eenzeg Plaze vun enger Ziffer an engem Block op enger Linn leien, kann déi Ziffer aus dem Rescht vun där Linn ausgeschloss ginn."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Wann d\'Unhuele vun enger Ziffer zu engem Feld féiert, dat näischt méi enthale kann, war déi Ziffer falsch."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"d\'Bildmoosse musse positiv sinn"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"An enger Kette vu Felder, déi all déi selwecht zwee Kandidaten enthalen, hunn déi zwee Enner vun enger Kette mat ongerueder Längt ënnerschiddlech Zifferen."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"An dësen %1$s %2$s kann %3$s nëmmen an dës %4$s %5$s kommen. Zesumme beleeë se all eenzel, also kann %6$s soss iwwerall aus deene %7$s ausgeschloss ginn."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"An dësen %1$s Kolonne kann %2$s nëmmen an dësen %3$s Reie stoen. Zesumme beleeë si all dës Reien, sou datt %4$s iwwerall soss an deene Reien ausgeschloss ka ginn."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"An dësen %1$s Reie kann %2$s nëmmen an dësen %3$s Kolonne stoen. Zesumme beleeë si all dës Kolonnen, sou datt %4$s iwwerall soss an deene Kolonnen ausgeschloss ka ginn."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"An dësen zwou %1$s huet %2$s jee nëmmen zwou Plazen, an %3$s an %4$s deelen eng %5$s - si kënnen also net béid %6$s sinn. Eng vu %7$s an %8$s ass et dofir, wat %9$s aus all Feld ausschléisst, dat béid gesäit."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"An dësen zwou Kolonnen huet %1$s jee nëmmen zwou méiglech Plazen, an %2$s an %3$s leien an der selwechter Rei - also kënnen net béid %4$s sinn. Eng vun den Zellen %5$s an %6$s ass dofir déi Ziffer, wat %7$s aus all Zell ausschléisst, déi mat béiden eng Eenheet deelt."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"An dësen zwou Reien huet %1$s jee nëmmen zwou méiglech Plazen, an %2$s an %3$s leien an der selwechter Kolonn - also kënnen net béid %4$s sinn. Eng vun den Zellen %5$s an %6$s ass dofir déi Ziffer, wat %7$s aus all Zell ausschléisst, déi mat béiden eng Eenheet deelt."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"An dëser %1$s kann %2$s nëmmen an dës %3$s Felder kommen, also sinn déi Felder reservéiert. Dat schléisst %4$s aus hinnen aus."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"An dëser %1$s kann %2$s nëmmen an engem Block stoen. Also ass %3$s an deem Block op dëser %4$s a kann aus dem Rescht vum Block ausgeschloss ginn."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"An dësem Block kann %1$s nëmmen an dësen %2$s Zelle stoen, also sinn déi Zelle reservéiert. Dat schléisst %3$s aus hinnen aus."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"An dëser Kolonn kann %1$s nëmmen an dësen %2$s Zelle stoen, also sinn déi Zelle reservéiert. Dat schléisst %3$s aus hinnen aus."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"An dëser Rei kann %1$s nëmmen an dësen %2$s Zelle stoen, also sinn déi Zelle reservéiert. Dat schléisst %3$s aus hinnen aus."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Ëmfaasst hir Fotoen, Liesresultater a Korrekturen. Schalt dat an den Astellungen aus."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Sich an engem eenzege Block eng Ziffer, déi nëmmen an zwee oder dräi Felder ka kommen, a kuck, ob se all an der selwechter Rei oder all an der selwechter Kolonn leien. Wann dat de Fall ass, ass d\'Ziffer sécher iergendwou op där Linn - du weess net wou, mee du weess, datt se an dësem Block ass. Also kann se néierens soss op där selwechter Linn baussent dem Block stoen.\n\nDat setzt eleng keng Ziffer an. Et raumt Kandidaten aus dem Wee, sou datt iergendwou anescht en Eenzelkandidat entsteet."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"An dësem Block kann %1$s nëmmen an dëser %2$s stoen. Also ass %3$s iergendwou hei a kann aus dem Rescht vun der %4$s ausgeschloss ginn."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem oder Iddi"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Dat ass hei op %1$s Plazen uwendbar. Géi vir, fir se eenzel duerchzegoen."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Dat ass hei op enger Plaz uwendbar. Géi ee Schrëtt vir, fir se ze gesinn."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Dat ass an dëser Positioun néierens uwendbar."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Et ass déi eenzeg verbleiwend Plaz fir %1$s an der markéierter %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Et ass dat ëmkreest Feld.\n\nDréck nach eng Kéier op Hiweis fir d\'Ziffer."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Behalen"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Zwangskette kuerz halen"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Sprooch"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Lizenzen"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Sich an enger Rei, Kolonn oder engem Block Felder mat nëmme wéinege verbleiwende Kandidaten. Huelt der %1$s a sammelt hir Kandidaten. Wann d\'Sammlung genee %2$s Zifferen enthält, sinn déi %3$s Ziffere reservéiert: Si mussen an iergendenger Reiefolleg an déi %4$s Felder kommen, och wann s du nach net soe kanns, wéi eng wou hikënnt.\n\nDat geet duer. All anert Feld an der Eenheet kann déi Zifferen ofginn, an normalerweis gëtt eent vun deene Felder duerno en Eenzelkandidat.\n\nD\'Felder brauchen net all déi selwecht Kandidaten - {2,7}, {2,9} an {7,9} sinn eng vollwäerteg Dräiergrupp, an et ass déi, déi d\'Leit iwwersinn."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Sich Felder mat de selwechten zwee Kandidaten - zum Beispill {4,9} -, déi eng Kette bilden, an där all Feld dat nächst gesäit. Dräi ginn net duer; du brauchs op d\'mannst véier.\n\nFierf se ënnerwee ofwiesselnd. Well all Feld dat nächst gesäit, kënne keng zwee Noperen déi selwecht Ziffer enthalen. D\'Kette liest sech also iwwerall als 4, 9, 4, 9 - oder 9, 4, 9, 4, an du kanns net soen, wéi eng Variant.\n\nOp alle Fall enthalen zwee Felder mat entgéintgesate Faarwen ënnerschiddlech Zifferen: Eent ass d\'4 an eent d\'9. Also kann alles, wat béid gesäit, keng vun deenen zwou sinn a verléiert béid Kandidaten op eemol.\n\nD\'Muster ass grad dofir einfach ze erkennen, well all Feld doran d\'selwecht ausgesäit. Verfolg déi identesch Puer duerch d\'Gitter a kuck, wou se sech beréieren."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Sich dräi Felder mat de selwechten zwee Kandidaten - zum Beispill {1,6} -, déi op dräi Ecker vun engem Rechteck leien. De Rechteck muss a genee zwee Bléck leien: zwou Reien an zwou Kolonnen, déi duerch zwee Bléck lafen, net véier.\n\nKuck elo de véierten Eck. Wann en och nëmmen 1 a 6 géif enthalen, hätt d\'Rätsel zwou Léisungen - du kéints d\'1en an d\'6en am Rechteck vertauschen, an alles anescht géif nach ëmmer passen. E korrekt erstallte Rätsel huet eng eenzeg Léisung, also muss de véierten Eck eppes anescht benotzen: Seng aner Kandidate bleiwen, an 1 a 6 falen ewech.\n\nDëst ass dat eenzegt Argument an der Sammlung, dat sech op den Ersteller amplaz op d\'Gitter bezitt. Et ass bei engem publizéierte Rätsel valabel an näischt wäert bei engem, dat s du scho falsch ausgefëllt hues, well et da méiglecherweis iwwerhaapt keng Léisung gëtt, déi eenzeg kéint sinn."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Kuck an dëse Block. Verfolg d\'Ëmrandung bis bei d\'Feld, dat dësen Hiweis erkläert."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Notizen"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Mëttel"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Méi"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Méi Liicht néideg"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Méi wéi eng Léisung, also gouf eng gedréckt Ziffer verpasst. Dréck op Léisen, fir d\'Léisungen ze gesinn an d\'Plazen, wou se sech ënnerscheeden."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Géi zeréck"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Géi méi no"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Géi méi no - d\'Gitter ass ze kleng fir ze liesen."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Plakeg"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Plakegt Puer"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Plakeg Véierergrupp"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Plakegen Eenzelkandidat"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Plakeg Dräiergrupp"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"D\'Technik nennen an d\'Felder weisen, déi se beweisen, amplaz just d\'Ziffer ze ginn."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"op d\'mannst 4 Punkte néideg, mee %1$s kritt"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Bestätegung néideg"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Neit Sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Nächst Konsequenz"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Nächste Schrëtt"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Et gi keng Biller automatesch bäigefüügt. Meldungen an Uschlëss, déi hei agereecht ginn, sinn ëffentlech. Schéckt Beispiller, déi Dir léiwer privat deele wëllt, un info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Zënter der leschter Installatioun vun der App gouf keng Foto refuséiert."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Keng Scandiagnostik verfügbar."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Keng Technik ass hei uwendbar"</string>
+    <string name="msg_none_140bedbf" formatted="false">"keng"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Keng dovu setzt eng Ziffer an e Feld: Si raume Kandidaten aus dem Wee, an esou gëtt e schwéiert Rätsel opgeschloss."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"De Moment keng op dengem Rätsel."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"keng Modelldatei fir Zifferen"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Net mat Sécherheet gelies - déi nooste Vermutung ass %1$s %2$s op %3$s. Fëll dëst Feld wgl. selwer aus."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Nach net als Gitter vun néng op néng erkannt - probéier d\'Bild nëmme mam Gitter ze fëllen, oder maach einfach d\'Foto"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"net ugefaangen"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Vun dësem Telefon konnt näischt geschéckt ginn."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Näischt méi ze léisen."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Hei kann näischt méi mat den Techniken, déi dës App kennt, logesch ofgeleet ginn."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"näischt Ongewéinleches"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"eng"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Ee Feld huet wéi eng gedréckt Ziffer ausgesinn, ass awer keng."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Eng gedréckt Ziffer gouf automatesch korrigéiert."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"eng Zell"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Nëmmen %1$s kann hei stoen - all aner Ziffer steet schonn an dëser Rei, Kolonn oder dësem Block."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Hei kann nëmmen %1$s stoen. Déi ervirgehuewen Zelle beleeën %2$s vun deenen aneren aacht Zifferen; %3$s gouf schonn éischter aus dëser Zell ausgeschloss, net duerch eppes, wat s du ronderëm si gesäis."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Nëmmen %1$s kann hei stoen. Déi markéiert Zelle beleeë véier vun deenen aneren aacht Zifferen; %2$s goufe schonn éischter fir dës Zell ausgeschloss, net duerch eppes, wat ronderëm si ze gesinn ass."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Nëmmen %1$s kann hei stoen. Déi markéiert Zelle beleeë sechs vun deenen aneren aacht Zifferen; %2$s goufe schonn éischter fir dës Zell ausgeschloss, net duerch eppes, wat ronderëm si ze gesinn ass."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Nëmmen %1$s kann hei stoen. Déi markéiert Zelle beleeën eng vun deenen aneren aacht Zifferen; %2$s goufe schonn éischter fir dës Zell ausgeschloss, net duerch eppes, wat ronderëm si ze gesinn ass."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Nëmmen %1$s kann hei stoen. Déi markéiert Zelle beleeë siwe vun deenen aneren aacht Zifferen; %2$s gouf schonn éischter fir dës Zell ausgeschloss, net duerch eppes, wat ronderëm si ze gesinn ass."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Nëmmen %1$s kann hei stoen. Déi markéiert Zelle beleeë fënnef vun deenen aneren aacht Zifferen; %2$s goufe schonn éischter fir dës Zell ausgeschloss, net duerch eppes, wat ronderëm si ze gesinn ass."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Nëmmen %1$s kann hei stoen. Déi markéiert Felder beleeën %2$s vun den aneren aacht Zifferen; %3$s %4$s virdrun aus dësem Feld ausgeschloss, net duerch eppes, wat s du ronderëm gesi kanns."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Nëmmen %1$s kann hei stoen. Déi markéiert Zelle beleeën zwou vun deenen aneren aacht Zifferen; %2$s goufe schonn éischter fir dës Zell ausgeschloss, net duerch eppes, wat ronderëm si ze gesinn ass."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Hei kann nëmmen %1$s stoen. Déi ervirgehuewen Zelle beleeën %2$s vun deenen aneren aacht Zifferen; %3$s goufe schonn éischter aus dëser Zell ausgeschloss, net duerch eppes, wat s du ronderëm si gesäis."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Nëmmen %1$s kann hei stoen. Déi markéiert Zelle beleeën dräi vun deenen aneren aacht Zifferen; %2$s goufe schonn éischter fir dës Zell ausgeschloss, net duerch eppes, wat ronderëm si ze gesinn ass."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Nëmmen %1$s kann hei stoen. Déi aner aacht Ziffere ginn duerch ausgefëllte Felder oder forcéiert Eenzelkandidaten an dëser Rei, Kolonn oder dësem Block ausgeschloss."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Nëmmen %1$s kann hei stoen, obwuel näischt ronderëm weist, firwat: All aacht aner Ziffere goufen duerch fréier Iwwerleeungen aus dësem Feld ausgeschloss, an net well se a senger Rei, Kolonn oder sengem Block ageschriwwe sinn."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Nëmmen %1$s gedréckt Ziffere goufe fonnt, wat fir e Rätsel ze wéineg ass."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"nëmme Véierelsdréiunge ginn ënnerstëtzt, net %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Maach en Entworf an dengem Browser op, an deem d\'Appversioun, den Telefonsmodell, d\'Android-Versioun an déi rezent Scandiagnostik ausgefëllt sinn. Ergänz selwer eng komplett Beschreiwung a relevant Screenshots.\n\nDu muss bei GitHub ugemellt sinn. Du kanns den Entworf virum Areechen iwwerpréiwen an änneren. Agereecht Rapporten an Uschlëss sinn ëffentlech. Keng Fotoe ginn automatesch ugehängt."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Appastellungen opmaachen"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"GitHub opmaachen"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Open-Source-Hiweiser"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Maach „Firwat dëst Feld?“ op, fir d\'Beleger fir de leschten Asaz ze gesinn, oder wiel en ausgeschlossene Kandidat, fir säi Beweis ze verfollegen."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache-Lizenz 2.0. Benotzt fir d\'Gitter ze fannen a riichtzezéien.\n\nAndroidX, Jetpack Compose a CameraX - Apache-Lizenz 2.0.\n\nKotlin - Apache-Lizenz 2.0.\n\nD\'Zifferenerkennung gouf mat der MNIST-Datebank vun handgeschriwwenen Ziffere vu LeCun, Cortes a Burges trainéiert, zesumme mat Zifferen, déi mat oppene Systemschrëften duergestallt goufen, a programmatesch gezeechenten Zifferen."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Déi nativ OpenCV-Bibliothéike konnten net geluede ginn"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotograféier en anert Rätsel."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Fotoen, déi s du behäls, ginn am private Späicher vun dëser App gespäichert a geläscht, wann s du se läschs oder d\'App deinstalléiers."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Fotoen, aus deenen d\'App kee Rätsel maache konnt. Schéck eng, da kann se ënnersicht ginn."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Wiel eng Ziffer a sich an de Reien déi, wou se genee nach zwee Felder huet. Huelt zwou esou Reien a kuck, ob eent vun hire Felder an der selwechter Kolonn läit.\n\nWann dat esou ass, leien déi zwee Felder an der selwechter Kolonn a kënnen net béid d\'Ziffer enthalen. Also enthält op d\'mannst eent vun de wäiten Enner se - déi zwee Felder op där anerer Säit. Du weess net wéi eent, an du brauchs et net ze wëssen: All Feld, dat béid wäit Enner gesäit, kann d\'Ziffer ofginn.\n\nMaach dat dann nach eng Kéier mat Kolonnen amplaz Reien. D\'Form ass en héicht Gebai mat engem niddregen niewendrun, wat den Numm erkläert an dir hëlleft, et ze erkennen, wann s du e puer gesinn hues."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Wiel eng Ziffer. Sich eng Rei, wou se genee zwou Plazen huet, an eng Kolonn, wou se genee zwou Plazen huet. Kuck elo, ob ee Feld vun der Rei an ee Feld vun der Kolonn am selwechte Block leien.\n\nWann dat esou ass, kënnen déi zwee net béid d\'Ziffer sinn - ee Block, eng Ziffer. Also ass op d\'mannst eent vun den zwee verbleiwenden Enner déi Ziffer, an alles, wat béid Enner gesäit, kann se ofginn.\n\nD\'Leit iwwersinn dës Technik, well näischt an enger Linn ausgeriicht ass: Déi véier Felder bilden eng onreegelméisseg Form, an dat eenzegt, wat se zesummenhält, ass de Block, deen déi zwee bannenzeg Enner deelen."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Wiel en eidelt Feld a géi 1 bis 9 duerch. Sträich alles, wat schonn a senger Rei, senger Kolonn oder sengem Block steet. Wann genee eng Ziffer iwwreg bleift, kënnt se dohinner.\n\nDëst ass d\'Technik, déi all déi aner virbereede sollen. Alles, wat méi schwéier ass, déngt dozou, e Feld op een eenzege Kandidat ze reduzéieren. Wann eng méi schwéier Technik also eppes bréngt, kuck als Nächst hei."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Wiel eng Ziffer an ignoréier all aner. Géi d\'Reien duerch an notéier déi, wou déi Ziffer nëmmen nach zwee oder dräi méiglech Felder huet. Sich %1$s esou Reien, deenen hir Felder an de selwechten %2$s Kolonne leien.\n\nWann s du se fënns, muss all vun deenen %3$s Reien d\'Ziffer an eng vun deene Kolonne setzen, a keng zwou kënnen déi selwecht Kolonn benotzen. Zesumme beleeë se also d\'Ziffer an allen %4$s Kolonnen - an all anert Feld an deene Kolonne kann se ofginn.\n\nMaach dat Ganzt dann nach eng Kéier mat vertauschte Kolonnen a Reien. D\'Hallschent dovu gëtt op déi zweet Manéier fonnt, an et ass déi Hallschent, no där déi meescht Leit ni sichen."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Setz %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Setz %1$s an d\'Rei %2$s, Kolonn %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Setz %1$s an däin ëmrandent Feld."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Hänk wgl. relevant Screenshots mat der Uschlossfunktioun vu GitHub un: d\'Rätsel, déi erkannt Zifferen, d\'Iwwerpréiwungsresultat oder d\'Hiweisphas, déi de Problem weist. Gëff, wou et hëlleft, déi erwaart an déi tatsächlech Resultater un."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Läscht wgl. meng Sudoku Buddy-Erkennungsareechungen. Reçu-IDen: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Ersetz dësen Text wgl. duerch eng komplett Beschreiwung vum Problem oder der Iddi. Gëff dësem Rapport e kuerzen, aussagekräftegen Titel."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Riicht d\'Kamera op e Sudoku-Rätsel"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Riicht d\'Kamera op e Sudoku-Rätsel."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Riicht d\'Kamera op e Sudoku-Rätsel op Pabeier. D\'App liest déi gedréckt Zifferen an alles, wat s du ageschriwwen hues, léist et a kann dir en Hiweis ginn, deng Äntwerten iwwerpréiwen oder déi ganz Léisung weisen."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Weisend Puer"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"SCHÉCKEN"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Rätsel gëtt virbereet…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Viregt"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Viregte Schrëtt"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Gedréckt"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Dateschutzpolitik"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Rätsellagerung"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Rätselen"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"D\'Rätsele ginn op dësem Telefon gelies a geléist. Wann Dir eng onsécher Liesung schéckt oder automatescht Deelen aktivéiert, ginn d\'Rätselfoto, déi ursprénglech Liesungen, d\'Onsécherheetsmarkéierungen an Är Korrekture sécher u Freevia fir Erkennungsanalys a privaten Training geschéckt. D\'Rapporte enthalen weder Ären Apparatmodell nach Diagnosdaten. Automatescht Deelen ass fakultativ; et gëtt keng Konten, reegelméisseg Notzungsanalysen oder Reklammen-Tracking. Trainingskopië kënne mat der Empfangsbestätegung geläscht ginn, mee e Modell, dee scho trainéiert gouf, ka geléiert Ännerunge behalen. Benotzt Empfangsbestätegungen an den Astellungen, fir e Rapport ze läschen."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"D\'Rätselen, déi fir Tester fotograféiert goufen, koume vu sudoku.cba.si. Dës App ass net mat hinne verbonnen."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"D\'Rätselen, déi Dir fotograféiert, ginn hei gespäichert, fir datt Dir se spéider weidermaache kënnt."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Erkennung"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Als handgeschriwwenen %1$s gelies, %2$s sécher."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Als gedréckten %1$s gelies, %2$s sécher."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Als eidel gelies – keng Tënt fonnt."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Als Kandidatemarkéierunge mam Bläistëft gelies an ignoréiert."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Liesung iwwerpréift."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Liesung geschéckt. Merci!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Rezent Scandiagnostik (virausgefëllt)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"D\'Erkennung ka Feeler maachen, besonnesch bei Handschrëft. Benotzt Liesen, fir déi erkannt Ziffere mat der Foto ze vergläichen, an tippt op eng Zell, fir se ze korrigéieren. D\'App markéiert onsécher Liesunge fir d\'Iwwerpréiwung; och eng sécher Liesung ka falsch sinn."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Unhuelung verwerfen"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Wäit ewech Puer"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$s ewechhuelen"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nSträich %1$s aus "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Ewechgeholl"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Begrënnung nach eng Kéier weisen"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"E Feeler oder eng Iddi op GitHub mellen"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Kamera nach eng Kéier probéieren"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Zréck op Schrëtt %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Erklärung weisen"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Liesung iwwerpréiwen oder schécken"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Liesung iwwerpréiwen"</string>
+    <string name="msg_right_883361d5" formatted="false">"Richteg"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Léisungswee ofgeschloss. Gitt zréck, fir all Zuch ze iwwerpréiwen, oder probéiert d\'Schrëtt selwer."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"Rei %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Rei %1$s, Kolonn %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Rei %1$s, Kolonn %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"Rei $1, Kolonn $2"</string>
+    <string name="msg_row_634768da" formatted="false">"Rei"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"Reien"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", ausgeschloss %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"D\'Scann-Diagnosdate konnten net gelies ginn."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Screenshots oder Rätselbeispiller"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Zweet Vermutung: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Fir d\'Übung auswielen"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Ausgewielt: Rei %1$s, Kolonn %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Diagnosdate schécken (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Diagnosdate schécken"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Dës Scanne schécken"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Dës Foto schécken"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Astellungen"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"siwen"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Onsécher Liesungen automatesch deelen"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Onsécher Liesungen automatesch deelen?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Widdersproch weisen"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Weist mir all %1$s op Ärem Rätsel"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Weist mir deen op Ärem Rätsel"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Einfach Fierwung"</string>
+    <string name="msg_six_44778d82" formatted="false">"sechs"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Wollekekrazert"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", Léisung %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Léisen"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Geléist, an all Äntwert ass richteg."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Äntwert mat Hëllef vum Léiser: setzt %1$s an %2$s. D\'Kandidate sinn %3$s. Déi vun der App ënnerstëtzt Techniken hu vun dëser Positioun aus keen Zuch fonnt. Hir Sich huet %4$s an der eenzeger Léisung fonnt; en detailléierte Beweis vun de Sichverzweigungen ass net verfügbar."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nÄntwert mat Hëllef vum Léiser: Déi vun der App ënnerstëtzt Techniken hu kee Schrëtt fonnt. En detailléierte Beweis ass net verfügbar."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminatioun mat Hëllef vum Léiser: eng Sich schléisst %1$s an der markéierter Zell aus, mee d\'App konnt keng kuerz Widdersprochskette fir d\'Uweisung produzéieren. En detailléierte Beweis ass net verfügbar."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Verschidden Zelle kënnen Notizen amplaz vun enger ganzer Ziffer enthalen."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Verschidden Ziffere goufen net sécher gelies."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Beim Liese vun där Foto ass eppes schifgaangen."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Zell"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nUfankskandidaten: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Schrëtt %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Riicht ausriichten"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategien"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Empfangsbestätegung"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"D\'Empfangsbestätegung ass ongëlteg."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Empfangsbestätegungen (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Empfangsbestätegungen"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"An der Äntwert op d\'Asendung feelt %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"De Status vun der Äntwert op d\'Asendung ass ongëlteg."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Den Asendungsservice ass net konfiguréiert."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Den Asendungsservice huet HTTP %1$s zeréckginn."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Asendunge sinn an dëser Versioun net verfügbar."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Schécken"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Zukünfteg onsécher Liesungen automatesch schécken"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Liesung schécken"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Onsécher Liesung fir d\'Analys schécken"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Aktualiséierung schécken"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Geschéckt"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Gëtt geschéckt…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy Diagnosdaten"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy Feedback - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy gëtt vu Freevia verëffentlecht. Kontakt: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy liest Rätselen iwwer d\'Kamera a brauch dofir Kamerazougang. D\'Erkennung an d\'Rätselgeschicht bleiwen op Ärem Telefon. Wann Dir eng onsécher Liesung schéckt, ginn hir Foto an hir Resultater sécher u Freevia geschéckt, fir d\'Erkennung ze verbesseren. Automatescht Deelen ass fakultativ a kann an den Astellungen ausgeschalt ginn."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy Scann"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy Scannen"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"De Quellcode vu Sudoku Buddy steet ënner der Apache License 2.0. Fir d\'Mark Freevia gëlle separat Markerechter."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku ass eng Rätselaart am Domaine public. Dës App léist Rätselen, déi Dir schonn hutt; si reproduzéiert oder verdeelt keng Rätsele vun aneren."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", ënnerstëtzend Beleger"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Huele mir un, datt déi markéiert Zell %1$s enthält. Déi nummeréiert Ziffere sinn hypothetesch."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Huele mer un, an dëser Zell stéing %1$s. Folleg de Feiler der Rei no: all Zell gëtt duerch déi virdrun agesat Ziffere festgeluecht - entweder ass déi Ziffer déi eenzeg, déi nach an d\'Zell passt, oder déi Zell ass déi eenzeg Plaz, wou d\'Ziffer nach ka stoen.\n\nDoduerch bleift an der rouder Eenheet keng Plaz fir %2$s. Déi doran markéiert Zifferen %3$s weisen d\'Plazen, wou se hätt kënne stoen, an all dës Zelle gouf grad duerch ee vun de Feiler beluecht. Eng Eenheet ouni Plaz fir eng Ziffer ass net méiglech - also steet hei net %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Huele mir un, dës Zell wier %1$s. Follegt de Feiler der Rei no: all Zell gëtt duerch déi viregt Asätz festgeluecht – entweder ass déi Ziffer déi eenzeg, déi si nach enthale kann, oder déi Zell ass déi eenzeg Plaz, wou d\'Ziffer nach ka stoen. Fir déi rout Zell bleift dann iwwerhaapt keng Ziffer méi, wat net méiglech ass – also ass et net %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Huele mer un, an dëser Zell stéing %1$s. Folleg de Feiler der Rei no: all Zell gëtt duerch déi virdrun agesat Ziffere festgeluecht - entweder ass déi Ziffer déi eenzeg, déi nach an d\'Zell passt, oder déi Zell ass déi eenzeg Plaz, wou d\'Ziffer nach ka stoen.\n\nDoduerch bleift an der rouder Rei keng Plaz fir %2$s. Déi doran markéiert Zifferen %3$s weisen d\'Plazen, wou se hätt kënne stoen, an all dës Zelle gouf grad duerch ee vun de Feiler beluecht. Eng Rei ouni Plaz fir eng Ziffer ass net méiglech - also steet hei net %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Huele mer un, an dëser Zell stéing %1$s. Folleg de Feiler der Rei no: all Zell gëtt duerch déi virdrun agesat Ziffere festgeluecht - entweder ass déi Ziffer déi eenzeg, déi nach an d\'Zell passt, oder déi Zell ass déi eenzeg Plaz, wou d\'Ziffer nach ka stoen.\n\nDoduerch bleift am roude Block keng Plaz fir %2$s. Déi doran markéiert Zifferen %3$s weisen d\'Plazen, wou se hätt kënne stoen, an all dës Zelle gouf grad duerch ee vun de Feiler beluecht. E Block ouni Plaz fir eng Ziffer ass net méiglech - also steet hei net %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Huele mir un, dës Zell wier %1$s. Follegt de Feiler der Rei no: all Zell gëtt duerch déi viregt Asätz festgeluecht – entweder ass déi Ziffer déi eenzeg, déi si nach enthale kann, oder déi Zell ass déi eenzeg Plaz, wou d\'Ziffer nach ka stoen.\n\nDoduerch bleift an %2$s a rout keng Plaz fir %3$s. Déi doran markéiert %4$s ware méiglech Plazen, an all eenzel ass eng Zell, déi ee vun de Feiler grad besat huet. An %5$s däerf keng Ziffer ouni Plaz bleiwen – also ass et net %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Huele mer un, an dëser Zell stéing %1$s. Folleg de Feiler der Rei no: all Zell gëtt duerch déi virdrun agesat Ziffere festgeluecht - entweder ass déi Ziffer déi eenzeg, déi nach an d\'Zell passt, oder déi Zell ass déi eenzeg Plaz, wou d\'Ziffer nach ka stoen.\n\nDoduerch bleift an der rouder Kolonn keng Plaz fir %2$s. Déi doran markéiert Zifferen %3$s weisen d\'Plazen, wou se hätt kënne stoen, an all dës Zelle gouf grad duerch ee vun de Feiler beluecht. Eng Kolonn ouni Plaz fir eng Ziffer ass net méiglech - also steet hei net %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Wiesselt op Duerno, fir den Zuch a seng Konsequenzen am Gitter ze gesinn."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Schwäertfësch"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Eng nei Foto maachen"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Nach eng Foto maachen"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Huelt eng Ziffer a markéiert all Eenheet, an där si nach genee zwou méiglech Zellen huet. Déi zwou bilden eng Wipp: eng dovun enthält d\'Ziffer an déi aner net.\n\nFänkt iergendwou un a fierft eng Zell, zum Beispill blo. Fierft hire Wippepartner gréng, dann deem säi Partner nees blo, a fuert esou weider, bis d\'Kette ophält. Entweeder sinn all blo Zelle richteg oder all gréng – Dir kënnt net soen, wéi eng, an dat geet fir zwou Saachen duer.\n\nÉischtens: wann zwou Zelle vun därselwechter Faarf an enger Rei, Kolonn oder engem Block optrieden, ass déi Faarf onméiglech. D\'Ziffer gëtt also aus all Zell mat där Faarf ewechgeholl, an déi aner Faarf ass iwwerall d\'Äntwert.\n\nZweetens: all Zell baussent der Kette, déi eng blo an eng gréng Zell gesäit, kann d\'Ziffer opginn, well eng vun deenen zwou si enthält, egal wéi d\'Kette ausfält.\n\nMam Bläistëft ass dat lues, mee et lount sech: eng Fierwung hëlt eng Ziffer dacks vun der hallwer Spillfläch ewech."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Huelt ëmmer eng Ziffer an eng Eenheet – zum Beispill: wou kann eng 4 an dësem Block stoen? Sträicht all Zell an der Eenheet ewech, déi schonn eng Ziffer huet oder eng 4 an hirer Rei oder Kolonn gesäit. Wann eng Zell iwwreg bleift, kënnt d\'4 dohinner.\n\nD\'Fal ass, datt Dir dat net erkennt, wann Dir nëmmen d\'Zell kuckt: si kann och nach fënnef aner Zifferen zouloossen, also gesäit näischt un hir festgeluecht aus. Kuckt d\'Ziffer amplaz vun der Zell, an et gëtt direkt siichtbar."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Foto maachen"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"D\'Foto automatesch maachen"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tippt op eng markéiert Zell, fir se ze iwwerpréiwen, oder bestätegt, datt all Liesunge richteg sinn."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Tippt fir d\'éischt op eng Zell am Gitter."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Test %1$s als Unhuelung an der markéierter Zell. Et ass keng Äntwert. Follegt de Konsequenzen, fir ze gesinn, firwat si net opgeet."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Unhuelung testen"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Merci, datt Dir hëlleft, d\'Erkennung ze verbesseren. Är Rätselfoto, Liesungen a Korrekture gi fir d\'Analys an den Training benotzt."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Dat ass och e gëltegen Zuch mat %1$s. Dëse Léisungswee weist en aneren Zuch; vergläicht säi Beweis hei drënner."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Dat ass net den Zuch, dee fir dëse Schrëtt ausgewielt gouf. Et kënnen aner gëlteg Zich ginn; kuckt nach eng Kéier oder weist d\'Erklärung vun dësem Schrëtt."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Dat ass richteg"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Dat ass de Rescht vum Rätsel. %1$s Zelle brauchen Äntwerte mat Hëllef vum Léiser, well déi vun der App ënnerstëtzt Technike keen Zuch fonnt hunn. Déi detailléiert Beweiser vun hire Siche sinn net verfügbar."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Dat ass de Rescht vum Rätsel. Eng Zell brauch eng Äntwert mat Hëllef vum Léiser, well déi vun der App ënnerstëtzt Technike keen Zuch fonnt hunn. Den detailléierte Beweis vun hirer Sich ass net verfügbar."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Dat ass de Rescht vum Rätsel, vun Ufank bis Enn."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Déi Foto konnt net gespäichert ginn, also gëtt et näischt ze schécken."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Déi Zell erlaabt %1$s. Sicht den Zuch, deen duerch d\'Technik vun dësem Schrëtt begrënnt ass, oder weist seng Erklärung."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Déi Zell ass scho gefëllt. Wielt eng eidel Zell."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"D\'Unhuelung gouf verworf. Mir ginn zréck op déi reell Kandidaten a sträichen %1$s an der markéierter Zell. Déi hypothetesch Ziffere ginn ewechgeholl."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"D\'Kamera konnt déi Foto net maachen."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"D\'Kamera ass net verfügbar. Maacht aner Kamera-Apps zou a probéiert dann nach eng Kéier."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"déi aner"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"D\'Foto vum %1$s an alles, wat doraus gelies gouf, ginn vun dësem Telefon geläscht. Dat kann net réckgängeg gemaach ginn."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" D\'Foto ass an denger Rätsellëscht ënner „Konnt net gelies ginn“."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"D\'Pivotzell hei ass %1$s oder %2$s. A béide Fäll gëtt eng vun deenen aneren zwou Zellen op %3$s festgeluecht, also ka keng Zell, déi se allebéid gesäit, %4$s sinn."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Dat weistend Puer ëmgedréint gelies. Huelt eng Rei oder eng Kolonn an eng Ziffer, déi nach eng Plaz doran brauch. Markéiert all Zell op där Linn, déi d\'Ziffer kéint ophuelen. Wann se all an engem Block leien, muss d\'Ziffer am Deel vun der Linn an deem Block stoen – also néierens soss am Block, och net an deenen zwou Reien oder Kolonnen, déi Dir net gekuckt hutt.\n\nWéi dat weistend Puer setzt dat eleng näischt an; et mécht Plaz fir eppes, wat et mécht."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Déi gedréckt Ziffere bilden net e léisbaart Rätsel."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nDéi verbleiwend Kandidaten op %1$s sinn {%2$s}. Setz %3$s an d\'Rei %4$s, Kolonn %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"De Rapport ass ze grouss, fir en ze schécken."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"De Y-Flillek mat engem Kandidat méi an der Pivotzell. Sicht eng Zell mat genee dräi Kandidaten, zum Beispill {1,4,7}, déi zwou Zelle mat jee zwee Kandidate gesäit – eng mat {1,7} an eng mat {4,7}.\n\nElo kënnen all dräi eng 7 sinn, an eng dovu muss et sinn. Fir d\'7 auszeschléissen, muss eng Zell also all dräi gesinn, net nëmmen déi zwou Zangen – an der Praxis heescht dat, datt si am selwechte Block wéi d\'Pivotzell an op enger Linn mat enger Zang läit.\n\nManner Eliminatioune wéi bei engem Y-Flillek, an aus deemselwechte Grond méi einfach ze iwwersinn: d\'Pivotzell fält net op."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Am markéierte Block gëtt et eng Zell, déi Dir ausfëlle kënnt.\n\nDréckt nach eng Kéier op Hiweis, fir ze gewuer ze ginn, wéi eng Technik se fënnt."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Hei bleift näischt méi ze begrënnen."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Dës %1$s Zellen enthalen all nëmmen %2$s an %3$s, an all Zell gesäit déi nächst, also wiessele se sech iwwer déi ganz Kette of. Tëscht %4$s an %5$s läit eng ongerued Zuel vu Verbindungen, also enthalen se verschidden Zifferen – wat %6$s aus allem ausschléisst, wat se allebéid gesäit."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Dës %1$s Zellen enthalen zesummen nëmmen %2$s, also fëllen déi Ziffere se an iergendenger Reiefolleg. Dat schléisst %3$s aus dem Rescht vun dëser Eenheet (%4$s) aus."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"An dësen %1$s Zelle sinn zesummen nëmmen %2$s méiglech, also fëllen déi Zifferen dës Zellen an iergendenger Reiefolleg. Dat schléisst %3$s aus deenen aneren Zelle vun dëser Rei aus."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"An dësen %1$s Zelle sinn zesummen nëmmen %2$s méiglech, also fëllen déi Zifferen dës Zellen an iergendenger Reiefolleg. Dat schléisst %3$s aus deenen aneren Zelle vun dëser Kolonn aus."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"An dësen %1$s Zelle sinn zesummen nëmmen %2$s méiglech, also fëllen déi Zifferen dës Zellen an iergendenger Reiefolleg. Dat schléisst %3$s aus deenen aneren Zelle vun dësem Block aus."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Dat sinn d\'Ufankskandidate fir Är Zell. Ofleedung erkläert, wéi eng Méiglechkeeten ausgeschloss kënne ginn."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Dës Ziffere kënnen net e Rätsel bilden, an et ass ze vill falsch, fir ze soen, wéi eng. Tippt op eng Zell, fir d\'Liesung ze korrigéieren, oder maacht d\'Foto nach eng Kéier."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Dës Ziffere kënnen net e Rätsel bilden. Eng Ännerung vun den %1$s agekreeste Zelle géif dat behiewen – tippt op eng dovun, fir d\'Liesung ze korrigéieren."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Dës Ziffere kënnen net e Rätsel bilden. Eng Ännerung vun där eenzeger agekreester Zell géif dat behiewen – tippt drop, fir d\'Liesung ze korrigéieren."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Dës Ziffere bilden net e Rätsel, also gouf eng falsch gelies. Dréckt op Léisen, fir ze gesinn, wéi eng Zellen ze korrigéiere sinn."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Dës véier Zelle bilden e Rechteck iwwer zwee Bléck, an dräi dovun enthalen nëmmen %1$s. Wann %2$s och nëmmen déi zwou Zifferen enthale géif, kéinten d\'Ziffere ronderëm d\'Rechteck vertosch ginn, an d\'Rätsel hätt zwou Léisungen. Et huet eng, also muss %3$s eppes anescht benotzen – an %4$s fält ewech."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Si kommen net bis zum Schluss: eppes hei huet d\'App komplett iwwerfuerdert."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Dat fëllt näischt aus. Et schléisst %1$s aus %2$s aus."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Domat gëtt näischt agedroen. %1$s gëtt fir %2$s Zellen ausgeschloss."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Domat gëtt näischt agedroen. %1$s gëtt fir eng Zell ausgeschloss."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nDëst ass déi éischt vun %1$s Schlussfolgerungen, déi zur Äntwert féieren."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Dëse Beweis erkläert een Hiweis, och d\'Kandidateneliminatiounen, déi zu senger Äntwert féieren. Gitt Schrëtt fir Schrëtt vir, fir d\'Begrënnung am Gitter ze verfollegen, a fuert dann mam ganze Léisungswee weider."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Dëst Rätsel konnt net virbereet ginn."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Dëst Rätsel konnt net gespäichert ginn. Dir kënnt et elo nach benotzen. Maacht Späicherplaz fräi, ier Dir eng aner Foto maacht."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Dëst Rätsel huet méi wéi eng Léisung, also gouf warscheinlech eng gedréckt Ziffer iwwersinn. Léisung %1$s vun %2$s gëtt gewisen – dréckt nach eng Kéier op Léisen fir déi nächst. Déi agekreeste Zellen ënnerscheede sech tëscht de gewisene Léisungen."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"D\'Foto vun dësem Rätsel konnt net opgemaach ginn."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Dës Begrënnung schléisst %1$s bestoend aus "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Dës Zell kéint Kandidatenotizen amplaz vun enger ganzer Ziffer enthalen. Iwwerpréift se wgl."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Dës Vue enthält fréier Kandidateneliminatiounen. Maacht hir Beweiser hei drënner op, fir se ze iwwerpréiwen."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"dräi"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Ze däischter, fir d\'Gitterlinnen ze erkennen"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Ofleedung"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Ausprobéiert"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Probéiert et selwer"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Aschalten"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Dréit den Telefon esou, datt d\'Rätsel oprecht ass."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tuteur"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"zwou"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Zwou Zelle mam selwechte Puer, déi duerch eng Wipp fir eng vun hiren Ziffere verbonne sinn, zwéngen déi aner Ziffer an eng dovun."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Draach mat zwou Schnéieren"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Eenzegaartegt Rechteck"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"Eenheet"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Onliesbar stellt keng CellReading-Lëscht bereit; déi exakt Agabezellen an d\'Resultat bleiwen erhalen."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"net ënnerstëtzt Versioun vum Modellformat"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Onsécher"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Sprooch vum Apparat benotzen"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Benotzt %1$s, tippt op eng Zell, aus där e Kandidat ewechgeholl ka ginn, a wielt dann déi Ziffer."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Benotzt %1$s, tippt op d\'Zell, déi Dir ausfëlle kënnt, a wielt dann hir Ziffer."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Ganz schwéier"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-Flillek"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"gouf"</string>
+    <string name="msg_were_910adfb4" formatted="false">"goufen"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Wat hutt Dir erwaart, oder wéi géif Är Iddi Iech hëllefen, Sudoku ze léisen oder ze léieren?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Wat geschitt ass a Schrëtt fir et ze widderhuelen (bei Feeler)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Wat et mécht"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Wou"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Firwat %1$s aus r%2$sc%3$s ewechgeholl gouf"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Firwat"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Firwat net %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Firwat dës Zell? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" mat der Léisung. Benotz Iwwerpréiwen, fir se ze kucken."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Schafft vun Ärer Zell aus no hannen. Wielt hei drënner eng Fro."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Schafft Ziffer fir Ziffer amplaz Zell fir Zell. Schreift fir eng Eenheet op, wou all feelend Ziffer nach kéint stoen. Sicht dann %1$s Zifferen, deenen hir Lëschten zesummen nëmmen %2$s Zellen ofdecken.\n\nDéi %3$s Ziffere mussen déi %4$s Zellen ausfëllen, also kann alles anescht doran gestrach ginn – wat dacks direkt aus enger dovun en nackten Eenzel oder en nackte Puer mécht.\n\nDat ass déi Technik, déi d\'Leit am schwéierste fannen, well näischt ze gesinn ass, wann een d\'Zelle kuckt: si hunn nach vill Kandidaten. D\'Muster läit an den Zifferen."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Schafft nëmme mat Zellen, déi nach genee zwee Kandidaten hunn.\n\nFänkt bei enger un, zum Beispill {2,6}, an huelt un, datt et net d\'2 ass – dann ass et d\'6. Gitt bei eng Zell, déi si gesäit an déi och eng 6 huet, zum Beispill {6,4}: déi kann net d\'6 sinn, also ass et d\'4. Gitt bei eng Zell, déi déi Zell gesäit an eng 4 enthält, a fuert weider; all Schrëtt gëtt vum viregte festgeluecht.\n\nWann Dir eng Zell erreecht, där hir aner Ziffer 2 ass – déi Ziffer, déi Dir am Ufank ausgeschloss hutt – sidd Dir fäerdeg. Entweeder war déi éischt Zell dach eng 2, oder d\'Kette ass duerchgelaf an déi lescht Zell ass eng 2. Een Enn oder dat anert enthält se, also kann näischt, wat béid Enner gesäit, se enthalen.\n\nHalt d\'Kette kuerz. Véier oder fënnef Zelle loosse sech mam Bläistëft fannen; doriwwer eraus gëtt et Buchféierung, an Zwangskette ass den éierlechen Numm dofir."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"d\'Aarbechtskant muss positiv an endlech sinn"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Konnt net gelies ginn"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Geschriwwen"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Falsch"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-Flillek"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-Kette"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-Flillek"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-Flillek"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Dir hutt dës Zell eidel gemaach."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Dir hutt dat op en handgeschriwwenen %1$s gesat."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Dir hutt dat op e gedréckten %1$s gesat."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Är Ännerunge si siichtbar, mee konnten net gespäichert ginn. Maacht Späicherplaz fräi a probéiert nach eng Kéier, d\'Rätsel ze änneren."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Är Fotoen an Är Privatsphär"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Är Rätselen"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Är gespäichert Rätselen"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Är Zell ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Är Zell bleift ëmrand. Gréng Zelle weisen de Beweis; duerchgestrachen Ziffere sinn ausgeschloss."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

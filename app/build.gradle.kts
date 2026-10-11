@@ -31,7 +31,9 @@ android {
         abi {
             isEnable = true
             reset()
-            include("arm64-v8a")
+            val localAbi = providers.gradleProperty("localApkAbi").orElse("arm64-v8a").get()
+            require(localAbi in setOf("arm64-v8a", "x86_64")) { "Unsupported local APK ABI" }
+            include(localAbi)
             isUniversalApk = false
         }
     }
@@ -95,6 +97,9 @@ android {
         compose = true
         buildConfig = true
     }
+
+    // Every picker language must be available immediately, including offline.
+    bundle { language { enableSplit = false } }
 
     testOptions { unitTests.all { it.useJUnitPlatform() } }
 

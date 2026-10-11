@@ -31,75 +31,75 @@ internal fun VisualHintPanel(state: PuzzleState, onChange: (PuzzleState) -> Unit
             listOf("Where", "Square", "Trace", "Answer").forEachIndexed { depth, label ->
                 TextButton(onClick = { onChange(state.copy(hintDepth = depth,
                     hintNavigation = HintNavigation())) }, enabled = depth != state.hintDepth) {
-                    Text("${depth + 1}. $label")
+                    Text(localized("${depth + 1}. $label"))
                 }
             }
         }
-        Text("Your square stays outlined. Green squares show evidence; crossed digits are ruled out.",
+        Text(localized("Your square stays outlined. Green squares show evidence; crossed digits are ruled out."),
             style = MaterialTheme.typography.bodySmall)
         when (state.hintDepth) {
-            0 -> Text("Look in this box. Follow the outline to the square this hint will explain.")
-            1 -> Text("These are the starting candidates for your square. Trace explains which possibilities can be ruled out.")
+            0 -> Text(localized("Look in this box. Follow the outline to the square this hint will explain."))
+            1 -> Text(localized("These are the starting candidates for your square. Trace explains which possibilities can be ruled out."))
             else -> {
                 if (lesson == null) {
                     if (state.hintDepth == 3) {
-                        Text("Place ${hint.digit} in your outlined square.", style = MaterialTheme.typography.titleMedium)
-                        Text("Open ‘Why this square?’ to see the final placement evidence, or choose a ruled-out candidate to trace its proof.")
-                    } else Text("Work backwards from your square. Choose a question below.")
+                        Text(localized("Place ${hint.digit} in your outlined square."), style = MaterialTheme.typography.titleMedium)
+                        Text(localized("Open ‘Why this square?’ to see the final placement evidence, or choose a ruled-out candidate to trace its proof."))
+                    } else Text(localized("Work backwards from your square. Choose a question below."))
                     val branches = VisualHint.branches(hint)
                     for (step in branches) {
                         TextButton(onClick = { onChange(state.copy(hintNavigation = navigation.visit(step))) }) {
-                            Text(VisualHint.label(hint, step))
+                            Text(localized(VisualHint.label(hint, step)))
                         }
                     }
                     // Hidden singles and other placement proofs may have evidence outside
                     // the target without directly eliminating a target candidate.
                     TextButton(onClick = { onChange(state.copy(hintNavigation = navigation.visit(hint.proof.lastIndex))) }) {
-                        Text("Why this square? · ${hint.technique}")
+                        Text(localized("Why this square? · ${hint.technique}"))
                     }
                 } else {
                     val firstQuestion = navigation.parents.firstNotNullOfOrNull { it.step } ?: frame.step!!
-                    Text("Your square ← ${VisualHint.label(hint, firstQuestion)}" +
-                        if (navigation.parents.size > 1) " ← earlier evidence (depth ${navigation.parents.size - 1})" else "",
+                    Text(localized("Your square ← ${VisualHint.label(hint, firstQuestion)}" +
+                        if (navigation.parents.size > 1) " ← earlier evidence (depth ${navigation.parents.size - 1})" else ""),
                         style = MaterialTheme.typography.labelLarge)
-                    Text(lesson.deduction.technique, style = MaterialTheme.typography.titleMedium)
+                    Text(localized(lesson.deduction.technique), style = MaterialTheme.typography.titleMedium)
                     if (lesson.dependencies.isNotEmpty()) {
-                        Text("This view includes earlier candidate removals. Open their evidence below to check them.",
+                        Text(localized("This view includes earlier candidate removals. Open their evidence below to check them."),
                             style = MaterialTheme.typography.bodySmall)
                     }
                     Row {
-                        TextButton(modifier = Modifier.weight(1f), onClick = { changeFrame(frame.copy(before = true)) }, enabled = !frame.before) { Text("Before") }
+                        TextButton(modifier = Modifier.weight(1f), onClick = { changeFrame(frame.copy(before = true)) }, enabled = !frame.before) { Text(localized("Before")) }
                         TextButton(modifier = Modifier.weight(1f), onClick = { changeFrame(frame.copy(before = false)) }, enabled = frame.before) {
-                            Text(if ((lesson.deduction as? Deduction.Elimination)?.chain != null) "Test assumption" else "After")
+                            Text(localized(if ((lesson.deduction as? Deduction.Elimination)?.chain != null) "Test assumption" else "After"))
                         }
                     }
-                    Text(VisualHint.caption(hint, frame))
+                    Text(localized(VisualHint.caption(hint, frame)))
                     val chain = (lesson.deduction as? Deduction.Elimination)?.chain
                     if (chain != null && !frame.before) {
-                        Text(when {
+                        Text(localized(when {
                             frame.consequence > chain.links.size -> "Assumption rejected · real candidates restored"
                             frame.consequence == chain.links.size -> "Contradiction · assumption fails"
                             frame.consequence == 0 -> "Assumption · hypothetical digit"
                             else -> "Consequence ${frame.consequence} of ${chain.links.size - 1} · hypothetical digits"
-                        },
+                        }),
                             style = MaterialTheme.typography.labelSmall)
                         Row {
                             TextButton(modifier = Modifier.weight(1f), onClick = { changeFrame(frame.copy(consequence = frame.consequence - 1)) },
-                                enabled = frame.consequence > 0) { Text("Previous") }
+                                enabled = frame.consequence > 0) { Text(localized("Previous")) }
                             TextButton(modifier = Modifier.weight(1f), onClick = { changeFrame(frame.copy(consequence = frame.consequence + 1)) },
                                 enabled = frame.consequence <= chain.links.size) {
-                                Text(when (frame.consequence) {
+                                Text(localized(when (frame.consequence) {
                                     chain.links.size - 1 -> "Show contradiction"
                                     chain.links.size -> "Reject assumption"
                                     else -> "Next consequence"
-                                })
+                                }))
                             }
                         }
                     }
                     if (lesson.dependencies.isNotEmpty()) {
                         TextButton(onClick = { showEarlier = !showEarlier }) {
-                            Text(if (showEarlier) "Hide earlier evidence" else
-                                "Explain earlier candidate removals (${lesson.dependencies.size})")
+                            Text(localized(if (showEarlier) "Hide earlier evidence" else
+                                "Explain earlier candidate removals (${lesson.dependencies.size})"))
                         }
                     }
                     if (lesson.dependencies.isNotEmpty() && showEarlier) {
@@ -109,17 +109,17 @@ internal fun VisualHintPanel(state: PuzzleState, onChange: (PuzzleState) -> Unit
                         }
                         for (step in lesson.dependencies.sorted()) {
                             TextButton(onClick = { onChange(state.copy(hintNavigation = navigation.visit(step))) }) {
-                                Text(VisualHint.label(hint, step, target))
+                                Text(localized(VisualHint.label(hint, step, target)))
                             }
                         }
                     }
                     TextButton(onClick = { onChange(state.copy(hintNavigation = navigation.back())) }) {
-                        Text(if (navigation.parents.size <= 1) "Back to your square" else "Back to the previous question")
+                        Text(localized(if (navigation.parents.size <= 1) "Back to your square" else "Back to the previous question"))
                     }
                 }
-                TextButton(onClick = { onChange(state.showHintProof()) }) { Text("Follow the full proof in order") }
+                TextButton(onClick = { onChange(state.showHintProof()) }) { Text(localized("Follow the full proof in order")) }
             }
         }
-        TextButton(onClick = { onChange(state.close()) }) { Text("Close hint") }
+        TextButton(onClick = { onChange(state.close()) }) { Text(localized("Close hint")) }
     }
 }

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nE caselle messe in risaltu ne sò a prova.\n\nAppughjate torna Indiziu per vede chì casella."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s è %2$s cuntenenu tramindui solu %3$s è %4$s. In stu %5$s, %6$s hà solu dui lochi, ognunu vistu da una di ste caselle - dunque unu di sti dui hè %7$s, è l\'estremità chì u vede deve esse %8$s. In i dui casi, una estremità hè %9$s, ciò chì esclude %10$s da ogni casella chì vede tramindui."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s è %2$s ponu cuntene tramindui solu %3$s è %4$s. In stu bloccu, %5$s hà solu duie pusizioni pussibule, una vista da ognuna di ste cellule - dunque una di quelle duie hè %6$s, è l\'estremità chì a vede deve esse %7$s. In ogni casu, una estremità hè %8$s, ciò chì elimina %9$s da tutte e cellule chì vedenu tramindui."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s è %2$s ponu cuntene tramindui solu %3$s è %4$s. In sta culonna, %5$s hà solu duie pusizioni pussibule, una vista da ognuna di ste cellule - dunque una di quelle duie hè %6$s, è l\'estremità chì a vede deve esse %7$s. In ogni casu, una estremità hè %8$s, ciò chì elimina %9$s da tutte e cellule chì vedenu tramindui."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s è %2$s ponu cuntene tramindui solu %3$s è %4$s. In sta riga, %5$s hà solu duie pusizioni pussibule, una vista da ognuna di ste cellule - dunque una di quelle duie hè %6$s, è l\'estremità chì a vede deve esse %7$s. In ogni casu, una estremità hè %8$s, ciò chì elimina %9$s da tutte e cellule chì vedenu tramindui."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s à a fila %2$s, culonna %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s à u passu %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s pò cuntene solu %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s ùn pò cuntene %2$s perchè %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s ùn pò cuntene %2$s perchè %3$s pò cuntene solu %4$s in a listessa culonna %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s ùn pò cuntene %2$s perchè %3$s pò cuntene solu %4$s in u listessu bloccu %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s ùn pò cuntene %2$s perchè %3$s pò cuntene solu %4$s in a listessa riga %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s ùn pò cuntene %2$s perchè %3$s cuntene %4$s in u listessu bloccu %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s ùn pò cuntene %2$s perchè %3$s cuntene %4$s in a listessa culonna %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s ùn pò cuntene %2$s perchè %3$s cuntene %4$s in a listessa riga %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s cuntene %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s viote"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, entrata"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s deve andà quì: hè l\'unica cellula in sta culonna %2$s chì pò sempre cuntene %3$s.\n\n%4$s\n\n%5$s permette attualmente %6$s, ma ogni culonna deve cuntene %7$s esattamente una volta. Dunque piazzate %8$s in a riga %9$s, culonna %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s deve andà quì: hè a sola casella in stu %2$s %3$s chì pò ancu cuntene un %4$s.\n\n%5$s\n\n%6$s permette attualmente %7$s, ma ogni %8$s deve cuntene %9$s esattamente una volta. Dunque mette %10$s à a fila %11$s, culonna %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s deve andà quì: hè l\'unica cellula in stu bloccu %2$s chì pò sempre cuntene %3$s.\n\n%4$s\n\n%5$s permette attualmente %6$s, ma ogni bloccu deve cuntene %7$s esattamente una volta. Dunque piazzate %8$s in a riga %9$s, culonna %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s deve andà quì: hè l\'unica cellula in sta riga %2$s chì pò sempre cuntene %3$s.\n\n%4$s\n\n%5$s permette attualmente %6$s, ma ogni riga deve cuntene %7$s esattamente una volta. Dunque piazzate %8$s in a riga %9$s, culonna %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s hà dui lochi in sta fila è dui in sta culonna. %2$s è %3$s sò in u listessu bloccu, dunque ùn ponu esse tramindui %4$s - ciò chì lascia unu di %5$s è %6$s cuntenelu, è esclude %7$s da ogni casella chì vede tramindui."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s in a stessa %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s in u listessu bloccu."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s in a listessa culonna."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s in a listessa riga."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s hè digià esclusu da sta casella. I so candidati sò "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s hè esclusu da %2$s, chì "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s hè esclusu da %2$s, chì pò cuntene solu %3$s in a listessa culonna %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s hè esclusu da %2$s, chì pò cuntene solu %3$s in a listessa riga %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s hè esclusu da %2$s, chì pò cuntene solu %3$s in u listessu bloccu %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s hè esclusu da %2$s, chì cuntene %3$s in u listessu bloccu %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s hè esclusu da %2$s, chì cuntene %3$s in a listessa culonna %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s hè esclusu da %2$s, chì cuntene %3$s in a listessa riga %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s hè furzatu in a casella numerutata più recente (fila %2$s, culonna %3$s). %4$s A freccia seguita una piazzatura chì cuntribuisce; e cunsequenze precedenti contanu dinù."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s manca in u classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s di %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s di elle riempienu una casella; l\'altre eliminanu prima i candidati chì impediscenu d\'avanzà."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"coppia %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s stampate, %2$s, %3$s sbagliate"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s stampate, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s stampate"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, indiziu stampatu"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"quadruplettu %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s foto ricusate, a più recente prima:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: elimina %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Numaru di caselle: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s passi formanu stu percorsu, è a tecnica sustenuta più difficiule hè un %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"triplettu %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s hè statu eliminatu da %2$s da un ragiunamentu precedente nant\'à i candidati."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s scritte à manu"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"un\'imagine %1$sx%2$s richiede %3$s byte ma ne hà ricevutu %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"una casella ùn era nè una cifra nè un puntu"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Una catena di caselle cù dui candidati chì principia è finisce cù a stessa cifra mette quella cifra à una estremità o à l\'altra."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Una cifra cù una sola pusizione pussibule in una fila, culonna o bloccu appartene à quella pusizione."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Un %1$s scrittu à manu."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Un %1$s stampatu."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Una casella rossa mostra a cifra chì l\'app ci hà lettu. S\'ella ùn hè micca ciò chì avete scrittu, tuccate a casella per curregela."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Una casella cù una sola cifra pussibule deve cuntene quella cifra."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Una lista di tecniche ùn hè mai cumpleta, è i sudoku più difficiuli sò custruiti per mette in fiascu tuttu ciò ch\'ella cuntene. Dunque, quandu nisuna di ste tecniche trova nunda, u tutore risolve una sola casella pruvendu i so candidati, dice chjaramente ciò ch\'ellu hà fattu, è cuntinueghja à ragiunà da quì. Ghjunghje sempre à a fine d\'un sudoku, è ùn face mai passà una risposta circata per una deduzzione."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Un pivot cù trè candidati è duie pinze currispundenti cù dui candidati escludenu una cifra da ogni casella chì vede tutte e trè."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Un pivot cù dui candidati è duie pinze cù dui candidati ponu esclude una cifra da ogni casella chì vede e duie pinze."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"À prupositu"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Dopu"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Dopu sta mossa"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Tuttu currettu"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Tutte ste trè caselle ponu cuntene %1$s, è una d\'elle deve cuntenelu. Dunque ogni casella chì vede tutte e trè ùn pò cuntene %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Permette a camera"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Guasgi - tenite a pagina piatta è senza distorsione di perspettiva davanti à a camera"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"un\'eliminazione chì ùn elimina nunda ùn hè micca una deduzzione"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" è "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Risposta"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## App è dispusitivu (preriempiutu)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- App: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"u rapportu d\'aspettu deve esse pusitivu ma era %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Suppusizione · cifra ipotetica"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Suppusizione ricusata · candidati veri ristabiliti"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"almenu %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Foto automatica"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Spartite in autumaticu cù Freevia e foto di sudoku incerti, i risultati di lettura è e currezzioni successive di e caselle per l\'analisi è l\'addestramentu di a ricunniscenza. Disattivatu per difettu."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Evitate i riflessi"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Ritornu"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Ritornu à a dumanda precedente"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Ritornu à l\'indiziu visuale"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Ritornu à a vostra casella"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Prima"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Prima di sta mossa"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"E cifre turchine sò a suluzione. Tuccate una casella per currege ciò chì hè statu lettu."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"bloccu %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"bloccu"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Bloccu"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Riduzzione bloccu-linea"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Camera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"pò cuntene solu"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Annullà"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidati %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"Prova di cattura"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Catenate una cifra à traversu l\'unità induv\'ella hà solu duie pusizioni pussibuli, culurite a catena cù dui culori alternati, è unu di i culori hè veru in tutta a catena."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Cunnettendu %1$s in catena à traversu l\'unità induve hà solu duie pusizioni pussibule, ste cellule piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie cellule di l\'altru culore sò in a listessa riga, ciò chì hè impussibule - dunque quellu culore hè falsu, è %2$s hè eliminatu da ogni cellula di quellu culore."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Cunnettendu %1$s in catena à traversu l\'unità induve hà solu duie pusizioni pussibule, ste cellule piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie cellule di l\'altru culore sò in u listessu bloccu, ciò chì hè impussibule - dunque quellu culore hè falsu, è %2$s hè eliminatu da ogni cellula di quellu culore."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Cunnettendu %1$s in catena à traversu l\'unità induve hà solu duie pusizioni pussibule, ste cellule piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie cellule di l\'altru culore sò in a listessa culonna, ciò chì hè impussibule - dunque quellu culore hè falsu, è %2$s hè eliminatu da ogni cellula di quellu culore."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Catenendu %1$s à traversu l\'unità induv\'ellu hà solu duie pusizioni pussibuli, ste caselle piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie caselle di culore %2$s sò in a stessa %3$s, ciò chì hè impussibule - dunque quellu culore hè falsu, è %4$s hè eliminatu da ogni casella di quellu culore."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Catenendu %1$s à traversu l\'unità induv\'ellu hà solu duie pusizioni pussibuli, ste caselle piglianu dui culori alternati, è unu di i culori hè veru in tutta a catena. Ste caselle vedenu i dui culori, dunque qualunque sia l\'esitu di a catena, una di e caselle ch\'elle vedenu cuntene %2$s - ciò chì vole dì ch\'elle ùn ponu cuntenelu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Cunnettendu %1$s in catena à traversu l\'unità induve hà solu duie pusizioni pussibule, ste cellule piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie cellule d\'un culore sò in u listessu bloccu, ciò chì hè impussibule - dunque quellu culore hè falsu, è %2$s hè eliminatu da ogni cellula di quellu culore."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Cunnettendu %1$s in catena à traversu l\'unità induve hà solu duie pusizioni pussibule, ste cellule piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie cellule d\'un culore sò in a listessa culonna, ciò chì hè impussibule - dunque quellu culore hè falsu, è %2$s hè eliminatu da ogni cellula di quellu culore."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Cunnettendu %1$s in catena à traversu l\'unità induve hà solu duie pusizioni pussibule, ste cellule piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie cellule d\'un culore sò in a listessa riga, ciò chì hè impussibule - dunque quellu culore hè falsu, è %2$s hè eliminatu da ogni cellula di quellu culore."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Caselle incerte da verificà: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Verificà"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Verificate una casella incerta."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", verificatu currettu"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Sceglite un candidatu per vede perchè ùn pò andà in a vostra casella."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Sceglite a lingua"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Sceglite ciò chì deve esse mustratu"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Chjode"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Chjode l\'indiziu"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Riduce a rivista di lettura"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"e caselle in culore è in livelli di grisgiu devenu aduprà a listessa geumetria"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"culonna %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"culonna"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"culonne"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Paragunate e catene furzanti è preferite quelle cù menu caselle da seguità. Catene più corte ponu significà più passi in a suluzione cumpleta."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Cunsequenza %1$s di %2$s · cifre ipotetiche"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"cuntene"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Tipu di cuntenutu"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Cuntinuà cù u percorsu cumpletu"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Cuntradizzione · a suppusizione fiasca"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", cuntradizzione"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Cuntradizzione: a %1$s rossa ùn hà più nisuna pusizione per %2$s. Hè impussibule, dunque a suppusizione iniziale deve esse falsa."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Cuntradizzione: a casella rossa ùn hà più nisun candidatu. Hè impussibule, dunque a suppusizione iniziale deve esse falsa."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Cupià a dumanda di cancellazione"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Currettu. Paragunate u vostru ragiunamentu cù a spiegazione quì sottu."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"ùn si hè pussuta decudificà l\'imagine catturata"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Ùn si sò pussute truvà e cifre stampate in sta foto."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Ùn si sò pussute distingue e linee di a griglia - pruvate torna."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Ùn si hè pussutu apre GitHub. Cuntattate l\'assistenza à %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Ùn si sò pussute cunservà e prove di cattura di debug"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Ùn si hè pussutu mandà a lettura. Pruvate torna quandu site cunnessu."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Strada senza sboccu"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"CANCELLÀ"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Cancellà"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Cancellà u raportu"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Cancellà sta foto"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Cancellà stu sudoku"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Cancellà stu sudoku?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Cancellà st\'inviu?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Cancellazione…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Ùn si hè pussuta cunfirmà a cancellazione. Verificate a vostra cunnessione è pruvate torna."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Dumanda di cancellazione"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"A risposta di cancellazione ùn hà micca cunfirmatu sta ricevuta."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"U serviziu di cancellazione hà restituitu HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Discrivite ciò chì hè accadutu è i passi per ripruducelu. Dite s\'è vo avete prima verificatu è currettu e cifre ricunnisciute. Per un\'idea, scrivite «Ùn s\'applica micca»."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", destinazione di st\'indiziu"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Dispusitivu: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostica accurtata per entre in l\'abbozzu di u navigatore. L\'azzione Mandà a diagnostica di l\'app pò sparte u raportu cumpletu."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"a cifra deve esse 1..9 ma era %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Cifre micca lette"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"A cunservazione di e prove nant\'à u discu affetta i tempi; ùn hè micca una prova di riferimentu di latenza."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", ùn currisponde micca à a suluzione"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Ogni ricevuta identifica una revisione di sudoku mandata. Cancellatela quì per caccià da Freevia u raportu cunservatu in privatu."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Eliminazioni precedenti: %1$s. Aduprate i ligami di i passi precedenti per esaminà e so prove."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← prova precedente (prufundità %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"I piazzamenti ipotetichi precedenti li lascianu un solu candidatu."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Passi precedenti aduprati in sta prova"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Mudificà a casella"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"ottu"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"viotu"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Viotu."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Viotu"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Inglese"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"entrate chì ùn currispondenu micca"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"entrata chì ùn currisponde micca"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Ognuna riempie una casella."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Ogni casella hè piena, ma %1$s risposte ùn currispondenu micca à a suluzione."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Ogni casella hè piena, ma una risposta ùn currisponde micca à a suluzione."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Ogni sudoku cù una sola suluzione pò esse risoltu ragiunendu; induvinà ùn hè mai necessariu è aiuta raramente. Eccu i modi di ragiunà chì st\'app pò ricunnosce è spiegà, da i più faciuli. Quandu unu s\'applica à u sudoku apertu, l\'app vi mustrerà tutti i lochi induv\'ellu s\'applica."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Tuttu ciò chì avete scrittu sin\'à avà hè currettu."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Esempii dispunibuli avà: ognunu parte da a vostra griglia attuale."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 linee urizuntali aspettate, %1$s ricevute"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"10 linee verticali aspettate, %1$s ricevute"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81 caselle aspettate, %1$s ricevute"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"81 caselle aspettate in ogni bloccu, %1$s è %2$s truvate"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"un solu canale di 8 bit aspettatu, ma %1$s ricevutu"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"un\'imagine 28x28 aspettata, ma %1$s valori ricevuti"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Cumportamentu previstu o migliuramentu prupostu"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"dece linee aspettate in ogni direzzione"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"dui blocchi aspettati, %1$s truvati"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Spiegà l\'eliminazioni precedenti di candidati (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Spiegà l\'indizii"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Truvate una casella cù solu dui o trè candidati - menu ci n\'hè, megliu hè, è più a fila, a culonna è u bloccu intornu sò pieni, megliu hè ancu.\n\nSceglite unu di i so candidati è scrivitelu appena à matita. Avà seguitate e cunsequenze: quella cifra sparisce da tutte e caselle chì a casella vede, ciò chì pò lascià una di quelle caselle cù un solu candidatu, chì ne furza un\'altra, è cusì via. Cuntinuate.\n\nAccade una di duie cose. O u percorsu si spegne, è ùn avete amparatu nunda - sguassate è pruvate l\'altru candidatu. O ghjunghjite à una casella senza nisun candidatu, o à una fila senza nisuna pusizione per una cifra. Hè impussibule, dunque a cifra scritta à matita era falsa, è pudete escludela definitivamente.\n\nHè a tecnica da aduprà quandu tutte l\'altre ùn danu più nunda. Hè più lenta è dumanda di tene traccia di i passi invece di ricunnosce schemi, ma pò scopre mosse chì i schemi ùn trovanu micca. Una sola eliminazione basta spessu à fà riparte e tecniche faciuli; certe pusizioni anu sempre bisognu d\'una ricerca più prufonda."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Truvate duie caselle cù i stessi dui candidati, per esempiu {3,7}, chì ùn si vedenu micca - di solitu sò luntane l\'una da l\'altra.\n\nAvà circate una fila, culonna o bloccu induve 7 hà solu duie caselle pussibuli, una vista da a prima casella di a vostra coppia è l\'altra da a seconda. Eccu u ligame.\n\nUna di quelle duie caselle cuntene 7. Qualunque sia, a casella di a vostra coppia chì a vede ùn pò cuntene 7, dunque deve cuntene 3. Ùn sapete micca quale estremità cuntene 3, solu chì una d\'elle u cuntene - è basta per esclude 3 da ogni casella chì vede e duie estremità.\n\nA parte difficiule hè u ligame, dunque circatelu à l\'inversu: marcate prima l\'unità induve una cifra hà solu duie pusizioni pussibuli, dopu circate una coppia currispundente da ogni latu."</string>
+    <string name="msg_finished_05343e98" formatted="false">"finitu"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Scattate quandu a griglia hè senza distorsione di perspettiva in u quadru è ferma. U buttone funziona sempre in ogni casu."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Fate entre tutta a griglia in u campu di vista."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Fate entre tutta a griglia in u campu di vista"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"cinque"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Seguitate un percorsu induve ogni mossa si basa nant\'à a precedente."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Seguità a prova cumpleta in ordine"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Seguitate sta catena di caselle cù dui candidati: s\'è %1$s ùn hè micca %2$s, ogni casella di a catena hè furzata da a precedente, è %3$s diventa %4$s. Dunque una estremità o l\'altra cuntene %5$s, ciò chì l\'esclude da ogni casella chì vede tramindue."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Catena furzante"</string>
+    <string name="msg_four_04efaf08" formatted="false">"quattru"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Quattru caselle in duie file, duie culonne è dui blocchi ùn ponu micca tutte cuntene i stessi dui candidati, altrimente u sudoku averia duie suluzioni."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia hà cunfirmatu a cancellazione, ma stu telefunu ùn hà pussutu caccià a ricevuta lucale. Pruvate torna per compie a pulizia lucale."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia cancellerà sta revisione di u raportu è a so copia privata d\'addestramentu. Currezzioni future ponu creà un novu raportu secondu e vostre paràmetre di spartera. Un mudellu digià addestratu nant\'à ellu pò cunservà i cambiamenti amparati."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Percorsu cumpletu"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"E letture incerte future manderanu à Freevia a foto di u sudoku raddrizzata, i risultati di ricunniscenza è e currezzioni per l\'analisi è l\'addestramentu. E copie d\'addestramentu fermanu finu à ch\'elle sianu cancellate da Ricevute d\'inviu; un mudellu addestratu pò cunservà i cambiamenti amparati. S\'è un sudoku incertu hè digià apertu, serà mandatu avà. Pudete disattivà què in Paràmetri."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Dolce"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"I riflessi cancellanu e linee - inclinate a pagina luntanu da a luce"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ImmagineGrigia(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"E caselle grisge cuntenenu note à matita, chì l\'app ignora. A barra sottu à una cifra indica quant\'ella ne era sicura. Tuccate una casella per i dettagli."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Scrittu à manu"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Difficiule"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Piattu"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Coppia piatta"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Quadruplu piattu"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Singulu piattu"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Triplu piattu"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Piattà e prove precedenti"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Piattà cumu ricunnoscelu"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", indiziu %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Indiziu"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Prova di l\'indiziu"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Ragiunamentu di l\'indiziu"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"State fermu..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"State fermu, o tuccate u scattadore"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"State fermu mentre a camera mette à focu..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tenite u telefunu pianu"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tenite u telefunu pianu sopra à u sudoku."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tenite u telefunu pianu sopra à u sudoku"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"urizuntale\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Cumu ricunnoscelu"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCumu ci ghjunghjimu:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Circate caselle cù esattamente dui candidati - una Y-wing hè fatta di trè d\'elle è nunda d\'altru.\n\nPigliatene una cum\'è pivot, per esempiu {2,5}. Circate una casella ch\'ella vede cù {2,9}, è un\'altra ch\'ella vede cù {5,9}. U pivot hè 2 o 5. S\'ellu hè 2, a prima pinza deve esse 9; s\'ellu hè 5, a seconda deve esse 9. In ogni casu un 9 appare in una di e pinze - ùn sapete micca quale, è ùn avete bisognu di sapellu.\n\nDunque nisuna casella chì vede e duie pinze pò cuntene 9. Quelle caselle sò di solitu i dui cantoni chì compienu u rettangulu."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", %1$s ipoteticu, micca una risposta inserita"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"S\'è %1$s cifre in una fila, culonna o bloccu ponu andà solu in e stesse %2$s caselle, quelle caselle ùn ponu cuntene nunda d\'altru."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"S\'è %1$s caselle in una fila, culonna o bloccu spartenu esattamente %2$s candidati trà elle, quelle cifre appartenenu à quelle caselle è à nisun\'altra in l\'unità."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"S\'è una cifra hà duie pusizioni pussibuli in una fila è duie in una culonna, è una di ognuna sparte un bloccu, una di l\'altre duie deve cuntenela."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"S\'è una cifra hà duie pusizioni pussibuli in ognuna di duie file è sparte una culonna, una di l\'altre duie pusizioni deve cuntenela."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"S\'è tutte e pusizioni pussibuli d\'una cifra nant\'à una linea sò in un solu bloccu, quella cifra pò esse esclusa da u restu di quellu bloccu."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"S\'è e sole pusizioni pussibuli d\'una cifra in %1$s file sò in e stesse %2$s culonne, pò esse esclusa da u restu di quelle culonne - è listessu scambiendu file è culonne."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"S\'è e sole pusizioni pussibuli d\'una cifra in un bloccu sò nant\'à a stessa linea, quella cifra pò esse esclusa da u restu di quella linea."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"S\'è suppone una cifra porta à una casella chì ùn pò cuntene nunda, quella cifra era falsa."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"e dimensioni di l\'imagine devenu esse pusitive"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"In una catena di caselle chì cuntenenu tutte i stessi dui candidati, e duie estremità d\'una catena di lunghezza dispari cuntenenu cifre sfarente."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"In ste %1$s %2$s, %3$s pò andà solu in ste %4$s %5$s. Inseme l\'occupanu tutte, dunque %6$s pò esse esclusu da u restu di quelle %7$s."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"In ste %1$s culonne, %2$s pò andà solu in ste %3$s righe. Inseme l\'occupanu tutte, dunque %4$s pò esse eliminatu da tutte l\'altre cellule di quelle righe."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"In ste %1$s righe, %2$s pò andà solu in ste %3$s culonne. Inseme l\'occupanu tutte, dunque %4$s pò esse eliminatu da tutte l\'altre cellule di quelle culonne."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"In questi dui %1$s, %2$s hà solu duie pusizioni pussibuli in ognunu, è %3$s è %4$s spartenu un %5$s - dunque ùn ponu micca esse tramindui %6$s. Dunque, una trà %7$s è %8$s hè quellu numeru, ciò chì esclude %9$s da ogni casella chì vede tramindui."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"In ste duie culonne, %1$s hà solu duie pusizioni pussibule in ognuna, è %2$s è %3$s sò in a listessa riga - dunque ùn ponu esse tramindui %4$s. Unu trà %5$s è %6$s hè dunque quella cifra, ciò chì elimina %7$s da ogni cellula chì vede tramindui."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"In ste duie righe, %1$s hà solu duie pusizioni pussibule in ognuna, è %2$s è %3$s sò in a listessa culonna - dunque ùn ponu esse tramindui %4$s. Unu trà %5$s è %6$s hè dunque quella cifra, ciò chì elimina %7$s da ogni cellula chì vede tramindui."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"In sta %1$s, %2$s pò andà solu in ste %3$s caselle, dunque quelle caselle sò riservate. Què ne esclude %4$s."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"In sta %1$s, %2$s pò andà solu in un bloccu. Dunque %3$s hè in quellu bloccu nant\'à sta %4$s, è pò esse esclusu da u restu di u bloccu."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"In stu bloccu, %1$s pò andà solu in ste %2$s cellule, dunque quelle cellule sò riservate. Quessa ne elimina %3$s."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"In sta culonna, %1$s pò andà solu in ste %2$s cellule, dunque quelle cellule sò riservate. Quessa ne elimina %3$s."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"In sta riga, %1$s pò andà solu in ste %2$s cellule, dunque quelle cellule sò riservate. Quessa ne elimina %3$s."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Include e so foto, letture è currezzioni. Disattivate què in Paràmetri."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Dentru un solu bloccu, truvate una cifra chì pò andà solu in duie o trè caselle, è verificate s\'elle sò tutte in a stessa fila, o tutte in a stessa culonna. S\'ellu hè cusì, a cifra hè di sicuru in qualchì locu nant\'à quella linea - ùn sapete micca induve, ma sapete ch\'ella hè dentru stu bloccu. Dunque ùn pò esse in altrò nant\'à a stessa linea fora di u bloccu.\n\nQuè ùn piazza nunda da per sè. Elimina candidati per fà apparisce un singulu in altrò."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Dentru stu bloccu, %1$s pò andà solu in sta %2$s. Dunque %3$s hè in qualchì locu quì, è pò esse esclusu da u restu di a %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Prublema o idea"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"S\'applica in %1$s lochi quì. Avanzate per passalli in rivista."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"S\'applica in un locu quì. Avanzate per vedelu."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Ùn s\'applica in nisun locu in sta pusizione."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Hè a sola pusizione chì ferma per %1$s in a %2$s messa in risaltu."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Hè a casella circundata.\n\nAppughjate torna Indiziu per a cifra."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Medusa"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Cunservà"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Mantene corte e catene furzanti"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Lingua"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licenze"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Circate in una fila, culonna o bloccu caselle cù pochi candidati. Pigliatene %1$s è riunite i so candidati. S\'è l\'inseme cuntene esattamente %2$s cifre, quelle %3$s cifre sò riservate: devenu andà in quelle %4$s caselle in qualchì ordine, ancu s\'è ùn pudete ancu dì quale va induve.\n\nBasta què. Ogni altra casella di l\'unità pò rinuncià à quelle cifre, è di solitu una di quelle caselle diventa tandu un singulu.\n\nE caselle ùn anu micca tutte bisognu di i stessi candidati - {2,7}, {2,9} è {7,9} facenu un triplu perfettamente validu, è hè quellu chì a ghjente ùn vede micca."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Circate caselle cù i stessi dui candidati - per esempiu {4,9} - chì formanu una catena, ognuna videndu a seguente. Trè ùn bastanu micca; ci ne vole almenu quattru.\n\nCuluritele alternativamente mentre avanzate. Postu chì ogni casella vede a seguente, duie vicine ùn ponu cuntene a stessa cifra, dunque a catena hè 4, 9, 4, 9 da capu à fine - o 9, 4, 9, 4, è ùn pudete sapè quale.\n\nIn ogni casu, duie caselle di culori opposti cuntenenu cifre sfarente: una hè 4 è l\'altra 9. Dunque ogni casella chì vede tramindue ùn pò esse nè l\'una nè l\'altra, è perde i dui candidati à tempu.\n\nU schema hè faciule à ricunnosce precisamente perchè tutte e so caselle parenu listesse. Seguitate e coppie identiche in a griglia è guardate induv\'elle si toccanu."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Circate trè caselle cù i stessi dui candidati - per esempiu {1,6} - in trè cantoni d\'un rettangulu. U rettangulu deve esse in esattamente dui blocchi: duie file è duie culonne chì attraversanu dui blocchi, micca quattru.\n\nAvà guardate u quartu cantone. S\'ellu cuntenia anch\'ellu solu 1 è 6, u sudoku averia duie suluzioni - puderiate scambià l\'1 è i 6 intornu à u rettangulu è tuttu u restu fermerebbe validu. Un sudoku ben custruitu hà una sola suluzione, dunque u quartu cantone deve aduprà qualcosa d\'altru: i so altri candidati fermanu, è 1 è 6 sò eliminati.\n\nHè l\'unicu argumentu di u repertoriu chì riguarda u creatore invece di a griglia. Hè validu per un sudoku publicatu è ùn vale nunda per unu chì avete digià riempiutu male, perchè tandu pò ùn avè nisuna suluzione chì possa esse unica."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Guardate in stu bloccu. Seguitate u cuntornu sin\'à a casella chì st\'indiziu spiegherà."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Note"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Moderatu"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Più"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Ci vole più luce"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Più d\'una suluzione, dunque una cifra stampata ùn hè stata letta. Appughjate Risolve per vede e suluzioni è induv\'elle differiscenu."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Alluntanatevi"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Avvicinatevi"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Avvicinatevi - a griglia hè troppu chjuca per esse letta."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Nudu"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Coppia nuda"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Quadruplu nudu"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Singulu nudu"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Triplu nudu"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Dà u nome di a tecnica è mustrà e caselle chì a provanu, invece di dà solu a cifra."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"ci volenu almenu 4 punti ma %1$s sò stati ricevuti"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Ci vole una cunferma"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Novu sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Cunsequenza seguente"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Passu seguente"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Nisuna maghjina hè aghjunta automaticamente. E segnalazioni è l’allegati mandati quì sò publichi. Mandate à info@freevia.org l’esempii chì preferite sparte in privatu."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Nisuna fotografia hè stata ricusata dapoi l\'ultima installazione di l\'app."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Nisuna diagnostica di scansione dispunibule."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Nisuna tecnica s\'applica quì"</string>
+    <string name="msg_none_140bedbf" formatted="false">"nisuna"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Nisuna mette una cifra in una casella: eliminanu candidati, ciò chì permette di sbluccà un sudoku difficiule."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Nisuna nant\'à u vostru sudoku per avà."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"ùn hè micca un schedariu di mudellu di cifre"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Lettura senza cunfidenza - a stima più vicina hè %1$s %2$s à %3$s. Riempite sta casella voi stessu."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Ùn hè ancu ricunnisciuta cum\'è una griglia di nove per nove - pruvate à riempie u quadru cù a griglia sola, o pigliate simpliciamente a foto"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"micca principiatu"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Ùn si hè pussutu mandà nunda da stu telefunu."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Ùn ferma nunda da risolve."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Ùn si pò deduce più nunda quì cù e tecniche chì st\'app cunnosce."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"nunda d\'insolitu"</string>
+    <string name="msg_ok_565339bc" formatted="false">"D\'accordu"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"una"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Una casella paria cuntene una cifra stampata, ma ùn ne cuntene micca."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Una cifra stampata hè stata curretta in autumaticu."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"una casella"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Solu %1$s pò andà quì - ogni altra cifra appare digià in sta fila, culonna o bloccu."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Solu %1$s pò andà quì. E cellule messe in risaltu occupanu %2$s di l\'altre ottu cifre; %3$s hè statu eliminatu da sta cellula prima, micca per via di qualcosa chì si vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Solu %1$s pò entre quì. E caselle messe in risaltu cuntenenu quattru di l\'ottu altre cifre; %2$s sò state escluse da sta casella nanzu, micca per via di ciò chì si pò vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Solu %1$s pò entre quì. E caselle messe in risaltu cuntenenu sei di l\'ottu altre cifre; %2$s sò state escluse da sta casella nanzu, micca per via di ciò chì si pò vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Solu %1$s pò entre quì. E caselle messe in risaltu cuntenenu una di l\'ottu altre cifre; %2$s sò state escluse da sta casella nanzu, micca per via di ciò chì si pò vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Solu %1$s pò entre quì. E caselle messe in risaltu cuntenenu sette di l\'ottu altre cifre; %2$s hè stata esclusa da sta casella nanzu, micca per via di ciò chì si pò vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Solu %1$s pò entre quì. E caselle messe in risaltu cuntenenu cinque di l\'ottu altre cifre; %2$s sò state escluse da sta casella nanzu, micca per via di ciò chì si pò vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Solu %1$s pò andà quì. E caselle messe in risaltu occupanu %2$s di l\'altre ottu cifre; %3$s %4$s esclusu da sta casella prima, micca da qualcosa chì pudete vede intornu."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Solu %1$s pò entre quì. E caselle messe in risaltu cuntenenu duie di l\'ottu altre cifre; %2$s sò state escluse da sta casella nanzu, micca per via di ciò chì si pò vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Solu %1$s pò andà quì. E cellule messe in risaltu occupanu %2$s di l\'altre ottu cifre; %3$s sò stati eliminati da sta cellula prima, micca per via di qualcosa chì si vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Solu %1$s pò entre quì. E caselle messe in risaltu cuntenenu trè di l\'ottu altre cifre; %2$s sò state escluse da sta casella nanzu, micca per via di ciò chì si pò vede intornu à ella."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Solu %1$s pò andà quì. L\'altre ottu cifre sò escluse da caselle piene o da candidati singuli furzati in sta fila, culonna o bloccu."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Solu %1$s pò andà quì, ancu s\'è nunda intornu mostra perchè: tutte l\'altre ottu cifre sò state escluse da sta casella da ragiunamenti precedenti, invece d\'esse scritte in a so fila, culonna o bloccu."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Solu %1$s cifre stampate sò state truvate, ciò chì hè troppu pocu per un sudoku."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"solu i quarti di giru sò sustenuti, micca %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Aprite un abbozzu in u vostru navigatore cù a versione di l\'app, u mudellu di telefunu, a versione Android è a diagnostica di scansione recente digià riempiuti. Aghjunghjite voi stessu una descrizzione cumpleta è catture di schermu pertinenti.\n\nCi vole à cunnettassi à GitHub. Pudete rivede è mudificà l\'abbozzu prima di mandallu. I raporti mandati è l\'allegati sò publichi. Nisuna fotografia hè allegata in autumaticu."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Apre i paràmetri di l\'app"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Apre GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Avvisi di codice apertu"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Aprite «Perchè sta casella?» per vede e prove di u piazzamentu finale, o sceglite un candidatu esclusu per seguità a so prova."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Licenza Apache 2.0. Adupratu per truvà è raddrizzà a griglia.\n\nAndroidX, Jetpack Compose è CameraX - Licenza Apache 2.0.\n\nKotlin - Licenza Apache 2.0.\n\nU ricunniscitore di cifre hè statu addestratu nant\'à a basa di dati MNIST di cifre scritte à manu di LeCun, Cortes è Burges, inseme cù cifre rese da caratteri aperti di u sistema è cifre disegnate per prugramma."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Ùn si sò pussute caricà e bibliuteche native OpenCV"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografiate un altru sudoku."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"E fotografie chì cunservate sò tenute in u spaziu privatu di st\'app è sò cacciate quandu e cancellate o disinstallate l\'app."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Foto da e quali l\'app ùn hà pussutu creà un sudoku. Mandatene una per ch\'ella possi esse esaminata."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Sceglite una cifra è esaminate e file per truvà quelle induv\'ella hà esattamente duie caselle pussibuli. Pigliate duie di ste file è guardate s\'è una di e so caselle hè in a stessa culonna.\n\nS\'ellu hè cusì, quelle duie caselle sò in a stessa culonna è ùn ponu tramindue cuntene a cifra. Dunque almenu una di l\'estremità luntane a cuntene - e duie caselle da l\'altra parte. Ùn sapete micca quale, è ùn avete bisognu di sapellu: ogni casella chì vede e duie estremità luntane pò rinuncià à a cifra.\n\nDopu rifate cù e culonne invece di e file. A forma hè un palazzu altu cù unu bassu accantu, da induve vene u nome è cumu a ricunniscite dopu avè ne vistu qualchì esempiu."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Sceglite una cifra. Truvate una fila induv\'ella hà esattamente duie pusizioni pussibuli è una culonna induv\'ella hà esattamente duie pusizioni pussibuli. Avà verificate s\'è una casella di a fila è una di a culonna sò in u listessu bloccu.\n\nS\'ellu hè cusì, quelle duie ùn ponu tramindue cuntene a cifra - un bloccu, una cifra. Dunque almenu una di e duie estremità restanti a cuntene, è ogni casella chì vede e duie estremità pò rinuncià à a cifra.\n\nA ghjente ùn vede spessu sta tecnica perchè ùn ci hè nunda da allinià: e quattru caselle formanu una figura asimmetrica, è l\'unicu ligame hè u bloccu spartutu da e duie estremità interne."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Sceglite una casella viota è passate da 1 à 9, scartendu tuttu ciò chì appare digià in a so fila, culonna o bloccu. S\'ella ferma esattamente una cifra, va quì.\n\nHè a tecnica chì tutte l\'altre servenu à preparà. Ogni tecnica più difficiule hè un modu di riduce una casella à un solu candidatu, dunque quandu una tecnica più difficiule dà un risultatu, cercate quì dopu."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Sceglite una cifra è ignurate tutte l\'altre. Esaminate e file è nutate quelle induve sta cifra hà solu duie o trè caselle pussibuli. Circate %1$s di ste file cù e caselle alliniate in e stesse %2$s culonne.\n\nS\'è vo e truvate, ognuna di quelle %3$s file deve mette a cifra in una di quelle culonne, è duie ùn ponu aduprà a stessa culonna. Dunque inseme occupanu a cifra in tutte e %4$s culonne - è ogni altra casella in quelle culonne pò rinuncià ci.\n\nDopu rifate tuttu scambiendu culonne è file. A mità si trova in stu secondu sensu, è hè a mità chì a maiò parte di a ghjente ùn cerca mai."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Mettite %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Mettite %1$s in a fila %2$s, culonna %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Mettite %1$s in a vostra casella cuntornata."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Allegate catture di schermu pertinenti cù u cuntrollu d\'allegati di GitHub: u sudoku, e cifre ricunnisciute, u risultatu di Verificà, o u passu di l\'indiziu chì mostra u prublema. Includite i risultati previsti è ottenuti quand\'ellu hè utile."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Per piacè cancellate i mo invii di ricunniscenza Sudoku Buddy. ID di ricevute: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Rimpiazzate stu testu cù una descrizzione cumpleta di u prublema o di l\'idea. Date à stu raportu un titulu cortu è descrittivu."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Puntate a camera versu un sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Puntate a camera versu un sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Puntate a camera versu un sudoku nant\'à carta. L\'app leghje e cifre stampate è tuttu ciò chì avete scrittu, u risolve, è pò dà vi un indiziu, verificà e vostre risposte, o mustrà a suluzione sana."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Coppia puntante"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"MANDÀ"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Preparazione di u sudoku…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Precedente"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Passu precedente"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Stampatu"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Pulitica di cunfidenzialità"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Memurizazione di e griglie"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Griglie"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"E griglie sò lette è risolte nant\'à stu telefuninu. Sè vo mandate una lettura incerta, o attivate a spartera automatica, a foto di a griglia, e letture uriginali, l\'indicatori d\'incertezza è e vostre currezzioni sò mandati in modu sicuru à Freevia per l\'analisi di a ricunniscenza è l\'addestramentu privatu. I raporti ùn cuntenenu nè u mudellu di u vostru dispusitivu nè dati diagnostichi. A spartera automatica hè facultativa; ùn ci hè nè conti, nè analisi abituale di l\'usu, nè tracciamentu publicitariu. E copie d\'addestramentu ponu esse sguassate cù a ricevuta, ma un mudellu digià addestratu pò cunservà i cambiamenti amparati. Aduprate Ricevute d\'inviu in i Paràmetri per sguassà un raportu."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"E griglie fotografiate per e prove venianu da sudoku.cba.si. St\'app ùn hè micca affiliata cun elli."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"E griglie chì fotografiate sò cunservate quì, da pudè ripiglià ne una più tardi."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Lettura"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Lettu cum\'è un %1$s scrittu à manu, sicuru à %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Lettu cum\'è un %1$s stampatu, sicuru à %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Lettu cum\'è viotu - nisuna traccia d\'inchjostru."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Lettu cum\'è candidati à matita, è ignuratu."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Lettura rivista."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Lettura mandata. Grazie!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnostica di scansione recente (preriempiuta)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"A ricunniscenza pò sbaglià, soprattuttu cù a scrittura à manu. Aduprate Leghje per paragunà e cifre ricunnisciute cù a foto, è tuccate una casella per curregela. L\'app marca e letture incerte da rivede; ancu una lettura cunfidante pò esse sbagliata."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Ricusa l\'ipotesi"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Coppie luntane"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Elimina %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nEliminate %1$s da "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Eliminatu"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Ripercorre u ragiunamentu"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Signalà un errore o un\'idea nant\'à GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Ripruvà a camera"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Torna à u passu %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Mostra a spiegazione"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Rivede o manda a lettura"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Rivede a lettura"</string>
+    <string name="msg_right_883361d5" formatted="false">"Diritta"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Percorsu compiu. Turnate in daretu per rivede ogni mossa, o pruvate i passi voi stessi."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"fila %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Fila %1$s, culonna %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Fila %1$s, culonna %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"fila $1, culonna $2"</string>
+    <string name="msg_row_634768da" formatted="false">"fila"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"file"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s esclusu"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Ùn si sò pussuti leghje i dati diagnostichi di a scansione."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Catture di schermu o esempii di sudoku"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Seconda pussibilità: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Sceglie per esercitassi"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Scelta: fila %1$s, culonna %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Manda i dati diagnostichi (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Manda i dati diagnostichi"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Manda ste scansioni"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Manda sta foto"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Paràmetri"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"sette"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Sparte automaticamente e letture incerte"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Sparte automaticamente e letture incerte?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Mostra a cuntradizzione"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Mostrami tutti i %1$s nant\'à a to griglia"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Mostrami quellu nant\'à a to griglia"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Culurazione simplice"</string>
+    <string name="msg_six_44778d82" formatted="false">"sei"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Grattacelu"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", suluzione %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Risolve"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Risoltu, è tutte e risposte sò ghjuste."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Risposta assistita da u risolvitore: mette %1$s in %2$s. I candidati sò %3$s. E tecniche sustenute da l\'app ùn anu trovu nisuna mossa da sta pusizione. A so ricerca hà trovu %4$s in a suluzione unica; una prova dettagliata di e branche di ricerca ùn hè micca dispunibule."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nRisposta assistita da u risulvitore: e tecniche sustenute da l\'app ùn anu trovu nisuna mossa. Una prova dettagliata ùn hè dispunibule."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminazione assistita da u risolvitore: una ricerca esclude %1$s da a casella messa in risaltu, ma l\'app ùn hà pussutu pruduce una breve traccia di cuntradizzione da mustrà. Una prova dettagliata ùn hè micca dispunibule."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Certe caselle ponu cuntene note invece d\'una cifra cumpleta."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Certe cifre ùn sò micca state lette cun cunfidenza."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Qualcosa hè andatu male durante a lettura di sta foto."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Casella"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nCandidati iniziali: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Passu %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Allineate a griglia di fronte"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategie"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Ricevuta d\'inviu"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"A ricevuta d\'inviu ùn hè micca valida."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Ricevute d\'inviu (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Ricevute d\'inviu"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Manca %1$s in a risposta à l\'inviu."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"U statutu di a risposta à l\'inviu ùn hè micca validu."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"U serviziu d\'inviu ùn hè micca cunfiguratu."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"U serviziu d\'inviu hà restituitu HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"L\'invii ùn sò micca dispunibuli in sta versione."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Manda"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Manda automaticamente e letture incerte future"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Manda a lettura"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Manda a lettura incerta per analisi"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Manda l\'aghjurnamentu"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Mandatu"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Inviu in corsu…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Dati diagnostichi di Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Cummenti nant\'à Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy hè publicatu da Freevia. Cuntattu: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy leghje e griglie cù a camera, dunque hà bisognu d\'accessu à a camera. A ricunniscenza è a cronulugia di e griglie fermanu nant\'à u vostru telefuninu. Sè vo scegliite di mandà una lettura incerta, a so foto è i risultati sò mandati in modu sicuru à Freevia per migliurà a ricunniscenza. A spartera automatica hè facultativa è pò esse disattivata in i Paràmetri."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Scansione Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Scansioni Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"U codice surghjente di Sudoku Buddy hè sottu licenza Apache License 2.0. A marca Freevia hè sottumessa à diritti di marca distinti."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"U Sudoku hè una forma di ghjocu di logica di duminiu publicu. St\'app risolve e griglie chì avete digià; ùn ripruduce nè distribuisce e griglie d\'altri."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", prova di sustegnu"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Suppunimu chì a casella marcata cuntene %1$s. E cifre numerutate sò ipotetiche."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Suppunimu chì sta cellula sia %1$s. Seguitate e frecce in ordine: ogni cellula hè furzata da e cifre piazzate prima - o quella cifra hè l\'unica ch\'ella pò sempre cuntene, o quella cellula hè l\'unica pusizione induve a cifra pò sempre andà.\n\nCusì, in l\'unità in rossu ùn ferma nisuna pusizione per %2$s. E cifre %3$s marcate in ella indicanu e pusizioni induve pudia andà, è ognuna hè una cellula chì una di e frecce hà appena occupatu. Un\'unità senza pusizione per una cifra hè impussibule - dunque sta cellula ùn hè micca %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Suppunimu chì sta casella fussi %1$s. Seguitate e frecce in ordine: ogni casella hè furzata da e cifre piazzate prima - o quella cifra hè a sola ch\'ella pò ancu cuntene, o quella casella hè u solu locu induve a cifra pò ancu andà. A casella in rossu si ritrova tandu senza nisuna cifra pussibile, ciò chì ùn pò accade - dunque ùn hè micca %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Suppunimu chì sta cellula sia %1$s. Seguitate e frecce in ordine: ogni cellula hè furzata da e cifre piazzate prima - o quella cifra hè l\'unica ch\'ella pò sempre cuntene, o quella cellula hè l\'unica pusizione induve a cifra pò sempre andà.\n\nCusì, in a riga in rossu ùn ferma nisuna pusizione per %2$s. E cifre %3$s marcate in ella indicanu e pusizioni induve pudia andà, è ognuna hè una cellula chì una di e frecce hà appena occupatu. Una riga senza pusizione per una cifra hè impussibule - dunque sta cellula ùn hè micca %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Suppunimu chì sta cellula sia %1$s. Seguitate e frecce in ordine: ogni cellula hè furzata da e cifre piazzate prima - o quella cifra hè l\'unica ch\'ella pò sempre cuntene, o quella cellula hè l\'unica pusizione induve a cifra pò sempre andà.\n\nCusì, in u bloccu in rossu ùn ferma nisuna pusizione per %2$s. E cifre %3$s marcate in ellu indicanu e pusizioni induve pudia andà, è ognuna hè una cellula chì una di e frecce hà appena occupatu. Un bloccu senza pusizione per una cifra hè impussibule - dunque sta cellula ùn hè micca %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Suppunimu chì sta casella fussi %1$s. Seguitate e frecce in ordine: ogni casella hè furzata da e cifre piazzate prima - o quella cifra hè a sola ch\'ella pò ancu cuntene, o quella casella hè u solu locu induve a cifra pò ancu andà.\n\nCusì u %2$s in rossu ùn hà più locu per mette %3$s. I %4$s marcati in ellu sò i lochi induv\'ellu pudia andà, è ognunu hè una casella chì una di e frecce hà appena occupatu. Un %5$s senza locu per una cifra ùn pò esiste - dunque ùn hè micca %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Suppunimu chì sta cellula sia %1$s. Seguitate e frecce in ordine: ogni cellula hè furzata da e cifre piazzate prima - o quella cifra hè l\'unica ch\'ella pò sempre cuntene, o quella cellula hè l\'unica pusizione induve a cifra pò sempre andà.\n\nCusì, in a culonna in rossu ùn ferma nisuna pusizione per %2$s. E cifre %3$s marcate in ella indicanu e pusizioni induve pudia andà, è ognuna hè una cellula chì una di e frecce hà appena occupatu. Una culonna senza pusizione per una cifra hè impussibule - dunque sta cellula ùn hè micca %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Passate à Dopu per vede a mossa è e so cunsequenze nant\'à a griglia."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Pesciu spada"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Piglià una nova foto"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Piglià un\'altra foto"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Pigliate una cifra è marcate ogni unità induv\'ella hà esattamente duie caselle pussibuli. Ste duie sò cum\'è un bilancinu: una cuntene a cifra è l\'altra nò.\n\nPartite da qualunque locu è culurite una casella, per esempiu in turchinu. Culurite a so cumpagna di bilancinu in verde, po a cumpagna di quella torna in turchinu, è cuntinuate sin\'à a fine di a catena. O tutte e caselle turchine sò vere o tutte e verde - ùn pudete sapè quale, è basta per duie cose.\n\nPrima: s\'è duie caselle di listessu culore si trovanu in una fila, culonna o bloccu, quellu culore hè impussibile; dunque a cifra hè eliminata da ogni casella di quellu culore è l\'altru culore dà a risposta dapertuttu.\n\nSeconda: ogni casella fora di a catena chì vede una turchina è una verde pò rinuncià à a cifra, perchè una di ste duie a cuntene qualunque sia u risultatu di a catena.\n\nHè lentu à matita ma vale a pena: una sola culurazione elimina spessu una cifra da a mità di a griglia."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Pigliate una cifra è una unità à a volta - per esempiu, induve pò andà un 4 in stu bloccu? Escludite ogni casella di l\'unità chì cuntene digià una cifra, o chì vede un 4 in a so fila o culonna. S\'ellu ferma una sola casella, u 4 và quì.\n\nA trappula hè chì ùn si vede micca fighjendu a casella: pò ancu accettà cinque altre cifre, dunque nunda pare furzatu. Fighjate a cifra invece di a casella, è si vede subitu."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Piglià una foto"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Piglià a foto automaticamente"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tuccate una casella marcata per rivedela, o cunfirmate chì tutte e letture sò currette."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Tuccate prima una casella di a griglia."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Pruvate %1$s cum\'è ipotesi in a casella marcata. Ùn hè micca una risposta. Seguitate e cunsequenze per vede perchè falla."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Pruvà l\'ipotesi"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Grazie d\'aiutà à migliurà a ricunniscenza. A vostra foto di a griglia, e letture è e currezzioni seranu aduprate per l\'analisi è l\'addestramentu."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Hè dinù una mossa %1$s valida. Stu percorsu illustra un\'altra mossa; paragunate a so prova quì sottu."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Ùn hè micca a mossa scelta per stu passu. Ci ponu esse altre mosse valide; fighjate torna o mustrate a spiegazione di stu passu."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Hè ghjustu"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Eccu u restu di a griglia. %1$s caselle anu bisognu di risposte assistite da u risolvitore perchè e tecniche sustenute da l\'app ùn anu trovu nisuna mossa. E so prove dettagliate di ricerca ùn sò micca dispunibuli."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Eccu u restu di a griglia. Una casella hà bisognu d\'una risposta assistita da u risolvitore perchè e tecniche sustenute da l\'app ùn anu trovu nisuna mossa. A so prova dettagliata di ricerca ùn hè micca dispunibule."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Eccu u restu di a griglia, da u principiu à a fine."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Ùn si hè pussutu cunservà sta foto, dunque ùn ci hè nunda da mandà."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Sta casella permette %1$s. Circate a mossa ghjustificata da a tecnica di stu passu, o mustrate a so spiegazione."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Sta casella hè digià piena. Sceglite una casella viota."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"L\'ipotesi hè stata ricusata. Turnemu à i candidati veri è eliminemu %1$s da a casella marcata. E cifre ipotetiche sò sguassate."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"A camera ùn hà pussutu piglià sta foto."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"A camera ùn hè micca dispunibule. Chjudite l\'altre app di camera, po ripruvate."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"l\'altru"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"A foto di %1$s è tuttu ciò chì ne hè statu lettu seranu sguassati da stu telefuninu. Ùn si pò annullà sta azzione."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" A foto hè in a vostra lista di sudoku, sottu «Ùn si pudia leghje»."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Quì u pivot hè %1$s o %2$s. In i dui casi, una di l\'altre duie caselle hè furzata à %3$s, dunque nisuna casella chì vede tramindui pò esse %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"A coppia puntante letta à l\'inversu. Pigliate una fila o una culonna è una cifra chì ci cerca sempre un locu. Marcate ogni casella di quella linea chì puderia cuntene a cifra. S\'elle sò tutte in un solu bloccu, a cifra deve esse in a parte di a linea dentru à quellu bloccu - dunque ùn hè in nisun altru locu di u bloccu, cumpresi e duie file o culonne chì ùn stavate micca fighjendu.\n\nCum\'è a coppia puntante, ùn piazza nunda da per ella; face piazza à qualcosa chì pò fà lu."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"E cifre stampate ùn formanu micca una griglia risolvibile."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nI candidati chì fermanu in %1$s sò {%2$s}. Mettite %3$s in a fila %4$s, culonna %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"U raportu hè troppu grande per esse mandatu."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"L\'ala Y cù un candidatu in più in u pivot. Circate una casella cù esattamente trè candidati, per esempiu {1,4,7}, chì vede duie caselle cù dui candidati - una {1,7} è una {4,7}.\n\nAvà tutte e trè ponu esse 7, è una deve esse lu. Dunque una casella deve vede tutte e trè per esclude u 7, micca solu e duie pinze - ciò chì in pratica vole dì ch\'ella hè in u listessu bloccu chè u pivot è nant\'à una linea cù una pinza.\n\nMenu eliminazioni chè un\'ala Y, è più faciule à mancà per a listessa ragione: u pivot ùn spicca micca."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Ci hè una casella chì pudete riempie in u bloccu messu in risaltu.\n\nAppughjate torna Indiziu per sapè chì tecnica a trova."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Ùn ferma più nunda quì nant\'à chì ragiunà."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Ste %1$s caselle cuntenenu solu %2$s è %3$s, è ognuna vede a seguente, dunque alternanu longu à tutta a catena. %4$s è %5$s sò separati da un numeru disparu di ligami è cuntenenu dunque cifre sfarente - ciò chì esclude %6$s da ogni casella chì vede tramindui."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Ste %1$s caselle cuntenenu solu %2$s trà elle, dunque ste cifre e riempienu in qualchì ordine. Questu esclude %3$s da u restu di stu %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Ste %1$s cellule ponu cuntene solu %2$s trà elle, dunque quelle cifre e riempienu in un certu ordine. Quessa elimina %3$s da u restu di sta riga."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Ste %1$s cellule ponu cuntene solu %2$s trà elle, dunque quelle cifre e riempienu in un certu ordine. Quessa elimina %3$s da u restu di sta culonna."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Ste %1$s cellule ponu cuntene solu %2$s trà elle, dunque quelle cifre e riempienu in un certu ordine. Quessa elimina %3$s da u restu di stu bloccu."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Eccu i candidati iniziali di a vostra casella. Traccia spiega chì pussibilità ponu esse escluse."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Ste cifre ùn ponu formà una griglia, è ci sò troppu errori per dì quali. Tuccate una casella per currege a lettura, o ripigliate a foto."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Ste cifre ùn ponu formà una griglia. Cambià e %1$s caselle circundate a curregeria - tuccate ne una per currege a lettura."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Ste cifre ùn ponu formà una griglia. Cambià a sola casella circundata a curregeria - tuccatela per currege a lettura."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Ste cifre ùn formanu micca una griglia, dunque una hè stata letta male. Appughjate Risolve per vede chì caselle currege."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Ste quattru caselle formanu un rettangulu trà dui blocchi, è trè cuntenenu solu %1$s. S\'è %2$s cuntenia dinù solu ste duie cifre, si puderebbenu scambià e cifre intornu à u rettangulu è a griglia averia duie suluzioni. Ne hà una sola, dunque %3$s deve aduprà un\'altra cifra - è %4$s hè eliminatu."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Ùn ghjunghjenu micca à a fine: qualcosa quì hà cumpletamente messu l\'app in difficultà."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Questu ùn riempie nunda. Esclude %1$s da %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Questu ùn riempie nisuna casella. Esclude %1$s da %2$s caselle."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Questu ùn riempie nisuna casella. Esclude %1$s da una casella."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nQuesta hè a prima di %1$s deduzzioni chì portanu à a risposta."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Sta prova spiega un indiziu, cumprese l\'eliminazioni di candidati chì portanu à a so risposta. Avanzate per seguità u ragiunamentu nant\'à a griglia, po cuntinuate cù u percorsu cumpletu."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Ùn si hè pussuta preparà sta griglia."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Ùn si hè pussuta salvà sta griglia. Pudete sempre adupralla avà. Liberate spaziu di memurizazione prima di piglià un\'altra foto."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Sta griglia hà più d\'una suluzione, dunque una cifra stampata hè stata prubabilmente mancata. Suluzione %1$s di %2$s mustrata - appughjate torna Risolve per a seguente. E caselle circundate differenu trà e suluzioni mustrate."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Ùn si hè pussuta apre a foto di sta griglia."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Stu ragiunamentu esclude %1$s esistenti "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Sta casella pò cuntene note di candidati invece d\'una cifra cumpleta. Verificatela."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Sta vista include eliminazioni di candidati precedenti. Aprite e so prove quì sottu per verificalli."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"trè"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Troppu bughju per distingue e linee di a griglia"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Traccia"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Pruvatu"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Pruvate voi stessi"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Attivà"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Girate u telefuninu per mette a griglia dritta."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tutore"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"duie"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Duie caselle chì cuntenenu a listessa coppia, ligate da un bilancinu nant\'à una di e cifre, furzanu l\'altra cifra in una di elle."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Aquilone à duie corde"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rettangulu unicu"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"unità"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable ùn espone nisuna lista CellReading; e caselle esatte d\'entrata è u risultatu sò cunservati."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versione di furmatu di mudellu micca sustenuta"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Incertu"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Aduprà a lingua di u dispusitivu"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Cù %1$s, tuccate una casella induve si pò eliminà un candidatu, po scegliite quella cifra."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Cù %1$s, tuccate a casella chì pudete riempie, po scegliite a so cifra."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Assai difficiule"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"Ala W"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"hè stata"</string>
+    <string name="msg_were_910adfb4" formatted="false">"sò state"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Chì aspettavate, o cumu a vostra idea vi aiuterebbe à risolve o amparà u Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Ciò chì hè accadutu è passi per ripruducelu (per l\'errori)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Ciò ch\'ella face"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Induve"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Perchè %1$s hè statu eliminatu da r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Perchè"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Perchè micca %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Perchè sta casella? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" cù a suluzione. Aduprate Verificà per esaminalli."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Ragiunate à ritrosu da a vostra casella. Sceglite una dumanda quì sottu."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Travagliate cifra per cifra invece di casella per casella. Per una unità, scrivite induve ogni cifra mancante puderia ancu andà. Po circate %1$s cifre chì e so liste, inseme, coprenu solu %2$s caselle.\n\nSte %3$s cifre devenu riempie ste %4$s caselle, dunque tutti l\'altri candidati ci ponu esse eliminati - ciò chì spessu trasforma subitu una di elle in un singulu nudu o una coppia nuda.\n\nHè a tecnica chì a ghjente trova a più difficiule, perchè ùn ci hè nunda da vede fighjendu e caselle: anu sempre assai candidati. U schema hè in e cifre."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Travagliate solu cù e caselle chì anu esattamente dui candidati.\n\nPartite da una, per esempiu {2,6}, è suppunite ch\'ella ùn sia micca u 2 - tandu hè u 6. Passate à una casella ch\'ella vede è chì hà dinù un 6, per esempiu {6,4}: quella ùn pò esse u 6, dunque hè u 4. Passate à una casella chì quella vede è chì cuntene un 4, è cuntinuate, ogni passu furzatu da quellu prima.\n\nS\'è vo ghjunghjite à una casella chì l\'altra cifra hè 2 - a cifra chì avete esclusu à u principiu - avete finitu. O a prima casella era infine un 2, o a catena s\'hè svolta è l\'ultima casella hè un 2. Una estremità o l\'altra u cuntene, dunque ogni casella chì vede tramindui ùn pò cuntenelu.\n\nTenite e catene corte. Quattru o cinque caselle si trovanu à matita; al di là fate cuntabilità, è catena furzante hè u nome ghjustu."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"u latu di travagliu deve esse pusitivu è finitu"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Ùn si pudia leghje"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Scrittu"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Sbagliatu"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"Ala X"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"Catena XY"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"Ala XYZ"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Ala Y"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Avete sviutatu sta casella."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Avete stabilitu un %1$s scrittu à manu quì."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Avete stabilitu un %1$s stampatu quì."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"I vostri cambiamenti sò visibili, ma ùn si sò pussuti salvà. Liberate spaziu di memurizazione è pruvate torna à mudificà a griglia."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"E vostre foto è a vostra cunfidenzialità"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"E vostre griglie"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"E vostre griglie salvate"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"A vostra casella ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"A vostra casella ferma delineata. E caselle verde mostranu e prove; e cifre barrate sò escluse."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

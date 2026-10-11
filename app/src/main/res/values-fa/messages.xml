@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s، %2$s %3$s، Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nخانه‌های مشخص‌شده آن را اثبات می‌کنند.\n\nدوباره «راهنمایی» را بزنید تا خانه نشان داده شود."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s و %2$s هر دو فقط %3$s و %4$s را دارند. در این %5$s، رقم %6$s فقط دو جای ممکن دارد که هرکدام را یکی از آن دو خانه می‌بیند؛ پس یکی از این دو جای ممکن %7$s است و سر زنجیره‌ای که آن را می‌بیند باید %8$s باشد. در هر حالت یک سر زنجیره %9$s است، پس %10$s از هر خانه‌ای که هر دو سر را ببیند حذف می‌شود."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s و %2$s هر دو فقط %3$s و %4$s را می‌پذیرند. در این بلوک، %5$s فقط دو جای ممکن دارد که هر یک با یکی از این دو خانه واحد مشترک دارد؛ پس یکی از آن دو جای ممکن %6$s است و خانهٔ انتهایی که با آن واحد مشترک دارد باید %7$s باشد. در هر حالت، یکی از دو خانهٔ انتهایی %8$s است؛ بنابراین %9$s از تمام خانه‌هایی که با هر دوی آن‌ها واحد مشترک دارند حذف می‌شود."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s و %2$s هر دو فقط %3$s و %4$s را می‌پذیرند. در این ستون، %5$s فقط دو جای ممکن دارد که هر یک با یکی از این دو خانه واحد مشترک دارد؛ پس یکی از آن دو جای ممکن %6$s است و خانهٔ انتهایی که با آن واحد مشترک دارد باید %7$s باشد. در هر حالت، یکی از دو خانهٔ انتهایی %8$s است؛ بنابراین %9$s از تمام خانه‌هایی که با هر دوی آن‌ها واحد مشترک دارند حذف می‌شود."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s و %2$s هر دو فقط %3$s و %4$s را می‌پذیرند. در این ردیف، %5$s فقط دو جای ممکن دارد که هر یک با یکی از این دو خانه واحد مشترک دارد؛ پس یکی از آن دو جای ممکن %6$s است و خانهٔ انتهایی که با آن واحد مشترک دارد باید %7$s باشد. در هر حالت، یکی از دو خانهٔ انتهایی %8$s است؛ بنابراین %9$s از تمام خانه‌هایی که با هر دوی آن‌ها واحد مشترک دارند حذف می‌شود."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s در ردیف %2$s، ستون %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s در گام %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s فقط می‌تواند %2$s باشد."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s نمی‌تواند %2$s داشته باشد، چون %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s نمی‌تواند %2$s باشد، زیرا %3$s در همان ستون %5$s فقط می‌تواند %4$s باشد."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s نمی‌تواند %2$s باشد، زیرا %3$s در همان بلوک %5$s فقط می‌تواند %4$s باشد."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s نمی‌تواند %2$s باشد، زیرا %3$s در همان سطر %5$s فقط می‌تواند %4$s باشد."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s نمی‌تواند %2$s باشد، زیرا %3$s در همان بلوک %5$s حاوی %4$s است."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s نمی‌تواند %2$s باشد، زیرا %3$s در همان ستون %5$s حاوی %4$s است."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s نمی‌تواند %2$s باشد، زیرا %3$s در همان سطر %5$s حاوی %4$s است."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s حاوی %2$s است."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s خالی"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s، ورودی"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s باید اینجا قرار بگیرد: این تنها خانه در این ستون %2$s است که هنوز می‌تواند %3$s را بپذیرد.\n\n%4$s\n\n%5$s در حال حاضر %6$s را می‌پذیرد، اما هر ستون باید دقیقاً یک بار شامل %7$s باشد. بنابراین %8$s را در ردیف %9$s، ستون %10$s قرار دهید."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s باید اینجا قرار بگیرد: این تنها خانه در این %2$s %3$s است که هنوز می‌تواند %4$s را بپذیرد.\n\n%5$s\n\n%6$s اکنون %7$s را می‌پذیرد، اما هر %8$s باید دقیقاً یک بار %9$s داشته باشد. بنابراین %10$s را در ردیف %11$s، ستون %12$s قرار دهید."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s باید اینجا قرار بگیرد: این تنها خانه در این بلوک %2$s است که هنوز می‌تواند %3$s را بپذیرد.\n\n%4$s\n\n%5$s در حال حاضر %6$s را می‌پذیرد، اما هر بلوک باید دقیقاً یک بار شامل %7$s باشد. بنابراین %8$s را در ردیف %9$s، ستون %10$s قرار دهید."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s باید اینجا قرار بگیرد: این تنها خانه در این ردیف %2$s است که هنوز می‌تواند %3$s را بپذیرد.\n\n%4$s\n\n%5$s در حال حاضر %6$s را می‌پذیرد، اما هر ردیف باید دقیقاً یک بار شامل %7$s باشد. بنابراین %8$s را در ردیف %9$s، ستون %10$s قرار دهید."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s در این ردیف دو جای ممکن و در این ستون هم دو جای ممکن دارد. %2$s و %3$s در یک بلوک‌اند، پس نمی‌توانند هر دو %4$s باشند؛ در نتیجه یکی از %5$s و %6$s آن رقم را دارد و %7$s از هر خانه‌ای که هر دو را ببیند حذف می‌شود."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s در همان %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s در همان بلوک."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s در همان ستون."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s در همان ردیف."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s از قبل از آن خانه حذف شده است. کاندیداهایش عبارت‌اند از "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s به‌وسیلهٔ %2$s رد می‌شود، که "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s به‌دلیل %2$s حذف می‌شود، چون در همان ستون %4$s فقط می‌تواند %3$s را داشته باشد."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s به‌دلیل %2$s حذف می‌شود، چون در همان سطر %4$s فقط می‌تواند %3$s را داشته باشد."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s به‌دلیل %2$s حذف می‌شود، چون در همان ناحیهٔ %4$s فقط می‌تواند %3$s را داشته باشد."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s به‌دلیل %2$s حذف می‌شود، چون در همان ناحیهٔ %4$s حاوی %3$s است."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s به‌دلیل %2$s حذف می‌شود، چون در همان ستون %4$s حاوی %3$s است."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s به‌دلیل %2$s حذف می‌شود، چون در همان سطر %4$s حاوی %3$s است."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s در تازه‌ترین خانهٔ شماره‌گذاری‌شده قطعی است (ردیف %2$s، ستون %3$s). %4$s پیکان از یک جای‌گذاری مؤثر می‌آید؛ پیامدهای قبلی هم اهمیت دارند."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s در classpath وجود ندارد"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s از %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s مورد از آن‌ها خانه‌ای را پر می‌کنند؛ بقیه ابتدا کاندیداهای مزاحم را حذف می‌کنند."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"جفت %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s چاپی، %2$s، %3$s نادرست"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s چاپی، %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s چاپی"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s، رقم راهنمای چاپی"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"چهارتایی %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s عکس ردشده، از جدیدترین:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: حذف %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"تعداد خانه‌ها: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"این مسیر از %1$s گام تشکیل شده و دشوارترین تکنیک پشتیبانی‌شدهٔ آن %2$s است. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"سه‌تایی %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s با استدلال قبلی دربارهٔ کاندیداها از %2$s حذف شد."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s دست‌نویس"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"تصویر %1$sx%2$s به %3$s بایت نیاز دارد، اما %4$s دریافت شد"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"یک خانه نه رقم بود و نه نقطه"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"زنجیره‌ای از خانه‌های دوکاندیدی که با یک رقم شروع و تمام می‌شود، آن رقم را در یکی از دو انتها قرار می‌دهد."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"رقمی که در یک سطر، ستون یا بلوک فقط یک جای ممکن دارد، در همان جا قرار می‌گیرد."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"یک %1$s دست‌نویس."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"یک %1$s چاپی."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"خانهٔ قرمز رقمی را نشان می‌دهد که برنامه در آن خوانده است. اگر با نوشتهٔ شما فرق دارد، برای اصلاح روی خانه بزنید."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"خانه‌ای که فقط یک رقم ممکن برایش مانده، باید همان رقم را داشته باشد."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"فهرست روش‌ها هرگز کامل نیست و سخت‌ترین معماها طوری ساخته می‌شوند که هر روش موجود در آن را ناکام بگذارند. بنابراین وقتی هیچ‌یک از این روش‌ها نتیجه ندهد، آموزش‌دهنده با امتحان کردن کاندیدهای یک خانه، آن را تعیین می‌کند، صریحاً می‌گوید که چنین کرده و از آنجا استدلال را ادامه می‌دهد. همیشه معما را تا پایان حل می‌کند و هرگز وانمود نمی‌کند که یافتن پاسخ با جست‌وجو، استنتاج بوده است."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"یک محور سه‌کاندیدی با دو بازوی دوکاندیدی مطابق، رقمی را از هر خانه‌ای که هر سه را می‌بیند حذف می‌کند."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"یک محور دوکاندیدی و دو بازوی دوکاندیدی می‌توانند رقمی را از هر خانه‌ای که هر دو بازو را می‌بیند حذف کنند."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"درباره"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"بعد"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"بعد از این حرکت"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"همه درست‌اند"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"هر سهٔ این خانه‌ها می‌توانند %1$s باشند و یکی از آن‌ها باید باشد. پس هر خانه‌ای که هر سه را می‌بیند نمی‌تواند %2$s باشد."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"اجازهٔ دسترسی به دوربین"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"تقریباً آماده است؛ صفحه را صاف و موازی با دوربین نگه دارید"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"حذفی که چیزی را حذف نکند، استنتاج نیست"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" و "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- اندروید: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"پاسخ"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## برنامه و دستگاه (از پیش تکمیل‌شده)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- برنامه: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"نسبت ابعاد باید مثبت باشد، اما %1$s بود"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"فرض · رقم فرضی"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"فرض رد شد · کاندیدهای واقعی بازگردانده شدند"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"دست‌کم %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"عکس خودکار"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"عکس‌های معما با تشخیص نامطمئن، نتایج خواندن و اصلاحات بعدی خانه‌ها را خودکار برای تحلیل تشخیص و آموزش به Freevia ارسال کنید. به‌طور پیش‌فرض خاموش است."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"از بازتاب نور دوری کنید"</string>
+    <string name="msg_back_76900f1b" formatted="false">"بازگشت"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"بازگشت به پرسش قبلی"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"بازگشت به راهنمایی تصویری"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"بازگشت به خانهٔ شما"</string>
+    <string name="msg_before_9bb72500" formatted="false">"قبل"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"قبل از این حرکت"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"رقم‌های آبی راه‌حل هستند. برای اصلاح آنچه خوانده شده روی هر خانه بزنید."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"بلوک %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"بلوک"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"بلوک"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"کاهش بلوک-خط"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"دوربین"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"فقط می‌تواند داشته باشد"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"لغو"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">"، کاندیدها %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"شواهد ثبت تصویر"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"یک رقم را در واحدهایی که فقط دو جای ممکن برایش دارند زنجیر کنید، زنجیره را با دو رنگ متناوب رنگ کنید؛ یکی از رنگ‌ها در سراسر زنجیره درست است."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"با زنجیره‌کردن %1$s در واحدهایی که فقط دو جای ممکن برای آن دارند، این خانه‌ها به‌تناوب دو رنگ می‌گیرند که یکی از آن‌ها در سراسر زنجیره درست است. دو خانه از رنگ دیگر در یک ردیف قرار دارند که ناممکن است؛ پس آن رنگ نادرست است و %2$s از تمام خانه‌های آن رنگ حذف می‌شود."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"با زنجیره‌کردن %1$s در واحدهایی که فقط دو جای ممکن برای آن دارند، این خانه‌ها به‌تناوب دو رنگ می‌گیرند که یکی از آن‌ها در سراسر زنجیره درست است. دو خانه از رنگ دیگر در یک بلوک قرار دارند که ناممکن است؛ پس آن رنگ نادرست است و %2$s از تمام خانه‌های آن رنگ حذف می‌شود."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"با زنجیره‌کردن %1$s در واحدهایی که فقط دو جای ممکن برای آن دارند، این خانه‌ها به‌تناوب دو رنگ می‌گیرند که یکی از آن‌ها در سراسر زنجیره درست است. دو خانه از رنگ دیگر در یک ستون قرار دارند که ناممکن است؛ پس آن رنگ نادرست است و %2$s از تمام خانه‌های آن رنگ حذف می‌شود."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"زنجیر کردن %1$s در واحدهایی که فقط دو جای ممکن برایش دارند، این خانه‌ها را به دو رنگ متناوب تقسیم می‌کند که یکی در سراسر زنجیره درست است. دو خانه با رنگ %2$s در یک %3$s قرار دارند، که ممکن نیست؛ پس آن رنگ نادرست است و %4$s از همهٔ خانه‌های آن رنگ حذف می‌شود."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"زنجیر کردن %1$s در واحدهایی که فقط دو جای ممکن برایش دارند، این خانه‌ها را به دو رنگ متناوب تقسیم می‌کند و یکی از رنگ‌ها در سراسر زنجیره درست است. این خانه‌ها هر دو رنگ را می‌بینند، پس زنجیره هر طور تعیین شود، یکی از خانه‌هایی که می‌بینند %2$s دارد؛ یعنی خودشان نمی‌توانند آن را داشته باشند."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"با زنجیره‌کردن %1$s در واحدهایی که فقط دو جای ممکن برای آن دارند، این خانه‌ها به‌تناوب دو رنگ می‌گیرند که یکی از آن‌ها در سراسر زنجیره درست است. دو خانه از یک رنگ در یک بلوک قرار دارند که ناممکن است؛ پس آن رنگ نادرست است و %2$s از تمام خانه‌های آن رنگ حذف می‌شود."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"با زنجیره‌کردن %1$s در واحدهایی که فقط دو جای ممکن برای آن دارند، این خانه‌ها به‌تناوب دو رنگ می‌گیرند که یکی از آن‌ها در سراسر زنجیره درست است. دو خانه از یک رنگ در یک ستون قرار دارند که ناممکن است؛ پس آن رنگ نادرست است و %2$s از تمام خانه‌های آن رنگ حذف می‌شود."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"با زنجیره‌کردن %1$s در واحدهایی که فقط دو جای ممکن برای آن دارند، این خانه‌ها به‌تناوب دو رنگ می‌گیرند که یکی از آن‌ها در سراسر زنجیره درست است. دو خانه از یک رنگ در یک ردیف قرار دارند که ناممکن است؛ پس آن رنگ نادرست است و %2$s از تمام خانه‌های آن رنگ حذف می‌شود."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"خانه‌های نامطمئن برای بررسی: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"بررسی"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"یک خانه با تشخیص نامطمئن را بررسی کنید."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">"، در بررسی درست بود"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"یک کاندید را انتخاب کنید تا ببینید چرا نمی‌تواند در خانهٔ شما قرار بگیرد."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"انتخاب زبان"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"انتخاب موارد نمایش"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"بستن"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"بستن راهنمایی"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"جمع کردن بازبینی خواندن"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"خانه‌های رنگی و خاکستری باید هندسهٔ یکسانی داشته باشند"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"ستون %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"ستون"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"ستون‌ها"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"زنجیره‌های اجباری را مقایسه کنید و زنجیره‌هایی را ترجیح دهید که خانه‌های کمتری برای دنبال کردن دارند. زنجیره‌های کوتاه‌تر ممکن است مراحل بیشتری در حل کامل ایجاد کنند."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"پیامد %1$s از %2$s · رقم‌های فرضی"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"شامل"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"نوع محتوا"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"ادامه با مسیر کامل"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"تناقض · فرض رد می‌شود"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">"، تناقض"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"تناقض: در %1$s قرمز هیچ جایی برای %2$s باقی نمانده است. این ناممکن است، پس فرض آغازین باید رد شود."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"تناقض: هیچ کاندیدی برای خانهٔ قرمز باقی نمانده است. این ناممکن است، پس فرض آغازین باید رد شود."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"کپی درخواست حذف"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"درست است. استدلال خود را با توضیح زیر مقایسه کنید."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"تصویر گرفته‌شده رمزگشایی نشد"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"رقم‌های چاپی در آن عکس پیدا نشدند."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"خطوط جدول تشخیص داده نشدند؛ دوباره امتحان کنید."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHub باز نشد. با پشتیبانی به نشانی %1$s تماس بگیرید."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"شواهد ثبت تصویر برای عیب‌یابی قابل نگهداری نبود"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"نتیجهٔ خواندن ارسال نشد. لطفاً پس از اتصال دوباره امتحان کنید."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"بن‌بست"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"حذف"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"حذف"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"حذف گزارش"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"حذف این عکس"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"حذف این معما"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"این معما حذف شود؟"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"این مورد ارسالی حذف شود؟"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"در حال حذف…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"حذف تأیید نشد. اتصال خود را بررسی کنید و دوباره امتحان کنید."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"درخواست حذف"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"پاسخ حذف، این رسید را تأیید نکرد."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"سرویس حذف HTTP %1$s را برگرداند."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"شرح دهید چه اتفاقی افتاد و مراحل تکرار آن چیست. بگویید آیا ابتدا رقم‌های تشخیص‌داده‌شده را بررسی و اصلاح کرده‌اید. برای ایده بنویسید «نامرتبط»."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">"، مقصد این راهنمایی"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- دستگاه: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"اطلاعات عیب‌یابی کوتاه شد تا در پیش‌نویس مرورگر جا شود. گزینهٔ «ارسال اطلاعات عیب‌یابی» در برنامه می‌تواند گزارش کامل را ارسال کند."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"رقم باید 1..9 باشد، اما %1$s بود"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"رقم‌ها خوانده نشدند"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"نگهداری شواهد روی دیسک بر زمان‌بندی اثر می‌گذارد؛ این آزمون سنجش تأخیر نیست."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">"، با راه‌حل مطابقت ندارد"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"هر رسید یک نسخهٔ ارسال‌شده از معما را مشخص می‌کند. آن را اینجا حذف کنید تا گزارش ذخیره‌شدهٔ خصوصی از Freevia حذف شود."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" حذف‌های قبلی: %1$s. برای بررسی اثبات آن‌ها از پیوندهای مراحل قبلی استفاده کنید."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← شواهد قبلی (عمق %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"قرار دادن‌های فرضی قبلی فقط یک کاندید برای آن باقی گذاشته‌اند."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"مراحل قبلی استفاده‌شده در این اثبات"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"ویرایش خانه"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"هشت"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"خالی"</string>
+    <string name="msg_empty_8a112150" formatted="false">"خالی."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"خالی"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"انگلیسی"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"ورودی‌های ناسازگار"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"ورودی ناسازگار"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"هرکدام از آن‌ها یک خانه را پر می‌کند."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"همهٔ خانه‌ها پر شده‌اند، اما %1$s پاسخ با راه‌حل مطابقت ندارند."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"همهٔ خانه‌ها پر شده‌اند، اما یک پاسخ با راه‌حل مطابقت ندارد."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"هر سودوکویی با یک راه‌حل را می‌توان با استدلال حل کرد؛ حدس زدن هرگز لازم نیست و به‌ندرت کمک می‌کند. این‌ها روش‌های استدلالی هستند که برنامه می‌تواند تشخیص دهد و توضیح دهد، از آسان‌ترین به بعد. هرجا یکی از آن‌ها در معمای باز شما کاربرد داشته باشد، برنامه تمام محل‌های کاربردش را نشان می‌دهد."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"هرچه تاکنون نوشته‌اید درست است."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"نمونه‌های موجود: هرکدام از جدول فعلی شما شروع می‌شود."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 خط افقی انتظار می‌رفت، %1$s دریافت شد"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"10 خط عمودی انتظار می‌رفت، %1$s دریافت شد"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81 خانه انتظار می‌رفت، %1$s دریافت شد"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"81 خانه در هر بخش انتظار می‌رفت، %1$s و %2$s یافت شد"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"تک‌کانالهٔ 8 بیتی انتظار می‌رفت، اما %1$s دریافت شد"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"تصویر 28x28 انتظار می‌رفت، اما %1$s مقدار دریافت شد"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## رفتار مورد انتظار یا بهبود پیشنهادی"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"ده خط در هر جهت انتظار می‌رفت"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"دو بخش انتظار می‌رفت، %1$s یافت شد"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"توضیح حذف‌های قبلی کاندیدها (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"توضیح راهنمایی‌ها"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"خانه‌ای پیدا کنید که فقط دو یا سه کاندید برایش مانده باشد؛ هرچه کمتر بهتر، و هرچه سطر، ستون و بلوک اطرافش پرتر باشد باز هم بهتر.\n\nیکی از کاندیدهایش را انتخاب کنید و با مداد کم‌رنگ بنویسید. حالا پیامدها را دنبال کنید: آن رقم از همهٔ خانه‌هایی که این خانه می‌بیند حذف می‌شود، که ممکن است یکی از آن‌ها را تک‌کاندیدی کند و آن هم خانهٔ دیگری را تعیین کند و همین‌طور ادامه یابد. ادامه دهید.\n\nیکی از دو اتفاق می‌افتد. یا زنجیره متوقف می‌شود و چیزی یاد نگرفته‌اید؛ آن را پاک کنید و کاندید دیگر را امتحان کنید. یا به خانه‌ای می‌رسید که هیچ کاندیدی ندارد، یا سطری که جایی برای یک رقم ندارد. این ناممکن است، پس رقمی که با مداد نوشته‌اید غلط بوده و می‌توانید آن را برای همیشه حذف کنید.\n\nوقتی هیچ روش دیگری نتیجه نمی‌دهد، سراغ این روش بروید. کندتر است و بیشتر به ثبت و پیگیری نیاز دارد تا تشخیص الگو، اما می‌تواند حرکت‌هایی را پیدا کند که الگوها از دست می‌دهند. یک حذف اغلب کافی است تا روش‌های آسان دوباره کار کنند؛ بعضی وضعیت‌ها همچنان به جست‌وجوی عمیق‌تر نیاز دارند."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"دو خانه با دو کاندید یکسان، مثلاً {3,7}، پیدا کنید که همدیگر را نبینند؛ معمولاً از هم دورند.\n\nحالا دنبال سطر، ستون یا بلوکی بگردید که 7 در آن فقط دو خانهٔ ممکن داشته باشد؛ یکی را خانهٔ اولِ جفت شما ببیند و دیگری را خانهٔ دوم. این پیوند است.\n\nیکی از آن دو خانه 7 است. هرکدام که باشد، خانهٔ جفت شما که آن را می‌بیند نمی‌تواند 7 باشد، پس باید 3 باشد. نمی‌دانید کدام انتها 3 است، فقط می‌دانید یکی از آن‌هاست؛ و همین برای حذف 3 از هر خانه‌ای که هر دو انتها را می‌بیند کافی است.\n\nبخش سخت، پیوند است؛ پس برعکس جست‌وجو کنید: ابتدا واحدهایی را علامت بزنید که یک رقم در آن‌ها فقط دو جای ممکن دارد، سپس در دو طرف دنبال یک جفت مطابق بگردید."</string>
+    <string name="msg_finished_05343e98" formatted="false">"تمام‌شده"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"وقتی جدول در کادر بدون اعوجاج پرسپکتیو و ثابت است، شاتر را بزنید. دکمه در هر حالت کار می‌کند."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"تمام جدول را در کادر جا دهید."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"تمام جدول را در کادر جا دهید"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"پنج"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"مسیری را دنبال کنید که هر حرکت بر حرکت قبلی بنا می‌شود."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"اثبات کامل را به‌ترتیب دنبال کنید"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"این زنجیرهٔ خانه‌های دوکاندیدی را دنبال کنید: اگر %1$s برابر %2$s نباشد، هر خانهٔ زنجیره توسط خانهٔ قبلی تعیین می‌شود و در پایان %3$s برابر %4$s می‌شود. پس یکی از دو انتها %5$s دارد، که آن را از هر خانه‌ای که هر دو را می‌بیند حذف می‌کند."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"زنجیرهٔ اجباری"</string>
+    <string name="msg_four_04efaf08" formatted="false">"چهار"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"چهار خانه در دو سطر، دو ستون و دو بلوک نمی‌توانند همگی همان دو کاندید را داشته باشند، وگرنه معما دو راه‌حل خواهد داشت."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia حذف را تأیید کرد، اما این گوشی نتوانست رسید محلی را حذف کند. برای تکمیل پاک‌سازی محلی دوباره امتحان کنید."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia این نسخهٔ گزارش و نسخهٔ خصوصیِ آموزشی آن را حذف خواهد کرد. اصلاحات بعدی ممکن است طبق تنظیمات اشتراک‌گذاری شما گزارش جدیدی ایجاد کنند. مدلی که قبلاً با آن آموزش دیده ممکن است تغییرات آموخته‌شده را حفظ کند."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"مسیر کامل"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"خواندن‌های نامطمئن آینده، عکس اصلاح‌شدهٔ پرسپکتیو معما، نتایج تشخیص و اصلاحات را برای تحلیل و آموزش به Freevia ارسال می‌کنند. نسخه‌های آموزشی تا زمان حذف از «رسیدهای ارسال» باقی می‌مانند؛ مدل آموزش‌دیده ممکن است تغییرات آموخته‌شده را حفظ کند. اگر معمایی با تشخیص نامطمئن از قبل باز باشد، اکنون ارسال می‌شود. می‌توانید این گزینه را در تنظیمات خاموش کنید."</string>
+    <string name="msg_gentle_96124817" formatted="false">"آسان"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"بازتاب نور خطوط را محو کرده است؛ صفحه را از نور دور کنید و زاویه دهید"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"تصویر خاکستری(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"خانه‌های خاکستری یادداشت‌های مدادی دارند که برنامه نادیده می‌گیرد. نوار زیر هر رقم میزان اطمینان به تشخیص آن را نشان می‌دهد. برای جزئیات روی خانه بزنید."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"دست‌نویس"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"سخت"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"پنهان"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"جفت پنهان"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"چهارتایی پنهان"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"تک پنهان"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"سه‌تایی پنهان"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"پنهان کردن شواهد قبلی"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"پنهان کردن روش تشخیص"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">"، راهنمایی %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"راهنمایی"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"اثبات راهنمایی"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"استدلال راهنمایی"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"ثابت بمانید..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"ثابت بمانید یا شاتر را بزنید"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"تا دوربین فوکوس می‌کند ثابت بمانید..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"گوشی را موازی صفحه نگه دارید"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"گوشی را موازی با صفحه، بالای معما نگه دارید."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"گوشی را موازی با صفحه، بالای معما نگه دارید"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"افقی\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"روش تشخیص"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nچطور به این نتیجه می‌رسیم:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"دنبال خانه‌هایی با دقیقاً دو کاندید بگردید؛ بال Y از سه خانهٔ چنین و فقط همین‌ها تشکیل می‌شود.\n\nیکی را محور بگیرید، مثلاً {2,5}. دنبال خانه‌ای بگردید که محور آن را می‌بیند و {2,9} دارد، و خانهٔ دیگری که آن را می‌بیند و {5,9} دارد. محور یا 2 است یا 5. اگر 2 باشد، بازوی اول باید 9 باشد؛ اگر 5 باشد، بازوی دوم باید 9 باشد. در هر حالت، یک 9 در یکی از بازوها قرار می‌گیرد؛ نمی‌دانید کدام و نیازی هم ندارید.\n\nپس هیچ خانه‌ای که هر دو بازو را می‌بیند نمی‌تواند 9 باشد. این خانه‌ها معمولاً دو گوشه‌ای هستند که مستطیل را کامل می‌کنند."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">"، %1$s فرضی، پاسخ واردشده نیست"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"اگر %1$s رقم در یک سطر، ستون یا بلوک فقط بتوانند در همان %2$s خانه قرار بگیرند، آن خانه‌ها نمی‌توانند رقم دیگری داشته باشند."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"اگر %1$s خانه در یک سطر، ستون یا بلوک در مجموع دقیقاً %2$s کاندید داشته باشند، آن رقم‌ها متعلق به همان خانه‌ها هستند و هیچ خانهٔ دیگری در آن واحد نمی‌تواند آن‌ها را داشته باشد."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"اگر یک رقم در یک سطر دو جای ممکن و در یک ستون دو جای ممکن داشته باشد و یکی از هرکدام در یک بلوک باشند، یکی از دو خانهٔ دیگر باید آن رقم را داشته باشد."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"اگر یک رقم در هرکدام از دو سطر دو جای ممکن داشته باشد و یکی از هر سطر در یک ستون باشد، یکی از دو جای دیگر باید آن رقم را داشته باشد."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"اگر تمام جایگاه‌های ممکن یک رقم در یک خط داخل یک بلوک باشند، آن رقم از بقیهٔ آن بلوک حذف می‌شود."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"اگر تمام جایگاه‌های ممکن یک رقم در %1$s سطر، در همان %2$s ستون باشند، آن رقم از بقیهٔ آن ستون‌ها حذف می‌شود؛ و با جابه‌جایی سطرها و ستون‌ها نیز همین‌طور است."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"اگر تمام جایگاه‌های ممکن یک رقم در یک بلوک روی یک خط باشند، آن رقم از بقیهٔ آن خط حذف می‌شود."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"اگر فرض یک رقم به خانه‌ای برسد که هیچ رقمی نتواند در آن قرار بگیرد، آن رقم غلط بوده است."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"ابعاد تصویر باید مثبت باشند"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"در زنجیره‌ای از خانه‌ها که همگی همان دو کاندید را دارند، دو انتهای زنجیره‌ای با طول فرد، رقم‌های متفاوت دارند."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"در این %1$s %2$s، %3$s فقط می‌تواند در این %4$s %5$s قرار بگیرد. در مجموع همهٔ آن‌ها را اشغال می‌کنند، پس %6$s از بقیهٔ آن %7$s حذف می‌شود."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"در این %1$s ستون، %2$s فقط می‌تواند در این %3$s ردیف قرار بگیرد. این جای‌گذاری‌ها تمام آن ردیف‌ها را اشغال می‌کنند؛ پس %4$s از همهٔ خانه‌های دیگر آن ردیف‌ها حذف می‌شود."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"در این %1$s ردیف، %2$s فقط می‌تواند در این %3$s ستون قرار بگیرد. این جای‌گذاری‌ها تمام آن ستون‌ها را اشغال می‌کنند؛ پس %4$s از همهٔ خانه‌های دیگر آن ستون‌ها حذف می‌شود."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"در این دو %1$s، %2$s در هرکدام فقط دو جای ممکن دارد و %3$s و %4$s در یک %5$s هستند؛ پس هر دو نمی‌توانند %6$s باشند. بنابراین یکی از %7$s و %8$s آن رقم را دارد، که %9$s را از هر خانه‌ای که هر دو را می‌بیند حذف می‌کند."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"در هر یک از این دو ستون، %1$s فقط دو جای ممکن دارد و %2$s و %3$s در یک ردیف‌اند؛ پس نمی‌توانند هر دو %4$s باشند. بنابراین یکی از %5$s و %6$s این رقم است و در نتیجه %7$s از هر خانه‌ای که با هر دوی آن‌ها واحد مشترک دارد حذف می‌شود."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"در هر یک از این دو ردیف، %1$s فقط دو جای ممکن دارد و %2$s و %3$s در یک ستون‌اند؛ پس نمی‌توانند هر دو %4$s باشند. بنابراین یکی از %5$s و %6$s این رقم است و در نتیجه %7$s از هر خانه‌ای که با هر دوی آن‌ها واحد مشترک دارد حذف می‌شود."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"در این %1$s، %2$s فقط می‌تواند در این %3$s خانه قرار بگیرد، پس این خانه‌ها به آن اختصاص دارند. بنابراین %4$s از آن‌ها حذف می‌شود."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"در این %1$s، %2$s فقط می‌تواند داخل یک بلوک قرار بگیرد. پس %3$s در آن بلوک روی این %4$s است و از بقیهٔ بلوک حذف می‌شود."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"در این بلوک، %1$s فقط می‌تواند در این %2$s خانه قرار بگیرد؛ پس این خانه‌ها به آن اختصاص دارند. بنابراین %3$s از آن‌ها حذف می‌شود."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"در این ستون، %1$s فقط می‌تواند در این %2$s خانه قرار بگیرد؛ پس این خانه‌ها به آن اختصاص دارند. بنابراین %3$s از آن‌ها حذف می‌شود."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"در این ردیف، %1$s فقط می‌تواند در این %2$s خانه قرار بگیرد؛ پس این خانه‌ها به آن اختصاص دارند. بنابراین %3$s از آن‌ها حذف می‌شود."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"شامل عکس‌ها، نتایج خواندن و اصلاحات آن‌هاست. این گزینه را در تنظیمات خاموش کنید."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"در یک بلوک، رقمی پیدا کنید که فقط بتواند در دو یا سه خانه قرار بگیرد و بررسی کنید آیا همگی در یک سطر یا همگی در یک ستون هستند. اگر چنین باشد، رقم قطعاً جایی روی همان خط است؛ نمی‌دانید کجا، اما می‌دانید داخل این بلوک است. پس نمی‌تواند جای دیگری روی همان خط، خارج از بلوک باشد.\n\nاین روش به‌تنهایی هیچ رقمی قرار نمی‌دهد. کاندیدها را حذف می‌کند تا جایی دیگر یک تک ظاهر شود."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"داخل این بلوک، %1$s فقط می‌تواند در این %2$s قرار بگیرد. پس %3$s جایی در این محدوده است و از بقیهٔ %4$s حذف می‌شود."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## مشکل یا ایده"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"اینجا در %1$s محل کاربرد دارد. برای مرور آن‌ها جلو بروید."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"اینجا در یک محل کاربرد دارد. برای دیدنش جلو بروید."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"در این وضعیت هیچ‌جا کاربرد ندارد."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"این تنها جای باقی‌مانده برای %1$s در %2$s برجسته‌شده است."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"همان خانهٔ حلقه‌دار است.\n\nبرای دیدن رقم، دوباره «راهنمایی» را بزنید."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"عروس دریایی"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"نگه‌داشتن"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"زنجیره‌های اجباری را کوتاه نگه دارید"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"زبان"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"مجوزها"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"در یک سطر، ستون یا بلوک دنبال خانه‌هایی بگردید که کاندیدهای کمی برایشان مانده است. %1$s خانه را بردارید و کاندیدهایشان را جمع کنید. اگر این مجموعه دقیقاً %2$s رقم داشته باشد، آن %3$s رقم به این خانه‌ها اختصاص دارند: باید با ترتیبی در آن %4$s خانه قرار بگیرند، هرچند هنوز نمی‌توانید بگویید کدام رقم کجا می‌رود.\n\nهمین کافی است. تمام خانه‌های دیگر آن واحد می‌توانند این رقم‌ها را حذف کنند و معمولاً یکی از آن‌ها بعد از این کار تک می‌شود.\n\nلازم نیست همهٔ خانه‌ها کاندیدهای یکسان داشته باشند؛ {2,7}، {2,9} و {7,9} یک سه‌تایی کاملاً معتبر است و همان است که اغلب از چشم افراد دور می‌ماند."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"دنبال خانه‌هایی با دو کاندید یکسان، مثلاً {4,9}، بگردید که زنجیره تشکیل دهند و هر خانه بعدی را ببیند. سه خانه کافی نیست؛ دست‌کم چهار خانه لازم دارید.\n\nدر طول مسیر آن‌ها را با دو رنگ متناوب رنگ کنید. چون هر خانه بعدی را می‌بیند، هیچ دو همسایه‌ای نمی‌توانند رقم یکسان داشته باشند؛ پس زنجیره در تمام مسیر 4, 9, 4, 9 است، یا 9, 4, 9, 4، و نمی‌توانید بگویید کدام.\n\nدر هر حالت، دو خانه با رنگ‌های مخالف رقم‌های متفاوت دارند: یکی 4 و دیگری 9 است. پس هر خانه‌ای که هر دو را می‌بیند نمی‌تواند هیچ‌کدام باشد و هر دو کاندید را هم‌زمان از دست می‌دهد.\n\nتشخیص این الگو آسان است، دقیقاً چون همهٔ خانه‌هایش یکسان به نظر می‌رسند. جفت‌های یکسان را در جدول دنبال کنید و ببینید کجا به هم می‌رسند."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"دنبال سه خانه با دو کاندید یکسان، مثلاً {1,6}، بگردید که در سه گوشهٔ یک مستطیل باشند. مستطیل باید دقیقاً در دو بلوک قرار بگیرد: دو سطر و دو ستون که از دو بلوک عبور می‌کنند، نه چهار بلوک.\n\nحالا گوشهٔ چهارم را نگاه کنید. اگر آن هم فقط 1 و 6 داشت، معما دو راه‌حل می‌داشت؛ می‌توانستید جای 1ها و 6ها را دور مستطیل عوض کنید و بقیهٔ جدول همچنان درست بماند. معمای درست طراحی‌شده یک راه‌حل دارد، پس گوشهٔ چهارم باید رقم دیگری داشته باشد: کاندیدهای دیگرش می‌مانند و 1 و 6 حذف می‌شوند.\n\nاین تنها استدلال این مجموعه است که به طراح مربوط می‌شود، نه جدول. برای یک معمای منتشرشده معتبر است و برای معمایی که قبلاً غلط پر کرده‌اید ارزشی ندارد، چون ممکن است اصلاً راه‌حلی نداشته باشد که یکتا باشد."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"این بلوک را نگاه کنید. کادر را تا خانه‌ای دنبال کنید که این راهنمایی توضیح خواهد داد."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"یادداشت‌ها"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"متوسط"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"بیشتر"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"نور بیشتری لازم است"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"بیش از یک راه‌حل دارد، پس یک رقم چاپی از دست رفته است. برای دیدن راه‌حل‌ها و محل تفاوتشان «حل» را بزنید."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"عقب بروید"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"نزدیک‌تر شوید"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"نزدیک‌تر شوید؛ جدول برای خواندن بیش از حد کوچک است."</string>
+    <string name="msg_naked_472fd902" formatted="false">"آشکار"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"جفت آشکار"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"چهارتایی آشکار"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"تک آشکار"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"سه‌تایی آشکار"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"به‌جای فقط گفتن رقم، نام روش و خانه‌هایی را که آن را اثبات می‌کنند نشان دهید."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"دست‌کم 4 نقطه لازم است، اما %1$s دریافت شد"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"نیازمند تأیید"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"سودوکوی جدید"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"پیامد بعدی"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"مرحلهٔ بعدی"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"هیچ تصویری به‌طور خودکار پیوست نمی‌شود. گزارش‌ها و پیوست‌های ارسال‌شده در اینجا برای همه قابل مشاهده‌اند. نمونه‌هایی را که ترجیح می‌دهید خصوصی ارسال کنید، به info@freevia.org بفرستید."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"از آخرین نصب برنامه تاکنون هیچ عکسی رد نشده است."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"اطلاعات عیب‌یابی اسکن در دسترس نیست."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"هیچ روشی اینجا کاربرد ندارد"</string>
+    <string name="msg_none_140bedbf" formatted="false">"هیچ‌کدام"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"هیچ‌کدام رقمی را در خانه قرار نمی‌دهند: کاندیدها را حذف می‌کنند و به این ترتیب راه حل یک معمای سخت باز می‌شود."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"فعلاً هیچ موردی در معمای شما نیست."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"فایل مدل ارقام نیست"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"با اطمینان خوانده نشد؛ نزدیک‌ترین حدس %1$s %2$s در %3$s است. لطفاً این خانه را خودتان تنظیم کنید."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"هنوز به‌صورت جدول نه در نه خوانده نمی‌شود؛ کادر را فقط با جدول پر کنید، یا عکس را بگیرید"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"شروع‌نشده"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"هیچ‌چیز از این گوشی قابل ارسال نبود."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"چیزی برای حل کردن باقی نمانده است."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"با روش‌هایی که این برنامه می‌شناسد، چیز بیشتری در اینجا قابل استنتاج نیست."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"چیز غیرعادی وجود ندارد"</string>
+    <string name="msg_ok_565339bc" formatted="false">"باشه"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"یک"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"یک خانه شبیه رقم چاپی بود، اما نیست."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"یک رقم چاپی خودکار اصلاح شد."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"یک خانه"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"فقط %1$s می‌تواند اینجا قرار بگیرد؛ همهٔ رقم‌های دیگر در این سطر، ستون یا بلوک موجودند."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"فقط %1$s می‌تواند اینجا قرار بگیرد. خانه‌های مشخص‌شده، %2$s رقم از هشت رقم دیگر را اشغال کرده‌اند؛ %3$s قبلاً از این خانه حذف شده است، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"فقط %1$s می‌تواند در این خانه قرار بگیرد. خانه‌های برجسته چهار رقم از هشت رقم دیگر را حذف می‌کنند؛ %2$s قبلاً از گزینه‌های این خانه حذف شده‌اند، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"فقط %1$s می‌تواند در این خانه قرار بگیرد. خانه‌های برجسته شش رقم از هشت رقم دیگر را حذف می‌کنند؛ %2$s قبلاً از گزینه‌های این خانه حذف شده‌اند، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"فقط %1$s می‌تواند در این خانه قرار بگیرد. خانه‌های برجسته یک رقم از هشت رقم دیگر را حذف می‌کنند؛ %2$s قبلاً از گزینه‌های این خانه حذف شده‌اند، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"فقط %1$s می‌تواند در این خانه قرار بگیرد. خانه‌های برجسته هفت رقم از هشت رقم دیگر را حذف می‌کنند؛ %2$s قبلاً از گزینه‌های این خانه حذف شده است، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"فقط %1$s می‌تواند در این خانه قرار بگیرد. خانه‌های برجسته پنج رقم از هشت رقم دیگر را حذف می‌کنند؛ %2$s قبلاً از گزینه‌های این خانه حذف شده‌اند، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"فقط %1$s می‌تواند اینجا قرار بگیرد. خانه‌های برجسته‌شده %2$s رقم از هشت رقم دیگر را پوشش می‌دهند؛ %3$s %4$s قبلاً از این خانه حذف شده‌اند، نه به‌دلیل چیزی که در اطرافش می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"فقط %1$s می‌تواند در این خانه قرار بگیرد. خانه‌های برجسته دو رقم از هشت رقم دیگر را حذف می‌کنند؛ %2$s قبلاً از گزینه‌های این خانه حذف شده‌اند، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"فقط %1$s می‌تواند اینجا قرار بگیرد. خانه‌های مشخص‌شده، %2$s رقم از هشت رقم دیگر را اشغال کرده‌اند؛ %3$s قبلاً از این خانه حذف شده‌اند، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"فقط %1$s می‌تواند در این خانه قرار بگیرد. خانه‌های برجسته سه رقم از هشت رقم دیگر را حذف می‌کنند؛ %2$s قبلاً از گزینه‌های این خانه حذف شده‌اند، نه به‌دلیل چیزی که اکنون در اطراف آن می‌بینید."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"فقط %1$s می‌تواند اینجا قرار بگیرد. هشت رقم دیگر به‌دلیل خانه‌های پرشده یا کاندیدهای تکِ اجباری در این سطر، ستون یا بلوک حذف شده‌اند."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"فقط %1$s می‌تواند اینجا قرار بگیرد، هرچند اطرافش دلیل را نشان نمی‌دهد: هر هشت رقم دیگر با استدلال قبلی از این خانه حذف شده‌اند، نه به‌دلیل نوشته شدن در سطر، ستون یا بلوکش."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"فقط %1$s رقم چاپی پیدا شد که برای یک معما کافی نیست."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"فقط چرخش‌های یک‌چهارم دور پشتیبانی می‌شوند، نه %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"پیش‌نویسی را در مرورگر باز کنید که نسخهٔ برنامه، مدل گوشی، نسخهٔ اندروید و اطلاعات عیب‌یابی اسکن‌های اخیر در آن تکمیل شده‌اند. خودتان توضیح کامل و تصاویر صفحهٔ مرتبط را اضافه کنید.\n\nورود به GitHub لازم است. می‌توانید پیش‌نویس را پیش از ارسال بررسی و ویرایش کنید. گزارش‌ها و پیوست‌های ارسال‌شده عمومی هستند. هیچ عکسی خودکار پیوست نمی‌شود."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"باز کردن تنظیمات برنامه"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"باز کردن GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"اعلان‌های متن‌باز"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"«چرا این خانه؟» را باز کنید تا شواهد قرار دادن نهایی را ببینید، یا کاندیدی حذف‌شده را انتخاب کنید تا اثباتش را دنبال کنید."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - مجوز Apache 2.0. برای یافتن جدول و اصلاح پرسپکتیو آن استفاده می‌شود.\n\nAndroidX، Jetpack Compose و CameraX - مجوز Apache 2.0.\n\nKotlin - مجوز Apache 2.0.\n\nتشخیص‌دهندهٔ رقم با پایگاه دادهٔ رقم‌های دست‌نویس MNIST اثر LeCun، Cortes و Burges، همراه با رقم‌های رندرشده از قلم‌های آزاد سیستم و رقم‌های ترسیم‌شده به‌صورت برنامه‌نویسی آموزش دیده است."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"کتابخانه‌های بومی OpenCV بارگذاری نشدند"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"از معمای دیگری عکس بگیرید."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"عکس‌هایی که نگه می‌دارید در فضای ذخیره‌سازی خصوصی این برنامه ذخیره می‌شوند و با حذف آن‌ها یا حذف نصب برنامه پاک می‌شوند."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"عکس‌هایی که برنامه نتوانسته از آن‌ها معما بسازد. یکی را ارسال کنید تا بررسی شود."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"یک رقم انتخاب کنید و در سطرها دنبال مواردی بگردید که دقیقاً دو خانه برایش باقی مانده است. دو سطر از این نوع را انتخاب کنید و ببینید آیا یکی از خانه‌های هرکدام در یک ستون قرار می‌گیرد.\n\nاگر چنین باشد، آن دو خانه در یک ستون‌اند و نمی‌توانند هر دو آن رقم را داشته باشند. پس دست‌کم یکی از انتهاهای دور، یعنی دو خانهٔ طرف دیگر، آن رقم را دارد. نمی‌دانید کدام و نیازی هم ندارید: هر خانه‌ای که هر دو انتهای دور را می‌بیند می‌تواند آن رقم را حذف کند.\n\nسپس همین کار را با ستون‌ها به‌جای سطرها تکرار کنید. شکل آن یک ساختمان بلند کنار ساختمانی کوتاه است؛ نامش از همین می‌آید و پس از دیدن چند نمونه، همین شکل به تشخیصش کمک می‌کند."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"یک رقم انتخاب کنید. سطری پیدا کنید که دقیقاً دو جای ممکن برایش دارد و ستونی که دقیقاً دو جای ممکن برایش دارد. حالا بررسی کنید آیا یک خانه از سطر و یک خانه از ستون در یک بلوک هستند.\n\nاگر چنین باشد، آن دو نمی‌توانند هر دو آن رقم باشند؛ یک بلوک، یک رقم. پس دست‌کم یکی از دو انتهای باقی‌مانده آن رقم است و هر خانه‌ای که هر دو انتها را می‌بیند می‌تواند آن رقم را حذف کند.\n\nدلیل اینکه افراد این روش را از دست می‌دهند این است که چیزی برای هم‌راستا کردن وجود ندارد: چهار خانه شکلی نامتقارن می‌سازند و تنها چیزی که آن‌ها را به هم پیوند می‌دهد، بلوکی است که دو انتهای داخلی در آن مشترک‌اند."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"یک خانهٔ خالی انتخاب کنید و رقم‌های 1 تا 9 را بررسی کنید؛ هر رقمی را که از قبل در سطر، ستون یا بلوکش هست خط بزنید. اگر دقیقاً یک رقم باقی ماند، همان‌جا قرار می‌گیرد.\n\nهمهٔ روش‌های دیگر برای فراهم کردن زمینهٔ این روش هستند. هر روش سخت‌تر راهی است برای رساندن یک خانه به یک کاندید، پس وقتی روشی سخت‌تر نتیجه داد، بعد سراغ این روش بروید."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"یک رقم انتخاب کنید و بقیه را نادیده بگیرید. سطرها را بررسی کنید و مواردی را یادداشت کنید که فقط دو یا سه خانهٔ ممکن برای آن رقم مانده است. دنبال %1$s سطر از این نوع بگردید که خانه‌هایشان در همان %2$s ستون هم‌راستا باشند.\n\nاگر آن‌ها را یافتید، هرکدام از آن %3$s سطر باید رقم را در یکی از آن ستون‌ها قرار دهد و هیچ دو سطری نمی‌توانند از یک ستون استفاده کنند. پس در مجموع آن رقم را در همهٔ %4$s ستون اشغال می‌کنند و تمام خانه‌های دیگر آن ستون‌ها می‌توانند آن را حذف کنند.\n\nسپس همهٔ این کارها را با جابه‌جایی ستون‌ها و سطرها تکرار کنید. نیمی از این الگوها از جهت دوم پیدا می‌شوند و این همان نیمه‌ای است که بیشتر افراد هرگز دنبالش نمی‌گردند."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"قرار دادن %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"%1$s را در سطر %2$s، ستون %3$s قرار دهید."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"%1$s را در خانهٔ کادردار خود قرار دهید."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"لطفاً تصاویر صفحهٔ مرتبط را با ابزار پیوست GitHub اضافه کنید: معما، رقم‌های تشخیص‌داده‌شده، نتیجهٔ «بررسی» یا مرحلهٔ راهنمایی که مشکل را نشان می‌دهد. هرجا مفید است، نتایج مورد انتظار و واقعی را نیز ذکر کنید."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"لطفاً موارد ارسالی من برای تشخیص Sudoku Buddy را حذف کنید. شناسه‌های رسید: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"لطفاً این متن را با شرح کامل مشکل یا ایده جایگزین کنید. برای این گزارش عنوانی کوتاه و گویا بنویسید."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"دوربین را به‌سوی یک معمای سودوکو بگیرید"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"دوربین را به‌سوی یک معمای سودوکو بگیرید."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"دوربین را به‌سوی یک معمای سودوکو روی کاغذ بگیرید. برنامه رقم‌های چاپی و هرچه نوشته‌اید را می‌خواند، معما را حل می‌کند و می‌تواند راهنمایی بدهد، پاسخ‌هایتان را بررسی کند یا راه‌حل کامل را نشان دهد."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"جفت اشاره‌گر"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"ارسال"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"در حال آماده‌سازی معما…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"قبلی"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"مرحلهٔ قبلی"</string>
+    <string name="msg_printed_d8742933" formatted="false">"چاپی"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"سیاست حفظ حریم خصوصی"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"ذخیره‌سازی جدول‌ها"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"جدول‌ها"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"جدول‌ها روی همین گوشی خوانده و حل می‌شوند. اگر یک خوانش نامطمئن را ارسال کنید یا اشتراک‌گذاری خودکار را فعال کنید، عکس جدول، خوانش‌های اولیه، نشانه‌های عدم اطمینان و اصلاحات شما به‌صورت امن به Freevia فرستاده می‌شوند تا برای تحلیل تشخیص و آموزش خصوصی استفاده شوند. گزارش‌ها شامل مدل دستگاه یا اطلاعات عیب‌یابی شما نیستند. اشتراک‌گذاری خودکار اختیاری است؛ هیچ حساب کاربری، تحلیل معمول استفاده یا ردیابی تبلیغاتی وجود ندارد. نسخه‌های آموزشی را می‌توان با رسید حذف کرد، هرچند مدلی که قبلاً آموزش دیده ممکن است تغییرات آموخته‌شده را حفظ کند. برای حذف گزارش، از «رسیدهای ارسال» در تنظیمات استفاده کنید."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"جدول‌هایی که برای آزمایش از آن‌ها عکس گرفته شده، از sudoku.cba.si آمده‌اند. این برنامه وابسته به آن‌ها نیست."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"جدول‌هایی که از آن‌ها عکس می‌گیرید اینجا نگهداری می‌شوند تا بتوانید بعداً دوباره ادامه‌شان دهید."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"تشخیص"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"به‌صورت %1$s دست‌نویس تشخیص داده شد، با اطمینان %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"به‌صورت %1$s چاپی تشخیص داده شد، با اطمینان %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"خالی تشخیص داده شد؛ هیچ اثری از جوهر پیدا نشد."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"به‌صورت یادداشت مدادی کاندیداها تشخیص داده شد و نادیده گرفته شد."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"خوانش بازبینی شد."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"خوانش ارسال شد. سپاس!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## اطلاعات عیب‌یابی اسکن‌های اخیر (از پیش تکمیل‌شده)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"تشخیص ممکن است اشتباه کند، به‌ویژه در دست‌خط. با «خواندن»، ارقام تشخیص‌داده‌شده را با عکس مقایسه کنید و برای اصلاح هر خانه روی آن بزنید. برنامه خوانش‌های نامطمئن را برای بازبینی علامت می‌زند؛ حتی یک خوانش مطمئن هم ممکن است اشتباه باشد."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"رد فرض"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"جفت‌های دور"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"حذف %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\n%1$s را حذف کنید از "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"حذف شد"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"بازپخش استدلال"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"گزارش اشکال یا پیشنهاد در GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"تلاش دوباره برای دوربین"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"بازگشت به گام %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"نمایش توضیح"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"بازبینی یا ارسال خوانش"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"بازبینی خوانش"</string>
+    <string name="msg_right_883361d5" formatted="false">"درست"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"مسیر کامل شد. برای بازبینی هر حرکت برگردید یا گام‌ها را خودتان امتحان کنید."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"ردیف %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"ردیف %1$s، ستون %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"ردیف %1$s، ستون %2$s، "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"ردیف $1، ستون $2"</string>
+    <string name="msg_row_634768da" formatted="false">"ردیف"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"سطرها"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">"، %1$s حذف‌شده"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"اطلاعات عیب‌یابی اسکن خوانده نشد."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## تصاویر صفحه یا نمونه‌های معما"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"حدس دوم: %1$s، %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"انتخاب برای تمرین"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"انتخاب‌شده: ردیف %1$s، ستون %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"ارسال اطلاعات عیب‌یابی (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"ارسال اطلاعات عیب‌یابی"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"ارسال این اسکن‌ها"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"ارسال این عکس"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"تنظیمات"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"هفت"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"اشتراک‌گذاری خودکار هنگام عدم اطمینان"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"خوانش‌های نامطمئن خودکار به اشتراک گذاشته شوند؟"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"نمایش تناقض"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"همهٔ %1$s را روی جدول خودم نشان بده"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"آن مورد را روی جدول خودم نشان بده"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"رنگ‌آمیزی ساده"</string>
+    <string name="msg_six_44778d82" formatted="false">"شش"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"آسمان‌خراش"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">"، راه‌حل %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"حل"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"حل شد و همهٔ پاسخ‌ها درست‌اند."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"پاسخ با کمک حل‌گر: %1$s را در %2$s قرار دهید. کاندیداها %3$s هستند. تکنیک‌های پشتیبانی‌شدهٔ برنامه در این وضعیت حرکتی پیدا نکردند. جست‌وجوی آن، %4$s را در پاسخ یکتا پیدا کرد؛ اثبات تفصیلی شاخه‌های جست‌وجو در دسترس نیست."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nپاسخ با کمک حل‌گر: روش‌های پشتیبانی‌شدهٔ برنامه حرکتی پیدا نکردند. اثبات تفصیلی در دسترس نیست."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"حذف با کمک حل‌گر: جست‌وجو، %1$s را در خانهٔ مشخص‌شده رد می‌کند، اما برنامه نتوانست زنجیرهٔ کوتاهی از تناقض برای نمایش بسازد. اثبات تفصیلی در دسترس نیست."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"برخی خانه‌ها ممکن است به‌جای یک رقم کامل، یادداشت داشته باشند."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"برخی ارقام با اطمینان تشخیص داده نشدند."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"هنگام خواندن آن عکس مشکلی پیش آمد."</string>
+    <string name="msg_square_c11092bc" formatted="false">"خانه"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nکاندیدهای آغازین: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"گام %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"جدول را روبه‌روی دوربین و بدون اعوجاج پرسپکتیو قرار دهید"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"راهبردها"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"رسید ارسال"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"رسید ارسال نامعتبر است."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"رسیدهای ارسال (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"رسیدهای ارسال"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"پاسخ ارسال فاقد %1$s است."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"وضعیت پاسخ ارسال نامعتبر است."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"سرویس ارسال پیکربندی نشده است."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"سرویس ارسال HTTP %1$s را برگرداند."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"ارسال در این نسخه در دسترس نیست."</string>
+    <string name="msg_submit_155f816c" formatted="false">"ارسال"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"ارسال خودکار خوانش‌های نامطمئن بعدی"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"ارسال خوانش"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"ارسال خوانش نامطمئن برای تحلیل"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"ارسال به‌روزرسانی"</string>
+    <string name="msg_submitted_64900440" formatted="false">"ارسال شد"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"در حال ارسال…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"اطلاعات عیب‌یابی Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"بازخورد Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy توسط Freevia منتشر می‌شود. تماس: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy جدول‌ها را با دوربین می‌خواند، پس به دسترسی دوربین نیاز دارد. تشخیص و تاریخچهٔ جدول‌ها روی گوشی شما می‌مانند. اگر تصمیم بگیرید یک خوانش نامطمئن را ارسال کنید، عکس و نتایج آن به‌صورت امن به Freevia فرستاده می‌شوند تا تشخیص بهبود یابد. اشتراک‌گذاری خودکار اختیاری است و می‌توان آن را در تنظیمات خاموش کرد."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"اسکن Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"اسکن‌های Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"کد منبع Sudoku Buddy تحت Apache License 2.0 منتشر شده است. برند Freevia مشمول حقوق جداگانهٔ علامت تجاری است."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"سودوکو نوعی معما در مالکیت عمومی است. این برنامه جدول‌هایی را که از قبل دارید حل می‌کند؛ جدول‌های دیگران را بازتولید یا توزیع نمی‌کند."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">"، شواهد پشتیبان"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"فرض کنید خانهٔ علامت‌خورده %1$s باشد. ارقام شماره‌گذاری‌شده فرضی‌اند."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"فرض کنید این خانه %1$s باشد. پیکان‌ها را به‌ترتیب دنبال کنید: مقدار هر خانه با جای‌گذاری‌های قبلی قطعی می‌شود؛ یا آن رقم تنها رقم ممکنِ باقی‌مانده برای خانه است، یا آن خانه تنها جای ممکنِ باقی‌مانده برای رقم است.\n\nدر نتیجه، در واحد قرمز هیچ جایی برای %2$s باقی نمی‌ماند. علامت‌های %3$s در آن، جاهایی هستند که این رقم می‌توانست در آن‌ها قرار بگیرد و هر کدام خانه‌ای است که یکی از پیکان‌ها همین حالا اشغال کرده است. واحدی که هیچ جایی برای یک رقم ندارد ناممکن است؛ پس این خانه %4$s نیست."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"فرض کنید این خانه %1$s باشد. پیکان‌ها را به‌ترتیب دنبال کنید: هر خانه با جای‌گذاری‌های قبلی تعیین می‌شود؛ یا آن رقم تنها رقمی است که هنوز می‌تواند در خانه باشد، یا آن خانه تنها جای باقی‌مانده برای رقم است. سپس هیچ رقمی برای خانهٔ قرمز باقی نمی‌ماند، که ناممکن است؛ پس این خانه %2$s نیست."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"فرض کنید این خانه %1$s باشد. پیکان‌ها را به‌ترتیب دنبال کنید: مقدار هر خانه با جای‌گذاری‌های قبلی قطعی می‌شود؛ یا آن رقم تنها رقم ممکنِ باقی‌مانده برای خانه است، یا آن خانه تنها جای ممکنِ باقی‌مانده برای رقم است.\n\nدر نتیجه، در ردیف قرمز هیچ جایی برای %2$s باقی نمی‌ماند. علامت‌های %3$s در آن، جاهایی هستند که این رقم می‌توانست در آن‌ها قرار بگیرد و هر کدام خانه‌ای است که یکی از پیکان‌ها همین حالا اشغال کرده است. ردیفی که هیچ جایی برای یک رقم ندارد ناممکن است؛ پس این خانه %4$s نیست."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"فرض کنید این خانه %1$s باشد. پیکان‌ها را به‌ترتیب دنبال کنید: مقدار هر خانه با جای‌گذاری‌های قبلی قطعی می‌شود؛ یا آن رقم تنها رقم ممکنِ باقی‌مانده برای خانه است، یا آن خانه تنها جای ممکنِ باقی‌مانده برای رقم است.\n\nدر نتیجه، در بلوک قرمز هیچ جایی برای %2$s باقی نمی‌ماند. علامت‌های %3$s در آن، جاهایی هستند که این رقم می‌توانست در آن‌ها قرار بگیرد و هر کدام خانه‌ای است که یکی از پیکان‌ها همین حالا اشغال کرده است. بلوکی که هیچ جایی برای یک رقم ندارد ناممکن است؛ پس این خانه %4$s نیست."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"فرض کنید این خانه %1$s باشد. پیکان‌ها را به‌ترتیب دنبال کنید: هر خانه با جای‌گذاری‌های قبلی تعیین می‌شود؛ یا آن رقم تنها رقمی است که هنوز می‌تواند در خانه باشد، یا آن خانه تنها جای باقی‌مانده برای رقم است.\n\nدر نتیجه، در %2$s قرمز جایی برای %3$s نمی‌ماند. موارد %4$s علامت‌خورده در آن، جاهایی هستند که این رقم می‌توانست قرار بگیرد و هرکدام خانه‌ای است که یکی از پیکان‌ها همین حالا اشغال کرده است. %5$s بدون جای ممکن برای یک رقم نمی‌تواند وجود داشته باشد؛ پس این خانه %6$s نیست."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"فرض کنید این خانه %1$s باشد. پیکان‌ها را به‌ترتیب دنبال کنید: مقدار هر خانه با جای‌گذاری‌های قبلی قطعی می‌شود؛ یا آن رقم تنها رقم ممکنِ باقی‌مانده برای خانه است، یا آن خانه تنها جای ممکنِ باقی‌مانده برای رقم است.\n\nدر نتیجه، در ستون قرمز هیچ جایی برای %2$s باقی نمی‌ماند. علامت‌های %3$s در آن، جاهایی هستند که این رقم می‌توانست در آن‌ها قرار بگیرد و هر کدام خانه‌ای است که یکی از پیکان‌ها همین حالا اشغال کرده است. ستونی که هیچ جایی برای یک رقم ندارد ناممکن است؛ پس این خانه %4$s نیست."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"به «بعد» بروید تا حرکت و پیامدهایش را روی جدول ببینید."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"شمشیرماهی"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"گرفتن عکس جدید"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"گرفتن عکس دیگر"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"یک رقم را انتخاب کنید و هر واحدی را که دقیقاً دو خانهٔ ممکن برای آن باقی مانده علامت بزنید. این دو خانه مثل الاکلنگ‌اند: یکی آن رقم را دارد و دیگری ندارد.\n\nاز هرجا خواستید شروع کنید و یک خانه را مثلاً آبی کنید. جفت الاکلنگی آن را سبز کنید، سپس جفت خانهٔ سبز را دوباره آبی کنید و ادامه دهید تا زنجیره تمام شود. یا همهٔ خانه‌های آبی درست‌اند یا همهٔ خانه‌های سبز؛ نمی‌دانید کدام، و همین برای دو نتیجه کافی است.\n\nاول: اگر دو خانهٔ هم‌رنگ در یک ردیف، ستون یا بلوک باشند، آن رنگ ناممکن است؛ پس رقم از همهٔ خانه‌های آن رنگ حذف می‌شود و رنگ دیگر در سراسر زنجیره پاسخ است.\n\nدوم: هر خانهٔ بیرون زنجیره که هم یک خانهٔ آبی و هم یک خانهٔ سبز را ببیند، می‌تواند این رقم را حذف کند، چون زنجیره هرطور که باشد یکی از آن دو این رقم را دارد.\n\nبا مداد زمان‌بر است، اما ارزش دارد: یک رنگ‌آمیزی اغلب یک رقم را از نیمی از جدول حذف می‌کند."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"هر بار یک رقم و یک واحد را بررسی کنید؛ مثلاً 4 در این بلوک کجا می‌تواند باشد؟ هر خانهٔ واحد را که از قبل رقم دارد یا در ردیف یا ستون خودش یک 4 می‌بیند، کنار بگذارید. اگر یک خانه باقی ماند، 4 در همان قرار می‌گیرد.\n\nنکتهٔ گمراه‌کننده این است که با نگاه‌کردن به خود خانه نمی‌توانید این را ببینید: ممکن است پنج رقم دیگر را هم بپذیرد، پس هیچ‌چیز در آن قطعی به نظر نمی‌رسد. به‌جای خانه به رقم نگاه کنید تا فوراً آشکار شود."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"گرفتن عکس"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"گرفتن خودکار عکس"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"برای بازبینی روی یک خانهٔ علامت‌خورده بزنید، یا درست‌بودن همهٔ خوانش‌ها را تأیید کنید."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"ابتدا روی یک خانهٔ جدول بزنید."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"%1$s را به‌عنوان فرض در خانهٔ علامت‌خورده بیازمایید. این پاسخ نیست. پیامدها را دنبال کنید تا ببینید چرا رد می‌شود."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"آزمودن فرض"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"سپاس که به بهبود تشخیص کمک می‌کنید. عکس جدول، خوانش‌ها و اصلاحات شما برای تحلیل و آموزش استفاده خواهند شد."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"این هم یک حرکت معتبر با تکنیک %1$s است. این مسیر حرکت دیگری را نشان می‌دهد؛ اثبات آن را در پایین مقایسه کنید."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"این حرکت انتخاب‌شده برای این گام نیست. ممکن است حرکت‌های معتبر دیگری وجود داشته باشند؛ دوباره نگاه کنید یا توضیح این گام را نمایش دهید."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"درست است"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"این باقی‌ماندهٔ جدول است. %1$s خانه به پاسخ با کمک حل‌گر نیاز دارند، چون تکنیک‌های پشتیبانی‌شدهٔ برنامه حرکتی پیدا نکردند. اثبات‌های تفصیلی جست‌وجوی آن‌ها در دسترس نیست."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"این باقی‌ماندهٔ جدول است. یک خانه به پاسخ با کمک حل‌گر نیاز دارد، چون تکنیک‌های پشتیبانی‌شدهٔ برنامه حرکتی پیدا نکردند. اثبات تفصیلی جست‌وجوی آن در دسترس نیست."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"این تمام باقی‌ماندهٔ جدول است، از ابتدا تا انتها."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" آن عکس قابل نگهداری نبود، بنابراین چیزی برای ارسال وجود ندارد."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"آن خانه %1$s را می‌پذیرد. حرکتی را پیدا کنید که تکنیک این گام آن را توجیه می‌کند، یا توضیحش را نمایش دهید."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"آن خانه از قبل پر شده است. یک خانهٔ خالی انتخاب کنید."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"فرض رد شد. به کاندیداهای واقعی برمی‌گردیم و %1$s را از خانهٔ علامت‌خورده خط می‌زنیم. ارقام فرضی پاک می‌شوند."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"دوربین نتوانست آن عکس را بگیرد."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"دوربین در دسترس نیست. برنامه‌های دیگر دوربین را ببندید و دوباره امتحان کنید."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"دیگری"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"عکس مربوط به %1$s و هرچه از آن خوانده شده، از این گوشی حذف می‌شود. این کار برگشت‌پذیر نیست."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" عکس در فهرست معماهای شما، زیر «خوانده نشد» قرار دارد."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"محور اینجا %1$s یا %2$s است. در هر دو حالت یکی از دو خانهٔ دیگر ناچار %3$s می‌شود، پس هیچ خانه‌ای که هر دو را ببیند نمی‌تواند %4$s باشد."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"جفت اشاره‌گر در جهت عکس. یک ردیف یا ستون و رقمی را انتخاب کنید که هنوز باید در آن جای بگیرد. همهٔ خانه‌های آن خط را که می‌توانند رقم را بپذیرند علامت بزنید. اگر همگی در یک بلوک باشند، رقم باید در بخش مشترک آن بلوک و خط قرار بگیرد؛ پس در هیچ جای دیگر بلوک نیست، از جمله دو ردیف یا ستون دیگر آن که بررسی نمی‌کردید.\n\nمانند جفت اشاره‌گر، این تکنیک به‌تنهایی رقمی قرار نمی‌دهد؛ برای حرکتی که رقم قرار می‌دهد جا باز می‌کند."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"ارقام چاپی، جدول حل‌شدنی نمی‌سازند."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nکاندیدهای باقی‌مانده در %1$s عبارت‌اند از {%2$s}. %3$s را در سطر %4$s، ستون %5$s قرار دهید."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"گزارش برای ارسال بیش از حد بزرگ است."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"همان بال Y است، با یک کاندیدای بیشتر در خانهٔ محور. دنبال خانه‌ای با دقیقاً سه کاندیدا، مثلاً {1,4,7}، بگردید که دو خانهٔ دوکاندیدایی را ببیند؛ یکی {1,7} و دیگری {4,7}.\n\nحالا هر سه می‌توانند 7 باشند و یکی از آن‌ها حتماً 7 است. پس برای حذف این رقم از یک خانه، آن خانه باید هر سه را ببیند، نه فقط دو بازو را؛ در عمل یعنی در بلوک محور و هم‌ردیف یا هم‌ستون با یکی از بازوها باشد.\n\nحذف‌هایش کمتر از بال Y است و به همان دلیل آسان‌تر از چشم پنهان می‌ماند: خانهٔ محور جلب توجه نمی‌کند."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"در بلوک مشخص‌شده خانه‌ای هست که می‌توانید پر کنید.\n\nدوباره «راهنمایی» را بزنید تا بدانید کدام تکنیک آن را پیدا می‌کند."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"اینجا دیگر چیزی برای استدلال باقی نمانده است."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"این %1$s خانه همگی فقط %2$s و %3$s را دارند و هرکدام خانهٔ بعدی را می‌بیند، پس در تمام مسیر یکی‌درمیان می‌آیند. %4$s و %5$s به تعداد فردی پیوند از هم فاصله دارند، پس ارقام متفاوتی دارند؛ بنابراین %6$s از هر خانه‌ای که هر دو را ببیند حذف می‌شود."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"این %1$s خانه در مجموع فقط %2$s را دارند، پس این ارقام به ترتیبی آن‌ها را پر می‌کنند. بنابراین %3$s از بقیهٔ این %4$s حذف می‌شود."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"این %1$s خانه در مجموع فقط %2$s را می‌پذیرند؛ پس این رقم‌ها با ترتیبی در آن‌ها قرار می‌گیرند. بنابراین %3$s از بقیهٔ خانه‌های این ردیف حذف می‌شود."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"این %1$s خانه در مجموع فقط %2$s را می‌پذیرند؛ پس این رقم‌ها با ترتیبی در آن‌ها قرار می‌گیرند. بنابراین %3$s از بقیهٔ خانه‌های این ستون حذف می‌شود."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"این %1$s خانه در مجموع فقط %2$s را می‌پذیرند؛ پس این رقم‌ها با ترتیبی در آن‌ها قرار می‌گیرند. بنابراین %3$s از بقیهٔ خانه‌های این بلوک حذف می‌شود."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"این‌ها کاندیداهای اولیهٔ خانهٔ شما هستند. «ردگیری» توضیح می‌دهد کدام احتمال‌ها را می‌توان رد کرد."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"این ارقام نمی‌توانند یک جدول معتبر بسازند و خطاها بیش از آن‌اند که بتوان مشخصشان کرد. برای اصلاح خوانش روی هر خانه بزنید یا دوباره عکس بگیرید."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"این ارقام نمی‌توانند یک جدول معتبر بسازند. تغییر %1$s خانهٔ دایره‌دار مشکل را برطرف می‌کند؛ برای اصلاح خوانش روی یکی بزنید."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"این ارقام نمی‌توانند یک جدول معتبر بسازند. تغییر همان یک خانهٔ دایره‌دار مشکل را برطرف می‌کند؛ برای اصلاح خوانش روی آن بزنید."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"این ارقام یک جدول معتبر نمی‌سازند، پس یکی اشتباه خوانده شده است. «حل» را بزنید تا ببینید کدام خانه‌ها باید اصلاح شوند."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"این چهار خانه در دو بلوک یک مستطیل می‌سازند و سه تای آن‌ها فقط %1$s را دارند. اگر %2$s هم فقط همان دو رقم را داشت، می‌شد ارقام را دور مستطیل جابه‌جا کرد و جدول دو پاسخ داشت. جدول یک پاسخ دارد، پس %3$s باید رقم دیگری داشته باشد و %4$s حذف می‌شود."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"به پایان نمی‌رسند: چیزی در اینجا برنامه را کاملاً ناتوان کرده است."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"این حرکت هیچ خانه‌ای را پر نمی‌کند. %1$s را از %2$s حذف می‌کند."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"این کار هیچ خانه‌ای را پر نمی‌کند. فقط %1$s را از گزینه‌های %2$s خانه حذف می‌کند."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"این کار هیچ خانه‌ای را پر نمی‌کند. فقط %1$s را از گزینه‌های یک خانه حذف می‌کند."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nاین نخستین استنتاج از %1$s استنتاجی است که به پاسخ می‌رسند."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"این اثبات یک راهنمایی را توضیح می‌دهد، از جمله حذف کاندیداهایی که به پاسخ آن می‌رسند. گام‌به‌گام جلو بروید تا استدلال را روی جدول دنبال کنید، سپس مسیر کامل را ادامه دهید."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"این جدول آماده نشد."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"این جدول ذخیره نشد. هنوز می‌توانید همین حالا از آن استفاده کنید. پیش از گرفتن عکس دیگر، مقداری فضای ذخیره‌سازی آزاد کنید."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"این جدول بیش از یک پاسخ دارد، پس احتمالاً یک رقم چاپی تشخیص داده نشده است. پاسخ %1$s از %2$s نمایش داده می‌شود؛ برای پاسخ بعدی دوباره «حل» را بزنید. خانه‌های دایره‌دار در پاسخ‌های نمایش‌داده‌شده متفاوت‌اند."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"عکس این جدول باز نشد."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"این استدلال، %1$s مورد موجود را رد می‌کند "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"این خانه ممکن است به‌جای یک رقم کامل، یادداشت کاندیداها داشته باشد. لطفاً آن را بررسی کنید."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"این نما حذف‌های قبلی کاندیداها را هم نشان می‌دهد. برای بررسی، شواهد آن‌ها را در پایین باز کنید."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"سه"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"برای تشخیص خطوط جدول بیش از حد تاریک است"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"ردگیری"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"آزموده‌شده"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"خودتان امتحان کنید"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"فعال‌کردن"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"گوشی را بچرخانید تا جدول در جهت درست قرار بگیرد."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"آموزگار"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"دو"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"دو خانه با یک جفت کاندیدای یکسان که با یک پیوند الاکلنگی روی یکی از ارقام وصل‌اند، رقم دیگر را در یکی از آن دو قطعی می‌کنند."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"بادبادک دو رشته‌ای"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"مستطیل یکتا"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"واحد"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable هیچ فهرست CellReading ارائه نمی‌کند؛ خانه‌های دقیق ورودی و نتیجه نگهداری می‌شوند."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"نسخهٔ قالب مدل پشتیبانی نمی‌شود"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"نامطمئن"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"استفاده از زبان دستگاه"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"با استفاده از %1$s، روی خانه‌ای بزنید که می‌توان یک کاندیدا را از آن حذف کرد، سپس آن رقم را انتخاب کنید."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"با استفاده از %1$s، روی خانه‌ای بزنید که می‌توانید پر کنید، سپس رقمش را انتخاب کنید."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"بسیار دشوار"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"بال W"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"شد"</string>
+    <string name="msg_were_910adfb4" formatted="false">"شدند"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"چه انتظاری داشتید، یا ایدهٔ شما چگونه به حل یا یادگیری سودوکو کمک می‌کند؟"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## آنچه رخ داد و مراحل بازتولید (برای خطاها)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"چه می‌کند"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"کجا"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"چرا %1$s از r%2$sc%3$s حذف شد"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"چرا"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"چرا %1$s نه؟ · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"چرا این خانه؟ · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" با راه‌حل. برای بررسی آن‌ها از «بررسی» استفاده کنید."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"از خانهٔ خود به عقب برگردید. یکی از پرسش‌های زیر را انتخاب کنید."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"به‌جای خانه‌به‌خانه، رقم‌به‌رقم پیش بروید. برای یک واحد، جاهای ممکن هر رقمِ غایب را بنویسید. سپس دنبال %1$s رقم بگردید که فهرست جاهایشان در مجموع فقط %2$s خانه را پوشش دهد.\n\nاین %3$s رقم باید آن %4$s خانه را پر کنند، پس همهٔ ارقام دیگر را می‌توان از آن خانه‌ها خط زد؛ این کار اغلب همان‌جا یکی از آن‌ها را به تکِ آشکار یا جفتِ آشکار تبدیل می‌کند.\n\nبیشتر افراد این تکنیک را از همه سخت‌تر می‌دانند، چون با نگاه‌کردن به خانه‌ها چیزی دیده نمی‌شود: هنوز کاندیداهای زیادی دارند. الگو در ارقام است."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"فقط با خانه‌هایی کار کنید که دقیقاً دو کاندیدا دارند.\n\nاز یکی، مثلاً {2,6}، شروع کنید و فرض کنید 2 نیست؛ پس 6 است. به خانه‌ای بروید که آن را می‌بیند و آن هم 6 دارد، مثلاً {6,4}: آن خانه نمی‌تواند 6 باشد، پس 4 است. به خانه‌ای بروید که خانهٔ قبلی آن را می‌بیند و 4 دارد، و ادامه دهید؛ هر گام با گام قبلی قطعی می‌شود.\n\nاگر به خانه‌ای برسید که رقم دیگرش 2 است، یعنی همان رقمی که ابتدا رد کردید، کار تمام است. یا خانهٔ اول از ابتدا 2 بوده، یا زنجیره برقرار است و خانهٔ آخر 2 است. یکی از دو سر آن را دارد، پس هر خانه‌ای که هر دو سر را ببیند نمی‌تواند آن را داشته باشد.\n\nزنجیره‌ها را کوتاه نگه دارید. چهار یا پنج خانه را می‌توان با مداد پیدا کرد؛ بیشتر از آن نیاز به ثبت و پیگیری دارد و نام درستش زنجیرهٔ اجباری است."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"طول ضلع کاری باید مثبت و متناهی باشد"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"خوانده نشد"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"دست‌نویس"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"نادرست"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"بال X"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"زنجیرهٔ XY"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"بال XYZ"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"بال Y"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"این خانه را پاک کردید."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"این خانه را به %1$s دست‌نویس تغییر دادید."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"این خانه را به %1$s چاپی تغییر دادید."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"تغییرات شما دیده می‌شوند، اما ذخیره نشدند. مقداری فضای ذخیره‌سازی آزاد کنید و دوباره جدول را ویرایش کنید."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"عکس‌ها و حریم خصوصی شما"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"جدول‌های شما"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"جدول‌های ذخیره‌شدهٔ شما"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"خانهٔ شما ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"دور خانهٔ شما مشخص می‌ماند. خانه‌های سبز شواهد را نشان می‌دهند؛ ارقام خط‌خورده رد شده‌اند."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

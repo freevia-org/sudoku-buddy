@@ -1,0 +1,8 @@
+{
+  "{0} is excluded by {1}, which can only hold {2} in the same box {3}.": "{0} हट जाता है, क्योंकि उसी बॉक्स {3} में {1} में केवल {2} आ सकता है।",
+  "{0} is excluded by {1}, which can only hold {2} in the same column {3}.": "{0} हट जाता है, क्योंकि उसी स्तंभ {3} में {1} में केवल {2} आ सकता है।",
+  "{0} is excluded by {1}, which can only hold {2} in the same row {3}.": "{0} हट जाता है, क्योंकि उसी पंक्ति {3} में {1} में केवल {2} आ सकता है।",
+  "{0} is excluded by {1}, which contains {2} in the same box {3}.": "{0} हट जाता है, क्योंकि उसी बॉक्स {3} में {1} में पहले से {2} है।",
+  "{0} is excluded by {1}, which contains {2} in the same column {3}.": "{0} हट जाता है, क्योंकि उसी स्तंभ {3} में {1} में पहले से {2} है।",
+  "{0} is excluded by {1}, which contains {2} in the same row {3}.": "{0} हट जाता है, क्योंकि उसी पंक्ति {3} में {1} में पहले से {2} है।"
+}

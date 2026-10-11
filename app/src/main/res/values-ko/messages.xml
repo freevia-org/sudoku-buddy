@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\n강조된 칸들이 이를 증명합니다.\n\n힌트를 다시 누르면 어느 칸인지 보여 드립니다."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s과 %2$s에는 모두 %3$s와 %4$s만 들어갈 수 있습니다. 이 %5$s에서 %6$s이 들어갈 자리는 두 곳뿐이며, 두 끝 칸이 각각 한 곳을 볼 수 있습니다. 따라서 그 두 자리 중 하나는 %7$s이고, 그 자리를 보는 끝 칸은 반드시 %8$s입니다. 어느 경우든 한쪽 끝은 %9$s이므로, 두 끝을 모두 볼 수 있는 모든 칸에서 %10$s을 제거할 수 있습니다."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s과 %2$s에는 모두 %3$s와 %4$s만 들어갈 수 있습니다. 이 박스에서 %5$s이 들어갈 수 있는 칸은 두 개뿐이며, 각 칸은 두 끝 칸 중 하나와 같은 행, 열 또는 박스에 있습니다. 따라서 그 두 칸 중 하나는 %6$s이며, 그 칸과 같은 행, 열 또는 박스에 있는 끝 칸은 반드시 %7$s입니다. 어느 경우든 한쪽 끝 칸은 %8$s이므로, 두 끝 칸 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 %9$s을 제외할 수 있습니다."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s과 %2$s에는 모두 %3$s와 %4$s만 들어갈 수 있습니다. 이 열에서 %5$s이 들어갈 수 있는 칸은 두 개뿐이며, 각 칸은 두 끝 칸 중 하나와 같은 행, 열 또는 박스에 있습니다. 따라서 그 두 칸 중 하나는 %6$s이며, 그 칸과 같은 행, 열 또는 박스에 있는 끝 칸은 반드시 %7$s입니다. 어느 경우든 한쪽 끝 칸은 %8$s이므로, 두 끝 칸 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 %9$s을 제외할 수 있습니다."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s과 %2$s에는 모두 %3$s와 %4$s만 들어갈 수 있습니다. 이 행에서 %5$s이 들어갈 수 있는 칸은 두 개뿐이며, 각 칸은 두 끝 칸 중 하나와 같은 행, 열 또는 박스에 있습니다. 따라서 그 두 칸 중 하나는 %6$s이며, 그 칸과 같은 행, 열 또는 박스에 있는 끝 칸은 반드시 %7$s입니다. 어느 경우든 한쪽 끝 칸은 %8$s이므로, 두 끝 칸 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 %9$s을 제외할 수 있습니다."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%2$s행 %3$s열의 %1$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%2$s단계의 %1$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s에는 %2$s만 들어갈 수 있습니다."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%3$s 때문에 %1$s에는 %2$s이 들어갈 수 없습니다 "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"같은 열 %5$s에 있는 %3$s에는 %4$s만 들어갈 수 있으므로 %1$s에는 %2$s이 들어갈 수 없습니다."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"같은 박스 %5$s에 있는 %3$s에는 %4$s만 들어갈 수 있으므로 %1$s에는 %2$s이 들어갈 수 없습니다."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"같은 행 %5$s에 있는 %3$s에는 %4$s만 들어갈 수 있으므로 %1$s에는 %2$s이 들어갈 수 없습니다."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"같은 박스 %5$s에 있는 %3$s에 %4$s이 있으므로 %1$s에는 %2$s이 들어갈 수 없습니다."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"같은 열 %5$s에 있는 %3$s에 %4$s이 있으므로 %1$s에는 %2$s이 들어갈 수 없습니다."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"같은 행 %5$s에 있는 %3$s에 %4$s이 있으므로 %1$s에는 %2$s이 들어갈 수 없습니다."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s에 %2$s이 있습니다."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"빈칸 %1$s개"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, 입력값"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"여기에는 반드시 %1$s이 들어가야 합니다. %2$s열에서 %3$s가 들어갈 수 있는 칸은 이 칸뿐입니다.\n\n%4$s\n\n현재 %5$s에는 %6$s가 들어갈 수 있지만, 모든 열에는 %7$s이 정확히 한 번 들어가야 합니다. 따라서 %9$s행 %10$s열에 %8$s을 넣으세요."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s은 여기에 들어가야 합니다. 이 %2$s %3$s에서 %4$s이 들어갈 수 있는 유일한 칸이기 때문입니다.\n\n%5$s\n\n현재 %6$s에는 %7$s이 들어갈 수 있지만, 모든 %8$s에는 %9$s이 정확히 한 번 있어야 합니다. 따라서 %11$s행 %12$s열에 %10$s을 넣으세요."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"여기에는 반드시 %1$s이 들어가야 합니다. 박스 %2$s에서 %3$s가 들어갈 수 있는 칸은 이 칸뿐입니다.\n\n%4$s\n\n현재 %5$s에는 %6$s가 들어갈 수 있지만, 모든 박스에는 %7$s이 정확히 한 번 들어가야 합니다. 따라서 %9$s행 %10$s열에 %8$s을 넣으세요."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"여기에는 반드시 %1$s이 들어가야 합니다. %2$s행에서 %3$s가 들어갈 수 있는 칸은 이 칸뿐입니다.\n\n%4$s\n\n현재 %5$s에는 %6$s가 들어갈 수 있지만, 모든 행에는 %7$s이 정확히 한 번 들어가야 합니다. 따라서 %9$s행 %10$s열에 %8$s을 넣으세요."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"이 행에서 %1$s이 들어갈 자리는 두 곳이고, 이 열에서도 두 곳입니다. %2$s과 %3$s는 같은 박스에 있으므로 둘 다 %4$s일 수 없습니다. 따라서 %5$s와 %6$s 중 하나에 그 숫자가 들어가며, 두 칸을 모두 볼 수 있는 모든 칸에서 %7$s을 제거할 수 있습니다."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" 같은 %2$s의 %1$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" 같은 박스에 있는 %1$s."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" 같은 열에 있는 %1$s."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" 같은 행에 있는 %1$s."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"그 칸에서는 이미 %1$s이 배제되었습니다. 후보 숫자는 "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s을 배제하는 근거는 %2$s이며, 이는 "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"같은 열 %4$s에 있는 %2$s에는 %3$s만 들어갈 수 있으므로 %1$s은 제외됩니다."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"같은 행 %4$s에 있는 %2$s에는 %3$s만 들어갈 수 있으므로 %1$s은 제외됩니다."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"같은 박스 %4$s에 있는 %2$s에는 %3$s만 들어갈 수 있으므로 %1$s은 제외됩니다."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"같은 박스 %4$s에 있는 %2$s에 %3$s가 있으므로 %1$s은 제외됩니다."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"같은 열 %4$s에 있는 %2$s에 %3$s가 있으므로 %1$s은 제외됩니다."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"같은 행 %4$s에 있는 %2$s에 %3$s가 있으므로 %1$s은 제외됩니다."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"가장 최근에 번호가 붙은 칸(%2$s행 %3$s열)은 반드시 %1$s입니다. %4$s 화살표는 이에 기여한 숫자 배치를 따라갑니다. 앞서 발생한 결과도 영향을 줍니다."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"클래스 경로에 %1$s이 없습니다"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%2$s개 중 %1$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"그중 %1$s개는 칸을 채우며, 나머지는 먼저 방해되는 후보를 제거합니다."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s 페어"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"인쇄된 숫자 %1$s개, %2$s, 틀린 답 %3$s개"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"인쇄된 숫자 %1$s개, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"인쇄된 숫자 %1$s개"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, 인쇄된 단서"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s 쿼드"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"거부된 사진 %1$s장, 최신순:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: %2$s 제거"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"칸 수: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"이 풀이 과정은 %1$s단계로 이루어져 있으며, 사용된 지원 기법 중 가장 어려운 것은 %2$s입니다. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s 트리플"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"앞선 후보 추론으로 %2$s에서 %1$s을 제거했습니다."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"적은 답 %1$s개"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"%1$sx%2$s 이미지에는 %3$s바이트가 필요하지만 %4$s바이트를 받았습니다"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"칸 값이 숫자도 마침표도 아닙니다"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"후보가 두 개인 칸들을 연결한 체인의 양 끝에 같은 숫자가 있으면, 그 숫자는 한쪽 끝에 반드시 들어갑니다."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"행, 열 또는 박스에서 들어갈 자리가 하나뿐인 숫자는 그 자리에 들어갑니다."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"손으로 쓴 %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"인쇄된 %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"빨간 칸은 앱이 그곳에서 인식한 숫자를 보여 줍니다. 쓴 숫자와 다르면 칸을 눌러 수정하세요."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"후보가 하나만 남은 칸에는 그 숫자가 반드시 들어갑니다."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"모든 기법을 담은 목록은 없으며, 가장 어려운 퍼즐은 목록의 어떤 기법으로도 풀리지 않도록 만들어집니다. 따라서 이 기법들로 아무것도 찾지 못하면, 튜터는 한 칸의 후보들을 시험해 답을 정하고, 그렇게 했음을 명확히 알린 뒤 그 지점부터 추론을 이어 갑니다. 언제나 퍼즐을 끝까지 풀며, 답을 찾아본 것을 추론이라고 가장하지 않습니다."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"후보가 세 개인 중심 칸과 이에 맞는 후보가 두 개인 두 날개 칸을 이용하면, 세 칸 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 특정 숫자를 제거할 수 있습니다."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"후보가 두 개인 중심 칸과 후보가 두 개인 두 날개 칸을 이용하면, 두 날개 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 특정 숫자를 제거할 수 있습니다."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"정보"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"이후"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"이 수 이후"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"모두 정답"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"이 세 칸에는 모두 %1$s이(가) 들어갈 수 있고, 그중 하나에는 반드시 들어갑니다. 따라서 세 칸 모두와 같은 행, 열 또는 박스에 있는 칸에는 %2$s이(가) 들어갈 수 없습니다."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"카메라 허용"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"거의 됐어요 - 종이를 평평하게 펴고 카메라와 평행하게 맞추세요"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"아무것도 제거하지 않는 후보 제거는 추론이 아닙니다"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" 및 "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"답"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## 앱 및 기기 (자동 입력)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- 앱: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"종횡비는 양수여야 하지만 %1$s입니다"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"가정 · 가상의 숫자"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"가정 기각 · 실제 후보 복원"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"최소 %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"자동 촬영"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"인식이 불확실한 퍼즐 사진, 인식 결과 및 이후의 칸 수정 내용을 인식 분석과 학습을 위해 Freevia에 자동으로 공유합니다. 기본값은 꺼짐입니다."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"빛 반사를 피하세요"</string>
+    <string name="msg_back_76900f1b" formatted="false">"뒤로"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"이전 질문으로"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"시각적 힌트로 돌아가기"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"선택한 칸으로 돌아가기"</string>
+    <string name="msg_before_9bb72500" formatted="false">"이전"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"이 수 이전"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"파란 숫자는 정답입니다. 칸을 눌러 인식된 내용을 수정하세요."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"박스 %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"박스"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"박스"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"박스-라인 축소"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"카메라"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"들어갈 수 있는 숫자"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"취소"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", 후보 %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"촬영 근거"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"숫자가 들어갈 자리가 두 곳뿐인 행, 열 또는 박스를 따라 체인을 만들고 두 색으로 번갈아 표시하면, 한 색에 해당하는 칸들은 모두 참입니다."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$s이 들어갈 수 있는 칸이 두 개뿐인 영역들을 따라 연결하면, 이 칸들을 두 색으로 번갈아 표시할 수 있으며 어느 한 색의 칸들은 모두 참입니다. 다른 색의 두 칸이 같은 행에 있으므로 모순입니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %2$s을 제거합니다."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$s이 들어갈 수 있는 칸이 두 개뿐인 영역들을 따라 연결하면, 이 칸들을 두 색으로 번갈아 표시할 수 있으며 어느 한 색의 칸들은 모두 참입니다. 다른 색의 두 칸이 같은 박스에 있으므로 모순입니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %2$s을 제거합니다."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"%1$s이 들어갈 수 있는 칸이 두 개뿐인 영역들을 따라 연결하면, 이 칸들을 두 색으로 번갈아 표시할 수 있으며 어느 한 색의 칸들은 모두 참입니다. 다른 색의 두 칸이 같은 열에 있으므로 모순입니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %2$s을 제거합니다."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"%1$s이(가) 들어갈 자리가 두 곳뿐인 행, 열 또는 박스를 따라 체인을 만들면 이 칸들은 두 색으로 번갈아 표시되며, 한 색에 해당하는 칸들은 모두 참입니다. %2$s 색의 두 칸이 같은 %3$s에 있으므로 이는 불가능합니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %4$s을(를) 제거합니다."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"%1$s이(가) 들어갈 자리가 두 곳뿐인 행, 열 또는 박스를 따라 체인을 만들면 이 칸들은 두 색으로 번갈아 표시되며, 한 색에 해당하는 칸들은 모두 참입니다. 이 칸들은 두 색 모두와 같은 행, 열 또는 박스에 있으므로, 어느 색이 참이든 연결된 칸 중 하나에는 %2$s이(가) 들어갑니다. 따라서 이 칸들에는 들어갈 수 없습니다."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"%1$s이 들어갈 수 있는 칸이 두 개뿐인 영역들을 따라 연결하면, 이 칸들을 두 색으로 번갈아 표시할 수 있으며 어느 한 색의 칸들은 모두 참입니다. 같은 색의 두 칸이 같은 박스에 있으므로 모순입니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %2$s을 제거합니다."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"%1$s이 들어갈 수 있는 칸이 두 개뿐인 영역들을 따라 연결하면, 이 칸들을 두 색으로 번갈아 표시할 수 있으며 어느 한 색의 칸들은 모두 참입니다. 같은 색의 두 칸이 같은 열에 있으므로 모순입니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %2$s을 제거합니다."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"%1$s이 들어갈 수 있는 칸이 두 개뿐인 영역들을 따라 연결하면, 이 칸들을 두 색으로 번갈아 표시할 수 있으며 어느 한 색의 칸들은 모두 참입니다. 같은 색의 두 칸이 같은 행에 있으므로 모순입니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %2$s을 제거합니다."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"확인이 필요한 불확실한 칸: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"확인"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"불확실한 칸 1개를 확인하세요."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", 정답 확인됨"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"후보를 선택해 해당 칸에 들어갈 수 없는 이유를 살펴보세요."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"언어 선택"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"표시할 내용 선택"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"닫기"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"힌트 닫기"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"인식 검토 접기"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"컬러 칸과 회색조 칸의 기하 구조가 같아야 합니다"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"%1$s열"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"열"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"열"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"강제 체인을 비교하고 따라가야 할 칸이 적은 체인을 우선합니다. 체인이 짧으면 전체 풀이의 단계 수는 더 많아질 수 있습니다."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"결과 %1$s/%2$s · 가상의 숫자"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"포함한다"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"콘텐츠 유형"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"전체 풀이 과정 계속 보기"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"모순 · 가정 실패"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", 모순"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"모순: 빨간 %1$s에 %2$s이(가) 들어갈 자리가 없습니다. 이는 불가능하므로 시작 가정은 틀렸습니다."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"모순: 빨간 칸에 후보가 하나도 남지 않았습니다. 이는 불가능하므로 시작 가정은 틀렸습니다."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"삭제 요청 복사"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"맞습니다. 아래 설명과 자신의 추론을 비교해 보세요."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"촬영한 이미지를 디코딩하지 못했습니다"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"사진에서 인쇄된 숫자를 찾지 못했습니다."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"격자선을 구분하지 못했습니다. 다시 시도하세요."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHub를 열지 못했습니다. %1$s로 지원팀에 문의하세요."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"디버그용 촬영 근거를 보관하지 못했습니다"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"인식 결과를 제출하지 못했습니다. 연결된 상태에서 다시 시도하세요."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"막다른 지점"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"삭제"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"삭제"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"보고서 삭제"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"이 사진 삭제"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"이 퍼즐 삭제"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"이 퍼즐을 삭제할까요?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"이 제출물을 삭제할까요?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"삭제 중…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"삭제를 확인하지 못했습니다. 연결 상태를 확인하고 다시 시도하세요."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"삭제 요청"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"삭제 응답에서 이 접수증을 확인하지 못했습니다."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"삭제 서비스가 HTTP %1$s을(를) 반환했습니다."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"발생한 상황과 재현 단계를 설명하세요. 인식된 숫자를 먼저 확인하고 수정했는지도 알려 주세요. 아이디어인 경우 \'해당 없음\'이라고 쓰세요."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", 이 힌트의 대상"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- 기기: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"브라우저 초안에 맞도록 진단 정보를 줄였습니다. 앱의 진단 정보 보내기 기능으로 전체 보고서를 공유할 수 있습니다."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"숫자는 1..9여야 하지만 %1$s입니다"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"숫자 인식 실패"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"촬영 근거를 디스크에 보관하면 측정 시간에 영향을 줍니다. 지연 시간 벤치마크가 아닙니다."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", 정답과 일치하지 않음"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"각 접수증은 제출된 퍼즐의 한 수정본을 식별합니다. 여기서 삭제하면 Freevia에 비공개로 저장된 보고서가 제거됩니다."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" 앞서 제거한 후보: %1$s. 이전 단계 링크에서 증명을 살펴보세요."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← 이전 근거 (깊이 %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"앞서 가정하여 넣은 숫자들로 인해 후보가 하나만 남았습니다."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"이 증명에 사용된 이전 단계"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"칸 수정"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"여덟"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"빈칸"</string>
+    <string name="msg_empty_8a112150" formatted="false">"비어 있습니다."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"비어 있음"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"영어"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"일치하지 않는 입력값"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"일치하지 않는 입력값"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"모두 한 칸을 채웁니다."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"모든 칸이 채워졌지만 답 %1$s개가 정답과 다릅니다."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"모든 칸이 채워졌지만 답 1개가 정답과 다릅니다."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"정답이 하나인 모든 스도쿠는 추론으로 풀 수 있습니다. 추측은 필요하지 않으며 도움이 되는 경우도 드뭅니다. 이 앱이 인식하고 설명할 수 있는 추론 기법들을 쉬운 순서로 나열했습니다. 현재 열린 퍼즐에 적용되는 기법이 있으면 적용되는 모든 위치를 보여 줍니다."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"지금까지 쓴 답은 모두 맞습니다."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"현재 볼 수 있는 예시: 각각 현재 보드에서 시작합니다."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"가로선 10개가 필요하지만 %1$s개입니다"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"세로선 10개가 필요하지만 %1$s개입니다"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81개 칸이 필요하지만 %1$s개입니다"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"각 블록에 81개 칸이 필요하지만 %1$s개와 %2$s개입니다"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"8비트 단일 채널이 필요하지만 %1$s입니다"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"28x28 이미지가 필요하지만 값이 %1$s개입니다"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## 기대한 동작 또는 개선 제안"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"각 방향으로 선이 10개씩 필요합니다"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"블록 두 개가 필요하지만 %1$s개입니다"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"이전 후보 제거 설명 (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"힌트 설명"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"후보가 두세 개만 남은 칸을 찾으세요. 후보는 적을수록 좋고, 주변 행, 열, 박스는 많이 채워져 있을수록 좋습니다.\n\n후보 하나를 골라 연필로 옅게 써 넣으세요. 이제 그 결과를 따라가세요. 그 칸과 같은 행, 열 또는 박스에 있는 모든 칸에서 해당 숫자가 제거됩니다. 그러면 어떤 칸에는 후보가 하나만 남을 수 있고, 그 숫자가 확정되면서 다른 칸도 확정되는 식으로 이어집니다. 계속 진행하세요.\n\n두 가지 중 하나가 일어납니다. 더 진행할 수 없어 아무것도 알아내지 못했다면, 지우고 다른 후보를 시험하세요. 또는 후보가 하나도 남지 않은 칸이나 어떤 숫자를 넣을 자리가 없는 행에 도달합니다. 이는 불가능하므로 연필로 넣은 숫자는 틀렸고, 그 후보를 확실히 제외할 수 있습니다.\n\n다른 방법이 모두 막혔을 때 사용하는 기법입니다. 더 느리고 패턴을 찾기보다 기록을 관리하는 작업에 가깝지만, 패턴 기법이 놓치는 수를 찾아낼 수 있습니다. 후보 하나만 제거해도 쉬운 기법을 다시 적용할 수 있는 경우가 많습니다. 그래도 더 깊은 탐색이 필요한 배치도 있습니다."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"같은 두 후보, 예를 들어 {3,7}을 가진 두 칸을 찾으세요. 두 칸은 같은 행, 열 또는 박스에 있지 않아야 하며, 보통 서로 멀리 떨어져 있습니다.\n\n이제 7이 들어갈 자리가 두 칸뿐인 행, 열 또는 박스를 찾으세요. 그중 한 칸은 처음 고른 쌍의 첫 번째 칸과, 다른 칸은 두 번째 칸과 같은 행, 열 또는 박스에 있어야 합니다. 이것이 연결 고리입니다.\n\n그 두 칸 중 하나에는 7이 들어갑니다. 어느 쪽이든 그 칸과 같은 행, 열 또는 박스에 있는 원래 쌍의 칸에는 7이 들어갈 수 없으므로 3이 들어가야 합니다. 어느 끝이 3인지는 모르지만 한쪽은 반드시 3입니다. 이것만으로도 양 끝 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 3을 제외할 수 있습니다.\n\n어려운 부분은 연결 고리이므로 반대로 찾아보세요. 먼저 숫자가 들어갈 자리가 두 곳뿐인 행, 열 또는 박스를 표시한 뒤, 양쪽에서 같은 후보 쌍을 찾으세요."</string>
+    <string name="msg_finished_05343e98" formatted="false">"완료"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"격자가 화면 안에서 원근 왜곡 없이 반듯하고 흔들리지 않을 때 촬영하세요. 조건이 맞지 않아도 버튼은 항상 작동합니다."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"격자 전체가 보이게 맞추세요."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"격자 전체가 보이게 맞추세요"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"다섯"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"각 수가 이전 수를 바탕으로 이어지는 풀이 과정을 따라가세요."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"전체 증명을 순서대로 보기"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"후보가 두 개인 칸들의 체인을 따라가세요. %1$s이(가) %2$s이(가) 아니라면 체인의 각 칸은 앞 칸에 의해 확정되어, 결국 %3$s은(는) %4$s이(가) 됩니다. 따라서 양 끝 중 하나에는 %5$s이(가) 들어가므로, 양 끝 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 이를 제외할 수 있습니다."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"강제 체인"</string>
+    <string name="msg_four_04efaf08" formatted="false">"넷"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"두 행, 두 열, 두 박스에 걸친 네 칸이 모두 같은 두 후보만 가질 수는 없습니다. 그러면 퍼즐에 정답이 두 개 생깁니다."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia에서 삭제를 확인했지만 이 휴대전화에서 로컬 접수증을 제거하지 못했습니다. 다시 시도해 로컬 정리를 마치세요."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia는 이 보고서 수정본과 비공개 학습용 사본을 삭제합니다. 이후 수정하면 공유 설정에 따라 새 보고서가 생성될 수 있습니다. 이미 이 자료로 학습한 모델에는 학습된 변화가 남을 수 있습니다."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"전체 풀이 과정"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"앞으로 인식이 불확실한 경우, 반듯하게 보정한 퍼즐 사진, 인식 결과 및 수정 내용을 분석과 학습을 위해 Freevia에 보냅니다. 학습용 사본은 제출 접수증에서 삭제할 때까지 보관되며, 학습된 모델에는 학습된 변화가 남을 수 있습니다. 인식이 불확실한 퍼즐이 이미 열려 있다면 지금 전송됩니다. 설정에서 이 기능을 끌 수 있습니다."</string>
+    <string name="msg_gentle_96124817" formatted="false">"쉬움"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"빛 반사로 선이 흐려집니다 - 종이를 빛에서 멀어지도록 기울이세요"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"회색조 이미지(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"회색 칸에는 연필 메모가 있으며, 앱은 이를 무시합니다. 숫자 아래 막대는 인식 확신도를 나타냅니다. 칸을 누르면 자세히 볼 수 있습니다."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"손글씨"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"어려움"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"숨은"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"숨은 페어"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"숨은 쿼드"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"숨은 싱글"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"숨은 트리플"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"이전 근거 숨기기"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"찾는 방법 숨기기"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", 힌트 %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"힌트"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"힌트 증명"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"힌트 추론"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"움직이지 마세요..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"움직이지 않거나 촬영 버튼을 누르세요"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"카메라가 초점을 맞추는 동안 움직이지 마세요..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"휴대전화를 평행하게 유지하세요"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"퍼즐 위에서 휴대전화를 종이와 평행하게 유지하세요."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"퍼즐 위에서 휴대전화를 종이와 평행하게 유지하세요"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"가로\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"찾는 방법"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n답에 이르는 과정:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"후보가 정확히 두 개인 칸을 찾으세요. Y-윙은 이런 칸 세 개로만 이루어집니다.\n\n하나를 중심 칸으로 삼으세요. 예를 들어 {2,5}입니다. 중심 칸과 같은 행, 열 또는 박스에 있는 {2,9} 칸과 {5,9} 칸을 찾으세요. 중심 칸은 2 또는 5입니다. 2이면 첫 번째 날개는 반드시 9이고, 5이면 두 번째 날개는 반드시 9입니다. 어느 경우든 날개 하나에는 9가 들어갑니다. 어느 날개인지는 모르지만 알 필요도 없습니다.\n\n따라서 두 날개 모두와 같은 행, 열 또는 박스에 있는 칸에는 9가 들어갈 수 없습니다. 그런 칸은 보통 직사각형을 완성하는 두 모서리입니다."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", 가정한 %1$s, 입력한 답이 아님"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"같은 행, 열 또는 박스의 %1$s개 숫자가 동일한 %2$s개 칸에만 들어갈 수 있다면, 그 칸들에는 다른 숫자가 들어갈 수 없습니다."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"같은 행, 열 또는 박스의 %1$s개 칸이 합쳐서 정확히 %2$s개의 후보를 가진다면, 그 숫자들은 해당 칸들에만 들어가며 같은 영역의 다른 칸에는 들어갈 수 없습니다."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"한 숫자가 행에서 두 곳, 열에서 두 곳에만 들어갈 수 있고 각각의 한 칸이 같은 박스에 있다면, 나머지 두 칸 중 하나에는 그 숫자가 반드시 들어갑니다."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"한 숫자가 두 행에서 각각 두 곳에만 들어갈 수 있고 각 행의 한 칸이 같은 열에 있다면, 나머지 두 칸 중 하나에는 그 숫자가 반드시 들어갑니다."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"한 줄에서 숫자가 들어갈 수 있는 모든 칸이 하나의 박스 안에 있다면, 그 박스의 나머지 칸에서 해당 숫자를 제외할 수 있습니다."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"한 숫자가 %1$s개 행에서 들어갈 수 있는 칸들이 동일한 %2$s개 열에만 있다면, 그 열의 다른 칸에서 해당 숫자를 제외할 수 있습니다. 행과 열을 바꾸어도 같습니다."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"박스 안에서 숫자가 들어갈 수 있는 모든 칸이 한 줄에 있다면, 그 줄의 나머지 칸에서 해당 숫자를 제외할 수 있습니다."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"한 숫자를 가정했을 때 들어갈 후보가 없는 칸이 생긴다면, 그 숫자는 틀렸습니다."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"이미지 크기는 양수여야 합니다"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"모든 칸이 같은 두 후보를 가진 체인에서, 길이가 홀수인 체인의 양 끝에는 서로 다른 숫자가 들어갑니다."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"이 %1$s개 %2$s에서 %3$s은(는) 이 %4$s개 %5$s에만 들어갈 수 있습니다. 이들이 모두를 차지하므로, 해당 %7$s의 나머지 모든 칸에서 %6$s을(를) 제외할 수 있습니다."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"이 %1$s개 열에서 %2$s은 이 %3$s개 행에만 들어갈 수 있습니다. 이 열들이 해당 행을 모두 하나씩 차지하므로, 해당 행의 나머지 모든 칸에서 %4$s을 제외할 수 있습니다."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"이 %1$s개 행에서 %2$s은 이 %3$s개 열에만 들어갈 수 있습니다. 이 행들이 해당 열을 모두 하나씩 차지하므로, 해당 열의 나머지 모든 칸에서 %4$s을 제외할 수 있습니다."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"이 두 %1$s에서 %2$s이(가) 들어갈 자리는 각각 두 곳뿐이며, %3$s와(과) %4$s은(는) 같은 %5$s에 있으므로 둘 다 %6$s일 수는 없습니다. 따라서 %7$s와(과) %8$s 중 하나에는 반드시 들어가므로, 두 칸 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 %9$s을(를) 제외할 수 있습니다."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"이 두 열에서 %1$s이 들어갈 수 있는 칸은 각각 두 개뿐이며, %2$s과 %3$s는 같은 행에 있으므로 둘 다 %4$s일 수는 없습니다. 따라서 %5$s와 %6$s 중 하나는 반드시 해당 숫자이므로, 두 칸 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 %7$s을 제외할 수 있습니다."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"이 두 행에서 %1$s이 들어갈 수 있는 칸은 각각 두 개뿐이며, %2$s과 %3$s는 같은 열에 있으므로 둘 다 %4$s일 수는 없습니다. 따라서 %5$s와 %6$s 중 하나는 반드시 해당 숫자이므로, 두 칸 모두와 같은 행, 열 또는 박스에 있는 모든 칸에서 %7$s을 제외할 수 있습니다."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"이 %1$s에서 %2$s은(는) 이 %3$s개 칸에만 들어갈 수 있으므로, 그 칸들은 이미 자리가 정해져 있습니다. 따라서 그 칸들에서 %4$s을(를) 제외할 수 있습니다."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"이 %1$s에서 %2$s은(는) 하나의 박스 안에만 들어갈 수 있습니다. 따라서 %3$s은(는) 그 박스의 이 %4$s에 있으며, 박스의 나머지 칸에서 제외할 수 있습니다."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"이 박스에서 %1$s은 이 %2$s개 칸에만 들어갈 수 있으므로, 이 칸들은 해당 숫자들로 채워져야 합니다. 따라서 이 칸들에서 %3$s를 제외할 수 있습니다."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"이 열에서 %1$s은 이 %2$s개 칸에만 들어갈 수 있으므로, 이 칸들은 해당 숫자들로 채워져야 합니다. 따라서 이 칸들에서 %3$s를 제외할 수 있습니다."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"이 행에서 %1$s은 이 %2$s개 칸에만 들어갈 수 있으므로, 이 칸들은 해당 숫자들로 채워져야 합니다. 따라서 이 칸들에서 %3$s를 제외할 수 있습니다."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"사진, 인식 결과 및 수정 내용이 포함됩니다. 설정에서 이 기능을 끌 수 있습니다."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"한 박스 안에서 두세 칸에만 들어갈 수 있는 숫자를 찾고, 그 칸들이 모두 같은 행이나 같은 열에 있는지 확인하세요. 그렇다면 그 숫자는 반드시 그 줄 어딘가에 있습니다. 정확한 위치는 모르지만 이 박스 안에 있다는 것은 압니다. 따라서 박스 밖의 같은 줄에는 들어갈 수 없습니다.\n\n이 기법만으로 숫자를 넣지는 않습니다. 후보를 제거해 다른 곳에서 싱글이 나타나도록 합니다."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"이 박스 안에서 %1$s은(는) 이 %2$s에만 들어갈 수 있습니다. 따라서 %3$s은(는) 여기 어딘가에 있으며, %4$s의 나머지 칸에서 제외할 수 있습니다."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## 문제 또는 아이디어"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"여기서는 %1$s곳에 적용됩니다. 다음으로 이동하며 살펴보세요."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"여기서는 한 곳에 적용됩니다. 다음으로 이동해 보세요."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"현재 배치에서는 적용되는 곳이 없습니다."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"강조된 %2$s에서 %1$s이(가) 들어갈 수 있는 유일한 자리입니다."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"동그라미로 표시된 칸입니다.\n\n숫자를 보려면 힌트를 다시 누르세요."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"젤리피시"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"보관"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"강제 체인을 짧게 유지"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"언어"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"라이선스"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"한 행, 열 또는 박스에서 후보가 적게 남은 칸들을 살펴보세요. 그중 %1$s개 칸의 후보를 모두 모으세요. 서로 다른 숫자가 정확히 %2$s개라면, 그 %3$s개 숫자는 자리가 정해진 것입니다. 어디에 무엇이 들어가는지는 아직 몰라도, 어떤 순서로든 그 %4$s개 칸에 들어가야 합니다.\n\n그것으로 충분합니다. 같은 영역의 다른 모든 칸에서 해당 숫자들을 제거할 수 있으며, 보통 그중 한 칸이 싱글이 됩니다.\n\n모든 칸의 후보가 같을 필요는 없습니다. {2,7}, {2,9}, {7,9}도 완전한 트리플이며, 사람들이 놓치기 쉬운 형태입니다."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"같은 두 후보, 예를 들어 {4,9}을 가진 칸들이 체인을 이루는지 찾으세요. 각 칸은 다음 칸과 같은 행, 열 또는 박스에 있어야 합니다. 세 칸으로는 부족하며 최소 네 칸이 필요합니다.\n\n차례로 두 색을 번갈아 표시하세요. 각 칸이 다음 칸과 같은 행, 열 또는 박스에 있으므로 이웃한 두 칸에는 같은 숫자가 들어갈 수 없습니다. 따라서 체인은 끝까지 4, 9, 4, 9 또는 9, 4, 9, 4로 이어집니다. 어느 쪽인지는 알 수 없습니다.\n\n어느 경우든 서로 다른 색의 두 칸에는 서로 다른 숫자가 들어갑니다. 하나는 4이고 다른 하나는 9입니다. 따라서 두 칸 모두와 같은 행, 열 또는 박스에 있는 칸에는 둘 다 들어갈 수 없으며, 두 후보를 한 번에 제거할 수 있습니다.\n\n모든 칸이 같은 모습이므로 패턴을 찾기 쉽습니다. 격자에서 같은 후보 쌍을 따라가며 어디에서 연결되는지 살펴보세요."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"같은 두 후보, 예를 들어 {1,6}을 가진 세 칸이 직사각형의 세 모서리에 있는지 찾으세요. 직사각형은 정확히 두 박스에 걸쳐 있어야 합니다. 즉, 두 행과 두 열이 네 박스가 아닌 두 박스를 가로질러야 합니다.\n\n이제 네 번째 모서리를 보세요. 그 칸에도 1과 6만 있다면 퍼즐에 정답이 두 개 생깁니다. 직사각형의 1과 6을 서로 바꾸어도 나머지는 모두 성립하기 때문입니다. 올바르게 만든 퍼즐에는 정답이 하나이므로 네 번째 모서리에는 다른 숫자가 들어가야 합니다. 다른 후보는 남기고 1과 6은 제거합니다.\n\n이것은 격자보다 출제자를 근거로 삼는 유일한 논증입니다. 출판된 퍼즐에는 타당하지만, 이미 잘못 채운 퍼즐에는 쓸모가 없습니다. 그 경우 유일한 정답은커녕 정답 자체가 없을 수도 있기 때문입니다."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"이 박스를 보세요. 윤곽선을 따라 이 힌트가 설명할 칸을 찾으세요."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"메모"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"보통"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"더 보기"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"빛이 더 필요합니다"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"정답이 여러 개이므로 인쇄된 숫자를 놓쳤습니다. 풀기를 눌러 정답들과 서로 다른 위치를 보세요."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"더 멀리 이동하세요"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"더 가까이 이동하세요"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"더 가까이 이동하세요 - 격자가 너무 작아 인식할 수 없습니다."</string>
+    <string name="msg_naked_472fd902" formatted="false">"드러난"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"네이키드 페어"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"네이키드 쿼드"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"네이키드 싱글"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"네이키드 트리플"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"숫자만 알려 주는 대신 기법 이름과 이를 증명하는 칸들을 보여 줍니다."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"점이 최소 4개 필요하지만 %1$s개입니다"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"확인 필요"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"새 스도쿠"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"다음 결과"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"다음 단계"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"이미지는 자동으로 첨부되지 않습니다. 여기에 제출한 신고와 첨부 파일은 공개됩니다. 비공개로 보내고 싶은 사례는 info@freevia.org로 보내 주세요."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"앱을 마지막으로 설치한 이후 거부된 사진이 없습니다."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"스캔 진단 정보가 없습니다."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"여기에는 적용되는 기법이 없습니다"</string>
+    <string name="msg_none_140bedbf" formatted="false">"없음"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"어느 기법도 칸에 숫자를 넣지는 않습니다. 후보를 제거해 어려운 퍼즐을 풀 길을 엽니다."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"현재 퍼즐에는 없습니다."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"숫자 모델 파일이 아닙니다"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"확신을 갖고 인식하지 못했습니다. 가장 가까운 추정은 %3$s에서 %1$s %2$s입니다. 이 칸을 직접 설정하세요."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"아직 9×9 격자로 인식되지 않습니다 - 격자만으로 화면을 채우거나 바로 사진을 찍으세요"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"시작 전"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"이 휴대전화에서 아무것도 보내지 못했습니다."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"더 풀 것이 없습니다."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"이 앱이 아는 기법으로는 여기서 더 추론할 수 없습니다."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"특이 사항 없음"</string>
+    <string name="msg_ok_565339bc" formatted="false">"확인"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"하나"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"한 칸이 인쇄된 숫자처럼 보였지만 아니었습니다."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"인쇄된 숫자 1개를 자동으로 수정했습니다."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"한 칸"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"여기에는 %1$s만 들어갈 수 있습니다. 다른 모든 숫자는 이미 이 행, 열 또는 박스에 있습니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"여기에는 %1$s만 들어갈 수 있습니다. 강조된 칸들이 나머지 여덟 숫자 중 %2$s개를 차지합니다. %3$s는 앞서 이 칸에서 제외되었으며, 현재 주변에 보이는 칸들 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"이 칸에는 %1$s만 들어갈 수 있습니다. 강조 표시된 칸들에 나머지 여덟 숫자 중 네 개가 있어 이 칸에 들어갈 수 없습니다. %2$s은 앞서 이 칸의 후보에서 제외되었으며, 주변에 보이는 숫자 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"이 칸에는 %1$s만 들어갈 수 있습니다. 강조 표시된 칸들에 나머지 여덟 숫자 중 여섯 개가 있어 이 칸에 들어갈 수 없습니다. %2$s은 앞서 이 칸의 후보에서 제외되었으며, 주변에 보이는 숫자 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"이 칸에는 %1$s만 들어갈 수 있습니다. 강조 표시된 칸들에 나머지 여덟 숫자 중 한 개가 있어 이 칸에 들어갈 수 없습니다. %2$s은 앞서 이 칸의 후보에서 제외되었으며, 주변에 보이는 숫자 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"이 칸에는 %1$s만 들어갈 수 있습니다. 강조 표시된 칸들에 나머지 여덟 숫자 중 일곱 개가 있어 이 칸에 들어갈 수 없습니다. %2$s은 앞서 이 칸의 후보에서 제외되었으며, 주변에 보이는 숫자 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"이 칸에는 %1$s만 들어갈 수 있습니다. 강조 표시된 칸들에 나머지 여덟 숫자 중 다섯 개가 있어 이 칸에 들어갈 수 없습니다. %2$s은 앞서 이 칸의 후보에서 제외되었으며, 주변에 보이는 숫자 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"여기에는 %1$s만 들어갈 수 있습니다. 강조된 칸들이 나머지 여덟 숫자 중 %2$s개를 차지합니다. %3$s %4$s은(는) 주변에서 보이는 것이 아니라 이전 단계에서 이 칸에서 제외되었습니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"이 칸에는 %1$s만 들어갈 수 있습니다. 강조 표시된 칸들에 나머지 여덟 숫자 중 두 개가 있어 이 칸에 들어갈 수 없습니다. %2$s은 앞서 이 칸의 후보에서 제외되었으며, 주변에 보이는 숫자 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"여기에는 %1$s만 들어갈 수 있습니다. 강조된 칸들이 나머지 여덟 숫자 중 %2$s개를 차지합니다. %3$s는 앞서 이 칸에서 제외되었으며, 현재 주변에 보이는 칸들 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"이 칸에는 %1$s만 들어갈 수 있습니다. 강조 표시된 칸들에 나머지 여덟 숫자 중 세 개가 있어 이 칸에 들어갈 수 없습니다. %2$s은 앞서 이 칸의 후보에서 제외되었으며, 주변에 보이는 숫자 때문에 제외된 것은 아닙니다."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"여기에는 %1$s만 들어갈 수 있습니다. 나머지 여덟 숫자는 이 행, 열 또는 박스의 채워진 칸이나 확정된 단일 후보로 인해 제외됩니다."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"여기에는 %1$s만 들어갈 수 있지만 주변에서는 이유를 알 수 없습니다. 나머지 여덟 숫자는 행, 열 또는 박스에 쓰여 있어서가 아니라 이전 추론으로 이 칸에서 제외되었습니다."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"인쇄된 숫자를 %1$s개만 찾았습니다. 퍼즐을 구성하기에는 너무 적습니다."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"90도 단위 회전만 지원하며 %1$s은 지원하지 않습니다"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"앱 버전, 휴대전화 모델, Android 버전 및 최근 스캔 진단 정보가 입력된 초안을 브라우저에서 엽니다. 자세한 설명과 관련 스크린샷은 직접 추가하세요.\n\nGitHub 로그인이 필요합니다. 제출 전에 초안을 검토하고 수정할 수 있습니다. 제출한 보고서와 첨부 파일은 공개됩니다. 사진은 자동으로 첨부되지 않습니다."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"앱 설정 열기"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"GitHub 열기"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"오픈 소스 고지"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"‘왜 이 칸인가요?’를 열어 최종 배치 근거를 보거나, 제외된 후보를 선택해 증명을 따라가세요."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache License 2.0. 격자를 찾고 반듯하게 보정하는 데 사용합니다.\n\nAndroidX, Jetpack Compose 및 CameraX - Apache License 2.0.\n\nKotlin - Apache License 2.0.\n\n숫자 인식기는 LeCun, Cortes, Burges의 손글씨 숫자 MNIST 데이터베이스와 개방형 시스템 글꼴로 렌더링한 숫자 및 프로그램으로 그린 숫자를 함께 사용해 학습했습니다."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV 네이티브 라이브러리를 불러오지 못했습니다"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"다른 퍼즐을 촬영하세요."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"보관한 사진은 이 앱의 비공개 저장소에 저장되며, 사진을 삭제하거나 앱을 제거하면 함께 제거됩니다."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"앱이 퍼즐로 만들지 못한 사진입니다. 보내면 분석할 수 있습니다."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"숫자 하나를 고르고, 그 숫자가 들어갈 칸이 정확히 두 곳 남은 행들을 찾으세요. 그런 행 두 개를 골라 각 행의 한 칸이 같은 열에 있는지 확인하세요.\n\n그렇다면 그 두 칸은 같은 열에 있으므로 둘 다 그 숫자일 수 없습니다. 따라서 반대편의 두 칸, 즉 멀리 있는 두 끝 중 적어도 하나에는 그 숫자가 들어갑니다. 어느 쪽인지는 모르지만 알 필요도 없습니다. 양 끝 모두와 같은 행, 열 또는 박스에 있는 칸에서는 그 숫자를 제거할 수 있습니다.\n\n그런 다음 행 대신 열로 다시 해 보세요. 모양은 높은 건물 옆에 낮은 건물이 있는 형태입니다. 여기서 이름이 유래했으며, 몇 번 보고 나면 이 모양으로 알아볼 수 있습니다."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"숫자 하나를 고르세요. 들어갈 자리가 정확히 두 곳인 행과 정확히 두 곳인 열을 찾으세요. 이제 행의 한 칸과 열의 한 칸이 같은 박스에 있는지 확인하세요.\n\n그렇다면 그 두 칸에 모두 같은 숫자가 들어갈 수는 없습니다. 한 박스에는 해당 숫자가 하나뿐이기 때문입니다. 따라서 나머지 두 끝 중 적어도 하나에는 그 숫자가 들어가며, 양 끝 모두와 같은 행, 열 또는 박스에 있는 칸에서는 그 숫자를 제거할 수 있습니다.\n\n이 기법을 놓치는 이유는 정렬된 모양이 없기 때문입니다. 네 칸은 비대칭 형태를 이루며, 안쪽 두 끝이 공유하는 박스만이 이들을 연결합니다."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"빈칸 하나를 고르고 1부터 9까지 살펴보며, 같은 행, 열 또는 박스에 이미 있는 숫자를 지우세요. 정확히 하나만 남으면 그 숫자가 들어갑니다.\n\n다른 모든 기법은 이 기법을 적용할 수 있도록 하기 위해 존재합니다. 더 어려운 기법은 어떤 칸의 후보를 하나로 줄이는 방법이므로, 어려운 기법이 효과를 냈다면 다음에는 이 기법을 살펴보세요."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"숫자 하나를 고르고 다른 숫자는 모두 무시하세요. 그 숫자가 들어갈 칸이 두세 곳만 남은 행들을 찾으세요. 그 칸들이 동일한 %2$s개 열에 놓인 %1$s개 행을 찾으세요.\n\n찾았다면 그 %3$s개 행은 각각 해당 열 중 하나에 그 숫자를 넣어야 하며, 두 행이 같은 열을 사용할 수는 없습니다. 따라서 이 행들이 %4$s개 열 모두에서 그 숫자를 차지하므로, 해당 열의 다른 모든 칸에서 그 숫자를 제거할 수 있습니다.\n\n그런 다음 행과 열을 바꾸어 처음부터 다시 해 보세요. 이런 패턴의 절반은 두 번째 방향에서 발견되며, 대부분의 사람이 살펴보지 않는 절반이기도 합니다."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"%1$s 넣기"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"%2$s행 %3$s열에 %1$s을(를) 넣으세요."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"윤곽선으로 표시된 칸에 %1$s을(를) 넣으세요."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"GitHub의 첨부 기능으로 관련 스크린샷을 첨부하세요. 문제를 보여 주는 퍼즐, 인식된 숫자, 확인 결과 또는 힌트 단계가 해당됩니다. 도움이 된다면 기대한 결과와 실제 결과도 포함하세요."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"제 Sudoku Buddy 인식 제출물을 삭제해 주세요. 접수증 ID: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"이 안내문을 문제 또는 아이디어에 대한 자세한 설명으로 바꾸세요. 보고서에 내용을 잘 나타내는 짧은 제목을 붙이세요."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"카메라를 스도쿠 퍼즐에 향하세요"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"카메라를 스도쿠 퍼즐에 향하세요."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"카메라를 종이에 있는 스도쿠 퍼즐에 향하세요. 앱은 인쇄된 숫자와 직접 쓴 내용을 인식하고 퍼즐을 풀며, 힌트를 주거나 답을 확인하거나 전체 정답을 보여 줄 수 있습니다."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"포인팅 페어"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"게시"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"퍼즐 준비 중…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"이전"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"이전 단계"</string>
+    <string name="msg_printed_d8742933" formatted="false">"인쇄"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"개인정보 처리방침"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"퍼즐 저장 공간"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"퍼즐"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"퍼즐 인식과 풀이는 이 휴대전화에서 이루어집니다. 불확실한 인식 결과를 제출하거나 자동 공유를 켜면 퍼즐 사진, 원래 인식 결과, 불확실성 표시, 사용자가 수정한 내용이 인식 분석과 비공개 학습을 위해 Freevia로 안전하게 전송됩니다. 보고서에는 기기 모델이나 진단 정보가 포함되지 않습니다. 자동 공유는 선택 사항이며, 계정, 일상적인 사용 분석, 광고 추적은 없습니다. 학습용 사본은 접수증으로 삭제할 수 있지만, 이미 학습된 모델에는 학습으로 인한 변화가 남을 수 있습니다. 보고서를 삭제하려면 설정의 제출 접수증을 이용하세요."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"테스트용으로 촬영한 퍼즐은 sudoku.cba.si에서 가져왔습니다. 이 앱은 해당 사이트와 제휴 관계가 없습니다."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"촬영한 퍼즐은 여기에 보관되므로 나중에 다시 이어서 풀 수 있습니다."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"인식"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"손으로 쓴 %1$s(으)로 인식, 확신도 %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"인쇄된 %1$s(으)로 인식, 확신도 %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"빈칸으로 인식 — 잉크 흔적이 없습니다."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"연필로 적은 후보 숫자로 인식하여 무시했습니다."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"인식 결과를 검토했습니다."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"인식 결과를 제출했습니다. 감사합니다!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## 최근 스캔 진단 정보 (자동 입력)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"인식은 틀릴 수 있으며, 특히 손글씨에서 오류가 생기기 쉽습니다. 읽기에서 인식된 숫자를 사진과 비교하고, 칸을 탭하여 수정하세요. 앱은 불확실한 인식 결과에 검토 표시를 합니다. 확신도가 높은 인식 결과도 틀릴 수 있습니다."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"가정 기각"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"원격 페어"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$s 제거"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\n%1$s 제거: "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"제거됨"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"추론 다시 보기"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"GitHub에 버그나 아이디어 제보"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"카메라 다시 시도"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"%1$s단계로 돌아가기"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"설명 보기"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"인식 결과 검토 또는 제출"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"인식 결과 검토"</string>
+    <string name="msg_right_883361d5" formatted="false">"맞음"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"풀이 과정이 끝났습니다. 돌아가서 각 수를 검토하거나 직접 단계를 따라 해 보세요."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"%1$s행"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"%1$s행 %2$s열"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"%1$s행 %2$s열, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"$1행 $2열"</string>
+    <string name="msg_row_634768da" formatted="false">"행"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"행"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", 제외된 후보 %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"스캔 진단 정보를 읽을 수 없습니다."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## 스크린샷 또는 퍼즐 예시"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"두 번째 추정: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"연습용으로 선택"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"선택됨: %1$s행 %2$s열"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"진단 정보 보내기 (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"진단 정보 보내기"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"이 스캔들 보내기"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"이 사진 보내기"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"설정"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"일곱"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"불확실할 때 자동 공유"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"불확실한 인식 결과를 자동으로 공유할까요?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"모순 보기"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"퍼즐에서 %1$s 모두 보기"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"퍼즐에서 해당 항목 보기"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"단순 색칠"</string>
+    <string name="msg_six_44778d82" formatted="false">"여섯"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"스카이스크레이퍼"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", 정답 %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"풀기"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"풀이가 완료되었으며 모든 답이 맞습니다."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"풀이기 도움으로 찾은 답: %2$s에 %1$s을 넣으세요. 후보 숫자는 %3$s입니다. 앱이 지원하는 기법으로는 이 상태에서 다음 수를 찾지 못했습니다. 탐색으로 유일한 해답의 %4$s을 찾았지만, 탐색 분기의 상세한 증명은 제공할 수 없습니다."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\n풀이 엔진의 도움으로 찾은 답: 앱이 지원하는 기법으로는 다음 수를 찾지 못했습니다. 자세한 증명은 제공되지 않습니다."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"풀이기 도움으로 후보 제거: 탐색으로 강조된 칸의 %1$s을 배제했지만, 앱이 표시할 수 있는 짧은 모순 추적 과정을 만들지 못했습니다. 상세한 증명은 제공할 수 없습니다."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"일부 칸에는 완전한 숫자 대신 메모가 있을 수 있습니다."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"일부 숫자의 인식 확신도가 낮습니다."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"사진을 인식하는 중 문제가 발생했습니다."</string>
+    <string name="msg_square_c11092bc" formatted="false">"칸"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\n시작 후보: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"%1$s단계: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"기울어짐 바로잡기"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"풀이 전략"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"제출 접수증"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"제출 접수증이 유효하지 않습니다."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"제출 접수증 (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"제출 접수증"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"제출 응답에 %1$s이 없습니다."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"제출 응답 상태가 유효하지 않습니다."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"제출 서비스가 설정되지 않았습니다."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"제출 서비스가 HTTP %1$s을 반환했습니다."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"이 빌드에서는 제출할 수 없습니다."</string>
+    <string name="msg_submit_155f816c" formatted="false">"제출"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"앞으로 불확실한 인식 결과 자동 제출"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"인식 결과 제출"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"불확실한 인식 결과를 분석용으로 제출"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"수정 내용 제출"</string>
+    <string name="msg_submitted_64900440" formatted="false">"제출됨"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"제출 중…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy 진단 정보"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy 의견 - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy는 Freevia에서 배포합니다. 문의: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy는 카메라로 퍼즐을 인식하므로 카메라 접근 권한이 필요합니다. 인식 처리와 퍼즐 기록은 휴대전화에만 보관됩니다. 불확실한 인식 결과를 제출하기로 하면 해당 사진과 결과가 인식 개선을 위해 Freevia로 안전하게 전송됩니다. 자동 공유는 선택 사항이며 설정에서 끌 수 있습니다."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy 스캔"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy 스캔 모음"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku Buddy 소스 코드는 Apache License 2.0에 따라 사용이 허가됩니다. Freevia 브랜드에는 별도의 상표권이 적용됩니다."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"스도쿠는 퍼블릭 도메인에 속하는 퍼즐 형식입니다. 이 앱은 사용자가 이미 가진 퍼즐을 풀며, 다른 사람의 퍼즐을 복제하거나 배포하지 않습니다."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", 뒷받침하는 근거"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"표시된 칸에 %1$s이 있다고 가정해 보세요. 번호가 붙은 숫자는 가정에 따른 숫자입니다."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"이 칸이 %1$s이라고 가정해 보세요. 화살표를 순서대로 따라가면, 앞서 배치한 숫자들로 인해 각 칸의 숫자가 확정됩니다. 그 숫자만 해당 칸에 들어갈 수 있거나, 그 숫자가 들어갈 수 있는 곳이 해당 칸뿐이기 때문입니다.\n\n그러면 빨간색 영역에 %2$s을 넣을 곳이 없어집니다. 영역 안에 표시된 %3$s는 그 숫자가 들어갈 수 있었던 위치이며, 각 칸은 방금 화살표를 따라 다른 숫자로 채워졌습니다. 영역에 어떤 숫자도 넣을 곳이 없는 상황은 불가능하므로, 처음 가정한 칸은 %4$s이 아닙니다."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"이 칸이 %1$s이라고 가정해 보세요. 화살표를 순서대로 따라가세요. 앞서 넣은 숫자에 따라 각 칸의 숫자가 정해집니다. 그 칸에 들어갈 수 있는 숫자가 하나뿐이거나, 해당 숫자가 들어갈 수 있는 칸이 그 칸뿐이기 때문입니다. 그러면 빨간색 칸에 들어갈 숫자가 하나도 남지 않습니다. 이는 불가능하므로 이 칸은 %2$s이 아닙니다."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"이 칸이 %1$s이라고 가정해 보세요. 화살표를 순서대로 따라가면, 앞서 배치한 숫자들로 인해 각 칸의 숫자가 확정됩니다. 그 숫자만 해당 칸에 들어갈 수 있거나, 그 숫자가 들어갈 수 있는 곳이 해당 칸뿐이기 때문입니다.\n\n그러면 빨간색 행에 %2$s을 넣을 곳이 없어집니다. 행 안에 표시된 %3$s는 그 숫자가 들어갈 수 있었던 위치이며, 각 칸은 방금 화살표를 따라 다른 숫자로 채워졌습니다. 행에 어떤 숫자도 넣을 곳이 없는 상황은 불가능하므로, 처음 가정한 칸은 %4$s이 아닙니다."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"이 칸이 %1$s이라고 가정해 보세요. 화살표를 순서대로 따라가면, 앞서 배치한 숫자들로 인해 각 칸의 숫자가 확정됩니다. 그 숫자만 해당 칸에 들어갈 수 있거나, 그 숫자가 들어갈 수 있는 곳이 해당 칸뿐이기 때문입니다.\n\n그러면 빨간색 박스에 %2$s을 넣을 곳이 없어집니다. 박스 안에 표시된 %3$s는 그 숫자가 들어갈 수 있었던 위치이며, 각 칸은 방금 화살표를 따라 다른 숫자로 채워졌습니다. 박스에 어떤 숫자도 넣을 곳이 없는 상황은 불가능하므로, 처음 가정한 칸은 %4$s이 아닙니다."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"이 칸이 %1$s이라고 가정해 보세요. 화살표를 순서대로 따라가세요. 앞서 넣은 숫자에 따라 각 칸의 숫자가 정해집니다. 그 칸에 들어갈 수 있는 숫자가 하나뿐이거나, 해당 숫자가 들어갈 수 있는 칸이 그 칸뿐이기 때문입니다.\n\n그러면 빨간색으로 표시된 %2$s에 %3$s을 넣을 곳이 없어집니다. 그 안에 표시된 %4$s들은 원래 들어갈 수 있었던 자리이며, 각 자리는 화살표 중 하나가 방금 차지한 칸입니다. 숫자를 넣을 곳이 없는 %5$s은 불가능하므로 이 칸은 %6$s이 아닙니다."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"이 칸이 %1$s이라고 가정해 보세요. 화살표를 순서대로 따라가면, 앞서 배치한 숫자들로 인해 각 칸의 숫자가 확정됩니다. 그 숫자만 해당 칸에 들어갈 수 있거나, 그 숫자가 들어갈 수 있는 곳이 해당 칸뿐이기 때문입니다.\n\n그러면 빨간색 열에 %2$s을 넣을 곳이 없어집니다. 열 안에 표시된 %3$s는 그 숫자가 들어갈 수 있었던 위치이며, 각 칸은 방금 화살표를 따라 다른 숫자로 채워졌습니다. 열에 어떤 숫자도 넣을 곳이 없는 상황은 불가능하므로, 처음 가정한 칸은 %4$s이 아닙니다."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"이후로 전환하여 격자에서 해당 수와 그에 따른 결과를 확인하세요."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"소드피시"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"새 사진 촬영"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"다른 사진 촬영"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"숫자 하나를 골라 그 숫자가 들어갈 칸이 정확히 두 개 남은 모든 단위를 표시하세요. 그 두 칸은 시소와 같습니다. 한 칸에는 그 숫자가 들어가고 다른 칸에는 들어가지 않습니다.\n\n아무 칸에서 시작하여 예를 들어 파란색으로 칠하세요. 시소의 짝은 초록색으로, 그 칸의 짝은 다시 파란색으로 칠하며 연결이 끝날 때까지 계속하세요. 파란색 칸이 모두 참이거나 초록색 칸이 모두 참입니다. 어느 쪽인지는 알 수 없지만, 이것만으로 두 가지를 알 수 있습니다.\n\n첫째, 같은 색의 두 칸이 하나의 행, 열 또는 박스에 있으면 그 색은 불가능합니다. 따라서 그 색의 모든 칸에서 해당 숫자를 제거하며, 반대 색의 모든 칸에서는 그 숫자가 정답입니다.\n\n둘째, 체인 밖의 칸이 파란색 칸과 초록색 칸을 모두 볼 수 있으면 해당 숫자를 제거할 수 있습니다. 체인이 어느 쪽으로 결정되든 그 두 칸 중 하나에 해당 숫자가 들어가기 때문입니다.\n\n연필로 하면 시간이 걸리지만 해 볼 만합니다. 한 번의 색칠로 격자 절반에서 한 숫자를 제거할 때도 많습니다."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"숫자 하나와 단위 하나씩 살펴보세요. 예를 들어 이 박스에서 4가 어디에 들어갈 수 있을까요? 이미 숫자가 있거나 자신의 행이나 열에서 4를 볼 수 있는 칸을 모두 제외하세요. 한 칸만 남으면 그곳에 4가 들어갑니다.\n\n주의할 점은 칸만 봐서는 이를 알 수 없다는 것입니다. 그 칸에는 다른 숫자 다섯 개도 들어갈 수 있어 확정된 것처럼 보이지 않을 수 있습니다. 칸 대신 숫자를 보면 바로 드러납니다."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"사진 촬영"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"자동으로 사진 촬영"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"표시된 칸을 탭하여 검토하거나 모든 인식 결과가 맞는지 확인하세요."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"먼저 격자의 칸을 탭하세요."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"표시된 칸이 %1$s이라고 가정하고 검증해 보세요. 정답이 아닙니다. 이어지는 결과를 따라가며 왜 성립하지 않는지 확인하세요."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"가정 검증"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"인식 개선에 도움을 주셔서 감사합니다. 퍼즐 사진, 인식 결과, 수정 내용은 분석과 학습에 사용됩니다."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"그것도 올바른 %1$s 수입니다. 이 풀이 과정에서는 다른 수를 보여 줍니다. 아래에서 그 증명을 비교해 보세요."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"이 단계에서 선택된 수가 아닙니다. 다른 올바른 수가 있을 수도 있습니다. 다시 살펴보거나 이 단계의 설명을 확인하세요."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"맞습니다"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"남은 퍼즐의 풀이입니다. 앱이 지원하는 기법으로 다음 수를 찾지 못해 %1$s개 칸에는 풀이기의 도움이 필요합니다. 상세한 탐색 증명은 제공할 수 없습니다."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"남은 퍼즐의 풀이입니다. 앱이 지원하는 기법으로 다음 수를 찾지 못해 한 칸에는 풀이기의 도움이 필요합니다. 상세한 탐색 증명은 제공할 수 없습니다."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"남은 퍼즐의 처음부터 끝까지의 풀이입니다."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" 사진을 보관하지 못해 보낼 것이 없습니다."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"그 칸에는 %1$s이 들어갈 수 있습니다. 이 단계의 기법으로 정당화되는 수를 찾거나 설명을 확인하세요."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"그 칸은 이미 채워져 있습니다. 빈칸을 선택하세요."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"가정이 기각되었습니다. 실제 후보 숫자로 돌아가 표시된 칸에서 %1$s을 지웁니다. 가정에 따른 숫자는 지워집니다."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"카메라가 사진을 촬영하지 못했습니다."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"카메라를 사용할 수 없습니다. 다른 카메라 앱을 닫고 다시 시도하세요."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"다른 하나"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"%1$s의 사진과 해당 사진에서 인식한 모든 내용이 이 휴대전화에서 삭제됩니다. 되돌릴 수 없습니다."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" 사진은 퍼즐 목록의 \"인식 실패\"에 있습니다."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"여기서 중심 칸은 %1$s 또는 %2$s입니다. 어느 쪽이든 다른 두 칸 중 하나는 반드시 %3$s이므로, 그 두 칸을 모두 볼 수 있는 칸에는 %4$s이 들어갈 수 없습니다."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"포인팅 페어를 거꾸로 적용하는 기법입니다. 행이나 열 하나를 고르고 아직 자리가 정해지지 않은 숫자를 고르세요. 그 줄에서 해당 숫자가 들어갈 수 있는 모든 칸을 표시하세요. 모두 한 박스 안에 있으면 해당 숫자는 그 박스와 줄이 겹치는 부분에 있어야 합니다. 따라서 살펴보지 않은 나머지 두 행이나 열을 포함해 그 박스의 다른 곳에는 들어갈 수 없습니다.\n\n포인팅 페어처럼 이 기법만으로는 숫자를 넣지 못하지만, 다른 기법으로 넣을 수 있도록 자리를 마련합니다."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"인쇄된 숫자로는 풀 수 있는 퍼즐이 성립하지 않습니다."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s에 남은 후보는 {%2$s}입니다. %4$s행 %5$s열에 %3$s을(를) 넣으세요."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"보고서가 너무 커서 제출할 수 없습니다."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"중심 칸에 후보가 하나 더 있는 Y-윙입니다. 후보가 정확히 세 개, 예를 들어 {1,4,7}인 칸이 두 후보 칸인 {1,7}과 {4,7}을 모두 볼 수 있는지 찾으세요.\n\n이제 세 칸 모두 7이 될 수 있고, 그중 하나는 반드시 7입니다. 따라서 7을 제거할 칸은 두 날개뿐 아니라 세 칸을 모두 볼 수 있어야 합니다. 실제로는 중심 칸과 같은 박스에 있으면서 한 날개와 같은 행이나 열에 있는 칸입니다.\n\nY-윙보다 제거할 수 있는 후보가 적고, 같은 이유로 놓치기도 쉽습니다. 중심 칸이 눈에 띄지 않기 때문입니다."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"강조된 박스에 채울 수 있는 칸이 있습니다.\n\n힌트를 다시 누르면 어떤 기법으로 찾는지 알려 드립니다."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"여기에는 더 추론할 내용이 없습니다."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"이 %1$s개 칸에는 %2$s과 %3$s만 들어갈 수 있고 각 칸이 다음 칸을 볼 수 있으므로, 끝까지 두 숫자가 번갈아 들어갑니다. %4$s과 %5$s은 홀수 개의 연결만큼 떨어져 있어 서로 다른 숫자가 들어갑니다. 따라서 두 칸을 모두 볼 수 있는 모든 칸에서 %6$s을 제거할 수 있습니다."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"이 %1$s개 칸에는 모두 합쳐 %2$s만 들어갈 수 있으므로, 그 숫자들이 어떤 순서로든 이 칸들을 채웁니다. 따라서 이 %4$s의 나머지 칸에서 %3$s을 제거할 수 있습니다."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"이 %1$s개 칸에 들어갈 수 있는 숫자는 모두 합쳐 %2$s뿐이므로, 이 숫자들이 어떤 순서로든 해당 칸들을 채워야 합니다. 따라서 이 행의 나머지 칸에서 %3$s를 제외할 수 있습니다."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"이 %1$s개 칸에 들어갈 수 있는 숫자는 모두 합쳐 %2$s뿐이므로, 이 숫자들이 어떤 순서로든 해당 칸들을 채워야 합니다. 따라서 이 열의 나머지 칸에서 %3$s를 제외할 수 있습니다."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"이 %1$s개 칸에 들어갈 수 있는 숫자는 모두 합쳐 %2$s뿐이므로, 이 숫자들이 어떤 순서로든 해당 칸들을 채워야 합니다. 따라서 이 박스의 나머지 칸에서 %3$s를 제외할 수 있습니다."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"선택한 칸의 초기 후보 숫자입니다. 추적에서 어떤 가능성을 배제할 수 있는지 설명합니다."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"이 숫자들로는 퍼즐이 성립하지 않으며, 잘못된 부분이 너무 많아 어디가 틀렸는지 알 수 없습니다. 칸을 탭하여 인식 결과를 수정하거나 사진을 다시 촬영하세요."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"이 숫자들로는 퍼즐이 성립하지 않습니다. 동그라미로 표시된 %1$s개 칸을 바꾸면 해결됩니다. 그중 한 칸을 탭하여 인식 결과를 수정하세요."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"이 숫자들로는 퍼즐이 성립하지 않습니다. 동그라미로 표시된 한 칸을 바꾸면 해결됩니다. 해당 칸을 탭하여 인식 결과를 수정하세요."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"이 숫자들로는 퍼즐이 성립하지 않으므로 잘못 인식된 숫자가 있습니다. 풀기를 눌러 수정할 칸을 확인하세요."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"이 네 칸은 두 박스에 걸쳐 직사각형을 이루며, 그중 세 칸에는 %1$s만 들어갈 수 있습니다. %2$s에도 그 두 숫자만 들어갈 수 있다면 직사각형 안에서 숫자를 서로 바꿀 수 있어 퍼즐의 해답이 두 개가 됩니다. 해답은 하나이므로 %3$s에는 반드시 다른 숫자가 들어가야 합니다. 따라서 %4$s을 제거합니다."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"끝까지 이어지지 않습니다. 이 지점에서 앱이 더 이상 진행하지 못했습니다."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"이 단계에서는 칸을 채우지 않습니다. %2$s에서 %1$s을 제거합니다."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"이 방법으로 채워지는 칸은 없습니다. %2$s개 칸의 후보에서 %1$s을 제외합니다."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"이 방법으로 채워지는 칸은 없습니다. 한 칸의 후보에서 %1$s을 제외합니다."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\n답에 이르는 %1$s번의 추론 중 첫 번째입니다."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"이 증명은 정답에 이르기까지의 후보 제거를 포함하여 힌트 하나를 설명합니다. 다음 단계로 이동해 격자에서 추론을 따라간 뒤 전체 풀이 과정을 계속하세요."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"이 퍼즐을 준비하지 못했습니다."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"이 퍼즐을 저장하지 못했습니다. 지금은 계속 사용할 수 있습니다. 다른 사진을 촬영하기 전에 저장 공간을 확보하세요."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"이 퍼즐에는 해답이 여러 개이므로 인쇄된 숫자를 놓쳤을 가능성이 있습니다. %2$s개 중 %1$s번째 해답을 표시합니다. 다음 해답을 보려면 풀기를 다시 누르세요. 동그라미로 표시된 칸은 표시된 해답마다 다릅니다."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"이 퍼즐의 사진을 열 수 없습니다."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"이 추론으로 기존 항목 %1$s개를 배제합니다 "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"이 칸에는 완전한 숫자 대신 후보 메모가 있을 수 있습니다. 확인해 주세요."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"이 화면에는 앞서 제거한 후보가 반영되어 있습니다. 아래에서 해당 근거를 열어 확인하세요."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"셋"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"너무 어두워 격자 선을 구분할 수 없습니다"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"추적"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"시도함"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"직접 해 보기"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"켜기"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"퍼즐이 똑바로 보이도록 휴대전화를 돌리세요."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"학습 도우미"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"둘"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"같은 후보 쌍을 가진 두 칸이 그중 한 숫자의 시소 관계로 연결되면, 다른 숫자는 반드시 두 칸 중 하나에 들어갑니다."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"투 스트링 카이트"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"유일 직사각형"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"단위"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"인식 불가 결과는 CellReading 목록을 제공하지 않습니다. 정확한 입력 칸과 결과는 유지됩니다."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"지원하지 않는 모델 형식 버전"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"불확실"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"기기 언어 사용"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"%1$s 기법으로 후보를 제거할 수 있는 칸 하나를 탭한 뒤 해당 숫자를 선택하세요."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"%1$s 기법으로 채울 수 있는 칸을 탭한 뒤 넣을 숫자를 선택하세요."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"매우 어려움"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-윙"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"되었다"</string>
+    <string name="msg_were_910adfb4" formatted="false">"되었다"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"어떤 결과를 기대했나요? 또는 제안한 아이디어가 스도쿠를 풀거나 배우는 데 어떻게 도움이 되나요?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## 발생한 상황 및 재현 단계 (버그인 경우)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"작동 방식"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"위치"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"r%2$sc%3$s에서 %1$s을 제거한 이유"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"이유"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"왜 %1$s이 아닐까요? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"왜 이 칸일까요? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" 정답과 비교하여. 확인을 눌러 살펴보세요."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"선택한 칸에서 거꾸로 추론해 보세요. 아래에서 질문을 선택하세요."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"칸별이 아니라 숫자별로 살펴보세요. 한 단위에서 아직 없는 각 숫자가 어디에 들어갈 수 있는지 적으세요. 그런 다음 후보 위치 목록을 모두 합쳐도 %2$s개 칸만 차지하는 %1$s개 숫자를 찾으세요.\n\n그 %3$s개 숫자는 반드시 그 %4$s개 칸을 채워야 하므로, 그 칸들에서 다른 후보를 모두 지울 수 있습니다. 그러면 그중 한 칸이 곧바로 네이키드 싱글이 되거나 두 칸이 네이키드 페어가 되기도 합니다.\n\n사람들이 가장 어려워하는 기법입니다. 칸만 보면 여전히 후보가 많아 눈에 보이는 특징이 없기 때문입니다. 패턴은 숫자에 있습니다."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"후보가 정확히 두 개 남은 칸만 사용하세요.\n\n예를 들어 {2,6}인 칸에서 시작해 2가 아니라고 가정하면 6입니다. 그 칸이 볼 수 있고 6도 후보로 가진 칸, 예를 들어 {6,4}로 이동하세요. 그 칸은 6일 수 없으므로 4입니다. 그 칸이 볼 수 있고 4를 후보로 가진 칸으로 이동하며 계속하세요. 각 단계는 앞 단계에 따라 결정됩니다.\n\n다른 후보가 2인 칸에 도달하면 끝입니다. 2는 처음에 배제한 숫자입니다. 첫 칸이 원래 2였거나, 체인이 이어져 마지막 칸이 2가 됩니다. 어느 한쪽 끝에는 2가 있으므로 양 끝을 모두 볼 수 있는 칸에는 2가 들어갈 수 없습니다.\n\n체인은 짧게 유지하세요. 네다섯 칸은 연필로도 찾을 수 있지만, 그보다 길면 기록하며 추적해야 하며 강제 체인이라고 부르는 것이 정확합니다."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"작업용 변의 길이는 유한한 양수여야 합니다"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"인식 실패"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"손글씨"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"틀림"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-윙"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-체인"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-윙"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-윙"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"이 칸을 비웠습니다."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"이 칸을 손으로 쓴 %1$s(으)로 설정했습니다."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"이 칸을 인쇄된 %1$s(으)로 설정했습니다."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"수정 내용은 표시되지만 저장하지 못했습니다. 저장 공간을 확보한 뒤 퍼즐을 다시 수정해 보세요."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"사진과 개인정보"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"내 퍼즐"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"저장한 퍼즐"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"선택한 칸 ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"선택한 칸의 테두리는 유지됩니다. 초록색 칸은 근거를 보여 주며, 취소선이 그어진 숫자는 배제된 후보입니다."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

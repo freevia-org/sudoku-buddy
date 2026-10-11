@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nQelizat e theksuara e provojnë këtë.\n\nShtypni sërish Ndihmë për të parë cilën qelizë."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s dhe %2$s përmbajnë të dyja vetëm %3$s dhe %4$s. Në këtë njësi %5$s, %6$s ka vetëm dy vende, secilin të parë nga njëra prej tyre — ndaj njëri nga ato dy vende është %7$s, dhe skaji që e sheh duhet të jetë %8$s. Në të dyja rastet, një skaj është %9$s, gjë që përjashton %10$s nga çdo qelizë që i sheh të dyja."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s dhe %2$s kanë të dyja vetëm %3$s dhe %4$s si mundësi. Në këtë bllok, %5$s ka vetëm dy pozicione të mundshme, nga një që lidhet me secilën prej tyre - prandaj njëri nga ato dy pozicione është %6$s, dhe skaji që lidhet me të duhet të jetë %7$s. Në secilin rast, njëri skaj është %8$s, gjë që përjashton %9$s nga çdo qelizë që lidhet me të dy skajet."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s dhe %2$s kanë të dyja vetëm %3$s dhe %4$s si mundësi. Në këtë kolonë, %5$s ka vetëm dy pozicione të mundshme, nga një që lidhet me secilën prej tyre - prandaj njëri nga ato dy pozicione është %6$s, dhe skaji që lidhet me të duhet të jetë %7$s. Në secilin rast, njëri skaj është %8$s, gjë që përjashton %9$s nga çdo qelizë që lidhet me të dy skajet."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s dhe %2$s kanë të dyja vetëm %3$s dhe %4$s si mundësi. Në këtë rresht, %5$s ka vetëm dy pozicione të mundshme, nga një që lidhet me secilën prej tyre - prandaj njëri nga ato dy pozicione është %6$s, dhe skaji që lidhet me të duhet të jetë %7$s. Në secilin rast, njëri skaj është %8$s, gjë që përjashton %9$s nga çdo qelizë që lidhet me të dy skajet."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s në rreshtin %2$s, kolonën %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s në hapin %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s mund të përmbajë vetëm %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s nuk mund të përmbajë %2$s sepse %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s nuk mund të përmbajë %2$s sepse %3$s mund të përmbajë vetëm %4$s në të njëjtën kolonë %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s nuk mund të përmbajë %2$s sepse %3$s mund të përmbajë vetëm %4$s në të njëjtin bllok %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s nuk mund të përmbajë %2$s sepse %3$s mund të përmbajë vetëm %4$s në të njëjtin rresht %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s nuk mund të përmbajë %2$s sepse %3$s përmban %4$s në të njëjtin bllok %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s nuk mund të përmbajë %2$s sepse %3$s përmban %4$s në të njëjtën kolonë %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s nuk mund të përmbajë %2$s sepse %3$s përmban %4$s në të njëjtin rresht %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s përmban %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s bosh"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, vlerë e futur"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s duhet të vendoset këtu: kjo është e vetmja qelizë në këtë kolonë %2$s që ende mund të mbajë %3$s.\n\n%4$s\n\n%5$s aktualisht lejon %6$s, por çdo kolonë duhet të përmbajë %7$s saktësisht një herë. Prandaj vendos %8$s në rreshtin %9$s, kolonën %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s duhet të vendoset këtu: kjo është e vetmja qelizë në këtë njësi %2$s %3$s që mund të marrë ende një %4$s.\n\n%5$s\n\n%6$s aktualisht lejon %7$s, por çdo %8$s duhet të përmbajë %9$s saktësisht një herë. Prandaj vendosni %10$s në rreshtin %11$s, kolonën %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s duhet të vendoset këtu: kjo është e vetmja qelizë në këtë bllok %2$s që ende mund të mbajë %3$s.\n\n%4$s\n\n%5$s aktualisht lejon %6$s, por çdo bllok duhet të përmbajë %7$s saktësisht një herë. Prandaj vendos %8$s në rreshtin %9$s, kolonën %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s duhet të vendoset këtu: kjo është e vetmja qelizë në këtë rresht %2$s që ende mund të mbajë %3$s.\n\n%4$s\n\n%5$s aktualisht lejon %6$s, por çdo rresht duhet të përmbajë %7$s saktësisht një herë. Prandaj vendos %8$s në rreshtin %9$s, kolonën %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s ka dy vende në këtë rresht dhe dy në këtë kolonë. %2$s dhe %3$s janë në të njëjtën kuti, ndaj nuk mund të jenë të dyja %4$s — gjë që lë njërën nga %5$s dhe %6$s ta përmbajë dhe përjashton %7$s nga çdo qelizë që i sheh të dyja."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s në të njëjtin %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s në të njëjtin bllok."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s në të njëjtën kolonë."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s në të njëjtin rresht."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s është përjashtuar tashmë nga ajo qelizë. Kandidatët e saj janë "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s përjashtohet nga %2$s, që "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s përjashtohet nga %2$s, që mund të përmbajë vetëm %3$s në të njëjtën kolonë %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s përjashtohet nga %2$s, që mund të përmbajë vetëm %3$s në të njëjtin rresht %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s përjashtohet nga %2$s, që mund të përmbajë vetëm %3$s në të njëjtin bllok %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s përjashtohet nga %2$s, që përmban %3$s në të njëjtin bllok %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s përjashtohet nga %2$s, që përmban %3$s në të njëjtën kolonë %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s përjashtohet nga %2$s, që përmban %3$s në të njëjtin rresht %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s është e detyrueshme në qelizën më të re të numërtuar (rreshti %2$s, kolona %3$s). %4$s Shigjeta ndjek një vendosje që kontribuon; edhe pasojat e mëparshme kanë rëndësi."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s mungon në classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s nga %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s prej tyre mbushin një qelizë; të tjerat heqin fillimisht kandidatët që pengojnë."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"çift %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s të shtypura, %2$s, %3$s gabim"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s të shtypura, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s të shtypura"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, shifër fillestare e shtypur"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"katërshe %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s fotografi të refuzuara, më të rejat në fillim:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: hiq %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Numri i kutizave: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Kjo rrugë përbëhet nga %1$s hapa; teknika më e vështirë e mbështetur është %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"treshe %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s u hoq nga %2$s nga arsyetimi i mëparshëm mbi kandidatët."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s të shkruara"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"një imazh %1$sx%2$s kërkon %3$s bajte, por mori %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"një qelizë nuk ishte as shifër, as pikë"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Një zinxhir qelizash me dy kandidatë, që fillon dhe mbaron me të njëjtën shifër, e vendos atë shifër në njërin skaj ose në tjetrin."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Një shifër që ka vetëm një vend të mbetur në një rresht, kolonë ose bllok duhet të vendoset aty."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Një %1$s i shkruar me dorë."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Një %1$s i shtypur."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Një qelizë e kuqe tregon shifrën që aplikacioni lexoi aty. Nëse nuk është ajo që ke shkruar, prek qelizën për ta korrigjuar."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Një qelizë që ka vetëm një shifër të mundshme duhet të mbajë atë shifër."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Një listë teknikash nuk është kurrë e plotë dhe enigmat më të vështira ndërtohen për t\'u rezistuar të gjitha teknikave të saj. Prandaj, kur asnjëra prej tyre nuk jep rezultat, udhëzuesi zgjidh një qelizë duke provuar kandidatët e saj, e thotë qartë çfarë bëri dhe vazhdon arsyetimin prej aty. Ai arrin gjithmonë deri në fund të enigmës dhe nuk e paraqet kurrë një përgjigje të gjetur nga zgjidhësi si deduksion."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Një qelizë qendrore me tre kandidatë dhe dy krahë përkatës me nga dy kandidatë përjashtojnë një shifër nga çdo qelizë që sheh të tria."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Një qelizë qendrore me dy kandidatë dhe dy krahë me nga dy kandidatë mund të përjashtojnë një shifër nga çdo qelizë që sheh të dy krahët."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Rreth"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Pas"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Pas kësaj lëvizjeje"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Të gjitha të sakta"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Të tria këto qeliza mund të jenë %1$s dhe njëra duhet të jetë. Prandaj, çdo qelizë që sheh të tria nuk mund të jetë %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Lejo kamerën"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Pothuajse — mbaje faqen të sheshtë dhe pa shtrembërim perspektive ndaj kamerës"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"një përjashtim që nuk heq asgjë nuk është deduksion"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" dhe "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Përgjigjja"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Aplikacioni dhe pajisja (të plotësuara paraprakisht)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Aplikacioni: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"raporti i përmasave duhet të jetë pozitiv, por ishte %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Supozim · shifër hipotetike"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Supozimi u hodh poshtë · kandidatët realë u rikthyen"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"të paktën %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Foto automatike"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Ndaj automatikisht me Freevia fotot e enigmave me lexim të pasigurt, rezultatet e leximit dhe korrigjimet e mëvonshme të qelizave, për analizën dhe trajnimin e njohjes. E çaktivizuar si parazgjedhje."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Shmang reflektimin e dritës"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Prapa"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Kthehu te pyetja e mëparshme"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Kthehu te ndihma pamore"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Kthehu te qeliza jote"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Para"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Para kësaj lëvizjeje"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Shifrat blu janë zgjidhja. Prek një qelizë për të korrigjuar atë që u lexua."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"kutia %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"kuti"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Bllok"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Reduktim bllok–vijë"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"mund të përmbajë vetëm"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Anulo"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidatët %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"ProvatEKapjes"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Lidhe një shifër në zinxhir përmes njësive ku ka vetëm dy vende të mundshme, ngjyrose zinxhirin me dy ngjyra të alternuara dhe njëra ngjyrë është e vërtetë në të gjithë zinxhirin."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Duke lidhur %1$s nëpër njësitë ku ka vetëm dy pozicione të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e saktë kudo. Dy qeliza të ngjyrës tjetër ndodhen në të njëjtin rresht, gjë që është e pamundur - prandaj ajo ngjyrë është e pasaktë dhe %2$s përjashtohet nga çdo qelizë me atë ngjyrë."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Duke lidhur %1$s nëpër njësitë ku ka vetëm dy pozicione të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e saktë kudo. Dy qeliza të ngjyrës tjetër ndodhen në të njëjtin bllok, gjë që është e pamundur - prandaj ajo ngjyrë është e pasaktë dhe %2$s përjashtohet nga çdo qelizë me atë ngjyrë."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Duke lidhur %1$s nëpër njësitë ku ka vetëm dy pozicione të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e saktë kudo. Dy qeliza të ngjyrës tjetër ndodhen në të njëjtën kolonë, gjë që është e pamundur - prandaj ajo ngjyrë është e pasaktë dhe %2$s përjashtohet nga çdo qelizë me atë ngjyrë."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Duke lidhur %1$s në zinxhir përmes njësive ku ka vetëm dy vende të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e vërtetë në të gjithë zinxhirin. Dy qeliza me ngjyrën %2$s ndodhen në të njëjtin %3$s, gjë që është e pamundur — prandaj ajo ngjyrë është e rreme dhe %4$s hiqet nga çdo qelizë me atë ngjyrë."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Duke lidhur %1$s në zinxhir përmes njësive ku ka vetëm dy vende të mundshme, këto qeliza marrin dy ngjyra të alternuara dhe njëra ngjyrë është e vërtetë në të gjithë zinxhirin. Këto qeliza shohin të dyja ngjyrat, ndaj sido që të zgjidhet zinxhiri, njëra nga qelizat që shohin mban %2$s — që do të thotë se ato nuk mund ta mbajnë."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Duke lidhur %1$s nëpër njësitë ku ka vetëm dy pozicione të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e saktë kudo. Dy qeliza të së njëjtës ngjyrë ndodhen në të njëjtin bllok, gjë që është e pamundur - prandaj ajo ngjyrë është e pasaktë dhe %2$s përjashtohet nga çdo qelizë me atë ngjyrë."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Duke lidhur %1$s nëpër njësitë ku ka vetëm dy pozicione të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e saktë kudo. Dy qeliza të së njëjtës ngjyrë ndodhen në të njëjtën kolonë, gjë që është e pamundur - prandaj ajo ngjyrë është e pasaktë dhe %2$s përjashtohet nga çdo qelizë me atë ngjyrë."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Duke lidhur %1$s nëpër njësitë ku ka vetëm dy pozicione të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e saktë kudo. Dy qeliza të së njëjtës ngjyrë ndodhen në të njëjtin rresht, gjë që është e pamundur - prandaj ajo ngjyrë është e pasaktë dhe %2$s përjashtohet nga çdo qelizë me atë ngjyrë."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Kutiza të pasigurta për t\'u kontrolluar: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Kontrollo"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Kontrollo një qelizë të pasigurt."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", e kontrolluar si e saktë"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Zgjidh një kandidat për të parë pse nuk mund të vendoset në qelizën tënde."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Zgjidh gjuhën"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Zgjidh çfarë të shfaqet"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Mbyll"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Mbyll ndihmën"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Palos shqyrtimin e leximit"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"qelizat me ngjyra dhe në shkallë gri duhet të përdorin të njëjtën gjeometri"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"kolona %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"kolonë"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"kolona"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Krahaso zinxhirët detyrues dhe parapëlqe ata me më pak qeliza për t\'u ndjekur. Zinxhirët më të shkurtër mund të kërkojnë më shumë hapa për zgjidhjen e plotë."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Pasoja %1$s nga %2$s · shifra hipotetike"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"përmban"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Lloji i përmbajtjes"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Vazhdo me rrugën e plotë"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Kundërthënie · supozimi dështon"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", kundërthënie"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Kundërthënie: %1$s i kuq nuk ka më asnjë vend për %2$s. Kjo është e pamundur, ndaj supozimi fillestar duhet të jetë i gabuar."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Kundërthënie: qeliza e kuqe nuk ka asnjë kandidat të mbetur. Kjo është e pamundur, ndaj supozimi fillestar duhet të jetë i gabuar."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Kopjo kërkesën për fshirje"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Saktë. Krahaso arsyetimin tënd me shpjegimin më poshtë."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"imazhi i kapur nuk mund të dekodohej"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Nuk u gjetën shifrat e shtypura në atë foto."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Nuk u dalluan vijat e rrjetës — provo përsëri."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Nuk u hap GitHub. Kontakto mbështetjen në %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Nuk u ruajtën provat e kapjes për diagnostikim"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Leximi nuk u dërgua. Provo përsëri kur të jesh i lidhur."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Rrugë pa dalje"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"FSHI"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Fshi"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Fshi raportin"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Fshi këtë foto"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Fshi këtë enigmë"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Ta fshij këtë enigmë?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Ta fshij këtë dërgesë?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Po fshihet…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Fshirja nuk u konfirmua. Kontrollo lidhjen dhe provo përsëri."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Kërkesë për fshirje"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Përgjigjja e fshirjes nuk e konfirmoi këtë dëftesë."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Shërbimi i fshirjes ktheu HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Përshkruaj çfarë ndodhi dhe hapat për ta përsëritur. Thuaj nëse i kontrollove dhe i korrigjove fillimisht shifrat e njohura. Për një ide, shkruaj \'Nuk zbatohet\'."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", objektivi i kësaj ndihme"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Pajisja: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostikimi u shkurtua për t\'u përshtatur me draftin në shfletues. Veprimi Dërgo diagnostikimin në aplikacion mund të ndajë raportin e plotë."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"shifra duhet të jetë 1..9, por ishte %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Shifrat nuk u lexuan"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Ruajtja e provave në disk ndikon në kohëmatje; nuk është test krahasues i vonesës."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", nuk përputhet me zgjidhjen"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Çdo dëftesë identifikon një version të dërguar të enigmës. Fshije këtu për të hequr nga Freevia raportin e ruajtur privatisht."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Eliminimet e mëparshme: %1$s. Përdor lidhjet e hapave të mëparshëm për të shqyrtuar provat e tyre."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← prova të mëparshme (thellësia %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Vendosjet hipotetike të mëparshme i lënë vetëm një kandidat."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Hapat e mëparshëm të përdorur në këtë provë"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Ndrysho qelizën"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"tetë"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"bosh"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Bosh."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Bosh"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Anglisht"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"vlera që nuk përputhen"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"vlerë që nuk përputhet"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Secila prej tyre plotëson një qelizë."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Çdo qelizë është plotësuar, por %1$s përgjigje nuk përputhen me zgjidhjen."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Çdo qelizë është plotësuar, por një përgjigje nuk përputhet me zgjidhjen."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Çdo sudoku me një zgjidhje të vetme mund të zgjidhet me arsyetim; hamendësimi nuk kërkohet kurrë dhe rrallë ndihmon. Këto janë mënyrat e arsyetimit që ky aplikacion mund të njohë dhe shpjegojë, duke filluar nga më të lehtat. Kur njëra zbatohet në enigmën që ke hapur, ai do të tregojë çdo vend ku zbatohet."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Gjithçka që ke shkruar deri tani është e saktë."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Shembujt e disponueshëm tani: secili nis nga tabela jote aktuale."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"priteshin 10 vija horizontale, u morën %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"priteshin 10 vija vertikale, u morën %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"priteshin 81 qeliza, por u morën %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"priteshin 81 qeliza në çdo bllok, u gjetën %1$s dhe %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"pritej një kanal i vetëm 8-bit, por u mor %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"pritej një imazh 28x28, por u morën %1$s vlera"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Sjellja e pritur ose përmirësimi i propozuar"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"priteshin dhjetë vija në secilin drejtim"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"priteshin dy blloqe, u gjetën %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Shpjego heqjet e mëparshme të kandidatëve (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Shpjego ndihmat"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Gjej një qelizë me vetëm dy ose tre kandidatë të mbetur — sa më pak, aq më mirë, dhe sa më të mbushur rreshti, kolona dhe blloku përreth saj, aq më mirë.\n\nZgjidh një nga kandidatët e saj dhe shënoje lehtë me laps. Tani ndiq pasojat: ajo shifër hiqet nga çdo qelizë që kjo qelizë sheh, gjë që mund t\'i lërë njërës prej tyre vetëm një kandidat, i cili detyron një tjetër, e kështu me radhë. Vazhdo.\n\nNdodh njëra nga dy gjëra. Ose zinxhiri shuhet dhe nuk ke mësuar asgjë — fshije dhe provo kandidatin tjetër. Ose arrin te një qelizë pa asnjë kandidat, ose te një rresht pa asnjë vend për një shifër. Kjo është e pamundur, ndaj shifra që shënove me laps ishte e gabuar dhe mund ta përjashtosh përfundimisht.\n\nKjo është teknika për t\'u përdorur kur gjithçka tjetër është shteruar. Është më e ngadaltë dhe kërkon mbajtjen e shënimeve në vend të dallimit të modeleve, por mund të zbulojë lëvizje që modelet nuk i kapin. Një eliminim shpesh mjafton për të vënë sërish në punë teknikat e lehta; disa pozicione kërkojnë ende kërkim më të thellë."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Gjej dy qeliza me të njëjtët dy kandidatë, për shembull {3,7}, që nuk e shohin njëra-tjetrën — zakonisht janë larg njëra-tjetrës.\n\nTani kërko një rresht, kolonë ose bllok ku 7 ka vetëm dy qeliza të mundshme, njërën që shihet nga qeliza e parë e çiftit tënd dhe tjetrën nga e dyta. Kjo është lidhja.\n\nNjëra nga ato dy qeliza është 7. Cilado qoftë, qeliza e çiftit tënd që e sheh nuk mund të jetë 7, ndaj duhet të jetë 3. Nuk e di cili skaj është 3, vetëm që njëri është — dhe kjo mjafton për të përjashtuar 3 nga çdo qelizë që sheh të dy skajet.\n\nPjesa e vështirë është lidhja, ndaj kërkoje në rend të kundërt: fillimisht shëno njësitë ku një shifër ka vetëm dy vende të mundshme, pastaj kërko një çift përkatës në të dy anët."</string>
+    <string name="msg_finished_05343e98" formatted="false">"përfunduar"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Shkrepe foton kur rrjeta të jetë pa shtrembërim perspektive në kuadër dhe e palëvizshme. Butoni funksionon gjithmonë, sido që të jetë."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Përfshi të gjithë rrjetën në pamje."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Përfshi të gjithë rrjetën në pamje"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"pesë"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Ndiq një rrugë ku çdo lëvizje mbështetet te e mëparshmja."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Ndiq provën e plotë sipas radhës"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Ndiq këtë zinxhir qelizash me dy kandidatë: nëse %1$s nuk është %2$s, atëherë çdo qelizë përgjatë tij detyrohet nga e mëparshmja dhe %3$s përfundon si %4$s. Pra, njëri skaj ose tjetri mban %5$s, gjë që e përjashton nga çdo qelizë që i sheh të dy."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Zinxhir detyrues"</string>
+    <string name="msg_four_04efaf08" formatted="false">"katër"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Katër qeliza në dy rreshta, dy kolona dhe dy blloqe nuk mund të kenë të gjitha të njëjtët dy kandidatë, përndryshe enigma do të kishte dy zgjidhje."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia e konfirmoi fshirjen, por ky telefon nuk mundi të hiqte dëftesën lokale. Provo përsëri për të përfunduar pastrimin lokal."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia do ta fshijë këtë version të raportit dhe kopjen e tij private për trajnim. Korrigjimet e ardhshme mund të krijojnë një raport të ri sipas cilësimeve të tua të ndarjes. Një model i trajnuar tashmë me të mund t\'i ruajë ndryshimet e mësuara."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Rruga e plotë"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Leximet e ardhshme të pasigurta do të dërgojnë te Freevia foton e drejtuar të enigmës, rezultatet e njohjes dhe korrigjimet për analizë dhe trajnim. Kopjet për trajnim mbeten derisa të fshihen nga Dëftesat e dërgesave; një model i trajnuar mund t\'i ruajë ndryshimet e mësuara. Nëse një enigmë e pasigurt është tashmë e hapur, ajo do të dërgohet tani. Mund ta çaktivizosh këtë te Cilësimet."</string>
+    <string name="msg_gentle_96124817" formatted="false">"E lehtë"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Reflektimi i dritës po i zbeh vijat — anoje faqen larg dritës"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ImazhGri(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Qelizat gri përmbajnë shënime me laps, të cilat aplikacioni i shpërfill. Shiriti poshtë një shifre tregon sa i sigurt ishte leximi. Prek një qelizë për hollësi."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"I shkruar me dorë"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"E vështirë"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"I fshehur"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Çift i fshehur"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Katërshe e fshehur"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Tek i fshehur"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Treshe e fshehur"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Fshih provat e mëparshme"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Fshih si ta dallosh"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", ndihma %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Ndihmë"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Prova e ndihmës"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Arsyetimi i ndihmës"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Mos lëviz..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Mos lëviz ose prek butonin e shkrepjes"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Mos lëviz ndërsa kamera fokusohet..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mbaje telefonin paralel me faqen"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mbaje telefonin paralel mbi enigmë."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mbaje telefonin paralel mbi enigmë"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Si ta dallosh"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSi arrijmë deri këtu:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Kërko qeliza me saktësisht dy kandidatë — një krah Y përbëhet nga tri të tilla dhe asgjë tjetër.\n\nMerr njërën si qendër, për shembull {2,5}. Kërko një qelizë që ajo sheh me {2,9} dhe një tjetër që sheh me {5,9}. Qendra është ose 2, ose 5. Nëse është 2, krahu i parë duhet të jetë 9; nëse është 5, krahu i dytë duhet të jetë 9. Në të dyja rastet, një 9 shfaqet në njërin prej krahëve — nuk e di në cilin dhe nuk ke nevojë ta dish.\n\nPrandaj, asnjë qelizë që sheh të dy krahët nuk mund të jetë 9. Këto qeliza zakonisht janë dy qoshet që plotësojnë drejtkëndëshin."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", %1$s hipotetik, jo përgjigje e shkruar"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Nëse %1$s shifra në një rresht, kolonë ose bllok mund të vendosen vetëm në të njëjtat %2$s qeliza, ato qeliza nuk mund të mbajnë asgjë tjetër."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Nëse %1$s qeliza në një rresht, kolonë ose bllok kanë së bashku saktësisht %2$s kandidatë, ato shifra u përkasin atyre qelizave dhe asnjë qelize tjetër në atë njësi."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Nëse një shifër ka dy vende të mundshme në një rresht dhe dy në një kolonë, dhe një nga secila ndodhen në të njëjtin bllok, njëri nga dy vendet e tjera duhet ta mbajë."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Nëse një shifër ka dy vende të mundshme në secilin nga dy rreshta dhe nga një vend i tyre ndodhet në të njëjtën kolonë, njëri nga dy vendet e tjera duhet ta mbajë."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Nëse të vetmet vende të një shifre përgjatë një vije ndodhen të gjitha brenda një blloku, ajo shifër mund të përjashtohet nga pjesa tjetër e atij blloku."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Nëse të vetmet vende të një shifre në %1$s rreshta ndodhen në të njëjtat %2$s kolona, ajo mund të përjashtohet nga pjesa tjetër e atyre kolonave — dhe njësoj kur ndërrohen rreshtat me kolonat."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Nëse të vetmet vende të një shifre brenda një blloku ndodhen në të njëjtën vijë, ajo shifër mund të përjashtohet nga pjesa tjetër e asaj vije."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Nëse supozimi i një shifre çon te një qelizë që nuk mund të mbajë asgjë, ajo shifër ishte e gabuar."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"përmasat e imazhit duhet të jenë pozitive"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Në një zinxhir qelizash që kanë të gjitha të njëjtët dy kandidatë, dy skajet e një zinxhiri me gjatësi teke mbajnë shifra të ndryshme."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Në këto %1$s %2$s, %3$s mund të vendoset vetëm në këto %4$s %5$s. Së bashku i zënë të gjitha, ndaj %6$s mund të përjashtohet nga çdo vend tjetër në ato %7$s."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Në këto %1$s kolona, %2$s mund të vendoset vetëm në këta %3$s rreshta. Së bashku ato zënë secilin prej këtyre rreshtave, ndaj %4$s mund të përjashtohet nga të gjitha qelizat e tjera të tyre."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Në këta %1$s rreshta, %2$s mund të vendoset vetëm në këto %3$s kolona. Së bashku ata zënë secilën prej këtyre kolonave, ndaj %4$s mund të përjashtohet nga të gjitha qelizat e tjera të tyre."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Në këto dy %1$s, %2$s ka nga vetëm dy vende të mundshme, dhe %3$s e %4$s ndodhen në të njëjtin %5$s — ndaj nuk mund të jenë të dyja %6$s. Prandaj, njëra nga %7$s dhe %8$s është, gjë që përjashton %9$s nga çdo qelizë që i sheh të dyja."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Në secilën nga këto dy kolona, %1$s ka vetëm dy pozicione të mundshme, dhe %2$s e %3$s janë në të njëjtin rresht - prandaj nuk mund të jenë të dyja %4$s. Kështu, njëra nga %5$s dhe %6$s është kjo shifër, gjë që përjashton %7$s nga çdo qelizë që lidhet me të dyja."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Në secilin nga këta dy rreshta, %1$s ka vetëm dy pozicione të mundshme, dhe %2$s e %3$s janë në të njëjtën kolonë - prandaj nuk mund të jenë të dyja %4$s. Kështu, njëra nga %5$s dhe %6$s është kjo shifër, gjë që përjashton %7$s nga çdo qelizë që lidhet me të dyja."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Në këtë %1$s, %2$s mund të vendoset vetëm në këto %3$s qeliza, ndaj ato qeliza janë të rezervuara. Kjo përjashton %4$s prej tyre."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Në këtë %1$s, %2$s mund të vendoset vetëm brenda një blloku. Pra, %3$s ndodhet në atë bllok në këtë %4$s dhe mund të përjashtohet nga pjesa tjetër e bllokut."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Në këtë bllok, %1$s mund të vendoset vetëm në këto %2$s qeliza, ndaj këto qeliza janë të rezervuara. Kjo përjashton %3$s prej tyre."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Në këtë kolonë, %1$s mund të vendoset vetëm në këto %2$s qeliza, ndaj këto qeliza janë të rezervuara. Kjo përjashton %3$s prej tyre."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Në këtë rresht, %1$s mund të vendoset vetëm në këto %2$s qeliza, ndaj këto qeliza janë të rezervuara. Kjo përjashton %3$s prej tyre."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Përfshin fotot, leximet dhe korrigjimet e tyre. Çaktivizoje te Cilësimet."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Brenda një blloku, gjej një shifër që mund të vendoset vetëm në dy ose tri qeliza dhe kontrollo nëse të gjitha ndodhen në të njëjtin rresht ose në të njëjtën kolonë. Nëse po, shifra ndodhet patjetër diku përgjatë asaj vije — nuk e di ku, por e di që është brenda këtij blloku. Prandaj, nuk mund të ndodhet askund tjetër përgjatë së njëjtës vijë jashtë bllokut.\n\nKjo nuk vendos asnjë shifër më vete. Ajo heq kandidatë, që të shfaqet një tek diku tjetër."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Brenda këtij blloku, %1$s mund të vendoset vetëm në këtë %2$s. Pra, %3$s ndodhet diku këtu dhe mund të përjashtohet nga pjesa tjetër e %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problemi ose ideja"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Zbatohet në %1$s vende këtu. Kalo përpara për t\'i parë me radhë."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Zbatohet në një vend këtu. Kalo përpara për ta parë."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Nuk zbatohet askund në këtë pozicion."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Është i vetmi vend i mbetur për %1$s në %2$s të theksuar."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Është qeliza e rrethuar.\n\nShtyp sërish Ndihmë për shifrën."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Meduzë"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Ruaj"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Mbaji të shkurtër zinxhirët detyrues"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Gjuha"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licencat"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Shiko përgjatë një rreshti, kolone ose blloku për qeliza me pak kandidatë të mbetur. Merr %1$s prej tyre dhe bashko kandidatët e tyre. Nëse bashkësia ka saktësisht %2$s shifra, ato %3$s shifra janë të rezervuara: duhet të vendosen në ato %4$s qeliza në njëfarë rendi, edhe pse ende nuk mund të thuash cila shkon ku.\n\nKjo mjafton. Çdo qelizë tjetër në njësi mund t\'i heqë ato shifra dhe zakonisht njëra prej atyre qelizave bëhet më pas tek.\n\nQelizat nuk kanë nevojë të kenë të gjitha të njëjtët kandidatë — {2,7}, {2,9} dhe {7,9} janë një treshe krejt e vlefshme, që shpesh nuk vihet re."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Kërko qeliza me të njëjtët dy kandidatë — për shembull {4,9} — që formojnë një zinxhir, ku secila sheh tjetrën. Tri nuk mjaftojnë; duhen të paktën katër.\n\nNgjyrosi në mënyrë të alternuar ndërsa ecën. Meqë çdo qelizë sheh tjetrën, dy fqinje nuk mund të mbajnë të njëjtën shifër, ndaj zinxhiri lexohet 4, 9, 4, 9 në të gjithë gjatësinë — ose 9, 4, 9, 4, dhe nuk mund ta dish cili rast vlen.\n\nNë të dyja rastet, dy qeliza me ngjyra të kundërta mbajnë shifra të ndryshme: njëra është 4 dhe tjetra 9. Prandaj, çdo qelizë që i sheh të dyja nuk mund të jetë asnjëra dhe i humbet të dy kandidatët njëherësh.\n\nModeli dallohet lehtë pikërisht sepse çdo qelizë në të duket njësoj. Ndiq çiftet identike nëpër rrjetë dhe shiko ku lidhen."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Kërko tri qeliza me të njëjtët dy kandidatë — për shembull {1,6} — që ndodhen në tri qoshe të një drejtkëndëshi. Drejtkëndëshi duhet të shtrihet në saktësisht dy blloqe: dy rreshta dhe dy kolona që kalojnë nëpër dy blloqe, jo katër.\n\nTani shiko qoshen e katërt. Nëse edhe ajo do të kishte vetëm 1 dhe 6, enigma do të kishte dy zgjidhje — mund të ndërroje 1-shat dhe 6-shat përreth drejtkëndëshit dhe gjithçka tjetër do të funksiononte ende. Një enigmë e hartuar siç duhet ka një zgjidhje, ndaj qosheja e katërt duhet të përdorë diçka tjetër: kandidatët e tjerë mbeten, ndërsa 1 dhe 6 hiqen.\n\nKy është i vetmi argument që lidhet me hartuesin dhe jo me rrjetën. Është i vlefshëm për një enigmë të botuar dhe i pavlefshëm për një që e ke plotësuar tashmë gabim, sepse atëherë mund të mos ketë fare zgjidhje që të jetë unike."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Shiko në këtë bllok. Ndiq konturin deri te qeliza që do të shpjegojë kjo ndihmë."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Shënime"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Mesatare"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Më shumë"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Duhet më shumë dritë"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Ka më shumë se një zgjidhje, ndaj një shifër e shtypur nuk u kap. Shtyp Zgjidh për të parë zgjidhjet dhe ku ndryshojnë."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Largohu"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Afrohu"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Afrohu — rrjeta është tepër e vogël për t\'u lexuar."</string>
+    <string name="msg_naked_472fd902" formatted="false">"I zhveshur"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Çift i zhveshur"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Katërshe e zhveshur"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Tek i zhveshur"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Treshe e zhveshur"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Emërto teknikën dhe trego qelizat që e provojnë, në vend që të japësh vetëm shifrën."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"duhen të paktën 4 pika, por u morën %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Kërkon konfirmim"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Sudoku e re"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Pasoja tjetër"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Hapi tjetër"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Imazhet nuk bashkëngjiten automatikisht. Raportimet dhe bashkëngjitjet e dërguara këtu janë publike. Dërgo në info@freevia.org shembujt që preferon t’i dërgosh privatisht."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Asnjë fotografi nuk është refuzuar që nga instalimi i fundit i aplikacionit."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Nuk ka diagnostikim skanimi."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Asnjë teknikë nuk zbatohet këtu"</string>
+    <string name="msg_none_140bedbf" formatted="false">"asnjë"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Asnjëra prej tyre nuk vendos një shifër në një qelizë: ato heqin kandidatë, duke hapur rrugën për zgjidhjen e një enigme të vështirë."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Asnjë në enigmën tënde për momentin."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"nuk është skedar modeli shifrash"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Nuk u lexua me siguri — hamendësimi më i afërt është %1$s %2$s në %3$s. Plotësoje vetë këtë qelizë."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Ende nuk po lexohet si rrjetë nëntë me nëntë — provo ta mbushësh kuadrin vetëm me rrjetën ose thjesht bëj foton"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"pa nisur"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Asgjë nuk mund të dërgohej nga ky telefon."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Nuk mbetet asgjë për t\'u zgjidhur."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Asgjë tjetër këtu nuk mund të nxirret me arsyetim nga teknikat që njeh ky aplikacion."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"asgjë e pazakontë"</string>
+    <string name="msg_ok_565339bc" formatted="false">"Në rregull"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"një"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Një qelizë dukej sikur kishte një shifër të shtypur, por nuk ka."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Një shifër e shtypur u korrigjua automatikisht."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"një qelizë"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Vetëm %1$s mund të vendoset këtu — çdo shifër tjetër shfaqet tashmë në këtë rresht, kolonë ose bllok."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara zënë %2$s nga tetë shifrat e tjera; %3$s është përjashtuar nga kjo qelizë më herët, jo nga ndonjë gjë që mund të shohësh rreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara përmbajnë katër nga tetë shifrat e tjera; %2$s janë përjashtuar nga kjo qelizë më herët, jo për shkak të ndonjë gjëje që mund të shihni përreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara përmbajnë gjashtë nga tetë shifrat e tjera; %2$s janë përjashtuar nga kjo qelizë më herët, jo për shkak të ndonjë gjëje që mund të shihni përreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara përmbajnë një nga tetë shifrat e tjera; %2$s janë përjashtuar nga kjo qelizë më herët, jo për shkak të ndonjë gjëje që mund të shihni përreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara përmbajnë shtatë nga tetë shifrat e tjera; %2$s është përjashtuar nga kjo qelizë më herët, jo për shkak të ndonjë gjëje që mund të shihni përreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara përmbajnë pesë nga tetë shifrat e tjera; %2$s janë përjashtuar nga kjo qelizë më herët, jo për shkak të ndonjë gjëje që mund të shihni përreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Vetëm %1$s mund të vendoset këtu. Qelizat e theksuara zënë %2$s nga tetë shifrat e tjera; %3$s %4$s u përjashtuan më herët nga kjo qelizë, jo nga diçka që mund të shohësh përreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara përmbajnë dy nga tetë shifrat e tjera; %2$s janë përjashtuar nga kjo qelizë më herët, jo për shkak të ndonjë gjëje që mund të shihni përreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara zënë %2$s nga tetë shifrat e tjera; %3$s janë përjashtuar nga kjo qelizë më herët, jo nga ndonjë gjë që mund të shohësh rreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Këtu mund të vendoset vetëm %1$s. Qelizat e theksuara përmbajnë tre nga tetë shifrat e tjera; %2$s janë përjashtuar nga kjo qelizë më herët, jo për shkak të ndonjë gjëje që mund të shihni përreth saj."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Vetëm %1$s mund të vendoset këtu. Tetë shifrat e tjera përjashtohen nga qelizat e plotësuara ose kandidatët tek të detyruar në këtë rresht, kolonë ose bllok."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Vetëm %1$s mund të vendoset këtu, megjithëse asgjë përreth nuk tregon pse: të tetë shifrat e tjera u përjashtuan nga kjo qelizë me arsyetim të mëparshëm dhe jo sepse janë të shkruara në rreshtin, kolonën ose bllokun e saj."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"U gjetën vetëm %1$s shifra të shtypura, që janë tepër pak për një enigmë."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"mbështeten vetëm rrotullime me çerek rrethi, jo %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Hap një draft në shfletues me versionin e aplikacionit, modelin e telefonit, versionin e Android dhe diagnostikimin e skanimeve të fundit të plotësuara. Shto vetë një përshkrim të plotë dhe pamjet përkatëse të ekranit.\n\nKërkohet hyrje në GitHub. Mund ta shqyrtosh dhe ndryshosh draftin para se ta dërgosh. Raportet dhe bashkëngjitjet e dërguara janë publike. Asnjë fotografi nuk bashkëngjitet automatikisht."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Hap cilësimet e aplikacionit"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Hap GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Njoftimet për kodin e hapur"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Hap ‘Pse kjo qelizë?’ për të parë provat e vendosjes përfundimtare ose zgjidh një kandidat të përjashtuar për të ndjekur provën e tij."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Licenca Apache 2.0. Përdoret për gjetjen dhe drejtimin e rrjetës.\n\nAndroidX, Jetpack Compose dhe CameraX - Licenca Apache 2.0.\n\nKotlin - Licenca Apache 2.0.\n\nNjohësi i shifrave u trajnua me bazën e të dhënave MNIST të shifrave të shkruara me dorë nga LeCun, Cortes dhe Burges, së bashku me shifra të paraqitura nga fonte të hapura të sistemit dhe shifra të vizatuara programatikisht."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Bibliotekat vendase të OpenCV nuk u ngarkuan"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografo një enigmë tjetër."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Fotografitë që ruan mbahen në hapësirën private të këtij aplikacioni dhe hiqen kur i fshin ose çinstalon aplikacionin."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Foto nga të cilat aplikacioni nuk mundi të krijonte një enigmë. Dërgo një që të mund të shqyrtohet."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Zgjidh një shifër dhe shiko rreshtat ku asaj i kanë mbetur saktësisht dy qeliza. Merr dy rreshta të tillë dhe shiko nëse nga një qelizë e tyre ndodhet në të njëjtën kolonë.\n\nNëse po, ato dy qeliza janë në të njëjtën kolonë dhe nuk mund ta mbajnë të dyja shifrën. Prandaj, të paktën njëri nga skajet e largëta e mban — dy qelizat në anën tjetër. Nuk e di cili dhe nuk ke nevojë ta dish: çdo qelizë që sheh të dy skajet e largëta mund ta heqë shifrën.\n\nPastaj bëje përsëri me kolona në vend të rreshtave. Forma është një ndërtesë e lartë me një më të shkurtër pranë saj, prej nga vjen emri dhe mënyra si e dallon pasi ke parë disa."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Zgjidh një shifër. Gjej një rresht ku ka saktësisht dy vende të mundshme dhe një kolonë ku ka saktësisht dy vende të mundshme. Tani kontrollo nëse një qelizë e rreshtit dhe një e kolonës ndodhen në të njëjtin bllok.\n\nNëse po, ato dy qeliza nuk mund të jenë të dyja ajo shifër — një bllok, një shifër. Prandaj, të paktën njëri nga dy skajet e mbetura është dhe çdo qelizë që sheh të dy skajet mund ta heqë shifrën.\n\nArsyeja pse kjo shpesh nuk vihet re është se nuk ka asgjë për t\'u rreshtuar: katër qelizat formojnë një trajtë të çrregullt dhe e vetmja gjë që i lidh është blloku i përbashkët i dy skajeve të brendshme."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Zgjidh një qelizë bosh dhe kalo nga 1 te 9, duke përjashtuar çdo shifër që shfaqet tashmë në rreshtin, kolonën ose bllokun e saj. Nëse mbetet saktësisht një shifër, ajo vendoset aty.\n\nKjo është teknika që çdo teknikë tjetër synon të mundësojë. Çdo teknikë më e vështirë është një mënyrë për ta çuar një qelizë te një kandidat i vetëm, ndaj kur një teknikë më e vështirë jep rezultat, kërko më pas këtu."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Zgjidh një shifër dhe shpërfill të gjitha të tjerat. Shiko rreshtat dhe shëno ata ku asaj shifre i kanë mbetur vetëm dy ose tri qeliza të mundshme. Kërko %1$s rreshta të tillë, qelizat e të cilëve ndodhen në të njëjtat %2$s kolona.\n\nNëse i gjen, secili prej atyre %3$s rreshtave duhet ta vendosë shifrën në njërën nga ato kolona dhe dy rreshta nuk mund të përdorin të njëjtën kolonë. Prandaj, së bashku e zënë shifrën në të gjitha %4$s kolonat — dhe çdo qelizë tjetër në ato kolona mund ta heqë.\n\nPastaj përsërite të gjithën duke ndërruar kolonat me rreshtat. Gjysma e këtyre rasteve gjenden në mënyrën e dytë dhe është pikërisht gjysma që shumica nuk e kërkojnë kurrë."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Vendos %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Vendos %1$s në rreshtin %2$s, kolonën %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Vendos %1$s në qelizën tënde të konturuar."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Bashkëngjit pamjet përkatëse të ekranit duke përdorur kontrollin e bashkëngjitjeve në GitHub: enigmën, shifrat e njohura, rezultatin e Kontrollo ose fazën e ndihmës që tregon problemin. Përfshi rezultatet e pritshme dhe ato reale kur janë të dobishme."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Ju lutem, fshini dërgesat e mia të njohjes nga Sudoku Buddy. ID-të e dëftesave: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Zëvendësoje këtë tekst me një përshkrim të plotë të problemit ose idesë. Jepi këtij raporti një titull të shkurtër dhe përshkrues."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Drejtoje kamerën te një enigmë sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Drejtoje kamerën te një enigmë sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Drejtoje kamerën te një enigmë sudoku në letër. Aplikacioni lexon shifrat e shtypura dhe gjithçka që ke shkruar, e zgjidh dhe mund të të japë një ndihmë, të kontrollojë përgjigjet e tua ose të tregojë zgjidhjen e plotë."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Çift drejtues"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"DËRGO"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Po përgatitet enigma…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"I mëparshmi"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Hapi i mëparshëm"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Të shtypura"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Politika e privatësisë"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Ruajtja e enigmave"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Enigmat"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Enigmat lexohen dhe zgjidhen në këtë telefon. Nëse dërgoni një lexim të pasigurt ose aktivizoni ndarjen automatike, fotografia e enigmës, leximet origjinale, shënuesit e pasigurisë dhe korrigjimet tuaja i dërgohen në mënyrë të sigurt Freevia për analizë të njohjes dhe trajnim privat. Raportet nuk përfshijnë modelin e pajisjes ose të dhëna diagnostikuese. Ndarja automatike është fakultative; nuk ka llogari, analiza rutinë të përdorimit apo gjurmim reklamash. Kopjet për trajnim mund të fshihen me anë të dëftesës, megjithëse një model tashmë i trajnuar mund t\'i ruajë ndryshimet e mësuara. Përdorni Dëftesat e dërgimit te Cilësimet për të fshirë një raport."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Enigmat e fotografuara për testim erdhën nga sudoku.cba.si. Ky aplikacion nuk ka lidhje me ta."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Enigmat që fotografoni ruhen këtu, që t\'u riktheheni më vonë."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Leximi"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"U lexua si %1$s e shkruar me dorë, me siguri %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"U lexua si %1$s e shtypur, me siguri %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"U lexua si bosh — nuk u gjet bojë."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"U lexua si shënime kandidatësh me laps dhe u shpërfill."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Leximi u shqyrtua."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Leximi u dërgua. Faleminderit!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnostikimi i skanimeve të fundit (i plotësuar paraprakisht)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Njohja mund të gabojë, sidomos me shkrimin me dorë. Përdorni Lexo për t\'i krahasuar shifrat e njohura me fotografinë dhe prekni çdo qelizë për ta korrigjuar. Aplikacioni shënon leximet e pasigurta për shqyrtim; edhe një lexim me siguri të lartë mund të jetë i gabuar."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Hidh poshtë supozimin"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Çifte të largëta"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Hiq %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nHiq %1$s nga "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"U hoq"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Riluaj arsyetimin"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Raporto një gabim ose ide në GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Riprovo kamerën"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Kthehu te hapi %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Shfaq shpjegimin"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Shqyrto ose dërgo leximin"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Shqyrto leximin"</string>
+    <string name="msg_right_883361d5" formatted="false">"Saktë"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Rruga përfundoi. Kthehuni për të shqyrtuar çdo lëvizje ose provoni vetë hapat."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"rreshti %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Rreshti %1$s, kolona %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Rreshti %1$s, kolona %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"rreshti $1, kolona $2"</string>
+    <string name="msg_row_634768da" formatted="false">"rresht"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"rreshta"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s i përjashtuar"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Të dhënat diagnostikuese të skanimit nuk mund të lexoheshin."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Pamje ekrani ose shembuj enigmash"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Hamendësimi i dytë: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Zgjidh për ushtrim"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Zgjedhur: rreshti %1$s, kolona %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Dërgo të dhënat diagnostikuese (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Dërgo të dhënat diagnostikuese"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Dërgo këto skanime"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Dërgo këtë fotografi"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Cilësimet"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"shtatë"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Ndaj automatikisht kur leximi është i pasigurt"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Të ndahen automatikisht leximet e pasigurta?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Shfaq kundërthënien"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Më trego të gjitha %1$s në enigmën tënde"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Më trego atë në enigmën tënde"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Ngjyrosje e thjeshtë"</string>
+    <string name="msg_six_44778d82" formatted="false">"gjashtë"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Rrokaqiell"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", zgjidhja %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Zgjidh"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"U zgjidh dhe çdo përgjigje është e saktë."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Përgjigje me ndihmën e zgjidhësit: vendosni %1$s në %2$s. Kandidatët janë %3$s. Teknikat që mbështet aplikacioni nuk gjetën një lëvizje nga ky pozicion. Kërkimi i tij gjeti %4$s në zgjidhjen e vetme; një provë e hollësishme e degëve të kërkimit nuk është e disponueshme."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nPërgjigje me ndihmën e zgjidhësit: teknikat që mbështet aplikacioni nuk gjetën një lëvizje. Nuk ka një provë të hollësishme."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Përjashtim me ndihmën e zgjidhësit: një kërkim përjashton %1$s nga qeliza e theksuar, por aplikacioni nuk mundi të prodhonte një gjurmë të shkurtër kundërthënieje për ta shfaqur. Një provë e hollësishme nuk është e disponueshme."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Disa qeliza mund të përmbajnë shënime në vend të një shifre të plotë."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Disa shifra nuk u lexuan me siguri të lartë."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Diçka shkoi keq gjatë leximit të asaj fotografie."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Qelizë"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nKandidatët fillestarë: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Hapi %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Drejtoje"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategjitë"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Dëftesa e dërgimit"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Dëftesa e dërgimit është e pavlefshme."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Dëftesat e dërgimit (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Dëftesat e dërgimit"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Përgjigjes së dërgimit i mungon %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Statusi i përgjigjes së dërgimit është i pavlefshëm."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Shërbimi i dërgimit nuk është konfiguruar."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Shërbimi i dërgimit ktheu HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Dërgimet nuk janë të disponueshme në këtë version."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Dërgo"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Dërgo automatikisht leximet e pasigurta në të ardhmen"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Dërgo leximin"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Dërgo leximin e pasigurt për analizë"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Dërgo përditësimin"</string>
+    <string name="msg_submitted_64900440" formatted="false">"U dërgua"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Po dërgohet…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Të dhëna diagnostikuese të Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Komente për Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy botohet nga Freevia. Kontakt: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy lexon enigmat përmes kamerës, ndaj i duhet qasje te kamera. Njohja dhe historiku i enigmave mbeten në telefonin tuaj. Nëse zgjidhni të dërgoni një lexim të pasigurt, fotografia dhe rezultatet e tij i dërgohen në mënyrë të sigurt Freevia për të përmirësuar njohjen. Ndarja automatike është fakultative dhe mund të çaktivizohet te Cilësimet."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Skanim i Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Skanime të Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Kodi burimor i Sudoku Buddy licencohet sipas Apache License 2.0. Marka Freevia u nënshtrohet të drejtave të veçanta të markës tregtare."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku është një formë enigme në domenin publik. Ky aplikacion zgjidh enigmat që i keni tashmë; nuk riprodhon dhe nuk shpërndan enigmat e askujt."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", prova mbështetëse"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Supozoni se qeliza e shënuar përmban %1$s. Shifrat e numërtuara janë hipotetike."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Supozo se kjo qelizë është %1$s. Ndiq shigjetat me radhë: vlera e çdo qelize përcaktohet nga vendosjet e mëparshme - ose ajo shifër është e vetmja që mund të mbajë ende qeliza, ose ajo qelizë është i vetmi vend ku mund të vendoset ende shifra.\n\nKjo e lë njësinë e kuqe pa asnjë vend për %2$s. Shënimet %3$s në të tregojnë vendet ku mund të ishte vendosur, dhe secili është një qelizë që sapo është zënë nga njëra prej shigjetave. Një njësi pa vend për një shifër është e pamundur - prandaj kjo qelizë nuk është %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Supozoni se kjo qelizë është %1$s. Ndiqni shigjetat me radhë: çdo qelizë përcaktohet detyrimisht nga vendosjet e mëparshme — ose ajo shifër është e vetmja që mund të përmbajë ende, ose ajo qelizë është i vetmi vend ku shifra mund të vendoset ende. Qeliza me të kuqe mbetet pastaj pa asnjë shifër të mundshme, gjë që nuk mund të ndodhë — prandaj nuk është %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Supozo se kjo qelizë është %1$s. Ndiq shigjetat me radhë: vlera e çdo qelize përcaktohet nga vendosjet e mëparshme - ose ajo shifër është e vetmja që mund të mbajë ende qeliza, ose ajo qelizë është i vetmi vend ku mund të vendoset ende shifra.\n\nKjo e lë rreshtin e kuq pa asnjë vend për %2$s. Shënimet %3$s në të tregojnë vendet ku mund të ishte vendosur, dhe secili është një qelizë që sapo është zënë nga njëra prej shigjetave. Një rresht pa vend për një shifër është i pamundur - prandaj kjo qelizë nuk është %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Supozo se kjo qelizë është %1$s. Ndiq shigjetat me radhë: vlera e çdo qelize përcaktohet nga vendosjet e mëparshme - ose ajo shifër është e vetmja që mund të mbajë ende qeliza, ose ajo qelizë është i vetmi vend ku mund të vendoset ende shifra.\n\nKjo e lë bllokun e kuq pa asnjë vend për %2$s. Shënimet %3$s në të tregojnë vendet ku mund të ishte vendosur, dhe secili është një qelizë që sapo është zënë nga njëra prej shigjetave. Një bllok pa vend për një shifër është i pamundur - prandaj kjo qelizë nuk është %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Supozoni se kjo qelizë është %1$s. Ndiqni shigjetat me radhë: çdo qelizë përcaktohet detyrimisht nga vendosjet e mëparshme — ose ajo shifër është e vetmja që mund të përmbajë ende, ose ajo qelizë është i vetmi vend ku shifra mund të vendoset ende.\n\nKjo e lë %2$s me të kuqe pa asnjë vend për %3$s. Shënimet %4$s brenda saj tregojnë vendet ku mund të ishte vendosur, dhe secili është një qelizë që sapo e ka zënë njëra nga shigjetat. Një %5$s pa vend për një shifër nuk mund të ndodhë — prandaj nuk është %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Supozo se kjo qelizë është %1$s. Ndiq shigjetat me radhë: vlera e çdo qelize përcaktohet nga vendosjet e mëparshme - ose ajo shifër është e vetmja që mund të mbajë ende qeliza, ose ajo qelizë është i vetmi vend ku mund të vendoset ende shifra.\n\nKjo e lë kolonën e kuqe pa asnjë vend për %2$s. Shënimet %3$s në të tregojnë vendet ku mund të ishte vendosur, dhe secili është një qelizë që sapo është zënë nga njëra prej shigjetave. Një kolonë pa vend për një shifër është e pamundur - prandaj kjo qelizë nuk është %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Kaloni te Pas për të parë lëvizjen dhe pasojat e saj në rrjetë."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Peshk shpatë"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Bëj një fotografi të re"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Bëj një fotografi tjetër"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Merrni një shifër dhe shënoni çdo njësi ku i kanë mbetur saktësisht dy qeliza. Këto të dyja janë si një kolovajzë: njëra e përmban shifrën dhe tjetra jo.\n\nNisni kudo dhe ngjyrosni një qelizë, për shembull, blu. Ngjyrosni partneren e saj të kolovajzës të gjelbër, pastaj qelizën e çiftuar me atë sërish blu, dhe vazhdoni derisa zinxhiri të mbarojë. Ose çdo qelizë blu është e saktë, ose çdo qelizë e gjelbër — nuk mund ta dini cila, dhe kjo mjafton për dy gjëra.\n\nSë pari: nëse dy qeliza me të njëjtën ngjyrë shfaqen në një rresht, kolonë ose kuti, ajo ngjyrë është e pamundur, ndaj shifra hiqet nga çdo qelizë me atë ngjyrë dhe ngjyra tjetër jep përgjigjen në të gjitha qelizat e saj.\n\nSë dyti: çdo qelizë jashtë zinxhirit që sheh një qelizë blu dhe një të gjelbër mund ta heqë shifrën, sepse njëra nga ato të dyja e përmban, sido që të dalë zinxhiri.\n\nMe laps është e ngadaltë, por ia vlen: një ngjyrosje shpesh e heq një shifër nga gjysma e tabelës."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Merrni nga një shifër dhe një njësi — për shembull, ku mund të vendoset një 4 në këtë kuti? Përjashtoni çdo qelizë të njësisë që ka tashmë një shifër ose që sheh një 4 në rreshtin apo kolonën e vet. Nëse mbetet një qelizë, 4 vendoset aty.\n\nKurthi është se këtë nuk mund ta shihni duke parë qelizën: ajo mund të pranojë edhe pesë shifra të tjera, ndaj asgjë në të nuk duket e detyrueshme. Shikoni shifrën në vend të qelizës dhe kjo shfaqet menjëherë."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Bëj fotografi"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Bëje fotografinë automatikisht"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Prekni një qelizë të shënuar për ta shqyrtuar ose konfirmoni se të gjitha leximet janë të sakta."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Prekni fillimisht një qelizë në rrjetë."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Provoni %1$s si supozim në qelizën e shënuar. Nuk është përgjigje. Ndiqni pasojat për të parë pse dështon."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Provo supozimin"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Faleminderit që ndihmoni në përmirësimin e njohjes. Fotografia e enigmës, leximet dhe korrigjimet tuaja do të përdoren për analizë dhe trajnim."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Edhe kjo është një lëvizje e vlefshme me %1$s. Kjo rrugë ilustron një lëvizje tjetër; krahasojeni me provën e saj më poshtë."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Kjo nuk është lëvizja e zgjedhur për këtë hap. Mund të ketë lëvizje të tjera të vlefshme; shikoni përsëri ose shfaqni shpjegimin e këtij hapi."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Kjo është e saktë"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Kjo është pjesa tjetër e enigmës. %1$s qeliza në të kërkojnë përgjigje me ndihmën e zgjidhësit, sepse teknikat që mbështet aplikacioni nuk gjetën një lëvizje. Provat e hollësishme të kërkimeve të tyre nuk janë të disponueshme."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Kjo është pjesa tjetër e enigmës. Një qelizë në të kërkon përgjigje me ndihmën e zgjidhësit, sepse teknikat që mbështet aplikacioni nuk gjetën një lëvizje. Prova e hollësishme e kërkimit të tij nuk është e disponueshme."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Kjo është pjesa tjetër e enigmës, nga fillimi në fund."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Ajo foto nuk mund të ruhej, ndaj nuk ka asgjë për të dërguar."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Ajo qelizë lejon %1$s. Kërkoni lëvizjen që përligjet nga teknika e këtij hapi ose shfaqni shpjegimin e saj."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Ajo qelizë është mbushur tashmë. Zgjidhni një qelizë bosh."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Supozimi u hodh poshtë. Kthehemi te kandidatët realë dhe përjashtojmë %1$s nga qeliza e shënuar. Shifrat hipotetike hiqen."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Kamera nuk mundi ta bënte atë fotografi."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kamera nuk është e disponueshme. Mbyllni aplikacionet e tjera të kamerës, pastaj provoni përsëri."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"tjetra"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Fotografia e %1$s dhe gjithçka e lexuar prej saj do të hiqen nga ky telefon. Kjo nuk mund të zhbëhet."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Fotoja është në listën tënde të enigmave, te \"Nuk u lexua\"."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Qeliza qendrore këtu është %1$s ose %2$s. Në të dyja rastet, njëra nga dy qelizat e tjera detyrohet të jetë %3$s, ndaj asnjë qelizë që i sheh të dyja nuk mund të jetë %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Çifti tregues i lexuar në të kundërt. Merrni një rresht ose kolonë dhe një shifër që ende ka nevojë për vend në të. Shënoni çdo qelizë të asaj vije që mund ta marrë shifrën. Nëse të gjitha gjenden brenda një kutie, shifra duhet të jetë në pjesën e vijës brenda asaj kutie — ndaj nuk gjendet askund tjetër në kuti, përfshirë dy rreshtat ose kolonat e saj që nuk po shikonit.\n\nAshtu si çifti tregues, kjo nuk vendos asgjë më vete; i hap rrugë një teknike që vendos."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Shifrat e shtypura nuk formojnë një enigmë të zgjidhshme."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nKandidatët e mbetur në %1$s janë {%2$s}. Vendos %3$s në rreshtin %4$s, kolonën %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Raporti është tepër i madh për t\'u dërguar."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Krahu Y me një kandidat më shumë në qelizën qendrore. Kërkoni një qelizë me saktësisht tre kandidatë, për shembull {1,4,7}, që sheh dy qeliza me nga dy kandidatë — njërën {1,7} dhe tjetrën {4,7}.\n\nTani të tria mund të jenë 7 dhe njëra duhet të jetë. Pra, një qelizë duhet t\'i shohë të tria që 7 të përjashtohet prej saj, jo vetëm dy krahët — që në praktikë do të thotë se gjendet në të njëjtën kuti me qelizën qendrore dhe në një vijë me njërin krah.\n\nKa më pak përjashtime se krahu Y dhe për të njëjtën arsye është më e lehtë të mos e vësh re: qeliza qendrore nuk bie në sy."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Ka një qelizë që mund ta mbushni në kutinë e theksuar.\n\nShtypni sërish Ndihmë për të mësuar cila teknikë e gjen."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Këtu nuk ka mbetur asgjë për të arsyetuar."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Këto %1$s qeliza përmbajnë të gjitha vetëm %2$s dhe %3$s, dhe secila sheh tjetrën, ndaj alternohen përgjatë gjithë zinxhirit. %4$s dhe %5$s ndahen nga një numër tek lidhjesh, prandaj përmbajnë shifra të ndryshme — gjë që përjashton %6$s nga çdo qelizë që i sheh të dyja."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Këto %1$s qeliza përmbajnë mes tyre vetëm %2$s, ndaj ato shifra i mbushin në njëfarë rendi. Kjo përjashton %3$s nga pjesa tjetër e kësaj njësie: %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Këto %1$s qeliza kanë së bashku vetëm %2$s si mundësi, ndaj ato shifra i mbushin në njëfarë rendi. Kjo përjashton %3$s nga qelizat e tjera të këtij rreshti."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Këto %1$s qeliza kanë së bashku vetëm %2$s si mundësi, ndaj ato shifra i mbushin në njëfarë rendi. Kjo përjashton %3$s nga qelizat e tjera të kësaj kolone."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Këto %1$s qeliza kanë së bashku vetëm %2$s si mundësi, ndaj ato shifra i mbushin në njëfarë rendi. Kjo përjashton %3$s nga qelizat e tjera të këtij blloku."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Këta janë kandidatët fillestarë për qelizën tuaj. Gjurma shpjegon cilat mundësi mund të përjashtohen."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Këto shifra nuk mund të formojnë një enigmë dhe ka tepër gabime për të thënë cilat. Prekni çdo qelizë për të korrigjuar leximin ose bëjeni fotografinë përsëri."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Këto shifra nuk mund të formojnë një enigmë. Ndryshimi i %1$s qelizave të rrethuara do ta rregullonte — prekni njërën për të korrigjuar leximin."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Këto shifra nuk mund të formojnë një enigmë. Ndryshimi i qelizës së vetme të rrethuar do ta rregullonte — prekni atë për të korrigjuar leximin."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Këto shifra nuk formojnë një enigmë, ndaj njëra është lexuar gabim. Shtypni Zgjidh për të parë cilat qeliza të korrigjoni."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Këto katër qeliza formojnë një drejtkëndësh në dy kuti dhe tri prej tyre përmbajnë vetëm %1$s. Nëse edhe %2$s do të përmbante vetëm ato të dyja, shifrat mund të ndërronin vendet rreth drejtkëndëshit dhe enigma do të kishte dy zgjidhje. Ajo ka një, ndaj %3$s duhet të përdorë diçka tjetër — dhe %4$s hiqet."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Ato nuk arrijnë deri në fund: diçka këtu e ka mposhtur plotësisht aplikacionin."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Kjo nuk mbush asnjë qelizë. Përjashton %1$s nga %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Kjo nuk plotëson asnjë qelizë. Përjashton %1$s nga %2$s qeliza."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Kjo nuk plotëson asnjë qelizë. Përjashton %1$s nga një qelizë."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nKy është i pari nga %1$s deduksione që çojnë te përgjigjja."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Kjo provë shpjegon një ndihmë, përfshirë përjashtimet e kandidatëve që çojnë te përgjigjja e saj. Ecni përpara hap pas hapi për të ndjekur arsyetimin në rrjetë, pastaj vazhdoni me rrugën e plotë."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Kjo enigmë nuk mund të përgatitej."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Kjo enigmë nuk mund të ruhej. Mund ta përdorni ende tani. Lironi pak hapësirë ruajtjeje para se të bëni një fotografi tjetër."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Kjo enigmë ka më shumë se një zgjidhje, ndaj ndoshta një shifër e shtypur nuk është lexuar. Po shfaqet zgjidhja %1$s nga %2$s — shtypni sërish Zgjidh për tjetrën. Qelizat e rrethuara ndryshojnë mes zgjidhjeve të shfaqura."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Fotografia e kësaj enigme nuk mund të hapej."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Ky arsyetim përjashton praninë e %1$s "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Kjo qelizë mund të përmbajë shënime kandidatësh në vend të një shifre të plotë. Ju lutemi, kontrollojeni."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Kjo pamje përfshin heqjet e mëparshme të kandidatëve. Hapni provat e tyre më poshtë për t\'i kontrolluar."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tre"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Tepër errët për të dalluar vijat e rrjetës"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Gjurma"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"U provua"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Provoje vetë"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Aktivizo"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Rrotullojeni telefonin që enigma të jetë drejt."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Mësues"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"dy"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Dy qeliza që përmbajnë të njëjtin çift, të lidhura nga një kolovajzë në njërën nga shifrat e tij, e detyrojnë shifrën tjetër të jetë në njërën prej tyre."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Balonë me dy fije"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Drejtkëndësh unik"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"njësi"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable nuk ekspozon asnjë listë CellReading; qelizat e sakta hyrëse dhe rezultati ruhen."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"version i pambështetur i formatit të modelit"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"E pasigurt"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Përdor gjuhën e pajisjes"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Duke përdorur %1$s, prekni një qelizë ku mund të hiqet një kandidat, pastaj zgjidhni atë shifër."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Duke përdorur %1$s, prekni qelizën që mund të mbushni, pastaj zgjidhni shifrën e saj."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Shumë e vështirë"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"Krahu W"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"u"</string>
+    <string name="msg_were_910adfb4" formatted="false">"u"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Çfarë prisnit ose si do t\'ju ndihmonte ideja juaj të zgjidhnit apo të mësonit Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Çfarë ndodhi dhe hapat për ta riprodhuar (për gabimet)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Çfarë bën"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Ku"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Pse u hoq %1$s nga r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Pse"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Pse jo %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Pse kjo qelizë? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" me zgjidhjen. Përdor Kontrollo për t\'i shqyrtuar."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Ndiqni arsyetimin mbrapsht nga qeliza juaj. Zgjidhni një pyetje më poshtë."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Punoni shifër pas shifre në vend të qelizë pas qelize. Për një njësi, shkruani ku mund të vendoset ende çdo shifër që mungon. Pastaj kërkoni %1$s shifra, listat e të cilave së bashku mbulojnë vetëm %2$s qeliza.\n\nAto %3$s shifra duhet t\'i mbushin ato %4$s qeliza, ndaj çdo kandidat tjetër në to mund të përjashtohet — gjë që shpesh e kthen menjëherë njërën prej tyre në një të vetme të zhveshur ose një çift të zhveshur.\n\nKjo është teknika që njerëzit e kanë më të vështirë, sepse nuk ka asgjë për të parë kur shikoni qelizat: ato ende kanë shumë kandidatë. Modeli gjendet te shifrat."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Punoni vetëm me qeliza që kanë saktësisht dy kandidatë të mbetur.\n\nNisni nga njëra, për shembull {2,6}, dhe supozoni se nuk është 2 — atëherë është 6. Kaloni te një qelizë që ajo sheh dhe që ka gjithashtu një 6, për shembull {6,4}: ajo nuk mund të jetë 6, ndaj është 4. Kaloni te një qelizë që kjo sheh dhe që përmban një 4, dhe vazhdoni, me çdo hap të detyruar nga i mëparshmi.\n\nNëse arrini te një qelizë, shifra tjetër e së cilës është 2 — shifra që nisët duke përjashtuar — mbaruat. Ose qeliza e parë ishte në fund të fundit 2, ose zinxhiri vazhdoi dhe qeliza e fundit është 2. Njëri skaj ose tjetri e përmban, ndaj çdo qelizë që i sheh të dy skajet nuk mund ta përmbajë.\n\nMbajini zinxhirët të shkurtër. Katër ose pesë qeliza mund të gjenden me laps; më tej po mbani shënime të shumta dhe emri i saktë për këtë është zinxhir detyrues."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"brinja e punës duhet të jetë pozitive dhe e fundme"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Nuk u lexua"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Të shkruara"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Gabim"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"Krahu X"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"Zinxhiri XY"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"Krahu XYZ"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Krahu Y"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"E boshatisët këtë qelizë."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"E caktuat këtë si %1$s të shkruar me dorë."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"E caktuat këtë si %1$s të shtypur."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Ndryshimet tuaja duken, por nuk mund të ruheshin. Lironi pak hapësirë ruajtjeje dhe provoni ta redaktoni enigmën përsëri."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Fotografitë dhe privatësia juaj"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Enigmat tuaja"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Enigmat tuaja të ruajtura"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Qeliza juaj ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Qeliza juaj mbetet e konturuar. Qelizat e gjelbra tregojnë provat; shifrat e vijëzuara janë përjashtuar."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

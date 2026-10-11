@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nZvýraznené políčka to dokazujú.\n\nOpätovným stlačením Tipu zistíte, ktoré políčko to je."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s aj %2$s obsahujú iba %3$s a %4$s. V tomto %5$s má %6$s iba dve miesta, pričom každé z nich vidí jedno z nich – takže jedno z týchto dvoch je %7$s a koniec, ktorý naň vidí, musí byť %8$s. Tak či onak je jeden koniec %9$s, čo vylučuje %10$s zo všetkého, čo vidí oba."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"V bunkách %1$s aj %2$s môžu byť iba %3$s a %4$s. V tomto bloku má %5$s iba dve možné pozície, pričom každá z týchto buniek vidí jednu z nich – na jednej z týchto dvoch pozícií teda je %6$s a koncová bunka, ktorá ju vidí, musí byť %7$s. V oboch prípadoch je na jednom konci %8$s, čo vylučuje %9$s zo všetkých buniek, ktoré vidia oba konce."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"V bunkách %1$s aj %2$s môžu byť iba %3$s a %4$s. V tomto stĺpci má %5$s iba dve možné pozície, pričom každá z týchto buniek vidí jednu z nich – na jednej z týchto dvoch pozícií teda je %6$s a koncová bunka, ktorá ju vidí, musí byť %7$s. V oboch prípadoch je na jednom konci %8$s, čo vylučuje %9$s zo všetkých buniek, ktoré vidia oba konce."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"V bunkách %1$s aj %2$s môžu byť iba %3$s a %4$s. V tomto riadku má %5$s iba dve možné pozície, pričom každá z týchto buniek vidí jednu z nich – na jednej z týchto dvoch pozícií teda je %6$s a koncová bunka, ktorá ju vidí, musí byť %7$s. V oboch prípadoch je na jednom konci %8$s, čo vylučuje %9$s zo všetkých buniek, ktoré vidia oba konce."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s v %2$s. riadku, %3$s. stĺpci%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s v kroku %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s môže obsahovať iba %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s nemôže obsahovať %2$s, pretože %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s nemôže obsahovať %2$s, pretože %3$s môže obsahovať iba %4$s v tom istom stĺpci %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s nemôže obsahovať %2$s, pretože %3$s môže obsahovať iba %4$s v tom istom bloku %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s nemôže obsahovať %2$s, pretože %3$s môže obsahovať iba %4$s v tom istom riadku %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s nemôže obsahovať %2$s, pretože %3$s obsahuje %4$s v tom istom bloku %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s nemôže obsahovať %2$s, pretože %3$s obsahuje %4$s v tom istom stĺpci %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s nemôže obsahovať %2$s, pretože %3$s obsahuje %4$s v tom istom riadku %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s obsahuje %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s prázdnych"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, zápis"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s musí ísť sem: je to jediná bunka v tomto stĺpci %2$s, do ktorej ešte môže ísť %3$s.\n\n%4$s\n\n%5$s momentálne umožňuje %6$s, ale každý stĺpec musí obsahovať %7$s presne raz. Preto umiestnite %8$s do riadka %9$s, stĺpca %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s musí ísť sem: je to jediná bunka v tomto %2$s %3$s, ktorá ešte môže prijať číslicu %4$s.\n\n%5$s\n\n%6$s momentálne povoľuje %7$s, ale každý %8$s musí obsahovať %9$s presne raz. Preto umiestnite %10$s do %11$s. riadka, %12$s. stĺpca."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s musí ísť sem: je to jediná bunka v tomto bloku %2$s, do ktorej ešte môže ísť %3$s.\n\n%4$s\n\n%5$s momentálne umožňuje %6$s, ale každý blok musí obsahovať %7$s presne raz. Preto umiestnite %8$s do riadka %9$s, stĺpca %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s musí ísť sem: je to jediná bunka v tomto riadku %2$s, do ktorej ešte môže ísť %3$s.\n\n%4$s\n\n%5$s momentálne umožňuje %6$s, ale každý riadok musí obsahovať %7$s presne raz. Preto umiestnite %8$s do riadka %9$s, stĺpca %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s má dve miesta v tomto riadku a dve v tomto stĺpci. %2$s a %3$s zdieľajú štvorec, takže nemôžu obe byť %4$s – čo znamená, že jedno z políčok %5$s a %6$s ju obsahuje, a to vylučuje %7$s zo všetkého, čo vidí obe."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s v rovnakom %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s v rovnakom bloku."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s v rovnakom stĺpci."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s v rovnakom riadku."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s je už z tohto políčka vylúčená. Jeho kandidáti sú "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s je vylúčená prvkom %2$s, ktorý "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s vylučuje políčko %2$s, ktoré môže obsahovať iba %3$s v tom istom stĺpci %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s vylučuje políčko %2$s, ktoré môže obsahovať iba %3$s v tom istom riadku %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s vylučuje políčko %2$s, ktoré môže obsahovať iba %3$s v tom istom bloku %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s vylučuje políčko %2$s, ktoré obsahuje %3$s v tom istom bloku %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s vylučuje políčko %2$s, ktoré obsahuje %3$s v tom istom stĺpci %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s vylučuje políčko %2$s, ktoré obsahuje %3$s v tom istom riadku %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s je vynútená v najnovšom očíslovanom políčku (%2$s. riadok, %3$s. stĺpec). %4$s Šípka sleduje prispievajúce umiestnenie; dôležité sú aj skoršie dôsledky."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s chýba v classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s z %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s z nich vyplní políčko; zvyšok najprv odstráni kandidátov."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s dvojica"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s vytlačených, %2$s, %3$s nesprávnych"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s vytlačených, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s vytlačených"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, vytlačená nápoveda"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s štvorica"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s odmietnutých fotografií, najnovšie ako prvé:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: odstrániť %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"počet políčok: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Túto trasu tvorí %1$s krokov, pričom najťažšou podporovanou technikou je %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s trojica"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s bola odstránená z %2$s skorším uvažovaním o kandidátoch."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s zapísaných"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"obrázok %1$sx%2$s vyžaduje %3$s bajtov, ale získalo sa %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"bunka nebola ani číslica, ani bodka"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Reťazec políčok s dvoma kandidátmi, ktorý začína aj končí rovnakou číslicou, umiestňuje túto číslicu na jeden alebo druhý koniec."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Číslica, pre ktorú zostáva v riadku, stĺpci alebo štvorci už len jedno miesto, patrí na toto miesto."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Rukou písaná %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Vytlačená %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Červené políčko zobrazuje číslicu, ktorú na ňom aplikácia načítala. Ak ste napísali niečo iné, klepnutím na políčko to opravte."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"V políčku, v ktorom zostáva už len jedna číslica, sa táto číslica musí nachádzať."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Zoznam techník nie je nikdy úplný a tie najťažšie hlavolamy sú vytvorené tak, aby prekonali čokoľvek, čo sa na ňom nachádza. Keď teda žiadna z nich neuspeje, tútor vyrieši jedno políčko vyskúšaním jeho kandidátov, otvorene prizná, že to urobil, a odtiaľ pokračuje v logickom odvodzovaní. Vždy dôjde až na koniec hlavolamu a nikdy nepredstiera, že vyskúšanie možností bolo logickou dedukciou."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Trojkandidátový pivot s dvoma zodpovedajúcimi dvojkandidátovými ramenami vynúti odstránenie číslice z každého políčka, ktoré vidí všetky tri."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Dvojkandidátový pivot a dve dvojkandidátové ramená dokážu vynútiť odstránenie číslice z každého políčka, ktoré vidí obe ramená."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"O aplikácii"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Po"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Po tomto ťahu"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Všetko správne"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Všetky tri tieto políčka môžu byť %1$s a jedno z nich ním byť musí. Preto žiadne políčko, ktoré vidí všetky tri, nemôže byť %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Povoliť fotoaparát"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Takmer – držte stranu rovno a kolmo na fotoaparát bez skreslenia"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"eliminácia, ktorá nič neodstraňuje, nie je dedukciou"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" a "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Odpoveď"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Aplikácia a zariadenie (predvyplnené)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Aplikácia: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"pomer strán musí byť kladný, ale bol %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Predpoklad · hypotetická číslica"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Predpoklad zamietnutý · skutoční kandidáti obnovení"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"aspoň %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Automatická fotografia"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Automaticky zdieľať neisté fotografie hlavolamov, výsledky načítania a neskoršie opravy buniek so spoločnosťou Freevia na analýzu rozpoznávania a trénovanie. Predvolene vypnuté."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Vyhnite sa odleskom"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Späť"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Späť na predchádzajúcu otázku"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Späť na vizuálny tip"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Späť na vaše políčko"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Pred"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Pred týmto ťahom"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Modré číslice predstavujú riešenie. Klepnutím na ktorékoľvek políčko opravíte to, čo bolo načítané."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"štvorec %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"štvorec"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Štvorec"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Redukcia riadka a štvorca"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Fotoaparát"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"môže obsahovať iba"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Zrušiť"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidáti %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Prepojte číslicu do reťazca cez jednotky, kde má iba dve možnosti, zafarbite reťazec dvoma striedajúcimi sa farbami a jedna farba bude pravdivá v celom rozsahu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Reťazením %1$s cez oblasti, kde má iba dve možné pozície, sa tieto bunky označia dvoma striedajúcimi sa farbami, pričom jedna z nich je všade pravdivá. Dve bunky druhej farby sú v rovnakom riadku, čo nie je možné – táto farba je teda nepravdivá a %2$s sa vylúči zo všetkých buniek tejto farby."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Reťazením %1$s cez oblasti, kde má iba dve možné pozície, sa tieto bunky označia dvoma striedajúcimi sa farbami, pričom jedna z nich je všade pravdivá. Dve bunky druhej farby sú v rovnakom bloku, čo nie je možné – táto farba je teda nepravdivá a %2$s sa vylúči zo všetkých buniek tejto farby."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Reťazením %1$s cez oblasti, kde má iba dve možné pozície, sa tieto bunky označia dvoma striedajúcimi sa farbami, pričom jedna z nich je všade pravdivá. Dve bunky druhej farby sú v rovnakom stĺpci, čo nie je možné – táto farba je teda nepravdivá a %2$s sa vylúči zo všetkých buniek tejto farby."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Prepojenie číslice %1$s do reťazca cez jednotky, kde má iba dve možnosti, rozdelí tieto políčka do dvoch striedajúcich sa farieb, z ktorých jedna je pravdivá v celom rozsahu. Dve políčka farby %2$s ležia v rovnakom %3$s, čo nie je možné – táto farba je teda nepravdivá a %4$s sa odstráni z každého políčka s touto farbou."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Prepojenie číslice %1$s do reťazca cez jednotky, kde má iba dve možnosti, rozdelí tieto políčka do dvoch striedajúcich sa farieb, pričom jedna farba je pravdivá v celom rozsahu. Tieto políčka vidia obe farby, takže bez ohľadu na to, ako reťazec dopadne, jedno z políčok, ktoré vidia, obsahuje %2$s – čo znamená, že ony ho obsahovať nemôžu."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Reťazením %1$s cez oblasti, kde má iba dve možné pozície, sa tieto bunky označia dvoma striedajúcimi sa farbami, pričom jedna z nich je všade pravdivá. Dve bunky jednej farby sú v rovnakom bloku, čo nie je možné – táto farba je teda nepravdivá a %2$s sa vylúči zo všetkých buniek tejto farby."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Reťazením %1$s cez oblasti, kde má iba dve možné pozície, sa tieto bunky označia dvoma striedajúcimi sa farbami, pričom jedna z nich je všade pravdivá. Dve bunky jednej farby sú v rovnakom stĺpci, čo nie je možné – táto farba je teda nepravdivá a %2$s sa vylúči zo všetkých buniek tejto farby."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Reťazením %1$s cez oblasti, kde má iba dve možné pozície, sa tieto bunky označia dvoma striedajúcimi sa farbami, pričom jedna z nich je všade pravdivá. Dve bunky jednej farby sú v rovnakom riadku, čo nie je možné – táto farba je teda nepravdivá a %2$s sa vylúči zo všetkých buniek tejto farby."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Neisté políčka na kontrolu: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Skontrolovať"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Skontrolovať jedno neisté políčko."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", skontrolované ako správne"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Vyberte kandidáta, aby ste zistili, prečo nemôže ísť do vášho políčka."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Vybrať jazyk"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Vybrať, čo sa má zobraziť"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Zavrieť"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Zavrieť tip"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Zbaliť kontrolu načítania"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"farebné bunky a bunky v odtieňoch sivej musia používať rovnakú geometriu"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"stĺpec %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"stĺpec"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"stĺpce"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Porovnajte vynucovacie reťazce a uprednostnite tie s menším počtom políčok na sledovanie. Kratšie reťazce môžu znamenať viac krokov v celkovom riešení."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Dôsledok %1$s z %2$s · hypotetické číslice"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"obsahuje"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Pokračovať v celej trase"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Spor · predpoklad zlyhal"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", spor"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Spor: v červenom %1$s nezostalo žiadne miesto pre číslicu %2$s. To nie je možné, takže počiatočný predpoklad musí byť nesprávny."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Spor: v červenom políčku nezostal žiadny kandidát. To nie je možné, takže počiatočný predpoklad musí byť nesprávny."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Kopírovať žiadosť o vymazanie"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Správne. Porovnajte svoje uvažovanie s vysvetlením nižšie."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"zachytený obrázok sa nepodarilo dekódovať"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Na danej fotografii sa nepodarilo nájsť vytlačené číslice."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Nepodarilo sa rozoznať mriežku – skúste to znova."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Nepodarilo sa otvoriť GitHub. Kontaktujte podporu na adrese %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Nepodarilo sa uchovať dôkaz zachytenia pre ladenie"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Načítanie sa nepodarilo odoslať. Skúste to znova po pripojení k sieti."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Slepá ulička"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Odstrániť"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Vymazať správu"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Odstrániť túto fotografiu"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Odstrániť tento hlavolam"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Odstrániť tento hlavolam?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Odstrániť toto odoslanie?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Odstraňuje sa…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Vymazanie sa nepodarilo potvrdiť. Skontrolujte pripojenie a skúste to znova."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Žiadosť o vymazanie"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Odpoveď na vymazanie nepotvrdila toto potvrdenie."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Služba vymazania vrátila kód HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Opíšte, čo sa stalo, a kroky na zopakovanie. Uveďte, či ste najprv skontrolovali a opravili rozpoznané číslice. V prípade nápadu napíšte „Neaplikovateľné“."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", cieľ tohto tipu"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Zariadenie: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostika bola skrátená, aby sa zmestila do konceptu v prehliadači. Pomocou akcie Odoslať diagnostiku v aplikácii môžete zdieľať celú správu."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"číslica musí byť 1..9, ale bola %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Nenačítané číslice"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Uchovávanie dôkazov na disku ovplyvňuje časovanie; nejde o meradlo latencie."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", nezhoduje sa s riešením"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Každé potvrdenie identifikuje jednu odoslanú revíziu hlavolamu. Jeho vymazaním tu odstránite súkromne uloženú správu zo spoločnosti Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Predchádzajúce eliminácie: %1$s. Ak si chcete pozrieť ich dôkazy, použite odkazy na skoršie kroky."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← skorší dôkaz (hĺbka %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Skoršie hypotetické umiestnenia v ňom ponechávajú iba jedného kandidáta."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Skoršie kroky použité v tomto dôkaze"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Upraviť bunku"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d. MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"osem"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"prázdne"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Prázdne."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Prázdne"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Angličtina"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"záznamy, ktoré sa nezhodujú"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"záznam, ktorý sa nezhoduje"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Každý z nich vyplní jedno políčko."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Každé políčko je vyplnené, ale %1$s odpovede sa nezhodujú s riešením."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Každé políčko je vyplnené, ale jedna odpoveď sa nezhoduje s riešením."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Každé sudoku s jedným riešením sa dá vyriešiť logickým odvodzovaním; hádanie nie je nikdy potrebné a pomôže len zriedka. Toto sú spôsoby logického uvažovania, ktoré táto aplikácia dokáže rozpoznať a vysvetliť, od najjednoduchších. Ak sa niektorý z nich vzťahuje na otvorený hlavolam, ukáže vám každé miesto, kde ho možno použiť."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Všetko, čo ste doteraz napísali, je správne."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Príklady dostupné teraz: každý vychádza z vašej aktuálnej mriežky."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"očakávalo sa 10 vodorovných čiar, získalo sa %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"očakávalo sa 10 zvislých čiar, získalo sa %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"očakávalo sa 81 buniek, ale získalo sa %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"v každom bloku sa očakávalo 81 buniek, našlo sa %1$s a %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"očakával sa 8-bitový jednokanálový formát, ale získalo sa %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"očakával sa obrázok 28x28, ale získalo sa %1$s hodnôt"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Očakávané správanie alebo navrhované zlepšenie"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"očakávalo sa desať čiar v každom smere"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"očakávali sa dva bloky, našlo sa %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Vysvetliť skoršie odstránenia kandidátov (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Vysvetliť tipy"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Nájdite políčko, v ktorom zostávajú len dvaja alebo traja kandidáti – čím menej, tým lepšie, a čím plnší je riadok, stĺpec a štvorec okolo neho, tým ešte lepšie.\n\nVyberte jedného z jeho kandidátov a zľahka si ho poznačte ceruzkou. Teraz sledujte dôsledky: daná číslica zmizne zo všetkého, čo toto políčko vidí, čo môže v niektorom z týchto políčok zanechať jediného kandidáta, to vynúti ďalšieho a tak ďalej. Pokračujte.\n\nStane sa jedna z dvoch vecí. Buď sa reťazec postupne vytratí a vy ste sa nič nedozvedeli – vygumujte to a skúste druhého kandidáta. Alebo narazíte na políčko, v ktorom nezostali vôbec žiadni kandidáti, prípadne na riadok, kde nie je kam umiestniť nejakú číslicu. To je nemožné, takže ceruzkou poznačená číslica bola nesprávna a môžete ju natrvalo vylúčiť.\n\nToto je možnosť, po ktorej treba siahnuť, keď všetko ostatné zlyhalo. Je pomalšia a ide skôr o evidenciu než o hľadanie vzorov, ale dokáže odhaliť ťahy, ktoré vzory prehliadnu. Jedna eliminácia často stačí na to, aby jednoduché techniky začali opäť fungovať; niektoré pozície stále vyžadujú hlbšie hľadanie."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Nájdite dve políčka s rovnakými dvoma kandidátmi, povedzme {3,7}, ktoré sa navzájom nevidia – zvyčajne sú ďaleko od seba.\n\nTeraz hľadajte riadok, stĺpec alebo štvorec, kde má číslica 7 iba dve možné políčka, z ktorých na jedno vidí prvé z vašej dvojice a na druhé to druhé. To je prepojenie.\n\nJedno z týchto dvoch políčok je číslica 7. Nech je to ktorékoľvek, políčko z vašej dvojice, ktoré naň vidí, nemôže byť 7, takže musí byť 3. Neviete, na ktorom konci je 3, iba to, že je na jednom z nich – a to stačí na vylúčenie 3 z každého políčka, ktoré vidí oba konce.\n\nTá ťažšia časť je prepojenie, preto ho hľadajte opačne: najprv označte jednotky, kde má číslica iba dve miesta, a potom hľadajte zhodnú dvojicu po oboch stranách."</string>
+    <string name="msg_finished_05343e98" formatted="false">"dokončené"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Stlačte spúšť, keď je mriežka v zábere rovno bez skreslenia a stabilná. Tlačidlo funguje vždy v oboch prípadoch."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Zachyťte celú mriežku v zábere."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Zachyťte celú mriežku v zábere"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"päť"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Postupujte podľa trasy, kde každý ťah nadväzuje na predchádzajúci."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Sledovať celý dôkaz postupne"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Sledujte tento reťazec políčok s dvoma kandidátmi: ak %1$s nie je %2$s, potom je každé políčko pozdĺž neho vynútené predchádzajúcim a v %3$s nakoniec skončí %4$s. Jeden alebo druhý koniec teda obsahuje %5$s, čo túto číslicu vylučuje z každého políčka, ktoré vidí oba konce."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Vynucovací reťazec"</string>
+    <string name="msg_four_04efaf08" formatted="false">"štyri"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Štyri políčka v dvoch riadkoch, dvoch stĺpcoch a dvoch štvorcoch nemôžu všetky obsahovať rovnakých dvoch kandidátov, inak by mal hlavolam dve riešenia."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Spoločnosť Freevia potvrdila vymazanie, ale tento telefón nedokázal odstrániť lokálne potvrdenie. Skúste to znova, aby ste dokončili lokálne vyčistenie."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Spoločnosť Freevia vymaže túto revíziu správy a jej kópiu na súkromné trénovanie. Budúce opravy môžu na základe vašich nastavení zdieľania vytvoriť novú správu. Model, ktorý už na nej bol natrénovaný, si môže naučené zmeny ponechať."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Celá trasa"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Pri budúcich neistých načítaniach sa vyrovnaná fotografia hlavolamu, výsledky rozpoznávania a opravy odošlú spoločnosti Freevia na analýzu a trénovanie. Trénovacie kópie zostávajú uložené, kým ich neodstránite v časti Potvrdenia o odoslaní; natrénovaný model si môže naučené zmeny ponechať. Ak je už otvorený neistý hlavolam, odošle sa teraz. Toto môžete vypnúť v Nastaveniach."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Mierne"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Odlesky spôsobujú vyblednutie čiar – nakloňte stranu smerom od svetla"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Sivé políčka obsahujú poznámky ceruzkou, ktoré aplikácia ignoruje. Pruh pod číslicou vyjadruje mieru istoty. Klepnutím na políčko zobrazíte podrobnosti."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Písané rukou"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Ťažké"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Skryté"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Skrytá dvojica"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Skrytá štvorica"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Skrytý singel"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Skrytá trojica"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Skryť skorší dôkaz"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Skryť návod, ako to nájsť"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", tip %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Nápoveda"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Dôkaz tipu"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Odôvodnenie tipu"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Držte nehybne…"</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Držte nehybne, alebo klepnite na spúšť"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Nehybne držte, kým fotoaparát zaostrí…"</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Držte telefón vodorovne"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Držte telefón vodorovne nad hlavolamom."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Držte telefón vodorovne nad hlavolamom"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\\\"horizontal\\\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Ako to nájsť"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n\n\nAko k tomu dospejeme:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Hľadajte políčka s presne dvoma kandidátmi – technika Y-wing pozostáva z troch takýchto políčok a ničoho iného.\n\nJedno zvoľte ako pivot, povedzme {2,5}. Hľadajte políčko, na ktoré vidí a ktoré obsahuje {2,9}, a ďalšie, na ktoré vidí a ktoré obsahuje {5,9}. Pivot je buď 2 alebo 5. Ak je to 2, prvé rameno musí byť 9; ak je to 5, druhé musí byť 9. Tak či onak sa v jednom z ramien objaví 9 – neviete v ktorom a ani to nepotrebujete vedieť.\n\nŽiadne políčko, ktoré vidí obe ramená, teda nemôže byť 9. Tieto políčka sú zvyčajne dva rohy, ktoré dopĺňajú obdĺžnik."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hypotetická hodnota %1$s, nejde o zadanú odpoveď"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Ak %1$s číslice v jednom riadku, stĺpci alebo štvorci môžu ísť iba do rovnakých %2$s políčok, tieto políčka nemôžu obsahovať nič iné."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Ak %1$s políčka v jednom riadku, stĺpci alebo štvorci zdieľajú medzi sebou presne %2$s kandidátov, tieto číslice patria do týchto políčok a do žiadnych iných v jednotke."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Ak má číslica dve miesta v riadku a dve v stĺpci a po jednom z nich zdieľajú rovnaký štvorec, jedno z ďalších dvoch ju musí obsahovať."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Ak má číslica dve miesta v každom z dvoch riadkov a tieto zdieľajú stĺpec, jedno z ďalších dvoch miest ju musí obsahovať."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Ak sa jediné miesta pre číslicu pozdĺž línie nachádzajú vo vnútri jedného štvorca, túto číslicu možno vylúčiť zo zvyšku tohto štvorca."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Ak sa jediné miesta pre číslicu v %1$s riadkoch nachádzajú v tých istých %2$s stĺpcoch, možno ju z týchto stĺpcov inde vylúčiť – a to isté platí aj pri zámene riadkov a stĺpcov."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Ak jediné miesta pre číslicu vo vnútri štvorca zdieľajú jednu líniu, túto číslicu možno vylúčiť zo zvyšku tejto línie."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Ak predpoklad číslice vedie k políčku, v ktorom nemôže byť nič, táto číslica bola nesprávna."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"rozmery obrázka musia byť kladné"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"V reťazci políčok, ktoré všetky obsahujú rovnakých dvoch kandidátov, obsahujú dva konce reťazca s nepárnou dĺžkou rôzne číslice."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"V týchto %1$s %2$s môže ísť %3$s iba do týchto %4$s %5$s. Spoločne vyčerpajú každé jedno, takže číslicu %6$s možno vylúčiť z týchto %7$s všade inde."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"V týchto %1$s stĺpcoch môže byť %2$s iba v týchto %3$s riadkoch. Spolu obsadia každý z nich, takže %4$s možno vylúčiť zo všetkých ostatných buniek týchto riadkov."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"V týchto %1$s riadkoch môže byť %2$s iba v týchto %3$s stĺpcoch. Spolu obsadia každý z nich, takže %4$s možno vylúčiť zo všetkých ostatných buniek týchto stĺpcov."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"V týchto dvoch %1$s má číslica %2$s iba po dve miesta a %3$s a %4$s zdieľajú rovnaký %5$s – nemôžu teda obe byť %6$s. Jedno z políčok %7$s a %8$s ňou teda je, čo vylučuje %9$s z každého políčka, ktoré vidí obe."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"V každom z týchto dvoch stĺpcov má %1$s iba dve možné pozície a %2$s a %3$s sú v rovnakom riadku – obe teda nemôžu byť %4$s. Preto je jedna z buniek %5$s a %6$s touto číslicou, čo vylučuje %7$s zo všetkých buniek, ktoré vidia obe."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"V každom z týchto dvoch riadkov má %1$s iba dve možné pozície a %2$s a %3$s sú v rovnakom stĺpci – obe teda nemôžu byť %4$s. Preto je jedna z buniek %5$s a %6$s touto číslicou, čo vylučuje %7$s zo všetkých buniek, ktoré vidia obe."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"V tomto %1$s môže ísť %2$s iba do týchto %3$s políčok, takže tieto políčka sú obsadené. To z nich vylučuje %4$s."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"V tomto %1$s môže ísť %2$s iba do jedného štvorca. Takže %3$s je v tomto štvorci na tomto %4$s a možno ju vylúčiť zo zvyšku štvorca."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"V tomto bloku môže byť %1$s iba v týchto %2$s bunkách, takže tieto bunky sú pre ne vyhradené. Tým sa z nich vylučuje %3$s."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"V tomto stĺpci môže byť %1$s iba v týchto %2$s bunkách, takže tieto bunky sú pre ne vyhradené. Tým sa z nich vylučuje %3$s."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"V tomto riadku môže byť %1$s iba v týchto %2$s bunkách, takže tieto bunky sú pre ne vyhradené. Tým sa z nich vylučuje %3$s."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Zahŕňa ich fotografie, načítania a opravy. Toto môžete vypnúť v Nastaveniach."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Vo vnútri jedného štvorca nájdite číslicu, ktorá môže ísť iba do dvoch alebo troch políčok, a skontrolujte, či všetky ležia v rovnakom riadku alebo v rovnakom stĺpci. Ak áno, číslica sa určite nachádza niekde pozdĺž tejto línie – neviete presne kde, ale viete, že je vo vnútri tohto štvorca. Nemôže sa teda nachádzať nikde inde pozdĺž rovnakej línie mimo tohto štvorca.\n\nToto samo o sebe nič neumiestni. Odstráni to však kandidátov, takže sa inde objaví singel."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Vo vnútri tohto štvorca môže ísť %1$s iba do tohto %2$s. Číslica %3$s je teda niekde tu a možno ju vylúčiť zo zvyšku %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problém alebo nápad"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Tu sa to dá uplatniť na %1$s miestach. Prejdite na ďalší krok a prechádzajte nimi."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Tu sa to dá uplatniť na jednom mieste. Prejdite na ďalší krok, aby ste to videli."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"V tejto pozícii sa to nedá nikde uplatniť."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Je to jediné zostávajúce miesto pre %1$s vo zvýraznenom %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Je to zakrúžkované políčko.\n\nOpätovným stlačením Tipu zobrazíte číslicu."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Ponechať"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Udržiavať vynucovacie reťazce krátke"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Jazyk"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Licencie"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Hľadajte pozdĺž jedného riadka, stĺpca alebo štvorca políčka, v ktorých zostáva len niekoľko kandidátov. Vezmite %1$s z nich a spojte ich kandidátov. Ak skupina obsahuje presne %2$s číslice, týchto %3$s číslic je obsadených: musia ísť do týchto %4$s políčok v nejakom poradí, aj keď zatiaľ neviete povedať, ktorá kam patrí.\n\nTo stačí. Všetky ostatné políčka v jednotke sa môžu týchto číslic vzdať a zvyčajne sa jedno z nich stane singlom.\n\nPolíčka nemusia mať všetky rovnakých kandidátov – {2,7}, {2,9} a {7,9} je úplne platná trojica a práve túto ľudia často prehliadnu."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Hľadajte políčka s rovnakými dvoma kandidátmi – povedzme {4,9} –, ktoré tvoria reťazec, kde každé vidí to nasledujúce. Tri nestačia; potrebujete aspoň štyri.\n\nPri postupe ich striedavo vyfarbujte. Pretože každé políčko vidí to nasledujúce, žiadni dvaja susedia nemôžu obsahovať rovnakú číslicu, takže reťazec má po celej dĺžke poradie 4, 9, 4, 9 – alebo 9, 4, 9, 4 a vy neviete určiť, ktoré to je.\n\nTak či onak, dve políčka opačných farieb obsahujú medzi sebou rôzne číslice: jedno je 4 a jedno je 9. Čokoľvek, čo vidí obe z nich, nemôže byť ani jedno a stráca oboch kandidátov naraz.\n\nTento vzor sa dá ľahko nájsť práve preto, že každé políčko v ňom vyzerá rovnako. Sledujte rovnaké dvojice po celej mriežke a všímajte si, kde sa dotýkajú."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Hľadajte tri políčka obsahujúce rovnakých dvoch kandidátov – povedzme {1,6} –, ktoré ležia v troch rohoch obdĺžnika. Obdĺžnik sa musí nachádzať presne v dvoch štvorcoch: dva riadky a dva stĺpce pretínajúce dva štvorce, nie štyri.\n\nTeraz sa pozrite na štvrtý roh. Keby obsahoval iba 1 a 6 tiež, hlavolam by mal dve riešenia – mohli by ste vymeniť jednotky a šestky v obdĺžniku a všetko ostatné by stále fungovalo. Správne vytvorené sudoku má jedno riešenie, takže štvrtý roh musí použiť niečo iné: jeho ostatní kandidáti zostávajú a 1 a 6 odpadávajú.\n\nToto je jediný argument v celej zbierke, ktorý sa týka autora a nie samotnej mriežky. Je opodstatnený pri publikovanom hlavolame a bezcenný pri takom, ktorý ste už vyplnili nesprávne, pretože vtedy nemusí existovať vôbec žiadne unikátne riešenie."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Pozrite sa do tohto štvorca. Sledujte obrys k políčku, ktoré tento tip vysvetlí."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Značky"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Stredne ťažké"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Viac"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Potrebné viac svetla"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Viac ako jedno riešenie, takže vytlačená číslica bola vynechaná. Stlačením Riešiť zobrazíte riešenia a miesta, kde sa líšia."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Odstúpte ďalej"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Pristúpte bližšie"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Pristúpte bližšie – mriežka je príliš malá na načítanie."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Zjavné"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Zjavná dvojica"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Zjavná štvorica"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Zjavný singel"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Zjavná trojica"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Pomenovať techniku a zobraziť políčka, ktoré ju dokazujú, namiesto obyčajného poskytnutia číslice."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"vyžadujú sa aspoň 4 body, ale získalo sa %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Vyžaduje potvrdenie"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Nové sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Ďalší dôsledok"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Ďalší krok"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Obrázky sa neprikladajú automaticky. Hlásenia a prílohy odoslané tu sú verejné. Príklady, ktoré chcete radšej poslať súkromne, zašlite na info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Od poslednej inštalácie aplikácie nebola odmietnutá žiadna fotografia."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Nie je k dispozícii žiadna diagnostika skenovania."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Tu sa nedá uplatniť žiadna technika"</string>
+    <string name="msg_none_140bedbf" formatted="false">"žiadna"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Žiadna z nich neumiestňuje číslicu do políčka: odstraňujú kandidátov, čím sa otvára cesta k vyriešeniu ťažkého hlavolamu."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Momentálne žiadne vo vašom hlavolame."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"nejde o súbor modelu číslic"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Nenačítané s dostatočnou istotou – najbližší odhad je %1$s %2$s na %3$s. Nastavte toto políčko sami."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Zatiaľ sa nenačítava ako mriežka 9 × 9 – skúste vyplniť záber samotnou mriežkou alebo jednoducho urobte fotografiu"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"nespustené"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Z tohto telefónu sa nepodarilo nič odoslať."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Už nie je čo riešiť."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Pomocou techník, ktoré táto aplikácia ovláda, tu už nemožno nič viac logicky odvodiť."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"nič nezvyčajné"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"jedna"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Jedna bunka vyzerala ako vytlačená číslica, ale nie je ňou."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Jedna vytlačená číslica bola opravená automaticky."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"jedno políčko"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Sem môže ísť iba %1$s – každá iná číslica sa už v tomto riadku, stĺpci alebo štvorci nachádza."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Sem môže ísť iba %1$s. Zvýraznené bunky vylučujú %2$s zo zvyšných ôsmich číslic; %3$s bolo z tejto bunky vylúčené už skôr, nie na základe niečoho, čo vidíte v jej okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Sem možno umiestniť iba %1$s. Zvýraznené políčka obsahujú štyri z ostatných ôsmich číslic; číslice %2$s boli z tohto políčka vylúčené už skôr, nie na základe niečoho, čo vidíte v jeho okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Sem možno umiestniť iba %1$s. Zvýraznené políčka obsahujú šesť z ostatných ôsmich číslic; číslice %2$s boli z tohto políčka vylúčené už skôr, nie na základe niečoho, čo vidíte v jeho okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Sem možno umiestniť iba %1$s. Zvýraznené políčka obsahujú jednu z ostatných ôsmich číslic; číslice %2$s boli z tohto políčka vylúčené už skôr, nie na základe niečoho, čo vidíte v jeho okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Sem možno umiestniť iba %1$s. Zvýraznené políčka obsahujú sedem z ostatných ôsmich číslic; číslica %2$s bola z tohto políčka vylúčená už skôr, nie na základe niečoho, čo vidíte v jeho okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Sem možno umiestniť iba %1$s. Zvýraznené políčka obsahujú päť z ostatných ôsmich číslic; číslice %2$s boli z tohto políčka vylúčené už skôr, nie na základe niečoho, čo vidíte v jeho okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Sem môže ísť iba %1$s. Zvýraznené políčka vyčerpávajú %2$s z ostatných ôsmich číslic; %3$s %4$s vylúčené z tohto políčka skôr, nie niečím, čo vidíte v okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Sem možno umiestniť iba %1$s. Zvýraznené políčka obsahujú dve z ostatných ôsmich číslic; číslice %2$s boli z tohto políčka vylúčené už skôr, nie na základe niečoho, čo vidíte v jeho okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Sem môže ísť iba %1$s. Zvýraznené bunky vylučujú %2$s zo zvyšných ôsmich číslic; %3$s boli z tejto bunky vylúčené už skôr, nie na základe niečoho, čo vidíte v jej okolí."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Sem možno umiestniť iba %1$s. Zvýraznené políčka obsahujú tri z ostatných ôsmich číslic; číslice %2$s boli z tohto políčka vylúčené už skôr, nie na základe niečoho, čo vidíte v jeho okolí."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Sem môže ísť iba %1$s. Ostatných osem číslic je vylúčených vyplnenými políčkami alebo vynútenými jednotlivými kandidátmi v tomto riadku, stĺpci alebo štvorci."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Sem môže ísť iba %1$s, hoci nič v okolí neukazuje prečo: všetkých osem ostatných číslic bolo z tohto políčka vylúčených predchádzajúcim uvažovaním, nie zápisom v jeho riadku, stĺpci alebo štvorci."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Našlo sa iba %1$s vytlačených číslic, čo je na hlavolam príliš málo."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"podporované sú iba štvrťotáčky, nie %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Otvorte koncept v prehliadači s vyplnenou verziou aplikácie, modelom telefónu, verziou systému Android a nedávnou diagnostikou skenovania. Sami doplňte úplný popis a relevantné snímky obrazovky.\n\nVyžaduje sa prihlásenie do služby GitHub. Pred odoslaním môžete koncept skontrolovať a upraviť. Odoslané správy a prílohy sú verejné. Žiadne fotografie sa nepripájajú automaticky."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Otvoriť nastavenia aplikácie"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Otvoriť GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Oznámenia o open source"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Otvorte položku „Prečo toto políčko?“, aby ste videli konečný dôkaz umiestnenia, alebo vyberte vylúčeného kandidáta a sledujte jeho dôkaz."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV – Apache License 2.0. Používa sa na hľadanie a vyrovnávanie mriežky.\n\nAndroidX, Jetpack Compose a CameraX – Apache License 2.0.\n\nKotlin – Apache License 2.0.\n\nRozpoznávač číslic bol trénovaný na databáze rukou písaných číslic MNIST od autorov LeCun, Cortes a Burges spolu s číslicami vykreslenými z otvorených systémových písiem a programovo generovanými číslicami."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Natívne knižnice OpenCV sa nepodarilo načítať"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Odfotiť ďalší hlavolam."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Fotografie, ktoré si ponecháte, sa ukladajú do súkromného úložiska tejto aplikácie a odstránia sa, keď ich vymažete alebo aplikáciu odinštalujete."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Fotografie, z ktorých aplikácia nedokázala vytvoriť hlavolam. Pošlite niektorú a môžeme sa na ňu pozrieť."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Vyberte číslicu a prejdite riadky, v ktorých jej zostávajú presne dve políčka. Vezmite dva takéto riadky a zistite, či jedno z ich políčok nepadne do rovnakého stĺpca.\n\nAk áno, tieto dve políčka sú v rovnakom stĺpci a nemôžu obe obsahovať túto číslicu. Takže ju obsahuje aspoň jeden zo vzdialených koncov – dve políčka na druhej strane. Neviete ktorý a ani to nepotrebujete vedieť: každé políčko, ktoré vidí oba vzdialené konce, sa môže tejto číslice vzdať.\n\nPotom to zopakujte so stĺpcami namiesto riadkov. Tvar pripomína vysokú budovu s nízkou vedľa nej, od čoho pochádza názov a podľa čoho to spoznáte, keď ich niekoľko uvidíte."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Vyberte číslicu. Nájdite riadok, kde má presne dve miesta, a stĺpec, kde má presne dve miesta. Teraz skontrolujte, či jedno políčko riadka a jedno políčko stĺpca ležia v rovnakom štvorci.\n\nAk áno, tieto dve políčka nemôžu obe obsahovať túto číslicu – jeden štvorec, jedna číslica. Takže aspoň jeden z dvoch zostávajúcich koncov ju obsahuje a čokoľvek, čo vidí oba konce, sa tejto číslice môže vzdať.\n\nDôvod, prečo toto ľudia prehliadajú, je ten, že tu nie je čo zarovnať: štyri políčka tvoria nepravidelný tvar a jediné, čo ho drží pokope, je štvorec, ktorý dva vnútorné konce zdieľajú."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Vyberte prázdne políčko a prejdite čísla od 1 do 9, pričom vyškrtnite všetko, čo sa už nachádza v jeho riadku, stĺpci alebo štvorci. Ak prežije presne jedna číslica, patrí tam.\n\nToto je technika, na prípravu ktorej existujú všetky ostatné. Všetko náročnejšie slúži na to, aby sa v nejakom políčku zredukoval počet kandidátov na jedného, takže keď náročnejšia technika prinesie výsledok, pozrite sa sem."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Vyberte jednu číslicu a ignorujte všetky ostatné. Prejdite riadky a poznačte si tie, kde tejto číslici zostávajú iba dve alebo tri možné políčka. Hľadajte %1$s takéto riadky, ktorých políčka sa zarovnávajú v rovnakých %2$s stĺpcoch.\n\nAk ich nájdete, každý z týchto %3$s riadkov musí číslicu umiestniť do jedného z týchto stĺpcov a žiadne dva nemôžu použiť rovnaký stĺpec. Takže spoločne spotrebujú číslicu vo všetkých %4$s stĺpcoch – a každé iné políčko v týchto stĺpcoch sa jej môže vzdať.\n\nPotom to celé zopakujte so zamenenými stĺpcami a riadkami. Polovica z nich sa nájde týmto druhým spôsobom, a to je tá polovica, ktorú väčšina ľudí nikdy nehľadá."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Umiestniť %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Umiestnite %1$s do %2$s. riadka, %3$s. stĺpca."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Umiestnite %1$s do svojho ohraničeného políčka."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Pripojte relevantné snímky obrazovky pomocou ovládacieho prvku príloh v službe GitHub: hlavolam, rozpoznané číslice, výsledok funkcie Skontrolovať alebo fázu tipu, ktorá znázorňuje problém. Kde je to užitočné, uveďte očakávané aj skutočné výsledky."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Vymažte moje odoslané rozpoznávania v aplikácii Sudoku Buddy. Identifikátory potvrdení: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Nahraďte túto výzvu úplným popisom problému alebo nápadu. Dajte tejto správe krátky, výstižný názov."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Namierte fotoaparát na sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Namierte fotoaparát na sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Namierte fotoaparát na sudoku na papieri. Aplikácia načíta vytlačené číslice a čokoľvek, čo ste dopísali, vyrieši ho a môže vám poskytnúť tip, skontrolovať vaše odpovede alebo zobraziť celé riešenie."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Ukazujúca dvojica"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Pripravuje sa hlavolam…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Predchádzajúci"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Predchádzajúci krok"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Vytlačené"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Zásady ochrany osobných údajov"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Úložisko hlavolamov"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Hlavolamy"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Hlavolamy sa načítavajú a riešia v tomto telefóne. Ak odošlete neisté načítanie alebo povolíte automatické zdieľanie, fotografia hlavolamu, pôvodné načítania, príznaky neistoty a vaše opravy sa bezpečne odošlú spoločnosti Freevia na analýzu rozpoznávania a súkromné trénovanie. Správy neobsahujú model vášho zariadenia ani diagnostiku. Automatické zdieľanie je voliteľné; neexistujú žiadne účty, bežná analýza používania ani sledovanie reklám. Trénovacie kópie možno vymazať na základe potvrdenia, hoci už natrénovaný model si môže naučené zmeny ponechať. Na vymazanie správy použite Potvrdenia o odoslaní v Nastaveniach."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Hlavolamy odfotografované na testovanie pochádzajú zo stránky sudoku.cba.si. Táto aplikácia s nimi nie je prepojená."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Hlavolamy, ktoré odfotografujete, sa ukladajú sem, aby ste sa k nim mohli neskôr vrátiť."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Rozpoznanie"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Načítané ako rukou písaná %1$s, istota %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Načítané ako vytlačená %1$s, istota %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Načítané ako prázdne – nenašiel sa žiadny atrament."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Načítané ako poznámky kandidátov ceruzkou a ignorované."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Načítanie skontrolované."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Načítanie bolo odoslané. Ďakujeme!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Nedávna diagnostika skenovania (predvyplnené)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Rozpoznávanie sa môže pomýliť, najmä pri rukou písanom písme. Použite Načítať na porovnanie rozpoznaných číslic s fotografiou a klepnutím na ktorékoľvek políčko ho opravte. Aplikácia označuje neisté načítania na kontrolu; aj s istotou načítaná hodnota môže byť nesprávna."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Odmietnuť predpoklad"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Vzdialené dvojice"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Odstrániť %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\n\nOdstrániť %1$s z "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Odstránené"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Znova prehrať odôvodnenie"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Nahlásiť chybu alebo nápad na GitHube"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Skúsiť fotoaparát znova"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Návrat na krok %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Odhaliť vysvetlenie"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Skontrolovať alebo odoslať načítanie"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Skontrolovať načítanie"</string>
+    <string name="msg_right_883361d5" formatted="false">"Správne"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Trasa dokončená. Vráťte sa späť, ak chcete skontrolovať akýkoľvek ťah, alebo si kroky vyskúšajte sami."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"riadok %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Riadok %1$s, stĺpec %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Riadok %1$s, stĺpec %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"riadok $1, stĺpec $2"</string>
+    <string name="msg_row_634768da" formatted="false">"riadok"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"riadky"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", vylúčené %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Diagnostiku skenovania sa nepodarilo načítať."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Snímky obrazovky alebo príklady hlavolamov"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Druhý odhad: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Vybrať na precvičovanie"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Vybraté: riadok %1$s, stĺpec %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Odoslať diagnostiku (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Odoslať diagnostiku"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Odoslať tieto skeny"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Odoslať túto fotografiu"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Nastavenia"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"sedem"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Automaticky zdieľať pri neistote"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Zdieľať neisté načítania automaticky?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Zobraziť spor"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Zobraziť všetky %1$s v mojom hlavolame"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Ukážte mi ten, ktorý je na vašom hlavolame"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Jednoduché farbenie"</string>
+    <string name="msg_six_44778d82" formatted="false">"šesť"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Mrakodrap"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", riešenie %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Vyriešiť"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Vyriešené a každá odpoveď je správna."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Odpoveď s pomocou riešiteľa: umiestnite %1$s do %2$s. Kandidáti sú %3$s. Podporované techniky aplikácie nenašli z tejto pozície žiadny ťah. Jej vyhľadávanie našlo %4$s v jedinečnom riešení; podrobný dôkaz vetiev vyhľadávania nie je k dispozícii."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\n\n\nRiešenie s pomocou riešiteľa: podporované techniky aplikácie nenašli žiadny ťah. Podrobný dôkaz nie je k dispozícii."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminácia s pomocou riešiteľa: vyhľadávanie vylučuje %1$s vo zvýraznenom políčku, ale aplikácia nedokázala vytvoriť krátky sled sporu na zobrazenie. Podrobný dôkaz nie je k dispozícii."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Niektoré bunky môžu namiesto celej číslice obsahovať poznámky."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Niektoré číslice neboli načítané s istotou."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Pri načítavaní danej fotografie sa vyskytla chyba."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Políčko"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\n\n\nPočiatoční kandidáti: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Krok %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Vyrovnať"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Stratégie"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Potvrdenie o odoslaní"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Potvrdenie o odoslaní je neplatné."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Potvrdenia o odoslaní (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Potvrdenia o odoslaní"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"V odpovedi na odoslanie chýba %1$s."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Stav odpovede na odoslanie je neplatný."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Služba odosielania nie je nakonfigurovaná."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Služba odosielania vrátila kód HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Odosielanie nie je v tomto zostavení k dispozícii."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Odoslať"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Odosielať budúce neisté načítania automaticky"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Odoslať načítanie"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Odoslať neisté načítanie na analýzu"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Odoslať aktualizáciu"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Odoslané"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Odosiela sa…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Diagnostika aplikácie Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Spätná väzba k aplikácii Sudoku Buddy – %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy vydáva Freevia. Kontakt: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Aplikácia Sudoku Buddy číta hlavolamy cez fotoaparát, preto potrebuje prístup k fotoaparátu. Rozpoznávanie a história hlavolamov zostávajú vo vašom telefóne. Ak sa rozhodnete odoslať neisté načítanie, jeho fotografia a výsledky sa bezpečne odošlú spoločnosti Freevia na zlepšenie rozpoznávania. Automatické zdieľanie je voliteľné a možno ho vypnúť v Nastaveniach."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Skenovanie aplikácie Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Skeny aplikácie Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Zdrojový kód aplikácie Sudoku Buddy je licencovaný pod licenciou Apache License 2.0. Značka Freevia podlieha samostatným právam na ochranné známky."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku je forma hlavolamu vo voľnom diele (public domain). Táto aplikácia rieši hlavolamy, ktoré už máte; nereprodukuje ani nedistribuuje hlavolamy nikoho iného."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", podporný dôkaz"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Predpokladajme, že označené políčko obsahuje %1$s. Očíslované číslice sú hypotetické."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Predpokladajme, že v tejto bunke je %1$s. Sledujte šípky v poradí: hodnotu každej bunky určujú predchádzajúce umiestnenia – buď je táto číslica jediná, ktorá v nej ešte môže byť, alebo je táto bunka jediným miestom, kam číslica ešte môže ísť.\n\nV červenej oblasti tak nezostane žiadne miesto pre %2$s. Označené výskyty %3$s v nej ukazujú miesta, kam táto číslica mohla ísť, a každé z nich je bunka, ktorú práve obsadila jedna zo šípok. Oblasť bez miesta pre niektorú číslicu nemôže vzniknúť – v pôvodnej bunke teda nie je %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Predpokladajme, že toto políčko by bolo %1$s. Sledujte šípky v poradí: každé políčko je vynútené predchádzajúcimi umiestneniami – buď je daná číslica jedinou, ktorú môže stále obsahovať, alebo je dané políčko jediným miestom, kam daná číslica ešte môže ísť. Políčko v červenej farbe potom zostane úplne bez číslice, čo nemôže nastať – takže to nie je %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Predpokladajme, že v tejto bunke je %1$s. Sledujte šípky v poradí: hodnotu každej bunky určujú predchádzajúce umiestnenia – buď je táto číslica jediná, ktorá v nej ešte môže byť, alebo je táto bunka jediným miestom, kam číslica ešte môže ísť.\n\nV červenom riadku tak nezostane žiadne miesto pre %2$s. Označené výskyty %3$s v ňom ukazujú miesta, kam táto číslica mohla ísť, a každé z nich je bunka, ktorú práve obsadila jedna zo šípok. Riadok bez miesta pre niektorú číslicu nemôže vzniknúť – v pôvodnej bunke teda nie je %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Predpokladajme, že v tejto bunke je %1$s. Sledujte šípky v poradí: hodnotu každej bunky určujú predchádzajúce umiestnenia – buď je táto číslica jediná, ktorá v nej ešte môže byť, alebo je táto bunka jediným miestom, kam číslica ešte môže ísť.\n\nV červenom bloku tak nezostane žiadne miesto pre %2$s. Označené výskyty %3$s v ňom ukazujú miesta, kam táto číslica mohla ísť, a každé z nich je bunka, ktorú práve obsadila jedna zo šípok. Blok bez miesta pre niektorú číslicu nemôže vzniknúť – v pôvodnej bunke teda nie je %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Predpokladajme, že toto políčko by bolo %1$s. Sledujte šípky v poradí: každé políčko je vynútené predchádzajúcimi umiestneniami – buď je daná číslica jedinou, ktorú môže stále obsahovať, alebo je dané políčko jediným miestom, kam daná číslica ešte môže ísť.\n\nTo zanecháva %2$s v červenej farbe bez miesta pre číslicu %3$s. V ňom označené %4$s sú miesta, kam mohla ísť, a každé z nich je políčkom, ktoré práve zabrala jedna zo šípok. Situácia, že %5$s nemá žiadne miesto pre číslicu, nemôže nastať – takže to nie je %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Predpokladajme, že v tejto bunke je %1$s. Sledujte šípky v poradí: hodnotu každej bunky určujú predchádzajúce umiestnenia – buď je táto číslica jediná, ktorá v nej ešte môže byť, alebo je táto bunka jediným miestom, kam číslica ešte môže ísť.\n\nV červenom stĺpci tak nezostane žiadne miesto pre %2$s. Označené výskyty %3$s v ňom ukazujú miesta, kam táto číslica mohla ísť, a každé z nich je bunka, ktorú práve obsadila jedna zo šípok. Stĺpec bez miesta pre niektorú číslicu nemôže vzniknúť – v pôvodnej bunke teda nie je %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Prepnite na Po, aby ste videli ťah a jeho dôsledky na mriežke."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Swordfish"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Odfotiť novú fotografiu"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Urobiť ďalšiu fotografiu"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Vezmite jednu číslicu a označte každú jednotku, kde jej zostávajú presne dve políčka. Tieto dve fungujú ako hojdačka: jedno z nich je daná číslica a druhé nie.\n\nZačnite kdekoľvek a vyfarbite políčko, povedzme, na modro. Vyfarbite jeho partnera na hojdačke na zeleno, potom to, s čím je spárované, znova na modro a pokračujte, kým sa reťazec neskončí. Každé modré políčko je pravdivé alebo každé zelené políčko je pravdivé – neviete určiť ktoré, a to stačí na dve veci.\n\nPo prvé: ak sa dve políčka rovnakej farby objavia v jednom riadku, stĺpci alebo štvorci, táto farba je nemožná, takže daná číslica sa odstráni z každého políčka s touto farbou a druhá farba je odpoveďou v celom rozsahu.\n\nPo druhé: akékoľvek políčko mimo reťazca, ktoré vidí modré aj zelené, sa môže tejto číslice vzdať, pretože jedno z týchto dvoch ju obsahuje bez ohľadu na to, ako reťazec dopadne.\n\nS ceruzkou je to pomalé, ale stojí to za to: jedno vyfarbenie často vyčistí číslicu z polovice hracej plochy."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Vezmite postupne jednu číslicu a jednu jednotku – povedzme, kam môže ísť 4 v tomto štvorci? Vyškrtnite každé políčko v jednotke, ktoré už číslicu obsahuje alebo ktoré vidí 4 vo svojom vlastnom riadku či stĺpci. Ak zostane jedno políčko, 4 patrí tam.\n\nÚskalím je, že to nezistíte pohľadom na samotné políčko: pokojne môže prijímať aj päť iných číslic, takže na ňom nič nevyzerá vynútené. Pozrite sa namiesto políčka na číslicu a okamžite sa to ukáže."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Odfotiť"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Urobiť fotografiu automaticky"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Klepnutím na označené políčko ho skontrolujte, alebo potvrďte, že všetky načítania sú správne."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Najprv klepnite na políčko na mriežke."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Otestujte %1$s ako predpoklad v označenom políčku. Nejde o odpoveď. Sledujte dôsledky, aby ste zistili, prečo zlyháva."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Otestovať predpoklad"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Ďakujeme, že pomáhate zlepšovať rozpoznávanie. Fotografia vášho hlavolamu, načítania a opravy sa použijú na analýzu a trénovanie."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"To je tiež platný ťah techniky %1$s. Táto trasa ilustruje iný ťah; porovnajte jeho dôkaz nižšie."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"To nie je ťah vybraný pre tento krok. Môžu existovať iné platné ťahy; pozrite sa znova alebo odhalte vysvetlenie tohto kroku."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"To je správne"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"To je zvyšok hlavolamu. %1$s políčka v ňom vyžadujú odpovede s pomocou riešiteľa, pretože podporované techniky aplikácie nenašli žiadny ťah. Ich podrobné dôkazy vyhľadávania nie sú k dispozícii."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"To je zvyšok hlavolamu. Jedno políčko v ňom vyžaduje odpoveď s pomocou riešiteľa, pretože podporované techniky aplikácie nenašli žiadny ťah. Jeho podrobný dôkaz vyhľadávania nie je k dispozícii."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"To je zvyšok hlavolamu, od začiatku do konca."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Danú fotografiu nebolo možné ponechať, takže nie je čo odoslať."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Dané políčko povoľuje %1$s. Hľadajte ťah odôvodnený technikou tohto kroku, alebo odhaľte jeho vysvetlenie."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Dané políčko je už vyplnené. Vyberte prázdne políčko."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Predpoklad bol zamietnutý. Vraciame sa k skutočným kandidátom a prečiarkneme %1$s v označenom políčku. Hypotetické číslice sú vymazané."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Fotoaparátom sa danú fotografiu nepodarilo nasnímať."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Fotoaparát nie je k dispozícii. Zavrite ostatné aplikácie fotoaparátu a skúste to znova."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"to druhé"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Fotografia z %1$s a všetko, čo z nej bolo načítané, sa z tohto telefónu odstráni. Túto akciu nemožno vrátiť späť."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Fotografia je vo vašom zozname hlavolamov pod položkou „Nepodarilo sa načítať“."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Pivot je tu %1$s alebo %2$s. Tak či onak je jedno z ďalších dvoch políčok vynútené na %3$s, takže žiadne políčko, ktoré vidí obe z nich, nemôže byť %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Ukazujúca dvojica čítaná odzadu. Vezmite riadok alebo stĺpec a číslicu, ktorá v ňom stále potrebuje umiestnenie. Označte každé políčko v danej línii, ktoré by mohlo túto číslicu prijať. Ak všetky z nich padnú do jedného štvorca, číslica sa musí nachádzať v časti línie patriacej tomuto štvorcu – takže sa nenachádza nikde inde v danom štvorci vrátane jeho dvoch riadkov či stĺpcov, na ktoré ste sa nepozerali.\n\nPodobne ako ukazujúca dvojica, ani toto samo o sebe nič neumiestni; vytvára to priestor pre niečo, čo to dokáže."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Z vytlačených číslic nevzniká riešiteľný hlavolam."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n\n\nZostávajúci kandidáti na pozícii %1$s sú {%2$s}. Umiestnite %3$s do %4$s. riadka, %5$s. stĺpca."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Správa je príliš veľká na odoslanie."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Technika Y-wing s pivotom obsahujúcim o jedného kandidáta viac. Hľadajte políčko s presne tromi kandidátmi, povedzme {1,4,7}, ktoré vidí dve dvojkandidátové políčka – jedno {1,7} a jedno {4,7}.\n\nTeraz všetky tri môžu byť 7 a jedno z nich ním byť musí. Políčko teda musí vidieť všetky tri, aby bolo vylúčené, nielen obe ramená – čo v praxi znamená, že leží v rovnakom štvorci ako pivot a v jednej línii s ramenom.\n\nMenej eliminácií ako pri Y-wing a ľahšie sa prehliadne z rovnakého dôvodu: pivot nevyniká."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Vo zvýraznenom štvorci je políčko, ktoré môžete vyplniť.\n\nOpätovným stlačením Tipu zistíte, ktorá technika ho nájde."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Tu už nezostalo nič, o čom by sa dalo logicky uvažovať."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Tieto %1$s políčka obsahujú iba %2$s a %3$s a každé vidí to nasledujúce, takže sa striedajú po celej dĺžke. Políčka %4$s a %5$s delí nepárny počet prepojení, a preto obsahujú medzi sebou rôzne číslice – čo vylučuje %6$s z čohokoľvek, čo vidí obe."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Tieto %1$s políčka obsahujú medzi sebou iba %2$s, takže ich tieto číslice v nejakom poradí vyplnia. To vylučuje %3$s zo zvyšku tohto %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"V týchto %1$s bunkách môžu byť spolu iba %2$s, takže ich tieto číslice vyplnia v určitom poradí. Tým sa %3$s vylučuje zo zvyšku tohto riadka."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"V týchto %1$s bunkách môžu byť spolu iba %2$s, takže ich tieto číslice vyplnia v určitom poradí. Tým sa %3$s vylučuje zo zvyšku tohto stĺpca."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"V týchto %1$s bunkách môžu byť spolu iba %2$s, takže ich tieto číslice vyplnia v určitom poradí. Tým sa %3$s vylučuje zo zvyšku tohto bloku."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Toto sú počiatoční kandidáti pre vaše políčko. Sledovanie vysvetľuje, ktoré možnosti možno vylúčiť."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Z týchto číslic nemožno vytvoriť hlavolam a chýb je príliš veľa na to, aby sa dalo určiť ktoré. Klepnutím na ktorékoľvek políčko opravte to, čo bolo načítané, alebo urobte fotografiu znova."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Z týchto číslic nemožno vytvoriť hlavolam. Zmena %1$s zakrúžkovaných políčok by to napravila – klepnutím na jedno z nich opravte to, čo bolo načítané."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Z týchto číslic nemožno vytvoriť hlavolam. Zmena jedného zakrúžkovaného políčka by to napravila – klepnutím naň opravte to, čo bolo načítané."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Tieto číslice netvoria hlavolam, takže jedna bola nesprávne načítaná. Stlačením Riešiť zistíte, ktoré políčka treba opraviť."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Tieto štyri políčka tvoria obdĺžnik cez dva štvorce a tri z nich obsahujú iba %1$s. Keby %2$s obsahovalo iba týchto dvoch tiež, číslice by sa dali v obdĺžniku vymeniť a hlavolam by mal dve riešenia. Má jedno, takže %3$s musí použiť niečo iné – a %4$s odpadá."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Nedosahujú koniec: niečo tu aplikáciu úplne premohlo."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Toto nič nevyplní. Vylúči to %1$s z %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Týmto sa nič nevyplní. Z %2$s políčok sa vylúči %1$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Týmto sa nič nevyplní. Z jedného políčka sa vylúči %1$s."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\n\n\nToto je prvá z %1$s dedukcií vedúcich k odpovedi."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Tento dôkaz vysvetľuje jeden tip vrátane eliminácií kandidátov vedúcich k jeho odpovedi. Prejdite dopredu a sledujte odôvodnenie na mriežke, potom pokračujte celou trasou."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Tento hlavolam sa nepodarilo pripraviť."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Tento hlavolam sa nepodarilo uložiť. Stále ho môžete teraz používať. Pred nasnímaním ďalšej fotografie uvoľnite miesto v úložisku."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Tento hlavolam má viac ako jedno riešenie, takže vytlačená číslica bola pravdepodobne vynechaná. Zobrazuje sa riešenie %1$s z %2$s – opätovným stlačením Riešiť zobrazíte ďalšie. Zakrúžkované políčka sa medzi zobrazenými riešeniami líšia."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Fotografiu tohto hlavolamu sa nepodarilo otvoriť."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Toto uvažovanie vylučuje %1$s existujúce "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Toto políčko môže namiesto celej číslice obsahovať poznámky kandidátov. Skontrolujte ho."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Tento pohľad zahŕňa skoršie odstránenia kandidátov. Otvorte ich dôkaz nižšie a skontrolujte ich."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tri"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Príliš tma na rozoznanie mriežky"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Sledovať"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Vyskúšané"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Vyskúšajte sami"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Zapnúť"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Otočte telefón tak, aby bol hlavolam zvisle."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tútor"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"dve"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Dve políčka obsahujúce rovnakú dvojicu, prepojené hojdačkou na jednej z jej číslic, vynútia druhú číslicu do jedného z nich."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Dvojstrunový drak"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Jedinečný obdĺžnik"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"jednotka"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Nepodarilo sa načítať nesprístupňuje žiadny zoznam CellReading; presné vstupné bunky a výsledok sa zachovajú."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nepodporovaná verzia formátu modelu"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Neisté"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Použiť jazyk zariadenia"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Pomocou %1$s klepnite na jedno políčko, kde je možné odstrániť kandidáta, a potom vyberte túto číslicu."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Pomocou %1$s klepnite na políčko, ktoré môžete vyplniť, a potom vyberte jeho číslicu."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Veľmi ťažké"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"bola"</string>
+    <string name="msg_were_910adfb4" formatted="false">"boli"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Čo ste očakávali, alebo ako by vám váš nápad pomohol pri riešení či učení sa Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Čo sa stalo a postup na reprodukovanie (pri chybách)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Čo to robí"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Kde"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Prečo bola %1$s odstránená z r%2$ss%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Prečo"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Prečo nie %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Prečo toto políčko? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" s riešením. Ak ich chcete skontrolovať, použite Skontrolovať."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Postupujte spätne od vášho políčka. Vyberte otázku nižšie."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Pracujte radšej po čísliciach než po políčkach. Pre jednu jednotku si zapíšte, kam by každá chýbajúca číslica ešte mohla ísť. Potom hľadajte %1$s číslice, ktorých zoznamy spoločne pokrývajú iba %2$s políčka.\n\nTýchto %3$s číslic musí vyplniť tieto %4$s políčka, takže všetko ostatné v nich možno vyškrtnúť – čo často na mieste premení jedno z nich na zjavný singel alebo zjavnú dvojicu.\n\nToto považujú ľudia za najťažšie, pretože pri pohľade na políčka nie je nič vidieť: stále majú množstvo kandidátov. Vzor spočíva v čísliciach."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Pracujte iba s políčkami, ktorým zostávajú presne dvaja kandidáti.\n\nZačnite v jednom, povedzme {2,6}, a predpokladajte, že to nie je 2 – potom je to 6. Presuňte sa na políčko, na ktoré vidí a ktoré má tiež 6, povedzme {6,4}: to nemôže byť 6, takže je to 4. Presuňte sa na políčko, na ktoré vidí toto a ktoré obsahuje 4, a pokračujte ďalej, pričom každý krok je vynútený predchádzajúcim.\n\nAk sa dostanete k políčku, ktorého druhá číslica je 2 – číslica, ktorú ste na začiatku vylúčili –, máte hotovo. Buď bolo prvé políčko predsa len 2, alebo reťazec prebehol a posledné políčko je 2. Jeden alebo druhý koniec ju obsahuje, takže čokoľvek, čo vidí oba konce, ju obsahovať nemôže.\n\nUdržujte reťazce krátke. Štyri alebo päť políčok sa dá nájsť ceruzkou; nad to už robíte evidenciu a vynucovací reťazec je pre to poctivý názov."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"pracovná hrana musí byť kladná a konečná"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Nepodarilo sa načítať"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Napísané"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Nesprávne"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-wing"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Toto políčko ste vymazali."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Nastavili ste to na rukou písanú %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Nastavili ste to na vytlačenú %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Vaše zmeny sú viditeľné, ale nepodarilo sa ich uložiť. Uvoľnite miesto v úložisku a skúste hlavolam upraviť znova."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Vaše fotografie a vaše súkromie"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Vaše hlavolamy"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Vaše uložené hlavolamy"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Vaše políčko ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Vaše políčko zostáva ohraničené. Zelené políčka zobrazujú dôkaz; prečiarknuté číslice sú vylúčené."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>
