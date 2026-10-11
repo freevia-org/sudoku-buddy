@@ -126,7 +126,13 @@ data class PuzzleState(
     val practiceFeedback: String? = null,
     val returnToStep: Int? = null,
     val hintNavigation: HintNavigation = HintNavigation(),
+    /** A fresh uncertain scan starts open; moving on keeps review available without a banner. */
+    val readingReviewExpanded: Boolean = true,
 ) {
+    val hasReadingReview: Boolean get() = openQuestions.isNotEmpty() || originalUncertainCells.isNotEmpty()
+    val showReadingReview: Boolean get() = hasReadingReview && readingReviewExpanded &&
+        selectedCell == null && (overlay == OverlayMode.READING || overlay == OverlayMode.NONE)
+
     // Copies made for taps and tutor navigation share grid-dependent work. The cache
     // never retains photos and is bounded so editing/reopening puzzles cannot grow it.
     private val analysis: PuzzleAnalysis by lazy { PuzzleAnalyses.of(grid) }
@@ -342,6 +348,7 @@ data class PuzzleState(
             lessonStep = if (next.mode == overlay) lessonStep else 0,
             selectedCell = null,
             hintNavigation = HintNavigation(),
+            readingReviewExpanded = mode == OverlayMode.READING,
         )
     }
 
@@ -358,6 +365,7 @@ data class PuzzleState(
         hintDepth = 0,
         selectedCell = null,
         hintNavigation = HintNavigation(),
+        readingReviewExpanded = false,
     )
 
     fun backFromOverlay(): PuzzleState = if (visualHint != null && hintNavigation.parents.isNotEmpty()) {
@@ -370,6 +378,7 @@ data class PuzzleState(
      * A different list to walk, so the position in the old one means nothing.
      */
     fun tutor(technique: String? = null): PuzzleState = copy(
+        readingReviewExpanded = false,
         tutorTechnique = technique,
         overlay = OverlayMode.LESSON,
         lessonStep = 0,
@@ -388,7 +397,8 @@ data class PuzzleState(
      * Shutting it used to forget the position, so a look at the grid halfway through a
      * sixty-step route cost the whole route. Closing is not the same as finishing.
      */
-    fun reopenTutor(): PuzzleState = copy(overlay = OverlayMode.LESSON, selectedCell = null)
+    fun reopenTutor(): PuzzleState = copy(overlay = OverlayMode.LESSON, selectedCell = null,
+        readingReviewExpanded = false)
 
     /**
      * Moving through the walkthrough. Clamped, so the ends are simply inert.
@@ -444,7 +454,7 @@ data class PuzzleState(
     }
 
     /** The user has looked at everything the reader flagged and is happy with it. */
-    fun acceptReading(): PuzzleState = copy(uncertainCells = emptySet())
+    fun acceptReading(): PuzzleState = copy(uncertainCells = emptySet(), readingReviewExpanded = false)
 }
 
 /** Only inputs used by derived display data; selection and feedback do not affect it. */
