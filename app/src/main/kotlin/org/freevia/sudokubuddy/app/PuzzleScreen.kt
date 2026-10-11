@@ -35,6 +35,8 @@ import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberModalBottomSheetState
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -168,12 +170,22 @@ fun PuzzleScreen(
             AppBar(
                 title = "Sudoku Buddy",
                 subtitle = "${state.progress} empty",
-                onMenu = onMenu,
+                onMenu = { onChange(state.copy(readingReviewExpanded = false)); onMenu() },
             ) {
+                if (state.hasReadingReview && !state.showReadingReview) {
+                    IconButton(onClick = { onChange(state.copy(overlay = OverlayMode.READING,
+                        readingReviewExpanded = true, selectedCell = null)) }) {
+                        Icon(Icons.Filled.CheckCircle, contentDescription = "Review or submit reading")
+                    }
+                }
                 IconButton(onClick = onRetake) {
                     Icon(CameraIcon, contentDescription = "Take a new photo")
                 }
-                OverflowMenu(onStrategies, onSettings, onAbout)
+                OverflowMenu(
+                    { onChange(state.copy(readingReviewExpanded = false)); onStrategies() },
+                    { onChange(state.copy(readingReviewExpanded = false)); onSettings() },
+                    { onChange(state.copy(readingReviewExpanded = false)); onAbout() },
+                )
             }
 
             // Turned sideways there is no room to stack, so the pane moves to the right
@@ -254,7 +266,7 @@ private fun PhotoPane(
         val now = latest.value
         latestOnChange.value(if (now.practicing) {
             now.copy(practiceCell = index, practiceFeedback = null)
-        } else now.copy(selectedCell = index))
+        } else now.copy(selectedCell = index, readingReviewExpanded = false))
     }
     Column(
         modifier = modifier.padding(horizontal = 12.dp, vertical = 8.dp),
@@ -399,6 +411,9 @@ private fun Controls(
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
+    LaunchedEffect(state.showReadingReview) {
+        if (state.showReadingReview) scroll.scrollTo(0)
+    }
     LaunchedEffect(state.hintDepth, state.hintNavigation.frame.step, state.hintNavigation.parents.size) {
         if (state.visualHint != null) scroll.scrollTo(0)
     }
@@ -415,7 +430,7 @@ private fun Controls(
                 .padding(horizontal = 16.dp, vertical = 4.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp),
         ) {
-            if (state.openQuestions.isNotEmpty() || state.originalUncertainCells.isNotEmpty()) {
+            if (state.showReadingReview) {
                 ReadingBanner(state, onChange, onSubmit, onReceipts, submissionInFlight)
             }
 

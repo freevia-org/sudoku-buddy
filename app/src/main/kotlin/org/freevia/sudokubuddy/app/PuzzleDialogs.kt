@@ -15,11 +15,13 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material3.Button
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
@@ -128,11 +130,13 @@ internal fun ReadingBanner(
             .padding(12.dp),
         verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
-        Text(
-            state.readingHeadline,
-            style = MaterialTheme.typography.titleSmall,
-            color = Overlays.uncertain,
-        )
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(state.readingHeadline, style = MaterialTheme.typography.titleSmall,
+                color = Overlays.uncertain, modifier = Modifier.weight(1f))
+            IconButton(onClick = { onChange(state.copy(readingReviewExpanded = false)) }) {
+                Icon(Icons.Filled.KeyboardArrowUp, contentDescription = "Collapse reading review")
+            }
+        }
         // The reader's own reason, when it has one. "One cell looked like a printed
         // digit but is not" says far more than a count does, and it was being thrown away.
         state.liveNote?.let {
