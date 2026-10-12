@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nहाइलाइट किए गए खाने इसका प्रमाण हैं।\n\nकौन-सा खाना है, यह देखने के लिए संकेत फिर दबाएँ।"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s और %2$s दोनों में केवल %3$s और %4$s संभव हैं। इस %5$s में %6$s की केवल दो जगहें हैं, जिनमें से एक को पहला और दूसरी को दूसरा खाना देखता है - इसलिए उन दोनों जगहों में से एक में %7$s है, और उसे देखने वाले सिरे में %8$s होना चाहिए। दोनों ही स्थितियों में एक सिरे में %9$s है, जिससे उन दोनों को देखने वाले हर खाने से %10$s हटता है।"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s और %2$s, दोनों में केवल %3$s और %4$s आ सकते हैं। इस बॉक्स में %5$s के केवल दो संभावित स्थान हैं, और इनमें से प्रत्येक खाना एक अलग स्थान के साथ पंक्ति, स्तंभ या बॉक्स साझा करता है—इसलिए उन दो स्थानों में से एक में %6$s होगा, और उससे जुड़ा सिरा %7$s होना चाहिए। दोनों ही स्थितियों में एक सिरे पर %8$s होगा, जिससे दोनों सिरों के साथ पंक्ति, स्तंभ या बॉक्स साझा करने वाले सभी खानों से %9$s हटाया जा सकता है।"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s और %2$s, दोनों में केवल %3$s और %4$s आ सकते हैं। इस स्तंभ में %5$s के केवल दो संभावित स्थान हैं, और इनमें से प्रत्येक खाना एक अलग स्थान के साथ पंक्ति, स्तंभ या बॉक्स साझा करता है—इसलिए उन दो स्थानों में से एक में %6$s होगा, और उससे जुड़ा सिरा %7$s होना चाहिए। दोनों ही स्थितियों में एक सिरे पर %8$s होगा, जिससे दोनों सिरों के साथ पंक्ति, स्तंभ या बॉक्स साझा करने वाले सभी खानों से %9$s हटाया जा सकता है।"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s और %2$s, दोनों में केवल %3$s और %4$s आ सकते हैं। इस पंक्ति में %5$s के केवल दो संभावित स्थान हैं, और इनमें से प्रत्येक खाना एक अलग स्थान के साथ पंक्ति, स्तंभ या बॉक्स साझा करता है—इसलिए उन दो स्थानों में से एक में %6$s होगा, और उससे जुड़ा सिरा %7$s होना चाहिए। दोनों ही स्थितियों में एक सिरे पर %8$s होगा, जिससे दोनों सिरों के साथ पंक्ति, स्तंभ या बॉक्स साझा करने वाले सभी खानों से %9$s हटाया जा सकता है।"</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"पंक्ति %2$s, स्तंभ %3$s%4$s में %1$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"चरण %2$s पर %1$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s में केवल %2$s आ सकता है।"</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s में %2$s नहीं हो सकता क्योंकि %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s में %2$s नहीं आ सकता क्योंकि उसी स्तंभ %5$s में %3$s में केवल %4$s आ सकता है।"</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s में %2$s नहीं आ सकता क्योंकि उसी बॉक्स %5$s में %3$s में केवल %4$s आ सकता है।"</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s में %2$s नहीं आ सकता क्योंकि उसी पंक्ति %5$s में %3$s में केवल %4$s आ सकता है।"</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s में %2$s नहीं आ सकता क्योंकि उसी बॉक्स %5$s में %3$s में %4$s है।"</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s में %2$s नहीं आ सकता क्योंकि उसी स्तंभ %5$s में %3$s में %4$s है।"</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s में %2$s नहीं आ सकता क्योंकि उसी पंक्ति %5$s में %3$s में %4$s है।"</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s में %2$s है।"</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s खाली"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, प्रविष्टि"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"यहाँ %1$s ही आएगा: इस स्तंभ %2$s में यही एकमात्र खाना है जिसमें अब भी %3$s आ सकता है।\n\n%4$s\n\n%5$s में अभी %6$s आ सकता है, लेकिन हर स्तंभ में %7$s ठीक एक बार होना चाहिए। इसलिए पंक्ति %9$s, स्तंभ %10$s में %8$s भरें।"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s यहीं होना चाहिए: इस %2$s %3$s में यही एकमात्र खाना है जिसमें अभी %4$s आ सकता है।\n\n%5$s\n\n%6$s में अभी %7$s संभव है, लेकिन हर %8$s में %9$s ठीक एक बार होना चाहिए। इसलिए पंक्ति %11$s, स्तंभ %12$s में %10$s रखें।"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"यहाँ %1$s ही आएगा: इस बॉक्स %2$s में यही एकमात्र खाना है जिसमें अब भी %3$s आ सकता है।\n\n%4$s\n\n%5$s में अभी %6$s आ सकता है, लेकिन हर बॉक्स में %7$s ठीक एक बार होना चाहिए। इसलिए पंक्ति %9$s, स्तंभ %10$s में %8$s भरें।"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"यहाँ %1$s ही आएगा: इस पंक्ति %2$s में यही एकमात्र खाना है जिसमें अब भी %3$s आ सकता है।\n\n%4$s\n\n%5$s में अभी %6$s आ सकता है, लेकिन हर पंक्ति में %7$s ठीक एक बार होना चाहिए। इसलिए पंक्ति %9$s, स्तंभ %10$s में %8$s भरें।"</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"इस पंक्ति में %1$s की दो जगहें हैं और इस स्तंभ में भी दो। %2$s और %3$s एक ही बॉक्स में हैं, इसलिए दोनों में %4$s नहीं हो सकता - इससे %5$s और %6$s में से एक में वह अंक होना तय है, और उन दोनों को देखने वाले हर खाने से %7$s हटता है।"</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" उसी %2$s में %1$s।"</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" उसी बॉक्स में %1$s।"</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" उसी स्तंभ में %1$s।"</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" उसी पंक्ति में %1$s।"</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"उस खाने से %1$s पहले ही खारिज है। उसके संभावित अंक हैं "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%2$s के कारण %1$s खारिज है, जो "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s हट जाता है, क्योंकि उसी स्तंभ %4$s में %2$s में केवल %3$s आ सकता है।"</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s हट जाता है, क्योंकि उसी पंक्ति %4$s में %2$s में केवल %3$s आ सकता है।"</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s हट जाता है, क्योंकि उसी बॉक्स %4$s में %2$s में केवल %3$s आ सकता है।"</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s हट जाता है, क्योंकि उसी बॉक्स %4$s में %2$s में पहले से %3$s है।"</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s हट जाता है, क्योंकि उसी स्तंभ %4$s में %2$s में पहले से %3$s है।"</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s हट जाता है, क्योंकि उसी पंक्ति %4$s में %2$s में पहले से %3$s है।"</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"सबसे नए क्रमांकित खाने (पंक्ति %2$s, स्तंभ %3$s) में %1$s होना तय है। %4$s तीर एक योगदान देने वाले अंक-स्थापन का अनुसरण करता है; पहले के परिणाम भी मायने रखते हैं।"</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"क्लासपाथ में %1$s नहीं है"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%2$s में से %1$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"इनमें से %1$s एक खाना भरते हैं; बाकी पहले संभावित अंक हटाकर रास्ता बनाते हैं।"</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s पेयर"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s मुद्रित, %2$s, %3$s गलत"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s मुद्रित, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s मुद्रित"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, मुद्रित संकेत"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s क्वाड"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s अस्वीकृत फ़ोटो, सबसे नई पहले:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: %2$s हटाएँ"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"खानों की संख्या: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"इस हल के क्रम में %1$s चरण हैं, और सबसे कठिन समर्थित तकनीक %2$s है। %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s ट्रिपल"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"पहले के संभावित अंकों के तर्क से %2$s से %1$s हटाया गया था।"</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s लिखे गए"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"%1$sx%2$s चित्र के लिए %3$s बाइट चाहिए, लेकिन %4$s मिले"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"एक खाने में न अंक था, न पूर्ण विराम"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"दो संभावित अंकों वाले खानों की ऐसी श्रृंखला, जिसके दोनों सिरों पर एक ही अंक हो, उस अंक को किसी एक सिरे पर अनिवार्य करती है।"</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"जिस अंक के लिए किसी पंक्ति, स्तंभ या बॉक्स में केवल एक जगह बची हो, वह वहीं आएगा।"</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"हाथ से लिखा हुआ %1$s।"</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"छपा हुआ %1$s।"</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"लाल खाना वह अंक दिखाता है जिसे ऐप ने वहाँ पढ़ा। यदि आपने कुछ और लिखा है, तो उसे ठीक करने के लिए खाने पर टैप करें।"</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"जिस खाने में केवल एक संभावित अंक बचा हो, उसमें वही अंक आएगा।"</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"तकनीकों की कोई सूची कभी पूरी नहीं होती, और सबसे कठिन पहेलियाँ उसमें मौजूद हर तकनीक को विफल करने के लिए बनाई जाती हैं। इसलिए जब इनमें से किसी से भी चाल नहीं मिलती, तो शिक्षक किसी एक खाने के संभावित अंक आज़माकर उसे तय करता है, साफ़ बताता है कि उसने ऐसा किया है, और फिर वहीं से तर्क आगे बढ़ाता है। वह हमेशा पहेली पूरी करता है और कभी खोजकर मिले उत्तर को तर्क से निकला निष्कर्ष नहीं बताता।"</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"तीन संभावित अंकों वाला केंद्र और उससे मेल खाते दो संभावित अंकों वाले दो सिरे, उन सभी खानों से एक अंक हटाते हैं जो तीनों को देख सकते हैं।"</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"दो संभावित अंकों वाला केंद्र और दो संभावित अंकों वाले दो सिरे, उन सभी खानों से एक अंक हटा सकते हैं जो दोनों सिरों को देख सकते हैं।"</string>
+    <string name="msg_about_4efca0d1" formatted="false">"परिचय"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"बाद में"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"इस चाल के बाद"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"सब सही"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"इन तीनों खानों में %1$s आ सकता है और किसी एक में आना ही होगा। इसलिए जो खाना तीनों को देख सकता है, उसमें %2$s नहीं आ सकता।"</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"कैमरे की अनुमति दें"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"लगभग सही — पन्ने को सपाट रखें और कैमरे के समानांतर करें"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"जो हटाना कुछ भी नहीं हटाता, वह तार्किक निष्कर्ष नहीं है"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" और "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"उत्तर"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## ऐप और डिवाइस (पहले से भरा हुआ)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- ऐप: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"पक्षानुपात धनात्मक होना चाहिए, लेकिन %1$s था"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"मान्यता · काल्पनिक अंक"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"मान्यता खारिज · वास्तविक संभावित अंक बहाल"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"कम से कम %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"अपने आप फ़ोटो"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"अनिश्चित पहेली फ़ोटो, पढ़े गए अंक और बाद में खानों में किए गए सुधार, पहचान के विश्लेषण और प्रशिक्षण के लिए अपने-आप Freevia के साथ साझा करें। डिफ़ॉल्ट रूप से बंद है।"</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"चमक से बचें"</string>
+    <string name="msg_back_76900f1b" formatted="false">"वापस"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"पिछले प्रश्न पर वापस"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"दृश्य संकेत पर वापस"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"अपने खाने पर वापस"</string>
+    <string name="msg_before_9bb72500" formatted="false">"पहले"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"इस चाल से पहले"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"नीले अंक समाधान हैं। पढ़े गए अंक को ठीक करने के लिए किसी भी खाने पर टैप करें।"</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"बॉक्स %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"बॉक्स"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"बॉक्स"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"बॉक्स-लाइन रिडक्शन"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"कैमरा"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"में केवल ये संभव हैं"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"रद्द करें"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", संभावित अंक %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"कैप्चर प्रमाण"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"किसी अंक को उन इकाइयों में जोड़कर श्रृंखला बनाएँ जहाँ उसके लिए केवल दो जगहें हों। श्रृंखला को बारी-बारी से दो रंग दें; इनमें से एक रंग पूरी श्रृंखला में सही होगा।"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"जिन इकाइयों में %1$s के केवल दो संभावित स्थान हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में रंगे जाते हैं। इनमें से एक रंग के सभी खाने सही होते हैं। दूसरे रंग के दो खाने एक ही पंक्ति में हैं, जो संभव नहीं है—इसलिए वह रंग गलत है और उस रंग के हर खाने से %2$s हटा दिया जाता है।"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"जिन इकाइयों में %1$s के केवल दो संभावित स्थान हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में रंगे जाते हैं। इनमें से एक रंग के सभी खाने सही होते हैं। दूसरे रंग के दो खाने एक ही बॉक्स में हैं, जो संभव नहीं है—इसलिए वह रंग गलत है और उस रंग के हर खाने से %2$s हटा दिया जाता है।"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"जिन इकाइयों में %1$s के केवल दो संभावित स्थान हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में रंगे जाते हैं। इनमें से एक रंग के सभी खाने सही होते हैं। दूसरे रंग के दो खाने एक ही स्तंभ में हैं, जो संभव नहीं है—इसलिए वह रंग गलत है और उस रंग के हर खाने से %2$s हटा दिया जाता है।"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"जिन इकाइयों में %1$s के लिए केवल दो जगहें हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में आते हैं, जिनमें से एक पूरी श्रृंखला में सही होता है। %2$s रंग के दो खाने एक ही %3$s में हैं, जो संभव नहीं है — इसलिए वह रंग गलत है और उस रंग वाले हर खाने से %4$s हटता है।"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"जिन इकाइयों में %1$s के लिए केवल दो जगहें हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में आते हैं, और एक रंग पूरी श्रृंखला में सही होता है। ये खाने दोनों रंगों को देख सकते हैं, इसलिए श्रृंखला का कोई भी रंग सही निकले, इनके दिखाई देने वाले किसी एक खाने में %2$s होगा — यानी इनमें वह नहीं हो सकता।"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"जिन इकाइयों में %1$s के केवल दो संभावित स्थान हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में रंगे जाते हैं। इनमें से एक रंग के सभी खाने सही होते हैं। एक रंग के दो खाने एक ही बॉक्स में हैं, जो संभव नहीं है—इसलिए वह रंग गलत है और उस रंग के हर खाने से %2$s हटा दिया जाता है।"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"जिन इकाइयों में %1$s के केवल दो संभावित स्थान हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में रंगे जाते हैं। इनमें से एक रंग के सभी खाने सही होते हैं। एक रंग के दो खाने एक ही स्तंभ में हैं, जो संभव नहीं है—इसलिए वह रंग गलत है और उस रंग के हर खाने से %2$s हटा दिया जाता है।"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"जिन इकाइयों में %1$s के केवल दो संभावित स्थान हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में रंगे जाते हैं। इनमें से एक रंग के सभी खाने सही होते हैं। एक रंग के दो खाने एक ही पंक्ति में हैं, जो संभव नहीं है—इसलिए वह रंग गलत है और उस रंग के हर खाने से %2$s हटा दिया जाता है।"</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"जाँचने के लिए अनिश्चित खाने: %1$s।"</string>
+    <string name="msg_check_9d60841e" formatted="false">"जाँचें"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"एक अनिश्चित खाना जाँचें।"</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", जाँच में सही"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"कोई संभावित अंक चुनें और देखें कि वह आपके खाने में क्यों नहीं आ सकता।"</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"भाषा चुनें"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"चुनें कि क्या दिखाया जाए"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"बंद करें"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"संकेत बंद करें"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"पढ़े गए अंकों की समीक्षा समेटें"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"रंगीन और ग्रेस्केल खानों की ज्यामिति एक जैसी होनी चाहिए"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"स्तंभ %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"स्तंभ"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"स्तंभ"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"फोर्सिंग चेन की तुलना करें और उन श्रृंखलाओं को प्राथमिकता दें जिनमें कम खानों का क्रम देखना पड़े। छोटी श्रृंखलाओं से पूरे समाधान में अधिक चरण लग सकते हैं।"</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"%2$s में से परिणाम %1$s · काल्पनिक अंक"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"में है"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"सामग्री का प्रकार"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"पूरा क्रम जारी रखें"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"विरोधाभास · मान्यता विफल"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", विरोधाभास"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"विरोधाभास: लाल %1$s में %2$s के लिए कोई जगह नहीं बची। यह असंभव है, इसलिए शुरुआती मान्यता गलत होनी चाहिए।"</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"विरोधाभास: लाल खाने में कोई संभावित अंक नहीं बचा। यह असंभव है, इसलिए शुरुआती मान्यता गलत होनी चाहिए।"</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"हटाने का अनुरोध कॉपी करें"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"सही। अपने तर्क की तुलना नीचे दिए स्पष्टीकरण से करें।"</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"लिए गए चित्र को डिकोड नहीं किया जा सका"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"उस फ़ोटो में छपे अंक नहीं मिल सके।"</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"ग्रिड की रेखाएँ स्पष्ट नहीं हो सकीं — फिर कोशिश करें।"</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHub नहीं खुल सका। %1$s पर सहायता से संपर्क करें।"</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"डिबग कैप्चर का प्रमाण सहेजा नहीं जा सका"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"पढ़े गए अंक भेजे नहीं जा सके। कनेक्शन मिलने पर फिर कोशिश करें।"</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"बंद रास्ता"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"हटाएँ"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"हटाएँ"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"रिपोर्ट हटाएँ"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"यह फ़ोटो हटाएँ"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"यह पहेली हटाएँ"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"यह पहेली हटाएँ?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"यह भेजी गई रिपोर्ट हटाएँ?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"हटाया जा रहा है…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"हटाने की पुष्टि नहीं हो सकी। अपना कनेक्शन जाँचें और फिर कोशिश करें।"</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"हटाने का अनुरोध"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"हटाने के जवाब में इस रसीद की पुष्टि नहीं हुई।"</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"हटाने की सेवा ने HTTP %1$s लौटाया।"</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"बताएँ कि क्या हुआ और उसे दोहराने के चरण क्या हैं। बताएँ कि क्या आपने पहले पहचाने गए अंक जाँचकर ठीक किए थे। सुझाव के लिए \'लागू नहीं\' लिखें।"</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", इस संकेत का लक्ष्य"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- डिवाइस: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"ब्राउज़र के मसौदे में समाने के लिए निदान छोटा किया गया है। ऐप की निदान भेजें क्रिया से पूरी रिपोर्ट साझा की जा सकती है।"</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"अंक 1..9 होना चाहिए, लेकिन %1$s था"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"अंक पढ़े नहीं जा सके"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"प्रमाण को डिस्क पर सहेजने से समय प्रभावित होता है; यह विलंब का बेंचमार्क नहीं है।"</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", समाधान से मेल नहीं खाता"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"हर रसीद भेजे गए पहेली के एक संशोधन की पहचान करती है। Freevia से निजी रूप से सहेजी गई रिपोर्ट हटाने के लिए उसे यहाँ हटाएँ।"</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" पहले हटाए गए अंक: %1$s। उनके प्रमाण देखने के लिए पिछले चरणों के लिंक इस्तेमाल करें।"</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← पहले का प्रमाण (गहराई %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"पहले के काल्पनिक अंक भरने से इसमें केवल एक संभावित अंक बचता है।"</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"इस प्रमाण में इस्तेमाल हुए पिछले चरण"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"खाना संपादित करें"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"आठ"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"खाली"</string>
+    <string name="msg_empty_8a112150" formatted="false">"खाली।"</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"खाली"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"अंग्रेज़ी"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"बेमेल प्रविष्टियाँ"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"बेमेल प्रविष्टि"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"इनमें से हर तकनीक एक खाना भरती है।"</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"हर खाना भरा है, लेकिन %1$s उत्तर समाधान से मेल नहीं खाते।"</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"हर खाना भरा है, लेकिन एक उत्तर समाधान से मेल नहीं खाता।"</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"एक ही समाधान वाली हर सुडोकू तर्क से हल की जा सकती है; अनुमान लगाना कभी ज़रूरी नहीं होता और शायद ही मदद करता है। ये वे तर्क तकनीकें हैं जिन्हें यह ऐप पहचान और समझा सकता है, सबसे आसान पहले। इनमें से कोई तकनीक आपकी खुली पहेली पर जहाँ भी लागू होती है, ऐप वे सभी जगहें दिखाएगा।"</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"आपने अब तक जो भी लिखा है, सब सही है।"</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"अभी उपलब्ध उदाहरण: हर उदाहरण आपके मौजूदा बोर्ड से शुरू होता है।"</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 क्षैतिज रेखाएँ अपेक्षित थीं, %1$s मिलीं"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"10 ऊर्ध्वाधर रेखाएँ अपेक्षित थीं, %1$s मिलीं"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81 खाने अपेक्षित थे, लेकिन %1$s मिले"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"हर ब्लॉक में 81 खाने अपेक्षित थे, %1$s और %2$s मिले"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"8-बिट एकल चैनल अपेक्षित था, लेकिन %1$s मिला"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"28x28 चित्र अपेक्षित था, लेकिन %1$s मान मिले"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## अपेक्षित व्यवहार या प्रस्तावित सुधार"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"दोनों दिशाओं में दस-दस रेखाएँ अपेक्षित थीं"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"दो ब्लॉक अपेक्षित थे, %1$s मिले"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"पहले हटाए गए संभावित अंक समझाएँ (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"संकेत समझाएँ"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"ऐसा खाना ढूँढें जिसमें केवल दो या तीन संभावित अंक बचे हों — जितने कम, उतना बेहतर; और उसके आसपास की पंक्ति, स्तंभ और बॉक्स जितने अधिक भरे हों, उतना भी बेहतर।\n\nउसका एक संभावित अंक चुनकर हल्के से पेंसिल से लिखें। अब परिणामों का क्रम देखें: वह अंक उन सभी खानों से हट जाता है जिन्हें यह खाना देख सकता है। इससे किसी खाने में केवल एक संभावित अंक बच सकता है, जो अगला अंक तय करता है, और इसी तरह आगे। चलते रहें।\n\nदो में से एक बात होगी। या तो क्रम रुक जाएगा और आपको कुछ पता नहीं चलेगा — उसे मिटाकर दूसरा संभावित अंक आज़माएँ। या आप ऐसे खाने तक पहुँचेंगे जिसमें कोई संभावित अंक नहीं बचा, या ऐसी पंक्ति तक जिसमें किसी अंक के लिए कोई जगह नहीं है। यह असंभव है, इसलिए पेंसिल से लिखा अंक गलत था और आप उसे हमेशा के लिए खारिज कर सकते हैं।\n\nजब बाकी सभी तरीके बेअसर हो जाएँ, तब यह तरीका अपनाएँ। यह धीमा है और पैटर्न पहचानने के बजाय हिसाब रखने का काम है, लेकिन इससे ऐसी चालें मिल सकती हैं जो पैटर्न से छूट जाती हैं। अक्सर एक अंक हटाना ही आसान तकनीकों को फिर से चलाने के लिए काफ़ी होता है; कुछ स्थितियों में फिर भी अधिक गहरी खोज चाहिए।"</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"एक ही दो संभावित अंकों वाले दो खाने ढूँढें, जैसे {3,7}, जो एक-दूसरे को नहीं देख सकते — वे आम तौर पर एक-दूसरे से काफ़ी दूर होते हैं।\n\nअब ऐसी पंक्ति, स्तंभ या बॉक्स ढूँढें जहाँ 7 के लिए केवल दो संभव खाने हों, जिनमें से एक को आपकी जोड़ी का पहला खाना और दूसरे को दूसरा खाना देख सके। यही कड़ी है।\n\nउन दो खानों में से एक में 7 है। वह कोई भी हो, आपकी जोड़ी का जो खाना उसे देखता है उसमें 7 नहीं आ सकता, इसलिए उसमें 3 होना चाहिए। आपको नहीं पता कि किस सिरे पर 3 है, केवल यह कि किसी एक पर है — और दोनों सिरों को देखने वाले हर खाने से 3 हटाने के लिए इतना काफ़ी है।\n\nमुश्किल हिस्सा कड़ी ढूँढना है, इसलिए उलटे क्रम से खोजें: पहले उन इकाइयों को चिह्नित करें जहाँ किसी अंक के लिए केवल दो जगहें हैं, फिर उनके दोनों ओर मेल खाती जोड़ी ढूँढें।"</string>
+    <string name="msg_finished_05343e98" formatted="false">"पूरा हुआ"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"जब ग्रिड फ़्रेम में बिना परिप्रेक्ष्य विकृति के सीधा और स्थिर हो, तब शटर दबाएँ। किसी भी स्थिति में बटन काम करता है।"</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"पूरा ग्रिड दृश्य में लाएँ।"</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"पूरा ग्रिड दृश्य में लाएँ"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"पाँच"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"ऐसे क्रम पर चलें जिसमें हर चाल पिछली चाल पर आधारित हो।"</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"पूरा प्रमाण क्रम से देखें"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"दो संभावित अंकों वाले खानों की इस श्रृंखला का क्रम देखें: यदि %1$s में %2$s नहीं है, तो हर खाना पिछले खाने से तय होता है और अंत में %3$s में %4$s आता है। इसलिए किसी एक सिरे में %5$s है, जिससे दोनों सिरों को देखने वाले हर खाने से वह हटता है।"</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"फोर्सिंग चेन"</string>
+    <string name="msg_four_04efaf08" formatted="false">"चार"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"दो पंक्तियों, दो स्तंभों और दो बॉक्स में स्थित चार खानों में केवल वही दो संभावित अंक नहीं हो सकते, वरना पहेली के दो समाधान होंगे।"</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia ने हटाने की पुष्टि की, लेकिन यह फ़ोन स्थानीय रसीद नहीं हटा सका। स्थानीय सफ़ाई पूरी करने के लिए फिर कोशिश करें।"</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia इस रिपोर्ट के संशोधन और उसकी निजी प्रशिक्षण प्रति को हटा देगा। आपके साझा करने की सेटिंग के अनुसार भविष्य के सुधारों से नई रिपोर्ट बन सकती है। इस पर पहले ही प्रशिक्षित मॉडल में सीखे गए बदलाव बने रह सकते हैं।"</string>
+    <string name="msg_full_route_891b475b" formatted="false">"पूरा क्रम"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"भविष्य में अनिश्चित पहचान होने पर सीधी की गई पहेली की फ़ोटो, पहचान के परिणाम और सुधार, विश्लेषण और प्रशिक्षण के लिए Freevia को भेजे जाएँगे। प्रशिक्षण प्रतियाँ भेजी गई रिपोर्टों की रसीदें से हटाए जाने तक बनी रहेंगी; प्रशिक्षित मॉडल में सीखे गए बदलाव बने रह सकते हैं। यदि कोई अनिश्चित पहेली पहले से खुली है, तो वह अभी भेजी जाएगी। आप इसे सेटिंग में बंद कर सकते हैं।"</string>
+    <string name="msg_gentle_96124817" formatted="false">"सरल"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"चमक से रेखाएँ धुँधली हो रही हैं — पन्ने को रोशनी से दूर झुकाएँ"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"धूसर छवि(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"धूसर खानों में पेंसिल के निशान हैं, जिन्हें ऐप अनदेखा करता है। अंक के नीचे की पट्टी बताती है कि पहचान कितनी निश्चित थी। विवरण के लिए खाने पर टैप करें।"</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"हाथ से लिखा"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"कठिन"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"हिडन"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"हिडन पेयर"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"हिडन क्वाड"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"हिडन सिंगल"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"हिडन ट्रिपल"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"पहले का प्रमाण छिपाएँ"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"पहचानने का तरीका छिपाएँ"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", संकेत %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"संकेत"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"संकेत का प्रमाण"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"संकेत का तर्क"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"स्थिर रहें..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"स्थिर रहें या शटर पर टैप करें"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"कैमरे के फ़ोकस करने तक स्थिर रहें..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"फ़ोन सपाट रखें"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"फ़ोन पहेली के ऊपर सपाट रखें।"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"फ़ोन पहेली के ऊपर सपाट रखें"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"क्षैतिज\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"कैसे पहचानें"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nयहाँ तक कैसे पहुँचे:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"ऐसे खाने खोजें जिनमें ठीक दो संभावित अंक हों — Y-विंग ऐसे ही तीन खानों से बनता है, और किसी से नहीं।\n\nएक को केंद्र मानें, जैसे {2,5}। ऐसा खाना ढूँढें जिसे वह देख सकता हो और जिसमें {2,9} हों, और दूसरा दिखाई देने वाला खाना जिसमें {5,9} हों। केंद्र में या तो 2 है या 5। यदि 2 है, तो पहले सिरे में 9 होना चाहिए; यदि 5 है, तो दूसरे में 9 होना चाहिए। दोनों ही स्थितियों में किसी एक सिरे पर 9 होगा — आपको नहीं पता किस पर, और जानना ज़रूरी भी नहीं है।\n\nइसलिए जो खाना दोनों सिरों को देख सकता है, उसमें 9 नहीं हो सकता। ये खाने आम तौर पर आयत को पूरा करने वाले दो कोने होते हैं।"</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", काल्पनिक %1$s, भरा हुआ उत्तर नहीं"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"यदि किसी पंक्ति, स्तंभ या बॉक्स के %1$s अंक केवल उन्हीं %2$s खानों में आ सकते हों, तो उन खानों में कोई और अंक नहीं आ सकता।"</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"यदि किसी पंक्ति, स्तंभ या बॉक्स के %1$s खानों में कुल मिलाकर ठीक %2$s संभावित अंक हों, तो वे अंक उन्हीं खानों के लिए हैं, उस इकाई के किसी और खाने के लिए नहीं।"</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"यदि किसी अंक के लिए एक पंक्ति में दो और एक स्तंभ में दो जगहें हों, और दोनों में से एक-एक जगह एक ही बॉक्स में हो, तो बाकी दो में से किसी एक में वह अंक होना चाहिए।"</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"यदि किसी अंक के लिए दो पंक्तियों में दो-दो जगहें हों और उनकी एक-एक जगह एक ही स्तंभ में हो, तो बाकी दो जगहों में से किसी एक में वह अंक होना चाहिए।"</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"यदि किसी रेखा पर किसी अंक की सभी संभव जगहें एक ही बॉक्स में हों, तो उस बॉक्स के बाकी खानों से वह अंक खारिज किया जा सकता है।"</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"यदि %1$s पंक्तियों में किसी अंक की सभी संभव जगहें उन्हीं %2$s स्तंभों में हों, तो उन स्तंभों में बाकी जगहों से वह अंक खारिज किया जा सकता है — पंक्तियों और स्तंभों को बदलने पर भी यही बात लागू होती है।"</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"यदि किसी बॉक्स में किसी अंक की सभी संभव जगहें एक ही रेखा पर हों, तो उस रेखा के बाकी खानों से वह अंक खारिज किया जा सकता है।"</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"यदि किसी अंक को मान लेने से ऐसा खाना बनता है जिसमें कोई अंक नहीं आ सकता, तो माना गया अंक गलत था।"</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"चित्र के आयाम धनात्मक होने चाहिए"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"एक ही दो संभावित अंकों वाले खानों की श्रृंखला में, विषम लंबाई वाली श्रृंखला के दोनों सिरों पर अलग अंक होते हैं।"</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"इन %1$s %2$s में %3$s केवल इन %4$s %5$s में आ सकता है। मिलकर ये हर जगह का उपयोग करते हैं, इसलिए उन %7$s में बाकी सभी जगहों से %6$s खारिज किया जा सकता है।"</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"इन %1$s स्तंभों में %2$s केवल इन %3$s पंक्तियों में आ सकता है। ये मिलकर उन सभी पंक्तियों में उस अंक की जगह भर देते हैं, इसलिए उन पंक्तियों के बाकी सभी खानों से %4$s हटाया जा सकता है।"</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"इन %1$s पंक्तियों में %2$s केवल इन %3$s स्तंभों में आ सकता है। ये मिलकर उन सभी स्तंभों में उस अंक की जगह भर देते हैं, इसलिए उन स्तंभों के बाकी सभी खानों से %4$s हटाया जा सकता है।"</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"इन दो %1$s में %2$s के लिए दो-दो जगहें हैं, और %3$s तथा %4$s एक ही %5$s में हैं — इसलिए दोनों में %6$s नहीं हो सकता। इसलिए %7$s और %8$s में से किसी एक में वह है, जिससे दोनों को देखने वाले हर खाने से %9$s हटता है।"</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"इन दो स्तंभों में %1$s के प्रत्येक में केवल दो संभावित स्थान हैं, और %2$s तथा %3$s एक ही पंक्ति में हैं—इसलिए दोनों में %4$s नहीं हो सकता। इसलिए %5$s और %6$s में से किसी एक में वह अंक होगा, जिससे उन दोनों के साथ पंक्ति, स्तंभ या बॉक्स साझा करने वाले हर खाने से %7$s हटाया जा सकता है।"</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"इन दो पंक्तियों में %1$s के प्रत्येक में केवल दो संभावित स्थान हैं, और %2$s तथा %3$s एक ही स्तंभ में हैं—इसलिए दोनों में %4$s नहीं हो सकता। इसलिए %5$s और %6$s में से किसी एक में वह अंक होगा, जिससे उन दोनों के साथ पंक्ति, स्तंभ या बॉक्स साझा करने वाले हर खाने से %7$s हटाया जा सकता है।"</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"इस %1$s में %2$s केवल इन %3$s खानों में आ सकते हैं, इसलिए ये खाने उनके लिए तय हैं। इससे इनमें %4$s खारिज होता है।"</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"इस %1$s में %2$s केवल एक बॉक्स के अंदर आ सकता है। इसलिए उस बॉक्स में %3$s इस %4$s पर है, और बॉक्स के बाकी खानों से खारिज किया जा सकता है।"</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"इस बॉक्स में %1$s केवल इन %2$s खानों में आ सकते हैं, इसलिए ये खाने उन्हीं के लिए आरक्षित हैं। इससे इन खानों से %3$s हटाया जा सकता है।"</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"इस स्तंभ में %1$s केवल इन %2$s खानों में आ सकते हैं, इसलिए ये खाने उन्हीं के लिए आरक्षित हैं। इससे इन खानों से %3$s हटाया जा सकता है।"</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"इस पंक्ति में %1$s केवल इन %2$s खानों में आ सकते हैं, इसलिए ये खाने उन्हीं के लिए आरक्षित हैं। इससे इन खानों से %3$s हटाया जा सकता है।"</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"इनमें उनकी फ़ोटो, पढ़े गए अंक और सुधार शामिल हैं। इसे सेटिंग में बंद करें।"</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"किसी एक बॉक्स में ऐसा अंक ढूँढें जो केवल दो या तीन खानों में आ सकता हो, और देखें कि क्या वे सभी एक ही पंक्ति या एक ही स्तंभ में हैं। यदि हाँ, तो वह अंक उस रेखा पर कहीं ज़रूर है — आपको नहीं पता कहाँ, लेकिन पता है कि इसी बॉक्स के अंदर है। इसलिए उसी रेखा पर बॉक्स के बाहर वह कहीं और नहीं हो सकता।\n\nइससे अपने-आप कोई अंक नहीं भरता। यह संभावित अंक हटाता है, ताकि कहीं और सिंगल मिले।"</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"इस बॉक्स में %1$s केवल इस %2$s में आ सकता है। इसलिए %3$s यहाँ कहीं है, और %4$s के बाकी खानों से खारिज किया जा सकता है।"</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## समस्या या सुझाव"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"यह यहाँ %1$s जगहों पर लागू होता है। उन्हें क्रम से देखने के लिए आगे बढ़ें।"</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"यह यहाँ एक जगह लागू होता है। देखने के लिए आगे बढ़ें।"</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"यह इस स्थिति में कहीं लागू नहीं होता।"</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"हाइलाइट किए गए %2$s में %1$s के लिए यही एक जगह बची है।"</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"यह घेरे वाला खाना है।\n\nअंक के लिए संकेत फिर दबाएँ।"</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"जेलीफ़िश"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"रखें"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"फोर्सिंग चेन छोटी रखें"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"भाषा"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"लाइसेंस"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"किसी पंक्ति, स्तंभ या बॉक्स में ऐसे खाने देखें जिनमें कम संभावित अंक बचे हों। उनमें से %1$s खाने लेकर उनके संभावित अंक एक साथ गिनें। यदि कुल ठीक %2$s अंक हों, तो वे %3$s अंक उन्हीं के लिए तय हैं: उन्हें किसी क्रम में उन %4$s खानों में ही आना होगा, भले अभी आप न बता सकें कि कौन कहाँ आएगा।\n\nइतना काफ़ी है। उस इकाई के बाकी हर खाने से वे अंक हट सकते हैं, और आम तौर पर उनमें से किसी एक में फिर सिंगल मिलता है।\n\nसभी खानों में एक ही संभावित अंक होना ज़रूरी नहीं है — {2,7}, {2,9} और {7,9} एक बिल्कुल सही ट्रिपल है, और यही अक्सर लोगों से छूट जाता है।"</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"एक ही दो संभावित अंकों वाले खाने ढूँढें — जैसे {4,9} — जो ऐसी श्रृंखला बनाएँ जिसमें हर खाना अगले को देख सकता हो। तीन काफ़ी नहीं हैं; कम से कम चार चाहिए।\n\nक्रम से उन्हें बारी-बारी रंग दें। चूँकि हर खाना अगले को देखता है, किसी भी दो पड़ोसी खानों में एक ही अंक नहीं हो सकता। इसलिए पूरी श्रृंखला 4, 9, 4, 9 होगी — या 9, 4, 9, 4; आप नहीं बता सकते कि कौन-सी।\n\nदोनों ही स्थितियों में विपरीत रंगों के दो खानों में अलग अंक होंगे: एक में 4 और एक में 9। इसलिए जो खाना उन दोनों को देख सकता है, उसमें इनमें से कोई अंक नहीं हो सकता, और दोनों संभावित अंक एक साथ हट जाते हैं।\n\nयह पैटर्न पहचानना इसलिए आसान है क्योंकि इसमें हर खाना एक जैसा दिखता है। ग्रिड में एक जैसी जोड़ियों का क्रम देखें और पता लगाएँ कि वे कहाँ जुड़ती हैं।"</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"एक ही दो संभावित अंकों वाले तीन खाने ढूँढें — जैसे {1,6} — जो किसी आयत के तीन कोनों पर हों। आयत ठीक दो बॉक्स में होना चाहिए: दो पंक्तियाँ और दो स्तंभ जो दो बॉक्स में फैले हों, चार में नहीं।\n\nअब चौथा कोना देखें। यदि उसमें भी केवल 1 और 6 हों, तो पहेली के दो समाधान होंगे — आप आयत में 1 और 6 आपस में बदल सकते हैं और बाकी सब फिर भी सही रहेगा। ठीक से बनाई गई पहेली का एक ही समाधान होता है, इसलिए चौथे कोने में कोई और अंक होना चाहिए: उसके बाकी संभावित अंक बने रहते हैं, और 1 तथा 6 हट जाते हैं।\n\nयह एकमात्र तर्क है जो ग्रिड के बजाय पहेली बनाने वाले पर निर्भर करता है। प्रकाशित पहेली पर यह सही है, लेकिन जिस पहेली में आप पहले ही गलत अंक भर चुके हों, उस पर बेकार है, क्योंकि तब शायद कोई समाधान ही न हो जिसकी एकमात्रता साबित की जाए।"</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"इस बॉक्स में देखें। रूपरेखा के सहारे उस खाने तक जाएँ जिसे यह संकेत समझाएगा।"</string>
+    <string name="msg_marks_65479e3e" formatted="false">"निशान"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"मध्यम"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"और"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"अधिक रोशनी चाहिए"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"एक से अधिक समाधान हैं, इसलिए कोई छपा अंक छूट गया है। समाधान और उनके अंतर देखने के लिए हल करें दबाएँ।"</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"पीछे जाएँ"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"पास आएँ"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"पास आएँ — ग्रिड पढ़ने के लिए बहुत छोटा है।"</string>
+    <string name="msg_naked_472fd902" formatted="false">"नेकेड"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"नेकेड पेयर"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"नेकेड क्वाड"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"नेकेड सिंगल"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"नेकेड ट्रिपल"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"केवल अंक देने के बजाय तकनीक का नाम बताएँ और उसे साबित करने वाले खाने दिखाएँ।"</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"कम से कम 4 बिंदु चाहिए, लेकिन %1$s मिले"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"पुष्टि चाहिए"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"नई सुडोकू"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"अगला परिणाम"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"अगला चरण"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"कोई भी चित्र अपने आप संलग्न नहीं होता। यहाँ भेजी गई रिपोर्ट और संलग्न फ़ाइलें सार्वजनिक हैं। जिन उदाहरणों को आप निजी तौर पर भेजना चाहते हैं, उन्हें info@freevia.org पर भेजें।"</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"ऐप की पिछली स्थापना के बाद से कोई फ़ोटो अस्वीकार नहीं हुई है।"</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"स्कैन का निदान उपलब्ध नहीं है।"</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"यहाँ कोई तकनीक लागू नहीं होती"</string>
+    <string name="msg_none_140bedbf" formatted="false">"कोई नहीं"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"इनमें से कोई तकनीक खाने में अंक नहीं भरती: वे संभावित अंक हटाती हैं, जिससे कठिन पहेली में आगे का रास्ता खुलता है।"</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"अभी आपकी पहेली पर कोई नहीं।"</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"यह अंक मॉडल की फ़ाइल नहीं है"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"विश्वास के साथ पढ़ा नहीं जा सका — सबसे नज़दीकी अनुमान %3$s पर %1$s %2$s है। कृपया यह खाना स्वयं तय करें।"</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"अभी 9 गुणा 9 ग्रिड के रूप में पढ़ा नहीं जा रहा — फ़्रेम में केवल ग्रिड भरकर देखें, या सीधे फ़ोटो लें"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"शुरू नहीं हुआ"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"इस फ़ोन से कुछ भी भेजा नहीं जा सका।"</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"अब कुछ भी हल करना बाकी नहीं है।"</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"ऐप की ज्ञात तकनीकों से यहाँ आगे कुछ भी तर्क से नहीं निकाला जा सकता।"</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"कुछ असामान्य नहीं"</string>
+    <string name="msg_ok_565339bc" formatted="false">"ठीक है"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"एक"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"एक खाना छपे अंक जैसा लगा, लेकिन उसमें छपा अंक नहीं है।"</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"एक छपा अंक अपने-आप ठीक किया गया।"</string>
+    <string name="msg_one_square_238078b4" formatted="false">"एक खाना"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"यहाँ केवल %1$s आ सकता है — बाकी हर अंक इस पंक्ति, स्तंभ या बॉक्स में पहले से मौजूद है।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से %2$s मौजूद हैं; %3$s को इस खाने से पहले ही हटाया गया था, आसपास दिखाई देने वाली किसी चीज़ के कारण नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से चार मौजूद हैं; %2$s को इस खाने से पहले ही खारिज किया गया था, इसके आसपास दिख रही किसी चीज़ के आधार पर नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से छह मौजूद हैं; %2$s को इस खाने से पहले ही खारिज किया गया था, इसके आसपास दिख रही किसी चीज़ के आधार पर नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से एक मौजूद है; %2$s को इस खाने से पहले ही खारिज किया गया था, इसके आसपास दिख रही किसी चीज़ के आधार पर नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से सात मौजूद हैं; %2$s को इस खाने से पहले ही खारिज किया गया था, इसके आसपास दिख रही किसी चीज़ के आधार पर नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से पाँच मौजूद हैं; %2$s को इस खाने से पहले ही खारिज किया गया था, इसके आसपास दिख रही किसी चीज़ के आधार पर नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खाने बाकी आठ अंकों में से %2$s को रोकते हैं; %3$s %4$s पहले इस खाने से खारिज हुए थे, आसपास दिखाई देने वाली किसी चीज़ के कारण नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से दो मौजूद हैं; %2$s को इस खाने से पहले ही खारिज किया गया था, इसके आसपास दिख रही किसी चीज़ के आधार पर नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से %2$s मौजूद हैं; %3$s को इस खाने से पहले ही हटा दिया गया था, आसपास दिखाई देने वाली किसी चीज़ के कारण नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"यहाँ केवल %1$s आ सकता है। हाइलाइट किए गए खानों में बाकी आठ अंकों में से तीन मौजूद हैं; %2$s को इस खाने से पहले ही खारिज किया गया था, इसके आसपास दिख रही किसी चीज़ के आधार पर नहीं।"</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"यहाँ केवल %1$s आ सकता है। बाकी आठ अंक इस पंक्ति, स्तंभ या बॉक्स के भरे खानों या अनिवार्य एकल संभावित अंकों के कारण खारिज हैं।"</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"यहाँ केवल %1$s आ सकता है, हालाँकि आसपास कुछ भी इसका कारण नहीं दिखाता: बाकी सभी आठ अंक पहले के तर्क से इस खाने से खारिज हुए थे, इसकी पंक्ति, स्तंभ या बॉक्स में लिखे होने के कारण नहीं।"</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"केवल %1$s छपे अंक मिले, जो पहेली के लिए बहुत कम हैं।"</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"केवल चौथाई घुमाव समर्थित हैं, %1$s नहीं"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"अपने ब्राउज़र में ऐसा मसौदा खोलें जिसमें ऐप का संस्करण, फ़ोन मॉडल, Android संस्करण और हाल के स्कैन का निदान पहले से भरा हो। पूरा विवरण और संबंधित स्क्रीनशॉट स्वयं जोड़ें।\n\nGitHub में साइन इन करना ज़रूरी है। भेजने से पहले आप मसौदे की समीक्षा और संपादन कर सकते हैं। भेजी गई रिपोर्ट और संलग्नक सार्वजनिक होते हैं। कोई फ़ोटो अपने-आप संलग्न नहीं होती।"</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"ऐप की सेटिंग खोलें"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"GitHub खोलें"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"ओपन सोर्स सूचनाएँ"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"अंतिम अंक भरने का प्रमाण देखने के लिए ‘यही खाना क्यों?’ खोलें, या किसी खारिज संभावित अंक का प्रमाण क्रम से देखने के लिए उसे चुनें।"</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache लाइसेंस 2.0। ग्रिड ढूँढने और सीधा करने के लिए इस्तेमाल किया गया।\n\nAndroidX, Jetpack Compose और CameraX - Apache लाइसेंस 2.0।\n\nKotlin - Apache लाइसेंस 2.0।\n\nअंक पहचानने वाले मॉडल को LeCun, Cortes और Burges के हस्तलिखित अंकों के MNIST डेटाबेस, खुले सिस्टम फ़ॉन्ट से बनाए गए अंकों और प्रोग्राम के ज़रिए बनाए गए अंकों पर प्रशिक्षित किया गया था।"</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV की नेटिव लाइब्रेरी लोड नहीं हो सकीं"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"किसी और पहेली की फ़ोटो लें।"</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"आप जो फ़ोटो रखते हैं, वे इस ऐप के निजी संग्रह में सहेजी जाती हैं और आपके उन्हें हटाने या ऐप अनइंस्टॉल करने पर हट जाती हैं।"</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"वे फ़ोटो जिनसे ऐप पहेली नहीं बना सका। एक भेजें ताकि उसकी जाँच की जा सके।"</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"कोई अंक चुनें और पंक्तियों में देखें कि किनमें उसके लिए ठीक दो खाने बचे हैं। ऐसी दो पंक्तियाँ लें और देखें कि क्या उनकी एक-एक जगह एक ही स्तंभ में आती है।\n\nयदि हाँ, तो वे दो खाने एक ही स्तंभ में हैं और दोनों में वह अंक नहीं हो सकता। इसलिए दूर के सिरों में से कम से कम एक में वह होगा — दूसरी तरफ़ के दो खाने। आपको नहीं पता किसमें, और जानना ज़रूरी भी नहीं है: जो खाना दोनों दूर के सिरों को देख सकता है, उससे वह अंक हट सकता है।\n\nफिर पंक्तियों के बजाय स्तंभों के साथ यही करें। इसका आकार एक ऊँची इमारत और उसके बगल में एक छोटी इमारत जैसा है; इसी से इसका नाम पड़ा है और कुछ उदाहरण देखने के बाद आप इसे इसी तरह पहचानते हैं।"</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"कोई अंक चुनें। ऐसी पंक्ति ढूँढें जिसमें उसके लिए ठीक दो जगहें हों और ऐसा स्तंभ जिसमें ठीक दो जगहें हों। अब देखें कि क्या पंक्ति का एक खाना और स्तंभ का एक खाना एक ही बॉक्स में हैं।\n\nयदि हाँ, तो उन दोनों में वह अंक नहीं हो सकता — एक बॉक्स में एक ही बार कोई अंक आता है। इसलिए बाकी दो सिरों में से कम से कम एक में वह है, और जो खाना दोनों सिरों को देख सकता है, उससे वह अंक हट सकता है।\n\nलोग इसे इसलिए चूकते हैं क्योंकि इसमें सीध में मिलाने के लिए कुछ नहीं है: चार खाने एक असंतुलित आकार बनाते हैं और उन्हें जोड़ने वाली एकमात्र चीज़ वह बॉक्स है जिसमें दोनों अंदरूनी सिरे हैं।"</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"कोई खाली खाना चुनें और 1 से 9 तक देखें। जो अंक उसकी पंक्ति, स्तंभ या बॉक्स में पहले से हो, उसे काट दें। यदि ठीक एक अंक बचता है, तो वही वहाँ आएगा।\n\nबाकी हर तकनीक इसी तकनीक के लिए स्थिति बनाने के काम आती है। हर कठिन तरीका किसी खाने को एक ही संभावित अंक तक लाने का रास्ता है, इसलिए जब कठिन तकनीक सफल हो, तो इसके बाद यहाँ देखें।"</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"एक अंक चुनें और बाकी सभी को अनदेखा करें। पंक्तियों में देखें और वे पंक्तियाँ नोट करें जिनमें उस अंक के लिए केवल दो या तीन संभव खाने बचे हों। ऐसी %1$s पंक्तियाँ ढूँढें जिनके खाने उन्हीं %2$s स्तंभों में आते हों।\n\nयदि वे मिल जाएँ, तो उन %3$s पंक्तियों में से हर एक को अंक उन स्तंभों में से किसी एक में रखना होगा, और कोई दो पंक्तियाँ एक ही स्तंभ इस्तेमाल नहीं कर सकतीं। इसलिए मिलकर वे सभी %4$s स्तंभों में उस अंक की जगह तय कर देती हैं — और उन स्तंभों के बाकी हर खाने से वह अंक हट सकता है।\n\nफिर पंक्तियों और स्तंभों को बदलकर पूरी प्रक्रिया दोहराएँ। इनमें से आधे पैटर्न दूसरे तरीके से मिलते हैं, और अधिकतर लोग इसी आधे हिस्से को कभी खोजते ही नहीं।"</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"%1$s भरें"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"पंक्ति %2$s, स्तंभ %3$s में %1$s भरें।"</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"रूपरेखा वाले अपने खाने में %1$s भरें।"</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"कृपया GitHub के संलग्नक विकल्प से संबंधित स्क्रीनशॉट जोड़ें: पहेली, पहचाने गए अंक, जाँचें का परिणाम या संकेत का वह चरण जो समस्या दिखाता हो। जहाँ उपयोगी हो, अपेक्षित और वास्तविक परिणाम शामिल करें।"</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"कृपया मेरे Sudoku Buddy पहचान संबंधी भेजे गए डेटा को हटाएँ। रसीद ID: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"कृपया इस निर्देश की जगह समस्या या सुझाव का पूरा विवरण लिखें। इस रिपोर्ट को छोटा, स्पष्ट शीर्षक दें।"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"कैमरा सुडोकू पहेली की ओर करें"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"कैमरा सुडोकू पहेली की ओर करें।"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"कैमरा कागज़ पर बनी सुडोकू पहेली की ओर करें। ऐप छपे अंक और आपके लिखे हुए अंक पढ़ता है, पहेली हल करता है, और आपको संकेत दे सकता है, आपके उत्तर जाँच सकता है या पूरा समाधान दिखा सकता है।"</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"पॉइंटिंग पेयर"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"पोस्ट"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"पहेली तैयार की जा रही है…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"पिछला"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"पिछला चरण"</string>
+    <string name="msg_printed_d8742933" formatted="false">"मुद्रित"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"गोपनीयता नीति"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"पहेलियों का संग्रहण"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"पहेलियाँ"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"पहेलियाँ इसी फ़ोन पर पहचानी और हल की जाती हैं। यदि आप अनिश्चित पहचान भेजते हैं या स्वचालित साझाकरण चालू करते हैं, तो पहेली की फ़ोटो, मूल पहचान परिणाम, अनिश्चितता चिह्न और आपके सुधार सुरक्षित रूप से Freevia को पहचान के विश्लेषण और निजी प्रशिक्षण के लिए भेजे जाते हैं। रिपोर्ट में आपके डिवाइस का मॉडल या निदान जानकारी शामिल नहीं होती। स्वचालित साझाकरण वैकल्पिक है; कोई खाते, नियमित उपयोग विश्लेषण या विज्ञापन ट्रैकिंग नहीं है। प्रशिक्षण की प्रतियाँ रसीद के ज़रिए मिटाई जा सकती हैं, हालाँकि पहले से प्रशिक्षित मॉडल में सीखे हुए बदलाव बने रह सकते हैं। रिपोर्ट मिटाने के लिए सेटिंग में भेजे गए डेटा की रसीदें इस्तेमाल करें।"</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"परीक्षण के लिए फ़ोटो में ली गई पहेलियाँ sudoku.cba.si से थीं। इस ऐप का उनसे कोई संबंध नहीं है।"</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"आप जिन पहेलियों की फ़ोटो लेते हैं, वे यहाँ रखी जाती हैं, ताकि बाद में उन्हें फिर जारी कर सकें।"</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"पहचान"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"हाथ से लिखा %1$s पहचाना गया, %2$s निश्चित।"</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"मुद्रित %1$s पहचाना गया, %2$s निश्चित।"</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"खाली पहचाना गया - स्याही नहीं मिली।"</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"पेंसिल से लिखे संभावित अंकों के निशान पहचाने गए और अनदेखे किए गए।"</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"पहचान की समीक्षा हो गई।"</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"पहचान भेज दी गई। धन्यवाद!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## हाल के स्कैन का निदान (पहले से भरा हुआ)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"पहचान में गलतियाँ हो सकती हैं, विशेषकर हस्तलेखन में। पहचाने गए अंकों की फ़ोटो से तुलना करने के लिए पहचान देखें इस्तेमाल करें और सुधारने के लिए किसी भी खाने पर टैप करें। ऐप अनिश्चित पहचान को समीक्षा के लिए चिह्नित करता है; निश्चित पहचान भी गलत हो सकती है।"</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"मान्यता अस्वीकार करें"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"रिमोट पेयर्स"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$s हटाएँ"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\n%1$s हटाएँ यहाँ से: "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"हटाया गया"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"तर्क फिर देखें"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"GitHub पर बग या सुझाव बताएँ"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"कैमरा फिर आज़माएँ"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"चरण %1$s पर लौटें"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"व्याख्या दिखाएँ"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"पहचान की समीक्षा करें या भेजें"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"पहचान की समीक्षा करें"</string>
+    <string name="msg_right_883361d5" formatted="false">"सही"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"हल का क्रम पूरा हुआ। किसी भी चाल की समीक्षा के लिए पीछे जाएँ या चरण खुद आज़माएँ।"</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"पंक्ति %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"पंक्ति %1$s, स्तंभ %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"पंक्ति %1$s, स्तंभ %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"पंक्ति $1, स्तंभ $2"</string>
+    <string name="msg_row_634768da" formatted="false">"पंक्ति"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"पंक्तियाँ"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s खारिज"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"स्कैन की निदान जानकारी पढ़ी नहीं जा सकी।"</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## स्क्रीनशॉट या पहेली के उदाहरण"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"दूसरा अनुमान: %1$s, %2$s।"</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"अभ्यास के लिए चुनें"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"चुना गया: पंक्ति %1$s, स्तंभ %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"निदान जानकारी भेजें (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"निदान जानकारी भेजें"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"ये स्कैन भेजें"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"यह फ़ोटो भेजें"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"सेटिंग"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"सात"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"अनिश्चित होने पर अपने आप साझा करें"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"अनिश्चित पहचान अपने आप साझा करें?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"विरोधाभास दिखाएँ"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"अपनी पहेली में सभी %1$s दिखाएँ"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"अपनी पहेली में वह एक दिखाएँ"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"सिंपल कलरिंग"</string>
+    <string name="msg_six_44778d82" formatted="false">"छह"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"स्काईस्क्रेपर"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", समाधान %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"हल करें"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"हल हो गया और हर उत्तर सही है।"</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"सॉल्वर की मदद से उत्तर: %2$s में %1$s रखें। संभावित अंक %3$s हैं। ऐप की समर्थित तकनीकों को इस स्थिति से कोई चाल नहीं मिली। इसकी खोज में एकमात्र हल में %4$s मिला; खोज की शाखाओं का विस्तृत प्रमाण उपलब्ध नहीं है।"</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nसॉल्वर की मदद से मिला उत्तर: ऐप की समर्थित तकनीकों को कोई चाल नहीं मिली। विस्तृत प्रमाण उपलब्ध नहीं है।"</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"सॉल्वर की मदद से हटाना: खोज हाइलाइट किए गए खाने में %1$s की संभावना खारिज करती है, लेकिन ऐप दिखाने के लिए विरोधाभास का छोटा तर्कक्रम नहीं बना सका। विस्तृत प्रमाण उपलब्ध नहीं है।"</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"कुछ खानों में पूरे अंक के बजाय नोट्स हो सकते हैं।"</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"कुछ अंक निश्चित रूप से पहचाने नहीं गए।"</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"उस फ़ोटो को पहचानने में कुछ गड़बड़ हुई।"</string>
+    <string name="msg_square_c11092bc" formatted="false">"खाना"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nशुरुआती संभावित अंक: %1$s।"</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"चरण %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"सीधा करें"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"रणनीतियाँ"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"भेजे गए डेटा की रसीद"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"भेजे गए डेटा की रसीद अमान्य है।"</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"भेजे गए डेटा की रसीदें (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"भेजे गए डेटा की रसीदें"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"डेटा भेजने की प्रतिक्रिया में %1$s नहीं है।"</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"डेटा भेजने की प्रतिक्रिया की स्थिति अमान्य है।"</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"डेटा भेजने की सेवा कॉन्फ़िगर नहीं की गई है।"</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"डेटा भेजने की सेवा ने HTTP %1$s लौटाया।"</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"इस बिल्ड में डेटा भेजना उपलब्ध नहीं है।"</string>
+    <string name="msg_submit_155f816c" formatted="false">"भेजें"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"आगे की अनिश्चित पहचान अपने आप भेजें"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"पहचान भेजें"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"विश्लेषण के लिए अनिश्चित पहचान भेजें"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"अपडेट भेजें"</string>
+    <string name="msg_submitted_64900440" formatted="false">"भेज दिया गया"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"भेजा जा रहा है…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy की निदान जानकारी"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy प्रतिक्रिया - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy को Freevia द्वारा प्रकाशित किया जाता है। संपर्क: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy कैमरे से पहेलियाँ पहचानता है, इसलिए इसे कैमरे की अनुमति चाहिए। पहचान और पहेलियों का इतिहास आपके फ़ोन पर रहते हैं। यदि आप अनिश्चित पहचान भेजने का विकल्प चुनते हैं, तो उसकी फ़ोटो और परिणाम पहचान सुधारने के लिए सुरक्षित रूप से Freevia को भेजे जाते हैं। स्वचालित साझाकरण वैकल्पिक है और सेटिंग में बंद किया जा सकता है।"</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy स्कैन"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy स्कैन"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku Buddy का सोर्स कोड Apache License 2.0 के अंतर्गत लाइसेंस प्राप्त है। Freevia ब्रांडिंग पर अलग ट्रेडमार्क अधिकार लागू होते हैं।"</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"सुडोकू सार्वजनिक डोमेन का एक पहेली प्रकार है। यह ऐप आपके पास पहले से मौजूद पहेलियाँ हल करता है; यह किसी की पहेलियों की प्रतिलिपि नहीं बनाता या उन्हें वितरित नहीं करता।"</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", सहायक प्रमाण"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"मान लें कि चिह्नित खाने में %1$s है। क्रमांकित अंक काल्पनिक हैं।"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"मान लें कि इस खाने में %1$s है। तीरों का क्रम से अनुसरण करें: पहले भरे गए अंकों से हर खाने का अंक तय हो जाता है—या तो उस खाने में अब केवल वही अंक आ सकता है, या उस अंक के लिए अब केवल वही खाना बचा है।\n\nइससे लाल रंग वाली इकाई में %2$s के लिए कोई जगह नहीं बचती। उसमें चिह्नित %3$s वे स्थान हैं जहाँ यह अंक आ सकता था, और इनमें से हर खाने को अभी किसी तीर ने भर दिया है। ऐसी इकाई संभव नहीं जिसमें किसी अंक के लिए कोई जगह न हो—इसलिए इस खाने में %4$s नहीं है।"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"मान लें कि इस खाने में %1$s हो। तीरों का क्रम से अनुसरण करें: पहले रखे गए अंक हर अगले खाने का अंक तय करते हैं - या तो वही अंक उस खाने में बचा एकमात्र संभावित अंक है, या उस अंक के लिए वही खाना बची हुई एकमात्र जगह है। तब लाल खाने में कोई अंक बचता ही नहीं, जो संभव नहीं है - इसलिए यह %2$s नहीं है।"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"मान लें कि इस खाने में %1$s है। तीरों का क्रम से अनुसरण करें: पहले भरे गए अंकों से हर खाने का अंक तय हो जाता है—या तो उस खाने में अब केवल वही अंक आ सकता है, या उस अंक के लिए अब केवल वही खाना बचा है।\n\nइससे लाल रंग वाली पंक्ति में %2$s के लिए कोई जगह नहीं बचती। उसमें चिह्नित %3$s वे स्थान हैं जहाँ यह अंक आ सकता था, और इनमें से हर खाने को अभी किसी तीर ने भर दिया है। ऐसी पंक्ति संभव नहीं जिसमें किसी अंक के लिए कोई जगह न हो—इसलिए इस खाने में %4$s नहीं है।"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"मान लें कि इस खाने में %1$s है। तीरों का क्रम से अनुसरण करें: पहले भरे गए अंकों से हर खाने का अंक तय हो जाता है—या तो उस खाने में अब केवल वही अंक आ सकता है, या उस अंक के लिए अब केवल वही खाना बचा है।\n\nइससे लाल रंग वाले बॉक्स में %2$s के लिए कोई जगह नहीं बचती। उसमें चिह्नित %3$s वे स्थान हैं जहाँ यह अंक आ सकता था, और इनमें से हर खाने को अभी किसी तीर ने भर दिया है। ऐसा बॉक्स संभव नहीं जिसमें किसी अंक के लिए कोई जगह न हो—इसलिए इस खाने में %4$s नहीं है।"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"मान लें कि इस खाने में %1$s हो। तीरों का क्रम से अनुसरण करें: पहले रखे गए अंक हर अगले खाने का अंक तय करते हैं - या तो वही अंक उस खाने में बचा एकमात्र संभावित अंक है, या उस अंक के लिए वही खाना बची हुई एकमात्र जगह है।\n\nइससे लाल रंग वाले %2$s में %3$s रखने की कोई जगह नहीं बचती। उसमें चिह्नित %4$s वे जगहें हैं जहाँ वह जा सकता था, और हर ऐसी जगह एक खाना है जिसे किसी तीर ने अभी भर दिया है। किसी %5$s में अंक के लिए कोई जगह न बचना संभव नहीं है - इसलिए यह %6$s नहीं है।"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"मान लें कि इस खाने में %1$s है। तीरों का क्रम से अनुसरण करें: पहले भरे गए अंकों से हर खाने का अंक तय हो जाता है—या तो उस खाने में अब केवल वही अंक आ सकता है, या उस अंक के लिए अब केवल वही खाना बचा है।\n\nइससे लाल रंग वाले स्तंभ में %2$s के लिए कोई जगह नहीं बचती। उसमें चिह्नित %3$s वे स्थान हैं जहाँ यह अंक आ सकता था, और इनमें से हर खाने को अभी किसी तीर ने भर दिया है। ऐसा स्तंभ संभव नहीं जिसमें किसी अंक के लिए कोई जगह न हो—इसलिए इस खाने में %4$s नहीं है।"</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"ग्रिड पर चाल और उसके परिणाम देखने के लिए बाद में पर जाएँ।"</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"स्वॉर्डफ़िश"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"नई फ़ोटो लें"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"एक और फ़ोटो लें"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"एक अंक चुनें और हर उस इकाई को चिह्नित करें जहाँ उसके लिए ठीक दो खाने बचे हैं। ये दोनों सी-सॉ की तरह हैं: एक में वह अंक होगा और दूसरे में नहीं।\n\nकहीं से भी शुरू करें और एक खाने को, मान लें, नीला रंग दें। उसके सी-सॉ साथी को हरा रंग दें, फिर उससे जुड़े साथी को फिर नीला, और शृंखला खत्म होने तक ऐसा करते रहें। या तो हर नीला खाना सही है या हर हरा खाना - आप नहीं बता सकते कि कौन-सा, और दो निष्कर्षों के लिए इतना पर्याप्त है।\n\nपहला: यदि एक पंक्ति, स्तंभ या बॉक्स में एक ही रंग के दो खाने हों, तो वह रंग असंभव है। इसलिए उस रंग के हर खाने से यह अंक हटता है और दूसरे रंग के सभी खानों में वही उत्तर होता है।\n\nदूसरा: शृंखला के बाहर का कोई भी खाना जो एक नीले और एक हरे खाने को देख सकता है, उस अंक को हटा सकता है, क्योंकि शृंखला में चाहे जो रंग सही हो, उन दोनों में से एक में वह अंक होगा।\n\nपेंसिल से यह धीमा है, लेकिन उपयोगी है: एक बार रंग देने से अक्सर आधे बोर्ड से एक अंक हट जाता है।"</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"एक समय में एक अंक और एक इकाई लें - जैसे, इस बॉक्स में 4 कहाँ जा सकता है? इकाई के हर उस खाने को काट दें जिसमें पहले से अंक है या जो अपनी पंक्ति या स्तंभ में किसी 4 को देखता है। यदि एक खाना बचे, तो 4 वहीं जाएगा।\n\nमुश्किल यह है कि खाने को देखकर यह बात दिखाई नहीं देती: उसमें पाँच अन्य अंक भी आ सकते हैं, इसलिए उसका उत्तर तय लगता ही नहीं। खाने के बजाय अंक पर ध्यान दें, और यह तुरंत दिखाई देता है।"</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"फ़ोटो लें"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"फ़ोटो अपने आप लें"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"समीक्षा के लिए किसी चिह्नित खाने पर टैप करें या पुष्टि करें कि सभी पहचान सही हैं।"</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"पहले ग्रिड के किसी खाने पर टैप करें।"</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"चिह्नित खाने में %1$s को मान्यता के रूप में जाँचें। यह उत्तर नहीं है। इसके परिणामों का अनुसरण करके देखें कि यह क्यों असफल होता है।"</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"मान्यता जाँचें"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"पहचान सुधारने में मदद के लिए धन्यवाद। आपकी पहेली की फ़ोटो, पहचान परिणाम और सुधार विश्लेषण और प्रशिक्षण के लिए इस्तेमाल किए जाएँगे।"</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"वह भी %1$s की एक मान्य चाल है। यह क्रम दूसरी चाल दिखाता है; नीचे उसके प्रमाण की तुलना करें।"</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"यह इस चरण के लिए चुनी गई चाल नहीं है। अन्य मान्य चालें हो सकती हैं; फिर देखें या इस चरण की व्याख्या दिखाएँ।"</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"यह सही है"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"यह बाकी पूरी पहेली है। इसके %1$s खानों में सॉल्वर की मदद से उत्तर चाहिए, क्योंकि ऐप की समर्थित तकनीकों को कोई चाल नहीं मिली। उनकी खोज के विस्तृत प्रमाण उपलब्ध नहीं हैं।"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"यह बाकी पूरी पहेली है। इसके एक खाने में सॉल्वर की मदद से उत्तर चाहिए, क्योंकि ऐप की समर्थित तकनीकों को कोई चाल नहीं मिली। उसकी खोज का विस्तृत प्रमाण उपलब्ध नहीं है।"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"यह बाकी पूरी पहेली है, शुरू से अंत तक।"</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" वह फ़ोटो सहेजी नहीं जा सकी, इसलिए भेजने के लिए कुछ नहीं है।"</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"उस खाने में %1$s संभव है। इस चरण की तकनीक से सिद्ध होने वाली चाल खोजें या उसकी व्याख्या दिखाएँ।"</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"वह खाना पहले से भरा है। कोई खाली खाना चुनें।"</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"मान्यता अस्वीकार हो गई है। हम वास्तविक संभावित अंकों पर लौटते हैं और चिह्नित खाने से %1$s काट देते हैं। काल्पनिक अंक हटा दिए गए हैं।"</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"कैमरा वह फ़ोटो नहीं ले सका।"</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"कैमरा उपलब्ध नहीं है। अन्य कैमरा ऐप बंद करके फिर कोशिश करें।"</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"दूसरा"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"%1$s की फ़ोटो और उससे पहचानी गई सारी जानकारी इस फ़ोन से हटा दी जाएगी। इसे वापस नहीं लिया जा सकता।"</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" फ़ोटो आपकी पहेली सूची में \"पढ़ी नहीं जा सकी\" के अंतर्गत है।"</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"यहाँ केंद्रीय खाने में %1$s या %2$s है। दोनों ही स्थितियों में बाकी दो खानों में से एक में %3$s होना तय है, इसलिए उन दोनों को देखने वाले किसी भी खाने में %4$s नहीं हो सकता।"</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"पॉइंटिंग पेयर को उलटे ढंग से देखें। एक पंक्ति या स्तंभ और एक ऐसा अंक लें जिसकी जगह उसमें अभी तय नहीं है। उस पंक्ति या स्तंभ के हर खाने को चिह्नित करें जिसमें वह अंक आ सकता है। यदि वे सभी एक ही बॉक्स में हों, तो अंक उस बॉक्स के इसी पंक्ति या स्तंभ वाले हिस्से में होना चाहिए - इसलिए बॉक्स में किसी और जगह वह नहीं होगा, उन दो पंक्तियों या स्तंभों में भी नहीं जिन्हें आप नहीं देख रहे थे।\n\nपॉइंटिंग पेयर की तरह, यह अपने आप कोई खाना नहीं भरता; यह ऐसी चाल के लिए जगह बनाता है जो भरती है।"</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"मुद्रित अंकों से हल करने योग्य पहेली नहीं बनती।"</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s में बचे संभावित अंक {%2$s} हैं। पंक्ति %4$s, स्तंभ %5$s में %3$s भरें।"</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"रिपोर्ट भेजने के लिए बहुत बड़ी है।"</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"यह Y-विंग है, जिसमें केंद्रीय खाने में एक अतिरिक्त संभावित अंक है। ठीक तीन संभावित अंकों वाला खाना खोजें, जैसे {1,4,7}, जो दो संभावित अंकों वाले दो खानों को देख सकता हो - एक {1,7} और एक {4,7}।\n\nअब तीनों में 7 हो सकता है, और उनमें से एक में होना ही चाहिए। इसलिए किसी खाने से 7 हटाने के लिए उसे केवल दोनों सिरों को नहीं, तीनों खानों को देखना चाहिए - व्यवहार में इसका अर्थ है कि वह केंद्रीय खाने के बॉक्स में और किसी एक सिरे की पंक्ति या स्तंभ में हो।\n\nइससे Y-विंग की तुलना में कम संभावनाएँ हटती हैं, और इसी कारण इसे चूकना आसान है: केंद्रीय खाना अलग से ध्यान नहीं खींचता।"</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"हाइलाइट किए गए बॉक्स में एक खाना है जिसे आप भर सकते हैं।\n\nउसे खोजने वाली तकनीक जानने के लिए संकेत फिर दबाएँ।"</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"यहाँ तर्क लगाने के लिए कुछ नहीं बचा।"</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"इन %1$s खानों में केवल %2$s और %3$s संभव हैं, और हर खाना अगले को देखता है, इसलिए वे पूरी शृंखला में बारी-बारी आते हैं। %4$s और %5$s के बीच कड़ियों की संख्या विषम है, इसलिए उनमें अलग-अलग अंक हैं - इससे उन दोनों को देखने वाले हर खाने से %6$s हटता है।"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"इन %1$s खानों में मिलाकर केवल %2$s संभव हैं, इसलिए ये अंक किसी क्रम में इन्हें भरेंगे। इससे इस %4$s के बाकी खानों से %3$s हटता है।"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"इन %1$s खानों में केवल %2$s ही आ सकते हैं, इसलिए ये अंक किसी क्रम में इन खानों को भरेंगे। इससे इस पंक्ति के बाकी खानों से %3$s हटाया जा सकता है।"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"इन %1$s खानों में केवल %2$s ही आ सकते हैं, इसलिए ये अंक किसी क्रम में इन खानों को भरेंगे। इससे इस स्तंभ के बाकी खानों से %3$s हटाया जा सकता है।"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"इन %1$s खानों में केवल %2$s ही आ सकते हैं, इसलिए ये अंक किसी क्रम में इन खानों को भरेंगे। इससे इस बॉक्स के बाकी खानों से %3$s हटाया जा सकता है।"</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"ये आपके खाने के शुरुआती संभावित अंक हैं। तर्कक्रम बताता है कि कौन-सी संभावनाएँ खारिज की जा सकती हैं।"</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"इन अंकों से पहेली नहीं बन सकती, और इतनी गलतियाँ हैं कि बताया नहीं जा सकता कि कौन-सी। पहचान सुधारने के लिए किसी भी खाने पर टैप करें या फिर से फ़ोटो लें।"</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"इन अंकों से पहेली नहीं बन सकती। घेरे वाले %1$s खानों को बदलने से यह ठीक हो जाएगी - पहचान सुधारने के लिए किसी एक पर टैप करें।"</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"इन अंकों से पहेली नहीं बन सकती। घेरे वाले एक खाने को बदलने से यह ठीक हो जाएगी - पहचान सुधारने के लिए उस पर टैप करें।"</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"इन अंकों से पहेली नहीं बनती, इसलिए कोई अंक गलत पहचाना गया है। किन खानों को सुधारना है, यह देखने के लिए हल करें दबाएँ।"</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"ये चार खाने दो बॉक्स में एक आयत बनाते हैं, और उनमें से तीन में केवल %1$s संभव हैं। यदि %2$s में भी केवल वही दो अंक होते, तो आयत में अंकों की जगहें आपस में बदली जा सकतीं और पहेली के दो हल होते। इसका एक ही हल है, इसलिए %3$s में कोई और अंक होना चाहिए - और %4$s हटता है।"</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"ये अंत तक नहीं पहुँचते: यहाँ किसी बात को ऐप बिल्कुल हल नहीं कर पाया।"</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"यह कोई खाना नहीं भरता। यह %2$s से %1$s हटाता है।"</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"इससे कोई खाना नहीं भरता। इससे %2$s खानों में %1$s की संभावना खारिज होती है।"</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"इससे कोई खाना नहीं भरता। इससे एक खाने में %1$s की संभावना खारिज होती है।"</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nउत्तर तक पहुँचाने वाले %1$s निष्कर्षों में यह पहला है।"</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"यह प्रमाण एक संकेत समझाता है, जिसमें उसके उत्तर तक पहुँचाने वाले संभावित अंकों का हटना भी शामिल है। ग्रिड पर तर्क का अनुसरण करने के लिए आगे बढ़ें, फिर हल के पूरे क्रम को जारी रखें।"</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"यह पहेली तैयार नहीं की जा सकी।"</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"यह पहेली सहेजी नहीं जा सकी। अभी भी आप इसे इस्तेमाल कर सकते हैं। दूसरी फ़ोटो लेने से पहले कुछ संग्रहण खाली करें।"</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"इस पहेली के एक से अधिक हल हैं, इसलिए शायद कोई मुद्रित अंक छूट गया। %2$s में से हल %1$s दिखाया जा रहा है - अगला देखने के लिए हल करें फिर दबाएँ। घेरे वाले खानों में दिखाए गए हलों के अंक अलग हैं।"</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"इस पहेली की फ़ोटो खोली नहीं जा सकी।"</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"यह तर्क %1$s के मौजूद होने की संभावना खारिज करता है "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"इस खाने में पूरे अंक के बजाय संभावित अंकों के नोट्स हो सकते हैं। कृपया इसे जाँचें।"</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"इस दृश्य में पहले हटाए गए संभावित अंक भी शामिल हैं। उन्हें जाँचने के लिए नीचे उनके प्रमाण खोलें।"</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"तीन"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"ग्रिड की रेखाएँ पहचानने के लिए बहुत अँधेरा है"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"तर्कक्रम"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"आज़माया गया"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"खुद आज़माएँ"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"चालू करें"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"फ़ोन घुमाएँ ताकि पहेली सीधी हो।"</string>
+    <string name="msg_tutor_1555a832" formatted="false">"शिक्षक"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"दो"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"एक ही जोड़ी वाले दो खाने, जो उसके एक अंक के सी-सॉ संबंध से जुड़े हों, दूसरे अंक को उनमें से एक में होना तय करते हैं।"</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"टू-स्ट्रिंग काइट"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"यूनिक रेक्टैंगल"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"इकाई"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"अपठनीय स्थिति कोई CellReading सूची उपलब्ध नहीं कराती; सटीक इनपुट खाने और परिणाम सुरक्षित रखे जाते हैं।"</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"मॉडल प्रारूप का संस्करण समर्थित नहीं है"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"अनिश्चित"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"डिवाइस की भाषा इस्तेमाल करें"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"%1$s का इस्तेमाल करके ऐसे खाने पर टैप करें जहाँ से कोई संभावित अंक हटाया जा सकता है, फिर वह अंक चुनें।"</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"%1$s का इस्तेमाल करके उस खाने पर टैप करें जिसे आप भर सकते हैं, फिर उसका अंक चुनें।"</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"बहुत कठिन"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-विंग"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"गया था"</string>
+    <string name="msg_were_910adfb4" formatted="false">"गए थे"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"आपकी क्या अपेक्षा थी, या आपका सुझाव सुडोकू हल करने या सीखने में कैसे मदद करेगा?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## क्या हुआ और उसे दोहराने के चरण (बग के लिए)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"यह क्या करता है"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"कहाँ"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"r%2$sc%3$s से %1$s क्यों हटाया गया"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"क्यों"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"%1$s क्यों नहीं? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"यही खाना क्यों? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" समाधान से। उन्हें देखने के लिए जाँचें इस्तेमाल करें।"</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"अपने खाने से पीछे की ओर तर्क करें। नीचे कोई प्रश्न चुनें।"</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"खाना-दर-खाना देखने के बजाय अंक-दर-अंक देखें। एक इकाई में लिखें कि हर गायब अंक अभी कहाँ-कहाँ जा सकता है। फिर ऐसे %1$s अंक खोजें जिनकी सूचियाँ मिलाकर केवल %2$s खानों तक सीमित हों।\n\nउन %3$s अंकों को उन्हीं %4$s खानों में भरना होगा, इसलिए उनमें बाकी सभी अंक काटे जा सकते हैं - इससे अक्सर उनमें से कोई खाना तुरंत नेकेड सिंगल या नेकेड पेयर बन जाता है।\n\nलोगों को यह सबसे कठिन लगता है, क्योंकि खानों को देखने पर कुछ दिखाई नहीं देता: उनमें अभी भी कई संभावित अंक होते हैं। पैटर्न अंकों में होता है।"</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"केवल उन खानों पर काम करें जिनमें ठीक दो संभावित अंक बचे हैं।\n\nएक से शुरू करें, मान लें {2,6}, और मानें कि उसमें 2 नहीं है - तो उसमें 6 होगा। ऐसा खाना लें जिसे वह देख सकता हो और जिसमें 6 भी हो, जैसे {6,4}: उसमें 6 नहीं हो सकता, इसलिए वह 4 होगा। फिर ऐसा खाना लें जिसे वह देखता हो और जिसमें 4 संभव हो। ऐसे आगे बढ़ते रहें; हर चरण पिछले चरण से तय होता है।\n\nयदि आप ऐसे खाने तक पहुँचें जिसका दूसरा अंक 2 है - वही अंक जिसे शुरू में खारिज किया था - तो काम पूरा है। या तो पहले खाने में वास्तव में 2 था, या शृंखला चली और आखिरी खाने में 2 है। किसी एक सिरे में वह अंक है, इसलिए दोनों सिरों को देखने वाले किसी खाने में वह नहीं हो सकता।\n\nशृंखलाएँ छोटी रखें। चार या पाँच खाने पेंसिल से खोजे जा सकते हैं; उससे आगे आपको लगातार हिसाब रखना पड़ता है, और इसे फ़ोर्सिंग चेन कहना अधिक सही है।"</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"कार्यशील किनारा धनात्मक और परिमित होना चाहिए"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"पहचाना नहीं जा सका"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"लिखित"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"गलत"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-विंग"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-चेन"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-विंग"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-विंग"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"आपने यह खाना खाली किया।"</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"आपने इसे हाथ से लिखा %1$s सेट किया।"</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"आपने इसे मुद्रित %1$s सेट किया।"</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"आपके बदलाव दिख रहे हैं, लेकिन सहेजे नहीं जा सके। कुछ संग्रहण खाली करके पहेली को फिर संपादित करें।"</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"आपकी फ़ोटो और आपकी गोपनीयता"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"आपकी पहेलियाँ"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"आपकी सहेजी गई पहेलियाँ"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"आपका खाना ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"आपके खाने की रूपरेखा बनी रहती है। हरे खाने प्रमाण दिखाते हैं; कटे हुए अंक खारिज किए गए हैं।"</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

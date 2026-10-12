@@ -519,26 +519,28 @@ private fun CameraTopBar(
         verticalAlignment = Alignment.CenterVertically,
     ) {
         GlassIconButton(onMenu, Icons.Filled.Menu, "Your puzzles")
-        Box(Modifier.weight(1f))
-        Surface(color = Color(0x99000000), shape = CircleShape) {
-            Row(
-                modifier = Modifier
-                    .widthIn(max = 220.dp)
-                    .heightIn(min = 48.dp)
-                    .toggleable(value = autoCapture, enabled = captureToggleEnabled,
-                        role = Role.Switch, onValueChange = onAutoCaptureChange)
-                    .padding(start = 16.dp, end = 8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-            ) {
-                Text("Auto photo", color = Color.White,
-                    modifier = Modifier.weight(1f),
-                    style = MaterialTheme.typography.labelLarge)
-                Switch(checked = autoCapture, onCheckedChange = null,
-                    enabled = captureToggleEnabled)
+        Box(Modifier.weight(1f).padding(horizontal = 8.dp), contentAlignment = Alignment.Center) {
+            Surface(color = Color(0x99000000), shape = CircleShape) {
+                Row(
+                    modifier = Modifier
+                        .widthIn(max = 220.dp)
+                        .heightIn(min = 48.dp)
+                        .toggleable(value = autoCapture, enabled = captureToggleEnabled,
+                            role = Role.Switch, onValueChange = onAutoCaptureChange)
+                        .padding(start = 16.dp, end = 8.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Text(localized("Auto photo"), color = Color.White,
+                        modifier = Modifier.weight(1f),
+                        maxLines = 1,
+                        overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis,
+                        style = MaterialTheme.typography.labelLarge)
+                    Switch(checked = autoCapture, onCheckedChange = null,
+                        enabled = captureToggleEnabled)
+                }
             }
         }
-        Box(Modifier.weight(1f))
         OverflowMenu(onStrategies, onSettings, onAbout, glass = true)
     }
 }
@@ -562,7 +564,7 @@ private fun CameraFooter(
     ) {
         Surface(color = Color(0x99000000), shape = RoundedCornerShape(20.dp)) {
             Text(
-                text = message,
+                text = localized(message),
                 color = if (wrong) Overlays.incorrect else Color.White,
                 style = MaterialTheme.typography.titleMedium,
                 textAlign = TextAlign.Center,
@@ -571,7 +573,7 @@ private fun CameraFooter(
         }
 
         if (onRetry != null) {
-            TextButton(onClick = onRetry) { Text("Retry camera") }
+            TextButton(onClick = onRetry) { Text(localized("Retry camera")) }
         } else if (busy) {
             Box(Modifier.size(76.dp), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(color = Color.White)
@@ -610,10 +612,11 @@ private fun Reticle(modifier: Modifier) {
 /** The shutter: a ring with a disc inside it, the shape everyone already knows. */
 @Composable
 private fun Shutter(onClick: () -> Unit) {
+    val description = localized("Take photo")
     Box(
         modifier = Modifier
             .size(76.dp)
-            .semantics { contentDescription = "Take photo" }
+            .semantics { contentDescription = description }
             .clickable(role = Role.Button, onClick = onClick)
             .background(Color.Transparent, CircleShape),
         contentAlignment = Alignment.Center,

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nLes caselles ressaltades ho demostren.\n\nPrem Pista de nou per veure quina casella és."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s i %2$s només contenen %3$s i %4$s. En aquest %5$s, %6$s només té dos llocs possibles, cadascun vist per una d\'aquestes caselles; per tant, un d\'aquests dos llocs és %7$s, i l\'extrem que el veu ha de ser %8$s. En qualsevol cas, un extrem és %9$s, cosa que descarta %10$s de totes les caselles que veuen tots dos extrems."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s i %2$s només admeten %3$s i %4$s. En aquest bloc, %5$s només té dues posicions possibles, cadascuna visible des d\'un dels dos extrems; per tant, una d\'aquestes dues posicions és %6$s, i l\'extrem que la veu ha de ser %7$s. En qualsevol cas, un dels extrems és %8$s, cosa que descarta %9$s de totes les caselles que veuen tots dos."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s i %2$s només admeten %3$s i %4$s. En aquesta columna, %5$s només té dues posicions possibles, cadascuna visible des d\'un dels dos extrems; per tant, una d\'aquestes dues posicions és %6$s, i l\'extrem que la veu ha de ser %7$s. En qualsevol cas, un dels extrems és %8$s, cosa que descarta %9$s de totes les caselles que veuen tots dos."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s i %2$s només admeten %3$s i %4$s. En aquesta fila, %5$s només té dues posicions possibles, cadascuna visible des d\'un dels dos extrems; per tant, una d\'aquestes dues posicions és %6$s, i l\'extrem que la veu ha de ser %7$s. En qualsevol cas, un dels extrems és %8$s, cosa que descarta %9$s de totes les caselles que veuen tots dos."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s a la fila %2$s, columna %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s al pas %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s només pot contenir %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s no pot contenir %2$s perquè %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s no pot contenir %2$s perquè %3$s només pot contenir %4$s a la mateixa columna %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s no pot contenir %2$s perquè %3$s només pot contenir %4$s al mateix bloc %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s no pot contenir %2$s perquè %3$s només pot contenir %4$s a la mateixa fila %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s no pot contenir %2$s perquè %3$s conté %4$s al mateix bloc %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s no pot contenir %2$s perquè %3$s conté %4$s a la mateixa columna %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s no pot contenir %2$s perquè %3$s conté %4$s a la mateixa fila %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s conté %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s buit"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, resposta"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s ha d\'anar aquí: és l\'única casella d\'aquesta columna %2$s que encara pot admetre un %3$s.\n\n%4$s\n\n%5$s actualment admet %6$s, però cada columna ha de contenir %7$s exactament una vegada. Per tant, posa %8$s a la fila %9$s, columna %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s ha d\'anar aquí: és l\'única casella d\'aquest %2$s %3$s que encara pot contenir un %4$s.\n\n%5$s\n\n%6$s actualment admet %7$s, però cada %8$s ha de contenir %9$s exactament una vegada. Per tant, posa %10$s a la fila %11$s, columna %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s ha d\'anar aquí: és l\'única casella d\'aquest bloc %2$s que encara pot admetre un %3$s.\n\n%4$s\n\n%5$s actualment admet %6$s, però cada bloc ha de contenir %7$s exactament una vegada. Per tant, posa %8$s a la fila %9$s, columna %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s ha d\'anar aquí: és l\'única casella d\'aquesta fila %2$s que encara pot admetre un %3$s.\n\n%4$s\n\n%5$s actualment admet %6$s, però cada fila ha de contenir %7$s exactament una vegada. Per tant, posa %8$s a la fila %9$s, columna %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s té dos llocs possibles en aquesta fila i dos en aquesta columna. %2$s i %3$s comparteixen un bloc, de manera que no poden ser %4$s totes dues; això obliga una de les caselles %5$s i %6$s a contenir-lo i descarta %7$s de totes les caselles que les veuen totes dues."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s a la mateixa unitat (%2$s)."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s al mateix bloc."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s a la mateixa columna."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s a la mateixa fila."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s ja està descartat d\'aquesta casella. Els seus candidats són "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s queda descartat per %2$s, que "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s queda exclòs per %2$s, que només pot contenir %3$s a la mateixa columna %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s queda exclòs per %2$s, que només pot contenir %3$s a la mateixa fila %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s queda exclòs per %2$s, que només pot contenir %3$s al mateix bloc %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s queda exclòs per %2$s, que conté %3$s al mateix bloc %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s queda exclòs per %2$s, que conté %3$s a la mateixa columna %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s queda exclòs per %2$s, que conté %3$s a la mateixa fila %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s queda determinat a l\'última casella numerada (fila %2$s, columna %3$s). %4$s La fletxa segueix una col·locació que hi contribueix; les conseqüències anteriors també compten."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"falta %1$s al classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s de %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s omplen una casella; la resta primer eliminen candidats per deixar pas."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"parella %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s impresos, %2$s, %3$s incorrectes"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s impresos, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s impresos"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, pista impresa"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"quàdruple %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s fotografies rebutjades, de la més recent a la més antiga:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: elimina %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Nombre de caselles: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Aquest recorregut consta de %1$s passos; la tècnica admesa més difícil és %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"triple %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"S\'ha eliminat %1$s de %2$s mitjançant un raonament previ sobre els candidats."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s escrit"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"una imatge de %1$sx%2$s necessita %3$s bytes, però n\'ha rebut %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"una casella no era ni una xifra ni un punt"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Una cadena de caselles amb dos candidats que comença i acaba amb el mateix dígit obliga que aquest dígit sigui en un dels dos extrems."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Un dígit que només té una posició possible en una fila, columna o bloc ha d\'anar en aquella posició."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Un %1$s escrit a mà."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Un %1$s imprès."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Una casella vermella mostra el dígit que l\'app hi ha llegit. Si no és el que hi has escrit, toca la casella per corregir-lo."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Una casella amb un sol candidat restant ha de contenir aquell dígit."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Una llista de tècniques mai no és completa, i els sudokus més difícils es construeixen per superar qualsevol tècnica que hi figuri. Per això, quan cap d\'aquestes tècniques dona resultat, el tutor resol una sola casella provant-ne els candidats, explica clarament que ho ha fet així i continua raonant a partir d\'aquí. Sempre arriba al final del sudoku i mai no fa passar una consulta per una deducció."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Un pivot amb tres candidats i dues pinces compatibles amb dos candidats obliga a eliminar un dígit de totes les caselles que veuen les tres."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Un pivot amb dos candidats i dues pinces amb dos candidats poden obligar a eliminar un dígit de totes les caselles que veuen les dues pinces."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Quant a"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Després"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Després d\'aquest moviment"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Tot correcte"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Totes tres caselles poden ser %1$s, i una ho ha de ser. Per tant, cap casella que vegi totes tres no pot ser %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Permet l\'accés a la càmera"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Gairebé: mantén el full pla i de cara a la càmera, sense distorsió de perspectiva"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"una eliminació que no elimina res no és una deducció"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" i "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Resposta"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## App i dispositiu (emplenat prèviament)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- App: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"la relació d\'aspecte ha de ser positiva, però era %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Hipòtesi · dígit hipotètic"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Hipòtesi rebutjada · candidats reals restaurats"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"com a mínim %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Foto automàtica"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Comparteix automàticament amb Freevia les fotos de sudokus amb lectura incerta, els resultats de lectura i les correccions posteriors de caselles per analitzar i entrenar el reconeixement. Desactivat per defecte."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Evita els reflexos"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Enrere"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Torna a la pregunta anterior"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Torna a la pista visual"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Torna a la teva casella"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Abans"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Abans d\'aquest moviment"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Els dígits blaus són la solució. Toca qualsevol casella per corregir el que s\'ha llegit."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"bloc %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"bloc"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Bloc"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Reducció bloc-línia"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Càmera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"només pot contenir"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Cancel·la"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidats %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"Evidència de captura"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Encadena un dígit a través de les unitats on només té dues posicions possibles, pinta la cadena amb dos colors alterns i un dels colors serà cert a tota la cadena."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Enllaçar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, un dels quals és cert a tot arreu. Dues caselles de l\'altre color són a la mateixa fila, cosa que és impossible; per tant, aquest color és el fals i s\'elimina %2$s de totes les caselles d\'aquest color."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Enllaçar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, un dels quals és cert a tot arreu. Dues caselles de l\'altre color són al mateix bloc, cosa que és impossible; per tant, aquest color és el fals i s\'elimina %2$s de totes les caselles d\'aquest color."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Enllaçar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, un dels quals és cert a tot arreu. Dues caselles de l\'altre color són a la mateixa columna, cosa que és impossible; per tant, aquest color és el fals i s\'elimina %2$s de totes les caselles d\'aquest color."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Encadenar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, i un dels colors és cert a tota la cadena. Dues caselles del color %2$s són a la mateixa unitat (%3$s), cosa impossible; per tant, aquest color és el fals i s\'elimina %4$s de totes les caselles que el porten."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Encadenar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, i un dels colors és cert a tota la cadena. Aquestes caselles veuen tots dos colors, així que, sigui quin sigui el resultat de la cadena, una de les caselles que veuen conté %2$s; per tant, elles no el poden contenir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Enllaçar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, un dels quals és cert a tot arreu. Dues caselles d\'un color són al mateix bloc, cosa que és impossible; per tant, aquest color és el fals i s\'elimina %2$s de totes les caselles d\'aquest color."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Enllaçar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, un dels quals és cert a tot arreu. Dues caselles d\'un color són a la mateixa columna, cosa que és impossible; per tant, aquest color és el fals i s\'elimina %2$s de totes les caselles d\'aquest color."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Enllaçar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, un dels quals és cert a tot arreu. Dues caselles d\'un color són a la mateixa fila, cosa que és impossible; per tant, aquest color és el fals i s\'elimina %2$s de totes les caselles d\'aquest color."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Caselles dubtoses per comprovar: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Comprova"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Comprova una casella incerta."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", comprovat: correcte"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Tria un candidat per veure per què no pot anar a la teva casella."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Tria l\'idioma"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Tria què es mostra"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Tanca"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Tanca la pista"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Replega la revisió de lectura"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"les caselles en color i en escala de grisos han de tenir la mateixa geometria"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"columna %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"columna"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"columnes"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Compara les cadenes de forçament i prioritza les que tenen menys caselles per seguir. Les cadenes més curtes poden comportar més passos en la solució completa."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Conseqüència %1$s de %2$s · dígits hipotètics"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"conté"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Tipus de contingut"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Continua amb el recorregut complet"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradicció · la hipòtesi falla"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", contradicció"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Contradicció: a la unitat vermella (%1$s) no queda cap lloc per a %2$s. Això és impossible, així que la hipòtesi inicial ha de ser falsa."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Contradicció: la casella vermella no té cap candidat restant. Això és impossible, així que la hipòtesi inicial ha de ser falsa."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Copia la sol·licitud de supressió"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Correcte. Compara el teu raonament amb l\'explicació següent."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"no s\'ha pogut descodificar la imatge capturada"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"No s\'han pogut trobar els dígits impresos en aquesta foto."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"No s\'han pogut distingir les línies de la graella. Torna-ho a provar."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"No s\'ha pogut obrir GitHub. Contacta amb el suport a %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"No s\'ha pogut conservar l\'evidència de captura de depuració"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"No s\'ha pogut enviar la lectura. Torna-ho a provar quan tinguis connexió."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Carreró sense sortida"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"SUPRIMEIX"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Suprimeix"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Suprimeix l\'informe"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Suprimeix aquesta foto"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Suprimeix aquest sudoku"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Vols suprimir aquest sudoku?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Vols suprimir aquest enviament?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"S\'està suprimint…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"No s\'ha pogut confirmar la supressió. Comprova la connexió i torna-ho a provar."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Sol·licitud de supressió"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"La resposta de supressió no ha confirmat aquest rebut."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"El servei de supressió ha retornat HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Descriu què ha passat i els passos per repetir-ho. Indica si primer has comprovat i corregit els dígits reconeguts. Si és una idea, escriu «No aplicable»."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", destinació d\'aquesta pista"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Dispositiu: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Els diagnòstics s\'han escurçat perquè càpiguen a l\'esborrany del navegador. L\'acció Envia diagnòstics de l\'app permet compartir l\'informe complet."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"la xifra ha de ser 1..9, però era %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Dígits no llegits"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"La conservació d\'evidències al disc afecta els temps; no és una prova de rendiment de latència."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", no coincideix amb la solució"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Cada rebut identifica una revisió enviada d\'un sudoku. Suprimeix-lo aquí per eliminar de Freevia l\'informe emmagatzemat de manera privada."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Eliminacions anteriors: %1$s. Fes servir els enllaços als passos anteriors per examinar-ne les demostracions."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← evidència anterior (profunditat %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Les col·locacions hipotètiques anteriors hi deixen un sol candidat."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Passos anteriors utilitzats en aquesta demostració"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Edita la casella"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"vuit"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"buit"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Buida."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Buida"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Anglès"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"entrades que no coincideixen"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"entrada que no coincideix"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Totes omplen una casella."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Totes les caselles estan plenes, però %1$s respostes no coincideixen amb la solució."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Totes les caselles estan plenes, però una resposta no coincideix amb la solució."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Tot sudoku amb una única solució es pot resoldre raonant; mai no cal endevinar i poques vegades ajuda. Aquestes són les formes de raonament que aquesta app pot reconèixer i explicar, començant per les més fàcils. Quan una sigui aplicable al sudoku que tens obert, et mostrarà tots els llocs on ho és."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Tot el que has escrit fins ara és correcte."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Exemples disponibles ara: cadascun parteix del teu tauler actual."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"s\'esperaven 10 línies horitzontals, però se n\'han rebut %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"s\'esperaven 10 línies verticals, però se n\'han rebut %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"s\'esperaven 81 caselles, però se n\'han rebut %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"s\'esperaven 81 caselles a cada bloc, però se n\'han trobat %1$s i %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"s\'esperava un sol canal de 8 bits, però s\'ha rebut %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"s\'esperava una imatge de 28x28, però s\'han rebut %1$s valors"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Comportament esperat o millora proposada"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"s\'esperaven deu línies en cada direcció"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"s\'esperaven dos blocs, però se n\'han trobat %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Explica les eliminacions anteriors de candidats (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Explica les pistes"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Busca una casella amb només dos o tres candidats restants: com menys, millor, i com més plena estigui la fila, columna i bloc que l\'envolten, encara millor.\n\nTria un dels candidats i escriu-lo suaument amb llapis. Ara segueix les conseqüències: aquest dígit s\'elimina de totes les caselles que la casella veu, cosa que pot deixar-ne alguna amb un únic candidat, que en força una altra, i així successivament. Continua.\n\nPassarà una de dues coses. O bé la cadena s\'atura i no has après res: esborra-ho i prova l\'altre candidat. O bé arribes a una casella sense cap candidat, o a una fila sense cap lloc on posar algun dígit. Això és impossible, així que el dígit que has escrit amb llapis era incorrecte i el pots descartar definitivament.\n\nFes servir aquesta tècnica quan totes les altres s\'hagin esgotat. És més lenta i requereix portar un registre més que detectar patrons, però pot descobrir moviments que els patrons passen per alt. Sovint n\'hi ha prou amb una eliminació perquè les tècniques fàcils tornin a funcionar; algunes posicions encara necessiten una cerca més profunda."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Busca dues caselles amb els mateixos dos candidats, per exemple {3,7}, que no es vegin entre si: normalment són lluny l\'una de l\'altra.\n\nAra busca una fila, columna o bloc on el 7 només tingui dues caselles possibles, una de les quals sigui vista per la primera casella de la teva parella i l\'altra per la segona. Aquest és l\'enllaç.\n\nUna d\'aquestes dues caselles conté el 7. Sigui quina sigui, la casella de la teva parella que la veu no pot ser 7, així que ha de ser 3. No saps quin extrem és el 3, només que un ho és, i això és suficient per descartar el 3 de totes les caselles que veuen tots dos extrems.\n\nLa part difícil és l\'enllaç, així que busca\'l a l\'inrevés: primer marca les unitats on un dígit només té dues posicions possibles i després busca una parella coincident a banda i banda."</string>
+    <string name="msg_finished_05343e98" formatted="false">"acabat"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Prem el disparador quan la graella estigui ben alineada dins l\'enquadrament, sense distorsió de perspectiva, i estable. El botó funciona sempre, en qualsevol cas."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Enquadra tota la graella."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Enquadra tota la graella"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"cinc"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Segueix un recorregut on cada moviment es basa en l\'anterior."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Segueix la demostració completa en ordre"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Segueix aquesta cadena de caselles amb dos candidats: si %1$s no és %2$s, cada casella de la cadena queda forçada per l\'anterior, i %3$s acaba sent %4$s. Per tant, un dels dos extrems conté %5$s, cosa que el descarta de totes les caselles que veuen tots dos extrems."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Cadena de forçament"</string>
+    <string name="msg_four_04efaf08" formatted="false">"quatre"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Quatre caselles en dues files, dues columnes i dos blocs no poden tenir totes els mateixos dos candidats, o el sudoku tindria dues solucions."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia ha confirmat la supressió, però aquest telèfon no ha pogut eliminar el rebut local. Torna-ho a provar per acabar la neteja local."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia suprimirà aquesta revisió de l\'informe i la seva còpia privada d\'entrenament. Les correccions futures poden crear un informe nou segons la teva configuració de compartició. Un model que ja s\'hi hagi entrenat pot conservar els canvis apresos."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Recorregut complet"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Les futures lectures incertes enviaran la foto rectificada del sudoku, els resultats del reconeixement i les correccions a Freevia per a l\'anàlisi i l\'entrenament. Les còpies d\'entrenament es conserven fins que les suprimeixis des de Rebuts d\'enviament; un model entrenat pot conservar els canvis apresos. Si ja hi ha un sudoku amb lectura incerta obert, s\'enviarà ara. Pots desactivar-ho a Configuració."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Suau"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Els reflexos esborren les línies: inclina el full per allunyar-lo de la llum"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ImatgeGrisa(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Les caselles grises contenen marques de llapis, que l\'app ignora. La barra sota un dígit indica el grau de confiança de la lectura. Toca una casella per veure\'n els detalls."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Escrit a mà"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Difícil"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Ocult"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Parella oculta"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Quadruplet ocult"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Únic ocult"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Triplet ocult"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Amaga l\'evidència anterior"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Amaga com detectar-ne un"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", pista %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Pista"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Demostració de la pista"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Raonament de la pista"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"No et moguis..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"No et moguis, o toca el disparador"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"No et moguis mentre la càmera enfoca..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mantén el telèfon paral·lel al full"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mantén el telèfon paral·lel al full, damunt del sudoku."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mantén el telèfon paral·lel al full, damunt del sudoku"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horitzontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Com detectar-ne un"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCom hi arribem:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Busca caselles amb exactament dos candidats: una ala Y consta de tres d\'aquestes caselles i res més.\n\nPren-ne una com a pivot, per exemple {2,5}. Busca una casella que vegi amb {2,9}, i una altra que vegi amb {5,9}. El pivot és 2 o 5. Si és 2, la primera pinça ha de ser 9; si és 5, la segona ha de ser 9. En qualsevol cas, apareix un 9 en una de les pinces: no saps quina, i no et cal saber-ho.\n\nPer tant, cap casella que vegi totes dues pinces no pot ser 9. Aquestes caselles solen ser els dos vèrtexs que completen el rectangle."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", %1$s hipotètic, no és una resposta introduïda"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Si %1$s dígits d\'una fila, columna o bloc només poden anar a les mateixes %2$s caselles, aquestes caselles no poden contenir res més."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Si %1$s caselles d\'una fila, columna o bloc comparteixen exactament %2$s candidats entre totes, aquests dígits pertanyen a aquestes caselles i a cap altra de la unitat."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Si un dígit té dues posicions possibles en una fila i dues en una columna, i una de cadascuna comparteix bloc, una de les altres dues l\'ha de contenir."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Si un dígit té dues posicions possibles en cadascuna de dues files i comparteixen una columna, una de les altres dues posicions l\'ha de contenir."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Si totes les posicions possibles d\'un dígit en una línia són dins d\'un mateix bloc, es pot descartar aquest dígit de la resta del bloc."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Si les úniques posicions possibles d\'un dígit en %1$s files són a les mateixes %2$s columnes, es pot descartar de la resta d\'aquestes columnes, i el mateix passa intercanviant files i columnes."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Si les úniques posicions possibles d\'un dígit dins d\'un bloc comparteixen una línia, es pot descartar aquest dígit de la resta de la línia."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Si suposar un dígit porta a una casella que no pot contenir res, aquell dígit era incorrecte."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"les dimensions de la imatge han de ser positives"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"En una cadena de caselles que tenen totes els mateixos dos candidats, els dos extrems d\'una cadena de longitud senar contenen dígits diferents."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"En aquestes %1$s unitats (%2$s), %3$s només pot anar en aquestes %4$s unitats (%5$s). Entre totes les ocupen totes, així que es pot descartar %6$s de la resta d\'aquestes unitats (%7$s)."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"En aquestes %1$s columnes, %2$s només pot anar en aquestes %3$s files. Entre totes les ocupen totes, de manera que es pot descartar %4$s de la resta de caselles d\'aquestes files."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"En aquestes %1$s files, %2$s només pot anar en aquestes %3$s columnes. Entre totes les ocupen totes, de manera que es pot descartar %4$s de la resta de caselles d\'aquestes columnes."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"En aquestes dues unitats (%1$s), %2$s només té dues posicions possibles a cadascuna, i %3$s i %4$s comparteixen una unitat (%5$s), així que no poden ser totes dues %6$s. Per tant, una de les caselles %7$s i %8$s ho és, cosa que descarta %9$s de totes les caselles que les veuen totes dues."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"En aquestes dues columnes, %1$s només té dues posicions possibles a cadascuna, i %2$s i %3$s comparteixen fila; per tant, no poden ser tots dos %4$s. Així doncs, un de %5$s i %6$s ho és, cosa que descarta %7$s de totes les caselles que veuen tots dos."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"En aquestes dues files, %1$s només té dues posicions possibles a cadascuna, i %2$s i %3$s comparteixen columna; per tant, no poden ser tots dos %4$s. Així doncs, un de %5$s i %6$s ho és, cosa que descarta %7$s de totes les caselles que veuen tots dos."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"En aquesta unitat (%1$s), %2$s només pot anar en aquestes %3$s caselles, així que queden reservades per a aquests dígits. Això en descarta %4$s."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"En aquesta unitat (%1$s), %2$s només pot anar dins d\'un mateix bloc. Per tant, %3$s és en aquest bloc sobre aquesta línia (%4$s) i es pot descartar de la resta del bloc."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"En aquest bloc, %1$s només pot anar en aquestes %2$s caselles, de manera que queden reservades. Això en descarta %3$s."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"En aquesta columna, %1$s només pot anar en aquestes %2$s caselles, de manera que queden reservades. Això en descarta %3$s."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"En aquesta fila, %1$s només pot anar en aquestes %2$s caselles, de manera que queden reservades. Això en descarta %3$s."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Inclou les seves fotos, lectures i correccions. Desactiva-ho a Configuració."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Dins d\'un sol bloc, busca un dígit que només pugui anar en dues o tres caselles i comprova si totes són a la mateixa fila o a la mateixa columna. Si és així, el dígit és segur en algun lloc d\'aquella línia: no saps on, però saps que és dins d\'aquest bloc. Per tant, no pot ser en cap altre lloc de la mateixa línia fora del bloc.\n\nAixò no col·loca cap dígit per si sol. Elimina candidats perquè aparegui un únic en algun altre lloc."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Dins d\'aquest bloc, %1$s només pot anar en aquesta línia (%2$s). Per tant, %3$s és en algun lloc d\'aquí i es pot descartar de la resta de la línia (%4$s)."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problema o idea"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Aquí s\'aplica en %1$s llocs. Avança per recórrer-los."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Aquí s\'aplica en un lloc. Avança per veure\'l."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"No s\'aplica enlloc en aquesta posició."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"És l\'única posició restant per a %1$s a la unitat ressaltada (%2$s)."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"És la casella encerclada.\n\nPrem Pista de nou per veure el dígit."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Medusa"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Conserva"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Mantén curtes les cadenes de forçament"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Idioma"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Llicències"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Busca en una fila, columna o bloc caselles amb pocs candidats restants. Pren-ne %1$s i reuneix-ne els candidats. Si el conjunt conté exactament %2$s dígits, aquests %3$s dígits queden reservats: han d\'anar en aquestes %4$s caselles en algun ordre, encara que no puguis dir quin va on.\n\nAmb això n\'hi ha prou. Totes les altres caselles de la unitat poden eliminar aquests dígits, i normalment una d\'aquestes caselles passa a ser un únic.\n\nNo cal que totes les caselles tinguin els mateixos candidats: {2,7}, {2,9} i {7,9} formen un triplet perfectament vàlid, i és el que sovint passa desapercebut."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Busca caselles amb els mateixos dos candidats, per exemple {4,9}, que formin una cadena on cadascuna vegi la següent. Amb tres no n\'hi ha prou; en calen almenys quatre.\n\nPinta-les amb colors alterns a mesura que avances. Com que cada casella veu la següent, dues veïnes no poden contenir el mateix dígit, així que la cadena és 4, 9, 4, 9 de principi a fi, o bé 9, 4, 9, 4, i no pots saber quina de les dues és.\n\nEn qualsevol cas, dues caselles de colors oposats contenen dígits diferents: una és el 4 i l\'altra és el 9. Per tant, qualsevol casella que les vegi totes dues no pot ser cap dels dos i perd tots dos candidats alhora.\n\nEl patró és fàcil de detectar precisament perquè totes les seves caselles tenen el mateix aspecte. Segueix les parelles idèntiques per la graella i mira on es toquen."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Busca tres caselles amb els mateixos dos candidats, per exemple {1,6}, situades en tres vèrtexs d\'un rectangle. El rectangle ha d\'ocupar exactament dos blocs: dues files i dues columnes que travessen dos blocs, no quatre.\n\nAra mira el quart vèrtex. Si també contingués només 1 i 6, el sudoku tindria dues solucions: podries intercanviar els 1 i els 6 al voltant del rectangle i tota la resta continuaria funcionant. Un sudoku ben plantejat té una única solució, així que el quart vèrtex ha de contenir un altre dígit: els altres candidats es mantenen i s\'eliminen 1 i 6.\n\nAquest és l\'únic argument del repertori que tracta de qui ha creat el sudoku més que de la graella. És vàlid en un sudoku publicat i no serveix en un que ja hagis omplert incorrectament, perquè aleshores potser no hi ha cap solució que pugui ser única."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Mira aquest bloc. Segueix el contorn fins a la casella que explicarà aquesta pista."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Marques"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Moderat"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Més"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Cal més llum"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Hi ha més d\'una solució, així que s\'ha omès un dígit imprès. Prem Resol per veure les solucions i on difereixen."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Allunya\'t"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Acosta\'t"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Acosta\'t: la graella és massa petita per llegir-la."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Nu"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Parella nua"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Quadruplet nu"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Únic nu"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Triplet nu"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Indica el nom de la tècnica i mostra les caselles que la demostren, en lloc de donar només el dígit."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"calen com a mínim 4 punts, però se n\'han rebut %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Cal confirmació"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Sudoku nou"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Conseqüència següent"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Pas següent"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"No s’adjunten imatges automàticament. Els informes i els fitxers adjunts enviats aquí són públics. Envia a info@freevia.org els exemples que prefereixis compartir en privat."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"No s\'ha rebutjat cap fotografia des de l\'última instal·lació de l\'app."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"No hi ha diagnòstics d\'escaneig disponibles."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Aquí no s\'aplica cap tècnica"</string>
+    <string name="msg_none_140bedbf" formatted="false">"cap"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Cap no posa un dígit en una casella: eliminen candidats, que és com s\'obre camí en un sudoku difícil."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Ara mateix no n\'hi ha cap al teu sudoku."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"no és un fitxer de model de xifres"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"No s\'ha llegit amb prou confiança: l\'estimació més probable és %1$s %2$s a %3$s. Introdueix tu mateix el contingut d\'aquesta casella."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Encara no es reconeix com una graella de nou per nou: prova d\'omplir l\'enquadrament només amb la graella, o simplement fes la foto"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"no iniciat"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"No s\'ha pogut enviar res des d\'aquest telèfon."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"No queda res per resoldre."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Aquí no es pot deduir res més amb les tècniques que coneix aquesta app."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"res d\'inusual"</string>
+    <string name="msg_ok_565339bc" formatted="false">"D\'acord"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"un"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Una casella semblava un dígit imprès, però no ho és."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"S\'ha corregit automàticament un dígit imprès."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"una casella"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Aquí només pot anar %1$s: tots els altres dígits ja apareixen en aquesta fila, columna o bloc."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Aquí només hi pot anar %1$s. Les caselles ressaltades ja contenen %2$s dels altres vuit dígits; %3$s s\'ha descartat d\'aquesta casella abans, i no per res que es pugui veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Aquí només hi pot anar el %1$s. Les caselles ressaltades ja contenen quatre dels altres vuit dígits; %2$s ja s\'havien descartat d\'aquesta casella abans, no per res que puguis veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Aquí només hi pot anar el %1$s. Les caselles ressaltades ja contenen sis dels altres vuit dígits; %2$s ja s\'havien descartat d\'aquesta casella abans, no per res que puguis veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Aquí només hi pot anar el %1$s. Les caselles ressaltades ja contenen un dels altres vuit dígits; %2$s ja s\'havien descartat d\'aquesta casella abans, no per res que puguis veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Aquí només hi pot anar el %1$s. Les caselles ressaltades ja contenen set dels altres vuit dígits; %2$s ja s\'havia descartat d\'aquesta casella abans, no per res que puguis veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Aquí només hi pot anar el %1$s. Les caselles ressaltades ja contenen cinc dels altres vuit dígits; %2$s ja s\'havien descartat d\'aquesta casella abans, no per res que puguis veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Aquí només pot anar %1$s. Les caselles ressaltades ocupen %2$s dels altres vuit dígits; %3$s %4$s descartat d\'aquesta casella abans, i no per res que puguis veure al voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Aquí només hi pot anar el %1$s. Les caselles ressaltades ja contenen dos dels altres vuit dígits; %2$s ja s\'havien descartat d\'aquesta casella abans, no per res que puguis veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Aquí només hi pot anar %1$s. Les caselles ressaltades ja contenen %2$s dels altres vuit dígits; %3$s s\'han descartat d\'aquesta casella abans, i no per res que es pugui veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Aquí només hi pot anar el %1$s. Les caselles ressaltades ja contenen tres dels altres vuit dígits; %2$s ja s\'havien descartat d\'aquesta casella abans, no per res que puguis veure al seu voltant."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Aquí només pot anar %1$s. Els altres vuit dígits queden exclosos per caselles plenes o candidats únics forçats en aquesta fila, columna o bloc."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Aquí només pot anar %1$s, tot i que res del voltant no mostra per què: els altres vuit dígits s\'han descartat d\'aquesta casella mitjançant raonaments anteriors, i no perquè estiguin escrits a la seva fila, columna o bloc."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Només s\'han trobat %1$s dígits impresos, massa pocs per a un sudoku."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"només s\'admeten girs de quart de volta, no %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Obre un esborrany al navegador amb la versió de l\'app, el model del telèfon, la versió d\'Android i els diagnòstics recents d\'escaneig ja emplenats. Afegeix-hi tu mateix una descripció completa i les captures de pantalla pertinents.\n\nCal iniciar sessió a GitHub. Pots revisar i editar l\'esborrany abans d\'enviar-lo. Els informes enviats i els fitxers adjunts són públics. No s\'adjunta cap fotografia automàticament."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Obre la configuració de l\'app"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Obre GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Avisos de codi obert"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Obre «Per què aquesta casella?» per veure l\'evidència de la col·locació final, o tria un candidat descartat per seguir-ne la demostració."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Llicència Apache 2.0. S\'utilitza per trobar i rectificar la graella.\n\nAndroidX, Jetpack Compose i CameraX - Llicència Apache 2.0.\n\nKotlin - Llicència Apache 2.0.\n\nEl reconeixedor de dígits s\'ha entrenat amb la base de dades MNIST de dígits manuscrits de LeCun, Cortes i Burges, juntament amb dígits generats a partir de tipus de lletra oberts del sistema i dígits dibuixats mitjançant programació."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"No s\'han pogut carregar les biblioteques natives d\'OpenCV"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografia un altre sudoku."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Les fotografies que conserves es desen a l\'emmagatzematge privat d\'aquesta app i s\'eliminen quan les suprimeixes o desinstal·les l\'app."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Fotos de les quals l\'app no ha pogut extreure un sudoku. Envia\'n una perquè es pugui examinar."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Tria un dígit i revisa les files per trobar aquelles on només li queden exactament dues caselles possibles. Pren dues d\'aquestes files i mira si una de les caselles de cadascuna és a la mateixa columna.\n\nSi és així, aquestes dues caselles són a la mateixa columna i no poden contenir totes dues el dígit. Per tant, almenys un dels extrems llunyans el conté: les dues caselles de l\'altre costat. No saps quin, i no et cal saber-ho: qualsevol casella que vegi tots dos extrems llunyans pot eliminar el dígit.\n\nDesprés repeteix-ho amb columnes en lloc de files. La forma és la d\'un edifici alt amb un de baix al costat; d\'aquí ve el nom i així el reconeixeràs quan n\'hagis vist uns quants."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Tria un dígit. Busca una fila on tingui exactament dues posicions possibles i una columna on també en tingui exactament dues. Ara comprova si una casella de la fila i una de la columna són al mateix bloc.\n\nSi és així, aquestes dues no poden contenir totes dues el dígit: un bloc, un dígit. Per tant, almenys un dels dos extrems restants el conté, i qualsevol casella que vegi tots dos extrems pot eliminar el dígit.\n\nAquesta tècnica passa desapercebuda perquè no hi ha res per alinear: les quatre caselles formen una figura irregular, i l\'únic que les uneix és el bloc que comparteixen els dos extrems interiors."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Tria una casella buida i repassa de l\'1 al 9, descartant qualsevol dígit que ja aparegui a la seva fila, columna o bloc. Si en queda exactament un, va allà.\n\nAquesta és la tècnica que totes les altres intenten preparar. Totes les més difícils serveixen per reduir alguna casella a un únic candidat, així que, quan una tècnica més difícil dona resultat, busca aquesta a continuació."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Tria un dígit i ignora tots els altres. Repassa les files i anota aquelles on al dígit només li queden dues o tres caselles possibles. Busca %1$s d\'aquestes files amb les caselles alineades a les mateixes %2$s columnes.\n\nSi les trobes, cadascuna d\'aquestes %3$s files ha de posar el dígit en una d\'aquelles columnes, i dues files no poden utilitzar la mateixa columna. Per tant, entre totes ocupen el dígit a les %4$s columnes, i totes les altres caselles d\'aquestes columnes el poden eliminar.\n\nDesprés repeteix tot el procés intercanviant columnes i files. La meitat d\'aquests patrons es troben d\'aquesta segona manera, i és la meitat que la majoria de gent mai no busca."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Posa %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Posa %1$s a la fila %2$s, columna %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Posa %1$s a la teva casella marcada amb un contorn."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Adjunta les captures de pantalla pertinents amb el control d\'adjunts de GitHub: el sudoku, els dígits reconeguts, el resultat de Comprova o l\'etapa de la pista que mostra el problema. Inclou els resultats esperats i reals quan sigui útil."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Si us plau, suprimiu els meus enviaments de reconeixement de Sudoku Buddy. Identificadors dels rebuts: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Substitueix aquest text per una descripció completa del problema o de la idea. Dona a aquest informe un títol breu i descriptiu."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Apunta la càmera a un sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Apunta la càmera a un sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Apunta la càmera a un sudoku en paper. L\'app llegeix els dígits impresos i tot el que hi has escrit, el resol i et pot donar una pista, comprovar les respostes o mostrar tota la solució."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Parella apuntadora"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"ENVIA"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"S\'està preparant el sudoku…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Anterior"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Pas anterior"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Imprès"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Política de privadesa"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Emmagatzematge de sudokus"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Sudokus"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Els sudokus es llegeixen i es resolen en aquest telèfon. Si envies una lectura incerta o actives la compartició automàtica, la foto del sudoku, les lectures originals, els indicadors d\'incertesa i les teves correccions s\'envien de manera segura a Freevia per analitzar el reconeixement i fer entrenament privat. Els informes no inclouen el model del dispositiu ni dades de diagnòstic. La compartició automàtica és opcional; no hi ha comptes, analítiques habituals d\'ús ni seguiment publicitari. Les còpies d\'entrenament es poden suprimir amb el rebut, tot i que un model ja entrenat pot conservar els canvis apresos. Fes servir Rebuts d\'enviament a Configuració per suprimir un informe."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Els sudokus fotografiats per fer proves provenen de sudoku.cba.si. Aquesta app no hi està afiliada."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Els sudokus que fotografies es desen aquí perquè els puguis reprendre més endavant."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Lectura"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Interpretat com un %1$s manuscrit, amb una certesa de %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Interpretat com un %1$s imprès, amb una certesa de %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Interpretat com a buit: no s\'hi ha trobat tinta."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Interpretat com a anotacions de candidats a llapis i ignorat."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Lectura revisada."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Lectura enviada. Gràcies!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnòstics recents d\'escaneig (emplenat prèviament)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"El reconeixement pot cometre errors, sobretot amb l\'escriptura a mà. Fes servir Llegir per comparar les xifres reconegudes amb la foto i toca qualsevol casella per corregir-la. L\'app marca les lectures incertes perquè les revisis; una lectura amb molta certesa també pot ser incorrecta."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Rebutja la hipòtesi"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Parelles remotes"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Elimina %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nElimina %1$s de "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Eliminat"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Reprodueix el raonament"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Informa d\'un error o proposa una idea a GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Torna a provar la càmera"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Torna al pas %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Mostra l\'explicació"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Revisa o envia la lectura"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Revisa la lectura"</string>
+    <string name="msg_right_883361d5" formatted="false">"Correcte"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Recorregut complet. Torna enrere per revisar qualsevol moviment o prova de fer els passos pel teu compte."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"fila %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Fila %1$s, columna %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Fila %1$s, columna %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"fila $1, columna $2"</string>
+    <string name="msg_row_634768da" formatted="false">"fila"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"files"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s descartat"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"No s\'han pogut llegir les dades de diagnòstic de l\'escaneig."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Captures de pantalla o exemples de sudokus"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Segona possibilitat: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Selecciona per practicar"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Selecció: fila %1$s, columna %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Envia dades de diagnòstic (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Envia dades de diagnòstic"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Envia aquests escaneigs"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Envia aquesta foto"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Configuració"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"set"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Comparteix automàticament les lectures incertes"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Vols compartir automàticament les lectures incertes?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Mostra la contradicció"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Mostra\'m tots els %1$s del teu sudoku"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Mostra\'m el del teu sudoku"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Coloració simple"</string>
+    <string name="msg_six_44778d82" formatted="false">"sis"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Gratacel"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", solució %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Resol"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Resolt, i totes les respostes són correctes."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Resposta assistida pel resolutor: posa %1$s a %2$s. Els candidats són %3$s. Les tècniques admeses per l\'app no han trobat cap moviment des d\'aquesta posició. La cerca ha trobat %4$s en la solució única; no hi ha disponible una demostració detallada de les branques de cerca."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nResposta amb ajuda del resolutor: les tècniques que admet l\'app no han trobat cap moviment. No hi ha cap demostració detallada disponible."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminació assistida pel resolutor: una cerca descarta %1$s a la casella ressaltada, però l\'app no ha pogut produir una seqüència breu de contradicció per mostrar-la. No hi ha disponible una demostració detallada."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Algunes caselles poden contenir anotacions en lloc d\'una xifra completa."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Algunes xifres no s\'han llegit amb prou certesa."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"S\'ha produït un error en llegir aquesta foto."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Casella"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nCandidats inicials: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Pas %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Posa la graella de cara a la càmera"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Estratègies"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Rebut d\'enviament"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"El rebut d\'enviament no és vàlid."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Rebuts d\'enviament (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Rebuts d\'enviament"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Falta %1$s a la resposta de l\'enviament."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"L\'estat de la resposta de l\'enviament no és vàlid."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"El servei d\'enviament no està configurat."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"El servei d\'enviament ha retornat HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Els enviaments no estan disponibles en aquesta compilació."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Envia"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Envia automàticament les futures lectures incertes"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Envia la lectura"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Envia la lectura incerta per analitzar-la"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Envia l\'actualització"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Enviat"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Enviant…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Dades de diagnòstic de Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Comentaris sobre Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy és publicat per Freevia. Contacte: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy llegeix sudokus amb la càmera, de manera que necessita accés a la càmera. El reconeixement i l\'historial de sudokus es queden al telèfon. Si decideixes enviar una lectura incerta, la foto i els resultats s\'envien de manera segura a Freevia per millorar el reconeixement. La compartició automàtica és opcional i es pot desactivar a Configuració."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Escaneig de Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Escaneigs de Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"El codi font de Sudoku Buddy té llicència Apache License 2.0. La marca Freevia està subjecta a drets de marca separats."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"El sudoku és un tipus de passatemps de domini públic. Aquesta app resol sudokus que ja tens; no reprodueix ni distribueix els sudokus de ningú."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", evidència de suport"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Suposa que la casella marcada conté %1$s. Les xifres numerades són hipotètiques."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Suposem que aquesta casella fos %1$s. Segueix les fletxes en ordre: les col·locacions anteriors determinen el valor de cada casella, perquè aquest dígit és l\'únic que encara hi pot anar o perquè aquesta casella és l\'únic lloc on encara pot anar el dígit.\n\nAixò deixa la unitat en vermell sense cap lloc on posar %2$s. Els %3$s que hi ha marcats són les posicions on podria haver anat, i cadascuna és una casella que una de les fletxes acaba d\'ocupar. No pot haver-hi una unitat sense lloc per a un dígit; per tant, aquesta casella no és %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Suposa que aquesta casella fos %1$s. Segueix les fletxes en ordre: cada casella queda determinada per les col·locacions anteriors, perquè aquesta xifra és l\'única que encara pot contenir o perquè aquesta casella és l\'únic lloc on encara pot anar la xifra. La casella en vermell es queda sense cap xifra possible, cosa que no pot passar; per tant, no és %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Suposem que aquesta casella fos %1$s. Segueix les fletxes en ordre: les col·locacions anteriors determinen el valor de cada casella, perquè aquest dígit és l\'únic que encara hi pot anar o perquè aquesta casella és l\'únic lloc on encara pot anar el dígit.\n\nAixò deixa la fila en vermell sense cap lloc on posar %2$s. Els %3$s que hi ha marcats són les posicions on podria haver anat, i cadascuna és una casella que una de les fletxes acaba d\'ocupar. No pot haver-hi una fila sense lloc per a un dígit; per tant, aquesta casella no és %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Suposem que aquesta casella fos %1$s. Segueix les fletxes en ordre: les col·locacions anteriors determinen el valor de cada casella, perquè aquest dígit és l\'únic que encara hi pot anar o perquè aquesta casella és l\'únic lloc on encara pot anar el dígit.\n\nAixò deixa el bloc en vermell sense cap lloc on posar %2$s. Els %3$s que hi ha marcats són les posicions on podria haver anat, i cadascuna és una casella que una de les fletxes acaba d\'ocupar. No pot haver-hi un bloc sense lloc per a un dígit; per tant, aquesta casella no és %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Suposa que aquesta casella fos %1$s. Segueix les fletxes en ordre: cada casella queda determinada per les col·locacions anteriors, perquè aquesta xifra és l\'única que encara pot contenir o perquè aquesta casella és l\'únic lloc on encara pot anar la xifra.\n\nAixò deixa %2$s, en vermell, sense cap lloc on posar %3$s. Els %4$s que hi ha marcats són els llocs on podria haver anat, i cadascun és una casella que una de les fletxes acaba d\'ocupar. No pot haver-hi cap %5$s sense lloc per a una xifra; per tant, no és %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Suposem que aquesta casella fos %1$s. Segueix les fletxes en ordre: les col·locacions anteriors determinen el valor de cada casella, perquè aquest dígit és l\'únic que encara hi pot anar o perquè aquesta casella és l\'únic lloc on encara pot anar el dígit.\n\nAixò deixa la columna en vermell sense cap lloc on posar %2$s. Els %3$s que hi ha marcats són les posicions on podria haver anat, i cadascuna és una casella que una de les fletxes acaba d\'ocupar. No pot haver-hi una columna sense lloc per a un dígit; per tant, aquesta casella no és %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Canvia a Després per veure el moviment i les seves conseqüències a la graella."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Peix espasa"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Fes una foto nova"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Fes una altra foto"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Tria una xifra i marca cada unitat on només li quedin dues caselles possibles. Aquestes dues formen un balancí: una conté la xifra i l\'altra no.\n\nComença on vulguis i pinta una casella, per exemple, de blau. Pinta de verd la seva parella del balancí, després de blau la parella d\'aquesta, i continua fins que s\'acabi la cadena. O totes les caselles blaves contenen la xifra o totes les verdes; no pots saber quines, i això és suficient per a dues coses.\n\nPrimer: si apareixen dues caselles del mateix color en una fila, columna o bloc, aquest color és impossible; per tant, s\'elimina la xifra de totes les caselles d\'aquest color i les de l\'altre color contenen la resposta.\n\nSegon: qualsevol casella de fora de la cadena que vegi una casella blava i una de verda pot descartar la xifra, perquè una d\'aquestes dues la conté, sigui quin sigui el resultat de la cadena.\n\nAmb llapis és lent, però val la pena: una sola coloració sovint elimina una xifra de mitja graella."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Treballa amb una xifra i una unitat cada vegada; per exemple, on pot anar un 4 en aquest bloc? Descarta totes les caselles de la unitat que ja tenen una xifra o que veuen un 4 a la seva fila o columna. Si només queda una casella, el 4 hi va.\n\nEl parany és que no ho pots veure mirant la casella: també pot admetre cinc altres xifres, de manera que res no sembla obligat. Mira la xifra en lloc de la casella i ho veuràs de seguida."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Fes una foto"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Fes la foto automàticament"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Toca una casella marcada per revisar-la o confirma que totes les lectures són correctes."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Primer toca una casella de la graella."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Prova %1$s com a hipòtesi a la casella marcada. No és una resposta. Segueix les conseqüències per veure per què falla."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Prova la hipòtesi"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Gràcies per ajudar a millorar el reconeixement. La foto del sudoku, les lectures i les correccions es faran servir per a anàlisi i entrenament."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Aquest també és un moviment vàlid de %1$s. Aquest recorregut mostra un altre moviment; compara\'n la demostració a continuació."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Aquest no és el moviment seleccionat per a aquest pas. Pot haver-hi altres moviments vàlids; torna a mirar-ho o mostra l\'explicació d\'aquest pas."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"És correcte"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Aquesta és la resta del sudoku. %1$s caselles necessiten respostes assistides pel resolutor perquè les tècniques admeses per l\'app no han trobat cap moviment. No hi ha disponibles les demostracions detallades de les cerques."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Aquesta és la resta del sudoku. Una casella necessita una resposta assistida pel resolutor perquè les tècniques admeses per l\'app no han trobat cap moviment. No hi ha disponible la demostració detallada de la cerca."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Aquesta és la resta del sudoku, de principi a fi."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" No s\'ha pogut conservar aquesta foto, així que no hi ha res per enviar."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Aquesta casella admet %1$s. Busca el moviment justificat per la tècnica d\'aquest pas o mostra\'n l\'explicació."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Aquesta casella ja està plena. Tria una casella buida."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"S\'ha rebutjat la hipòtesi. Tornem als candidats reals i descartem %1$s de la casella marcada. S\'esborren les xifres hipotètiques."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"La càmera no ha pogut fer aquesta foto."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"La càmera no està disponible. Tanca les altres apps de càmera i torna-ho a provar."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"l\'altre"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"La foto de %1$s i tot el que se n\'ha llegit se suprimiran d\'aquest telèfon. Aquesta acció no es pot desfer."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" La foto és a la teva llista de sudokus, a «No s\'ha pogut llegir»."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"El pivot és %1$s o %2$s. En qualsevol cas, una de les altres dues caselles queda determinada com a %3$s, de manera que cap casella que les vegi totes dues pot ser %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"És la parella apuntadora llegida al revés. Tria una fila o columna i una xifra que encara hi necessiti un lloc. Marca totes les caselles d\'aquesta línia que podrien contenir la xifra. Si totes són dins d\'un mateix bloc, la xifra ha de ser a la part de la línia que pertany a aquest bloc; per tant, no pot ser enlloc més del bloc, incloses les dues files o columnes que no miraves.\n\nCom la parella apuntadora, això no col·loca cap xifra per si sol; deixa espai per a una tècnica que sí que ho fa."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Les xifres impreses no formen un sudoku resoluble."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nEls candidats restants a %1$s són {%2$s}. Posa %3$s a la fila %4$s, columna %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"L\'informe és massa gran per enviar-lo."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"És l\'ala Y amb un candidat més al pivot. Busca una casella amb exactament tres candidats, per exemple {1,4,7}, que vegi dues caselles amb dos candidats: una amb {1,7} i una amb {4,7}.\n\nAra totes tres poden ser 7, i una ho ha de ser. Per tant, per descartar el 7 d\'una casella, aquesta ha de veure totes tres, no només les dues pinces; a la pràctica, això vol dir que es troba al mateix bloc que el pivot i en una línia amb una pinça.\n\nPermet menys eliminacions que una ala Y i és més fàcil passar-la per alt pel mateix motiu: el pivot no destaca."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Hi ha una casella que pots omplir al bloc ressaltat.\n\nPrem Pista de nou per saber quina tècnica la troba."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Aquí ja no queda res per raonar."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Aquestes %1$s caselles només contenen %2$s i %3$s, i cadascuna veu la següent, de manera que s\'alternen al llarg de tota la cadena. %4$s i %5$s estan separades per un nombre senar d\'enllaços i, per tant, contenen xifres diferents; això descarta %6$s de qualsevol casella que les vegi totes dues."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Aquestes %1$s caselles només admeten %2$s entre totes, de manera que aquestes xifres les omplen en algun ordre. Això descarta %3$s de la resta d\'aquest %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Aquestes %1$s caselles només admeten %2$s entre totes, de manera que aquests dígits les omplen en algun ordre. Això descarta %3$s de la resta d\'aquesta fila."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Aquestes %1$s caselles només admeten %2$s entre totes, de manera que aquests dígits les omplen en algun ordre. Això descarta %3$s de la resta d\'aquesta columna."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Aquestes %1$s caselles només admeten %2$s entre totes, de manera que aquests dígits les omplen en algun ordre. Això descarta %3$s de la resta d\'aquest bloc."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Aquests són els candidats inicials de la teva casella. Traça explica quines possibilitats es poden descartar."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Aquestes xifres no poden formar un sudoku i hi ha massa errors per saber quins són. Toca qualsevol casella per corregir-ne la lectura o torna a fer la foto."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Aquestes xifres no poden formar un sudoku. Canviar les %1$s caselles encerclades ho arreglaria; toca\'n una per corregir-ne la lectura."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Aquestes xifres no poden formar un sudoku. Canviar la casella encerclada ho arreglaria; toca-la per corregir-ne la lectura."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Aquestes xifres no formen un sudoku, de manera que una s\'ha llegit malament. Prem Resol per veure quines caselles cal corregir."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Aquestes quatre caselles formen un rectangle entre dos blocs, i tres només contenen %1$s. Si %2$s també només contingués aquestes dues xifres, es podrien intercanviar al voltant del rectangle i el sudoku tindria dues solucions. Només en té una; per tant, %3$s ha de contenir una altra xifra i s\'elimina %4$s."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"No arriben fins al final: alguna cosa ha superat del tot l\'app."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Això no omple cap casella. Descarta %1$s de %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Això no omple cap casella. Descarta el %1$s de %2$s caselles."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Això no omple cap casella. Descarta el %1$s d\'una casella."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nAquesta és la primera de %1$s deduccions que porten a la resposta."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Aquesta demostració explica una pista, incloses les eliminacions de candidats que porten a la resposta. Avança pas a pas per seguir el raonament a la graella i després continua amb el recorregut complet."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"No s\'ha pogut preparar aquest sudoku."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"No s\'ha pogut desar aquest sudoku. Encara el pots fer servir ara. Allibera espai d\'emmagatzematge abans de fer una altra foto."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Aquest sudoku té més d\'una solució, de manera que probablement no s\'ha detectat una xifra impresa. Es mostra la solució %1$s de %2$s; prem Resol de nou per veure la següent. Les caselles encerclades difereixen entre les solucions mostrades."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"No s\'ha pogut obrir la foto d\'aquest sudoku."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Aquest raonament descarta %1$s candidats existents "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Aquesta casella pot contenir anotacions de candidats en lloc d\'una xifra completa. Revisa-la."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Aquesta vista inclou eliminacions anteriors de candidats. Obre\'n les proves a continuació per comprovar-les."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tres"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Massa fosc per distingir les línies de la graella"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Traça"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Provat"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Prova-ho pel teu compte"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Activa"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Gira el telèfon perquè el sudoku quedi dret."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tutor"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"dos"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Dues caselles amb la mateixa parella, enllaçades per un balancí en una de les xifres, obliguen l\'altra xifra a ser en una de les dues."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Estel de dues cordes"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rectangle únic"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"unitat"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Il·legible no exposa cap llista CellReading; es conserven les caselles d\'entrada exactes i el resultat."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versió del format del model no admesa"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Incert"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Fes servir l\'idioma del dispositiu"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Aplicant %1$s, toca una casella on es pugui eliminar un candidat i després tria aquesta xifra."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Aplicant %1$s, toca la casella que pots omplir i després tria\'n la xifra."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Molt difícil"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"Ala W"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"va ser"</string>
+    <string name="msg_were_910adfb4" formatted="false">"van ser"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Què esperaves, o com t\'ajudaria la teva idea a resoldre sudokus o a aprendre\'n?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Què ha passat i passos per reproduir-ho (per a errors)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Què fa"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"On"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Per què s\'ha eliminat %1$s de r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Per què"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Per què no %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Per què aquesta casella? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" amb la solució. Fes servir Comprova per examinar-les."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Raona enrere des de la teva casella. Tria una pregunta a continuació."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Treballa xifra per xifra en lloc de casella per casella. Per a una unitat, anota on encara podria anar cada xifra que falta. Després busca %1$s xifres les llistes de les quals, entre totes, només abastin %2$s caselles.\n\nAquestes %3$s xifres han d\'omplir aquestes %4$s caselles, de manera que se\'n poden descartar totes les altres; sovint això converteix immediatament una d\'elles en un candidat únic nu o una parella nua.\n\nÉs la tècnica que costa més a la gent, perquè no hi ha res a veure quan mires les caselles: encara tenen molts candidats. El patró és a les xifres."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Treballa només amb caselles que tinguin exactament dos candidats.\n\nComença en una, per exemple {2,6}, i suposa que no és el 2; aleshores és el 6. Passa a una casella que vegi i que també tingui un 6, per exemple {6,4}: aquesta no pot ser el 6, de manera que és el 4. Passa a una casella que aquesta vegi i que contingui un 4, i continua, amb cada pas determinat per l\'anterior.\n\nSi arribes a una casella amb el 2 com a altra xifra, la que has començat descartant, ja ho tens. O la primera casella era un 2, o la cadena s\'ha complert i l\'última és un 2. Un extrem o l\'altre el conté, de manera que cap casella que vegi tots dos extrems el pot contenir.\n\nFes cadenes curtes. Quatre o cinc caselles es poden trobar amb llapis; més enllà, ja fas feina de registre, i el nom adequat és cadena forçada."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"el costat de treball ha de ser positiu i finit"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"No s\'ha pogut llegir"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Escrit"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Incorrecte"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"Ala X"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"Cadena XY"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"Ala XYZ"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Ala Y"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Has buidat aquesta casella."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Has establert aquesta casella com un %1$s manuscrit."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Has establert aquesta casella com un %1$s imprès."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Els canvis són visibles, però no s\'han pogut desar. Allibera espai d\'emmagatzematge i torna a editar el sudoku."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Les teves fotos i la teva privadesa"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Els teus sudokus"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Els teus sudokus desats"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"La teva casella ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"La teva casella continua contornejada. Les caselles verdes mostren les proves; les xifres ratllades estan descartades."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

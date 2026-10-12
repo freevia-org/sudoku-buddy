@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nAr c\'hombodoù uslinennet eo a brou anezhañ.\n\nPouezit war Sikour adarre evit gwelet peseurt kombod."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s ha %2$s n\'o deus o-daou nemet %3$s ha %4$s. Er %5$s-mañ, ne c\'hall %6$s mont nemet e daou lec\'h, unan gwelet gant pep hini anezho - setu ez eo unan eus an daou-se %7$s, hag ar penn a wel anezhañ a rank bezañ %8$s. Forzh pehini eo, unan eus ar pennoù zo %9$s, ar pezh a ziskart %10$s eus pep kombod a wel an daou."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"E %1$s hag e %2$s, ne c\'hall bezañ nemet %3$s ha %4$s. Er bloc\'h-mañ, n\'en deus %5$s nemet daou lec\'h posupl, ha pep hini anezho a vez gwelet gant unan eus an div gambr-se - unan eus an daou lec\'h-se zo eta %6$s, hag ar penn a wel anezhañ a rank bezañ %7$s. Forzh penaos, unan eus ar pennoù zo %8$s, ar pezh a skarz %9$s eus pep kambr a wel anezho o-daou."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"E %1$s hag e %2$s, ne c\'hall bezañ nemet %3$s ha %4$s. Er bann-mañ, n\'en deus %5$s nemet daou lec\'h posupl, ha pep hini anezho a vez gwelet gant unan eus an div gambr-se - unan eus an daou lec\'h-se zo eta %6$s, hag ar penn a wel anezhañ a rank bezañ %7$s. Forzh penaos, unan eus ar pennoù zo %8$s, ar pezh a skarz %9$s eus pep kambr a wel anezho o-daou."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"E %1$s hag e %2$s, ne c\'hall bezañ nemet %3$s ha %4$s. Er renk-mañ, n\'en deus %5$s nemet daou lec\'h posupl, ha pep hini anezho a vez gwelet gant unan eus an div gambr-se - unan eus an daou lec\'h-se zo eta %6$s, hag ar penn a wel anezhañ a rank bezañ %7$s. Forzh penaos, unan eus ar pennoù zo %8$s, ar pezh a skarz %9$s eus pep kambr a wel anezho o-daou."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s e linenn %2$s, bann %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s e pazenn %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s ne c\'hall enderc\'hel nemet %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s ne c\'hall ket kaout %2$s rak %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s ne c\'hall ket enderc\'hel %2$s rak %3$s ne c\'hall enderc\'hel nemet %4$s er memes bann %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s ne c\'hall ket enderc\'hel %2$s rak %3$s ne c\'hall enderc\'hel nemet %4$s er memes karrez %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s ne c\'hall ket enderc\'hel %2$s rak %3$s ne c\'hall enderc\'hel nemet %4$s er memes renk %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s ne c\'hall ket enderc\'hel %2$s rak %3$s a endalc\'h %4$s er memes karrez %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s ne c\'hall ket enderc\'hel %2$s rak %3$s a endalc\'h %4$s er memes bann %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s ne c\'hall ket enderc\'hel %2$s rak %3$s a endalc\'h %4$s er memes renk %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s a endalc\'h %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s goullo"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, enmoned"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"Rankout a ra %1$s bezañ amañ: homañ eo ar gambr nemeti er bann-mañ %2$s a c\'hall degemer %3$s c\'hoazh.\n\n%4$s\n\n%5$s a aotre %6$s evit ar mare, met pep bann a rank kaout %7$s ur wech hepken. Lakait eta %8$s er renk %9$s, er bann %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s a rank mont amañ: ar c\'hombod nemetañ eo er %2$s %3$s-mañ a c\'hall degemer ur %4$s c\'hoazh.\n\n%5$s\n\n%6$s a aotre %7$s evit poent, met pep %8$s a rank kaout %9$s rik ur wech. Setu lakait %10$s e linenn %11$s, bann %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"Rankout a ra %1$s bezañ amañ: homañ eo ar gambr nemeti er bloc\'h-mañ %2$s a c\'hall degemer %3$s c\'hoazh.\n\n%4$s\n\n%5$s a aotre %6$s evit ar mare, met pep bloc\'h a rank kaout %7$s ur wech hepken. Lakait eta %8$s er renk %9$s, er bann %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"Rankout a ra %1$s bezañ amañ: homañ eo ar gambr nemeti er renk-mañ %2$s a c\'hall degemer %3$s c\'hoazh.\n\n%4$s\n\n%5$s a aotre %6$s evit ar mare, met pep renk a rank kaout %7$s ur wech hepken. Lakait eta %8$s er renk %9$s, er bann %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s en deus daou lec\'h er linenn-mañ ha daou er bann-mañ. %2$s ha %3$s zo en hevelep bloc\'h, setu ne c\'hallont ket bezañ %4$s o-daou - ar pezh a laosk %5$s pe %6$s gant ar sifr, hag a ziskart %7$s eus pep kombod a wel an daou."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s er memes %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s er memes bloc\'h."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s er memes bann."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s er memes renk."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s zo diskartet dija eus ar c\'hombod-se. E gandidated zo "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s zo diskartet gant %2$s, a "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s a zo ezlakaet gant %2$s, na c\'hall enderc\'hel nemet %3$s er memes bann %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s a zo ezlakaet gant %2$s, na c\'hall enderc\'hel nemet %3$s er memes renk %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s a zo ezlakaet gant %2$s, na c\'hall enderc\'hel nemet %3$s er memes karrez %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s a zo ezlakaet gant %2$s, a endalc\'h %3$s er memes karrez %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s a zo ezlakaet gant %2$s, a endalc\'h %3$s er memes bann %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s a zo ezlakaet gant %2$s, a endalc\'h %3$s er memes renk %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s zo rediet er c\'hombod niverennet nevesañ (linenn %2$s, bann %3$s). %4$s Ar bir a heuilh ul lec\'hiadur a gemer perzh; an disoc\'hoù kent a gont ivez."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s a vank er classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s diwar %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s anezho a leugn ur c\'hombod; ar re all a ziskart kandidated da gentañ."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"par %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s moulet, %2$s, %3$s faos"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s moulet, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s moulet"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, sifr moulet orin"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"pevarad %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s luc\'hskeudenn nac\'het, ar re nevesañ da gentañ:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: dilemel %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Niver a garrezioù: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s pazenn zo en hent-mañ, an teknik skoret diaesañ o vezañ ur %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"triad %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s zo bet dilamet eus %2$s gant poellata kent war ar c\'handidated."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s skrivet"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"ur skeudenn %1$sx%2$s he deus ezhomm eus %3$s eizhbit met %4$s zo bet resevet"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"ur c\'hombod ne oa na ur sifr na ur pik"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Ur chadenn a gelligoù gant daou gandidat, a grog hag a echu gant ar memes sifr, a laka ar sifr-se en eil penn pe egile."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Ur sifr n\'en deus nemet ul lec\'h a chom en ur renkennad, kolonenn pe bloc\'h a rank bezañ el lec\'h-se."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Ur %1$s skrivet gant an dorn."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Ur %1$s moullet."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Ur gellig ruz a ziskouez ar sifr lennet eno gant an arload. Ma n\'eo ket ar pezh hoc\'h eus skrivet, stokit ouzh ar gellig evit e reizhañ."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Ur gellig n\'he deus nemet ur sifr a chom a rank kaout ar sifr-se."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"N\'eo ket klok morse ur roll teknikoù, hag ar c\'haelioù diaesañ a vez savet evit trec\'hiñ war kement teknik a zo ennañ. Pa ne ro hini ebet anezho netra, e tiskoulm an tutor ur gellig hepken en ur amprouiñ he c\'handidated, e lavar sklaer eo se en deus graet, hag e kendalc\'h da boellata diwar eno. Bepred e teu betek fin ur gael, ha morse ne ra van eo bet un dedukadur un enklask."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Ur pivot gant tri c\'handidat ha daou graban gant daou gandidat a glot a ezclud ur sifr eus pep kellig a wel an tri."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Ur pivot gant daou gandidat ha daou graban gant daou gandidat a c\'hall ezclud ur sifr eus pep kellig a wel an daou graban."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Diwar-benn"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Goude"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Goude ar fiñv-mañ"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Reizh eo pep tra"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"An teir c\'hellig-mañ a c\'hall bezañ %1$s, hag unan anezho a rank bezañ. Ne c\'hall ket eta ur gellig a wel an teir bezañ %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Aotren ar c\'hamera"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Tost eo - dalc\'hit ar bajenn plaen hag a-dal d\'ar c\'hamera"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"un dilemadur na zilem netra n\'eo ket un dedroadur"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" ha "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Respont"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Arload ha benveg (rakleuniet)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Arload: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"ar c\'henfeur a rank bezañ pozitivel met %1$s e oa"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Martezeadenn · sifr martezel"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Martezeadenn nac\'het · kandidated gwir adlakaet"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"da nebeutañ %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Luc\'hskeudenn emgefre"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Rannañ ent emgefre gant Freevia luc\'hskeudennoù kaelioù amsur, disoc\'hoù lenn ha reizhadurioù kellig a zeu war-lerc\'h evit dielfennañ an anavezout ha stummañ. Diweredekaet dre ziouer."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Evitit an adsked"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Distreiñ"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Distreiñ d\'ar goulenn kent"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Distreiñ d\'an tun gweledel"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Distreiñ d\'ho kellig"</string>
+    <string name="msg_before_9bb72500" formatted="false">"A-raok"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"A-raok ar fiñv-mañ"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Ar sifroù glas eo an diskoulm. Stokit ouzh ur gellig bennak evit reizhañ ar pezh a zo bet lennet."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"bloc\'h %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"bloc\'h"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Bloc\'h"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Redukadur bloc\'h-linenn"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"ne c\'hall kaout nemet"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Nullañ"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidated %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"ProuennTapadenn"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Chadennit ur sifr dre an unanennoù ma n\'en deus nemet daou lec\'h, livit ar chadenn gant daou liv a bep eil, hag ez eo gwir ul liv war he hed."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"O chadennañ %1$s dre an unanennoù ma n\'en deus nemet daou lec\'h posupl, e vez livet ar c\'hambroù-mañ gant daou liv a bep eil, hag unan anezho zo gwir e pep lec\'h. Div gambr eus al liv all zo er memes renk, ar pezh zo dibosupl - fals eo eta al liv-se, ha tennet e vez %2$s eus pep kambr a zo livet gantañ."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"O chadennañ %1$s dre an unanennoù ma n\'en deus nemet daou lec\'h posupl, e vez livet ar c\'hambroù-mañ gant daou liv a bep eil, hag unan anezho zo gwir e pep lec\'h. Div gambr eus al liv all zo er memes bloc\'h, ar pezh zo dibosupl - fals eo eta al liv-se, ha tennet e vez %2$s eus pep kambr a zo livet gantañ."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"O chadennañ %1$s dre an unanennoù ma n\'en deus nemet daou lec\'h posupl, e vez livet ar c\'hambroù-mañ gant daou liv a bep eil, hag unan anezho zo gwir e pep lec\'h. Div gambr eus al liv all zo er memes bann, ar pezh zo dibosupl - fals eo eta al liv-se, ha tennet e vez %2$s eus pep kambr a zo livet gantañ."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"O chadenniñ %1$s dre an unanennoù ma n\'en deus nemet daou lec\'h, e vez livet ar c\'helligoù-mañ gant daou liv a bep eil, hag ez eo gwir unan anezho war he hed. Div gellig eus al liv %2$s zo er memes %3$s, ar pezh a zo dibosupl - neuze eo faos al liv-se, ha %4$s a vez dilamet eus pep kellig eus al liv-se."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"O chadenniñ %1$s dre an unanennoù ma n\'en deus nemet daou lec\'h, e vez livet ar c\'helligoù-mañ gant daou liv a bep eil, hag ez eo gwir ul liv war he hed. Ar c\'helligoù-mañ a wel an daou liv, neuze, forzh peseurt liv a zo gwir, unan eus ar c\'helligoù a welont a zo enni %2$s - ar pezh a dalvez ne c\'hall ket bezañ enno."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"O chadennañ %1$s dre an unanennoù ma n\'en deus nemet daou lec\'h posupl, e vez livet ar c\'hambroù-mañ gant daou liv a bep eil, hag unan anezho zo gwir e pep lec\'h. Div gambr eus ar memes liv zo er memes bloc\'h, ar pezh zo dibosupl - fals eo eta al liv-se, ha tennet e vez %2$s eus pep kambr a zo livet gantañ."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"O chadennañ %1$s dre an unanennoù ma n\'en deus nemet daou lec\'h posupl, e vez livet ar c\'hambroù-mañ gant daou liv a bep eil, hag unan anezho zo gwir e pep lec\'h. Div gambr eus ar memes liv zo er memes bann, ar pezh zo dibosupl - fals eo eta al liv-se, ha tennet e vez %2$s eus pep kambr a zo livet gantañ."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"O chadennañ %1$s dre an unanennoù ma n\'en deus nemet daou lec\'h posupl, e vez livet ar c\'hambroù-mañ gant daou liv a bep eil, hag unan anezho zo gwir e pep lec\'h. Div gambr eus ar memes liv zo er memes renk, ar pezh zo dibosupl - fals eo eta al liv-se, ha tennet e vez %2$s eus pep kambr a zo livet gantañ."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Karrezioù diasur da wiriañ: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Gwiriañ"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Gwiriit ur gellig amsur."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", gwiriet reizh"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Dibabit ur c\'handidat evit gwelet perak ne c\'hall ket mont en ho kellig."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Dibab ar yezh"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Dibab ar pezh da ziskouez"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Serriñ"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Serriñ an tun"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Bihanaat ar gwiriañ lenn"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"ar c\'hombodoù e liv hag e liveoù gris a rank implijout an hevelep mentoniezh"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"bann %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"bann"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"bannoù"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Keñveriañ ar chadennoù rediañ ha kavout gwelloc\'h ar re gant nebeutoc\'h a gelligoù da heuliañ. Chadennoù berroc\'h a c\'hall talvezout muioc\'h a bazennoù en diskoulm klok."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Heuliad %1$s diwar %2$s · sifroù martezel"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"a zo enni"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Seurt-Endalc\'h"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Kenderc\'hel gant an hent klok"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Dislavar · ar vartezeadenn a c\'hwit"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", dislavar"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Dislavar: n\'eus lec\'h ebet ken evit %2$s er %1$s ruz. Dibosupl eo, neuze eo ret d\'ar vartezeadenn orin bezañ faos."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Dislavar: n\'eus kandidat ebet ken er gellig ruz. Dibosupl eo, neuze eo ret d\'ar vartezeadenn orin bezañ faos."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Eilañ ar goulenn dilemel"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Reizh. Keñveriit ho poellata gant an displegadenn amañ dindan."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"n\'eus ket bet gallet dekodiñ ar skeudenn tapet"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"N\'eus ket bet gallet kavout ar sifroù moullet el luc\'hskeudenn-se."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"N\'eus ket bet gallet gwelet linennoù ar gael - klaskit en-dro."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"N\'eus ket bet gallet digeriñ GitHub. Kit e darempred gant ar skor e %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"N\'eus ket bet gallet mirout prouennoù tapadenn diveugañ"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"N\'eus ket bet gallet kas ar lennadenn. Klaskit en-dro pa viot kevreet."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Hent dall"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DILEMEL"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Dilemel"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Dilemel an danevell"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Dilemel al luc\'hskeudenn-mañ"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Dilemel ar gael-mañ"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Dilemel ar gael-mañ?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Dilemel ar c\'hasadenn-mañ?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"O tilemel…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"N\'eus ket bet gallet kadarnaat an dilemel. Gwiriit ho kevreadur ha klaskit en-dro."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Goulenn dilemel"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"N\'en deus ket ar respont dilemel kadarnaet ar resev-mañ."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Ar servij dilemel en deus distroet HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Deskrivit ar pezh a zo c\'hoarvezet hag ar pazennoù evit e adober. Lavarit hag-eñ hoc\'h eus gwiriet ha reizhet ar sifroù anavezet da gentañ. Evit ur soñj, skrivit \'Ne sell ket ouzh an dra-mañ\'."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", bukenn an tun-mañ"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Benveg: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostikoù berraet evit mont e brouilhed ar merdeer. Gallout a ra oberenn Kas an diagnostikoù an arload rannañ an danevell glok."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"ar sifr a rank bezañ 1..9 met %1$s e oa"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Sifroù anlennet"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Mirout prouennoù war ar bladenn a levezon ar pad; n\'eo ket ur vuzuliad dale."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", ne glot ket gant an diskoulm"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Pep resev a anavez un adstumm eus ur gael kaset. Dilamit eñ amañ evit dilemel an danevell miret en un doare prevez gant Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Dilemelioù kent: %1$s. Implijit liammoù ar pazennoù kent da sellout ouzh o frouennoù."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← prouenn gent (donder %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"N\'eus nemet ur c\'handidat a chom enni diwar plasadurioù martezel kent."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Pazennoù kent implijet er brouenn-mañ"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Kemmañ ar gellig"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"eizh"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"goullo"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Goullo."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Goullo"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Saozneg"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"enmonedoù ne glotont ket"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"enmoned ne glot ket"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Pep hini anezho a leugn ur gellig."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Leun eo pep kellig, met %1$s respont ne glotont ket gant an diskoulm."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Leun eo pep kellig, met ur respont ne glot ket gant an diskoulm."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Pep sudoku gant un diskoulm hepken a c\'hall bezañ diskoulmet dre boellata; n\'eus ket ezhomm morse da zivinañ ha ral eo e skoazell. Setu an doareoù poellata a c\'hall an arload-mañ anavezout ha displegañ, ar re aesañ da gentañ. Pa c\'hall unan anezho bezañ implijet war ar gael digor, e tiskouezo deoc\'h pep lec\'h ma c\'hall bezañ."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Reizh eo kement hoc\'h eus skrivet betek-henn."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Skouerioù hegerz bremañ: pep hini a grog diwar ho kael a-vremañ."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 linenn a-blaen a oa gortozet, %1$s zo bet resevet"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"10 linenn a-serzh a oa gortozet, %1$s zo bet resevet"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81 kombod a oa gortozet met %1$s zo bet resevet"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"81 kombod e pep bloc\'h a oa gortozet, %1$s ha %2$s zo bet kavet"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"ur sanell 8-bit hepken a oa gortozet met %1$s zo bet resevet"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"ur skeudenn 28x28 a oa gortozet met %1$s talvoud zo bet resevet"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Emzalc\'h gortozet pe gwellaenn kinniget"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"dek linenn e pep tu a oa gortozet"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"daou vloc\'h a oa gortozet, %1$s zo bet kavet"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Displegañ dilemelioù kandidated kent (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Displegañ an tunioù"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Kavit ur gellig gant daou pe dri c\'handidat hepken a chom - seul nebeutoc\'h seul welloc\'h, ha seul leunoc\'h ar renkennad, ar golonenn hag ar bloc\'h tro-dro dezhi seul welloc\'h c\'hoazh.\n\nDibabit unan eus he c\'handidated ha skrivit eñ skañv gant ur c\'hreion. Heuliit an heuliadoù bremañ: ar sifr-se a vez dilamet eus kement kellig a wel ar gellig, ar pezh a c\'hall lezel ur c\'handidat hepken en unan anezho, a red ur gellig all, hag all. Kendalc\'hit.\n\nUnan eus daou dra a c\'hoarvez. Pe e chom a-sav, ha n\'hoc\'h eus desket netra - diverkit eñ ha klaskit ar c\'handidat all. Pe e tizhoc\'h ur gellig hep kandidat ebet ken, pe ur renkennad hep lec\'h evit ur sifr bennak. Dibosupl eo, neuze e oa faos ar sifr hoc\'h eus skrivet gant ar c\'hreion, ha gallout a rit e ezclud da vat.\n\nHomañ eo an teknik da implijout pa ne ro ket ar re all netra ken. Gorrekoc\'h eo ha muioc\'h ur c\'heuliañ notennoù eget ur c\'havout patromoù, met gallout a ra dizoleiñ fiñvoù na gav ket ar patromoù. Alies eo trawalc\'h un dilemel evit ma labourfe an teknikoù aes en-dro; lec\'hiadurioù zo o deus c\'hoazh ezhomm eus un enklask donoc\'h."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Kavit div gellig gant an hevelep daou gandidat, da skouer {3,7}, na welont ket an eil eben - peurliesañ int pell an eil diouzh eben.\n\nBremañ klaskit ur renkennad, kolonenn pe bloc\'h ma n\'en deus 7 nemet div gellig bosupl, unan gwelet gant kentañ kellig ho par hag eben gant an eil. Hemañ eo al liamm.\n\nUnan eus an div gellig-se eo ar 7. Forzh pehini eo, ne c\'hall ket kellig ho par a wel anezhi bezañ 7, neuze e rank bezañ 3. Ne ouzit ket pe benn eo ar 3, met gouzout a rit eo unan anezho - hag eo trawalc\'h evit ezclud 3 eus pep kellig a wel an daou benn.\n\nAl liamm eo al lodenn ziaes, neuze klaskit eñ en tu all: merkit da gentañ an unanennoù ma n\'en deus ur sifr nemet daou lec\'h, ha klaskit goude ur par a glot a bep tu."</string>
+    <string name="msg_finished_05343e98" formatted="false">"echuet"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Tapit al luc\'hskeudenn pa vo ar gael a-dal er stern ha difiñv. Ar bouton a ya en-dro bepred, forzh penaos."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Lakait ar gael a-bezh er gwel."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Lakait ar gael a-bezh er gwel"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"pemp"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Heuliañ un hent ma vez pep fiñv diazezet war an hini kent."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Heuliañ ar brouenn glok en urzh"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Heuliit ar chadenn-mañ a gelligoù gant daou gandidat: ma n\'eo ket %1$s %2$s, e vez rediet pep kellig a-hed ar chadenn gant an hini kent, hag e teu %3$s da vezañ %4$s. Neuze ez eus %5$s en eil penn pe egile, ar pezh a ezclud anezhañ eus pep kellig a wel anezho o-daou."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Chadenn rediañ"</string>
+    <string name="msg_four_04efaf08" formatted="false">"pevar"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Ne c\'hall ket peder c\'hellig e div renkennad, div golonenn ha daou vloc\'h kaout an hevelep daou gandidat en holl, pe e vefe daou ziskoulm d\'ar gael."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia en deus kadarnaet an dilemel, met n\'en deus ket ar pellgomzer-mañ gallet dilemel ar resev lec\'hel. Klaskit en-dro evit echuiñ ar c\'hempenn lec\'hel."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia a zilemo adstumm an danevell-mañ hag he eilad stummañ prevez. Gallout a ra reizhadurioù da zont krouiñ un danevell nevez hervez ho arventennoù rannañ. Ur patrom bet stummet dija warni a c\'hall mirout ar c\'hemmoù desket."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Hent klok"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Al lennadennoù amsur da zont a gaso al luc\'hskeudenn eeunaet eus ar gael, disoc\'hoù anavezout ha reizhadurioù da Freevia evit dielfennañ ha stummañ. An eiladoù stummañ a chom betek ma vint dilamet diwar Resevoù kasadennoù; ur patrom stummet a c\'hall mirout ar c\'hemmoù desket. Ma\'z eus ur gael amsur digor dija, e vo kaset bremañ. Gallout a rit diweredekaat se en Arventennoù."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Aes"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"An adsked a guzh al linennoù - stouit ar bajenn diouzh ar gouloù"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"SkeudennLouet(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Merkoù kreion zo er c\'helligoù louet, ha ne zalc\'h ket an arload kont anezho. Ar varrenn dindan ur sifr a ziskouez pegen sur e oa. Stokit ouzh ur gellig evit ar munudoù."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Skrivet gant an dorn"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Diaes"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Kuzh"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Par kuzh"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Pevarad kuzh"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Unanenn guzh"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Triad kuzh"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Kuzhat ar prouennoù kent"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Kuzhat penaos kavout unan"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", tun %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Skoazell"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Prouenn an tun"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Poellata an tun"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Chomit difiñv..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Chomit difiñv, pe stokit ouzh ar bouton tennañ"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Chomit difiñv e-pad ma ra ar c\'hamera ar fokus..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Dalc\'hit ar pellgomzer a-blaen"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Dalc\'hit ar pellgomzer a-blaen a-us d\'ar gael."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Dalc\'hit ar pellgomzer a-blaen a-us d\'ar gael"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Penaos kavout unan"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nPenaos e teuomp betek eno:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Klaskit kelligadoù gant daou gandidat rik - teir anezho hepken a ya d\'ober un askell Y.\n\nKemerit unan evel pivot, da skouer {2,5}. Klaskit ur gellig a wel gant {2,9}, hag unan all a wel gant {5,9}. Ar pivot zo pe 2 pe 5. Ma\'z eo 2, e rank ar graban kentañ bezañ 9; ma\'z eo 5, e rank an eil graban bezañ 9. Forzh penaos e teu ur 9 en unan eus ar grabanioù - ne ouzit ket pehini, ha n\'hoc\'h eus ket ezhomm da c\'houzout.\n\nNe c\'hall ket eta ur gellig a wel an daou graban bezañ 9. Ar c\'helligoù-se eo peurliesañ an daou gorn a glok ar reizhkorn."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", %1$s martezel, n\'eo ket ur respont enskrivet"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Ma ne c\'hall %1$s sifr en ur renkennad, kolonenn pe bloc\'h mont nemet er memes %2$s kellig, ne c\'hall netra all bezañ er c\'helligoù-se."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Ma rann %1$s kellig en ur renkennad, kolonenn pe bloc\'h %2$s kandidat rik etrezo, eo ar sifroù-se d\'ar c\'helligoù-se ha da hini all ebet en unanenn."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"M\'en deus ur sifr daou lec\'h en ur renkennad ha daou en ur golonenn, ha ma\'z eus unan eus pep hini er memes bloc\'h, e rank bezañ en unan eus an daou all."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"M\'en deus ur sifr daou lec\'h e pep hini eus div renkennad ha ma rannont ur golonenn, e rank bezañ en unan eus an daou lec\'h all."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Ma\'z eo holl lec\'hioù posupl ur sifr war ul linenn e-barzh ur bloc\'h hepken, e c\'haller ezclud ar sifr-se eus peurrest ar bloc\'h-se."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Ma\'z eo holl lec\'hioù posupl ur sifr e %1$s renkennad er memes %2$s kolonenn, e c\'haller e ezclud eus al lec\'hioù all er c\'holonennoù-se - hag an hevelep tra o eskemm renkennoù ha kolonennoù."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Ma\'z eo holl lec\'hioù posupl ur sifr e-barzh ur bloc\'h war ur linenn hepken, e c\'haller ezclud ar sifr-se eus peurrest al linenn-se."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Ma kas martezeañ ur sifr d\'ur gellig na c\'hall bezañ sifr ebet enni, e oa faos ar sifr-se."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"mentoù ar skeudenn a rank bezañ pozitivel"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"En ur chadenn a gelligoù o deus holl an hevelep daou gandidat, ez eus sifroù disheñvel en daou benn eus ur chadenn a hed ampar."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Er %1$s %2$s-mañ, ne c\'hall %3$s mont nemet er %4$s %5$s-mañ. Etrezo e kemeront pep hini, neuze e c\'haller ezclud %6$s eus al lec\'hioù all er %7$s-se."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"En %1$s bann-mañ, ne c\'hall %2$s bezañ nemet en %3$s renk-mañ. Etrezo e vez implijet pep renk, ha neuze e c\'haller skarzhañ %4$s eus an holl lec\'hioù all er renkoù-se."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"En %1$s renk-mañ, ne c\'hall %2$s bezañ nemet en %3$s bann-mañ. Etrezo e vez implijet pep bann, ha neuze e c\'haller skarzhañ %4$s eus an holl lec\'hioù all er bannoù-se."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"En daou %1$s-mañ, n\'en deus %2$s nemet daou lec\'h e pep hini, hag emañ %3$s ha %4$s er memes %5$s - neuze ne c\'hallont ket bezañ %6$s o-daou. Emañ eta en unan eus %7$s ha %8$s, ar pezh a ezclud %9$s eus pep kellig a wel anezho o-daou."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"En div golonenn-mañ, ne c\'hall %1$s bezañ nemet e daou lec\'h e pep hini, ha %2$s ha %3$s zo war an hevelep renk — ne c\'hallont ket eta bezañ %4$s o-daou. Unan eus %5$s ha %6$s eo eta, ar pezh a skarz %7$s eus pep kell a wel anezho o-daou."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"En div renk-mañ, n\'eus nemet daou lec\'h posupl evit %1$s e pep hini, ha %2$s ha %3$s zo en hevelep kolonenn — ne c\'hallont ket bezañ %4$s o-daou eta. Unan eus %5$s ha %6$s eo ar sifr-se eta, pezh a ziskar %7$s eus pep kell a wel anezho o-daou."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Er %1$s-mañ, ne c\'hall %2$s mont nemet er %3$s kellig-mañ, neuze eo miret ar c\'helligoù-se dezho. Se a ezclud %4$s anezho."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Er %1$s-mañ, ne c\'hall %2$s mont nemet e-barzh ur bloc\'h hepken. Neuze emañ %3$s er bloc\'h-se war ar %4$s-mañ, ha gallout a reer e ezclud eus peurrest ar bloc\'h."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Er bloc\'h-mañ, ne c\'hall %1$s bezañ nemet en %2$s kambr-mañ, ha neuze eo miret ar c\'hambroù-se evito. Skarzhañ a ra-se %3$s anezho."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Er bann-mañ, ne c\'hall %1$s bezañ nemet en %2$s kambr-mañ, ha neuze eo miret ar c\'hambroù-se evito. Skarzhañ a ra-se %3$s anezho."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Er renk-mañ, ne c\'hall %1$s bezañ nemet en %2$s kambr-mañ, ha neuze eo miret ar c\'hambroù-se evito. Skarzhañ a ra-se %3$s anezho."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"O luc\'hskeudennoù, lennadennoù ha reizhadurioù zo enno. Diweredekait se en Arventennoù."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"E-barzh ur bloc\'h hepken, kavit ur sifr na c\'hall mont nemet e div pe deir c\'hellig, ha gwiriit hag-eñ emaint holl er memes renkennad, pe holl er memes kolonenn. Ma\'z int, emañ ar sifr sur a-walc\'h tu bennak war al linenn-se - ne ouzit ket pelec\'h, met gouzout a rit emañ e-barzh ar bloc\'h-mañ. Ne c\'hall ket eta bezañ e lec\'h all ebet war ar memes linenn er-maez eus ar bloc\'h.\n\nNe laka ket se netra drezañ e-unan. Dilemel a ra kandidated evit ma teuio un unanenn e lec\'h all."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"E-barzh ar bloc\'h-mañ, ne c\'hall %1$s mont nemet er %2$s-mañ. Neuze emañ %3$s tu bennak amañ, ha gallout a reer e ezclud eus peurrest ar %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Kudenn pe soñj"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Gallout a reer e implijout e %1$s lec\'h amañ. Kit war-raok evit mont drezo."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Gallout a reer e implijout en ul lec\'h amañ. Kit war-raok evit e welet."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Ne c\'haller ket e implijout e lec\'h ebet el lec\'hiadur-mañ."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Hemañ eo an unig lec\'h a chom evit %1$s er %2$s uslinennet."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Ar gellig kelc\'hiet eo.\n\nPouezit war Tun en-dro evit ar sifr."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Meduzenn"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Mirout"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Derc\'hel ar chadennoù rediañ berr"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Yezh"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Lañvazoù"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Sellit en ur renkennad, kolonenn pe bloc\'h evit kelligadoù gant nebeut a gandidated a chom. Kemerit %1$s anezho ha bodit o c\'handidated. Ma\'z eus %2$s sifr rik er stroll, eo miret ar %3$s sifr-se: ret eo dezho mont er %4$s kellig-se en un urzh bennak, daoust ma ne c\'hallit ket c\'hoazh lavarout pehini a ya pelec\'h.\n\nTrawalc\'h eo. Pep kellig all en unanenn a c\'hall dilezel ar sifroù-se, ha peurliesañ e teu unan eus ar c\'helligoù-se da vezañ un unanenn.\n\nN\'eus ket ezhomm d\'ar c\'helligoù kaout holl ar memes kandidated - {2,7}, {2,9} ha {7,9} a ya d\'ober un triad mat-tre, hag eo an hini na wel ket an dud."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Klaskit kelligadoù gant an hevelep daou gandidat - da skouer {4,9} - a ya d\'ober ur chadenn, pep hini o welet an hini war-lerc\'h. N\'eo ket trawalc\'h tri; ezhomm hoc\'h eus eus pevar da nebeutañ.\n\nLivit anezho a bep eil en ur vont. Peogwir e wel pep kellig an hini war-lerc\'h, ne c\'hall ket div amezeg kaout ar memes sifr, neuze e lenner ar chadenn 4, 9, 4, 9 war he hed - pe 9, 4, 9, 4, ha ne c\'hallit ket gouzout pehini.\n\nForzh penaos, div gellig a livioù enep o deus sifroù disheñvel etrezo: unan eo ar 4 hag eben eo ar 9. Ne c\'hall ket eta ur gellig a wel anezho o-div bezañ hini ebet anezho, ha koll a ra an daou gandidat war un dro.\n\nAes eo kavout ar patrom end-eeun peogwir e seblant pep kellig ennañ heñvel. Heuliit ar parioù heñvel tro-dro d\'ar gael ha sellit pelec\'h e stokont an eil ouzh egile."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Klaskit teir c\'hellig gant an hevelep daou gandidat - da skouer {1,6} - e tri c\'horn ur reizhkorn. Ret eo d\'ar reizhkorn bezañ e daou vloc\'h rik: div renkennad ha div golonenn a dreuz daou vloc\'h, ha neket pevar.\n\nSellit bremañ ouzh ar pevare korn. Ma ne vefe ennañ nemet 1 ha 6 ivez, e vefe daou ziskoulm d\'ar gael - gallout a rafec\'h eskemm an 1où hag ar 6où tro-dro d\'ar reizhkorn ha pep tra all a yaffe c\'hoazh en-dro. Ur gael savet mat he deus un diskoulm hepken, neuze e rank ar pevare korn implijout un dra all: e gandidated all a chom, ha 1 ha 6 a ya kuit.\n\nHomañ eo an unig arguzenn er roll a sell ouzh saver ar gael kentoc\'h eget ouzh ar gael. Reizh eo war ur gael embannet ha didalvoud war unan hoc\'h eus leuniet fall dija, peogwir e c\'hall neuze bezañ diskoulm ebet da vezañ unel."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Sellit er bloc\'h-mañ. Heuliit an amlinenn betek ar gellig a vo displeget gant an tun-mañ."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Merkoù"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Krenn"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Muioc\'h"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Ezhomm eus muioc\'h a c\'houloù"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Muioc\'h eget un diskoulm, neuze ez eus ur sifr moullet n\'eo ket bet gwelet. Pouezit war Diskoulmañ evit gwelet an diskoulmoù ha pelec\'h int disheñvel."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Pellait"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Tostait"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Tostait - re vihan eo ar gael evit bezañ lennet."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Noazh"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Par noazh"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Pevarad noazh"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Unanenn noazh"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Triad noazh"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Anv an teknik ha diskouez ar c\'helligoù a brou anezhi, e-lec\'h reiñ ar sifr hepken."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"ezhomm zo eus 4 foent da nebeutañ met %1$s zo bet resevet"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Da gadarnaat"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Sudoku nevez"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Heuliad da heul"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Pazenn da heul"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Ne vez ket staget skeudennoù ent emgefre. Foran eo an danevelloù hag ar pezhioù stag kaset amañ. Kasit da info@freevia.org ar skouerioù a fell deoc’h kas en un doare prevez."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"N\'eus luc\'hskeudenn ebet bet nac\'het abaoe staliadur diwezhañ an arload."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Diagnostik skanniñ ebet hegerz."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"N\'eus teknik ebet a c\'haller implijout amañ"</string>
+    <string name="msg_none_140bedbf" formatted="false">"hini ebet"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Hini ebet anezho ne laka ur sifr en ur gellig: dilemel a reont kandidated, hag evel-se e tigorer ur gael diaes."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Hini ebet war ho kael evit ar mare."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"n\'eo ket ur restr patrom sifroù"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"N\'eo ket bet lennet gant fiziañs - ar vartezeadenn dostaň eo %1$s %2$s e %3$s. Leugnit ar gellig-mañ hoc\'h-unan."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"N\'eo ket c\'hoazh anavezet evel ur gael nav war nav - klaskit leuniañ ar stern gant ar gael hepken, pe tapit al luc\'hskeudenn"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"n\'eo ket kroget"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"N\'eus bet gallet kas netra eus ar pellgomzer-mañ."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"N\'eus netra ken da ziskoulmañ."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"N\'eus netra ouzhpenn amañ a c\'haller deduiñ gant an teknikoù a anavez an arload-mañ."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"netra dreistordinal"</string>
+    <string name="msg_ok_565339bc" formatted="false">"Mat eo"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"unan"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Ur gellig a seblante bezañ ur sifr moullet met n\'eo ket."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Ur sifr moullet zo bet reizhet ent emgefre."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"ur c\'hombod"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Nemet %1$s ne c\'hall mont amañ - pep sifr all zo dija er renkennad, kolonenn pe bloc\'h-mañ."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Nemet %1$s ne c\'hall bezañ amañ. Ar c\'hambroù lakaet war wel a implij %2$s eus an eizh sifr all; %3$s a oa bet skarzhet eus ar gambr-mañ kentoc\'h, ha n\'eo ket gant un dra bennak a c\'hallit gwelet en-dro dezhi."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"N\'eus nemet %1$s a c\'hall bezañ amañ. Ar c\'harrezioù lakaet war wel a implij pevar eus an eizh sifr all; %2$s a oa bet skarzhet eus ar c\'harrez-mañ abretoc\'h, ha neket dre netra a c\'hallit gwelet en-dro dezhañ."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"N\'eus nemet %1$s a c\'hall bezañ amañ. Ar c\'harrezioù lakaet war wel a implij c\'hwec\'h eus an eizh sifr all; %2$s a oa bet skarzhet eus ar c\'harrez-mañ abretoc\'h, ha neket dre netra a c\'hallit gwelet en-dro dezhañ."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"N\'eus nemet %1$s a c\'hall bezañ amañ. Ar c\'harrezioù lakaet war wel a implij unan eus an eizh sifr all; %2$s a oa bet skarzhet eus ar c\'harrez-mañ abretoc\'h, ha neket dre netra a c\'hallit gwelet en-dro dezhañ."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"N\'eus nemet %1$s a c\'hall bezañ amañ. Ar c\'harrezioù lakaet war wel a implij seizh eus an eizh sifr all; %2$s a oa bet skarzhet eus ar c\'harrez-mañ abretoc\'h, ha neket dre netra a c\'hallit gwelet en-dro dezhañ."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"N\'eus nemet %1$s a c\'hall bezañ amañ. Ar c\'harrezioù lakaet war wel a implij pemp eus an eizh sifr all; %2$s a oa bet skarzhet eus ar c\'harrez-mañ abretoc\'h, ha neket dre netra a c\'hallit gwelet en-dro dezhañ."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Nemet %1$s ne c\'hall mont amañ. Ar c\'helligoù uslinennet a implij %2$s eus an eizh sifr all; %3$s %4$s bet ezcludet eus ar gellig-mañ abretoc\'h, ha neket gant un dra a welit tro-dro dezhi."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"N\'eus nemet %1$s a c\'hall bezañ amañ. Ar c\'harrezioù lakaet war wel a implij daou eus an eizh sifr all; %2$s a oa bet skarzhet eus ar c\'harrez-mañ abretoc\'h, ha neket dre netra a c\'hallit gwelet en-dro dezhañ."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Nemet %1$s ne c\'hall bezañ amañ. Ar c\'hambroù lakaet war wel a implij %2$s eus an eizh sifr all; %3$s a oa bet skarzhet eus ar gambr-mañ kentoc\'h, ha n\'eo ket gant un dra bennak a c\'hallit gwelet en-dro dezhi."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"N\'eus nemet %1$s a c\'hall bezañ amañ. Ar c\'harrezioù lakaet war wel a implij tri eus an eizh sifr all; %2$s a oa bet skarzhet eus ar c\'harrez-mañ abretoc\'h, ha neket dre netra a c\'hallit gwelet en-dro dezhañ."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Nemet %1$s ne c\'hall mont amañ. An eizh sifr all zo ezcludet gant kelligadoù leuniet pe kandidated unel rediet er renkennad, kolonenn pe bloc\'h-mañ."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Nemet %1$s ne c\'hall mont amañ, daoust ma ne ziskouez netra tro-dro dezhi perak: an eizh sifr all zo bet ezcludet eus ar gellig-mañ gant poellata kent kentoc\'h eget peogwir int skrivet en he renkennad, kolonenn pe bloc\'h."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"N\'eus bet kavet nemet %1$s sifr moullet, ar pezh a zo re nebeut evit ur gael."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"troidelloù ur c\'hard tro hepken zo skoret, neket %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Digeriñ ur brouilhed en ho merdeer gant stumm an arload, patrom ar pellgomzer, stumm Android ha diagnostikoù skanniñ nevez leuniet. Ouzhpennit hoc\'h-unan un deskrivadur klok ha tapadennoù-skramm a-zere.\n\nRet eo kevreañ ouzh GitHub. Gallout a rit adwelet ha kemmañ ar brouilhed a-raok e gas. Publik eo an danevelloù hag ar pezhioù stag kaset. Ne vez ket staget luc\'hskeudennoù ent emgefre."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Digeriñ arventennoù an arload"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Digeriñ GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Kemennadennoù tarzh digor"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Digorit ‘Perak ar gellig-mañ?’ evit gwelet prouennoù ar plasadur diwezhañ, pe dibabit ur c\'handidat ezcludet evit heuliañ e brouenn."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Lañvaz Apache 2.0. Implijet evit kavout hag eeunaat ar gael.\n\nAndroidX, Jetpack Compose ha CameraX - Lañvaz Apache 2.0.\n\nKotlin - Lañvaz Apache 2.0.\n\nAn anavezer sifroù zo bet stummet war diaz roadennoù sifroù skrivet gant an dorn MNIST gant LeCun, Cortes ha Burges, asambles gant sifroù renderet diwar fontoù sistem digor ha sifroù treset dre brogramm."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"C\'hwitet eo kargañ levraouegoù genidik OpenCV"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Luc\'hskeudenniñ ur gael all."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Al luc\'hskeudennoù a virit a vez miret e stokañ prevez an arload-mañ ha dilamet pa zilamit anezho pe pa zistalit an arload."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Luc\'hskeudennoù n\'en deus ket an arload gallet ober ur gael anezho. Kasit unan evit ma c\'hallfe bezañ sellet outi."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Dibabit ur sifr ha sellit a-hed ar renkennoù evit ar re ma n\'en deus nemet div gellig a chom. Kemerit div renkennad evel-se ha sellit hag-eñ emañ unan eus o c\'helligoù er memes kolonenn.\n\nMa\'z eo, emañ an div gellig-se er memes kolonenn ha ne c\'hallont ket kaout ar sifr o-div. Neuze emañ en unan eus ar pennoù pell da nebeutañ - an div gellig en tu all. Ne ouzit ket pehini, ha n\'hoc\'h eus ket ezhomm da c\'houzout: ur gellig a wel an daou benn pell a c\'hall dilezel ar sifr.\n\nGrit an hevelep tra en-dro gant kolonennoù e-lec\'h renkennoù. Ar stumm zo ur savadur uhel gant unan berr en e gichen, hag ac\'hane e teu an anv hag an doare da gavout anezhañ pa vez bet gwelet un nebeud."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Dibabit ur sifr. Kavit ur renkennad ma n\'en deus nemet daou lec\'h rik hag ur golonenn ma n\'en deus nemet daou lec\'h rik. Gwiriit bremañ hag-eñ emañ ur gellig eus ar renkennad hag ur gellig eus ar golonenn er memes bloc\'h.\n\nMa\'z int, ne c\'hall ket an div-se bezañ ar sifr o-div - ur bloc\'h, ur sifr. Neuze eo unan eus an daou benn a chom ar sifr da nebeutañ, ha pep kellig a wel an daou benn a c\'hall dilezel ar sifr.\n\nNe wel ket an dud an teknik-mañ peogwir n\'eus netra da renkañ war ul linenn: ar peder c\'hellig a ya d\'ober ur stumm digempouez, hag an unig dra a zalc\'h anezhañ asambles eo ar bloc\'h a rann an daou benn diabarzh."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Dibabit ur gellig c\'houllo ha tremenit eus 1 da 9, en ur varrenniñ kement sifr a zo dija en he renkennad, he c\'holonenn pe he bloc\'h. Ma chom ur sifr rik, e ya eno.\n\nHomañ eo an teknik a zo pep hini all evit he lakaat da c\'hoarvezout. Pep tra diaesoc\'h zo un doare da lakaat ur gellig bennak da chom gant ur c\'handidat hepken, neuze pa ro un teknik diaesoc\'h un disoc\'h, sellit amañ goude."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Dibabit ur sifr ha na sellit ouzh hini all ebet. Kit a-hed ar renkennoù ha notit ar re ma n\'en deus ar sifr-se nemet div pe deir c\'hellig bosupl a chom. Klaskit %1$s renkennad evel-se gant o c\'helligoù renket er memes %2$s kolonenn.\n\nMa kavit anezho, e rank pep hini eus ar %3$s renkennad-se lakaat ar sifr en unan eus ar c\'holonennoù-se, ha ne c\'hall ket div implijout ar memes kolonenn. Neuze e kemeront etrezo ar sifr en holl %4$s kolonenn - ha pep kellig all er c\'holonennoù-se a c\'hall e zilezel.\n\nGrit an holl dra en-dro o eskemm kolonennoù ha renkennoù. An hanter anezho a vez kavet en eil tu, hag eo an hanter na glask ket an darn vrasañ eus an dud."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Lakaat %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Lakait %1$s er renkennad %2$s, kolonenn %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Lakait %1$s en ho kellig amlinennet."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Stagit tapadennoù-skramm a-zere gant kontrol stagañ GitHub: ar gael, ar sifroù anavezet, disoc\'h Gwiriañ, pe pazenn an tun a ziskouez ar gudenn. Lakait an disoc\'hoù gortozet ha gwir pa vez talvoudus."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Dilamit ma c\'hasadennoù anavezout Sudoku Buddy, mar plij. Anaouderioù resevoù: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Erlec\'hiit ur deskrivadur klok eus ar gudenn pe ar soñj ouzh ar c\'hemenn-mañ, mar plij. Roit un titl berr ha deskrivañ d\'an danevell-mañ."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Troit ar c\'hamera ouzh ur gael sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Troit ar c\'hamera ouzh ur gael sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Troit ar c\'hamera ouzh ur gael sudoku war baper. An arload a lenn ar sifroù moullet ha kement hoc\'h eus skrivet enni, a ziskoulm anezhi, hag a c\'hall reiñ deoc\'h un tun, gwiriañ ho respontoù, pe diskouez an diskoulm a-bezh."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Par bukañ"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"KAS"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"O prientiñ ar gael…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Kent"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Pazenn gent"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Moullet"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Politikerezh prevezded"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Stokañ ar sudokù"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Sudokù"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Lennet ha diskoulmet e vez ar sudokù war ar pellgomzer-mañ. Ma kasit ul lennadenn diasur, pe ma weredekait ar rannañ emgefreek, e vez kaset luc\'hskeudenn ar sudoku, al lennadennoù orin, ar merkoù diasur ha ho reizhadennnoù en un doare diogel da Freevia evit dielfennañ an anavezadur hag evit stummañ prevez. Ne vez ket lakaet patrom ho pellgomzer na diagnostikoù er rentaoù-kont. Diret eo ar rannañ emgefreek; n\'eus kont ebet, dielfennadur implij boaz ebet na heuliañ bruderezh ebet. Gallout a reer dilemel an eiladoù stummañ gant ar resev, met ur patrom stummet dija a c\'hall mirout kemmoù desket. Implijit Resevoù kas er c\'hArventennoù evit dilemel ur rentañ-kont."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Deuet eo ar sudokù luc\'hskeudennet evit an amprouadoù eus sudoku.cba.si. N\'eo ket stag an arload-mañ outo."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Miret e vez amañ ar sudokù a luc\'hskeudennit, evit ma c\'hallit adkemer unan diwezhatoc\'h."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Lennadenn"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Lennet evel ur %1$s skrivet gant an dorn, %2$s a surentez."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Lennet evel ur %1$s moulet, %2$s a surentez."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Lennet evel goullo - liv ebet kavet."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Lennet evel merkoù kandidated dre greion, ha lezet a-gostez."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Lennadenn adwellet."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Lennadenn kaset. Trugarez!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnostikoù skanniñ nevez (rakleuniet)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Gallout a ra an anavezadur faziañ, dreist-holl gant ar skrivañ dre zorn. Implijit Lenn evit keñveriañ ar sifroù anavezet gant al luc\'hskeudenn, ha stokit ouzh ur c\'hombod bennak evit e reizhañ. Merkañ a ra an arload al lennadennoù diasur evit o adwelout; gallout a ra ul lennadenn sur bezañ faos memes tra."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Disteurel ar c\'houlakadenn"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Parioù pell"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Dilemel %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nDilemel %1$s eus "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Dilamet"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Adc\'hoari ar poellata"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Kelaouiñ ur fazi pe ur soñj war GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Adklask ar c\'hamera"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Distreiñ da bazenn %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Diskouez an displegadenn"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Adwelout pe kas al lennadenn"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Adwelout al lennadenn"</string>
+    <string name="msg_right_883361d5" formatted="false">"Reizh"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Hent echuet. Kit war-gil evit adwelout ur fiñv bennak, pe klaskit ar pazennoù hoc\'h-unan."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"linenn %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Linenn %1$s, bann %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Linenn %1$s, bann %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"linenn $1, bann $2"</string>
+    <string name="msg_row_634768da" formatted="false">"linenn"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"renkoù"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s ezcludet"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"N\'eus ket bet gallet lenn diagnostikoù ar skan."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Tapadennoù-skramm pe skouerioù kaelioù"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Eil gouivadenn: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Diuzañ evit pleustriñ"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Dibabet: linenn %1$s, bann %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Kas diagnostikoù (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Kas diagnostikoù"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Kas ar skanoù-mañ"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Kas al luc\'hskeudenn-mañ"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Arventennoù"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"seizh"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Rannañ emgefreek pa vez diasur"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Rannañ al lennadennoù diasur ent emgefreek?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Diskouez ar c\'hontrol"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Diskouezit din an holl %1$s war ho sudoku"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Diskouezit din an hini war ho sudoku"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Livañ eeun"</string>
+    <string name="msg_six_44778d82" formatted="false">"c\'hwec\'h"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Savadur uhel"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", diskoulm %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Diskoulmañ"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Diskoulmet, hag an holl respontoù zo reizh."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Respont gant skoazell an diskoulmer: lakait %1$s e %2$s. Ar c\'handidated zo %3$s. N\'eus kavet fiñv ebet eus al lec\'hiadur-mañ gant an teknikoù skoret gant an arload. Kavout a reas e enklask %4$s en diskoulm nemetañ; n\'eus ket prouenn munut eus skourroù an enklask da gaout."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nRespont gant skoazell an diskoulmer: n\'o deus ket an teknikoù skoret gant an arload kavet ur fiñv. N\'eus ket a brouenn dre ar munud."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Dilemel gant skoazell an diskoulmer: un enklask a ziskart %1$s er c\'hombod uslinennet, met n\'eus ket bet gallet sevel un heuliad kontrol berr da ziskouez gant an arload. N\'eus ket prouenn munut da gaout."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Gallout a ra kombodoù zo bezañ enno notennoù kentoc\'h eget ur sifr klok."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"N\'eo ket bet lennet sifroù zo gant surentez."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"C\'hoarvezet ez eus ur gudenn o lenn al luc\'hskeudenn-se."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Kombod"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nKandidated e penn-kentañ: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Pazenn %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Eeunañ"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategiezhoù"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Resev kas"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Direizh eo ar resev kas."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Resevoù kas (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Resevoù kas"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Mankout a ra %1$s er respont d\'ar c\'has."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Direizh eo stad ar respont d\'ar c\'has."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"N\'eo ket kefluniet ar servij kas."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Distroet eo HTTP %1$s gant ar servij kas."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"N\'eus ket tu da gas er stumm-mañ."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Kas"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Kas al lennadennoù diasur da zont ent emgefreek"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Kas al lennadenn"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Kas ul lennadenn diasur evit dielfennañ"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Kas un hizivadenn"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Kaset"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"O kas…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Diagnostikoù Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Soñjoù diwar-benn Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Embannet eo Sudoku Buddy gant Freevia. Darempred: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy a lenn sudokù dre ar c\'hamera, setu ez eus ezhomm da gaout moned d\'ar c\'hamera. Chom a ra an anavezadur hag istor ar sudokù war ho pellgomzer. Ma tibabit kas ul lennadenn diasur, e vez kaset he luc\'hskeudenn hag he disoc\'hoù en un doare diogel da Freevia evit gwellaat an anavezadur. Diret eo ar rannañ emgefreek ha gallout a reer e ziweredekaat er c\'hArventennoù."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Skan Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Skanoù Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Kod tarzh Sudoku Buddy zo dindan Apache License 2.0. Gwirioù merkoù kenwerzh disparti a dalvez evit merk Freevia."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Ur seurt c\'hoari en domani foran eo ar sudoku. An arload-mañ a ziskoulm ar sudokù hoc\'h eus dija; ne eil ket ha ne skign ket sudokù den ebet."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", prouenn harp"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Lakomp ez eus %1$s er c\'hombod merket. Goulakadennet eo ar sifroù niverennet."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Lakait e vefe %1$s er gambr-mañ. Heuilhit ar biroù en urzh: rediet eo pep kambr gant ar sifroù lakaet a-raok - pe eo ar sifr-se an hini nemetañ a c\'hall bezañ enni c\'hoazh, pe eo ar gambr-se al lec\'h nemetañ ma c\'hall ar sifr bezañ c\'hoazh.\n\nNe chom neuze lec\'h ebet evit %2$s en unanen ruz. Ar sifroù %3$s merket enni zo al lec\'hioù ma c\'halle bezañ bet lakaet, ha pep hini zo ur gambr a zo bet kemeret gant unan eus ar biroù nevez zo. Dibosupl eo un unanen hep lec\'h evit ur sifr - n\'eo ket eta %4$s er gambr-mañ."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Lakomp ez eus %1$s er c\'hombod-mañ. Heuilhit ar biroù en urzh: rediet eo pep kombod gant al lec\'hiadennoù kent - pe eo ar sifr-se an hini nemetañ a c\'hall bezañ ennañ c\'hoazh, pe eo ar c\'hombod-se al lec\'h nemetañ ma c\'hall ar sifr mont c\'hoazh. Ne chom neuze sifr ebet evit ar c\'hombod e ruz, ar pezh na c\'hall ket c\'hoarvezout - setu n\'eo ket %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Lakait e vefe %1$s er gambr-mañ. Heuilhit ar biroù en urzh: rediet eo pep kambr gant ar sifroù lakaet a-raok - pe eo ar sifr-se an hini nemetañ a c\'hall bezañ enni c\'hoazh, pe eo ar gambr-se al lec\'h nemetañ ma c\'hall ar sifr bezañ c\'hoazh.\n\nNe chom neuze lec\'h ebet evit %2$s er renk ruz. Ar sifroù %3$s merket ennañ zo al lec\'hioù ma c\'halle bezañ bet lakaet, ha pep hini zo ur gambr a zo bet kemeret gant unan eus ar biroù nevez zo. Dibosupl eo ur renk hep lec\'h evit ur sifr - n\'eo ket eta %4$s er gambr-mañ."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Lakait e vefe %1$s er gambr-mañ. Heuilhit ar biroù en urzh: rediet eo pep kambr gant ar sifroù lakaet a-raok - pe eo ar sifr-se an hini nemetañ a c\'hall bezañ enni c\'hoazh, pe eo ar gambr-se al lec\'h nemetañ ma c\'hall ar sifr bezañ c\'hoazh.\n\nNe chom neuze lec\'h ebet evit %2$s er bloc\'h ruz. Ar sifroù %3$s merket ennañ zo al lec\'hioù ma c\'halle bezañ bet lakaet, ha pep hini zo ur gambr a zo bet kemeret gant unan eus ar biroù nevez zo. Dibosupl eo ur bloc\'h hep lec\'h evit ur sifr - n\'eo ket eta %4$s er gambr-mañ."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Lakomp ez eus %1$s er c\'hombod-mañ. Heuilhit ar biroù en urzh: rediet eo pep kombod gant al lec\'hiadennoù kent - pe eo ar sifr-se an hini nemetañ a c\'hall bezañ ennañ c\'hoazh, pe eo ar c\'hombod-se al lec\'h nemetañ ma c\'hall ar sifr mont c\'hoazh.\n\nNe chom neuze lec\'h ebet evit %3$s er %2$s e ruz. Ar %4$s merket ennañ zo al lec\'hioù ma c\'halle mont, ha pep hini zo ur c\'hombod zo bet kemeret bremañ gant unan eus ar biroù. Ne c\'hall ket ur %5$s bezañ hep lec\'h evit ur sifr - setu n\'eo ket %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Lakait e vefe %1$s er gambr-mañ. Heuilhit ar biroù en urzh: rediet eo pep kambr gant ar sifroù lakaet a-raok - pe eo ar sifr-se an hini nemetañ a c\'hall bezañ enni c\'hoazh, pe eo ar gambr-se al lec\'h nemetañ ma c\'hall ar sifr bezañ c\'hoazh.\n\nNe chom neuze lec\'h ebet evit %2$s er bann ruz. Ar sifroù %3$s merket ennañ zo al lec\'hioù ma c\'halle bezañ bet lakaet, ha pep hini zo ur gambr a zo bet kemeret gant unan eus ar biroù nevez zo. Dibosupl eo ur bann hep lec\'h evit ur sifr - n\'eo ket eta %4$s er gambr-mañ."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Tremenit da Goude evit gwelet ar fiñv hag e zisoc\'hoù war ar gael."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Pesk-kleze"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Tennañ ul luc\'hskeudenn nevez"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Tennañ ul luc\'hskeudenn all"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Kemerit ur sifr ha merkit pep unvez ma chom rik daou gombod evitañ. Evel ur pouezerez int: unan anezho zo ar sifr, hag an hini all n\'eo ket.\n\nKrogit e lec\'h ebet ha livit ur c\'hombod, e glas da skouer. Livit e barez e gwer, ha neuze parez hennezh e glas adarre, ha kendalc\'hit betek dibenn ar chadenn. Pe eo gwir pep kombod glas, pe pep kombod gwer - ne c\'hallit ket gouzout pehini, ha trawalc\'h eo evit daou dra.\n\nDa gentañ: ma vez daou gombod eus an hevelep liv en ur linenn, ur bann pe ur bloc\'h, eo dibosupl al liv-se; dilamet e vez neuze ar sifr eus pep kombod gant al liv-se, hag al liv all eo ar respont e pep lec\'h.\n\nDa eil: pep kombod er-maez eus ar chadenn a wel ur c\'hombod glas hag unan gwer a c\'hall dilezel ar sifr, rak unan eus an daou-se zo ennañ, forzh peseurt tu a vez gwir er chadenn.\n\nGorrek eo gant ur c\'hreion, met talvoudus: alies e tenn ul livadur ur sifr eus hanter ar gael."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Kemerit ur sifr hag un unvez war un dro - da skouer, pelec\'h e c\'hall ur 4 mont er bloc\'h-mañ? Barrennit pep kombod en unvez m\'emañ ur sifr dija, pe a wel ur 4 en e linenn pe en e vann. Ma chom ur c\'hombod hepken, e ya ar 4 ennañ.\n\nAn trap eo ne c\'hallit ket gwelet kement-mañ dre sellet ouzh ar c\'hombod: gallout a ra degemer pemp sifr all ivez, setu ne seblant netra bezañ rediet ennañ. Sellit ouzh ar sifr kentoc\'h eget ar c\'hombod, hag e teu war wel diouzhtu."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Tennañ luc\'hskeudenn"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Tennañ al luc\'hskeudenn ent emgefreek"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Stokit ouzh ur c\'hombod merket evit e adwelout, pe kadarnait eo reizh an holl lennadennoù."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Stokit ouzh ur c\'hombod war ar gael da gentañ."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Amprouit %1$s evel goulakadenn er c\'hombod merket. N\'eo ket ur respont. Heuilhit an disoc\'hoù evit gwelet perak e c\'hwit."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Amprouiñ ar c\'houlakadenn"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Trugarez evit ho skoazell da wellaat an anavezadur. Implijet e vo luc\'hskeudenn ho sudoku, al lennadennoù hag ar reizhadennnoù evit dielfennañ ha stummañ."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Ur fiñv %1$s reizh eo ivez. Un fiñv all a ziskouez an hent-mañ; keñveriit e brouenn amañ dindan."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"N\'eo ket ar fiñv dibabet evit ar bazenn-mañ. Gallout a ra bezañ fiñvoù reizh all; sellit adarre pe diskouezit displegadenn ar bazenn-mañ."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Reizh eo"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Setu peurrest ar sudoku. %1$s kombod ennañ a rank kaout respontoù gant skoazell an diskoulmer rak n\'eus kavet fiñv ebet gant an teknikoù skoret gant an arload. N\'eus ket prouennoù munut o enklaskoù da gaout."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Setu peurrest ar sudoku. Unan eus e gombodoù a rank kaout ur respont gant skoazell an diskoulmer rak n\'eus kavet fiñv ebet gant an teknikoù skoret gant an arload. N\'eus ket prouenn munut e enklask da gaout."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Setu peurrest ar sudoku, eus ar penn-kentañ betek ar fin."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" N\'eus ket bet gallet mirout al luc\'hskeudenn-se, n\'eus netra da gas eta."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Ar c\'hombod-se a aotre %1$s. Klaskit ar fiñv reishaet gant teknik ar bazenn-mañ, pe diskouezit he displegadenn."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Leun eo ar c\'hombod-se dija. Dibabit ur c\'hombod goullo."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Distaollet eo bet ar c\'houlakadenn. Distreiñ a reomp d\'ar c\'handidated gwir ha barrenniñ %1$s er c\'hombod merket. Skarzhet eo ar sifroù goulakadennet."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"N\'eus ket bet gallet tennañ al luc\'hskeudenn-se gant ar c\'hamera."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"N\'eo ket ar c\'hamera hegerz. Serrit an arloadoù kamera all, ha klaskit adarre."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"an hini all"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Dilamet e vo luc\'hskeudenn %1$s ha pep tra lennet diwarni eus ar pellgomzer-mañ. N\'eus ket tu da zistreiñ war an dra-mañ."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Emañ al luc\'hskeudenn e roll ho kaelioù, dindan \"Ne oa ket lennadus\"."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Ar pivot amañ zo %1$s pe %2$s. Forzh pehini eo, rediet eo unan eus an daou gombod all da vezañ %3$s, setu ne c\'hall kombod ebet a wel an daou bezañ %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Ar par bukañ lennet war-gil. Kemerit ur linenn pe ur bann hag ur sifr a rank c\'hoazh kavout ul lec\'h ennañ. Merkit pep kombod war al linenn-se a c\'hall degemer ar sifr. Ma emaint holl en ur bloc\'h hepken, e rank ar sifr bezañ er rann eus al linenn er bloc\'h-se - setu n\'emañ e lec\'h all ebet er bloc\'h, en e ziv linenn pe e zaou vann all n\'edoc\'h ket o sellet outo ivez.\n\nEvel ar par bukañ, ne laka netra e-unan; ober a ra lec\'h evit un dra a ra."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Ne ra ket ar sifroù moulet ur sudoku diskoulmadus."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nAr c\'handidated a chom e %1$s eo {%2$s}. Lakait %3$s er renkennad %4$s, kolonenn %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Re vras eo ar rentañ-kont evit bezañ kaset."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"An askell Y gant ur c\'handidad ouzhpenn er pivot. Klaskit ur c\'hombod gant rik tri c\'handidad, {1,4,7} da skouer, a wel daou gombod gant daou gandidàd - unan {1,7} hag unan {4,7}.\n\nBremañ e c\'hall an tri bezañ 7, hag unan anezho a rank bezañ. Setu e rank ur c\'hombod gwelet an tri evit bezañ diskartet, ha neket an daou bins hepken - ar pezh a dalvez, en pleustr, emañ en hevelep bloc\'h hag ar pivot hag war ur linenn gant ur bins.\n\nNebeutoc\'h a zilemadurioù eget gant un askell Y, hag aesoc\'h da vankout evit an hevelep abeg: ne vez ket ar pivot anat."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Ur c\'hombod a c\'hallit leuniañ zo er bloc\'h uslinennet.\n\nPouezit war Sikour adarre evit gouzout peseurt teknik a gav anezhañ."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Ne chom netra amañ da boellata warnañ."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Ar %1$s kombod-mañ n\'o deus nemet %2$s ha %3$s, ha pep hini a wel an hini war e lerc\'h, setu e vezont a bep eil a-hed an hent. Un niver ampar a ereoù zo etre %4$s ha %5$s, setu ez eus sifroù disheñvel enno - ar pezh a ziskart %6$s eus pep kombod a wel an daou."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Ar %1$s kombod-mañ n\'o deus nemet %2$s etrezo, setu e leugn ar sifroù-se anezho en un urzh bennak. Diskartañ a ra kement-se %3$s eus peurrest ar %4$s-mañ."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"En %1$s kambr-mañ, ne c\'hall bezañ nemet %2$s en holl, ha neuze e leugn ar sifroù-se anezho en un urzh bennak. Skarzhañ a ra-se %3$s eus ar c\'hambroù all er renk-mañ."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"En %1$s kambr-mañ, ne c\'hall bezañ nemet %2$s en holl, ha neuze e leugn ar sifroù-se anezho en un urzh bennak. Skarzhañ a ra-se %3$s eus ar c\'hambroù all er bann-mañ."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"En %1$s kambr-mañ, ne c\'hall bezañ nemet %2$s en holl, ha neuze e leugn ar sifroù-se anezho en un urzh bennak. Skarzhañ a ra-se %3$s eus ar c\'hambroù all er bloc\'h-mañ."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Setu kandidated orin ho kombod. Heuliad a zispleg peseurt posupldedoù a c\'haller diskartañ."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Ne c\'hall ket ar sifroù-mañ ober ur sudoku, ha re a draoù zo faos evit lavaret pere. Stokit ouzh ur c\'hombod bennak evit reizhañ ar pezh zo bet lennet, pe tennit al luc\'hskeudenn adarre."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Ne c\'hall ket ar sifroù-mañ ober ur sudoku. Kemmañ ar %1$s kombod kelc\'hiet a reizho anezhañ - stokit ouzh unan evit reizhañ ar pezh zo bet lennet."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Ne c\'hall ket ar sifroù-mañ ober ur sudoku. Kemmañ ar c\'hombod kelc\'hiet nemetañ a reizho anezhañ - stokit outañ evit reizhañ ar pezh zo bet lennet."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Ne ra ket ar sifroù-mañ ur sudoku, setu ez eus unan bet lennet fall. Pouezit war Diskoulmañ evit gwelet peseurt kombodoù da reizhañ."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Ar pevar c\'hombod-mañ a ra ur reizhkorn dre zaou vloc\'h, ha tri anezho n\'o deus nemet %1$s. Ma ne vije nemet an daou-se e %2$s ivez, e c\'hallfed eskemm ar sifroù tro-dro d\'ar reizhkorn hag e vije daou ziskoulm d\'ar sudoku. Unan hepken en deus, setu e rank %3$s implijout un dra all - ha dilamet e vez %4$s."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Ne zeuont ket betek ar fin: un dra bennak amañ zo trec\'h d\'an arload penn-da-benn."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Ne leugn ket kement-mañ kombod ebet. Diskartañ a ra %1$s eus %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Ne leugn netra kement-mañ. Skarzhañ a ra %1$s eus %2$s karrez."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Ne leugn netra kement-mañ. Skarzhañ a ra %1$s eus ur c\'harrez."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nHomañ eo ar gentañ eus %1$s dedukadur a gas d\'ar respont."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Ar brouenn-mañ a zispleg ur sikour, en o zouez dilemadurioù kandidated a gas d\'e respont. Kit war-raok evit heuliañ ar poellata war ar gael, ha kendalc\'hit gant an hent klok."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"N\'eus ket bet gallet prientiñ ar sudoku-mañ."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"N\'eus ket bet gallet enrollañ ar sudoku-mañ. Gallout a rit e implijout bremañ memes tra. Dieubit plas stokañ a-raok tennañ ul luc\'hskeudenn all."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Muioc\'h eget un diskoulm zo d\'ar sudoku-mañ, setu ez eus moarvat ur sifr moulet bet manket. O tiskouez diskoulm %1$s diwar %2$s - pouezit war Diskoulmañ adarre evit an hini war-lerc\'h. Disheñvel eo ar c\'hombodoù kelc\'hiet etre an diskoulmoù diskouezet."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"N\'eus ket bet gallet digeriñ luc\'hskeudenn ar sudoku-mañ."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Ar poellata-mañ a ziskart %1$s a zo dija "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Gallout a ra bezañ notennoù kandidated er c\'hombod-mañ kentoc\'h eget ur sifr klok. Gwiriit anezhañ."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Dilemadurioù kandidated kent zo er gwel-mañ. Digorit o frouennoù amañ dindan evit o gwiriekadur."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tri"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Re deñval evit gwelet linennoù ar gael"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Heuliad"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Amprouet"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Klaskit hoc\'h-unan"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Gweredekaat"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Troit ar pellgomzer evit ma vo ar sudoku en e sav."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Kelenner"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"daou"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Daou gombod gant an hevelep par, liammet dre ur pouezerez war unan eus e sifroù, a red ar sifr all da vont en unan anezho."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Sarpant-nij div gordenn"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Reizhkorn unel"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"unanenn"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Ne ziskouez Unreadable roll CellReading ebet; miret eo ar c\'hombodoù enmont resis hag an disoc\'h."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"stumm furmad ar patrom n\'eo ket skoret"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Diasur"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Implijout yezh an trevnad"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"En ur implijout %1$s, stokit ouzh ur c\'hombod ma c\'haller dilemel ur c\'handidad, ha dibabit ar sifr-se."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"En ur implijout %1$s, stokit ouzh ar c\'hombod a c\'hallit leuniañ, ha dibabit e sifr."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Diaes-kenañ"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"Askell W"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"a voe"</string>
+    <string name="msg_were_910adfb4" formatted="false">"a voe"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Petra a c\'hortozec\'h, pe penaos e skoazellfe ho soñj ac\'hanoc\'h da ziskoulmañ pe da zeskiñ Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Ar pezh a zo c\'hoarvezet ha pazennoù evit e adober (evit ar beugoù)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Petra a ra"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Pelec\'h"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Perak eo bet dilamet %1$s eus r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Perak"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Perak neket %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Perak ar c\'hombod-mañ? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" gant an diskoulm. Implijit Gwiriañ da sellout outo."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Labourit war-gil diwar ho kombod. Dibabit ur goulenn amañ dindan."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Labourit sifr dre sifr kentoc\'h eget kombod dre gombod. Evit un unvez, skrivit pelec\'h e c\'hall pep sifr a vank mont c\'hoazh. Klaskit neuze %1$s sifr ma ne c\'holo o rolloù asambles nemet %2$s kombod.\n\nAr %3$s sifr-se a rank leuniañ ar %4$s kombod-se, setu e c\'haller barrenniñ pep tra all enno - ar pezh a dro alies unan anezho en un unel noazh pe ur par noazh diouzhtu.\n\nHemañ eo an hini diaesañ evit an dud, rak n\'eus netra da welet pa seller ouzh ar c\'hombodoù: kalz kandidated zo enno c\'hoazh. Er sifroù emañ ar patrom."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Labourit gant kombodoù ma chom rik daou gandidàd enno hepken.\n\nKrogit gant unan, {2,6} da skouer, ha lakomp n\'eo ket ar 2 - neuze eo ar 6. Kit d\'ur c\'hombod a wel hag en deus ur 6 ivez, {6,4} da skouer: ne c\'hall ket hennezh bezañ ar 6, setu eo ar 4. Kit d\'ur c\'hombod a wel hennezh hag en deus ur 4, ha kendalc\'hit, pep pazenn rediet gant an hini a-raok.\n\nMa erruit en ur c\'hombod ma\'z eo e sifr all 2 - ar sifr hoc\'h eus diskartet da gentañ - eo echu. Pe e oa ar c\'hombod kentañ ur 2 a-benn ar fin, pe eo bet heuliet ar chadenn hag ar c\'hombod diwezhañ zo ur 2. Unan eus an daou benn zo ennañ, setu ne c\'hall netra a wel an daou benn bezañ.\n\nDalcrit ar chadennoù berr. Pevar pe bemp kombod a c\'haller kavout gant ur c\'hreion; pelloc\'h evit se emaoc\'h o terc\'hel kontoù, hag ur chadenn rediañ eo an anv onest evitañ."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"ar ribl labour a rank bezañ pozitivel ha bevennek"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"N\'eus ket bet gallet lenn"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Skrivet"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Faos"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"Askell X"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"Chadenn XY"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"Askell XYZ"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Askell Y"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Skarzhet hoc\'h eus ar c\'hombod-mañ."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Lakaet hoc\'h eus amañ ur %1$s skrivet gant an dorn."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Lakaet hoc\'h eus amañ ur %1$s moulet."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Gwelus eo ho kemmoù, met n\'eus ket bet gallet o enrollañ. Dieubit plas stokañ ha klaskit embann ar sudoku adarre."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Ho luc\'hskeudennoù hag ho prevezded"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Ho sudokù"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Ho sudokù enrollet"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Ho kombod ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Chom a ra ho kombod kelc\'hiet. Ar c\'hombodoù gwer a ziskouez prouennoù; diskartet eo ar sifroù barrennet."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

@@ -136,7 +136,7 @@ object Diagnostics {
         if (files.isEmpty()) {
             val send = Intent(Intent.ACTION_SEND).apply {
                 type = "text/plain"
-                putExtra(Intent.EXTRA_SUBJECT, "Sudoku Buddy diagnostics")
+                putExtra(Intent.EXTRA_SUBJECT, context.localized("Sudoku Buddy diagnostics"))
                 putExtra(Intent.EXTRA_TEXT, note)
             }
             return start(context, send, "Send diagnostics")
@@ -161,7 +161,7 @@ object Diagnostics {
             Intent(Intent.ACTION_SEND).apply {
                 type = "image/jpeg"
                 putExtra(Intent.EXTRA_STREAM, uris.first())
-                putExtra(Intent.EXTRA_SUBJECT, "Sudoku Buddy scan")
+                putExtra(Intent.EXTRA_SUBJECT, context.localized("Sudoku Buddy scan"))
                 note?.let { putExtra(Intent.EXTRA_TEXT, it) }
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
             }
@@ -169,7 +169,7 @@ object Diagnostics {
             Intent(Intent.ACTION_SEND_MULTIPLE).apply {
                 type = "image/jpeg"
                 putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris)
-                putExtra(Intent.EXTRA_SUBJECT, "Sudoku Buddy scans")
+                putExtra(Intent.EXTRA_SUBJECT, context.localized("Sudoku Buddy scans"))
                 note?.let { putExtra(Intent.EXTRA_TEXT, it) }
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
             }
@@ -185,7 +185,7 @@ object Diagnostics {
      */
     private fun start(context: Context, send: Intent, title: String): Boolean = runCatching {
         context.startActivity(
-            Intent.createChooser(send, title).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            Intent.createChooser(send, context.localized(title)).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         )
         true
     }.getOrDefault(false)

@@ -16,15 +16,15 @@ internal fun GitHubFeedbackDialog(onDismiss: () -> Unit) {
     val context = LocalContext.current
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Report a bug or idea on GitHub") },
+        title = { Text(localized("Report a bug or idea on GitHub")) },
         text = {
             Text(
-                "Open a draft in your browser with the app version, phone model, Android " +
+                localized("Open a draft in your browser with the app version, phone model, Android " +
                     "version and recent scan diagnostics filled in. Add a full description " +
                     "and relevant screenshots yourself.\n\n" +
                     "GitHub sign-in is required. You can review and edit the draft before " +
                     "submitting it. Submitted reports and attachments are public. No " +
-                    "photographs are attached automatically.",
+                    "photographs are attached automatically."),
             )
         },
         confirmButton = {
@@ -45,14 +45,15 @@ internal fun GitHubFeedbackDialog(onDismiss: () -> Unit) {
                     )
                 }.isSuccess
                 if (!opened) {
+                    val supportAddress = "info@freevia.org"
                     Toast.makeText(
                         context,
-                        "Could not open GitHub. You can email info@freevia.org for support.",
+                        context.localized("Could not open GitHub. Contact support at $supportAddress."),
                         Toast.LENGTH_LONG,
                     ).show()
                 }
-            }) { Text("Open GitHub") }
+            }) { Text(localized("Open GitHub")) }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("Cancel") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(localized("Cancel")) } },
     )
 }

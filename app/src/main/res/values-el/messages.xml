@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nΤα επισημασμένα κελιά το αποδεικνύουν.\n\nΠατήστε Υπόδειξη ξανά για να σας δειχθεί ποιο κελί."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s και %2$s περιέχουν μόνο %3$s και %4$s. Σε αυτό το %5$s, το %6$s έχει μόνο δύο θέσεις, μία που βλέπει το καθένα τους — άρα ένα από αυτά τα δύο είναι %7$s, και το άκρο που το βλέπει πρέπει να είναι %8$s. Είτε έτσι είτε αλλιώς, ένα άκρο είναι %9$s, πράγμα που αποκλείει το %10$s από ό,τι βλέπει και τα δύο άκρα."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"Τα %1$s και %2$s μπορούν και τα δύο να δεχτούν μόνο τα %3$s και %4$s. Σε αυτό το πλαίσιο, το %5$s έχει μόνο δύο δυνατές θέσεις, μία που βλέπει το καθένα τους — άρα μία από αυτές τις δύο είναι %6$s, και το άκρο που τη βλέπει πρέπει να είναι %7$s. Σε κάθε περίπτωση, ένα άκρο είναι %8$s, οπότε το %9$s αποκλείεται από κάθε κελί που βλέπει και τα δύο άκρα."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"Τα %1$s και %2$s μπορούν και τα δύο να δεχτούν μόνο τα %3$s και %4$s. Σε αυτή τη στήλη, το %5$s έχει μόνο δύο δυνατές θέσεις, μία που βλέπει το καθένα τους — άρα μία από αυτές τις δύο είναι %6$s, και το άκρο που τη βλέπει πρέπει να είναι %7$s. Σε κάθε περίπτωση, ένα άκρο είναι %8$s, οπότε το %9$s αποκλείεται από κάθε κελί που βλέπει και τα δύο άκρα."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"Τα %1$s και %2$s μπορούν και τα δύο να δεχτούν μόνο τα %3$s και %4$s. Σε αυτή τη γραμμή, το %5$s έχει μόνο δύο δυνατές θέσεις, μία που βλέπει το καθένα τους — άρα μία από αυτές τις δύο είναι %6$s, και το άκρο που τη βλέπει πρέπει να είναι %7$s. Σε κάθε περίπτωση, ένα άκρο είναι %8$s, οπότε το %9$s αποκλείεται από κάθε κελί που βλέπει και τα δύο άκρα."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s στη γραμμή %2$s, στήλη %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s στο βήμα %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"Το %1$s μπορεί να περιέχει μόνο το %2$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s δεν μπορεί να περιέχει %2$s επειδή %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"Το %1$s δεν μπορεί να περιέχει το %2$s, επειδή το %3$s μπορεί να περιέχει μόνο το %4$s στην ίδια στήλη %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"Το %1$s δεν μπορεί να περιέχει το %2$s, επειδή το %3$s μπορεί να περιέχει μόνο το %4$s στο ίδιο πλαίσιο %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"Το %1$s δεν μπορεί να περιέχει το %2$s, επειδή το %3$s μπορεί να περιέχει μόνο το %4$s στην ίδια γραμμή %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"Το %1$s δεν μπορεί να περιέχει το %2$s, επειδή το %3$s περιέχει το %4$s στο ίδιο πλαίσιο %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"Το %1$s δεν μπορεί να περιέχει το %2$s, επειδή το %3$s περιέχει το %4$s στην ίδια στήλη %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"Το %1$s δεν μπορεί να περιέχει το %2$s, επειδή το %3$s περιέχει το %4$s στην ίδια γραμμή %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"Το %1$s περιέχει το %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s κενό"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, καταχώριση"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"Το %1$s πρέπει να τοποθετηθεί εδώ: είναι το μόνο κελί σε αυτή τη στήλη %2$s που μπορεί ακόμη να δεχτεί το %3$s.\n\n%4$s\n\nΤο %5$s επιτρέπει προς το παρόν τα %6$s, αλλά κάθε στήλη πρέπει να περιέχει το %7$s ακριβώς μία φορά. Επομένως, τοποθέτησε το %8$s στη γραμμή %9$s, στήλη %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"Το %1$s πρέπει να τοποθετηθεί εδώ: είναι το μόνο κελί σε αυτό το %2$s %3$s που μπορεί ακόμα να δεχτεί %4$s.\n\n%5$s\n\nΤο %6$s επιτρέπει αυτή τη στιγμή %7$s, αλλά κάθε %8$s πρέπει να περιέχει %9$s ακριβώς μία φορά. Επομένως τοποθετήστε %10$s στη γραμμή %11$s, στήλη %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"Το %1$s πρέπει να τοποθετηθεί εδώ: είναι το μόνο κελί σε αυτό το πλαίσιο %2$s που μπορεί ακόμη να δεχτεί το %3$s.\n\n%4$s\n\nΤο %5$s επιτρέπει προς το παρόν τα %6$s, αλλά κάθε πλαίσιο πρέπει να περιέχει το %7$s ακριβώς μία φορά. Επομένως, τοποθέτησε το %8$s στη γραμμή %9$s, στήλη %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"Το %1$s πρέπει να τοποθετηθεί εδώ: είναι το μόνο κελί σε αυτή τη γραμμή %2$s που μπορεί ακόμη να δεχτεί το %3$s.\n\n%4$s\n\nΤο %5$s επιτρέπει προς το παρόν τα %6$s, αλλά κάθε γραμμή πρέπει να περιέχει το %7$s ακριβώς μία φορά. Επομένως, τοποθέτησε το %8$s στη γραμμή %9$s, στήλη %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"Το %1$s έχει δύο θέσεις σε αυτή τη γραμμή και δύο σε αυτήν τη στήλη. Τα %2$s και %3$s μοιράζονται ένα κουτί, άρα δεν μπορούν να είναι και τα δύο %4$s — πράγμα που αφήνει ένα από τα %5$s και %6$s να το κρατά, και αποκλείει το %7$s από ό,τι βλέπει και τα δύο."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s στην ίδια %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s στο ίδιο πλαίσιο."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s στην ίδια στήλη."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s στην ίδια γραμμή."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"Το %1$s έχει ήδη αποκλειστεί από αυτό το κελί. Οι υποψήφιοί του είναι "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"Το %1$s αποκλείεται από %2$s, που "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"Το %1$s αποκλείεται από το %2$s, το οποίο μπορεί να περιέχει μόνο το %3$s στην ίδια στήλη %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"Το %1$s αποκλείεται από το %2$s, το οποίο μπορεί να περιέχει μόνο το %3$s στην ίδια γραμμή %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"Το %1$s αποκλείεται από το %2$s, το οποίο μπορεί να περιέχει μόνο το %3$s στο ίδιο πλαίσιο %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"Το %1$s αποκλείεται από το %2$s, το οποίο περιέχει το %3$s στο ίδιο πλαίσιο %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"Το %1$s αποκλείεται από το %2$s, το οποίο περιέχει το %3$s στην ίδια στήλη %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"Το %1$s αποκλείεται από το %2$s, το οποίο περιέχει το %3$s στην ίδια γραμμή %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"Το %1$s αναγκάζεται στο νεότερο αριθμημένο κελί (γραμμή %2$s, στήλη %3$s). %4$s Το βέλος ακολουθεί μια συνεισφέρουσα τοποθέτηση· σημαντικές είναι και οι προηγούμενες συνέπειες."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"Το %1$s λείπει από το classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s από %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s από αυτά συμπληρώνουν ένα κελί· τα υπόλοιπα αφαιρούν πρώτα υποψηφίους για να ανοίξουν χώρο."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"ζεύγος %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s τυπωμένο, %2$s, %3$s λάθος"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s τυπωμένο, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s τυπωμένο"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, τυπωμένη ένδειξη"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"τετράδα %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s απορρίφθηκαν φωτογραφίες, από τη νεότερη:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: αφαίρεση %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Αριθμός κελιών: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s βήματα αποτελούν αυτή τη διαδρομή, με δυσκολότερη υποστηριζόμενη τεχνική %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"τριάδα %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"Το %1$s αφαιρέθηκε από %2$s από προηγούμενο συλλογισμό υποψηφίων."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s χειρόγραφο"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"μια εικόνα %1$sx%2$s χρειάζεται %3$s byte αλλά ελήφθησαν %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"ένα κελί δεν ήταν ούτε ψηφίος ούτε τελεία"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Μια αλυσίδα τετραγώνων με δύο υποψηφίους που αρχίζει και τελειώνει στο ίδιο ψηφίο τοποθετεί αυτό το ψηφίο στο ένα ή στο άλλο άκρο."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Ένα ψηφίο με μόνο μία υπόλοιπη θέση σε γραμμή, στήλη ή κουτί ανήκει σε εκείνη τη θέση."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Ένα χειρόγραφο %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Ένα τυπωμένο %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Ένα κόκκινο τετράγωνο δείχνει το ψηφίο που διάβασε η εφαρμογή εκεί. Αν αυτό δεν είναι αυτό που γράψατε, πατήστε το τετράγωνο για να το διορθώσετε."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Ένα τετράγωνο με μόνο ένα υπόλοιπο ψηφίο πρέπει να περιέχει αυτό το ψηφίο."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Μια λίστα τεχνικών δεν είναι ποτέ πλήρης, και τα πιο δύσκολα παζλ είναι φτιαγμένα για να νικούν ό,τι κι αν υπάρχει σε αυτή. Έτσι, όταν όλες ανεξαιρέτως βγαίνουν άδειες, ο εκπαιδευτής επιλύει ένα μόνο τετράγωνο δοκιμάζοντας τους υποψηφίους του, δηλώνει ρητά ότι αυτό έκανε, και συνεχίζει να συλλογίζεται από εκεί. Πάντα φτάνει στο τέλος ενός παζλ, και ποτέ δεν προσποιείται ότι μια αναζήτηση ήταν συλλογισμός."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Ένας κόμβος με τρεις υποψηφίους και δύο ταιριαστές λαβίδες με δύο υποψηφίους αναγκάζουν ένα ψηφίο να αποκλειστεί από κάθε τετράγωνο που «βλέπει» και τα τρία."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Ένας κόμβος με δύο υποψηφίους και δύο λαβίδες με δύο υποψηφίους μπορούν να αναγκάσουν ένα ψηφίο να αποκλειστεί από κάθε τετράγωνο που βλέπει και τις δύο λαβίδες."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Σχετικά"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Μετά"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Μετά από αυτήν την κίνηση"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Όλα σωστά"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Και τα τρία αυτά τετράγωνα μπορεί να είναι %1$s, και ένα από αυτά πρέπει να είναι. Έτσι, κανένα τετράγωνο που βλέπει και τα τρία δεν μπορεί να είναι %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Να επιτραπεί η κάμερα"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Σχεδόν - κρατήστε τη σελίδα επίπεδη και τετράγωνη ως προς την κάμερα"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"ένας αποκλεισμός που δεν αφαιρεί τίποτα δεν είναι συμπέρασμα"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" και "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Απάντηση"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Εφαρμογή και συσκευή (προσυμπληρωμένα)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Εφαρμογή: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"η αναλογία πρέπει να είναι θετική αλλά ήταν %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Υπόθεση · υποθετικό ψηφίο"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Υπόθεση απορρίφθηκε · αποκαταστάθηκαν οι πραγματικοί υποψήφιοι"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"τουλάχιστον %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Αυτόματη φωτογραφία"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Αυτόματη κοινοποίηση αβέβαιων φωτογραφιών παζλ, αποτελεσμάτων ανάγνωσης και μεταγενέστερων διορθώσεων κελιών στη Freevia για ανάλυση αναγνώρισης και εκπαίδευση. Απενεργοποιημένο από προεπιλογή."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Αποφύγετε την αντανάκλαση"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Πίσω"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Επιστροφή στην προηγούμενη ερώτηση"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Επιστροφή στην οπτική υπόδειξη"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Επιστροφή στο τετράγωνό σας"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Πριν"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Πριν από αυτήν την κίνηση"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Τα μπλε ψηφία είναι η λύση. Πατήστε οποιοδήποτε τετράγωνο για να διορθώσετε αυτό που αναγνώστηκε."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"κουτί %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"κουτί"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Κουτί"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Μείωση γραμμής κουτιού"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Κάμερα"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"μπορεί να περιέχει μόνο"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Ακύρωση"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", υποψήφιοι %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Συνδέστε ένα ψηφίο μέσω των μονάδων όπου έχει μόνο δύο θέσεις, χρωματίστε την αλυσίδα με δύο εναλλασσόμενα χρώματα, και ένα χρώμα είναι αληθές σε όλη της την έκταση."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Συνδέοντας το %1$s σε αλυσίδα μέσα από τις μονάδες όπου έχει μόνο δύο δυνατές θέσεις, αυτά τα κελιά αποκτούν δύο εναλλασσόμενα χρώματα, από τα οποία το ένα είναι σωστό σε όλη την αλυσίδα. Δύο κελιά του άλλου χρώματος βρίσκονται στην ίδια γραμμή, πράγμα αδύνατο — άρα αυτό το χρώμα είναι το λανθασμένο και το %2$s αποκλείεται από κάθε κελί με αυτό το χρώμα."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Συνδέοντας το %1$s σε αλυσίδα μέσα από τις μονάδες όπου έχει μόνο δύο δυνατές θέσεις, αυτά τα κελιά αποκτούν δύο εναλλασσόμενα χρώματα, από τα οποία το ένα είναι σωστό σε όλη την αλυσίδα. Δύο κελιά του άλλου χρώματος βρίσκονται στο ίδιο πλαίσιο, πράγμα αδύνατο — άρα αυτό το χρώμα είναι το λανθασμένο και το %2$s αποκλείεται από κάθε κελί με αυτό το χρώμα."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Συνδέοντας το %1$s σε αλυσίδα μέσα από τις μονάδες όπου έχει μόνο δύο δυνατές θέσεις, αυτά τα κελιά αποκτούν δύο εναλλασσόμενα χρώματα, από τα οποία το ένα είναι σωστό σε όλη την αλυσίδα. Δύο κελιά του άλλου χρώματος βρίσκονται στην ίδια στήλη, πράγμα αδύνατο — άρα αυτό το χρώμα είναι το λανθασμένο και το %2$s αποκλείεται από κάθε κελί με αυτό το χρώμα."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Η σύνδεση του %1$s μέσω των μονάδων όπου έχει μόνο δύο θέσεις αφήνει αυτά τα τετράγωνα με δύο εναλλασσόμενα χρώματα, εκ των οποίων ένα είναι αληθές σε όλη της την έκταση. Δύο τετράγωνα του χρώματος %2$s βρίσκονται στην ίδια %3$s, κάτι που αδύνατο — άρα αυτό το χρώμα είναι το ψευδές, και το %4$s αφαιρείται από κάθε τετράγωνο που το φέρει."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Η σύνδεση του %1$s μέσω των μονάδων όπου έχει μόνο δύο θέσεις αφήνει αυτά τα τετράγωνα με δύο εναλλασσόμενα χρώματα, και ένα χρώμα είναι αληθές σε όλη της την έκταση. Αυτά τα τετράγωνα βλέπουν και τα δύο χρώματα, οπότε ανεξάρτητα από το πώς πέφτει η αλυσίδα, ένα από τα τετράγωνα που βλέπουν περιέχει το %2$s — άρα αυτά δεν μπορούν."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Συνδέοντας το %1$s σε αλυσίδα μέσα από τις μονάδες όπου έχει μόνο δύο δυνατές θέσεις, αυτά τα κελιά αποκτούν δύο εναλλασσόμενα χρώματα, από τα οποία το ένα είναι σωστό σε όλη την αλυσίδα. Δύο κελιά του ίδιου χρώματος βρίσκονται στο ίδιο πλαίσιο, πράγμα αδύνατο — άρα αυτό το χρώμα είναι το λανθασμένο και το %2$s αποκλείεται από κάθε κελί με αυτό το χρώμα."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Συνδέοντας το %1$s σε αλυσίδα μέσα από τις μονάδες όπου έχει μόνο δύο δυνατές θέσεις, αυτά τα κελιά αποκτούν δύο εναλλασσόμενα χρώματα, από τα οποία το ένα είναι σωστό σε όλη την αλυσίδα. Δύο κελιά του ίδιου χρώματος βρίσκονται στην ίδια στήλη, πράγμα αδύνατο — άρα αυτό το χρώμα είναι το λανθασμένο και το %2$s αποκλείεται από κάθε κελί με αυτό το χρώμα."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Συνδέοντας το %1$s σε αλυσίδα μέσα από τις μονάδες όπου έχει μόνο δύο δυνατές θέσεις, αυτά τα κελιά αποκτούν δύο εναλλασσόμενα χρώματα, από τα οποία το ένα είναι σωστό σε όλη την αλυσίδα. Δύο κελιά του ίδιου χρώματος βρίσκονται στην ίδια γραμμή, πράγμα αδύνατο — άρα αυτό το χρώμα είναι το λανθασμένο και το %2$s αποκλείεται από κάθε κελί με αυτό το χρώμα."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Αβέβαια κελιά προς έλεγχο: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Έλεγχος"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Έλεγχος ενός αβέβαιου τετραγώνου."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", ελέγχθηκε ως σωστό"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Επιλέξτε έναν υποψήφιο για να δείτε γιατί δεν μπορεί να μπει στο τετράγωνό σας."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Επιλογή γλώσσας"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Επιλέξτε τι να εμφανίζεται"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Κλείσιμο"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Κλείσιμο υπόδειξης"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Σύμπτυξη αναθεώρησης ανάγνωσης"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"τα κελιά χρώματος και κλίμακας του γκρι πρέπει να χρησιμοποιούν την ίδια γεωμετρία"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"στήλη %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"στήλη"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"στήλες"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Συγκρίνετε τις αναγκαστικές αλυσίδες και προτιμήστε αυτές με λιγότερα τετράγωνα να ακολουθήσετε. Οι πιο σύντομες αλυσίδες μπορεί να σημαίνουν περισσότερα βήματα στη συνολική λύση."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Συνέπεια %1$s από %2$s · υποθετικά ψηφία"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"περιέχει"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Συνέχεια με την πλήρη διαδρομή"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Αντίφαση · η υπόθεση αποτυγχάνει"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", αντίφαση"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Αντίφαση: το κόκκινο %1$s δεν έχει πλέον θέση για το %2$s. Αυτό είναι αδύνατο, οπότε η αρχική υπόθεση πρέπει να αποτύχει."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Αντίφαση: το κόκκινο τετράγωνο δεν έχει κανέναν εναπομείναντα υποψήφιο. Αυτό είναι αδύνατο, οπότε η αρχική υπόθεση πρέπει να αποτύχει."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Αντιγραφή αιτήματος διαγραφής"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Σωστά. Συγκρίνετε τον συλλογισμό σας με την παρακάτω εξήγηση."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"δεν ήταν δυνατή η αποκωδικοποίηση της ληφθείσας εικόνας"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Δεν ήταν δυνατή η εύρεση των τυπωμένων ψηφίων σε αυτή τη φωτογραφία."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Δεν ήταν δυνατή η ανάγνωση των γραμμών πλέγματος — δοκιμάστε ξανά."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Δεν ήταν δυνατό το άνοιγμα του GitHub. Επικοινωνήστε με την υποστήριξη στο %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Δεν ήταν δυνατή η διατήρηση αποδεικτικών δεδομένων εντοπισμού σφαλμάτων"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Δεν ήταν δυνατή η υποβολή της ανάγνωσης. Δοκιμάστε ξανά όταν συνδεθείτε."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Αδιέξοδο"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Διαγραφή"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Διαγραφή αναφοράς"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Διαγραφή αυτής της φωτογραφίας"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Διαγραφή αυτού του παζλ"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Διαγραφή αυτού του παζλ;"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Διαγραφή αυτής της υποβολής;"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Διαγραφή…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Η διαγραφή δεν μπόρεσε να επιβεβαιωθεί. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Αίτημα διαγραφής"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Η απόκριση διαγραφής δεν επιβεβαίωσε αυτή την απόδειξη."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Η υπηρεσία διαγραφής επέστρεψε HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Περιγράψτε τι συνέβη και τα βήματα για να το επαναλάβετε. Αναφέρετε αν ελέγξατε και διορθώσατε πρώτα τα αναγνωρισμένα ψηφία. Για μια ιδέα, γράψτε «Δεν εφαρμόζεται»."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", προορισμός αυτής της υπόδειξης"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Συσκευή: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Τα διαγνωστικά συντομεύτηκαν για να χωρέσουν στο προσχέδιο του προγράμματος περιήγησης. Η ενέργεια Αποστολή διαγνωστικών της εφαρμογής μπορεί να κοινοποιήσει την πλήρη αναφορά."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"ο ψηφίος πρέπει να είναι 1..9 αλλά ήταν %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Ψηφία που δεν αναγνώστηκαν"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Η διατήρηση αποδεικτικών στοιχείων στο δίσκο επηρεάζει τους χρόνους· δεν αποτελεί αναφορά αποδοτικότητας."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", δεν ταιριάζει με τη λύση"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Κάθε απόδειξη αναγνωρίζει μια υποβληθείσα αναθεώρηση παζλ. Διαγράψτε την εδώ για να αφαιρέσετε την ιδιωτικά αποθηκευμένη αναφορά από τη Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Προηγούμενες απαλοιφές: %1$s. Χρησιμοποιήστε τους συνδέσμους προηγούμενων βημάτων για να εξετάσετε τις αποδείξεις τους."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← προηγούμενο τεκμήριο (βάθος %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Προηγούμενες υποθετικές τοποθετήσεις το αφήνουν με μόνο έναν υποψήφιο."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Προηγούμενα βήματα που χρησιμοποιήθηκαν σε αυτή την απόδειξη"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Επεξεργασία κελιού"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"οκτώ"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"κενό"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Κενό."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Κενό"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Αγγλικά"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"καταχωρίσεις που διαφωνούν"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"καταχώριση που διαφωνεί"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Καθένα από αυτά συμπληρώνει ένα τετράγωνο."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Κάθε τετράγωνο είναι συμπληρωμένο, αλλά %1$s απαντήσεις διαφωνούν με τη λύση."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Κάθε τετράγωνο είναι συμπληρωμένο, αλλά μια απάντηση διαφωνεί με τη λύση."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Κάθε sudoku με μία απάντηση μπορεί να λυθεί με συλλογισμό· η μαντεψιά δεν απαιτείται ποτέ και σπάνια βοηθά. Αυτοί είναι οι τρόποι συλλογισμού που η εφαρμογή μπορεί να αναγνωρίσει και να εξηγήσει, από τον ευκολότερο. Όπου κάποιος από αυτούς εφαρμόζεται στο παζλ που έχετε ανοιχτό, θα σας δείξει κάθε μέρος που εφαρμόζεται."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Όλα όσα έχετε γράψει ως τώρα είναι σωστά."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Παραδείγματα διαθέσιμα τώρα: καθένα ξεκινά από την τρέχουσα κατάσταση του ταμπλό σας."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"αναμένονταν 10 οριζόντιες γραμμές, βρέθηκαν %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"αναμένονταν 10 κατακόρυφες γραμμές, βρέθηκαν %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"αναμένονταν 81 κελιά αλλά βρέθηκαν %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"αναμένονταν 81 κελιά σε κάθε μπλοκ, βρέθηκαν %1$s και %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"αναμενόταν 8-bit μονό κανάλι αλλά βρέθηκε %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"αναμενόταν εικόνα 28x28 αλλά βρέθηκαν %1$s τιμές"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Αναμενόμενη συμπεριφορά ή προτεινόμενη βελτίωση"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"αναμένονταν δέκα γραμμές σε κάθε κατεύθυνση"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"αναμένονταν δύο μπλοκ, βρέθηκαν %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Εξήγηση προηγούμενων αφαιρέσεων υποψηφίων (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Εξήγηση υποδείξεων"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Βρείτε ένα τετράγωνο με μόνο δύο ή τρεις εναπομείναντες υποψηφίους — όσο λιγότεροι τόσο καλύτερα, και όσο πιο πολυσύχναστη η γραμμή, η στήλη και το κουτί γύρω του τόσο καλύτερα ακόμα.\n\nΕπιλέξτε έναν από τους υποψηφίους του και σημειώστε τον ελαφρά με μολύβι. Τώρα ακολουθήστε τις συνέπειες: αυτό το ψηφίο εξαλείφεται από όλα τα τετράγωνα που βλέπει, πράγμα που μπορεί να αφήσει ένα από εκείνα τα τετράγωνα με έναν μόνο υποψήφιο, ο οποίος αναγκάζει έναν άλλο, και ούτω καθεξής. Συνεχίστε.\n\nΣυμβαίνει ένα από τα δύο. Είτε εξαντλείται και δεν μαθαίνετε τίποτα — σβήστε το και δοκιμάστε τον άλλο υποψήφιο. Είτε φτάνετε σε ένα τετράγωνο χωρίς κανέναν υποψήφιο, ή σε μια γραμμή χωρίς θέση για κάποιο ψηφίο. Αυτό είναι αδύνατο, οπότε το ψηφίο που σημειώσατε με μολύβι ήταν λάθος, και μπορείτε να το αποκλείσετε μόνιμα.\n\nΑυτή είναι η τεχνική στην οποία καταφεύγετε όταν όλα τα άλλα έχουν στεγνώσει. Είναι πιο αργή και πρόκειται για τήρηση αρχείων παρά για αναγνώριση μοτίβων, αλλά μπορεί να αποκαλύψει κινήσεις που τα μοτίβα χάνουν. Συχνά μια απαλοιφή αρκεί για να ξεκινήσουν ξανά οι εύκολες τεχνικές· ορισμένες θέσεις χρειάζονται ακόμη βαθύτερη αναζήτηση."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Βρείτε δύο τετράγωνα με τους ίδιους δύο υποψηφίους, π.χ. {3,7}, που δεν μπορούν να δουν το ένα το άλλο — συνήθως δεν βρίσκονται πουθενά κοντά.\n\nΤώρα αναζητήστε μια γραμμή, στήλη ή κουτί όπου το 7 έχει μόνο δύο πιθανά τετράγωνα, εκ των οποίων το ένα φαίνεται από το πρώτο ζεύγος σας και το άλλο από το δεύτερο. Αυτός είναι ο σύνδεσμος.\n\nΕνα από εκείνα τα δύο τετράγωνα είναι το 7. Οποιοδήποτε και αν είναι, το τετράγωνο του ζεύγους σας που το βλέπει δεν μπορεί να είναι 7, οπότε πρέπει να είναι 3. Δεν ξέρετε ποιο άκρο είναι το 3, μόνο ότι ένα από αυτά είναι — και αυτό αρκεί για να αποκλειστεί το 3 από κάθε τετράγωνο που βλέπει και τα δύο άκρα.\n\nΤο δύσκολο μέρος είναι ο σύνδεσμος, οπότε ψάξτε τον αντίθετα: σημειώστε πρώτα τις μονάδες όπου ένα ψηφίο έχει μόνο δύο θέσεις, και μετά αναζητήστε ένα ταιριαστό ζεύγος εκατέρωθεν."</string>
+    <string name="msg_finished_05343e98" formatted="false">"ολοκληρώθηκε"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Πατήστε το κλείστρο μόλις το πλέγμα είναι τετράγωνο στο κάδρο και σταθερό. Το κουμπί λειτουργεί πάντα και με τους δύο τρόπους."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Χωρέστε ολόκληρο το πλέγμα στο κάδρο."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Χωρέστε ολόκληρο το πλέγμα στο κάδρο"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"πέντε"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Ακολουθήστε μια διαδρομή όπου κάθε κίνηση στηρίζεται στην προηγούμενη."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Ακολουθήστε την πλήρη απόδειξη με σειρά"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Ακολουθήστε αυτή την αλυσίδα τετραγώνων με δύο υποψηφίους: αν το %1$s δεν είναι %2$s, τότε κάθε τετράγωνο κατά μήκος της αναγκάζεται από το προηγούμενο, και το %3$s καταλήγει να είναι %4$s. Άρα το ένα ή το άλλο άκρο περιέχει το %5$s, που το αποκλείει από κάθε τετράγωνο που βλέπει και τα δύο."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Αναγκαστική αλυσίδα"</string>
+    <string name="msg_four_04efaf08" formatted="false">"τέσσερα"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Τέσσερα τετράγωνα σε δύο γραμμές, δύο στήλες και δύο κουτιά δεν μπορούν όλα να περιέχουν τους ίδιους δύο υποψηφίους, αλλιώς το παζλ θα είχε δύο απαντήσεις."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Η Freevia επιβεβαίωσε τη διαγραφή, αλλά αυτό το τηλέφωνο δεν μπόρεσε να αφαιρέσει την τοπική απόδειξη. Επαναλάβετε για να ολοκληρώσετε την τοπική εκκαθάριση."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Η Freevia θα διαγράψει αυτή την αναθεώρηση αναφοράς και το ιδιωτικό της αντίγραφο εκπαίδευσης. Μελλοντικές διορθώσεις ενδέχεται να δημιουργήσουν νέα αναφορά σύμφωνα με τις ρυθμίσεις κοινοποίησής σας. Ένα μοντέλο που έχει ήδη εκπαιδευτεί σε αυτή μπορεί να διατηρεί τις εκμαθημένες αλλαγές."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Πλήρης διαδρομή"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Μελλοντικές αβέβαιες αναγνώσεις θα αποστέλλουν τη διορθωμένη φωτογραφία παζλ, τα αποτελέσματα αναγνώρισης και τις διορθώσεις στη Freevia για ανάλυση και εκπαίδευση. Τα αντίγραφα εκπαίδευσης παραμένουν μέχρι να διαγραφούν από τις Αποδείξεις υποβολής· ένα εκπαιδευμένο μοντέλο μπορεί να διατηρεί τις εκμαθημένες αλλαγές. Αν ένα αβέβαιο παζλ είναι ήδη ανοιχτό, θα αποσταλεί τώρα. Μπορείτε να το απενεργοποιήσετε στις Ρυθμίσεις."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Ήπιο"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Η αντανάκλαση σβήνει τις γραμμές — γείρετε τη σελίδα μακριά από το φως"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Τα γκρι τετράγωνα περιέχουν σημειώσεις μολυβιού, τις οποίες η εφαρμογή αγνοεί. Η μπάρα κάτω από ένα ψηφίο δείχνει πόσο σίγουρη ήταν. Πατήστε ένα τετράγωνο για λεπτομέρειες."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Χειρόγραφο"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Δύσκολο"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Κρυφό"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Κρυφό ζεύγος"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Κρυφή τετράδα"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Κρυφό μονό"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Κρυφή τριάδα"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Απόκρυψη προηγούμενου τεκμηρίου"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Απόκρυψη οδηγού εντοπισμού"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", υπόδειξη %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Υπόδειξη"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Απόδειξη υπόδειξης"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Συλλογισμός υπόδειξης"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Κρατήστε σταθερό..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Κρατήστε σταθερό, ή πατήστε το κλείστρο"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Κρατήστε σταθερό ενώ η κάμερα εστιάζει..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Κρατήστε το τηλέφωνο επίπεδο"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Κρατήστε το τηλέφωνο επίπεδο πάνω από το παζλ."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Κρατήστε το τηλέφωνο επίπεδο πάνω από το παζλ"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Πώς να εντοπίσετε ένα"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nΠώς φτάνουμε εκεί:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Ψάξτε για τετράγωνα με ακριβώς δύο υποψηφίους — ένα Y-wing αποτελείται από τρία μόνο από αυτά.\n\nΧρησιμοποιήστε ένα ως κόμβο, π.χ. {2,5}. Ψάξτε για ένα τετράγωνο που βλέπει με {2,9} και ένα άλλο που βλέπει με {5,9}. Ο κόμβος είναι είτε 2 είτε 5. Αν είναι 2, η πρώτη λαβίδα πρέπει να είναι 9· αν είναι 5, η δεύτερη πρέπει να είναι 9. Σε κάθε περίπτωση ένα 9 εμφανίζεται σε μία από τις λαβίδες — δεν ξέρετε ποια, και δεν χρειάζεται να ξέρετε.\n\nΆρα κανένα τετράγωνο που μπορεί να δει και τις δύο λαβίδες δεν μπορεί να είναι 9. Αυτά τα τετράγωνα είναι συνήθως οι δύο γωνίες που συμπληρώνουν το ορθογώνιο."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", υποθετικό %1$s, όχι καταχωρισμένη απάντηση"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Αν %1$s ψηφία σε μία γραμμή, στήλη ή κουτί μπορούν να μπουν μόνο στα ίδια %2$s τετράγωνα, αυτά τα τετράγωνα δεν μπορούν να περιέχουν τίποτα άλλο."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Αν %1$s τετράγωνα σε μία γραμμή, στήλη ή κουτί μοιράζονται ακριβώς %2$s υποψηφίους μεταξύ τους, αυτά τα ψηφία ανήκουν σε αυτά τα τετράγωνα και σε κανένα άλλο της μονάδας."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Αν ένα ψηφίο έχει δύο θέσεις σε μια γραμμή και δύο σε μια στήλη, και μία από κάθε πλευρά μοιράζεται ένα κουτί, μία από τις άλλες δύο πρέπει να το περιέχει."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Αν ένα ψηφίο έχει δύο θέσεις σε καθεμία από δύο γραμμές και μοιράζονται μια στήλη, μία από τις άλλες δύο θέσεις πρέπει να το περιέχει."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Αν οι μοναδικές θέσεις ενός ψηφίου κατά μήκος μιας γραμμής βρίσκονται όλες μέσα σε ένα κουτί, το ψηφίο αυτό μπορεί να αποκλειστεί από την υπόλοιπη γραμμή εκτός του κουτιού."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Αν οι μοναδικές θέσεις ενός ψηφίου σε %1$s γραμμές βρίσκονται στις ίδιες %2$s στήλες, μπορεί να αποκλειστεί από εκείνες τις στήλες αλλού — και αντίστροφα με γραμμές και στήλες."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Αν οι μοναδικές θέσεις ενός ψηφίου μέσα σε ένα κουτί μοιράζονται μία γραμμή, το ψηφίο αυτό μπορεί να αποκλειστεί από την υπόλοιπη γραμμή."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Αν η υπόθεση ότι ένα ψηφίο οδηγεί σε ένα τετράγωνο χωρίς δυνατές τιμές, τότε αυτό το ψηφίο ήταν λάθος."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"οι διαστάσεις εικόνας πρέπει να είναι θετικές"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Σε μια αλυσίδα τετραγώνων που περιέχουν όλα τους ίδιους δύο υποψηφίους, τα δύο άκρα μιας αλυσίδας περιττού μήκους περιέχουν διαφορετικά ψηφία."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Σε αυτές τις %1$s %2$s, το %3$s μπορεί να μπει μόνο σε αυτές τις %4$s %5$s. Μεταξύ τους χρησιμοποιούν όλες, οπότε το %6$s μπορεί να αποκλειστεί από αυτές τις %7$s παντού αλλού."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Σε αυτές τις %1$s στήλες, το %2$s μπορεί να τοποθετηθεί μόνο σε αυτές τις %3$s γραμμές. Μαζί καταλαμβάνουν όλες αυτές τις γραμμές, οπότε το %4$s μπορεί να αποκλειστεί από κάθε άλλη θέση τους."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Σε αυτές τις %1$s γραμμές, το %2$s μπορεί να τοποθετηθεί μόνο σε αυτές τις %3$s στήλες. Μαζί καταλαμβάνουν όλες αυτές τις στήλες, οπότε το %4$s μπορεί να αποκλειστεί από κάθε άλλη θέση τους."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Σε αυτές τις δύο %1$s, το %2$s έχει μόνο δύο θέσεις σε καθεμία, και το %3$s και το %4$s μοιράζονται μια %5$s — άρα δεν μπορούν και τα δύο να είναι %6$s. Ένα από το %7$s και το %8$s είναι επομένως, πράγμα που αποκλείει το %9$s από κάθε τετράγωνο που τα βλέπει και τα δύο."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Σε αυτές τις δύο στήλες, το %1$s έχει μόνο δύο δυνατές θέσεις σε καθεμία, και τα %2$s και %3$s βρίσκονται στην ίδια γραμμή — άρα δεν μπορούν να είναι και τα δύο %4$s. Επομένως, ένα από τα %5$s και %6$s είναι, οπότε το %7$s αποκλείεται από κάθε κελί που βλέπει και τα δύο."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Σε αυτές τις δύο γραμμές, το %1$s έχει μόνο δύο δυνατές θέσεις σε καθεμία, και τα %2$s και %3$s βρίσκονται στην ίδια στήλη — άρα δεν μπορούν να είναι και τα δύο %4$s. Επομένως, ένα από τα %5$s και %6$s είναι, οπότε το %7$s αποκλείεται από κάθε κελί που βλέπει και τα δύο."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Σε αυτό το %1$s, το %2$s μπορεί να μπει μόνο σε αυτά τα %3$s τετράγωνα, οπότε αυτά είναι δεσμευμένα. Αυτό αποκλείει το %4$s από αυτά."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Σε αυτό το %1$s, το %2$s μπορεί να μπει μόνο μέσα σε ένα κουτί. Άρα το %3$s βρίσκεται σε αυτό το κουτί σε αυτό το %4$s, και μπορεί να αποκλειστεί από την υπόλοιπη περιοχή του κουτιού."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Σε αυτό το πλαίσιο, το %1$s μπορεί να τοποθετηθεί μόνο σε αυτά τα %2$s κελιά, οπότε αυτά τα κελιά είναι δεσμευμένα. Έτσι, το %3$s αποκλείεται από αυτά."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Σε αυτή τη στήλη, το %1$s μπορεί να τοποθετηθεί μόνο σε αυτά τα %2$s κελιά, οπότε αυτά τα κελιά είναι δεσμευμένα. Έτσι, το %3$s αποκλείεται από αυτά."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Σε αυτή τη γραμμή, το %1$s μπορεί να τοποθετηθεί μόνο σε αυτά τα %2$s κελιά, οπότε αυτά τα κελιά είναι δεσμευμένα. Έτσι, το %3$s αποκλείεται από αυτά."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Περιλαμβάνει τις φωτογραφίες, αναγνώσεις και διορθώσεις τους. Απενεργοποιήστε αυτό στις Ρυθμίσεις."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Μέσα σε ένα μόνο κουτί, βρείτε ένα ψηφίο που μπορεί να μπει μόνο σε δύο ή τρία τετράγωνα, και ελέγξτε αν βρίσκονται όλα στην ίδια γραμμή ή όλα στην ίδια στήλη. Αν ναι, το ψηφίο βρίσκεται σίγουρα κάπου κατά μήκος αυτής της γραμμής — δεν ξέρετε πού, αλλά ξέρετε ότι είναι μέσα σε αυτό το κουτί. Άρα δεν μπορεί να βρίσκεται πουθενά αλλού κατά μήκος της ίδιας γραμμής εκτός του κουτιού.\n\nΑυτό δεν τοποθετεί τίποτα από μόνο του. Καθαρίζει υποψηφίους από τη μέση ώστε να εμφανιστεί ένα μονό κάπου αλλού."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Μέσα σε αυτό το κουτί, το %1$s μπορεί να μπει μόνο σε αυτή τη %2$s. Άρα το %3$s βρίσκεται κάπου εδώ, και μπορεί να αποκλειστεί από την υπόλοιπη %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Ζήτημα ή ιδέα"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Εφαρμόζεται σε %1$s μέρη εδώ. Προχωρήστε για να τα διατρέξετε."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Εφαρμόζεται σε ένα μέρος εδώ. Προχωρήστε για να το δείτε."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Δεν εφαρμόζεται πουθενά σε αυτή τη θέση."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Είναι η μοναδική εναπομείνασα θέση για το %1$s στο επισημασμένο %2$s."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Είναι το περικυκλωμένο τετράγωνο.\n\nΠατήστε Υπόδειξη ξανά για το ψηφίο."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Διατήρηση"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Κρατήστε τις αναγκαστικές αλυσίδες σύντομες"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Γλώσσα"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Άδειες χρήσης"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Κοιτάξτε κατά μήκος μιας γραμμής, στήλης ή κουτιού για τετράγωνα με λίγους μόνο εναπομείναντες υποψηφίους. Πάρτε %1$s από αυτά και αθροίστε τους υποψηφίους τους. Αν το άθροισμα έχει ακριβώς %2$s ψηφία, αυτά τα %3$s ψηφία είναι δεσμευμένα: πρέπει να μπουν σε εκείνα τα %4$s τετράγωνα με κάποια σειρά, ακόμα κι αν δεν μπορείτε να πείτε ποιο πηγαίνει πού.\n\nΑυτό αρκεί. Κάθε άλλο τετράγωνο της μονάδας μπορεί να απορρίψει αυτά τα ψηφία, και συνήθως ένα από εκείνα τα τετράγωνα γίνεται τότε μονό.\n\nΤα τετράγωνα δεν χρειάζεται να έχουν όλα τους ίδιους υποψηφίους — {2,7}, {2,9} και {7,9} είναι μια απολύτως έγκυρη τριάδα, και είναι αυτή που οι άνθρωποι χάνουν."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Ψάξτε για τετράγωνα με τους ίδιους δύο υποψηφίους — π.χ. {4,9} — που σχηματίζουν αλυσίδα, το καθένα βλέποντας το επόμενο. Τρία δεν αρκούν· χρειάζεστε τουλάχιστον τέσσερα.\n\nΧρωματίστε τα εναλλάξ καθώς προχωράτε. Επειδή κάθε τετράγωνο βλέπει το επόμενο, δύο γείτονες δεν μπορούν να περιέχουν το ίδιο ψηφίο, οπότε η αλυσίδα διαβάζεται 4, 9, 4, 9 σε όλο το μήκος της — ή 9, 4, 9, 4, και δεν μπορείτε να πείτε ποια.\n\nΣε κάθε περίπτωση, δύο τετράγωνα με αντίθετα χρώματα περιέχουν διαφορετικά ψηφία μεταξύ τους: ένα είναι το 4 και ένα είναι το 9. Άρα οτιδήποτε μπορεί να δει και τα δύο δεν μπορεί να είναι κανένα από τα δύο, και χάνει και τους δύο υποψηφίους ταυτόχρονα.\n\nΤο μοτίβο είναι εύκολο να εντοπιστεί ακριβώς επειδή κάθε τετράγωνο σε αυτό μοιάζει ίδιο. Ακολουθήστε τα πανομοιότυπα ζεύγη γύρω από το πλέγμα και δείτε πού αγγίζουν."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Ψάξτε για τρία τετράγωνα που περιέχουν τους ίδιους δύο υποψηφίους — π.χ. {1,6} — και κάθονται σε τρεις γωνίες ενός ορθογωνίου. Το ορθογώνιο πρέπει να βρίσκεται ακριβώς σε δύο κουτιά: δύο γραμμές και δύο στήλες που διασταυρώνουν δύο κουτιά, όχι τέσσερα.\n\nΤώρα κοιτάξτε την τέταρτη γωνία. Αν περιείχε μόνο 1 και 6 επίσης, το παζλ θα είχε δύο απαντήσεις — θα μπορούσατε να εναλλάξετε τα 1 και 6 γύρω από το ορθογώνιο και όλα τα υπόλοιπα θα λειτουργούσαν ακόμα. Ένα σωστά κατασκευασμένο παζλ έχει μία απάντηση, οπότε η τέταρτη γωνία πρέπει να χρησιμοποιεί κάτι άλλο: οι υπόλοιποι υποψήφιοί της παραμένουν, και το 1 και το 6 φεύγουν.\n\nΑυτό είναι το μόνο επιχείρημα στο βιβλίο που αφορά τον κατασκευαστή και όχι το πλέγμα. Ισχύει σε ένα δημοσιευμένο παζλ και είναι άχρηστο σε ένα που έχετε ήδη συμπληρώσει λανθασμένα, γιατί τότε μπορεί να μην υπάρχει καμία απάντηση που να είναι μοναδική."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Κοιτάξτε σε αυτό το κουτί. Ακολουθήστε το περίγραμμα ως το τετράγωνο που αυτή η υπόδειξη θα εξηγήσει."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Σημειώσεις"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Μέτριο"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Περισσότερα"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Χρειάζεται περισσότερο φως"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Περισσότερες από μία απαντήσεις, οπότε ένα τυπωμένο ψηφίο χάθηκε. Πατήστε Επίλυση για να δείτε τις απαντήσεις και πού διαφέρουν."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Πίσω"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Πλησιάστε"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Πλησιάστε — το πλέγμα είναι πολύ μικρό για ανάγνωση."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Γυμνό"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Γυμνό ζεύγος"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Γυμνή τετράδα"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Γυμνό μονό"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Γυμνή τριάδα"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Κατονομάστε την τεχνική και δείξτε τα τετράγωνα που την αποδεικνύουν, αντί να δώσετε απλώς το ψηφίο."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"χρειάζονται τουλάχιστον 4 σημεία αλλά βρέθηκαν %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Χρειάζεται επιβεβαίωση"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Νέο sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Επόμενη συνέπεια"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Επόμενο βήμα"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Δεν επισυνάπτονται εικόνες αυτόματα. Οι αναφορές και τα συνημμένα που υποβάλλονται εδώ είναι δημόσια. Στείλτε στο info@freevia.org τα παραδείγματα που προτιμάτε να στείλετε ιδιωτικά."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Καμία φωτογραφία δεν έχει απορριφθεί από την τελευταία εγκατάσταση της εφαρμογής."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Δεν υπάρχουν διαθέσιμα διαγνωστικά σάρωσης."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Καμία τεχνική δεν εφαρμόζεται εδώ"</string>
+    <string name="msg_none_140bedbf" formatted="false">"κανένα"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Καμία από αυτές δεν τοποθετεί ψηφίο σε τετράγωνο: καθαρίζουν υποψηφίους από τη μέση, και έτσι ανοίγει ένα δύσκολο παζλ."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Καμία αυτή τη στιγμή στο παζλ σας."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"δεν είναι αρχείο μοντέλου ψηφίων"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Δεν αναγνώστηκε με καμία σιγουριά — η καλύτερη εκτίμηση είναι %1$s %2$s στο %3$s. Ορίστε αυτό το τετράγωνο μόνοι σας."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Δεν αναγνωρίζεται ακόμα ως πλέγμα εννέα επί εννέα — δοκιμάστε να γεμίσετε το κάδρο με το πλέγμα μόνο, ή απλώς τραβήξτε τη φωτογραφία"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"δεν ξεκίνησε"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Τίποτα δεν μπόρεσε να σταλεί από αυτό το τηλέφωνο."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Δεν υπάρχει τίποτα άλλο να επιλυθεί."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Τίποτα άλλο εδώ δεν μπορεί να συναχθεί με τις τεχνικές που γνωρίζει η εφαρμογή."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"τίποτα ασυνήθιστο"</string>
+    <string name="msg_ok_565339bc" formatted="false">"OK"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"ένα"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Ένα κελί έμοιαζε με τυπωμένο ψηφίο αλλά δεν είναι."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Ένα τυπωμένο ψηφίο διορθώθηκε αυτόματα."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"ένα κελί"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Μόνο το %1$s χωρά εδώ — κάθε άλλο ψηφίο εμφανίζεται ήδη σε αυτή τη γραμμή, στήλη ή κουτί."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Μόνο το %1$s μπορεί να τοποθετηθεί εδώ. Τα επισημασμένα κελιά καλύπτουν %2$s από τα άλλα οκτώ ψηφία· το %3$s αποκλείστηκε από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπεις γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Μόνο το %1$s μπορεί να μπει εδώ. Τα επισημασμένα κελιά αποκλείουν τέσσερα από τα άλλα οκτώ ψηφία· τα %2$s είχαν αποκλειστεί από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπετε γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Μόνο το %1$s μπορεί να μπει εδώ. Τα επισημασμένα κελιά αποκλείουν έξι από τα άλλα οκτώ ψηφία· τα %2$s είχαν αποκλειστεί από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπετε γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Μόνο το %1$s μπορεί να μπει εδώ. Τα επισημασμένα κελιά αποκλείουν ένα από τα άλλα οκτώ ψηφία· τα %2$s είχαν αποκλειστεί από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπετε γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Μόνο το %1$s μπορεί να μπει εδώ. Τα επισημασμένα κελιά αποκλείουν επτά από τα άλλα οκτώ ψηφία· το %2$s είχε αποκλειστεί από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπετε γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Μόνο το %1$s μπορεί να μπει εδώ. Τα επισημασμένα κελιά αποκλείουν πέντε από τα άλλα οκτώ ψηφία· τα %2$s είχαν αποκλειστεί από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπετε γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Μόνο το %1$s χωρά εδώ. Τα επισημασμένα τετράγωνα καταλαμβάνουν %2$s από τα άλλα οκτώ ψηφία· %3$s %4$s αποκλείστηκαν από αυτό το τετράγωνο νωρίτερα, όχι από κάτι που μπορείτε να δείτε γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Μόνο το %1$s μπορεί να μπει εδώ. Τα επισημασμένα κελιά αποκλείουν δύο από τα άλλα οκτώ ψηφία· τα %2$s είχαν αποκλειστεί από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπετε γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Μόνο το %1$s μπορεί να τοποθετηθεί εδώ. Τα επισημασμένα κελιά καλύπτουν %2$s από τα άλλα οκτώ ψηφία· τα %3$s αποκλείστηκαν από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπεις γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Μόνο το %1$s μπορεί να μπει εδώ. Τα επισημασμένα κελιά αποκλείουν τρία από τα άλλα οκτώ ψηφία· τα %2$s είχαν αποκλειστεί από αυτό το κελί νωρίτερα, όχι λόγω κάποιου στοιχείου που βλέπετε γύρω του."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Μόνο το %1$s χωρά εδώ. Τα άλλα οκτώ ψηφία αποκλείονται από συμπληρωμένα τετράγωνα ή αναγκαστικά μονά σε αυτή τη γραμμή, στήλη ή κουτί."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Μόνο το %1$s χωρά εδώ, αν και τίποτα γύρω του δεν δείχνει γιατί: όλα τα άλλα οκτώ ψηφία αποκλείστηκαν από αυτό το τετράγωνο με προηγούμενο συλλογισμό και όχι επειδή είναι γραμμένα στη γραμμή, στήλη ή κουτί του."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Βρέθηκαν μόνο %1$s τυπωμένα ψηφία, κάτι που είναι πολύ λίγο για ένα παζλ."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"υποστηρίζονται μόνο περιστροφές κατά τεταρτημόρια, όχι %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Ανοίξτε ένα προσχέδιο στο πρόγραμμα περιήγησής σας με την έκδοση εφαρμογής, το μοντέλο τηλεφώνου, την έκδοση Android και τα πρόσφατα διαγνωστικά σάρωσης προσυμπληρωμένα. Προσθέστε μια πλήρη περιγραφή και σχετικά στιγμιότυπα οθόνης μόνοι σας.\n\nΑπαιτείται σύνδεση στο GitHub. Μπορείτε να αναθεωρήσετε και να επεξεργαστείτε το προσχέδιο πριν από την υποβολή. Οι υποβληθείσες αναφορές και τα συνημμένα είναι δημόσια. Δεν επισυνάπτονται φωτογραφίες αυτόματα."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Άνοιγμα ρυθμίσεων εφαρμογής"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Άνοιγμα GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Ειδοποιήσεις ανοιχτού κώδικα"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Ανοίξτε το «Γιατί αυτό το τετράγωνο;» για να δείτε το τελικό τεκμήριο τοποθέτησης, ή επιλέξτε έναν αποκλεισμένο υποψήφιο για να ανιχνεύσετε την απόδειξή του."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache License 2.0. Χρησιμοποιείται για εύρεση και διόρθωση του πλέγματος.\n\nAndroidX, Jetpack Compose και CameraX - Apache License 2.0.\n\nKotlin - Apache License 2.0.\n\nΟ αναγνωριστής ψηφίων εκπαιδεύτηκε στη βάση δεδομένων MNIST χειρόγραφων ψηφίων των LeCun, Cortes και Burges, μαζί με ψηφία αποδοσμένα από ανοιχτές γραμματοσειρές συστήματος και ψηφία σχεδιασμένα προγραμματιστικά."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Οι εγγενείς βιβλιοθήκες OpenCV απέτυχαν να φορτωθούν"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Φωτογραφίστε ένα άλλο παζλ."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Οι φωτογραφίες που διατηρείτε αποθηκεύονται στον ιδιωτικό χώρο αποθήκευσης της εφαρμογής και αφαιρούνται όταν τις διαγράψετε ή απεγκαταστήσετε την εφαρμογή."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Φωτογραφίες που η εφαρμογή δεν μπόρεσε να μετατρέψει σε παζλ. Στείλτε μία και μπορεί να εξεταστεί."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Επιλέξτε ένα ψηφίο και κοιτάξτε κατά μήκος των γραμμών για αυτές που έχουν ακριβώς δύο εναπομείναντα τετράγωνα. Πάρτε δύο τέτοιες γραμμές και δείτε αν ένα από τα τετράγωνά τους βρίσκεται στην ίδια στήλη.\n\nΑν ναι, αυτά τα δύο τετράγωνα βρίσκονται στην ίδια στήλη και δεν μπορούν και τα δύο να περιέχουν το ψηφίο. Άρα τουλάχιστον ένα από τα μακρινά άκρα το περιέχει — τα δύο τετράγωνα στην άλλη πλευρά. Δεν ξέρετε ποιο, και δεν χρειάζεται να ξέρετε: κάθε τετράγωνο που μπορεί να δει και τα δύο μακρινά άκρα μπορεί να εγκαταλείψει το ψηφίο.\n\nΜετά κάντε το ίδιο με στήλες αντί γραμμών. Το σχήμα μοιάζει με ψηλό κτίριο με ένα χαμηλό δίπλα του, από εκεί προέρχεται το όνομα και έτσι το εντοπίζετε μόλις έχετε δει μερικά."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Επιλέξτε ένα ψηφίο. Βρείτε μια γραμμή όπου έχει ακριβώς δύο θέσεις και μια στήλη όπου έχει ακριβώς δύο θέσεις. Τώρα ελέγξτε αν ένα τετράγωνο της γραμμής και ένα της στήλης βρίσκονται στο ίδιο κουτί.\n\nΑν ναι, αυτά τα δύο δεν μπορούν και τα δύο να είναι το ψηφίο — ένα κουτί, ένα ψηφίο. Άρα τουλάχιστον ένα από τα δύο εναπομείναντα άκρα είναι, και οτιδήποτε βλέπει και τα δύο άκρα μπορεί να εγκαταλείψει το ψηφίο.\n\nΟ λόγος που οι άνθρωποι χάνουν αυτό είναι ότι δεν υπάρχει τίποτα να ευθυγραμμίσουν: τα τέσσερα τετράγωνα σχηματίζουν ανομοιόμορφο σχήμα, και το μόνο πράγμα που τα συνδέει είναι το κουτί που μοιράζονται τα δύο εσωτερικά άκρα."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Επιλέξτε ένα κενό τετράγωνο και διατρέξτε τα 1 ως 9, διαγράφοντας ό,τι εμφανίζεται ήδη στη γραμμή, στήλη ή κουτί του. Αν επιβιώσει ακριβώς ένα ψηφίο, πηγαίνει εκεί.\n\nΑυτή είναι η τεχνική που όλες οι άλλες αποσκοπούν να στήσουν. Όλα τα πιο δύσκολα αποτελούν τρόπο να φτάσετε κάποιο τετράγωνο σε έναν μόνο υποψήφιο, οπότε όταν μια πιο δύσκολη τεχνική αποδώσει, κοιτάξτε εδώ στη συνέχεια."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Επιλέξτε ένα ψηφίο και αγνοήστε κάθε άλλο. Κατεβείτε τις γραμμές και σημειώστε αυτές όπου το ψηφίο έχει μόνο δύο ή τρία πιθανά τετράγωνα. Ψάξτε για %1$s τέτοιες γραμμές των οποίων τα τετράγωνα ευθυγραμμίζονται στις ίδιες %2$s στήλες.\n\nΑν τις βρείτε, κάθε μία από αυτές τις %3$s γραμμές πρέπει να τοποθετήσει το ψηφίο σε μία από εκείνες τις στήλες, και δεν μπορούν δύο να χρησιμοποιήσουν την ίδια στήλη. Άρα μεταξύ τους καταναλώνουν το ψηφίο σε όλες τις %4$s στήλες — και κάθε άλλο τετράγωνο σε εκείνες τις στήλες μπορεί να το εγκαταλείψει.\n\nΜετά κάντε το ίδιο με στήλες και γραμμές εναλλαγμένες. Το μισό από αυτά βρίσκεται με τον δεύτερο τρόπο, και είναι το μισό που οι περισσότεροι δεν ψάχνουν ποτέ."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Τοποθετήστε το %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Τοποθετήστε το %1$s στη γραμμή %2$s, στήλη %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Τοποθετήστε το %1$s στο περιγεγραμμένο τετράγωνό σας."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Επισυνάψτε σχετικά στιγμιότυπα οθόνης χρησιμοποιώντας τον έλεγχο συνημμένων του GitHub: το παζλ, τα αναγνωρισμένα ψηφία, το αποτέλεσμα Ελέγχου ή το στάδιο υπόδειξης που δείχνει το ζήτημα. Συμπεριλάβετε αναμενόμενα και πραγματικά αποτελέσματα όπου χρήσιμο."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Παρακαλώ διαγράψτε τις υποβολές αναγνώρισης του Sudoku Buddy. Αναγνωριστικά αποδείξεων: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Παρακαλώ αντικαταστήστε αυτή την προτροπή με πλήρη περιγραφή του προβλήματος ή της ιδέας. Δώστε σε αυτή την αναφορά έναν σύντομο, περιγραφικό τίτλο."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Στρέψτε την κάμερα σε ένα παζλ sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Στρέψτε την κάμερα σε ένα παζλ sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Στρέψτε την κάμερα σε ένα παζλ sudoku σε χαρτί. Η εφαρμογή διαβάζει τα τυπωμένα ψηφία και ό,τι έχετε γράψει, το επιλύει, και μπορεί να σας δώσει υπόδειξη, να ελέγξει τις απαντήσεις σας ή να δείξει ολόκληρη τη λύση."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Δείκτης ζεύγους"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Προετοιμασία παζλ…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Προηγούμενο"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Προηγούμενο βήμα"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Τυπωμένο"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Πολιτική απορρήτου"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Αποθήκευση παζλ"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Παζλ"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Τα παζλ διαβάζονται και επιλύονται σε αυτό το τηλέφωνο. Αν υποβάλετε μια αβέβαιη ανάγνωση ή ενεργοποιήσετε την αυτόματη κοινοποίηση, η φωτογραφία παζλ, οι αρχικές αναγνώσεις, οι ενδείξεις αβεβαιότητας και οι διορθώσεις σας αποστέλλονται με ασφάλεια στη Freevia για ανάλυση αναγνώρισης και ιδιωτική εκπαίδευση. Οι αναφορές δεν περιλαμβάνουν το μοντέλο συσκευής σας ή διαγνωστικά. Η αυτόματη κοινοποίηση είναι προαιρετική· δεν υπάρχουν λογαριασμοί, τακτική ανάλυση χρήσης ή παρακολούθηση διαφημίσεων. Τα αντίγραφα εκπαίδευσης μπορούν να διαγραφούν με απόδειξη, αν και ένα μοντέλο που έχει ήδη εκπαιδευτεί μπορεί να διατηρεί τις εκμαθημένες αλλαγές. Χρησιμοποιήστε τις Αποδείξεις υποβολής στις Ρυθμίσεις για να διαγράψετε μια αναφορά."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Τα παζλ που φωτογραφήθηκαν για δοκιμές προέρχονται από το sudoku.cba.si. Αυτή η εφαρμογή δεν σχετίζεται με αυτούς."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Τα παζλ που φωτογραφίζετε φυλάσσονται εδώ, ώστε να μπορείτε να επιστρέψετε σε ένα αργότερα."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Αναγνώριση"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Αναγνώστηκε ως χειρόγραφο %1$s, %2$s σιγουριά."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Αναγνώστηκε ως τυπωμένο %1$s, %2$s σιγουριά."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Αναγνώστηκε ως κενό — δεν βρέθηκε μελάνι."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Αναγνώστηκε ως σημειώσεις μολυβιού υποψηφίων, και αγνοήθηκε."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Η ανάγνωση αναθεωρήθηκε."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Η ανάγνωση υποβλήθηκε. Ευχαριστούμε!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Πρόσφατα διαγνωστικά σάρωσης (προσυμπληρωμένα)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Η αναγνώριση μπορεί να κάνει λάθη, ειδικά με χειρόγραφο. Χρησιμοποιήστε το Ανάγνωση για να συγκρίνετε τα αναγνωρισμένα ψηφία με τη φωτογραφία, και πατήστε οποιοδήποτε τετράγωνο για να το διορθώσετε. Η εφαρμογή επισημαίνει αβέβαιες αναγνώσεις για αναθεώρηση· μια σίγουρη ανάγνωση μπορεί ακόμα να είναι λανθασμένη."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Απόρριψη υπόθεσης"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Απομακρυσμένα ζεύγη"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Αφαίρεση του %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nΑφαιρέστε το %1$s από "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Αφαιρέθηκε"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Επανάληψη συλλογισμού"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Αναφορά σφάλματος ή ιδέας στο GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Επανεκκίνηση κάμερας"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Επιστροφή στο βήμα %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Αποκάλυψη εξήγησης"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Αναθεώρηση ή υποβολή ανάγνωσης"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Αναθεώρηση ανάγνωσης"</string>
+    <string name="msg_right_883361d5" formatted="false">"Σωστά"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Η διαδρομή ολοκληρώθηκε. Επιστρέψτε για να αναθεωρήσετε οποιαδήποτε κίνηση, ή δοκιμάστε τα βήματα μόνοι σας."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"γραμμή %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Γραμμή %1$s, στήλη %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Γραμμή %1$s, στήλη %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"γραμμή $1, στήλη $2"</string>
+    <string name="msg_row_634768da" formatted="false">"γραμμή"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"γραμμές"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", αποκλείστηκε το %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Τα διαγνωστικά σάρωσης δεν μπόρεσαν να διαβαστούν."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Στιγμιότυπα οθόνης ή παραδείγματα παζλ"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Δεύτερη εκτίμηση: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Επιλογή για εξάσκηση"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Επιλέχθηκε: γραμμή %1$s, στήλη %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Αποστολή διαγνωστικών (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Αποστολή διαγνωστικών"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Αποστολή αυτών των σαρώσεων"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Αποστολή αυτής της φωτογραφίας"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Ρυθμίσεις"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"επτά"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Αυτόματη κοινοποίηση όταν υπάρχει αβεβαιότητα"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Αυτόματη κοινοποίηση αβέβαιων αναγνώσεων;"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Εμφάνιση αντίφασης"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Δείξτε μου όλα τα %1$s στο παζλ σας"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Δείξτε μου αυτό στο παζλ σας"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Απλή χρωματοδότηση"</string>
+    <string name="msg_six_44778d82" formatted="false">"έξι"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Ουρανοξύστης"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", λύση %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Επίλυση"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Επιλύθηκε, και κάθε απάντηση είναι σωστή."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Απάντηση με βοήθεια επίλυσης: τοποθετήστε το %1$s στο %2$s. Οι υποψήφιοι είναι %3$s. Οι υποστηριζόμενες τεχνικές της εφαρμογής δεν βρήκαν κίνηση από αυτή τη θέση. Η αναζήτησή της βρήκε το %4$s στη μοναδική λύση· μια λεπτομερής απόδειξη των κλάδων αναζήτησης δεν είναι διαθέσιμη."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nΑπάντηση με βοήθεια επίλυσης: οι υποστηριζόμενες τεχνικές της εφαρμογής δεν βρήκαν κίνηση. Δεν υπάρχει διαθέσιμη λεπτομερής απόδειξη."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Απαλοιφή με βοήθεια επίλυσης: μια αναζήτηση αποκλείει το %1$s στο επισημασμένο τετράγωνο, αλλά η εφαρμογή δεν μπόρεσε να παράγει σύντομη ίχνη αντίφασης για εμφάνιση. Δεν υπάρχει διαθέσιμη λεπτομερής απόδειξη."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Ορισμένα κελιά μπορεί να περιέχουν σημειώσεις αντί για ολόκληρο ψηφίο."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Ορισμένα ψηφία δεν αναγνώστηκαν με σιγουριά."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Κάτι πήγε στραβά κατά την ανάγνωση αυτής της φωτογραφίας."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Τετράγωνο"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nΑρχικοί υποψήφιοι: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Βήμα %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Ευθυγράμμιση"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Στρατηγικές"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Απόδειξη υποβολής"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Η απόδειξη υποβολής δεν είναι έγκυρη."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Αποδείξεις υποβολής (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Αποδείξεις υποβολής"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Λείπει το στοιχείο %1$s από την απόκριση υποβολής."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Η κατάσταση απόκρισης υποβολής δεν είναι έγκυρη."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Η υπηρεσία υποβολής δεν είναι διαμορφωμένη."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Η υπηρεσία υποβολής επέστρεψε HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Οι υποβολές δεν είναι διαθέσιμες σε αυτήν την έκδοση."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Υποβολή"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Αυτόματη υποβολή μελλοντικών αβέβαιων αναγνώσεων"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Υποβολή ανάγνωσης"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Υποβολή αβέβαιης ανάγνωσης για ανάλυση"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Υποβολή ενημέρωσης"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Υποβλήθηκε"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Υποβολή…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Διαγνωστικά Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Σχόλια Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Το Sudoku Buddy εκδίδεται από τη Freevia. Επικοινωνία: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Το Sudoku Buddy διαβάζει παζλ μέσω κάμερας, γι\' αυτό χρειάζεται πρόσβαση στην κάμερα. Η αναγνώριση και το ιστορικό παζλ παραμένουν στο τηλέφωνό σας. Αν επιλέξετε να υποβάλετε μια αβέβαιη ανάγνωση, η φωτογραφία και τα αποτελέσματά της αποστέλλονται με ασφάλεια στη Freevia για βελτίωση της αναγνώρισης. Η αυτόματη κοινοποίηση είναι προαιρετική και μπορεί να απενεργοποιηθεί από τις Ρυθμίσεις."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Σάρωση Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Σαρώσεις Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Ο πηγαίος κώδικας του Sudoku Buddy διατίθεται υπό την Apache License 2.0. Η επωνυμία Freevia υπόκειται σε χωριστά δικαιώματα εμπορικού σήματος."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Το Sudoku είναι παζλ δημόσιου τομέα. Η εφαρμογή λύνει παζλ που ήδη έχετε· δεν αναπαράγει ούτε διανέμει παζλ τρίτων."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", τεκμήριο υποστήριξης"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Υποθέστε ότι το επισημασμένο κελί περιέχει %1$s. Οι αριθμημένοι ψηφίοι είναι υποθετικοί."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Ας υποθέσουμε ότι αυτό το κελί ήταν %1$s. Ακολούθησε τα βέλη με τη σειρά: η τιμή κάθε κελιού καθορίζεται αναγκαστικά από τις προηγούμενες τοποθετήσεις — είτε αυτό το ψηφίο είναι το μόνο που μπορεί ακόμη να δεχτεί είτε αυτό το κελί είναι η μόνη θέση όπου μπορεί ακόμη να τοποθετηθεί το ψηφίο.\n\nΈτσι, στην κόκκινη μονάδα δεν απομένει καμία θέση για το %2$s. Τα σημειωμένα %3$s μέσα της δείχνουν τις θέσεις όπου θα μπορούσε να τοποθετηθεί, και καθεμία είναι ένα κελί που μόλις καταλήφθηκε από ένα από τα βέλη. Μια μονάδα χωρίς θέση για κάποιο ψηφίο είναι αδύνατη — άρα αυτό το κελί δεν είναι %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Υποθέστε ότι αυτό το κελί είναι %1$s. Ακολουθήστε τα βέλη με τη σειρά: κάθε κελί αναγκάζεται από τις προηγούμενες τοποθετήσεις — είτε αυτό είναι το μόνο ψηφίο που μπορεί να δεχτεί, είτε αυτό το κελί είναι η μόνη θέση όπου μπορεί να πάει το ψηφίο. Το κελί με κόκκινο χρώμα μένει τότε χωρίς κανένα ψηφίο, κάτι που δεν μπορεί να συμβεί — άρα δεν είναι %2$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Ας υποθέσουμε ότι αυτό το κελί ήταν %1$s. Ακολούθησε τα βέλη με τη σειρά: η τιμή κάθε κελιού καθορίζεται αναγκαστικά από τις προηγούμενες τοποθετήσεις — είτε αυτό το ψηφίο είναι το μόνο που μπορεί ακόμη να δεχτεί είτε αυτό το κελί είναι η μόνη θέση όπου μπορεί ακόμη να τοποθετηθεί το ψηφίο.\n\nΈτσι, στην κόκκινη γραμμή δεν απομένει καμία θέση για το %2$s. Τα σημειωμένα %3$s μέσα της δείχνουν τις θέσεις όπου θα μπορούσε να τοποθετηθεί, και καθεμία είναι ένα κελί που μόλις καταλήφθηκε από ένα από τα βέλη. Μια γραμμή χωρίς θέση για κάποιο ψηφίο είναι αδύνατη — άρα αυτό το κελί δεν είναι %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Ας υποθέσουμε ότι αυτό το κελί ήταν %1$s. Ακολούθησε τα βέλη με τη σειρά: η τιμή κάθε κελιού καθορίζεται αναγκαστικά από τις προηγούμενες τοποθετήσεις — είτε αυτό το ψηφίο είναι το μόνο που μπορεί ακόμη να δεχτεί είτε αυτό το κελί είναι η μόνη θέση όπου μπορεί ακόμη να τοποθετηθεί το ψηφίο.\n\nΈτσι, στο κόκκινο πλαίσιο δεν απομένει καμία θέση για το %2$s. Τα σημειωμένα %3$s μέσα του δείχνουν τις θέσεις όπου θα μπορούσε να τοποθετηθεί, και καθεμία είναι ένα κελί που μόλις καταλήφθηκε από ένα από τα βέλη. Ένα πλαίσιο χωρίς θέση για κάποιο ψηφίο είναι αδύνατο — άρα αυτό το κελί δεν είναι %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Υποθέστε ότι αυτό το κελί είναι %1$s. Ακολουθήστε τα βέλη με τη σειρά: κάθε κελί αναγκάζεται από τις προηγούμενες τοποθετήσεις — είτε αυτό είναι το μόνο ψηφίο που μπορεί να δεχτεί, είτε αυτό το κελί είναι η μόνη θέση όπου μπορεί να πάει το ψηφίο.\n\nΑυτό αφήνει το %2$s με κόκκινο χρώμα χωρίς θέση για το %3$s. Τα %4$s που επισημαίνονται σε αυτό είναι οι θέσεις που θα μπορούσε να πάει, και κάθε μία έχει ήδη καταληφθεί από ένα βέλος. Ένα %5$s χωρίς θέση για ένα ψηφίο δεν μπορεί να συμβεί — άρα δεν είναι %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Ας υποθέσουμε ότι αυτό το κελί ήταν %1$s. Ακολούθησε τα βέλη με τη σειρά: η τιμή κάθε κελιού καθορίζεται αναγκαστικά από τις προηγούμενες τοποθετήσεις — είτε αυτό το ψηφίο είναι το μόνο που μπορεί ακόμη να δεχτεί είτε αυτό το κελί είναι η μόνη θέση όπου μπορεί ακόμη να τοποθετηθεί το ψηφίο.\n\nΈτσι, στην κόκκινη στήλη δεν απομένει καμία θέση για το %2$s. Τα σημειωμένα %3$s μέσα της δείχνουν τις θέσεις όπου θα μπορούσε να τοποθετηθεί, και καθεμία είναι ένα κελί που μόλις καταλήφθηκε από ένα από τα βέλη. Μια στήλη χωρίς θέση για κάποιο ψηφίο είναι αδύνατη — άρα αυτό το κελί δεν είναι %4$s."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Μεταβείτε στο Μετά για να δείτε την κίνηση και τις συνέπειές της στο πλέγμα."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Swordfish"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Τράβηξε νέα φωτογραφία"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Τράβηξε άλλη φωτογραφία"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Πάρτε ένα ψηφίο και επισημάνετε κάθε μονάδα όπου απομένουν ακριβώς δύο κελιά γι\' αυτό. Τα δύο αυτά κελιά είναι ζυγαριά: το ένα είναι το ψηφίο και το άλλο δεν είναι.\n\nΞεκινήστε από όπου θέλετε και χρωματίστε ένα κελί, ας πούμε, μπλε. Χρωματίστε πράσινο το ζεύγος-ζυγαριά του, μετά ό,τι είναι ζευγαρωμένο με αυτό πάλι μπλε, και συνεχίστε μέχρι η αλυσίδα να τελειώσει. Κάθε μπλε κελί είναι σωστό ή κάθε πράσινο κελί είναι — δεν μπορείτε να ξέρετε ποιο, και αυτό αρκεί για δύο πράγματα.\n\nΠρώτον: αν δύο κελιά του ίδιου χρώματος εμφανιστούν στην ίδια γραμμή, στήλη ή κουτί, αυτό το χρώμα είναι αδύνατο, οπότε το ψηφίο αφαιρείται από κάθε κελί που το φορά και το άλλο χρώμα είναι η απάντηση παντού.\n\nΔεύτερον: κάθε κελί εκτός αλυσίδας που βλέπει ένα μπλε και ένα πράσινο μπορεί να αποβάλει το ψηφίο, επειδή ένα από τα δύο το κρατά όποιος τρόπος κι αν πέσει η αλυσίδα.\n\nΕίναι αργό με μολύβι και αξίζει τον κόπο: ένας χρωματισμός συχνά καθαρίζει ένα ψηφίο από μισό πλέγμα."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Πάρτε ένα ψηφίο και μία μονάδα κάθε φορά — ας πούμε, πού μπορεί να πάει ένα 4 σε αυτό το κουτί; Διαγράψτε κάθε κελί της μονάδας που ήδη έχει ψηφίο ή που βλέπει ένα 4 στη γραμμή ή τη στήλη του. Αν μείνει ένα κελί, εκεί πηγαίνει το 4.\n\nΗ παγίδα είναι ότι δεν το βλέπετε κοιτώντας το κελί: μπορεί να δέχεται ευχαρίστως άλλα πέντε ψηφία επίσης, οπότε δεν φαίνεται να έχει αναγκαστεί σε τίποτα. Κοιτάξτε το ψηφίο αντί για το κελί, και εμφανίζεται αμέσως."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Τράβηξε φωτογραφία"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Αυτόματη λήψη φωτογραφίας"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Πατήστε ένα επισημασμένο κελί για να το ελέγξετε, ή επιβεβαιώστε ότι όλες οι αναγνώσεις είναι σωστές."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Πατήστε πρώτα ένα κελί στο πλέγμα."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Δοκιμάστε το %1$s ως υπόθεση στο επισημασμένο κελί. Δεν είναι απάντηση. Ακολουθήστε τις συνέπειες για να δείτε γιατί αποτυγχάνει."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Δοκιμή υπόθεσης"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Ευχαριστούμε που βοηθάτε στη βελτίωση της αναγνώρισης. Η φωτογραφία, οι αναγνώσεις και οι διορθώσεις του παζλ σας θα χρησιμοποιηθούν για ανάλυση και εκπαίδευση."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Αυτή είναι επίσης μια έγκυρη κίνηση %1$s. Αυτή η διαδρομή απεικονίζει διαφορετική κίνηση· συγκρίνετε την απόδειξή της παρακάτω."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Αυτή δεν είναι η κίνηση που επιλέχθηκε για αυτό το βήμα. Μπορεί να υπάρχουν άλλες έγκυρες κινήσεις· κοιτάξτε ξανά ή αποκαλύψτε την εξήγηση αυτού του βήματος."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Σωστό"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Αυτό είναι το υπόλοιπο παζλ. %1$s κελιά σε αυτό χρειάζονται απαντήσεις με τη βοήθεια επίλυσης, επειδή οι υποστηριζόμενες τεχνικές της εφαρμογής δεν βρήκαν κίνηση. Οι λεπτομερείς αποδείξεις αναζήτησής τους δεν είναι διαθέσιμες."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Αυτό είναι το υπόλοιπο παζλ. Ένα κελί σε αυτό χρειάζεται απάντηση με τη βοήθεια επίλυσης, επειδή οι υποστηριζόμενες τεχνικές της εφαρμογής δεν βρήκαν κίνηση. Η λεπτομερής απόδειξη αναζήτησής του δεν είναι διαθέσιμη."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Αυτό είναι το υπόλοιπο παζλ, από την αρχή ως το τέλος."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Εκείνη η φωτογραφία δεν μπόρεσε να διατηρηθεί, οπότε δεν υπάρχει τίποτα για αποστολή."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Αυτό το κελί επιτρέπει %1$s. Αναζητήστε την κίνηση που δικαιολογείται από την τεχνική αυτού του βήματος, ή αποκαλύψτε την εξήγησή της."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Αυτό το κελί είναι ήδη συμπληρωμένο. Επιλέξτε ένα κενό κελί."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Η υπόθεση απορρίφθηκε. Επιστρέφουμε στους πραγματικούς υποψηφίους και διαγράφουμε το %1$s από το επισημασμένο κελί. Οι υποθετικοί ψηφίοι διαγράφονται."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Η κάμερα δεν μπόρεσε να τραβήξει αυτή τη φωτογραφία."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Η κάμερα δεν είναι διαθέσιμη. Κλείστε άλλες εφαρμογές κάμερας και δοκιμάστε ξανά."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"το άλλο"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Η φωτογραφία από %1$s και όλα όσα διαβάστηκαν από αυτήν θα αφαιρεθούν από αυτό το τηλέφωνο. Αυτό δεν μπορεί να αναιρεθεί."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Η φωτογραφία βρίσκεται στη λίστα παζλ σας, στο «Δεν αναγνώστηκε»."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Ο άξονας εδώ είναι %1$s ή %2$s. Είτε έτσι είτε αλλιώς, ένα από τα άλλα δύο κελιά αναγκάζεται σε %3$s, οπότε κανένα κελί που βλέπει και τα δύο δεν μπορεί να είναι %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Το ζεύγος-δείκτης ανάποδα. Πάρτε μια γραμμή ή στήλη και ένα ψηφίο που χρειάζεται ακόμη θέση σε αυτήν. Επισημάνετε κάθε κελί εκείνης της γραμμής που θα μπορούσε να δεχτεί το ψηφίο. Αν όλα πέφτουν μέσα σε ένα κουτί, το ψηφίο πρέπει να βρίσκεται στο τμήμα εκείνου του κουτιού στη γραμμή — άρα δεν είναι πουθενά αλλού στο κουτί, συμπεριλαμβανομένων των δύο γραμμών ή στηλών που δεν κοιτούσατε.\n\nΌπως το ζεύγος-δείκτης, αυτό δεν τοποθετεί τίποτα από μόνο του· ανοίγει χώρο για κάτι που το κάνει."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Οι τυπωμένοι ψηφίοι δεν σχηματίζουν επιλύσιμο παζλ."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nΟι υπόλοιποι υποψήφιοι στο %1$s είναι {%2$s}. Τοποθετήστε το %3$s στη γραμμή %4$s, στήλη %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Η αναφορά είναι πολύ μεγάλη για υποβολή."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Το Y-wing με τον άξονα να κρατά έναν υποψήφιο παραπάνω. Αναζητήστε ένα κελί με ακριβώς τρεις υποψηφίους, ας πούμε {1,4,7}, που να βλέπει δύο κελιά με δύο υποψηφίους — ένα {1,7} και ένα {4,7}.\n\nΚαι τα τρία μπορούν να είναι 7, και ένα από αυτά πρέπει να είναι. Άρα ένα κελί πρέπει να βλέπει και τα τρία για να αποκλειστεί, όχι μόνο τις δύο λαβίδες — πράγμα που στην πράξη σημαίνει ότι βρίσκεται στο ίδιο κουτί με τον άξονα και στην ίδια γραμμή με μια λαβίδα.\n\nΛιγότερες αποκλείσεις από ένα Y-wing, και πιο εύκολο να παραβλεφθεί για τον ίδιο λόγο: ο άξονας δεν ξεχωρίζει."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Υπάρχει ένα κελί που μπορείτε να συμπληρώσετε στο επισημασμένο κουτί.\n\nΠατήστε Υπόδειξη ξανά για να μάθετε ποια τεχνική το βρίσκει."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Δεν απομένει τίποτα εδώ για συλλογισμό."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Αυτά τα %1$s κελιά περιέχουν μόνο %2$s και %3$s, και το καθένα βλέπει το επόμενο, οπότε εναλλάσσονται καθ\' όλη τη διαδρομή. Τα %4$s και %5$s απέχουν έναν περιττό αριθμό βημάτων και έτσι περιέχουν διαφορετικά ψηφία μεταξύ τους — πράγμα που αποκλείει το %6$s από ό,τι τα βλέπει και τα δύο."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Αυτά τα %1$s κελιά περιέχουν μεταξύ τους μόνο %2$s, οπότε αυτά τα ψηφία τα συμπληρώνουν με κάποια σειρά. Αυτό αποκλείει το %3$s από τα υπόλοιπα κελιά αυτού του %4$s."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Αυτά τα %1$s κελιά μπορούν να δεχτούν συνολικά μόνο τα %2$s, οπότε αυτά τα ψηφία τα συμπληρώνουν με κάποια σειρά. Έτσι, το %3$s αποκλείεται από τα υπόλοιπα κελιά αυτής της γραμμής."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Αυτά τα %1$s κελιά μπορούν να δεχτούν συνολικά μόνο τα %2$s, οπότε αυτά τα ψηφία τα συμπληρώνουν με κάποια σειρά. Έτσι, το %3$s αποκλείεται από τα υπόλοιπα κελιά αυτής της στήλης."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Αυτά τα %1$s κελιά μπορούν να δεχτούν συνολικά μόνο τα %2$s, οπότε αυτά τα ψηφία τα συμπληρώνουν με κάποια σειρά. Έτσι, το %3$s αποκλείεται από τα υπόλοιπα κελιά αυτού του πλαισίου."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Αυτοί είναι οι αρχικοί υποψήφιοι για το κελί σας. Η Ιχνηλάτηση εξηγεί ποιες πιθανότητες μπορούν να αποκλειστούν."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Αυτοί οι ψηφίοι δεν μπορούν να σχηματίσουν παζλ, και πολλά είναι λάθος για να προσδιοριστεί ποιο. Πατήστε σε οποιοδήποτε κελί για να διορθώσετε ό,τι διαβάστηκε, ή τραβήξτε ξανά τη φωτογραφία."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Αυτοί οι ψηφίοι δεν μπορούν να σχηματίσουν παζλ. Η αλλαγή των %1$s κυκλωμένων κελιών θα το διόρθωνε — πατήστε ένα για να διορθώσετε ό,τι διαβάστηκε."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Αυτοί οι ψηφίοι δεν μπορούν να σχηματίσουν παζλ. Η αλλαγή του ενός κυκλωμένου κελιού θα το διόρθωνε — πατήστε το για να διορθώσετε ό,τι διαβάστηκε."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Αυτοί οι ψηφίοι δεν σχηματίζουν παζλ, άρα ένας διαβάστηκε λάθος. Πατήστε Επίλυση για να δείτε ποια κελιά πρέπει να διορθωθούν."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Αυτά τα τέσσερα κελιά σχηματίζουν ένα ορθογώνιο σε δύο κουτιά, και τρία από αυτά περιέχουν μόνο %1$s. Αν το %2$s περιείχε μόνο αυτά τα δύο επίσης, οι ψηφίοι θα μπορούσαν να εναλλαχθούν γύρω από το ορθογώνιο και το παζλ θα είχε δύο λύσεις. Έχει μία, άρα το %3$s πρέπει να χρησιμοποιεί κάτι άλλο — και το %4$s αποκλείεται."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Δεν φτάνουν στο τέλος: κάτι εδώ έχει νικήσει πλήρως την εφαρμογή."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Αυτό δεν συμπληρώνει τίποτα. Αποκλείει το %1$s από %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Αυτό δεν συμπληρώνει κανένα κελί. Αποκλείει το %1$s από %2$s κελιά."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Αυτό δεν συμπληρώνει κανένα κελί. Αποκλείει το %1$s από ένα κελί."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nΑυτή είναι η πρώτη από %1$s εκτιμήσεις που οδηγούν στην απάντηση."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Αυτή η απόδειξη εξηγεί μία υπόδειξη, συμπεριλαμβανομένων των αποκλεισμών υποψηφίων που οδηγούν στην απάντησή της. Προχωρήστε βήμα-βήμα για να ακολουθήσετε τη συλλογιστική στο πλέγμα, μετά συνεχίστε με την πλήρη διαδρομή."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Αυτό το παζλ δεν μπόρεσε να προετοιμαστεί."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Αυτό το παζλ δεν μπόρεσε να αποθηκευτεί. Μπορείτε να το χρησιμοποιήσετε τώρα. Ελευθερώστε χώρο αποθήκευσης πριν τραβήξετε άλλη φωτογραφία."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Αυτό το παζλ έχει περισσότερες από μία λύσεις, οπότε πιθανώς παραλείφθηκε ένας τυπωμένος ψηφίος. Εμφανίζεται η λύση %1$s από %2$s — πατήστε Επίλυση ξανά για την επόμενη. Τα κυκλωμένα κελιά διαφέρουν μεταξύ των λύσεων που εμφανίζονται."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Η φωτογραφία αυτού του παζλ δεν μπόρεσε να ανοιχτεί."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Αυτή η συλλογιστική αποκλείει την ύπαρξη %1$s "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Αυτό το κελί μπορεί να περιέχει σημειώσεις υποψηφίων αντί για ένα πλήρη ψηφίο. Ελέγξτε το."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Αυτή η προβολή περιλαμβάνει προηγούμενες αφαιρέσεις υποψηφίων. Ανοίξτε τα στοιχεία τους παρακάτω για να τα ελέγξετε."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"τρία"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Πολύ σκοτεινό για να διακριθούν οι γραμμές πλέγματος"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Ιχνηλάτηση"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Δοκιμάστηκε"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Δοκιμάστε το μόνοι σας"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Ενεργοποίηση"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Γυρίστε το τηλέφωνο ώστε το παζλ να είναι όρθιο."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Δάσκαλος"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"δύο"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Δύο κελιά που περιέχουν το ίδιο ζεύγος, συνδεδεμένα με ζυγαριά σε ένα από τα ψηφία τους, αναγκάζουν το άλλο ψηφίο σε ένα από τα δύο."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Δικέφαλος χαρταετός"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Μοναδικό ορθογώνιο"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"μονάδα"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Το Unreadable δεν εκθέτει λίστα CellReading· τα ακριβή κελιά εισόδου και το αποτέλεσμα διατηρούνται."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"μη υποστηριζόμενη έκδοση μορφής μοντέλου"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Αβέβαιο"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Χρήση γλώσσας συσκευής"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Χρησιμοποιώντας %1$s, πατήστε ένα κελί από το οποίο μπορεί να αφαιρεθεί ένας υποψήφιος, μετά επιλέξτε αυτόν τον ψηφίο."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Χρησιμοποιώντας %1$s, πατήστε το κελί που μπορείτε να συμπληρώσετε, μετά επιλέξτε τον ψηφίο του."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Πολύ δύσκολο"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"είχε"</string>
+    <string name="msg_were_910adfb4" formatted="false">"είχαν"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Τι περιμένατε ή πώς θα σας βοηθούσε η ιδέα σας να λύσετε ή να μάθετε Sudoku;"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Τι συνέβη και βήματα αναπαραγωγής (για σφάλματα)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Τι κάνει"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Πού"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Γιατί αφαιρέθηκε το %1$s από r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Γιατί"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Γιατί όχι %1$s; · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Γιατί αυτό το κελί; · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" με τη λύση. Χρησιμοποιήστε το Έλεγχος για να τα εξετάσετε."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Δουλέψτε αντίστροφα από το κελί σας. Επιλέξτε μια ερώτηση παρακάτω."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Δουλέψτε ψηφίο-ψηφίο αντί κελί-κελί. Για μία μονάδα, σημειώστε πού μπορεί να πάει κάθε ψηφίο που λείπει. Μετά αναζητήστε %1$s ψηφία των οποίων οι λίστες καλύπτουν συνολικά μόνο %2$s κελιά.\n\nΑυτά τα %3$s ψηφία πρέπει να συμπληρώσουν αυτά τα %4$s κελιά, οπότε ό,τι άλλο βρίσκεται σε αυτά μπορεί να διαγραφεί — πράγμα που συχνά μετατρέπει ένα από αυτά αμέσως σε γυμνό μοναδικό ή γυμνό ζεύγος.\n\nΑυτή είναι η τεχνική που οι άνθρωποι βρίσκουν πιο δύσκολη, γιατί δεν υπάρχει τίποτα να δείτε κοιτώντας τα κελιά: εξακολουθούν να έχουν πολλούς υποψηφίους. Το μοτίβο βρίσκεται στους ψηφίους."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Δουλέψτε μόνο με κελιά που έχουν ακριβώς δύο υποψηφίους.\n\nΞεκινήστε από ένα, ας πούμε {2,6}, και υποθέστε ότι δεν είναι το 2 — άρα είναι το 6. Μετακινηθείτε σε ένα κελί που το βλέπει και που έχει επίσης 6, ας πούμε {6,4}: εκείνο δεν μπορεί να είναι 6, άρα είναι 4. Μετακινηθείτε σε ένα κελί που βλέπει εκείνο και περιέχει 4, και συνεχίστε, κάθε βήμα αναγκαζόμενο από το προηγούμενο.\n\nΑν φτάσετε σε ένα κελί του οποίου ο άλλος ψηφίος είναι 2 — ο ψηφίος που αρχικά αποκλείσατε — τελειώσατε. Είτε το πρώτο κελί ήταν 2 εξαρχής, είτε η αλυσίδα έτρεξε και το τελευταίο κελί είναι 2. Το ένα άκρο ή το άλλο το κρατά, άρα ό,τι βλέπει και τα δύο άκρα δεν μπορεί να το έχει.\n\nΚρατήστε τις αλυσίδες κοντές. Τέσσερα ή πέντε κελιά είναι εφικτά με μολύβι· πέρα από αυτό κάνετε λογιστική, και η αναγκαστική αλυσίδα είναι η ειλικρινής ονομασία της."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"η ενεργή ακμή πρέπει να είναι θετική και πεπερασμένη"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Δεν αναγνώστηκε"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Χειρόγραφο"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Λάθος"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-wing"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Διαγράψατε αυτό το κελί."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Ορίσατε σε αυτό χειρόγραφο %1$s."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Ορίσατε σε αυτό τυπωμένο %1$s."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Οι αλλαγές σας είναι ορατές, αλλά δεν μπόρεσαν να αποθηκευτούν. Ελευθερώστε χώρο αποθήκευσης και δοκιμάστε να επεξεργαστείτε το παζλ ξανά."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Οι φωτογραφίες σας και η ιδιωτικότητά σας"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Τα παζλ σας"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Τα αποθηκευμένα παζλ σας"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Το κελί σας ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Το κελί σας παραμένει περιγεγραμμένο. Τα πράσινα κελιά δείχνουν αποδείξεις· οι διαγεγραμμένοι ψηφίοι αποκλείονται."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

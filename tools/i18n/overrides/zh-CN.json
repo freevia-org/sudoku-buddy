@@ -1,0 +1,10 @@
+{
+  "{0} is excluded by {1}, which can only hold {2} in the same box {3}.": "{0} 被 {1} 排除，因为该格在同一宫 {3} 中只能填入 {2}。",
+  "{0} is excluded by {1}, which can only hold {2} in the same column {3}.": "{0} 被 {1} 排除，因为该格在同一列 {3} 中只能填入 {2}。",
+  "{0} is excluded by {1}, which can only hold {2} in the same row {3}.": "{0} 被 {1} 排除，因为该格在同一行 {3} 中只能填入 {2}。",
+  "{0} is excluded by {1}, which contains {2} in the same box {3}.": "{0} 被 {1} 排除，因为该格在同一宫 {3} 中已填有 {2}。",
+  "{0} is excluded by {1}, which contains {2} in the same column {3}.": "{0} 被 {1} 排除，因为该格在同一列 {3} 中已填有 {2}。",
+  "{0} is excluded by {1}, which contains {2} in the same row {3}.": "{0} 被 {1} 排除，因为该格在同一行 {3} 中已填有 {2}。",
+  "Check {0} uncertain squares.": "请检查 {0} 个识别结果不确定的格子。",
+  "{0} squares": "{0} 个格子"
+}

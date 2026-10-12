@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nVurgulanan hücreler bunu kanıtlar.\n\nHangi hücre olduğunu görmek için İpucu\'na tekrar basın."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s ve %2$s hücrelerinin ikisinde de yalnızca %3$s ve %4$s var. Bu %5$s biriminde %6$s için yalnızca iki yer var ve her birini bu hücrelerden biri görüyor - dolayısıyla bu iki yerden biri %7$s olur ve onu gören uç %8$s olmak zorundadır. Her iki durumda da bir uç %9$s olur; böylece ikisini de gören her hücreden %10$s elenir."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s ve %2$s hücrelerinin her birinde yalnızca %3$s ve %4$s adayları vardır. Bu kutuda %5$s için yalnızca iki olası konum vardır; bu hücrelerin her biri konumlardan birini görür. Dolayısıyla bu iki konumdan biri %6$s olur ve onu gören uç hücre %7$s olmak zorundadır. Her iki durumda da uç hücrelerden biri %8$s olur; böylece ikisini de gören tüm hücrelerden %9$s elenir."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s ve %2$s hücrelerinin her birinde yalnızca %3$s ve %4$s adayları vardır. Bu sütunda %5$s için yalnızca iki olası konum vardır; bu hücrelerin her biri konumlardan birini görür. Dolayısıyla bu iki konumdan biri %6$s olur ve onu gören uç hücre %7$s olmak zorundadır. Her iki durumda da uç hücrelerden biri %8$s olur; böylece ikisini de gören tüm hücrelerden %9$s elenir."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s ve %2$s hücrelerinin her birinde yalnızca %3$s ve %4$s adayları vardır. Bu satırda %5$s için yalnızca iki olası konum vardır; bu hücrelerin her biri konumlardan birini görür. Dolayısıyla bu iki konumdan biri %6$s olur ve onu gören uç hücre %7$s olmak zorundadır. Her iki durumda da uç hücrelerden biri %8$s olur; böylece ikisini de gören tüm hücrelerden %9$s elenir."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"Satır %2$s, sütun %3$s%4$s konumunda %1$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%2$s. adımda %1$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s yalnızca %2$s içerebilir."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s, %2$s içeremez çünkü %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s, %2$s içeremez çünkü aynı %5$s sütunundaki %3$s yalnızca %4$s içerebilir."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s, %2$s içeremez çünkü aynı %5$s kutusundaki %3$s yalnızca %4$s içerebilir."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s, %2$s içeremez çünkü aynı %5$s satırındaki %3$s yalnızca %4$s içerebilir."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s, %2$s içeremez çünkü aynı %5$s kutusundaki %3$s, %4$s içerir."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s, %2$s içeremez çünkü aynı %5$s sütunundaki %3$s, %4$s içerir."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s, %2$s içeremez çünkü aynı %5$s satırındaki %3$s, %4$s içerir."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s, %2$s içerir."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s boş"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, giriş"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s buraya yerleşmek zorundadır: %2$s sütununda hâlâ %3$s alabilen tek hücre budur.\n\n%4$s\n\n%5$s şu anda %6$s adaylarına izin verir, ancak her sütunda %7$s tam bir kez bulunmalıdır. Bu nedenle %9$s. satır, %10$s. sütuna %8$s yerleştirin."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s buraya gelmek zorunda: bu %2$s %3$s biriminde hâlâ %4$s alabilecek tek hücre burasıdır.\n\n%5$s\n\n%6$s şu anda %7$s kabul ediyor, ancak her %8$s tam bir kez %9$s içermelidir. Bu nedenle satır %11$s, sütun %12$s konumuna %10$s yerleştirin."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s buraya yerleşmek zorundadır: %2$s kutusunda hâlâ %3$s alabilen tek hücre budur.\n\n%4$s\n\n%5$s şu anda %6$s adaylarına izin verir, ancak her kutuda %7$s tam bir kez bulunmalıdır. Bu nedenle %9$s. satır, %10$s. sütuna %8$s yerleştirin."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s buraya yerleşmek zorundadır: %2$s satırında hâlâ %3$s alabilen tek hücre budur.\n\n%4$s\n\n%5$s şu anda %6$s adaylarına izin verir, ancak her satırda %7$s tam bir kez bulunmalıdır. Bu nedenle %9$s. satır, %10$s. sütuna %8$s yerleştirin."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s için bu satırda iki, bu sütunda iki yer var. %2$s ve %3$s aynı kutuda olduğundan ikisi birden %4$s olamaz - bu da %5$s ve %6$s hücrelerinden birinin bu rakamı içermesini zorunlu kılar ve ikisini de gören her hücreden %7$s adayını eler."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" aynı %2$s içinde %1$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" aynı kutuda %1$s."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" aynı sütunda %1$s."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" aynı satırda %1$s."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s zaten bu hücreden elenmiş. Adayları: "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s, %2$s tarafından elenir; bu da "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s, aynı %4$s sütununda yalnızca %3$s içerebilen %2$s nedeniyle elenir."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s, aynı %4$s satırında yalnızca %3$s içerebilen %2$s nedeniyle elenir."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s, aynı %4$s kutusunda yalnızca %3$s içerebilen %2$s nedeniyle elenir."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s, aynı %4$s kutusunda %3$s içeren %2$s nedeniyle elenir."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s, aynı %4$s sütununda %3$s içeren %2$s nedeniyle elenir."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s, aynı %4$s satırında %3$s içeren %2$s nedeniyle elenir."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"En yeni numaralı hücrede (satır %2$s, sütun %3$s) %1$s zorunludur. %4$s Ok, katkıda bulunan bir yerleştirmeyi izler; önceki sonuçlar da önemlidir."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s, sınıf yolunda eksik"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%2$s içinde %1$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"Bunların %1$s tanesi bir hücreyi doldurur; geri kalanı önce adayları eleyerek yol açar."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s çift"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s basılı, %2$s, %3$s yanlış"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s basılı, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s basılı"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, basılı ipucu"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s dörtlü"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s reddedilen fotoğraf, en yenisi önce:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: %2$s adayını kaldır"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Hücre sayısı: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Bu çözüm yolu %1$s adımdan oluşur; kullanılan en zor desteklenen teknik %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s üçlü"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s, önceki aday akıl yürütmesiyle %2$s içinden elendi."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s yazılı"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"%1$sx%2$s boyutlu görüntü %3$s bayt gerektiriyor ancak %4$s alındı"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"bir hücre ne rakam ne de noktaydı"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Aynı rakamla başlayıp biten iki adaylı hücre zincirinde, bu rakam uçlardan birinde bulunur."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Bir satır, sütun veya kutuda yalnızca tek yeri kalan rakam o yere yerleştirilir."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"Elle yazılmış bir %1$s."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"Basılı bir %1$s."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Kırmızı hücre, uygulamanın orada okuduğu rakamı gösterir. Yazdığınız rakam bu değilse düzeltmek için hücreye dokunun."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Yalnızca tek adayı kalan hücreye o rakam yerleştirilmelidir."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Bir teknik listesi hiçbir zaman eksiksiz değildir ve en zor bulmacalar listedeki her tekniği boşa çıkaracak şekilde hazırlanır. Bu yüzden bunların hiçbiri sonuç vermediğinde öğretici, adaylarını deneyerek tek bir hücreyi kesinleştirir, bunu yaptığını açıkça belirtir ve oradan akıl yürütmeye devam eder. Bulmacayı her zaman tamamlar ve aramayla bulduğu bir sonucu asla çıkarımmış gibi sunmaz."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Üç adaylı bir merkez hücre ile ona uyan iki adaylı iki kanat hücresi, üçünü de gören tüm hücrelerden bir rakamı eler."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"İki adaylı bir merkez hücre ve iki adaylı iki kanat hücresi, iki kanadı da gören tüm hücrelerden bir rakamı eleyebilir."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Hakkında"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Sonra"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Bu hamleden sonra"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Hepsi doğru"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Bu üç hücrenin hepsi %1$s olabilir ve biri olmak zorundadır. Bu yüzden üçünü de gören hiçbir hücre %2$s olamaz."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Kameraya izin ver"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Az kaldı - sayfayı düz ve kameraya paralel tutun"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"hiçbir şeyi kaldırmayan bir eleme, çıkarım değildir"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" ve "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Yanıt"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Uygulama ve cihaz (önceden doldurulmuş)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Uygulama: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"en boy oranı pozitif olmalıdır ancak %1$s bulundu"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Varsayım · varsayımsal rakam"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Varsayım reddedildi · gerçek adaylar geri yüklendi"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"en az %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Otomatik fotoğraf"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Belirsiz bulmaca fotoğraflarını, okuma sonuçlarını ve sonraki hücre düzeltmelerini tanıma analizi ve eğitimi için Freevia ile otomatik paylaşın. Varsayılan olarak kapalıdır."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Parlamayı önleyin"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Geri"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Önceki soruya dön"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Görsel ipucuna dön"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Hücrenize dön"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Önce"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Bu hamleden önce"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Mavi rakamlar çözümdür. Okunan rakamı düzeltmek için herhangi bir hücreye dokunun."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"kutu %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"kutu"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Kutu"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Kutu-satır/sütun elemesi"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"yalnızca şunları içerebilir"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"İptal"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", adaylar %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"ÇekimKanıtı"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Bir rakamı yalnızca iki olası yeri bulunan birimler üzerinden zincirleyin, zinciri dönüşümlü iki renkle boyayın; renklerden biri zincirin tamamında doğrudur."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$s için yalnızca iki olası konum bulunan birimler üzerinden zincir kurulduğunda bu hücreler dönüşümlü olarak iki renge ayrılır; renklerden birinin tüm hücreleri doğrudur. Diğer renkteki iki hücre aynı satırdadır; bu mümkün değildir. Bu yüzden o renk yanlıştır ve o renkteki tüm hücrelerden %2$s elenir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$s için yalnızca iki olası konum bulunan birimler üzerinden zincir kurulduğunda bu hücreler dönüşümlü olarak iki renge ayrılır; renklerden birinin tüm hücreleri doğrudur. Diğer renkteki iki hücre aynı kutudadır; bu mümkün değildir. Bu yüzden o renk yanlıştır ve o renkteki tüm hücrelerden %2$s elenir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"%1$s için yalnızca iki olası konum bulunan birimler üzerinden zincir kurulduğunda bu hücreler dönüşümlü olarak iki renge ayrılır; renklerden birinin tüm hücreleri doğrudur. Diğer renkteki iki hücre aynı sütundadır; bu mümkün değildir. Bu yüzden o renk yanlıştır ve o renkteki tüm hücrelerden %2$s elenir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"%1$s rakamını yalnızca iki olası yeri bulunan birimler üzerinden zincirlemek, bu hücreleri dönüşümlü iki renge ayırır; renklerden biri zincirin tamamında doğrudur. %2$s rengindeki iki hücre aynı %3$s içinde bulunur; bu mümkün değildir. Dolayısıyla o renk yanlıştır ve o renkteki tüm hücrelerden %4$s elenir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"%1$s rakamını yalnızca iki olası yeri bulunan birimler üzerinden zincirlemek, bu hücreleri dönüşümlü iki renge ayırır; renklerden biri zincirin tamamında doğrudur. Bu hücreler iki rengi de görür, dolayısıyla zincir hangi yönde sonuçlanırsa sonuçlansın gördükleri hücrelerden biri %2$s içerir; bu da kendilerinin içeremeyeceği anlamına gelir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"%1$s için yalnızca iki olası konum bulunan birimler üzerinden zincir kurulduğunda bu hücreler dönüşümlü olarak iki renge ayrılır; renklerden birinin tüm hücreleri doğrudur. Aynı renkteki iki hücre aynı kutudadır; bu mümkün değildir. Bu yüzden o renk yanlıştır ve o renkteki tüm hücrelerden %2$s elenir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"%1$s için yalnızca iki olası konum bulunan birimler üzerinden zincir kurulduğunda bu hücreler dönüşümlü olarak iki renge ayrılır; renklerden birinin tüm hücreleri doğrudur. Aynı renkteki iki hücre aynı sütundadır; bu mümkün değildir. Bu yüzden o renk yanlıştır ve o renkteki tüm hücrelerden %2$s elenir."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"%1$s için yalnızca iki olası konum bulunan birimler üzerinden zincir kurulduğunda bu hücreler dönüşümlü olarak iki renge ayrılır; renklerden birinin tüm hücreleri doğrudur. Aynı renkteki iki hücre aynı satırdadır; bu mümkün değildir. Bu yüzden o renk yanlıştır ve o renkteki tüm hücrelerden %2$s elenir."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Kontrol edilecek belirsiz hücreler: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Kontrol"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Belirsiz bir hücreyi kontrol edin."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", doğruluğu kontrol edildi"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Hücrenize neden yerleştirilemeyeceğini görmek için bir aday seçin."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Dil seçin"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Ne gösterileceğini seçin"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Kapat"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"İpucunu kapat"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Okuma incelemesini daralt"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"renkli ve gri tonlamalı hücreler aynı geometriyi kullanmalıdır"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"sütun %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"sütun"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"sütunlar"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Zorlama zincirlerini karşılaştırın ve takip edilecek hücresi daha az olanları tercih edin. Daha kısa zincirler, tam çözümde daha fazla adım anlamına gelebilir."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Sonuç %1$s / %2$s · varsayımsal rakamlar"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"içerir"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"İçerik-Türü"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Tam çözüm yoluyla devam et"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Çelişki · varsayım geçersiz"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", çelişki"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Çelişki: kırmızı %1$s içinde %2$s için hiç yer kalmadı. Bu imkânsızdır, dolayısıyla başlangıç varsayımı geçersiz olmalıdır."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Çelişki: kırmızı hücrede hiç aday kalmadı. Bu imkânsızdır, dolayısıyla başlangıç varsayımı geçersiz olmalıdır."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Silme isteğini kopyala"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Doğru. Akıl yürütmenizi aşağıdaki açıklamayla karşılaştırın."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"çekilen görüntünün kodu çözülemedi"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"O fotoğraftaki basılı rakamlar bulunamadı."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Izgara çizgileri seçilemedi - tekrar deneyin."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"GitHub açılamadı. %1$s adresinden destekle iletişime geçin."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Hata ayıklama çekim kanıtı saklanamadı"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Okuma gönderilemedi. Lütfen bağlantınız olduğunda tekrar deneyin."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Çıkmaz"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"SİL"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Sil"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Raporu sil"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Bu fotoğrafı sil"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Bu bulmacayı sil"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Bu bulmaca silinsin mi?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Bu gönderim silinsin mi?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Siliniyor…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Silme işlemi doğrulanamadı. Bağlantınızı kontrol edip tekrar deneyin."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Silme isteği"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Silme yanıtı bu alındıyı doğrulamadı."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Silme hizmeti HTTP %1$s döndürdü."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Ne olduğunu ve tekrarlama adımlarını açıklayın. Önce tanınan rakamları kontrol edip düzelttiğinizi belirtin. Bir fikir için \'Geçerli değil\' yazın."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", bu ipucunun hedefi"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Cihaz: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Tanılama bilgileri tarayıcı taslağına sığacak şekilde kısaltıldı. Uygulamanın Tanılama bilgilerini gönder işlemi tam raporu paylaşabilir."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"rakam 1..9 aralığında olmalıdır ancak %1$s bulundu"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Rakamlar okunamadı"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Kanıtların diskte saklanması süreyi etkiler; bu bir gecikme ölçümü değildir."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", çözümle uyuşmuyor"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Her alındı, gönderilmiş bir bulmaca revizyonunu tanımlar. Özel olarak saklanan raporu Freevia\'dan kaldırmak için burada silin."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Önceki elemeler: %1$s. Kanıtlarını incelemek için önceki adım bağlantılarını kullanın."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← önceki kanıt (derinlik %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Önceki varsayımsal yerleştirmeler bu hücrede yalnızca tek aday bırakıyor."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Bu kanıtta kullanılan önceki adımlar"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Hücreyi düzenle"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"sekiz"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"boş"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Boş."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Boş"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"İngilizce"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"uyuşmayan girişler"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"uyuşmayan giriş"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Her biri bir hücreyi doldurur."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Tüm hücreler dolu, ancak %1$s yanıt çözümle uyuşmuyor."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Tüm hücreler dolu, ancak bir yanıt çözümle uyuşmuyor."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Tek çözümü olan her sudoku akıl yürütmeyle çözülebilir; tahmin hiçbir zaman gerekli değildir ve nadiren işe yarar. Bunlar, en kolaydan başlayarak bu uygulamanın tanıyıp açıklayabildiği akıl yürütme yöntemleridir. Açık bulmacanızda bunlardan biri uygulanabiliyorsa uygulandığı her yeri gösterir."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Şimdiye kadar yazdığınız her şey doğru."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Şu anda mevcut örnekler: her biri mevcut tablonuzdan başlar."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 yatay çizgi bekleniyordu, %1$s alındı"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"10 dikey çizgi bekleniyordu, %1$s alındı"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"81 hücre bekleniyordu ancak %1$s alındı"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"her blokta 81 hücre bekleniyordu, %1$s ve %2$s bulundu"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"8 bit tek kanal bekleniyordu ancak %1$s alındı"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"28x28 boyutlu görüntü bekleniyordu ancak %1$s değer alındı"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Beklenen davranış veya önerilen iyileştirme"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"her yönde on çizgi bekleniyordu"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"iki blok bekleniyordu, %1$s bulundu"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Önceki aday elemelerini açıkla (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"İpuçlarını açıkla"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Yalnızca iki veya üç adayı kalan bir hücre bulun; ne kadar azsa o kadar iyi, çevresindeki satır, sütun ve kutu ne kadar doluysa daha da iyi.\n\nAdaylarından birini seçip kurşun kalemle hafifçe yazın. Şimdi sonuçlarını takip edin: bu rakam, hücrenin gördüğü tüm hücrelerden elenir. Bu, o hücrelerden birinde tek aday bırakabilir, o da bir diğerini zorunlu kılar ve böyle devam eder. İlerlemeyi sürdürün.\n\nİki şeyden biri olur. Ya zincir söner ve hiçbir şey öğrenmemiş olursunuz; silip diğer adayı deneyin. Ya da hiç adayı kalmayan bir hücreye veya bir rakamı yerleştirecek yeri kalmayan bir satıra ulaşırsınız. Bu imkânsızdır, dolayısıyla kurşun kalemle yazdığınız rakam yanlıştı ve onu kesin olarak eleyebilirsiniz.\n\nDiğer her şey tükendiğinde başvurulacak yöntem budur. Daha yavaştır ve örüntü fark etmekten çok kayıt tutmaya dayanır, ama örüntülerin kaçırdığı hamleleri ortaya çıkarabilir. Kolay tekniklerin yeniden işlemesi için çoğu zaman tek bir eleme yeterlidir; bazı konumlar yine de daha derin bir arama gerektirir."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Aynı iki adaya, örneğin {3,7} adaylarına sahip ve birbirini görmeyen iki hücre bulun; genellikle birbirlerinden oldukça uzaktadırlar.\n\nŞimdi 7 için yalnızca iki olası hücre bulunan bir satır, sütun veya kutu arayın. Bu hücrelerden birini seçtiğiniz çiftin ilk hücresi, diğerini de ikinci hücresi görmeli. Bağlantı budur.\n\nBu iki hücreden biri 7\'dir. Hangisi olursa olsun, çiftinizde onu gören hücre 7 olamaz, dolayısıyla 3 olmalıdır. Hangi ucun 3 olduğunu bilmiyorsunuz; yalnızca birinin 3 olduğunu biliyorsunuz. Bu da iki ucu birden gören tüm hücrelerden 3\'ü elemek için yeterlidir.\n\nZor kısım bağlantıdır, bu yüzden ters yönden arayın: önce bir rakamın yalnızca iki olası yeri bulunan birimleri işaretleyin, ardından iki tarafta eşleşen bir çift arayın."</string>
+    <string name="msg_finished_05343e98" formatted="false">"tamamlandı"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Izgara kadrajda perspektif bozulması olmadan hizalı ve sabit olduğunda deklanşöre basın. Düğme her durumda çalışır."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Izgaranın tamamını kadraja sığdırın."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Izgaranın tamamını kadraja sığdırın"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"beş"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Her hamlenin bir öncekine dayandığı bir çözüm yolunu izleyin."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Tam kanıtı sırayla takip et"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Bu iki adaylı hücre zincirini takip edin: %1$s, %2$s değilse zincirdeki her hücre bir önceki tarafından zorunlu kılınır ve %3$s, %4$s olur. Dolayısıyla uçlardan biri %5$s içerir; bu da iki ucu birden gören tüm hücrelerden onu eler."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Zorlama zinciri"</string>
+    <string name="msg_four_04efaf08" formatted="false">"dört"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"İki satır, iki sütun ve iki kutudaki dört hücrenin hepsi aynı iki adayla sınırlı olamaz; aksi hâlde bulmacanın iki çözümü olurdu."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia silme işlemini doğruladı, ancak bu telefon yerel alındıyı kaldıramadı. Yerel temizliği tamamlamak için tekrar deneyin."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia bu rapor revizyonunu ve özel eğitim kopyasını silecek. Gelecekteki düzeltmeler paylaşım ayarlarınıza göre yeni bir rapor oluşturabilir. Bununla zaten eğitilmiş bir model, öğrendiği değişiklikleri koruyabilir."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Tam çözüm yolu"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Gelecekteki belirsiz okumalarda, düzeltilmiş perspektifli bulmaca fotoğrafı, tanıma sonuçları ve düzeltmeler analiz ve eğitim için Freevia\'ya gönderilecek. Eğitim kopyaları, Gönderim alındıları bölümünden silinene kadar saklanır; eğitilmiş bir model öğrendiği değişiklikleri koruyabilir. Belirsiz bir bulmaca zaten açıksa şimdi gönderilecek. Bunu Ayarlar\'dan kapatabilirsiniz."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Kolay"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Parlama çizgileri görünmez kılıyor - sayfayı ışıktan uzağa doğru eğin"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GriGörüntü(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Gri hücrelerde, uygulamanın dikkate almadığı kurşun kalem notları vardır. Rakamın altındaki çubuk, ne kadar emin olduğunu gösterir. Ayrıntılar için bir hücreye dokunun."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Elle yazılmış"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Zor"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Gizli"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Gizli çift"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Gizli dörtlü"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Gizli tek"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Gizli üçlü"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Önceki kanıtı gizle"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Nasıl bulunacağını gizle"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", ipucu %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"İpucu"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"İpucu kanıtı"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"İpucunun mantığı"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Sabit durun..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Sabit durun veya deklanşöre dokunun"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Kamera odaklanırken sabit durun..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Telefonu paralel tutun"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Telefonu bulmacanın üzerinde ona paralel tutun."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Telefonu bulmacanın üzerinde ona paralel tutun"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"yatay\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Nasıl bulunur"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nBu sonuca nasıl ulaşıyoruz:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Tam olarak iki adayı olan hücreler arayın; Y-kanadı yalnızca böyle üç hücreden oluşur.\n\nBirini merkez olarak alın, örneğin {2,5}. Onun gördüğü, {2,9} adaylarını içeren bir hücre ve {5,9} adaylarını içeren başka bir hücre arayın. Merkez ya 2\'dir ya da 5. 2 ise ilk kanat 9 olmak zorundadır; 5 ise ikinci kanat 9 olmak zorundadır. Her durumda kanatlardan birinde 9 bulunur; hangisi olduğunu bilmiyorsunuz ve bilmeniz de gerekmiyor.\n\nDolayısıyla iki kanadı da gören hiçbir hücre 9 olamaz. Bu hücreler genellikle dikdörtgeni tamamlayan iki köşedir."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", varsayımsal %1$s, girilmiş bir yanıt değil"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Bir satır, sütun veya kutudaki %1$s rakam yalnızca aynı %2$s hücreye yerleşebiliyorsa bu hücreler başka hiçbir rakamı içeremez."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Bir satır, sütun veya kutudaki %1$s hücrenin toplamda tam %2$s ortak adayı varsa bu rakamlar o hücrelere aittir ve birimdeki başka hiçbir hücreye yerleşemez."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Bir rakamın bir satırda iki, bir sütunda iki olası yeri varsa ve her birinden bir hücre aynı kutudaysa kalan iki hücreden biri bu rakamı içermelidir."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Bir rakamın iki satırın her birinde iki olası yeri varsa ve bunlardan birer hücre aynı sütundaysa diğer iki yerden biri bu rakamı içermelidir."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Bir rakamın bir satır veya sütundaki tüm olası yerleri tek bir kutudaysa o rakam kutunun geri kalanından elenebilir."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Bir rakamın %1$s satırdaki tüm olası yerleri aynı %2$s sütundaysa bu sütunların diğer yerlerinden elenebilir; satır ve sütunlar yer değiştirdiğinde de aynısı geçerlidir."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Bir rakamın kutu içindeki tüm olası yerleri aynı satır veya sütundaysa o rakam o satır veya sütunun geri kalanından elenebilir."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Bir rakamı varsaymak, hiçbir rakam yerleştirilemeyen bir hücreye yol açıyorsa o rakam yanlıştır."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"görüntü boyutları pozitif olmalıdır"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Hepsi aynı iki adayı içeren bir hücre zincirinde, tek uzunluklu zincirin iki ucu farklı rakamlar içerir."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Bu %1$s %2$s içinde %3$s yalnızca bu %4$s %5$s içinde bulunabilir. Birlikte hepsini kullanırlar, dolayısıyla %6$s bu %7$s içindeki diğer tüm yerlerden elenebilir."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Bu %1$s sütunda %2$s yalnızca bu %3$s satıra yerleşebilir. Birlikte bu satırların tümünü kullanırlar; dolayısıyla bu satırların diğer tüm hücrelerinden %4$s elenebilir."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Bu %1$s satırda %2$s yalnızca bu %3$s sütuna yerleşebilir. Birlikte bu sütunların tümünü kullanırlar; dolayısıyla bu sütunların diğer tüm hücrelerinden %4$s elenebilir."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Bu iki %1$s içinde %2$s için ikişer olası yer vardır ve %3$s ile %4$s aynı %5$s içindedir; dolayısıyla ikisi birden %6$s olamaz. Bu yüzden %7$s ile %8$s hücrelerinden biri bu rakamı içerir; bu da ikisini birden gören tüm hücrelerden %9$s adayını eler."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Bu iki sütunun her birinde %1$s için yalnızca iki olası konum vardır ve %2$s ile %3$s aynı satırdadır; dolayısıyla ikisi birden %4$s olamaz. Bu nedenle %5$s ile %6$s hücrelerinden biri bu rakamı içerir; böylece ikisini de gören tüm hücrelerden %7$s elenir."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Bu iki satırın her birinde %1$s için yalnızca iki olası konum vardır ve %2$s ile %3$s aynı sütundadır; dolayısıyla ikisi birden %4$s olamaz. Bu nedenle %5$s ile %6$s hücrelerinden biri bu rakamı içerir; böylece ikisini de gören tüm hücrelerden %7$s elenir."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Bu %1$s içinde %2$s yalnızca bu %3$s hücreye yerleşebilir, dolayısıyla bu hücreler ayrılmıştır. Bu da onlardan %4$s adayını eler."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Bu %1$s içinde %2$s yalnızca tek bir kutuya yerleşebilir. Dolayısıyla %3$s, o kutuda bu %4$s üzerindedir ve kutunun geri kalanından elenebilir."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Bu kutuda %1$s yalnızca bu %2$s hücreye yerleşebilir; dolayısıyla bu hücreler onlara ayrılmıştır. Böylece bu hücrelerden %3$s elenir."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Bu sütunda %1$s yalnızca bu %2$s hücreye yerleşebilir; dolayısıyla bu hücreler onlara ayrılmıştır. Böylece bu hücrelerden %3$s elenir."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Bu satırda %1$s yalnızca bu %2$s hücreye yerleşebilir; dolayısıyla bu hücreler onlara ayrılmıştır. Böylece bu hücrelerden %3$s elenir."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Fotoğraflarını, okumalarını ve düzeltmelerini içerir. Bunu Ayarlar\'dan kapatın."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Tek bir kutu içinde yalnızca iki veya üç hücreye yerleşebilen bir rakam bulun ve hepsinin aynı satırda ya da aynı sütunda olup olmadığını kontrol edin. Öyleyse rakam kesinlikle o satır veya sütunun bir yerindedir; nerede olduğunu bilmiyorsunuz, ancak bu kutunun içinde olduğunu biliyorsunuz. Dolayısıyla aynı satır veya sütunun kutu dışındaki hiçbir yerinde olamaz.\n\nBu, tek başına hiçbir rakam yerleştirmez. Başka bir yerde tek aday oluşması için adayları eler."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Bu kutu içinde %1$s yalnızca bu %2$s içinde bulunabilir. Dolayısıyla %3$s burada bir yerdedir ve %4$s içindeki diğer yerlerden elenebilir."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Sorun veya fikir"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Burada %1$s yerde uygulanabilir. Sırayla incelemek için ilerleyin."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Burada tek bir yerde uygulanabilir. Görmek için ilerleyin."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Bu konumda hiçbir yerde uygulanamaz."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Vurgulanan %2$s içinde %1$s için kalan tek yerdir."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Çemberle işaretlenen hücredir.\n\nRakam için İpucu\'na tekrar basın."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Denizanası"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Sakla"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Zorlama zincirlerini kısa tut"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Dil"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Lisanslar"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Bir satır, sütun veya kutuda az sayıda adayı kalan hücrelere bakın. Bunlardan %1$s tanesini alın ve adaylarını birleştirin. Birleşimde tam %2$s rakam varsa bu %3$s rakamın yeri ayrılmıştır: hangisinin nereye gideceğini henüz söyleyemeseniz de bir sırayla bu %4$s hücreye yerleşmek zorundadırlar.\n\nBu yeterlidir. Birimdeki diğer tüm hücrelerden bu rakamlar elenebilir ve genellikle bu hücrelerden biri ardından tek adaylı olur.\n\nHücrelerin hepsinin aynı adaylara sahip olması gerekmez; {2,7}, {2,9} ve {7,9} tamamen geçerli bir üçlüdür ve insanların gözden kaçırdığı da budur."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Aynı iki adayı, örneğin {4,9} adaylarını içeren ve her birinin sonrakini gördüğü bir zincir oluşturan hücreler arayın. Üç hücre yeterli değildir; en az dört gerekir.\n\nİlerlerken onları dönüşümlü renklendirin. Her hücre sonrakini gördüğünden komşu iki hücre aynı rakamı içeremez; dolayısıyla zincir baştan sona 4, 9, 4, 9 ya da 9, 4, 9, 4 şeklindedir ve hangisi olduğunu bilemezsiniz.\n\nHer durumda zıt renklerdeki iki hücre farklı rakamlar içerir: biri 4, diğeri 9\'dur. Dolayısıyla ikisini de gören hiçbir hücre bunlardan biri olamaz ve iki adayı birden kaybeder.\n\nBu örüntü, içindeki her hücre aynı göründüğü için kolay fark edilir. Izgarada aynı çiftleri takip edin ve nerelerde birbirlerini gördüklerine bakın."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Aynı iki adayı, örneğin {1,6} adaylarını içeren ve bir dikdörtgenin üç köşesinde bulunan üç hücre arayın. Dikdörtgen tam olarak iki kutuda bulunmalıdır: dört değil, iki kutuyu kesen iki satır ve iki sütun.\n\nŞimdi dördüncü köşeye bakın. O da yalnızca 1 ve 6 içerseydi bulmacanın iki çözümü olurdu; dikdörtgendeki 1 ve 6 rakamlarının yerlerini değiştirebilir ve diğer her şeyi geçerli bırakabilirdiniz. Doğru hazırlanmış bir bulmacanın tek çözümü vardır, dolayısıyla dördüncü köşe başka bir rakam kullanmalıdır: diğer adayları kalır, 1 ve 6 elenir.\n\nBu, ızgaradan çok bulmacayı hazırlayana dayanan tek argümandır. Yayımlanmış bir bulmacada geçerlidir, ancak zaten yanlış doldurduğunuz bir bulmacada işe yaramaz; çünkü o durumda tek olması bir yana, hiç çözüm olmayabilir."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Bu kutuya bakın. Çerçeveyi takip ederek bu ipucunun açıklayacağı hücreyi bulun."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Notlar"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Orta"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Daha fazla"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Daha fazla ışık gerekiyor"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Birden fazla çözüm var, yani basılı bir rakam atlanmış. Çözümleri ve nerede farklılaştıklarını görmek için Çöz\'e basın."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Uzaklaşın"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Yaklaşın"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Yaklaşın - ızgara okunamayacak kadar küçük."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Çıplak"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Çıplak çift"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Çıplak dörtlü"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Çıplak tek"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Çıplak üçlü"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Yalnızca rakamı vermek yerine tekniğin adını ve onu kanıtlayan hücreleri gösterin."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"en az 4 nokta gerekiyor ancak %1$s alındı"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Onay gerekiyor"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Yeni sudoku"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Sonraki sonuç"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Sonraki adım"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Görseller otomatik olarak eklenmez. Buradan gönderilen bildirimler ve ekler herkese açıktır. Özel olarak göndermeyi tercih ettiğiniz örnekleri info@freevia.org adresine gönderin."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Uygulama son yüklendiğinden beri hiçbir fotoğraf reddedilmedi."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Tarama tanılama bilgisi yok."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Burada hiçbir teknik uygulanamıyor"</string>
+    <string name="msg_none_140bedbf" formatted="false">"hiçbiri"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Hiçbiri bir hücreye rakam yerleştirmez: adayları elerler ve zor bir bulmacada böyle ilerleme sağlanır."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Şu anda bulmacanızda yok."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"rakam modeli dosyası değil"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Güvenle okunamadı - en yakın tahmin %3$s konumunda %1$s %2$s. Lütfen bu hücreyi kendiniz ayarlayın."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Henüz dokuz satır ve dokuz sütunlu bir ızgara olarak okunamıyor - kadrajı yalnızca ızgarayla doldurmayı deneyin veya doğrudan fotoğrafı çekin"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"başlamadı"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Bu telefondan hiçbir şey gönderilemedi."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Çözülecek bir şey kalmadı."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Burada, bu uygulamanın bildiği tekniklerle başka bir çıkarım yapılamıyor."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"olağan dışı bir şey yok"</string>
+    <string name="msg_ok_565339bc" formatted="false">"Tamam"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"bir"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Bir hücre basılı rakam gibi görünüyordu, ancak değil."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Bir basılı rakam otomatik olarak düzeltildi."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"bir hücre"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Buraya yalnızca %1$s yerleşebilir; diğer tüm rakamlar bu satır, sütun veya kutuda zaten var."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Buraya yalnızca %1$s yerleşebilir. Vurgulanan hücreler, diğer sekiz rakamın %2$s tanesini içerir; %3$s ise bu hücreden daha önce elenmiştir, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Buraya yalnızca %1$s gelebilir. Vurgulanan hücreler diğer sekiz rakamın dördünü eliyor; %2$s bu hücreden daha önce elenmişti, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Buraya yalnızca %1$s gelebilir. Vurgulanan hücreler diğer sekiz rakamın altısını eliyor; %2$s bu hücreden daha önce elenmişti, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Buraya yalnızca %1$s gelebilir. Vurgulanan hücreler diğer sekiz rakamın birini eliyor; %2$s bu hücreden daha önce elenmişti, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Buraya yalnızca %1$s gelebilir. Vurgulanan hücreler diğer sekiz rakamın yedisini eliyor; %2$s bu hücreden daha önce elenmişti, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Buraya yalnızca %1$s gelebilir. Vurgulanan hücreler diğer sekiz rakamın beşini eliyor; %2$s bu hücreden daha önce elenmişti, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Buraya yalnızca %1$s yerleşebilir. Vurgulanan hücreler diğer sekiz rakamın %2$s tanesini içeriyor; %3$s %4$s bu hücreden daha önce elendi, çevresinde görebileceğiniz bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Buraya yalnızca %1$s gelebilir. Vurgulanan hücreler diğer sekiz rakamın ikisini eliyor; %2$s bu hücreden daha önce elenmişti, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Buraya yalnızca %1$s yerleşebilir. Vurgulanan hücreler, diğer sekiz rakamın %2$s tanesini içerir; %3$s ise bu hücreden daha önce elenmiştir, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Buraya yalnızca %1$s gelebilir. Vurgulanan hücreler diğer sekiz rakamın üçünü eliyor; %2$s bu hücreden daha önce elenmişti, çevresinde görebildiğiniz herhangi bir şey nedeniyle değil."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Buraya yalnızca %1$s yerleşebilir. Diğer sekiz rakam, bu satır, sütun veya kutudaki dolu hücreler ya da zorunlu tek adaylar nedeniyle elenir."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Buraya yalnızca %1$s yerleşebilir, ancak çevresindeki hiçbir şey nedenini göstermiyor: diğer sekiz rakamın tamamı, satırına, sütununa veya kutusuna yazılmış olmalarıyla değil, önceki akıl yürütmeyle bu hücreden elendi."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Yalnızca %1$s basılı rakam bulundu; bu, bir bulmaca için çok az."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"yalnızca çeyrek dönüşler desteklenir, %1$s desteklenmez"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Tarayıcınızda uygulama sürümü, telefon modeli, Android sürümü ve son tarama tanılama bilgileri doldurulmuş bir taslak açın. Tam açıklamayı ve ilgili ekran görüntülerini kendiniz ekleyin.\n\nGitHub\'a giriş yapmanız gerekir. Göndermeden önce taslağı inceleyip düzenleyebilirsiniz. Gönderilen raporlar ve ekler herkese açıktır. Hiçbir fotoğraf otomatik olarak eklenmez."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Uygulama ayarlarını aç"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"GitHub\'ı aç"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Açık kaynak bildirimleri"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Son yerleştirmenin kanıtını görmek için ‘Neden bu hücre?’ seçeneğini açın veya kanıtını takip etmek için elenen bir aday seçin."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache Lisansı 2.0. Izgarayı bulmak ve perspektifini düzeltmek için kullanılır.\n\nAndroidX, Jetpack Compose ve CameraX - Apache Lisansı 2.0.\n\nKotlin - Apache Lisansı 2.0.\n\nRakam tanıyıcı, LeCun, Cortes ve Burges\'in el yazısı rakamlarından oluşan MNIST veritabanının yanı sıra açık sistem yazı tiplerinden oluşturulan ve programla çizilen rakamlarla eğitilmiştir."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV yerel kitaplıkları yüklenemedi"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Başka bir bulmacanın fotoğrafını çekin."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Sakladığınız fotoğraflar bu uygulamanın özel depolama alanında tutulur ve onları sildiğinizde veya uygulamayı kaldırdığınızda kaldırılır."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Uygulamanın bulmacaya dönüştüremediği fotoğraflar. Birini gönderirseniz incelenebilir."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Bir rakam seçin ve satırlara bakarak bu rakam için tam iki hücre kalanları bulun. Böyle iki satır alın ve hücrelerinden birer tanesinin aynı sütunda olup olmadığına bakın.\n\nÖyleyse bu iki hücre aynı sütundadır ve ikisi birden o rakamı içeremez. Dolayısıyla uzak uçlardan, yani diğer taraftaki iki hücreden en az biri içerir. Hangisi olduğunu bilmiyorsunuz ve bilmeniz de gerekmiyor: iki uzak ucu da gören her hücreden o rakam elenebilir.\n\nArdından aynı işlemi satırlar yerine sütunlarla yapın. Şekil, yanında kısa bir bina olan yüksek bir binaya benzer; adı buradan gelir ve birkaçını gördükten sonra böyle fark edersiniz."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Bir rakam seçin. Tam iki olası yeri bulunan bir satır ve tam iki olası yeri bulunan bir sütun bulun. Şimdi satırdaki bir hücreyle sütundaki bir hücrenin aynı kutuda olup olmadığını kontrol edin.\n\nÖyleyse bu iki hücre birden o rakamı içeremez; bir kutuda bir rakam yalnızca bir kez bulunur. Dolayısıyla kalan iki uçtan en az biri içerir ve iki ucu da gören her hücreden o rakam elenebilir.\n\nİnsanların bunu gözden kaçırmasının nedeni hizalanacak hiçbir şey olmamasıdır: dört hücre asimetrik bir şekil oluşturur ve onları birbirine bağlayan tek şey iki iç ucun paylaştığı kutudur."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Boş bir hücre seçin ve 1 ile 9 arasındaki rakamları gözden geçirerek satırında, sütununda veya kutusunda zaten bulunanları eleyin. Tam bir rakam kalırsa oraya yerleşir.\n\nDiğer tüm tekniklerin hazırlamayı amaçladığı teknik budur. Daha zor olan her şey, bir hücreyi tek adaya indirmenin bir yoludur; bu yüzden daha zor bir teknik sonuç verdiğinde sırada buraya bakın."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Bir rakam seçin ve diğerlerini dikkate almayın. Satırları inceleyip o rakam için yalnızca iki veya üç olası hücre kalanları not edin. Hücreleri aynı %2$s sütunda hizalanan böyle %1$s satır arayın.\n\nBulursanız bu %3$s satırın her biri rakamı o sütunlardan birine yerleştirmelidir ve hiçbir ikisi aynı sütunu kullanamaz. Dolayısıyla birlikte %4$s sütunun tamamında rakamın yerini doldururlar ve o sütunlardaki diğer tüm hücrelerden rakam elenebilir.\n\nArdından tüm işlemi sütunlarla satırları yer değiştirerek tekrarlayın. Bunların yarısı ikinci yönde bulunur ve çoğu insanın hiç aramadığı yarı da budur."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"%1$s yerleştir"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"%2$s. satır, %3$s. sütuna %1$s yerleştirin."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Çerçeveli hücrenize %1$s yerleştirin."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Lütfen GitHub\'ın ek ekleme aracını kullanarak ilgili ekran görüntülerini ekleyin: bulmaca, tanınan rakamlar, Kontrol Et sonucu veya sorunu gösteren ipucu aşaması. Yararlı olduğu durumlarda beklenen ve gerçekleşen sonuçları belirtin."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Lütfen Sudoku Buddy tanıma gönderimlerimi silin. Alındı kimlikleri: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Lütfen bu metni sorun veya fikrin tam açıklamasıyla değiştirin. Bu rapora kısa, açıklayıcı bir başlık verin."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Kamerayı bir sudoku bulmacasına doğrultun"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Kamerayı bir sudoku bulmacasına doğrultun."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Kamerayı kâğıt üzerindeki bir sudoku bulmacasına doğrultun. Uygulama basılı rakamları ve yazdığınız her şeyi okur, bulmacayı çözer ve size ipucu verebilir, yanıtlarınızı kontrol edebilir veya tüm çözümü gösterebilir."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"İşaret eden çift"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"GÖNDER"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Bulmaca hazırlanıyor…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Önceki"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Önceki adım"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Basılı"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Gizlilik politikası"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Bulmaca depolama"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Bulmacalar"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Bulmacalar bu telefonda okunur ve çözülür. Emin olunmayan bir okumayı gönderir veya otomatik paylaşımı etkinleştirirseniz bulmaca fotoğrafı, ilk okumalar, belirsizlik işaretleri ve düzeltmeleriniz, tanıma analizi ve özel model eğitimi için Freevia\'ya güvenli biçimde gönderilir. Raporlar cihaz modelinizi veya tanılama verilerini içermez. Otomatik paylaşım isteğe bağlıdır; hesap, rutin kullanım analitiği veya reklam takibi yoktur. Eğitim kopyaları alındı belgesiyle silinebilir, ancak önceden eğitilmiş bir model öğrendiği değişiklikleri koruyabilir. Bir raporu silmek için Ayarlar\'daki Gönderim alındı belgelerini kullanın."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Test için fotoğraflanan bulmacalar sudoku.cba.si sitesinden alınmıştır. Bu uygulamanın siteyle bir bağlantısı yoktur."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Fotoğrafladığınız bulmacalar burada saklanır; böylece daha sonra kaldığınız yerden devam edebilirsiniz."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Tanıma"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"El yazısıyla yazılmış %1$s olarak okundu, güven düzeyi %2$s."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Basılı %1$s olarak okundu, güven düzeyi %2$s."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Boş olarak okundu - yazı izi bulunamadı."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Kurşun kalemle yazılmış aday notları olarak okundu ve yok sayıldı."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Okuma incelendi."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Okuma gönderildi. Teşekkürler!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Son tarama tanılama bilgileri (önceden doldurulmuş)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Tanıma, özellikle el yazısında hata yapabilir. Tanınan rakamları fotoğrafla karşılaştırmak için Oku\'yu kullanın ve düzeltmek istediğiniz hücreye dokunun. Uygulama emin olunmayan okumaları incelemeniz için işaretler; yüksek güvenli bir okuma da yanlış olabilir."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Varsayımı reddet"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Uzak çiftler"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$s adayını kaldır"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\n%1$s adayını kaldırın: "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Kaldırıldı"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Akıl yürütmeyi yeniden oynat"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"GitHub\'da hata veya fikir bildir"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Kamerayı yeniden dene"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"%1$s. adıma dön"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Açıklamayı göster"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Okumayı incele veya gönder"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Okumayı incele"</string>
+    <string name="msg_right_883361d5" formatted="false">"Doğru"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Çözüm yolu tamamlandı. Bir hamleyi incelemek için geri dönün veya adımları kendiniz deneyin."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"satır %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Satır %1$s, sütun %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Satır %1$s, sütun %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"satır $1, sütun $2"</string>
+    <string name="msg_row_634768da" formatted="false">"satır"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"satırlar"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", elenen %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Tarama tanılama verileri okunamadı."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Ekran görüntüleri veya bulmaca örnekleri"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"İkinci tahmin: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Alıştırma için seç"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Seçili: satır %1$s, sütun %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Tanılama verilerini gönder (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Tanılama verilerini gönder"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Bu taramaları gönder"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Bu fotoğrafı gönder"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Ayarlar"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"yedi"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Emin olunmadığında otomatik paylaş"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Emin olunmayan okumalar otomatik paylaşılsın mı?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Çelişkiyi göster"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Bulmacanızdaki tüm %1$s örneklerini göster"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Bulmacanızdaki örneği göster"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Basit renklendirme"</string>
+    <string name="msg_six_44778d82" formatted="false">"altı"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Gökdelen"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", çözüm %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Çöz"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Çözüldü ve tüm cevaplar doğru."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Çözücü destekli cevap: %2$s hücresine %1$s yerleştirin. Adaylar: %3$s. Uygulamanın desteklediği teknikler bu konumda bir hamle bulamadı. Arama, tek çözümde %4$s buldu; arama dallarının ayrıntılı kanıtı mevcut değil."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nÇözücü destekli yanıt: uygulamanın desteklediği teknikler bir hamle bulamadı. Ayrıntılı bir kanıt mevcut değil."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Çözücü destekli eleme: bir arama, vurgulanan hücrede %1$s olamayacağını gösteriyor, ancak uygulama gösterebileceği kısa bir çelişki zinciri üretemedi. Ayrıntılı kanıt mevcut değil."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Bazı hücrelerde tam bir rakam yerine notlar olabilir."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Bazı rakamlar güvenle okunamadı."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Bu fotoğraf okunurken bir sorun oluştu."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Hücre"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nBaşlangıç adayları: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Adım %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Izgarayı düz hizalayın"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Stratejiler"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Gönderim alındı belgesi"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Gönderim alındı belgesi geçersiz."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Gönderim alındı belgeleri (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Gönderim alındı belgeleri"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Gönderim yanıtında %1$s eksik."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Gönderim yanıtının durumu geçersiz."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Gönderim hizmeti yapılandırılmamış."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Gönderim hizmeti HTTP %1$s döndürdü."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Bu derlemede gönderim kullanılamıyor."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Gönder"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Gelecekteki emin olunmayan okumaları otomatik gönder"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Okumayı gönder"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Emin olunmayan okumayı analiz için gönder"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Güncellemeyi gönder"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Gönderildi"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Gönderiliyor…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Sudoku Buddy tanılama verileri"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Sudoku Buddy geri bildirimi - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Sudoku Buddy, Freevia tarafından yayımlanmaktadır. İletişim: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Sudoku Buddy bulmacaları kamerayla okur, bu yüzden kamera erişimine ihtiyaç duyar. Tanıma işlemi ve bulmaca geçmişi telefonunuzda kalır. Emin olunmayan bir okumayı göndermeyi seçerseniz fotoğrafı ve sonuçları, tanımayı iyileştirmek için Freevia\'ya güvenli biçimde gönderilir. Otomatik paylaşım isteğe bağlıdır ve Ayarlar\'dan kapatılabilir."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sudoku Buddy taraması"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sudoku Buddy taramaları"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Sudoku Buddy kaynak kodu Apache License 2.0 kapsamında lisanslanmıştır. Freevia markası ayrı ticari marka haklarına tabidir."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Sudoku, kamu malı olan bir bulmaca türüdür. Bu uygulama elinizdeki bulmacaları çözer; kimsenin bulmacalarını çoğaltmaz veya dağıtmaz."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", destekleyici kanıt"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"İşaretli hücrede %1$s olduğunu varsayın. Numaralandırılmış rakamlar varsayımsaldır."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Bu hücrenin %1$s olduğunu varsayalım. Okları sırayla izleyin: önceki yerleştirmeler her hücreyi zorunlu kılar; ya o rakam hücreye hâlâ yerleşebilecek tek rakamdır ya da o hücre rakamın hâlâ yerleşebileceği tek yerdir.\n\nBöylece kırmızı birimde %2$s için yer kalmaz. Birimde işaretlenen %3$s adayları, bu rakamın yerleşebileceği konumlardır ve bu hücrelerin her biri oklardan biriyle az önce doldurulmuştur. Bir birimde bir rakama yer kalmaması mümkün değildir; dolayısıyla bu hücre %4$s olamaz."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Bu hücrenin %1$s olduğunu varsayın. Okları sırayla izleyin: önceki yerleştirmeler her hücreyi zorunlu kılar - ya o rakam hücrede kalabilen tek rakamdır ya da o hücre rakamın gidebileceği tek yerdir. Sonunda kırmızı hücrede hiçbir rakam kalmaz; bu mümkün değildir - dolayısıyla bu hücre %2$s değildir."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Bu hücrenin %1$s olduğunu varsayalım. Okları sırayla izleyin: önceki yerleştirmeler her hücreyi zorunlu kılar; ya o rakam hücreye hâlâ yerleşebilecek tek rakamdır ya da o hücre rakamın hâlâ yerleşebileceği tek yerdir.\n\nBöylece kırmızı satırda %2$s için yer kalmaz. Satırda işaretlenen %3$s adayları, bu rakamın yerleşebileceği konumlardır ve bu hücrelerin her biri oklardan biriyle az önce doldurulmuştur. Bir satırda bir rakama yer kalmaması mümkün değildir; dolayısıyla bu hücre %4$s olamaz."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Bu hücrenin %1$s olduğunu varsayalım. Okları sırayla izleyin: önceki yerleştirmeler her hücreyi zorunlu kılar; ya o rakam hücreye hâlâ yerleşebilecek tek rakamdır ya da o hücre rakamın hâlâ yerleşebileceği tek yerdir.\n\nBöylece kırmızı kutuda %2$s için yer kalmaz. Kutuda işaretlenen %3$s adayları, bu rakamın yerleşebileceği konumlardır ve bu hücrelerin her biri oklardan biriyle az önce doldurulmuştur. Bir kutuda bir rakama yer kalmaması mümkün değildir; dolayısıyla bu hücre %4$s olamaz."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Bu hücrenin %1$s olduğunu varsayın. Okları sırayla izleyin: önceki yerleştirmeler her hücreyi zorunlu kılar - ya o rakam hücrede kalabilen tek rakamdır ya da o hücre rakamın gidebileceği tek yerdir.\n\nBunun sonucunda kırmızı %2$s içinde %3$s yerleştirilecek yer kalmaz. İçinde işaretlenen %4$s rakamları, gidebileceği yerleri gösterir ve bunların her biri oklardan birinin az önce doldurduğu bir hücredir. Bir rakama yer kalmayan bir %5$s olamaz - dolayısıyla bu hücre %6$s değildir."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Bu hücrenin %1$s olduğunu varsayalım. Okları sırayla izleyin: önceki yerleştirmeler her hücreyi zorunlu kılar; ya o rakam hücreye hâlâ yerleşebilecek tek rakamdır ya da o hücre rakamın hâlâ yerleşebileceği tek yerdir.\n\nBöylece kırmızı sütunda %2$s için yer kalmaz. Sütunda işaretlenen %3$s adayları, bu rakamın yerleşebileceği konumlardır ve bu hücrelerin her biri oklardan biriyle az önce doldurulmuştur. Bir sütunda bir rakama yer kalmaması mümkün değildir; dolayısıyla bu hücre %4$s olamaz."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Hamleyi ve ızgaradaki sonuçlarını görmek için Sonra görünümüne geçin."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Kılıç balığı"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Yeni fotoğraf çek"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Başka bir fotoğraf çek"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Bir rakam seçin ve bu rakam için tam iki hücre kalan her birimi işaretleyin. Bu iki hücre bir tahterevalli gibidir: biri bu rakamı içerir, diğeri içermez.\n\nHerhangi bir yerden başlayıp bir hücreyi örneğin maviye boyayın. Tahterevalli eşini yeşile, onun eşini yeniden maviye boyayın ve zincir bitene kadar devam edin. Ya tüm mavi hücreler doğrudur ya da tüm yeşiller - hangisi olduğunu bilemezsiniz ve bu, iki çıkarım için yeterlidir.\n\nBirincisi: aynı renkte iki hücre aynı satır, sütun veya kutuda bulunursa o renk imkânsızdır; rakam o renkteki tüm hücrelerden elenir ve diğer renkteki tüm hücreler cevaptır.\n\nİkincisi: zincir dışındaki bir hücre hem mavi hem yeşil bir hücreyi görüyorsa bu rakamı eleyebilir; çünkü zincir hangi yönde sonuçlanırsa sonuçlansın, bu ikisinden biri rakamı içerir.\n\nKalemle yapmak yavaştır ama değer: tek bir renklendirme çoğu zaman bir rakamı tahtanın yarısından eler."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Her seferinde bir rakam ve bir birim ele alın - örneğin bu kutuda 4 nereye gelebilir? Birimde zaten rakam bulunan veya kendi satır ya da sütununda bir 4 gören her hücreyi eleyin. Tek hücre kalırsa 4 oraya gelir.\n\nYanıltıcı olan, bunu hücreye bakarak görememenizdir: hücre beş başka rakamı da kabul edebilir, bu yüzden zorunluymuş gibi görünmez. Hücre yerine rakama bakın; sonuç hemen ortaya çıkar."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Fotoğraf çek"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Fotoğrafı otomatik çek"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"İncelemek için işaretli bir hücreye dokunun veya tüm okumaların doğru olduğunu onaylayın."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Önce ızgaradaki bir hücreye dokunun."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"İşaretli hücrede %1$s varsayımını deneyin. Bu bir cevap değildir. Neden başarısız olduğunu görmek için sonuçlarını izleyin."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Varsayımı dene"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Tanımayı iyileştirmeye yardımcı olduğunuz için teşekkürler. Bulmaca fotoğrafınız, okumalar ve düzeltmeleriniz analiz ve eğitim için kullanılacak."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Bu da geçerli bir %1$s hamlesi. Bu çözüm yolu başka bir hamleyi gösteriyor; aşağıdaki kanıtını karşılaştırın."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Bu, bu adım için seçilen hamle değil. Başka geçerli hamleler olabilir; tekrar bakın veya bu adımın açıklamasını gösterin."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Bu doğru"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Bulmacanın geri kalanı böyle çözülür. Uygulamanın desteklediği teknikler bir hamle bulamadığı için %1$s hücrede çözücü destekli cevap gerekiyor. Ayrıntılı arama kanıtları mevcut değil."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Bulmacanın geri kalanı böyle çözülür. Uygulamanın desteklediği teknikler bir hamle bulamadığı için bir hücrede çözücü destekli cevap gerekiyor. Ayrıntılı arama kanıtı mevcut değil."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Bulmacanın geri kalanı baştan sona böyle çözülür."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" O fotoğraf saklanamadı, bu yüzden gönderilecek bir şey yok."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Bu hücre %1$s kabul ediyor. Bu adımın tekniğiyle gerekçelendirilen hamleyi arayın veya açıklamasını gösterin."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Bu hücre zaten dolu. Boş bir hücre seçin."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Varsayım reddedildi. Gerçek adaylara dönüp işaretli hücrede %1$s adayını eliyoruz. Varsayımsal rakamlar temizlenir."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Kamera bu fotoğrafı çekemedi."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kamera kullanılamıyor. Diğer kamera uygulamalarını kapatıp yeniden deneyin."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"diğeri"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"%1$s tarihli fotoğraf ve ondan okunan her şey bu telefondan kaldırılacak. Bu işlem geri alınamaz."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Fotoğraf, bulmaca listenizde \"Okunamadı\" altında."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Buradaki merkez hücre %1$s veya %2$s. Her iki durumda da diğer iki hücreden biri zorunlu olarak %3$s olur; dolayısıyla ikisini de gören hiçbir hücre %4$s olamaz."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"İşaret eden çiftin tersinden okunmuş hâli. Bir satır veya sütun ve içinde hâlâ yer arayan bir rakam seçin. Bu çizgide rakamı alabilecek her hücreyi işaretleyin. Hepsi tek bir kutudaysa rakam, çizginin o kutudaki kısmında olmak zorundadır - dolayısıyla kutunun başka hiçbir yerinde, bakmadığınız diğer iki satır veya sütunda da olamaz.\n\nİşaret eden çift gibi, tek başına bir rakam yerleştirmez; yerleştirme sağlayacak bir hamleye alan açar."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Basılı rakamlar çözülebilir bir bulmaca oluşturmuyor."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s hücresinde kalan adaylar {%2$s}. %4$s. satır, %5$s. sütuna %3$s yerleştirin."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Rapor gönderilemeyecek kadar büyük."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Merkez hücresinde bir fazla aday bulunan Y-kanadı. Tam üç adayı olan, örneğin {1,4,7} içeren ve iki adaylı iki hücreyi gören bir hücre arayın - biri {1,7}, diğeri {4,7}.\n\nArtık üçünün de 7 olması mümkündür ve biri mutlaka 7 olmalıdır. Bu yüzden bir hücreden 7 elenebilmesi için yalnızca iki kıskaç hücresini değil, üçünü de görmesi gerekir - pratikte bu, merkezle aynı kutuda ve bir kıskaçla aynı satır veya sütunda olması demektir.\n\nY-kanadından daha az eleme sağlar ve aynı nedenle daha kolay gözden kaçar: merkez hücre dikkat çekmez."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Vurgulanan kutuda doldurabileceğiniz bir hücre var.\n\nOnu hangi tekniğin bulduğunu öğrenmek için İpucu\'na tekrar basın."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Burada akıl yürütülecek bir şey kalmadı."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Bu %1$s hücrenin hepsinde yalnızca %2$s ve %3$s var ve her biri bir sonrakini görüyor; bu yüzden rakamlar zincir boyunca dönüşümlü ilerler. %4$s ile %5$s arasında tek sayıda bağlantı olduğundan farklı rakamlar içerirler - bu da ikisini gören her hücreden %6$s adayını eler."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Bu %1$s hücrede toplamda yalnızca %2$s var; dolayısıyla bu rakamlar hücreleri bir sırayla doldurur. Böylece bu %4$s biriminin geri kalanından %3$s elenir."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Bu %1$s hücrenin tüm adayları yalnızca %2$s olduğundan, bu rakamlar hücreleri bir sırayla doldurur. Böylece bu satırın kalan hücrelerinden %3$s elenir."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Bu %1$s hücrenin tüm adayları yalnızca %2$s olduğundan, bu rakamlar hücreleri bir sırayla doldurur. Böylece bu sütunun kalan hücrelerinden %3$s elenir."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Bu %1$s hücrenin tüm adayları yalnızca %2$s olduğundan, bu rakamlar hücreleri bir sırayla doldurur. Böylece bu kutunun kalan hücrelerinden %3$s elenir."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Bunlar hücrenizin başlangıç adaylarıdır. İz, hangi olasılıkların elenebileceğini açıklar."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Bu rakamlar bir bulmaca oluşturamıyor ve hangilerinin yanlış olduğunu söylemek için fazla hata var. Okumayı düzeltmek için bir hücreye dokunun veya fotoğrafı yeniden çekin."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Bu rakamlar bir bulmaca oluşturamıyor. Halkayla işaretli %1$s hücreyi değiştirmek sorunu düzeltir - okumayı düzeltmek için birine dokunun."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Bu rakamlar bir bulmaca oluşturamıyor. Halkayla işaretli tek hücreyi değiştirmek sorunu düzeltir - okumayı düzeltmek için ona dokunun."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Bu rakamlar bir bulmaca oluşturmuyor; demek ki biri yanlış okunmuş. Düzeltilecek hücreleri görmek için Çöz\'e basın."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Bu dört hücre iki kutuya yayılan bir dikdörtgen oluşturuyor ve üçünde yalnızca %1$s var. %2$s hücresinde de yalnızca bu iki rakam olsaydı rakamlar dikdörtgen boyunca yer değiştirebilir ve bulmacanın iki çözümü olurdu. Tek çözümü olduğuna göre %3$s başka bir rakam kullanmalıdır - dolayısıyla %4$s elenir."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Sona ulaşmıyorlar: buradaki bir durum uygulamayı tamamen çaresiz bıraktı."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Bu, hiçbir hücreyi doldurmaz. %2$s içinden %1$s adayını eler."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Bu işlem hiçbir hücreyi doldurmaz. %2$s hücreden %1$s adayını eler."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Bu işlem hiçbir hücreyi doldurmaz. Bir hücreden %1$s adayını eler."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nBu, yanıta götüren %1$s çıkarımdan ilki."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Bu kanıt, cevaba götüren aday elemeleriyle birlikte bir ipucunu açıklar. Izgaradaki akıl yürütmeyi izlemek için adımlarda ilerleyin, ardından tam çözüm yoluna devam edin."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Bu bulmaca hazırlanamadı."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Bu bulmaca kaydedilemedi. Şimdi yine de kullanabilirsiniz. Başka bir fotoğraf çekmeden önce depolama alanı açın."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Bu bulmacanın birden fazla çözümü var; muhtemelen basılı bir rakam atlandı. %2$s çözümden %1$s. çözüm gösteriliyor - sonrakini görmek için Çöz\'e tekrar basın. Halkayla işaretli hücreler, gösterilen çözümler arasında farklılık gösterir."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Bu bulmacanın fotoğrafı açılamadı."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Bu akıl yürütme, mevcut %1$s adayını eler "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Bu hücrede tam bir rakam yerine aday notları olabilir. Lütfen kontrol edin."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Bu görünüm önceki aday elemelerini de içerir. Kontrol etmek için aşağıdaki kanıtlarını açın."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"üç"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Izgara çizgilerini seçemeyecek kadar karanlık"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"İz"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Denendi"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Kendiniz deneyin"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Etkinleştir"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Bulmaca düz duracak şekilde telefonu çevirin."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Öğretici"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"iki"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Aynı çifti içeren ve rakamlardan biri üzerinden tahterevalli bağıyla bağlanan iki hücre, diğer rakamın bu hücrelerden birinde olmasını zorunlu kılar."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"İki ipli uçurtma"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Benzersiz dikdörtgen"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"birim"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable bir CellReading listesi sunmaz; tam girdi hücreleri ve sonuç korunur."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"desteklenmeyen model biçimi sürümü"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Belirsiz"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Cihaz dilini kullan"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"%1$s kullanarak bir adayın elenebileceği hücreye dokunun, ardından o rakamı seçin."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"%1$s kullanarak doldurabileceğiniz hücreye dokunun, ardından rakamını seçin."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Çok zor"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"W-kanadı"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"idi"</string>
+    <string name="msg_were_910adfb4" formatted="false">"idi"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Ne bekliyordunuz veya fikriniz Sudoku çözmenize ya da öğrenmenize nasıl yardımcı olurdu?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Ne oldu ve yeniden oluşturma adımları (hatalar için)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Ne yapar"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Nerede"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"%1$s neden r%2$sc%3$s hücresinden elendi"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Neden"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Neden %1$s değil? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Neden bu hücre? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" çözümle uyuşmuyor. İncelemek için Kontrol Et\'i kullanın."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Hücrenizden geriye doğru ilerleyin. Aşağıdan bir soru seçin."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Hücre hücre değil, rakam rakam ilerleyin. Bir birimde her eksik rakamın hâlâ gelebileceği yerleri yazın. Ardından listeleri toplamda yalnızca %2$s hücreyi kapsayan %1$s rakam arayın.\n\nBu %3$s rakam, bu %4$s hücreyi doldurmak zorundadır; dolayısıyla hücrelerdeki diğer tüm adaylar elenebilir - bu da çoğu zaman hücrelerden birini anında çıplak tekli veya çıplak çift hâline getirir.\n\nİnsanların en zor bulduğu teknik budur; çünkü hücrelere baktığınızda görülecek bir şey yoktur: hâlâ çok sayıda adayları vardır. Desen rakamlardadır."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Yalnızca tam iki adayı kalan hücrelerle çalışın.\n\nBirinden başlayın, örneğin {2,6}, ve 2 olmadığını varsayın - o zaman 6\'dır. Gördüğü ve yine 6 içeren bir hücreye geçin, örneğin {6,4}: o hücre 6 olamaz, dolayısıyla 4\'tür. Onun gördüğü, 4 içeren bir hücreye geçip devam edin; her adım bir önceki tarafından zorunlu kılınır.\n\nDiğer rakamı 2 olan bir hücreye ulaşırsanız - yani başta elediğiniz rakama - işlem tamamdır. Ya ilk hücre aslında 2\'dir ya da zincir işlemiştir ve son hücre 2\'dir. Uçlardan biri bu rakamı içerdiği için iki ucu da gören hiçbir hücre içeremez.\n\nZincirleri kısa tutun. Dört veya beş hücre kalemle bulunabilir; daha ötesinde kayıt tutmaya başlarsınız ve buna zorlayıcı zincir demek daha doğrudur."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"çalışma kenarı pozitif ve sonlu olmalıdır"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Okunamadı"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Yazılı"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Yanlış"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"X-kanadı"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"XY-zinciri"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-kanadı"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-kanadı"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Bu hücreyi temizlediniz."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Bunu el yazısıyla yazılmış %1$s olarak ayarladınız."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Bunu basılı %1$s olarak ayarladınız."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Değişiklikleriniz görünüyor ancak kaydedilemedi. Depolama alanı açıp bulmacayı yeniden düzenlemeyi deneyin."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Fotoğraflarınız ve gizliliğiniz"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Bulmacalarınız"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Kayıtlı bulmacalarınız"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Hücreniz ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Hücrenizin çerçevesi görünür kalır. Yeşil hücreler kanıtı gösterir; üstü çizili rakamlar elenmiştir."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

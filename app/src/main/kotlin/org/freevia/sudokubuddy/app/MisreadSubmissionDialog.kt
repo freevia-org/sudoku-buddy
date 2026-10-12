@@ -38,15 +38,15 @@ internal fun MisreadSubmissionDialog(
     var shareAutomatically by remember { mutableStateOf(autoShare) }
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Submit uncertain reading for analysis") },
+        title = { Text(localized("Submit uncertain reading for analysis")) },
         text = {
             Column(
                 modifier = Modifier.heightIn(max = 400.dp).verticalScroll(rememberScrollState()),
                 verticalArrangement = Arrangement.spacedBy(12.dp),
             ) {
                 Text(
-                    "Thanks for helping improve recognition. Your puzzle photo, readings and " +
-                        "corrections will be used for analysis and training."
+                    localized("Thanks for helping improve recognition. Your puzzle photo, readings and " +
+                        "corrections will be used for analysis and training.")
                 )
                 ConsentOption(
                     checked = shareAutomatically,
@@ -56,7 +56,7 @@ internal fun MisreadSubmissionDialog(
                 )
                 if (!MisreadSubmission.available) {
                     Text(
-                        "Submissions are not available in this build.",
+                        localized("Submissions are not available in this build."),
                         color = MaterialTheme.colorScheme.error,
                         style = MaterialTheme.typography.bodySmall,
                     )
@@ -67,10 +67,10 @@ internal fun MisreadSubmissionDialog(
             Button(
                 enabled = MisreadSubmission.available,
                 onClick = { onSubmit(shareAutomatically) },
-            ) { Text("Submit") }
+            ) { Text(localized("Submit")) }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) { Text("Cancel") }
+            TextButton(onClick = onDismiss) { Text(localized("Cancel")) }
         },
     )
 }
@@ -95,8 +95,8 @@ private fun ConsentOption(
             modifier = Modifier.padding(end = 8.dp),
         )
         Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-            Text(title, style = MaterialTheme.typography.bodyMedium)
-            Text(detail, style = MaterialTheme.typography.bodySmall,
+            Text(localized(title), style = MaterialTheme.typography.bodyMedium)
+            Text(localized(detail), style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
     }
@@ -121,26 +121,26 @@ internal fun SubmissionReceiptsDialog(
         receipts.joinToString(", ") { it.digest }
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Submission receipts") },
+        title = { Text(localized("Submission receipts")) },
         text = {
             Column(Modifier.heightIn(max = 280.dp).verticalScroll(rememberScrollState())) {
-                Text("Each receipt identifies one submitted puzzle revision. Delete it here " +
-                    "to remove the privately stored report from Freevia.")
+                Text(localized("Each receipt identifies one submitted puzzle revision. Delete it here " +
+                    "to remove the privately stored report from Freevia."))
                 receipts.forEach { receipt ->
                     Row(
                         modifier = Modifier.fillMaxWidth().padding(top = 6.dp),
                         verticalAlignment = Alignment.CenterVertically,
                     ) {
-                        Text(receipt.digest, style = MaterialTheme.typography.labelSmall,
+                        Text(localized(receipt.digest), style = MaterialTheme.typography.labelSmall,
                             modifier = Modifier.weight(1f))
                         TextButton(
                             enabled = deletingReceipt == null && MisreadSubmission.available,
                             onClick = { pendingDelete = receipt },
-                        ) { Text(if (deletingReceipt == receipt.digest) "Deleting…" else "Delete") }
+                        ) { Text(localized(if (deletingReceipt == receipt.digest) "Deleting…" else "Delete")) }
                     }
                 }
                 deleteError?.let {
-                    Text(it, color = MaterialTheme.colorScheme.error,
+                    Text(localized(it), color = MaterialTheme.colorScheme.error,
                         style = MaterialTheme.typography.bodySmall)
                 }
             }
@@ -148,25 +148,25 @@ internal fun SubmissionReceiptsDialog(
         confirmButton = {
             Button(onClick = {
                 (context.getSystemService(ClipboardManager::class.java) as ClipboardManager)
-                    .setPrimaryClip(ClipData.newPlainText("Deletion request", request))
+                    .setPrimaryClip(ClipData.newPlainText(context.localized("Deletion request"), request))
                 onDismiss()
             }) {
-                Text("Copy deletion request")
+                Text(localized("Copy deletion request"))
             }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("Close") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(localized("Close")) } },
     )
     pendingDelete?.let { receipt ->
         AlertDialog(
             onDismissRequest = { if (deletingReceipt == null) pendingDelete = null },
-            title = { Text("Delete this submission?") },
+            title = { Text(localized("Delete this submission?")) },
             text = {
                 Column {
-                    Text("Freevia will delete this report revision and its private training " +
+                    Text(localized("Freevia will delete this report revision and its private training " +
                         "copy. Future corrections may create a new report under your sharing " +
-                        "settings. A model already trained on it may retain learned changes.")
+                        "settings. A model already trained on it may retain learned changes."))
                     deleteError?.let {
-                        Text(it, color = MaterialTheme.colorScheme.error,
+                        Text(localized(it), color = MaterialTheme.colorScheme.error,
                             style = MaterialTheme.typography.bodySmall,
                             modifier = Modifier.padding(top = 8.dp))
                     }
@@ -175,12 +175,12 @@ internal fun SubmissionReceiptsDialog(
             confirmButton = {
                 TextButton(enabled = deletingReceipt == null,
                     onClick = { onDelete(receipt) }) {
-                    Text(if (deletingReceipt == receipt.digest) "Deleting…" else "Delete report")
+                    Text(localized(if (deletingReceipt == receipt.digest) "Deleting…" else "Delete report"))
                 }
             },
             dismissButton = {
                 TextButton(enabled = deletingReceipt == null, onClick = { pendingDelete = null }) {
-                    Text("Cancel")
+                    Text(localized("Cancel"))
                 }
             },
         )

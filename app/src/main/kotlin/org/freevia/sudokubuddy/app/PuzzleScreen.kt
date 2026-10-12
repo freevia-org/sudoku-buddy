@@ -124,12 +124,12 @@ fun PreparedPuzzleScreen(
                     Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally) {
                         if (failed) {
-                            Text("This puzzle could not be prepared.")
-                            TextButton(onClick = onRetake) { Text("Take another photo") }
-                            TextButton(onClick = onMenu) { Text("Your puzzles") }
+                            Text(localized("This puzzle could not be prepared."))
+                            TextButton(onClick = onRetake) { Text(localized("Take another photo")) }
+                            TextButton(onClick = onMenu) { Text(localized("Your puzzles")) }
                         } else {
                             CircularProgressIndicator()
-                            Text("Preparing puzzle…", Modifier.padding(16.dp))
+                            Text(localized("Preparing puzzle…"), Modifier.padding(16.dp))
                         }
                     }
                 }
@@ -175,11 +175,11 @@ fun PuzzleScreen(
                 if (state.hasReadingReview && !state.showReadingReview) {
                     IconButton(onClick = { onChange(state.copy(overlay = OverlayMode.READING,
                         readingReviewExpanded = true, selectedCell = null)) }) {
-                        Icon(Icons.Filled.CheckCircle, contentDescription = "Review or submit reading")
+                        Icon(Icons.Filled.CheckCircle, contentDescription = localized("Review or submit reading"))
                     }
                 }
                 IconButton(onClick = onRetake) {
-                    Icon(CameraIcon, contentDescription = "Take a new photo")
+                    Icon(CameraIcon, contentDescription = localized("Take a new photo"))
                 }
                 OverflowMenu(
                     { onChange(state.copy(readingReviewExpanded = false)); onStrategies() },
@@ -307,6 +307,7 @@ private fun PhotoPane(
 /** Individual semantic targets follow the same fitted bounds as the photograph overlay. */
 @Composable
 private fun AccessiblePuzzleCells(state: PuzzleState, onSelect: (Int) -> Unit, modifier: Modifier) {
+    val catalog = rememberMessageCatalog()
     val shown = state.overlayDigits()
     BoxWithConstraints(modifier.semantics {
         collectionInfo = CollectionInfo(9, 9)
@@ -323,31 +324,31 @@ private fun AccessiblePuzzleCells(state: PuzzleState, onSelect: (Int) -> Unit, m
             val bottom = state.lines.horizontal[row + 1].coerceIn(0f, 1f)
             val cell = state.grid[index]
             val description = buildString {
-                append("Row ${row + 1}, column ${column + 1}, ")
-                append(when (cell.source) {
+                append(catalog.translate("Row ${row + 1}, column ${column + 1}, "))
+                append(catalog.translate(when (cell.source) {
                     CellSource.EMPTY -> "empty"
                     CellSource.GIVEN -> "${cell.digit}, printed clue"
                     CellSource.GUESS -> "${cell.digit}, entry"
-                })
+                }))
                 shown[index]?.let { digit ->
-                    append(when (digit.role) {
+                    append(catalog.translate(when (digit.role) {
                         OverlayRole.CORRECT -> ", checked correct"
                         OverlayRole.INCORRECT -> ", does not match the solution"
                         OverlayRole.SOLUTION -> ", solution ${digit.digit}"
                         OverlayRole.HINT -> ", hint ${digit.digit}"
                         OverlayRole.WRITTEN -> ""
-                    })
+                    }))
                 }
-                if (state.hintTarget() == index) append(", destination of this hint")
-                if (index in state.evidenceCells()) append(", supporting evidence")
+                if (state.hintTarget() == index) append(catalog.translate(", destination of this hint"))
+                if (index in state.evidenceCells()) append(catalog.translate(", supporting evidence"))
                 state.candidateMarks()[index]?.takeIf { it.isNotEmpty() }?.let {
-                    append(", candidates ${it.joinToString(", ")}")
+                    append(catalog.translate(", candidates ${it.joinToString(", ")}"))
                 }
-                state.removedCandidates()[index]?.let { append(", ruled out ${it.joinToString(", ")}") }
+                state.removedCandidates()[index]?.let { append(catalog.translate(", ruled out ${it.joinToString(", ")}")) }
                 state.chain()?.links?.firstOrNull { it.index == index }?.let {
-                    append(", hypothetical ${it.digit}, not an entered answer")
+                    append(catalog.translate(", hypothetical ${it.digit}, not an entered answer"))
                 }
-                if (index in state.chain()?.deadEnd.orEmpty()) append(", contradiction")
+                if (index in state.chain()?.deadEnd.orEmpty()) append(catalog.translate(", contradiction"))
             }
             Box(Modifier
                 .absoluteOffset(maxWidth * left, maxHeight * top)
@@ -358,8 +359,8 @@ private fun AccessiblePuzzleCells(state: PuzzleState, onSelect: (Int) -> Unit, m
                     collectionItemInfo = CollectionItemInfo(row, 1, column, 1)
                     traversalIndex = index.toFloat()
                     selected = if (state.practicing) state.practiceCell == index else state.selectedCell == index
-                    if (index in state.openQuestions) stateDescription = "Needs confirmation"
-                    onClick(if (state.practicing) "Select for practice" else "Edit cell") {
+                    if (index in state.openQuestions) stateDescription = catalog.translate("Needs confirmation")
+                    onClick(catalog.translate(if (state.practicing) "Select for practice" else "Edit cell")) {
                         onSelect(index)
                         true
                     }
@@ -393,6 +394,7 @@ private fun ControlsPane(
             onSubmit,
             onReceipts,
             submissionInFlight,
+            controlsWidth = maxWidth,
             modifier = Modifier
                 .fillMaxSize()
                 .padding(bottom = if (route != null) peek else 0.dp),
@@ -408,9 +410,24 @@ private fun Controls(
     onSubmit: () -> Unit,
     onReceipts: () -> Unit,
     submissionInFlight: Boolean,
+    controlsWidth: Dp,
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
+    val measurer = rememberTextMeasurer()
+    val density = LocalDensity.current
+    val labels = listOf(localized("Read"), localized("Check"), localized("Hint"), localized("Solve"))
+    val requiredWidths = labels.map {
+        maxOf(48f, measurer.measure(it, MaterialTheme.typography.labelLarge).size.width / density.density + 8f)
+    }
+    val availableWidth = controlsWidth.value - 32f
+    // A longer label can use the space left by its shorter neighbour. Equal
+    // widths unnecessarily forced all four controls into separate large-font rows.
+    val columns = when {
+        requiredWidths.sum() + 18f <= availableWidth -> 4
+        requiredWidths.chunked(2).all { it.sum() + 6f <= availableWidth } -> 2
+        else -> 1
+    }
     LaunchedEffect(state.showReadingReview) {
         if (state.showReadingReview) scroll.scrollTo(0)
     }
@@ -441,7 +458,7 @@ private fun Controls(
                 // Only when there is something to say. Silence is the ordinary case.
                 state.status?.let { status ->
                     Text(
-                        status.text,
+                        localized(status.text),
                         style = MaterialTheme.typography.titleMedium,
                         color = when (status.tone) {
                             Tone.GOOD -> Overlays.correct
@@ -457,10 +474,10 @@ private fun Controls(
                         if ((state.hint as? org.freevia.sudokubuddy.solver.Hint.Explained)
                                 ?.proof?.isNotEmpty() == true) {
                             TextButton(onClick = { onChange(state.showHintProof()) }) {
-                                Text("Replay reasoning")
+                                Text(localized("Replay reasoning"))
                             }
                         }
-                        TextButton(onClick = { onChange(state.close()) }) { Text("Close hint") }
+                        TextButton(onClick = { onChange(state.close()) }) { Text(localized("Close hint")) }
                     }
                 }
                 // The review banner already explains the current action. Repeating the
@@ -481,8 +498,8 @@ private fun Controls(
         // Pinned, so they are in the same place whatever is being said above them. Read,
         // Check, Hint, Solve is the order you would use them in: Read while the question
         // is still whether the app got the puzzle right, Solve when you have given up.
-        Row(
-            horizontalArrangement = Arrangement.spacedBy(6.dp),
+        Column(
+            verticalArrangement = Arrangement.spacedBy(6.dp),
             modifier = Modifier
                 .fillMaxWidth()
                 // The tutor rests below this row and carries the system-bar inset for it.
@@ -498,10 +515,19 @@ private fun Controls(
                 )
                 .padding(horizontal = 16.dp, vertical = 6.dp),
         ) {
-            ModeButton("Read", OverlayMode.READING, state, onChange, Modifier.weight(1f))
-            ModeButton("Check", OverlayMode.CHECK, state, onChange, Modifier.weight(1f))
-            HintButton(state, onChange, Modifier.weight(1f))
-            ModeButton("Solve", OverlayMode.SOLUTION, state, onChange, Modifier.weight(1f))
+            for (start in labels.indices step columns) {
+                Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    for (index in start until minOf(start + columns, labels.size)) {
+                        val buttonModifier = Modifier.weight(requiredWidths[index])
+                        when (index) {
+                            0 -> ModeButton("Read", OverlayMode.READING, state, onChange, buttonModifier)
+                            1 -> ModeButton("Check", OverlayMode.CHECK, state, onChange, buttonModifier)
+                            2 -> HintButton(state, onChange, buttonModifier)
+                            3 -> ModeButton("Solve", OverlayMode.SOLUTION, state, onChange, buttonModifier)
+                        }
+                    }
+                }
+            }
         }
     }
 }

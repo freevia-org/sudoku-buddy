@@ -167,19 +167,19 @@ class History(context: Context) {
         private val DAY: DateTimeFormatter = DateTimeFormatter.ofPattern("EEEE d MMMM yyyy")
         private val TIME: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
 
-        private fun format(pattern: DateTimeFormatter, at: Date): String =
-            pattern.withLocale(Locale.getDefault())
+        private fun format(pattern: DateTimeFormatter, at: Date, locale: Locale): String =
+            pattern.withLocale(locale)
                 .format(at.toInstant().atZone(ZoneId.systemDefault()))
 
         /** Groups entries under day headings, newest day first, for a list that grows. */
-        fun byDay(entries: List<HistoryEntry>): List<Pair<String, List<HistoryEntry>>> =
-            entries.groupBy { format(DAY, it.date) }
+        fun byDay(entries: List<HistoryEntry>, locale: Locale = Locale.getDefault()): List<Pair<String, List<HistoryEntry>>> =
+            entries.groupBy { format(DAY, it.date, locale) }
                 .toList()
                 .sortedByDescending { (_, group) -> group.maxOf { it.id } }
 
-        fun timeOf(entry: HistoryEntry): String = format(TIME, entry.date)
+        fun timeOf(entry: HistoryEntry, locale: Locale = Locale.getDefault()): String = format(TIME, entry.date, locale)
 
         /** The same clock, for anything else that happened at a moment worth showing. */
-        fun timeOf(at: Date): String = format(TIME, at)
+        fun timeOf(at: Date, locale: Locale = Locale.getDefault()): String = format(TIME, at, locale)
     }
 }

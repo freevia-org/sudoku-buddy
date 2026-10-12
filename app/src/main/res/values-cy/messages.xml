@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nY celloedd a amlygwyd sy’n ei brofi.\n\nPwyswch Awgrym eto i weld pa gell."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"Mae %1$s a %2$s ill dau’n cynnwys dim ond %3$s a %4$s. Yn y %5$s hwn, dim ond dau le sydd gan %6$s, un yn cael ei weld gan bob un ohonynt - felly mae un o’r ddau hynny’n %7$s, a rhaid i’r pen sy’n ei weld fod yn %8$s. Yn y naill achos neu’r llall, mae un pen yn %9$s, sy’n diystyru %10$s o bob cell sy’n gweld y ddau."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"Dim ond %3$s a %4$s y gall %1$s a %2$s eu cynnwys. Yn y blwch hwn, dim ond dau safle posibl sydd gan %5$s, ac mae pob un o\'r ddwy gell yn gweld un ohonynt - felly mae un o\'r ddau safle hynny yn %6$s, a rhaid i\'r pen sy\'n ei weld fod yn %7$s. Yn y naill achos neu\'r llall, mae un pen yn %8$s, sy\'n diystyru %9$s ym mhob cell sy\'n gweld y ddau ben."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"Dim ond %3$s a %4$s y gall %1$s a %2$s eu cynnwys. Yn y golofn hon, dim ond dau safle posibl sydd gan %5$s, ac mae pob un o\'r ddwy gell yn gweld un ohonynt - felly mae un o\'r ddau safle hynny yn %6$s, a rhaid i\'r pen sy\'n ei weld fod yn %7$s. Yn y naill achos neu\'r llall, mae un pen yn %8$s, sy\'n diystyru %9$s ym mhob cell sy\'n gweld y ddau ben."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"Dim ond %3$s a %4$s y gall %1$s a %2$s eu cynnwys. Yn y rhes hon, dim ond dau safle posibl sydd gan %5$s, ac mae pob un o\'r ddwy gell yn gweld un ohonynt - felly mae un o\'r ddau safle hynny yn %6$s, a rhaid i\'r pen sy\'n ei weld fod yn %7$s. Yn y naill achos neu\'r llall, mae un pen yn %8$s, sy\'n diystyru %9$s ym mhob cell sy\'n gweld y ddau ben."</string>
+    <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s yn rhes %2$s, colofn %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s yng ngham %2$s"</string>
+    <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"Dim ond %2$s all fod yn %1$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"Ni all %1$s gynnwys %2$s oherwydd bod %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"Ni all %2$s fod yn %1$s oherwydd dim ond %4$s all fod yn %3$s yn yr un golofn %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"Ni all %2$s fod yn %1$s oherwydd dim ond %4$s all fod yn %3$s yn yr un blwch %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"Ni all %2$s fod yn %1$s oherwydd dim ond %4$s all fod yn %3$s yn yr un rhes %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"Ni all %2$s fod yn %1$s oherwydd bod %3$s yn cynnwys %4$s yn yr un blwch %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"Ni all %2$s fod yn %1$s oherwydd bod %3$s yn cynnwys %4$s yn yr un golofn %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"Ni all %2$s fod yn %1$s oherwydd bod %3$s yn cynnwys %4$s yn yr un rhes %5$s."</string>
+    <string name="msg_0_contains_1_1a322cb6" formatted="false">"Mae %1$s yn cynnwys %2$s."</string>
+    <string name="msg_0_empty_3b007105" formatted="false">"%1$s yn wag"</string>
+    <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, cofnod"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"Rhaid i %1$s fynd yma: hon yw\'r unig gell yn y golofn hon %2$s a all gynnwys %3$s o hyd.\n\n%4$s\n\nMae %5$s yn caniatáu %6$s ar hyn o bryd, ond rhaid i bob colofn gynnwys %7$s unwaith yn union. Felly rhowch %8$s yn rhes %9$s, colofn %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"Rhaid i %1$s fynd yma: dyma’r unig gell yn y %2$s %3$s hwn a all gynnwys %4$s o hyd.\n\n%5$s\n\nMae %6$s yn caniatáu %7$s ar hyn o bryd, ond rhaid i bob %8$s gynnwys %9$s union unwaith. Felly rhowch %10$s yn rhes %11$s, colofn %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"Rhaid i %1$s fynd yma: hon yw\'r unig gell yn y blwch hwn %2$s a all gynnwys %3$s o hyd.\n\n%4$s\n\nMae %5$s yn caniatáu %6$s ar hyn o bryd, ond rhaid i bob blwch gynnwys %7$s unwaith yn union. Felly rhowch %8$s yn rhes %9$s, colofn %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"Rhaid i %1$s fynd yma: hon yw\'r unig gell yn y rhes hon %2$s a all gynnwys %3$s o hyd.\n\n%4$s\n\nMae %5$s yn caniatáu %6$s ar hyn o bryd, ond rhaid i bob rhes gynnwys %7$s unwaith yn union. Felly rhowch %8$s yn rhes %9$s, colofn %10$s."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"Mae gan %1$s ddau le yn y rhes hon a dau yn y golofn hon. Mae %2$s a %3$s yn rhannu blwch, felly ni allant ill dau fod yn %4$s - sy’n gadael un o %5$s a %6$s yn ei gynnwys, ac yn diystyru %7$s o bob cell sy’n gweld y ddau."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s yn yr un %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s yn yr un blwch."</string>
+    <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s yn yr un golofn."</string>
+    <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s yn yr un rhes."</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"Mae %1$s eisoes wedi’i ddiystyru o’r gell honno. Ei hymgeiswyr yw "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"Mae %1$s wedi’i ddiystyru gan %2$s, sy’n "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"Mae %1$s wedi\'i eithrio gan %2$s, lle dim ond %3$s all fod yn yr un golofn %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"Mae %1$s wedi\'i eithrio gan %2$s, lle dim ond %3$s all fod yn yr un rhes %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"Mae %1$s wedi\'i eithrio gan %2$s, lle dim ond %3$s all fod yn yr un blwch %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"Mae %1$s wedi\'i eithrio gan %2$s, sy\'n cynnwys %3$s yn yr un blwch %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"Mae %1$s wedi\'i eithrio gan %2$s, sy\'n cynnwys %3$s yn yr un golofn %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"Mae %1$s wedi\'i eithrio gan %2$s, sy\'n cynnwys %3$s yn yr un rhes %4$s."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"Gorfodir %1$s yn y gell ddiweddaraf â rhif arni (rhes %2$s, colofn %3$s). %4$s Mae’r saeth yn dilyn digid a osodwyd sy’n cyfrannu; mae canlyniadau cynharach hefyd yn bwysig."</string>
+    <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"Mae %1$s ar goll o’r classpath"</string>
+    <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s o %2$s"</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"Mae %1$s ohonynt yn llenwi cell; mae’r gweddill yn clirio ymgeiswyr o’r ffordd yn gyntaf."</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"pâr %1$s"</string>
+    <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s argraffedig, %2$s, %3$s anghywir"</string>
+    <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s argraffedig, %2$s"</string>
+    <string name="msg_0_printed_522101ca" formatted="false">"%1$s argraffedig"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, cliw argraffedig"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"pedwarawd %1$s"</string>
+    <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s o luniau wedi’u gwrthod, y mwyaf newydd yn gyntaf:"</string>
+    <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: tynnu %2$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Nifer y celloedd: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Mae %1$s o gamau yn ffurfio’r llwybr hwn, a’r dechneg anoddaf a gefnogir yw %2$s. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"tripled %1$s"</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"Tynnwyd %1$s o %2$s gan resymu cynharach am ymgeiswyr."</string>
+    <string name="msg_0_written_in_40661e10" formatted="false">"%1$s wedi’u hysgrifennu"</string>
+    <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"mae angen %3$s beit ar ddelwedd %1$sx%2$s ond cafwyd %4$s"</string>
+    <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"nid oedd cell yn ddigid nac yn atalnod llawn"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Mae cadwyn o gelloedd â dau ymgeisydd sy\'n dechrau ac yn gorffen ar yr un digid yn rhoi\'r digid hwnnw yn un pen neu\'r llall."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Mae digid sydd ag un lle yn unig ar ôl mewn rhes, colofn neu flwch yn perthyn yn y lle hwnnw."</string>
+    <string name="msg_a_handwritten_0_31063236" formatted="false">"%1$s wedi\'i ysgrifennu â llaw."</string>
+    <string name="msg_a_printed_0_244624d9" formatted="false">"%1$s wedi\'i argraffu."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Mae cell goch yn dangos y digid a ddarllenodd yr ap yno. Os nad dyna\'r hyn a ysgrifennwyd gennych, tapiwch y gell i\'w gywiro."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Rhaid i gell sydd ag un digid yn unig ar ôl gynnwys y digid hwnnw."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Nid yw rhestr o dechnegau byth yn gyflawn, ac mae\'r posau anoddaf wedi\'u cynllunio i drechu beth bynnag sydd arni. Felly, pan na fydd yr un o\'r rhain yn llwyddo, mae\'r tiwtor yn penderfynu ar un gell drwy roi cynnig ar ei hymgeiswyr, yn dweud yn glir mai dyna a wnaeth, ac yn parhau i resymu oddi yno. Mae bob amser yn cyrraedd diwedd pos, ac nid yw byth yn honni bod chwilio am ateb yn gasgliad rhesymegol."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Mae colyn â thri ymgeisydd a dau binsiwr cyfatebol â dau ymgeisydd yn gorfodi dileu digid o bob cell sy\'n gweld y tri."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Gall colyn â dau ymgeisydd a dau binsiwr â dau ymgeisydd orfodi dileu digid o bob cell sy\'n gweld y ddau binsiwr."</string>
+    <string name="msg_about_4efca0d1" formatted="false">"Ynghylch"</string>
+    <string name="msg_after_7b68fe55" formatted="false">"Ar ôl"</string>
+    <string name="msg_after_this_move_c0f01734" formatted="false">"Ar ôl y symudiad hwn"</string>
+    <string name="msg_all_correct_97341bb4" formatted="false">"Popeth yn gywir"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Gall pob un o\'r tair cell hyn fod yn %1$s, a rhaid i un ohonynt fod felly. Felly ni all unrhyw gell sy\'n gweld y tair fod yn %2$s."</string>
+    <string name="msg_allow_camera_e18835ef" formatted="false">"Caniatáu\'r camera"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Bron â bod - daliwch y dudalen yn wastad ac yn gyfochrog â\'r camera"</string>
+    <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"nid yw dilead nad yw’n tynnu dim yn ddiddwythiad"</string>
+    <string name="msg_and_e3ee915a" formatted="false">" a "</string>
+    <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
+    <string name="msg_answer_b2a3aa60" formatted="false">"Ateb"</string>
+    <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Ap a dyfais (wedi\'u llenwi ymlaen llaw)"</string>
+    <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Ap: Sudoku Buddy %1$s"</string>
+    <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"rhaid i’r gymhareb agwedd fod yn bositif ond roedd yn %1$s"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Rhagdybiaeth · digid damcaniaethol"</string>
+    <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Rhagdybiaeth wedi\'i gwrthod · ymgeiswyr gwirioneddol wedi\'u hadfer"</string>
+    <string name="msg_at_least_0_97d2bf6f" formatted="false">"o leiaf %1$s"</string>
+    <string name="msg_auto_photo_48b85e6f" formatted="false">"Llun awtomatig"</string>
+    <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Rhannu lluniau posau ansicr, canlyniadau darllen a chywiriadau diweddarach i gelloedd yn awtomatig â Freevia ar gyfer dadansoddi a hyfforddi adnabod. Wedi\'i ddiffodd yn ddiofyn."</string>
+    <string name="msg_avoid_the_glare_9511c059" formatted="false">"Osgowch y llacharedd"</string>
+    <string name="msg_back_76900f1b" formatted="false">"Yn ôl"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Yn ôl i\'r cwestiwn blaenorol"</string>
+    <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Yn ôl i\'r awgrym gweledol"</string>
+    <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Yn ôl i\'ch cell"</string>
+    <string name="msg_before_9bb72500" formatted="false">"Cyn"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Cyn y symudiad hwn"</string>
+    <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Y digidau glas yw\'r datrysiad. Tapiwch unrhyw gell i gywiro\'r hyn a ddarllenwyd."</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"blwch %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"blwch"</string>
+    <string name="msg_box_512fd3c6" formatted="false">"Blwch"</string>
+    <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Gostyngiad blwch-llinell"</string>
+    <string name="msg_camera_03494b0d" formatted="false">"Camera"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"dim ond hyn y gall ei gynnwys"</string>
+    <string name="msg_cancel_19766ed6" formatted="false">"Canslo"</string>
+    <string name="msg_candidates_0_d3efd4d2" formatted="false">", ymgeiswyr %1$s"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"TystiolaethCipio"</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Cadwynwch ddigid drwy\'r unedau lle nad oes ganddo ond dau le, lliwiwch y gadwyn mewn dau liw bob yn ail, ac mae un lliw yn wir drwyddi draw."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Mae cadwyno %1$s drwy\'r unedau lle mai dim ond dau safle posibl sydd ganddo yn rhoi dau liw bob yn ail i\'r celloedd hyn, ac mae un ohonynt yn wir drwyddi draw. Mae dwy gell o\'r lliw arall yn yr un rhes, sy\'n amhosibl - felly\'r lliw hwnnw yw\'r un anwir, a chaiff %2$s ei ddileu o bob cell o\'r lliw hwnnw."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Mae cadwyno %1$s drwy\'r unedau lle mai dim ond dau safle posibl sydd ganddo yn rhoi dau liw bob yn ail i\'r celloedd hyn, ac mae un ohonynt yn wir drwyddi draw. Mae dwy gell o\'r lliw arall yn yr un blwch, sy\'n amhosibl - felly\'r lliw hwnnw yw\'r un anwir, a chaiff %2$s ei ddileu o bob cell o\'r lliw hwnnw."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Mae cadwyno %1$s drwy\'r unedau lle mai dim ond dau safle posibl sydd ganddo yn rhoi dau liw bob yn ail i\'r celloedd hyn, ac mae un ohonynt yn wir drwyddi draw. Mae dwy gell o\'r lliw arall yn yr un golofn, sy\'n amhosibl - felly\'r lliw hwnnw yw\'r un anwir, a chaiff %2$s ei ddileu o bob cell o\'r lliw hwnnw."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Mae cadwyno %1$s drwy\'r unedau lle nad oes ganddo ond dau le yn gadael y celloedd hyn mewn dau liw bob yn ail, ac mae un ohonynt yn wir drwyddi draw. Mae dwy gell o liw %2$s yn yr un %3$s, sy\'n amhosibl - felly\'r lliw hwnnw yw\'r un anwir, a thynnir %4$s o bob cell o\'r lliw hwnnw."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Mae cadwyno %1$s drwy\'r unedau lle nad oes ganddo ond dau le yn gadael y celloedd hyn mewn dau liw bob yn ail, ac mae un lliw yn wir drwyddi draw. Gall y celloedd hyn weld y ddau liw, felly pa bynnag ffordd y mae\'r gadwyn yn disgyn, mae un o\'r celloedd y maent yn eu gweld yn cynnwys %2$s - sy\'n golygu na allant hwythau ei gynnwys."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Mae cadwyno %1$s drwy\'r unedau lle mai dim ond dau safle posibl sydd ganddo yn rhoi dau liw bob yn ail i\'r celloedd hyn, ac mae un ohonynt yn wir drwyddi draw. Mae dwy gell o un lliw yn yr un blwch, sy\'n amhosibl - felly\'r lliw hwnnw yw\'r un anwir, a chaiff %2$s ei ddileu o bob cell o\'r lliw hwnnw."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Mae cadwyno %1$s drwy\'r unedau lle mai dim ond dau safle posibl sydd ganddo yn rhoi dau liw bob yn ail i\'r celloedd hyn, ac mae un ohonynt yn wir drwyddi draw. Mae dwy gell o un lliw yn yr un golofn, sy\'n amhosibl - felly\'r lliw hwnnw yw\'r un anwir, a chaiff %2$s ei ddileu o bob cell o\'r lliw hwnnw."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Mae cadwyno %1$s drwy\'r unedau lle mai dim ond dau safle posibl sydd ganddo yn rhoi dau liw bob yn ail i\'r celloedd hyn, ac mae un ohonynt yn wir drwyddi draw. Mae dwy gell o un lliw yn yr un rhes, sy\'n amhosibl - felly\'r lliw hwnnw yw\'r un anwir, a chaiff %2$s ei ddileu o bob cell o\'r lliw hwnnw."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Celloedd ansicr i\'w gwirio: %1$s."</string>
+    <string name="msg_check_9d60841e" formatted="false">"Gwirio"</string>
+    <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Gwiriwch un gell ansicr."</string>
+    <string name="msg_checked_correct_c690d1c3" formatted="false">", wedi\'i wirio\'n gywir"</string>
+    <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Dewiswch ymgeisydd i weld pam na all fynd yn eich cell."</string>
+    <string name="msg_choose_language_bba5b40b" formatted="false">"Dewis iaith"</string>
+    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Dewis beth i\'w ddangos"</string>
+    <string name="msg_close_7d9eb7ac" formatted="false">"Cau"</string>
+    <string name="msg_close_hint_7257ada8" formatted="false">"Cau\'r awgrym"</string>
+    <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Cwympo\'r adolygiad darllen"</string>
+    <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"rhaid i gelloedd lliw a graddlwyd ddefnyddio’r un geometreg"</string>
+    <string name="msg_column_0_fb3d1b61" formatted="false">"colofn %1$s"</string>
+    <string name="msg_column_881d5fb6" formatted="false">"colofn"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"colofnau"</string>
+    <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Cymharwch gadwyni gorfodi a ffafriwch rai â llai o gelloedd i\'w dilyn. Gall cadwyni byrrach olygu mwy o gamau yn y datrysiad llawn."</string>
+    <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Canlyniad %1$s o %2$s · digidau damcaniaethol"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"yn cynnwys"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Math-Cynnwys"</string>
+    <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Parhau â\'r llwybr llawn"</string>
+    <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Gwrthddywediad · rhagdybiaeth yn methu"</string>
+    <string name="msg_contradiction_d15034c8" formatted="false">", gwrthddywediad"</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Gwrthddywediad: nid oes lle ar ôl yn y %1$s coch ar gyfer %2$s. Mae hyn yn amhosibl, felly rhaid i\'r rhagdybiaeth gychwynnol fethu."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Gwrthddywediad: nid oes ymgeisydd ar ôl yn y gell goch. Mae hyn yn amhosibl, felly rhaid i\'r rhagdybiaeth gychwynnol fethu."</string>
+    <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Copïo\'r cais dileu"</string>
+    <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Cywir. Cymharwch eich rhesymu â\'r esboniad isod."</string>
+    <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"methu dadgodio’r ddelwedd a dynnwyd"</string>
+    <string name="msg_could_not_find_the_printed_digits_in_that_pho_1d9c39cc" formatted="false">"Methu dod o hyd i\'r digidau printiedig yn y llun hwnnw."</string>
+    <string name="msg_could_not_make_out_the_grid_lines_try_again_6a86afc8" formatted="false">"Methu gweld llinellau\'r grid yn glir - rhowch gynnig arall arni."</string>
+    <string name="msg_could_not_open_github_contact_support_at_0_1e6588cc" formatted="false">"Methu agor GitHub. Cysylltwch â chymorth yn %1$s."</string>
+    <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Methu cadw tystiolaeth cipio ar gyfer dadfygio"</string>
+    <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Methu cyflwyno\'r darlleniad. Rhowch gynnig arall arni pan fyddwch wedi cysylltu."</string>
+    <string name="msg_dead_end_f2fd4044" formatted="false">"Pen draw"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DILEU"</string>
+    <string name="msg_delete_e2d0a549" formatted="false">"Dileu"</string>
+    <string name="msg_delete_report_c3161c04" formatted="false">"Dileu\'r adroddiad"</string>
+    <string name="msg_delete_this_photo_b6f68250" formatted="false">"Dileu\'r llun hwn"</string>
+    <string name="msg_delete_this_puzzle_1d7e3a3b" formatted="false">"Dileu\'r pos hwn"</string>
+    <string name="msg_delete_this_puzzle_3aa0005e" formatted="false">"Dileu\'r pos hwn?"</string>
+    <string name="msg_delete_this_submission_abed7022" formatted="false">"Dileu\'r cyflwyniad hwn?"</string>
+    <string name="msg_deleting_43b5894c" formatted="false">"Yn dileu…"</string>
+    <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"Methu cadarnhau\'r dileu. Gwiriwch eich cysylltiad a rhowch gynnig arall arni."</string>
+    <string name="msg_deletion_request_251053b3" formatted="false">"Cais dileu"</string>
+    <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"Ni chadarnhaodd yr ymateb dileu\'r dderbynneb hon."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"Dychwelodd y gwasanaeth dileu HTTP %1$s."</string>
+    <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Disgrifiwch beth ddigwyddodd a\'r camau i\'w ailadrodd. Dywedwch a wnaethoch wirio a chywiro\'r digidau a adnabyddwyd yn gyntaf. Ar gyfer syniad, ysgrifennwch \'Amherthnasol\'."</string>
+    <string name="msg_destination_of_this_hint_f9147869" formatted="false">", cyrchfan yr awgrym hwn"</string>
+    <string name="msg_device_0_bc265ab8" formatted="false">"- Dyfais: %1$s"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnosteg wedi\'i byrhau i ffitio drafft y porwr. Gall gweithred Anfon diagnosteg yr ap rannu\'r adroddiad llawn."</string>
+    <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"rhaid i’r digid fod yn 1..9 ond roedd yn %1$s"</string>
+    <string name="msg_digits_not_read_0956924a" formatted="false">"Digidau heb eu darllen"</string>
+    <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Mae cadw tystiolaeth ar ddisg yn effeithio ar amseru; nid meincnod hwyrni yw hwn."</string>
+    <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", nid yw\'n cyfateb i\'r datrysiad"</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"Mae pob derbynneb yn adnabod un fersiwn o bos a gyflwynwyd. Dilëwch hi yma i dynnu\'r adroddiad sydd wedi\'i storio\'n breifat oddi wrth Freevia."</string>
+    <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" Dileadau cynharach: %1$s. Defnyddiwch ddolenni\'r camau cynharach i archwilio eu proflenni."</string>
+    <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← tystiolaeth gynharach (dyfnder %1$s)"</string>
+    <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"Mae lleoliadau damcaniaethol cynharach yn ei gadael ag un ymgeisydd yn unig."</string>
+    <string name="msg_earlier_steps_used_in_this_proof_299d8def" formatted="false">"Camau cynharach a ddefnyddiwyd yn y prawf hwn"</string>
+    <string name="msg_edit_cell_92b3647b" formatted="false">"Golygu cell"</string>
+    <string name="msg_eeee_d_mmmm_yyyy_908e8688" formatted="false">"EEEE d MMMM yyyy"</string>
+    <string name="msg_eight_c195d2d8" formatted="false">"wyth"</string>
+    <string name="msg_empty_2e1cfa82" formatted="false">"gwag"</string>
+    <string name="msg_empty_8a112150" formatted="false">"Gwag."</string>
+    <string name="msg_empty_c6c094bc" formatted="false">"Gwag"</string>
+    <string name="msg_english_ba118bf7" formatted="false">"Saesneg"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"cofnodion sy’n anghytuno"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"cofnod sy’n anghytuno"</string>
+    <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Mae pob un ohonynt yn llenwi cell."</string>
+    <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Mae pob cell wedi\'i llenwi, ond mae %1$s ateb yn anghytuno â\'r datrysiad."</string>
+    <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Mae pob cell wedi\'i llenwi, ond mae un ateb yn anghytuno â\'r datrysiad."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Gellir datrys pob sudoku sydd ag un ateb drwy resymu; nid oes byth angen dyfalu ac anaml y mae\'n helpu. Dyma\'r ffyrdd o resymu y gall yr ap hwn eu hadnabod a\'u hesbonio, gyda\'r hawsaf yn gyntaf. Lle mae un ohonynt yn berthnasol i\'r pos sydd gennych ar agor, bydd yn dangos pob man lle mae\'n berthnasol."</string>
+    <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Mae popeth rydych wedi\'i ysgrifennu hyd yn hyn yn gywir."</string>
+    <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Enghreifftiau ar gael nawr: mae pob un yn dechrau o\'ch bwrdd presennol."</string>
+    <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"disgwyliwyd 10 llinell lorweddol, cafwyd %1$s"</string>
+    <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"disgwyliwyd 10 llinell fertigol, cafwyd %1$s"</string>
+    <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"disgwyliwyd 81 cell ond cafwyd %1$s"</string>
+    <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"disgwyliwyd 81 cell ym mhob bloc, canfuwyd %1$s a %2$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"disgwyliwyd un sianel 8-bit ond cafwyd %1$s"</string>
+    <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"disgwyliwyd delwedd 28x28 ond cafwyd %1$s o werthoedd"</string>
+    <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Ymddygiad disgwyliedig neu welliant arfaethedig"</string>
+    <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"disgwyliwyd deg llinell i bob cyfeiriad"</string>
+    <string name="msg_expected_two_blocks_found_0_c5452eab" formatted="false">"disgwyliwyd dau floc, canfuwyd %1$s"</string>
+    <string name="msg_explain_earlier_candidate_removals_0_8349b1ff" formatted="false">"Esbonio dileadau ymgeiswyr cynharach (%1$s)"</string>
+    <string name="msg_explain_hints_601a9eaa" formatted="false">"Esbonio awgrymiadau"</string>
+    <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"Dewch o hyd i gell â dim ond dau neu dri ymgeisydd ar ôl - gorau po leiaf, a gorau oll po brysuraf yw\'r rhes, y golofn a\'r blwch o\'i hamgylch.\n\nDewiswch un o\'i hymgeiswyr a\'i ysgrifennu\'n ysgafn mewn pensil. Nawr dilynwch y canlyniadau: mae\'r digid hwnnw wedi\'i dynnu o bopeth y gall y gell ei weld, a gall hynny adael un o\'r celloedd hynny ag un ymgeisydd, sy\'n gorfodi un arall, ac yn y blaen. Daliwch ati.\n\nBydd un o ddau beth yn digwydd. Naill ai bydd yn darfod, a chithau heb ddysgu dim - dilëwch ef a rhowch gynnig ar yr ymgeisydd arall. Neu byddwch yn cyrraedd cell heb unrhyw ymgeiswyr ar ôl, neu res heb le i roi rhyw ddigid. Mae hynny\'n amhosibl, felly roedd y digid a ysgrifennwyd gennych mewn pensil yn anghywir, a gallwch ei ddiystyru am byth.\n\nDyma\'r dechneg i\'w defnyddio pan fydd popeth arall wedi darfod. Mae\'n arafach ac yn waith cadw cofnodion yn hytrach nag adnabod patrymau, ond gall ddatgelu symudiadau y mae\'r patrymau\'n eu colli. Mae un dilead yn aml yn ddigon i gael y technegau hawdd i weithio eto; mae angen chwilio\'n ddyfnach mewn rhai sefyllfaoedd o hyd."</string>
+    <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"Dewch o hyd i ddwy gell â\'r un ddau ymgeisydd, er enghraifft {3,7}, na allant weld ei gilydd - fel arfer nid ydynt yn agos at ei gilydd o gwbl.\n\nNawr chwiliwch am res, colofn neu flwch lle nad oes gan 7 ond dwy gell bosibl, un y gall cell gyntaf eich pâr ei gweld a\'r llall y gall yr ail ei gweld. Dyna\'r cyswllt.\n\nUn o\'r ddwy gell hynny yw\'r 7. Pa un bynnag ydyw, ni all cell eich pâr sy\'n ei gweld fod yn 7, felly rhaid iddi fod yn 3. Nid ydych yn gwybod pa ben yw\'r 3, dim ond bod un ohonynt yn 3 - ac mae hynny\'n ddigon i ddiystyru 3 o bob cell sy\'n gweld y ddau ben.\n\nY cyswllt yw\'r rhan anodd, felly chwiliwch amdano\'r ffordd arall: marciwch yr unedau lle nad oes gan ddigid ond dau le yn gyntaf, yna chwiliwch am bâr cyfatebol bob ochr."</string>
+    <string name="msg_finished_05343e98" formatted="false">"wedi gorffen"</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"Pwyswch y caead pan fydd y grid yn gyfochrog â\'r camera yn y ffrâm ac yn llonydd. Mae\'r botwm yn gweithio bob amser beth bynnag."</string>
+    <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"Rhowch y grid cyfan yn y golwg."</string>
+    <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"Rhowch y grid cyfan yn y golwg"</string>
+    <string name="msg_five_222b0bd5" formatted="false">"pump"</string>
+    <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Dilynwch lwybr lle mae pob symudiad yn adeiladu ar yr un blaenorol."</string>
+    <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Dilyn y prawf llawn mewn trefn"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Dilynwch y gadwyn hon o gelloedd â dau ymgeisydd: os nad yw %1$s yn %2$s, yna mae pob cell ar ei hyd yn cael ei gorfodi gan yr un o\'i blaen, ac mae %3$s yn dod yn %4$s. Felly mae un pen neu\'r llall yn cynnwys %5$s, sy\'n ei ddiystyru o bob cell sy\'n gweld y ddau."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Cadwyn orfodi"</string>
+    <string name="msg_four_04efaf08" formatted="false">"pedwar"</string>
+    <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Ni all pedair cell mewn dwy res, dwy golofn a dau flwch i gyd gynnwys yr un ddau ymgeisydd, neu byddai gan y pos ddau ateb."</string>
+    <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Cadarnhaodd Freevia y dileu, ond ni allai\'r ffôn hwn dynnu\'r dderbynneb leol. Rhowch gynnig arall arni i orffen y glanhau lleol."</string>
+    <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Bydd Freevia yn dileu\'r fersiwn hon o\'r adroddiad a\'i chopi hyfforddi preifat. Gall cywiriadau yn y dyfodol greu adroddiad newydd yn ôl eich gosodiadau rhannu. Gall model sydd eisoes wedi\'i hyfforddi arno gadw newidiadau a ddysgwyd."</string>
+    <string name="msg_full_route_891b475b" formatted="false">"Llwybr llawn"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Bydd darlleniadau ansicr yn y dyfodol yn anfon llun y pos wedi\'i sythu, canlyniadau adnabod a chywiriadau at Freevia ar gyfer dadansoddi a hyfforddi. Bydd copïau hyfforddi\'n aros nes eu dileu o Dderbynebau cyflwyno; gall model sydd wedi\'i hyfforddi gadw newidiadau a ddysgwyd. Os oes pos ansicr eisoes ar agor, caiff ei anfon nawr. Gallwch ddiffodd hyn yn y Gosodiadau."</string>
+    <string name="msg_gentle_96124817" formatted="false">"Ysgafn"</string>
+    <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Mae llacharedd yn pylu\'r llinellau - gogwyddwch y dudalen oddi wrth y golau"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"DelweddLwyd(%1$sx%2$s)"</string>
+    <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Mae celloedd llwyd yn cynnwys marciau pensil, y mae\'r ap yn eu hanwybyddu. Mae\'r bar o dan ddigid yn dangos pa mor sicr oedd yr ap. Tapiwch gell am y manylion."</string>
+    <string name="msg_handwritten_6a50cef3" formatted="false">"Wedi\'i ysgrifennu â llaw"</string>
+    <string name="msg_hard_9e73f8fa" formatted="false">"Anodd"</string>
+    <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Cudd"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Pâr cudd"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Pedwarawd cudd"</string>
+    <string name="msg_hidden_single_33cf031b" formatted="false">"Unigolyn cudd"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Triawd cudd"</string>
+    <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Cuddio tystiolaeth gynharach"</string>
+    <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Cuddio sut i adnabod un"</string>
+    <string name="msg_hint_0_bc1ead3f" formatted="false">", awgrym %1$s"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Awgrym"</string>
+    <string name="msg_hint_proof_b2b8f969" formatted="false">"Prawf yr awgrym"</string>
+    <string name="msg_hint_reasoning_2548bea0" formatted="false">"Rhesymu\'r awgrym"</string>
+    <string name="msg_hold_still_0a934617" formatted="false">"Arhoswch yn llonydd..."</string>
+    <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Arhoswch yn llonydd, neu tapiwch y caead"</string>
+    <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Arhoswch yn llonydd tra bydd y camera\'n ffocysu..."</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Daliwch y ffôn yn wastad"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Daliwch y ffôn yn wastad uwchben y pos."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Daliwch y ffôn yn wastad uwchben y pos"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"llorweddol\":[%1$s ]}}"</string>
+    <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Sut i adnabod un"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSut rydym yn cyrraedd yno:"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Chwiliwch am gelloedd ag union ddau ymgeisydd - mae adain Y wedi\'i gwneud o dair ohonynt a dim byd arall.\n\nCymerwch un fel y colyn, er enghraifft {2,5}. Chwiliwch am gell y gall ei gweld sy\'n cynnwys {2,9}, ac un arall y gall ei gweld sy\'n cynnwys {5,9}. Mae\'r colyn naill ai\'n 2 neu\'n 5. Os yw\'n 2, rhaid i\'r pinsiwr cyntaf fod yn 9; os yw\'n 5, rhaid i\'r ail fod yn 9. Y naill ffordd neu\'r llall, mae 9 yn ymddangos yn un o\'r pinswyr - nid ydych yn gwybod pa un, ac nid oes angen i chi wybod.\n\nFelly ni all unrhyw gell sy\'n gallu gweld y ddau binsiwr fod yn 9. Y celloedd hynny fel arfer yw\'r ddwy gornel sy\'n cwblhau\'r petryal."</string>
+    <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", %1$s damcaniaethol, nid ateb a gofnodwyd"</string>
+    <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Os mai dim ond yn yr un %2$s cell y gall %1$s digid mewn un rhes, colofn neu flwch fynd, ni all y celloedd hynny gynnwys dim arall."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Os yw %1$s cell mewn un rhes, colofn neu flwch yn rhannu union %2$s ymgeisydd rhyngddynt, mae\'r digidau hynny\'n perthyn i\'r celloedd hynny ac i ddim eraill yn yr uned."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Os oes gan ddigid ddau le mewn rhes a dau mewn colofn, ac mae un o bob un yn rhannu blwch, rhaid i un o\'r ddau arall ei gynnwys."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Os oes gan ddigid ddau le ym mhob un o ddwy res ac maent yn rhannu colofn, rhaid i un o\'r ddau le arall ei gynnwys."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Os yw unig leoedd digid ar hyd llinell i gyd o fewn un blwch, gellir diystyru\'r digid hwnnw o weddill y blwch hwnnw."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Os yw unig leoedd digid mewn %1$s rhes yn yr un %2$s colofn, gellir ei ddiystyru o\'r colofnau hynny mewn mannau eraill - ac mae\'r un peth yn wir gyda rhesi a cholofnau wedi\'u cyfnewid."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Os yw unig leoedd digid mewn blwch yn rhannu un llinell, gellir diystyru\'r digid hwnnw o weddill y llinell honno."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Os yw rhagdybio digid yn arwain at gell na all gynnwys dim, roedd y digid hwnnw\'n anghywir."</string>
+    <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"rhaid i ddimensiynau’r ddelwedd fod yn bositif"</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Mewn cadwyn o gelloedd sydd i gyd yn cynnwys yr un ddau ymgeisydd, mae dau ben cadwyn o hyd odrif yn cynnwys digidau gwahanol."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Yn y %1$s %2$s hyn, dim ond yn y %4$s %5$s hyn y gall %3$s fynd. Rhyngddynt maent yn defnyddio pob un, felly gellir diystyru %6$s o\'r %7$s hynny ym mhob man arall."</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Yn y %1$s colofn hyn, dim ond yn y %3$s rhes hyn y gall %2$s fynd. Rhyngddynt maent yn defnyddio pob un, felly gellir diystyru %4$s ym mhob man arall yn y rhesi hynny."</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Yn y %1$s rhes hyn, dim ond yn y %3$s colofn hyn y gall %2$s fynd. Rhyngddynt maent yn defnyddio pob un, felly gellir diystyru %4$s ym mhob man arall yn y colofnau hynny."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Yn y ddau %1$s hyn, dim ond dau le posibl yr un sydd gan %2$s, ac mae %3$s a %4$s yn rhannu %5$s - felly ni allant ill dau fod yn %6$s. Felly mae un o %7$s a %8$s yn hynny, sy\'n diystyru %9$s ym mhob cell sy\'n gweld y ddau ohonynt."</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Yn y ddwy golofn hyn, dim ond dau safle posibl sydd gan %1$s ym mhob un, ac mae %2$s a %3$s yn rhannu rhes - felly ni all y ddau fod yn %4$s. Felly mae un o %5$s a %6$s yn hafal iddo, sy\'n diystyru %7$s ym mhob cell sy\'n gweld y ddau."</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Yn y ddwy res hyn, dim ond dau safle posibl sydd gan %1$s ym mhob un, ac mae %2$s a %3$s yn rhannu colofn - felly ni all y ddau fod yn %4$s. Felly mae un o %5$s a %6$s yn hafal iddo, sy\'n diystyru %7$s ym mhob cell sy\'n gweld y ddau."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Yn y %1$s hwn, dim ond yn y %3$s cell hyn y gall %2$s fynd, felly mae\'r celloedd hynny wedi\'u neilltuo. Mae hynny\'n diystyru %4$s ohonynt."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Yn y %1$s hwn, dim ond o fewn un blwch y gall %2$s fynd. Felly mae %3$s yn y blwch hwnnw ar y %4$s hwn, a gellir ei ddiystyru o weddill y blwch."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Yn y blwch hwn, dim ond yn y %2$s cell hyn y gall %1$s fynd, felly mae\'r celloedd hynny wedi\'u neilltuo. Mae hynny\'n diystyru %3$s ynddynt."</string>
+    <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Yn y golofn hon, dim ond yn y %2$s cell hyn y gall %1$s fynd, felly mae\'r celloedd hynny wedi\'u neilltuo. Mae hynny\'n diystyru %3$s ynddynt."</string>
+    <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Yn y rhes hon, dim ond yn y %2$s cell hyn y gall %1$s fynd, felly mae\'r celloedd hynny wedi\'u neilltuo. Mae hynny\'n diystyru %3$s ynddynt."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Yn cynnwys eu lluniau, darlleniadau a chywiriadau. Diffoddwch hyn yn y Gosodiadau."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"O fewn un blwch, dewch o hyd i ddigid na all fynd ond mewn dwy neu dair cell, a gwiriwch a ydynt i gyd yn yr un rhes, neu i gyd yn yr un golofn. Os ydynt, mae\'r digid yn bendant rywle ar hyd y llinell honno - nid ydych yn gwybod ble, ond rydych yn gwybod ei fod o fewn y blwch hwn. Felly ni all fod yn unman arall ar hyd yr un llinell y tu allan i\'r blwch.\n\nNid yw hyn yn gosod dim ar ei ben ei hun. Mae\'n clirio ymgeiswyr o\'r ffordd fel bod unigolyn yn ymddangos mewn man arall."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"O fewn y blwch hwn, dim ond yn y %2$s hwn y gall %1$s fynd. Felly mae %3$s rywle yma, a gellir ei ddiystyru o weddill y %4$s."</string>
+    <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem neu syniad"</string>
+    <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Mae\'n berthnasol mewn %1$s man yma. Camwch ymlaen i fynd drwyddynt."</string>
+    <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Mae\'n berthnasol mewn un man yma. Camwch ymlaen i\'w weld."</string>
+    <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Nid yw\'n berthnasol yn unman yn y sefyllfa hon."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Dyma\'r unig le sydd ar ôl ar gyfer %1$s yn y %2$s sydd wedi\'i amlygu."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Dyma\'r gell â chylch o\'i hamgylch.\n\nPwyswch Awgrym eto am y digid."</string>
+    <string name="msg_jellyfish_2f0a7632" formatted="false">"Sglefren fôr"</string>
+    <string name="msg_keep_183f00f4" formatted="false">"Cadw"</string>
+    <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Cadw cadwyni gorfodi\'n fyr"</string>
+    <string name="msg_language_a4fe6526" formatted="false">"Iaith"</string>
+    <string name="msg_licenses_6d5d9004" formatted="false">"Trwyddedau"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Edrychwch ar hyd un rhes, colofn neu flwch am gelloedd â dim ond ychydig o ymgeiswyr ar ôl. Cymerwch %1$s ohonynt a chyfunwch eu hymgeiswyr. Os oes union %2$s digid yn y grŵp, mae\'r %3$s digid hynny wedi\'u neilltuo: rhaid iddynt fynd yn y %4$s cell hynny mewn rhyw drefn, er na allwch eto ddweud pa un sy\'n mynd ble.\n\nMae hynny\'n ddigon. Gall pob cell arall yn yr uned ollwng y digidau hynny, ac fel arfer un o\'r celloedd hynny sy\'n dod yn unigolyn wedyn.\n\nNid oes angen i\'r celloedd i gyd gael yr un ymgeiswyr - mae {2,7}, {2,9} a {7,9} yn driawd cwbl ddilys, a hwnnw yw\'r un y mae pobl yn ei fethu."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Chwiliwch am gelloedd sy\'n cynnwys yr un ddau ymgeisydd - er enghraifft {4,9} - sy\'n ffurfio cadwyn, gyda phob un yn gweld y nesaf. Nid yw tair yn ddigon; mae angen o leiaf bedair.\n\nLliwiwch nhw bob yn ail wrth fynd. Gan fod pob cell yn gweld y nesaf, ni all unrhyw ddau gymydog gynnwys yr un digid, felly mae\'r gadwyn yn darllen 4, 9, 4, 9 yr holl ffordd ar ei hyd - neu 9, 4, 9, 4, ac ni allwch ddweud pa un.\n\nY naill ffordd neu\'r llall, mae dwy gell o liwiau cyferbyniol yn cynnwys digidau gwahanol rhyngddynt: un yw\'r 4 ac un yw\'r 9. Felly ni all unrhyw beth sy\'n gweld y ddwy fod yn un o\'r ddau, ac mae\'n colli\'r ddau ymgeisydd ar unwaith.\n\nMae\'r patrwm yn hawdd ei adnabod yn union oherwydd bod pob cell ynddo\'n edrych yr un fath. Dilynwch y parau unfath o amgylch y grid a gweld lle maent yn cyffwrdd."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Chwiliwch am dair cell sy\'n cynnwys yr un ddau ymgeisydd - er enghraifft {1,6} - sydd mewn tair cornel petryal. Rhaid i\'r petryal fod mewn union ddau flwch: dwy res a dwy golofn yn croesi dau flwch, nid pedwar.\n\nNawr edrychwch ar y bedwaredd gornel. Pe bai hithau\'n cynnwys dim ond 1 a 6, byddai gan y pos ddau ateb - gallech gyfnewid yr 1au a\'r 6au o amgylch y petryal a byddai popeth arall yn dal i weithio. Mae gan bos sydd wedi\'i lunio\'n iawn un ateb, felly rhaid i\'r bedwaredd gornel ddefnyddio rhywbeth arall: mae ei hymgeiswyr eraill yn aros, ac mae 1 a 6 yn mynd.\n\nDyma\'r unig ddadl yn y llyfr sy\'n ymwneud â lluniwr y pos yn hytrach na\'r grid. Mae\'n ddilys ar bos cyhoeddedig ac yn ddiwerth ar un rydych eisoes wedi\'i lenwi\'n anghywir, oherwydd efallai nad oes ateb o gwbl wedyn i fod yn unigryw."</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Edrychwch yn y blwch hwn. Dilynwch yr amlinell at y gell y bydd yr awgrym hwn yn ei hesbonio."</string>
+    <string name="msg_marks_65479e3e" formatted="false">"Marciau"</string>
+    <string name="msg_moderate_5c42afc7" formatted="false">"Cymedrol"</string>
+    <string name="msg_more_d47d7cb0" formatted="false">"Mwy"</string>
+    <string name="msg_more_light_needed_4b4480e1" formatted="false">"Angen mwy o olau"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Mwy nag un ateb, felly methwyd digid printiedig. Pwyswch Datrys i weld yr atebion a lle maent yn wahanol."</string>
+    <string name="msg_move_back_f4d6dba8" formatted="false">"Symud yn ôl"</string>
+    <string name="msg_move_closer_1da054ae" formatted="false">"Symud yn nes"</string>
+    <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Symudwch yn nes - mae\'r grid yn rhy fach i\'w ddarllen."</string>
+    <string name="msg_naked_472fd902" formatted="false">"Noeth"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Pâr noeth"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Pedwarawd noeth"</string>
+    <string name="msg_naked_single_7205dfc4" formatted="false">"Unigolyn noeth"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Triawd noeth"</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Enwi\'r dechneg a dangos y celloedd sy\'n ei phrofi, yn lle rhoi\'r digid yn unig."</string>
+    <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"mae angen o leiaf 4 pwynt ond cafwyd %1$s"</string>
+    <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Angen cadarnhad"</string>
+    <string name="msg_new_sudoku_7d90b23a" formatted="false">"Sudoku newydd"</string>
+    <string name="msg_next_consequence_6e10f60b" formatted="false">"Canlyniad nesaf"</string>
+    <string name="msg_next_step_298a9207" formatted="false">"Cam nesaf"</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Ni chaiff delweddau eu hatodi’n awtomatig. Mae adroddiadau ac atodiadau a gyflwynir yma yn gyhoeddus. Anfonwch enghreifftiau y byddai’n well gennych eu rhannu’n breifat at info@freevia.org."</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Nid oes unrhyw lun wedi\'i wrthod ers gosod yr ap ddiwethaf."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Nid oes diagnosteg sganio ar gael."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Nid oes techneg yn berthnasol yma"</string>
+    <string name="msg_none_140bedbf" formatted="false">"dim"</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Nid yw\'r un ohonynt yn rhoi digid mewn cell: maent yn clirio ymgeiswyr o\'r ffordd, a dyna sut yr agorir pos anodd."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Dim un ar eich pos ar hyn o bryd."</string>
+    <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"nid ffeil model digidau yw hon"</string>
+    <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Heb ei ddarllen ag unrhyw hyder - y dyfaliad agosaf yw %1$s %2$s yn %3$s. Gosodwch y gell hon eich hun."</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Nid yw\'n cael ei ddarllen fel grid naw wrth naw eto - ceisiwch lenwi\'r ffrâm â\'r grid yn unig, neu tynnwch y llun"</string>
+    <string name="msg_not_started_7a7400f4" formatted="false">"heb ddechrau"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Ni ellid anfon dim o\'r ffôn hwn."</string>
+    <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Dim ar ôl i\'w ddatrys."</string>
+    <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Ni ellir rhesymu dim mwy yma drwy\'r technegau y mae\'r ap hwn yn eu gwybod."</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"dim byd anarferol"</string>
+    <string name="msg_ok_565339bc" formatted="false">"Iawn"</string>
+    <string name="msg_one_7692c3ad" formatted="false">"un"</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Roedd un gell yn edrych fel digid printiedig ond nid yw."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Cywirwyd un digid printiedig yn awtomatig."</string>
+    <string name="msg_one_square_238078b4" formatted="false">"un gell"</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Dim ond %1$s all fynd yma - mae pob digid arall eisoes yn ymddangos yn y rhes, y golofn neu\'r blwch hwn."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio %2$s o\'r wyth digid arall; cafodd %3$s ei ddiystyru yn y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio pedwar o\'r wyth digid arall; cafodd %2$s eu diystyru ar gyfer y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio chwech o\'r wyth digid arall; cafodd %2$s eu diystyru ar gyfer y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio un o\'r wyth digid arall; cafodd %2$s eu diystyru ar gyfer y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio saith o\'r wyth digid arall; cafodd %2$s ei ddiystyru ar gyfer y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio pump o\'r wyth digid arall; cafodd %2$s eu diystyru ar gyfer y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu\'n defnyddio %2$s o\'r wyth digid arall; diystyrwyd %3$s %4$s o\'r gell hon yn gynharach, nid gan unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio dau o\'r wyth digid arall; cafodd %2$s eu diystyru ar gyfer y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio %2$s o\'r wyth digid arall; cafodd %3$s eu diystyru yn y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r celloedd sydd wedi\'u hamlygu yn defnyddio tri o\'r wyth digid arall; cafodd %2$s eu diystyru ar gyfer y gell hon yn gynharach, nid oherwydd unrhyw beth y gallwch ei weld o\'i chwmpas."</string>
+    <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Dim ond %1$s all fynd yma. Mae\'r wyth digid arall wedi\'u heithrio gan gelloedd wedi\'u llenwi neu ymgeiswyr unigol wedi\'u gorfodi yn y rhes, y golofn neu\'r blwch hwn."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Dim ond %1$s all fynd yma, er nad oes dim o\'i gwmpas yn dangos pam: diystyrwyd yr wyth digid arall o\'r gell hon drwy resymu cynharach yn hytrach na thrwy fod wedi\'u hysgrifennu yn ei rhes, ei cholofn neu ei blwch."</string>
+    <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Dim ond %1$s digid printiedig a ganfuwyd, sy\'n rhy ychydig ar gyfer pos."</string>
+    <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"dim ond troadau chwarter a gefnogir, nid %1$s"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Agorwch ddrafft yn eich porwr gyda fersiwn yr ap, model y ffôn, fersiwn Android a diagnosteg sganio ddiweddar wedi\'u llenwi. Ychwanegwch ddisgrifiad llawn a sgrinluniau perthnasol eich hun.\n\nMae angen mewngofnodi i GitHub. Gallwch adolygu a golygu\'r drafft cyn ei gyflwyno. Mae adroddiadau ac atodiadau a gyflwynir yn gyhoeddus. Ni chaiff unrhyw luniau eu hatodi\'n awtomatig."</string>
+    <string name="msg_open_app_settings_df2cdb48" formatted="false">"Agor gosodiadau\'r ap"</string>
+    <string name="msg_open_github_0d2cda15" formatted="false">"Agor GitHub"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Hysbysiadau cod agored"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Agorwch ‘Pam y gell hon?’ i weld y dystiolaeth dros y lleoliad terfynol, neu dewiswch ymgeisydd a ddiystyrwyd i olrhain ei brawf."</string>
+    <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Trwydded Apache 2.0. Defnyddir i ddod o hyd i\'r grid a\'i sythu.\n\nAndroidX, Jetpack Compose a CameraX - Trwydded Apache 2.0.\n\nKotlin - Trwydded Apache 2.0.\n\nHyfforddwyd yr adnabyddydd digidau ar gronfa ddata MNIST o ddigidau wedi\'u hysgrifennu â llaw gan LeCun, Cortes a Burges, ynghyd â digidau wedi\'u rendro o ffontiau system agored a digidau wedi\'u llunio\'n rhaglennol."</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Methodd llyfrgelloedd brodorol OpenCV â llwytho"</string>
+    <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Tynnwch lun o bos arall."</string>
+    <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Caiff lluniau rydych yn eu cadw eu storio yn storfa breifat yr ap hwn a\'u tynnu pan fyddwch yn eu dileu neu\'n dadosod yr ap."</string>
+    <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Lluniau na allai\'r ap greu pos ohonynt. Anfonwch un a gellir edrych arno."</string>
+    <string name="msg_pick_a_digit_and_look_down_the_rows_for_the_o_0f43a07c" formatted="false">"Dewiswch ddigid ac edrychwch i lawr y rhesi am y rhai lle mae ganddo union ddwy gell ar ôl. Cymerwch ddwy res o\'r fath a gweld a yw un o\'u celloedd yn yr un golofn.\n\nOs ydyw, mae\'r ddwy gell hynny yn yr un golofn ac ni allant ill dwy gynnwys y digid. Felly mae o leiaf un o\'r pennau pell yn ei gynnwys - y ddwy gell ar yr ochr arall. Nid ydych yn gwybod pa un, ac nid oes angen i chi wybod: gall unrhyw gell sy\'n gweld y ddau ben pell ollwng y digid.\n\nYna gwnewch hynny eto gyda cholofnau yn lle rhesi. Mae\'r siâp yn adeilad tal ag un byr wrth ei ochr, a dyna o ble daw\'r enw a sut rydych yn ei adnabod ar ôl gweld rhai."</string>
+    <string name="msg_pick_a_digit_find_a_row_where_it_has_exactly__af1fdb01" formatted="false">"Dewiswch ddigid. Dewch o hyd i res lle mae ganddo union ddau le a cholofn lle mae ganddo union ddau le. Nawr gwiriwch a yw un gell o\'r rhes ac un gell o\'r golofn yn yr un blwch.\n\nOs ydynt, ni all y ddwy hynny fod yn ddigid - un blwch, un digid. Felly mae o leiaf un o\'r ddau ben sy\'n weddill yn ei gynnwys, a gall unrhyw beth sy\'n gweld y ddau ben ollwng y digid.\n\nY rheswm y mae pobl yn methu hwn yw nad oes dim i\'w alinio: mae\'r pedair cell yn gwneud siâp anghymesur, a\'r unig beth sy\'n ei ddal at ei gilydd yw\'r blwch y mae\'r ddau ben mewnol yn ei rannu."</string>
+    <string name="msg_pick_an_empty_square_and_run_through_1_to_9_c_e53e6558" formatted="false">"Dewiswch gell wag ac ewch drwy 1 i 9, gan groesi allan unrhyw beth sydd eisoes yn ymddangos yn ei rhes, ei cholofn neu ei blwch. Os mai union un digid sy\'n goroesi, mae\'n mynd yno.\n\nDyma\'r dechneg y mae pob un arall yn bodoli i\'w galluogi. Mae popeth anos yn ffordd o leihau rhyw gell i un ymgeisydd, felly pan fydd techneg anos yn llwyddo, edrychwch yma nesaf."</string>
+    <string name="msg_pick_one_digit_and_ignore_every_other_go_down_b97e6f29" formatted="false">"Dewiswch un digid ac anwybyddwch bob un arall. Ewch i lawr y rhesi a nodwch y rhai lle nad oes gan y digid hwnnw ond dwy neu dair cell bosibl ar ôl. Chwiliwch am %1$s rhes o\'r fath y mae eu celloedd yn alinio yn yr un %2$s colofn.\n\nOs dewch o hyd iddynt, rhaid i bob un o\'r %3$s rhes hynny roi\'r digid yn un o\'r colofnau hynny, ac ni all unrhyw ddwy ddefnyddio\'r un golofn. Felly rhyngddynt maent yn defnyddio\'r digid ym mhob un o\'r %4$s colofn - a gall pob cell arall yn y colofnau hynny ei ollwng.\n\nYna gwnewch yr holl beth eto gyda cholofnau a rhesi wedi\'u cyfnewid. Ceir hyd i hanner y rhain yr ail ffordd, a dyma\'r hanner nad yw\'r rhan fwyaf o bobl byth yn chwilio amdano."</string>
+    <string name="msg_place_0_45ae89ee" formatted="false">"Rhoi %1$s"</string>
+    <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Rhowch %1$s yn rhes %2$s, colofn %3$s."</string>
+    <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Rhowch %1$s yn eich cell ag amlinell."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Atodwch sgrinluniau perthnasol drwy reolydd atodiadau GitHub: y pos, y digidau a adnabyddwyd, canlyniad Gwirio, neu\'r cam awgrym sy\'n dangos y broblem. Cynhwyswch ganlyniadau disgwyliedig a gwirioneddol lle bo\'n ddefnyddiol."</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Dilëwch fy nghyflwyniadau adnabod Sudoku Buddy. IDau derbynebau: "</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Disodlwch yr anogiad hwn â disgrifiad llawn o\'r broblem neu\'r syniad. Rhowch deitl byr, disgrifiadol i\'r adroddiad hwn."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Anelwch y camera at bos sudoku"</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Anelwch y camera at bos sudoku."</string>
+    <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Anelwch y camera at bos sudoku ar bapur. Mae\'r ap yn darllen y digidau printiedig ac unrhyw beth rydych wedi\'i ysgrifennu, yn ei ddatrys, ac yn gallu rhoi awgrym i chi, gwirio\'ch atebion, neu ddangos y datrysiad cyfan."</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Pâr pwyntio"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POSTIO"</string>
+    <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Yn paratoi\'r pos…"</string>
+    <string name="msg_previous_a57b08a4" formatted="false">"Blaenorol"</string>
+    <string name="msg_previous_step_318c1da8" formatted="false">"Cam blaenorol"</string>
+    <string name="msg_printed_d8742933" formatted="false">"Argraffedig"</string>
+    <string name="msg_privacy_policy_ba445cff" formatted="false">"Polisi preifatrwydd"</string>
+    <string name="msg_puzzle_storage_ffa767a5" formatted="false">"Storio posau"</string>
+    <string name="msg_puzzles_1318ec24" formatted="false">"Posau"</string>
+    <string name="msg_puzzles_are_read_and_solved_on_this_phone_if__097f5f55" formatted="false">"Caiff posau eu darllen a’u datrys ar y ffôn hwn. Os byddwch yn cyflwyno darlleniad ansicr, neu’n galluogi rhannu awtomatig, anfonir llun y pos, y darlleniadau gwreiddiol, y marciau ansicrwydd a’ch cywiriadau yn ddiogel at Freevia i ddadansoddi’r adnabod ac ar gyfer hyfforddiant preifat. Nid yw adroddiadau’n cynnwys model eich dyfais na diagnosteg. Mae rhannu awtomatig yn ddewisol; nid oes cyfrifon, dadansoddi defnydd arferol na thracio hysbysebion. Gellir dileu copïau hyfforddi drwy dderbynneb, er y gall model sydd eisoes wedi’i hyfforddi gadw newidiadau a ddysgwyd. Defnyddiwch Derbynnebau cyflwyno yn y Gosodiadau i ddileu adroddiad."</string>
+    <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Daeth y posau y tynnwyd lluniau ohonynt ar gyfer profi o sudoku.cba.si. Nid yw’r ap hwn yn gysylltiedig â nhw."</string>
+    <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Cedwir posau rydych yn tynnu lluniau ohonynt yma, fel y gallwch ddychwelyd at un yn nes ymlaen."</string>
+    <string name="msg_read_9b9a8d05" formatted="false">"Darlleniad"</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Darllenwyd fel %1$s mewn llawysgrifen, %2$s yn sicr."</string>
+    <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Darllenwyd fel %1$s argraffedig, %2$s yn sicr."</string>
+    <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Darllenwyd fel gwag - ni chanfuwyd inc."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Darllenwyd fel marciau ymgeiswyr mewn pensil, a’u hanwybyddu."</string>
+    <string name="msg_reading_reviewed_e4f13358" formatted="false">"Darlleniad wedi’i adolygu."</string>
+    <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Darlleniad wedi’i gyflwyno. Diolch!"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnosteg sganio ddiweddar (wedi\'i llenwi ymlaen llaw)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Gall adnabod wneud camgymeriadau, yn enwedig gyda llawysgrifen. Defnyddiwch Darllen i gymharu’r digidau a adnabuwyd â’r llun, a thapiwch unrhyw gell i’w chywiro. Mae’r ap yn marcio darlleniadau ansicr i’w hadolygu; gall darlleniad hyderus fod yn anghywir o hyd."</string>
+    <string name="msg_reject_assumption_816f515a" formatted="false">"Gwrthod rhagdybiaeth"</string>
+    <string name="msg_remote_pairs_c62d76c2" formatted="false">"Parau pell"</string>
+    <string name="msg_remove_0_dfbfd0da" formatted="false">"Tynnu %1$s"</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nTynnwch %1$s o "</string>
+    <string name="msg_removed_4118fb4f" formatted="false">"Wedi’i dynnu"</string>
+    <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Ailchwarae’r rhesymu"</string>
+    <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Rhoi gwybod am nam neu syniad ar GitHub"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Ailgynnig y camera"</string>
+    <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Dychwelyd i gam %1$s"</string>
+    <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Datgelu’r esboniad"</string>
+    <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Adolygu neu gyflwyno darlleniad"</string>
+    <string name="msg_review_reading_f05999a4" formatted="false">"Adolygu darlleniad"</string>
+    <string name="msg_right_883361d5" formatted="false">"Cywir"</string>
+    <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"Llwybr wedi’i gwblhau. Ewch yn ôl i adolygu unrhyw symudiad, neu rhowch gynnig ar y camau eich hun."</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"rhes %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"Rhes %1$s, colofn %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"Rhes %1$s, colofn %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"rhes $1, colofn $2"</string>
+    <string name="msg_row_634768da" formatted="false">"rhes"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"rhesi"</string>
+    <string name="msg_ruled_out_0_99296743" formatted="false">", wedi diystyru %1$s"</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Methu darllen diagnosteg y sgan."</string>
+    <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Sgrinluniau neu enghreifftiau o bosau"</string>
+    <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Ail ddyfaliad: %1$s, %2$s."</string>
+    <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Dewis ar gyfer ymarfer"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Wedi’i ddewis: rhes %1$s, colofn %2$s"</string>
+    <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Anfon diagnosteg (%1$s)"</string>
+    <string name="msg_send_diagnostics_2d666083" formatted="false">"Anfon diagnosteg"</string>
+    <string name="msg_send_these_scans_635ce9f0" formatted="false">"Anfon y sganiau hyn"</string>
+    <string name="msg_send_this_photo_744e3c07" formatted="false">"Anfon y llun hwn"</string>
+    <string name="msg_settings_74a883a0" formatted="false">"Gosodiadau"</string>
+    <string name="msg_seven_3ba8d02b" formatted="false">"saith"</string>
+    <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Rhannu’n awtomatig pan fo ansicrwydd"</string>
+    <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Rhannu darlleniadau ansicr yn awtomatig?"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Dangos y gwrthddywediad"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Dangos pob %1$s ar eich pos"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Dangos yr un ar eich pos"</string>
+    <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Lliwio syml"</string>
+    <string name="msg_six_44778d82" formatted="false">"chwech"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Nendwr"</string>
+    <string name="msg_solution_0_6de814bf" formatted="false">", datrysiad %1$s"</string>
+    <string name="msg_solve_451d387b" formatted="false">"Datrys"</string>
+    <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Wedi’i ddatrys, ac mae pob ateb yn gywir."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Ateb gyda chymorth y datryswr: rhowch %1$s yn %2$s. Yr ymgeiswyr yw %3$s. Ni chanfu’r technegau y mae’r ap yn eu cefnogi symudiad o’r safle hwn. Canfu ei chwiliad %4$s yn yr unig ddatrysiad; nid oes prawf manwl o ganghennau’r chwiliad ar gael."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nAteb gyda chymorth y datryswr: ni ddaeth technegau\'r ap o hyd i symudiad. Nid oes prawf manwl ar gael."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Dileu gyda chymorth y datryswr: mae chwiliad yn diystyru %1$s yn y gell a amlygwyd, ond ni allai’r ap gynhyrchu dilyniant gwrthddywediad byr i’w ddangos. Nid oes prawf manwl ar gael."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Gall rhai celloedd gynnwys nodiadau yn hytrach na digid llawn."</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Ni ddarllenwyd rhai digidau’n hyderus."</string>
+    <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Aeth rhywbeth o’i le wrth ddarllen y llun hwnnw."</string>
+    <string name="msg_square_c11092bc" formatted="false">"Cell"</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nYmgeiswyr cychwynnol: %1$s."</string>
+    <string name="msg_step_0_1_2f91f5e4" formatted="false">"Cam %1$s: %2$s"</string>
+    <string name="msg_straighten_up_0ddce08f" formatted="false">"Sythwch y ffôn"</string>
+    <string name="msg_strategies_a959c466" formatted="false">"Strategaethau"</string>
+    <string name="msg_submission_receipt_81e41c5f" formatted="false">"Derbynneb cyflwyno"</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"Mae’r dderbynneb cyflwyno’n annilys."</string>
+    <string name="msg_submission_receipts_0_625964ee" formatted="false">"Derbynnebau cyflwyno (%1$s)"</string>
+    <string name="msg_submission_receipts_267b0a5d" formatted="false">"Derbynnebau cyflwyno"</string>
+    <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"Mae %1$s ar goll o’r ymateb cyflwyno."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"Mae statws yr ymateb cyflwyno’n annilys."</string>
+    <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"Nid yw’r gwasanaeth cyflwyno wedi’i ffurfweddu."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"Dychwelodd y gwasanaeth cyflwyno HTTP %1$s."</string>
+    <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"Nid yw cyflwyniadau ar gael yn yr adeilad hwn."</string>
+    <string name="msg_submit_155f816c" formatted="false">"Cyflwyno"</string>
+    <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"Cyflwyno darlleniadau ansicr yn awtomatig yn y dyfodol"</string>
+    <string name="msg_submit_reading_fb7b44a1" formatted="false">"Cyflwyno darlleniad"</string>
+    <string name="msg_submit_uncertain_reading_for_analysis_d45ee8cd" formatted="false">"Cyflwyno darlleniad ansicr i’w ddadansoddi"</string>
+    <string name="msg_submit_update_2e50f9d1" formatted="false">"Cyflwyno diweddariad"</string>
+    <string name="msg_submitted_64900440" formatted="false">"Wedi’i gyflwyno"</string>
+    <string name="msg_submitting_49195f55" formatted="false">"Yn cyflwyno…"</string>
+    <string name="msg_sudk_ae66af02" formatted="false">"SUDK"</string>
+    <string name="msg_sudoku_buddy_0_48564e9e" formatted="false">"Sudoku Buddy %1$s"</string>
+    <string name="msg_sudoku_buddy_8871c68f" formatted="false">"Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_diagnostics_45022d79" formatted="false">"Diagnosteg Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_feedback_0_b39d035e" formatted="false">"Adborth Sudoku Buddy - %1$s"</string>
+    <string name="msg_sudoku_buddy_is_published_by_freevia_contact__eb53b354" formatted="false">"Cyhoeddir Sudoku Buddy gan Freevia. Cyswllt: info@freevia.org"</string>
+    <string name="msg_sudoku_buddy_reads_puzzles_through_the_camera_a3fd23a2" formatted="false">"Mae Sudoku Buddy yn darllen posau drwy’r camera, felly mae angen mynediad at y camera arno. Mae’r adnabod a hanes y posau yn aros ar eich ffôn. Os dewiswch gyflwyno darlleniad ansicr, anfonir ei lun a’i ganlyniadau yn ddiogel at Freevia i wella’r adnabod. Mae rhannu awtomatig yn ddewisol a gellir ei ddiffodd yn y Gosodiadau."</string>
+    <string name="msg_sudoku_buddy_scan_cee92f88" formatted="false">"Sgan Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_scans_9217d6ba" formatted="false">"Sganiau Sudoku Buddy"</string>
+    <string name="msg_sudoku_buddy_source_code_is_licensed_under_ap_ed210ce9" formatted="false">"Mae cod ffynhonnell Sudoku Buddy wedi’i drwyddedu o dan Drwydded Apache 2.0. Mae brandio Freevia yn ddarostyngedig i hawliau nod masnach ar wahân."</string>
+    <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"Mae Sudoku yn fath o bos yn y parth cyhoeddus. Mae’r ap hwn yn datrys posau sydd gennych eisoes; nid yw’n atgynhyrchu nac yn dosbarthu posau neb."</string>
+    <string name="msg_supporting_evidence_c3c036e4" formatted="false">", tystiolaeth ategol"</string>
+    <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"Tybiwch fod y gell a farciwyd yn cynnwys %1$s. Mae’r digidau â rhifau arnynt yn ddamcaniaethol."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"Tybiwch mai %1$s yw\'r gell hon. Dilynwch y saethau yn eu trefn: mae\'r gosodiadau blaenorol yn gorfodi pob cell - naill ai\'r digid hwnnw yw\'r unig un y gall ei gynnwys o hyd, neu\'r gell honno yw\'r unig le y gall y digid fynd o hyd.\n\nMae hynny\'n gadael yr uned goch heb le i roi %2$s. Y safleoedd sydd wedi\'u marcio â %3$s ynddi yw\'r lleoedd y gallai fod wedi mynd, ac mae pob un yn gell y mae un o\'r saethau newydd ei llenwi. Ni all uned fod heb le i ddigid - felly nid %4$s yw\'r gell hon."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Tybiwch mai %1$s oedd yn y gell hon. Dilynwch y saethau yn eu trefn: mae pob cell yn cael ei gorfodi gan y digidau a osodwyd yn gynharach - naill ai’r digid hwnnw yw’r unig un y gall ei gynnwys o hyd, neu’r gell honno yw’r unig le y gall y digid fynd o hyd. Yna mae’r gell mewn coch yn cael ei gadael heb unrhyw ddigid, sy’n amhosibl - felly nid %2$s ydyw."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Tybiwch mai %1$s yw\'r gell hon. Dilynwch y saethau yn eu trefn: mae\'r gosodiadau blaenorol yn gorfodi pob cell - naill ai\'r digid hwnnw yw\'r unig un y gall ei gynnwys o hyd, neu\'r gell honno yw\'r unig le y gall y digid fynd o hyd.\n\nMae hynny\'n gadael y rhes goch heb le i roi %2$s. Y safleoedd sydd wedi\'u marcio â %3$s ynddi yw\'r lleoedd y gallai fod wedi mynd, ac mae pob un yn gell y mae un o\'r saethau newydd ei llenwi. Ni all rhes fod heb le i ddigid - felly nid %4$s yw\'r gell hon."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Tybiwch mai %1$s yw\'r gell hon. Dilynwch y saethau yn eu trefn: mae\'r gosodiadau blaenorol yn gorfodi pob cell - naill ai\'r digid hwnnw yw\'r unig un y gall ei gynnwys o hyd, neu\'r gell honno yw\'r unig le y gall y digid fynd o hyd.\n\nMae hynny\'n gadael y blwch coch heb le i roi %2$s. Y safleoedd sydd wedi\'u marcio â %3$s ynddo yw\'r lleoedd y gallai fod wedi mynd, ac mae pob un yn gell y mae un o\'r saethau newydd ei llenwi. Ni all blwch fod heb le i ddigid - felly nid %4$s yw\'r gell hon."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Tybiwch mai %1$s oedd yn y gell hon. Dilynwch y saethau yn eu trefn: mae pob cell yn cael ei gorfodi gan y digidau a osodwyd yn gynharach - naill ai’r digid hwnnw yw’r unig un y gall ei gynnwys o hyd, neu’r gell honno yw’r unig le y gall y digid fynd o hyd.\n\nMae hynny’n gadael y %2$s mewn coch heb le i roi %3$s. Y marciau %4$s ynddo yw’r lleoedd y gallai fod wedi mynd iddynt, ac mae pob un yn gell y mae un o’r saethau newydd ei chymryd. Ni all %5$s fod heb le i ddigid - felly nid %6$s ydyw."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Tybiwch mai %1$s yw\'r gell hon. Dilynwch y saethau yn eu trefn: mae\'r gosodiadau blaenorol yn gorfodi pob cell - naill ai\'r digid hwnnw yw\'r unig un y gall ei gynnwys o hyd, neu\'r gell honno yw\'r unig le y gall y digid fynd o hyd.\n\nMae hynny\'n gadael y golofn goch heb le i roi %2$s. Y safleoedd sydd wedi\'u marcio â %3$s ynddi yw\'r lleoedd y gallai fod wedi mynd, ac mae pob un yn gell y mae un o\'r saethau newydd ei llenwi. Ni all colofn fod heb le i ddigid - felly nid %4$s yw\'r gell hon."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Newidiwch i Ar ôl i weld y symudiad a’i ganlyniadau ar y grid."</string>
+    <string name="msg_swordfish_c6afd225" formatted="false">"Cleddbysgodyn"</string>
+    <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Tynnu llun newydd"</string>
+    <string name="msg_take_another_photo_61d1873e" formatted="false">"Tynnu llun arall"</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Cymerwch un digid a marciwch bob uned lle mai dim ond dwy gell sydd ar ôl iddo. Mae’r ddwy fel si-so: mae un yn cynnwys y digid a’r llall ddim.\n\nDechreuwch unrhyw le a lliwiwch gell yn las, er enghraifft. Lliwiwch ei phartner si-so yn wyrdd, yna beth bynnag sydd wedi’i baru â honno’n las eto, a daliwch ati nes bod y gadwyn yn dod i ben. Mae pob cell las yn wir neu mae pob cell werdd yn wir - ni allwch wybod pa un, ac mae hynny’n ddigon ar gyfer dau beth.\n\nYn gyntaf: os oes dwy gell o’r un lliw mewn un rhes, colofn neu flwch, mae’r lliw hwnnw’n amhosibl, felly tynnir y digid o bob cell sydd â’r lliw hwnnw a’r lliw arall yw’r ateb drwy’r gadwyn gyfan.\n\nYn ail: gall unrhyw gell y tu allan i’r gadwyn sy’n gweld cell las a chell werdd roi’r gorau i’r digid, gan fod un o’r ddwy hynny’n ei gynnwys pa ffordd bynnag y mae’r gadwyn yn disgyn.\n\nMae’n araf gyda phensil ond yn werth yr ymdrech: mae un lliwiad yn aml yn clirio digid o hanner y bwrdd."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Cymerwch un digid ac un uned ar y tro - er enghraifft, ble gall 4 fynd yn y blwch hwn? Croeswch allan bob cell yn yr uned sydd eisoes â digid, neu sy’n gweld 4 yn ei rhes neu ei cholofn ei hun. Os oes un gell ar ôl, mae’r 4 yn mynd yno.\n\nY fagl yw na allwch weld hyn drwy edrych ar y gell: gall dderbyn pum digid arall hefyd, felly nid oes dim amdani’n edrych yn orfodol. Edrychwch ar y digid yn lle’r gell, ac mae’n ymddangos ar unwaith."</string>
+    <string name="msg_take_photo_7100ac99" formatted="false">"Tynnu llun"</string>
+    <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Tynnu’r llun yn awtomatig"</string>
+    <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tapiwch gell a farciwyd i’w hadolygu, neu gadarnhewch fod pob darlleniad yn gywir."</string>
+    <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Tapiwch gell ar y grid yn gyntaf."</string>
+    <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Profwch %1$s fel rhagdybiaeth yn y gell a farciwyd. Nid ateb ydyw. Dilynwch y canlyniadau i weld pam mae’n methu."</string>
+    <string name="msg_test_assumption_6b8b9c01" formatted="false">"Profi rhagdybiaeth"</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Diolch am helpu i wella’r adnabod. Defnyddir llun eich pos, y darlleniadau a’ch cywiriadau ar gyfer dadansoddi a hyfforddi."</string>
+    <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Mae hwnnw hefyd yn symudiad %1$s dilys. Mae’r llwybr hwn yn dangos symudiad gwahanol; cymharwch ei brawf isod."</string>
+    <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Nid hwnnw yw’r symudiad a ddewiswyd ar gyfer y cam hwn. Efallai bod symudiadau dilys eraill; edrychwch eto neu ddatgelwch esboniad y cam hwn."</string>
+    <string name="msg_that_is_right_b4d8e415" formatted="false">"Mae hynny’n gywir"</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_0_squares_in_i_b4e38ffe" formatted="false">"Dyna weddill y pos. Mae angen atebion gyda chymorth y datryswr ar %1$s o gelloedd ynddo gan na chanfu’r technegau y mae’r ap yn eu cefnogi symudiad. Nid oes proflenni manwl o’u chwiliadau ar gael."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_one_square_in__ff63149b" formatted="false">"Dyna weddill y pos. Mae angen ateb gyda chymorth y datryswr ar un gell ynddo gan na chanfu’r technegau y mae’r ap yn eu cefnogi symudiad. Nid oes prawf manwl o’i chwiliad ar gael."</string>
+    <string name="msg_that_is_the_rest_of_the_puzzle_start_to_finis_655ebbc3" formatted="false">"Dyna weddill y pos, o’r dechrau i’r diwedd."</string>
+    <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Ni ellid cadw\'r llun hwnnw, felly nid oes dim i\'w anfon."</string>
+    <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Mae’r gell honno’n caniatáu %1$s. Chwiliwch am y symudiad a gyfiawnheir gan dechneg y cam hwn, neu ddatgelwch ei esboniad."</string>
+    <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Mae’r gell honno eisoes wedi’i llenwi. Dewiswch gell wag."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Mae’r rhagdybiaeth wedi’i gwrthod. Dychwelwn at yr ymgeiswyr go iawn a chroeswn %1$s allan yn y gell a farciwyd. Mae’r digidau damcaniaethol yn cael eu clirio."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Ni allai’r camera dynnu’r llun hwnnw."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Nid yw’r camera ar gael. Caewch apiau camera eraill, yna rhowch gynnig arall arni."</string>
+    <string name="msg_the_other_ec8e3f15" formatted="false">"y llall"</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Bydd y llun o %1$s a phopeth a ddarllenwyd ohono yn cael eu tynnu oddi ar y ffôn hwn. Ni ellir dadwneud hyn."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Mae\'r llun yn eich rhestr posau, o dan \"Methu darllen\"."</string>
+    <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Mae’r colyn yma’n %1$s neu %2$s. Yn y naill achos neu’r llall, gorfodir un o’r ddwy gell arall i fod yn %3$s, felly ni all unrhyw gell sy’n gweld y ddwy fod yn %4$s."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Y pâr pwyntio wedi’i ddarllen yn ôl. Cymerwch res neu golofn a digid sydd angen lle ynddi o hyd. Marciwch bob cell yn y llinell honno a allai gynnwys y digid. Os yw pob un ohonynt mewn un blwch, rhaid i’r digid fod yn rhan y blwch hwnnw o’r llinell - felly nid yw yn unman arall yn y blwch, gan gynnwys y ddwy res neu golofn ynddo nad oeddech yn edrych arnynt.\n\nFel y pâr pwyntio, nid yw hyn yn gosod dim ar ei ben ei hun; mae’n creu lle i rywbeth sy’n gwneud hynny."</string>
+    <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Nid yw’r digidau argraffedig yn ffurfio pos y gellir ei ddatrys."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nYr ymgeiswyr sy\'n weddill yn %1$s yw {%2$s}. Rhowch %3$s yn rhes %4$s, colofn %5$s."</string>
+    <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Mae’r adroddiad yn rhy fawr i’w gyflwyno."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Yr adain Y gydag un ymgeisydd ychwanegol yn y colyn. Chwiliwch am gell ag union dri ymgeisydd, er enghraifft {1,4,7}, sy’n gweld dwy gell â dau ymgeisydd - un {1,7} ac un {4,7}.\n\nNawr gall pob un o’r tair fod yn 7, ac mae’n rhaid i un ohonynt fod. Felly rhaid i gell weld y tair i gael ei diystyru, nid dim ond y ddwy adain - sydd yn ymarferol yn golygu ei bod yn yr un blwch â’r colyn ac ar linell gydag adain.\n\nLlai o ddileadau nag adain Y, ac yn haws ei cholli am yr un rheswm: nid yw’r colyn yn sefyll allan."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Mae cell y gallwch ei llenwi yn y blwch a amlygwyd.\n\nPwyswch Awgrym eto i gael gwybod pa dechneg sy’n ei chanfod."</string>
+    <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Nid oes dim ar ôl yma i resymu amdano."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Mae’r %1$s o gelloedd hyn i gyd yn cynnwys dim ond %2$s a %3$s, ac mae pob un yn gweld y nesaf, felly maent yn am yn ail ar hyd y gadwyn gyfan. Mae %4$s a %5$s nifer odrif o ddolenni ar wahân ac felly’n cynnwys digidau gwahanol - sy’n diystyru %6$s o unrhyw gell sy’n gweld y ddwy."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Mae’r %1$s o gelloedd hyn yn cynnwys dim ond %2$s rhyngddynt, felly mae’r digidau hynny’n eu llenwi mewn rhyw drefn. Mae hynny’n diystyru %3$s o weddill y %4$s hwn."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Dim ond %2$s y gall y %1$s cell hyn eu cynnwys rhyngddynt, felly mae\'r digidau hynny\'n eu llenwi mewn rhyw drefn. Mae hynny\'n diystyru %3$s yng ngweddill y rhes hon."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Dim ond %2$s y gall y %1$s cell hyn eu cynnwys rhyngddynt, felly mae\'r digidau hynny\'n eu llenwi mewn rhyw drefn. Mae hynny\'n diystyru %3$s yng ngweddill y golofn hon."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Dim ond %2$s y gall y %1$s cell hyn eu cynnwys rhyngddynt, felly mae\'r digidau hynny\'n eu llenwi mewn rhyw drefn. Mae hynny\'n diystyru %3$s yng ngweddill y blwch hwn."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Dyma ymgeiswyr cychwynnol eich cell. Mae Olrhain yn esbonio pa bosibiliadau y gellir eu diystyru."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Ni all y digidau hyn ffurfio pos, ac mae gormod yn anghywir i ddweud pa rai. Tapiwch unrhyw gell i gywiro’r darlleniad, neu tynnwch y llun eto."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Ni all y digidau hyn ffurfio pos. Byddai newid y %1$s o gelloedd â chylchoedd o’u hamgylch yn ei drwsio - tapiwch un i gywiro’r darlleniad."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Ni all y digidau hyn ffurfio pos. Byddai newid yr un gell â chylch o’i hamgylch yn ei drwsio - tapiwch hi i gywiro’r darlleniad."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Nid yw’r digidau hyn yn ffurfio pos, felly camddarllenwyd un. Pwyswch Datrys i weld pa gelloedd i’w cywiro."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Mae’r pedair cell hyn yn ffurfio petryal ar draws dau flwch, ac mae tair ohonynt yn cynnwys dim ond %1$s. Pe bai %2$s yn cynnwys dim ond y ddau hynny hefyd, gellid cyfnewid y digidau o amgylch y petryal a byddai gan y pos ddau ateb. Mae ganddo un, felly rhaid i %3$s ddefnyddio rhywbeth arall - ac mae %4$s yn mynd."</string>
+    <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Nid ydynt yn cyrraedd y diwedd: mae rhywbeth yma wedi trechu’r ap yn llwyr."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Nid yw hyn yn llenwi dim. Mae’n diystyru %1$s o %2$s."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Nid yw hyn yn llenwi unrhyw gell. Mae\'n diystyru %1$s ar gyfer %2$s o gelloedd."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Nid yw hyn yn llenwi unrhyw gell. Mae\'n diystyru %1$s ar gyfer un gell."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nDyma\'r cyntaf o %1$s casgliad sy\'n arwain at yr ateb."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Mae’r prawf hwn yn esbonio un awgrym, gan gynnwys y dileadau ymgeiswyr sy’n arwain at ei ateb. Camwch ymlaen i ddilyn y rhesymu ar y grid, yna parhewch â’r llwybr llawn."</string>
+    <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Methu paratoi’r pos hwn."</string>
+    <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Methu cadw’r pos hwn. Gallwch ei ddefnyddio nawr o hyd. Rhyddhewch rywfaint o le storio cyn tynnu llun arall."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Mae gan y pos hwn fwy nag un ateb, felly mae’n debygol bod digid argraffedig wedi’i fethu. Yn dangos ateb %1$s o %2$s - pwyswch Datrys eto am y nesaf. Mae’r celloedd â chylchoedd o’u hamgylch yn wahanol rhwng yr atebion a ddangosir."</string>
+    <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Methu agor llun y pos hwn."</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Mae’r rhesymu hwn yn diystyru %1$s sy’n bodoli "</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Gall y gell hon gynnwys nodiadau ymgeiswyr yn hytrach na digid llawn. Gwiriwch hi."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Mae’r olygfa hon yn cynnwys dileadau ymgeiswyr cynharach. Agorwch eu tystiolaeth isod i’w gwirio."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tri"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Rhy dywyll i weld llinellau’r grid"</string>
+    <string name="msg_trace_7e14c3d7" formatted="false">"Olrhain"</string>
+    <string name="msg_tried_out_a44e90a4" formatted="false">"Wedi rhoi cynnig arni"</string>
+    <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Rhowch gynnig arni eich hun"</string>
+    <string name="msg_turn_on_5a1f096a" formatted="false">"Troi ymlaen"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Trowch y ffôn fel bod y pos y ffordd iawn i fyny."</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tiwtor"</string>
+    <string name="msg_two_3fc4ccfe" formatted="false">"dau"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Mae dwy gell sy’n cynnwys yr un pâr, wedi’u cysylltu gan si-so ar un o’i ddigidau, yn gorfodi’r digid arall i un ohonynt."</string>
+    <string name="msg_two_string_kite_fd558e5c" formatted="false">"Barcud dwy linyn"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Petryal unigryw"</string>
+    <string name="msg_unit_385cfdbc" formatted="false">"uned"</string>
+    <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Nid yw Unreadable yn darparu rhestr CellReading; cedwir yr union gelloedd mewnbwn a’r canlyniad."</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
+    <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"fersiwn fformat model heb ei chefnogi"</string>
+    <string name="msg_unsure_df18af6b" formatted="false">"Ansicr"</string>
+    <string name="msg_use_device_language_3fb007ba" formatted="false">"Defnyddio iaith y ddyfais"</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Gan ddefnyddio %1$s, tapiwch un gell lle gellir tynnu ymgeisydd, yna dewiswch y digid hwnnw."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Gan ddefnyddio %1$s, tapiwch y gell y gallwch ei llenwi, yna dewiswch ei digid."</string>
+    <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Anodd iawn"</string>
+    <string name="msg_w_wing_750cc106" formatted="false">"Adain W"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"cafodd"</string>
+    <string name="msg_were_910adfb4" formatted="false">"cawsant"</string>
+    <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Beth oeddech yn ei ddisgwyl, neu sut byddai eich syniad yn eich helpu i ddatrys neu ddysgu Sudoku?"</string>
+    <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Beth ddigwyddodd a\'r camau i\'w ail-greu (ar gyfer bygiau)"</string>
+    <string name="msg_what_it_does_c74ea9dc" formatted="false">"Beth mae’n ei wneud"</string>
+    <string name="msg_where_1daaa38f" formatted="false">"Ble"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Pam y tynnwyd %1$s o r%2$sc%3$s"</string>
+    <string name="msg_why_d3ae14a5" formatted="false">"Pam"</string>
+    <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Pam nid %1$s? · %2$s"</string>
+    <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Pam y gell hon? · %1$s"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" â\'r datrysiad. Defnyddiwch Gwirio i\'w harchwilio."</string>
+    <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Gweithiwch yn ôl o’ch cell. Dewiswch gwestiwn isod."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Gweithiwch ddigid wrth ddigid yn hytrach na chell wrth gell. Ar gyfer un uned, ysgrifennwch ble gall pob digid coll fynd o hyd. Yna chwiliwch am %1$s o ddigidau y mae eu rhestrau rhyngddynt yn cwmpasu dim ond %2$s o gelloedd.\n\nRhaid i’r %3$s o ddigidau hynny lenwi’r %4$s o gelloedd hynny, felly gellir croesi popeth arall ynddynt allan - sy’n aml yn troi un ohonynt yn sengl noeth neu’n bâr noeth ar unwaith.\n\nDyma’r un y mae pobl yn ei chael yn anoddaf, gan nad oes dim i’w weld wrth edrych ar y celloedd: mae ganddynt ddigon o ymgeiswyr o hyd. Mae’r patrwm yn y digidau."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Gweithiwch gyda chelloedd sydd ag union ddau ymgeisydd ar ôl yn unig.\n\nDechreuwch gydag un, er enghraifft {2,6}, a thybiwch nad y 2 ydyw - yna y 6 ydyw. Symudwch i gell y mae’n ei gweld sydd hefyd â 6, er enghraifft {6,4}: ni all honno fod yn 6, felly mae’n 4. Symudwch i gell y mae honno’n ei gweld sy’n cynnwys 4, a daliwch ati, gyda phob cam wedi’i orfodi gan yr un blaenorol.\n\nOs cyrhaeddwch gell y mae ei digid arall yn 2 - y digid y dechreuoch drwy ei ddiystyru - rydych wedi gorffen. Naill ai roedd y gell gyntaf yn 2 wedi’r cyfan, neu rhedodd y gadwyn ac mae’r gell olaf yn 2. Mae un pen neu’r llall yn ei gynnwys, felly ni all unrhyw gell sy’n gweld y ddau ben ei gynnwys.\n\nCadwch y cadwyni’n fyr. Gellir dod o hyd i bedair neu bum cell gyda phensil; y tu hwnt i hynny rydych yn cadw cyfrifon, a chadwyn orfodi yw’r enw gonest arni."</string>
+    <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"rhaid i’r ymyl gweithio fod yn bositif ac yn feidraidd"</string>
+    <string name="msg_would_not_read_750bc135" formatted="false">"Methu darllen"</string>
+    <string name="msg_written_4c6031d1" formatted="false">"Ysgrifenedig"</string>
+    <string name="msg_wrong_a633bed8" formatted="false">"Anghywir"</string>
+    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
+    <string name="msg_x_wing_e4487586" formatted="false">"Adain X"</string>
+    <string name="msg_xy_chain_e9611e56" formatted="false">"Cadwyn XY"</string>
+    <string name="msg_xyz_wing_9679f694" formatted="false">"Adain XYZ"</string>
+    <string name="msg_y_wing_c0f0c7d6" formatted="false">"Adain Y"</string>
+    <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Fe wnaethoch glirio’r gell hon."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Fe wnaethoch osod hwn yn %1$s mewn llawysgrifen."</string>
+    <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Fe wnaethoch osod hwn yn %1$s argraffedig."</string>
+    <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Mae eich newidiadau’n weladwy, ond ni ellid eu cadw. Rhyddhewch rywfaint o le storio a rhowch gynnig ar olygu’r pos eto."</string>
+    <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Eich lluniau a’ch preifatrwydd"</string>
+    <string name="msg_your_puzzles_80572487" formatted="false">"Eich posau"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Eich posau wedi’u cadw"</string>
+    <string name="msg_your_square_0_4430c1c2" formatted="false">"Eich cell ← %1$s"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Mae amlinelliad eich cell yn aros. Mae celloedd gwyrdd yn dangos tystiolaeth; mae digidau wedi’u croesi allan wedi’u diystyru."</string>
+    <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
+</resources>

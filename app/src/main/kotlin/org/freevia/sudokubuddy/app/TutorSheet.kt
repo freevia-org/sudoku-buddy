@@ -96,7 +96,7 @@ internal fun ColumnScope.Lesson(state: PuzzleState, trailing: @Composable () -> 
 
     if (state.overlay == OverlayMode.HINT || state.overlay == OverlayMode.LESSON) {
         state.reasoningNote?.let {
-            Text(it, style = MaterialTheme.typography.bodySmall,
+            Text(localized(it), style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
     }
@@ -104,7 +104,7 @@ internal fun ColumnScope.Lesson(state: PuzzleState, trailing: @Composable () -> 
     if (guidance.effect == null) {
         Trailing(guidance.body, MaterialTheme.typography.bodyMedium, null, trailing)
     } else {
-        Text(guidance.body, style = MaterialTheme.typography.bodyMedium)
+        Text(localized(guidance.body), style = MaterialTheme.typography.bodyMedium)
         // Last, because it is the summary of a move whose reasoning is above it.
         Trailing(
             guidance.effect,
@@ -131,7 +131,7 @@ private fun Trailing(
 ) {
     Row(verticalAlignment = Alignment.Bottom) {
         Text(
-            text,
+            localized(text),
             style = style,
             color = colour ?: Color.Unspecified,
             modifier = Modifier.weight(1f, fill = false),
@@ -267,7 +267,7 @@ internal fun BoxScope.TutorPanel(
                 // panel and not of whatever is left over beside the title.
                 Box(modifier = Modifier.fillMaxWidth()) {
                     Text(
-                        if (state.tutorHintProof) "Hint proof" else "Tutor",
+                        localized(if (state.tutorHintProof) "Hint proof" else "Tutor"),
                         style = MaterialTheme.typography.titleSmall,
                         maxLines = 1,
                         modifier = Modifier.align(Alignment.CenterStart),
@@ -311,14 +311,14 @@ private fun Stepping(at: Int, last: Int, steps: Int, onStep: (Int) -> Unit, modi
         IconButton(onClick = { onStep(-1) }, enabled = at > 0) {
             Icon(
                 Icons.AutoMirrored.Filled.KeyboardArrowLeft,
-                contentDescription = "Previous step",
+                contentDescription = localized("Previous step"),
             )
         }
-        Text("$at / $steps", style = MaterialTheme.typography.labelLarge, maxLines = 1)
+        Text(localized("$at / $steps"), style = MaterialTheme.typography.labelLarge, maxLines = 1)
         IconButton(onClick = { onStep(1) }, enabled = at < last) {
             Icon(
                 Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                contentDescription = "Next step",
+                contentDescription = localized("Next step"),
             )
         }
     }
@@ -414,17 +414,17 @@ private fun ColumnScope.OpenPanel(
         if (state.tutorHintProof) {
             TextButton(onClick = { onChange(state.copy(overlay = OverlayMode.HINT,
                 hintStyle = HintStyle.EXPLAIN, tutorHintProof = false, practice = false,
-                practiceCell = null, practiceFeedback = null)) }) { Text("Back to visual hint") }
+                practiceCell = null, practiceFeedback = null)) }) { Text(localized("Back to visual hint")) }
         }
         if (at == 0) {
-            Text(if (state.tutorTechnique == null) {
+            Text(localized(if (state.tutorTechnique == null) {
                 "Follow a route where each move builds on the previous one."
-            } else "Examples available now: each starts from your current board.",
+            } else "Examples available now: each starts from your current board."),
                 style = MaterialTheme.typography.bodySmall)
         }
         if (at > 0 && state.currentDeduction?.hasTeachingProof == true) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text("Try it yourself", modifier = Modifier.weight(1f),
+                Text(localized("Try it yourself"), modifier = Modifier.weight(1f),
                     style = MaterialTheme.typography.labelLarge)
                 Switch(checked = state.practice, onCheckedChange = {
                     onChange(state.copy(practice = it, practiceRevealed = false,
@@ -433,15 +433,15 @@ private fun ColumnScope.OpenPanel(
             }
         }
         if (state.practicing) {
-            state.reasoningNote?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+            state.reasoningNote?.let { Text(localized(it), style = MaterialTheme.typography.bodySmall) }
             val move = state.currentDeduction
-            Text(if (move is Deduction.Elimination) {
+            Text(localized(if (move is Deduction.Elimination) {
                 "Using ${move.technique}, tap one square where a candidate can be removed, then choose that digit."
             } else {
                 "Using ${move?.technique}, tap the square you can fill, then choose its digit."
-            })
+            }))
             state.practiceCell?.let {
-                Text("Selected: row ${it / 9 + 1}, column ${it % 9 + 1}",
+                Text(localized("Selected: row ${it / 9 + 1}, column ${it % 9 + 1}"),
                     style = MaterialTheme.typography.labelLarge)
             }
             Row(modifier = Modifier.fillMaxWidth().horizontalScroll(rememberScrollState())) {
@@ -455,38 +455,38 @@ private fun ColumnScope.OpenPanel(
                         }
                     }
                 }) {
-                    Text("$digit")
+                    Text(localized("$digit"))
                 }
             }
-            state.practiceFeedback?.let { Text(it) }
+            state.practiceFeedback?.let { Text(localized(it)) }
             Row {
                 TextButton(onClick = {
                     onChange(state.copy(practiceRevealed = true, lessonBefore = false))
-                }) { Text("Reveal explanation") }
+                }) { Text(localized("Reveal explanation")) }
                 state.guidance?.howTo?.let { HowTo(asking, onAsk) }
             }
         } else {
             if (at > 0 && state.walkthrough?.lessons?.getOrNull(at - 1) != null) {
                 Row {
                     TextButton(onClick = { onChange(state.copy(lessonBefore = true)) },
-                        enabled = !state.lessonBefore) { Text("Before") }
+                        enabled = !state.lessonBefore) { Text(localized("Before")) }
                     TextButton(onClick = { onChange(state.copy(lessonBefore = false)) },
-                        enabled = state.lessonBefore) { Text("After") }
-                    Text(if (state.lessonBefore) "Before this move" else "After this move",
+                        enabled = state.lessonBefore) { Text(localized("After")) }
+                    Text(localized(if (state.lessonBefore) "Before this move" else "After this move"),
                         style = MaterialTheme.typography.labelSmall,
                         modifier = Modifier.align(Alignment.CenterVertically))
                 }
                 if (state.lessonBefore) {
-                    Text("Switch to After to see the move and its consequences on the grid.",
+                    Text(localized("Switch to After to see the move and its consequences on the grid."),
                         style = MaterialTheme.typography.bodySmall)
                 }
             }
-            state.practiceFeedback?.let { Text(it) }
+            state.practiceFeedback?.let { Text(localized(it)) }
             Lesson(state) {
                 state.guidance?.howTo?.let { HowTo(asking, onAsk) }
             }
             state.walkthrough?.lessons?.getOrNull(at - 1)?.dependencies?.takeIf { it.isNotEmpty() }?.let {
-                Text("Earlier steps used in this proof", style = MaterialTheme.typography.labelLarge)
+                Text(localized("Earlier steps used in this proof"), style = MaterialTheme.typography.labelLarge)
                 for (dependency in it.sorted()) {
                     val earlier = state.walkthrough?.steps?.getOrNull(dependency)
                     val reason = if (earlier is Deduction.Elimination) {
@@ -496,19 +496,19 @@ private fun ColumnScope.OpenPanel(
                         } else "${earlier.technique}: remove ${earlier.digit}"
                     } else earlier?.technique.orEmpty()
                     TextButton(onClick = { onChange(state.visitReason(dependency + 1)) }) {
-                        Text("Step ${dependency + 1}: $reason")
+                        Text(localized("Step ${dependency + 1}: $reason"))
                     }
                 }
             }
             state.returnToStep?.let { step ->
-                TextButton(onClick = { onChange(state.stepTo(step)) }) { Text("Return to step $step") }
+                TextButton(onClick = { onChange(state.stepTo(step)) }) { Text(localized("Return to step $step")) }
             }
             if (state.tutorHintProof && at == state.walkthrough?.steps?.size) {
-                TextButton(onClick = { onChange(state.tutor()) }) { Text("Continue with the full route") }
+                TextButton(onClick = { onChange(state.tutor()) }) { Text(localized("Continue with the full route")) }
             }
             if (!state.tutorHintProof && state.walkthrough?.cumulative == true &&
                 state.walkthrough?.finishes == true && at == state.walkthrough?.steps?.size) {
-                Text("Route complete. Go back to review any move, or try the steps yourself.",
+                Text(localized("Route complete. Go back to review any move, or try the steps yourself."),
                     style = MaterialTheme.typography.bodySmall)
             }
         }
@@ -516,7 +516,7 @@ private fun ColumnScope.OpenPanel(
         if (asking) {
             state.guidance?.howTo?.let {
                 Text(
-                    it,
+                    localized(it),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -542,13 +542,13 @@ private fun HowTo(open: Boolean, onToggle: () -> Unit) {
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Text(
-            "how",
+            localized("how"),
             style = MaterialTheme.typography.labelLarge,
             color = MaterialTheme.colorScheme.primary,
         )
         Icon(
             Icons.AutoMirrored.Filled.KeyboardArrowRight,
-            contentDescription = if (open) "Hide how to spot one" else "How to spot one",
+            contentDescription = localized(if (open) "Hide how to spot one" else "How to spot one"),
             tint = MaterialTheme.colorScheme.primary,
             modifier = Modifier.size(20.dp).graphicsLayer { rotationZ = turn },
         )
@@ -577,7 +577,7 @@ private fun ChapterStrip(chapters: List<Chapter>, at: Int, onJump: (Int) -> Unit
                 else -> MaterialTheme.colorScheme.onSurfaceVariant
             }
             TextButton(onClick = { onJump(chapter.from) }) {
-                Text("${chapter.technique} (${chapter.from + 1}–${chapter.until})",
+                Text(localized("${chapter.technique} (${chapter.from + 1}–${chapter.until})"),
                     color = colour, style = MaterialTheme.typography.labelSmall)
             }
         }
@@ -595,7 +595,7 @@ private fun ChapterCount(chapters: List<Chapter>, at: Int) {
     val here = chapters.firstOrNull { at in it.from until it.until } ?: return
     if (here.count == 1) return
     Text(
-        "${at - here.from + 1} of ${here.count}",
+        localized("${at - here.from + 1} of ${here.count}"),
         style = MaterialTheme.typography.labelSmall,
         color = MaterialTheme.colorScheme.onSurfaceVariant,
         maxLines = 1,

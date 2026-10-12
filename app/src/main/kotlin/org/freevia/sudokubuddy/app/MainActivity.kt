@@ -40,6 +40,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
@@ -63,6 +64,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        AppLanguages.migrate(this)
 
         // Draw behind the status and navigation bars, and let each screen inset its own
         // content. The camera wants the preview under them; nothing else does.
@@ -83,7 +85,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme(colorScheme = darkColorScheme()) {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    AppRoot()
+                    LanguageContent { AppRoot() }
                 }
             }
         }
@@ -93,6 +95,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun AppRoot() {
     val context = LocalContext.current
+    val latestContext = rememberUpdatedState(context)
     val history = remember { History(context) }
     val scope = rememberCoroutineScope()
     val storage = remember { Mutex() }
@@ -280,8 +283,8 @@ private fun AppRoot() {
         id?.let {
             pendingAutoSubmissions.discardThrough(it, snapshot.readingCorrections.size)
         }
-        Toast.makeText(context,
-            "Could not submit the reading. Please try again when connected.",
+        Toast.makeText(latestContext.value,
+            latestContext.value.localized("Could not submit the reading. Please try again when connected."),
             Toast.LENGTH_LONG).show()
         return false
     }
@@ -384,7 +387,7 @@ private fun AppRoot() {
                     }
                 }
                 if (uploadSnapshot(reportSnapshot, submissionId)) {
-                    Toast.makeText(context, "Reading submitted. Thank you!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(latestContext.value, latestContext.value.localized("Reading submitted. Thank you!"), Toast.LENGTH_SHORT).show()
                 }
             } finally {
                 submissionInFlight = false
@@ -647,9 +650,9 @@ private fun AppRoot() {
         }
     }
     storageError?.let { message ->
-        AlertDialog(onDismissRequest = { storageError = null }, title = { Text("Puzzle storage") },
-            text = { Text(message) }, confirmButton = {
-                TextButton(onClick = { storageError = null }) { Text("OK") }
+        AlertDialog(onDismissRequest = { storageError = null }, title = { Text(localized("Puzzle storage")) },
+            text = { Text(localized(message)) }, confirmButton = {
+                TextButton(onClick = { storageError = null }) { Text(localized("OK")) }
             })
     }
 }
@@ -695,16 +698,16 @@ private fun PermissionScreen(onRequest: () -> Unit, onSettings: () -> Unit, onMe
             modifier = Modifier.padding(32.dp),
         ) {
             Text(
-                "Sudoku Buddy reads puzzles through the camera, so it needs camera access. " +
+                localized("Sudoku Buddy reads puzzles through the camera, so it needs camera access. " +
                     "Recognition and puzzle history stay on your phone. If you choose to submit " +
                     "an uncertain reading, its photo and results are sent securely to Freevia " +
                     "to improve recognition. Automatic sharing is optional and can be turned " +
-                    "off in Settings.",
+                    "off in Settings."),
                 style = MaterialTheme.typography.bodyLarge,
             )
-            Button(onClick = onRequest) { Text("Allow camera") }
-            TextButton(onClick = onSettings) { Text("Open app settings") }
-            TextButton(onClick = onMenu) { Text("Your saved puzzles") }
+            Button(onClick = onRequest) { Text(localized("Allow camera")) }
+            TextButton(onClick = onSettings) { Text(localized("Open app settings")) }
+            TextButton(onClick = onMenu) { Text(localized("Your saved puzzles")) }
         }
     }
 }
