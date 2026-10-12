@@ -409,7 +409,7 @@
     <string name="msg_settings_74a883a0" formatted="false">"Configurações"</string>
     <string name="msg_seven_3ba8d02b" formatted="false">"sete"</string>
     <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
-    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Comcompartilhamentor automaticamente leituras incertas"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Compartilhar automaticamente leituras incertas"</string>
     <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Enviar automaticamente as leituras incertas?"</string>
     <string name="msg_show_contradiction_0e27e337" formatted="false">"Mostrar contradição"</string>
     <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Mostrar todos os %1$s no seu quebra-cabeça"</string>
@@ -499,7 +499,7 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Os dígitos impressos não formam um quebra-cabeça solucionável."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nOs candidatos restantes em %1$s são {%2$s}. Coloque %3$s na linha %4$s, coluna %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"O relatório é grande demais para ser enviado."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"A Y-wing com o pivô contendo um candidato a mais. Procure por uma célula com exatamente três candidatos, digamos {1,4,7}, que possa ver duas células de dois candidatos - uma {1,7} e uma {4,7}.\n\nAgora todas as três podem ser 7, e uma delas deve ser. Portanto, uma célula precisa ver todas as três para ser descartada, e não apenas as duas pinças - o que, na prática, significa que ela está no mesmo quadrante que o pivô e em linha com uma pinça.\n\nMenos eliminações que uma Y-wing, e mais fácil de deixar passar pelo mesmo motivo: o pivô não se destaca."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"A Y-wing com o pivô contendo um candidato a mais. Procure por uma célula com exatamente três candidatos, digamos {1,4,7}, que possa ver duas células de dois candidatos - uma {1,7} e uma {4,7}.\n\nAgora todas as três podem ser 7, e uma delas deve ser. Portanto, uma célula precisa ver todas as três para que o candidato 7 seja eliminado dela, e não apenas as duas pinças - o que, na prática, significa que ela está no mesmo quadrante que o pivô e em linha com uma pinça.\n\nMenos eliminações que uma Y-wing, e mais fácil de deixar passar pelo mesmo motivo: o pivô não se destaca."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Há uma célula que você pode preencher no quadrante em destaque.\n\nPressione Dica novamente para saber qual técnica a encontra."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Não há mais nada para deduzir aqui."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Estas %1$s células contêm todas apenas %2$s e %3$s, e cada uma vê a seguinte, portanto elas alternam em toda a extensão. %4$s e %5$s estão a um número ímpar de elos de distância e, portanto, contêm dígitos diferentes entre si - o que descarta %6$s de qualquer célula que veja ambas."</string>

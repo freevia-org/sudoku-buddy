@@ -56,22 +56,22 @@
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s scrise"</string>
     <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"o imagine %1$sx%2$s necesită %3$s octeți, dar s-au primit %4$s"</string>
     <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"o celulă nu era nici cifru, nici punct"</string>
-    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Un lanț de celule cu doi candidați care începe și se termină pe același cifru plasează acel cifru la unul dintre capete."</string>
-    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Un cifru cu o singură poziție posibilă rămasă într-un rând, coloană sau casetă aparține acelei poziții."</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Un lanț de celule cu doi candidați care începe și se termină cu aceeași cifră plasează acea cifră la unul dintre capete."</string>
+    <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"O cifră cu o singură poziție posibilă rămasă într-un rând, coloană sau casetă trebuie plasată în acea poziție."</string>
     <string name="msg_a_handwritten_0_31063236" formatted="false">"Un %1$s scris de mână."</string>
     <string name="msg_a_printed_0_244624d9" formatted="false">"Un %1$s tipărit."</string>
-    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Un pătrat roșu arată cifrul citit de aplicație acolo. Dacă nu este ceea ce ați scris, atingeți pătratul pentru a-l corecta."</string>
-    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"O celulă cu un singur cifru rămas trebuie să îl conțină pe acela."</string>
+    <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Un pătrat roșu arată cifra citită de aplicație acolo. Dacă nu este ceea ce ați scris, atingeți pătratul pentru a o corecta."</string>
+    <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"O celulă cu o singură cifră rămasă trebuie să o conțină pe aceea."</string>
     <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"O listă de tehnici nu este niciodată completă, iar cele mai grele puzzle-uri sunt concepute să înfrângă orice se află pe ea. Astfel, când toate acestea nu dau rezultat, tutorele stabilește o singură celulă încercând candidații ei pe rând, declară deschis că a procedat astfel și continuă să raționeze de acolo. Ajunge întotdeauna la capătul unui puzzle și nu pretinde niciodată că o căutare a fost o deducție."</string>
-    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Un pivot cu trei candidați și doi pinteni cu doi candidați potriviți forțează eliminarea unui cifru din fiecare celulă care le vede pe toate trei."</string>
-    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Un pivot cu doi candidați și doi pinteni cu doi candidați pot forța eliminarea unui cifru din fiecare celulă care îi vede pe amândoi pinteniii."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Un pivot cu trei candidați și două celule auxiliare cu câte doi candidați corespunzători forțează eliminarea unei cifre din fiecare celulă care le vede pe toate trei."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Un pivot cu doi candidați și două celule auxiliare cu câte doi candidați pot forța eliminarea unei cifre din fiecare celulă care vede ambele celule auxiliare."</string>
     <string name="msg_about_4efca0d1" formatted="false">"Despre"</string>
     <string name="msg_after_7b68fe55" formatted="false">"După"</string>
     <string name="msg_after_this_move_c0f01734" formatted="false">"După această mutare"</string>
     <string name="msg_all_correct_97341bb4" formatted="false">"Toate corecte"</string>
     <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"Toate cele trei celule pot fi %1$s, iar una dintre ele trebuie să fie. Deci nicio celulă care le vede pe toate trei nu poate fi %2$s."</string>
     <string name="msg_allow_camera_e18835ef" formatted="false">"Permite camera"</string>
-    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Aproape - țineți pagina plată și pătrată față de cameră"</string>
+    <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"Aproape - țineți pagina plană și paralelă cu planul camerei"</string>
     <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"o eliminare care nu elimină nimic nu este o deducție"</string>
     <string name="msg_and_e3ee915a" formatted="false">" și "</string>
     <string name="msg_android_0_dbe3f7ec" formatted="false">"- Android: %1$s"</string>
@@ -79,7 +79,7 @@
     <string name="msg_app_and_device_prefilled_a4c87018" formatted="false">"## Aplicație și dispozitiv (precompletate)"</string>
     <string name="msg_app_sudoku_buddy_0_0e880e30" formatted="false">"- Aplicație: Sudoku Buddy %1$s"</string>
     <string name="msg_aspect_must_be_positive_but_was_0_5e3f78a3" formatted="false">"aspectul trebuie să fie pozitiv, dar era %1$s"</string>
-    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Ipoteză · cifru ipotetic"</string>
+    <string name="msg_assumption_hypothetical_digit_96359a46" formatted="false">"Ipoteză · cifră ipotetică"</string>
     <string name="msg_assumption_rejected_real_candidates_restored_caacb3e5" formatted="false">"Ipoteză respinsă · candidații reali restabiliți"</string>
     <string name="msg_at_least_0_97d2bf6f" formatted="false">"cel puțin %1$s"</string>
     <string name="msg_auto_photo_48b85e6f" formatted="false">"Fotografie automată"</string>
@@ -101,7 +101,7 @@
     <string name="msg_cancel_19766ed6" formatted="false">"Anulați"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidați %1$s"</string>
     <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
-    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Înlănțuiți un cifru prin unitățile unde are doar două poziții, colorați lanțul în două culori alternante — una dintre culori este adevărată pe tot parcursul."</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Înlănțuiți o cifră prin unitățile unde are doar două poziții, colorați lanțul în două culori alternante — una dintre culori este adevărată pe tot parcursul."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Legând în lanț pozițiile lui %1$s din unitățile în care are doar două poziții posibile, aceste celule primesc două culori alternante, dintre care una indică poziții corecte în întregul lanț. Două celule de cealaltă culoare se află pe același rând, ceea ce este imposibil - așadar, acea culoare indică poziții incorecte, iar %2$s se elimină din toate celulele de acea culoare."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Legând în lanț pozițiile lui %1$s din unitățile în care are doar două poziții posibile, aceste celule primesc două culori alternante, dintre care una indică poziții corecte în întregul lanț. Două celule de cealaltă culoare se află în același bloc, ceea ce este imposibil - așadar, acea culoare indică poziții incorecte, iar %2$s se elimină din toate celulele de acea culoare."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Legând în lanț pozițiile lui %1$s din unitățile în care are doar două poziții posibile, aceste celule primesc două culori alternante, dintre care una indică poziții corecte în întregul lanț. Două celule de cealaltă culoare se află în aceeași coloană, ceea ce este imposibil - așadar, acea culoare indică poziții incorecte, iar %2$s se elimină din toate celulele de acea culoare."</string>
@@ -241,12 +241,12 @@
     <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", ipotetic %1$s, nu este un răspuns introdus"</string>
     <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Dacă %1$s cifre dintr-un rând, coloană sau casetă pot fi plasate doar în aceleași %2$s celule, acele celule nu pot conține nimic altceva."</string>
     <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Dacă %1$s celule dintr-un rând, coloană sau casetă împărtășesc exact %2$s candidați între ele, acele cifre aparțin acelor celule și nu altora din unitate."</string>
-    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Dacă un cifru are două poziții într-un rând și două într-o coloană, iar câte una din fiecare împărtășesc o casetă, una dintre celelalte două trebuie să îl conțină."</string>
-    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Dacă un cifru are două poziții în fiecare dintre două rânduri și acestea împărtășesc o coloană, una dintre celelalte două poziții trebuie să îl conțină."</string>
-    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Dacă singurele poziții ale unui cifru de-a lungul unei linii se află toate în aceeași casetă, acel cifru poate fi exclus din restul acelei casete."</string>
-    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Dacă singurele poziții ale unui cifru în %1$s rânduri se află în aceleași %2$s coloane, poate fi exclus din acele coloane în altă parte — și la fel cu rândurile și coloanele inversate."</string>
-    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Dacă singurele poziții ale unui cifru în interiorul unei casete se află pe aceeași linie, acel cifru poate fi exclus din restul acelei linii."</string>
-    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Dacă presupunerea că un cifru duce la o celulă fără nicio valoare posibilă, acel cifru era greșit."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Dacă o cifră are două poziții într-un rând și două într-o coloană, iar câte una din fiecare se află în aceeași casetă, una dintre celelalte două trebuie să o conțină."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Dacă o cifră are două poziții în fiecare dintre două rânduri și câte o poziție din fiecare rând se află în aceeași coloană, una dintre celelalte două poziții trebuie să o conțină."</string>
+    <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Dacă singurele poziții ale unei cifre de-a lungul unei linii se află toate în aceeași casetă, acea cifră poate fi exclusă din restul acelei casete."</string>
+    <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Dacă singurele poziții ale unei cifre în %1$s rânduri se află în aceleași %2$s coloane, cifra poate fi exclusă din celelalte celule ale acelor coloane — și la fel cu rândurile și coloanele inversate."</string>
+    <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Dacă singurele poziții ale unei cifre în interiorul unei casete se află pe aceeași linie, acea cifră poate fi exclusă din restul acelei linii."</string>
+    <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Dacă presupunerea unei cifre într-o celulă duce la o celulă fără nicio valoare posibilă, acea cifră era greșită."</string>
     <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"dimensiunile imaginii trebuie să fie pozitive"</string>
     <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Într-un lanț de celule care conțin toți aceiași doi candidați, cele două capete ale unui lanț de lungime impară conțin cifre diferite."</string>
     <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"În aceste %1$s %2$s, %3$s poate merge doar în aceste %4$s %5$s. Între ele epuizează toate, deci %6$s poate fi exclus din acele %7$s în altă parte."</string>
@@ -268,7 +268,7 @@
     <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Se aplică într-un singur loc aici. Avansați pentru a-l vedea."</string>
     <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Nu se aplică nicăieri în această poziție."</string>
     <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Este singura poziție rămasă pentru %1$s în %2$s evidențiat."</string>
-    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Este celula încercuită.\n\nApăsați din nou Indiciu pentru cifru."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Este celula încercuită.\n\nApăsați din nou Indiciu pentru cifră."</string>
     <string name="msg_jellyfish_2f0a7632" formatted="false">"Meduza"</string>
     <string name="msg_keep_183f00f4" formatted="false">"Păstrați"</string>
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Mențineți lanțurile de forțare scurte"</string>
@@ -282,7 +282,7 @@
     <string name="msg_moderate_5c42afc7" formatted="false">"Mediu"</string>
     <string name="msg_more_d47d7cb0" formatted="false">"Mai mult"</string>
     <string name="msg_more_light_needed_4b4480e1" formatted="false">"Este nevoie de mai multă lumină"</string>
-    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Mai mult de un răspuns, deci un cifru tipărit a fost ratat. Apăsați Rezolvare pentru a vedea răspunsurile și unde diferă."</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Mai mult de un răspuns, deci o cifră tipărită a fost ratată. Apăsați Rezolvă pentru a vedea răspunsurile și unde diferă."</string>
     <string name="msg_move_back_f4d6dba8" formatted="false">"Mergeți înapoi"</string>
     <string name="msg_move_closer_1da054ae" formatted="false">"Apropiați-vă"</string>
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Apropiați-vă — grila este prea mică pentru a fi citită."</string>
@@ -291,7 +291,7 @@
     <string name="msg_naked_quad_73e85f9d" formatted="false">"Cvadruplu vizibil"</string>
     <string name="msg_naked_single_7205dfc4" formatted="false">"Single vizibil"</string>
     <string name="msg_naked_triple_4f3cc595" formatted="false">"Triplu vizibil"</string>
-    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Numiți tehnica și arătați celulele care o dovedesc, în loc să oferiți doar cifrul."</string>
+    <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Numiți tehnica și arătați celulele care o dovedesc, în loc să oferiți doar cifra."</string>
     <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"sunt necesare cel puțin 4 puncte, dar s-au primit %1$s"</string>
     <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Necesită confirmare"</string>
     <string name="msg_new_sudoku_7d90b23a" formatted="false">"Sudoku nou"</string>
@@ -314,10 +314,10 @@
     <string name="msg_nothing_unusual_43de65bb" formatted="false">"nimic neobișnuit"</string>
     <string name="msg_ok_565339bc" formatted="false">"OK"</string>
     <string name="msg_one_7692c3ad" formatted="false">"una"</string>
-    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"O celulă părea a fi un cifru tipărit, dar nu este."</string>
-    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Un cifru tipărit a fost corectat automat."</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"O celulă părea a fi o cifră tipărită, dar nu este."</string>
+    <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"O cifră tipărită a fost corectată automat."</string>
     <string name="msg_one_square_238078b4" formatted="false">"o celulă"</string>
-    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Doar %1$s poate merge aici — fiecare alt cifru apare deja în acest rând, coloană sau casetă."</string>
+    <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Doar %1$s poate merge aici — fiecare altă cifră apare deja în acest rând, coloană sau casetă."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Doar %1$s poate apărea aici. Celulele evidențiate conțin %2$s dintre celelalte opt cifre; %3$s a fost eliminat anterior din această celulă, nu pe baza a ceva vizibil în jurul ei."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Aici poate fi doar %1$s. Celulele evidențiate conțin patru dintre celelalte opt cifre; %2$s au fost eliminate anterior din această celulă, nu pe baza a ceea ce se vede în jurul ei."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Aici poate fi doar %1$s. Celulele evidențiate conțin șase dintre celelalte opt cifre; %2$s au fost eliminate anterior din această celulă, nu pe baza a ceea ce se vede în jurul ei."</string>
@@ -423,7 +423,7 @@
     <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Răspuns asistat de rezolvitor: plasați %1$s în %2$s. Candidații sunt %3$s. Tehnicile acceptate de aplicație nu au găsit o mutare din această poziție. Căutarea a găsit %4$s în soluția unică; o demonstrație detaliată a ramurilor de căutare nu este disponibilă."</string>
     <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nRăspuns asistat de rezolvitor: tehnicile acceptate de aplicație nu au găsit o mutare. Nu există o demonstrație detaliată disponibilă."</string>
     <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Eliminare asistată de rezolvitor: o căutare exclude %1$s în celula evidențiată, dar aplicația nu a putut produce o urmă de contradicție scurtă de afișat. Nu există o demonstrație detaliată disponibilă."</string>
-    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Unele celule pot conține notițe mai degrabă decât un cifru complet."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Unele celule pot conține notițe mai degrabă decât o cifră completă."</string>
     <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Unele cifre nu au fost citite cu certitudine."</string>
     <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Ceva a mers greșit la citirea acelei fotografii."</string>
     <string name="msg_square_c11092bc" formatted="false">"Celulă"</string>
@@ -524,7 +524,7 @@
     <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Acest puzzle are mai mult de un răspuns, deci probabil un cifru tipărit a fost ratat. Se afișează răspunsul %1$s din %2$s — apăsați din nou Rezolvare pentru următorul. Celulele încercuite diferă între răspunsurile afișate."</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Fotografia acestui puzzle nu a putut fi deschisă."</string>
     <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Acest raționament exclude %1$s existente "</string>
-    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Această celulă poate conține notițe de candidați mai degrabă decât un cifru complet. Vă rugăm verificați-o."</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Această celulă poate conține notițe de candidați mai degrabă decât o cifră completă. Vă rugăm verificați-o."</string>
     <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Această vizualizare include eliminări anterioare de candidați. Deschideți dovezile lor de mai jos pentru a le verifica."</string>
     <string name="msg_three_8b5b9db0" formatted="false">"trei"</string>
     <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Prea întuneric pentru a distinge liniile grilei"</string>
@@ -544,8 +544,8 @@
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versiune de format de model neacceptată"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Nesigur"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Folosiți limba dispozitivului"</string>
-    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Folosind %1$s, atingeți o celulă din care poate fi eliminat un candidat, apoi alegeți acel cifru."</string>
-    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Folosind %1$s, atingeți celula pe care o puteți completa, apoi alegeți cifrul."</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Folosind %1$s, atingeți o celulă din care poate fi eliminat un candidat, apoi alegeți acea cifră."</string>
+    <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Folosind %1$s, atingeți celula pe care o puteți completa, apoi alegeți cifra."</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Foarte greu"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"Aripă W"</string>
