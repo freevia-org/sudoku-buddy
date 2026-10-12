@@ -2,36 +2,38 @@
 
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 10 October 2026, after renewed release work. **Main is at
-`786402d57b01bc623cc6940492ff75deb658e96e`. Candidate workflow [38038748245](https://github.com/freevia-org/sudoku-buddy/actions/runs/38038748245)
-passed for code 126, AAB SHA-256
-`af1ca3b6e979745213df54d55afa84a518dc5aa999b8abc2a1014a82425125f0`; this artifact predates
-the current location-disclosure update and must be replaced by a fresh code-126 candidate after
-the documentation change is merged. The live privacy page now describes Cloudflare's possible
-IP-derived approximate location processing and its service-provider role. Data Safety answers
-are saved as a draft in Publishing overview: optional approximate location for security;
-optional Photos, Other user-generated content and Other actions for Analytics; no third-party
-sharing and no Diagnostics. Internal testing is still inactive with candidate 125 in the draft
-track and 2 of 3 setup tasks complete. Real app submission/deletion and Play-delivered install
-remain untested. The full store description remains a draft. Production is inactive, 0 of 5
-tasks complete.**
+Updated 12 October 2026 after merge of translation PR #36 and the Brazilian Portuguese
+source-override fix PR #37. **Main is at `a2e1bdf13542bb5422c0eca092d37ffdb6243ed5`. Candidate workflow
+[38266723323](https://github.com/freevia-org/sudoku-buddy/actions/runs/38266723323) passed
+for version code 131, built from merged app commit `14eb57e2dc8c66cc042e0d62860cdcc474213b6a`.
+The AAB SHA-256 is `d6e289151736ad03aa58886d327f7fa1b03b7d0dc9af8c5c2fbe9567e52764a9`; its
+checksum inventory, signing certificate and native alignment evidence were verified. Version
+131 is published to Internal testing for the five configured testers. Production version 131
+replaces 130 in review for a 100% rollout across 178 countries/regions. Managed publishing is
+off, so Google approval will publish it automatically. Quick checks are running. The release
+has no blocking errors; Play warns that deobfuscation mapping and native debug-symbol files are
+absent. The candidate's emulator check used the updated debug app with Romanian selected; this
+does not verify a Play-delivered install, physical-device behavior, or actual report submission.
+Linguistic review remains model-assisted and partial: 39 confirmed fixes were applied, but the
+other locale content, including consent/privacy and advanced tutor explanations, has not
+received equivalent native-speaker review.
 
 ## Current training-release evidence
 
 | Area | Evidence and limit |
 | --- | --- |
-| Reviewed source | Current main is `786402d57b01bc623cc6940492ff75deb658e96e`; the pending policy-doc update must be merged before rebuilding the distributable candidate. |
-| Packaged candidate identity | Workflow [38038748245](https://github.com/freevia-org/sudoku-buddy/actions/runs/38038748245) passed for code 126; AAB SHA-256 `AF1CA3B6E979745213DF54D55AFA84A518DC5AA999B8ABC2A1014A82425125F0`. It is an offline artifact predating the location-disclosure update. The release record marks it **NOT APPROVED FOR DISTRIBUTION**. The stable upload certificate matches SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. Static bundle checks passed; device tests and Play approval are separate. |
+| Reviewed source | Main is `a2e1bdf13542bb5422c0eca092d37ffdb6243ed5`; translation PR #36 and the Brazilian Portuguese override fix PR #37 are merged. |
+| Packaged candidate identity | Workflow [38266723323](https://github.com/freevia-org/sudoku-buddy/actions/runs/38266723323) passed for code 131 from app commit `14eb57e2dc8c66cc042e0d62860cdcc474213b6a`; AAB SHA-256 `d6e289151736ad03aa58886d327f7fa1b03b7d0dc9af8c5c2fbe9567e52764a9`. Package checks confirm the stable upload certificate and native alignment. It is live on Internal testing and in Production review; Play-delivered installation and actual report-submission behavior remain untested. |
 | Build and review process | After any release-relevant source or disclosure change, build with `play-candidate.yml` using a code greater than every code uploaded to Play; verify the sealed candidate and checks artifacts independently. A successful workflow does not establish device qualification, live backend behavior or Play-delivered installation. |
 | Superseded initial training build | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) built code 125 from `46831610f88d37ee4d73867da14b2bc0c182710f` before the handoff refresh. That specific package embeds the earlier documents and is superseded as a publishing handoff. This historical limitation does not describe every later package using code 125. Preserve that run's inventory unchanged and distinguish builds by source, run and AAB hash, not version code alone. |
 | Signing | Keep the existing stable upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key is needed. |
-| Play state | Internal testing remains **Inactive / Draft**, release `1.0.0 (125) — Internal test`, candidate 125 only, 2 of 3 tasks complete. Candidate 126 has not been uploaded. Preview shows no errors and two non-blocking warnings (no deobfuscation mapping and no native debug symbols). The final **Save and publish** action has not been taken. |
-| Listing and declarations | The full en-US store description and updated Data Safety declaration are saved as drafts; neither has been sent for review. The draft lists Approximate location as optional/security; Photos, Other user-generated content and Other actions as optional/Analytics; no third-party sharing; no Diagnostics. |
-| Production | Inactive, 0 of 5 tasks complete: select countries/regions, create release, preview/confirm, send for review, publish. Managed publishing is off. The user explicitly requested Play Store publication; continue through these tasks after internal-test qualification. |
-| Public copy | `https://freevia.org/sudoku-buddy/privacy/` was updated and verified on 10 October. It explains report payload/retention/deletion and Cloudflare's possible IP-derived approximate location handling. The tracked policy source is being updated to match. |
+| Play state | Internal testing has published `1.0.0 (131)` to the five configured testers. Production `1.0.0 (131)` is submitted for 100% rollout in 178 regions, replacing 130; Google quick checks are running. Managed publishing is off; approval publishes automatically. No blocking errors; two non-blocking warnings (no deobfuscation mapping and no native debug symbols). |
+| Listing and declarations | The en-US listing and Data Safety declaration are included in the version 131 submission under review; the Release session confirmed no unsent console changes. Recheck the published listing and declarations after approval. |
+| Production | Version 131 is in review for a 100% rollout across 178 countries/regions. Managed publishing is off. Google approval will publish automatically. |
+| Public copy | `https://freevia.org/sudoku-buddy/privacy/` and `docs/privacy-policy.md` were reviewed on 10 October. The page explains report payload/retention/deletion and Cloudflare's possible IP-derived approximate location handling. Recheck the live page before future release changes. |
 | Feedback API verification | The Worker passes 27/27 API tests; Wrangler 4.149.0 dry-run packages all four expected bindings. On 10 October, private Standard bucket `sudoku-buddy-training-examples` was created and Worker version `f40e9ee7-18c7-492e-96c9-e150c519a1a1` deployed. A synthetic 8-byte ZIP with exact training consent returned `201 accepted`; DELETE for its SHA-256 receipt returned `200 deleted`. A second synthetic ZIP without consent also returned `201 accepted` and `200 deleted`. No real photo was uploaded. A KV key listing found no `reports/` keys during cutover verification. The R2 dashboard confirmed public access disabled and 0 B stored after the tests. This does not test Android submission, live retries, partial failures, concurrent upload/delete, or expiry timing. |
 
-## Current physical camera smoke test
+## Latest physical camera smoke test (10 October; v125-source debug build)
 
 On 10 October, the OnePlus CPH2449 running Android 16/API 36 was tested with the
 separate v125-source debug package. Camera auto-capture remained off. A manual capture

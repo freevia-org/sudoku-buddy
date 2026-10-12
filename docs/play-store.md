@@ -1,16 +1,16 @@
 # Getting Sudoku Buddy onto Google Play
 
-The store-description text below is a draft. Review it against the release build, published
-privacy policy and final Play Data safety answers before saving or submitting it.
+The listing copy below reflects the current English store text. Check it against the signed
+release, published privacy policy and submitted Play Data Safety answers before making future
+listing changes.
 
-Current status (10 October 2026): the app record, listing, privacy URL, declarations and
-IARC rating were previously completed per the release handoff. The release-preparation
-branch now integrates the report intake; saved answers and the live privacy page must be
-reconciled with the final signed app before submission. Use
-[the final-build checklist](play-release-readiness.md) for remaining work and blockers.
-The notes below are historical preparation references, not authorization to upload or publish.
+Current status (12 October 2026): version 131 is live on Internal testing and in Production
+review for a 100% rollout across 178 countries/regions. Managed publishing is off; Google
+approval will publish automatically. The app supports 71 locales, with model-assisted
+translation review that remains partial. See [the final-build checklist](play-release-readiness.md)
+for candidate identity, validation evidence and remaining qualification limits.
 
-This reference is updated to the release-preparation state on 10 October 2026.
+This reference reflects the version 131 submission as of 12 October 2026.
 
 ## Done in the repository
 
