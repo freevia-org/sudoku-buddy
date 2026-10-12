@@ -29,10 +29,11 @@ change before release. [See more on the website](https://freevia.org/sudoku-budd
 
 ## Get the app
 
-**Google Play — Android:** The first release is in preparation, but there is
-no public download yet. It is planned to be free for Android 8.0+ phones with
-a camera. This repository is not a Play-approved release or an invitation to
-install an unverified build.
+**Google Play — Android:** [Join the internal test with an invited Google account](https://play.google.com/apps/internaltest/4701554944860354114).
+Android 1.0.0 (build 132) is available to invited testers with Android 8.0+
+and a camera. The production release is in Google review; the
+[public Play listing](https://play.google.com/store/apps/details?id=org.freevia.sudokubuddy)
+may not open until approval. No public APK is published in this repository.
 
 ## What it helps you do
 
