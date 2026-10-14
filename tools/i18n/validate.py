@@ -33,6 +33,8 @@ def validate():
             assert value.strip('"').strip(), f"{language}/{key}: empty translation"
             assert not re.search(r"ZXQ|98765\d", value), f"{language}/{key}: leftover marker"
             assert literal_notation(source) == literal_notation(decoded[key]), f"{language}/{key}: changed candidate set or email"
+            for boundary in (r"^\s*", r"\s*$"):
+                assert re.search(boundary, source).group() == re.search(boundary, decoded[key]).group(), f"{language}/{key}: changed fragment spacing"
             for brand in ("Sudoku Buddy", "Freevia"):
                 assert source.count(brand) == brand_count(decoded[key], brand, language), f"{language}/{key}: changed brand"
             if "\n" in source and "\\n" not in source:

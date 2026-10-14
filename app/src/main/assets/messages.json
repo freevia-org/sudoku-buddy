@@ -336,8 +336,8 @@
     "key": "msg_choose_language_bba5b40b"
   },
   {
-    "source": "Choose what to be shown",
-    "key": "msg_choose_what_to_be_shown_f65369ae"
+    "source": "Choose what to show",
+    "key": "msg_choose_what_to_show_baee168f"
   },
   {
     "source": "Close",
@@ -520,8 +520,8 @@
     "key": "msg_every_square_is_filled_but_0_answers_disagree_f302089b"
   },
   {
-    "source": "Every sudoku with one answer can be reached by reasoning; guessing is never required and rarely helps. These are the ways of reasoning this app can recognise and explain, easiest first. Where one of them applies to the puzzle you have open, it will show you every place it does.",
-    "key": "msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947"
+    "source": "Every sudoku with one answer can be solved by reasoning; guessing is never required and rarely helps. These are the ways of reasoning this app can recognise and explain, easiest first. Where one of them applies to the puzzle you have open, it will show you every place it does.",
+    "key": "msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3"
   },
   {
     "source": "Everything you have written so far is right.",
@@ -828,8 +828,8 @@
     "key": "msg_licenses_6d5d9004"
   },
   {
-    "source": "Look along one row, column or box for squares with only a few candidates left. Take {0} of them and pool their candidates. If the pool has exactly {1} digits in it, those {2} digits are spoken for: they have to go in those {3} squares in some order, even though you cannot yet say which goes where.\n\nThat is enough. Every other square in the unit can give those digits up, and it is usually one of those squares that then becomes a single.\n\nThe squares do not all need the same candidates - {2,7}, {2,9} and {7,9} is a perfectly good triple, and is the one people miss.",
-    "key": "msg_look_along_one_row_column_or_box_for_squares__4b2af927"
+    "source": "Look along one row, column or box for squares with only a few candidates left. Take {0} of them and pool their candidates. If the pool has exactly {1} digits in it, those {2} digits are spoken for: they have to go in those {3} squares in some order, even though you cannot yet say which goes where.\n\nThat is enough. Every other square in the unit can give those digits up, and it is usually one of those squares that then becomes a single.\n\nThe squares do not all need the same candidates - {2,7}, {2,9} and {7,9} form a perfectly good triple, and it is the one people miss.",
+    "key": "msg_look_along_one_row_column_or_box_for_squares__c32f53ea"
   },
   {
     "source": "Look for squares holding the same two candidates - say {4,9} - that form a chain, each one seeing the next. Three is not enough; you need at least four.\n\nColour them alternately as you go. Because each square sees the next, no two neighbours can hold the same digit, so the chain reads 4, 9, 4, 9 the whole way along - or 9, 4, 9, 4, and you cannot tell which.\n\nEither way, two squares of opposite colours hold different digits between them: one is the 4 and one is the 9. So anything that can see both of them can be neither, and loses both candidates at once.\n\nThe pattern is easy to spot precisely because every square in it looks the same. Follow the identical pairs around the grid and see where they touch.",
@@ -1592,8 +1592,8 @@
     "key": "msg_that_square_is_already_filled_choose_an_empty_8a6c3da5"
   },
   {
-    "source": "The Y-wing with the pivot holding one candidate more. Look for a square with exactly three candidates, say {1,4,7}, that can see two two-candidate squares - one {1,7} and one {4,7}.\n\nNow all three of them can be 7, and one of them must be. So a square has to see all three to be ruled out, not just the two pincers - which in practice means it sits in the same box as the pivot and on a line with a pincer.\n\nFewer eliminations than a Y-wing, and easier to miss for the same reason: the pivot does not stand out.",
-    "key": "msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d"
+    "source": "The Y-wing with the pivot holding one candidate more. Look for a square with exactly three candidates, say {1,4,7}, that can see two two-candidate squares - one {1,7} and one {4,7}.\n\nNow all three of them can be 7, and one of them must be. So a square has to see all three for 7 to be ruled out of it, not just the two pincers - which in practice means it sits in the same box as the pivot and on a line with a pincer.\n\nFewer eliminations than a Y-wing, and easier to miss for the same reason: the pivot does not stand out.",
+    "key": "msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6"
   },
   {
     "source": "The assumption has been rejected. We return to the real candidates and cross out {0} in the marked square. The hypothetical digits are cleared.",
@@ -1836,8 +1836,8 @@
     "key": "msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd"
   },
   {
-    "source": "Work digit by digit rather than square by square. For one unit, write down where each missing digit could still go. Then look for {0} digits whose lists between them cover only {1} squares.\n\nThose {2} digits have to fill those {3} squares, so everything else in them can be crossed out - which often turns one of them into a naked single or a naked pair on the spot.\n\nThis is the one people find hardest, because there is nothing to see when you look at the squares: they still have plenty of candidates. The pattern is in the digits.",
-    "key": "msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0"
+    "source": "Work digit by digit rather than square by square. For one unit, write down where each missing digit could still go. Then look for {0} digits whose lists between them cover only {1} squares.\n\nThose {2} digits have to fill those {3} squares, so everything else in them can be crossed out - which often produces a naked single in one of them or a naked pair across two of them on the spot.\n\nThis is the one people find hardest, because there is nothing to see when you look at the squares: they still have plenty of candidates. The pattern is in the digits.",
+    "key": "msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b"
   },
   {
     "source": "Work only with squares that have exactly two candidates left.\n\nStart at one, say {2,6}, and suppose it is not the 2 - then it is the 6. Move to a square it can see that also has a 6, say {6,4}: that one cannot be the 6, so it is the 4. Move to a square that one sees holding a 4, and carry on, each step forced by the one before.\n\nIf you reach a square whose other digit is 2 - the digit you started by ruling out - you are done. Either the first square was a 2 after all, or the chain ran and the last square is a 2. One end or the other holds it, so anything seeing both ends cannot.\n\nKeep the chains short. Four or five squares is findable with a pencil; past that you are doing bookkeeping, and a forcing chain is the honest name for it.",
@@ -2292,8 +2292,8 @@
     "key": "msg_0_squares_57c6f9ba"
   },
   {
-    "source": "{0} steps make up this route, the hardest supported technique a {1}. {2} {3}",
-    "key": "msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d"
+    "source": "{0} steps make up this route, with {1} as the hardest supported technique. {2} {3}",
+    "key": "msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3"
   },
   {
     "source": "{0} triple",

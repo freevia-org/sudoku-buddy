@@ -684,7 +684,7 @@ object PuzzleLogic {
         if (walkthrough == null || walkthrough.isEmpty) return null
         val total = walkthrough.steps.size
         val places = walkthrough.steps.count { it is Deduction.Placement }
-        val hardest = walkthrough.hardestTechnique?.lowercase() ?: "nothing unusual"
+        val hardest = walkthrough.hardestTechnique ?: "nothing unusual"
 
         // What the steps DO matters more than how many there are. A run of eliminations
         // reads as a list of unrelated facts unless it is said in advance that none of
@@ -712,7 +712,7 @@ object PuzzleLogic {
                 "need solver-assisted answers because the app's supported techniques " +
                 "did not find a move. Their detailed search proofs are unavailable."
         }
-        return "$total steps make up this route, the hardest supported technique a $hardest. " +
+        return "$total steps make up this route, with $hardest as the hardest supported technique. " +
             "$shape $ending"
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
-    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nIzceltās šūnas to pierāda.\n\nNospiediet Mājiens vēlreiz, lai parādītu, kura šūna."</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nIzceltās šūnas to pierāda.\n\nNospiediet Mājiens vēlreiz, lai redzētu, kura šūna."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"Gan %1$s, gan %2$s iespējami tikai %3$s un %4$s. Šajā vienībā (%5$s) ciparam %6$s ir tikai divas vietas, un katru redz viens no šiem galiem — tātad vienā no šīm vietām ir %7$s, un galā, kas to redz, jābūt %8$s. Abos gadījumos vienā galā ir %9$s, kas izslēdz %10$s no visām šūnām, kas redz abus galus."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"Gan %1$s, gan %2$s var būt tikai %3$s vai %4$s. Šajā blokā %5$s ir tikai divas iespējamās vietas, un katrai no abām sākotnējām šūnām ar vienu no tām ir kopīga rinda, kolonna vai bloks. Tāpēc vienā no šīm divām vietām ir %6$s, un ķēdes galā, kuram ar šo vietu ir kopīga rinda, kolonna vai bloks, jābūt %7$s. Abos gadījumos vienā galā ir %8$s, kas izslēdz %9$s no visām šūnām, kurām ar abiem galiem ir kopīga rinda, kolonna vai bloks."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"Gan %1$s, gan %2$s var būt tikai %3$s vai %4$s. Šajā kolonnā %5$s ir tikai divas iespējamās vietas, un katrai no abām sākotnējām šūnām ar vienu no tām ir kopīga rinda, kolonna vai bloks. Tāpēc vienā no šīm divām vietām ir %6$s, un ķēdes galā, kuram ar šo vietu ir kopīga rinda, kolonna vai bloks, jābūt %7$s. Abos gadījumos vienā galā ir %8$s, kas izslēdz %9$s no visām šūnām, kurām ar abiem galiem ir kopīga rinda, kolonna vai bloks."</string>
@@ -25,7 +25,7 @@
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s jāievieto šeit: tā ir vienīgā šūna šajā blokā %2$s, kurā vēl var būt %3$s.\n\n%4$s\n\n%5$s pašlaik pieļauj %6$s, bet katrā blokā %7$s jābūt tieši vienu reizi. Tāpēc ievieto %8$s rindā %9$s, kolonnā %10$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s jāievieto šeit: tā ir vienīgā šūna šajā rindā %2$s, kurā vēl var būt %3$s.\n\n%4$s\n\n%5$s pašlaik pieļauj %6$s, bet katrā rindā %7$s jābūt tieši vienu reizi. Tāpēc ievieto %8$s rindā %9$s, kolonnā %10$s."</string>
     <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"Ciparam %1$s ir divas vietas šajā rindā un divas šajā kolonnā. %2$s un %3$s atrodas vienā blokā, tāpēc abās nevar būt %4$s — tātad vienā no %5$s un %6$s ir šis cipars, un %7$s tiek izslēgts no visām šūnām, kas redz tās abas."</string>
-    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s tajā pašā %2$s."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s tajā pašā vienībā (%2$s)."</string>
     <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s tajā pašā blokā."</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s tajā pašā kolonnā."</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s tajā pašā rindā."</string>
@@ -49,8 +49,8 @@
     <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s četrinieks"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s noraidīti fotoattēli, jaunākie vispirms:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: izslēgt %2$s"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"Rūtiņu skaits: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Šo risināšanas ceļu veido %1$s soļi; grūtākais atbalstītais paņēmiens ir %2$s. %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"Šūnu skaits: %1$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"Šo risināšanas ceļu veido %1$s soļi; grūtākais atbalstītais paņēmiens ir %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s trijnieks"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s tika izslēgts no %2$s iepriekšējā spriešanā par kandidātiem."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s ierakstīti"</string>
@@ -110,13 +110,13 @@
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Veidojot %1$s ķēdi caur grupām, kur šim ciparam ir tikai divas iespējamās vietas, šīs šūnas tiek iekrāsotas divās mainīgās krāsās; vienas krāsas šūnas visas ir pareizas. Divas vienas krāsas šūnas atrodas vienā blokā, kas nav iespējams, tāpēc šī krāsa ir nepareizā un %2$s tiek izslēgts no visām šīs krāsas šūnām."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Veidojot %1$s ķēdi caur grupām, kur šim ciparam ir tikai divas iespējamās vietas, šīs šūnas tiek iekrāsotas divās mainīgās krāsās; vienas krāsas šūnas visas ir pareizas. Divas vienas krāsas šūnas atrodas vienā kolonnā, kas nav iespējams, tāpēc šī krāsa ir nepareizā un %2$s tiek izslēgts no visām šīs krāsas šūnām."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Veidojot %1$s ķēdi caur grupām, kur šim ciparam ir tikai divas iespējamās vietas, šīs šūnas tiek iekrāsotas divās mainīgās krāsās; vienas krāsas šūnas visas ir pareizas. Divas vienas krāsas šūnas atrodas vienā rindā, kas nav iespējams, tāpēc šī krāsa ir nepareizā un %2$s tiek izslēgts no visām šīs krāsas šūnām."</string>
-    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Neskaidrās rūtiņas pārbaudei: %1$s."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Pārbaudiet neskaidrās šūnas: %1$s."</string>
     <string name="msg_check_9d60841e" formatted="false">"Pārbaudīt"</string>
     <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Pārbaudiet vienu neskaidru šūnu."</string>
     <string name="msg_checked_correct_c690d1c3" formatted="false">", pārbaudīts — pareizi"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Izvēlieties kandidātu, lai redzētu, kāpēc tas nevar būt jūsu šūnā."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Izvēlēties valodu"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Izvēlēties, ko rādīt"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Izvēlēties, ko rādīt"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Aizvērt"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Aizvērt mājienu"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Sakļaut nolasīšanas pārskatu"</string>
@@ -127,11 +127,11 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Salīdzināt piespiedu ķēdes un dot priekšroku tām, kurās jāizseko mazāk šūnu. Īsākas ķēdes var nozīmēt vairāk soļu pilnā risinājumā."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Sekas %1$s no %2$s · hipotētiski cipari"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"satur"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Satura tips"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Turpināt ar pilnu risināšanas gaitu"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Pretruna · pieņēmums neiztur pārbaudi"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", pretruna"</string>
-    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Pretruna: sarkanajā %1$s vairs nav vietas ciparam %2$s. Tas nav iespējams, tāpēc sākotnējais pieņēmums ir aplams."</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Pretruna: sarkanajā vienībā (%1$s) vairs nav vietas ciparam %2$s. Tas nav iespējams, tāpēc sākotnējais pieņēmums ir aplams."</string>
     <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Pretruna: sarkanajā šūnā nav palicis neviens kandidāts. Tas nav iespējams, tāpēc sākotnējais pieņēmums ir aplams."</string>
     <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Kopēt dzēšanas pieprasījumu"</string>
     <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Pareizi. Salīdziniet savus spriedumus ar tālāk sniegto skaidrojumu."</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Neizdevās saglabāt atkļūdošanai paredzētos uzņemšanas pierādījumus"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Neizdevās iesniegt nolasīšanas rezultātu. Mēģiniet vēlreiz, kad ir savienojums."</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Strupceļš"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"DZĒST"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Dzēst"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Dzēst ziņojumu"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Dzēst šo fotoattēlu"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Aprakstiet, kas notika un kā to atkārtot. Norādiet, vai vispirms pārbaudījāt un izlabojāt atpazītos ciparus. Ja iesniedzat ideju, rakstiet \'Nav attiecināms\'."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", šī mājiena mērķa šūna"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Ierīce: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostika saīsināta, lai ietilptu pārlūka melnrakstā. Lietotnes darbība Nosūtīt diagnostiku ļauj kopīgot pilnu ziņojumu."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostika saīsināta, lai ietilptu pārlūka melnrakstā. Lietotnes darbība Nosūtīt diagnostikas datus ļauj kopīgot pilnu ziņojumu."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"ciparam jābūt 1..9, bet tas bija %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Cipari nav nolasīti"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Pierādījumu saglabāšana diskā ietekmē laiku; tas nav aiztures veiktspējas tests."</string>
@@ -174,19 +174,19 @@
     <string name="msg_empty_8a112150" formatted="false">"Tukša."</string>
     <string name="msg_empty_c6c094bc" formatted="false">"Tukša"</string>
     <string name="msg_english_ba118bf7" formatted="false">"Angļu"</string>
-    <string name="msg_entries_that_disagree_09b28420" formatted="false">"nesakrītoši ieraksti"</string>
-    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"nesakrītošs ieraksts"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"nesakrītošus ierakstus"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"nesakrītošu ierakstu"</string>
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Katrs no tiem aizpilda vienu šūnu."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Visas šūnas ir aizpildītas, bet %1$s atbildes neatbilst risinājumam."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Visas šūnas ir aizpildītas, bet viena atbilde neatbilst risinājumam."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Katru sudoku ar vienu risinājumu var atrisināt loģiski; minēšana nekad nav nepieciešama un reti palīdz. Šie ir spriešanas paņēmieni, ko lietotne spēj atpazīt un izskaidrot, sākot ar vienkāršākajiem. Ja kāds no tiem ir piemērojams atvērtajai mīklai, lietotne parādīs visas vietas, kur tas der."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Katru sudoku ar vienu risinājumu var atrisināt loģiski; minēšana nekad nav nepieciešama un reti palīdz. Šie ir spriešanas paņēmieni, ko lietotne spēj atpazīt un izskaidrot, sākot ar vienkāršākajiem. Ja kāds no tiem ir piemērojams atvērtajai mīklai, lietotne parādīs visas vietas, kur tas der."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Viss, ko līdz šim esat ierakstījis, ir pareizi."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Pašlaik pieejamie piemēri: katrs sākas no jūsu pašreizējā režģa."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"gaidītas 10 horizontālas līnijas, saņemtas %1$s"</string>
     <string name="msg_expected_10_vertical_lines_got_0_68541f8c" formatted="false">"gaidītas 10 vertikālas līnijas, saņemtas %1$s"</string>
     <string name="msg_expected_81_cells_but_got_0_f4d6810b" formatted="false">"gaidīta 81 šūna, saņemtas %1$s"</string>
     <string name="msg_expected_81_cells_in_each_block_found_0_and_1_30138a67" formatted="false">"gaidīta 81 šūna katrā blokā, atrastas %1$s un %2$s"</string>
-    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"gaidīts 8 bitu viens kanāls, bet saņemts %1$s"</string>
+    <string name="msg_expected_8_bit_single_channel_but_got_0_07bffea9" formatted="false">"gaidīts 8 bitu vienkanāla attēls, bet saņemts %1$s"</string>
     <string name="msg_expected_a_28x28_image_but_got_0_values_b5ca205e" formatted="false">"gaidīts 28x28 attēls, bet saņemtas %1$s vērtības"</string>
     <string name="msg_expected_behavior_or_proposed_improvement_045feb4e" formatted="false">"## Sagaidāmā darbība vai ierosinātais uzlabojums"</string>
     <string name="msg_expected_ten_lines_each_way_eb07f630" formatted="false">"gaidītas desmit līnijas katrā virzienā"</string>
@@ -209,7 +209,7 @@
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia apstiprināja dzēšanu, taču šajā tālrunī neizdevās noņemt vietējo kvīti. Mēģiniet vēlreiz, lai pabeigtu vietējo datu dzēšanu."</string>
     <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia dzēsīs šo ziņojuma redakciju un tās privāto apmācības kopiju. Turpmākie labojumi var izveidot jaunu ziņojumu atbilstoši jūsu kopīgošanas iestatījumiem. Modelis, kas ar to jau apmācīts, var saglabāt apgūtās izmaiņas."</string>
     <string name="msg_full_route_891b475b" formatted="false">"Pilna risināšanas gaita"</string>
-    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Turpmāk neskaidras nolasīšanas gadījumā iztaisnotais mīklas fotoattēls, atpazīšanas rezultāti un labojumi tiks nosūtīti Freevia analīzei un apmācībai. Apmācības kopijas tiek glabātas, līdz tās izdzēš sadaļā Iesniegumu kvītis; apmācīts modelis var saglabāt apgūtās izmaiņas. Ja neskaidra mīkla jau ir atvērta, tā tiks nosūtīta tagad. To var izslēgt iestatījumos."</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Turpmāk neskaidras nolasīšanas gadījumā iztaisnotais mīklas fotoattēls, atpazīšanas rezultāti un labojumi tiks nosūtīti Freevia analīzei un apmācībai. Apmācības kopijas tiek glabātas, līdz tās izdzēš sadaļā Iesniegšanas kvītis; apmācīts modelis var saglabāt apgūtās izmaiņas. Ja neskaidra mīkla jau ir atvērta, tā tiks nosūtīta tagad. To var izslēgt iestatījumos."</string>
     <string name="msg_gentle_96124817" formatted="false">"Viegla"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Atspīdums izbalina līnijas — pagrieziet lapu prom no gaismas"</string>
     <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"Pelēktoņu attēls(%1$sx%2$s)"</string>
@@ -225,7 +225,7 @@
     <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Paslēpt iepriekšējo pamatojumu"</string>
     <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Paslēpt atpazīšanas norādes"</string>
     <string name="msg_hint_0_bc1ead3f" formatted="false">", mājiens %1$s"</string>
-    <string name="msg_hint_a7b4cf9f" formatted="false">"Padoms"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Mājiens"</string>
     <string name="msg_hint_proof_b2b8f969" formatted="false">"Mājiena pierādījums"</string>
     <string name="msg_hint_reasoning_2548bea0" formatted="false">"Mājiena pamatojums"</string>
     <string name="msg_hold_still_0a934617" formatted="false">"Nekustieties..."</string>
@@ -252,29 +252,29 @@
     <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Šajās %1$s %2$s cipars %3$s var atrasties tikai šajās %4$s %5$s. Kopā tās aizņem visas iespējas, tāpēc %6$s var izslēgt no visām pārējām šo %7$s šūnām."</string>
     <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Šajās %1$s kolonnās %2$s var atrasties tikai šajās %3$s rindās. Kopā tie aizņem visas šīs rindas, tāpēc %4$s var izslēgt no visām pārējām šo rindu šūnām."</string>
     <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Šajās %1$s rindās %2$s var atrasties tikai šajās %3$s kolonnās. Kopā tie aizņem visas šīs kolonnas, tāpēc %4$s var izslēgt no visām pārējām šo kolonnu šūnām."</string>
-    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Šajās divās %1$s ciparam %2$s katrā ir tikai divas vietas, un %3$s un %4$s atrodas kopīgā %5$s — tāpēc abās nevar būt %6$s. Tātad tas ir vienā no šūnām %7$s un %8$s, kas ļauj izslēgt %9$s no katras šūnas, kura redz abas."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Šajās divās vienībās (%1$s) ciparam %2$s katrā ir tikai divas vietas, un %3$s un %4$s atrodas kopīgā vienībā (%5$s) — tāpēc abās nevar būt %6$s. Tātad tas ir vienā no šūnām %7$s un %8$s, kas ļauj izslēgt %9$s no katras šūnas, kura redz abas."</string>
     <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"Katrā no šīm divām kolonnām %1$s ir tikai divas iespējamās vietas, un %2$s un %3$s atrodas vienā rindā, tāpēc abās nevar būt %4$s. Tātad vienā no šūnām %5$s un %6$s ir šis cipars, un tas izslēdz %7$s no visām šūnām, kurām ar abām ir kopīga rinda, kolonna vai bloks."</string>
     <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"Katrā no šīm divām rindām %1$s ir tikai divas iespējamās vietas, un %2$s un %3$s atrodas vienā kolonnā, tāpēc abās nevar būt %4$s. Tātad vienā no šūnām %5$s un %6$s ir šis cipars, un tas izslēdz %7$s no visām šūnām, kurām ar abām ir kopīga rinda, kolonna vai bloks."</string>
     <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"Šajā %1$s cipari %2$s var atrasties tikai šajās %3$s šūnās, tāpēc šīs šūnas ir aizņemtas. Tas ļauj no tām izslēgt %4$s."</string>
-    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Šajā %1$s cipars %2$s var atrasties tikai vienā blokā. Tātad %3$s atrodas šajā blokā uz šīs %4$s, un to var izslēgt no pārējām bloka šūnām."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"Šajā līnijā (%1$s) cipars %2$s var atrasties tikai vienā blokā. Tātad %3$s atrodas šīs līnijas (%4$s) daļā attiecīgajā blokā, un to var izslēgt no pārējām bloka šūnām."</string>
     <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Šajā blokā %1$s var atrasties tikai šajās %2$s šūnās, tāpēc šīs šūnas ir rezervētas šiem cipariem. Tas izslēdz %3$s no šīm šūnām."</string>
     <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Šajā kolonnā %1$s var atrasties tikai šajās %2$s šūnās, tāpēc šīs šūnas ir rezervētas šiem cipariem. Tas izslēdz %3$s no šīm šūnām."</string>
     <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Šajā rindā %1$s var atrasties tikai šajās %2$s šūnās, tāpēc šīs šūnas ir rezervētas šiem cipariem. Tas izslēdz %3$s no šīm šūnām."</string>
     <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Ietver to fotoattēlus, nolasīšanas rezultātus un labojumus. To var izslēgt iestatījumos."</string>
     <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Vienā blokā atrodiet ciparu, kas var būt tikai divās vai trijās šūnās, un pārbaudiet, vai tās visas atrodas vienā rindā vai vienā kolonnā. Ja tā ir, cipars noteikti atrodas kaut kur šajā līnijā — jūs nezināt, kur, bet zināt, ka šajā blokā. Tāpēc tas nevar atrasties citur tajā pašā līnijā ārpus bloka.\n\nŠis paņēmiens pats par sevi neko neievieto. Tas izslēdz kandidātus, lai citur parādītos vieninieks."</string>
-    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Šajā blokā %1$s var atrasties tikai šajā %2$s. Tātad %3$s ir kaut kur šeit, un to var izslēgt no pārējām %4$s šūnām."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Šajā blokā %1$s var atrasties tikai šajā līnijā (%2$s). Tātad %3$s ir kaut kur šeit, un to var izslēgt no pārējām šīs līnijas (%4$s) šūnām."</string>
     <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problēma vai ideja"</string>
     <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Šeit tas ir piemērojams %1$s vietās. Ejiet uz priekšu, lai tās izskatītu."</string>
     <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Šeit tas ir piemērojams vienā vietā. Ejiet uz priekšu, lai to apskatītu."</string>
     <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Šajā pozīcijā tas nav piemērojams nekur."</string>
-    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Tā ir vienīgā atlikusī vieta ciparam %1$s izceltajā %2$s."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Tā ir vienīgā atlikusī vieta ciparam %1$s izceltajā vienībā (%2$s)."</string>
     <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Tā ir apvilktā šūna.\n\nVēlreiz nospiediet Mājiens, lai uzzinātu ciparu."</string>
     <string name="msg_jellyfish_2f0a7632" formatted="false">"Medūza"</string>
     <string name="msg_keep_183f00f4" formatted="false">"Paturēt"</string>
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Dot priekšroku īsām piespiedu ķēdēm"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Valoda"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Licences"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Vienā rindā, kolonnā vai blokā meklējiet šūnas, kurās palikuši tikai daži kandidāti. Izvēlieties %1$s no tām un apvienojiet to kandidātus. Ja kopā ir tieši %2$s cipari, šie %3$s cipari ir rezervēti: tiem kādā secībā jāatrodas šajās %4$s šūnās, lai gan vēl nevarat pateikt, kurš būs kurā.\n\nAr to pietiek. No katras pārējās šūnas šajā rindā, kolonnā vai blokā var izslēgt šos ciparus, un parasti kāda no šīm šūnām tad kļūst par vieninieku.\n\nVisām šūnām nav vajadzīgi vienādi kandidāti — {2,7}, {2,9} un {7,9} ir pilnīgi derīgs trijnieks, ko cilvēki bieži nepamana."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Vienā rindā, kolonnā vai blokā meklējiet šūnas, kurās palikuši tikai daži kandidāti. Izvēlieties %1$s no tām un apvienojiet to kandidātus. Ja kopā ir tieši %2$s cipari, šie %3$s cipari ir rezervēti: tiem kādā secībā jāatrodas šajās %4$s šūnās, lai gan vēl nevarat pateikt, kurš būs kurā.\n\nAr to pietiek. No katras pārējās šūnas šajā rindā, kolonnā vai blokā var izslēgt šos ciparus, un parasti kāda no šīm šūnām tad kļūst par vieninieku.\n\nVisām šūnām nav vajadzīgi vienādi kandidāti — {2,7}, {2,9} un {7,9} ir pilnīgi derīgs trijnieks, ko cilvēki bieži nepamana."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Meklējiet šūnas ar vienādiem diviem kandidātiem, piemēram, {4,9}, kas veido ķēdi, kurā katra šūna redz nākamo. Ar trim nepietiek; vajag vismaz četras.\n\nIekrāsojiet tās pamīšus. Tā kā katra šūna redz nākamo, divās blakus esošās šūnās nevar būt viens cipars, tāpēc visā ķēdē ir 4, 9, 4, 9 — vai 9, 4, 9, 4, un jūs nevarat noteikt, kurš variants ir pareizs.\n\nAbos gadījumos divās pretēju krāsu šūnās ir atšķirīgi cipari: vienā ir 4, otrā — 9. Tāpēc jebkurā šūnā, kas redz abas, nevar būt neviens no šiem cipariem, un tā uzreiz zaudē abus kandidātus.\n\nŠo rakstu ir viegli pamanīt tieši tāpēc, ka visas tā šūnas izskatās vienādi. Izsekojiet vienādajiem pāriem režģī un skatieties, kur tie saskaras."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Meklējiet trīs šūnas ar vienādiem diviem kandidātiem, piemēram, {1,6}, kas atrodas trijos taisnstūra stūros. Taisnstūrim jāatrodas tieši divos blokos: divas rindas un divas kolonnas šķērso divus blokus, nevis četrus.\n\nTagad apskatiet ceturto stūri. Ja arī tajā būtu tikai 1 un 6, mīklai būtu divi risinājumi — jūs varētu taisnstūrī samainīt 1 un 6 vietām, un viss pārējais joprojām derētu. Pareizi izveidotai mīklai ir viens risinājums, tāpēc ceturtajā stūrī jābūt kam citam: tā pārējie kandidāti paliek, bet 1 un 6 tiek izslēgti.\n\nŠis ir vienīgais arguments paņēmienu klāstā, kas balstās uz mīklas veidotāju, nevis režģi. Tas ir pamatots publicētai mīklai un nederīgs mīklai, kuru jau esat aizpildījis nepareizi, jo tad tai var nebūt neviena risinājuma, kur nu vēl vienīgā."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Apskatiet šo bloku. Sekojiet kontūrai līdz šūnai, ko šis mājiens izskaidros."</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Šeit var būt tikai %1$s. Izceltajās šūnās jau ir viens no pārējiem astoņiem cipariem; %2$s šajā šūnā tika izslēgti iepriekš, nevis pamatojoties uz kaut ko, kas redzams tai apkārt."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Šeit var būt tikai %1$s. Izceltajās šūnās jau ir septiņi no pārējiem astoņiem cipariem; %2$s šajā šūnā tika izslēgts iepriekš, nevis pamatojoties uz kaut ko, kas redzams tai apkārt."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Šeit var būt tikai %1$s. Izceltajās šūnās jau ir pieci no pārējiem astoņiem cipariem; %2$s šajā šūnā tika izslēgti iepriekš, nevis pamatojoties uz kaut ko, kas redzams tai apkārt."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Šeit var būt tikai %1$s. Izceltās šūnas aizņem %2$s no pārējiem astoņiem cipariem; %3$s %4$s no šīs šūnas izslēgti iepriekš, nevis ar kaut ko, kas redzams tai apkārt."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Šeit var būt tikai %1$s. Izceltajās šūnās jau ir %2$s no pārējiem astoņiem cipariem; %3$s gadījumā %4$s iepriekš veikta kandidātu izslēgšana no šīs šūnas, nevis pamatojoties uz kaut ko, kas redzams tai apkārt."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Šeit var būt tikai %1$s. Izceltajās šūnās jau ir divi no pārējiem astoņiem cipariem; %2$s šajā šūnā tika izslēgti iepriekš, nevis pamatojoties uz kaut ko, kas redzams tai apkārt."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Šeit var būt tikai %1$s. Izceltās šūnas aizņem %2$s no pārējiem astoņiem cipariem; %3$s no šīs šūnas tika izslēgti iepriekš, nevis tā dēļ, ko var redzēt ap to."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Šeit var būt tikai %1$s. Izceltajās šūnās jau ir trīs no pārējiem astoņiem cipariem; %2$s šajā šūnā tika izslēgti iepriekš, nevis pamatojoties uz kaut ko, kas redzams tai apkārt."</string>
@@ -335,7 +335,7 @@
     <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Atvērt pārlūkā melnrakstu, kurā jau ievadīta lietotnes versija, tālruņa modelis, Android versija un pēdējās skenēšanas diagnostika. Pilnu aprakstu un attiecīgos ekrānuzņēmumus pievienojiet pats.\n\nJāpierakstās GitHub. Pirms iesniegšanas varat pārskatīt un rediģēt melnrakstu. Iesniegtie ziņojumi un pielikumi ir publiski. Fotoattēli netiek pievienoti automātiski."</string>
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"Atvērt lietotnes iestatījumus"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"Atvērt GitHub"</string>
-    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Atvērt atvērtā pirmkoda paziņojumus"</string>
+    <string name="msg_open_source_notices_5d6f371b" formatted="false">"Atvērtā pirmkoda paziņojumi"</string>
     <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Atveriet ‘Kāpēc šī šūna?’, lai redzētu galīgā ievietojuma pamatojumu, vai izvēlieties izslēgtu kandidātu, lai izsekotu tā pierādījumam."</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache licence 2.0. Izmantots režģa atrašanai un iztaisnošanai.\n\nAndroidX, Jetpack Compose un CameraX - Apache licence 2.0.\n\nKotlin - Apache licence 2.0.\n\nCiparu atpazinējs tika apmācīts ar LeCun, Cortes un Burges rokraksta ciparu datubāzi MNIST, kā arī ar cipariem, kas renderēti no atvērtiem sistēmas fontiem, un programmatiski zīmētiem cipariem."</string>
     <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Neizdevās ielādēt OpenCV vietējās bibliotēkas"</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Pavērsiet kameru pret sudoku mīklu."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Pavērsiet kameru pret sudoku mīklu uz papīra. Lietotne nolasa drukātos ciparus un visu, ko esat ierakstījis, atrisina mīklu un var dot mājienu, pārbaudīt jūsu atbildes vai parādīt visu risinājumu."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Norādošais pāris"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"NOSŪTĪT"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Sagatavo mīklu…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Iepriekšējais"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Iepriekšējais solis"</string>
@@ -499,7 +499,7 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Drukātie cipari neveido atrisināmu mīklu."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nAtlikušie kandidāti šūnā %1$s ir {%2$s}. Ievietojiet %3$s rindā %4$s, kolonnā %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Ziņojums ir pārāk liels iesniegšanai."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-spārns, kura centrālajā šūnā ir par vienu kandidātu vairāk. Meklējiet šūnu ar tieši trim kandidātiem, piemēram, {1,4,7}, kas redz divas šūnas ar diviem kandidātiem — vienu ar {1,7} un otru ar {4,7}.\n\nTagad visās trijās ir iespējams 7, un vienā no tām tam jābūt. Tāpēc, lai šūnā to izslēgtu, tai jāredz visas trīs, ne tikai abas spārnu šūnas — praksē tas nozīmē, ka tā atrodas vienā blokā ar centrālo šūnu un vienā līnijā ar spārna šūnu.\n\nMazāk izslēgšanu nekā Y-spārnam, un tā paša iemesla dēļ vieglāk palaist garām: centrālā šūna neizceļas."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-spārns, kura centrālajā šūnā ir par vienu kandidātu vairāk. Meklējiet šūnu ar tieši trim kandidātiem, piemēram, {1,4,7}, kas redz divas šūnas ar diviem kandidātiem — vienu ar {1,7} un otru ar {4,7}.\n\nTagad visās trijās ir iespējams 7, un vienā no tām tam jābūt. Tāpēc, lai šūnā to izslēgtu, tai jāredz visas trīs, ne tikai abas spārnu šūnas — praksē tas nozīmē, ka tā atrodas vienā blokā ar centrālo šūnu un vienā līnijā ar spārna šūnu.\n\nMazāk izslēgšanu nekā Y-spārnam, un tā paša iemesla dēļ vieglāk palaist garām: centrālā šūna neizceļas."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Izceltajā blokā ir šūna, kuru var aizpildīt.\n\nNospiediet Mājiens vēlreiz, lai uzzinātu, kurš paņēmiens to atrod."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Šeit vairs nav par ko spriest."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Šajās %1$s šūnās ir iespējami tikai %2$s un %3$s, un katra redz nākamo, tāpēc cipari mijas visā ķēdē. Starp %4$s un %5$s ir nepāra skaits saišu, tāpēc tajās ir atšķirīgi cipari — tas izslēdz %6$s no visām šūnām, kas redz tās abas."</string>
@@ -547,7 +547,7 @@
     <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Izmantojot %1$s, pieskarieties vienai šūnai, kurā var izslēgt kandidātu, un izvēlieties šo ciparu."</string>
     <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Izmantojot %1$s, pieskarieties šūnai, kuru var aizpildīt, un izvēlieties tās ciparu."</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
-    <string name="msg_very_hard_9a5c2f08" formatted="false">"Ļoti grūti"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Ļoti grūta"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"W-spārns"</string>
     <string name="msg_was_b63b99f6" formatted="false">"tika"</string>
     <string name="msg_were_910adfb4" formatted="false">"tika"</string>
@@ -559,9 +559,9 @@
     <string name="msg_why_d3ae14a5" formatted="false">"Kāpēc"</string>
     <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Kāpēc ne %1$s? · %2$s"</string>
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Kāpēc šī šūna? · %1$s"</string>
-    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" ar risinājumu. Izmantojiet Pārbaudīt, lai tās apskatītu."</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" ar risinājumu. Izmantojiet Pārbaudīt, lai tos apskatītu."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Spriediet atpakaļ no savas šūnas. Izvēlieties jautājumu zemāk."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Apskatiet pa vienam ciparam, nevis šūnai. Vienā vienībā pierakstiet, kur vēl iespējams katrs trūkstošais cipars. Tad meklējiet %1$s ciparus, kuru saraksti kopā aptver tikai %2$s šūnas.\n\nŠiem %3$s cipariem jāaizpilda šīs %4$s šūnas, tāpēc visus pārējos kandidātus tajās var izsvītrot — tas bieži uzreiz izveido atklātu vieninieku vai atklātu pāri.\n\nŠis cilvēkiem šķiet visgrūtākais paņēmiens, jo, skatoties uz šūnām, nekas nav redzams: tajās joprojām ir daudz kandidātu. Raksts ir ciparos."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Apskatiet pa vienam ciparam, nevis šūnai. Vienā vienībā pierakstiet, kur vēl iespējams katrs trūkstošais cipars. Tad meklējiet %1$s ciparus, kuru saraksti kopā aptver tikai %2$s šūnas.\n\nŠiem %3$s cipariem jāaizpilda šīs %4$s šūnas, tāpēc visus pārējos kandidātus tajās var izsvītrot — tas bieži uzreiz izveido atklātu vieninieku vai atklātu pāri.\n\nŠis cilvēkiem šķiet visgrūtākais paņēmiens, jo, skatoties uz šūnām, nekas nav redzams: tajās joprojām ir daudz kandidātu. Raksts ir ciparos."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Izmantojiet tikai šūnas, kurās atlikuši tieši divi kandidāti.\n\nSāciet ar vienu, piemēram, {2,6}, un pieņemiet, ka tajā nav 2 — tad tajā ir 6. Pārejiet uz šūnu, ko tā redz un kurā arī iespējams 6, piemēram, {6,4}: tajā nevar būt 6, tātad tajā ir 4. Pārejiet uz šūnu, ko redz šī šūna un kurā iespējams 4, un turpiniet; katru soli nosaka iepriekšējais.\n\nJa sasniedzat šūnu, kuras otrs cipars ir 2 — cipars, ko sākumā izslēdzāt —, esat pabeidzis. Vai nu pirmajā šūnā tomēr bija 2, vai arī ķēde darbojās un pēdējā šūnā ir 2. Vienā vai otrā galā tas ir, tāpēc nevienā šūnā, kas redz abus galus, tas nevar būt.\n\nVeidojiet īsas ķēdes. Četras vai piecas šūnas var atrast ar zīmuli; tālāk jau jāsāk uzskaitīt, un tad to godīgi jāsauc par piespiedu ķēdi."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"darba malas garumam jābūt pozitīvam un galīgam"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Neizdevās nolasīt"</string>

@@ -21,7 +21,7 @@
     <string name="msg_0_empty_3b007105" formatted="false">"%1$s tómir"</string>
     <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, innseting"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s má standa her: hetta er einasti reiturin í hesum teiginum %2$s, har %3$s enn kann standa.\n\n%4$s\n\n%5$s loyvir í løtuni %6$s, men hvør teigur má hava %7$s júst eina ferð. Set tí %8$s í røð %9$s, teig %10$s."</string>
-    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s má standa her: hetta er einasti rúturin í hesum %2$s %3$s, sum enn kann rúma einum %4$s.\n\n%5$s\n\n%6$s loyvir nú %7$s, men hvørt %8$s má innihalda %9$s júst eina ferð. Set tí %10$s í rað %11$s, teig %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s má standa her: hetta er einasti rúturin í hesi eindini av slagnum %2$s %3$s, har %4$s enn kann standa.\n\n%5$s\n\n%6$s loyvir nú %7$s, men hvør eind av slagnum %8$s má innihalda %9$s júst eina ferð. Set tí %10$s í rað %11$s, teig %12$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s má standa her: hetta er einasti reiturin í hesum kassanum %2$s, har %3$s enn kann standa.\n\n%4$s\n\n%5$s loyvir í løtuni %6$s, men hvør kassi má hava %7$s júst eina ferð. Set tí %8$s í røð %9$s, teig %10$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s má standa her: hetta er einasti reiturin í hesi røðini %2$s, har %3$s enn kann standa.\n\n%4$s\n\n%5$s loyvir í løtuni %6$s, men hvør røð má hava %7$s júst eina ferð. Set tí %8$s í røð %9$s, teig %10$s."</string>
     <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s hevur tvey støð í hesum raði og tvey í hesum teigi. %2$s og %3$s eru í sama kassa, so bæði kunnu ikki vera %4$s – tí má annað av %5$s og %6$s innihalda tað, og %7$s er útilokað úr øllum, sum sær bæði."</string>
@@ -29,7 +29,7 @@
     <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s í sama kassa."</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s í sama teigi."</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s í somu røð."</string>
-    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s er longu útilokað úr tí rútinum. Kandidatarnir eru "</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s er longu útilokað úr tí rútinum. Møguligu tølini eru "</string>
     <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s er útilokað av %2$s, sum "</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s er útilokað av %2$s, sum bara kann hava %3$s í sama teigi %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s er útilokað av %2$s, sum bara kann hava %3$s í somu røð %4$s."</string>
@@ -40,7 +40,7 @@
     <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s er noytt í nýggjasta nummaraða rútinum (rað %2$s, teigur %3$s). %4$s Pílurin fylgir einari innseting, sum hevur ávirkan; undanfarandi avleiðingar hava eisini týdning."</string>
     <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s manglar í classpath"</string>
     <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s av %2$s"</string>
-    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s teirra fylla ein rút; hini taka fyrst kandidatar burtur úr veginum."</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s teirra fylla ein rút; hini taka fyrst møgulig tøl burtur úr veginum."</string>
     <string name="msg_0_pair_8730dc66" formatted="false">"%1$s par"</string>
     <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s prentað, %2$s, %3$s skeiv"</string>
     <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s prentað, %2$s"</string>
@@ -49,14 +49,14 @@
     <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s fýrasett"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s vrakað(ar) mynd(ir), nýggjasta fyrst:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: tak %2$s burtur"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"Tal av puntum: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s stig mynda hesa loysnarleiðina, og torførasta stuðlaða háttalagið er %2$s. %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s reitir"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"%1$s stig mynda hesa loysnarleiðina, og torførasta stuðlaða háttalagið er %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s trísett"</string>
-    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s varð tikið burtur úr %2$s við undanfarandi grundgeving um kandidatar."</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s varð tikið burtur úr %2$s við undanfarandi grundgeving um møgulig tøl."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s skrivað inn"</string>
     <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"ein %1$sx%2$s-mynd krevur %3$s být, men fekk %4$s"</string>
     <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"ein rútur var hvørki eitt tal ella eitt punktum"</string>
-    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Ein ketta av reitum við tveimum møguligum tølum, sum byrjar og endar við sama tali, setur tað talið í annan endan."</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Ein keta av reitum við tveimum møguligum tølum, sum byrjar og endar við sama tali, setur tað talið í annan endan."</string>
     <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Eitt tal, sum bara hevur eitt pláss eftir í einum raði, teigi ella kassa, hoyrir heima har."</string>
     <string name="msg_a_handwritten_0_31063236" formatted="false">"Eitt hondskrivað %1$s."</string>
     <string name="msg_a_printed_0_244624d9" formatted="false">"Eitt prentað %1$s."</string>
@@ -101,22 +101,22 @@
     <string name="msg_cancel_19766ed6" formatted="false">"Avlýs"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", møgulig tøl %1$s"</string>
     <string name="msg_captureevidence_077b226e" formatted="false">"Myndaprógv"</string>
-    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Bind eitt tal í eina kettu gjøgnum eindirnar, har tað bara hevur tvey pláss, lita kettuna við tveimum litum til skiftis, og annar liturin er sannur alla leiðina."</string>
+    <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Bind eitt tal í eina ketu gjøgnum eindirnar, har tað bara hevur tvey pláss, lita ketuna við tveimum litum til skiftis, og annar liturin er sannur alla leiðina."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Tá %1$s verður knýtt í eina ketu gjøgnum eindirnar, har tað bert hevur tvær møguligar staðsetingar, fáa hesir reitir tveir skiftandi litir. Annar liturin er rættur alla leiðina. Tveir reitir við hinum litinum eru í somu røð, og tað ber ikki til - tí er tann liturin skeivur, og %2$s verður strikað úr øllum reitum við tí litinum."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Tá %1$s verður knýtt í eina ketu gjøgnum eindirnar, har tað bert hevur tvær møguligar staðsetingar, fáa hesir reitir tveir skiftandi litir. Annar liturin er rættur alla leiðina. Tveir reitir við hinum litinum eru í sama kassa, og tað ber ikki til - tí er tann liturin skeivur, og %2$s verður strikað úr øllum reitum við tí litinum."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Tá %1$s verður knýtt í eina ketu gjøgnum eindirnar, har tað bert hevur tvær møguligar staðsetingar, fáa hesir reitir tveir skiftandi litir. Annar liturin er rættur alla leiðina. Tveir reitir við hinum litinum eru í sama teigi, og tað ber ikki til - tí er tann liturin skeivur, og %2$s verður strikað úr øllum reitum við tí litinum."</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Tá %1$s verður bundið í eina kettu gjøgnum eindirnar, har tað bara hevur tvey pláss, fáa hesir reitirnir tveir litir til skiftis, og annar er sannur alla leiðina. Tveir reitir við litinum %2$s eru í sama %3$s, og tað ber ikki til – tí er tann liturin ósannur, og %4$s verður tikið burtur úr øllum reitum við honum."</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Tá %1$s verður bundið í eina kettu gjøgnum eindirnar, har tað bara hevur tvey pláss, fáa hesir reitirnir tveir litir til skiftis, og annar liturin er sannur alla leiðina. Hesir reitirnir síggja báðar litirnar, so hvussu kettan so fellur, hevur ein av reitunum, teir síggja, %2$s – og tí kunnu teir ikki hava tað."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Tá %1$s verður bundið í eina ketu gjøgnum eindirnar, har tað bara hevur tvey pláss, fáa hesir reitirnir tveir litir til skiftis, og annar er sannur alla leiðina. Tveir reitir við litinum %2$s eru í sama %3$s, og tað ber ikki til – tí er tann liturin ósannur, og %4$s verður tikið burtur úr øllum reitum við honum."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Tá %1$s verður bundið í eina ketu gjøgnum eindirnar, har tað bara hevur tvey pláss, fáa hesir reitirnir tveir litir til skiftis, og annar liturin er sannur alla leiðina. Hesir reitirnir síggja báðar litirnar, so hvussu ketan so fellur, hevur ein av reitunum, teir síggja, %2$s – og tí kunnu teir ikki hava tað."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Tá %1$s verður knýtt í eina ketu gjøgnum eindirnar, har tað bert hevur tvær møguligar staðsetingar, fáa hesir reitir tveir skiftandi litir. Annar liturin er rættur alla leiðina. Tveir reitir við sama liti eru í sama kassa, og tað ber ikki til - tí er tann liturin skeivur, og %2$s verður strikað úr øllum reitum við tí litinum."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Tá %1$s verður knýtt í eina ketu gjøgnum eindirnar, har tað bert hevur tvær møguligar staðsetingar, fáa hesir reitir tveir skiftandi litir. Annar liturin er rættur alla leiðina. Tveir reitir við sama liti eru í sama teigi, og tað ber ikki til - tí er tann liturin skeivur, og %2$s verður strikað úr øllum reitum við tí litinum."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Tá %1$s verður knýtt í eina ketu gjøgnum eindirnar, har tað bert hevur tvær møguligar staðsetingar, fáa hesir reitir tveir skiftandi litir. Annar liturin er rættur alla leiðina. Tveir reitir við sama liti eru í somu røð, og tað ber ikki til - tí er tann liturin skeivur, og %2$s verður strikað úr øllum reitum við tí litinum."</string>
-    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Óvissir puntar at kanna: %1$s."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Kanna %1$s óvissar reitir."</string>
     <string name="msg_check_9d60841e" formatted="false">"Kanna"</string>
     <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Kanna ein óvissan reit."</string>
     <string name="msg_checked_correct_c690d1c3" formatted="false">", kannað og rætt"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Vel eitt møguligt tal at síggja, hví tað ikki kann standa í tínum reiti."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Vel mál"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Vel, hvat skal vísast"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Vel, hvat skal vísast"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Lat aftur"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Lat ábending aftur"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Fald lesikanning saman"</string>
@@ -127,7 +127,7 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Samanber tvingsilsketur og vel tær, sum hava færri reitir at fylgja. Styttri ketur kunnu merkja fleiri stig í allari loysnini."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Avleiðing %1$s av %2$s · hugsað tøl"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"inniheldur"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Innihaldsslag"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Halt fram við allari leiðini"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Mótsøgn · fortreytin heldur ikki"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", mótsøgn"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Kundi ikki varðveita myndaprógv til feilfinning"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Kundi ikki senda lesingina. Royn aftur, tá samband er."</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Blindgata"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"STRIKA"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Strika"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Strika frágreiðing"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Strika hesa mynd"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Lýs, hvat hendi, og stigini til at endurtaka tað. Sig, um tú fyrst kannaði og rættaði tølini, sum vórðu kend aftur. Er talan um eitt hugskot, skriva „Ikki viðkomandi“."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", málreitur fyri hesa ábending"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Eind: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Feilfinningarupplýsingarnar eru styttar, so tær rúmast í uppskotinum í kaganum. Við Send feilfinningarupplýsingar í appini kann øll frágreiðingin deilast."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Feilfinningarupplýsingarnar eru styttar, so tær rúmast í uppskotinum í kaganum. Við Send villuleitingarupplýsingar í appini kann øll frágreiðingin deilast."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"talið má vera 1..9, men var %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Tøl ikki lisin"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Varðveitsla av prógvum á diski ávirkar tíðarmátingina; hetta er ikki ein seinkingarmáting."</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Hvør teirra fyllir ein reit út."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Allir reitir eru fyltir út, men %1$s svar samsvara ikki við loysnina."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Allir reitir eru fyltir út, men eitt svar samsvarar ikki við loysnina."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Hvørt sudoku við einari loysn kann loysast við grundgeving; tað er ongantíð neyðugt at gita og hjálpir sjáldan. Hetta eru grundgevingarhættirnir, sum henda appin kann kenna aftur og greiða frá, teir lættastu fyrst. Tá ein teirra kann brúkast á uppgávuni, tú hevur opna, vísir hon tær øll støð, har hann kann brúkast."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Hvørt sudoku við einari loysn kann loysast við grundgeving; tað er ongantíð neyðugt at gita og hjálpir sjáldan. Hetta eru grundgevingarhættirnir, sum henda appin kann kenna aftur og greiða frá, teir lættastu fyrst. Tá ein teirra kann brúkast á uppgávuni, tú hevur opna, vísir hon tær øll støð, har hann kann brúkast."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Alt, tú higartil hevur skrivað, er rætt."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Dømi tøk nú: hvørt byrjar við tínum núverandi neti."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"væntaði 10 vatnrættar linjur, fekk %1$s"</string>
@@ -202,8 +202,8 @@
     <string name="msg_five_222b0bd5" formatted="false">"fimm"</string>
     <string name="msg_follow_a_route_where_each_move_builds_on_the__11b9a909" formatted="false">"Fylg einari leið, har hvør leikur byggir á tann fyrra."</string>
     <string name="msg_follow_the_full_proof_in_order_377cc8c2" formatted="false">"Fylg allari próvførsluni í røttum rað"</string>
-    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Fylg hesi kettu av reitum við tveimum møguligum tølum: er %1$s ikki %2$s, verður hvør reitur í henni tvungin av tí undan, og %3$s endar sum %4$s. Tí hevur annar endin %5$s, og tað útilokar talið úr øllum reitum, sum síggja báðar."</string>
-    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Tvingsilsketta"</string>
+    <string name="msg_follow_this_chain_of_two_candidate_squares_if_ec762a1f" formatted="false">"Fylg hesi ketu av reitum við tveimum møguligum tølum: er %1$s ikki %2$s, verður hvør reitur í henni tvungin av tí undan, og %3$s endar sum %4$s. Tí hevur annar endin %5$s, og tað útilokar talið úr øllum reitum, sum síggja báðar."</string>
+    <string name="msg_forcing_chain_8e2adc47" formatted="false">"Tvingsilsketa"</string>
     <string name="msg_four_04efaf08" formatted="false">"fýra"</string>
     <string name="msg_four_squares_in_two_rows_two_columns_and_two__8c19c2da" formatted="false">"Fýra reitir í tveimum røðum, tveimum teigum og tveimum kassum kunnu ikki allir hava somu tvey møguligu tøl, tí so hevði uppgávan tvær loysnir."</string>
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia váttaði strikingina, men henda telefonin kundi ikki strika kvittanina á telefonini. Royn aftur at gera lokalu uppruddingina lidna."</string>
@@ -219,9 +219,9 @@
     <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
     <string name="msg_hidden_7e6fefff" formatted="false">"Fjalt"</string>
     <string name="msg_hidden_pair_bab0be41" formatted="false">"Fjalt par"</string>
-    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Fjald fýra"</string>
+    <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Fjalt fýrasett"</string>
     <string name="msg_hidden_single_33cf031b" formatted="false">"Fjalt stakt tal"</string>
-    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Fjald trý"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Fjalt trísett"</string>
     <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Fjal fyrru prógv"</string>
     <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Fjal, hvussu tú finnur eitt"</string>
     <string name="msg_hint_0_bc1ead3f" formatted="false">", ábending %1$s"</string>
@@ -234,10 +234,10 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Halt telefonini vatnrætt"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Halt telefonini vatnrætt oman fyri uppgávuna."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Halt telefonini vatnrætt oman fyri uppgávuna"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"vatnrætt\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Soleiðis finnur tú eitt"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSoleiðis koma vit fram til tað:"</string>
-    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Leita eftir reitum við júst tveimum møguligum tølum – ein Y-veingur er gjørdur úr trimum slíkum og ongum øðrum.\n\nVel ein sum miðreit, til dømis {2,5}. Finn ein reit, hann sær, við {2,9}, og ein annan, hann sær, við {5,9}. Miðreiturin er annaðhvørt 2 ella 5. Er hann 2, má fyrri armreiturin vera 9; er hann 5, má seinni vera 9. Í báðum førum er 9 í øðrum armreitinum – tú veitst ikki í hvørjum, og tað nýtist tær ikki at vita.\n\nTí kann eingin reitur, sum sær báðar armreitarnar, vera 9. Teir reitirnir eru vanliga tey bæði hornini, sum fullføra rættvinkulin."</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Leita eftir reitum við júst tveimum møguligum tølum – ein Y-veingur er gjørdur úr trimum slíkum og ongum øðrum.\n\nVel ein sum miðreit, til dømis {2,5}. Finn ein reit, hann sær, við {2,9}, og ein annan, hann sær, við {5,9}. Miðreiturin er annaðhvørt 2 ella 5. Er hann 2, má fyrri armreiturin vera 9; er hann 5, má seinni vera 9. Í báðum førum er 9 í øðrum armreitinum – tú veitst ikki í hvørjum, og tað nýtist tær ikki at vita.\n\nTí kann eingin reitur, sum sær báðar armreitarnar, vera 9. Teir reitirnir eru vanliga tey bæði hornini, sum fullføra rættvinklaða fýrakantin."</string>
     <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hugsað %1$s, ikki eitt innskrivað svar"</string>
     <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Kunnu %1$s tøl í einum raði, teigi ella kassa bara standa í somu %2$s reitum, kunnu teir reitirnir einki annað hava."</string>
     <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Hava %1$s reitir í einum raði, teigi ella kassa júst %2$s møgulig tøl til samans, hoyra tey tølini til teir reitirnar og ongar aðrar í eindini."</string>
@@ -248,7 +248,7 @@
     <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Eru einastu plássini hjá einum tali í einum kassa á somu linju, kann talið útilokast úr restini av linjuni."</string>
     <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Førir ein fortreyt um eitt tal til ein reit, sum einki tal kann hava, var talið skeivt."</string>
     <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"myndarmátini mugu vera positiv"</string>
-    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Í einari kettu av reitum við somu tveimum møguligu tølum hava endarnir ymisk tøl, um longdin á kettuni er eitt oddatal."</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"Í einari ketu av reitum við somu tveimum møguligu tølum hava endarnir ymisk tøl, um longdin á ketuni er eitt oddatal."</string>
     <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Í hesum %1$s eindunum av slagnum %2$s kann %3$s bara standa í hesum %4$s eindunum av slagnum %5$s. Til samans brúka tær allar, so %6$s kann útilokast úr hesum eindunum av slagnum %7$s allastaðni annars."</string>
     <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Í hesum %1$s teigunum kann %2$s bert standa í hesum %3$s røðunum. Saman taka tey allar hesar raðirnar, so %4$s kann strikast úr øllum øðrum reitum í teimum."</string>
     <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Í hesum %1$s røðunum kann %2$s bert standa í hesum %3$s teigunum. Saman taka tey allar hesar teigarnar, so %4$s kann strikast úr øllum øðrum reitum í teimum."</string>
@@ -274,9 +274,9 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Halt tvingsilsketur stuttar"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Mál"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Loyvi"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Leita í einum raði, teigi ella kassa eftir reitum við fáum møguligum tølum eftir. Tak %1$s teirra og savna møguligu tølini. Eru júst %2$s tøl í savninum, eru tey %3$s tølini frásett: tey mugu standa í teimum %4$s reitunum í onkrum rað, hóast tú enn ikki veitst, hvat fer hvar.\n\nTað er nóg mikið. Allir aðrir reitir í eindini kunnu sleppa teimum tølunum, og vanliga fær ein teirra tá eitt stakt tal.\n\nReitirnir nýtast ikki allir at hava somu møguligu tøl – {2,7}, {2,9} og {7,9} eru heilt góð trý, og júst tey missa fólk."</string>
-    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Leita eftir reitum við somu tveimum møguligu tølum – til dømis {4,9} – sum mynda eina kettu, har hvør sær tann næsta. Tríggir eru ikki nóg mikið; tær tørvar minst fýra.\n\nLita teir til skiftis, so hvørt tú fert fram. Av tí at hvør reitur sær tann næsta, kunnu tveir grannar ikki hava sama tal, so kettan er 4, 9, 4, 9 alla leiðina – ella 9, 4, 9, 4, og tú veitst ikki hvør.\n\nÍ báðum førum hava tveir reitir við mótsettum litum ymisk tøl: annar er 4 og hin er 9. Tí kann ein reitur, sum sær báðar, vera hvørki og missir bæði møguligu tølini í senn.\n\nMynstrið er lætt at finna, júst tí allir reitirnir í tí síggja eins út. Fylg teimum eins pørunum kring netið og hygg, hvar tey nema hvørt annað."</string>
-    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Leita eftir trimum reitum við somu tveimum møguligu tølum – til dømis {1,6} – sum sita í trimum hornum á einum rættvinkli. Rættvinkulin má liggja í júst tveimum kassum: tvey rað og tveir teigar, sum fara tvørtur um tveir kassar, ikki fýra.\n\nHygg nú at fjórða horninum. Hevði tað eisini bara 1 og 6, hevði uppgávan tvær loysnir – tú kundi býtt um 1 og 6 kring rættvinkulin, og alt annað hevði framvegis riggað. Ein rætt gjørd uppgáva hevur eina loysn, so fjórða hornið má brúka okkurt annað: hini møguligu tølini verða verandi, og 1 og 6 fara.\n\nHetta er einasta grundgevingin í bókini, sum snýr seg um tann, ið gjørdi uppgávuna, heldur enn netið. Hon er haldgóð á einari útgivnari uppgávu og nyttuleys á einari, tú longu hevur fylt skeivt út, tí tá kann vera, at eingin loysn er at vera einstøk."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Leita í einum raði, teigi ella kassa eftir reitum við fáum møguligum tølum eftir. Tak %1$s teirra og savna møguligu tølini. Eru júst %2$s tøl í savninum, eru tey %3$s tølini frásett: tey mugu standa í teimum %4$s reitunum í onkrum rað, hóast tú enn ikki veitst, hvat fer hvar.\n\nTað er nóg mikið. Allir aðrir reitir í eindini kunnu sleppa teimum tølunum, og vanliga fær ein teirra tá eitt stakt tal.\n\nReitirnir nýtast ikki allir at hava somu møguligu tøl – {2,7}, {2,9} og {7,9} eru heilt góð trý, og júst tey missa fólk."</string>
+    <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Leita eftir reitum við somu tveimum møguligu tølum – til dømis {4,9} – sum mynda eina ketu, har hvør sær tann næsta. Tríggir eru ikki nóg mikið; tær tørvar minst fýra.\n\nLita teir til skiftis, so hvørt tú fert fram. Av tí at hvør reitur sær tann næsta, kunnu tveir grannar ikki hava sama tal, so ketan er 4, 9, 4, 9 alla leiðina – ella 9, 4, 9, 4, og tú veitst ikki hvør.\n\nÍ báðum førum hava tveir reitir við mótsettum litum ymisk tøl: annar er 4 og hin er 9. Tí kann ein reitur, sum sær báðar, hvørki vera 4 ella 9 og missir bæði møguligu tølini í senn.\n\nMynstrið er lætt at finna, júst tí allir reitirnir í tí síggja eins út. Fylg teimum eins pørunum kring netið og hygg, hvar tey nema hvørt annað."</string>
+    <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Leita eftir trimum reitum við somu tveimum møguligu tølum – til dømis {1,6} – sum sita í trimum hornum á einum rættvinklaðum fýrakanti. Fýrakanturin má liggja í júst tveimum kassum: tvey rað og tveir teigar, sum fara tvørtur um tveir kassar, ikki fýra.\n\nHygg nú at fjórða horninum. Hevði tað eisini bara 1 og 6, hevði uppgávan tvær loysnir – tú kundi býtt um 1 og 6 kring fýrakantin, og alt annað hevði framvegis riggað. Ein rætt gjørd uppgáva hevur eina loysn, so fjórða hornið má brúka okkurt annað: hini møguligu tølini verða verandi, og 1 og 6 fara.\n\nHetta er einasta grundgevingin í bókini, sum snýr seg um tann, ið gjørdi uppgávuna, heldur enn netið. Hon er haldgóð á einari útgivnari uppgávu og nyttuleys á einari, tú longu hevur fylt skeivt út, tí tá kann vera, at eingin loysn er at vera einstøk."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Hygg í hesum kassanum. Fylg útlínuni til reitin, sum henda ábendingin fer at greiða frá."</string>
     <string name="msg_marks_65479e3e" formatted="false">"Merkingar"</string>
     <string name="msg_moderate_5c42afc7" formatted="false">"Miðal"</string>
@@ -288,9 +288,9 @@
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Far nærri – netið er ov lítið at lesa."</string>
     <string name="msg_naked_472fd902" formatted="false">"Nakið"</string>
     <string name="msg_naked_pair_2c93e68d" formatted="false">"Nakið par"</string>
-    <string name="msg_naked_quad_73e85f9d" formatted="false">"Nakin fýra"</string>
+    <string name="msg_naked_quad_73e85f9d" formatted="false">"Nakið fýrasett"</string>
     <string name="msg_naked_single_7205dfc4" formatted="false">"Nakið stakt tal"</string>
-    <string name="msg_naked_triple_4f3cc595" formatted="false">"Nakin trý"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Nakið trísett"</string>
     <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Nevn tøknina og vís reitirnar, sum prógva hana, í staðin fyri bara at geva talið."</string>
     <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"krevur í minsta lagi 4 punkt, men fekk %1$s"</string>
     <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Krevur váttan"</string>
@@ -319,15 +319,15 @@
     <string name="msg_one_square_238078b4" formatted="false">"ein rútur"</string>
     <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Bara %1$s kann standa her – øll hini tølini standa longu í hesum raðnum, teiginum ella kassanum."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_124ed680" formatted="false">"Bert %1$s kann standa her. Teir framhevjaðu reitirnir brúka %2$s av hinum átta tølunum; %3$s varð strikað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Bert %1$s kann standa her. Í teimum merktu rutunum standa fýra av hinum átta tølunum; %2$s vórðu útilokað úr hesi rutuni fyrr, ikki vegna nakað, tú sært rundan um hana."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Bert %1$s kann standa her. Í teimum merktu rutunum standa seks av hinum átta tølunum; %2$s vórðu útilokað úr hesi rutuni fyrr, ikki vegna nakað, tú sært rundan um hana."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Bert %1$s kann standa her. Í teimum merktu rutunum stendur eitt av hinum átta tølunum; %2$s vórðu útilokað úr hesi rutuni fyrr, ikki vegna nakað, tú sært rundan um hana."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Bert %1$s kann standa her. Í teimum merktu rutunum standa sjey av hinum átta tølunum; %2$s varð útilokað úr hesi rutuni fyrr, ikki vegna nakað, tú sært rundan um hana."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Bert %1$s kann standa her. Í teimum merktu rutunum standa fimm av hinum átta tølunum; %2$s vórðu útilokað úr hesi rutuni fyrr, ikki vegna nakað, tú sært rundan um hana."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_1aac291e" formatted="false">"Bert %1$s kann standa her. Í teimum merktu reitunum standa fýra av hinum átta tølunum; %2$s vórðu útilokað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_224f8682" formatted="false">"Bert %1$s kann standa her. Í teimum merktu reitunum standa seks av hinum átta tølunum; %2$s vórðu útilokað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Bert %1$s kann standa her. Í teimum merktu reitunum stendur eitt av hinum átta tølunum; %2$s vórðu útilokað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Bert %1$s kann standa her. Í teimum merktu reitunum standa sjey av hinum átta tølunum; %2$s varð útilokað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Bert %1$s kann standa her. Í teimum merktu reitunum standa fimm av hinum átta tølunum; %2$s vórðu útilokað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Bara %1$s kann standa her. Merktu reitirnir brúka %2$s av hinum átta tølunum; %3$s %4$s útilokað úr hesum reitinum fyrr, ikki av nøkrum, tú sært rundan um hann."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Bert %1$s kann standa her. Í teimum merktu rutunum standa tvey av hinum átta tølunum; %2$s vórðu útilokað úr hesi rutuni fyrr, ikki vegna nakað, tú sært rundan um hana."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Bert %1$s kann standa her. Í teimum merktu reitunum standa tvey av hinum átta tølunum; %2$s vórðu útilokað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Bert %1$s kann standa her. Teir framhevjaðu reitirnir brúka %2$s av hinum átta tølunum; %3$s vórðu strikað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Bert %1$s kann standa her. Í teimum merktu rutunum standa trý av hinum átta tølunum; %2$s vórðu útilokað úr hesi rutuni fyrr, ikki vegna nakað, tú sært rundan um hana."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Bert %1$s kann standa her. Í teimum merktu reitunum standa trý av hinum átta tølunum; %2$s vórðu útilokað úr hesum reitinum fyrr, ikki vegna nakað, tú sært rundan um hann."</string>
     <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Bara %1$s kann standa her. Hini átta tølini eru útilokað av fyltum reitum ella tvungnum støkum møguligum tølum í hesum raðnum, teiginum ella kassanum."</string>
     <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Bara %1$s kann standa her, hóast einki rundan um vísir hví: øll hini átta tølini vórðu útilokað úr hesum reitinum við fyrru grundgeving heldur enn við at vera skrivað í raðnum, teiginum ella kassanum hjá honum."</string>
     <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Bara %1$s prentað tøl vórðu funnin, og tað er ov lítið til eina uppgávu."</string>
@@ -336,7 +336,7 @@
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"Lat appstillingar upp"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"Lat GitHub upp"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"Fráboðanir um opna keldu"</string>
-    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Lat „Hví hesin reitur?“ upp at síggja prógvini fyri endaligu innsetingina, ella vel eitt útilokað tal at fylgja próvførsluni fyri tí."</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Lat „Hví hesin rúturin?“ upp at síggja prógvini fyri endaligu innsetingina, ella vel eitt útilokað tal at fylgja próvførsluni fyri tí."</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV – Apache-loyvi 2.0. Brúkt til at finna og rætta netið.\n\nAndroidX, Jetpack Compose og CameraX – Apache-loyvi 2.0.\n\nKotlin – Apache-loyvi 2.0.\n\nTalerkenningin varð vand við MNIST-dátugrunninum við hondskrivaðum tølum eftir LeCun, Cortes og Burges, saman við tølum gjørdum úr opnum skipanarletursniðum og tølum teknaðum við forriti."</string>
     <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Innlesing av upprunaligu OpenCV-søvnunum miseydnaðist"</string>
     <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Tak mynd av einari aðrari uppgávu."</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Vend myndatólinum móti einari sudokuuppgávu."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Vend myndatólinum móti einari sudokuuppgávu á pappíri. Appin lesur prentaðu tølini og alt, tú hevur skrivað inn, loysir hana og kann geva tær eina ábending, kanna tíni svar ella vísa alla loysnina."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Peikandi par"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"SEND"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Ger uppgávuna klára…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Fyrra"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Fyrra stig"</string>
@@ -368,10 +368,10 @@
     <string name="msg_puzzles_photographed_for_testing_came_from_su_735502d3" formatted="false">"Uppgávur, sum vórðu fotograferaðar til royndir, komu frá sudoku.cba.si. Henda appin hevur einki samband við tey."</string>
     <string name="msg_puzzles_you_photograph_are_kept_here_so_you_c_7d8bd479" formatted="false">"Uppgávur, sum tú tekur mynd av, verða goymdar her, so tú kanst halda fram við teimum seinni."</string>
     <string name="msg_read_9b9a8d05" formatted="false">"Avlesing"</string>
-    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Lisið sum eitt handskrivað %1$s, %2$s vist."</string>
+    <string name="msg_read_as_a_handwritten_0_1_sure_5529ecf8" formatted="false">"Lisið sum eitt hondskrivað %1$s, %2$s vist."</string>
     <string name="msg_read_as_a_printed_0_1_sure_5b18bb9c" formatted="false">"Lisið sum eitt prentað %1$s, %2$s vist."</string>
     <string name="msg_read_as_empty_no_ink_found_67d05939" formatted="false">"Lisið sum tómt – einki blekk funnið."</string>
-    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Lisið sum kandidatar skrivaðir við blýanti og sæð burtur frá teimum."</string>
+    <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Lisið sum blýantsmerkingar við møguligum tølum og sæð burtur frá teimum."</string>
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Avlesing eftirkannað."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Avlesing send. Takk!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Nýggjastu skanningarupplýsingar (útfyltar frammanundan)"</string>
@@ -420,10 +420,10 @@
     <string name="msg_solution_0_6de814bf" formatted="false">", loysn %1$s"</string>
     <string name="msg_solve_451d387b" formatted="false">"Loys"</string>
     <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Loyst, og øll svar eru røtt."</string>
-    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Svar við hjálp frá loysnarleitaranum: set %1$s í %2$s. Kandidatarnir eru %3$s. Háttaløgini, sum appin stuðlar, funnu einki stig úr hesi støðu. Leitingin fann %4$s í einastu loysnini; ein nágreinilig próvførsla fyri leitingargreinarnar er ikki tøk."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Svar við hjálp frá loysnarleitaranum: set %1$s í %2$s. Møguligu tølini eru %3$s. Háttaløgini, sum appin stuðlar, funnu einki stig úr hesi støðu. Leitingin fann %4$s í einastu loysnini; ein nágreinilig próvførsla fyri leitingargreinarnar er ikki tøk."</string>
     <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nSvar við hjálp frá loysnara: tøknirnar, sum appin stuðlar, funnu ongan leik. Ein nágreinilig próvførsla er ikki tøk."</string>
     <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Útilokan við hjálp frá loysnarleitaranum: ein leiting útilokar %1$s í merkta rútinum, men appin kundi ikki gera eina stutta mótsagnarrøð at vísa. Ein nágreinilig próvførsla er ikki tøk."</string>
-    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Summir rútar kunnu innihalda viðmerkingar heldur enn eitt heilt tal."</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Summir rútar kunnu innihalda blýantsmerkingar heldur enn eitt heilt tal."</string>
     <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Summi tøl vórðu ikki lisin við vissu."</string>
     <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Okkurt gekk galið, tá myndin varð lisin."</string>
     <string name="msg_square_c11092bc" formatted="false">"Rútur"</string>
@@ -488,7 +488,7 @@
     <string name="msg_that_photo_could_not_be_kept_so_there_is_noth_73b1df39" formatted="false">" Myndin kundi ikki goymast, so einki er at senda."</string>
     <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Tann rúturin loyvir %1$s. Leita eftir stiginum, sum háttalagið hjá hesum stiginum grundgevur fyri, ella vís frágreiðingina."</string>
     <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Tann rúturin er longu fyltur. Vel ein tóman rút."</string>
-    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Fortreytin er afturvíst. Vit fara aftur til veruligu kandidatarnar og strika %1$s í merkta rútinum. Hugsaðu tølini verða tikin burtur."</string>
+    <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Fortreytin er afturvíst. Vit fara aftur til veruligu møguligu tølini og strika %1$s í merkta rútinum. Hugsaðu tølini verða tikin burtur."</string>
     <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Myndatólið kundi ikki taka ta myndina."</string>
     <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Myndatólið er ikki tøkt. Lat aðrar myndatólsappir aftur og royn síðan aftur."</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"hin"</string>
@@ -499,33 +499,33 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Prentaðu tølini mynda ikki eina uppgávu, sum kann loysast."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nMøguligu tølini, sum eru eftir í %1$s, eru {%2$s}. Set %3$s í rað %4$s, teig %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Frágreiðingin er ov stór at senda."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-veingurin við einum kandidati afturat í miðrútinum. Leita eftir einum rúti við júst trimum kandidatum, til dømis {1,4,7}, sum sær tveir rútar við tveimum kandidatum – ein {1,7} og ein {4,7}.\n\nNú kunnu allir tríggir vera 7, og ein teirra má vera tað. Tí má ein rútur síggja allar tríggjar fyri at útiloka talið, ikki bara teir báðar síðuveingirnar – í verki merkir tað, at hann er í sama kassa sum miðrúturin og á linju við ein síðuveing.\n\nFærri útilokanir enn við einum Y-veingi, og lættari at yvirsíggja av somu orsøk: miðrúturin skarar ikki framúr."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-veingurin við einum kandidati afturat í miðrútinum. Leita eftir einum rúti við júst trimum kandidatum, til dømis {1,4,7}, sum sær tveir rútar við tveimum kandidatum – ein {1,7} og ein {4,7}.\n\nNú kunnu allir tríggir vera 7, og ein teirra má vera tað. Tí má ein rútur síggja allar tríggjar fyri at útiloka talið, ikki bara teir báðar síðuveingirnar – í verki merkir tað, at hann er í sama kassa sum miðrúturin og á linju við ein síðuveing.\n\nFærri útilokanir enn við einum Y-veingi, og lættari at yvirsíggja av somu orsøk: miðrúturin skarar ikki framúr."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Í merkta kassanum er ein rútur, sum tú kanst fylla.\n\nTrýst aftur á Ábending fyri at fáa at vita, hvat háttalag finnur hann."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Her er einki eftir at grundgeva um."</string>
-    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Hesir %1$s rútarnir innihalda bert %2$s og %3$s, og hvør sær tann næsta, so tølini skiftast alla leiðina. Millum %4$s og %5$s er eitt stakt tal av liðum, so teir innihalda hvør sítt tal – tað útilokar %6$s úr øllum, sum sær báðar."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Hesir %1$s rútarnir innihalda bert %2$s og %3$s, og hvør sær tann næsta, so tølini skiftast alla leiðina. Talið á liðum millum %4$s og %5$s er eitt oddatal, so teir innihalda hvør sítt tal – tað útilokar %6$s úr øllum, sum sær báðar."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Hesir %1$s rútarnir innihalda tilsamans bert %2$s, so tey tølini fylla teir í onkrari røð. Tað útilokar %3$s úr restini av hesum %4$s."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Í hesum %1$s reitunum kunnu bert %2$s standa, so hesi tølini fylla teir í onkrari røð. Tí kann %3$s strikast úr hinum reitunum í hesi røðini."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Í hesum %1$s reitunum kunnu bert %2$s standa, so hesi tølini fylla teir í onkrari røð. Tí kann %3$s strikast úr hinum reitunum í hesum teiginum."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Í hesum %1$s reitunum kunnu bert %2$s standa, so hesi tølini fylla teir í onkrari røð. Tí kann %3$s strikast úr hinum reitunum í hesum kassanum."</string>
-    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Hetta eru upprunaligu kandidatarnir í tínum rúti. Slóð vísir, hvørjir møguleikar kunnu útilokast."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Hetta eru upprunaligu møguligu tølini í tínum rúti. Slóð vísir, hvørjir møguleikar kunnu útilokast."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Hesi tøl kunnu ikki mynda eina uppgávu, og ov nógv er skeivt til at siga, hvørji. Trýst á ein rút til at rætta avlesingina, ella tak myndina aftur."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Hesi tøl kunnu ikki mynda eina uppgávu. Tað hevði loyst trupulleikan at broytt teir %1$s rútarnar við ringi – trýst á ein teirra til at rætta avlesingina."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Hesi tøl kunnu ikki mynda eina uppgávu. Tað hevði loyst trupulleikan at broytt rútin við ringinum – trýst á hann til at rætta avlesingina."</string>
     <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Hesi tøl mynda ikki eina uppgávu, so eitt varð lisið skeivt. Trýst á Loys fyri at síggja, hvørjir rútar skulu rættast."</string>
-    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Hesir fýra rútarnir mynda eitt rættvinklað fýrakant tvørtur um tveir kassar, og tríggir teirra innihalda bert %1$s. Innihelt %2$s eisini bert tey bæði, kundu tølini býtast um í fýrakantinum, og uppgávan hevði tvær loysnir. Hon hevur eina, so %3$s má brúka okkurt annað – og %4$s verður tikið burtur."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Hesir fýra rútarnir mynda ein rættvinklaðan fýrakant tvørtur um tveir kassar, og tríggir teirra innihalda bert %1$s. Innihelt %2$s eisini bert tey bæði, kundu tølini býtast um í fýrakantinum, og uppgávan hevði tvær loysnir. Hon hevur eina, so %3$s má brúka okkurt annað – og %4$s verður tikið burtur."</string>
     <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Tey røkka ikki til endan: okkurt her hevur fullkomiliga steðgað appini."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Hetta fyllir einki inn. Tað útilokar %1$s úr %2$s."</string>
-    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Hetta fyllir einki inn. Tað útilokar %1$s úr %2$s rutum."</string>
-    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Hetta fyllir einki inn. Tað útilokar %1$s úr einari rutu."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Hetta fyllir einki inn. Tað útilokar %1$s úr %2$s reitum."</string>
+    <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Hetta fyllir einki inn. Tað útilokar %1$s úr einum reiti."</string>
     <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nHetta er fyrsta av %1$s niðurstøðum, sum føra til svarið."</string>
-    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Henda próvførslan greiðir frá einari ábending, eisini útilokanum av kandidatum, sum leiða til svarið. Far eitt stig fram í senn fyri at fylgja grundgevingini í netinum, og halt síðani fram við allari loysnarleiðini."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Henda próvførslan greiðir frá einari ábending, eisini útilokanum av møguligum tølum, sum leiða til svarið. Far eitt stig fram í senn fyri at fylgja grundgevingini í netinum, og halt síðani fram við allari loysnarleiðini."</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Henda uppgávan kundi ikki fyrireikast."</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Henda uppgávan kundi ikki goymast. Tú kanst kortini brúka hana nú. Frígev goymslupláss, áðrenn tú tekur eina mynd afturat."</string>
     <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Henda uppgávan hevur fleiri enn eina loysn, so eitt prentað tal varð helst ikki lisið. Vísir loysn %1$s av %2$s – trýst aftur á Loys fyri at síggja ta næstu. Rútarnir við ringi eru ymiskir í loysnunum, sum verða vístar."</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Myndin av hesi uppgávuni kundi ikki latast upp."</string>
     <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Henda grundgevingin útilokar %1$s verandi "</string>
-    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Hesin rúturin kann innihalda kandidatviðmerkingar heldur enn eitt heilt tal. Kanna hann."</string>
-    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Henda sýningin inniheldur undanfarandi útilokanir av kandidatum. Lat próvførslurnar niðanfyri upp til at kanna tær."</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Hesin rúturin kann innihalda blýantsmerkingar við møguligum tølum heldur enn eitt heilt tal. Kanna hann."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Henda sýningin inniheldur undanfarandi útilokanir av møguligum tølum. Lat próvførslurnar niðanfyri upp til at kanna tær."</string>
     <string name="msg_three_8b5b9db0" formatted="false">"trý"</string>
     <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Ov myrkt til at síggja netlinjurnar"</string>
     <string name="msg_trace_7e14c3d7" formatted="false">"Slóð"</string>
@@ -537,14 +537,14 @@
     <string name="msg_two_3fc4ccfe" formatted="false">"tvey"</string>
     <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Tveir rútar við sama pari, knýttir saman við einari vippu á øðrum talinum, noyða hitt talið í annan teirra."</string>
     <string name="msg_two_string_kite_fd558e5c" formatted="false">"Dreki við tveimum streingjum"</string>
-    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Einstakt rættvinklað fýrakant"</string>
+    <string name="msg_unique_rectangle_cc025da3" formatted="false">"Einstakur rættvinklaður fýrakantur"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"eind"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable gevur ongan CellReading-lista; nágreiniligu inntaksrútarnir og úrslitið verða varðveitt."</string>
     <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"útgávan av modellsniðinum verður ikki stuðlað"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Óvist"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Brúka málið á tólinum"</string>
-    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Brúka %1$s, trýst á ein rút, har ein kandidatur kann takast burtur, og vel síðan talið."</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Brúka %1$s, trýst á ein rút, har eitt møguligt tal kann takast burtur, og vel síðan talið."</string>
     <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Brúka %1$s, trýst á rútin, sum tú kanst fylla, og vel síðan talið."</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Sera torført"</string>
@@ -561,8 +561,8 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Hví hesin rúturin? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" við loysnina. Brúka Kanna til at kanna tey."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Arbeið aftur eftir frá tínum rúti. Vel ein spurning niðanfyri."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Arbeið tal fyri tal heldur enn rút fyri rút. Skriva niður fyri eina eind, hvar hvørt manglandi tal enn kann standa. Leita síðan eftir %1$s tølum, hvørs listar tilsamans fevna um bert %2$s rútar.\n\nTey %3$s tølini mugu fylla teir %4$s rútarnar, so alt annað í teimum kann strikast – tað ger ofta beinanvegin ein teirra til eitt nakið stakt tal ella eitt nakið par.\n\nHetta er tað, sum fólk halda vera torførast, tí einki sæst, tá tú hyggur at rútunum: teir hava enn nógvar kandidatar. Mynstrið er í tølunum."</string>
-    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Arbeið bert við rútum, sum hava júst tveir kandidatar eftir.\n\nByrja við einum, til dømis {2,6}, og lat okkum siga, at hann ikki er 2 – tá er hann 6. Far til ein rút, sum hann sær og sum eisini hevur 6, til dømis {6,4}: hann kann ikki vera 6, so hann er 4. Far til ein rút, sum hann sær og sum hevur 4, og halt fram, hvørt stig noytt av tí undanfarna.\n\nKemur tú til ein rút, har hitt talið er 2 – talið, sum tú byrjaði við at útiloka – ert tú liðug/ur. Annaðhvørt var fyrsti rúturin kortini 2, ella ketan gekk allan vegin, og síðsti rúturin er 2. Annar endin inniheldur tað, so alt, sum sær báðar endar, kann ikki.\n\nHalt ketunum stuttum. Fýra ella fimm rútar ber til at finna við blýanti; eftir tað heldur tú roknskap, og ein noyðsluketa er rætta heitið."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Arbeið tal fyri tal heldur enn rút fyri rút. Skriva niður fyri eina eind, hvar hvørt manglandi tal enn kann standa. Leita síðan eftir %1$s tølum, hvørs listar tilsamans fevna um bert %2$s rútar.\n\nTey %3$s tølini mugu fylla teir %4$s rútarnar, so alt annað í teimum kann strikast – tað ger ofta beinanvegin ein teirra til eitt nakið stakt tal ella tveir teirra til eitt nakið par.\n\nHetta er tað, sum fólk halda vera torførast, tí einki sæst, tá tú hyggur at rútunum: teir hava enn nógv møgulig tøl. Mynstrið er í tølunum."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Arbeið bert við rútum, sum hava júst tvey møgulig tøl eftir.\n\nByrja við einum, til dømis {2,6}, og lat okkum siga, at hann ikki er 2 – tá er hann 6. Far til ein rút, sum hann sær og sum eisini hevur 6, til dømis {6,4}: hann kann ikki vera 6, so hann er 4. Far til ein rút, sum hann sær og sum hevur 4, og halt fram, hvørt stig noytt av tí undanfarna.\n\nKemur tú til ein rút, har hitt talið er 2 – talið, sum tú byrjaði við at útiloka – ert tú liðug/ur. Annaðhvørt var fyrsti rúturin kortini 2, ella ketan gekk allan vegin, og síðsti rúturin er 2. Annar endin inniheldur tað, so alt, sum sær báðar endar, kann ikki.\n\nHalt ketunum stuttum. Fýra ella fimm rútar ber til at finna við blýanti; eftir tað heldur tú roknskap, og ein tvingsilsketa er rætta heitið."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"arbeiðskanturin má vera positivur og endaligur"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Kundi ikki lesast"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Skrivað"</string>
@@ -573,7 +573,7 @@
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-veingur"</string>
     <string name="msg_y_wing_c0f0c7d6" formatted="false">"Y-veingur"</string>
     <string name="msg_you_cleared_this_square_27e36c16" formatted="false">"Tú tømdi henda rútin."</string>
-    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Tú setti hetta til eitt handskrivað %1$s."</string>
+    <string name="msg_you_set_this_to_a_handwritten_0_029d9a4d" formatted="false">"Tú setti hetta til eitt hondskrivað %1$s."</string>
     <string name="msg_you_set_this_to_a_printed_0_5c53c7ce" formatted="false">"Tú setti hetta til eitt prentað %1$s."</string>
     <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Tínar broytingar síggjast, men kundu ikki goymast. Frígev goymslupláss og royn at broyta uppgávuna aftur."</string>
     <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Tínar myndir og títt privatlív"</string>

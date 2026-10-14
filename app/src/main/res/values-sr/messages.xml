@@ -30,13 +30,13 @@
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s у истој колони."</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s у истом реду."</string>
     <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s је већ искључено из тог поља. Његови кандидати су "</string>
-    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s искључује %2$s, што "</string>
-    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s искључује %2$s, које може да садржи само %3$s у истој колони %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s искључује %2$s, које може да садржи само %3$s у истом реду %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s искључује %2$s, које може да садржи само %3$s у истом блоку %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s искључује %2$s, које садржи %3$s у истом блоку %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s искључује %2$s, које садржи %3$s у истој колони %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s искључује %2$s, које садржи %3$s у истом реду %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"Кандидат %1$s искључен је због поља %2$s, које "</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"Кандидат %1$s искључен је због поља %2$s, које може да садржи само %3$s у истој колони %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"Кандидат %1$s искључен је због поља %2$s, које може да садржи само %3$s у истом реду %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"Кандидат %1$s искључен је због поља %2$s, које може да садржи само %3$s у истом блоку %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"Кандидат %1$s искључен је због поља %2$s, које садржи %3$s у истом блоку %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"Кандидат %1$s искључен је због поља %2$s, које садржи %3$s у истој колони %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"Кандидат %1$s искључен је због поља %2$s, које садржи %3$s у истом реду %4$s."</string>
     <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s је обавезно у најновијем нумерисаном пољу (ред %2$s, колона %3$s). %4$s Стрелица прати унос који доприноси закључку; важне су и раније последице."</string>
     <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s недостаје у classpath-у"</string>
     <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s од %2$s"</string>
@@ -50,7 +50,7 @@
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s одбијених фотографија, од најновије:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: уклони %2$s"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"Број поља: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Овај поступак има %1$s корака, а најтежа подржана техника је %2$s. %3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"Овај поступак има %1$s корака, а најтежа подржана техника је %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s тројка"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s је уклоњено из %2$s ранијим закључивањем о кандидатима."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s уписаних"</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", проверено као тачно"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Изаберите кандидата да видите зашто не може у вашу ћелију."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Изабери језик"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Изабери шта се приказује"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Изабери шта се приказује"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Затвори"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Затвори наговештај"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Скупи преглед препознавања"</string>
@@ -127,7 +127,7 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Упоредите ланце форсирања и дајте предност онима са мање ћелија за праћење. Краћи ланци могу значити више корака у потпуном решењу."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Последица %1$s од %2$s · хипотетичке цифре"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"садржи"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Тип садржаја"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Настави целим поступком"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Противречност · претпоставка не важи"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", противречност"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Докази снимка за отклањање грешака нису могли да се сачувају"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Резултат препознавања није могао да се пошаље. Покушајте поново када будете повезани."</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Ћорсокак"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"ОБРИШИ"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Обриши"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Обриши извештај"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Обриши ову фотографију"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Опишите шта се догодило и кораке за понављање. Наведите да ли сте прво проверили и исправили препознате цифре. За идеју напишите „Није применљиво“."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", циљ овог наговештаја"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Уређај: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Дијагностика је скраћена да стане у нацрт у прегледачу. Радња Пошаљи дијагностику у апликацији може да подели цео извештај."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Дијагностика је скраћена да стане у нацрт у прегледачу. Радња „Пошаљи дијагностичке податке“ у апликацији може да подели цео извештај."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"цифра мора бити 1..9, али је била %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Цифре нису препознате"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Чување доказа на диску утиче на време извршавања; ово није мерење кашњења."</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Свака од њих попуњава једну ћелију."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Све ћелије су попуњене, али %1$s одговора не одговара решењу."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Све ћелије су попуњене, али један одговор не одговара решењу."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Сваки судоку са једним решењем може да се реши логичким закључивањем; погађање никада није потребно и ретко помаже. Ово су начини закључивања које ова апликација може да препозна и објасни, од најлакших. Када је неки применљив на отворени судоку, приказаће вам свако место на којем важи."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Сваки судоку са једним решењем може да се реши логичким закључивањем; погађање никада није потребно и ретко помаже. Ово су начини закључивања које ова апликација може да препозна и објасни, од најлакших. Када је неки применљив на отворени судоку, приказаће вам свако место на којем важи."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Све што сте до сада написали је тачно."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Тренутно доступни примери: сваки полази од ваше тренутне мреже."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"очекивано је 10 хоризонталних линија, добијено је %1$s"</string>
@@ -225,7 +225,7 @@
     <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Сакриј раније доказе"</string>
     <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Сакриј како се препознаје"</string>
     <string name="msg_hint_0_bc1ead3f" formatted="false">", наговештај %1$s"</string>
-    <string name="msg_hint_a7b4cf9f" formatted="false">"Помоћ"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Наговештај"</string>
     <string name="msg_hint_proof_b2b8f969" formatted="false">"Доказ наговештаја"</string>
     <string name="msg_hint_reasoning_2548bea0" formatted="false">"Образложење наговештаја"</string>
     <string name="msg_hold_still_0a934617" formatted="false">"Будите мирни..."</string>
@@ -234,7 +234,7 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Држите телефон водоравно"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Држите телефон водоравно изнад судокуа."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Држите телефон водоравно изнад судокуа"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"хоризонтално\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Како се препознаје"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nКако долазимо до тога:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Тражите ћелије са тачно два кандидата — Y-крило се састоји од три такве ћелије и ничег другог.\n\nУзмите једну као средишњу, рецимо {2,5}. Потражите ћелију коју она види са {2,9} и другу коју види са {5,9}. Средишња ћелија је или 2 или 5. Ако је 2, први крак мора бити 9; ако је 5, други мора бити 9. У сваком случају 9 се појављује у једном од кракова — не знате у којем, а то вам није ни потребно.\n\nЗато ниједна ћелија која види оба крака не може бити 9. Те ћелије су обично два угла која допуњују правоугаоник."</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Користи кратке ланце форсирања"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Језик"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Лиценце"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"У једном реду, колони или блоку потражите ћелије са мало преосталих кандидата. Узмите %1$s таквих ћелија и обједините њихове кандидате. Ако скуп има тачно %2$s цифара, тих %3$s цифара је резервисано: морају да иду у те %4$s ћелије неким редоследом, иако још не можете рећи која иде где.\n\nТо је довољно. Свака друга ћелија у јединици може да одбаци те цифре, а обично нека од њих тада постаје сингл.\n\nЋелије не морају све имати исте кандидате — {2,7}, {2,9} и {7,9} чине сасвим ваљану тројку, и управо такву људи превиде."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"У једном реду, колони или блоку потражите ћелије са мало преосталих кандидата. Узмите %1$s таквих ћелија и обједините њихове кандидате. Ако скуп има тачно %2$s цифара, тих %3$s цифара је резервисано: морају да иду у те %4$s ћелије неким редоследом, иако још не можете рећи која иде где.\n\nТо је довољно. Свака друга ћелија у јединици може да одбаци те цифре, а обично нека од њих тада постаје сингл.\n\nЋелије не морају све имати исте кандидате — {2,7}, {2,9} и {7,9} чине сасвим ваљану тројку, и управо такву људи превиде."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Потражите ћелије са иста два кандидата — рецимо {4,9} — које формирају ланац, тако да свака види следећу. Три нису довољне; потребне су најмање четири.\n\nБојите их наизменично док идете. Пошто свака ћелија види следећу, ниједне две суседне не могу имати исту цифру, па ланац гласи 4, 9, 4, 9 целом дужином — или 9, 4, 9, 4, а не можете знати који је случај.\n\nУ сваком случају, две ћелије супротних боја садрже различите цифре: једна је 4, друга 9. Зато свака ћелија која види обе не може бити ниједна од тих цифара и губи оба кандидата одједном.\n\nОбразац се лако уочава управо зато што свака ћелија у њему изгледа исто. Пратите истоветне парове по мрежи и видите где се додирују."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Потражите три ћелије са иста два кандидата — рецимо {1,6} — које су у три угла правоугаоника. Правоугаоник мора бити у тачно два блока: два реда и две колоне које пресецају два блока, а не четири.\n\nСада погледајте четврти угао. Када би и он имао само 1 и 6, судоку би имао два решења — могли бисте заменити 1 и 6 око правоугаоника и све остало би и даље важило. Правилно састављен судоку има једно решење, па четврти угао мора користити нешто друго: његови остали кандидати остају, а 1 и 6 се уклањају.\n\nОво је једини аргумент међу техникама који се односи на састављача, а не на мрежу. Ваљан је за објављени судоку, а бескористан за онај који сте већ погрешно попунили, јер тада можда уопште нема решења које би било јединствено."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Погледајте овај блок. Пратите обрис до ћелије коју ће овај наговештај објаснити."</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Овде може да стоји само %1$s. Истакнута поља садрже једну од преосталих осам цифара; %2$s су раније искључене из овог поља, а не на основу било чега што се види око њега."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Овде може да стоји само %1$s. Истакнута поља садрже седам од преосталих осам цифара; %2$s је раније искључена из овог поља, а не на основу било чега што се види око њега."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Овде може да стоји само %1$s. Истакнута поља садрже пет од преосталих осам цифара; %2$s су раније искључене из овог поља, а не на основу било чега што се види око њега."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Само %1$s може да иде овде. Истакнуте ћелије заузимају %2$s од осталих осам цифара; %3$s %4$s искључено је из ове ћелије раније, а не због нечега што видите око ње."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Само %1$s може да иде овде. Истакнуте ћелије заузимају %2$s од осталих осам цифара; уклањање %3$s из ове ћелије %4$s обављено раније, а не због нечега што видите око ње."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Овде може да стоји само %1$s. Истакнута поља садрже две од преосталих осам цифара; %2$s су раније искључене из овог поља, а не на основу било чега што се види око њега."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Овде може бити само %1$s. Истакнута поља садрже %2$s од осталих осам цифара; цифре %3$s су раније искључене из овог поља, а не због нечега што се види око њега."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Овде може да стоји само %1$s. Истакнута поља садрже три од преосталих осам цифара; %2$s су раније искључене из овог поља, а не на основу било чега што се види око њега."</string>
@@ -336,7 +336,7 @@
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"Отвори подешавања апликације"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"Отвори GitHub"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"Обавештења о отвореном коду"</string>
-    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Отворите „Зашто ова ћелија?“ да видите доказ за коначно уписивање или изаберите искљученог кандидата да пратите његов доказ."</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Отворите „Зашто ово поље?“ да видите доказ за коначно уписивање или изаберите искљученог кандидата да пратите његов доказ."</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV — Apache лиценца 2.0. Користи се за проналажење и исправљање мреже.\n\nAndroidX, Jetpack Compose и CameraX — Apache лиценца 2.0.\n\nKotlin — Apache лиценца 2.0.\n\nПрепознавач цифара обучен је на MNIST бази руком написаних цифара аутора LeCun, Cortes и Burges, заједно са цифрама исцртаним помоћу отворених системских фонтова и програмски нацртаним цифрама."</string>
     <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Изворне OpenCV библиотеке нису могле да се учитају"</string>
     <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Фотографишите други судоку."</string>
@@ -351,12 +351,12 @@
     <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Упишите %1$s у вашу уоквирену ћелију."</string>
     <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Приложите одговарајуће снимке екрана помоћу GitHub контроле за прилоге: судоку, препознате цифре, резултат провере или фазу наговештаја која показује проблем. Где је корисно, наведите очекиване и стварне резултате."</string>
     <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Молим вас да обришете моје послате резултате препознавања из Sudoku Buddy. Идентификатори потврда: "</string>
-    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Замените овај текст потпуним описом проблема или идеје. Дајте овом извештају кратак, описан наслов."</string>
+    <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Замените овај текст потпуним описом проблема или идеје. Дајте овом извештају кратак, описни наслов."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Усмерите камеру ка судокуу"</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Усмерите камеру ка судокуу."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Усмерите камеру ка судокуу на папиру. Апликација препознаје штампане цифре и све што сте дописали, решава га и може да вам да наговештај, провери одговоре или прикаже цело решење."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Усмерени пар"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"ПОШАЉИ"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Припрема судокуа…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Претходно"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Претходни корак"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Очитавање је прегледано."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Очитавање је послато. Хвала!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Дијагностика недавних скенирања (унапред попуњено)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Препознавање може погрешити, нарочито код рукописа. Користите Очитај да упоредите препознате цифре са фотографијом и додирните било које поље да га исправите. Апликација означава несигурна очитавања за преглед; и сигурно очитавање може бити погрешно."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Препознавање може погрешити, нарочито код рукописа. Користите „Препознавање“ да упоредите препознате цифре са фотографијом и додирните било које поље да га исправите. Апликација означава несигурна очитавања за преглед; и сигурно очитавање може бити погрешно."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Одбаци претпоставку"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Удаљени парови"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Уклони %1$s"</string>
@@ -412,8 +412,8 @@
     <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Аутоматски дели несигурна очитавања"</string>
     <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"Аутоматски делити несигурна очитавања?"</string>
     <string name="msg_show_contradiction_0e27e337" formatted="false">"Прикажи противречност"</string>
-    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Покажи све %1$s у својој загонетки"</string>
-    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Покажи то поље у својој загонетки"</string>
+    <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Прикажи све %1$s на вашем судокуу"</string>
+    <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Прикажи тај пример на вашем судокуу"</string>
     <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Једноставно бојење"</string>
     <string name="msg_six_44778d82" formatted="false">"шест"</string>
     <string name="msg_skyscraper_d58752e1" formatted="false">"Небодер"</string>
@@ -493,13 +493,13 @@
     <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Камера није доступна. Затворите друге апликације које користе камеру, па покушајте поново."</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"друго"</string>
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Фотографија од %1$s и све што је са ње очитано биће уклоњено са овог телефона. Ово се не може поништити."</string>
-    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Фотографија је на вашој листи судокуа, у одељку „Није препознато“."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Фотографија је на вашој листи судокуа, у одељку „Није могло да се очита“."</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Средиште је овде %1$s или %2$s. У оба случаја једно од друга два поља мора бити %3$s, па ниједно поље које види оба не може бити %4$s."</string>
     <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Усмерени пар посматран обрнуто. Узмите ред или колону и цифру којој још треба место у њој. Означите свако поље у тој линији које може да прими цифру. Ако су сва у једном блоку, цифра мора бити у делу линије који припада том блоку — па је нема нигде другде у блоку, укључујући његова друга два реда или колоне које нисте посматрали.\n\nКао и усмерени пар, ово само по себи не попуњава поље; ствара простор за потез који то чини."</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Штампане цифре не чине решиву загонетку."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nПреостали кандидати у %1$s су {%2$s}. Упишите %3$s у ред %4$s, колону %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Извештај је превелик за слање."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-крило чије средиште има једног кандидата више. Потражите поље са тачно три кандидата, рецимо {1,4,7}, које види два поља са по два кандидата — једно {1,7} и једно {4,7}.\n\nСада сва три могу бити 7, а једно мора бити. Зато поље мора да види сва три да би се кандидат искључио, а не само два крака — што у пракси значи да је у истом блоку као средиште и у истом реду или колони као један крак.\n\nДаје мање елиминација од Y-крила и лакше се превиди из истог разлога: средиште се не истиче."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-крило чије средиште има једног кандидата више. Потражите поље са тачно три кандидата, рецимо {1,4,7}, које види два поља са по два кандидата — једно {1,7} и једно {4,7}.\n\nСада сва три могу бити 7, а једно мора бити. Зато поље мора да види сва три да би се кандидат искључио, а не само два крака — што у пракси значи да је у истом блоку као средиште и у истом реду или колони као један крак.\n\nДаје мање елиминација од Y-крила и лакше се превиди из истог разлога: средиште се не истиче."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"У истакнутом блоку постоји поље које можете попунити.\n\nПоново притисните Наговештај да сазнате која техника га проналази."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Овде више нема о чему да се закључује."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Ових %1$s поља садрже само %2$s и %3$s, а свако види следеће, па се цифре смењују дуж целог ланца. Између %4$s и %5$s има непаран број веза, па садрже различите цифре — што искључује %6$s из свега што види оба."</string>
@@ -549,8 +549,8 @@
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Веома тешко"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"W-крило"</string>
-    <string name="msg_was_b63b99f6" formatted="false">"је била"</string>
-    <string name="msg_were_910adfb4" formatted="false">"су биле"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"је"</string>
+    <string name="msg_were_910adfb4" formatted="false">"је"</string>
     <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Шта сте очекивали или како би вам ваша идеја помогла да решавате или учите судоку?"</string>
     <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Шта се догодило и кораци за понављање (за грешке)"</string>
     <string name="msg_what_it_does_c74ea9dc" formatted="false">"Шта ради"</string>
@@ -561,8 +561,8 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Зашто ово поље? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" са решењем. Користите Провери да их прегледате."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Крените уназад од свог поља. Изаберите питање испод."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Радите цифру по цифру уместо поље по поље. За једну јединицу запишите где свака недостајућа цифра још може да иде. Затим потражите %1$s цифара чији спискови заједно обухватају само %2$s поља.\n\nТих %3$s цифара морају да попуне та %4$s поља, па се све остало у њима може прецртати — што често одмах претвори једно од њих у голу јединицу или голи пар.\n\nОво је људима најтеже јер се ништа не види када посматрате поља: она и даље имају много кандидата. Образац је у цифрама."</string>
-    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Радите само са пољима у којима су преостала тачно два кандидата.\n\nПочните од једног, рецимо {2,6}, и претпоставите да није 2 — онда је 6. Пређите на поље које оно види и које такође има 6, рецимо {6,4}: оно не може бити 6, па је 4. Пређите на поље које то поље види и које садржи 4, и наставите, при чему је сваки корак одређен претходним.\n\nАко стигнете до поља чија је друга цифра 2 — цифра коју сте на почетку искључили — завршили сте. Или је прво поље ипак било 2, или је ланац спроведен и последње поље је 2. Један или други крај садржи ту цифру, па ништа што види оба краја не може да је садржи.\n\nНека ланци буду кратки. Четири или пет поља може се пронаћи оловком; после тога водите евиденцију, а ланац принудних закључака је прави назив за то."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Радите цифру по цифру уместо поље по поље. За једну јединицу запишите где свака недостајућа цифра још може да иде. Затим потражите %1$s цифара чији спискови заједно обухватају само %2$s поља.\n\nТе цифре, њих %3$s, морају да попуне та поља, њих %4$s, па се све остало у њима може прецртати — што често одмах даје голи сингл у једном од њих или голи пар у два од њих.\n\nОво је људима најтеже јер се ништа не види када посматрате поља: она и даље имају много кандидата. Образац је у цифрама."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Радите само са пољима у којима су преостала тачно два кандидата.\n\nПочните од једног, рецимо {2,6}, и претпоставите да није 2 — онда је 6. Пређите на поље које оно види и које такође има 6, рецимо {6,4}: оно не може бити 6, па је 4. Пређите на поље које то поље види и које садржи 4, и наставите, при чему је сваки корак одређен претходним.\n\nАко стигнете до поља чија је друга цифра 2 — цифра коју сте на почетку искључили — завршили сте. Или је прво поље ипак било 2, или је ланац спроведен и последње поље је 2. Један или други крај садржи ту цифру, па ништа што види оба краја не може да је садржи.\n\nНека ланци буду кратки. Четири или пет поља може се пронаћи оловком; после тога водите евиденцију, а ланац форсирања је прави назив за то."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"радна ивица мора бити позитивна и коначна"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Није могло да се очита"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Уписано"</string>

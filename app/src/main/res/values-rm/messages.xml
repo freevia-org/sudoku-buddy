@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
-    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nLas casellas marcadas cumprovan quai.\n\nSmacca puspè Sinjal per vesair tge casella."</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nLas casellas marcadas cumprovan quai.\n\nSmacca puspè Indizi per vesair tge casella."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s e %2$s cuntegnan omadus mo %3$s e %4$s. En quest %5$s ha %6$s mo dus lieus, mintgin vesì d\'ina dad ellas – pia è in da quels dus %7$s, e la fin che al vesa sto esser %8$s. En omadus cas è ina fin %9$s, quai che excluda %10$s da tut las casellas che vesan omaduas."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$s e %2$s pon omadus cuntegnair mo %3$s e %4$s. En quest bloc ha %5$s mo duas posiziuns pussaivlas, e mintgin dad els vesa ina da quellas - pia è ina da quellas duas %6$s, e l\'extremitad che la vesa sto esser %7$s. En mintga cas è in\'extremitad %8$s, quai che excluda %9$s da tut las cellas che vesan omaduas extremitads."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s e %2$s pon omadus cuntegnair mo %3$s e %4$s. En questa colonna ha %5$s mo duas posiziuns pussaivlas, e mintgin dad els vesa ina da quellas - pia è ina da quellas duas %6$s, e l\'extremitad che la vesa sto esser %7$s. En mintga cas è in\'extremitad %8$s, quai che excluda %9$s da tut las cellas che vesan omaduas extremitads."</string>
@@ -13,30 +13,30 @@
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s po cuntegnair mo %4$s en la medema colonna %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s po cuntegnair mo %4$s en il medem bloc %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s po cuntegnair mo %4$s en la medema retscha %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s po cuntegnair mo %4$s en la medema lingia %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s cuntegna %4$s en il medem bloc %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s cuntegna %4$s en la medema colonna %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s cuntegna %4$s en la medema retscha %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s na po betg cuntegnair %2$s, perquai che %3$s cuntegna %4$s en la medema lingia %5$s."</string>
     <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s cuntegna %2$s."</string>
     <string name="msg_0_empty_3b007105" formatted="false">"%1$s vidas"</string>
     <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, inscripziun"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s sto star qua: quai è l\'unica cella en questa colonna %2$s che po anc cuntegnair in %3$s.\n\n%4$s\n\n%5$s permetta actualmain %6$s, ma mintga colonna sto cuntegnair %7$s exactamain ina giada. Plazza perquai %8$s en la lingia %9$s, colonna %10$s."</string>
-    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s sto ir qua: quai è la suletta casella en quest %2$s %3$s che po anc cuntegnair in %4$s.\n\n%5$s\n\n%6$s permetta actualmain %7$s, ma mintga %8$s sto cuntegnair %9$s exactamain ina giada. Metta pia %10$s en lingia %11$s, colonna %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s sto ir qua: quai è la suletta casella en l\'unitad %2$s %3$s che po anc cuntegnair in %4$s.\n\n%5$s\n\n%6$s permetta actualmain %7$s, ma mintga %8$s sto cuntegnair %9$s exactamain ina giada. Metta pia %10$s en lingia %11$s, colonna %12$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s sto star qua: quai è l\'unica cella en quest bloc %2$s che po anc cuntegnair in %3$s.\n\n%4$s\n\n%5$s permetta actualmain %6$s, ma mintga bloc sto cuntegnair %7$s exactamain ina giada. Plazza perquai %8$s en la lingia %9$s, colonna %10$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s sto star qua: quai è l\'unica cella en questa lingia %2$s che po anc cuntegnair in %3$s.\n\n%4$s\n\n%5$s permetta actualmain %6$s, ma mintga lingia sto cuntegnair %7$s exactamain ina giada. Plazza perquai %8$s en la lingia %9$s, colonna %10$s."</string>
     <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s ha dus lieus en questa lingia e dus en questa colonna. %2$s e %3$s èn en il medem bloc, pia na pon omaduas esser %4$s – uschia resta ina da %5$s e %6$s che la cuntegna, e %7$s vegn exclus da tut las casellas che vesan omaduas."</string>
-    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s en il medem %2$s."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s en la medema unitad (%2$s)."</string>
     <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s en il medem bloc."</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s en la medema colonna."</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s en la medema lingia."</string>
     <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s è gia exclus da quella casella. Ses candidats èn "</string>
     <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s vegn exclus da %2$s, che "</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s vegn exclus da %2$s, che po cuntegnair mo %3$s en la medema colonna %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s vegn exclus da %2$s, che po cuntegnair mo %3$s en la medema retscha %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s vegn exclus da %2$s, che po cuntegnair mo %3$s en la medema lingia %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s vegn exclus da %2$s, che po cuntegnair mo %3$s en il medem bloc %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s vegn exclus da %2$s, che cuntegna %3$s en il medem bloc %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s vegn exclus da %2$s, che cuntegna %3$s en la medema colonna %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s vegn exclus da %2$s, che cuntegna %3$s en la medema retscha %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s vegn exclus da %2$s, che cuntegna %3$s en la medema lingia %4$s."</string>
     <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s è determinà en la pli nova casella numerada (lingia %2$s, colonna %3$s). %4$s La frizza suonda ina plazzaziun che contribuescha; consequenzas precedentas èn era relevantas."</string>
     <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s manca en il classpath"</string>
     <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s da %2$s"</string>
@@ -46,11 +46,11 @@
     <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s stampadas, %2$s"</string>
     <string name="msg_0_printed_522101ca" formatted="false">"%1$s stampadas"</string>
     <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, cifra iniziala stampada"</string>
-    <string name="msg_0_quad_c9dd2280" formatted="false">"quadruplet %1$s"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"quartet %1$s"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s fotografia(s) refusada(s), las pli novas l\'emprim:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: allontanar %2$s"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"Dumber da chaschas: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s pass furman quest percurs; la tecnica sustegnida la pli greva è %2$s. %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s casellas"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"%1$s pass furman quest percurs; la tecnica sustegnida la pli greva è %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"triplet %1$s"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s è vegnì allontanà da %2$s tras in raschunament precedent davart ils candidats."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s scrittas en"</string>
@@ -62,7 +62,7 @@
     <string name="msg_a_printed_0_244624d9" formatted="false">"In %1$s stampà."</string>
     <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"Ina cella cotschna mussa la cifra che l\'app ha legì là. Sche quai n\'è betg quai che ti has scrit, tutga la cella per curreger."</string>
     <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"Ina cella cun mo ina cifra restanta sto cuntegnair quella cifra."</string>
-    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Ina glista da tecnicas n\'è mai cumpletta, e las pli grevas sudokus èn concepidas per superar tut quai ch\'è sin ella. Sche nagina da questas tecnicas na chatta in pass, determinescha il tutor ina singula cella cun empruvar ses candidats, di cleramain ch\'el ha fatg quai e cuntinuescha a deducir da là. El arriva adina a la fin d\'in sudoku e na pretenda mai ch\'ina resposta tschertgada saja ina deducziun."</string>
+    <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"Ina glista da tecnicas n\'è mai cumpletta, ed ils pli grevs sudokus èn concepids per superar tut quai ch\'è sin ella. Sche nagina da questas tecnicas na chatta in pass, determinescha il tutor ina singula cella cun empruvar ses candidats, di cleramain ch\'el ha fatg quai e cuntinuescha a deducir da là. El arriva adina a la fin d\'in sudoku e na pretenda mai ch\'ina resposta tschertgada saja ina deducziun."</string>
     <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"Ina cella pivot cun trais candidats e duas cellas pinza correspundentas cun dus candidats excludan ina cifra da mintga cella che vesa tuttas trais."</string>
     <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"Ina cella pivot cun dus candidats e duas cellas pinza cun dus candidats pon excluder ina cifra da mintga cella che vesa omaduas pinzas."</string>
     <string name="msg_about_4efca0d1" formatted="false">"Davart"</string>
@@ -110,13 +110,13 @@
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Cun colliar %1$s tras las unitads nua ch\'el ha mo duas posiziuns pussaivlas, survegnan questas cellas duas colurs alternantas, ed ina da quellas è valaivla dapertut. Duas cellas d\'ina colur sa chattan en il medem bloc, quai ch\'è impussibel - pia è quella colur faussa, e %2$s vegn eliminà da mintga cella cun quella colur."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Cun colliar %1$s tras las unitads nua ch\'el ha mo duas posiziuns pussaivlas, survegnan questas cellas duas colurs alternantas, ed ina da quellas è valaivla dapertut. Duas cellas d\'ina colur sa chattan en la medema colonna, quai ch\'è impussibel - pia è quella colur faussa, e %2$s vegn eliminà da mintga cella cun quella colur."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"Cun colliar %1$s tras las unitads nua ch\'el ha mo duas posiziuns pussaivlas, survegnan questas cellas duas colurs alternantas, ed ina da quellas è valaivla dapertut. Duas cellas d\'ina colur sa chattan en la medema lingia, quai ch\'è impussibel - pia è quella colur faussa, e %2$s vegn eliminà da mintga cella cun quella colur."</string>
-    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Chaschas malsegiras da controllar: %1$s."</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Controlla %1$s cellas malsegiras."</string>
     <string name="msg_check_9d60841e" formatted="false">"Controllar"</string>
     <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Verifitga ina cella malsegira."</string>
     <string name="msg_checked_correct_c690d1c3" formatted="false">", verifitgà sco correct"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Tscherna in candidat per vesair pertge ch\'el na po betg vegnir en tia cella."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Tscherner la lingua"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Tscherner tge che vegn mussà"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Tscherner tge che vegn mussà"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Serrar"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Serrar l\'indizi"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Reducir la controlla da lectura"</string>
@@ -126,12 +126,12 @@
     <string name="msg_columns_0e624a1a" formatted="false">"colonnas"</string>
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Cumpareglia chadainas da sfurzament e preferescha quellas cun main cellas da suandar. Chadainas pli curtas pon muntar dapli pass en la soluziun cumpletta."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consequenza %1$s da %2$s · cifras ipoteticas"</string>
-    <string name="msg_contains_beeb20fb" formatted="false">"cuntegn"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Tip da cuntegn"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"cuntegna"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Cuntinuar cun l\'entira via"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Cuntradicziun · supposiziun faussa"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", cuntradicziun"</string>
-    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Cuntradicziun: il %1$s cotschen n\'ha nagina posiziun pli per %2$s. Quai è impussibel, pia sto la supposiziun iniziala esser faussa."</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Cuntradicziun: en l\'unitad marcada cun cotschen (%1$s) na resta nagina posiziun per %2$s. Quai è impussibel, pia sto la supposiziun iniziala esser faussa."</string>
     <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Cuntradicziun: la cella cotschna n\'ha nagin candidat pli. Quai è impussibel, pia sto la supposiziun iniziala esser faussa."</string>
     <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Copiar la dumonda da stizzar"</string>
     <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Correct. Cumpareglia tia deducziun cun l\'explicaziun sutvart."</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Las cumprovas da captura per la diagnostica n\'han betg pudì vegnir conservadas"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"La lectura n\'ha betg pudì vegnir tramessa. Emprova anc ina giada cura che ti es connectà."</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Via senza sortida"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"STIZZAR"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Stizzar"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Stizzar il rapport"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Stizzar questa fotografia"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Descriva tge ch\'è succedì ed ils pass per repeter quai. Di sche ti has l\'emprim controllà e curregì las cifras renconuschidas. Per in\'idea, scriva \'Betg applitgabel\'."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", destinaziun da quest indizi"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Apparat: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"La diagnostica è vegnida scursanida per entrar en il sboz dal navigatur. L\'acziun Trametter la diagnostica da l\'app po cundivider il rapport cumplet."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"La diagnostica è vegnida scursanida per entrar en il sboz dal navigatur. L\'acziun Trametter datas diagnosticas da l\'app po cundivider il rapport cumplet."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"la cifra sto esser 1..9, ma era %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Cifras betg legidas"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Conservar cumprovas sin il disc influenzescha las mesiraziuns dal temp; quai n\'è betg in benchmark da latenza."</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Mintgina dad ellas emplenescha ina cella."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Mintga cella è emplenida, ma %1$s respostas na correspundan betg a la soluziun."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Mintga cella è emplenida, ma ina resposta na correspunda betg a la soluziun."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Mintga sudoku cun ina suletta soluziun po vegnir schlià cun deducziuns; lignar n\'è mai necessari e gida darar. Quai èn las modas da deducir che questa app po renconuscher ed explitgar, las pli simplas l\'emprim. Sch\'ina dad ellas sa lascha applitgar al sudoku avert, mussa l\'app tut ils lieus nua che quai è pussaivel."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Mintga sudoku cun ina suletta soluziun po vegnir schlià cun deducziuns; lignar n\'è mai necessari e gida darar. Quai èn las modas da deducir che questa app po renconuscher ed explitgar, las pli simplas l\'emprim. Sch\'ina dad ellas sa lascha applitgar al sudoku avert, mussa l\'app tut ils lieus nua che quai è pussaivel."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Tut quai che ti has scrit fin ussa è correct."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Exempels disponibels ussa: mintgin parta da tia griglia actuala."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"spetgà 10 lingias orizontalas, survegnì %1$s"</string>
@@ -209,7 +209,7 @@
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia ha confermà il stizzar, ma quest telefon n\'ha betg pudì eliminar la quittanza locala. Emprova anc ina giada per terminar l\'eliminaziun locala."</string>
     <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia vegn a stizzar questa revisiun dal rapport e sia copia privata da trenament. Correcturas futuras pon crear in nov rapport tenor tias configuraziuns da cundivisiun. In model gia trenà cun ella po conservar las midadas emprendidas."</string>
     <string name="msg_full_route_891b475b" formatted="false">"Entira via"</string>
-    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Lecturas malsegiras futuras vegnan a trametter la fotografia drizzada dal sudoku, ils resultats da renconuschientscha e las correcturas a Freevia per l\'analisa ed il trenament. Las copias da trenament restan fin ch\'ellas vegnan stizzadas sut Quittanzas da submissiun; in model trenà po conservar las midadas emprendidas. Sch\'in sudoku cun lectura malsegira è gia avert, vegn el tramess ussa. Ti pos deactivar quai en Configuraziuns."</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Lecturas malsegiras futuras vegnan a trametter la fotografia drizzada dal sudoku, ils resultats da renconuschientscha e las correcturas a Freevia per l\'analisa ed il trenament. Las copias da trenament restan fin ch\'ellas vegnan stizzadas sut Quittanzas da tramesa; in model trenà po conservar las midadas emprendidas. Sch\'in sudoku cun lectura malsegira è gia avert, vegn el tramess ussa. Ti pos deactivar quai en Parameters."</string>
     <string name="msg_gentle_96124817" formatted="false">"Leiv"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Las reflexiuns fan svanir las lingias – inclinescha il palpiri davent da la glisch"</string>
     <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"Maletg grisch(%1$sx%2$s)"</string>
@@ -234,7 +234,7 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tegna il telefon plat"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tegna il telefon plat sur il sudoku."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tegna il telefon plat sur il sudoku"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"orizontal\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Co renconuscher in"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCo che nus arrivain là:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Tschertga cellas cun exactamain dus candidats – in Y-Wing consista da trais talas cellas e da nagut auter.\n\nPrenda ina sco pivot, per exempel {2,5}. Tschertga ina cella ch\'ella vesa cun {2,9}, ed in\'autra ch\'ella vesa cun {5,9}. Il pivot è u 2 u 5. Sch\'el è 2, sto l\'emprima pinza esser 9; sch\'el è 5, sto la segunda esser 9. En omadus cas cumpara in 9 en ina da las pinzas – ti na sas betg en tgenina e na stos er betg savair.\n\nPia na po nagina cella che vesa omaduas pinzas esser in 9. Quellas cellas èn per ordinari ils dus chantuns che cumpletteschan il rectangul."</string>
@@ -249,32 +249,32 @@
     <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Sche supponer ina cifra maina ad ina cella che na po cuntegnair nagut, era quella cifra faussa."</string>
     <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"las dimensiuns dal maletg ston esser positivas"</string>
     <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"En ina chadaina da cellas che cuntegnan tuttas ils medems dus candidats, cuntegnan ils dus capets d\'ina chadaina da lunghezza impara cifras differentas."</string>
-    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"En quests %1$s %2$s po %3$s vegnir mo en quests %4$s %5$s. Ensemen dovran els tut las posiziuns, uschia che %6$s po vegnir exclus da tut las autras posiziuns da quels %7$s."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"En questas %1$s unitads (%2$s) po %3$s vegnir mo en questas %4$s unitads (%5$s). Ensemen occupan ellas mintgina da quellas, uschia che %6$s po vegnir exclus da tut las autras posiziuns da las unitads %7$s."</string>
     <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"En questas %1$s colonnas po %2$s star mo en questas %3$s lingias. Ensemen occupan els mintgina da quellas, uschia che %4$s po vegnir exclus dapertut auter en quellas lingias."</string>
     <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"En questas %1$s lingias po %2$s star mo en questas %3$s colonnas. Ensemen occupan els mintgina da quellas, uschia che %4$s po vegnir exclus dapertut auter en quellas colonnas."</string>
-    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"En quests dus %1$s ha %2$s mintgamai mo duas posiziuns, e %3$s e %4$s èn en il medem %5$s – pia na pon omaduas betg esser %6$s. Ina da %7$s e %8$s è perquai quella cifra, quai che excluda %9$s da mintga cella che vesa omaduas."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"En questas duas unitads (%1$s) ha %2$s mintgamai mo duas posiziuns, e %3$s e %4$s èn en la medema unitad (%5$s) – pia na pon omaduas betg esser %6$s. Ina da %7$s e %8$s è perquai quella cifra, quai che excluda %9$s da mintga cella che vesa omaduas."</string>
     <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"En questas duas colonnas ha %1$s mo duas posiziuns pussaivlas en mintgina, e %2$s e %3$s sa chattan en la medema lingia - pia na pon betg omadus esser %4$s. In da %5$s e %6$s è perquai quella cifra, quai che excluda %7$s da mintga cella che vesa omadus."</string>
     <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"En questas duas lingias ha %1$s mo duas posiziuns pussaivlas en mintgina, e %2$s e %3$s sa chattan en la medema colonna - pia na pon betg omadus esser %4$s. In da %5$s e %6$s è perquai quella cifra, quai che excluda %7$s da mintga cella che vesa omadus."</string>
-    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"En quest %1$s po %2$s vegnir mo en questas %3$s cellas, pia èn quellas cellas reservadas. Quai excluda %4$s dad ellas."</string>
-    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"En quest %1$s po %2$s vegnir mo en in sulet bloc. Pia è %3$s en quel bloc sin quest %4$s e po vegnir exclus dal rest dal bloc."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"En l\'unitad %1$s po %2$s vegnir mo en questas %3$s cellas, pia èn quellas cellas reservadas. Quai excluda %4$s dad ellas."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"En l\'unitad %1$s po %2$s vegnir mo en in sulet bloc. Pia è %3$s en quel bloc sin l\'unitad %4$s e po vegnir exclus dal rest dal bloc."</string>
     <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"En quest bloc po %1$s star mo en questas %2$s cellas, uschia che quellas cellas èn reservadas. Quai excluda %3$s da quellas."</string>
     <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"En questa colonna po %1$s star mo en questas %2$s cellas, uschia che quellas cellas èn reservadas. Quai excluda %3$s da quellas."</string>
     <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"En questa lingia po %1$s star mo en questas %2$s cellas, uschia che quellas cellas èn reservadas. Quai excluda %3$s da quellas."</string>
-    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Cumpiglia lur fotografias, lecturas e correcturas. Deactivescha quai en Configuraziuns."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Cumpiglia lur fotografias, lecturas e correcturas. Deactivescha quai en Parameters."</string>
     <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Tschertga en in sulet bloc ina cifra che po vegnir mo en duas u trais cellas, e controlla sche tuttas èn en la medema lingia u tuttas en la medema colonna. Sche gea, è la cifra segir insanua sin quella lingia u colonna – ti na sas betg nua, ma ti sas ch\'ella è en quest bloc. Pia na po ella esser nagliur auter sin la medema lingia u colonna ordaifer il bloc.\n\nQuai na plazza nagut da sasez. I eliminescha candidats per ch\'in singul cumparia insanua auter."</string>
-    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"En quest bloc po %1$s vegnir mo en quest %2$s. Pia è %3$s insanua qua e po vegnir exclus dal rest dal %4$s."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"En quest bloc po %1$s vegnir mo en l\'unitad %2$s. Pia è %3$s insanua qua e po vegnir exclus dal rest da l\'unitad %4$s."</string>
     <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Problem u idea"</string>
     <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Ella sa lascha applitgar en %1$s lieus qua. Va vinavant per als examinar in suenter l\'auter."</string>
     <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Ella sa lascha applitgar en in lieu qua. Va in pass vinavant per vesair."</string>
     <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Ella na sa lascha applitgar nagliur en questa posiziun."</string>
-    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Quai è l\'unica posiziun restanta per %1$s en il %2$s marcà."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Quai è l\'unica posiziun restanta per %1$s en l\'unitad marcada (%2$s)."</string>
     <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Quai è la cella circumdada.\n\nSmacca puspè Indizi per la cifra."</string>
     <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
     <string name="msg_keep_183f00f4" formatted="false">"Conservar"</string>
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Tegnair curtas las chadainas da sfurzament"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Lingua"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Licenzas"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Tschertga en ina lingia, colonna u bloc cellas cun mo paucs candidats restants. Prenda %1$s dad ellas e reunescha lur candidats. Sche la reuniun cuntegna exactamain %2$s cifras, èn quellas %3$s cifras reservadas: ellas ston vegnir en quellas %4$s cellas en ina tscherta successiun, er sche ti na pos anc betg dir tge cifra che va nua.\n\nQuai basta. Mintga autra cella en l\'unitad po eliminar quellas cifras, e per ordinari daventa ina da quellas cellas lura in singul.\n\nLas cellas na ston betg tuttas avair ils medems candidats – {2,7}, {2,9} e {7,9} furman in triplet perfetg, e quai è quel che vegn savens survesì."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Tschertga en ina lingia, colonna u bloc cellas cun mo paucs candidats restants. Prenda %1$s dad ellas e reunescha lur candidats. Sche la reuniun cuntegna exactamain %2$s cifras, èn quellas %3$s cifras reservadas: ellas ston vegnir en quellas %4$s cellas en ina tscherta successiun, er sche ti na pos anc betg dir tge cifra che va nua.\n\nQuai basta. Mintga autra cella en l\'unitad po eliminar quellas cifras, e per ordinari daventa ina da quellas cellas lura in singul.\n\nLas cellas na ston betg tuttas avair ils medems candidats – {2,7}, {2,9} e {7,9} furman in triplet perfetg, e quai è quel che vegn savens survesì."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Tschertga cellas cun ils medems dus candidats – per exempel {4,9} – che furman ina chadaina nua che mintgina vesa la proxima. Trais na bastan betg; ti dovras almain quatter.\n\nColurescha ellas alternantamain sin via. Perquai che mintga cella vesa la proxima, na pon duas vischinas betg cuntegnair la medema cifra. La chadaina è pia 4, 9, 4, 9 da l\'entschatta a la fin – u 9, 4, 9, 4, e ti na pos betg dir tgenina.\n\nEn omadus cas cuntegnan duas cellas da colurs oppostas cifras differentas: ina è il 4 e l\'autra il 9. Pia na po ina cella che vesa omaduas esser nagina da quellas cifras, e perda omadus candidats a medem temp.\n\nIl muster è simpel da renconuscher precis perquai che mintga cella en el ha il medem aspect. Suonda ils pèrs identics tras la griglia e guarda nua ch\'els sa tutgan."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Tschertga trais cellas cun ils medems dus candidats – per exempel {1,6} – en trais chantuns d\'in rectangul. Il rectangul sto esser en exactamain dus blocs: duas lingias e duas colonnas che traversan dus blocs, betg quatter.\n\nGuarda ussa il quart chantun. Sch\'el cuntegness er mo 1 e 6, avess il sudoku duas soluziuns – ti pudessas barattar ils 1 ed ils 6 enturn il rectangul e tut il rest funcziunass anc. In sudoku correctamain concepì ha ina suletta soluziun. Il quart chantun sto pia duvrar insatge auter: ses auters candidats restan, ed 1 e 6 vegnan eliminads.\n\nQuai è l\'unic argument da questa collecziun che sa basa sin l\'autur enstagl da sin la griglia. El è valid per in sudoku publitgà e senza valur per in che ti has gia emplenì falladamain, perquai che quel po avair nagina soluziun e pia er nagina soluziun unica."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Guarda en quest bloc. Suonda il contur fin a la cella che quest indizi vegn ad explitgar."</string>
@@ -298,11 +298,11 @@
     <string name="msg_next_consequence_6e10f60b" formatted="false">"Proxima consequenza"</string>
     <string name="msg_next_step_298a9207" formatted="false">"Proxim pass"</string>
     <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Nagins maletgs na vegnan agiuntads automaticamain. Ils rapports e las agiuntas tramess qua èn publics. Tramettai a info@freevia.org ils exempels che vus preferis trametter privatamain."</string>
-    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Nag ina fotografia n\'è vegnida refusada dapi l\'ultima installaziun da l\'app."</string>
-    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Nag ina diagnostica da scannada disponibla."</string>
-    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Nag ina tecnica sa lascha applitgar qua"</string>
+    <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Nagina fotografia n\'è vegnida refusada dapi l\'ultima installaziun da l\'app."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Nagina diagnostica da scannada disponibla."</string>
+    <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Nagina tecnica sa lascha applitgar qua"</string>
     <string name="msg_none_140bedbf" formatted="false">"nagina"</string>
-    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Nag ina dad ellas na metta ina cifra en ina cella: ellas elimineschan candidats, quai che avra la via en in sudoku grev."</string>
+    <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Nagina dad ellas na metta ina cifra en ina cella: ellas elimineschan candidats, quai che avra la via en in sudoku grev."</string>
     <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Actualmain nagina en tes sudoku."</string>
     <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"betg ina datoteca da model da cifras"</string>
     <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Betg legì cun segirezza – la meglra supposiziun è %1$s %2$s en %3$s. Endatescha sez questa cella."</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Qua po star mo %1$s. Las cellas marcadas excludan ina da las autras otg cifras; %2$s èn vegnidas exclusas da questa cella pli baud, betg pervi d\'insatge che ti pos vesair enturn ella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Qua po star mo %1$s. Las cellas marcadas excludan set da las autras otg cifras; %2$s è vegnida exclusa da questa cella pli baud, betg pervi d\'insatge che ti pos vesair enturn ella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Qua po star mo %1$s. Las cellas marcadas excludan tschintg da las autras otg cifras; %2$s èn vegnidas exclusas da questa cella pli baud, betg pervi d\'insatge che ti pos vesair enturn ella."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Mo %1$s po vegnir qua. Las cellas marcadas dovran %2$s da las otg autras cifras; %3$s %4$s exclus da questa cella pli baud, betg tras insatge che ti pos vesair enturn ella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Mo %1$s po vegnir qua. Las cellas marcadas dovran %2$s da las otg autras cifras; %3$s %4$s gia ordaifer ils candidats da questa cella pervi da deducziuns anteriuras, betg pervi d\'insatge che ti pos vesair enturn ella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Qua po star mo %1$s. Las cellas marcadas excludan duas da las autras otg cifras; %2$s èn vegnidas exclusas da questa cella pli baud, betg pervi d\'insatge che ti pos vesair enturn ella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Mo %1$s po star qua. Las cellas marcadas occupan %2$s da las autras otg cifras; %3$s èn vegnids exclus da questa cella pli baud, betg pervia da quai che ti pos vesair enturn ella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Qua po star mo %1$s. Las cellas marcadas excludan trais da las autras otg cifras; %2$s èn vegnidas exclusas da questa cella pli baud, betg pervi d\'insatge che ti pos vesair enturn ella."</string>
@@ -336,7 +336,7 @@
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"Avrir las configuraziuns da l\'app"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"Avrir GitHub"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"Avis davart il code avert"</string>
-    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Avra ‘Pertge questa cella?’ per vesair la cumprova dal plazzament final, u tscherna in candidat exclus per suandar sia cumprova."</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Avra ‘Pertge questa casella?’ per vesair la cumprova dal plazzament final, u tscherna in candidat exclus per suandar sia cumprova."</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV – Licenza Apache 2.0. Duvrà per chattar e drizzar la griglia.\n\nAndroidX, Jetpack Compose e CameraX – Licenza Apache 2.0.\n\nKotlin – Licenza Apache 2.0.\n\nIl renconuschider da cifras è vegnì trenà cun la banca da datas MNIST da cifras scrittas a maun da LeCun, Cortes e Burges, ensemen cun cifras renderisadas da tipografias avertas dal sistem e cifras dissegnadas cun in program."</string>
     <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Las bibliotecas nativas d\'OpenCV n\'han betg pudì vegnir chargiadas"</string>
     <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotografescha in auter sudoku."</string>
@@ -349,14 +349,14 @@
     <string name="msg_place_0_45ae89ee" formatted="false">"Metta %1$s"</string>
     <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Metta %1$s en la lingia %2$s, colonna %3$s."</string>
     <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Metta %1$s en tia cella cun contur."</string>
-    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Agiunta capturas dal visur relevantas cun la funcziun d\'agiuntas da GitHub: il sudoku, las cifras renconuschidas, il resultat da Verifitgar u il pass da l\'indizi che mussa il problem. Inditgescha ils resultats spetgads ed effectivs nua che quai gida."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Agiunta capturas dal visur relevantas cun la funcziun d\'agiuntas da GitHub: il sudoku, las cifras renconuschidas, il resultat da Controllar u il pass da l\'indizi che mussa il problem. Inditgescha ils resultats spetgads ed effectivs nua che quai gida."</string>
     <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Stizzai per plaschair mias submissiuns da renconuschientscha da Sudoku Buddy. IDs da las quittanzas: "</string>
     <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Remplazza per plaschair questa invitaziun cun ina descripziun cumpletta dal problem u da l\'idea. Dà a quest rapport in titel curt e descriptiv."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Drizza la camera vers in sudoku"</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Drizza la camera vers in sudoku."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Drizza la camera vers in sudoku sin palpiri. L\'app legia las cifras stampadas e tut quai che ti has scrit, schlia il sudoku e po dar in indizi, verifitgar tias respostas u mussar l\'entira soluziun."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Pèr che mussa"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"TRAMETTER"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Preparar il sudoku…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Precedent"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Pass precedent"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Lectura controllada."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Lectura tramessa. Grazia!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnostica da las ultimas scannadas (emplenì ordavant)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"La renconuschientscha po far sbagls, surtut cun scrittira a maun. Dovra Leger per cumparegliar las cifras renconuschidas cun la fotografia e tutga ina casella per la curreger. L\'app marchescha lecturas intschertas per controllar; era ina lectura cun auta segirezza po esser faussa."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"La renconuschientscha po far sbagls, surtut cun scrittira a maun. Dovra Lectura per cumparegliar las cifras renconuschidas cun la fotografia e tutga ina casella per la curreger. L\'app marchescha lecturas intschertas per controllar; era ina lectura cun auta segirezza po esser faussa."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Rebuttar la supposiziun"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Pèrs distants"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Allontanar %1$s"</string>
@@ -395,13 +395,13 @@
     <string name="msg_row_0_column_1_62476225" formatted="false">"Lingia %1$s, colonna %2$s, "</string>
     <string name="msg_row_1_column_2_645d7932" formatted="false">"lingia $1, colonna $2"</string>
     <string name="msg_row_634768da" formatted="false">"lingia"</string>
-    <string name="msg_rows_bc51e9e6" formatted="false">"retschas"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"lingias"</string>
     <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s exclus"</string>
     <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Las datas diagnosticas da la scannada n\'han betg pudì vegnir legidas."</string>
     <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Capturas dal visur u exempels da sudokus"</string>
     <string name="msg_second_guess_0_1_43e7046c" formatted="false">"Segunda presumziun: %1$s, %2$s."</string>
     <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Tscherner per exercitar"</string>
-    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Tschernegl: lingia %1$s, colonna %2$s"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"Tschernì: lingia %1$s, colonna %2$s"</string>
     <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"Trametter datas diagnosticas (%1$s)"</string>
     <string name="msg_send_diagnostics_2d666083" formatted="false">"Trametter datas diagnosticas"</string>
     <string name="msg_send_these_scans_635ce9f0" formatted="false">"Trametter questas scannadas"</string>
@@ -464,7 +464,7 @@
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"Suppona che questa casella saja %1$s. Suonda las frizzas en successiun: mintga casella è determinada da las cifras plazzadas avant – ubain quella cifra è la suletta ch\'ella po anc cuntegnair, ubain quella casella è il sulet lieu nua che la cifra po anc ir. A la casella cotschna na resta lura nagina cifra, quai che n\'è betg pussaivel – pia n\'è quai betg %2$s."</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"Suppona che questa cella saja %1$s. Suonda las frizzas en successiun: mintga cella è determinada da las cifras plazzadas avant - ubain è quella cifra l\'unica ch\'ella po anc cuntegnair, ubain è quella cella l\'unic lieu nua che la cifra po anc star.\n\nUschia na resta nagina plazza per %2$s en la lingia marcada cun cotschen. Las cifras %3$s marcadas en ella mussan las plazzas nua che quella cifra avess pudì star, e mintgina è ina cella ch\'ina da las frizzas ha gist occupà. Ina lingia senza plazza per ina cifra è impussibla - pia n\'è questa cella betg %4$s."</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Suppona che questa cella saja %1$s. Suonda las frizzas en successiun: mintga cella è determinada da las cifras plazzadas avant - ubain è quella cifra l\'unica ch\'ella po anc cuntegnair, ubain è quella cella l\'unic lieu nua che la cifra po anc star.\n\nUschia na resta nagina plazza per %2$s en il bloc marcà cun cotschen. Las cifras %3$s marcadas en el mussan las plazzas nua che quella cifra avess pudì star, e mintgina è ina cella ch\'ina da las frizzas ha gist occupà. In bloc senza plazza per ina cifra è impussibel - pia n\'è questa cella betg %4$s."</string>
-    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Suppona che questa casella saja %1$s. Suonda las frizzas en successiun: mintga casella è determinada da las cifras plazzadas avant – ubain quella cifra è la suletta ch\'ella po anc cuntegnair, ubain quella casella è il sulet lieu nua che la cifra po anc ir.\n\nUschia na resta en il %2$s cotschen nagin lieu per %3$s. Ils %4$s marcads en el èn ils lieus nua ch\'el avess pudì ir, e mintgin è ina casella ch\'ina da las frizzas ha gist occupà. In %5$s senza lieu per ina cifra n\'è betg pussaivel – pia n\'è quai betg %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Suppona che questa casella saja %1$s. Suonda las frizzas en successiun: mintga casella è determinada da las cifras plazzadas avant – ubain quella cifra è la suletta ch\'ella po anc cuntegnair, ubain quella casella è il sulet lieu nua che la cifra po anc ir.\n\nUschia na resta en l\'unitad marcada cun cotschen (%2$s) nagin lieu per %3$s. Las cifras %4$s marcadas en ella mussan ils lieus nua che quella cifra avess pudì ir, e mintgin è ina casella ch\'ina da las frizzas ha gist occupà. Sch\'i na resta nagin lieu per ina cifra en l\'unitad %5$s, è quai impussibel – pia n\'è questa casella betg %6$s."</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Suppona che questa cella saja %1$s. Suonda las frizzas en successiun: mintga cella è determinada da las cifras plazzadas avant - ubain è quella cifra l\'unica ch\'ella po anc cuntegnair, ubain è quella cella l\'unic lieu nua che la cifra po anc star.\n\nUschia na resta nagina plazza per %2$s en la colonna marcada cun cotschen. Las cifras %3$s marcadas en ella mussan las plazzas nua che quella cifra avess pudì star, e mintgina è ina cella ch\'ina da las frizzas ha gist occupà. Ina colonna senza plazza per ina cifra è impussibla - pia n\'è questa cella betg %4$s."</string>
     <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Passa a Suenter per vesair il pass e sias consequenzas en la griglia."</string>
     <string name="msg_swordfish_c6afd225" formatted="false">"Pesch spada"</string>
@@ -499,8 +499,8 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Las cifras stampadas na furman betg in sudoku schliabel."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nIls candidats restants en %1$s èn {%2$s}. Metta %3$s en la lingia %4$s, colonna %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Il rapport è memia grond per trametter."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"L\'ala Y cun in candidat supplementar en il pivot. Tschertga ina casella cun exactamain trais candidats, per exempel {1,4,7}, che vesa duas casellas cun dus candidats – ina {1,7} ed ina {4,7}.\n\nUssa pon tut las trais esser 7, ed ina sto esser 7. Perquai sto ina casella vesair tut las trais per pudair excluder il 7, betg mo las duas pinzas – quai che signifitga en pratica ch\'ella sa chatta en il medem bloc sco il pivot e sin ina lingia cun ina pinza.\n\nDamain eliminaziuns che cun in\'ala Y, e pli facil da survesair per il medem motiv: il pivot na dat betg en egl."</string>
-    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"En il bloc marcà datti ina casella che ti pos emplenir.\n\nSmacca puspè Sinjal per savair tge tecnica che la chatta."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"L\'ala Y cun in candidat supplementar en il pivot. Tschertga ina casella cun exactamain trais candidats, per exempel {1,4,7}, che vesa duas casellas cun dus candidats – ina {1,7} ed ina {4,7}.\n\nUssa pon tut las trais esser 7, ed ina sto esser 7. Perquai sto ina casella vesair tut las trais per pudair excluder il 7, betg mo las duas pinzas – quai che signifitga en pratica ch\'ella sa chatta en il medem bloc sco il pivot e sin ina lingia cun ina pinza.\n\nDamain eliminaziuns che cun in\'ala Y, e pli facil da survesair per il medem motiv: il pivot na dat betg en egl."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"En il bloc marcà datti ina casella che ti pos emplenir.\n\nSmacca puspè Indizi per savair tge tecnica che la chatta."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Qua na resta nagut pli da deducir."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Questas %1$s casellas cuntegnan tuttas mo %2$s e %3$s, e mintgina vesa la proxima, uschia ch\'ellas alterneschan tras l\'entira chadaina. %4$s e %5$s èn separadas d\'in dumber impar da colliaziuns e cuntegnan perquai cifras differentas – quai excluda %6$s da mintga casella che vesa omaduas."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Questas %1$s casellas cuntegnan ensemen mo %2$s, pia empleneschan quellas cifras las casellas en in tschert urden. Quai excluda %3$s dal rest da quest %4$s."</string>
@@ -518,7 +518,7 @@
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Quest pass n\'emplenescha nagina cella. El excluda %1$s da %2$s cellas."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Quest pass n\'emplenescha nagina cella. El excluda %1$s d\'ina cella."</string>
     <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nQuai è l\'emprima da %1$s deducziuns che mainan a la resposta."</string>
-    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Questa cumprova explitga in sinjal, inclus las eliminaziuns da candidats che mainan a sia resposta. Va pass per pass enavant per suandar il raschunament en la griglia e cuntinuescha lura cun il percurs cumplet."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Questa cumprova explitga in indizi, inclus las eliminaziuns da candidats che mainan a sia resposta. Va pass per pass enavant per suandar il raschunament en la griglia e cuntinuescha lura cun il percurs cumplet."</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Quest sudoku n\'ha betg pudì vegnir preparà."</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Quest sudoku n\'ha betg pudì vegnir memorisà. Ti pos tuttina al duvrar ussa. Fa liber in pau memoria avant che far in\'autra fotografia."</string>
     <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Quest sudoku ha dapli ch\'ina soluziun, pia è probablamain vegnida survesida ina cifra stampada. Soluziun %1$s da %2$s vegn mussada – smacca puspè Schliar per la proxima. Las casellas encircladas varieschan tranter las soluziuns mussadas."</string>
@@ -533,7 +533,7 @@
     <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Emprova sez"</string>
     <string name="msg_turn_on_5a1f096a" formatted="false">"Activar"</string>
     <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Volva il telefon per che il sudoku saja dretg si."</string>
-    <string name="msg_tutor_1555a832" formatted="false">"Tutور"</string>
+    <string name="msg_tutor_1555a832" formatted="false">"Tutor"</string>
     <string name="msg_two_3fc4ccfe" formatted="false">"duas"</string>
     <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Duas casellas cun il medem pèr, colliadas tras ina balantscha per ina da las cifras, sforzan l\'autra cifra en ina dad ellas."</string>
     <string name="msg_two_string_kite_fd558e5c" formatted="false">"Dragun cun duas cordas"</string>
@@ -549,8 +549,8 @@
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Fitg grev"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"Ala W"</string>
-    <string name="msg_was_b63b99f6" formatted="false">"è vegnida"</string>
-    <string name="msg_were_910adfb4" formatted="false">"èn vegnidas"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"è"</string>
+    <string name="msg_were_910adfb4" formatted="false">"èn"</string>
     <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Tge avevas ti spetgà, u co ta gidass tia idea a schliar u emprender Sudoku?"</string>
     <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Tge ch\'è succedì e pass per reproducir il problem (per sbagls)"</string>
     <string name="msg_what_it_does_c74ea9dc" formatted="false">"Tge ch\'i fa"</string>
@@ -559,9 +559,9 @@
     <string name="msg_why_d3ae14a5" formatted="false">"Pertge"</string>
     <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Pertge betg %1$s? · %2$s"</string>
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Pertge questa casella? · %1$s"</string>
-    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" cun la soluziun. Dovra Verifitgar per las examinar."</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" cun la soluziun. Dovra Controllar per las examinar."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Parta da tia casella e lavura enavos. Tscherna ina dumonda sutvart."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Lavura cifra per cifra enstagl da casella per casella. Per in\'unitad, notescha nua che mintga cifra mancanta pudess anc ir. Tschertga lura %1$s cifras che lur glistas cuvran ensemen mo %2$s casellas.\n\nQuellas %3$s cifras ston emplenir quellas %4$s casellas, pia po tut il rest vegnir stritgà en ellas – quai che transfurma savens immediat ina dad ellas en ina singula niva u in pèr niv.\n\nQuai è la tecnica che la glieud chatta la pli greva, perquai ch\'i na dat nagut da vesair cun guardar las casellas: ellas han anc blers candidats. Il muster è en las cifras."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Lavura cifra per cifra enstagl da casella per casella. Per in\'unitad, notescha nua che mintga cifra mancanta pudess anc ir. Tschertga lura %1$s cifras che lur glistas cuvran ensemen mo %2$s casellas.\n\nQuellas %3$s cifras ston emplenir quellas %4$s casellas, pia po tut il rest vegnir stritgà en ellas – quai che producescha savens immediat in singul niv en ina dad ellas u in pèr niv en duas dad ellas.\n\nQuai è la tecnica che la glieud chatta la pli greva, perquai ch\'i na dat nagut da vesair cun guardar las casellas: ellas han anc blers candidats. Il muster è en las cifras."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Lavura mo cun casellas che han anc exactamain dus candidats.\n\nCumenzia cun ina, per exempel {2,6}, e suppona ch\'ella na saja betg 2 – lura è ella 6. Va ad ina casella ch\'ella vesa e che ha era in 6, per exempel {6,4}: quella na po betg esser 6, pia è ella 4. Va ad ina casella che quella vesa e che cuntegna in 4, e cuntinuescha, mintga pass determinà dal precedent.\n\nSche ti cuntanschas ina casella che sia autra cifra è 2 – la cifra che ti has exclus al cumenzament – es ti a fin. Ubain era l\'emprima casella tuttina in 2, ubain la chadaina ha funcziunà e l\'ultima casella è in 2. Ina u l\'autra fin la cuntegna, pia na po nagina casella che vesa omaduas fins la cuntegnair.\n\nTegna las chadainas curtas. Quatter u tschintg casellas èn chattablas cun rispli; pli lunsch fas ti contabilitad, ed il num sincer per quai è ina chadaina sfurzanta."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"l\'ur da lavur sto esser positiv e finit"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Betg legibel"</string>

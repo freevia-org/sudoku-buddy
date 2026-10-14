@@ -50,13 +50,13 @@
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s 張未接受的照片，最新的在前："</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s：刪除 %2$s"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s 個格子"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"此解題流程共有 %1$s 個步驟，使用的最難支援技巧為 %2$s。%3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"此解題流程共有 %1$s 個步驟，使用的最難支援技巧為 %2$s。%3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s三數組"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"先前的候選數推理已從 %2$s 刪除 %1$s。"</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s 個手寫數字"</string>
     <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"%1$sx%2$s 影像需要 %3$s 位元組，但收到 %4$s"</string>
     <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"有一格既不是數字，也不是句點"</string>
-    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"由雙候選數格組成的鏈，若兩端以相同數字相連，該數字必定位於其中一端。"</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"由雙候選數格組成的鏈，若兩端都有同一個候選數，該數字必定位於其中一端。"</string>
     <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"某數字在一列、一欄或一宮中只剩一個可填位置時，就必須填在該位置。"</string>
     <string name="msg_a_handwritten_0_31063236" formatted="false">"手寫的 %1$s。"</string>
     <string name="msg_a_printed_0_244624d9" formatted="false">"印刷的 %1$s。"</string>
@@ -116,18 +116,18 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">"，已檢查為正確"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"選擇一個候選數，查看為何不能填入你的格子。"</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"選擇語言"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"選擇要顯示的內容"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"選擇要顯示的內容"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"關閉"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"關閉提示"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"收合辨識結果檢視"</string>
     <string name="msg_color_and_grayscale_cells_must_use_the_same_g_ac90a169" formatted="false">"彩色與灰階格必須使用相同的幾何配置"</string>
     <string name="msg_column_0_fb3d1b61" formatted="false">"第 %1$s 欄"</string>
     <string name="msg_column_881d5fb6" formatted="false">"欄"</string>
-    <string name="msg_columns_0e624a1a" formatted="false">"行"</string>
+    <string name="msg_columns_0e624a1a" formatted="false">"欄"</string>
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"比較強制鏈，優先選擇需要追蹤較少格子的鏈。較短的鏈可能讓完整解答需要更多步驟。"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"推演結果 %1$s/%2$s · 假設數字"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"包含"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"內容類型"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"繼續完整解題路徑"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"矛盾 · 假設不成立"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">"，矛盾"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"無法保留偵錯用的擷取依據"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"無法提交辨識結果。請連線後再試一次。"</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"無法繼續"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"刪除"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"刪除"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"刪除報告"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"刪除此照片"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"請描述發生的情況及重現步驟。請說明是否已先檢查並修正辨識出的數字。若是提出想法，請填寫「不適用」。"</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">"，此提示的目標格"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- 裝置：%1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"診斷資訊已縮短，以符合瀏覽器草稿的長度限制。應用程式的「傳送診斷資訊」功能可分享完整報告。"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"診斷資訊已縮短，以符合瀏覽器草稿的長度限制。應用程式的「傳送診斷資料」功能可分享完整報告。"</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"數字必須為 1..9，但實際為 %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"未辨識出數字"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"將依據保留在磁碟上會影響耗時；這不是延遲效能測試。"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"每一種都會在一格中填入數字。"</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"每格都已填滿，但有 %1$s 個答案與解答不符。"</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"每格都已填滿，但有一個答案與解答不符。"</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"每道只有唯一解的數獨都能透過推理解出；不需要猜測，猜測也很少有幫助。以下是本應用程式能辨識並解說的推理方法，由易到難排列。只要某種方法適用於目前開啟的題目，就會顯示所有適用的位置。"</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"每道只有唯一解的數獨都能透過推理解出；不需要猜測，猜測也很少有幫助。以下是本應用程式能辨識並解說的推理方法，由易到難排列。只要某種方法適用於目前開啟的題目，就會顯示所有適用的位置。"</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"你目前填入的答案全部正確。"</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"目前可用的範例：每個都從目前的盤面開始。"</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"預期有 10 條水平線，但收到 %1$s"</string>
@@ -234,7 +234,7 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"讓手機保持水平"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"讓手機在題目上方保持水平。"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"讓手機在題目上方保持水平"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"水平\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"尋找方法"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n推導過程："</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"尋找恰好有兩個候選數的格子－Y 翼由三個這樣的格子組成，沒有其他格子。\n\n選一格作為樞紐格，例如 {2,5}。找一格與它互見、候選數為 {2,9} 的格子，再找另一格與它互見、候選數為 {5,9} 的格子。樞紐格不是 2 就是 5。若是 2，第一個翼格必須是 9；若是 5，第二個翼格必須是 9。無論如何，其中一個翼格一定是 9－你不知道是哪一格，也不需要知道。\n\n因此，所有同時與兩個翼格互見的格子都不能是 9。這些格子通常是補成矩形的另外兩個角。"</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"優先使用較短的強制鏈"</string>
     <string name="msg_language_a4fe6526" formatted="false">"語言"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"授權條款"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"在一列、一欄或一宮中，尋找只剩少量候選數的格子。選取其中 %1$s 格，將候選數合併。若合計恰好有 %2$s 個數字，這 %3$s 個數字的位置就已限定：它們必須以某種順序填入這 %4$s 格，即使你還無法確定各格要填哪個。\n\n這樣就夠了。該單元的其他格子都可刪除這些數字，而通常其中一格會因此成為單數。\n\n這些格子不必全都具有相同候選數－{2,7}、{2,9} 和 {7,9} 就是完全有效的三數組，也是大家容易漏掉的一種。"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"在一列、一欄或一宮中，尋找只剩少量候選數的格子。選取其中 %1$s 格，將候選數合併。若合計恰好有 %2$s 個數字，這 %3$s 個數字的位置就已限定：它們必須以某種順序填入這 %4$s 格，即使你還無法確定各格要填哪個。\n\n這樣就夠了。該單元的其他格子都可刪除這些數字，而通常其中一格會因此成為單數。\n\n這些格子不必全都具有相同候選數－{2,7}、{2,9} 和 {7,9} 就是完全有效的三數組，也是大家容易漏掉的一種。"</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"尋找具有相同兩個候選數、例如 {4,9}，且每格與下一格互見、連成鏈的格子。三格不夠，至少需要四格。\n\n沿途以兩種顏色交替標記。由於每格都與下一格互見，相鄰兩格不能填入相同數字，因此整條鏈會是 4, 9, 4, 9－或 9, 4, 9, 4，你無法判斷是哪一種。\n\n無論如何，兩個不同顏色的格子會填入不同數字：一格是 4，另一格是 9。因此，任何同時與它們互見的格子都不能是這兩個數字，可一次刪除兩個候選數。\n\n這個模式容易辨認，正是因為其中每格看起來都相同。沿著盤面上相同的候選數對追蹤，看看它們在哪裡相連。"</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"尋找具有相同兩個候選數、例如 {1,6}，且位於矩形三個角的三格。這個矩形必須恰好跨兩宮：兩列與兩欄交叉，跨兩宮，而非四宮。\n\n接著查看第四個角。若它也只有 1 和 6，題目就會有兩個解－你可以交換矩形中的 1 和 6，其他部分仍然成立。正確設計的題目只有唯一解，因此第四個角必須使用其他數字：保留其他候選數，刪除 1 和 6。\n\n這是所有方法中唯一依據出題者而非盤面本身的論證。它適用於正式發布的題目，但若你已填錯答案，就毫無用處，因為此時可能根本沒有解，更談不上唯一解。"</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"看這一宮。沿著外框找到此提示要解釋的格子。"</string>
@@ -282,7 +282,7 @@
     <string name="msg_moderate_5c42afc7" formatted="false">"中等"</string>
     <string name="msg_more_d47d7cb0" formatted="false">"更多"</string>
     <string name="msg_more_light_needed_4b4480e1" formatted="false">"需要更多光線"</string>
-    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"有多個解，因此漏掉了一個印刷數字。按「解題」查看各個解及其差異位置。"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"有多個解，因此漏掉了一個印刷數字。按「解答」查看各個解及其差異位置。"</string>
     <string name="msg_move_back_f4d6dba8" formatted="false">"往後移"</string>
     <string name="msg_move_closer_1da054ae" formatted="false">"靠近一點"</string>
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"靠近一點－九宮格太小，無法辨識。"</string>
@@ -308,7 +308,7 @@
     <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"無法有把握地辨識－最接近的猜測是 %1$s %2$s，信心程度為 %3$s。請自行設定此格。"</string>
     <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"尚未辨識為九乘九的九宮格－請嘗試讓畫面只包含九宮格並填滿畫面，或直接拍照"</string>
     <string name="msg_not_started_7a7400f4" formatted="false">"尚未開始"</string>
-    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"此手機沒有可傳送的內容。"</string>
+    <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"無法從此手機傳送任何內容。"</string>
     <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"沒有需要推算的內容了。"</string>
     <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"本應用程式已知的技巧無法在這裡推理出更多結果。"</string>
     <string name="msg_nothing_unusual_43de65bb" formatted="false">"無異常"</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"這格只能填入 %1$s。標示的儲存格已占用其餘八個數字中的一個；%2$s 先前已從這格的候選數中排除，並非根據周圍可見的數字排除。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"這格只能填入 %1$s。標示的儲存格已占用其餘八個數字中的七個；%2$s 先前已從這格的候選數中排除，並非根據周圍可見的數字排除。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"這格只能填入 %1$s。標示的儲存格已占用其餘八個數字中的五個；%2$s 先前已從這格的候選數中排除，並非根據周圍可見的數字排除。"</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"這裡只能填 %1$s。標示的格子已占用其他八個數字中的 %2$s 個；%3$s %4$s 是先前從此格中排除的，並非根據周圍可見的內容。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"這裡只能填 %1$s。標示的格子已占用其他八個數字中的 %2$s 個；%3$s %4$s先前的推理從此格中排除，並非根據周圍可見的內容。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"這格只能填入 %1$s。標示的儲存格已占用其餘八個數字中的兩個；%2$s 先前已從這格的候選數中排除，並非根據周圍可見的數字排除。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"這裡只能填 %1$s。醒目標示的格子已佔用其餘八個數字中的 %2$s 個；%3$s 先前已從此格排除，並非由周圍可見的數字排除。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"這格只能填入 %1$s。標示的儲存格已占用其餘八個數字中的三個；%2$s 先前已從這格的候選數中排除，並非根據周圍可見的數字排除。"</string>
@@ -336,7 +336,7 @@
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"開啟應用程式設定"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"開啟 GitHub"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"開源聲明"</string>
-    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"開啟「為什麼是這一格？」查看最終填入的依據，或選擇一個已排除的候選數，追蹤其證明。"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"開啟「為何是這格？」查看最終填入的依據，或選擇一個已排除的候選數，追蹤其證明。"</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV－Apache 授權條款 2.0。用於尋找九宮格及校正透視。\n\nAndroidX、Jetpack Compose 和 CameraX－Apache 授權條款 2.0。\n\nKotlin－Apache 授權條款 2.0。\n\n數字辨識模型使用 LeCun、Cortes 和 Burges 的 MNIST 手寫數字資料庫，以及由開放系統字型產生的數字和以程式繪製的數字進行訓練。"</string>
     <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV 原生程式庫載入失敗"</string>
     <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"拍攝另一道題目。"</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"將相機對準數獨題目。"</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"將相機對準紙上的數獨題目。應用程式會辨識印刷數字及你填入的內容，解出題目，並可提供提示、檢查你的答案，或顯示完整解答。"</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"指向數對"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"提交"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"正在準備題目…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"上一個"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"上一步"</string>
@@ -499,7 +499,7 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"印刷數字無法構成可解的題目。"</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s 剩餘的候選數為 {%2$s}。在第 %4$s 列、第 %5$s 欄填入 %3$s。"</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"報告太大，無法提交。"</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"樞紐格多一個候選數的 Y 翼。找一個恰有三個候選數的格，例如 {1,4,7}，且它可見兩個雙候選數格：一格是 {1,7}，另一格是 {4,7}。\n\n這三格都可能是 7，而且必有一格是 7。因此，要排除某格中的 7，該格必須同時可見這三格，而非僅看見兩個翼格。實際上，這表示它與樞紐格同宮，並與某個翼格同列或同欄。\n\n它能刪除的候選數比 Y 翼少，也因同樣的原因更容易漏看：樞紐格並不顯眼。"</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"樞紐格多一個候選數的 Y 翼。找一個恰有三個候選數的格，例如 {1,4,7}，且它可見兩個雙候選數格：一格是 {1,7}，另一格是 {4,7}。\n\n這三格都可能是 7，而且必有一格是 7。因此，要排除某格中的 7，該格必須同時可見這三格，而非僅看見兩個翼格。實際上，這表示它與樞紐格同宮，並與某個翼格同列或同欄。\n\n它能刪除的候選數比 Y 翼少，也因同樣的原因更容易漏看：樞紐格並不顯眼。"</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"標示的宮內有一格可以填入數字。\n\n再按一次「提示」，即可知道要使用哪種技巧。"</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"這裡已沒有需要推理的內容。"</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"這 %1$s 格都只有 %2$s 和 %3$s，且每格都可見下一格，因此數字一路交替。%4$s 和 %5$s 之間相隔奇數個鏈結，所以兩格的數字不同；任何同時可見這兩格的格都可排除 %6$s。"</string>
@@ -511,7 +511,7 @@
     <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"這些數字無法構成題目，且錯誤太多，無法指出是哪幾個。點選任一格修正辨識結果，或重新拍照。"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"這些數字無法構成題目。更改圈起來的 %1$s 格就能修正；點選其中一格修正辨識結果。"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"這些數字無法構成題目。更改圈起來的那一格就能修正；點選它修正辨識結果。"</string>
-    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"這些數字無法構成題目，因此有數字辨識錯誤。按「解題」查看哪些格需要修正。"</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"這些數字無法構成題目，因此有數字辨識錯誤。按「解答」查看哪些格需要修正。"</string>
     <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"這四格在兩個宮內形成矩形，其中三格只有 %1$s。若 %2$s 也只有這兩個數字，就能沿矩形互換數字，使題目有兩個解。此題只有一個解，因此 %3$s 必須使用其他數字，故可刪除 %4$s。"</string>
     <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"這些步驟未能解到最後：此處有狀況讓應用程式完全無法處理。"</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"此步驟不會填入數字，而是從 %2$s 排除 %1$s。"</string>
@@ -521,7 +521,7 @@
     <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"這份證明說明一個提示，包括得出答案前的候選數刪除。逐步前進，在盤面上跟隨推理，再繼續完整解題流程。"</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"無法準備這道題目。"</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"無法儲存這道題目。你現在仍可使用它。再次拍照前，請先釋出儲存空間。"</string>
-    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"這道題目有多個解，因此可能漏掉了一個印刷數字。目前顯示第 %1$s 個解，共 %2$s 個；再次按「解題」查看下一個。圈起來的格在已顯示的解之間有所不同。"</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"這道題目有多個解，因此可能漏掉了一個印刷數字。目前顯示第 %1$s 個解，共 %2$s 個；再次按「解答」查看下一個。圈起來的格在已顯示的解之間有所不同。"</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"無法開啟這道題目的照片。"</string>
     <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"此推理排除了 %1$s 個現有的 "</string>
     <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"這格可能是候選數註記，而非完整數字。請檢查。"</string>
@@ -532,7 +532,7 @@
     <string name="msg_tried_out_a44e90a4" formatted="false">"已試過"</string>
     <string name="msg_try_it_yourself_4ddaece0" formatted="false">"自己試試"</string>
     <string name="msg_turn_on_5a1f096a" formatted="false">"開啟"</string>
-    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"轉動手機，讓題目朝上。"</string>
+    <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"轉動手機，讓畫面中的題目方向擺正。"</string>
     <string name="msg_tutor_1555a832" formatted="false">"教學"</string>
     <string name="msg_two_3fc4ccfe" formatted="false">"兩"</string>
     <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"兩格具有相同的雙候選數，且其中一個數字以蹺蹺板連結，就能迫使另一個數字出現在其中一格。"</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"為何是這格？· %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" 與解答不符。使用「檢查」查看。"</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"從你所選的格往回推。請選擇下方的問題。"</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"逐個數字分析，而非逐格分析。在一個單元中，列出每個缺少的數字還能放在哪裡。接著找出 %1$s 個數字，其位置清單合起來只涵蓋 %2$s 格。\n\n這 %3$s 個數字必須填滿那 %4$s 格，因此可劃掉這些格中的所有其他候選數，常能立刻讓其中一格形成裸單數或裸數對。\n\n這通常是大家覺得最難找的技巧，因為單看格子看不出來：它們仍有許多候選數。規律藏在數字之中。"</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"逐個數字分析，而非逐格分析。在一個單元中，列出每個缺少的數字還能放在哪裡。接著找出 %1$s 個數字，其位置清單合起來只涵蓋 %2$s 格。\n\n這 %3$s 個數字必須填滿那 %4$s 格，因此可劃掉這些格中的所有其他候選數，常能立刻讓其中一格形成顯性單數，或讓其中兩格形成顯性數對。\n\n這通常是大家覺得最難找的技巧，因為單看格子看不出來：它們仍有許多候選數。規律藏在數字之中。"</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"只使用恰好剩下兩個候選數的格。\n\n從一格開始，例如 {2,6}，假設它不是 2，那它就是 6。移到它可見、也有 6 的格，例如 {6,4}：那格不能是 6，所以是 4。再移到該格可見、含有 4 的格，繼續推下去，每一步都由前一步迫使確定。\n\n若到達一格，而它的另一個數字是 2，也就是一開始排除的數字，就完成了。不是第一格原本就是 2，就是鏈結成立而最後一格是 2。兩端必有一端是 2，因此任何同時可見兩端的格都不能是 2。\n\n鏈結要保持簡短。四、五格還能用鉛筆找出；再長就得忙著記錄，稱為強制鏈才貼切。"</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"處理邊長必須為正值且有限"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"無法辨識"</string>

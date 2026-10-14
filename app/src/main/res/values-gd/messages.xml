@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
-    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nIs iad na ceallan soillsichte a tha ga dhearbhadh.\n\nBrùth Boillsgeadh a-rithist gus faicinn dè an cealla."</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nIs iad na ceallan soillsichte a tha ga dhearbhadh.\n\nBrùth Gliocas a-rithist gus faicinn dè an cealla."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"Chan eil ach %3$s agus %4$s ann an %1$s agus %2$s le chèile. San %5$s seo, chan eil ach dà àite aig %6$s, aon a chì gach fear dhiubh — agus mar sin is e %7$s aon den dithis sin, agus feumaidh an ceann a chì e a bhith na %8$s. Ge bith dè, is e %9$s aon cheann, a chuireas às do %10$s ann an rud sam bith a chì an dithis aca."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"Chan fhaod ach %3$s agus %4$s a bhith anns gach fear de %1$s agus %2$s. Sa bhogsa seo, chan eil ach dà àite aig %5$s, agus chì gach fear dhiubh aon àite - mar sin ’s e %6$s a th’ ann an aon den dà àite sin, agus feumaidh an ceann a chì e a bhith %7$s. Anns gach cùis, ’s e %8$s a th’ ann an aon cheann, agus tha sin a’ cur às do %9$s anns gach cealla a chì an dà cheann."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"Chan fhaod ach %3$s agus %4$s a bhith anns gach fear de %1$s agus %2$s. Sa cholbh seo, chan eil ach dà àite aig %5$s, agus chì gach fear dhiubh aon àite - mar sin ’s e %6$s a th’ ann an aon den dà àite sin, agus feumaidh an ceann a chì e a bhith %7$s. Anns gach cùis, ’s e %8$s a th’ ann an aon cheann, agus tha sin a’ cur às do %9$s anns gach cealla a chì an dà cheann."</string>
@@ -10,13 +10,13 @@
     <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s aig sreath %2$s, colbh %3$s%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s aig ceum %2$s"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"Chan fhaod ach %2$s a bhith ann an %1$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir tha %3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir chan fhaod ach %4$s a bhith ann an %3$s san aon cholbh %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir chan fhaod ach %4$s a bhith ann an %3$s san aon bhogsa %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir chan fhaod ach %4$s a bhith ann an %3$s san aon ràgh %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir chan fhaod ach %4$s a bhith ann an %3$s san aon sreath %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir tha %4$s ann an %3$s san aon bhogsa %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir tha %4$s ann an %3$s san aon cholbh %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir tha %4$s ann an %3$s san aon ràgh %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"Chan fhaod %2$s a bhith ann an %1$s oir tha %4$s ann an %3$s san aon sreath %5$s."</string>
     <string name="msg_0_contains_1_1a322cb6" formatted="false">"Tha %2$s ann an %1$s."</string>
     <string name="msg_0_empty_3b007105" formatted="false">"%1$s falamh"</string>
     <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, inntrigeadh"</string>
@@ -32,11 +32,11 @@
     <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"Tha %1$s air a chur às sa chealla sin mar-thà. Is iad na tagraichean aige "</string>
     <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"Tha %1$s air a chur às le %2$s, a tha "</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"Tha %1$s air a dhùnadh a-mach le %2$s, anns nach fhaod ach %3$s a bhith, san aon cholbh %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"Tha %1$s air a dhùnadh a-mach le %2$s, anns nach fhaod ach %3$s a bhith, san aon ràgh %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"Tha %1$s air a dhùnadh a-mach le %2$s, anns nach fhaod ach %3$s a bhith, san aon sreath %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"Tha %1$s air a dhùnadh a-mach le %2$s, anns nach fhaod ach %3$s a bhith, san aon bhogsa %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"Tha %1$s air a dhùnadh a-mach le %2$s, anns a bheil %3$s, san aon bhogsa %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"Tha %1$s air a dhùnadh a-mach le %2$s, anns a bheil %3$s, san aon cholbh %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"Tha %1$s air a dhùnadh a-mach le %2$s, anns a bheil %3$s, san aon ràgh %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"Tha %1$s air a dhùnadh a-mach le %2$s, anns a bheil %3$s, san aon sreath %4$s."</string>
     <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"Tha %1$s air a sparradh sa chealla as ùire le àireamh-ceuma (sreath %2$s, colbh %3$s). %4$s Tha an t-saighead a’ leantainn suidheachadh a tha a’ cur ris; tha buaidhean roimhe cudromach cuideachd."</string>
     <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"Tha %1$s a dhìth bhon classpath"</string>
     <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s de %2$s"</string>
@@ -49,8 +49,8 @@
     <string name="msg_0_quad_c9dd2280" formatted="false">"ceathrar %1$s"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s dealbh(an) air an diùltadh, am fear as ùire an toiseach:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: thoir air falbh %2$s"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"Àireamh nan ceallan: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Tha %1$s ceumannan san t-slighe seo, agus is e %2$s an dòigh as duilghe le taic. %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s ceallan"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"Tha %1$s ceumannan san t-slighe seo, agus is e %2$s an dòigh as duilghe le taic. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"trìnear %1$s"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"Chaidh %1$s a thoirt air falbh bho %2$s le reusanachadh thagraichean roimhe."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s sgrìobhte a-steach"</string>
@@ -97,10 +97,10 @@
     <string name="msg_box_512fd3c6" formatted="false">"Bogsa"</string>
     <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Lùghdachadh bogsa-loidhne"</string>
     <string name="msg_camera_03494b0d" formatted="false">"Camara"</string>
-    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"chan fhaod a bhith ann ach"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"comasach air gabhail ri dìreach"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Sguir dheth"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", tagraichean %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"FianaisGlacaidh"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Ceangail figear ann an slabhraidh tro na h-aonadan far nach eil aige ach dà àite, cuir dà dhath mu seach air an t-slabhraidh, agus bidh aon dath fìor air feadh na slabhraidh."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Le bhith a’ ceangal %1$s tro na h-aonadan far nach eil ach dà àite aige, gheibh na ceallan seo dà dhath mu seach, agus tha aon dath fìor air feadh na slabhraidh. Tha dà chealla den dath eile san aon sreath, rud nach gabh tachairt - mar sin tha an dath sin breugach, agus thèid %2$s a thoirt às gach cealla den dath sin."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Le bhith a’ ceangal %1$s tro na h-aonadan far nach eil ach dà àite aige, gheibh na ceallan seo dà dhath mu seach, agus tha aon dath fìor air feadh na slabhraidh. Tha dà chealla den dath eile san aon bhogsa, rud nach gabh tachairt - mar sin tha an dath sin breugach, agus thèid %2$s a thoirt às gach cealla den dath sin."</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", air a dhearbhadh ceart"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Tagh tagraiche gus faicinn carson nach urrainn dha a bhith sa chealla agad."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Tagh cànan"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Tagh dè thèid a shealltainn"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Tagh dè thèid a shealltainn"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Dùin"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Dùin an gliocas"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Paisg sgrùdadh an leughaidh"</string>
@@ -126,8 +126,8 @@
     <string name="msg_columns_0e624a1a" formatted="false">"colbhan"</string>
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Dèan coimeas eadar slabhraidhean èigneachaidh agus thoir roghainn don fheadhainn anns a bheil nas lugha de cheallan ri leantainn. Faodaidh slabhraidhean nas giorra barrachd cheumannan a thoirt san fhuasgladh iomlan."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Buil %1$s de %2$s · figearan beachd-bharail"</string>
-    <string name="msg_contains_beeb20fb" formatted="false">"tha ann"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Seòrsa-Susbaint"</string>
+    <string name="msg_contains_beeb20fb" formatted="false">"a’ gabhail a-steach"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Lean air adhart leis an t-slighe iomlan"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contrarrachd · tha a’ bheachd-bharail a’ fàiligeadh"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contrarrachd"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Cha b’ urrainn dhuinn fianais glacaidh dì-bhugachaidh a chumail"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Cha b’ urrainn dhuinn an leughadh a chur a-steach. Feuch a-rithist nuair a bhios ceangal agad."</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Ceann marbh"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"SGUAB ÀS"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Sguab às"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Sguab às an aithisg"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Sguab às an dealbh seo"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Bidh gach aon dhiubh a’ lìonadh cealla."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Tha gach cealla lìonta, ach chan eil %1$s freagairtean a’ freagairt ris an fhuasgladh."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Tha gach cealla lìonta, ach chan eil aon fhreagairt a’ freagairt ris an fhuasgladh."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Faodar gach sudoku aig a bheil aon fhreagairt fhuasgladh le reusanachadh; chan eil tomhas a dhìth a-riamh agus is ainneamh a bhios e feumail. Seo na dòighean reusanachaidh a dh’aithnicheas agus a mhìnicheas an aplacaid seo, leis an fheadhainn as fhasa an toiseach. Far a bheil aon dhiubh a’ buntainn ris an tòimhseachan a tha fosgailte agad, seallaidh i gach àite far a bheil e a’ buntainn."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Faodar gach sudoku aig a bheil aon fhreagairt fhuasgladh le reusanachadh; chan eil tomhas a dhìth a-riamh agus is ainneamh a bhios e feumail. Seo na dòighean reusanachaidh a dh’aithnicheas agus a mhìnicheas an aplacaid seo, leis an fheadhainn as fhasa an toiseach. Far a bheil aon dhiubh a’ buntainn ris an tòimhseachan a tha fosgailte agad, seallaidh i gach àite far a bheil e a’ buntainn."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Tha a h-uile rud a sgrìobh thu gu ruige seo ceart."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Eisimpleirean rim faighinn a-nis: tha gach fear a’ tòiseachadh bhon bhòrd làithreach agad."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"bha dùil ri 10 loidhnichean còmhnard, fhuaradh %1$s"</string>
@@ -212,20 +212,20 @@
     <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Cuiridh leughaidhean neo-chinnteach san àm ri teachd an dealbh tòimhseachain a chaidh a dhèanamh dìreach, toraidhean aithneachaidh agus ceartachaidhean gu Freevia airson anailis is trèanadh. Mairidh lethbhreacan trèanaidh gus an tèid an sguabadh às tro Chuidhteasan tagraidh; faodaidh modail trèanaichte atharrachaidhean a dh’ionnsaich e a chumail. Ma tha tòimhseachan neo-chinnteach fosgailte mu thràth, thèid a chur a-nis. Faodaidh tu seo a chur dheth sna Roghainnean."</string>
     <string name="msg_gentle_96124817" formatted="false">"Furasta"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Tha an deàrrsadh a’ falach nan loidhnichean — claon an duilleag air falbh bhon t-solas"</string>
-    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ÌomhaighLiath(%1$sx%2$s)"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
     <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Tha comharran peansail sna ceallan liatha, agus tha an aplacaid gan leigeil seachad. Tha am bàr fon fhigear a’ sealltainn dè cho cinnteach ’s a bha i. Thoir gnogag air cealla airson mion-fhiosrachadh."</string>
     <string name="msg_handwritten_6a50cef3" formatted="false">"Làmh-sgrìobhte"</string>
     <string name="msg_hard_9e73f8fa" formatted="false">"Doirbh"</string>
     <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
     <string name="msg_hidden_7e6fefff" formatted="false">"Falaichte"</string>
-    <string name="msg_hidden_pair_bab0be41" formatted="false">"Paid hir falaichte"</string>
+    <string name="msg_hidden_pair_bab0be41" formatted="false">"Paidhir falaichte"</string>
     <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Ceathrar falaichte"</string>
     <string name="msg_hidden_single_33cf031b" formatted="false">"Aonar falaichte"</string>
     <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Triùir falaichte"</string>
     <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Falaich fianais na bu tràithe"</string>
     <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Falaich mar a lorgas tu fear"</string>
     <string name="msg_hint_0_bc1ead3f" formatted="false">", gliocas %1$s"</string>
-    <string name="msg_hint_a7b4cf9f" formatted="false">"Moladh"</string>
+    <string name="msg_hint_a7b4cf9f" formatted="false">"Gliocas"</string>
     <string name="msg_hint_proof_b2b8f969" formatted="false">"Dearbhadh a’ ghliocais"</string>
     <string name="msg_hint_reasoning_2548bea0" formatted="false">"Reusanachadh a’ ghliocais"</string>
     <string name="msg_hold_still_0a934617" formatted="false">"Cum seasmhach..."</string>
@@ -234,13 +234,13 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Cùm am fòn rèidh"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Cùm am fòn rèidh os cionn an tòimhseachain."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Cùm am fòn rèidh os cionn an tòimhseachain"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"còmhnard\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Mar a lorgas tu fear"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nMar a ruigeas sinn sin:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Lorg ceallan aig a bheil dìreach dà thagraiche — tha sgiath-Y air a dèanamh de thrì dhiubh agus gun dad eile.\n\nGabh aon dhiubh mar phivot, can {2,5}. Lorg cealla a chì e anns a bheil {2,9}, agus cealla eile a chì e anns a bheil {5,9}. Tha am pivot an dara cuid 2 no 5. Mas e 2 a th’ ann, feumaidh 9 a bhith sa chiad chealla grèim; mas e 5 a th’ ann, feumaidh 9 a bhith san dàrna fear. Co-dhiù, nochdaidh 9 ann an aon de na ceallan grèim — chan eil fhios agad dè am fear, agus chan fheum fhios a bhith agad.\n\nMar sin chan urrainn 9 a bhith ann an cealla sam bith a chì an dà chealla grèim. Mar as trice, ’s iad na ceallan sin an dà oisean a chuireas crìoch air a’ cheart-cheàrnach."</string>
     <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", %1$s beachd-bharail, chan e freagairt a chaidh a chur a-steach"</string>
     <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Mura h-urrainn %1$s figearan ann an aon sreath, colbh no bogsa a bhith ach anns na h-aon %2$s ceallan, chan urrainn dad eile a bhith sna ceallan sin."</string>
-    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Ma tha dìreach %2$s tagraichean eatarra aig %1$s ceallan ann an aon sreath, colbh no bogsa, buinidh na figearan sin do na ceallan sin agus do cheallan sam bith eile san aonad."</string>
+    <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Ma tha dìreach %2$s tagraichean eatarra aig %1$s ceallan ann an aon sreath, colbh no bogsa, buinidh na figearan sin do na ceallan sin agus chan fhaod iad a bhith ann an cealla sam bith eile san aonad."</string>
     <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Ma tha dà àite do fhigear ann an sreath agus dà àite ann an colbh, agus aon às gach fear san aon bhogsa, feumaidh am figear a bhith ann an aon den dà àite eile."</string>
     <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Ma tha dà àite do fhigear anns gach aon de dhà shreath agus aon às gach sreath san aon cholbh, feumaidh am figear a bhith ann an aon den dà àite eile."</string>
     <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Ma tha na h-aon àiteachan do fhigear air loidhne uile taobh a-staigh aon bhogsa, faodar am figear sin a thoirmeasg às a’ chòrr den bhogsa sin."</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Cùm slabhraidhean èigneachaidh goirid"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Cànan"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Ceadan"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Coimhead air aon sreath, colbh no bogsa airson ceallan anns nach eil ach beagan thagraichean air fhàgail. Gabh %1$s dhiubh agus cuir na tagraichean aca ri chèile. Ma tha dìreach %2$s figearan sa bhuidheann, tha na %3$s figearan sin glèidhte: feumaidh iad a bhith anns na %4$s ceallan sin ann an òrdugh air choreigin, ged nach urrainn dhut a ràdh fhathast dè thèid càite.\n\nTha sin gu leòr. Faodaidh gach cealla eile san aonad na figearan sin a thoirt seachad, agus mar as trice ’s e aon de na ceallan sin a bhios na aonar an uair sin.\n\nChan fheum na h-aon tagraichean a bhith anns gach cealla — tha {2,7}, {2,9} agus {7,9} nan triùir gu math dligheach, agus ’s e seo am fear a chailleas daoine."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Coimhead air aon sreath, colbh no bogsa airson ceallan anns nach eil ach beagan thagraichean air fhàgail. Gabh %1$s dhiubh agus cuir na tagraichean aca ri chèile. Ma tha dìreach %2$s figearan sa bhuidheann, tha na %3$s figearan sin glèidhte: feumaidh iad a bhith anns na %4$s ceallan sin ann an òrdugh air choreigin, ged nach urrainn dhut a ràdh fhathast dè thèid càite.\n\nTha sin gu leòr. Faodaidh gach cealla eile san aonad na figearan sin a thoirt seachad, agus mar as trice ’s e aon de na ceallan sin a bhios na aonar an uair sin.\n\nChan fheum na h-aon tagraichean a bhith anns gach cealla — tha {2,7}, {2,9} agus {7,9} nan triùir gu math dligheach, agus ’s e seo am fear a chailleas daoine."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Lorg ceallan anns a bheil an aon dà thagraiche — can {4,9} — a tha a’ dèanamh slabhraidh, gach fear a’ faicinn an ath fhear. Chan eil trì gu leòr; feumaidh co-dhiù ceithir a bhith ann.\n\nCuir dathan orra mu seach mar a thèid thu. Leis gu bheil gach cealla a’ faicinn an ath fhear, chan urrainn an aon fhigear a bhith ann an dà nàbaidh, agus mar sin leughar an t-slabhraidh mar 4, 9, 4, 9 fad na slighe — no 9, 4, 9, 4, agus chan urrainn dhut innse dè an dòigh.\n\nCo-dhiù, tha figearan eadar-dhealaichte ann an dà chealla de dhathan mu choinneamh: tha 4 ann an aon agus 9 san fhear eile. Mar sin chan urrainn gin dhiubh a bhith ann an cealla a chì an dà chuid, agus caillidh e an dà thagraiche aig an aon àm.\n\nTha am pàtran furasta aithneachadh dìreach seach gu bheil gach cealla ann a’ coimhead mar an ceudna. Lean na paidhrichean co-ionann timcheall a’ ghriod agus faic càite an suath iad ri chèile."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Lorg trì ceallan anns a bheil an aon dà thagraiche — can {1,6} — aig trì oiseanan ceart-cheàrnach. Feumaidh an ceart-cheàrnach a bhith ann an dìreach dà bhogsa: dà shreath agus dà cholbh a’ dol tarsainn dà bhogsa, chan e ceithir.\n\nA-nis coimhead air a’ cheathramh oisean. Nam biodh dìreach 1 is 6 ann cuideachd, bhiodh dà fhreagairt aig an tòimhseachan — dh’fhaodadh tu na 1an is 6an iomlaid timcheall a’ cheart-cheàrnach agus dh’obraicheadh a h-uile rud eile fhathast. Tha aon fhreagairt aig tòimhseachan a chaidh a dhealbhadh ceart, agus mar sin feumaidh rudeigin eile a bhith sa cheathramh oisean: fuirichidh na tagraichean eile aige, agus thèid 1 is 6 air falbh.\n\n’S e seo an aon argamaid san leabhar a tha mu dhealbhaiche an tòimhseachain seach mun ghriod. Tha i dligheach air tòimhseachan foillsichte agus gun fheum air fear a lìon thu gu ceàrr mu thràth, oir dh’fhaodadh nach eil freagairt idir ann a bhios gun choimeas."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Coimhead sa bhogsa seo. Lean an t-iomall chun a’ chealla a mhìnicheas an gliocas seo."</string>
@@ -287,7 +287,7 @@
     <string name="msg_move_closer_1da054ae" formatted="false">"Gluais nas fhaisge"</string>
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Gluais nas fhaisge — tha an griod ro bheag airson a leughadh."</string>
     <string name="msg_naked_472fd902" formatted="false">"Rùisgte"</string>
-    <string name="msg_naked_pair_2c93e68d" formatted="false">"Paid hir rùisgte"</string>
+    <string name="msg_naked_pair_2c93e68d" formatted="false">"Paidhir rùisgte"</string>
     <string name="msg_naked_quad_73e85f9d" formatted="false">"Ceathrar rùisgte"</string>
     <string name="msg_naked_single_7205dfc4" formatted="false">"Aonar rùisgte"</string>
     <string name="msg_naked_triple_4f3cc595" formatted="false">"Triùir rùisgte"</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Chan fhaod ach %1$s a dhol an seo. Tha na ceallan comharraichte a’ cleachdadh aon de na h-ochd figearan eile; chaidh %2$s a chur às mar roghainnean sa chealla seo na bu tràithe, agus chan ann air sgàth rud sam bith a chì thu mun cuairt air."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Chan fhaod ach %1$s a dhol an seo. Tha na ceallan comharraichte a’ cleachdadh seachd de na h-ochd figearan eile; chaidh %2$s a chur às mar roghainn sa chealla seo na bu tràithe, agus chan ann air sgàth rud sam bith a chì thu mun cuairt air."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Chan fhaod ach %1$s a dhol an seo. Tha na ceallan comharraichte a’ cleachdadh còig de na h-ochd figearan eile; chaidh %2$s a chur às mar roghainnean sa chealla seo na bu tràithe, agus chan ann air sgàth rud sam bith a chì thu mun cuairt air."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Chan urrainn ach %1$s a bhith an seo. Tha na ceallan comharraichte a’ cleachdadh %2$s de na h-ochd figearan eile; chaidh %3$s %4$s a thoirmeasg às a’ chealla seo na bu tràithe, chan ann air sgàth rud sam bith a chì thu mun cuairt air."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Chan urrainn ach %1$s a bhith an seo. Tha na ceallan comharraichte a’ cleachdadh %2$s de na h-ochd figearan eile; %4$s %3$s a thoirmeasg às a’ chealla seo na bu tràithe, chan ann air sgàth rud sam bith a chì thu mun cuairt air."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Chan fhaod ach %1$s a dhol an seo. Tha na ceallan comharraichte a’ cleachdadh dà de na h-ochd figearan eile; chaidh %2$s a chur às mar roghainnean sa chealla seo na bu tràithe, agus chan ann air sgàth rud sam bith a chì thu mun cuairt air."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Chan fhaod ach %1$s a dhol an seo. Tha na ceallan comharraichte a’ cleachdadh %2$s de na h-ochd figearan eile; chaidh %3$s a chur às sa chealla seo roimhe, agus chan ann air sgàth rud sam bith a chì thu mun cuairt air."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Chan fhaod ach %1$s a dhol an seo. Tha na ceallan comharraichte a’ cleachdadh trì de na h-ochd figearan eile; chaidh %2$s a chur às mar roghainnean sa chealla seo na bu tràithe, agus chan ann air sgàth rud sam bith a chì thu mun cuairt air."</string>
@@ -355,8 +355,8 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Stiùir an camara air tòimhseachan sudoku"</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Stiùir an camara air tòimhseachan sudoku."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Stiùir an camara air tòimhseachan sudoku air pàipear. Leughaidh an aplacaid na figearan clò-bhuailte agus rud sam bith a sgrìobh thu a-steach, fuasglaidh i e, agus faodaidh i gliocas a thoirt dhut, do fhreagairtean a dhearbhadh, no am fuasgladh gu lèir a shealltainn."</string>
-    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Paid hir comharrachaidh"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"CUIR"</string>
+    <string name="msg_pointing_pair_1177a4b6" formatted="false">"Paidhir comharrachaidh"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Ag ullachadh an tòimhseachain…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Roimhe"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"An ceum roimhe"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Leughadh air ath-sgrùdadh."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Leughadh air a chur a-steach. Tapadh leat!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Dàta breithneachaidh sganaidh o chionn ghoirid (air a lìonadh ro-làimh)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Faodaidh aithneachadh mearachdan a dhèanamh, gu h-àraidh le làmh-sgrìobhadh. Cleachd Leugh gus coimeas a dhèanamh eadar na h-àireamhan aithnichte agus an dealbh, agus thoir gnogag air cealla sam bith gus a cheartachadh. Tha an aplacaid a’ comharrachadh leughaidhean mì-chinnteach airson ath-sgrùdadh; faodaidh leughadh misneachail a bhith ceàrr fhathast."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Faodaidh aithneachadh mearachdan a dhèanamh, gu h-àraidh le làmh-sgrìobhadh. Cleachd Leughadh gus coimeas a dhèanamh eadar na h-àireamhan aithnichte agus an dealbh, agus thoir gnogag air cealla sam bith gus a cheartachadh. Tha an aplacaid a’ comharrachadh leughaidhean mì-chinnteach airson ath-sgrùdadh; faodaidh leughadh misneachail a bhith ceàrr fhathast."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Diùlt a’ bharail"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Paidhrichean iomallach"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Thoir air falbh %1$s"</string>
@@ -411,7 +411,7 @@
     <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
     <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"Roinn gu fèin-obrachail nuair a tha leughadh mì-chinnteach"</string>
     <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"An roinn thu leughaidhean mì-chinnteach gu fèin-obrachail?"</string>
-    <string name="msg_show_contradiction_0e27e337" formatted="false">"Seall a’ chonnspaid"</string>
+    <string name="msg_show_contradiction_0e27e337" formatted="false">"Seall a’ chontrarrachd"</string>
     <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"Seall dhomh gach %1$s air an tòimhseachan agad"</string>
     <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Seall dhomh am fear air an tòimhseachan agad"</string>
     <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Dathadh sìmplidh"</string>
@@ -422,7 +422,7 @@
     <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Air fhuasgladh, agus tha gach freagairt ceart."</string>
     <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Freagairt le taic an fhuasglaiche: cuir %1$s ann an %2$s. Is iad na tagraichean %3$s. Cha do lorg dòighean na h-aplacaid gluasad bhon t-suidheachadh seo. Lorg an rannsachadh aice %4$s san aon fhuasgladh; chan eil dearbhadh mionaideach air meuran an rannsachaidh ri fhaighinn."</string>
     <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nFreagairt le taic an fhuasglaiche: cha do lorg na dòighean ris a bheil an aplacaid a’ cur taic gluasad. Chan eil dearbhadh mionaideach ri fhaighinn."</string>
-    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Cur às le taic an fhuasglaiche: tha rannsachadh a’ cur às do %1$s sa chealla shoillsichte, ach cha b’ urrainn don aplacaid lorg goirid na connspaid a chruthachadh airson a shealltainn. Chan eil dearbhadh mionaideach ri fhaighinn."</string>
+    <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Cur às le taic an fhuasglaiche: tha rannsachadh a’ cur às do %1$s sa chealla shoillsichte, ach cha b’ urrainn don aplacaid sreath ghoirid de cheumannan a sheallas a’ chontrarrachd a chruthachadh airson a sealltainn. Chan eil dearbhadh mionaideach ri fhaighinn."</string>
     <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Dh’fhaodadh nòtaichean a bhith ann an cuid de cheallan seach àireamh slàn."</string>
     <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"Cha deach cuid de dh’àireamhan a leughadh le misneachd."</string>
     <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"Chaidh rudeigin ceàrr nuair a bhathar a’ leughadh an deilbh sin."</string>
@@ -492,15 +492,15 @@
     <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Cha b’ urrainn don chamara an dealbh sin a thogail."</string>
     <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Chan eil an camara ri fhaighinn. Dùin aplacaidean camara eile, agus feuch a-rithist."</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"am fear eile"</string>
-    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Thèid an dealbh bho %1$s agus a h-uile rud a chaidh a leughadh bhuaithe a thoirt far an fhòn seo. Chan urrainnear seo a chur às."</string>
-    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Tha an dealbh air liosta nan tòimhseachan agad, fo “Cha b’ urrainn a leughadh”."</string>
+    <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Thèid an dealbh bho %1$s agus a h-uile rud a chaidh a leughadh bhuaithe a thoirt far an fhòn seo. Chan urrainnear seo a thoirt air ais."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Tha an dealbh air liosta nan tòimhseachan agad, fo “Cha ghabhadh a leughadh”."</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Is e %1$s no %2$s an cealla meadhanach an seo. Ge bith dè, tha aon den dà chealla eile air a sparradh gu %3$s, agus mar sin chan fhaod %4$s a bhith ann an cealla sam bith a chì an dithis aca."</string>
     <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Am paidhir comharrachaidh air a leughadh air ais. Gabh sreath no colbh agus àireamh a dh’fheumas àite ann fhathast. Comharraich gach cealla san loidhne sin a dh’fhaodadh an àireamh a ghabhail. Ma tha iad uile san aon bhogsa, feumaidh an àireamh a bhith anns a’ phàirt den loidhne a tha sa bhogsa sin — agus mar sin chan eil i ann an àite eile sa bhogsa, a’ gabhail a-steach an dà shreath no colbh air nach robh thu a’ coimhead.\n\nMar a’ phaidhir chomharrachaidh, chan eil seo a’ suidheachadh dad leis fhèin; tha e a’ dèanamh àite airson rud a nì sin."</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Chan eil na h-àireamhan clò-bhuailte a’ dèanamh tòimhseachan a ghabhas fuasgladh."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nIs iad {%2$s} na tagraichean a tha air fhàgail aig %1$s. Cuir %3$s ann an sreath %4$s, colbh %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Tha an aithisg ro mhòr airson a cur a-steach."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"An sgiath-Y le aon tagraiche a bharrachd sa chealla mheadhanach. Lorg cealla le dìreach trì tagraichean, can {1,4,7}, a chì dà chealla le dà thagraiche — aon {1,7} agus aon {4,7}.\n\nA-nis faodaidh 7 a bhith sna trì dhiubh, agus feumaidh e a bhith ann an aon dhiubh. Mar sin feumaidh cealla na trì fhaicinn gus a chur às, seach dìreach an dà ghreimire — a tha ann an cleachdadh a’ ciallachadh gu bheil e san aon bhogsa ris a’ chealla mheadhanach agus air loidhne le greimire.\n\nNas lugha de chur às na sgiath-Y, agus nas fhasa a chall air an aon adhbhar: chan eil an cealla meadhanach a’ seasamh a-mach."</string>
-    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Tha cealla ann as urrainn dhut a lìonadh sa bhogsa shoillsichte.\n\nBrùth Boillsgeadh a-rithist gus innse dè an dòigh a lorgas e."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"An sgiath-Y le aon tagraiche a bharrachd sa chealla mheadhanach. Lorg cealla le dìreach trì tagraichean, can {1,4,7}, a chì dà chealla le dà thagraiche — aon {1,7} agus aon {4,7}.\n\nA-nis faodaidh 7 a bhith sna trì dhiubh, agus feumaidh e a bhith ann an aon dhiubh. Mar sin feumaidh cealla na trì fhaicinn gus a chur às, seach dìreach an dà ghreimire — a tha ann an cleachdadh a’ ciallachadh gu bheil e san aon bhogsa ris a’ chealla mheadhanach agus air loidhne le greimire.\n\nNas lugha de chur às na sgiath-Y, agus nas fhasa a chall air an aon adhbhar: chan eil an cealla meadhanach a’ seasamh a-mach."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Tha cealla ann as urrainn dhut a lìonadh sa bhogsa shoillsichte.\n\nBrùth Gliocas a-rithist gus innse dè an dòigh a lorgas e."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Chan eil dad air fhàgail an seo airson reusanachadh."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Chan eil ach %2$s agus %3$s sna %1$s ceallan seo uile, agus chì gach fear an ath fhear, agus mar sin bidh iad ag atharrachadh fad na slabhraidh. Tha àireamh chorr de cheanglaichean eadar %4$s agus %5$s, agus mar sin tha àireamhan eadar-dhealaichte annta — a chuireas às do %6$s ann an rud sam bith a chì an dithis aca."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Chan eil ach %2$s sna %1$s ceallan seo eatarra, agus mar sin lìonaidh na h-àireamhan sin iad ann an òrdugh air choreigin. Tha sin a’ cur às do %3$s sa chòrr den %4$s seo."</string>
@@ -518,7 +518,7 @@
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Chan eil seo a’ lìonadh cealla sam bith. Tha e a’ cur às do %1$s mar roghainn ann an %2$s ceallan."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Chan eil seo a’ lìonadh cealla sam bith. Tha e a’ cur às do %1$s mar roghainn ann an aon chealla."</string>
     <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nSeo a’ chiad fhear de %1$s co-dhùnaidhean a tha a’ leantainn chun na freagairt."</string>
-    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Tha an dearbhadh seo a’ mìneachadh aon bhoillsgeadh, a’ gabhail a-steach cur às do thagraichean a tha a’ leantainn chun an fhreagairt aige. Ceum air adhart gus an reusanachadh a leantainn air a’ ghriod, agus an uair sin lean air an t-slighe shlàn."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Tha an dearbhadh seo a’ mìneachadh aon ghliocas, a’ gabhail a-steach cur às do thagraichean a tha a’ leantainn chun an fhreagairt aige. Ceum air adhart gus an reusanachadh a leantainn air a’ ghriod, agus an uair sin lean air an t-slighe shlàn."</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Cha b’ urrainn an tòimhseachan seo ullachadh."</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Cha b’ urrainn an tòimhseachan seo a shàbhaladh. Faodaidh tu a chleachdadh an-dràsta fhathast. Saor beagan àite-stòraidh mus tog thu dealbh eile."</string>
     <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Tha barrachd air aon fhreagairt aig an tòimhseachan seo, agus mar sin is dòcha gun deach àireamh chlò-bhuailte a chall. A’ sealltainn freagairt %1$s de %2$s — brùth Fuasgail a-rithist airson an ath tè. Tha na ceallan le cearcall eadar-dhealaichte am measg nam freagairtean a tha air an sealltainn."</string>
@@ -527,7 +527,7 @@
     <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Dh’fhaodadh nòtaichean thagraichean a bhith sa chealla seo seach àireamh slàn. Thoir sùil air."</string>
     <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Tha cur às do thagraichean a rinneadh roimhe san t-sealladh seo. Fosgail an fhianais aca gu h-ìosal gus an dearbhadh."</string>
     <string name="msg_three_8b5b9db0" formatted="false">"trì"</string>
-    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Ro dhorcha airson loidhnichean na griod aithneachadh"</string>
+    <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Ro dhorcha airson loidhnichean a’ ghriod aithneachadh"</string>
     <string name="msg_trace_7e14c3d7" formatted="false">"Lorg"</string>
     <string name="msg_tried_out_a44e90a4" formatted="false">"Air fheuchainn"</string>
     <string name="msg_try_it_yourself_4ddaece0" formatted="false">"Feuch thu fhèin"</string>
@@ -561,8 +561,8 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Carson an cealla seo? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" ris an fhuasgladh. Cleachd Dearbhaich gus an sgrùdadh."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Obraich air ais bhon chealla agad. Tagh ceist gu h-ìosal."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Obraich àireamh air àireamh seach cealla air chealla. Airson aon aonad, sgrìobh sìos càit am faod gach àireamh a tha a dhìth a dhol fhathast. An uair sin lorg %1$s àireamhan aig nach eil na liostaichean aca eatarra a’ còmhdach ach %2$s ceallan.\n\nFeumaidh na %3$s àireamhan sin na %4$s ceallan sin a lìonadh, agus mar sin faodar loidhne a chur tro gach rud eile annta — a thionndaidheas gu tric aon dhiubh gu aonaran lom no paidhir lom sa bhad.\n\nSeo am fear as duilghe do dhaoine, oir chan eil dad ri fhaicinn nuair a choimheadas tu air na ceallan: tha pailteas thagraichean annta fhathast. Tha am pàtran sna h-àireamhan."</string>
-    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Obraich dìreach le ceallan aig nach eil ach dà thagraiche air fhàgail.\n\nTòisich aig fear, can {2,6}, agus gabh ris nach e an 2 a th’ ann — an uair sin is e an 6 a th’ ann. Gluais gu cealla a chì e aig a bheil 6 cuideachd, can {6,4}: chan fhaod am fear sin a bhith na 6, agus mar sin is e an 4 a th’ ann. Gluais gu cealla a chì am fear sin aig a bheil 4, agus lean ort, gach ceum air a sparradh leis an fhear roimhe.\n\nMa ruigeas tu cealla aig a bheil 2 mar an àireamh eile — an àireamh a thòisich thu le bhith a’ cur às dhi — tha thu deiseil. An dàrna cuid bha a’ chiad chealla na 2 às dèidh a h-uile càil, no ruith an t-slabhraidh agus is e 2 an cealla mu dheireadh. Tha e ann an aon cheann no sa cheann eile, agus mar sin chan fhaod e a bhith ann an rud sam bith a chì an dà cheann.\n\nCùm na slabhraidhean goirid. Gheibhear ceithir no còig ceallan le peansail; nas fhaide na sin tha thu a’ cumail chlàran, agus is e slabhraidh sparraidh an t-ainm onarach air."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Obraich àireamh air àireamh seach cealla air chealla. Airson aon aonad, sgrìobh sìos càit am faod gach àireamh a tha a dhìth a dhol fhathast. An uair sin lorg %1$s àireamhan aig nach eil na liostaichean aca eatarra a’ còmhdach ach %2$s ceallan.\n\nFeumaidh na %3$s àireamhan sin na %4$s ceallan sin a lìonadh, agus mar sin faodar loidhne a chur tro gach rud eile annta — rud a bheir gu tric aonar rùisgte ann an aon dhiubh no paidhir rùisgte thar dà dhiubh sa bhad.\n\nSeo am fear as duilghe do dhaoine, oir chan eil dad ri fhaicinn nuair a choimheadas tu air na ceallan: tha pailteas thagraichean annta fhathast. Tha am pàtran sna h-àireamhan."</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Obraich dìreach le ceallan aig nach eil ach dà thagraiche air fhàgail.\n\nTòisich aig fear, can {2,6}, agus gabh ris nach e an 2 a th’ ann — an uair sin is e an 6 a th’ ann. Gluais gu cealla a chì e aig a bheil 6 cuideachd, can {6,4}: chan fhaod am fear sin a bhith na 6, agus mar sin is e an 4 a th’ ann. Gluais gu cealla a chì am fear sin aig a bheil 4, agus lean ort, gach ceum air a sparradh leis an fhear roimhe.\n\nMa ruigeas tu cealla aig a bheil 2 mar an àireamh eile — an àireamh a thòisich thu le bhith a’ cur às dhi — tha thu deiseil. An dàrna cuid bha a’ chiad chealla na 2 às dèidh a h-uile càil, no ruith an t-slabhraidh agus is e 2 an cealla mu dheireadh. Tha e ann an aon cheann no sa cheann eile, agus mar sin chan fhaod e a bhith ann an rud sam bith a chì an dà cheann.\n\nCùm na slabhraidhean goirid. Gheibhear ceithir no còig ceallan le peansail; nas fhaide na sin tha thu a’ cumail chlàran, agus is e slabhraidh èigneachaidh an t-ainm onarach air."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"feumaidh an oir obrach a bhith dearbhach agus crìochnaichte"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Cha ghabhadh a leughadh"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Sgrìobhte"</string>
@@ -578,7 +578,7 @@
     <string name="msg_your_changes_are_visible_but_could_not_be_sav_4057fca8" formatted="false">"Tha na h-atharrachaidhean agad rim faicinn, ach cha b’ urrainn an sàbhaladh. Saor beagan àite-stòraidh agus feuch an tòimhseachan a dheasachadh a-rithist."</string>
     <string name="msg_your_photos_and_your_privacy_1790d40a" formatted="false">"Na dealbhan agad agus do phrìobhaideachd"</string>
     <string name="msg_your_puzzles_80572487" formatted="false">"Na tòimhseachain agad"</string>
-    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Na tòimhseachain shàbhailte agad"</string>
+    <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Na tòimhseachain a shàbhail thu"</string>
     <string name="msg_your_square_0_4430c1c2" formatted="false">"An cealla agad ← %1$s"</string>
     <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Tha iomall a’ chealla agad fhathast air a chomharrachadh. Tha ceallan uaine a’ sealltainn fianais; tha àireamhan le loidhne troimhe air an cur às."</string>
     <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>

@@ -21,11 +21,11 @@
     <string name="msg_0_empty_3b007105" formatted="false">"%1$s пусто"</string>
     <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, введённая цифра"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"Здесь должно стоять %1$s: это единственная клетка в этом столбце %2$s, где ещё возможно %3$s.\n\n%4$s\n\nВ %5$s сейчас возможно %6$s, но каждый столбец должен содержать %7$s ровно один раз. Поэтому поставьте %8$s в строку %9$s, столбец %10$s."</string>
-    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s должна стоять здесь: это единственная клетка в области %2$s %3$s, которая ещё допускает %4$s.\n\n%5$s\n\n%6$s сейчас допускает %7$s, но каждая область %8$s должна содержать %9$s ровно один раз. Поэтому поставьте %10$s в строке %11$s, столбце %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"Здесь должно стоять %1$s: это единственная клетка в области (%2$s %3$s), которая ещё допускает %4$s.\n\n%5$s\n\n%6$s сейчас допускает %7$s, но каждая область (%8$s) должна содержать %9$s ровно один раз. Поэтому поставьте %10$s в строку %11$s, столбец %12$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"Здесь должно стоять %1$s: это единственная клетка в этом блоке %2$s, где ещё возможно %3$s.\n\n%4$s\n\nВ %5$s сейчас возможно %6$s, но каждый блок должен содержать %7$s ровно один раз. Поэтому поставьте %8$s в строку %9$s, столбец %10$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"Здесь должно стоять %1$s: это единственная клетка в этой строке %2$s, где ещё возможно %3$s.\n\n%4$s\n\nВ %5$s сейчас возможно %6$s, но каждая строка должна содержать %7$s ровно один раз. Поэтому поставьте %8$s в строку %9$s, столбец %10$s."</string>
     <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"У цифры %1$s два возможных места в этой строке и два в этом столбце. %2$s и %3$s находятся в одном блоке, поэтому обе не могут содержать %4$s — значит, цифра стоит в одной из клеток %5$s и %6$s, что исключает %7$s из всех клеток, видящих обе."</string>
-    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s в том же %2$s."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s в той же области (%2$s)."</string>
     <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s в том же блоке."</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s в том же столбце."</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s в той же строке."</string>
@@ -45,14 +45,14 @@
     <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s печатных, %2$s, %3$s неверных"</string>
     <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s печатных, %2$s"</string>
     <string name="msg_0_printed_522101ca" formatted="false">"%1$s печатных"</string>
-    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, печатная подсказка"</string>
+    <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, печатная исходная цифра"</string>
     <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s четвёрка"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"Отклонённых фото: %1$s, от новых к старым:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: исключить %2$s"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"Количество клеток: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Этот путь состоит из %1$s шагов, самая сложная поддерживаемая техника — %2$s. %3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"Этот путь состоит из %1$s шагов, самая сложная поддерживаемая техника — %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s тройка"</string>
-    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s был исключён из %2$s в ходе предыдущих рассуждений о кандидатах."</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"Ранее из %2$s исключено %1$s на основе рассуждений о кандидатах."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s вписано"</string>
     <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"для изображения %1$sx%2$s нужно %3$s байт, получено %4$s"</string>
     <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"клетка не содержала ни цифры, ни точки"</string>
@@ -105,7 +105,7 @@
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Если связать %1$s в цепочку через строки, столбцы и блоки, где для этой цифры есть только два места, эти клетки окрасятся в два чередующихся цвета. Все клетки одного из цветов содержат эту цифру. Две клетки другого цвета находятся в одной строке, что невозможно. Значит, этот цвет ложный, и %2$s исключается из всех клеток этого цвета."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Если связать %1$s в цепочку через строки, столбцы и блоки, где для этой цифры есть только два места, эти клетки окрасятся в два чередующихся цвета. Все клетки одного из цветов содержат эту цифру. Две клетки другого цвета находятся в одном блоке, что невозможно. Значит, этот цвет ложный, и %2$s исключается из всех клеток этого цвета."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Если связать %1$s в цепочку через строки, столбцы и блоки, где для этой цифры есть только два места, эти клетки окрасятся в два чередующихся цвета. Все клетки одного из цветов содержат эту цифру. Две клетки другого цвета находятся в одном столбце, что невозможно. Значит, этот цвет ложный, и %2$s исключается из всех клеток этого цвета."</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Цепочка цифры %1$s через области, где у неё лишь два возможных места, раскрашивает эти клетки двумя чередующимися цветами. Один из цветов верен во всей цепочке. Две клетки цвета %2$s находятся в одном %3$s, что невозможно. Значит, этот цвет неверный, и %4$s исключается из всех клеток этого цвета."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Цепочка цифры %1$s через области, где у неё лишь два возможных места, раскрашивает эти клетки двумя чередующимися цветами. Один из цветов верен во всей цепочке. Две клетки одного цвета (%2$s) находятся в одной области (%3$s), что невозможно. Значит, этот цвет неверный, и %4$s исключается из всех клеток этого цвета."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Цепочка цифры %1$s через области, где у неё лишь два возможных места, раскрашивает эти клетки двумя чередующимися цветами. Один из цветов верен во всей цепочке. Эти клетки видят оба цвета, поэтому при любом варианте цепочки в одной из видимых им клеток стоит %2$s, а значит, в них самих этой цифры быть не может."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Если связать %1$s в цепочку через строки, столбцы и блоки, где для этой цифры есть только два места, эти клетки окрасятся в два чередующихся цвета. Все клетки одного из цветов содержат эту цифру. Две клетки одного цвета находятся в одном блоке, что невозможно. Значит, этот цвет ложный, и %2$s исключается из всех клеток этого цвета."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Если связать %1$s в цепочку через строки, столбцы и блоки, где для этой цифры есть только два места, эти клетки окрасятся в два чередующихся цвета. Все клетки одного из цветов содержат эту цифру. Две клетки одного цвета находятся в одном столбце, что невозможно. Значит, этот цвет ложный, и %2$s исключается из всех клеток этого цвета."</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", проверено: верно"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Выберите кандидата, чтобы узнать, почему он не подходит для вашей клетки."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Выберите язык"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Выберите, что показывать"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Выберите, что показывать"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Закрыть"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Закрыть подсказку"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Свернуть просмотр распознавания"</string>
@@ -127,11 +127,11 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Сравнивать форсирующие цепочки и предпочитать те, в которых нужно проследить меньше клеток. Более короткие цепочки могут потребовать больше шагов для полного решения."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Следствие %1$s из %2$s · гипотетические цифры"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"содержит"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Тип содержимого"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Продолжить полный путь"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Противоречие · предположение неверно"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", противоречие"</string>
-    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Противоречие: в красном %1$s не осталось места для %2$s. Это невозможно, значит, исходное предположение неверно."</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Противоречие: в выделенной красным области (%1$s) не осталось места для %2$s. Это невозможно, значит, исходное предположение неверно."</string>
     <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Противоречие: в красной клетке не осталось кандидатов. Это невозможно, значит, исходное предположение неверно."</string>
     <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Скопировать запрос на удаление"</string>
     <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Верно. Сравните свои рассуждения с объяснением ниже."</string>
@@ -174,12 +174,12 @@
     <string name="msg_empty_8a112150" formatted="false">"Пусто."</string>
     <string name="msg_empty_c6c094bc" formatted="false">"Пусто"</string>
     <string name="msg_english_ba118bf7" formatted="false">"Английский"</string>
-    <string name="msg_entries_that_disagree_09b28420" formatted="false">"несовпадающие записи"</string>
-    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"несовпадающая запись"</string>
+    <string name="msg_entries_that_disagree_09b28420" formatted="false">"которые не совпадают"</string>
+    <string name="msg_entry_that_disagrees_6538e508" formatted="false">"которые не совпадают"</string>
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Каждая из них заполняет клетку."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Все клетки заполнены, но ответы не совпадают с решением: %1$s."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Все клетки заполнены, но один ответ не совпадает с решением."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Любое судоку с единственным решением можно решить логически; угадывать никогда не требуется, и это редко помогает. Здесь перечислены способы рассуждения, которые приложение умеет распознавать и объяснять, начиная с самых простых. Если какой-либо из них применим к открытой головоломке, приложение покажет все места, где он работает."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Любое судоку с единственным решением можно решить логически; угадывать никогда не требуется, и это редко помогает. Здесь перечислены способы рассуждения, которые приложение умеет распознавать и объяснять, начиная с самых простых. Если какой-либо из них применим к открытой головоломке, приложение покажет все места, где он работает."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Всё, что вы написали до сих пор, верно."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Доступные сейчас примеры: каждый начинается с вашего текущего поля."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"ожидалось 10 горизонтальных линий, получено %1$s"</string>
@@ -217,7 +217,7 @@
     <string name="msg_handwritten_6a50cef3" formatted="false">"От руки"</string>
     <string name="msg_hard_9e73f8fa" formatted="false">"Сложный"</string>
     <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
-    <string name="msg_hidden_7e6fefff" formatted="false">"Скрытый"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"Скрытая"</string>
     <string name="msg_hidden_pair_bab0be41" formatted="false">"Скрытая пара"</string>
     <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Скрытая четвёрка"</string>
     <string name="msg_hidden_single_33cf031b" formatted="false">"Скрытая одиночка"</string>
@@ -249,32 +249,32 @@
     <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Если предположение о цифре приводит к клетке без возможных значений, эта цифра неверна."</string>
     <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"размеры изображения должны быть положительными"</string>
     <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"В цепочке клеток с одинаковой парой кандидатов концы цепочки нечётной длины содержат разные цифры."</string>
-    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"В этих %1$s %2$s цифра %3$s может находиться только в этих %4$s %5$s. Вместе они занимают все возможные места, поэтому %6$s можно исключить из остальных клеток этих %7$s."</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Рассмотрим линии (%2$s) в количестве %1$s. В них цифра %3$s может находиться только на пересечениях с линиями (%5$s) в количестве %4$s. Вместе они занимают все эти линии, поэтому %6$s можно исключить из остальных клеток линий (%7$s)."</string>
     <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"В этих %1$s столбцах %2$s может находиться только в этих %3$s строках. Вместе эти позиции занимают все указанные строки, поэтому %4$s можно исключить из всех остальных клеток этих строк."</string>
     <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"В этих %1$s строках %2$s может находиться только в этих %3$s столбцах. Вместе эти позиции занимают все указанные столбцы, поэтому %4$s можно исключить из всех остальных клеток этих столбцов."</string>
-    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"В этих двух %1$s у %2$s лишь по два возможных места, а %3$s и %4$s находятся в одном %5$s, поэтому обе не могут содержать %6$s. Значит, в одной из клеток %7$s и %8$s эта цифра есть, и %9$s можно исключить из всех клеток, которые видят обе."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"Рассмотрим две линии (%1$s). В каждой из них у %2$s лишь два возможных места, а %3$s и %4$s находятся в одной области (%5$s), поэтому обе клетки не могут содержать %6$s. Значит, в одной из клеток %7$s и %8$s эта цифра есть, и %9$s можно исключить из всех клеток, которые видят обе."</string>
     <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"В каждом из этих двух столбцов для %1$s есть только два места, а %2$s и %3$s находятся в одной строке, поэтому обе клетки не могут содержать %4$s. Значит, одна из клеток %5$s и %6$s содержит эту цифру, что исключает %7$s из всех клеток, связанных с обеими общей строкой, столбцом или блоком."</string>
     <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"В каждой из этих двух строк для %1$s есть только два места, а %2$s и %3$s находятся в одном столбце, поэтому обе клетки не могут содержать %4$s. Значит, одна из клеток %5$s и %6$s содержит эту цифру, что исключает %7$s из всех клеток, связанных с обеими общей строкой, столбцом или блоком."</string>
-    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"В этом %1$s цифры %2$s могут находиться только в этих %3$s клетках, поэтому эти клетки заняты ими. Из них можно исключить %4$s."</string>
-    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"В этом %1$s цифра %2$s может находиться только внутри одного блока. Значит, %3$s стоит в этом блоке на данном %4$s, и её можно исключить из остальных клеток блока."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"В этой области (%1$s) цифры %2$s могут находиться только в этих %3$s клетках, поэтому эти клетки заняты ими. Из них можно исключить %4$s."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"На этой линии (%1$s) цифра %2$s может находиться только внутри одного блока. Значит, %3$s стоит на пересечении этого блока с линией (%4$s), и её можно исключить из остальных клеток блока."</string>
     <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"В этом блоке %1$s может находиться только в этих %2$s клетках, поэтому они заняты этими цифрами. Это исключает из них %3$s."</string>
     <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"В этом столбце %1$s может находиться только в этих %2$s клетках, поэтому они заняты этими цифрами. Это исключает из них %3$s."</string>
     <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"В этой строке %1$s может находиться только в этих %2$s клетках, поэтому они заняты этими цифрами. Это исключает из них %3$s."</string>
     <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Включает их фото, результаты распознавания и исправления. Это можно выключить в настройках."</string>
     <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Внутри одного блока найдите цифру, которая может стоять только в двух или трёх клетках, и проверьте, находятся ли все они в одной строке или в одном столбце. Если да, цифра точно стоит где-то на этой линии: вы не знаете где, но знаете, что внутри этого блока. Значит, она не может стоять на той же линии вне блока.\n\nСама по себе эта техника не заполняет клеток. Она убирает кандидатов, чтобы где-то ещё появилась одиночка."</string>
-    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Внутри этого блока %1$s может находиться только в этом %2$s. Значит, %3$s стоит где-то здесь, и её можно исключить из остальных клеток этого %4$s."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Внутри этого блока %1$s может находиться только на одной линии (%2$s). Значит, %3$s стоит где-то здесь, и её можно исключить из остальных клеток линии (%4$s)."</string>
     <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Проблема или идея"</string>
     <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Здесь техника применима в %1$s местах. Переходите вперёд, чтобы просмотреть их."</string>
     <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Здесь техника применима в одном месте. Перейдите вперёд, чтобы увидеть его."</string>
     <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"В этой позиции техника нигде не применима."</string>
-    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Это единственное оставшееся место для %1$s в выделенном %2$s."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Это единственное оставшееся место для %1$s в выделенной области (%2$s)."</string>
     <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Это обведённая клетка.\n\nНажмите «Подсказка» ещё раз, чтобы узнать цифру."</string>
     <string name="msg_jellyfish_2f0a7632" formatted="false">"Медуза"</string>
     <string name="msg_keep_183f00f4" formatted="false">"Сохранить"</string>
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Предпочитать короткие форсирующие цепочки"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Язык"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Лицензии"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"В одной строке, столбце или блоке ищите клетки, в которых осталось мало кандидатов. Возьмите %1$s из них и объедините их кандидатов. Если в объединении ровно %2$s цифр, эти %3$s цифры уже распределены: они должны стоять в этих %4$s клетках в каком-то порядке, хотя вы пока не знаете, какая где.\n\nЭтого достаточно. Из всех остальных клеток области можно исключить эти цифры, и обычно одна из таких клеток затем становится одиночкой.\n\nНеобязательно, чтобы у всех клеток были одинаковые кандидаты: {2,7}, {2,9} и {7,9} — вполне подходящая тройка, которую часто не замечают."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"В одной строке, столбце или блоке ищите клетки, в которых осталось мало кандидатов. Возьмите %1$s из них и объедините их кандидатов. Если в объединении ровно %2$s цифр, эти %3$s цифры уже распределены: они должны стоять в этих %4$s клетках в каком-то порядке, хотя вы пока не знаете, какая где.\n\nЭтого достаточно. Из всех остальных клеток области можно исключить эти цифры, и обычно одна из таких клеток затем становится одиночкой.\n\nНеобязательно, чтобы у всех клеток были одинаковые кандидаты: {2,7}, {2,9} и {7,9} — вполне подходящая тройка, которую часто не замечают."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Ищите клетки с одинаковыми двумя кандидатами, например {4,9}, образующие цепочку, в которой каждая клетка видит следующую. Трёх недостаточно: нужно хотя бы четыре.\n\nРаскрашивайте их поочерёдно двумя цветами. Поскольку каждая клетка видит следующую, в соседних клетках не может стоять одна и та же цифра. Поэтому вся цепочка имеет вид 4, 9, 4, 9 или 9, 4, 9, 4, и вы не знаете какой.\n\nВ любом случае две клетки разных цветов содержат разные цифры: в одной стоит 4, в другой — 9. Поэтому в любой клетке, которая видит обе, не может быть ни одной из этих цифр, и оба кандидата исключаются сразу.\n\nЭту схему легко заметить именно потому, что все её клетки выглядят одинаково. Проследите одинаковые пары по сетке и посмотрите, где они соприкасаются."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Ищите три клетки с одинаковыми двумя кандидатами, например {1,6}, расположенные в трёх углах прямоугольника. Прямоугольник должен занимать ровно два блока: две строки и два столбца пересекают два блока, а не четыре.\n\nТеперь посмотрите на четвёртый угол. Если бы в нём тоже были только 1 и 6, у головоломки было бы два решения: можно было бы поменять 1 и 6 местами по прямоугольнику, и всё остальное осталось бы верным. У правильно составленной головоломки одно решение, поэтому в четвёртом углу должна стоять другая цифра: остальные кандидаты остаются, а 1 и 6 исключаются.\n\nЭто единственный аргумент среди этих техник, который опирается на составителя, а не на сетку. Он надёжен для опубликованной головоломки и бесполезен для той, которую вы уже заполнили с ошибками, потому что у неё может вообще не быть решения, единственность которого можно использовать."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Посмотрите в этот блок. Проследите контур до клетки, которую объяснит эта подсказка."</string>
@@ -286,7 +286,7 @@
     <string name="msg_move_back_f4d6dba8" formatted="false">"Отодвиньте телефон"</string>
     <string name="msg_move_closer_1da054ae" formatted="false">"Поднесите телефон ближе"</string>
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Поднесите телефон ближе — сетка слишком мала для распознавания."</string>
-    <string name="msg_naked_472fd902" formatted="false">"Голый"</string>
+    <string name="msg_naked_472fd902" formatted="false">"Голая"</string>
     <string name="msg_naked_pair_2c93e68d" formatted="false">"Голая пара"</string>
     <string name="msg_naked_quad_73e85f9d" formatted="false">"Голая четвёрка"</string>
     <string name="msg_naked_single_7205dfc4" formatted="false">"Голая одиночка"</string>
@@ -297,7 +297,7 @@
     <string name="msg_new_sudoku_7d90b23a" formatted="false">"Новое судоку"</string>
     <string name="msg_next_consequence_6e10f60b" formatted="false">"Следующее следствие"</string>
     <string name="msg_next_step_298a9207" formatted="false">"Следующий шаг"</string>
-    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Изображения не прикрепляются автоматически. Отправленные здесь сообщения и вложения общедоступны. Примеры, которые вы предпочитаете отправить лично, отправляйте на info@freevia.org."</string>
+    <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Изображения не прикрепляются автоматически. Отправленные здесь сообщения и вложения общедоступны. Примеры, которые вы предпочитаете отправить конфиденциально, отправляйте на info@freevia.org."</string>
     <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"С момента последней установки приложения ни одно фото не было отклонено."</string>
     <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Диагностика сканирования недоступна."</string>
     <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Здесь не применима ни одна техника"</string>
@@ -314,7 +314,7 @@
     <string name="msg_nothing_unusual_43de65bb" formatted="false">"ничего необычного"</string>
     <string name="msg_ok_565339bc" formatted="false">"ОК"</string>
     <string name="msg_one_7692c3ad" formatted="false">"одна"</string>
-    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Одна клетка выглядела как печатная цифра, но это не так."</string>
+    <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Содержимое одной клетки было похоже на печатную цифру, но оказалось не ею."</string>
     <string name="msg_one_printed_digit_was_corrected_automatically_367476eb" formatted="false">"Одна печатная цифра исправлена автоматически."</string>
     <string name="msg_one_square_238078b4" formatted="false">"одна клетка"</string>
     <string name="msg_only_0_can_go_here_every_other_digit_already__9b72d22b" formatted="false">"Здесь может стоять только %1$s: все остальные цифры уже есть в этой строке, столбце или блоке."</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Здесь может стоять только %1$s. Выделенные клетки исключают одну из остальных восьми цифр; %2$s были исключены из этой клетки ранее, а не из-за того, что видно вокруг неё."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Здесь может стоять только %1$s. Выделенные клетки исключают семь из остальных восьми цифр; %2$s была исключена из этой клетки ранее, а не из-за того, что видно вокруг неё."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Здесь может стоять только %1$s. Выделенные клетки исключают пять из остальных восьми цифр; %2$s были исключены из этой клетки ранее, а не из-за того, что видно вокруг неё."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Здесь может стоять только %1$s. Выделенные клетки исключают %2$s из остальных восьми цифр; %3$s %4$s исключены из этой клетки ранее, а не тем, что видно вокруг неё."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Здесь может стоять только %1$s. Выделенные клетки исключают %2$s из остальных восьми цифр; для %3$s %4$s выполнено исключение из этой клетки на основе предыдущих рассуждений, а не цифр, видимых вокруг неё."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Здесь может стоять только %1$s. Выделенные клетки исключают две из остальных восьми цифр; %2$s были исключены из этой клетки ранее, а не из-за того, что видно вокруг неё."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Здесь может быть только %1$s. Выделенные клетки исключают %2$s из остальных восьми цифр; %3$s исключены из этой клетки ранее, а не из-за цифр, которые сейчас видны вокруг неё."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Здесь может стоять только %1$s. Выделенные клетки исключают три из остальных восьми цифр; %2$s были исключены из этой клетки ранее, а не из-за того, что видно вокруг неё."</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Наведите камеру на судоку."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Наведите камеру на судоку на бумаге. Приложение распознаёт печатные цифры и всё, что вы вписали, решает головоломку и может дать подсказку, проверить ваши ответы или показать полное решение."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Указывающая пара"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"ОТПРАВИТЬ"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Подготовка головоломки…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Предыдущий"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Предыдущий шаг"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Распознавание проверено."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Распознавание отправлено. Спасибо!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Диагностика последних сканирований (заполнено автоматически)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Распознавание может ошибаться, особенно с рукописными цифрами. Используйте «Распознавание», чтобы сравнить распознанные цифры с фото, и нажмите на любую клетку для исправления. Приложение отмечает неуверенные результаты для проверки; даже уверенно распознанная цифра может быть неверной."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Распознавание может ошибаться, особенно с рукописными цифрами. Используйте «Распознанное», чтобы сравнить распознанные цифры с фото, и нажмите на любую клетку для исправления. Приложение отмечает неуверенные результаты для проверки; даже уверенно распознанная цифра может быть неверной."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Отвергнуть предположение"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Удалённые пары"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Убрать %1$s"</string>
@@ -499,16 +499,16 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Печатные цифры не образуют решаемую головоломку."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nОставшиеся кандидаты в %1$s: {%2$s}. Поставьте %3$s в строку %4$s, столбец %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Отчёт слишком велик для отправки."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-крыло с одним дополнительным кандидатом в опорной клетке. Найдите клетку с ровно тремя кандидатами, например {1,4,7}, которая видит две клетки с двумя кандидатами — одну {1,7} и одну {4,7}.\n\nТеперь все три могут содержать 7, и одна из них обязательно её содержит. Поэтому для исключения клетка должна видеть все три, а не только два крыла. На практике это означает, что она находится в одном блоке с опорной клеткой и на одной линии с крылом.\n\nИсключений меньше, чем у Y-крыла, и заметить его труднее по той же причине: опорная клетка не выделяется."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-крыло с одним дополнительным кандидатом в опорной клетке. Найдите клетку с ровно тремя кандидатами, например {1,4,7}, которая видит две клетки с двумя кандидатами — одну {1,7} и одну {4,7}.\n\nТеперь все три могут содержать 7, и одна из них обязательно её содержит. Поэтому для исключения клетка должна видеть все три, а не только два крыла. На практике это означает, что она находится в одном блоке с опорной клеткой и на одной линии с крылом.\n\nИсключений меньше, чем у Y-крыла, и заметить его труднее по той же причине: опорная клетка не выделяется."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"В выделенном блоке есть клетка, которую можно заполнить.\n\nНажмите «Подсказка» ещё раз, чтобы узнать, какая техника её находит."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Здесь больше нечего разбирать."</string>
-    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Все эти %1$s клеток допускают только %2$s и %3$s, и каждая видит следующую, поэтому цифры чередуются по всей цепочке. Между %4$s и %5$s нечётное число связей, значит, они содержат разные цифры — это исключает %6$s из всех клеток, видящих обе."</string>
-    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Эти %1$s клеток в совокупности допускают только %2$s, значит, эти цифры заполняют их в некотором порядке. Это исключает %3$s из остальных клеток области %4$s."</string>
+    <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"В этих клетках (всего %1$s) возможны только %2$s и %3$s, и каждая видит следующую, поэтому цифры чередуются по всей цепочке. Между %4$s и %5$s нечётное число связей, значит, они содержат разные цифры — это исключает %6$s из всех клеток, видящих обе."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Эти клетки (всего %1$s) в совокупности допускают только %2$s, значит, эти цифры заполняют их в некотором порядке. Это исключает %3$s из остальных клеток области (%4$s)."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"В этих %1$s клетках возможны только %2$s, поэтому эти цифры заполнят их в некотором порядке. Это исключает %3$s из остальных клеток этой строки."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"В этих %1$s клетках возможны только %2$s, поэтому эти цифры заполнят их в некотором порядке. Это исключает %3$s из остальных клеток этого столбца."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"В этих %1$s клетках возможны только %2$s, поэтому эти цифры заполнят их в некотором порядке. Это исключает %3$s из остальных клеток этого блока."</string>
     <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Это исходные кандидаты для вашей клетки. «Разбор» объясняет, какие варианты можно исключить."</string>
-    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Эти цифры не образуют головоломку, а ошибок слишком много, чтобы определить какие. Нажмите на любую клетку, чтобы исправить распознавание, или сделайте фото заново."</string>
+    <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Эти цифры не образуют головоломку, а ошибок слишком много, чтобы определить, какие цифры неверны. Нажмите на любую клетку, чтобы исправить распознавание, или сделайте фото заново."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Эти цифры не образуют головоломку. Изменение %1$s обведённых клеток исправит её — нажмите на одну из них, чтобы исправить распознавание."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Эти цифры не образуют головоломку. Изменение единственной обведённой клетки исправит её — нажмите на клетку, чтобы исправить распознавание."</string>
     <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Эти цифры не образуют головоломку, значит, одна распознана неверно. Нажмите «Решить», чтобы увидеть, какие клетки исправить."</string>
@@ -523,7 +523,7 @@
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Не удалось сохранить эту головоломку. Сейчас вы всё ещё можете с ней работать. Освободите место перед следующим фото."</string>
     <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"У этой головоломки несколько решений, поэтому, вероятно, пропущена печатная цифра. Показано решение %1$s из %2$s — нажмите «Решить» ещё раз для следующего. Обведённые клетки различаются в показанных решениях."</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Не удалось открыть фото этой головоломки."</string>
-    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Это рассуждение исключает %1$s имеющихся "</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Это рассуждение исключает имеющиеся записи (количество: %1$s), "</string>
     <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"В этой клетке могут быть пометки кандидатов, а не полноценная цифра. Проверьте её."</string>
     <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Здесь учтены предыдущие исключения кандидатов. Откройте их обоснования ниже, чтобы проверить их."</string>
     <string name="msg_three_8b5b9db0" formatted="false">"три"</string>
@@ -547,21 +547,21 @@
     <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Применяя «%1$s», нажмите на клетку, из которой можно убрать кандидата, затем выберите эту цифру."</string>
     <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Применяя «%1$s», нажмите на клетку, которую можно заполнить, затем выберите её цифру."</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
-    <string name="msg_very_hard_9a5c2f08" formatted="false">"Очень сложно"</string>
+    <string name="msg_very_hard_9a5c2f08" formatted="false">"Очень сложный"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"W-крыло"</string>
-    <string name="msg_was_b63b99f6" formatted="false">"была"</string>
-    <string name="msg_were_910adfb4" formatted="false">"были"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"уже"</string>
+    <string name="msg_were_910adfb4" formatted="false">"уже"</string>
     <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Чего вы ожидали или как ваша идея поможет решать или изучать судоку?"</string>
     <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Что произошло и как это воспроизвести (для ошибок)"</string>
     <string name="msg_what_it_does_c74ea9dc" formatted="false">"Что делает"</string>
     <string name="msg_where_1daaa38f" formatted="false">"Где"</string>
-    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Почему %1$s исключена из r%2$sc%3$s"</string>
+    <string name="msg_why_0_was_removed_from_r_1_c_2_f695ce2b" formatted="false">"Почему из r%2$sc%3$s исключено %1$s"</string>
     <string name="msg_why_d3ae14a5" formatted="false">"Почему"</string>
     <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Почему не %1$s? · %2$s"</string>
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Почему эта клетка? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" с решением. Нажмите «Проверить», чтобы посмотреть их."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Рассуждайте в обратном направлении от своей клетки. Выберите вопрос ниже."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Рассматривайте цифры по очереди, а не клетки. Для одной области запишите, куда ещё может попасть каждая отсутствующая цифра. Затем найдите %1$s цифр, чьи списки вместе охватывают только %2$s клеток.\n\nЭти %3$s цифр должны заполнить эти %4$s клеток, поэтому все остальные кандидаты в них можно вычеркнуть — часто это сразу создаёт в одной из них голый одиночный или голую пару.\n\nЭту технику обычно считают самой трудной, потому что при взгляде на клетки ничего не видно: в них всё ещё много кандидатов. Закономерность скрыта в цифрах."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Рассматривайте цифры по очереди, а не клетки. Для одной области запишите, куда ещё может попасть каждая отсутствующая цифра. Затем найдите %1$s цифр, чьи списки вместе охватывают только %2$s клеток.\n\nЭти %3$s цифр должны заполнить эти %4$s клеток, поэтому все остальные кандидаты в них можно вычеркнуть — часто это сразу создаёт в одной из них голый одиночный или голую пару.\n\nЭту технику обычно считают самой трудной, потому что при взгляде на клетки ничего не видно: в них всё ещё много кандидатов. Закономерность скрыта в цифрах."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Работайте только с клетками, в которых осталось ровно два кандидата.\n\nНачните с одной, например {2,6}, и предположите, что в ней не 2 — тогда в ней 6. Перейдите к видимой ей клетке, где тоже есть 6, например {6,4}: в ней не может быть 6, значит, в ней 4. Перейдите к видимой ей клетке с кандидатом 4 и продолжайте: каждый шаг вынужден предыдущим.\n\nЕсли вы дошли до клетки, где другая цифра — 2, которую вы исключили в начале, цепочка завершена. Либо в первой клетке всё-таки 2, либо цепочка сработала и в последней клетке 2. Один из концов содержит её, поэтому ни одна клетка, видящая оба конца, содержать её не может.\n\nДелайте цепочки короткими. Четыре-пять клеток можно найти с карандашом; дальше придётся вести записи, и правильнее назвать это форсирующей цепью."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"рабочая сторона должна быть положительной и конечной"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Не удалось распознать"</string>

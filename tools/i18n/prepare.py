@@ -18,8 +18,12 @@ def normalize_message(source, translation):
     # Some provider JSON responses double-escape paragraph breaks. Recover the
     # intended paragraphs without touching messages that describe literal escapes.
     if "\n" in source and "\\n" not in source:
-        return translation.replace("\\n", "\n")
-    return translation
+        translation = translation.replace("\\n", "\n")
+    # Boundary whitespace joins message fragments and controls paragraph spacing.
+    # Provider drafts sometimes duplicate it; repeated preparation must be stable.
+    prefix = re.match(r"^\s*", source).group()
+    suffix = re.search(r"\s*$", source).group()
+    return prefix + translation.strip() + suffix
 
 def bundled(tag):
     path = resource_directory(tag) / "messages.xml"

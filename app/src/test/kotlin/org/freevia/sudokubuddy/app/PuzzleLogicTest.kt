@@ -458,7 +458,7 @@ class PuzzleLogicTest {
         val route = assertNotNull(TechniqueSolver.walkthrough(puzzle))
         val outlook = assertNotNull(PuzzleLogic.outlook(route))
         assertTrue(outlook.contains("steps"), outlook)
-        assertTrue(outlook.contains("naked single"), outlook)
+        assertTrue(outlook.contains("Naked single"), outlook)
         assertNull(PuzzleLogic.outlook(null))
     }
 

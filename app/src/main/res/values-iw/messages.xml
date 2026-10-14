@@ -2,8 +2,8 @@
 <resources>
     <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
     <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nהתאים המודגשים הם אלה שמוכיחים זאת.\n\nלחץ על רמז שוב כדי לראות איזה תא."</string>
-    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s ו-%2$s מכילים שניהם רק %3$s ו-%4$s. ב-%5$s זה, ל-%6$s יש שני מקומות בלבד, שאחד מהם נראה על ידי כל אחד מהם - לכן אחד משני אלה הוא %7$s, והקצה הרואה אותו חייב להיות %8$s. כך או כך קצה אחד הוא %9$s, מה ששולל את %10$s מכל מה שרואה את שניהם."</string>
-    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"בכל אחד מהתאים %1$s ו־%2$s יכולים להופיע רק %3$s ו־%4$s. באזור הזה יש ל־%5$s רק שני מיקומים אפשריים, וכל אחד משני התאים רואה מיקום אחד — לכן אחד משני המיקומים מכיל %6$s, ותא הקצה שרואה אותו חייב להכיל %7$s. בכל מקרה, אחד מתאי הקצה מכיל %8$s, ולכן ניתן לשלול את %9$s מכל תא שרואה את שניהם."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s ו-%2$s מכילים שניהם רק %3$s ו-%4$s. ביחידה זו (%5$s), ל-%6$s יש שני מקומות בלבד, וכל אחד משני התאים רואה מקום אחד - לכן אחד משני המקומות מכיל %7$s, והקצה הרואה אותו חייב להכיל %8$s. כך או כך קצה אחד מכיל %9$s, מה ששולל את %10$s מכל תא שרואה את שניהם."</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"בכל אחד מהתאים %1$s ו־%2$s יכולים להופיע רק %3$s ו־%4$s. בבלוק הזה יש ל־%5$s רק שני מיקומים אפשריים, וכל אחד משני התאים רואה מיקום אחד — לכן אחד משני המיקומים מכיל %6$s, ותא הקצה שרואה אותו חייב להכיל %7$s. בכל מקרה, אחד מתאי הקצה מכיל %8$s, ולכן ניתן לשלול את %9$s מכל תא שרואה את שניהם."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"בכל אחד מהתאים %1$s ו־%2$s יכולים להופיע רק %3$s ו־%4$s. בעמודה הזאת יש ל־%5$s רק שני מיקומים אפשריים, וכל אחד משני התאים רואה מיקום אחד — לכן אחד משני המיקומים מכיל %6$s, ותא הקצה שרואה אותו חייב להכיל %7$s. בכל מקרה, אחד מתאי הקצה מכיל %8$s, ולכן ניתן לשלול את %9$s מכל תא שרואה את שניהם."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"בכל אחד מהתאים %1$s ו־%2$s יכולים להופיע רק %3$s ו־%4$s. בשורה הזאת יש ל־%5$s רק שני מיקומים אפשריים, וכל אחד משני התאים רואה מיקום אחד — לכן אחד משני המיקומים מכיל %6$s, ותא הקצה שרואה אותו חייב להכיל %7$s. בכל מקרה, אחד מתאי הקצה מכיל %8$s, ולכן ניתן לשלול את %9$s מכל תא שרואה את שניהם."</string>
     <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
@@ -12,36 +12,36 @@
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s יכול להכיל רק %2$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s אינו יכול להכיל %2$s משום ש-%3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s אינו יכול להכיל %2$s כי %3$s יכול להכיל רק %4$s באותה עמודה %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s אינו יכול להכיל %2$s כי %3$s יכול להכיל רק %4$s באותה תיבה %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s אינו יכול להכיל %2$s כי %3$s יכול להכיל רק %4$s באותו בלוק %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s אינו יכול להכיל %2$s כי %3$s יכול להכיל רק %4$s באותה שורה %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s אינו יכול להכיל %2$s כי %3$s מכיל %4$s באותה תיבה %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s אינו יכול להכיל %2$s כי %3$s מכיל %4$s באותו בלוק %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s אינו יכול להכיל %2$s כי %3$s מכיל %4$s באותה עמודה %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s אינו יכול להכיל %2$s כי %3$s מכיל %4$s באותה שורה %5$s."</string>
     <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s מכיל %2$s."</string>
     <string name="msg_0_empty_3b007105" formatted="false">"%1$s ריקים"</string>
     <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, ערך"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s חייב להופיע כאן: זה התא היחיד בעמודה הזאת %2$s שבו %3$s עדיין יכול להופיע.\n\n%4$s\n\n%5$s מאפשר כרגע את %6$s, אבל כל עמודה חייבת להכיל את %7$s פעם אחת בדיוק. לכן הציבו %8$s בשורה %9$s, בעמודה %10$s."</string>
-    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s חייב להיות מוצב כאן: זהו התא היחיד ב-%2$s %3$s זה שעדיין יכול לקבל %4$s.\n\n%5$s\n\n%6$s מאפשר כעת %7$s, אך כל %8$s חייב להכיל %9$s פעם אחת בדיוק. לפיכך הצב %10$s בשורה %11$s, עמודה %12$s."</string>
-    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s חייב להופיע כאן: זה התא היחיד באזור הזה %2$s שבו %3$s עדיין יכול להופיע.\n\n%4$s\n\n%5$s מאפשר כרגע את %6$s, אבל כל אזור חייב להכיל את %7$s פעם אחת בדיוק. לכן הציבו %8$s בשורה %9$s, בעמודה %10$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s חייב להיות מוצב כאן: זהו התא היחיד ביחידה זו (%2$s %3$s) שעדיין יכול לקבל %4$s.\n\n%5$s\n\n%6$s מאפשר כעת %7$s, אך בכל יחידה מסוג %8$s חייב להופיע %9$s פעם אחת בדיוק. לפיכך הצב %10$s בשורה %11$s, עמודה %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s חייב להופיע כאן: זה התא היחיד בבלוק הזה %2$s שבו %3$s עדיין יכול להופיע.\n\n%4$s\n\n%5$s מאפשר כרגע את %6$s, אבל כל בלוק חייב להכיל את %7$s פעם אחת בדיוק. לכן הציבו %8$s בשורה %9$s, בעמודה %10$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s חייב להופיע כאן: זה התא היחיד בשורה הזאת %2$s שבו %3$s עדיין יכול להופיע.\n\n%4$s\n\n%5$s מאפשר כרגע את %6$s, אבל כל שורה חייבת להכיל את %7$s פעם אחת בדיוק. לכן הציבו %8$s בשורה %9$s, בעמודה %10$s."</string>
     <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"ל-%1$s יש שני מקומות בשורה זו ושניים בעמודה זו. %2$s ו-%3$s חולקים בלוק, לכן שניהם אינם יכולים להיות %4$s - מה שמותיר את אחד מבין %5$s ו-%6$s להכיל אותו, ושולל את %7$s מכל מה שרואה את שניהם."</string>
-    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s באותו/ה %2$s."</string>
-    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s באותו אזור."</string>
+    <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s באותה יחידה: %2$s."</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s באותו בלוק."</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s באותה עמודה."</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s באותה שורה."</string>
     <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$s כבר נשלל מתא זה. המועמדים שלו הם "</string>
     <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s אינו נכלל בגלל %2$s, אשר "</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s נפסל על ידי %2$s, שיכול להכיל רק %3$s באותה עמודה %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s נפסל על ידי %2$s, שיכול להכיל רק %3$s באותה שורה %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s נפסל על ידי %2$s, שיכול להכיל רק %3$s באותה תיבה %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s נפסל על ידי %2$s, שמכיל %3$s באותה תיבה %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s נפסל על ידי %2$s, שיכול להכיל רק %3$s באותו בלוק %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s נפסל על ידי %2$s, שמכיל %3$s באותו בלוק %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s נפסל על ידי %2$s, שמכיל %3$s באותה עמודה %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s נפסל על ידי %2$s, שמכיל %3$s באותה שורה %4$s."</string>
     <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s נכפה בתא הממוספר החדש ביותר (שורה %2$s, עמודה %3$s). %4$s החץ עוקב אחר הצבה תורמת; השלכות קודמות חשובות גם כן."</string>
     <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s חסר ב-classpath"</string>
     <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s מתוך %2$s"</string>
     <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"%1$s מהם ממלאים תא; השאר מפנים מועמדים תחילה."</string>
-    <string name="msg_0_pair_8730dc66" formatted="false">"צמד %1$s"</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"זוג %1$s"</string>
     <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s מודפסים, %2$s, %3$s שגויים"</string>
     <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s מודפסים, %2$s"</string>
     <string name="msg_0_printed_522101ca" formatted="false">"%1$s מודפסים"</string>
@@ -49,8 +49,8 @@
     <string name="msg_0_quad_c9dd2280" formatted="false">"רביעיית %1$s"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s תצלומים שנדחו, החדש ביותר תחילה:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: הסר את %2$s"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"מספר המשבצות: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s שלבים מרכיבים מסלול זה, השיטה הנתמכת הקשה ביותר היא %2$s. %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s תאים"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"%1$s שלבים מרכיבים מסלול זה, השיטה הנתמכת הקשה ביותר היא %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"שלשת %1$s"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s הוסר מ-%2$s על ידי היקש מועמדים קודם."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s נכתבו"</string>
@@ -63,8 +63,8 @@
     <string name="msg_a_red_square_shows_the_digit_the_app_read_the_61e78677" formatted="false">"תא אדום מציג את הספרה שהאפליקציה קראה שם. אם זה אינו מה שכתבת, הקש על התא כדי לתקן."</string>
     <string name="msg_a_square_with_only_one_digit_left_must_hold_t_7c4401e8" formatted="false">"תא שנותרה בו רק ספרה אחת חייב להכיל ספרה זו."</string>
     <string name="msg_a_technique_list_is_never_complete_and_the_ha_a34b9979" formatted="false">"רשימת שיטות לעולם אינה מלאה, והחידות הקשות ביותר בנויות כדי להכשיל את כל מה שמופיע בה. לכן, כאשר כל השיטות הללו אינן מניבות דבר, המדריך מכריע תא יחיד באמצעות בדיקת מועמדיו, מציין במפורש שכך עשה, וממשיך בהיקש ההגיוני משם. הוא תמיד מגיע לסיום החידה, ולעולם אינו מעמיד פנים שבדיקה ממצה הייתה היקש לוגי."</string>
-    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"ציר בעל שלושה מועמדים עם שני צבתות תואמות בעלות שני מועמדים מאלץ הוצאת ספרה מכל תא הרואה את כל השלושה."</string>
-    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"ציר בעל שני מועמדים ושני צבתות בעלות שני מועמדים יכולים לאלץ הוצאת ספרה מכל תא הרואה את שתי הצבתות."</string>
+    <string name="msg_a_three_candidate_pivot_with_two_matching_two_a9adc021" formatted="false">"ציר בעל שלושה מועמדים עם שתי צבתות תואמות בעלות שני מועמדים מאלץ הוצאת ספרה מכל תא הרואה את כל השלושה."</string>
+    <string name="msg_a_two_candidate_pivot_and_two_two_candidate_p_8c23f733" formatted="false">"ציר בעל שני מועמדים ושתי צבתות בעלות שני מועמדים יכולים לאלץ הוצאת ספרה מכל תא הרואה את שתי הצבתות."</string>
     <string name="msg_about_4efca0d1" formatted="false">"אודות"</string>
     <string name="msg_after_7b68fe55" formatted="false">"אחרי"</string>
     <string name="msg_after_this_move_c0f01734" formatted="false">"אחרי מהלך זה"</string>
@@ -103,11 +103,11 @@
     <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"קשר ספרה בשרשרת דרך היחידות שבהן יש לה רק שני מקומות, צבע את השרשרת בשני צבעים מתחלפים, וצבע אחד נכון לכל אורכה."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע האחר נמצאים באותה שורה, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את %2$s מכל תא שצבוע בו."</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע האחר נמצאים באותו אזור, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את %2$s מכל תא שצבוע בו."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע האחר נמצאים באותו בלוק, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את %2$s מכל תא שצבוע בו."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע האחר נמצאים באותה עמודה, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את %2$s מכל תא שצבוע בו."</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מקומות מותיר תאים אלה בשני צבעים מתחלפים, שאחד מהם נכון לכל אורכו. שני תאים בצבע %2$s נמצאים באותו/ה %3$s, דבר שאינו ייתכן - לכן צבע זה הוא השגוי, ו-%4$s מוסר מכל תא הנושא אותו."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מקומות מותיר תאים אלה בשני צבעים מתחלפים, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע %2$s נמצאים באותה יחידה: %3$s. דבר זה בלתי אפשרי - לכן צבע זה הוא השגוי, ו-%4$s מוסר מכל תא הנושא אותו."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מקומות מותיר תאים אלה בשני צבעים מתחלפים, וצבע אחד נכון לכל אורכו. תאים אלה רואים את שני הצבעים, לכן לא משנה לאיזה כיוון השרשרת נופלת, אחד התאים שהם רואים מכיל %2$s - כלומר הם אינם יכולים להכיל זאת."</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע אחד נמצאים באותו אזור, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את %2$s מכל תא שצבוע בו."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע אחד נמצאים באותו בלוק, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את %2$s מכל תא שצבוע בו."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע אחד נמצאים באותה עמודה, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את %2$s מכל תא שצבוע בו."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"שרשור %1$s דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע אחד נמצאים באותה שורה, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את %2$s מכל תא שצבוע בו."</string>
     <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"משבצות לא ודאיות לבדיקה: %1$s."</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", נבדק ונמצא נכון"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"בחר מועמד כדי לראות מדוע אינו יכול להתאים לתא שלך."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"בחר שפה"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"בחר מה יוצג"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"בחר מה יוצג"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"סגור"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"סגור רמז"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"כווץ סקירת קריאה"</string>
@@ -131,7 +131,7 @@
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"המשך עם המסלול המלא"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"סתירה · ההנחה נכשלת"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", סתירה"</string>
-    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"סתירה: ב-%1$s האדום לא נותר מקום עבור %2$s. דבר זה אינו אפשרי, לכן הנחת היסוד חייבת להיכשל."</string>
+    <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"סתירה: ביחידה המסומנת באדום (%1$s) לא נותר מקום עבור %2$s. דבר זה אינו אפשרי, לכן הנחת היסוד חייבת להיכשל."</string>
     <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"סתירה: בתא האדום לא נותר אף מועמד. דבר זה אינו אפשרי, לכן הנחת היסוד חייבת להיכשל."</string>
     <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"העתק בקשת מחיקה"</string>
     <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"נכון. השווה את ההיקש שלך להסבר שלהלן."</string>
@@ -153,7 +153,7 @@
     <string name="msg_deletion_could_not_be_confirmed_check_your_co_26111d00" formatted="false">"לא ניתן היה לאשר מחיקה. בדוק את החיבור ונסה שוב."</string>
     <string name="msg_deletion_request_251053b3" formatted="false">"בקשת מחיקה"</string>
     <string name="msg_deletion_response_did_not_confirm_this_receip_d7f1c29c" formatted="false">"תגובת המחיקה לא אישרה קבלה זו."</string>
-    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"שירות המחיקה החזיר שגיאת HTTP %1$s."</string>
+    <string name="msg_deletion_service_returned_http_0_57f9239a" formatted="false">"שירות המחיקה החזיר HTTP %1$s."</string>
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"תאר מה קרה ואת השלבים לשחזור. ציין האם בדקת ותיקנת את הספרות שזוהו תחילה. עבור רעיון, כתוב \'לא רלוונטי\'."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", היעד של רמז זה"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- מכשיר: %1$s"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"כל אחד מהם ממלא תא."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"כל תא מלא, אך %1$s תשובות אינן תואמות לפתרון."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"כל תא מלא, אך תשובה אחת אינה תואמת לפתרון."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"לכל סודוקו בעל פתרון יחיד ניתן להגיע באמצעות היקש הגיוני; ניחוש אינו נדרש לעולם ולעיתים רחוקות מועיל. אלו הן דרכי ההיקש שהאפליקציה מסוגלת לזהות ולהסביר, מהקלה לקשה. במקום שבו אחת מהן חלה על החידה הפתוחה לפניך, היא תציג כל מקום שבו היא חלה."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"לכל סודוקו בעל פתרון יחיד ניתן להגיע באמצעות היקש הגיוני; ניחוש אינו נדרש לעולם ולעיתים רחוקות מועיל. אלו הן דרכי ההיקש שהאפליקציה מסוגלת לזהות ולהסביר, מהקלה לקשה. במקום שבו אחת מהן חלה על החידה הפתוחה לפניך, היא תציג כל מקום שבו היא חלה."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"כל מה שכתבת עד כה נכון."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"דוגמאות זמינות כעת: כל אחת מתחילה מהלוח הנוכחי שלך."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"צפויים 10 קווים אופקיים, התקבלו %1$s"</string>
@@ -196,7 +196,7 @@
     <string name="msg_find_a_square_with_only_two_or_three_candidat_61c730ba" formatted="false">"מצא תא שנותרו בו רק שניים או שלושה מועמדים - ככל שפחות כך ייטב, וככל שהשורה, העמודה והבלוק שסביבו עמוסים יותר, ייטב עוד יותר.\n\nבחר באחד ממועמדיו וסמן אותו בעיפרון קלות. כעת עקוב אחר ההשלכות: ספרה זו נעלמת מכל מה שהתא רואה, מה שעשוי להותיר את אחד מאותם תאים עם מועמד יחיד, המאלץ מועמד בתא נוסף, וכך הלאה. המשך כך.\n\nאחד משני דברים יקרה. או שהמהלך יתפוגג ללא תוצאה ולא למדת דבר - מחק אותו ונסה את המועמד האחר. או שתגיע לתא שלא נותרו בו מועמדים כלל, או לשורה שאין בה מקום להצבת ספרה מסוימת. דבר זה בלתי אפשרי, ולכן הספרה שסימנת בעיפרון הייתה שגויה, וניתן לשלול אותה לצמיתות.\n\nזוהי השיטה שיש לפנות אליה כאשר כל שאר השיטות מוצו. היא איטית יותר ומבוססת על רישום שיטתי ולא על זיהוי דפוסים, אך היא עשויה לחשוף מהלכים שהדפוסים מחמיצים. שלילה אחת מספיקה לעיתים קרובות כדי להחזיר את השיטות הפשוטות לפעולה; עמדות מסוימות עדיין דורשות חיפוש מעמיק יותר."</string>
     <string name="msg_find_two_squares_with_the_same_two_candidates_d06e3deb" formatted="false">"מצא שני תאים בעלי אותם שני מועמדים, נניח {3,7}, שאינם רואים זה את זה - לרוב הם כלל אינם קרובים זה לזה.\n\nכעת חפש שורה, עמודה או בלוק שבהם ל-7 יש רק שני תאים אפשריים, שאחד מהם נראה על ידי התא הראשון בצמד שלך והאחר על ידי השני. זהו הקישור.\n\nאחד משני התאים הללו הוא ה-7. לא משנה מי מהם הוא ה-7, התא מהצמד שלך שרואה אותו אינו יכול להיות 7, ולכן הוא חייב להיות 3. אינך יודע איזה קצה הוא ה-3, אלא רק שאחד מהם הוא כזה - ודי בכך כדי לשלול את 3 מכל תא הרואה את שני הקצוות.\n\nהחלק הקשה הוא הקישור, לכן חפש אותו בסדר ההפוך: סמן תחילה את היחידות שבהן יש לספרה שני מקומות בלבד, ולאחר מכן חפש צמד תואם משני הצדדים."</string>
     <string name="msg_finished_05343e98" formatted="false">"הושלם"</string>
-    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"לחץ על כפתור הצילום ברגע שהרשת ישרה בפריים ויציבה. הכפתור פועל תמיד בכל מקרה."</string>
+    <string name="msg_fire_the_shutter_once_the_grid_is_square_in_f_586ef38d" formatted="false">"לחץ על כפתור הצילום ברגע שהרשת מיושרת בפריים ללא עיוות פרספקטיבה ויציבה. הכפתור פועל תמיד בכל מקרה."</string>
     <string name="msg_fit_the_whole_grid_in_view_7091fd48" formatted="false">"התאם את כל הרשת לתצוגה."</string>
     <string name="msg_fit_the_whole_grid_in_view_d5ab871b" formatted="false">"התאם את כל הרשת לתצוגה"</string>
     <string name="msg_five_222b0bd5" formatted="false">"חמש"</string>
@@ -234,14 +234,14 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"החזק את הטלפון ישר"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"החזק את הטלפון ישר מעל החידה."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"החזק את הטלפון ישר מעל החידה"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\\\"horizontal\\\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"כיצד לזהות"</string>
-    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n\n\nכיצד מגיעים לשם:"</string>
+    <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nכיצד מגיעים לשם:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"חפש תאים בעלי שני מועמדים בדיוק - Y-wing מורכב משלושה תאים כאלה ותו לא.\n\nקח אחד מהם כציר, נניח {2,5}. חפש תא שהוא יכול לראות המכיל {2,9}, ותא נוסף שהוא יכול לראות המכיל {5,9}. הציר הוא או 2 או 5. אם הוא 2, הצבת הראשונה חייבת להיות 9; אם הוא 5, הצבת השנייה חייבת להיות 9. בכל מקרה מופיע 9 באחת הצבתות - אינך יודע באיזו מהן, ואינך צריך לדעת.\n\nלכן אף תא שיכול לראות את שתי הצבתות אינו יכול להיות 9. תאים אלה הם בדרך כלל שתי הפינות המשלימות את המלבן."</string>
     <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", השערה %1$s, אינה תשובה שהוזנה"</string>
     <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"אם %1$s ספרות בשורה, בעמודה או בבלוק יכולות להתאים רק לאותם %2$s תאים, תאים אלה אינם יכולים להכיל דבר אחר."</string>
     <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"אם %1$s תאים בשורה, בעמודה או בבלוק חולקים בדיוק %2$s מועמדים ביניהם, ספרות אלו שייכות לתאים אלה ולא לאף תא אחר ביחידה."</string>
-    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"אם לספרה יש שני מקומות בשורה ושניים בעמודה, ואחד מכל אחד חולק בלוק, אחד משני האחרים חייב להכיל אותה."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"אם לספרה יש שני מקומות בשורה ושניים בעמודה, ותא אחד מהשורה ותא אחד מהעמודה נמצאים באותו בלוק, אחד משני התאים האחרים חייב להכיל אותה."</string>
     <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"אם לספרה יש שני מקומות בכל אחת משתי שורות והם חולקים עמודה, אחד משני המקומות האחרים חייב להכיל אותה."</string>
     <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"אם המקומות היחידים של ספרה לאורך קו נמצאים כולם בתוך בלוק יחיד, ניתן לשלול ספרה זו משאר הבלוק."</string>
     <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"אם המקומות היחידים של ספרה ב-%1$s שורות נמצאים באותן %2$s עמודות, ניתן לשלול אותה מעמודות אלו במקומות אחרים - וכך גם בהחלפה בין שורות לעמודות."</string>
@@ -252,29 +252,29 @@
     <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"ב-%1$s %2$s אלה, %3$s יכול להתאים רק ב-%4$s %5$s אלה. יחד הם תופסים את כולם, לכן ניתן לשלול את %6$s מ-%7$s אלה בכל מקום אחר."</string>
     <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"ב־%1$s העמודות האלה, %2$s יכול להופיע רק ב־%3$s השורות האלה. יחד הן מנצלות את כולן, ולכן ניתן לשלול את %4$s מכל שאר התאים בשורות האלה."</string>
     <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"ב־%1$s השורות האלה, %2$s יכול להופיע רק ב־%3$s העמודות האלה. יחד הן מנצלות את כולן, ולכן ניתן לשלול את %4$s מכל שאר התאים בעמודות האלה."</string>
-    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"בשני %1$s אלה, ל-%2$s יש רק שני מקומות בכל אחד, ו-%3$s ו-%4$s חולקים %5$s - לכן שניהם אינם יכולים להיות %6$s. אחד מבין %7$s ו-%8$s הוא לפיכך כזה, מה ששולל את %9$s מכל תא הרואה את שניהם."</string>
+    <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"בכל אחת משתי היחידות האלה (%1$s), ל-%2$s יש רק שני מקומות, ו-%3$s ו-%4$s נמצאים באותה יחידה מסוג %5$s - לכן לא ייתכן ששניהם מכילים %6$s. לפיכך אחד מהתאים %7$s ו-%8$s מכיל ספרה זו, מה ששולל את %9$s מכל תא הרואה את שניהם."</string>
     <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"בכל אחת משתי העמודות האלה יש ל־%1$s רק שני מיקומים אפשריים, ו־%2$s ו־%3$s נמצאים באותה שורה — לכן שניהם לא יכולים להיות %4$s. מכאן שאחד מהתאים %5$s ו־%6$s מכיל את הספרה הזאת, ולכן ניתן לשלול את %7$s מכל תא שרואה את שניהם."</string>
     <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"בכל אחת משתי השורות האלה יש ל־%1$s רק שני מיקומים אפשריים, ו־%2$s ו־%3$s נמצאים באותה עמודה — לכן שניהם לא יכולים להיות %4$s. מכאן שאחד מהתאים %5$s ו־%6$s מכיל את הספרה הזאת, ולכן ניתן לשלול את %7$s מכל תא שרואה את שניהם."</string>
-    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"ב-%1$s זה, %2$s יכול להתאים רק ב-%3$s תאים אלה, ולכן תאים אלה תפוסים. הדבר שולל מהם את %4$s."</string>
-    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"ב-%1$s זה, %2$s יכול להתאים רק בתוך בלוק יחיד. לכן %3$s נמצא באותו בלוק ב-%4$s זה, וניתן לשלול אותו משאר הבלוק."</string>
-    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"באזור הזה, %1$s יכול להופיע רק ב־%2$s התאים האלה, ולכן הם שמורים לספרות האלה. מכאן שניתן לשלול מהם את %3$s."</string>
+    <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"ביחידה זו (%1$s), %2$s יכול להופיע רק ב-%3$s התאים האלה, ולכן תאים אלה שמורים לספרות אלה. הדבר שולל מהם את %4$s."</string>
+    <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"ביחידה זו (%1$s), %2$s יכול להופיע רק בתוך בלוק יחיד. לכן %3$s נמצא באותו בלוק לאורך היחידה מסוג %4$s, וניתן לשלול אותו משאר הבלוק."</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"בבלוק הזה, %1$s יכול להופיע רק ב־%2$s התאים האלה, ולכן הם שמורים לספרות האלה. מכאן שניתן לשלול מהם את %3$s."</string>
     <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"בעמודה הזאת, %1$s יכול להופיע רק ב־%2$s התאים האלה, ולכן הם שמורים לספרות האלה. מכאן שניתן לשלול מהם את %3$s."</string>
     <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"בשורה הזאת, %1$s יכול להופיע רק ב־%2$s התאים האלה, ולכן הם שמורים לספרות האלה. מכאן שניתן לשלול מהם את %3$s."</string>
     <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"כולל את התצלומים, הקריאות והתיקונים שלהם. כבה זאת בהגדרות."</string>
     <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"בתוך בלוק יחיד, מצא ספרה שיכולה להתאים רק לשניים או שלושה תאים, ובדוק אם כולם נמצאים באותה שורה, או כולם באותה עמודה. אם כן, הספרה נמצאת בוודאות לאורך אותו קו - אינך יודע היכן, אך אתה יודע שהיא בתוך בלוק זה. לכן היא אינה יכולה להיות בשום מקום אחר לאורך אותו קו מחוץ לבלוק.\n\nפעולה זו אינה מציבה דבר בפני עצמה. היא מפנה מועמדים כדי שיחיד יופיע במקום אחר."</string>
-    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"בתוך בלוק זה, %1$s יכול להתאים רק ב-%2$s זה. לכן %3$s נמצא אי שם כאן, וניתן לשלול אותו משאר ה-%4$s."</string>
+    <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"בתוך בלוק זה, %1$s יכול להופיע רק לאורך היחידה מסוג %2$s. לכן %3$s נמצא אי שם כאן, וניתן לשלול אותו משאר התאים ביחידה מסוג %4$s."</string>
     <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## בעיה או רעיון"</string>
     <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"זה חל ב-%1$s מקומות כאן. התקדם שלב כדי לעבור ביניהם."</string>
     <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"זה חל במקום אחד כאן. התקדם שלב כדי לראות זאת."</string>
     <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"אינו חל בשום מקום במצב זה."</string>
-    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"זהו המקום היחיד שנותר עבור %1$s ב-%2$s המודגש/ת."</string>
+    <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"זהו המקום היחיד שנותר עבור %1$s ביחידה המודגשת (%2$s)."</string>
     <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"זהו התא המוקף בעיגול.\n\nלחץ על רמז שוב לקבלת הספרה."</string>
     <string name="msg_jellyfish_2f0a7632" formatted="false">"Jellyfish"</string>
     <string name="msg_keep_183f00f4" formatted="false">"שמור"</string>
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"שמור על שרשראות כפייה קצרות"</string>
     <string name="msg_language_a4fe6526" formatted="false">"שפה"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"רישיונות"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"חפש לאורך שורה, עמודה או בלוק תאים שנותרו בהם מועמדים ספורים בלבד. קח %1$s מהם ואחד את מועמדיהם. אם במאגר יש בדיוק %2$s ספרות, %3$s ספרות אלו תפוסות: הן חייבות להתאים ל-%4$s תאים אלה בסדר כלשהו, גם אם אינך יכול לדעת עדיין מה הולך לאן.\n\nדי בכך. כל תא אחר ביחידה יכול לוותר על ספרות אלו, ובדרך כלל אחד מאותם תאים הופך בעקבות זאת ליחיד.\n\nאין צורך שכל התאים יכילו את אותם מועמדים - {2,7}, {2,9} ו-{7,9} היא שלשה מצוינת לחלוטין, והיא זו שאנשים נוטים להחמיץ."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"חפש לאורך שורה, עמודה או בלוק תאים שנותרו בהם מועמדים ספורים בלבד. קח %1$s מהם ואחד את מועמדיהם. אם במאגר יש בדיוק %2$s ספרות, %3$s ספרות אלו תפוסות: הן חייבות להתאים ל-%4$s תאים אלה בסדר כלשהו, גם אם אינך יכול לדעת עדיין מה הולך לאן.\n\nדי בכך. כל תא אחר ביחידה יכול לוותר על ספרות אלו, ובדרך כלל אחד מאותם תאים הופך בעקבות זאת ליחיד.\n\nאין צורך שכל התאים יכילו את אותם מועמדים - {2,7}, {2,9} ו-{7,9} היא שלשה מצוינת לחלוטין, והיא זו שאנשים נוטים להחמיץ."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"חפש תאים המכילים את אותם שני מועמדים - נניח {4,9} - היוצרים שרשרת, כך שכל אחד רואה את הבא. שלושה אינם מספיקים; יש צורך בארבעה לפחות.\n\nצבע אותם לסירוגין תוך כדי התקדמות. מכיוון שכל תא רואה את הבא אחריו, שני שכנים אינם יכולים להכיל את אותה ספרה, ולכן השרשרת נקראת 4, 9, 4, 9 לכל אורכה - או 9, 4, 9, 4, ואינך יכול לדעת מה מהם.\n\nבכל מקרה, שני תאים בצבעים מנוגדים מחזיקים בספרות שונות ביניהם: האחד הוא 4 והשני הוא 9. לכן כל מה שרואה את שניהם אינו יכול להיות אף אחד מהם, ומאבד את שני המועמדים בבת אחת.\n\nקל לזהות את הדפוס בדיוק משום שכל תא בו נראה אותו דבר. עקוב אחר הזוגות הזהים ברחבי הרשת וראה היכן הם נוגעים."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"חפש שלושה תאים המכילים את אותם שני מועמדים - נניח {1,6} - הנמצאים בשלוש פינות של מלבן. המלבן חייב להשתרע על פני שני בלוקים בדיוק: שתי שורות ושתי עמודות החוצות שני בלוקים, ולא ארבעה.\n\nכעת התבונן בפינה הרביעית. אם גם היא הייתה מכילה רק 1 ו-6, לחידה היו שני פתרונות - ניתן היה להחליף בין ה-1 וה-6 סביב המלבן וכל השאר עדיין היה עובד. בחידה מוגדרת כהלכה יש פתרון יחיד, ולכן הפינה הרביעית חייבת להשתמש במשהו אחר: המועמדים האחרים שלה נשארים, ו-1 ו-6 מוסרים.\n\nזהו הטיעון היחיד בספר שמתייחס למחבר החידה ולא לרשת עצמה. הוא תקף בחידה שפורסמה וחסר ערך בחידה שכבר מילאת באופן שגוי, משום שאז ייתכן שאין פתרון כלל שיוכל להיות יחיד."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"הבט בבלוק זה. עקוב אחר קווי המתאר לתא שרמז זה יסביר."</string>
@@ -282,7 +282,7 @@
     <string name="msg_moderate_5c42afc7" formatted="false">"בינוני"</string>
     <string name="msg_more_d47d7cb0" formatted="false">"עוד"</string>
     <string name="msg_more_light_needed_4b4480e1" formatted="false">"דרוש עוד אור"</string>
-    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"יותר מפתרון אחד, לכן ספרה מודפסת הוחמצה. לחץ על פתור כדי לראות את הפתרונות והיכן הם נבדלים."</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"יותר מפתרון אחד, לכן ספרה מודפסת הוחמצה. לחץ על \"פתרון\" כדי לראות את הפתרונות והיכן הם נבדלים."</string>
     <string name="msg_move_back_f4d6dba8" formatted="false">"התרחק"</string>
     <string name="msg_move_closer_1da054ae" formatted="false">"התקרב"</string>
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"התקרב - הרשת קטנה מכדי לקרוא."</string>
@@ -349,7 +349,7 @@
     <string name="msg_place_0_45ae89ee" formatted="false">"הצב %1$s"</string>
     <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"הצב %1$s בשורה %2$s, עמודה %3$s."</string>
     <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"הצב %1$s בתא התחום שלך."</string>
-    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"אנא צרף צילומי מסך רלוונטיים באמצעות פקד הצירוף של GitHub: החידה, הספרות שזוהו, תוצאת בדוק, או שלב הרמז שמציג את הבעיה. כלול תוצאות צפויות ובפועל היכן שמועיל."</string>
+    <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"אנא צרף צילומי מסך רלוונטיים באמצעות פקד הצירוף של GitHub: החידה, הספרות שזוהו, תוצאת \"בדיקה\", או שלב הרמז שמציג את הבעיה. כלול תוצאות צפויות ובפועל היכן שמועיל."</string>
     <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"אנא מחק את הגשות הזיהוי שלי ב-Sudoku Buddy. מזהי קבלה: "</string>
     <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"אנא החלף הנחיה זו בתיאור מלא של הבעיה או הרעיון. תן לדוח זה כותרת קצרה ותיאורית."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"כוון את המצלמה אל חידת סודוקו"</string>
@@ -375,11 +375,11 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"הקריאה נסקרה."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"הקריאה נשלחה. תודה!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## אבחון סריקה אחרונה (מולא מראש)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"זיהוי עלול לטעות, במיוחד בכתב יד. השתמש ב-קרא כדי להשוות בין הספרות שזוהו לתצלום, והקש על תא כלשהו כדי לתקן אותו. האפליקציה מסמנת קריאות לא ודאיות לבדיקה; קריאה בטוחה עדיין עלולה להיות שגויה."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"זיהוי עלול לטעות, במיוחד בכתב יד. השתמש ב\"זיהוי\" כדי להשוות בין הספרות שזוהו לתצלום, והקש על תא כלשהו כדי לתקן אותו. האפליקציה מסמנת קריאות לא ודאיות לבדיקה; קריאה בטוחה עדיין עלולה להיות שגויה."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"דחה הנחה"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"זוגות מרוחקים"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"הסר %1$s"</string>
-    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\n\nהסר את %1$s מתוך "</string>
+    <string name="msg_remove_0_from_ff5e4030" formatted="false">"\nהסר את %1$s מתוך "</string>
     <string name="msg_removed_4118fb4f" formatted="false">"הוסר"</string>
     <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"הפעל שוב היקש לוגי"</string>
     <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"דווח על תקלה או רעיון ב-GitHub"</string>
@@ -409,7 +409,7 @@
     <string name="msg_settings_74a883a0" formatted="false">"הגדרות"</string>
     <string name="msg_seven_3ba8d02b" formatted="false">"שבע"</string>
     <string name="msg_sha_256_bbd07c4f" formatted="false">"SHA-256"</string>
-    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"שתף אוטומטית כאשר אינו ודאי"</string>
+    <string name="msg_share_automatically_when_uncertain_be00cabd" formatted="false">"שתף אוטומטית קריאות שאינן ודאיות"</string>
     <string name="msg_share_uncertain_readings_automatically_f4ae6cc9" formatted="false">"לשתף קריאות לא ודאיות אוטומטית?"</string>
     <string name="msg_show_contradiction_0e27e337" formatted="false">"הצג סתירה"</string>
     <string name="msg_show_me_all_0_on_your_puzzle_68724e66" formatted="false">"הצג לי את כל %1$s בחידה שלך"</string>
@@ -421,24 +421,24 @@
     <string name="msg_solve_451d387b" formatted="false">"פתרון"</string>
     <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"נפתר, וכל תשובה נכונה."</string>
     <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"תשובה בסיוע פותר: הצב %1$s ב-%2$s. המועמדים הם %3$s. השיטות הנתמכות באפליקציה לא מצאו מהלך ממצב זה. החיפוש שלה מצא %4$s בפתרון היחיד; הוכחה מפורטת של ענפי החיפוש אינה זמינה."</string>
-    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\n\n\nתשובה בסיוע פותר: השיטות הנתמכות באפליקציה לא מצאו מהלך. הוכחה מפורטת אינה זמינה."</string>
+    <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nתשובה בסיוע פותר: השיטות הנתמכות באפליקציה לא מצאו מהלך. הוכחה מפורטת אינה זמינה."</string>
     <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"שלילה בסיוע פותר: חיפוש שולל את %1$s בתא המודגש, אך האפליקציה לא יכלה להפיק נתיב סתירה קצר להצגה. הוכחה מפורטת אינה זמינה."</string>
     <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"חלק מהתאים עשויים להכיל הערות ולא ספרה מלאה."</string>
     <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"חלק מהספרות לא נקראו בוודאות."</string>
     <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"משהו השתבש בקריאת תצלום זה."</string>
     <string name="msg_square_c11092bc" formatted="false">"תא"</string>
-    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\n\n\nמועמדים התחלתיים: %1$s."</string>
+    <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\nמועמדים התחלתיים: %1$s."</string>
     <string name="msg_step_0_1_2f91f5e4" formatted="false">"שלב %1$s: %2$s"</string>
     <string name="msg_straighten_up_0ddce08f" formatted="false">"יישר"</string>
     <string name="msg_strategies_a959c466" formatted="false">"אסטרטגיות"</string>
     <string name="msg_submission_receipt_81e41c5f" formatted="false">"קבלת הגשה"</string>
-    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"קבלת ההגשה אינה חוקית."</string>
+    <string name="msg_submission_receipt_is_invalid_e49c5317" formatted="false">"קבלת ההגשה אינה תקפה."</string>
     <string name="msg_submission_receipts_0_625964ee" formatted="false">"קבלות הגשה (%1$s)"</string>
     <string name="msg_submission_receipts_267b0a5d" formatted="false">"קבלות הגשה"</string>
     <string name="msg_submission_response_is_missing_0_b3c5f265" formatted="false">"בתגובת ההגשה חסר %1$s."</string>
-    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"סטטוס תגובת ההגשה אינו חוקי."</string>
+    <string name="msg_submission_response_status_is_invalid_3f7b0111" formatted="false">"סטטוס תגובת ההגשה אינו תקף."</string>
     <string name="msg_submission_service_is_not_configured_e381be7a" formatted="false">"שירות ההגשה אינו מוגדר."</string>
-    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"שירות ההגשה החזיר שגיאת HTTP %1$s."</string>
+    <string name="msg_submission_service_returned_http_0_d2b6e46f" formatted="false">"שירות ההגשה החזיר HTTP %1$s."</string>
     <string name="msg_submissions_are_not_available_in_this_build_2e205a7a" formatted="false">"הגשות אינן זמינות בגרסה זו."</string>
     <string name="msg_submit_155f816c" formatted="false">"שלח"</string>
     <string name="msg_submit_future_uncertain_readings_automaticall_8ec792cf" formatted="false">"שלח קריאות עתידיות שאינן ודאיות באופן אוטומטי"</string>
@@ -463,15 +463,15 @@
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"נניח שהתא הזה מכיל %1$s. עקבו אחר החצים לפי הסדר: הערך בכל תא מתחייב מההצבות הקודמות — או שהספרה הזאת היא היחידה שעדיין יכולה להופיע בו, או שהתא הזה הוא המקום היחיד שבו הספרה עדיין יכולה להופיע.\n\nכך לא נשאר ביחידה האדומה שום מקום ל־%2$s. סימוני %3$s שבה מציינים את המקומות שבהם הספרה הייתה יכולה להופיע, וכל אחד מהם הוא תא שאחד החצים תפס זה עתה. לא תיתכן יחידה שאין בה מקום לספרה — לכן התא הזה אינו %4$s."</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"נניח שתא זה היה %1$s. עקוב אחר החצים לפי הסדר: כל תא נכפה על ידי ההצבות הקודמות - או שספרה זו היא היחידה שהוא עדיין יכול להכיל, או שתא זה הוא המקום היחיד שהספרה עדיין יכולה להגיע אליו. התא באדום נותר אז ללא שום ספרה, דבר שאינו יכול להתרחש - לכן זה אינו %2$s."</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"נניח שהתא הזה מכיל %1$s. עקבו אחר החצים לפי הסדר: הערך בכל תא מתחייב מההצבות הקודמות — או שהספרה הזאת היא היחידה שעדיין יכולה להופיע בו, או שהתא הזה הוא המקום היחיד שבו הספרה עדיין יכולה להופיע.\n\nכך לא נשאר בשורה האדומה שום מקום ל־%2$s. סימוני %3$s שבה מציינים את המקומות שבהם הספרה הייתה יכולה להופיע, וכל אחד מהם הוא תא שאחד החצים תפס זה עתה. לא תיתכן שורה שאין בה מקום לספרה — לכן התא הזה אינו %4$s."</string>
-    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"נניח שהתא הזה מכיל %1$s. עקבו אחר החצים לפי הסדר: הערך בכל תא מתחייב מההצבות הקודמות — או שהספרה הזאת היא היחידה שעדיין יכולה להופיע בו, או שהתא הזה הוא המקום היחיד שבו הספרה עדיין יכולה להופיע.\n\nכך לא נשאר באזור האדום שום מקום ל־%2$s. סימוני %3$s שבו מציינים את המקומות שבהם הספרה הייתה יכולה להופיע, וכל אחד מהם הוא תא שאחד החצים תפס זה עתה. לא ייתכן אזור שאין בו מקום לספרה — לכן התא הזה אינו %4$s."</string>
-    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"נניח שתא זה היה %1$s. עקוב אחר החצים לפי הסדר: כל תא נכפה על ידי ההצבות הקודמות - או שספרה זו היא היחידה שהוא עדיין יכול להכיל, או שתא זה הוא המקום היחיד שהספרה עדיין יכולה להגיע אליו.\n\nהדבר מותיר את ה-%2$s באדום ללא מקום להציב בו %3$s. ה-%4$s המסומנים בו הם המקומות שאליהם הוא יכול היה להתאים, וכל אחד מהם הוא תא שאחד החצים תפס זה עתה. %5$s ללא מקום לספרה אינו יכול להתרחש - לכן זה אינו %6$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"נניח שהתא הזה מכיל %1$s. עקבו אחר החצים לפי הסדר: הערך בכל תא מתחייב מההצבות הקודמות — או שהספרה הזאת היא היחידה שעדיין יכולה להופיע בו, או שהתא הזה הוא המקום היחיד שבו הספרה עדיין יכולה להופיע.\n\nכך לא נשאר בבלוק האדום שום מקום ל־%2$s. סימוני %3$s שבו מציינים את המקומות שבהם הספרה הייתה יכולה להופיע, וכל אחד מהם הוא תא שאחד החצים תפס זה עתה. לא ייתכן בלוק שאין בו מקום לספרה — לכן התא הזה אינו %4$s."</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"נניח שתא זה מכיל %1$s. עקוב אחר החצים לפי הסדר: הערך בכל תא מתחייב מההצבות הקודמות - או שספרה זו היא היחידה שהוא עדיין יכול להכיל, או שתא זה הוא המקום היחיד שבו הספרה עדיין יכולה להופיע.\n\nכך לא נשאר ביחידה המסומנת באדום (%2$s) שום מקום ל-%3$s. סימוני %4$s בה מציינים את המקומות שבהם הספרה הייתה יכולה להופיע, וכל אחד מהם הוא תא שאחד החצים תפס זה עתה. לא תיתכן יחידה מסוג %5$s שאין בה מקום לספרה - לכן תא זה אינו %6$s."</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"נניח שהתא הזה מכיל %1$s. עקבו אחר החצים לפי הסדר: הערך בכל תא מתחייב מההצבות הקודמות — או שהספרה הזאת היא היחידה שעדיין יכולה להופיע בו, או שהתא הזה הוא המקום היחיד שבו הספרה עדיין יכולה להופיע.\n\nכך לא נשאר בעמודה האדומה שום מקום ל־%2$s. סימוני %3$s שבה מציינים את המקומות שבהם הספרה הייתה יכולה להופיע, וכל אחד מהם הוא תא שאחד החצים תפס זה עתה. לא תיתכן עמודה שאין בה מקום לספרה — לכן התא הזה אינו %4$s."</string>
     <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"עבור אל \'אחרי\' כדי לראות את המהלך ואת תוצאותיו על הרשת."</string>
     <string name="msg_swordfish_c6afd225" formatted="false">"Swordfish"</string>
     <string name="msg_take_a_new_photo_0c788c47" formatted="false">"צלם תצלום חדש"</string>
     <string name="msg_take_another_photo_61d1873e" formatted="false">"צלם תצלום נוסף"</string>
     <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"קח ספרה אחת וסמן כל יחידה שבה נותרו לה שני תאים בדיוק. שני אלה הם נדנדה: אחד מהם הוא הספרה והשני אינו.\n\nהתחל בכל מקום וצבע תא, נניח, בכחול. צבע את בן זוגו בנדנדה בירוק, לאחר מכן כל מה שאותו תא מצומד אליו בכחול שוב, והמשך כך עד שהשרשרת מסתיימת. כל תא כחול נכון או שכל תא ירוק נכון - אינך יכול לדעת מי מהם, ודי בכך לשני דברים.\n\nראשית: אם שני תאים מאותו צבע מופיעים בשורה, בעמודה או בבלוק אחד, צבע זה אינו אפשרי, ולכן הספרה מוסרת מכל תא הנושא אותו והצבע השני הוא התשובה לכל האורך.\n\nשנית: כל תא מחוץ לשרשרת שיכול לראות כחול וירוק יכול לוותר על הספרה, משום שאחד משני אלה מכיל אותה לא משנה לאיזה כיוון השרשרת נופלת.\n\nזה איטי עם עיפרון ושווה את זה: צביעה אחת מפנה לעיתים קרובות ספרה מחצי לוח."</string>
-    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"קח ספרה אחת ויחידה אחת בכל פעם - נניח, היכן יכול 4 להתאים בבלוק זה? מחק כל תא ביחידה שכבר מכיל ספרה, או שרואה 4 בשורה או בעמודה שלו. אם נותר תא אחד, ה-4 מוצב שם.\n\nהמלכודת היא שאינך יכול לראות זאת על ידי התבוננות בתא: הוא עשוי לקבל בשמחה גם חמש ספרות אחרות, כך ששום דבר בו אינו נראה כפוי. הסתכל על הספרה במקום על התא, והיא מופיעה מיד."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"קח ספרה אחת ויחידה אחת בכל פעם - נניח, היכן יכול 4 להתאים בבלוק זה? פסול כמיקום אפשרי כל תא ביחידה שכבר מכיל ספרה, או שרואה 4 בשורה או בעמודה שלו. אם נותר תא אחד, ה-4 מוצב שם.\n\nהמלכודת היא שאינך יכול לראות זאת על ידי התבוננות בתא: הוא עשוי לקבל בשמחה גם חמש ספרות אחרות, כך ששום דבר בו אינו נראה כפוי. הסתכל על הספרה במקום על התא, והיא מופיעה מיד."</string>
     <string name="msg_take_photo_7100ac99" formatted="false">"צלם תצלום"</string>
     <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"צלם את התצלום אוטומטית"</string>
     <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"הקש על תא מסומן כדי לסקור אותו, או אשר שכל הקריאות נכונות."</string>
@@ -493,35 +493,35 @@
     <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"המצלמה אינה זמינה. סגור אפליקציות מצלמה אחרות, ולאחר מכן נסה שוב."</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"האחר"</string>
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"התצלום מ-%1$s וכל מה שנקרא ממנו יוסרו מטלפון זה. לא ניתן לבטל פעולה זו."</string>
-    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" התצלום נמצא ברשימת החידות שלך, תחת \\\"לא נקרא\\\"."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" התצלום נמצא ברשימת החידות שלך, תחת \"לא נקרא\"."</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"הציר כאן הוא %1$s או %2$s. בכל מקרה אחד משני התאים האחרים נאלץ להיות %3$s, לכן אף תא הרואה את שניהם אינו יכול להיות %4$s."</string>
     <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"הזוג המצביע בקריאה לאחור. קח שורה או עמודה וספרה שעדיין זקוקה בהן למקום. סמן כל תא באותו קו שיכול לקבל את הספרה. אם כולם נופלים בתוך בלוק אחד, הספרה חייבת להיות בחלק של אותו קו השייך לבלוק - לכן היא אינה נמצאת בשום מקום אחר בבלוק, כולל שתי השורות או העמודות שלו שלא הסתכלת עליהן.\n\nכמו הזוג המצביע, זה אינו מציב דבר בפני עצמו; זה מפנה מקום למשהו שכן עושה זאת."</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"הספרות המודפסות אינן יוצרות חידה בת-פתרון."</string>
-    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n\n\nהמועמדים שנותרו ב-%1$s הם {%2$s}. הצב %3$s בשורה %4$s, עמודה %5$s."</string>
+    <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nהמועמדים שנותרו ב-%1$s הם {%2$s}. הצב %3$s בשורה %4$s, עמודה %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"הדוח גדול מכדי לשלוח."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"ה-Y-wing כשהציר מכיל מועמד אחד יותר. חפש תא בעל שלושה מועמדים בדיוק, נניח {1,4,7}, שיכול לראות שני תאים בעלי שני מועמדים - אחד {1,7} ואחד {4,7}.\n\nכעת כל שלושתם יכולים להיות 7, ואחד מהם חייב להיות. לכן על תא לראות את כל השלושה כדי להישלל, לא רק את שתי הצבתות - מה שבפועל אומר שהוא יושב באותו בלוק כמו הציר ובקו אחד עם צבת.\n\nפחות שלילות מאשר ב-Y-wing, וקל יותר לפספס מאותה סיבה: הציר אינו בולט."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"ה-Y-wing כשהציר מכיל מועמד אחד יותר. חפש תא בעל שלושה מועמדים בדיוק, נניח {1,4,7}, שיכול לראות שני תאים בעלי שני מועמדים - אחד {1,7} ואחד {4,7}.\n\nכעת כל שלושתם יכולים להיות 7, ואחד מהם חייב להיות. לכן על תא לראות את כל השלושה כדי שניתן יהיה לשלול ממנו את 7, לא רק את שתי הצבתות - מה שבפועל אומר שהוא יושב באותו בלוק כמו הציר ובקו אחד עם צבת.\n\nפחות שלילות מאשר ב-Y-wing, וקל יותר לפספס מאותה סיבה: הציר אינו בולט."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"יש תא שבאפשרותך למלא בבלוק המודגש.\n\nלחץ על רמז שוב כדי לדעת איזו שיטה מוצאת אותו."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"לא נותר כאן דבר להיקש לוגי."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"%1$s תאים אלה מכילים כולם רק %2$s ו-%3$s, וכל אחד רואה את הבא, לכן הם מתחלפים לכל האורך. %4$s ו-%5$s מרוחקים מספר אי-זוגי של קישורים ולכן מחזיקים בספרות שונות ביניהם - מה ששולל את %6$s מכל מה שרואה את שניהם."</string>
-    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"%1$s תאים אלה מכילים רק %2$s ביניהם, לכן ספרות אלו ממלאות אותם בסדר כלשהו. זה שולל את %3$s משאר ה-%4$s הזה."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"%1$s תאים אלה מכילים רק %2$s ביניהם, לכן ספרות אלו ממלאות אותם בסדר כלשהו. זה שולל את %3$s משאר התאים ביחידה זו (%4$s)."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"ב־%1$s התאים האלה יכולים להופיע רק %2$s, ולכן הספרות האלה ממלאות אותם בסדר כלשהו. מכאן שניתן לשלול את %3$s משאר התאים בשורה הזאת."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"ב־%1$s התאים האלה יכולים להופיע רק %2$s, ולכן הספרות האלה ממלאות אותם בסדר כלשהו. מכאן שניתן לשלול את %3$s משאר התאים בעמודה הזאת."</string>
-    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"ב־%1$s התאים האלה יכולים להופיע רק %2$s, ולכן הספרות האלה ממלאות אותם בסדר כלשהו. מכאן שניתן לשלול את %3$s משאר התאים באזור הזה."</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"ב־%1$s התאים האלה יכולים להופיע רק %2$s, ולכן הספרות האלה ממלאות אותם בסדר כלשהו. מכאן שניתן לשלול את %3$s משאר התאים בבלוק הזה."</string>
     <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"אלה המועמדים ההתחלתיים עבור התא שלך. \'נתיב\' מסביר אילו אפשרויות ניתן לשלול."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"ספרות אלו אינן יכולות ליצור חידה, ויותר מדי שגוי מכדי לקבוע מה. הקש על תא כלשהו כדי לתקן את מה שנקרא, או צלם את התצלום שוב."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"ספרות אלו אינן יכולות ליצור חידה. שינוי %1$s התאים המוקפים בעיגול יתקן זאת - הקש על אחד כדי לתקן את מה שנקרא."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"ספרות אלו אינן יכולות ליצור חידה. שינוי התא המוקף בעיגול יתקן זאת - הקש עליו כדי לתקן את מה שנקרא."</string>
-    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"ספרות אלו אינן יוצרות חידה, לכן אחת נקראה בצורה שגויה. לחץ על פתור כדי לראות אילו תאים יש לתקן."</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"ספרות אלו אינן יוצרות חידה, לכן אחת נקראה בצורה שגויה. לחץ על \"פתרון\" כדי לראות אילו תאים יש לתקן."</string>
     <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"ארבעה תאים אלה יוצרים מלבן על פני שני בלוקים, ושלושה מהם מכילים רק %1$s. אם %2$s היה מכיל רק את שני אלה גם כן, ניתן היה להחליף את הספרות סביב המלבן ולחידה היו שני פתרונות. יש לה פתרון אחד, לכן %3$s חייב להשתמש במשהו אחר - ו-%4$s מוסר."</string>
     <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"הם אינם מגיעים לסיום: משהו כאן הכשיל את האפליקציה לחלוטין."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"זה אינו ממלא דבר. זה שולל את %1$s מ-%2$s."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"המהלך הזה לא ממלא אף תא. הוא פוסל את %1$s ב־%2$s תאים."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"המהלך הזה לא ממלא אף תא. הוא פוסל את %1$s בתא אחד."</string>
-    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\n\n\nזוהי הראשונה מתוך %1$s מסקנות המובילות לתשובה."</string>
+    <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nזוהי הראשונה מתוך %1$s מסקנות המובילות לתשובה."</string>
     <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"הוכחה זו מסבירה רמז אחד, כולל שלילות המועמדים המובילות לתשובתו. התקדם שלב כדי לעקוב אחר ההיקש הלוגי על הרשת, ולאחר מכן המשך עם המסלול המלא."</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"לא ניתן היה להכין חידה זו."</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"לא ניתן היה לשמור חידה זו. עדיין באפשרותך להשתמש בה כעת. פנה מעט נפח אחסון לפני צילום תצלום נוסף."</string>
-    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"לחידה זו יש יותר מפתרון אחד, לכן ככל הנראה ספרה מודפסת הוחמצה. מציג תשובה %1$s מתוך %2$s - לחץ על פתור שוב עבור הבאה. התאים המוקפים בעיגול שונים בין התשובות המוצגות."</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"לחידה זו יש יותר מפתרון אחד, לכן ככל הנראה ספרה מודפסת הוחמצה. מציג תשובה %1$s מתוך %2$s - לחץ על \"פתרון\" שוב עבור הבאה. התאים המוקפים בעיגול שונים בין התשובות המוצגות."</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"לא ניתן היה לפתוח את תצלום החידה הזו."</string>
     <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"היקש לוגי זה מוציא מכלל אפשרות %1$s "</string>
     <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"תא זה עשוי להכיל הערות מועמדים ולא ספרה מלאה. אנא בדוק אותו."</string>
@@ -559,9 +559,9 @@
     <string name="msg_why_d3ae14a5" formatted="false">"למה"</string>
     <string name="msg_why_not_0_1_3eb81faf" formatted="false">"למה לא %1$s? · %2$s"</string>
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"מדוע תא זה? · %1$s"</string>
-    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" מול הפתרון. השתמש ב-בדוק כדי לבחון אותם."</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" לפתרון. השתמש ב\"בדיקה\" כדי לבחון אותם."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"עבוד לאחור מהתא שלך. בחר שאלה להלן."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"עבוד ספרה אחר ספרה ולא תא אחר תא. עבור יחידה אחת, רשום היכן כל ספרה חסרה עדיין יכולה להתאים. לאחר מכן חפש %1$s ספרות שהרשימות שלהן יחד מכסות רק %2$s תאים.\n\nאותן %3$s ספרות חייבות למלא את %4$s התאים הללו, כך שניתן למחוק כל דבר אחר בהם - מה שלעיתים קרובות הופך אחד מהם ליחיד גלוי או לזוג גלוי במקום.\n\nזו השיטה שאנשים מוצאים כקשה ביותר, משום שאין מה לראות כשמביטים בתאים: עדיין יש להם שפע של מועמדים. הדפוס נמצא בספרות."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"עבוד ספרה אחר ספרה ולא תא אחר תא. עבור יחידה אחת, רשום היכן כל ספרה חסרה עדיין יכולה להתאים. לאחר מכן חפש %1$s ספרות שהרשימות שלהן יחד מכסות רק %2$s תאים.\n\nאותן %3$s ספרות חייבות למלא את %4$s התאים הללו, כך שניתן למחוק כל מועמד אחר בהם - מה שלעיתים קרובות יוצר מיד יחיד גלוי באחד מהם או זוג גלוי בשניים מהם.\n\nזו השיטה שאנשים מוצאים כקשה ביותר, משום שאין מה לראות כשמביטים בתאים: עדיין יש להם שפע של מועמדים. הדפוס נמצא בספרות."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"עבוד רק עם תאים שנותרו בהם בדיוק שני מועמדים.\n\nהתחל באחד, נניח {2,6}, והנח שהוא אינו ה-2 - אם כן הוא ה-6. עבור לתא שהוא רואה שגם בו יש 6, נניח {6,4}: תא זה אינו יכול להיות ה-6, ולכן הוא ה-4. עבור לתא שאותו תא רואה המכיל 4, והמשך הלאה, כאשר כל שלב נכפה על ידי זה שלפניו.\n\nאם תגיע לתא שהספרה האחרת שלו היא 2 - הספרה שהתחלת בשלילתה - סיימת. או שהתא הראשון היה 2 אחרי הכל, או שהשרשרת פעלה והתא האחרון הוא 2. קצה אחד או השני מכיל אותה, כך שכל דבר הרואה את שני הקצוות אינו יכול להכיל אותה.\n\nשמור על שרשראות קצרות. ארבעה או חמישה תאים ניתנים למציאה באמצעות עיפרון; מעבר לכך מדובר ברישום טכני, ושרשרת כפייה היא השם הכן לכך."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"קצה עבודה חייב להיות חיובי וסופי"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"לא נקרא"</string>

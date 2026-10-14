@@ -47,7 +47,7 @@ fun StrategiesScreen(
         ) {
             item {
                 Text(
-                    localized("Every sudoku with one answer can be reached by reasoning; guessing is " +
+                    localized("Every sudoku with one answer can be solved by reasoning; guessing is " +
                         "never required and rarely helps. These are the ways of reasoning " +
                         "this app can recognise and explain, easiest first. Where one of " +
                         "them applies to the puzzle you have open, it will show you every " +

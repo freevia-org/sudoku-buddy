@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
-    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nMerkejuvvon rutat duođaštit dan.\n\nDeaddil Veahkkečujuhus fas oaidnit guđe ruta."</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nMerkejuvvon rutat duođaštit dan.\n\nDeaddil Rávva fas oaidnit guđe ruta."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$s ja %2$s goappašiin leat dušše %3$s ja %4$s. Dán %5$s:s leat %6$s:s dušše guokte saji, ja juohke geahči oaidná ovtta dain – danin nuppi dain guovtti rutas lea %7$s, ja geahči mii oaidná dan ferte leat %8$s. Goappašiin dáhpáhusain nuppi geažis lea %9$s, mii hilgu %10$s buot rutain mat oidnet goappašiid."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"Goappaš ruđus %1$s ja %2$s sáhttá leat dušše %3$s ja %4$s. Dán blohkas leat %5$s:s dušše guokte vejolaš saji, maid goappaš ruhtu oaidná goabbat – danne lea nubbi dáin guovttis %6$s, ja dat geahči mii oaidná dan ferte leat %7$s. Goappáge dáhpáhusas lea nubbi geahči %8$s, mii easkkáda %9$s buot ruđuin mat oidnet goappaš gežiid."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"Goappaš ruđus %1$s ja %2$s sáhttá leat dušše %3$s ja %4$s. Dán čuolddus leat %5$s:s dušše guokte vejolaš saji, maid goappaš ruhtu oaidná goabbat – danne lea nubbi dáin guovttis %6$s, ja dat geahči mii oaidná dan ferte leat %7$s. Goappáge dáhpáhusas lea nubbi geahči %8$s, mii easkkáda %9$s buot ruđuin mat oidnet goappaš gežiid."</string>
@@ -12,9 +12,9 @@
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s sáhttá sisttisdoallat dušše %2$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s ii sáhte doallat %2$s dasgo %3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s ii sáhte sisttisdoallat %2$s, daningo %3$s sáhttá sisttisdoallat dušše %4$s seamma čuolddus %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s ii sáhte sisttisdoallat %2$s, daningo %3$s sáhttá sisttisdoallat dušše %4$s seamma ruvttus %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s ii sáhte sisttisdoallat %2$s, daningo %3$s sáhttá sisttisdoallat dušše %4$s seamma bokssas %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s ii sáhte sisttisdoallat %2$s, daningo %3$s sáhttá sisttisdoallat dušše %4$s seamma ráiddus %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s ii sáhte sisttisdoallat %2$s, daningo %3$s sisttisdoallá %4$s seamma ruvttus %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"%1$s ii sáhte sisttisdoallat %2$s, daningo %3$s sisttisdoallá %4$s seamma bokssas %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"%1$s ii sáhte sisttisdoallat %2$s, daningo %3$s sisttisdoallá %4$s seamma čuolddus %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"%1$s ii sáhte sisttisdoallat %2$s, daningo %3$s sisttisdoallá %4$s seamma ráiddus %5$s."</string>
     <string name="msg_0_contains_1_1a322cb6" formatted="false">"%1$s sisttisdoallá %2$s."</string>
@@ -33,8 +33,8 @@
     <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii "</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii sáhttá sisttisdoallat dušše %3$s seamma čuolddus %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii sáhttá sisttisdoallat dušše %3$s seamma ráiddus %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii sáhttá sisttisdoallat dušše %3$s seamma ruvttus %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii sisttisdoallá %3$s seamma ruvttus %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii sáhttá sisttisdoallat dušše %3$s seamma bokssas %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii sisttisdoallá %3$s seamma bokssas %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii sisttisdoallá %3$s seamma čuolddus %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s hilgojuvvo %2$s geažil, mii sisttisdoallá %3$s seamma ráiddus %4$s."</string>
     <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"%1$s bággejuvvo ođđaseamos nummerejuvvon rutái (ráidu %2$s, čuoldu %3$s). %4$s Njuolla čuovvu váikkuheaddji bidjama; ovddit váikkuhusat leat maid dehálaččat."</string>
@@ -50,7 +50,7 @@
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s hilgojuvvon gova, ođđaseamos vuos:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: váldde eret %2$s"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"Ruvttuid lohku: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s lávkki dahket dán lávkeráiddu, váttimus doarjjuvvon teknihkka lea %2$s. %3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"%1$s lávkki dahket dán lávkeráiddu, váttimus doarjjuvvon teknihkka lea %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s golbmajoavku"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s váldojuvvui eret %2$s:s ovddit vejolaš loguid ákkastallama bokte."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s čállon"</string>
@@ -90,7 +90,7 @@
     <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Ruovttoluotta govvalaš rávvagii"</string>
     <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Ruovttoluotta du ruhtui"</string>
     <string name="msg_before_9bb72500" formatted="false">"Ovdal"</string>
-    <string name="msg_before_this_move_426cf416" formatted="false">"Ovdan dán lihkadusa"</string>
+    <string name="msg_before_this_move_426cf416" formatted="false">"Ovdal dán lihkadusa"</string>
     <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Alit logut leat čoavdda. Deatta man beare ruhtu divvut lohkama."</string>
     <string name="msg_box_0_1b64af60" formatted="false">"boksa %1$s"</string>
     <string name="msg_box_26f8567f" formatted="false">"boksa"</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", dárkkistuvvon riekta"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Vállje kandidáhta oaidnit manne dat ii sáhte leat du ruhtus."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Vállje giela"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Vállje mii galgá čájehuvvot"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Vállje mii galgá čájehuvvot"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Gidde"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Gidde rávvaga"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Čiega lohkama dárkkisteami"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Čilge maid dáhpáhuvai ja lávkkiid dan geardduheapmái. Muital dárkkistit go ja divvut go dovdojuvvon loguid vuos. Jurdda várás čále \'Ii guoskka\'."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", dán rávvaga čuozáhat"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Ovttadat: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostiika oanehuvvui heivet fierpmádatlogan hábmái. Appa Sádde diagnostiikka doaibma sáhttá juogadit olles raportta."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostiika oanehuvvui heivet fierpmádatlogan hábmái. Appa Sádde diagnostihka doaibma sáhttá juogadit olles raportta."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"lohku ferte leat 1..9 muhto lei %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Logut eai lohkkojuvvon"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Duođaštusa vurken skearrui váikkuha áigemádji; ii leat maŋŋoneami mihttu."</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Juohke okta dain deavdá ovtta ruhtu."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Juohke ruhtu lea devdon, muhto %1$s vástádusa eai heive čoavdagii."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Juohke ruhtu lea devdon, muhto okta vástádus ii heive čoavdagii."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Juohke sudoku, mas lea okta čoavdda, sáhttá čoavdit árvvalemiin; árvidan ii leat goassege dárbbašlaš ja hárve veahkeha. Dát leat árvvalanvuogit, maid dát appa sáhttá dovdat ja čilget, álkimusat vuos. Go okta dain heive rabas sudoku, dat čájeha buot sajiid main dat heive."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Juohke sudoku, mas lea okta čoavdda, sáhttá čoavdit árvvalemiin; árvidan ii leat goassege dárbbašlaš ja hárve veahkeha. Dát leat árvvalanvuogit, maid dát appa sáhttá dovdat ja čilget, álkimusat vuos. Go okta dain heive rabas sudoku, dat čájeha buot sajiid main dat heive."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Buot maid leat dán rádjai čállán lea riekta."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Ovdamearkkat leat dál olámuttus: juohke okta álgá du dálá neahtas."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"vurdojuvvojedje 10 lásku linnjá, oaččui %1$s"</string>
@@ -260,7 +260,7 @@
     <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Dán blohkas sáhttá %1$s leat dušše dáin %2$s ruđus, danne dát ruđut leat várrejuvvon. Dat easkkáda %3$s dain."</string>
     <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Dán čuolddus sáhttá %1$s leat dušše dáin %2$s ruđus, danne dát ruđut leat várrejuvvon. Dat easkkáda %3$s dain."</string>
     <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Dán ráiddus sáhttá %1$s leat dušše dáin %2$s ruđus, danne dát ruđut leat várrejuvvon. Dat easkkáda %3$s dain."</string>
-    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Sisttisdoallá daid govaid, lohkamiid ja divvumiid. Bija dán eret Asahusain."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Sisttisdoallá daid govaid, lohkamiid ja divvumiid. Bija dán eret Heivehusain."</string>
     <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Oza ovtta bokssa siste logu, mii sáhttá leat dušše guovtti dahje golmma ruhtus, ja dárkkis leat go dat buohkat seamma ráiddus dahje seamma čuolddas. Jos leat, lohku lea sihkkarit muhtin sajis dan linnjás – it dieđe gos, muhto dieđát ahte dat lea dán bokssa siste. Nu ahte dat ii sáhte leat seamma linnjá eará sajis bokssa olggobealde.\n\nDát ii bija maidege iešalddis. Dat sihkku kandidáhtaid eret vai ovttaskas ihtá muhtin eará sajis."</string>
     <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Dán bokssa siste, %1$s sáhttá leat dušše dán %2$s siste. Nu ahte %3$s lea muhtin sajis dás, ja sáhttá hilgojuvvot %4$s eará sajiin."</string>
     <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Váttisvuohta dahje jurdda"</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Doala bággoviđjjiid oanehin"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Giella"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Liseanssat"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Oza ovtta ráiddus, čuolddas dahje bokssas ruhtuid, main leat dušše moadde kandidáhta báhcán. Váldde %1$s dain ja čohkke daid kandidáhtaid. Jos čoakkáldagas leat juste %2$s logu, dat %3$s logu leat várrejuvvon: dat fertejit mannat daidda %4$s ruhtuide muhtin ortnegis, vaikko it vel sáhte dadjat guđe lohku manná guđe sadjái.\n\nDat lea doarvái. Juohke eará ruhtu ovttadagas sáhttá hilgut daid loguid, ja dábálaččat okta dáin ruhtuin šaddá de ovttaskas.\n\nRuhtuin eai dárbbaš leat seamma kandidáhtat – {2,7}, {2,9} ja {7,9} lea áibbas dohkálaš golmmis, ja dat lea dat maid olbmot eai fuobmá."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Oza ovtta ráiddus, čuolddas dahje bokssas ruhtuid, main leat dušše moadde kandidáhta báhcán. Váldde %1$s dain ja čohkke daid kandidáhtaid. Jos čoakkáldagas leat juste %2$s logu, dat %3$s logu leat várrejuvvon: dat fertejit mannat daidda %4$s ruhtuide muhtin ortnegis, vaikko it vel sáhte dadjat guđe lohku manná guđe sadjái.\n\nDat lea doarvái. Juohke eará ruhtu ovttadagas sáhttá hilgut daid loguid, ja dábálaččat okta dáin ruhtuin šaddá de ovttaskas.\n\nRuhtuin eai dárbbaš leat seamma kandidáhtat – {2,7}, {2,9} ja {7,9} lea áibbas dohkálaš golmmis, ja dat lea dat maid olbmot eai fuobmá."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Oza ruhtuid, main leat seamma guokte kandidáhta – ovdamearkka dihte {4,9} – ja mat ráhkadit viđji, mas juohke ruhtu oaidná čuovvovačča. Golbma ii leat doarvái; dárbbašat unnimusat njeallje.\n\nIvdne daid molsašuddi ivnniin go joatkkát. Go juohke ruhtu oaidná čuovvovačča, guovtti bálddalas ruhtus ii sáhte leat seamma lohku, nu ahte viđji lea 4, 9, 4, 9 olles matki – dahje 9, 4, 9, 4, it ge sáhte diehtit guđe.\n\nGoas beare, guovtti vuostálas ivnni ruhtus leat sierra logut: okta lea 4 ja okta lea 9. Nu ahte mihkkege mii oaidná goappašiid ii sáhte leat oktage dain, ja massá goappašiid kandidáhtaid oktanaga.\n\nHámi lea álki dovdat juste danne go juohke ruhtu das orru seammalágan. Čuovo seammalágan páraid neahta birra ja geahča gos dat deaivvadit."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Oza golbma ruhtu, main leat seamma guokte kandidáhta – ovdamearkka dihte {1,6} – ja mat leat njealječiegaga golmma čiegas. Njealječiegat ferte leat juste guovtti bokssas: guokte ráiddu ja guokte čuoldda, mat rasttildit guokte bokssa, eai njeallje.\n\nGeahča dál njealját čiehka. Jos das maid livčče dušše 1 ja 6, sudoku:s livčče guokte čoavdaga – sáhtášit molsut 1 ja 6 njealječiegaga birra ja buot eará doaimmašii ain. Riekta ráhkaduvvon sudoku:s lea okta čoavdda, nu ahte njealját čiehka ferte geavahit muhtin eará: dan eará kandidáhtat báhcet, ja 1 ja 6 sihkkojuvvojit.\n\nDát lea girjji áidna árvvalus, mii guoská ráhkadeaddjái neahta sajis. Dat doallá almmuhuvvon sudoku:s ja lea árvvohis sudoku:s, man leat juo deavdán boastut, go de ii soaitte leat oktage čoavdda, mii sáhtášii leat áidna."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Geahča dán bokssa. Čuovo olgoráji dan ruhtui, man dát rávva čilge."</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Dušše %1$s sáhttá leat dáppe. Čuvgejuvvon ruvttut geavahit ovtta gávcci eará logus; %2$s ledje hilgojuvvon dán ruvttus ovdal, eai dan geažil maid sáhtát oaidnit dan birra."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Dušše %1$s sáhttá leat dáppe. Čuvgejuvvon ruvttut geavahit čieža gávcci eará logus; %2$s lei hilgojuvvon dán ruvttus ovdal, ii dan geažil maid sáhtát oaidnit dan birra."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Dušše %1$s sáhttá leat dáppe. Čuvgejuvvon ruvttut geavahit vihtta gávcci eará logus; %2$s ledje hilgojuvvon dán ruvttus ovdal, eai dan geažil maid sáhtát oaidnit dan birra."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Dušše %1$s sáhttá leat dás. Merkejuvvon ruhtut geavahit %2$s dan gávcci eará logus; %3$s %4$s hilgojuvvui dán ruhtus ovdal, ii mihkkege dan birra oinnolaš ášši bokte."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Dušše %1$s sáhttá leat dás. Merkejuvvon ruhtut geavahit %2$s dan gávcci eará logus; %3$s %4$s hilgojuvvon dán ruhtus ovdal, ii mihkkege dan birra oinnolaš ášši bokte."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Dušše %1$s sáhttá leat dáppe. Čuvgejuvvon ruvttut geavahit guokte gávcci eará logus; %2$s ledje hilgojuvvon dán ruvttus ovdal, eai dan geažil maid sáhtát oaidnit dan birra."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Dušše %1$s sáhttá leat dás. Čuvgejuvvon ruđut geavahit %2$s dan gávcci eará logus; %3$s easkkáduvvojedje dán ruđus ovdal, ii maidege vuođul maid sáhtát oaidnit dan birra."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Dušše %1$s sáhttá leat dáppe. Čuvgejuvvon ruvttut geavahit golbma gávcci eará logus; %2$s ledje hilgojuvvon dán ruvttus ovdal, eai dan geažil maid sáhtát oaidnit dan birra."</string>
@@ -336,7 +336,7 @@
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"Raba appa asahusaid"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"Raba GitHub"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"Rabas gáldokoda dieđáhusat"</string>
-    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Raba ‘Manne dát ruhtu?’ oaidnit loahpalaš bidjama duođaštusa, dahje vállje hilgojuvvon kandidáhta čuovvut dan duođaštusa."</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Raba ‘Manne dát ruta?’ oaidnit loahpalaš bidjama duođaštusa, dahje vállje hilgojuvvon kandidáhta čuovvut dan duođaštusa."</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV – Apache-liseansa 2.0. Geavahuvvo neahta gávdnamii ja njulgemii.\n\nAndroidX, Jetpack Compose ja CameraX – Apache-liseansa 2.0.\n\nKotlin – Apache-liseansa 2.0.\n\nLoguid dovdi hárjehuvvui LeCun, Cortes ja Burges MNIST-diehtovuođuin gieđain čállojuvvon loguin, ovttas rabas vuogádatfonttain čájehuvvon loguiguin ja prográmma bokte sárgojuvvon loguiguin."</string>
     <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV natiiva girjerádjosiid viežžan ii lihkostuvvan"</string>
     <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Govve nuppi sudoku."</string>
@@ -493,14 +493,14 @@
     <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Kámera ii leat olámuttos. Gidde eará kámeraappaid ja geahččal de ođđasit."</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"nubbi"</string>
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Govva %1$s:s ja buot mii das lohkkojuvvui váldojuvvo eret dán telefuvnnas. Dán ii sáhte máhcahit."</string>
-    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Govva lea du sudokulisttus, namahusa \"Ii sáhttán lohkat\" vuolde."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Govva lea du sudokulisttus, namahusa \"Ii lohkkojuvvon\" vuolde."</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Guovddášrutas lea dás %1$s dahje %2$s. Goappašiin dáhpáhusain nubbi eará guovtti rutas bággejuvvo %3$s:n, nu ahte oktage ruta mii oaidná goappašiid ii sáhte leat %4$s."</string>
     <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Čujuheaddji párra maŋos lohkkojuvvon. Vállje ráiddu dahje čuolddo ja logu mii ain dárbbaša saji das. Merke juohke ruta dan linnjás gosa lohku sáhttá mannat. Jos buot leat ovtta boksa siste, lohku ferte leat dan boksa oassis linnjás – danin dat ii leat gosge eará boksa siste, ii ge dan guovtti ráiddus dahje čuolddus maid it geahččan.\n\nNugo čujuheaddji párra, dát ii bija maidege ieš; dat dahká saji juoidá mii bidjá."</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Prentejuvvon logut eai dagat čoavddehahtti sudoku."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nBáhcán kandidáhtat sajis %1$s leat {%2$s}. Bija %3$s ráidui %4$s, čuoldái %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Raporta lea menddo stuoris sáddemii."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-soadji mas guovddášrutas lea okta vejolaš lohku eanet. Oza ruta mas leat juste golbma vejolaš logu, ovdamearkka dihte {1,4,7}, ja mii oaidná guokte ruta main leat guokte vejolaš logu – ovtta {1,7} ja ovtta {4,7}.\n\nDál buot golmma rutas sáhttá leat 7, ja ovtta dain ferte leat. Danin ruta ferte oaidnit buot golbma vai das sáhttá hilgut logu, ii dušše guokte soaji – geavatlaččat dat mearkkaša ahte dat lea seamma boksa siste go guovddášruta ja seamma linnjás go okta soadji.\n\nUnnit eretváldimat go Y-soajis, ja álkit báhcit fuomáškeahttá seamma siva dihte: guovddášruta ii čalbme."</string>
-    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Merkejuvvon boksa siste lea ruta maid sáhtát deavdit.\n\nDeaddil Veahkkečujuhus fas diehtit makkár teknihkka gávdná dan."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-soadji mas guovddášrutas lea okta vejolaš lohku eanet. Oza ruta mas leat juste golbma vejolaš logu, ovdamearkka dihte {1,4,7}, ja mii oaidná guokte ruta main leat guokte vejolaš logu – ovtta {1,7} ja ovtta {4,7}.\n\nDál buot golmma rutas sáhttá leat 7, ja ovtta dain ferte leat. Danin ruta ferte oaidnit buot golbma vai das sáhttá hilgut logu, ii dušše guokte soaji – geavatlaččat dat mearkkaša ahte dat lea seamma boksa siste go guovddášruta ja seamma linnjás go okta soadji.\n\nUnnit eretváldimat go Y-soajis, ja álkit báhcit fuomáškeahttá seamma siva dihte: guovddášruta ii čalbme."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Merkejuvvon boksa siste lea ruta maid sáhtát deavdit.\n\nDeaddil Rávva fas diehtit makkár teknihkka gávdná dan."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Dás ii leat šat mihkkege ákkastallat."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Dáin %1$s rutas leat dušše %2$s ja %3$s, ja juohke ruta oaidná čuovvovačča, danin dat molsašuddet olles viđji mielde. %4$s ja %5$s leat bárrahis lohku liŋkkaid eret guhtet guimmiineaset ja dain leat danin iešguđet logut – mii hilgu %6$s buot rutain mat oidnet goappašiid."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Dáin %1$s rutas leat oktiibuot dušše %2$s, danin dat logut deavdit daid muhtun ortnegis. Dat hilgu %3$s dán %4$s eará rutain."</string>
@@ -550,7 +550,7 @@
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Hui váttis"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"W-soadji"</string>
     <string name="msg_was_b63b99f6" formatted="false">"lei"</string>
-    <string name="msg_were_910adfb4" formatted="false">"leigga"</string>
+    <string name="msg_were_910adfb4" formatted="false">"ledje"</string>
     <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Maid vurdet, dahje mo du jurdda veahkehivččii du čoavdit dahje oahppat sudoku?"</string>
     <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Mii dáhpáhuvai ja lávkkit dan geardduheapmái (meattáhusaid várás)"</string>
     <string name="msg_what_it_does_c74ea9dc" formatted="false">"Maid dat dahká"</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Manne dát ruta? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" čoavdagiin. Geavat Dárkkis guorahallat daid."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Álggát du rutas ja čuovo ákkastallama maŋos. Vállje gažaldaga vuolábealde."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Bargga lohku logu mielde. Čále ovtta ovttadaga várás gosa juohke váillahan lohku ain sáhttá mannat. Oza de %1$s logu maid listtut oktiibuot gokčet dušše %2$s ruta.\n\nDat %3$s logu fertejit deavdit daid %4$s ruta, danin buot eará logut dain sáhttet rostejuvvot eret – mii dávjá dahká ovtta dain dakkaviđe áidna vejolaš logu rutan dahje čihkameahttun párran.\n\nDán olbmot atnet váttimusin, dasgo rutain ii leat mihkkege oaidnit: dain leat ain ollu vejolaš logut. Minsttar lea loguin."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Bargga lohku logu mielde. Čále ovtta ovttadaga várás gosa juohke váillahan lohku ain sáhttá mannat. Oza de %1$s logu maid listtut oktiibuot gokčet dušše %2$s ruta.\n\nDat %3$s logu fertejit deavdit daid %4$s ruta, danin buot eará logut dain sáhttet rostejuvvot eret – mii dávjá dahká ovtta dain dakkaviđe áidna vejolaš logu rutan dahje čihkameahttun párran.\n\nDán olbmot atnet váttimusin, dasgo rutain ii leat mihkkege oaidnit: dain leat ain ollu vejolaš logut. Minsttar lea loguin."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Bargga dušše rutaiguin main leat juste guokte vejolaš logu báhcán.\n\nÁlggát ovttas, ovdamearkka dihte {2,6}, ja navdde ahte dat ii leat 2 – dalle dat lea 6. Sirdda rutái maid dat oaidná ja mas maid lea 6, ovdamearkka dihte {6,4}: dat ii sáhte leat 6, danin dat lea 4. Sirdda rutái maid dat oaidná ja mas lea 4, ja joatkke nu ahte juohke lávki bággejuvvo ovddit lávkki geažil.\n\nJos olat rutái mas nubbi lohku lea 2 – lohku maid hilggut álggus – leat geargan. Juogo vuosttaš rutas lei goitge 2, dahje viđji čuovui ja maŋimuš rutas lea 2. Nuppi geažis lea dat, nu ahte buot mii oaidná goappaš gežiid ii sáhte doallat dan.\n\nDoala viđjiid oanehažžan. Njeallje dahje vihtta ruta lea vejolaš gávdnat beannamerkkain; dan maŋŋá barggat lohkovurkkema, ja bággoviđji lea dasa rehálaš namma."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"bargoravda ferte leat positiivvalaš ja ráddjejuvvon"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Ii lohkkojuvvon"</string>

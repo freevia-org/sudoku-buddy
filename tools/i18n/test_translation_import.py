@@ -38,6 +38,13 @@ class TranslationImportTest(unittest.TestCase):
                                            "Erster Absatz.\\n\\nZweiter Absatz."))
         self.assertEqual("Literal \\n", normalize_message("Literal \\n", "Literal \\n"))
 
+    def test_preparation_does_not_double_fragment_spacing(self):
+        source = "\nRemove {0} from "
+        value = normalize_message(source, "\n\nRemova {0} de ")
+        self.assertEqual("\nRemova {0} de ", value)
+        self.assertEqual(value, normalize_message(source, value))
+        self.assertEqual("\n\nComo chegamos lá:", normalize_message("\n\nHow we get there:", "\n\n\n\nComo chegamos lá:"))
+
     def test_valid_json_preserves_unicode_and_sudoku_arguments(self):
         self.assertEqual({"0": "候補 {{1}} を {0} に入れる。"},
                          parse_response('{"0": "候補 {{1}} を {0} に入れる。"}'))

@@ -5,6 +5,30 @@ import kotlin.test.assertEquals
 
 class MessageCatalogTest {
     @Test
+    fun `route summaries translate full shape and ending sentences`() {
+        val catalog = MessageCatalog(listOf(
+            "{0} steps make up this route, with {1} as the hardest supported technique. {2} {3}" to
+                "%1\$s Schritte mit %2\$s. %3\$s %4\$s",
+            "Naked single" to "Offener Einer",
+            "Every one of them fills a square in." to "Jeder Schritt füllt ein Feld.",
+            "That is the rest of the puzzle, start to finish." to "Das löst den Rest des Rätsels.",
+            "{0} of them fill a square in; the rest clear candidates out of the way first." to
+                "%1\$s füllen ein Feld; der Rest entfernt Kandidaten.",
+            "That is the rest of the puzzle. One square in it needs a solver-assisted answer because the app's supported techniques did not find a move. Its detailed search proof is unavailable." to
+                "Der Rest ist gelöst. Ein Feld braucht Solver-Hilfe ohne detaillierten Beweis.",
+        ))
+        assertEquals("51 Schritte mit Offener Einer. Jeder Schritt füllt ein Feld. Das löst den Rest des Rätsels.",
+            catalog.translate("51 steps make up this route, with Naked single as the hardest supported technique. " +
+                "Every one of them fills a square in. That is the rest of the puzzle, start to finish."))
+        assertEquals("52 Schritte mit Offener Einer. 50 füllen ein Feld; der Rest entfernt Kandidaten. " +
+            "Der Rest ist gelöst. Ein Feld braucht Solver-Hilfe ohne detaillierten Beweis.",
+            catalog.translate("52 steps make up this route, with Naked single as the hardest supported technique. " +
+                "50 of them fill a square in; the rest clear candidates out of the way first. " +
+                "That is the rest of the puzzle. One square in it needs a solver-assisted answer because the app's " +
+                "supported techniques did not find a move. Its detailed search proof is unavailable."))
+    }
+
+    @Test
     fun `page count formatting cannot rewrite prose containing of`() {
         val catalog = MessageCatalog(listOf(
             "{0} of {1}" to "%1\$s/%2\$s",

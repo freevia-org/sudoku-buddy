@@ -67,7 +67,7 @@ internal fun TutorPicker(
                 )
                 Icon(
                     Icons.Filled.ArrowDropDown,
-                    contentDescription = localized("Choose what to be shown"),
+                    contentDescription = localized("Choose what to show"),
                     modifier = Modifier.size(18.dp),
                 )
             }

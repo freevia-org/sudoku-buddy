@@ -1,0 +1,1146 @@
+{
+  "review_date": "2026-10-14",
+  "method": "Codex full-catalog review and a fresh independent verification request for proposed changes; no tools or private data supplied to the model.",
+  "scope": "71 bundled app catalogs, including English; 582 messages per catalog. Third-party license bodies are preserved verbatim.",
+  "reviewed_entries": 41322,
+  "english_source_corrections": 6,
+  "verified_suggestions": 2056,
+  "disputed_suggestions": 205,
+  "rejected_by_structural_guard": 8,
+  "supplemental_verified_languages": [
+    "hsb",
+    "mt"
+  ],
+  "runtime_corrections": [
+    "Tutor route summaries retain canonical technique names for translation and capture complete shape/ending sentences.",
+    "Preparation preserves exact fragment boundary whitespace and is idempotent."
+  ],
+  "limits": [
+    "This is a model-assisted linguistic review, not native-speaker certification.",
+    "Uncertain regional technique terminology and context-dependent fragment suggestions were not applied.",
+    "Android UI checks use the API 36 16 KB emulator; actual camera recognition and Play-delivered installation are outside this translation review."
+  ],
+  "languages": [
+    {
+      "tag": "en",
+      "name": "English",
+      "reviewed_messages": 582,
+      "review_input_sha256": "b6afd346fc096a29f0b8ca32edcd34f02029960243f664b1549d8cf1d6cbdab0",
+      "changed_message_values": 6,
+      "verified_suggestions": 1,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": []
+    },
+    {
+      "tag": "uk",
+      "name": "Українська",
+      "reviewed_messages": 582,
+      "review_input_sha256": "b514ee61498d56274f388b8af4166bd5256fee4fb1a0de354bb948f619d6861e",
+      "changed_message_values": 42,
+      "verified_suggestions": 42,
+      "disputed_suggestions": 7,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not specify every fragment composition or placeholder value. Some remaining count and case agreement depends on how those strings are assembled.",
+        "The referenced labels at indices 346 and 170, the actual Read and Forcing chain labels, and the interpolated Naked/Hidden labels were not supplied. Label-consistency claims for 299, 347, 460, 566, 570 and 574 cannot be independently verified.",
+        "Index 254 does not establish a clear meaning defect: «вичерпують» preserves the source’s metaphor."
+      ]
+    },
+    {
+      "tag": "de",
+      "name": "Deutsch",
+      "reviewed_messages": 582,
+      "review_input_sha256": "c8987dff2f9ac491cb105507f914a096ce962cba915446496ba8f43e7fc96ec6",
+      "changed_message_values": 57,
+      "verified_suggestions": 57,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not show every fragment's calling context. The color fragment at index 523 requires coordinated handling with its containing template; its exact standalone inflection cannot be established from the catalog alone.",
+        "523: „anderen“ funktioniert ohne passenden Satzkontext nicht als Ersatz für „the other“; die vorgeschlagene Änderung setzt ausdrücklich weitere Umformulierungen voraus.",
+        "566, 570, 574: Die englischen Technikbezeichnungen sind allein kein konkreter Fehler. Ohne Verwendungskontext lassen sich die vorgeschlagenen Formen mit Doppelpunkt nicht als flüssige, etablierte Bezeichnungen bestätigen."
+      ]
+    },
+    {
+      "tag": "fr",
+      "name": "Français",
+      "reviewed_messages": 582,
+      "review_input_sha256": "4029b19a8c61fe5d43b1ca0ba24b5de5b2170316d7d1e665d65decd39c0bb4f7",
+      "changed_message_values": 38,
+      "verified_suggestions": 38,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Les contextes d’interpolation complets ne sont pas fournis ; la composition des fragments ne peut être évaluée qu’à partir des libellés et fragments fournis."
+      ]
+    },
+    {
+      "tag": "es",
+      "name": "Español",
+      "reviewed_messages": 582,
+      "review_input_sha256": "0aabc8a2fd5126e19a5f015cfe38d8d5b91e73b7b7e79dd97f6deb86f8b988f6",
+      "changed_message_values": 28,
+      "verified_suggestions": 28,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "No se proporciona el contexto completo de interpolación. La propuesta 429 sigue imponiendo el plural; la 566 introduce un nombre de técnica poco natural («Oculto: pareja»)."
+      ]
+    },
+    {
+      "tag": "pt",
+      "name": "Português",
+      "reviewed_messages": 582,
+      "review_input_sha256": "89ec5b7185a2dce1e811eee611bb385692bc26ae3b747fb2afc7d30d4363db3d",
+      "changed_message_values": 40,
+      "verified_suggestions": 40,
+      "disputed_suggestions": 3,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Index 429: The fragment’s interpolation context is insufficient to validate the replacement; «entradas existentes» may introduce entered answers where the source describes a digit’s possible presence.",
+        "Index 530: The supplied data does not establish the technical meaning of «working edge» sufficiently to validate «aresta de trabalho»."
+      ]
+    },
+    {
+      "tag": "pt-BR",
+      "name": "Português (Brasil)",
+      "reviewed_messages": 582,
+      "review_input_sha256": "ef3be81fddd90f885ce7f157f72c82f0eba1781d3dd7f0fe02006a5f8d579b31",
+      "changed_message_values": 37,
+      "verified_suggestions": 33,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Índice 78 rejeitado: com o fragmento fornecido «o outro», a substituição produz «do grupo o outro», que não é gramatical."
+      ]
+    },
+    {
+      "tag": "pl",
+      "name": "Polski",
+      "reviewed_messages": 582,
+      "review_input_sha256": "81192f3261dc4d0dc81cdc0a1c12afcad416bf09f84f4988f8b5fc7c4c007a25",
+      "changed_message_values": 35,
+      "verified_suggestions": 35,
+      "disputed_suggestions": 3,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The catalog does not show every runtime interpolation. Fixes to grammatical fragments use the supplied surrounding messages; other combinations cannot be verified.",
+        "Actual interpolation values are not supplied. Acceptance of 254 and 528 assumes {2} contains the digit or digits being eliminated; acceptance of 572 assumes {0} is a numeric count.",
+        "113 adds an interpretation of receipt confirmation that the supplied source does not establish.",
+        "188 introduces awkward count constructions and weakens the reference to the specific units involved.",
+        "422 is unnecessary for numeric counts: Polish correctly uses the genitive plural in constructions such as „z 2 pól”."
+      ]
+    },
+    {
+      "tag": "it",
+      "name": "Italiano",
+      "reviewed_messages": 582,
+      "review_input_sha256": "e2b02e30d263c1e2a56035cb36330fb58380a2a483d188694a8a5dad6546a0ae",
+      "changed_message_values": 32,
+      "verified_suggestions": 32,
+      "disputed_suggestions": 3,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "10: «esaminarli» non concorda con il frammento singolare «inserimento discordante»; serve una formulazione valida per entrambi i numeri.",
+        "252, 253: il maschile originale è valido riferendosi a numeri o candidati; aggiungere «cifra/cifre» non corregge un difetto concreto."
+      ]
+    },
+    {
+      "tag": "nl",
+      "name": "Nederlands",
+      "reviewed_messages": 582,
+      "review_input_sha256": "8da8bc61592c1760cbab436eaf11f19b560c07fbb58f6ec67f44616d98ba87c5",
+      "changed_message_values": 29,
+      "verified_suggestions": 29,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established Dutch names for some Sudoku techniques vary; uncertain naming conventions were left unchanged.",
+        "Index 555: the supplied data does not establish that {1} always refers to a neuter noun such as 'vakje'. Changing 'die' to 'dat' could introduce an agreement error for 'rij' or 'kolom'; the referenced complete versions were not supplied."
+      ]
+    },
+    {
+      "tag": "cs",
+      "name": "Čeština",
+      "reviewed_messages": 582,
+      "review_input_sha256": "21aaae4f06264b04c9bb5323e8587914306790a07c79dd2fc92ae2ceb37d8b54",
+      "changed_message_values": 43,
+      "verified_suggestions": 43,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Only the supplied messages were available. Runtime fragment composition cannot be verified; case-neutral wording is used where supplied standalone labels would otherwise require inflection.",
+        "51: The existing wording already reasonably conveys the required alignment; no definite defect is established.",
+        "181: The replacement substitutes equality with the number of cells for the independent candidate count {1}.",
+        "188: The replacement can extend elimination to all regions of a type, rather than only the specified regions.",
+        "555: The supplied context does not establish that {1} always denotes a cell.",
+        "254, 528 and 529 are accepted together; their grammatical compatibility depends on applying all three."
+      ]
+    },
+    {
+      "tag": "sk",
+      "name": "Slovenčina",
+      "reviewed_messages": 582,
+      "review_input_sha256": "24872850f3fe47256469c87ab11fc18ca80876a808913fc89fc0917293bede9e",
+      "changed_message_values": 28,
+      "verified_suggestions": 22,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Runtime placeholder values and fragment composition are not supplied. Several generic templates require inflected Slovak unit names or technique adjectives; their grammatical compatibility cannot be fully verified from this catalog alone.",
+        "66: Bez doloženého názvu techniky nemožno spoľahlivo schváliť terminológiu „Redukcia bloku a línie“.",
+        "207 a 459: Náhrady ponechávajú nesprávnu číselnú zhodu pri dvojiciach, trojiciach a štvoriciach („týchto {2} číslic je vyhradených“, „Týchto {2} číslic musí vyplniť“).",
+        "523: Odkazovaný text položky 78 nebol dodaný; vhodnosť ženského rodu nemožno overiť.",
+        "254, 528 a 529 sú prijaté ako spoločná oprava. Ďalšie použitia fragmentov „was“ a „were“ neboli dodané."
+      ]
+    },
+    {
+      "tag": "hu",
+      "name": "Magyar",
+      "reviewed_messages": 582,
+      "review_input_sha256": "b34b979afd364129525e601146e2ac3535748d14966db113a08328d8c6e02be8",
+      "changed_message_values": 53,
+      "verified_suggestions": 53,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied strings do not establish a preferred Hungarian convention for doboz versus blokk or for borrowed technique names; otherwise sound variants were retained.",
+        "254: A „kizárásának állapota: lett/lettek” szerkezet nem értelmes magyar mondat; a helyettesítés nem oldja meg a töredékek beillesztését.",
+        "529: A „lettek” önmagában helyes többes számú alak. A megadott adatok alapján nem indokolt minden előfordulását egyes számúra cserélni."
+      ]
+    },
+    {
+      "tag": "ro",
+      "name": "Română",
+      "reviewed_messages": 582,
+      "review_input_sha256": "ff30966e8796c01dae77d1172337ce5c99091b8cc0b28ad09ce17bc13dd6d948",
+      "changed_message_values": 70,
+      "verified_suggestions": 70,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Regional preferences for borrowed Sudoku technique names could not be verified from the supplied catalog; otherwise intelligible technique names were retained.",
+        "66: Nu pot confirma că „Reducere casetă-linie” este o denumire consacrată în română; resping terminologia incertă.",
+        "188: Într-un fish, celulele selectate rezervă câte o apariție a cifrei în fiecare unitate de acoperire, nu toate pozițiile disponibile. Înlocuirea introduce această imprecizie logică.",
+        "252: Acordul masculin poate desemna numărul sau candidatul; înlocuirea cu femininul nu remediază un defect cert.",
+        "429: „următoarele” nu funcționează cu fragmentul singular „intrare care nu corespunde” și pierde sensul „existing”."
+      ]
+    },
+    {
+      "tag": "bg",
+      "name": "Български",
+      "reviewed_messages": 582,
+      "review_input_sha256": "0858b8d46397f6e55addec3148a190665ede167fff6350e1938b66b741317313",
+      "changed_message_values": 59,
+      "verified_suggestions": 53,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not show every interpolation context. Gender-sensitive generic templates were made neutral where their possible substitutions are evident; standalone fragments with unclear contexts were otherwise retained.",
+        "Entry 299 was not supplied, so its quoted Read label cannot be verified; the existing „Разпознаване“ is acceptable.",
+        "The supplied context does not conclusively establish that Unreadable must remain an English technical identifier in entry 443."
+      ]
+    },
+    {
+      "tag": "el",
+      "name": "Ελληνικά",
+      "reviewed_messages": 582,
+      "review_input_sha256": "a6071a0efb6d0fa53213dc65f16c30d365c28c48991eb941a166cd5e978e93bd",
+      "changed_message_values": 65,
+      "verified_suggestions": 65,
+      "disputed_suggestions": 7,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not reveal every interpolation context. The γυμνό/κρυφό fragments require feminine agreement when used with τριάδα or τετράδα; changing those shared fragments would break their neuter uses.",
+        "Regional conventions for Greek technique names cannot be verified from the supplied catalog. Clearly misleading literal names were replaced with their source English names.",
+        "398 retains a logical restriction: «στην ίδια γραμμή» specifies a row, whereas the source permits a row or column.",
+        "369 retains «δημόσιο τομέα», which can mean the public sector rather than public-domain status; the proposed wording is not a sufficiently reliable fix.",
+        "403 does not establish that «άξονας» is defective or that «κόμβος» is the appropriate established replacement.",
+        "429 uses plural «υπάρχουσες» and cannot agree with the supplied singular entry fragment.",
+        "566 changes adjective placement without establishing a concrete defect. 570 and 574 additionally leave the supplied neuter Naked/Hidden fragments incompatible with feminine «τετράδα» and «τριάδα»."
+      ]
+    },
+    {
+      "tag": "sv",
+      "name": "Svenska",
+      "reviewed_messages": 582,
+      "review_input_sha256": "725aed590e986a87a9a7874e06e8f942588d2f870879d150573625b048eb93b6",
+      "changed_message_values": 31,
+      "verified_suggestions": 31,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Entry 173 uses the borrowed name Y-wing while the label uses Y-vinge; both are understandable, but naming should be standardized if exact technique-label matching is required.",
+        "566: ”Par (Naken)” och ”Par (Dold)” löser inte säkert problemet med adjektivens kongruens.",
+        "572: Utan användningskontext går det inte att fastställa att ”Antal rutor: {0}” är fel.",
+        "528–529: Godtas tillsammans med 254; andra användningar av dessa fragment framgår inte av underlaget."
+      ]
+    },
+    {
+      "tag": "da",
+      "name": "Dansk",
+      "reviewed_messages": 582,
+      "review_input_sha256": "87d69adc2504f80e29c2df41cb07852637e1f4fbc76f5e84536ce44dadd0275f",
+      "changed_message_values": 18,
+      "verified_suggestions": 18,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "439: »Vippepar« er ikke dokumenteret som etableret Sudoku-terminologi i de suppliede data; ændringen kan derfor ikke accepteres med tilstrækkelig sikkerhed.",
+        "566: »{0}: par« giver unaturlige tekniknavne som »Nøgen: par« og løser ikke bøjningsproblemet på en flydende måde."
+      ]
+    },
+    {
+      "tag": "nb",
+      "name": "Norsk bokmål",
+      "reviewed_messages": 582,
+      "review_input_sha256": "58f2e8913f1ad425b4ed919970da85497baaec188e98bc3874d29a7a7b1478a8",
+      "changed_message_values": 17,
+      "verified_suggestions": 17,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Index 566: «Par (Naken)» does not reliably resolve adjective agreement; the parenthesized adjective can still read as incorrectly inflected."
+      ]
+    },
+    {
+      "tag": "nn",
+      "name": "Norsk nynorsk",
+      "reviewed_messages": 582,
+      "review_input_sha256": "a2dc31a807bc46f02b16eddab2480382aeaa8fb8c77efb109e39810a5d702c12",
+      "changed_message_values": 15,
+      "verified_suggestions": 15,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established regional conventions for translated advanced Sudoku technique names could not be verified from the supplied data; no changes were made solely because a technique name was translated.",
+        "References allegedly using the control names «Sjekk» and «Les» were not supplied, so the consistency claims for indices 79 and 292 could not be verified. The existing labels are not clearly defective on the supplied evidence.",
+        "The supplied data does not establish «pivotpunkt» and «klemme» as preferred Nynorsk Sudoku terminology. Indices 398 and 403 introduce terminology changes without demonstrating a concrete defect in the existing wording."
+      ]
+    },
+    {
+      "tag": "fi",
+      "name": "Suomi",
+      "reviewed_messages": 582,
+      "review_input_sha256": "6696faa67be2c91058265e7c820bb9cc8383089733c1b67f3f7ec34b817e9fc6",
+      "changed_message_values": 18,
+      "verified_suggestions": 18,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "404: The replacement introduces case disagreement in “kahdella muulla rivillä tai sarakkeessa”; the column phrase requires “kahdessa muussa sarakkeessa”.",
+        "461: The existing label is acceptable Finnish. The claimed mismatch with entry 8 cannot be verified because that entry was not supplied."
+      ]
+    },
+    {
+      "tag": "is",
+      "name": "Íslenska",
+      "reviewed_messages": 582,
+      "review_input_sha256": "88719b33d365ec09d70ee0c708865028363dddce938b44015a05463c56bbcd4b",
+      "changed_message_values": 60,
+      "verified_suggestions": 60,
+      "disputed_suggestions": 25,
+      "structurally_rejected_suggestions": 1,
+      "limitations": [
+        "The supplied data does not establish conventional Icelandic names for every advanced Sudoku technique. Existing comprehensible names were retained without claiming they are standardized; borrowed names were used for the malformed single labels.",
+        "Established Icelandic usage of borrowed technique names cannot be confirmed from the supplied data; changes to single/subset labels were not accepted.",
+        "Terminology-only changes were rejected where the previous wording conveyed the meaning adequately.",
+        "The supplied data does not establish every interpolation context for index 572, so its proposed case-specific fragment was not accepted.",
+        "Index 459 introduces “Naked pair”, which does not match the supplied translated label “Nakið par”."
+      ]
+    },
+    {
+      "tag": "et",
+      "name": "Eesti",
+      "reviewed_messages": 582,
+      "review_input_sha256": "0abb2ad3a54d6cf94eb363ebeb5259417cda126b0058f50ccfec890c9f8a5cb2",
+      "changed_message_values": 33,
+      "verified_suggestions": 33,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Fragmentide 495 ja 496 heakskiit põhineb esitatud liitfraasil „See arutluskäik välistab {0} olemasolevat …”; muid kasutuskontekste pole antud."
+      ]
+    },
+    {
+      "tag": "lv",
+      "name": "Latviešu",
+      "reviewed_messages": 582,
+      "review_input_sha256": "ea8851c37c27f53555455100c86b2a4ade807131ff1bb8cbf53290ffa232c018",
+      "changed_message_values": 22,
+      "verified_suggestions": 22,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established regional usage of Latvian Sudoku technique names cannot be verified from the supplied catalog alone; uncertain technique names were left unchanged.",
+        "Fragment composition was assessed from the supplied strings; no implementation or runtime interpolation data was available.",
+        "78: The replacement may still require inflecting the colour placeholder after “ar krāsu”; colour labels were not supplied.",
+        "188, 192: The replacements still risk numeral agreement errors in “šajās {0}/{2} …” if the supplied standalone number words are interpolated.",
+        "292: “Atpazīšana” is a valid recognition-display label. The claimed conflicting control reference was not supplied, so a concrete defect could not be established."
+      ]
+    },
+    {
+      "tag": "lt",
+      "name": "Lietuvių",
+      "reviewed_messages": 582,
+      "review_input_sha256": "4bca6ffae59553c9d9ed4c1ec2b2d61d1ace05048f03c3490fd22061c1e2e23f",
+      "changed_message_values": 32,
+      "verified_suggestions": 32,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish a preferred Lithuanian regional convention for borrowed Sudoku technique names; uncertain naming conventions were left unchanged.",
+        "376: The original conclusion is understandable in context; the replacement is an optional clarification.",
+        "566: Parentheses do not make the masculine adjective fragments “Atviras” and “Paslėptas” fluent labels for the feminine noun “pora”."
+      ]
+    },
+    {
+      "tag": "sl",
+      "name": "Slovenščina",
+      "reviewed_messages": 582,
+      "review_input_sha256": "03f5e5820caafa2a14fb8e8952d1d3e12f08f4c64b7e77858c184f925d4ec33b",
+      "changed_message_values": 30,
+      "verified_suggestions": 30,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established regional preferences for Slovenian technique names could not be verified from the supplied catalog; existing translated technique names were retained.",
+        "51: The existing parallel alignment instruction already conveys the required camera alignment; no concrete defect is established.",
+        "241: The replacement says the digit is absent, whereas the source only denies that it is a printed digit.",
+        "470, 471: The existing wording can use the displayed numeral substantively; adding »števko« does not establish or repair a definite grammatical defect.",
+        "254, 528 and 529 are accepted together; the neutral tense fragments are needed for the revised sentence."
+      ]
+    },
+    {
+      "tag": "hr",
+      "name": "Hrvatski",
+      "reviewed_messages": 582,
+      "review_input_sha256": "e6cecdd28758d9caf59f4ff7fa5bbfe2a8b787d8a859efd0fdd7dbd126fa9915",
+      "changed_message_values": 23,
+      "verified_suggestions": 23,
+      "disputed_suggestions": 5,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not show every fragment's runtime composition. Fragment corrections address combinations evidenced by the catalog.",
+        "Regional preferences for translated versus borrowed Sudoku technique names were not independently verified; understandable names were retained.",
+        "292: Supplied data does not establish that the noun label ‘Prepoznavanje’ is defective or conflicts with quoted instructions.",
+        "254, 528, 529: The proposed wording is awkward, and ‘provedeno je’ adds the meaning ‘was carried out’; its suitability for other interpolated messages is unverified.",
+        "375: Adding ‘jedinica’ before unchanged unit placeholders can produce unnatural or grammatically incompatible combinations; the replacement is not reliably fluent."
+      ]
+    },
+    {
+      "tag": "sr",
+      "name": "Српски",
+      "reviewed_messages": 582,
+      "review_input_sha256": "fe0205e9c92ff17c8da553577ecf8ecc42a70c1548b82042aa9d86dc58d9809a",
+      "changed_message_values": 24,
+      "verified_suggestions": 24,
+      "disputed_suggestions": 5,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Runtime interpolation contexts were not supplied. Other case-sensitive count and unit fragments may require validation in assembled Serbian messages.",
+        "51: The previous wording already conveys a flat page parallel to the camera; a concrete defect is not established.",
+        "566, 570, 574: Separating Скривено or Голо with a dash does not produce clearly fluent technique names or resolve their gender mismatch.",
+        "572: {0} поља is not grammatical for every possible count, including one and five.",
+        "528–529: Compatibility was assessed against the supplied interpolation; other uses of these shared fragments were not supplied."
+      ]
+    },
+    {
+      "tag": "bs",
+      "name": "Bosanski",
+      "reviewed_messages": 582,
+      "review_input_sha256": "6efafc3f68d47c0f133ff59ec9e7830f35a07aba7e576e94e65f319a217c4482",
+      "changed_message_values": 12,
+      "verified_suggestions": 12,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Reviewed only the supplied catalog. Regional conventions for less common Sudoku technique names were not independently verified; uncertain names were left unchanged.",
+        "292: The referenced text at index 299 was not supplied; “Prepoznavanje” is not demonstrably defective as the Read label.",
+        "424: “Jednu pomoć” is an awkward countable rendering of “one hint”; the proposed replacement is not confidently fluent.",
+        "570, 574: Parenthetical masculine adjectives do not clearly produce fluent technique names for feminine “četvorka” and “trojka”.",
+        "528, 529: Accepted together with 254 for its impersonal construction; compatibility with other, unsupplied interpolation contexts cannot be verified."
+      ]
+    },
+    {
+      "tag": "sq",
+      "name": "Shqip",
+      "reviewed_messages": 582,
+      "review_input_sha256": "196a5ead51799705bea11b26d3a3904bb1dc6f6036c46d8c827d78a499198689",
+      "changed_message_values": 26,
+      "verified_suggestions": 26,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established Albanian usage of translated versus borrowed Sudoku technique names could not be verified from the supplied data; uncertain technique-name conventions were left unchanged.",
+        "Some generic strings interpolate unit names or technique adjectives whose runtime inflection is not supplied. Corrections address clear cases, but all possible assembled forms cannot be verified.",
+        "188 retains potentially incompatible feminine agreement in “i zënë të gjitha” when the referenced units are rows; the replacement does not reliably resolve the stated defect.",
+        "523 cannot be validated without the surrounding interpolated sentence. “tjetra” is valid as a standalone rendering of “the other”; the claimed context was not supplied."
+      ]
+    },
+    {
+      "tag": "mk",
+      "name": "Македонски",
+      "reviewed_messages": 582,
+      "review_input_sha256": "1441c1963a8b966670b06e5a00039057a4e9cf53a064c73fde398ba21e9ae47b",
+      "changed_message_values": 30,
+      "verified_suggestions": 30,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish a Macedonian convention for all borrowed technique names, so uncertain technique-name choices were left unchanged.",
+        "Hidden and Naked are neuter fragments, while pair, triple and quad require different adjective genders. Their interpolation cannot be reliably repaired without information about how the application combines these strings.",
+        "208 still contains a Latin o in „Обoјувајте“, so the language-mixing defect remains.",
+        "254 changes definite prior elimination into „предмет на исклучување“, which does not clearly mean the candidates were ruled out.",
+        "523 lacks the interpolation context needed to establish that feminine „другата“ works wherever this fragment is used.",
+        "526: „група“ can denote a Sudoku unit; consistency alone does not establish a concrete defect."
+      ]
+    },
+    {
+      "tag": "ru",
+      "name": "Русский",
+      "reviewed_messages": 582,
+      "review_input_sha256": "a65e649d9289346ae20ee8ab925c9a8d182aa28d0ed349c6927cd747bdafb49f",
+      "changed_message_values": 30,
+      "verified_suggestions": 30,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish whether variable numeric and unit placeholders are inflected before insertion. Some other count-dependent constructions may require runtime pluralization or case handling.",
+        "459: замена сохраняет ошибку согласования в «охватывают только {1} клеток» при значениях 2, 3 и 4; нужны «клетки» или нейтральная конструкция с количеством."
+      ]
+    },
+    {
+      "tag": "be",
+      "name": "Беларуская",
+      "reviewed_messages": 582,
+      "review_input_sha256": "15e18f6898bd8cd0a77366ff0dc19b77f6714c78f3fc53253d0dcd41a79291c2",
+      "changed_message_values": 45,
+      "verified_suggestions": 45,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Runtime interpolation examples were not supplied; generic unit templates were made case-neutral where the supplied labels would otherwise require unavailable inflected forms.",
+        "Established Belarusian conventions for translated advanced technique names could not be verified from the supplied data; no corrections were invented solely for those names."
+      ]
+    },
+    {
+      "tag": "ca",
+      "name": "Català",
+      "reviewed_messages": 582,
+      "review_input_sha256": "616c7f15c48bd73e3e3bc3c52144f6d46e0f60079c7c5b4b39bf57be5991c4e4",
+      "changed_message_values": 17,
+      "verified_suggestions": 17,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish which translated advanced technique names are conventional in Catalan Sudoku usage; uncertain naming choices were left unchanged."
+      ]
+    },
+    {
+      "tag": "eu",
+      "name": "Euskara",
+      "reviewed_messages": 582,
+      "review_input_sha256": "b38419f4c0bf5f7310555adeb7e160f2f3af6e6653d6c7c48dcb542eafc51f47",
+      "changed_message_values": 18,
+      "verified_suggestions": 18,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established Euskara conventions for advanced Sudoku technique names could not be verified from the supplied data; uncertain naming choices were left unchanged.",
+        "Some generic messages interpolate unit names with Basque inflection, but their runtime substitutions were not supplied, so uncertain inflection changes were left unchanged."
+      ]
+    },
+    {
+      "tag": "gl",
+      "name": "Galego",
+      "reviewed_messages": 582,
+      "review_input_sha256": "88681e2dd763cde8b0eca886b6b6d906495cc465aba8a814908f300a9d16b6db",
+      "changed_message_values": 15,
+      "verified_suggestions": 15,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Regional preferences and established Galician names for borrowed Sudoku techniques could not be verified from the supplied catalog alone; uncertain technique-name preferences were left unchanged.",
+        "Entries 371–374 also contain the Spanish imperative Sigue; it should be Segue. Full replacements for those four long entries are not included here."
+      ]
+    },
+    {
+      "tag": "mt",
+      "name": "Malti",
+      "reviewed_messages": 582,
+      "review_input_sha256": "21a277485a41d0d3d209270d23d6136e84ac717c25d4d95e8fed503755336b55",
+      "changed_message_values": 30,
+      "verified_suggestions": 29,
+      "disputed_suggestions": 5,
+      "structurally_rejected_suggestions": 1,
+      "limitations": [
+        "Maltese regional borrowing conventions for less common Sudoku technique names are uncertain; other potentially acceptable borrowed or translated names were retained.",
+        "Technical-looking strings may be diagnostic display text or protocol identifiers; their runtime role cannot be determined from the supplied catalog.",
+        "71: The replacement introduces faulty agreement in “huma ma jistgħux ikun fihom”.",
+        "202: The supplied data does not establish whether Maltese convention uses “Jellyfish” or “Bram”; the change is insufficiently supported.",
+        "254, 528, 529: The proposed coordinated construction is awkward, and “kien hemm” cannot safely replace general was/were fragments without their other interpolation contexts."
+      ]
+    },
+    {
+      "tag": "ga",
+      "name": "Gaeilge",
+      "reviewed_messages": 582,
+      "review_input_sha256": "5e51236f056ee688a87591a7f319d39b0bf02ee258155f58b68bb559359ee73c",
+      "changed_message_values": 19,
+      "verified_suggestions": 19,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Irish Sudoku terminology is not fully standardized in the supplied data. I cannot confirm regional preferences or the conventional status of every translated technique name from this catalog alone.",
+        "Fragment corrections are based on the supplied strings; complete runtime combinations were not supplied.",
+        "The supplied data does not establish that trírín is incorrect for a three-element group; index 574 appears to be a terminology preference rather than a demonstrated defect.",
+        "Established Irish Sudoku terminology could not be independently verified under the supplied-data-only constraint."
+      ]
+    },
+    {
+      "tag": "cy",
+      "name": "Cymraeg",
+      "reviewed_messages": 582,
+      "review_input_sha256": "72e28ba37281ac517d24caae77710d6f3e4482f85b1f940f2a563ba2ceb2205f",
+      "changed_message_values": 23,
+      "verified_suggestions": 23,
+      "disputed_suggestions": 5,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established Welsh conventions for borrowed Sudoku technique names could not be verified from the supplied data; uncertain naming choices were left unchanged.",
+        "254, 528 and 529: the proposed combination lacks a finite verb; the standalone was/were replacements also add elimination meaning that may not suit other interpolations.",
+        "292: Darlleniad is a valid noun label for the recognized reading; the supplied data does not establish a control-name mismatch.",
+        "398: removing the cell is a concrete error, but I cannot confidently endorse pinsiwr as established Welsh Sudoku terminology."
+      ]
+    },
+    {
+      "tag": "lb",
+      "name": "Lëtzebuergesch",
+      "reviewed_messages": 582,
+      "review_input_sha256": "e8d035af10c5cf3669582cb1f9368c96daa2ff2b9f9e89c6ee230feaa01f60fc",
+      "changed_message_values": 31,
+      "verified_suggestions": 31,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish preferred Luxembourgish names for every advanced Sudoku technique; uncertain naming conventions were not replaced with invented terminology.",
+        "Entry 429 is an incomplete fragment whose complete joined sentence is not supplied; its intended grammatical continuation cannot be determined confidently.",
+        "254: The replacement drops the explicit meaning of “earlier”; past tense alone does not preserve it.",
+        "555: The supplied data does not establish that {1} always denotes a cell. Replacing its reference with “Dëst Feld” could change the logical meaning."
+      ]
+    },
+    {
+      "tag": "gd",
+      "name": "Gàidhlig",
+      "reviewed_messages": 582,
+      "review_input_sha256": "4975063dd80ef87730a70c23c4ac6e4cbfe08e134fa666717ae0476d1db56e22",
+      "changed_message_values": 32,
+      "verified_suggestions": 32,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established Scottish Gaelic conventions for borrowed Sudoku technique names and for candidate terminology could not be verified from the supplied catalog alone; uncertain terminology was not replaced with invented alternatives.",
+        "398: The elimination ambiguity is actionable, but I cannot confidently endorse “cealla grèim” as fluent Gaelic pincer terminology.",
+        "574: “Trìnear” is not demonstrably defective; changing it to “triùir” is insufficiently justified.",
+        "485, 490 and 540 were assessed together using the supplied joining fragments; complete assembled messages were not supplied."
+      ]
+    },
+    {
+      "tag": "sco",
+      "name": "Scots",
+      "reviewed_messages": 582,
+      "review_input_sha256": "7c8832e20b3fe505777023e6f59d491074ad22f8fe6b95ff069bd7c29c56706e",
+      "changed_message_values": 7,
+      "verified_suggestions": 7,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Scots spelling and regional usage vary; uncertain dialect forms were retained rather than normalized."
+      ]
+    },
+    {
+      "tag": "kw",
+      "name": "Kernewek",
+      "reviewed_messages": 582,
+      "review_input_sha256": "3b18330fce8693057a7eba1b551206853a27fa6dd0949521cdbb6abfe8ba4eff",
+      "changed_message_values": 28,
+      "verified_suggestions": 28,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "All 582 entries were inspected using only the supplied data. My Cornish proficiency is limited; I cannot certify all grammar, mutations, regional spelling conventions or established Cornish Sudoku technique names.",
+        "The catalog uses several competing terms for cells, rows, columns, boxes, puzzles and deductions. Only clearly identifiable inconsistencies were corrected; a fluent Cornish reviewer should assess the remaining terminology and the camera alignment wording.",
+        "Cornish fluency and regional terminology cannot be fully certified from the supplied data alone. Acceptance concerns the specific corrections, not certification of every unchanged phrase.",
+        "Rejected 520: insufficient confidence that ‘rennow’ is the correct plural of ‘ren’; ‘resow’ is not demonstrably defective merely because it differs from the singular label.",
+        "Rejected 526: the supplied examples do not establish ‘unys’ as an accurate Sudoku unit term or demonstrate that ‘unver’ is defective."
+      ]
+    },
+    {
+      "tag": "gv",
+      "name": "Gaelg",
+      "reviewed_messages": 582,
+      "review_input_sha256": "7257fc09d8a0cdd23290721229b0d0b82541e7e2d6e9cd717303cc8be1f25635",
+      "changed_message_values": 26,
+      "verified_suggestions": 26,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "All 582 entries were inspected using only the supplied data. My Manx proficiency is insufficient to certify the catalog's grammar, idiom, mutations or specialist terminology comprehensively.",
+        "Corrections are limited to defects I could identify confidently. Longer passages, including privacy wording and technique explanations, need review by a fluent Manx speaker; remaining candidate terminology and inconsistent cell, row and technique names are not fully resolved.",
+        "Manx fluency and specialized Sudoku terminology could not be fully verified from the supplied data. Index 296 is rejected because the introduced spelling “penceyl” is uncertain."
+      ]
+    },
+    {
+      "tag": "hsb",
+      "name": "Hornjoserbšćina",
+      "reviewed_messages": 582,
+      "review_input_sha256": "54f07d8a3cfccd1b11a6cd2aa0ca4218e4a952f12cec28e60b6389148ac894dc",
+      "changed_message_values": 16,
+      "verified_suggestions": 15,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 1,
+      "limitations": [
+        "Upper Sorbian grammatical and regional usage could not be verified from the supplied data alone; uncertain constructions were left unchanged.",
+        "Established Upper Sorbian names for advanced Sudoku techniques could not be confirmed; speculative terminology replacements were avoided.",
+        "82: I cannot confidently justify treating a Sudoku candidate as animate and changing its accusative to „kandidata“.",
+        "404: The replacement introduces mismatched case endings in „we woběmaj druhich rjadkomaj abo stołpikomaj“; I cannot accept it as grammatically sound.",
+        "My confidence in Upper Sorbian regional usage and established Sudoku technique terminology is limited."
+      ]
+    },
+    {
+      "tag": "br",
+      "name": "Brezhoneg",
+      "reviewed_messages": 582,
+      "review_input_sha256": "125dc654b22c9a20e5f2e3433ff29771233bd1095e23f683081cc926a152810a",
+      "changed_message_values": 60,
+      "verified_suggestions": 60,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 2,
+      "limitations": [
+        "Reviewed all 582 supplied entries without external resources. Breton regional usage and established borrowed Sudoku technique names could not be verified; uncertain terminology was left unchanged.",
+        "The catalog varies between kellig, kombod and karrez for cells, and between several valid row and column terms. Only clear semantic errors were corrected; a native Breton reviewer should confirm the preferred terminology and remaining idiom.",
+        "The supplied data does not show every fragment composition, so agreement and joining behavior beyond evident combinations could not be fully verified.",
+        "424 introduces an agreement defect: feminine «skoazell» requires «d'he respont», rather than «d'e respont».",
+        "398 fixes concrete defects, but I cannot confidently validate «graban» as fluent Breton Sudoku terminology for a wing's pincer; the proposed replacement is therefore not accepted.",
+        "Established Breton Sudoku terminology and regional conventions cannot be fully verified from the supplied data alone."
+      ]
+    },
+    {
+      "tag": "co",
+      "name": "Corsu",
+      "reviewed_messages": 582,
+      "review_input_sha256": "4ca3c60b68608838a048ff8ec5b6bcbff8e4614b7c3ef18aec64f09145eb6a4c",
+      "changed_message_values": 27,
+      "verified_suggestions": 27,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Corsican regional spelling and inflection vary. Uncertain regional forms were left unchanged.",
+        "Established Corsican usage of translated Sudoku technique names could not be confirmed from the supplied data; uncertain technique names were not replaced.",
+        "Corsican Sudoku terminology has limited standardization; technique-name consistency was assessed only against the supplied labels.",
+        "398 was rejected because the existing sentence already conveys candidate elimination; the added wording does not fix a concrete defect."
+      ]
+    },
+    {
+      "tag": "fy",
+      "name": "Frysk",
+      "reviewed_messages": 582,
+      "review_input_sha256": "8be59aa99ce84c4502f3db25e1556d5e20414acf7080df17f7e7caa502baf301",
+      "changed_message_values": 22,
+      "verified_suggestions": 22,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Reviewed all 582 supplied entries using only the supplied data. Regional usage and established Frisian Sudoku technique names could not be independently verified; uncertain stylistic or terminology alternatives were left unchanged.",
+        "292: “Lêzing” can name the displayed reading; the supplied data does not establish that this label requires an infinitive or conflicts with a translated control reference.",
+        "555: The grammatical gender of {1} is not established. Changing “dy't” to “dat” is only safe if its referent is neuter."
+      ]
+    },
+    {
+      "tag": "oc",
+      "name": "Occitan",
+      "reviewed_messages": 582,
+      "review_input_sha256": "7c83169186ad17cfbcc2af9beb88ec692650c45848da094f951eb2765fe00a20",
+      "changed_message_values": 44,
+      "verified_suggestions": 43,
+      "disputed_suggestions": 9,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Occitan regional and specialist Sudoku naming conventions could not be verified from the supplied catalog. Technique-name translations were retained except where internal inconsistencies or logical defects were clear.",
+        "The catalog uses both chifre and chifra; regional validity of chifra is uncertain, so it was not treated as an error by itself.",
+        "254 does not independently resolve agreement: with the supplied fragments, it still produces «es estada objecte» or «son estadas objecte» for masculine digits.",
+        "301: I cannot confidently establish that «alunhats» is invalid across Occitan regional conventions.",
+        "294, 471 and 578 replace descriptive wording with a synonym; these are not control-name references requiring an exact label match.",
+        "567–569 and 576: the supplied data does not establish whether these counts grammatically refer to masculine digits or feminine cells. Their existing feminine agreement is therefore not demonstrably defective."
+      ]
+    },
+    {
+      "tag": "fo",
+      "name": "Føroyskt",
+      "reviewed_messages": 582,
+      "review_input_sha256": "c72b7b68121ace4306d430eafc414c60fc182e3e1facb6faeaafad7dd8fbfedf",
+      "changed_message_values": 51,
+      "verified_suggestions": 51,
+      "disputed_suggestions": 3,
+      "structurally_rejected_suggestions": 2,
+      "limitations": [
+        "Faroese regional usage and conventional borrowed Sudoku technique names could not be independently verified under the supplied-data-only restriction; uncertain naming preferences were left unchanged.",
+        "Both reitur and rútur occur as cell terms. Broad synonym normalization was avoided where the meaning remained clear.",
+        "I cannot confidently validate talerkenning as established Faroese recognition terminology, so I have not accepted 289 or 299, despite other valid fixes within them.",
+        "478 is unnecessary: hvørki … ella is an established Faroese neither–nor construction."
+      ]
+    },
+    {
+      "tag": "rm",
+      "name": "Rumantsch",
+      "reviewed_messages": 582,
+      "review_input_sha256": "69cbabc1a33557b24d686e71d5643f3c7975fccaa88183457a836c0ccdb788f5",
+      "changed_message_values": 44,
+      "verified_suggestions": 44,
+      "disputed_suggestions": 3,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Reviewed all 582 entries using only the supplied data. Established Rumantsch Sudoku technique names and regional conventions could not be verified; uncertain terminology was left unchanged.",
+        "Rumantsch terminology confidence is limited: the supplied data does not establish that ‘solvier’ is defective or ‘schliader’ preferable (1).",
+        "The referent clarification in 376 does not establish a concrete defect in the previous wording.",
+        "Correction 419 introduces the spelling error ‘cccuntegnan’."
+      ]
+    },
+    {
+      "tag": "se",
+      "name": "Davvisámegiella",
+      "reviewed_messages": 582,
+      "review_input_sha256": "0263787e411259a84d23b00eb7a310e2d18b1fef8078a715ffeb36cdc0159423",
+      "changed_message_values": 13,
+      "verified_suggestions": 13,
+      "disputed_suggestions": 3,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "All 582 entries were reviewed, but my Northern Sámi proficiency is insufficient for a comprehensive grammatical certification. Corrections are limited to defects I can identify confidently.",
+        "The catalog inconsistently uses ruta, ruhtu, ruđut and ruvttut for Sudoku cells, and boksa and blohkka for boxes. These require review by a fluent Northern Sámi translator; I have not invented a catalog-wide terminology or inflection fix.",
+        "I cannot confidently validate regional technical vocabulary, translated technique names, or all longer deduction explanations without external references, which were prohibited.",
+        "My Northern Sámi proficiency is limited. For 148, 299 and 382, the identified label mismatches or Finnish intrusion are concrete defects, but I cannot confidently certify the full replacements as grammatically accurate and fluent; I therefore did not accept them."
+      ]
+    },
+    {
+      "tag": "hy",
+      "name": "Հայերեն",
+      "reviewed_messages": 582,
+      "review_input_sha256": "f8f296d094c9008553d0da35ace109ea2c967dd01ab1eb128df06359e6c119c2",
+      "changed_message_values": 20,
+      "verified_suggestions": 20,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Regional conventions for advanced Armenian Sudoku technique names could not be conclusively established from the supplied catalog; no speculative terminology replacements were made.",
+        "Index 523: «մյուսը» is valid as a standalone translation. The claimed interpolation with a colour label is not supplied, so the need for «մյուս» cannot be verified."
+      ]
+    },
+    {
+      "tag": "ka",
+      "name": "ქართული",
+      "reviewed_messages": 582,
+      "review_input_sha256": "02eb02bc743049f771b899dfffe78ad7f24e390fbd7b815ff3e2531c244b4d3a",
+      "changed_message_values": 25,
+      "verified_suggestions": 25,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Reviewed using only the supplied catalog. Without external references, established Georgian conventions for less common Sudoku technique names could not be verified; uncertain technique-name choices were left unchanged."
+      ]
+    },
+    {
+      "tag": "az",
+      "name": "Azərbaycan dili",
+      "reviewed_messages": 582,
+      "review_input_sha256": "f9e277ec689e82aa3f47d92efff97c2682b258c25dd1fa4aace147f26d5154d8",
+      "changed_message_values": 18,
+      "verified_suggestions": 18,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Established regional conventions for Azerbaijani Sudoku technique names cannot be confirmed from the supplied catalog alone; uncertain technique-name translations were left unchanged.",
+        "The catalog does not specify every fragment assembly. Entries 10, 254, 429, 485, 490, 495–496, 528–529, 540 and 555 may require changes to their combined templates to produce grammatical Azerbaijani without losing meaning."
+      ]
+    },
+    {
+      "tag": "tr",
+      "name": "Türkçe",
+      "reviewed_messages": 582,
+      "review_input_sha256": "86f1423d03f2dd2ac283f9ba697898186e5d6eaa6e8fb2de19dbc6a7a65eab19",
+      "changed_message_values": 22,
+      "verified_suggestions": 22,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Fragment corrections are based on the supplied catalog; runtime concatenation contexts were not provided.",
+        "Established regional preferences for borrowed Sudoku technique names could not be verified, so understandable existing names were retained.",
+        "Rejected the coordinated changes 10, 429, 495 and 496: the plural combination “mevcut {0} girişleri” is ungrammatical after a numeric count in Turkish. Changes 495 and 496 also depend on relocating their disagreement meaning into 429.",
+        "Changes 528 and 529 work with the supplied revised entry 254; compatibility with other, unsupplied uses of these fragments cannot be verified."
+      ]
+    },
+    {
+      "tag": "ar",
+      "name": "العربية",
+      "reviewed_messages": 582,
+      "review_input_sha256": "ebe08d1c78fbc5686016f261327ffd6dbef96d753d06d0aea3197c7d1f31ab0b",
+      "changed_message_values": 18,
+      "verified_suggestions": 18,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "254: The replacement uses singular استبعاده, which cannot reliably accommodate multiple digits in {2}; neutral phrasing is needed.",
+        "572: خانة is valid Arabic Sudoku terminology. The proposed change does not resolve a demonstrated concrete defect."
+      ]
+    },
+    {
+      "tag": "he",
+      "name": "עברית",
+      "reviewed_messages": 582,
+      "review_input_sha256": "7ca37a663ad396503ddf66f541af6c804eea5ed18e558c20331d85046cde1742",
+      "changed_message_values": 52,
+      "verified_suggestions": 46,
+      "disputed_suggestions": 9,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Index 66: The replacement’s status as established Hebrew Sudoku terminology is uncertain.",
+        "Index 81: The existing wording already communicates which cells need checking; the proposed imperative is unnecessary.",
+        "Index 188: The replacement does not clearly restrict eliminations to the identified covering units.",
+        "Indices 254, 528 and 529: These changes depend on each other. Index 254 fails with the supplied fragments, and changing generic was/were fragments into removal verbs cannot be validated without their other uses.",
+        "Index 429: The supplied fragment does not establish that existing entries are ignored rather than logically ruled out.",
+        "Indices 570 and 574: Parentheses do not clearly resolve the mismatch between feminine technique nouns and the supplied masculine modifiers."
+      ]
+    },
+    {
+      "tag": "fa",
+      "name": "فارسی",
+      "reviewed_messages": 582,
+      "review_input_sha256": "bad1f53c8b7594aec44b988cf7c9c4b9a9648713a35dbf31ca67ab92dc56e765",
+      "changed_message_values": 12,
+      "verified_suggestions": 12,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not show every fragment's assembly order. Beyond the explicit was/were interpolation, uncertain fragment combinations were not rewritten."
+      ]
+    },
+    {
+      "tag": "hi",
+      "name": "हिन्दी",
+      "reviewed_messages": 582,
+      "review_input_sha256": "b62ffbe44dbfdbdf0ae9f925862ba8e5d296be381db532cac20ed7a5f9a0b640",
+      "changed_message_values": 20,
+      "verified_suggestions": 20,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish whether DELETE, CaptureEvidence and GrayImage are protocol/code identifiers or display labels; their translations were left unchanged.",
+        "254, 528 और 529 के सुधारों को साथ लागू करना आवश्यक है। was/were के अन्य उपयोग उपलब्ध नहीं हैं, इसलिए वहाँ इन अंशों की अनुकूलता सत्यापित नहीं की जा सकती।"
+      ]
+    },
+    {
+      "tag": "bn",
+      "name": "বাংলা",
+      "reviewed_messages": 582,
+      "review_input_sha256": "9f3452499aae0d6c0314857b5f2be487309964089165e6703c51296772faa76a",
+      "changed_message_values": 16,
+      "verified_suggestions": 16,
+      "disputed_suggestions": 8,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Full interpolation contexts are not supplied for indices 429, 485, 490, 495, 496 and 523; their proposed changes cannot be confidently validated."
+      ]
+    },
+    {
+      "tag": "zh-CN",
+      "name": "简体中文",
+      "reviewed_messages": 582,
+      "review_input_sha256": "cf3c07a689a57a13ebcc5056ec4e2f4e8466f52517a67d651f575810aad6deaf",
+      "changed_message_values": 16,
+      "verified_suggestions": 16,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": []
+    },
+    {
+      "tag": "zh-TW",
+      "name": "繁體中文",
+      "reviewed_messages": 582,
+      "review_input_sha256": "395d6d974753af89f83663365461de6313f76c97a4b85a6828dec950aea812ed",
+      "changed_message_values": 15,
+      "verified_suggestions": 15,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The isolated label Right at index 311 could mean a direction or a correct response; the supplied data does not establish its context, so no replacement is proposed."
+      ]
+    },
+    {
+      "tag": "ja",
+      "name": "日本語",
+      "reviewed_messages": 582,
+      "review_input_sha256": "dc625bafcd5be2648ecbb5864080116193681a52e0d3e5dc4bb63fcef46fafd8",
+      "changed_message_values": 32,
+      "verified_suggestions": 32,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Fragment composition and technical identifiers were assessed only from the supplied catalog; their runtime context is unavailable.",
+        "429は不採用です。候補の除外を「解答と一致しない入力が見つかる」と言い換えており、原文にない解答との比較を加えています。また、後続の「一致しない入力」と自然につながりません。",
+        "連結用の断片は、提示された文字列に基づいて評価しました。完全な連結結果が示されていないため、すべての組み合わせでの文法は確認できません。"
+      ]
+    },
+    {
+      "tag": "ko",
+      "name": "한국어",
+      "reviewed_messages": 582,
+      "review_input_sha256": "c5cb16172209b92461a0572ce0440c578a3095ea43b585430054c7d952234187",
+      "changed_message_values": 17,
+      "verified_suggestions": 17,
+      "disputed_suggestions": 4,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not show every runtime fragment combination. Fragment corrections are based on the matching fragments present in this catalog.",
+        "조각 문자열의 실제 결합 방식이 제공되지 않아 490, 540, 555의 수정안이 문법적으로 올바른 완성 문장을 만드는지 확인할 수 없습니다. 이 수정안들은 수용하지 않았습니다."
+      ]
+    },
+    {
+      "tag": "id",
+      "name": "Bahasa Indonesia",
+      "reviewed_messages": 582,
+      "review_input_sha256": "a1ecec9256190fc4d1980c37fc6199b1242adc4337a0518bb5d72c5c882df44f",
+      "changed_message_values": 10,
+      "verified_suggestions": 10,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish whether standalone diagnostic identifiers such as CaptureEvidence and UnsafeOptInUsageError must remain literal, so no identifier-only corrections were proposed.",
+        "Some fragment assembly contexts and the meaning of the standalone label Right are unspecified; no speculative corrections were made.",
+        "Indeks 292 ditolak: “Pengenalan” sesuai untuk kontrol yang menampilkan angka hasil pengenalan. Teks indeks 299 tidak disertakan, sehingga klaim ketidaksesuaian label tidak dapat diverifikasi."
+      ]
+    },
+    {
+      "tag": "ms",
+      "name": "Bahasa Melayu",
+      "reviewed_messages": 582,
+      "review_input_sha256": "99326755ab177d8b17bd71b6e43a443496be24899196c838742b11c61c0542e4",
+      "changed_message_values": 16,
+      "verified_suggestions": 18,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Index 292: Entry 299 was not supplied, so the claimed control-name mismatch cannot be verified. “Pengecaman” is a plausible label for displaying recognized digits; changing it to “Baca” is not justified by the supplied evidence."
+      ]
+    },
+    {
+      "tag": "vi",
+      "name": "Tiếng Việt",
+      "reviewed_messages": 582,
+      "review_input_sha256": "9fe77e022256da9b9bfc9a69e0a2a80ad4d05d8e6d564a6a2eb2821a519e3924",
+      "changed_message_values": 14,
+      "verified_suggestions": 15,
+      "disputed_suggestions": 0,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish regional conventions for Vietnamese Sudoku technique names. Other existing technique-name translations were retained where a terminology change would require external confirmation."
+      ]
+    },
+    {
+      "tag": "th",
+      "name": "ไทย",
+      "reviewed_messages": 582,
+      "review_input_sha256": "4c1c7d17d648d288a0c6342c4c609fb811e71d9b1c80a088b54227f051dfde5e",
+      "changed_message_values": 35,
+      "verified_suggestions": 36,
+      "disputed_suggestions": 2,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "Only the supplied strings were used. Runtime composition and whether diagnostic identifiers are displayed literally could not be verified.",
+        "51: The existing wording already conveys flat, parallel alignment; the replacement does not fix a clear defect.",
+        "182: The existing cell-count parity is incorrect, but จุดเชื่อม can mean connection points rather than links, so the replacement does not unambiguously fix it."
+      ]
+    },
+    {
+      "tag": "sw",
+      "name": "Kiswahili",
+      "reviewed_messages": 582,
+      "review_input_sha256": "9f4a13477741ae6378eb41d96d49e45c7dee159c49eb20ee1cee468f4f6b19e0",
+      "changed_message_values": 45,
+      "verified_suggestions": 46,
+      "disputed_suggestions": 6,
+      "structurally_rejected_suggestions": 1,
+      "limitations": [
+        "The supplied catalog does not establish which advanced technique names are conventionally borrowed in Kiswahili; no terminology was invented to replace them.",
+        "The was/were replacements are coordinated with their supplied interpolation in entry 254; other runtime uses were not supplied.",
+        "292 and 461 rely on control references not supplied; their existing labels do not establish a concrete defect.",
+        "485 drops the restriction 'only'; a separate complete message does not establish that this fragment preserves it.",
+        "552 still cannot agree with every unit: 'kila kitalu lazima iwe' requires 'kiwe'.",
+        "570 and 574 do not establish correct agreement with interpolated hidden/naked labels; I cannot confidently accept these replacements.",
+        "254, 528 and 529 work together in the supplied removal sentence. Other uses of the was/were fragments were not supplied and cannot be verified."
+      ]
+    },
+    {
+      "tag": "eo",
+      "name": "Esperanto",
+      "reviewed_messages": 582,
+      "review_input_sha256": "518839a252a180094c7ef0865d5837a3cb5578cfa110a04fb3c1ca57f0fa5bea",
+      "changed_message_values": 26,
+      "verified_suggestions": 27,
+      "disputed_suggestions": 1,
+      "structurally_rejected_suggestions": 0,
+      "limitations": [
+        "The supplied data does not establish standard Esperanto usage for every advanced technique name; corrections to those names are limited to internal inconsistencies.",
+        "Rejected 429: the replacement omits the source meaning “existing.” Fragment compatibility cannot justify dropping that meaning."
+      ]
+    }
+  ],
+  "changed_message_values": 2080,
+  "previous_editorial_values_preserved_on_regeneration": 34,
+  "validation": {
+    "catalogs": "71 complete catalogs, 582 messages each; placeholders, candidate sets, emails, brands and fragment boundaries validated.",
+    "preparation": "Both cache-based and offline modes reproduce reviewed values. Repeating offline preparation is byte-identical.",
+    "python_translation_tests": 19,
+    "gradle": "build :app:bundleDebug -PlocalApkAbi=x86_64 succeeded.",
+    "ui": [
+      "German scan screen and Settings; French strategy text.",
+      "Brazilian Portuguese scan screen at 200% font scale; compact label retains intentional ellipsis and full accessibility text.",
+      "Arabic synthetic puzzle: physical column 1 remains left, cell descriptions and confirmation controls are localized.",
+      "Polish synthetic puzzle at 840x1866 and 200% font scale: two action rows fit; confirmation buttons remain reachable by scrolling."
+    ],
+    "jvm_tests": {
+      "app": {
+        "tests": 144,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "core/model": {
+        "tests": 23,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "core/solver": {
+        "tests": 110,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "core/vision": {
+        "tests": 75,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 37
+      },
+      "core/recognize": {
+        "tests": 54,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 9
+      }
+    },
+    "skipped_test_reason": "Private corpus-dependent vision/recognition tests have no photographs in this checkout; skips are not device or OCR qualification."
+  }
+}
