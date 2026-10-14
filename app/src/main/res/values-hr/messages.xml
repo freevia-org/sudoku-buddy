@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"može sadržavati samo"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Odustani"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidati %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Dokaz snimanja"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Povežite znamenku u lanac kroz jedinice u kojima ima samo dva moguća mjesta i obojite lanac naizmjenično dvjema bojama. Jedna je boja točna u cijelom lancu."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Povezivanjem kandidata %1$s u lanac kroz jedinice u kojima ima samo dva moguća položaja ova se polja označavaju dvjema naizmjeničnim bojama, od kojih je jedna svugdje točna. Dva polja druge boje nalaze se u istom retku, što nije moguće, pa je ta boja netočna i %2$s se uklanja iz svih polja te boje."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Povezivanjem kandidata %1$s u lanac kroz jedinice u kojima ima samo dva moguća položaja ova se polja označavaju dvjema naizmjeničnim bojama, od kojih je jedna svugdje točna. Dva polja druge boje nalaze se u istom bloku, što nije moguće, pa je ta boja netočna i %2$s se uklanja iz svih polja te boje."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Usporedite lance prisile i dajte prednost onima s manje polja za praćenje. Kraći lanci mogu značiti više koraka u cjelovitom rješenju."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Posljedica %1$s od %2$s · hipotetske znamenke"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"sadrži"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Nastavi cijelim postupkom"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Proturječje · pretpostavka ne vrijedi"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", proturječje"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Držite telefon vodoravno"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Držite telefon vodoravno iznad zagonetke."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Držite telefon vodoravno iznad zagonetke"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Kako prepoznati"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nKako dolazimo do toga:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Potražite polja s točno dva kandidata — Y-krilo sastoji se od tri takva polja i ničega drugog.\n\nUzmite jedno kao središte, primjerice {2,5}. Potražite polje koje ono vidi s kandidatima {2,9} i drugo koje vidi s kandidatima {5,9}. Središnje polje sadrži ili 2 ili 5. Ako sadrži 2, prvi krak mora sadržavati 9; ako sadrži 5, drugi mora sadržavati 9. U oba slučaja 9 se pojavljuje u jednom od krakova — ne znate kojem i ne morate znati.\n\nZato nijedno polje koje vidi oba kraka ne može sadržavati 9. Ta su polja obično dva kuta koja dovršavaju pravokutnik."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Jedinstveni pravokutnik"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"jedinica"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable ne izlaže popis CellReading; točna ulazna polja i ishod zadržavaju se."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nepodržana verzija formata modela"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Nesigurno"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Koristi jezik uređaja"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Nije se moglo očitati"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Napisano"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Pogrešno"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-krilo"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-lanac"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-krilo"</string>

@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"saab sisaldada ainult"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Tühista"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidaadid %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Jäädvustuse tõendusmaterjal"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Loo numbrist ahel läbi üksuste, kus sellel on ainult kaks võimalikku kohta, ja värvi ahel vaheldumisi kahe värviga. Üks värv on kogu ahelas õige."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Kui ühendada %1$s ahelaks läbi ridade, veergude ja plokkide, kus sellel on vaid kaks võimalikku kohta, saavad need lahtrid kaks vahelduvat värvi, millest üks on kogu ahelas õige. Kaks teist värvi lahtrit on samas reas, mis pole võimalik – seega on see värv vale ja %2$s eemaldatakse kõigist seda värvi lahtritest."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Kui ühendada %1$s ahelaks läbi ridade, veergude ja plokkide, kus sellel on vaid kaks võimalikku kohta, saavad need lahtrid kaks vahelduvat värvi, millest üks on kogu ahelas õige. Kaks teist värvi lahtrit on samas plokis, mis pole võimalik – seega on see värv vale ja %2$s eemaldatakse kõigist seda värvi lahtritest."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Võrdle sundahelaid ja eelista neid, kus tuleb jälgida vähem ruute. Lühemad ahelad võivad tähendada täielikus lahenduses rohkem samme."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Järeldus %1$s/%2$s · oletuslikud numbrid"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"sisaldab"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Sisu tüüp"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Jätka kogu lahenduskäiguga"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Vastuolu · oletus ei kehti"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", vastuolu"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Hoia telefoni rõhtsalt"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Hoia telefoni rõhtsalt mõistatuse kohal."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Hoia telefoni rõhtsalt mõistatuse kohal"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Kuidas seda leida"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nKuidas selleni jõuame:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Otsi täpselt kahe kandidaadiga ruute – Y-tiib koosneb kolmest sellisest ruudust ja ei millestki muust.\n\nVõta üks keskruuduks, näiteks {2,5}. Otsi ruut, mida see näeb ja milles on {2,9}, ning teine nähtav ruut, milles on {5,9}. Keskruudus on kas 2 või 5. Kui seal on 2, peab esimeses tiibruudus olema 9; kui seal on 5, peab teises olema 9. Mõlemal juhul ilmub ühte tiibruutu 9 – sa ei tea, kumba, ega peagi teadma.\n\nSeega ei saa üheski mõlemat tiibruutu nägevas ruudus olla 9. Need ruudud on tavaliselt kaks nurka, mis täiendavad ristküliku."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unikaalne ristkülik"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"üksus"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable ei paku CellReading-loendit; täpsed sisendlahtrid ja tulemus säilitatakse."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"mudelivormingu versioon pole toetatud"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Ebakindel"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Kasuta seadme keelt"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Ei õnnestunud lugeda"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Kirjutatud"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Vale"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-tiib"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-ahel"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-tiib"</string>

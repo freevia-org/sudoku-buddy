@@ -8,8 +8,6 @@
   "Check {0} uncertain squares.": "请检查 {0} 个识别结果不确定的格子。",
   "{0} squares": "{0} 个格子",
   " with the solution. Use Check to inspect them.": " 与解答不符。使用“检查”查看。",
-  "\"horizontal\":[{0} ]}}": "\"horizontal\":[{0} ]}}",
-  "Content-Type": "Content-Type",
   "DELETE": "DELETE",
   "In these {0} columns, {1} can only go in these {2} rows. Between them they use up every one, so {3} can be ruled out of those rows everywhere else.": "在这 {0} 列中，{1} 只能填在这 {2} 行内。每行都必有一个这样的填数，因此可从这些行的其他位置排除 {3}。",
   "In these {0} rows, {1} can only go in these {2} columns. Between them they use up every one, so {3} can be ruled out of those columns everywhere else.": "在这 {0} 行中，{1} 只能填在这 {2} 列内。每列都必有一个这样的填数，因此可从这些列的其他位置排除 {3}。",

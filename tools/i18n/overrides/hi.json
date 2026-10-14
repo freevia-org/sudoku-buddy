@@ -6,8 +6,6 @@
   "{0} is excluded by {1}, which contains {2} in the same column {3}.": "{0} हट जाता है, क्योंकि उसी स्तंभ {3} में {1} में पहले से {2} है।",
   "{0} is excluded by {1}, which contains {2} in the same row {3}.": "{0} हट जाता है, क्योंकि उसी पंक्ति {3} में {1} में पहले से {2} है।",
   " The photo is in your puzzle list, under \"Would not read\".": " फ़ोटो आपकी पहेली सूची में \"पहचाना नहीं जा सका\" के अंतर्गत है।",
-  "\"horizontal\":[{0} ]}}": "\"horizontal\":[{0} ]}}",
-  "Content-Type": "Content-Type",
   "Diagnostics shortened to fit the browser draft. The app's Send diagnostics action can share the full report.": "ब्राउज़र के मसौदे में समाने के लिए निदान जानकारी छोटी की गई है। ऐप की ‘निदान जानकारी भेजें’ क्रिया से पूरी रिपोर्ट साझा की जा सकती है।",
   "Each receipt identifies one submitted puzzle revision. Delete it here to remove the privately stored report from Freevia.": "हर रसीद भेजी गई पहेली के एक संशोधन की पहचान करती है। Freevia से निजी रूप से सहेजी गई रिपोर्ट हटाने के लिए उसे यहाँ हटाएँ।",
   "Future uncertain readings will send the straightened puzzle photo, recognition results and corrections to Freevia for analysis and training. Training copies remain until deleted from Submission receipts; a trained model may retain learned changes. If an uncertain puzzle is already open, it will be sent now. You can turn this off in Settings.": "भविष्य में अनिश्चित पहचान होने पर सीधी की गई पहेली की फ़ोटो, पहचान के परिणाम और सुधार, विश्लेषण और प्रशिक्षण के लिए Freevia को भेजे जाएँगे। प्रशिक्षण प्रतियाँ ‘भेजे गए डेटा की रसीदें’ से हटाए जाने तक बनी रहेंगी; प्रशिक्षित मॉडल में सीखे गए बदलाव बने रह सकते हैं। यदि कोई अनिश्चित पहेली पहले से खुली है, तो वह अभी भेजी जाएगी। आप इसे सेटिंग में बंद कर सकते हैं।",

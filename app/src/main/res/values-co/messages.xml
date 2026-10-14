@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"pò cuntene solu"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Annullà"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidati %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Prova di cattura"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Catenate una cifra à traversu l\'unità induv\'ella hà solu duie pusizioni pussibuli, culurite a catena cù dui culori alternati, è unu di i culori hè veru in tutta a catena."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Cunnettendu %1$s in catena à traversu l\'unità induve hà solu duie pusizioni pussibule, ste cellule piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie cellule di l\'altru culore sò in a listessa riga, ciò chì hè impussibule - dunque quellu culore hè falsu, è %2$s hè eliminatu da ogni cellula di quellu culore."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Cunnettendu %1$s in catena à traversu l\'unità induve hà solu duie pusizioni pussibule, ste cellule piglianu dui culori alternati, unu di i quali hè veru in tutta a catena. Duie cellule di l\'altru culore sò in u listessu bloccu, ciò chì hè impussibule - dunque quellu culore hè falsu, è %2$s hè eliminatu da ogni cellula di quellu culore."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Paragunate e catene furzanti è preferite quelle cù menu caselle da seguità. Catene più corte ponu significà più passi in a suluzione cumpleta."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Cunsequenza %1$s di %2$s · cifre ipotetiche"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"cuntene"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Cuntinuà cù u percorsu cumpletu"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Cuntradizzione · a suppusizione fiasca"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", cuntradizzione"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tenite u telefunu pianu"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tenite u telefunu pianu sopra à u sudoku."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tenite u telefunu pianu sopra à u sudoku"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Cumu ricunnoscelu"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCumu ci ghjunghjimu:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Circate caselle cù esattamente dui candidati - una Y-wing hè fatta di trè d\'elle è nunda d\'altru.\n\nPigliatene una cum\'è pivot, per esempiu {2,5}. Circate una casella ch\'ella vede cù {2,9}, è un\'altra ch\'ella vede cù {5,9}. U pivot hè 2 o 5. S\'ellu hè 2, a prima pinza deve esse 9; s\'ellu hè 5, a seconda deve esse 9. In ogni casu un 9 appare in una di e pinze - ùn sapete micca quale, è ùn avete bisognu di sapellu.\n\nDunque nisuna casella chì vede e duie pinze pò cuntene 9. Quelle caselle sò di solitu i dui cantoni chì compienu u rettangulu."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rettangulu unicu"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unità"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable ùn espone nisuna lista CellReading; e caselle esatte d\'entrata è u risultatu sò cunservati."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versione di furmatu di mudellu micca sustenuta"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Incertu"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Aduprà a lingua di u dispusitivu"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Ùn si pudia leghje"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Scrittu"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Sbagliatu"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Ala X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Catena XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Ala XYZ"</string>

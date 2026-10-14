@@ -1,10 +1,8 @@
 {
   " The photo is in your puzzle list, under \"Would not read\".": " Fotografija je na seznamu vaših ugank pod »Ni bilo mogoče prepoznati«.",
   " {0} in the same {1}.": " {0} v isti enoti ({1}).",
-  "\"horizontal\":[{0} ]}}": "\"horizontal\":[{0} ]}}",
   "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, and one colour is true throughout. These squares can see both colours, so whichever way the chain falls one of the squares they see holds {1} - which means they cannot.": "Če {0} povežemo v verigo prek enot, v katerih ima le dve možni mesti, so te celice izmenično obarvane z dvema barvama, ena barva pa je povsod pravilna. Te celice vidijo obe barvi, zato ne glede na izid verige ena od celic, ki jih vidijo, vsebuje {1} – kar pomeni, da same ne morejo vsebovati te števke.",
   "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of {1} colour sit in the same {2}, which cannot be - so that colour is the false one, and {3} goes from every square wearing it.": "Če {0} povežemo v verigo prek enot, v katerih ima le dve možni mesti, so te celice izmenično obarvane z dvema barvama, ena barva pa je povsod pravilna. Dve celici barve {1} sta v isti enoti ({2}), kar ni mogoče – zato je ta barva napačna in {3} odstranimo iz vsake celice te barve.",
-  "Content-Type": "Content-Type",
   "Contradiction: the red {0} has nowhere left for {1}. This is impossible, so the starting assumption must fail.": "Protislovje: v rdeče označeni enoti ({0}) ni več mesta za {1}. To je nemogoče, zato začetna predpostavka ne more veljati.",
   "DELETE": "DELETE",
   "Diagnostics shortened to fit the browser draft. The app's Send diagnostics action can share the full report.": "Diagnostika je skrajšana, da se prilega osnutku v brskalniku. Z dejanjem Pošlji diagnostične podatke v aplikaciji lahko delite celotno poročilo.",

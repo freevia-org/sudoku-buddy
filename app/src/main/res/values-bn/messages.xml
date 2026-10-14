@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"শুধু এটিই থাকতে পারে"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"বাতিল"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", সম্ভাব্য অঙ্ক %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"যেসব সারি, কলাম বা বক্সে একটি অঙ্কের মাত্র দুটি সম্ভাব্য স্থান আছে, সেগুলোর মাধ্যমে অঙ্কটির শৃঙ্খল তৈরি করুন এবং পর্যায়ক্রমে দুটি রঙ দিন; একটি রঙের সব ঘরেই অঙ্কটি সত্য হবে।"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"যেসব ইউনিটে %1$s-এর মাত্র দুটি সম্ভাব্য অবস্থান আছে, সেগুলোর মাধ্যমে শৃঙ্খল তৈরি করলে এই ঘরগুলো পালাক্রমে দুটি রং পায়, যার একটি পুরো শৃঙ্খলে সঠিক। অন্য রঙের দুটি ঘর একই সারিতে আছে, যা অসম্ভব—তাই ওই রংটি ভুল, এবং ওই রঙের প্রতিটি ঘর থেকে %2$s বাদ যায়।"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"যেসব ইউনিটে %1$s-এর মাত্র দুটি সম্ভাব্য অবস্থান আছে, সেগুলোর মাধ্যমে শৃঙ্খল তৈরি করলে এই ঘরগুলো পালাক্রমে দুটি রং পায়, যার একটি পুরো শৃঙ্খলে সঠিক। অন্য রঙের দুটি ঘর একই বক্সে আছে, যা অসম্ভব—তাই ওই রংটি ভুল, এবং ওই রঙের প্রতিটি ঘর থেকে %2$s বাদ যায়।"</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"ফোর্সিং চেইনগুলো তুলনা করুন এবং কম ঘর অনুসরণ করতে হয় এমনগুলোকে অগ্রাধিকার দিন। ছোট শৃঙ্খলে পুরো সমাধানের ধাপ বেশি হতে পারে।"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"%2$s-এর মধ্যে ফলাফল %1$s · অনুমানভিত্তিক অঙ্ক"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"এ আছে"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"পুরো পথ ধরে এগিয়ে যান"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"অসংগতি · অনুমান ব্যর্থ"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", অসংগতি"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"ফোনটি সমতল রাখুন"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"ধাঁধার ওপরে ফোনটি সমতল রাখুন।"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"ধাঁধার ওপরে ফোনটি সমতল রাখুন"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"চেনার উপায়"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nযেভাবে সেখানে পৌঁছাই:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"ঠিক দুটি সম্ভাব্য অঙ্ক আছে এমন ঘর খুঁজুন — ওয়াই-উইং শুধু এমন তিনটি ঘর দিয়েই তৈরি।\n\nএকটিকে কেন্দ্র হিসেবে নিন, যেমন {2,5}। কেন্দ্র দেখতে পায় এমন {2,9}-এর একটি ঘর এবং {5,9}-এর আরেকটি ঘর খুঁজুন। কেন্দ্রে হয় 2, নয়তো 5। 2 হলে প্রথম শাখায় 9 হবেই; 5 হলে দ্বিতীয় শাখায় 9 হবেই। যাই হোক, কোনো একটি শাখায় 9 আসবে — কোনটিতে তা জানেন না, আর জানার দরকারও নেই।\n\nতাই উভয় শাখাকে দেখতে পায় এমন কোনো ঘরে 9 হতে পারে না। এই ঘরগুলো সাধারণত আয়তক্ষেত্রটি সম্পূর্ণ করা বাকি দুই কোণ।"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"ইউনিক রেকট্যাঙ্গল"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"একক"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable কোনো CellReading তালিকা প্রকাশ করে না; হুবহু ইনপুট ঘরগুলো ও ফলাফল রাখা হয়।"</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"অসমর্থিত মডেল ফরম্যাট সংস্করণ"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"অনিশ্চিত"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"ডিভাইসের ভাষা ব্যবহার করুন"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"পড়া যায়নি"</string>
     <string name="msg_written_4c6031d1" formatted="false">"লেখা"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"ভুল"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

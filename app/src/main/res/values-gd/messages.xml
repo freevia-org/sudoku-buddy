@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"comasach air gabhail ri dìreach"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Sguir dheth"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", tagraichean %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Ceangail figear ann an slabhraidh tro na h-aonadan far nach eil aige ach dà àite, cuir dà dhath mu seach air an t-slabhraidh, agus bidh aon dath fìor air feadh na slabhraidh."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Le bhith a’ ceangal %1$s tro na h-aonadan far nach eil ach dà àite aige, gheibh na ceallan seo dà dhath mu seach, agus tha aon dath fìor air feadh na slabhraidh. Tha dà chealla den dath eile san aon sreath, rud nach gabh tachairt - mar sin tha an dath sin breugach, agus thèid %2$s a thoirt às gach cealla den dath sin."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Le bhith a’ ceangal %1$s tro na h-aonadan far nach eil ach dà àite aige, gheibh na ceallan seo dà dhath mu seach, agus tha aon dath fìor air feadh na slabhraidh. Tha dà chealla den dath eile san aon bhogsa, rud nach gabh tachairt - mar sin tha an dath sin breugach, agus thèid %2$s a thoirt às gach cealla den dath sin."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Dèan coimeas eadar slabhraidhean èigneachaidh agus thoir roghainn don fheadhainn anns a bheil nas lugha de cheallan ri leantainn. Faodaidh slabhraidhean nas giorra barrachd cheumannan a thoirt san fhuasgladh iomlan."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Buil %1$s de %2$s · figearan beachd-bharail"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"a’ gabhail a-steach"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Lean air adhart leis an t-slighe iomlan"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contrarrachd · tha a’ bheachd-bharail a’ fàiligeadh"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contrarrachd"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Cùm am fòn rèidh"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Cùm am fòn rèidh os cionn an tòimhseachain."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Cùm am fòn rèidh os cionn an tòimhseachain"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Mar a lorgas tu fear"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nMar a ruigeas sinn sin:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Lorg ceallan aig a bheil dìreach dà thagraiche — tha sgiath-Y air a dèanamh de thrì dhiubh agus gun dad eile.\n\nGabh aon dhiubh mar phivot, can {2,5}. Lorg cealla a chì e anns a bheil {2,9}, agus cealla eile a chì e anns a bheil {5,9}. Tha am pivot an dara cuid 2 no 5. Mas e 2 a th’ ann, feumaidh 9 a bhith sa chiad chealla grèim; mas e 5 a th’ ann, feumaidh 9 a bhith san dàrna fear. Co-dhiù, nochdaidh 9 ann an aon de na ceallan grèim — chan eil fhios agad dè am fear, agus chan fheum fhios a bhith agad.\n\nMar sin chan urrainn 9 a bhith ann an cealla sam bith a chì an dà chealla grèim. Mar as trice, ’s iad na ceallan sin an dà oisean a chuireas crìoch air a’ cheart-cheàrnach."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Ceart-cheàrnach gun choimeas"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"aonad"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Chan eil Unreadable a’ nochdadh liosta CellReading; tha na dearbh cheallan ion-chuir agus an toradh gan cumail."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"tionndadh cruth modail gun taic"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Mì-chinnteach"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Cleachd cànan an uidheim"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Cha ghabhadh a leughadh"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Sgrìobhte"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Ceàrr"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Sgiath-X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Slabhraidh-XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Sgiath-XYZ"</string>

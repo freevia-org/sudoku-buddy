@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"kann bert innihalda"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Avlýs"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", møgulig tøl %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Myndaprógv"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Bind eitt tal í eina ketu gjøgnum eindirnar, har tað bara hevur tvey pláss, lita ketuna við tveimum litum til skiftis, og annar liturin er sannur alla leiðina."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Tá %1$s verður knýtt í eina ketu gjøgnum eindirnar, har tað bert hevur tvær møguligar staðsetingar, fáa hesir reitir tveir skiftandi litir. Annar liturin er rættur alla leiðina. Tveir reitir við hinum litinum eru í somu røð, og tað ber ikki til - tí er tann liturin skeivur, og %2$s verður strikað úr øllum reitum við tí litinum."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Tá %1$s verður knýtt í eina ketu gjøgnum eindirnar, har tað bert hevur tvær møguligar staðsetingar, fáa hesir reitir tveir skiftandi litir. Annar liturin er rættur alla leiðina. Tveir reitir við hinum litinum eru í sama kassa, og tað ber ikki til - tí er tann liturin skeivur, og %2$s verður strikað úr øllum reitum við tí litinum."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Samanber tvingsilsketur og vel tær, sum hava færri reitir at fylgja. Styttri ketur kunnu merkja fleiri stig í allari loysnini."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Avleiðing %1$s av %2$s · hugsað tøl"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"inniheldur"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Halt fram við allari leiðini"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Mótsøgn · fortreytin heldur ikki"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", mótsøgn"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Halt telefonini vatnrætt"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Halt telefonini vatnrætt oman fyri uppgávuna."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Halt telefonini vatnrætt oman fyri uppgávuna"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Soleiðis finnur tú eitt"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSoleiðis koma vit fram til tað:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Leita eftir reitum við júst tveimum møguligum tølum – ein Y-veingur er gjørdur úr trimum slíkum og ongum øðrum.\n\nVel ein sum miðreit, til dømis {2,5}. Finn ein reit, hann sær, við {2,9}, og ein annan, hann sær, við {5,9}. Miðreiturin er annaðhvørt 2 ella 5. Er hann 2, má fyrri armreiturin vera 9; er hann 5, má seinni vera 9. Í báðum førum er 9 í øðrum armreitinum – tú veitst ikki í hvørjum, og tað nýtist tær ikki at vita.\n\nTí kann eingin reitur, sum sær báðar armreitarnar, vera 9. Teir reitirnir eru vanliga tey bæði hornini, sum fullføra rættvinklaða fýrakantin."</string>
@@ -375,7 +372,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Avlesing eftirkannað."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Avlesing send. Takk!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Nýggjastu skanningarupplýsingar (útfyltar frammanundan)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Talgreining kann gera mistøk, serliga við handskrift. Brúka Les til at samanbera greindu tølini við myndina, og trýst á ein rút til at rætta hann. Appin merkir óvissar avlesingar til eftirkanning; ein avlesing við høgari vissu kann kortini vera skeiv."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Talgreining kann gera mistøk, serliga við handskrift. Brúka “Avlesing” til at samanbera greindu tølini við myndina, og trýst á ein rút til at rætta hann. Appin merkir óvissar avlesingar til eftirkanning; ein avlesing við høgari vissu kann kortini vera skeiv."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Vís fortreyt aftur"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Fjar pør"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Tak %1$s burtur"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Einstakur rættvinklaður fýrakantur"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"eind"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable gevur ongan CellReading-lista; nágreiniligu inntaksrútarnir og úrslitið verða varðveitt."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"útgávan av modellsniðinum verður ikki stuðlað"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Óvist"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Brúka málið á tólinum"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Kundi ikki lesast"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Skrivað"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Skeivt"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-veingur"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-keta"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-veingur"</string>

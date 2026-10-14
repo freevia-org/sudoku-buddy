@@ -3,7 +3,6 @@
   " {0} in the same box.": " {0} ในบล็อกเดียวกัน",
   "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of one colour sit in the same box, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.": "เมื่อเชื่อม {0} เป็นสายผ่านหน่วยที่มีตำแหน่งให้ลงได้เพียงสองตำแหน่ง ช่องเหล่านี้จะมีสองสีสลับกัน โดยสีหนึ่งจะถูกต้องตลอดทั้งสาย ช่องสองช่องที่มีสีเดียวกันอยู่ในบล็อกเดียวกัน ซึ่งเป็นไปไม่ได้ ดังนั้นสีนั้นจึงผิด และตัด {1} ออกจากทุกช่องที่มีสีนั้น",
   "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of the other colour sit in the same box, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.": "เมื่อเชื่อม {0} เป็นสายผ่านหน่วยที่มีตำแหน่งให้ลงได้เพียงสองตำแหน่ง ช่องเหล่านี้จะมีสองสีสลับกัน โดยสีหนึ่งจะถูกต้องตลอดทั้งสาย ช่องสองช่องที่มีอีกสีหนึ่งอยู่ในบล็อกเดียวกัน ซึ่งเป็นไปไม่ได้ ดังนั้นสีนั้นจึงผิด และตัด {1} ออกจากทุกช่องที่มีสีนั้น",
-  "Content-Type": "Content-Type",
   "DELETE": "DELETE",
   "Deletion response did not confirm this receipt.": "ผลตอบกลับการลบไม่ได้ยืนยันใบยืนยันการส่งนี้",
   "Each receipt identifies one submitted puzzle revision. Delete it here to remove the privately stored report from Freevia.": "ใบยืนยันการส่งแต่ละใบระบุปริศนาฉบับแก้ไขหนึ่งฉบับที่ส่งไป ลบที่นี่เพื่อนำรายงานที่จัดเก็บเป็นส่วนตัวออกจาก Freevia",

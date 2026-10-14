@@ -125,7 +125,6 @@
   "{0} empty": "Порожніх: {0}",
   "finished": "завершено",
   " {0} in the same {1}.": " {0} у тій самій групі ({1}).",
-  "\"horizontal\":[{0} ]}}": "\"horizontal\":[{0} ]}}",
   ", hypothetical {0}, not an entered answer": ", гіпотетичне значення {0}, не є введеною відповіддю",
   "A three-candidate pivot with two matching two-candidate pincers forces a digit out of every square that sees all three.": "Опорна клітинка з трьома кандидатами та дві відповідні клітинки-крила з двома кандидатами змушують виключити цифру з кожної клітинки, яка бачить усі три.",
   "A two-candidate pivot and two two-candidate pincers can force a digit out of every square that sees both pincers.": "Опорна клітинка з двома кандидатами та дві клітинки-крила з двома кандидатами можуть змусити виключити цифру з кожної клітинки, яка бачить обидва крила.",
@@ -167,5 +166,6 @@
   "{0}, printed clue": "{0}, друкована задана цифра",
   "Choose what to show": "Виберіть, що показувати",
   "{0} steps make up this route, with {1} as the hardest supported technique. {2} {3}": "Цей шлях складається з {0} кроків, найскладніший підтримуваний метод — {1}. {2} {3}",
-  "Every sudoku with one answer can be solved by reasoning; guessing is never required and rarely helps. These are the ways of reasoning this app can recognise and explain, easiest first. Where one of them applies to the puzzle you have open, it will show you every place it does.": "Будь-яке судоку з єдиним розв’язком можна розгадати логічно; вгадування ніколи не потрібне й рідко допомагає. Це способи міркування, які ця програма вміє розпізнавати й пояснювати, від найпростіших. Якщо якийсь із них застосовний до відкритої головоломки, програма покаже кожне місце, де це можливо."
+  "Every sudoku with one answer can be solved by reasoning; guessing is never required and rarely helps. These are the ways of reasoning this app can recognise and explain, easiest first. Where one of them applies to the puzzle you have open, it will show you every place it does.": "Будь-яке судоку з єдиним розв’язком можна розгадати логічно; вгадування ніколи не потрібне й рідко допомагає. Це способи міркування, які ця програма вміє розпізнавати й пояснювати, від найпростіших. Якщо якийсь із них застосовний до відкритої головоломки, програма покаже кожне місце, де це можливо.",
+  "Recognition can make mistakes, especially with handwriting. Use Read to compare the recognised digits with the photo, and tap any square to correct it. The app marks uncertain readings for review; a confident reading can still be wrong.": "Розпізнавання може помилятися, особливо з почерком. Скористайтеся кнопкою «Розпізнане», щоб порівняти розпізнані цифри з фотографією, і торкніться будь-якої клітинки, щоб виправити її. Програма позначає невпевнені результати для перевірки; упевнене розпізнавання також може бути помилковим."
 }

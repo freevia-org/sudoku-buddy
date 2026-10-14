@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"can only haud"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Cancel"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidates %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Chain a digit through the units whaur it has juist twa places, colour the chain in twa alternatin colours, and ane colour is true throughout."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thae cells in twa alternatin colours, ane o which is true throughout. Twa cells o the ither colour sit in the same raw, which cannae be - sae that colour is the fause ane, and %2$s is taen oot o every cell wi that colour."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Chainin %1$s through the units whaur it has juist twa places leaves thae cells in twa alternatin colours, ane o which is true throughout. Twa cells o the ither colour sit in the same box, which cannae be - sae that colour is the fause ane, and %2$s is taen oot o every cell wi that colour."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Compare forcing chains and prefer anes wi fewer cells tae follae. Shorter chains can mean mair steps in the full solution."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consequence %1$s o %2$s · hypothetical digits"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"hauds"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Carry on wi the full route"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradiction · assumption fails"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contradiction"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Haud the phone flat"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Haud the phone flat abune the puzzle."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Haud the phone flat abune the puzzle"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Hou tae spot ane"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nHou we get there:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Hunt for cells wi exactly twa candidates - a Y-wing is made o three o them and naething else.\n\nTak ane as the pivot, say {2,5}. Look for a cell it can see haudin {2,9}, and anither it can see haudin {5,9}. The pivot is either 2 or 5. If it\'s 2, the first pincer maun be 9; if it\'s 5, the second maun be 9. Either wey a 9 appears in ane o the pincers - ye dinnae ken which, and ye dinnae need tae.\n\nSae nae cell that can see baith pincers can be a 9. Thae cells are usually the twa corners that complete the rectangle."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unique rectangle"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unit"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable exposes nae CellReading list; exact input cells and outcome are retained."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"unsupportit model format version"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Unsure"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Use device leid"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Wadnae read"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Written"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Wrang"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"només pot contenir"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Cancel·la"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidats %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Evidència de captura"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Encadena un dígit a través de les unitats on només té dues posicions possibles, pinta la cadena amb dos colors alterns i un dels colors serà cert a tota la cadena."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Enllaçar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, un dels quals és cert a tot arreu. Dues caselles de l\'altre color són a la mateixa fila, cosa que és impossible; per tant, aquest color és el fals i s\'elimina %2$s de totes les caselles d\'aquest color."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Enllaçar %1$s a través de les unitats on només té dues posicions possibles deixa aquestes caselles amb dos colors alterns, un dels quals és cert a tot arreu. Dues caselles de l\'altre color són al mateix bloc, cosa que és impossible; per tant, aquest color és el fals i s\'elimina %2$s de totes les caselles d\'aquest color."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Compara les cadenes de forçament i prioritza les que tenen menys caselles per seguir. Les cadenes més curtes poden comportar més passos en la solució completa."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Conseqüència %1$s de %2$s · dígits hipotètics"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"conté"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Continua amb el recorregut complet"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradicció · la hipòtesi falla"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contradicció"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mantén el telèfon paral·lel al full"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mantén el telèfon paral·lel al full, damunt del sudoku."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mantén el telèfon paral·lel al full, damunt del sudoku"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Com detectar-ne un"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCom hi arribem:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Busca caselles amb exactament dos candidats: una ala Y consta de tres d\'aquestes caselles i res més.\n\nPren-ne una com a pivot, per exemple {2,5}. Busca una casella que vegi amb {2,9}, i una altra que vegi amb {5,9}. El pivot és 2 o 5. Si és 2, la primera pinça ha de ser 9; si és 5, la segona ha de ser 9. En qualsevol cas, apareix un 9 en una de les pinces: no saps quina, i no et cal saber-ho.\n\nPer tant, cap casella que vegi totes dues pinces no pot ser 9. Aquestes caselles solen ser els dos vèrtexs que completen el rectangle."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rectangle únic"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unitat"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Il·legible no exposa cap llista CellReading; es conserven les caselles d\'entrada exactes i el resultat."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versió del format del model no admesa"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Incert"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Fes servir l\'idioma del dispositiu"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"No s\'ha pogut llegir"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Escrit"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Incorrecte"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Ala X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Cadena XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Ala XYZ"</string>

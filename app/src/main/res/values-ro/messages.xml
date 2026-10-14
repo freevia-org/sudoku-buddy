@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"poate conține doar"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Anulați"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidați %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Înlănțuiți o cifră prin unitățile unde are doar două poziții, colorați lanțul în două culori alternante — una dintre culori este adevărată pe tot parcursul."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Legând în lanț pozițiile lui %1$s din unitățile în care are doar două poziții posibile, aceste celule primesc două culori alternante, dintre care una indică poziții corecte în întregul lanț. Două celule de cealaltă culoare se află pe același rând, ceea ce este imposibil - așadar, acea culoare indică poziții incorecte, iar %2$s se elimină din toate celulele de acea culoare."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Legând în lanț pozițiile lui %1$s din unitățile în care are doar două poziții posibile, aceste celule primesc două culori alternante, dintre care una indică poziții corecte în întregul lanț. Două celule de cealaltă culoare se află în aceeași casetă, ceea ce este imposibil - așadar, acea culoare indică poziții incorecte, iar %2$s se elimină din toate celulele de acea culoare."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Comparați lanțurile de forțare și preferați-le pe cele cu mai puține celule de urmat. Lanțurile mai scurte pot însemna mai mulți pași în soluția completă."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consecința %1$s din %2$s · cifre ipotetice"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"conține"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Continuați cu ruta completă"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradicție · ipoteza eșuează"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contradicție"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Țineți telefonul orizontal"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Țineți telefonul orizontal deasupra puzzle-ului."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Țineți telefonul orizontal deasupra puzzle-ului"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Cum să îl identificați"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCum ajungem acolo:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Căutați celule cu exact doi candidați — o aripă Y este alcătuită din exact trei astfel de celule.\n\nLuați una ca pivot, de exemplu {2,5}. Căutați o celulă pe care o poate vedea, conținând {2,9}, și alta pe care o poate vedea, conținând {5,9}. Pivotul este fie 2, fie 5. Dacă este 2, primul pinten trebuie să fie 9; dacă este 5, al doilea trebuie să fie 9. În orice caz, un 9 apare într-unul dintre pinteni — nu știți în care, și nu aveți nevoie.\n\nDeci nicio celulă care poate vedea ambii pinteni nu poate fi 9. Acele celule sunt de obicei cele două colțuri care completează dreptunghiul."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Dreptunghi unic"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unitate"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Necitibil nu expune nicio listă CellReading; celulele de intrare exacte și rezultatul sunt păstrate."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versiune de format de model neacceptată"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Nesigur"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Folosiți limba dispozitivului"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Nu s-a putut citi"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Scris"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Greșit"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Aripă X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Lanț XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Aripă XYZ"</string>

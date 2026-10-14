@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"soilik izan dezake"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Utzi"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", hautagaiak: %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"KapturarenEbidentzia"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Kateatu digitu bat bi kokaleku baino ez dituen unitateetan zehar, koloreztatu katea txandakatutako bi kolorez, eta koloreetako bat egiazkoa izango da kate osoan."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$s bi kokapen posible baino ez dituen unitateetan zehar kateatuz, gelaxka hauek txandakatzen diren bi koloretan geratzen dira; koloreetako bat zuzena da gelaxka guztietan. Beste koloreko bi gelaxka errenkada berean daude, eta hori ezinezkoa da. Beraz, kolore hori okerra da, eta %2$s kolore horretako gelaxka guztietatik kentzen da."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$s bi kokapen posible baino ez dituen unitateetan zehar kateatuz, gelaxka hauek txandakatzen diren bi koloretan geratzen dira; koloreetako bat zuzena da gelaxka guztietan. Beste koloreko bi gelaxka bloke berean daude, eta hori ezinezkoa da. Beraz, kolore hori okerra da, eta %2$s kolore horretako gelaxka guztietatik kentzen da."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Alderatu behartze-kateak eta lehenetsi jarraitzeko gelaxka gutxiago dituztenak. Kate laburragoek urrats gehiago ekar ditzakete soluzio osoan."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"%2$s ondorioetatik %1$s.a · digitu hipotetikoak"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"dauka"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Jarraitu ibilbide osoarekin"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Kontraesana · suposizioak huts egin du"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", kontraesana"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mantendu telefonoa lau"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mantendu telefonoa lau sudokuaren gainean."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mantendu telefonoa lau sudokuaren gainean"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Nola aurkitu"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nNola iristen garen horra:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Bilatu zehazki bi hautagai dituzten gelaxkak: Y-wing bat horrelako hiru gelaxkak osatzen dute, eta besterik ez.\n\nHartu bat pibotetzat, adibidez {2,5}. Bilatu hark ikusten duen {2,9} hautagaiko gelaxka bat, eta hark ikusten duen {5,9} hautagaiko beste bat. Pibotea 2 edo 5 da. 2 bada, lehen pintzak 9 izan behar du; 5 bada, bigarrenak 9 izan behar du. Edozein kasutan, pintzetako batean 9 agertzen da: ez dakizu zeinetan, eta ez duzu jakin beharrik.\n\nBeraz, bi pintzak ikusten dituen gelaxka batek ere ezin du 9 izan. Gelaxka horiek normalean laukizuzena osatzen duten bi izkinak dira."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Laukizuzen bakarra"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unitatea"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable-k ez du CellReading zerrendarik eskaintzen; sarrerako gelaxka zehatzak eta emaitza gordetzen dira."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"modelo-formatuaren bertsio hori ez da onartzen"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Zalantzazkoa"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Erabili gailuaren hizkuntza"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Ezin izan da irakurri"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Idatzita"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Okerra"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-hegala"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-katea"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-hegala"</string>

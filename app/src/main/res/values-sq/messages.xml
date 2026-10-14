@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"mund të përmbajë vetëm"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Anulo"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidatët %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Lidhe një shifër në zinxhir përmes njësive ku ka vetëm dy vende të mundshme, ngjyrose zinxhirin me dy ngjyra të alternuara dhe njëra ngjyrë është e vërtetë në të gjithë zinxhirin."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Duke lidhur %1$s nëpër njësitë ku ka vetëm dy pozicione të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e saktë kudo. Dy qeliza të ngjyrës tjetër ndodhen në të njëjtin rresht, gjë që është e pamundur - prandaj ajo ngjyrë është e pasaktë dhe %2$s përjashtohet nga çdo qelizë me atë ngjyrë."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Duke lidhur %1$s nëpër njësitë ku ka vetëm dy pozicione të mundshme, këto qeliza marrin dy ngjyra të alternuara, njëra prej të cilave është e saktë kudo. Dy qeliza të ngjyrës tjetër ndodhen në të njëjtin bllok, gjë që është e pamundur - prandaj ajo ngjyrë është e pasaktë dhe %2$s përjashtohet nga çdo qelizë me atë ngjyrë."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Krahaso zinxhirët detyrues dhe parapëlqe ata me më pak qeliza për t\'u ndjekur. Zinxhirët më të shkurtër mund të kërkojnë më shumë hapa për zgjidhjen e plotë."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Pasoja %1$s nga %2$s · shifra hipotetike"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"përmban"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Vazhdo me rrugën e plotë"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Kundërthënie · supozimi dështon"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", kundërthënie"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mbaje telefonin paralel me faqen"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mbaje telefonin paralel mbi enigmë."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mbaje telefonin paralel mbi enigmë"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Si ta dallosh"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSi arrijmë deri këtu:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Kërko qeliza me saktësisht dy kandidatë — një krah Y përbëhet nga tri të tilla dhe asgjë tjetër.\n\nMerr njërën si qendër, për shembull {2,5}. Kërko një qelizë që ajo sheh me {2,9} dhe një tjetër që sheh me {5,9}. Qendra është ose 2, ose 5. Nëse është 2, krahu i parë duhet të jetë 9; nëse është 5, krahu i dytë duhet të jetë 9. Në të dyja rastet, një 9 shfaqet në njërin prej krahëve — nuk e di në cilin dhe nuk ke nevojë ta dish.\n\nPrandaj, asnjë qelizë që sheh të dy krahët nuk mund të jetë 9. Këto qeliza zakonisht janë dy qoshet që plotësojnë drejtkëndëshin."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Drejtkëndësh unik"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"njësi"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable nuk ekspozon asnjë listë CellReading; qelizat e sakta hyrëse dhe rezultati ruhen."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"version i pambështetur i formatit të modelit"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"E pasigurt"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Përdor gjuhën e pajisjes"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Nuk u lexua"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Të shkruara"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Gabim"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Krahu X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Zinxhiri XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Krahu XYZ"</string>

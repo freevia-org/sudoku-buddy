@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"jista’ jkun fiha biss"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Ikkanċella"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidati %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"EvidenzaTalQbid"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Għaqqad ċifra f\'katina fl-unitajiet fejn għandha biss żewġ postijiet, ikkulurixxi l-katina b\'żewġ kuluri alternati, u kulur wieħed ikun veru tul il-katina kollha."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Meta torbot %1$s f\'katina fl-unitajiet fejn għandu biss żewġ postijiet possibbli, dawn iċ-ċelloli jieħdu żewġ kuluri alternati, li wieħed minnhom huwa veru tul il-katina kollha. Żewġ ċelloli tal-kulur l-ieħor jinsabu fl-istess ringiela, u dan ma jistax ikun - għalhekk dak il-kulur huwa falz, u %2$s jitneħħa minn kull ċellola b\'dak il-kulur."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Meta torbot %1$s f\'katina fl-unitajiet fejn għandu biss żewġ postijiet possibbli, dawn iċ-ċelloli jieħdu żewġ kuluri alternati, li wieħed minnhom huwa veru tul il-katina kollha. Żewġ ċelloli tal-kulur l-ieħor jinsabu fl-istess kaxxa, u dan ma jistax ikun - għalhekk dak il-kulur huwa falz, u %2$s jitneħħa minn kull ċellola b\'dak il-kulur."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Qabbel il-ktajjen furzanti u ppreferi dawk b\'inqas ċelloli x\'issegwi. Ktajjen iqsar jistgħu jfissru aktar passi fis-soluzzjoni sħiħa."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Konsegwenza %1$s minn %2$s · ċifri ipotetiċi"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"fiha"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Tip ta\' kontenut"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Kompli bil-perkors sħiħ"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Kontradizzjoni · is-suppożizzjoni tfalli"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", kontradizzjoni"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Żomm it-telefon ċatt"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Żomm it-telefon ċatt fuq il-puzzle."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Żomm it-telefon ċatt fuq il-puzzle"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"orizzontali\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Kif tagħraf waħda"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nKif naslu hemm:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Fittex ċelloli b\'eżattament żewġ kandidati - Y-wing hija magħmula minn tlieta minnhom u xejn aktar.\n\nĦu waħda bħala l-pern, ngħidu aħna {2,5}. Fittex ċellola li tara b\'{2,9}, u oħra li tara b\'{5,9}. Il-pern huwa jew 2 jew 5. Jekk huwa 2, l-ewwel fergħa trid tkun 9; jekk huwa 5, it-tieni trid tkun 9. Fiż-żewġ każijiet tidher 9 f\'waħda mill-fergħat - ma tafx liema, u m\'għandekx għalfejn tkun taf.\n\nGħalhekk ebda ċellola li tara ż-żewġ fergħat ma tista\' tkun 9. Dawk iċ-ċelloli ġeneralment ikunu ż-żewġ kantunieri li jlestu r-rettangolu."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rettangolu uniku"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unità"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable ma jesponi ebda lista CellReading; jinżammu ċ-ċelloli eżatti tal-input u r-riżultat."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"verżjoni tal-format tal-mudell mhux appoġġjata"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Inċert"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Uża l-lingwa tat-tagħmir"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Ma setax jinqara"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Miktub"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Ħażin"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Katina XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

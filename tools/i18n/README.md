@@ -14,6 +14,9 @@ photographed grid retains its physical left-to-right coordinates in RTL locales.
 ## Update catalogs
 
 1. `python tools/i18n/catalog.py` extracts English source templates deterministically.
+   JSON serialization property fragments and known protocol/debug identifiers
+   are excluded from the presentation catalog. Submission errors and localized
+   date-format patterns remain translatable.
 2. Translate new entries, retaining each `{0}` argument and its occurrence count.
    `python tools/i18n/translate_cli.py` uses the signed-in official Antigravity CLI
    (`agy`). Select an available model with `--model`, for example
@@ -32,6 +35,10 @@ photographed grid retains its physical left-to-right coordinates in RTL locales.
 4. `python tools/i18n/prepare.py` applies overrides and registers only complete
    catalogs in both the language picker and Android locale configuration.
 5. `python tools/i18n/validate.py` verifies coverage and interpolation arguments.
+   It also checks that action-label metadata matches bundled labels and that
+   explicit button instructions name the actual localized button. Update the
+   glossary with any reviewed label change; quoted labels preserve their spelling
+   inside grammatically inflected instructions.
 
 On a fresh checkout, `prepare.py --from-resources` applies editorial overrides to
 the committed XML directly. Generated draft caches are ignored by Git. Native

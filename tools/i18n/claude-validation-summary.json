@@ -1,0 +1,66 @@
+{
+  "review_date": "2026-10-15",
+  "baseline_commit": "ae55599b8da68e6929ecfd0cce5317912cd1aefb",
+  "method": "Independent validation with the existing Sudoku Claude session, followed by Codex verification of source call sites and effective bundled labels.",
+  "structural_scope": {
+    "catalogs": 71,
+    "messages_before_cleanup": 582,
+    "messages_after_cleanup": 577,
+    "current_total_entries": 40967,
+    "checks": [
+      "key parity",
+      "placeholder parity",
+      "candidate sets and contact addresses",
+      "brands",
+      "fragment boundaries",
+      "action glossary equality",
+      "explicit button references"
+    ]
+  },
+  "linguistic_scope": {
+    "closely_read": "Approximately 60 strings in German and European Portuguese, plus samples in other languages.",
+    "full_catalog_linguistic_reviews_completed": 0
+  },
+  "corrections": {
+    "button_reference_messages": 8,
+    "languages": [
+      "cy",
+      "fo",
+      "fy",
+      "lv",
+      "nn",
+      "se",
+      "uk"
+    ],
+    "glossary_labels_reconciled": 10,
+    "missing_glossary_locales_added": [
+      "kw",
+      "gv",
+      "hsb"
+    ],
+    "unused_technical_entries_removed": [
+      "\"horizontal\":[{0} ]}}",
+      "Content-Type",
+      "X-Sudoku-Training-Consent",
+      "CaptureEvidence",
+      "UnsafeOptInUsageError"
+    ]
+  },
+  "verified_non_defects": [
+    "Portuguese Pista and Italian Suggerimento match their shipped buttons; glossary reconciled without changing valid regional labels.",
+    "Translated serialization/header/debug resources were unused by localized UI; runtime report serialization was not corrupted.",
+    "Locale date-format patterns remain translatable."
+  ],
+  "validation": {
+    "offline_translation_tests": 23,
+    "android_app_unit_tests": 144,
+    "android_build_and_lint": "assembleDebug, testDebugUnitTest and lintDebug passed",
+    "android_ui": "Ukrainian About/help text inspected on SudokuBuddyCandidate123_API36_16K; updated quoted button label is visible, readable and scrollable."
+  },
+  "limits": [
+    "This round is structural validation plus linguistic spot checks, not a new full linguistic review of all messages.",
+    "No native-speaker certification, real-camera OCR check or Play publication is implied.",
+    "Quoted button names fix label identity; Welsh, Faroese, Frisian, Latvian and Northern Sami surrounding grammar has not been certified by a native speaker."
+  ],
+  "independent_final_verification": "Claude verified all 560 translated explicit action references, key and placeholder parity, identifier absence, preserved locale date formats and unchanged bundled button labels. Reviewed the eight replacements individually; Latvian apposition was corrected to Izmantojiet pogu “Atpazīšana”. Welsh and Faroese remain low-confidence native-review items."
+}

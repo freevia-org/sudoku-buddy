@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"só pode conter"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Cancelar"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidatos %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Evidencia da captura"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Encadea unha cifra polas unidades onde só ten dúas posicións posibles, colorea a cadea con dúas cores alternas e unha das cores será verdadeira en toda a cadea."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Ao encadear %1$s polas unidades onde só ten dúas posicións posibles, estas celas quedan marcadas con dúas cores alternas, unha das cales é verdadeira en toda a cadea. Dúas celas da outra cor están na mesma fila, o que é imposible; polo tanto, esa cor é a falsa e elimínase %2$s de todas as celas desa cor."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Ao encadear %1$s polas unidades onde só ten dúas posicións posibles, estas celas quedan marcadas con dúas cores alternas, unha das cales é verdadeira en toda a cadea. Dúas celas da outra cor están no mesmo bloque, o que é imposible; polo tanto, esa cor é a falsa e elimínase %2$s de todas as celas desa cor."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Compara as cadeas forzadas e dá preferencia ás que teñan menos celas que seguir. As cadeas máis curtas poden supoñer máis pasos na solución completa."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consecuencia %1$s de %2$s · cifras hipotéticas"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"contén"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Tipo de contido"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Continuar co percorrido completo"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradición · a suposición falla"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contradición"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mantén o teléfono paralelo á páxina"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mantén o teléfono paralelo á páxina sobre o sudoku."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mantén o teléfono paralelo á páxina sobre o sudoku"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Como detectalo"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nComo chegamos aí:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Busca celas con exactamente dous candidatos: unha á Y componse de tres delas e de nada máis.\n\nToma unha como pivote, por exemplo {2,5}. Busca unha cela que vexa e que conteña {2,9}, e outra que vexa e que conteña {5,9}. O pivote é 2 ou 5. Se é 2, a primeira pinza debe ser 9; se é 5, a segunda debe ser 9. En calquera caso, aparece un 9 nunha das pinzas: non sabes en cal, e non precisas sabelo.\n\nAsí que ningunha cela que vexa ambas as pinzas pode conter un 9. Esas celas adoitan ser as dúas esquinas que completan o rectángulo."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rectángulo único"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unidade"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable non expón ningunha lista CellReading; consérvanse as celas de entrada exactas e o resultado."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versión do formato do modelo non admitida"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Incerto"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Usar o idioma do dispositivo"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Non se puido ler"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Escrito"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Incorrecto"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Á X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Cadea XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Á XYZ"</string>

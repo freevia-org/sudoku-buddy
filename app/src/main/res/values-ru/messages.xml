@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"может содержать только"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Отмена"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", кандидаты %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Данные снимка"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Постройте цепочку одной цифры через области, где у неё лишь два возможных места, и раскрасьте её двумя чередующимися цветами. Один из цветов будет верным во всей цепочке."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Если связать %1$s в цепочку через строки, столбцы и блоки, где для этой цифры есть только два места, эти клетки окрасятся в два чередующихся цвета. Все клетки одного из цветов содержат эту цифру. Две клетки другого цвета находятся в одной строке, что невозможно. Значит, этот цвет ложный, и %2$s исключается из всех клеток этого цвета."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Если связать %1$s в цепочку через строки, столбцы и блоки, где для этой цифры есть только два места, эти клетки окрасятся в два чередующихся цвета. Все клетки одного из цветов содержат эту цифру. Две клетки другого цвета находятся в одном блоке, что невозможно. Значит, этот цвет ложный, и %2$s исключается из всех клеток этого цвета."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Сравнивать форсирующие цепочки и предпочитать те, в которых нужно проследить меньше клеток. Более короткие цепочки могут потребовать больше шагов для полного решения."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Следствие %1$s из %2$s · гипотетические цифры"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"содержит"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Продолжить полный путь"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Противоречие · предположение неверно"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", противоречие"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Держите телефон параллельно листу"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Держите телефон над головоломкой параллельно листу."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Держите телефон над головоломкой параллельно листу"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Как найти"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nКак мы к этому приходим:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Ищите клетки ровно с двумя кандидатами: Y-крыло состоит из трёх таких клеток и только из них.\n\nВозьмите одну за опорную, например {2,5}. Найдите видимую ей клетку с {2,9} и ещё одну видимую ей клетку с {5,9}. В опорной клетке стоит либо 2, либо 5. Если 2, в первой связанной клетке должна стоять 9; если 5, то 9 должна стоять во второй. В любом случае в одной из связанных клеток появляется 9. Вы не знаете, в какой, и это не требуется.\n\nПоэтому ни в одной клетке, которая видит обе связанные клетки, не может стоять 9. Обычно это два угла, дополняющих прямоугольник."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Уникальный прямоугольник"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"группа"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable не предоставляет список CellReading; точные входные клетки и результат сохранены."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"неподдерживаемая версия формата модели"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Неуверенно"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Использовать язык устройства"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Не удалось распознать"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Рукописные"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Неверно"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-крыло"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-цепь"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-крыло"</string>

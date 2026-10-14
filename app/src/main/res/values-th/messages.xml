@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"ใส่ได้เพียง"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"ยกเลิก"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", ตัวเลขที่เป็นไปได้ %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"หลักฐานการถ่ายภาพ"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"เชื่อมตัวเลขเป็นสายโซ่ผ่านหน่วยที่มีตำแหน่งให้ตัวเลขนั้นเพียงสองแห่ง ระบายสีสายโซ่ด้วยสองสีสลับกัน แล้วสีหนึ่งจะเป็นจริงตลอดทั้งสาย"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"เมื่อเชื่อม %1$s เป็นสายผ่านหน่วยที่มีตำแหน่งให้ลงได้เพียงสองตำแหน่ง ช่องเหล่านี้จะมีสองสีสลับกัน โดยสีหนึ่งจะถูกต้องตลอดทั้งสาย ช่องสองช่องที่มีอีกสีหนึ่งอยู่ในแถวเดียวกัน ซึ่งเป็นไปไม่ได้ ดังนั้นสีนั้นจึงผิด และตัด %2$s ออกจากทุกช่องที่มีสีนั้น"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"เมื่อเชื่อม %1$s เป็นสายผ่านหน่วยที่มีตำแหน่งให้ลงได้เพียงสองตำแหน่ง ช่องเหล่านี้จะมีสองสีสลับกัน โดยสีหนึ่งจะถูกต้องตลอดทั้งสาย ช่องสองช่องที่มีอีกสีหนึ่งอยู่ในบล็อกเดียวกัน ซึ่งเป็นไปไม่ได้ ดังนั้นสีนั้นจึงผิด และตัด %2$s ออกจากทุกช่องที่มีสีนั้น"</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"เปรียบเทียบสายโซ่บังคับและเลือกสายที่มีช่องให้ติดตามน้อยกว่า สายโซ่ที่สั้นกว่าอาจทำให้การแก้ปริศนาทั้งหมดมีขั้นตอนมากขึ้น"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"ผลตามมา %1$s จาก %2$s · ตัวเลขสมมติ"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"มี"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"ไปต่อตามเส้นทางทั้งหมด"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"ข้อขัดแย้ง · สมมติฐานใช้ไม่ได้"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", ข้อขัดแย้ง"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"ถือโทรศัพท์ให้ขนานกับกระดาษ"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"ถือโทรศัพท์ให้ขนานเหนือปริศนา"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"ถือโทรศัพท์ให้ขนานเหนือปริศนา"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"วิธีสังเกต"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nวิธีหาคำตอบ:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"หาช่องที่มีตัวเลขเป็นไปได้สองตัวพอดี Y-wing ประกอบด้วยช่องแบบนี้สามช่องเท่านั้น\n\nเลือกช่องหนึ่งเป็นแกนกลาง เช่น {2,5} หาช่องที่แกนกลางมองเห็นและมี {2,9} กับอีกช่องที่มองเห็นและมี {5,9} แกนกลางเป็นได้ทั้ง 2 หรือ 5 หากเป็น 2 ช่องก้ามแรกต้องเป็น 9 หากเป็น 5 ช่องก้ามที่สองต้องเป็น 9 ไม่ว่าแบบใด จะมี 9 อยู่ในช่องก้ามหนึ่งช่อง คุณไม่รู้ว่าช่องใด และไม่จำเป็นต้องรู้\n\nดังนั้นช่องที่มองเห็นช่องก้ามทั้งสองเป็น 9 ไม่ได้ โดยปกติช่องเหล่านั้นคือสองมุมที่ทำให้รูปสี่เหลี่ยมผืนผ้าครบ"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"สี่เหลี่ยมผืนผ้าคำตอบเดียว"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"หน่วย"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"สถานะอ่านไม่ได้ไม่เปิดเผยรายการ CellReading แต่ยังเก็บช่องข้อมูลขาเข้าที่ตรงตามต้นฉบับและผลลัพธ์ไว้"</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"ข้อผิดพลาดการใช้งานการยินยอมที่ไม่ปลอดภัย"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"ไม่รองรับเวอร์ชันรูปแบบโมเดล"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"ไม่แน่ใจ"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"ใช้ภาษาของอุปกรณ์"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"อ่านไม่ได้"</string>
     <string name="msg_written_4c6031d1" formatted="false">"เขียน"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"ผิด"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"ปีก X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"โซ่ XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"ปีก XYZ"</string>

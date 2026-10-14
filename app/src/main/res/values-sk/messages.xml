@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"môže obsahovať iba"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Zrušiť"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidáti %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Prepojte číslicu do reťazca cez jednotky, kde má iba dve možnosti, zafarbite reťazec dvoma striedajúcimi sa farbami a jedna farba bude pravdivá v celom rozsahu."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Reťazením %1$s cez oblasti, kde má iba dve možné pozície, sa tieto bunky označia dvoma striedajúcimi sa farbami, pričom jedna z nich je všade pravdivá. Dve bunky druhej farby sú v rovnakom riadku, čo nie je možné – táto farba je teda nepravdivá a %2$s sa vylúči zo všetkých buniek tejto farby."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Reťazením %1$s cez oblasti, kde má iba dve možné pozície, sa tieto bunky označia dvoma striedajúcimi sa farbami, pričom jedna z nich je všade pravdivá. Dve bunky druhej farby sú v rovnakom bloku, čo nie je možné – táto farba je teda nepravdivá a %2$s sa vylúči zo všetkých buniek tejto farby."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Porovnajte vynucovacie reťazce a uprednostnite tie s menším počtom políčok na sledovanie. Kratšie reťazce môžu znamenať viac krokov v celkovom riešení."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Dôsledok %1$s z %2$s · hypotetické číslice"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"obsahuje"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Pokračovať v celej trase"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Spor · predpoklad zlyhal"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", spor"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Držte telefón vodorovne"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Držte telefón vodorovne nad hlavolamom."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Držte telefón vodorovne nad hlavolamom"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Ako to nájsť"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nAko k tomu dospejeme:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Hľadajte políčka s presne dvoma kandidátmi – technika Y-wing pozostáva z troch takýchto políčok a ničoho iného.\n\nJedno zvoľte ako pivot, povedzme {2,5}. Hľadajte políčko, na ktoré vidí a ktoré obsahuje {2,9}, a ďalšie, na ktoré vidí a ktoré obsahuje {5,9}. Pivot je buď 2 alebo 5. Ak je to 2, prvé rameno musí byť 9; ak je to 5, druhé musí byť 9. Tak či onak sa v jednom z ramien objaví 9 – neviete v ktorom a ani to nepotrebujete vedieť.\n\nŽiadne políčko, ktoré vidí obe ramená, teda nemôže byť 9. Tieto políčka sú zvyčajne dva rohy, ktoré dopĺňajú obdĺžnik."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Jedinečný obdĺžnik"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"jednotka"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Nepodarilo sa načítať nesprístupňuje žiadny zoznam CellReading; presné vstupné bunky a výsledok sa zachovajú."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nepodporovaná verzia formátu modelu"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Neisté"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Použiť jazyk zariadenia"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Nepodarilo sa načítať"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Napísané"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Nesprávne"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

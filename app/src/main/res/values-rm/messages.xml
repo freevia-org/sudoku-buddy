@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"po cuntegnair mo"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Interrumper"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidats %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Cumprova da captura"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Collia ina cifra en ina chadaina tras las unitads nua ch\'ella ha mo duas posiziuns, colurescha la chadaina alternantamain cun duas colurs, ed ina colur è correcta dapertut."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Cun colliar %1$s tras las unitads nua ch\'el ha mo duas posiziuns pussaivlas, survegnan questas cellas duas colurs alternantas, ed ina da quellas è valaivla dapertut. Duas cellas da l\'autra colur sa chattan en la medema lingia, quai ch\'è impussibel - pia è quella colur faussa, e %2$s vegn eliminà da mintga cella cun quella colur."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Cun colliar %1$s tras las unitads nua ch\'el ha mo duas posiziuns pussaivlas, survegnan questas cellas duas colurs alternantas, ed ina da quellas è valaivla dapertut. Duas cellas da l\'autra colur sa chattan en il medem bloc, quai ch\'è impussibel - pia è quella colur faussa, e %2$s vegn eliminà da mintga cella cun quella colur."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Cumpareglia chadainas da sfurzament e preferescha quellas cun main cellas da suandar. Chadainas pli curtas pon muntar dapli pass en la soluziun cumpletta."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consequenza %1$s da %2$s · cifras ipoteticas"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"cuntegna"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Cuntinuar cun l\'entira via"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Cuntradicziun · supposiziun faussa"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", cuntradicziun"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tegna il telefon plat"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tegna il telefon plat sur il sudoku."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tegna il telefon plat sur il sudoku"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Co renconuscher in"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCo che nus arrivain là:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Tschertga cellas cun exactamain dus candidats – in Y-Wing consista da trais talas cellas e da nagut auter.\n\nPrenda ina sco pivot, per exempel {2,5}. Tschertga ina cella ch\'ella vesa cun {2,9}, ed in\'autra ch\'ella vesa cun {5,9}. Il pivot è u 2 u 5. Sch\'el è 2, sto l\'emprima pinza esser 9; sch\'el è 5, sto la segunda esser 9. En omadus cas cumpara in 9 en ina da las pinzas – ti na sas betg en tgenina e na stos er betg savair.\n\nPia na po nagina cella che vesa omaduas pinzas esser in 9. Quellas cellas èn per ordinari ils dus chantuns che cumpletteschan il rectangul."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rectangul unic"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unitad"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Nunlegibel na renda accessibla nagina glista CellReading; las casellas d\'entrada exactas ed il resultat vegnan conservads."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"Sbagl d\'utilisaziun d\'in consentiment explicit malsegir"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versiun dal format da model betg sustegnida"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Intschert"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Duvrar la lingua da l\'apparat"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Betg legibel"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Scrit"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Fauss"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Ala X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Chadaina XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Ala XYZ"</string>
