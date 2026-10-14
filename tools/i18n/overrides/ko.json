@@ -1,7 +1,5 @@
 {
-  "\"horizontal\":[{0} ]}}": "\"horizontal\":[{0} ]}}",
   "Check {0} uncertain squares.": "불확실한 칸 {0}개를 확인하세요.",
-  "Content-Type": "Content-Type",
   "In this {0}, {1} can only go in these {2} squares, so those squares are spoken for. That rules {3} out of them.": "이 {0}에서 {1}은(는) 이 {2}개 칸에만 들어갈 수 있으므로, 그 칸들은 해당 숫자들로 채워져야 합니다. 따라서 그 칸들에서 {3}을(를) 제외할 수 있습니다.",
   "Naked": "네이키드",
   "Only {0} can go here. The highlighted squares use up {1} of the other eight digits; {2} {3} ruled out of this square earlier, not by anything you can see around it.": "여기에는 {0}만 들어갈 수 있습니다. 강조된 칸들이 나머지 여덟 숫자 중 {1}개를 차지합니다. {2}: 이전에 이 칸에서 제외{3}. 주변에 보이는 숫자 때문은 아닙니다.",

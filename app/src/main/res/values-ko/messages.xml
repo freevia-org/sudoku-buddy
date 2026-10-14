@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"들어갈 수 있는 숫자는 오직"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"취소"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", 후보 %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"촬영 근거"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"숫자가 들어갈 자리가 두 곳뿐인 행, 열 또는 박스를 따라 체인을 만들고 두 색으로 번갈아 표시하면, 한 색에 해당하는 칸들은 모두 참입니다."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$s이 들어갈 수 있는 칸이 두 개뿐인 영역들을 따라 연결하면, 이 칸들을 두 색으로 번갈아 표시할 수 있으며 어느 한 색의 칸들은 모두 참입니다. 다른 색의 두 칸이 같은 행에 있으므로 모순입니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %2$s을 제거합니다."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$s이 들어갈 수 있는 칸이 두 개뿐인 영역들을 따라 연결하면, 이 칸들을 두 색으로 번갈아 표시할 수 있으며 어느 한 색의 칸들은 모두 참입니다. 다른 색의 두 칸이 같은 박스에 있으므로 모순입니다. 따라서 그 색은 거짓이며, 그 색으로 표시된 모든 칸에서 %2$s을 제거합니다."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"강제 체인을 비교하고 따라가야 할 칸이 적은 체인을 우선합니다. 체인이 짧으면 전체 풀이의 단계 수는 더 많아질 수 있습니다."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"결과 %1$s/%2$s · 가상의 숫자"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"포함한다"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"전체 풀이 과정 계속 보기"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"모순 · 가정 실패"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", 모순"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"휴대전화를 평행하게 유지하세요"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"퍼즐 위에서 휴대전화를 종이와 평행하게 유지하세요."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"퍼즐 위에서 휴대전화를 종이와 평행하게 유지하세요"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"찾는 방법"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n답에 이르는 과정:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"후보가 정확히 두 개인 칸을 찾으세요. Y-윙은 이런 칸 세 개로만 이루어집니다.\n\n하나를 중심 칸으로 삼으세요. 예를 들어 {2,5}입니다. 중심 칸과 같은 행, 열 또는 박스에 있는 {2,9} 칸과 {5,9} 칸을 찾으세요. 중심 칸은 2 또는 5입니다. 2이면 첫 번째 날개는 반드시 9이고, 5이면 두 번째 날개는 반드시 9입니다. 어느 경우든 날개 하나에는 9가 들어갑니다. 어느 날개인지는 모르지만 알 필요도 없습니다.\n\n따라서 두 날개 모두와 같은 행, 열 또는 박스에 있는 칸에는 9가 들어갈 수 없습니다. 그런 칸은 보통 직사각형을 완성하는 두 모서리입니다."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"유일 직사각형"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"단위"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"인식 불가 결과는 CellReading 목록을 제공하지 않습니다. 정확한 입력 칸과 결과는 유지됩니다."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"지원하지 않는 모델 형식 버전"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"불확실"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"기기 언어 사용"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"인식 실패"</string>
     <string name="msg_written_4c6031d1" formatted="false">"손글씨"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"틀림"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-윙"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-체인"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-윙"</string>

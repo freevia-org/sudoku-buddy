@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"ne peut contenir que"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Annuler"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidats %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Enchaînez un chiffre à travers les unités où il n\'a que deux emplacements, coloriez la chaîne en deux couleurs alternées, et l\'une des couleurs est vraie d\'un bout à l\'autre."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"En reliant les positions de %1$s dans les unités où il n\'a que deux positions possibles, on colore ces cases avec deux couleurs alternées, dont l\'une est correcte partout. Deux cases de l\'autre couleur se trouvent sur la même ligne, ce qui est impossible : cette couleur est donc incorrecte, et %2$s est éliminé de toutes les cases qui la portent."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"En reliant les positions de %1$s dans les unités où il n\'a que deux positions possibles, on colore ces cases avec deux couleurs alternées, dont l\'une est correcte partout. Deux cases de l\'autre couleur se trouvent dans la même région, ce qui est impossible : cette couleur est donc incorrecte, et %2$s est éliminé de toutes les cases qui la portent."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Comparez les chaînes de forçage et préférez celles ayant moins de cases à suivre. Des chaînes plus courtes peuvent impliquer davantage d\'étapes dans la solution complète."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Conséquence %1$s sur %2$s · chiffres hypothétiques"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"contient"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Poursuivre avec le chemin complet"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradiction · l\'hypothèse échoue"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contradiction"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tenez le téléphone à plat"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tenez le téléphone bien à plat au-dessus de la grille."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tenez le téléphone bien à plat au-dessus de la grille"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Comment en repérer"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nLe raisonnement :"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Cherchez des cases avec exactement deux candidats — un Y-wing est composé de trois de ces cases et de rien d\'autre.\n\nPrenez-en une comme pivot, disons {2,5}. Cherchez une case qu\'elle peut voir contenant {2,9}, et une autre qu\'elle peut voir contenant {5,9}. Le pivot est soit 2, soit 5. S\'il est 2, la première pince doit être 9 ; s\'il est 5, la seconde doit être 9. Dans les deux cas, un 9 apparaît dans l\'une des pinces — vous ne savez pas laquelle, et vous n\'avez pas besoin de le savoir.\n\nAinsi, aucune case pouvant voir les deux pinces ne peut être un 9. Ces cases sont généralement les deux coins qui complètent le rectangle."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rectangle unique"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unité"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Illisible n\'expose aucune liste CellReading ; les cases d\'entrée exactes et le résultat sont conservés."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"version de format de modèle non prise en charge"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Incertain"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Utiliser la langue de l’appareil"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Lecture impossible"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Inscrits"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Faux"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

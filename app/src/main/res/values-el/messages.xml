@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"μπορεί να περιέχει μόνο"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Ακύρωση"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", υποψήφιοι %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Συνδέστε ένα ψηφίο μέσω των μονάδων όπου έχει μόνο δύο θέσεις, χρωματίστε την αλυσίδα με δύο εναλλασσόμενα χρώματα, και ένα χρώμα είναι αληθές σε όλη της την έκταση."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Συνδέοντας το %1$s σε αλυσίδα μέσα από τις μονάδες όπου έχει μόνο δύο δυνατές θέσεις, αυτά τα κελιά αποκτούν δύο εναλλασσόμενα χρώματα, από τα οποία το ένα είναι σωστό σε όλη την αλυσίδα. Δύο κελιά του άλλου χρώματος βρίσκονται στην ίδια γραμμή, πράγμα αδύνατο — άρα αυτό το χρώμα είναι το λανθασμένο και το %2$s αποκλείεται από κάθε κελί με αυτό το χρώμα."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Συνδέοντας το %1$s σε αλυσίδα μέσα από τις μονάδες όπου έχει μόνο δύο δυνατές θέσεις, αυτά τα κελιά αποκτούν δύο εναλλασσόμενα χρώματα, από τα οποία το ένα είναι σωστό σε όλη την αλυσίδα. Δύο κελιά του άλλου χρώματος βρίσκονται στο ίδιο κουτί, πράγμα αδύνατο — άρα αυτό το χρώμα είναι το λανθασμένο και το %2$s αποκλείεται από κάθε κελί με αυτό το χρώμα."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Συγκρίνετε τις αναγκαστικές αλυσίδες και προτιμήστε αυτές με λιγότερα τετράγωνα να ακολουθήσετε. Οι πιο σύντομες αλυσίδες μπορεί να σημαίνουν περισσότερα βήματα στη συνολική λύση."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Συνέπεια %1$s από %2$s · υποθετικά ψηφία"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"περιέχει"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Συνέχεια με την πλήρη διαδρομή"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Αντίφαση · η υπόθεση αποτυγχάνει"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", αντίφαση"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Κρατήστε το τηλέφωνο επίπεδο"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Κρατήστε το τηλέφωνο επίπεδο πάνω από το παζλ."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Κρατήστε το τηλέφωνο επίπεδο πάνω από το παζλ"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Πώς να εντοπίσετε ένα"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nΠώς φτάνουμε εκεί:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Ψάξτε για τετράγωνα με ακριβώς δύο υποψηφίους — ένα Y-wing αποτελείται από τρία μόνο από αυτά.\n\nΧρησιμοποιήστε ένα ως κόμβο, π.χ. {2,5}. Ψάξτε για ένα τετράγωνο που βλέπει με {2,9} και ένα άλλο που βλέπει με {5,9}. Ο κόμβος είναι είτε 2 είτε 5. Αν είναι 2, η πρώτη λαβίδα πρέπει να είναι 9· αν είναι 5, η δεύτερη πρέπει να είναι 9. Σε κάθε περίπτωση ένα 9 εμφανίζεται σε μία από τις λαβίδες — δεν ξέρετε ποια, και δεν χρειάζεται να ξέρετε.\n\nΆρα κανένα τετράγωνο που μπορεί να δει και τις δύο λαβίδες δεν μπορεί να είναι 9. Αυτά τα τετράγωνα είναι συνήθως οι δύο γωνίες που συμπληρώνουν το ορθογώνιο."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Μοναδικό ορθογώνιο"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"μονάδα"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Το Unreadable δεν εκθέτει λίστα CellReading· τα ακριβή κελιά εισόδου και το αποτέλεσμα διατηρούνται."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"μη υποστηριζόμενη έκδοση μορφής μοντέλου"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Αβέβαιο"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Χρήση γλώσσας συσκευής"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Δεν αναγνώστηκε"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Χειρόγραφο"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Λάθος"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

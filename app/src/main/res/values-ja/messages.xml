@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"入れられるのは"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"キャンセル"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">"、候補%1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"撮影の証拠"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"ある数字が2か所にしか入らない行・列・ブロックを通して連鎖を作り、2色で交互に色分けすると、一方の色はすべて正しい配置になります。"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$sの候補位置が2か所だけの行・列・ブロックを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じ行にありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$sの候補位置が2か所だけの行・列・ブロックを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じブロックにありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"強制連鎖を比較し、たどるマスが少ないものを優先します。連鎖が短いと、解答全体の手順が増えることがあります。"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"帰結%1$s/%2$s · 仮の数字"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"含む"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"コンテンツタイプ"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"全手順を続ける"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"矛盾 · 仮定が不成立"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">"、矛盾"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"端末を水平にしてください"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"問題の真上で端末を水平にしてください。"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"問題の真上で端末を水平にしてください"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"見つけ方"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n答えに至る手順："</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"候補がちょうど2つのマスを探します。Yウィングは、そのようなマス3つだけで構成されます。\n\n1つを軸にします。たとえば{2,5}です。軸と同じ行・列・ブロックにあり、{2,9}を持つマスと、{5,9}を持つ別のマスを探します。軸は2か5です。2なら最初の挟みマスは9になり、5なら2つ目の挟みマスは9になります。どちらの場合も、一方の挟みマスに9が入ります。どちらかは分かりませんが、知る必要もありません。\n\nそのため、両方の挟みマスと同じ行・列・ブロックにあるマスには9を入れられません。通常、これらのマスは長方形を完成させる残り2つの角です。"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"ユニークレクタングル"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"ユニット"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"読み取り不能の場合、CellReadingリストは公開されません。入力された正確なマス情報と結果は保持されます。"</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"安全でないオプトイン使用エラー"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"未対応のモデル形式バージョン"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"不確か"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"端末の言語を使用"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"読み取り不可"</string>
     <string name="msg_written_4c6031d1" formatted="false">"手書き"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"誤り"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Xウィング"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XYチェーン"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZウィング"</string>

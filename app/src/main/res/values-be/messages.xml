@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"можа змяшчаць толькі"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Адмена"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", кандыдаты %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Пабудуйце ланцужок для лічбы праз групы, дзе яна мае толькі два магчымыя месцы, расфарбуйце ланцужок па чарзе ў два колеры, і адзін колер будзе адпавядаць праўдзівым значэнням паўсюль."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Калі злучыць ланцужком %1$s праз групы, дзе для гэтай лічбы ёсць толькі дзве пазіцыі, гэтыя клеткі афарбуюцца ў два колеры па чарзе, прычым адзін колер паўсюль адпавядае праўдзівым значэнням. Дзве клеткі іншага колеру знаходзяцца ў адным радку, што немагчыма — значыць, гэты колер адпавядае памылковым значэнням, і %2$s выключаецца з усіх клетак гэтага колеру."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Калі злучыць ланцужком %1$s праз групы, дзе для гэтай лічбы ёсць толькі дзве пазіцыі, гэтыя клеткі афарбуюцца ў два колеры па чарзе, прычым адзін колер паўсюль адпавядае праўдзівым значэнням. Дзве клеткі іншага колеру знаходзяцца ў адным блоку, што немагчыма — значыць, гэты колер адпавядае памылковым значэнням, і %2$s выключаецца з усіх клетак гэтага колеру."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Параўноўвайце прымушальныя ланцужкі і аддавайце перавагу тым, дзе трэба адсочваць менш клетак. Больш кароткія ланцужкі могуць азначаць больш крокаў у поўным рашэнні."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Вынік %1$s з %2$s · гіпатэтычныя лічбы"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"змяшчае"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Працягнуць поўны маршрут"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Супярэчнасць · дапушчэнне памылковае"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", супярэчнасць"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Трымайце тэлефон роўна"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Трымайце тэлефон роўна над галаваломкай."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Трымайце тэлефон роўна над галаваломкай"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Як выявіць"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nЯк мы да гэтага прыходзім:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Шукайце клеткі роўна з двума кандыдатамі — Y-wing складаецца з трох такіх клетак і больш нічога.\n\nВазьміце адну ў якасці стрыжня (pivot), напрыклад {2,5}. Знайдзіце клетку, якую яна бачыць, з {2,9}, і іншую, якую яна бачыць, з {5,9}. Стрыжань роўны альбо 2, альбо 5. Калі гэта 2, першы шчыпец павінен быць 9; калі гэта 5, другі павінен быць 9. У любым выпадку 9 з\'яўляецца ў адным са шчыпцоў — вы не ведаеце, у якім, і вам гэта не трэба.\n\nТакім чынам, ні адна клетка, якая бачыць абодва шчыпцы, не можа быць 9. Звычайна гэта два куты, якія дабудоўваюць прамавугольнік."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Унікальны прамавугольнік (Unique rectangle)"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"група"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Для нечытэльнага спіс CellReading не прадстаўляецца; дакладныя ўваходныя клеткі і вынік захоўваюцца."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"непадтрымліваемая версія фармату мадэлі"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Няўпэўнена"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Выкарыстоўваць мову прылады"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Не ўдалося счытаць"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Упісаная"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Няправільна"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-ланцужок (XY-chain)"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

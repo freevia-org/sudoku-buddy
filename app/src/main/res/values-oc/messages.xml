@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"pòt conténer sonque"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Anullar"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidats %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Encadenatz un chifre a travèrs las unitats ont a pas que doas plaças, coloratz la cadena amb doas colors alternadas, e una color es vertadièra pertot."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"En encadenant %1$s dins las unitats ont a sonque doas posicions possiblas, aquelas casas prenon doas colors alternadas, una de las qualas es vertadièra pertot. Doas casas de l\'autra color son dins la meteissa linha, çò qu\'es impossible - aquela color es doncas falsa, e %2$s es eliminat de cada casa d\'aquela color."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"En encadenant %1$s dins las unitats ont a sonque doas posicions possiblas, aquelas casas prenon doas colors alternadas, una de las qualas es vertadièra pertot. Doas casas de l\'autra color son dins lo meteis blòt, çò qu\'es impossible - aquela color es doncas falsa, e %2$s es eliminat de cada casa d\'aquela color."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Comparar las cadenas de forçament e privilegiar aquelas amb mens de casas de seguir. De cadenas mai cortas pòdon implicar mai de passes dins la solucion completa."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consequéncia %1$s de %2$s · chifres ipotetics"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"conten"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Contunhar amb lo percors complet"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradiccion · l’ipotèsi fracassa"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contradiccion"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tenètz lo telefòn a plat"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tenètz lo telefòn a plat dessús la grasilha."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tenètz lo telefòn a plat dessús la grasilha"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Cossí ne reperar un"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCossí i arribam :"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Cercatz de casas amb exactament dos candidats — una ala Y es formada de tres casas d’aquela mena e de res mai.\n\nPrenètz-ne una coma pivòt, per exemple {2,5}. Cercatz una casa que vei e que conten {2,9}, e una autra que vei e que conten {5,9}. Lo pivòt es siá 2, siá 5. S’es 2, la primièra pinça deu èsser 9 ; s’es 5, la segonda deu èsser 9. Dins totes los cases, un 9 apareis dins una de las pinças — sabètz pas quina, e n’avètz pas besonh.\n\nDoncas, cap de casa que pòt veire las doas pinças pòt pas èsser un 9. Aquelas casas son generalament los dos angles que complètan lo rectangle."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Rectangle unic"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unitat"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Illegible expausa pas cap de lista CellReading ; las casas d\'entrada exactas e lo resultat son conservats."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"version del format de modèl pas presa en carga"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Incèrt"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Utilizar la lenga de l\'aparelh"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Lectura impossibla"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Escrit"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Erronèu"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Ala X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Cadena XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Ala XYZ"</string>

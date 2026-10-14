@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"में केवल ये संभव हैं"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"रद्द करें"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", संभावित अंक %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"कैप्चर प्रमाण"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"किसी अंक को उन इकाइयों में जोड़कर श्रृंखला बनाएँ जहाँ उसके लिए केवल दो जगहें हों। श्रृंखला को बारी-बारी से दो रंग दें; इनमें से एक रंग पूरी श्रृंखला में सही होगा।"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"जिन इकाइयों में %1$s के केवल दो संभावित स्थान हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में रंगे जाते हैं। इनमें से एक रंग के सभी खाने सही होते हैं। दूसरे रंग के दो खाने एक ही पंक्ति में हैं, जो संभव नहीं है—इसलिए वह रंग गलत है और उस रंग के हर खाने से %2$s हटा दिया जाता है।"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"जिन इकाइयों में %1$s के केवल दो संभावित स्थान हैं, उनमें उसकी श्रृंखला बनाने पर ये खाने बारी-बारी से दो रंगों में रंगे जाते हैं। इनमें से एक रंग के सभी खाने सही होते हैं। दूसरे रंग के दो खाने एक ही बॉक्स में हैं, जो संभव नहीं है—इसलिए वह रंग गलत है और उस रंग के हर खाने से %2$s हटा दिया जाता है।"</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"फोर्सिंग चेन की तुलना करें और उन श्रृंखलाओं को प्राथमिकता दें जिनमें कम खानों का क्रम देखना पड़े। छोटी श्रृंखलाओं से पूरे समाधान में अधिक चरण लग सकते हैं।"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"%2$s में से परिणाम %1$s · काल्पनिक अंक"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"में है"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"पूरा क्रम जारी रखें"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"विरोधाभास · मान्यता विफल"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", विरोधाभास"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"फ़ोन सपाट रखें"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"फ़ोन पहेली के ऊपर सपाट रखें।"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"फ़ोन पहेली के ऊपर सपाट रखें"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"कैसे पहचानें"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nयहाँ तक कैसे पहुँचे:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"ऐसे खाने खोजें जिनमें ठीक दो संभावित अंक हों — Y-विंग ऐसे ही तीन खानों से बनता है, और किसी से नहीं।\n\nएक को केंद्र मानें, जैसे {2,5}। ऐसा खाना ढूँढें जिसे वह देख सकता हो और जिसमें {2,9} हों, और दूसरा दिखाई देने वाला खाना जिसमें {5,9} हों। केंद्र में या तो 2 है या 5। यदि 2 है, तो पहले सिरे में 9 होना चाहिए; यदि 5 है, तो दूसरे में 9 होना चाहिए। दोनों ही स्थितियों में किसी एक सिरे पर 9 होगा — आपको नहीं पता किस पर, और जानना ज़रूरी भी नहीं है।\n\nइसलिए जो खाना दोनों सिरों को देख सकता है, उसमें 9 नहीं हो सकता। ये खाने आम तौर पर आयत को पूरा करने वाले दो कोने होते हैं।"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"यूनिक रेक्टैंगल"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"इकाई"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"अपठनीय स्थिति कोई CellReading सूची उपलब्ध नहीं कराती; सटीक इनपुट खाने और परिणाम सुरक्षित रखे जाते हैं।"</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"मॉडल प्रारूप का संस्करण समर्थित नहीं है"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"अनिश्चित"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"डिवाइस की भाषा इस्तेमाल करें"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"पहचाना नहीं जा सका"</string>
     <string name="msg_written_4c6031d1" formatted="false">"लिखित"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"गलत"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-विंग"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-चेन"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-विंग"</string>

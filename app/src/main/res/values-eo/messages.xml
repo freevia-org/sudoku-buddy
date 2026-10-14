@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"povas enhavi nur"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Nuligi"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidatoj %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Ĉenigu ciferon tra la unuoj, kie ĝi havas nur du eblajn lokojn, kolorigu la ĉenon per du alternaj koloroj, kaj unu koloro veras ĉie."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Ĉenante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, oni kolorigas ĉi tiujn ĉelojn per du alternantaj koloroj, el kiuj unu validas tra la tuta ĉeno. Du ĉeloj de la alia koloro troviĝas en la sama vico, kio estas neebla - do tiu koloro estas malvalida, kaj %2$s estas forigita el ĉiu ĉelo de tiu koloro."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Ĉenante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, oni kolorigas ĉi tiujn ĉelojn per du alternantaj koloroj, el kiuj unu validas tra la tuta ĉeno. Du ĉeloj de la alia koloro troviĝas en la sama bloko, kio estas neebla - do tiu koloro estas malvalida, kaj %2$s estas forigita el ĉiu ĉelo de tiu koloro."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Komparu devigajn ĉenojn kaj preferu tiujn kun malpli da sekvendaj ĉeloj. Pli mallongaj ĉenoj povas signifi pli da paŝoj en la plena solvo."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Sekvo %1$s el %2$s · hipotezaj ciferoj"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"enhavas"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Daŭrigi laŭ la plena vojo"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Kontraŭdiro · supozo malsukcesas"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", kontraŭdiro"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tenu la telefonon paralela al la enigmo"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tenu la telefonon super la enigmo kaj paralela al ĝi."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tenu la telefonon super la enigmo kaj paralela al ĝi"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Kiel rekoni ĝin"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nKiel ni atingas tion:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Serĉu ĉelojn kun precize du kandidatoj — Y-alo konsistas el tri tiaj kaj nenio alia.\n\nPrenu unu kiel pivoton, ekzemple {2,5}. Serĉu ĉelon, kiun ĝi vidas, kun {2,9}, kaj alian, kiun ĝi vidas, kun {5,9}. La pivoto estas aŭ 2 aŭ 5. Se ĝi estas 2, la unua pinĉilo devas esti 9; se ĝi estas 5, la dua devas esti 9. Ĉiukaze 9 aperas en unu el la pinĉiloj — vi ne scias en kiu, kaj vi ne bezonas scii.\n\nDo neniu ĉelo, kiu vidas ambaŭ pinĉilojn, povas esti 9. Tiuj ĉeloj kutime estas la du anguloj, kiuj kompletigas la rektangulon."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unika rektangulo"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unuo"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Nelegebla elmontras neniun liston CellReading; la precizaj enigaj ĉeloj kaj rezulto estas retenataj."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nesubtenata versio de modelformato"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Necerta"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Uzi aparatan lingvon"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Ne legeblis"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Skribita"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Malĝusta"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-alo"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-ĉeno"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-alo"</string>

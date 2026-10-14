@@ -14,6 +14,11 @@ ROOT = Path(__file__).resolve().parents[2]
 RES = ROOT / "app/src/main/res"
 ASSETS = ROOT / "app/src/main/assets"
 SOLVER_WORDS = set("none one two three four five six seven eight contains was were rows columns unit".split())
+# These source literals are protocol/debug identifiers, never displayed through
+# localized(). Date-format patterns intentionally remain presentation resources.
+NON_PRESENTATION_LITERALS = {
+    "Content-Type", "X-Sudoku-Training-Consent", "CaptureEvidence", "UnsafeOptInUsageError",
+}
 
 def evidence_sources():
     # NakedSingle/HiddenSingle concatenate a verb between literals, and
@@ -172,6 +177,9 @@ def extract(write=True):
                 raw += strings[i][2]; end = strings[i][1]
             value = template(raw)
             if (re.search(r"[A-Za-z]{2}", value) and not re.search(r"[A-Za-z]:/", value)
+                    and value not in NON_PRESENTATION_LITERALS
+                    # Serialization property names are protocol data, not UI.
+                    and not re.search(r'"[A-Za-z_]\w*"\s*:', value)
                     and (" " in value or value[:1].isupper() or value.strip() in SOLVER_WORDS | {"row", "column", "box", "and", "or", "empty"})
                     and len(value) < 6000):
                 sources.add(value)

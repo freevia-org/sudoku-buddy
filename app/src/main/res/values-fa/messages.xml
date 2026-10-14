@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"فقط می‌تواند داشته باشد"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"لغو"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">"، کاندیدها %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"شواهد ثبت تصویر"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"یک رقم را در واحدهایی که فقط دو جای ممکن برایش دارند زنجیر کنید، زنجیره را با دو رنگ متناوب رنگ کنید؛ یکی از رنگ‌ها در سراسر زنجیره درست است."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"با زنجیره‌کردن %1$s در واحدهایی که فقط دو جای ممکن برای آن دارند، این خانه‌ها به‌تناوب دو رنگ می‌گیرند که یکی از آن‌ها در سراسر زنجیره درست است. دو خانه از رنگ دیگر در یک ردیف قرار دارند که ناممکن است؛ پس آن رنگ نادرست است و %2$s از تمام خانه‌های آن رنگ حذف می‌شود."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"با زنجیره‌کردن %1$s در واحدهایی که فقط دو جای ممکن برای آن دارند، این خانه‌ها به‌تناوب دو رنگ می‌گیرند که یکی از آن‌ها در سراسر زنجیره درست است. دو خانه از رنگ دیگر در یک بلوک قرار دارند که ناممکن است؛ پس آن رنگ نادرست است و %2$s از تمام خانه‌های آن رنگ حذف می‌شود."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"زنجیره‌های اجباری را مقایسه کنید و زنجیره‌هایی را ترجیح دهید که خانه‌های کمتری برای دنبال کردن دارند. زنجیره‌های کوتاه‌تر ممکن است مراحل بیشتری در حل کامل ایجاد کنند."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"پیامد %1$s از %2$s · رقم‌های فرضی"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"شامل"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"ادامه با مسیر کامل"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"تناقض · فرض رد می‌شود"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">"، تناقض"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"گوشی را موازی صفحه نگه دارید"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"گوشی را موازی با صفحه، بالای معما نگه دارید."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"گوشی را موازی با صفحه، بالای معما نگه دارید"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"روش تشخیص"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nچطور به این نتیجه می‌رسیم:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"دنبال خانه‌هایی با دقیقاً دو کاندید بگردید؛ بال Y فقط از سه خانهٔ این‌چنینی تشکیل می‌شود.\n\nیکی را محور بگیرید، مثلاً {2,5}. دنبال خانه‌ای بگردید که محور آن را می‌بیند و {2,9} دارد، و خانهٔ دیگری که آن را می‌بیند و {5,9} دارد. محور یا 2 است یا 5. اگر 2 باشد، بازوی اول باید 9 باشد؛ اگر 5 باشد، بازوی دوم باید 9 باشد. در هر حالت، یک 9 در یکی از بازوها قرار می‌گیرد؛ نمی‌دانید کدام و نیازی هم ندارید.\n\nپس هیچ خانه‌ای که هر دو بازو را می‌بیند نمی‌تواند 9 باشد. این خانه‌ها معمولاً دو گوشه‌ای هستند که مستطیل را کامل می‌کنند."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"مستطیل یکتا"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"واحد"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable هیچ فهرست CellReading ارائه نمی‌کند؛ خانه‌های دقیق ورودی و نتیجه نگهداری می‌شوند."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"نسخهٔ قالب مدل پشتیبانی نمی‌شود"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"نامطمئن"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"استفاده از زبان دستگاه"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"خوانده نشد"</string>
     <string name="msg_written_4c6031d1" formatted="false">"دست‌نویس"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"نادرست"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"بال X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"زنجیرهٔ XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"بال XYZ"</string>

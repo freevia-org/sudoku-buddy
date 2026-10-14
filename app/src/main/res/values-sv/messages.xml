@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"kan bara innehålla"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Avbryt"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidater %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Bildtagningsunderlag"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Följ en siffra genom enheter där den bara har två möjliga platser, färga kedjan med två växlande färger, så är en färg sann genom hela kedjan."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Om vi bildar en kedja med %1$s genom de enheter där siffran bara har två möjliga placeringar får dessa rutor två växlande färger, varav den ena är sann genom hela kedjan. Två rutor med den andra färgen ligger i samma rad, vilket är omöjligt – alltså är den färgen falsk, och %2$s tas bort från alla rutor med den färgen."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Om vi bildar en kedja med %1$s genom de enheter där siffran bara har två möjliga placeringar får dessa rutor två växlande färger, varav den ena är sann genom hela kedjan. Två rutor med den andra färgen ligger i samma block, vilket är omöjligt – alltså är den färgen falsk, och %2$s tas bort från alla rutor med den färgen."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Jämför tvingande kedjor och föredra dem som har färre rutor att följa. Kortare kedjor kan innebära fler steg i hela lösningen."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Följd %1$s av %2$s · hypotetiska siffror"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"innehåller"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Fortsätt med hela vägen"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Motsägelse · antagandet håller inte"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", motsägelse"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Håll telefonen parallellt med pappret"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Håll telefonen parallellt med pappret ovanför sudokut."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Håll telefonen parallellt med pappret ovanför sudokut"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Så hittar du en"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSå kommer vi dit:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Leta efter rutor med exakt två kandidater – en Y-wing består av tre sådana och inget annat.\n\nVälj en som nav, till exempel {2,5}. Leta efter en ruta som navet ser med {2,9}, och en annan som det ser med {5,9}. Navet är antingen 2 eller 5. Om det är 2 måste den första vingen vara 9; om det är 5 måste den andra vara 9. I båda fallen finns en 9 i någon av vingarna – du vet inte vilken, och det behöver du inte heller.\n\nAlltså kan ingen ruta som ser båda vingarna vara 9. Dessa rutor är oftast de två hörn som fullbordar rektangeln."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unik rektangel"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"enhet"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Oläsbar exponerar ingen CellReading-lista; de exakta indatarutorna och resultatet behålls."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"modellformatets version stöds inte"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Osäker"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Använd enhetens språk"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Kunde inte läsas"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Skriven"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Fel"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-vinge"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-kedja"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-vinge"</string>

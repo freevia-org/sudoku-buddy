@@ -1,5 +1,9 @@
 """Coverage regressions for presentation fragments and privacy notices."""
 import unittest
+import tempfile
+from pathlib import Path
+from unittest.mock import patch
+import catalog
 from catalog import extract, solver_variants, evidence_sources
 
 
@@ -25,6 +29,27 @@ class CatalogTest(unittest.TestCase):
         sources = {entry["source"] for entry in extract(write=False)}
         self.assertIn("No images are attached automatically. Reports and attachments submitted here "
                       "are public. Use info@freevia.org for examples you prefer to send privately.", sources)
+
+    def test_serialization_fragment_is_excluded_but_submission_error_is_localized(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "app/src/main/kotlin/MisreadSubmission.kt"
+            source.parent.mkdir(parents=True)
+            source.write_text(r'''
+                append("\"horizontal\":[${lines.joinToString(",")} ]}}")
+                setRequestProperty("Content-Type", "application/zip")
+                setRequestProperty("X-Sudoku-Training-Consent", consent)
+                Log.w("CaptureEvidence", error)
+                @SuppressLint("UnsafeOptInUsageError")
+                localized("EEEE, MMMM d, yyyy")
+                check(size < limit) { "The report is too large to submit." }
+            ''', encoding="utf-8")
+            with patch.object(catalog, "ROOT", root):
+                sources = {entry["source"] for entry in catalog.extract(write=False)}
+            self.assertNotIn('"horizontal":[{0} ]}}', sources)
+            self.assertTrue(catalog.NON_PRESENTATION_LITERALS.isdisjoint(sources))
+            self.assertIn("EEEE, MMMM d, yyyy", sources)
+            self.assertIn("The report is too large to submit.", sources)
 
 
 if __name__ == "__main__":

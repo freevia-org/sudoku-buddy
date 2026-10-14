@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"chỉ có thể chứa"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Hủy"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", ứng viên %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Bằng chứng chụp ảnh"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Nối một số thành chuỗi qua các đơn vị mà nó chỉ có hai vị trí, tô chuỗi bằng hai màu xen kẽ; một màu sẽ đúng trên toàn chuỗi."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Nối chuỗi %1$s qua các đơn vị mà nó chỉ có hai vị trí có thể điền sẽ tô các ô này bằng hai màu xen kẽ, trong đó một màu đúng trên toàn bộ chuỗi. Hai ô mang màu còn lại nằm trong cùng hàng, điều này không thể xảy ra — nên màu đó là màu sai, và loại %2$s khỏi mọi ô mang màu đó."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Nối chuỗi %1$s qua các đơn vị mà nó chỉ có hai vị trí có thể điền sẽ tô các ô này bằng hai màu xen kẽ, trong đó một màu đúng trên toàn bộ chuỗi. Hai ô mang màu còn lại nằm trong cùng khối, điều này không thể xảy ra — nên màu đó là màu sai, và loại %2$s khỏi mọi ô mang màu đó."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"So sánh các chuỗi suy luận bắt buộc và ưu tiên chuỗi có ít ô cần theo dõi hơn. Chuỗi ngắn hơn có thể khiến toàn bộ lời giải cần nhiều bước hơn."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Hệ quả %1$s trên %2$s · các số giả định"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"chứa"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Tiếp tục theo toàn bộ lộ trình"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Mâu thuẫn · giả định sai"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", mâu thuẫn"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Giữ điện thoại song song với mặt giấy"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Giữ điện thoại song song phía trên câu đố."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Giữ điện thoại song song phía trên câu đố"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Cách nhận biết"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCách suy ra kết quả:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Tìm các ô có đúng hai ứng viên - Y-wing gồm đúng ba ô như vậy.\n\nChọn một ô làm trục, chẳng hạn {2,5}. Tìm một ô mà nó nhìn thấy có {2,9}, và một ô khác mà nó nhìn thấy có {5,9}. Ô trục là 2 hoặc 5. Nếu là 2, cánh thứ nhất phải là 9; nếu là 5, cánh thứ hai phải là 9. Dù thế nào, một trong hai cánh cũng có 9 - bạn chưa biết cánh nào và cũng không cần biết.\n\nVì vậy, không ô nào nhìn thấy cả hai cánh có thể là 9. Những ô đó thường là hai góc hoàn thiện hình chữ nhật."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Hình chữ nhật duy nhất"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"đơn vị"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Không đọc được không cung cấp danh sách CellReading; các ô đầu vào chính xác và kết quả được giữ lại."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"phiên bản định dạng mô hình không được hỗ trợ"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Chưa chắc chắn"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Dùng ngôn ngữ thiết bị"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Không nhận dạng được"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Viết tay"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Sai"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Chuỗi XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

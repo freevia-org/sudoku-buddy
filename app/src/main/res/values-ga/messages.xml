@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"ní féidir a bheith inti ach"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Cealaigh"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", iarrthóirí %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"FianaiseGabhála"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Déan slabhra de dhigit trí na haonaid nach bhfuil ach dhá áit aici iontu, dathaigh an slabhra le dhá dhath gach re seach, agus tá dath amháin fíor ar fad."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Trí %1$s a nascadh ina shlabhra trí na haonaid nach bhfuil ach dhá shuíomh fhéideartha aige iontu, cuirtear dhá dhath mhalartacha ar na cealla seo, agus tá ceann acu fíor ar fud an tslabhra. Tá dhá chill den dath eile sa ró céanna, rud nach féidir a bheith ann - mar sin is é sin an dath bréagach, agus baintear %2$s as gach cill den dath sin."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Trí %1$s a nascadh ina shlabhra trí na haonaid nach bhfuil ach dhá shuíomh fhéideartha aige iontu, cuirtear dhá dhath mhalartacha ar na cealla seo, agus tá ceann acu fíor ar fud an tslabhra. Tá dhá chill den dath eile sa bhosca céanna, rud nach féidir a bheith ann - mar sin is é sin an dath bréagach, agus baintear %2$s as gach cill den dath sin."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Cuir slabhraí éigeantacha i gcomparáid agus tabhair tosaíocht dóibh siúd a bhfuil níos lú cealla le leanúint iontu. D\'fhéadfadh níos mó céimeanna sa réiteach iomlán a bheith i gceist le slabhraí níos giorra."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Iarmhairt %1$s de %2$s · digití hipitéiseacha"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"tá inti"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Cineál Ábhair"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Lean ar aghaidh leis an gcosán iomlán"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contrárthacht · teipeann ar an toimhde"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contrárthacht"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Coinnigh an fón cothrom"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Coinnigh an fón cothrom os cionn an phuzail."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Coinnigh an fón cothrom os cionn an phuzail"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Conas ceann a aithint"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nConas a shroichimid é:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Lorg cealla a bhfuil dhá iarrthóir go díreach iontu - tá sciathán Y déanta de thrí cinn díobh agus de rud ar bith eile.\n\nGlac ceann mar mhaighdeog, mar shampla {2,5}. Lorg cill a fheiceann sí a bhfuil {2,9} inti, agus ceann eile a fheiceann sí a bhfuil {5,9} inti. Is é 2 nó 5 atá sa mhaighdeog. Más é 2 é, caithfidh 9 a bheith sa chéad phionsúr; más é 5 é, caithfidh 9 a bheith sa dara ceann. Ar aon nós tá 9 i gceann de na pionsúir - níl a fhios agat cén ceann, agus ní gá duit é a bheith ar eolas agat.\n\nMar sin ní féidir 9 a bheith in aon chill a fheiceann an dá phionsúr. De ghnáth is iad na cealla sin an dá chúinne a chríochnaíonn an dronuilleog."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Dronuilleog uathúil"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"aonad"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Ní nochtann Neamhléite aon liosta CellReading; coinnítear na cealla ionchuir cruinne agus an toradh."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"EarráidÚsáideNeamhshábháilteLeToiliú"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"leagan neamhthacaithe d\'fhormáid na samhla"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Neamhchinnte"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Úsáid teanga an ghléis"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Níorbh fhéidir é a léamh"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Scríofa"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Mícheart"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"Sciathán X"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Slabhra XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"Sciathán XYZ"</string>

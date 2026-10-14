@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"kan berre innehalde"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Avbryt"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidatar %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Opptaksgrunnlag"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Lag ei kjede av eit siffer gjennom einingane der det berre har to plassar, fargelegg kjeda med to vekselvise fargar, og éin farge er sann gjennom heile kjeda."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Ved å lenkje %1$s gjennom einingane der sifferet berre har to moglege plassar, får desse rutene to vekselvise fargar. Éin av fargane er rett gjennom heile kjeda. To ruter med den andre fargen ligg i same rad, noko som er umogleg – så den fargen er feil, og %2$s blir fjerna frå alle ruter med den fargen."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Ved å lenkje %1$s gjennom einingane der sifferet berre har to moglege plassar, får desse rutene to vekselvise fargar. Éin av fargane er rett gjennom heile kjeda. To ruter med den andre fargen ligg i same boks, noko som er umogleg – så den fargen er feil, og %2$s blir fjerna frå alle ruter med den fargen."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Samanlikn tvangskjeder og føretrekk dei med færre ruter å følgje. Kortare kjeder kan gje fleire steg i den fullstendige løysinga."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Konsekvens %1$s av %2$s · hypotetiske siffer"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"inneheld"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Hald fram med heile løysingsgangen"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Motseiing · føresetnaden held ikkje"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", motseiing"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Hald telefonen vassrett"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Hald telefonen vassrett over oppgåva."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Hald telefonen vassrett over oppgåva"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Slik finn du ein"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSlik kjem vi fram til svaret:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Leit etter ruter med nøyaktig to kandidatar – ei Y-vinge består av tre slike og ingenting anna.\n\nBruk éi som pivotpunkt, til dømes {2,5}. Sjå etter ei rute ho ser med {2,9}, og ei anna ho ser med {5,9}. Pivotpunktet er anten 2 eller 5. Er det 2, må den første klemma vere 9; er det 5, må den andre vere 9. Uansett dukkar ein 9 opp i ei av klemmene – du veit ikkje kva for ei, og treng heller ikkje vite det.\n\nSå inga rute som ser begge klemmene, kan vere 9. Desse rutene er vanlegvis dei to hjørna som fullfører rektangelet."</string>
@@ -375,7 +372,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Avlesinga er gjennomgått."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Avlesinga er send inn. Takk!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnostikk frå siste skanningar (førehandsutfylt)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Attkjenning kan ta feil, særleg ved handskrift. Bruk Les for å samanlikne dei attkjende sifra med biletet, og trykk på ei rute for å rette henne. Appen markerer usikre avlesingar for gjennomgang; ei sikker avlesing kan framleis vere feil."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Attkjenning kan ta feil, særleg ved handskrift. Bruk “Lesing” for å samanlikne dei attkjende sifra med biletet, og trykk på ei rute for å rette henne. Appen markerer usikre avlesingar for gjennomgang; ei sikker avlesing kan framleis vere feil."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Forkast føresetnaden"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Fjerne par"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Fjern %1$s"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unikt rektangel"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"eining"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Uleseleg viser inga CellReading-liste; nøyaktige inndataruter og resultatet blir tekne vare på."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"FeilVedUtryggSamtykkebruk"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"formatversjonen til modellen er ikkje støtta"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Usikker"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Bruk språket på eininga"</string>
@@ -559,7 +555,7 @@
     <string name="msg_why_d3ae14a5" formatted="false">"Kvifor"</string>
     <string name="msg_why_not_0_1_3eb81faf" formatted="false">"Kvifor ikkje %1$s? · %2$s"</string>
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Kvifor denne ruta? · %1$s"</string>
-    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" med løysinga. Bruk Sjekk for å sjå på dei."</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" med løysinga. Bruk “Kontroller” for å sjå på dei."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Arbeid bakover frå ruta di. Vel eit spørsmål nedanfor."</string>
     <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Arbeid siffer for siffer i staden for rute for rute. Skriv ned kvar kvart manglande siffer framleis kan stå i éi eining. Sjå så etter %1$s siffer med lister som til saman berre dekkjer %2$s ruter.\n\nDesse %3$s sifra må fylle desse %4$s rutene, så alt anna i dei kan strykast – noko som ofte gjev ein naken singel i éi av rutene eller eit nakent par i to av dei med ein gong.\n\nDette er teknikken folk synest er vanskelegast, fordi det ikkje er noko å sjå når du ser på rutene: dei har framleis mange kandidatar. Mønsteret ligg i sifra."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Arbeid berre med ruter som har nøyaktig to kandidatar att.\n\nStart i éi, til dømes {2,6}, og føreset at ho ikkje er 2 – då er ho 6. Gå til ei rute ho ser som òg har ein 6, til dømes {6,4}: den kan ikkje vere 6, så ho er 4. Gå til ei rute denne ser med ein 4, og hald fram, med kvart steg tvinga av det førre.\n\nDersom du når ei rute der det andre sifferet er 2 – sifferet du starta med å utelukke – er du ferdig. Anten var den første ruta likevel 2, eller så gjekk kjeda gjennom og den siste ruta er 2. Den eine eller den andre enden inneheld det, så alt som ser begge endane, kan ikkje gjere det.\n\nHald kjedene korte. Fire eller fem ruter kan du finne med blyant; utover det driv du med bokføring, og ei tvingande kjede er det rette namnet på det."</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Kunne ikkje lesast"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Skrive"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Feil"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-veng"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-kjede"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-veng"</string>

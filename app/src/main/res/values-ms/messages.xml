@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"hanya boleh mengandungi"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Batal"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", calon %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"BuktiTangkapan"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Rantaikan satu digit melalui unit yang hanya mempunyai dua tempat untuknya, warnakan rantaian dengan dua warna berselang-seli, dan satu warna adalah benar sepanjang rantaian."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Merantaikan %1$s melalui unit yang mempunyai hanya dua kedudukan yang mungkin untuknya memberikan dua warna berselang-seli kepada sel-sel ini, dengan salah satu warna benar di semua selnya. Dua sel dengan warna yang satu lagi berada dalam baris yang sama, yang mustahil - jadi warna itu salah, dan %2$s disingkirkan daripada setiap sel berwarna itu."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Merantaikan %1$s melalui unit yang mempunyai hanya dua kedudukan yang mungkin untuknya memberikan dua warna berselang-seli kepada sel-sel ini, dengan salah satu warna benar di semua selnya. Dua sel dengan warna yang satu lagi berada dalam kotak yang sama, yang mustahil - jadi warna itu salah, dan %2$s disingkirkan daripada setiap sel berwarna itu."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Bandingkan rantaian paksaan dan utamakan yang mempunyai lebih sedikit sel untuk diikuti. Rantaian lebih pendek boleh bermakna lebih banyak langkah dalam penyelesaian penuh."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Akibat %1$s daripada %2$s · digit hipotesis"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"mengandungi"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Teruskan dengan laluan penuh"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Percanggahan · andaian gagal"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", percanggahan"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Pegang telefon secara mendatar"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Pegang telefon secara mendatar di atas teka-teki."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Pegang telefon secara mendatar di atas teka-teki"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Cara mengenal pastinya"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nCara kita sampai ke sini:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Cari sel dengan tepat dua calon - Y-wing terdiri daripada tiga sel sebegini sahaja.\n\nAmbil satu sebagai pangsi, misalnya {2,5}. Cari sel yang berkongsi unit dengannya dan mengandungi {2,9}, serta satu lagi yang berkongsi unit dengannya dan mengandungi {5,9}. Pangsi itu sama ada 2 atau 5. Jika 2, penyepit pertama mesti 9; jika 5, penyepit kedua mesti 9. Apa pun keadaannya, 9 muncul dalam salah satu penyepit - anda tidak tahu yang mana, dan tidak perlu tahu.\n\nJadi tiada sel yang berkongsi unit dengan kedua-dua penyepit boleh mengandungi 9. Sel itu biasanya ialah dua penjuru yang melengkapkan segi empat tepat."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Segi empat tepat unik"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unit"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable tidak mendedahkan senarai CellReading; sel input tepat dan hasil dikekalkan."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versi format model tidak disokong"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Tidak pasti"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Gunakan bahasa peranti"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Tidak dapat dibaca"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Bertulis"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Salah"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"Rantai XY"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

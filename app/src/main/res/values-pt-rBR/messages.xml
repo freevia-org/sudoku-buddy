@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"só pode conter"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Cancelar"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidatos %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Encadeie um dígito através das unidades onde ele tem apenas duas posições, pinte a cadeia com duas cores alternadas e uma das cores será verdadeira em toda a extensão."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Encadear %1$s pelas unidades em que ele tem apenas duas posições possíveis deixa estas células com duas cores alternadas, uma das quais é verdadeira em toda a cadeia. Duas células da outra cor estão na mesma linha, o que é impossível — portanto, essa cor é falsa, e %2$s é eliminado de todas as células dessa cor."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Encadear %1$s pelas unidades em que ele tem apenas duas posições possíveis deixa estas células com duas cores alternadas, uma das quais é verdadeira em toda a cadeia. Duas células da outra cor estão no mesmo quadrante, o que é impossível — portanto, essa cor é falsa, e %2$s é eliminado de todas as células dessa cor."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Compare cadeias de forçamento e prefira aquelas com menos células a seguir. Cadeias mais curtas podem significar mais etapas na solução completa."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consequência %1$s de %2$s · dígitos hipotéticos"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"contém"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Continuar com o caminho completo"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradição · a suposição falha"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contradição"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mantenha o telefone plano"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mantenha o telefone plano sobre o quebra-cabeça."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mantenha o telefone plano sobre o quebra-cabeça"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Como identificar"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nComo chegamos lá:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Procure por células com exatamente dois candidatos - uma Y-wing é composta por três delas e nada mais.\n\nPegue uma como o pivô, digamos {2,5}. Procure uma célula que ela veja contendo {2,9}, e outra que ela veja contendo {5,9}. O pivô é 2 ou 5. Se for 2, a primeira pinça deve ser 9; se for 5, a segunda deve ser 9. De qualquer forma, um 9 aparece em uma das pinças - você não sabe em qual, e não precisa saber.\n\nAssim, nenhuma célula que possa ver ambas as pinças pode ser um 9. Essas células geralmente são os dois cantos que completam o retângulo."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Retângulo único"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unidade"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Não legível não expõe lista de CellReading; células exatas de entrada e resultado são retidos."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"versão de formato de modelo não suportada"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Incerto"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Usar o idioma do dispositivo"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Não foi possível ler"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Escrito"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Incorreto"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

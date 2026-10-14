@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"getur aðeins innihaldið"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Hætta við"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", möguleikar %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Myndgögn"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Tengdu tölustaf í keðju gegnum einingar þar sem hann á aðeins tvo staði, litaðu keðjuna til skiptis í tveimur litum og annar liturinn er réttur alla leið."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Með því að tengja %1$s í keðju gegnum einingar þar sem tölustafurinn hefur aðeins tvo mögulega staði fá þessir reitir tvo liti til skiptis. Annar liturinn er réttur í allri keðjunni. Tveir reitir með hinn litinn eru í sömu röð, sem er ómögulegt. Sá litur er því rangur og %2$s er útilokað úr öllum reitum með þann lit."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Með því að tengja %1$s í keðju gegnum einingar þar sem tölustafurinn hefur aðeins tvo mögulega staði fá þessir reitir tvo liti til skiptis. Annar liturinn er réttur í allri keðjunni. Tveir reitir með hinn litinn eru í sama kassa, sem er ómögulegt. Sá litur er því rangur og %2$s er útilokað úr öllum reitum með þann lit."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Berðu saman þvingunarkeðjur og veldu helst þær sem hafa færri reiti til að fylgja. Styttri keðjur geta þýtt fleiri skref í heildarlausninni."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Afleiðing %1$s af %2$s · tilgátutölustafir"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"inniheldur"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Halda áfram með alla leiðina"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Mótsögn · tilgátan stenst ekki"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", mótsögn"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Haltu símanum láréttum"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Haltu símanum samsíða blaðinu yfir þrautinni."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Haltu símanum samsíða blaðinu yfir þrautinni"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Hvernig má finna þetta"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nSvona komumst við þangað:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Leitaðu að reitum með nákvæmlega tvo möguleika – Y-vængur samanstendur af þremur slíkum og engu öðru.\n\nVeldu einn sem miðreit, til dæmis {2,5}. Leitaðu að reit sem hann sér með {2,9} og öðrum sem hann sér með {5,9}. Miðreiturinn er annaðhvort 2 eða 5. Ef hann er 2 verður fyrri armreiturinn að vera 9; ef hann er 5 verður sá síðari að vera 9. Hvort heldur sem er birtist 9 í öðrum armreitnum – þú veist ekki hvorum og þarft þess ekki.\n\nÞví getur enginn reitur sem sér báða armreitina verið 9. Þeir reitir eru yfirleitt hornin tvö sem fullgera rétthyrninginn."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Einkvæmur rétthyrningur"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"eining"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable veitir engan CellReading-lista; nákvæmir inntaksreitir og niðurstaða eru varðveitt."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"útgáfa líkanssniðs er ekki studd"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Óvíst"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Nota tungumál tækis"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Tókst ekki að lesa"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Skrifað"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Rangt"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-vængur"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-keðja"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-vængur"</string>

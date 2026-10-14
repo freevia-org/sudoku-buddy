@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"může obsahovat pouze"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Zrušit"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidáti %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Zřetězte číslici napříč jednotkami, kde má pouze dvě umístění, obarvěte řetězec dvěma střídavými barvami a jedna z barev bude platit v celém rozsahu."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Zřetězením %1$s přes řádky, sloupce a bloky, kde má jen dvě možné pozice, se tato políčka střídavě obarví dvěma barvami. Jedna z barev označuje správné umístění ve všech svých políčkách. Dvě políčka druhé barvy leží ve stejném řádku, což není možné – tato barva tedy označuje nesprávné umístění a %2$s se vyloučí ze všech políček této barvy."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Zřetězením %1$s přes řádky, sloupce a bloky, kde má jen dvě možné pozice, se tato políčka střídavě obarví dvěma barvami. Jedna z barev označuje správné umístění ve všech svých políčkách. Dvě políčka druhé barvy leží ve stejném bloku, což není možné – tato barva tedy označuje nesprávné umístění a %2$s se vyloučí ze všech políček této barvy."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Porovnávejte vynucující řetězce a dávejte přednost těm s méně poli ke sledování. Kratší řetězce mohou znamenat více kroků v celkovém řešení."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Důsledek %1$s z %2$s · hypotetické číslice"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"obsahuje"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Pokračovat s celým postupem"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Spor · předpoklad selhal"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", spor"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Držte telefon rovně"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Držte telefon rovně nad hlavolamem."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Držte telefon rovně nad hlavolamem"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Jak to rozpoznat"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nJak k tomu dojdeme:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Hledejte pole s přesně dvěma kandidáty – Y-wing se skládá ze tří takových a z ničeho jiného.\n\nVezměte jedno jako pivot, řekněme {2,5}. Hledejte pole, na které vidí, s hodnotami {2,9}, a další, na které vidí, s hodnotami {5,9}. Pivot je buď 2, nebo 5. Pokud je to 2, první klepeto musí být 9; pokud je to 5, druhé musí být 9. V každém případě se v jednom z klepet objeví 9 – nevíte ve kterém, a ani to nepotřebujete vědět.\n\nŽádné pole, které vidí obě klepeta, tedy nemůže být 9. Tato pole jsou obvykle dva rohy, které doplňují obdélník."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Jedinečný obdélník"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"jednotka"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Nečitelné nevystavuje žádný seznam CellReading; přesné vstupní buňky a výsledek jsou zachovány."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nepodporovaná verze formátu modelu"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Nejisté"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Použít jazyk zařízení"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Nepodařilo se načíst"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Vepsáno"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Špatně"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

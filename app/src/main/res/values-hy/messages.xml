@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"կարող է պարունակել միայն"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Չեղարկել"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", թեկնածուներ՝ %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Շղթայեք մի թվանշան այն միավորների միջով, որտեղ այն միայն երկու տեղ ունի, շղթան ներկեք հերթագայող երկու գույնով․ գույներից մեկը ճիշտ է ամբողջ շղթայում։"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$s-ի շղթան այն խմբերով, որտեղ այն ունի միայն երկու հնարավոր տեղ, այս բջիջները ներկում է երկու հերթագայող գույներով, որոնցից մեկի բոլոր բջիջներում այն ճիշտ է։ Մյուս գույնի երկու բջիջ գտնվում են նույն տողում, ինչը հնարավոր չէ, ուստի այդ գույնը սխալն է, և %2$s-ը հեռացվում է այդ գույնի բոլոր բջիջներից։"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$s-ի շղթան այն խմբերով, որտեղ այն ունի միայն երկու հնարավոր տեղ, այս բջիջները ներկում է երկու հերթագայող գույներով, որոնցից մեկի բոլոր բջիջներում այն ճիշտ է։ Մյուս գույնի երկու բջիջ գտնվում են նույն բլոկում, ինչը հնարավոր չէ, ուստի այդ գույնը սխալն է, և %2$s-ը հեռացվում է այդ գույնի բոլոր բջիջներից։"</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Համեմատել պարտադրող շղթաները և նախընտրել ավելի քիչ բջիջներ ունեցողները։ Ավելի կարճ շղթաները կարող են ամբողջ լուծման մեջ ավելի շատ քայլեր պահանջել։"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Հետևանք %1$s՝ %2$s-ից · ենթադրյալ թվանշաններ"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"պարունակում է"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Շարունակել ամբողջ ուղիով"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Հակասություն · ենթադրությունը չի հաստատվում"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", հակասություն"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Հեռախոսը պահեք հարթ"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Հեռախոսը պահեք գլուխկոտրուկի վերևում՝ դրան զուգահեռ։"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Հեռախոսը պահեք գլուխկոտրուկի վերևում՝ դրան զուգահեռ"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Ինչպես հայտնաբերել"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nԻնչպես ենք հասնում դրան․"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Փնտրեք ճիշտ երկու թեկնածու ունեցող բջիջներ․ Y-թևը կազմված է դրանցից երեքից և ուրիշ ոչնչից։\n\nՄեկն ընտրեք որպես հենակետ, օրինակ՝ {2,5}։ Փնտրեք դրա տեսած բջիջ, որը պարունակում է {2,9}, և մեկ այլ տեսանելի բջիջ՝ {5,9}։ Հենակետը կա՛մ 2 է, կա՛մ 5։ Եթե 2 է, առաջին թևը պետք է լինի 9, եթե 5 է՝ երկրորդը պետք է լինի 9։ Երկու դեպքում էլ թևերից մեկում հայտնվում է 9․ չգիտեք՝ որում, և պետք էլ չէ իմանալ։\n\nՈւստի երկու թևերն էլ տեսնող ոչ մի բջիջ չի կարող լինել 9։ Այդ բջիջները սովորաբար ուղղանկյունը լրացնող երկու անկյուններն են։"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Եզակի ուղղանկյուն"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"միավոր"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable-ը CellReading ցուցակ չի տրամադրում․ մուտքային վանդակների ճշգրիտ տվյալներն ու արդյունքը պահպանվում են։"</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"մոդելի ձևաչափի չաջակցվող տարբերակ"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Անորոշ"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Օգտագործել սարքի լեզուն"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Չհաջողվեց ճանաչել"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Գրված"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Սխալ"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-թև"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-շղթա"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-թև"</string>

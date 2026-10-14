@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"може да побере само"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Отказ"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", кандидати %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Свържете цифра във верига през редовете, колоните и блоковете, където има само две възможни места, оцветете веригата в два редуващи се цвята и единият цвят е верен навсякъде."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Свързването на %1$s във верига през редовете, колоните и блоковете, където има само две възможни позиции, оцветява тези клетки в два редуващи се цвята, като единият е верен навсякъде. Две клетки с другия цвят са в един и същ ред, което е невъзможно — следователно този цвят е неверният и %2$s се изключва от всяка клетка с него."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Свързването на %1$s във верига през редовете, колоните и блоковете, където има само две възможни позиции, оцветява тези клетки в два редуващи се цвята, като единият е верен навсякъде. Две клетки с другия цвят са в един и същ блок, което е невъзможно — следователно този цвят е неверният и %2$s се изключва от всяка клетка с него."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Сравнявайте принуждаващите вериги и предпочитайте тези с по-малко клетки за проследяване. По-късите вериги могат да означават повече стъпки в пълното решение."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Последица %1$s от %2$s · хипотетични цифри"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"съдържа"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Продължаване с пълния маршрут"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Противоречие · допускането е невалидно"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", противоречие"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Дръжте телефона водоравно"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Дръжте телефона водоравно над пъзела."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Дръжте телефона водоравно над пъзела"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Как се забелязва"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nКак стигаме дотам:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Търсете клетки с точно два кандидата – Y-wing се състои от три такива и нищо друго.\n\nВземете една за опорен елемент, да речем {2,5}. Потърсете клетка, която тя вижда, съдържаща {2,9}, и друга, която тя вижда, съдържаща {5,9}. Опорният елемент е или 2, или 5. Ако е 2, първото разклонение трябва да бъде 9; ако е 5, второто трябва да бъде 9. И в двата случая в едно от разклоненията се появява 9 – не знаете в кое, а и няма нужда.\n\nТака че никоя клетка, която вижда и двете разклонения, не може да бъде 9. Тези клетки обикновено са двата ъгъла, които допълват правоъгълника."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Уникален правоъгълник"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"група"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Нечетливо не разкрива списък CellReading; точните входни клетки и изходът се запазват."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"неподдържана версия на формата на модела"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Несигурно"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Използване на езика на устройството"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Невъзможно разчитане"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Написано"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Грешно"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

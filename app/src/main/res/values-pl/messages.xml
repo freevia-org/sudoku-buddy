@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"może zawierać tylko"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Anuluj"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandydaci %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Połącz cyfrę łańcuchem przez jednostki, w których ma tylko dwa miejsca, pokoloruj łańcuch dwoma naprzemiennymi kolorami – jeden kolor jest prawdziwy w całości."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Łańcuch dla %1$s, prowadzony przez obszary, w których ma tylko dwie możliwe pozycje, oznacza te komórki naprzemiennie dwoma kolorami. Jeden z kolorów jest prawdziwy w całym łańcuchu. Dwie komórki drugiego koloru leżą w tym samym wierszu, co jest niemożliwe — ten kolor jest więc fałszywy i można wykluczyć %2$s z każdej komórki w tym kolorze."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Łańcuch dla %1$s, prowadzony przez obszary, w których ma tylko dwie możliwe pozycje, oznacza te komórki naprzemiennie dwoma kolorami. Jeden z kolorów jest prawdziwy w całym łańcuchu. Dwie komórki drugiego koloru leżą w tym samym bloku, co jest niemożliwe — ten kolor jest więc fałszywy i można wykluczyć %2$s z każdej komórki w tym kolorze."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Porównuj łańcuchy wymuszające i preferuj te z mniejszą liczbą pól do śledzenia. Krótsze łańcuchy mogą oznaczać więcej kroków w pełnym rozwiązaniu."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Konsekwencja %1$s z %2$s · hipotetyczne cyfry"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"zawiera"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Kontynuuj z pełną ścieżką"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Sprzeczność · założenie upada"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", sprzeczność"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Trzymaj telefon płasko"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Trzymaj telefon płasko nad łamigłówką."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Trzymaj telefon płasko nad łamigłówką"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Jak to zauważyć"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nJak do tego dochodzimy:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Szukaj pól z dokładnie dwoma kandydatami – Y-wing składa się z trzech takich pól i niczego więcej.\n\nWeź jedno jako zwornik, powiedzmy {2,5}. Poszukaj pola, które ono widzi, zawierającego {2,9}, i drugiego, które widzi, zawierającego {5,9}. Zwornik to albo 2, albo 5. Jeśli to 2, pierwsze ramię musi zawierać 9; jeśli to 5, drugie musi zawierać 9. W obu przypadkach 9 pojawia się w jednym z ramion – nie wiesz w którym i nie musisz wiedzieć.\n\nZatem żadne pole widzące oba ramiona nie może zawierać 9. Te pola to zazwyczaj dwa narożniki dopełniające prostokąt."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unikalny prostokąt"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"grupa"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Wartość Unreadable nie ujawnia listy CellReading; zachowywane są dokładne komórki wejściowe i wynik."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nieobsługiwana wersja formatu modelu"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Niepewne"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Użyj języka urządzenia"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Nie udało się odczytać"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Wpisane"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Błędne"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

@@ -1,7 +1,6 @@
 {
   " {0} in the same {1}.": " {0} в той же области ({1}).",
   "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of {1} colour sit in the same {2}, which cannot be - so that colour is the false one, and {3} goes from every square wearing it.": "Цепочка цифры {0} через области, где у неё лишь два возможных места, раскрашивает эти клетки двумя чередующимися цветами. Один из цветов верен во всей цепочке. Две клетки одного цвета ({1}) находятся в одной области ({2}), что невозможно. Значит, этот цвет неверный, и {3} исключается из всех клеток этого цвета.",
-  "Content-Type": "Content-Type",
   "Contradiction: the red {0} has nowhere left for {1}. This is impossible, so the starting assumption must fail.": "Противоречие: в выделенной красным области ({0}) не осталось места для {1}. Это невозможно, значит, исходное предположение неверно.",
   "Hidden": "Скрытая",
   "In these two {0}, {1} has only two homes each, and {2} and {3} share a {4} - so they cannot both be {5}. One of {6} and {7} therefore is, which rules {8} out of every square that sees them both.": "Рассмотрим две линии ({0}). В каждой из них у {1} лишь два возможных места, а {2} и {3} находятся в одной области ({4}), поэтому обе клетки не могут содержать {5}. Значит, в одной из клеток {6} и {7} эта цифра есть, и {8} можно исключить из всех клеток, которые видят обе.",

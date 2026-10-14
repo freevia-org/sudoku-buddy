@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"只能填入"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"取消"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">"，候選數 %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"擷取依據"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"沿著某數字只剩兩個可填位置的單元建立鏈，以兩種顏色交替標記整條鏈，其中一種顏色的所有格子都成立。"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"沿著 %1$s 只有兩個可能位置的單元建立鏈，將這些格子交替標成兩種顏色，其中一種顏色的所有格子都成立。另一種顏色的兩格位於同一橫列，這不可能成立，因此該顏色代表不成立，所有標有該顏色的格子都可排除 %2$s。"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"沿著 %1$s 只有兩個可能位置的單元建立鏈，將這些格子交替標成兩種顏色，其中一種顏色的所有格子都成立。另一種顏色的兩格位於同一宮，這不可能成立，因此該顏色代表不成立，所有標有該顏色的格子都可排除 %2$s。"</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"比較強制鏈，優先選擇需要追蹤較少格子的鏈。較短的鏈可能讓完整解答需要更多步驟。"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"推演結果 %1$s/%2$s · 假設數字"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"包含"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"繼續完整解題路徑"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"矛盾 · 假設不成立"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">"，矛盾"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"讓手機保持水平"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"讓手機在題目上方保持水平。"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"讓手機在題目上方保持水平"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"尋找方法"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n推導過程："</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"尋找恰好有兩個候選數的格子－Y 翼由三個這樣的格子組成，沒有其他格子。\n\n選一格作為樞紐格，例如 {2,5}。找一格與它互見、候選數為 {2,9} 的格子，再找另一格與它互見、候選數為 {5,9} 的格子。樞紐格不是 2 就是 5。若是 2，第一個翼格必須是 9；若是 5，第二個翼格必須是 9。無論如何，其中一個翼格一定是 9－你不知道是哪一格，也不需要知道。\n\n因此，所有同時與兩個翼格互見的格子都不能是 9。這些格子通常是補成矩形的另外兩個角。"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"唯一矩形"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"單元"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"無法辨識的結果不提供 CellReading 清單；確切的輸入格及結果會保留。"</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"不安全的選擇加入使用錯誤"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"不支援的模型格式版本"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"不確定"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"使用裝置語言"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"無法辨識"</string>
     <string name="msg_written_4c6031d1" formatted="false">"手寫"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"錯誤"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X 翼"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY 鏈"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ 翼"</string>

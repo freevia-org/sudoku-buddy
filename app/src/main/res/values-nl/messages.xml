@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"kan alleen bevatten"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Annuleren"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidaten %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Koppel een cijfer door de eenheden waarin het maar twee plekken heeft, geef de keten twee afwisselende kleuren, en één kleur is overal waar."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Door %1$s te volgen door de eenheden waarin het maar twee mogelijke posities heeft, krijgen deze cellen twee afwisselende kleuren. Eén kleur is overal juist. Twee cellen van de andere kleur liggen in dezelfde rij, wat onmogelijk is. Die kleur is dus onjuist en %2$s vervalt in elke cel met die kleur."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Door %1$s te volgen door de eenheden waarin het maar twee mogelijke posities heeft, krijgen deze cellen twee afwisselende kleuren. Eén kleur is overal juist. Twee cellen van de andere kleur liggen in hetzelfde blok, wat onmogelijk is. Die kleur is dus onjuist en %2$s vervalt in elke cel met die kleur."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Vergelijk forceerketens en geef de voorkeur aan ketens met minder te volgen vakjes. Kortere ketens kunnen meer stappen in de volledige oplossing betekenen."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Gevolg %1$s van %2$s · hypothetische cijfers"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"bevat"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Doorgaan met de volledige route"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Tegenspraak · aanname faalt"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", tegenspraak"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Houd de telefoon plat"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Houd de telefoon plat boven de puzzel."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Houd de telefoon plat boven de puzzel"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Hoe je er een herkent"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nHoe we er komen:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Zoek naar vakjes met precies twee kandidaten - een Y-wing bestaat uit drie daarvan en niets anders.\n\nNeem er één als draaipunt, zeg {2,5}. Zoek naar een vakje dat het kan zien met {2,9}, en een ander dat het kan zien met {5,9}. Het draaipunt is 2 of 5. Als het 2 is, moet de eerste knijper 9 zijn; als het 5 is, moet de tweede 9 zijn. Hoe dan ook verschijnt er een 9 in een van de knijpers - je weet niet welke, en dat hoeft ook niet.\n\nGeen enkel vakje dat beide knijpers kan zien kan dus een 9 zijn. Die vakjes zijn meestal de twee hoeken die de rechthoek compleet maken."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unieke rechthoek"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"eenheid"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Onleesbaar toont geen CellReading-lijst; exacte invoercellen en resultaat worden bewaard."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"niet-ondersteunde modelformaatversie"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Onzeker"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Apparaattaal gebruiken"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Kon niet worden gelezen"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Geschreven"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Fout"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

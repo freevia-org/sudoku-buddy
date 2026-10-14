@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"galimi tik"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Atšaukti"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidatai %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"Fiksavimo įrodymai"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Sudarykite skaitmens grandinę per grupes, kuriose jis turi tik dvi galimas vietas, nuspalvinkite grandinę dviem besikeičiančiomis spalvomis: viena spalva bus teisinga visoje grandinėje."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Sujungus %1$s grandine per grupes, kuriose šis skaitmuo turi tik dvi galimas vietas, šie langeliai nuspalvinami dviem pakaitomis einančiomis spalvomis. Vienos spalvos langeliai visi teisingi. Du kitos spalvos langeliai yra toje pačioje eilutėje, o taip būti negali, todėl ši spalva klaidinga ir %2$s pašalinamas iš visų ja pažymėtų langelių."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Sujungus %1$s grandine per grupes, kuriose šis skaitmuo turi tik dvi galimas vietas, šie langeliai nuspalvinami dviem pakaitomis einančiomis spalvomis. Vienos spalvos langeliai visi teisingi. Du kitos spalvos langeliai yra tame pačiame bloke, o taip būti negali, todėl ši spalva klaidinga ir %2$s pašalinamas iš visų ja pažymėtų langelių."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Palyginkite priverstines grandines ir pirmenybę teikite toms, kuriose reikia sekti mažiau langelių. Trumpesnės grandinės gali reikšti daugiau žingsnių visame sprendime."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Pasekmė %1$s iš %2$s · hipotetiniai skaitmenys"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"turi"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Turinio tipas"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Tęsti visą eigą"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Prieštara · prielaida klaidinga"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", prieštara"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Laikykite telefoną lygiagrečiai lapui"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Laikykite telefoną virš galvosūkio lygiagrečiai lapui."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Laikykite telefoną virš galvosūkio lygiagrečiai lapui"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Kaip atpažinti"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nKaip prie to prieiname:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Ieškokite langelių su lygiai dviem kandidatais – Y sparną sudaro tik trys tokie langeliai.\n\nVieną pasirinkite atraminiu, tarkime, {2,5}. Ieškokite su juo susijusio langelio su {2,9} ir kito su juo susijusio langelio su {5,9}. Atraminiame langelyje yra 2 arba 5. Jei 2, pirmame sparne turi būti 9; jei 5, antrame turi būti 9. Bet kuriuo atveju viename sparne atsiranda 9 – nežinote kuriame ir to žinoti nereikia.\n\nTodėl jokiame su abiem sparnais susijusiame langelyje negali būti 9. Paprastai tai yra du kampai, užbaigiantys stačiakampį."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unikalus stačiakampis"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"grupė"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable nepateikia CellReading sąrašo; tikslūs įvesties langeliai ir rezultatas išsaugomi."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nepalaikoma modelio formato versija"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Nepatikima"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Naudoti įrenginio kalbą"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Nepavyko atpažinti"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Įrašyta"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Klaidingai"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X sparnas"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY grandinė"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ sparnas"</string>

@@ -4,7 +4,6 @@
   " with the solution. Use Check to inspect them.": " לפתרון. השתמש ב\"בדיקה\" כדי לבחון אותם.",
   " {0} in the same box.": " {0} באותו בלוק.",
   " {0} in the same {1}.": " {0} באותה יחידה: {1}.",
-  "\"horizontal\":[{0} ]}}": "\"horizontal\":[{0} ]}}",
   "A three-candidate pivot with two matching two-candidate pincers forces a digit out of every square that sees all three.": "ציר בעל שלושה מועמדים עם שתי צבתות תואמות בעלות שני מועמדים מאלץ הוצאת ספרה מכל תא הרואה את כל השלושה.",
   "A two-candidate pivot and two two-candidate pincers can force a digit out of every square that sees both pincers.": "ציר בעל שני מועמדים ושתי צבתות בעלות שני מועמדים יכולים לאלץ הוצאת ספרה מכל תא הרואה את שתי הצבתות.",
   "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of one colour sit in the same box, which cannot be - so that colour is the false one, and {1} goes from every square wearing it.": "שרשור {0} דרך היחידות שבהן יש לו רק שני מיקומים אפשריים צובע את התאים האלה בשני צבעים לסירוגין, שאחד מהם נכון לאורך כל השרשרת. שני תאים בצבע אחד נמצאים באותו בלוק, וזה בלתי אפשרי — לכן הצבע הזה שגוי, וניתן לשלול את {1} מכל תא שצבוע בו.",

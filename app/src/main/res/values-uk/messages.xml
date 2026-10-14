@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"може містити лише"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Скасувати"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", кандидати %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"З’єднайте можливі позиції цифри в ланцюжок через групи, де вона має лише дві можливі позиції. Розфарбуйте клітинки ланцюжка двома кольорами, що чергуються: усі клітинки одного з кольорів містять цю цифру."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Якщо побудувати ланцюжок для %1$s через групи, де ця цифра має лише дві можливі позиції, ці клітинки отримають два кольори, що чергуються. Один із кольорів позначає правильні позиції в усьому ланцюжку. Дві клітинки іншого кольору розташовані в одному рядку, що неможливо. Отже, цей колір позначає хибні позиції, і %2$s виключається з усіх клітинок цього кольору."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Якщо побудувати ланцюжок для %1$s через групи, де ця цифра має лише дві можливі позиції, ці клітинки отримають два кольори, що чергуються. Один із кольорів позначає правильні позиції в усьому ланцюжку. Дві клітинки іншого кольору розташовані в одному блоці, що неможливо. Отже, цей колір позначає хибні позиції, і %2$s виключається з усіх клітинок цього кольору."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Порівнювати ланцюжки припущень і вибирати ті, у яких потрібно простежити менше клітинок. Коротші ланцюжки можуть збільшити загальну кількість кроків розв’язання."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Наслідок %1$s з %2$s · гіпотетичні цифри"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"містить"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Продовжити повний шлях"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Суперечність · припущення хибне"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", суперечність"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Тримайте телефон паралельно сторінці"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Тримайте телефон паралельно сторінці над судоку."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Тримайте телефон паралельно сторінці над судоку"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Як знайти"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nХід міркувань:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Шукайте клітинки з рівно двома кандидатами — Y-wing складається з трьох таких клітинок і нічого іншого.\n\nВізьміть одну як опорну, скажімо {2,5}. Пошукайте клітинку, яку вона бачить, що містить {2,9}, та іншу, яку вона бачить, що містить {5,9}. Опорна клітинка містить або 2, або 5. Якщо це 2, перше крило має містити 9; якщо це 5, друге має містити 9. У будь-якому разі 9 з’являється в одному з крил — ви не знаєте, в якому саме, та це й не потрібно.\n\nТому жодна клітинка, яка бачить обидва крила, не може містити 9. Зазвичай це два кути, які доповнюють прямокутник."</string>
@@ -375,7 +372,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Розпізнавання перевірено."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Результат розпізнавання надіслано. Дякуємо!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Нещодавня діагностика сканування (заповнено автоматично)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Розпізнавання може помилятися, особливо з почерком. Використовуйте Переглянути розпізнавання, щоб порівняти розпізнані цифри з фотографією, і торкніться будь-якої клітинки, щоб виправити її. Програма позначає невпевнені результати для перевірки; упевнене розпізнавання також може бути помилковим."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Розпізнавання може помилятися, особливо з почерком. Скористайтеся кнопкою «Розпізнане», щоб порівняти розпізнані цифри з фотографією, і торкніться будь-якої клітинки, щоб виправити її. Програма позначає невпевнені результати для перевірки; упевнене розпізнавання також може бути помилковим."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Відхилити припущення"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Віддалені пари"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Виключіть %1$s"</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Унікальний прямокутник"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"група"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable не надає списку CellReading; точні вхідні клітинки та результат зберігаються."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"непідтримувана версія формату моделі"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Сумнівні"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Мова пристрою"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Не вдалося розпізнати"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Вписані"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Помилка"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>

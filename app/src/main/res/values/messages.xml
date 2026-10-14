@@ -100,7 +100,6 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"can only hold"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Cancel"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", candidates %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Chain a digit through the units where it has only two homes, colour the chain in two alternating colours, and one colour is true throughout."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Chaining %1$s through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of the other colour sit in the same row, which cannot be - so that colour is the false one, and %2$s goes from every square wearing it."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Chaining %1$s through the units where it has only two homes leaves these squares in two alternating colours, one of which is true throughout. Two squares of the other colour sit in the same box, which cannot be - so that colour is the false one, and %2$s goes from every square wearing it."</string>
@@ -127,7 +126,6 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Compare forcing chains and prefer ones with fewer squares to follow. Shorter chains can mean more steps in the full solution."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Consequence %1$s of %2$s · hypothetical digits"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"contains"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Continue with the full route"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Contradiction · assumption fails"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", contradiction"</string>
@@ -234,7 +232,6 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Hold the phone flat"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Hold the phone flat above the puzzle."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Hold the phone flat above the puzzle"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"How to spot one"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nHow we get there:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Hunt for squares with exactly two candidates - a Y-wing is made of three of them and nothing else.\n\nTake one as the pivot, say {2,5}. Look for a square it can see holding {2,9}, and another it can see holding {5,9}. The pivot is either 2 or 5. If it is 2, the first pincer must be 9; if it is 5, the second must be 9. Either way a 9 appears in one of the pincers - you do not know which, and you do not need to.\n\nSo no square that can see both pincers can be a 9. Those squares are usually the two corners that complete the rectangle."</string>
@@ -540,7 +537,6 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unique rectangle"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unit"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Unreadable exposes no CellReading list; exact input cells and outcome are retained."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"unsupported model format version"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Unsure"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Use device language"</string>
@@ -567,7 +563,6 @@
     <string name="msg_would_not_read_750bc135" formatted="false">"Would not read"</string>
     <string name="msg_written_4c6031d1" formatted="false">"Written"</string>
     <string name="msg_wrong_a633bed8" formatted="false">"Wrong"</string>
-    <string name="msg_x_sudoku_training_consent_985a9f5e" formatted="false">"X-Sudoku-Training-Consent"</string>
     <string name="msg_x_wing_e4487586" formatted="false">"X-wing"</string>
     <string name="msg_xy_chain_e9611e56" formatted="false">"XY-chain"</string>
     <string name="msg_xyz_wing_9679f694" formatted="false">"XYZ-wing"</string>
