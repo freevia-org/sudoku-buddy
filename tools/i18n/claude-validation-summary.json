@@ -61,5 +61,6 @@
     "This round is structural validation plus linguistic spot checks, not a new full linguistic review of all messages.",
     "No native-speaker certification, real-camera OCR check or Play publication is implied.",
     "Quoted button names fix label identity; Welsh, Faroese, Frisian, Latvian and Northern Sami surrounding grammar has not been certified by a native speaker."
-  ]
+  ],
+  "independent_final_verification": "Claude verified all 560 translated explicit action references, key and placeholder parity, identifier absence, preserved locale date formats and unchanged bundled button labels. Reviewed the eight replacements individually; Latvian apposition was corrected to Izmantojiet pogu “Atpazīšana”. Welsh and Faroese remain low-confidence native-review items."
 }
