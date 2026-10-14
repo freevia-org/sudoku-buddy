@@ -3,14 +3,14 @@
     <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s、%2$s %3$s、Android %4$s"</string>
     <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\n強調表示されたマスが、その証明の根拠です。\n\nもう一度「ヒント」を押すと、該当するマスを表示します。"</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。この%5$sでは、%6$sを入れられる場所は2つだけで、それぞれが両端の一方と同じ行・列・ブロックにあります。したがって、その2つのどちらかは%7$sになり、それと同じ行・列・ブロックにある端は%8$sになります。どちらの場合も片方の端が%9$sになるため、両端のそれぞれと同じ行・列・ブロックにあるすべてのマスから%10$sを除外できます。"</string>
-    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。このボックスで%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ボックスのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ボックスのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ボックスのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
-    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。この列で%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ボックスのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ボックスのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ボックスのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
-    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。この行で%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ボックスのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ボックスのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ボックスのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。このブロックで%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ブロックのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ブロックのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ブロックのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。この列で%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ブロックのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ブロックのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ブロックのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
+    <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$sと%2$sの候補は、どちらも%3$sと%4$sだけです。この行で%5$sが入る位置は2か所だけで、各位置はそれぞれ一方の端点と行・列・ブロックのいずれかを共有しています。したがって、その2か所のどちらかが%6$sになり、その位置と行・列・ブロックのいずれかを共有する端点は%7$sに確定します。どちらの場合も一方の端点は%8$sになるため、両方の端点と行・列・ブロックのいずれかを共有するすべてのマスから%9$sを除外できます。"</string>
     <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s（API %2$s）"</string>
     <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%2$s行、%3$s列の%1$s%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"ステップ%2$sの%1$s"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$sには%2$sしか入りません。"</string>
-    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%3$sため、%1$sには%2$sを入れられません "</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$sに%2$sが入らない根拠：%3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"同じ列%5$s内の%3$sには%4$sしか入らないため、%1$sに%2$sは入りません。"</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"同じブロック%5$s内の%3$sには%4$sしか入らないため、%1$sに%2$sは入りません。"</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"同じ行%5$s内の%3$sには%4$sしか入らないため、%1$sに%2$sは入りません。"</string>
@@ -22,11 +22,11 @@
     <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s、入力"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"ここには%1$sが入ります。この列%2$sで、まだ%3$sを置けるマスはここだけです。\n\n%4$s\n\n%5$sの現在の候補は%6$sですが、どの列にも%7$sが必ず1つだけ入ります。したがって、行%9$s、列%10$sに%8$sを入れます。"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$sはここに入る必要があります。この%2$s %3$sで、まだ%4$sを入れられるマスはここだけです。\n\n%5$s\n\n%6$sには現在%7$sを入れられますが、すべての%8$sには%9$sがちょうど1つ必要です。したがって、%11$s行、%12$s列に%10$sを入れます。"</string>
-    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"ここには%1$sが入ります。このボックス%2$sで、まだ%3$sを置けるマスはここだけです。\n\n%4$s\n\n%5$sの現在の候補は%6$sですが、どのボックスにも%7$sが必ず1つだけ入ります。したがって、行%9$s、列%10$sに%8$sを入れます。"</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"ここには%1$sが入ります。このブロック%2$sで、まだ%3$sを置けるマスはここだけです。\n\n%4$s\n\n%5$sの現在の候補は%6$sですが、どのブロックにも%7$sが必ず1つだけ入ります。したがって、行%9$s、列%10$sに%8$sを入れます。"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"ここには%1$sが入ります。この行%2$sで、まだ%3$sを置けるマスはここだけです。\n\n%4$s\n\n%5$sの現在の候補は%6$sですが、どの行にも%7$sが必ず1つだけ入ります。したがって、行%9$s、列%10$sに%8$sを入れます。"</string>
     <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$sを入れられる場所は、この行に2つ、この列に2つあります。%2$sと%3$sは同じブロックにあるため、両方が%4$sにはなれません。したがって、%5$sと%6$sのどちらかにその数字が入り、両方のそれぞれと同じ行・列・ブロックにあるすべてのマスから%7$sを除外できます。"</string>
     <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" 同じ%2$s内の%1$s。"</string>
-    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" 同じボックス内の%1$s。"</string>
+    <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" 同じブロック内の%1$s。"</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" 同じ列内の%1$s。"</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" 同じ行内の%1$s。"</string>
     <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"%1$sはそのマスからすでに除外されています。その候補は "</string>
@@ -50,7 +50,7 @@
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"受け付けられなかった写真%1$s枚、新しい順："</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s：%2$sを除外"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"マスの数：%1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"この解答手順は%1$sステップで構成され、対応する解法のうち最も難しいものは%2$sです。%3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"この解答手順は%1$sステップで構成され、対応する解法のうち最も難しいものは%2$sです。%3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$sトリプル"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$sは、それ以前の候補に関する推論によって%2$sから除外されました。"</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"手書き%1$s"</string>
@@ -69,7 +69,7 @@
     <string name="msg_after_7b68fe55" formatted="false">"後"</string>
     <string name="msg_after_this_move_c0f01734" formatted="false">"この手の後"</string>
     <string name="msg_all_correct_97341bb4" formatted="false">"すべて正解"</string>
-    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"この3つのマスにはいずれも%1$sが入り、そのうち1つには必ず入ります。そのため、3つすべてと同じ行・列・ブロックにあるマスには%2$sを入れられません。"</string>
+    <string name="msg_all_three_of_these_squares_can_be_0_and_one_o_1dc58a85" formatted="false">"この3つのマスにはいずれも%1$sが入る可能性があり、そのうち1つには必ず入ります。そのため、3つすべてと同じ行・列・ブロックにあるマスには%2$sを入れられません。"</string>
     <string name="msg_allow_camera_e18835ef" formatted="false">"カメラを許可"</string>
     <string name="msg_almost_hold_the_page_flat_and_square_to_the_c_fc362643" formatted="false">"もう少しです。紙を平らにし、カメラに対して傾きのない状態にしてください"</string>
     <string name="msg_an_elimination_that_removes_nothing_is_not_a__b51c31c1" formatted="false">"何も除外しない操作は推論ではありません"</string>
@@ -102,21 +102,21 @@
     <string name="msg_candidates_0_d3efd4d2" formatted="false">"、候補%1$s"</string>
     <string name="msg_captureevidence_077b226e" formatted="false">"撮影の証拠"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"ある数字が2か所にしか入らない行・列・ブロックを通して連鎖を作り、2色で交互に色分けすると、一方の色はすべて正しい配置になります。"</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じ行にありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じボックスにありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じ列にありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$sの候補位置が2か所だけの行・列・ブロックを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じ行にありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$sの候補位置が2か所だけの行・列・ブロックを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じブロックにありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"%1$sの候補位置が2か所だけの行・列・ブロックを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。もう一方の色の2マスが同じ列にありますが、これは成立しません。そのため、その色の候補は誤りであり、その色のすべてのマスから%2$sを除外できます。"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"%1$sが2か所にしか入らない行・列・ブロックを通して連鎖を作ると、これらのマスは2色に交互に分かれ、一方の色はすべて正しい配置になります。%2$s色の2つのマスが同じ%3$s内にあるのは不可能です。そのため、この色は誤りで、この色のすべてのマスから%4$sを除外できます。"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"%1$sが2か所にしか入らない行・列・ブロックを通して連鎖を作ると、これらのマスは2色に交互に分かれ、一方の色はすべて正しい配置になります。これらのマスは両方の色のマスと同じ行・列・ブロックにあるため、連鎖のどちらの色が正しくても、つながるマスの1つに%2$sが入ります。したがって、これらのマスには入りません。"</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じボックスにありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じ列にありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"%1$sの候補位置が2か所だけの行・列・ボックスを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じ行にありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"%1$sの候補位置が2か所だけの行・列・ブロックを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じブロックにありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"%1$sの候補位置が2か所だけの行・列・ブロックを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じ列にありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"%1$sの候補位置が2か所だけの行・列・ブロックを通って候補を連鎖させると、これらのマスは交互に2色で色分けされ、どちらか一方の色の候補がすべて正しくなります。同じ色の2マスが同じ行にありますが、これは成立しません。そのため、この色の候補は誤りであり、この色のすべてのマスから%2$sを除外できます。"</string>
     <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"確認が必要な不確かなマス：%1$s。"</string>
     <string name="msg_check_9d60841e" formatted="false">"確認"</string>
     <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"不確かなマスを1つ確認してください。"</string>
     <string name="msg_checked_correct_c690d1c3" formatted="false">"、正解と確認済み"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"候補を選ぶと、その数字が選んだマスに入らない理由を確認できます。"</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"言語を選択"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"表示する内容を選択"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"表示する内容を選択"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"閉じる"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"ヒントを閉じる"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"読み取り確認を折りたたむ"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"どれもマスに数字を入れる解法です。"</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"すべてのマスが埋まっていますが、%1$s個の答えが解答と一致しません。"</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"すべてのマスが埋まっていますが、1つの答えが解答と一致しません。"</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"解答が1つの数独は、どれも推論で解けます。推測は必要なく、役立つこともまれです。以下は、このアプリが認識して説明できる解法を、簡単な順に並べたものです。開いている問題に適用できる解法があれば、適用できるすべての場所を表示します。"</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"解答が1つの数独は、どれも推論で解けます。推測は必要なく、役立つこともまれです。以下は、このアプリが認識して説明できる解法を、簡単な順に並べたものです。開いている問題に適用できる解法があれば、適用できるすべての場所を表示します。"</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"これまでに書いた答えはすべて正解です。"</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"今確認できる例：どれも現在の盤面から始まります。"</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"横線は10本のはずですが、%1$s本でした"</string>
@@ -209,7 +209,7 @@
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freeviaでの削除は確認できましたが、この端末から受領証を削除できませんでした。再試行して端末内の削除を完了してください。"</string>
     <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freeviaはこの版のレポートと、非公開の学習用コピーを削除します。今後の修正により、共有設定に従って新しいレポートが作成される場合があります。すでに学習したモデルには、学習による変化が残る場合があります。"</string>
     <string name="msg_full_route_891b475b" formatted="false">"全手順"</string>
-    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"今後の不確かな読み取りでは、傾きを補正した問題の写真、認識結果、修正内容を、分析と学習のためFreeviaに送信します。学習用コピーは「送信受領証」から削除するまで保持されます。学習済みモデルには、学習による変化が残る場合があります。不確かな問題がすでに開いている場合は、今すぐ送信されます。設定でオフにできます。"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"今後の不確かな読み取りでは、傾きを補正した問題の写真、認識結果、修正内容を、分析と学習のためFreeviaに送信します。学習用コピーは「送信控え」から削除するまで保持されます。学習済みモデルには、学習による変化が残る場合があります。不確かな問題がすでに開いている場合は、今すぐ送信されます。設定でオフにできます。"</string>
     <string name="msg_gentle_96124817" formatted="false">"やさしい"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"光の反射で線が見えなくなっています。紙を光から遠ざける方向に傾けてください"</string>
     <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"グレー画像(%1$sx%2$s)"</string>
@@ -217,7 +217,7 @@
     <string name="msg_handwritten_6a50cef3" formatted="false">"手書き"</string>
     <string name="msg_hard_9e73f8fa" formatted="false">"難しい"</string>
     <string name="msg_hh_mm_7f135aed" formatted="false">"HH:mm"</string>
-    <string name="msg_hidden_7e6fefff" formatted="false">"隠れた"</string>
+    <string name="msg_hidden_7e6fefff" formatted="false">"隠れ"</string>
     <string name="msg_hidden_pair_bab0be41" formatted="false">"隠れペア"</string>
     <string name="msg_hidden_quad_56e6fb2c" formatted="false">"隠れクアッド"</string>
     <string name="msg_hidden_single_33cf031b" formatted="false">"隠れシングル"</string>
@@ -237,7 +237,7 @@
     <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"見つけ方"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n答えに至る手順："</string>
-    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"候補がちょうど2つのマスを探します。Yウイングは、そのようなマス3つだけで構成されます。\n\n1つを軸にします。たとえば{2,5}です。軸と同じ行・列・ブロックにあり、{2,9}を持つマスと、{5,9}を持つ別のマスを探します。軸は2か5です。2なら最初の挟みマスは9になり、5なら2つ目の挟みマスは9になります。どちらの場合も、一方の挟みマスに9が入ります。どちらかは分かりませんが、知る必要もありません。\n\nそのため、両方の挟みマスと同じ行・列・ブロックにあるマスには9を入れられません。通常、これらのマスは長方形を完成させる残り2つの角です。"</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"候補がちょうど2つのマスを探します。Yウィングは、そのようなマス3つだけで構成されます。\n\n1つを軸にします。たとえば{2,5}です。軸と同じ行・列・ブロックにあり、{2,9}を持つマスと、{5,9}を持つ別のマスを探します。軸は2か5です。2なら最初の挟みマスは9になり、5なら2つ目の挟みマスは9になります。どちらの場合も、一方の挟みマスに9が入ります。どちらかは分かりませんが、知る必要もありません。\n\nそのため、両方の挟みマスと同じ行・列・ブロックにあるマスには9を入れられません。通常、これらのマスは長方形を完成させる残り2つの角です。"</string>
     <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">"、仮定の%1$s、入力した答えではありません"</string>
     <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"同じ行・列・ブロック内の%1$s個の数字が、同じ%2$s個のマスにしか入らない場合、それらのマスにほかの数字は入りません。"</string>
     <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"同じ行・列・ブロック内の%1$s個のマスの候補を合わせて、ちょうど%2$s個になる場合、それらの数字はそのマスに入り、その行・列・ブロックのほかのマスには入りません。"</string>
@@ -253,11 +253,11 @@
     <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"この%1$s列では、%2$sが入る位置はこの%3$s行に限られます。これらの列で該当する行をすべて使うため、それらの行のほかのすべてのマスから%4$sを除外できます。"</string>
     <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"この%1$s行では、%2$sが入る位置はこの%3$s列に限られます。これらの行で該当する列をすべて使うため、それらの列のほかのすべてのマスから%4$sを除外できます。"</string>
     <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"この2つの%1$sでは、%2$sがそれぞれ2か所にしか入らず、%3$sと%4$sは同じ%5$s内にあります。そのため、両方が%6$sになることはありません。したがって、%7$sと%8$sのどちらかには入り、両方と同じ行・列・ブロックにあるすべてのマスから%9$sを除外できます。"</string>
-    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"この2列では、%1$sが入る位置は各列に2か所だけです。%2$sと%3$sは同じ行にあるため、両方が%4$sになることはありません。したがって、%5$sと%6$sのどちらかがその数字になり、その両方と行・列・ボックスのいずれかを共有するすべてのマスから%7$sを除外できます。"</string>
-    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"この2行では、%1$sが入る位置は各行に2か所だけです。%2$sと%3$sは同じ列にあるため、両方が%4$sになることはありません。したがって、%5$sと%6$sのどちらかがその数字になり、その両方と行・列・ボックスのいずれかを共有するすべてのマスから%7$sを除外できます。"</string>
+    <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"この2列では、%1$sが入る位置は各列に2か所だけです。%2$sと%3$sは同じ行にあるため、両方が%4$sになることはありません。したがって、%5$sと%6$sのどちらかがその数字になり、その両方と行・列・ブロックのいずれかを共有するすべてのマスから%7$sを除外できます。"</string>
+    <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"この2行では、%1$sが入る位置は各行に2か所だけです。%2$sと%3$sは同じ列にあるため、両方が%4$sになることはありません。したがって、%5$sと%6$sのどちらかがその数字になり、その両方と行・列・ブロックのいずれかを共有するすべてのマスから%7$sを除外できます。"</string>
     <string name="msg_in_this_0_1_can_only_go_in_these_2_squares_so_3ba5cf5a" formatted="false">"この%1$sでは、%2$sがこの%3$s個のマスにしか入らないため、これらのマスはその数字用に確保されます。そのため、これらのマスから%4$sを除外できます。"</string>
     <string name="msg_in_this_0_1_can_only_go_inside_one_box_so_2_i_3b5b0b06" formatted="false">"この%1$sでは、%2$sが1つのブロック内にしか入りません。そのため、%3$sはそのブロックのこの%4$s上に入り、ブロックのほかのマスから除外できます。"</string>
-    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"このボックスでは、%1$sが入る位置はこの%2$sマスに限られるため、これらのマスはその数字で埋まります。したがって、これらのマスから%3$sを除外できます。"</string>
+    <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"このブロックでは、%1$sが入る位置はこの%2$sマスに限られるため、これらのマスはその数字で埋まります。したがって、これらのマスから%3$sを除外できます。"</string>
     <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"この列では、%1$sが入る位置はこの%2$sマスに限られるため、これらのマスはその数字で埋まります。したがって、これらのマスから%3$sを除外できます。"</string>
     <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"この行では、%1$sが入る位置はこの%2$sマスに限られるため、これらのマスはその数字で埋まります。したがって、これらのマスから%3$sを除外できます。"</string>
     <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"写真、読み取り結果、修正内容が含まれます。設定でオフにできます。"</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"強制連鎖を短くする"</string>
     <string name="msg_language_a4fe6526" formatted="false">"言語"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"ライセンス"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"1つの行・列・ブロックで、候補が少ないマスを探します。そのうち%1$s個を選び、候補をまとめます。候補がちょうど%2$s個なら、その%3$s個の数字は確保されています。どの数字がどこに入るかはまだ分からなくても、その%4$s個のマスに何らかの順で入る必要があります。\n\nそれだけで十分です。同じ行・列・ブロックのほかのすべてのマスから、それらの数字を除外できます。その結果、どこかのマスがシングルになることがよくあります。\n\nすべてのマスが同じ候補を持つ必要はありません。{2,7}、{2,9}、{7,9}も有効なトリプルで、見落とされがちな形です。"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"1つの行・列・ブロックで、候補が少ないマスを探します。そのうち%1$s個を選び、候補をまとめます。候補がちょうど%2$s個なら、その%3$s個の数字は確保されています。どの数字がどこに入るかはまだ分からなくても、その%4$s個のマスに何らかの順で入る必要があります。\n\nそれだけで十分です。同じ行・列・ブロックのほかのすべてのマスから、それらの数字を除外できます。その結果、どこかのマスがシングルになることがよくあります。\n\nすべてのマスが同じ候補を持つ必要はありません。{2,7}、{2,9}、{7,9}も有効なトリプルで、見落とされがちな形です。"</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"同じ2つの候補、たとえば{4,9}を持ち、隣り合うマス同士が同じ行・列・ブロックにある連鎖を探します。3つでは足りず、少なくとも4つ必要です。\n\n順に交互に色を付けます。各マスが次のマスと同じ行・列・ブロックにあるため、隣同士に同じ数字は入りません。そのため、連鎖全体は4, 9, 4, 9、または9, 4, 9, 4となり、どちらかは分かりません。\n\nどちらの場合も、異なる色の2つのマスには異なる数字が入り、一方が4、もう一方が9になります。そのため、両方と同じ行・列・ブロックにあるマスにはどちらも入らず、両方の候補を一度に除外できます。\n\nこのパターンは、すべてのマスが同じ候補を持つため見つけやすくなっています。盤面上で同じペアをたどり、どこでつながるか確認してください。"</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"同じ2つの候補、たとえば{1,6}を持ち、長方形の3つの角にあるマスを探します。長方形はちょうど2つのブロックに収まる必要があります。2行と2列がまたぐのは2つのブロックで、4つではありません。\n\n次に4つ目の角を見ます。ここも1と6だけなら、問題に2つの解答ができてしまいます。長方形の1と6を入れ替えても、ほかはすべて成立するためです。正しく作られた問題には解答が1つしかないので、4つ目の角には別の数字が入る必要があります。ほかの候補は残し、1と6を除外します。\n\nこれは、盤面ではなく出題者を根拠とする唯一の論法です。公開された問題には有効ですが、すでに誤った数字を書き込んだ問題には役立ちません。その場合、一意である以前に、解答自体がない可能性があるためです。"</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"このブロックを見てください。枠線をたどると、このヒントで説明するマスが分かります。"</string>
@@ -282,11 +282,11 @@
     <string name="msg_moderate_5c42afc7" formatted="false">"ふつう"</string>
     <string name="msg_more_d47d7cb0" formatted="false">"もっと見る"</string>
     <string name="msg_more_light_needed_4b4480e1" formatted="false">"明るさが足りません"</string>
-    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"解答が複数あるため、印刷された数字を読み落としています。「解く」を押すと、解答と異なる箇所を確認できます。"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"解答が複数あるため、印刷された数字を読み落としています。「解く」を押すと、複数の解答と、それらの間で数字が異なる箇所を確認できます。"</string>
     <string name="msg_move_back_f4d6dba8" formatted="false">"少し離してください"</string>
     <string name="msg_move_closer_1da054ae" formatted="false">"近づけてください"</string>
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"近づけてください。盤面が小さすぎて読み取れません。"</string>
-    <string name="msg_naked_472fd902" formatted="false">"裸の"</string>
+    <string name="msg_naked_472fd902" formatted="false">"ネイキッド"</string>
     <string name="msg_naked_pair_2c93e68d" formatted="false">"ネイキッドペア"</string>
     <string name="msg_naked_quad_73e85f9d" formatted="false">"ネイキッドクアッド"</string>
     <string name="msg_naked_single_7205dfc4" formatted="false">"ネイキッドシングル"</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち1種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち7種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち5種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"ここには%1$sしか入りません。強調表示されたマスによって、ほかの8つの数字のうち%2$s個が除外されます。%3$s %4$sは、周囲に見える数字によってではなく、以前にこのマスから除外されています。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"ここには%1$sしか入りません。強調表示されたマスによって、ほかの8つの数字のうち%2$s個が除外されます。%3$sは、周囲に見える数字によってではなく、以前にこのマスから除外%4$sものです。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち2種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"ここに入るのは%1$sだけです。ほかの8つの数字のうち、%2$s個は強調表示されたマスで使われています。%3$sは以前このマスから除外された候補で、周囲に見える数字によって除外されたわけではありません。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"ここに入るのは%1$sだけです。強調表示されたマスで、残り8種類の数字のうち3種類が使われています。%2$sは以前にこのマスの候補から除外されたもので、周囲に見える数字が理由ではありません。"</string>
@@ -424,7 +424,7 @@
     <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nソルバーによる答え：アプリが対応する解法では次の手が見つかりませんでした。詳しい証明はありません。"</string>
     <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"探索による補助除外：探索により強調表示されたマスから%1$sを除外できますが、アプリは表示用の短い矛盾の推論過程を生成できませんでした。詳細な証明はありません。"</string>
     <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"一部のマスには、数字そのものではなくメモがある可能性があります。"</string>
-    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"確信度の低い読み取りがある数字があります。"</string>
+    <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"一部の数字は確信を持って読み取れませんでした。"</string>
     <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"写真の読み取り中に問題が発生しました。"</string>
     <string name="msg_square_c11092bc" formatted="false">"マス"</string>
     <string name="msg_starting_candidates_0_733ca514" formatted="false">"\n\n初期候補：%1$s。"</string>
@@ -460,13 +460,13 @@
     <string name="msg_sudoku_is_a_public_domain_puzzle_form_this_ap_8639c626" formatted="false">"数独というパズル形式はパブリックドメインです。このアプリは、すでにお持ちの問題を解くもので、他者の問題を複製・配布しません。"</string>
     <string name="msg_supporting_evidence_c3c036e4" formatted="false">"、裏付けとなる根拠"</string>
     <string name="msg_suppose_the_marked_square_holds_0_the_numbere_b8e8f0fe" formatted="false">"印の付いたマスが%1$sだと仮定します。番号付きの数字は仮定上のものです。"</string>
-    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤いユニット（行・列・ボックス）には%2$sを置ける位置がなくなります。ユニット内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がないユニットは成立しないため、このマスは%4$sではありません。"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__07700f76" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤いユニット（行・列・ブロック）には%2$sを置ける位置がなくなります。ユニット内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がないユニットは成立しないため、このマスは%4$sではありません。"</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__1a9329d1" formatted="false">"このマスが%1$sだと仮定します。矢印を順にたどってください。各マスは、それ以前の配置によって確定します。そのマスに入れられる数字がそれしか残っていないか、その数字を入れられる場所がそのマスしか残っていないためです。すると赤いマスには入れられる数字が1つもなくなり、これはあり得ません。したがって、このマスは%2$sではありません。"</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__28e280c9" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤い行には%2$sを置ける位置がなくなります。行内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がない行は成立しないため、このマスは%4$sではありません。"</string>
-    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤いボックスには%2$sを置ける位置がなくなります。ボックス内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がないボックスは成立しないため、このマスは%4$sではありません。"</string>
+    <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤いブロックには%2$sを置ける位置がなくなります。ブロック内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がないブロックは成立しないため、このマスは%4$sではありません。"</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"このマスが%1$sだと仮定します。矢印を順にたどってください。各マスは、それ以前の配置によって確定します。そのマスに入れられる数字がそれしか残っていないか、その数字を入れられる場所がそのマスしか残っていないためです。\n\nすると、赤い%2$sには%3$sを入れる場所がなくなります。そこに記された%4$sは、入れられたはずの場所を示しており、どれも矢印の1つによって別の数字が入ったマスです。数字を入れる場所のない%5$sはあり得ません。したがって、このマスは%6$sではありません。"</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"このマスが%1$sだと仮定します。矢印を順番にたどってください。それぞれのマスは、それまでに置いた数字によって確定します。そのマスに残る候補がその数字だけになるか、その数字を置ける位置がそのマスだけになります。\n\nすると、赤い列には%2$sを置ける位置がなくなります。列内に示された%3$sは、その数字を置けた位置を表していますが、どのマスも矢印をたどる過程で別の数字に確定しています。ある数字を置ける位置がない列は成立しないため、このマスは%4$sではありません。"</string>
-    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"「適用後」に切り替えると、その手と盤面への影響を確認できます。"</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"「後」に切り替えると、その手と盤面への影響を確認できます。"</string>
     <string name="msg_swordfish_c6afd225" formatted="false">"ソードフィッシュ"</string>
     <string name="msg_take_a_new_photo_0c788c47" formatted="false">"新しい写真を撮る"</string>
     <string name="msg_take_another_photo_61d1873e" formatted="false">"もう一度撮影"</string>
@@ -493,25 +493,25 @@
     <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"カメラを使用できません。他のカメラアプリを閉じてから、もう一度お試しください。"</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"もう一方"</string>
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"%1$sの写真と、その写真から読み取ったすべての情報をこのスマートフォンから削除します。元に戻すことはできません。"</string>
-    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" 写真は問題一覧の「読み取れなかった写真」にあります。"</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" 写真は問題一覧の「読み取り不可」にあります。"</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"ここの軸は%1$sか%2$sです。どちらでも、他の2マスのどちらかが%3$sに確定するため、その両方と同じ行・列・ブロックにあるマスには%4$sを入れられません。"</string>
     <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"ポインティングペアを逆から見たものです。行または列を1つ選び、まだそこに入っていない数字を選びます。その数字を入れられるマスを、その行・列ですべて印で示します。それらがすべて1つのブロック内にあれば、その数字はそのブロックと行・列が重なる部分に入る必要があります。したがって、ブロック内の他の場所には入りません。調べていなかった残りの2行または2列も含まれます。\n\nポインティングペアと同様に、これだけでは数字は確定しません。確定につながる手のために候補を整理します。"</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"印刷された数字では、解ける問題になりません。"</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$sに残る候補は{%2$s}です。%4$s行%5$s列に%3$sを入れます。"</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"レポートが大きすぎて送信できません。"</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"軸の候補が1つ多いYウィングです。候補がちょうど3つ、例えば{1,4,7}のマスを探します。そのマスが、候補が2つのマス2つ、一方は{1,7}、もう一方は{4,7}と同じ行・列・ブロックにある必要があります。\n\nこの3マスはどれも7になり得て、必ずどれか1つが7になります。したがって、候補を除外するマスは、2つの翼だけでなく3マスすべてと同じ行・列・ブロックにある必要があります。実際には、軸と同じブロック内で、翼の1つと同じ行または列にあるマスです。\n\nYウィングより除外できる候補が少なく、同じ理由で見落としやすくなります。軸が目立たないためです。"</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"軸の候補が1つ多いYウィングです。候補がちょうど3つ、例えば{1,4,7}のマスを探します。そのマスが、候補が2つのマス2つ、一方は{1,7}、もう一方は{4,7}と同じ行・列・ブロックにある必要があります。\n\nこの3マスはどれも7になり得て、必ずどれか1つが7になります。したがって、候補を除外するマスは、2つの翼だけでなく3マスすべてと同じ行・列・ブロックにある必要があります。実際には、軸と同じブロック内で、翼の1つと同じ行または列にあるマスです。\n\nYウィングより除外できる候補が少なく、同じ理由で見落としやすくなります。軸が目立たないためです。"</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"強調表示されたブロックに、埋められるマスがあります。\n\nもう一度「ヒント」を押すと、そのマスを見つける解法を表示します。"</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"ここには推論することがもう残っていません。"</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"この%1$sマスの候補はすべて%2$sと%3$sだけで、隣同士が同じ行・列・ブロックにあるため、数字は全体を通して交互に並びます。%4$sと%5$sの間のリンク数は奇数なので、異なる数字が入ります。したがって、その両方と同じ行・列・ブロックにあるマスから%6$sを除外できます。"</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"この%1$sマスの候補は合わせて%2$sだけなので、それらの数字が何らかの順序で入ります。したがって、この%4$sの他のマスから%3$sを除外できます。"</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"この%1$sマスの候補は、合わせても%2$sだけなので、これらの数字が何らかの順序で入ります。したがって、この行の残りのマスから%3$sを除外できます。"</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"この%1$sマスの候補は、合わせても%2$sだけなので、これらの数字が何らかの順序で入ります。したがって、この列の残りのマスから%3$sを除外できます。"</string>
-    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"この%1$sマスの候補は、合わせても%2$sだけなので、これらの数字が何らかの順序で入ります。したがって、このボックスの残りのマスから%3$sを除外できます。"</string>
+    <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"この%1$sマスの候補は、合わせても%2$sだけなので、これらの数字が何らかの順序で入ります。したがって、このブロックの残りのマスから%3$sを除外できます。"</string>
     <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"これらは選んだマスの初期候補です。「推論過程」で、どの候補を除外できるか説明します。"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"これらの数字では問題が成立せず、誤りが多すぎて場所を特定できません。マスをタップして読み取りを修正するか、もう一度撮影してください。"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"これらの数字では問題が成立しません。丸で囲まれた%1$sマスを変更すれば成立します。いずれかをタップして読み取りを修正してください。"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"これらの数字では問題が成立しません。丸で囲まれた1マスを変更すれば成立します。タップして読み取りを修正してください。"</string>
-    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"これらの数字では問題が成立しないため、読み取りに誤りがあります。「解答」を押すと、修正が必要なマスを確認できます。"</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"これらの数字では問題が成立しないため、1つの数字を誤って読み取っています。「解く」を押すと、修正が必要なマスを確認できます。"</string>
     <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"この4マスは2つのブロックにまたがる長方形を作り、そのうち3マスの候補は%1$sだけです。%2$sの候補もその2つだけなら、長方形内で数字を入れ替えられ、解が2つできてしまいます。解は1つなので、%3$sには別の数字が入る必要があり、%4$sを除外できます。"</string>
     <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"最後までは解けません。この問題のどこかで、アプリが完全に行き詰まりました。"</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"これでは数字は確定しません。%2$sから%1$sを除外します。"</string>
@@ -521,7 +521,7 @@
     <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"この証明では、1つのヒントについて、答えに至る候補の除外も含めて説明します。ステップを進めて盤面上の推論をたどり、その後、全体の解答手順を続けてください。"</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"この問題を準備できませんでした。"</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"この問題を保存できませんでした。今は引き続き使用できます。次の写真を撮る前に、ストレージの空き容量を増やしてください。"</string>
-    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"この問題には複数の解があるため、印刷された数字を読み落とした可能性があります。%2$s個の解のうち%1$s個目を表示しています。もう一度「解答」を押すと次の解を表示します。丸で囲まれたマスは、表示された解の間で数字が異なります。"</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"この問題には複数の解があるため、印刷された数字を読み落とした可能性があります。%2$s個の解のうち%1$s個目を表示しています。もう一度「解く」を押すと次の解を表示します。丸で囲まれたマスは、表示された解の間で数字が異なります。"</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"この問題の写真を開けませんでした。"</string>
     <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"この推論により除外される既存の項目数：%1$s "</string>
     <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"このマスには、数字そのものではなく候補メモがある可能性があります。確認してください。"</string>
@@ -559,10 +559,10 @@
     <string name="msg_why_d3ae14a5" formatted="false">"理由"</string>
     <string name="msg_why_not_0_1_3eb81faf" formatted="false">"なぜ%1$sではない？ · %2$s"</string>
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"なぜこのマス？ · %1$s"</string>
-    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" が解答と一致しません。「答えを確認」で確認できます。"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" が解答と一致しません。「確認」で確認できます。"</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"選んだマスから逆にたどりましょう。下の質問を選んでください。"</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"マスごとではなく数字ごとに調べます。1つの行・列・ブロックについて、まだ入っていない各数字を入れられる場所を書き出します。次に、場所の一覧を合わせると%2$sマスだけになる%1$s個の数字を探します。\n\nその%3$s個の数字はその%4$sマスに入る必要があるため、それらのマスから他の候補をすべて除外できます。これにより、その場でネイキッドシングルやネイキッドペアができることもよくあります。\n\nこれは多くの人が最も難しいと感じる解法です。マスを見ても候補がたくさん残っていて、何も見えてこないからです。パターンは数字の側にあります。"</string>
-    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"候補がちょうど2つ残っているマスだけを使います。\n\n例えば{2,6}のマスから始め、2ではないと仮定すると6になります。同じ行・列・ブロックにある、6を候補に持つマス、例えば{6,4}へ進みます。そのマスは6ではないので4になります。次に、そのマスと同じ行・列・ブロックにある、4を候補に持つマスへ進みます。このように、各ステップが直前のステップによって確定します。\n\nもう一方の候補が2、つまり最初に除外した数字であるマスに到達したら完了です。最初のマスが実は2だったか、チェーンが成立して最後のマスが2になるかのどちらかです。両端のどちらかに2が入るため、両端のそれぞれと同じ行・列・ブロックにあるマスには2を入れられません。\n\nチェーンは短くしましょう。4〜5マスなら鉛筆で見つけられます。それ以上は記録作業になり、フォーシングチェーンと呼ぶのが適切です。"</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"マスごとではなく数字ごとに調べます。1つの行・列・ブロックについて、まだ入っていない各数字を入れられる場所を書き出します。次に、場所の一覧を合わせると%2$sマスだけになる%1$s個の数字を探します。\n\nその%3$s個の数字はその%4$sマスに入る必要があるため、それらのマスから他の候補をすべて除外できます。これにより、その場でネイキッドシングルやネイキッドペアができることもよくあります。\n\nこれは多くの人が最も難しいと感じる解法です。マスを見ても候補がたくさん残っていて、何も見えてこないからです。パターンは数字の側にあります。"</string>
+    <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"候補がちょうど2つ残っているマスだけを使います。\n\n例えば{2,6}のマスから始め、2ではないと仮定すると6になります。同じ行・列・ブロックにある、6を候補に持つマス、例えば{6,4}へ進みます。そのマスは6ではないので4になります。次に、そのマスと同じ行・列・ブロックにある、4を候補に持つマスへ進みます。このように、各ステップが直前のステップによって確定します。\n\nもう一方の候補が2、つまり最初に除外した数字であるマスに到達したら完了です。最初のマスが実は2だったか、チェーンが成立して最後のマスが2になるかのどちらかです。両端のどちらかに2が入るため、両端のそれぞれと同じ行・列・ブロックにあるマスには2を入れられません。\n\nチェーンは短くしましょう。4〜5マスなら鉛筆で見つけられます。それ以上は記録作業になり、強制連鎖と呼ぶのが適切です。"</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"処理時の辺の長さは正の有限値である必要があります"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"読み取り不可"</string>
     <string name="msg_written_4c6031d1" formatted="false">"手書き"</string>

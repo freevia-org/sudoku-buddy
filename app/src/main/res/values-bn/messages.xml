@@ -49,8 +49,8 @@
     <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s কোয়াড"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$sটি প্রত্যাখ্যাত ছবি, নতুনটি আগে:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: %2$s বাদ দিন"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"ঘরের সংখ্যা: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"এই পথে %1$sটি ধাপ আছে, সবচেয়ে কঠিন সমর্থিত কৌশল হলো %2$s। %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$sটি ঘর"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"এই পথে %1$sটি ধাপ আছে, সবচেয়ে কঠিন সমর্থিত কৌশল হলো %2$s। %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s ট্রিপল"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"আগের সম্ভাব্য অঙ্কের যুক্তিতে %2$s থেকে %1$s বাদ গেছে।"</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$sটি হাতে লেখা"</string>
@@ -100,7 +100,7 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"শুধু এটিই থাকতে পারে"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"বাতিল"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", সম্ভাব্য অঙ্ক %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"ছবি তোলার প্রমাণ"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"যেসব সারি, কলাম বা বক্সে একটি অঙ্কের মাত্র দুটি সম্ভাব্য স্থান আছে, সেগুলোর মাধ্যমে অঙ্কটির শৃঙ্খল তৈরি করুন এবং পর্যায়ক্রমে দুটি রঙ দিন; একটি রঙের সব ঘরেই অঙ্কটি সত্য হবে।"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"যেসব ইউনিটে %1$s-এর মাত্র দুটি সম্ভাব্য অবস্থান আছে, সেগুলোর মাধ্যমে শৃঙ্খল তৈরি করলে এই ঘরগুলো পালাক্রমে দুটি রং পায়, যার একটি পুরো শৃঙ্খলে সঠিক। অন্য রঙের দুটি ঘর একই সারিতে আছে, যা অসম্ভব—তাই ওই রংটি ভুল, এবং ওই রঙের প্রতিটি ঘর থেকে %2$s বাদ যায়।"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"যেসব ইউনিটে %1$s-এর মাত্র দুটি সম্ভাব্য অবস্থান আছে, সেগুলোর মাধ্যমে শৃঙ্খল তৈরি করলে এই ঘরগুলো পালাক্রমে দুটি রং পায়, যার একটি পুরো শৃঙ্খলে সঠিক। অন্য রঙের দুটি ঘর একই বক্সে আছে, যা অসম্ভব—তাই ওই রংটি ভুল, এবং ওই রঙের প্রতিটি ঘর থেকে %2$s বাদ যায়।"</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", যাচাইয়ে সঠিক"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"কোনো সম্ভাব্য অঙ্ক বেছে নিন, কেন সেটি আপনার ঘরে বসতে পারে না তা দেখতে।"</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"ভাষা বেছে নিন"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"কী দেখানো হবে বেছে নিন"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"কী দেখানো হবে বেছে নিন"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"বন্ধ করুন"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"ইঙ্গিত বন্ধ করুন"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"পড়া অঙ্কের পর্যালোচনা গুটিয়ে নিন"</string>
@@ -127,7 +127,7 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"ফোর্সিং চেইনগুলো তুলনা করুন এবং কম ঘর অনুসরণ করতে হয় এমনগুলোকে অগ্রাধিকার দিন। ছোট শৃঙ্খলে পুরো সমাধানের ধাপ বেশি হতে পারে।"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"%2$s-এর মধ্যে ফলাফল %1$s · অনুমানভিত্তিক অঙ্ক"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"এ আছে"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"বিষয়বস্তুর ধরন"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"পুরো পথ ধরে এগিয়ে যান"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"অসংগতি · অনুমান ব্যর্থ"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", অসংগতি"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"ডিবাগের ছবি তোলার প্রমাণ রাখা যায়নি"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"পড়ার ফলাফল জমা দেওয়া যায়নি। সংযোগ হলে আবার চেষ্টা করুন।"</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"অচল পথ"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"মুছুন"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"মুছুন"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"রিপোর্ট মুছুন"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"এই ছবি মুছুন"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"কী ঘটেছে এবং আবার ঘটানোর ধাপগুলো লিখুন। শনাক্ত করা অঙ্কগুলো আগে যাচাই করে সংশোধন করেছিলেন কি না জানান। কোনো ধারণার জন্য \'প্রযোজ্য নয়\' লিখুন।"</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", এই ইঙ্গিতের লক্ষ্য"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- ডিভাইস: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"ব্রাউজারের খসড়ায় ধরাতে রোগনির্ণয় তথ্য সংক্ষিপ্ত করা হয়েছে। অ্যাপের রোগনির্ণয় তথ্য পাঠান কাজটি দিয়ে পুরো রিপোর্ট শেয়ার করা যায়।"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"ব্রাউজারের খসড়ায় ধরাতে ডায়াগনস্টিক তথ্য সংক্ষিপ্ত করা হয়েছে। অ্যাপের ‘ডায়াগনস্টিক তথ্য পাঠান’ ব্যবহার করে পুরো রিপোর্ট শেয়ার করা যায়।"</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"অঙ্ক 1..9 হতে হবে, কিন্তু ছিল %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"অঙ্ক পড়া যায়নি"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"ডিস্কে প্রমাণ রাখা সময়কে প্রভাবিত করে; এটি বিলম্বের বেঞ্চমার্ক নয়।"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"এগুলোর প্রত্যেকটি একটি ঘরে অঙ্ক বসায়।"</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"সব ঘর পূরণ হয়েছে, কিন্তু %1$sটি উত্তর সমাধানের সঙ্গে মেলে না।"</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"সব ঘর পূরণ হয়েছে, কিন্তু একটি উত্তর সমাধানের সঙ্গে মেলে না।"</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"একটিমাত্র সমাধান আছে এমন প্রতিটি সুডোকু যুক্তি দিয়ে সমাধান করা যায়; আন্দাজ কখনো দরকার হয় না এবং খুব কমই সাহায্য করে। এই অ্যাপ যেসব যুক্তির পদ্ধতি চিনতে ও ব্যাখ্যা করতে পারে, সেগুলো এখানে সহজ থেকে সাজানো আছে। খোলা ধাঁধায় কোনো পদ্ধতি প্রযোজ্য হলে, যেখানে যেখানে তা প্রযোজ্য সব দেখাবে।"</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"একটিমাত্র সমাধান আছে এমন প্রতিটি সুডোকু যুক্তি দিয়ে সমাধান করা যায়; আন্দাজ কখনো দরকার হয় না এবং খুব কমই সাহায্য করে। এই অ্যাপ যেসব যুক্তির পদ্ধতি চিনতে ও ব্যাখ্যা করতে পারে, সেগুলো এখানে সহজ থেকে সাজানো আছে। খোলা ধাঁধায় কোনো পদ্ধতি প্রযোজ্য হলে, যেখানে যেখানে তা প্রযোজ্য সব দেখাবে।"</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"এ পর্যন্ত আপনার লেখা সবকিছু সঠিক।"</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"এখন উপলব্ধ উদাহরণ: প্রতিটি আপনার বর্তমান বোর্ড থেকে শুরু হয়।"</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10টি অনুভূমিক রেখা প্রত্যাশিত ছিল, পাওয়া গেছে %1$s"</string>
@@ -209,10 +209,10 @@
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia মুছে ফেলা নিশ্চিত করেছে, কিন্তু এই ফোন স্থানীয় রসিদটি সরাতে পারেনি। স্থানীয় তথ্য পরিষ্কার করা শেষ করতে আবার চেষ্টা করুন।"</string>
     <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia এই রিপোর্টের সংস্করণ এবং এর ব্যক্তিগত প্রশিক্ষণ কপি মুছে দেবে। ভবিষ্যতের সংশোধন আপনার শেয়ারিং সেটিংস অনুযায়ী নতুন রিপোর্ট তৈরি করতে পারে। এটি দিয়ে ইতিমধ্যে প্রশিক্ষিত মডেলে শেখা পরিবর্তন থেকে যেতে পারে।"</string>
     <string name="msg_full_route_891b475b" formatted="false">"পুরো পথ"</string>
-    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"ভবিষ্যতে অনিশ্চিত অঙ্ক পড়া হলে সোজা করা ধাঁধার ছবি, শনাক্তকরণের ফলাফল ও সংশোধন বিশ্লেষণ এবং প্রশিক্ষণের জন্য Freevia-তে পাঠানো হবে। জমা দেওয়ার রসিদ থেকে মুছে না ফেলা পর্যন্ত প্রশিক্ষণ কপি থাকবে; প্রশিক্ষিত মডেলে শেখা পরিবর্তন থেকে যেতে পারে। কোনো অনিশ্চিত ধাঁধা ইতিমধ্যে খোলা থাকলে, সেটি এখনই পাঠানো হবে। সেটিংসে এটি বন্ধ করতে পারেন।"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"ভবিষ্যতে অনিশ্চিত অঙ্ক পড়া হলে সোজা করা ধাঁধার ছবি, শনাক্তকরণের ফলাফল ও সংশোধন বিশ্লেষণ এবং প্রশিক্ষণের জন্য Freevia-তে পাঠানো হবে। জমার রসিদ থেকে মুছে না ফেলা পর্যন্ত প্রশিক্ষণ কপি থাকবে; প্রশিক্ষিত মডেলে শেখা পরিবর্তন থেকে যেতে পারে। কোনো অনিশ্চিত ধাঁধা ইতিমধ্যে খোলা থাকলে, সেটি এখনই পাঠানো হবে। সেটিংসে এটি বন্ধ করতে পারেন।"</string>
     <string name="msg_gentle_96124817" formatted="false">"সহজ"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"আলোর ঝলকে রেখাগুলো মুছে যাচ্ছে — পাতাটি আলো থেকে দূরে কাত করুন"</string>
-    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ধূসরছবি(%1$sx%2$s)"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
     <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"ধূসর ঘরে পেন্সিলের চিহ্ন আছে, যা অ্যাপ উপেক্ষা করে। অঙ্কের নিচের দাগ দেখায় অ্যাপ কতটা নিশ্চিত ছিল। বিস্তারিত দেখতে ঘরে ট্যাপ করুন।"</string>
     <string name="msg_handwritten_6a50cef3" formatted="false">"হাতে লেখা"</string>
     <string name="msg_hard_9e73f8fa" formatted="false">"কঠিন"</string>
@@ -234,7 +234,7 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"ফোনটি সমতল রাখুন"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"ধাঁধার ওপরে ফোনটি সমতল রাখুন।"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"ধাঁধার ওপরে ফোনটি সমতল রাখুন"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"অনুভূমিক\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"চেনার উপায়"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nযেভাবে সেখানে পৌঁছাই:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"ঠিক দুটি সম্ভাব্য অঙ্ক আছে এমন ঘর খুঁজুন — ওয়াই-উইং শুধু এমন তিনটি ঘর দিয়েই তৈরি।\n\nএকটিকে কেন্দ্র হিসেবে নিন, যেমন {2,5}। কেন্দ্র দেখতে পায় এমন {2,9}-এর একটি ঘর এবং {5,9}-এর আরেকটি ঘর খুঁজুন। কেন্দ্রে হয় 2, নয়তো 5। 2 হলে প্রথম শাখায় 9 হবেই; 5 হলে দ্বিতীয় শাখায় 9 হবেই। যাই হোক, কোনো একটি শাখায় 9 আসবে — কোনটিতে তা জানেন না, আর জানার দরকারও নেই।\n\nতাই উভয় শাখাকে দেখতে পায় এমন কোনো ঘরে 9 হতে পারে না। এই ঘরগুলো সাধারণত আয়তক্ষেত্রটি সম্পূর্ণ করা বাকি দুই কোণ।"</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"ফোর্সিং চেইন ছোট রাখুন"</string>
     <string name="msg_language_a4fe6526" formatted="false">"ভাষা"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"লাইসেন্স"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"একটি সারি, কলাম বা বক্সে অল্প কয়েকটি সম্ভাব্য অঙ্ক বাকি আছে এমন ঘর খুঁজুন। সেগুলোর %1$sটি নিন এবং সম্ভাব্য অঙ্কগুলো একত্র করুন। একত্রে ঠিক %2$sটি অঙ্ক থাকলে, ওই %3$sটি অঙ্ক নির্ধারিত: কোনো না কোনো ক্রমে ওই %4$sটি ঘরেই বসতে হবে, যদিও কোনটি কোথায় যাবে তা এখনো বলতে পারেন না।\n\nএটুকুই যথেষ্ট। ওই সারি, কলাম বা বক্সের অন্য প্রতিটি ঘর থেকে অঙ্কগুলো বাদ দেওয়া যায়, এবং সাধারণত সেগুলোর কোনো একটি তখন সিঙ্গল হয়ে যায়।\n\nসব ঘরে একই সম্ভাব্য অঙ্ক থাকার দরকার নেই — {2,7}, {2,9} এবং {7,9} একটি যথাযথ ট্রিপল, যা অনেকেই খেয়াল করেন না।"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"একটি সারি, কলাম বা বক্সে অল্প কয়েকটি সম্ভাব্য অঙ্ক বাকি আছে এমন ঘর খুঁজুন। সেগুলোর %1$sটি নিন এবং সম্ভাব্য অঙ্কগুলো একত্র করুন। একত্রে ঠিক %2$sটি অঙ্ক থাকলে, ওই %3$sটি অঙ্ক নির্ধারিত: কোনো না কোনো ক্রমে ওই %4$sটি ঘরেই বসতে হবে, যদিও কোনটি কোথায় যাবে তা এখনো বলতে পারেন না।\n\nএটুকুই যথেষ্ট। ওই সারি, কলাম বা বক্সের অন্য প্রতিটি ঘর থেকে অঙ্কগুলো বাদ দেওয়া যায়, এবং সাধারণত সেগুলোর কোনো একটি তখন সিঙ্গল হয়ে যায়।\n\nসব ঘরে একই সম্ভাব্য অঙ্ক থাকার দরকার নেই — {2,7}, {2,9} এবং {7,9} একটি যথাযথ ট্রিপল, যা অনেকেই খেয়াল করেন না।"</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"একই দুটি সম্ভাব্য অঙ্ক আছে এমন ঘর খুঁজুন — যেমন {4,9} — যেগুলো শৃঙ্খল তৈরি করে, প্রতিটি পরেরটিকে দেখতে পায়। তিনটি যথেষ্ট নয়; অন্তত চারটি দরকার।\n\nএগোনোর সঙ্গে সঙ্গে পর্যায়ক্রমে রঙ দিন। প্রতিটি ঘর পরেরটিকে দেখতে পায় বলে, পাশাপাশি দুটি ঘরে একই অঙ্ক থাকতে পারে না, তাই পুরো শৃঙ্খল হয় 4, 9, 4, 9 — অথবা 9, 4, 9, 4, আর কোনটি তা আপনি বলতে পারেন না।\n\nযেভাবেই হোক, বিপরীত রঙের দুটি ঘরে ভিন্ন অঙ্ক থাকে: একটিতে 4 এবং অন্যটিতে 9। তাই উভয়কে দেখতে পায় এমন কোনো ঘরে কোনোটিই থাকতে পারে না, এবং একসঙ্গে দুটি সম্ভাব্য অঙ্কই বাদ যায়।\n\nএই ছকের প্রতিটি ঘর একই রকম বলেই এটি সহজে চেনা যায়। গ্রিডে একই জোড়াগুলো অনুসরণ করুন এবং কোথায় তারা সংযুক্ত হয় দেখুন।"</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"একই দুটি সম্ভাব্য অঙ্ক আছে এমন তিনটি ঘর খুঁজুন — যেমন {1,6} — যেগুলো একটি আয়তক্ষেত্রের তিন কোণে আছে। আয়তক্ষেত্রটি ঠিক দুটি বক্সে থাকতে হবে: দুটি সারি ও দুটি কলাম দুটি বক্স অতিক্রম করবে, চারটি নয়।\n\nএবার চতুর্থ কোণটি দেখুন। সেখানেও শুধু 1 ও 6 থাকলে ধাঁধার দুটি সমাধান হতো — আয়তক্ষেত্রের চারপাশে 1 ও 6 অদলবদল করলেও বাকি সব ঠিক থাকত। সঠিকভাবে তৈরি ধাঁধার একটি সমাধান থাকে, তাই চতুর্থ কোণে অন্য কিছু থাকতেই হবে: তার অন্য সম্ভাব্য অঙ্কগুলো থাকবে, আর 1 ও 6 বাদ যাবে।\n\nএটিই একমাত্র যুক্তি যা গ্রিডের বদলে ধাঁধার নির্মাতার ওপর নির্ভর করে। প্রকাশিত ধাঁধায় এটি সঠিক, কিন্তু আপনি ইতিমধ্যে ভুলভাবে পূরণ করা ধাঁধায় এটি অকেজো, কারণ তখন একক হওয়ার জন্য কোনো সমাধানই নাও থাকতে পারে।"</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"এই বক্সে দেখুন। সীমারেখা অনুসরণ করে সেই ঘরে যান, যা এই ইঙ্গিত ব্যাখ্যা করবে।"</string>
@@ -299,7 +299,7 @@
     <string name="msg_next_step_298a9207" formatted="false">"পরের ধাপ"</string>
     <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"কোনো ছবি স্বয়ংক্রিয়ভাবে সংযুক্ত হয় না। এখানে জমা দেওয়া প্রতিবেদন ও সংযুক্তি সবার জন্য উন্মুক্ত। যে উদাহরণগুলো আপনি ব্যক্তিগতভাবে পাঠাতে চান, সেগুলো info@freevia.org-এ পাঠান।"</string>
     <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"অ্যাপ শেষবার ইনস্টল করার পর থেকে কোনো ছবি প্রত্যাখ্যান করা হয়নি।"</string>
-    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"স্ক্যানের রোগনির্ণয় তথ্য নেই।"</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"স্ক্যানের ডায়াগনস্টিক তথ্য নেই।"</string>
     <string name="msg_no_technique_applies_here_4373528f" formatted="false">"এখানে কোনো কৌশল প্রযোজ্য নয়"</string>
     <string name="msg_none_140bedbf" formatted="false">"একটিও নয়"</string>
     <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"এগুলোর কোনোটিই ঘরে অঙ্ক বসায় না: এগুলো সম্ভাব্য অঙ্ক সরিয়ে দেয়, এভাবেই কঠিন ধাঁধার পথ খুলে যায়।"</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"এখানে শুধু %1$s বসতে পারে। হাইলাইট করা ঘরগুলোতে বাকি আটটি অঙ্কের একটি আছে; %2$s আগেই এই ঘর থেকে বাদ দেওয়া হয়েছিল, এর আশপাশে দেখা যাচ্ছে এমন কিছুর কারণে নয়।"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"এখানে শুধু %1$s বসতে পারে। হাইলাইট করা ঘরগুলোতে বাকি আটটি অঙ্কের সাতটি আছে; %2$s আগেই এই ঘর থেকে বাদ দেওয়া হয়েছিল, এর আশপাশে দেখা যাচ্ছে এমন কিছুর কারণে নয়।"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"এখানে শুধু %1$s বসতে পারে। হাইলাইট করা ঘরগুলোতে বাকি আটটি অঙ্কের পাঁচটি আছে; %2$s আগেই এই ঘর থেকে বাদ দেওয়া হয়েছিল, এর আশপাশে দেখা যাচ্ছে এমন কিছুর কারণে নয়।"</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"এখানে শুধু %1$s বসতে পারে। চিহ্নিত ঘরগুলো বাকি আটটি অঙ্কের %2$sটি ব্যবহার করেছে; %3$s %4$s এই ঘর থেকে আগেই বাদ গেছে, আশপাশে দেখা যায় এমন কিছুর কারণে নয়।"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"এখানে শুধু %1$s বসতে পারে। চিহ্নিত ঘরগুলোতে বাকি আটটি অঙ্কের %2$sটি আছে; %3$s এই ঘর থেকে আগেই বাদ দেওয়া %4$s, আশপাশে দেখা যায় এমন কিছুর কারণে নয়।"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"এখানে শুধু %1$s বসতে পারে। হাইলাইট করা ঘরগুলোতে বাকি আটটি অঙ্কের দুটি আছে; %2$s আগেই এই ঘর থেকে বাদ দেওয়া হয়েছিল, এর আশপাশে দেখা যাচ্ছে এমন কিছুর কারণে নয়।"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"এখানে কেবল %1$s বসতে পারে। চিহ্নিত ঘরগুলোতে বাকি আটটি অঙ্কের মধ্যে %2$sটি আছে; %3$s এই ঘর থেকে আগেই বাদ দেওয়া হয়েছিল, আশপাশে দৃশ্যমান কোনো কিছুর কারণে নয়।"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"এখানে শুধু %1$s বসতে পারে। হাইলাইট করা ঘরগুলোতে বাকি আটটি অঙ্কের তিনটি আছে; %2$s আগেই এই ঘর থেকে বাদ দেওয়া হয়েছিল, এর আশপাশে দেখা যাচ্ছে এমন কিছুর কারণে নয়।"</string>
@@ -332,7 +332,7 @@
     <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"এখানে শুধু %1$s বসতে পারে, যদিও আশপাশে তার কারণ দেখা যায় না: বাকি আটটি অঙ্কই আগের যুক্তিতে এই ঘর থেকে বাদ গেছে, এর সারি, কলাম বা বক্সে লেখা থাকার কারণে নয়।"</string>
     <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"মাত্র %1$sটি ছাপা অঙ্ক পাওয়া গেছে, যা একটি ধাঁধার জন্য খুব কম।"</string>
     <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"শুধু এক-চতুর্থাংশ পাক ঘোরানো সমর্থিত, %1$s নয়"</string>
-    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"অ্যাপের সংস্করণ, ফোনের মডেল, Android সংস্করণ ও সাম্প্রতিক স্ক্যানের রোগনির্ণয় তথ্য পূরণ করা খসড়া আপনার ব্রাউজারে খুলুন। পূর্ণ বিবরণ ও প্রাসঙ্গিক স্ক্রিনশট নিজে যোগ করুন।\n\nGitHub-এ সাইন ইন করা দরকার। জমা দেওয়ার আগে খসড়া পর্যালোচনা ও সম্পাদনা করতে পারেন। জমা দেওয়া রিপোর্ট ও সংযুক্তি সবার জন্য উন্মুক্ত। কোনো ছবি স্বয়ংক্রিয়ভাবে সংযুক্ত হয় না।"</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"অ্যাপের সংস্করণ, ফোনের মডেল, Android সংস্করণ ও সাম্প্রতিক স্ক্যানের ডায়াগনস্টিক তথ্য পূরণ করা খসড়া আপনার ব্রাউজারে খুলুন। পূর্ণ বিবরণ ও প্রাসঙ্গিক স্ক্রিনশট নিজে যোগ করুন।\n\nGitHub-এ সাইন ইন করা দরকার। জমা দেওয়ার আগে খসড়া পর্যালোচনা ও সম্পাদনা করতে পারেন। জমা দেওয়া রিপোর্ট ও সংযুক্তি সবার জন্য উন্মুক্ত। কোনো ছবি স্বয়ংক্রিয়ভাবে সংযুক্ত হয় না।"</string>
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"অ্যাপের সেটিংস খুলুন"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"GitHub খুলুন"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"ওপেন সোর্স বিজ্ঞপ্তি"</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"সুডোকু ধাঁধার দিকে ক্যামেরা তাক করুন।"</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"কাগজের সুডোকু ধাঁধার দিকে ক্যামেরা তাক করুন। অ্যাপ ছাপা অঙ্ক এবং আপনার লেখা সবকিছু পড়ে, ধাঁধা সমাধান করে, এবং আপনাকে ইঙ্গিত দিতে, উত্তর যাচাই করতে বা পুরো সমাধান দেখাতে পারে।"</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"পয়েন্টিং পেয়ার"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"পোস্ট"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"ধাঁধা প্রস্তুত হচ্ছে…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"আগের"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"আগের ধাপ"</string>
@@ -374,8 +374,8 @@
     <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"পেন্সিলে লেখা সম্ভাব্য অঙ্কের চিহ্ন হিসেবে পড়া হয়েছে এবং উপেক্ষা করা হয়েছে।"</string>
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"পাঠ পর্যালোচনা করা হয়েছে।"</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"পাঠ জমা হয়েছে। ধন্যবাদ!"</string>
-    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## সাম্প্রতিক স্ক্যানের রোগনির্ণয় তথ্য (আগে থেকে পূরণ করা)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"শনাক্তকরণে ভুল হতে পারে, বিশেষত হাতের লেখায়। শনাক্ত করা অঙ্কগুলো ছবির সঙ্গে মেলাতে পড়ুন ব্যবহার করুন, এবং সংশোধন করতে যেকোনো ঘরে ট্যাপ করুন। অ্যাপ অনিশ্চিত পাঠ পর্যালোচনার জন্য চিহ্নিত করে; নিশ্চিতভাবে পড়া অঙ্কও ভুল হতে পারে।"</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## সাম্প্রতিক স্ক্যানের ডায়াগনস্টিক তথ্য (আগে থেকে পূরণ করা)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"শনাক্তকরণে ভুল হতে পারে, বিশেষত হাতের লেখায়। শনাক্ত করা অঙ্কগুলো ছবির সঙ্গে মেলাতে শনাক্তকরণ ব্যবহার করুন, এবং সংশোধন করতে যেকোনো ঘরে ট্যাপ করুন। অ্যাপ অনিশ্চিত পাঠ পর্যালোচনার জন্য চিহ্নিত করে; নিশ্চিতভাবে পড়া অঙ্কও ভুল হতে পারে।"</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"অনুমান বাতিল করুন"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"রিমোট পেয়ার"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$s বাদ দিন"</string>
@@ -499,7 +499,7 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"ছাপা অঙ্কগুলো দিয়ে সমাধানযোগ্য ধাঁধা তৈরি হয় না।"</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s-এ অবশিষ্ট সম্ভাব্য অঙ্ক হলো {%2$s}। সারি %4$s, কলাম %5$s-এ %3$s বসান।"</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"রিপোর্টটি জমা দেওয়ার জন্য অতিরিক্ত বড়।"</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"কেন্দ্রের ঘরে একটি অতিরিক্ত সম্ভাব্য অঙ্কসহ Y-wing। ঠিক তিনটি সম্ভাব্য অঙ্ক থাকা একটি ঘর খুঁজুন, যেমন {1,4,7}, যা দুটি দুই-সম্ভাবনার ঘর দেখতে পায় — একটি {1,7}, অন্যটি {4,7}।\n\nএখন তিনটি ঘরেই 7 হতে পারে, এবং একটিতে তা থাকতেই হবে। তাই কোনো ঘর থেকে 7 বাদ দিতে হলে তাকে শুধু দুটি প্রান্ত নয়, তিনটি ঘরই দেখতে হবে — বাস্তবে এর মানে, ঘরটি কেন্দ্রের একই বক্সে এবং একটি প্রান্তের সঙ্গে একই সারি বা কলামে থাকে।\n\nY-wing-এর চেয়ে কম অঙ্ক বাদ যায়, এবং একই কারণে চোখ এড়ানো সহজ: কেন্দ্রের ঘরটি আলাদা করে নজরে পড়ে না।"</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"কেন্দ্রের ঘরে একটি অতিরিক্ত সম্ভাব্য অঙ্কসহ Y-wing। ঠিক তিনটি সম্ভাব্য অঙ্ক থাকা একটি ঘর খুঁজুন, যেমন {1,4,7}, যা দুটি দুই-সম্ভাবনার ঘর দেখতে পায় — একটি {1,7}, অন্যটি {4,7}।\n\nএখন তিনটি ঘরেই 7 হতে পারে, এবং একটিতে তা থাকতেই হবে। তাই কোনো ঘর থেকে 7 বাদ দিতে হলে তাকে শুধু দুটি প্রান্ত নয়, তিনটি ঘরই দেখতে হবে — বাস্তবে এর মানে, ঘরটি কেন্দ্রের একই বক্সে এবং একটি প্রান্তের সঙ্গে একই সারি বা কলামে থাকে।\n\nY-wing-এর চেয়ে কম অঙ্ক বাদ যায়, এবং একই কারণে চোখ এড়ানো সহজ: কেন্দ্রের ঘরটি আলাদা করে নজরে পড়ে না।"</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"হাইলাইট করা বক্সে একটি ঘর পূরণ করতে পারেন।\n\nকোন কৌশলে তা পাওয়া যায় জানতে আবার ইঙ্গিত চাপুন।"</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"এখানে আর যুক্তি দিয়ে বিচার করার কিছু নেই।"</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"এই %1$sটি ঘরে শুধু %2$s ও %3$s আছে, এবং প্রতিটি পরেরটি দেখতে পায়, তাই পুরো শৃঙ্খলে অঙ্কগুলো পালাক্রমে থাকে। %4$s ও %5$s-এর মধ্যে বিজোড় সংখ্যক সংযোগ আছে, তাই তাদের অঙ্ক আলাদা — ফলে তাদের উভয়কে দেখতে পাওয়া সব ঘর থেকে %6$s বাদ যায়।"</string>
@@ -511,7 +511,7 @@
     <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"এই অঙ্কগুলো দিয়ে ধাঁধা তৈরি হয় না, আর এত বেশি ভুল আছে যে কোনগুলো ভুল তা বলা যায় না। পড়া অঙ্ক সংশোধন করতে যেকোনো ঘরে ট্যাপ করুন, অথবা আবার ছবি তুলুন।"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"এই অঙ্কগুলো দিয়ে ধাঁধা তৈরি হয় না। বৃত্ত দিয়ে চিহ্নিত %1$sটি ঘর বদলালেই ঠিক হবে — পড়া অঙ্ক সংশোধন করতে একটিতে ট্যাপ করুন।"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"এই অঙ্কগুলো দিয়ে ধাঁধা তৈরি হয় না। বৃত্ত দিয়ে চিহ্নিত একটি ঘর বদলালেই ঠিক হবে — পড়া অঙ্ক সংশোধন করতে সেটিতে ট্যাপ করুন।"</string>
-    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"এই অঙ্কগুলো দিয়ে ধাঁধা তৈরি হয় না, তাই একটি ভুল পড়া হয়েছে। কোন ঘরগুলো ঠিক করতে হবে দেখতে সমাধান করুন চাপুন।"</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"এই অঙ্কগুলো দিয়ে ধাঁধা তৈরি হয় না, তাই একটি ভুল পড়া হয়েছে। কোন ঘরগুলো ঠিক করতে হবে দেখতে সমাধান চাপুন।"</string>
     <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"এই চারটি ঘর দুটি বক্স জুড়ে একটি আয়তক্ষেত্র তৈরি করে, এবং তিনটিতে শুধু %1$s আছে। %2$s-এও শুধু ওই দুটি থাকলে আয়তক্ষেত্রের অঙ্কগুলো অদলবদল করা যেত, আর ধাঁধার দুটি সমাধান থাকত। এর একটিই সমাধান, তাই %3$s-এ অন্য কিছু থাকতেই হবে — আর %4$s বাদ যায়।"</string>
     <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"এগুলো শেষ পর্যন্ত পৌঁছায় না: এখানে কিছু একটা অ্যাপকে পুরোপুরি আটকে দিয়েছে।"</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"এতে কোনো ঘর পূরণ হয় না। এটি %2$s থেকে %1$s বাদ দেয়।"</string>
@@ -521,7 +521,7 @@
     <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"এই প্রমাণ একটি ইঙ্গিত ব্যাখ্যা করে, তার উত্তরে পৌঁছানোর আগে সম্ভাব্য অঙ্ক বাদ দেওয়ার ধাপগুলোসহ। গ্রিডে যুক্তি অনুসরণ করতে পরের ধাপে যান, তারপর পুরো পথ ধরে এগিয়ে চলুন।"</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"এই ধাঁধা প্রস্তুত করা যায়নি।"</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"এই ধাঁধা সংরক্ষণ করা যায়নি। এখনই এটি ব্যবহার করতে পারবেন। আরেকটি ছবি তোলার আগে কিছু স্টোরেজ খালি করুন।"</string>
-    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"এই ধাঁধার একাধিক সমাধান আছে, তাই সম্ভবত কোনো ছাপা অঙ্ক বাদ পড়েছে। %2$sটির মধ্যে সমাধান %1$s দেখানো হচ্ছে — পরেরটি দেখতে আবার সমাধান করুন চাপুন। দেখানো সমাধানগুলোতে বৃত্ত দিয়ে চিহ্নিত ঘরগুলোর অঙ্ক আলাদা।"</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"এই ধাঁধার একাধিক সমাধান আছে, তাই সম্ভবত কোনো ছাপা অঙ্ক বাদ পড়েছে। %2$sটির মধ্যে সমাধান %1$s দেখানো হচ্ছে — পরেরটি দেখতে আবার সমাধান চাপুন। দেখানো সমাধানগুলোতে বৃত্ত দিয়ে চিহ্নিত ঘরগুলোর অঙ্ক আলাদা।"</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"এই ধাঁধার ছবি খোলা যায়নি।"</string>
     <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"এই যুক্তি বিদ্যমান %1$s বাদ দেয় "</string>
     <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"এই ঘরে পূর্ণ অঙ্কের বদলে সম্ভাব্য অঙ্কের নোট থাকতে পারে। অনুগ্রহ করে পরীক্ষা করুন।"</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"এই ঘর কেন? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" সমাধানের সঙ্গে। সেগুলো যাচাই করে দেখতে যাচাই ব্যবহার করুন।"</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"আপনার ঘর থেকে উল্টো দিকে যুক্তি অনুসরণ করুন। নিচে একটি প্রশ্ন বেছে নিন।"</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"ঘর ধরে নয়, অঙ্ক ধরে এগোন। একটি ইউনিটে প্রতিটি অনুপস্থিত অঙ্ক কোথায় এখনও বসতে পারে তা লিখুন। তারপর এমন %1$sটি অঙ্ক খুঁজুন যাদের তালিকাগুলো মিলিয়ে শুধু %2$sটি ঘর রয়েছে।\n\nওই %3$sটি অঙ্ককে ওই %4$sটি ঘর পূরণ করতেই হবে, তাই সেগুলো থেকে অন্য সব অঙ্ক বাদ দেওয়া যায় — এতে প্রায়ই সঙ্গে সঙ্গেই কোনো ঘর নেকেড সিঙ্গল বা কোনো জোড়া নেকেড পেয়ার হয়ে যায়।\n\nএটিই মানুষের সবচেয়ে কঠিন মনে হয়, কারণ ঘরগুলোর দিকে তাকালে কিছু বোঝা যায় না: সেখানে এখনও অনেক সম্ভাব্য অঙ্ক থাকে। বিন্যাসটি অঙ্কগুলোর মধ্যে।"</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"ঘর ধরে নয়, অঙ্ক ধরে এগোন। একটি ইউনিটে প্রতিটি অনুপস্থিত অঙ্ক কোথায় এখনও বসতে পারে তা লিখুন। তারপর এমন %1$sটি অঙ্ক খুঁজুন যাদের তালিকাগুলো মিলিয়ে শুধু %2$sটি ঘর রয়েছে।\n\nওই %3$sটি অঙ্ককে ওই %4$sটি ঘর পূরণ করতেই হবে, তাই সেগুলো থেকে অন্য সব অঙ্ক বাদ দেওয়া যায় — এতে প্রায়ই সঙ্গে সঙ্গেই কোনো ঘর নেকেড সিঙ্গল বা কোনো জোড়া নেকেড পেয়ার হয়ে যায়।\n\nএটিই মানুষের সবচেয়ে কঠিন মনে হয়, কারণ ঘরগুলোর দিকে তাকালে কিছু বোঝা যায় না: সেখানে এখনও অনেক সম্ভাব্য অঙ্ক থাকে। বিন্যাসটি অঙ্কগুলোর মধ্যে।"</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"শুধু ঠিক দুটি সম্ভাব্য অঙ্ক অবশিষ্ট থাকা ঘর নিয়ে কাজ করুন।\n\nএকটি থেকে শুরু করুন, যেমন {2,6}, এবং ধরুন সেটি 2 নয় — তাহলে সেটি 6। সেটি দেখতে পায় এমন একটি ঘরে যান, যেখানে 6-ও আছে, যেমন {6,4}: সেটি 6 হতে পারে না, তাই সেটি 4। এবার সেটি দেখতে পায় এমন 4 থাকা ঘরে যান, এবং এভাবে এগোন; প্রতিটি ধাপ আগেরটির দ্বারা বাধ্য হয়।\n\nএমন ঘরে পৌঁছালে যার অন্য অঙ্কটি 2 — যে অঙ্কটি শুরুতে বাদ দিয়েছিলেন — কাজ শেষ। হয় প্রথম ঘরটি আসলে 2 ছিল, অথবা শৃঙ্খল চলেছে এবং শেষ ঘরটি 2। কোনো এক প্রান্তে এটি আছে, তাই উভয় প্রান্তকে দেখতে পাওয়া কোনো ঘরে তা থাকতে পারে না।\n\nশৃঙ্খল ছোট রাখুন। চার বা পাঁচটি ঘর পেন্সিলে খুঁজে পাওয়া যায়; তার বেশি হলে হিসাব রাখতে হয়, আর তখন একে ফোর্সিং চেইন বলাই যথার্থ।"</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"কার্যকর প্রান্তের দৈর্ঘ্য ধনাত্মক ও সসীম হতে হবে"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"পড়া যায়নি"</string>

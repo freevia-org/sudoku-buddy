@@ -10,7 +10,7 @@
     <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s, %2$s. errenkadan, %3$s. zutabean%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s, %2$s. urratsean"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s gelaxkan %2$s bakarrik egon daiteke."</string>
-    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s gelaxkak ezin du %2$s izan, %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s gelaxkak ezin du %2$s izan; arrazoia: %3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s gelaxkan ezin da %2$s egon, %5$s zutabe bereko %3$s gelaxkan %4$s bakarrik egon daitekeelako."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"%1$s gelaxkan ezin da %2$s egon, %5$s bloke bereko %3$s gelaxkan %4$s bakarrik egon daitekeelako."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"%1$s gelaxkan ezin da %2$s egon, %5$s errenkada bereko %3$s gelaxkan %4$s bakarrik egon daitekeelako."</string>
@@ -41,22 +41,22 @@
     <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s falta da classpath-ean"</string>
     <string name="msg_0_of_1_9fea8201" formatted="false">"%2$s(e)tik %1$s"</string>
     <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"Haietako %1$s mugimenduk gelaxka bat betetzen dute; gainerakoek hautagaiak kentzen dituzte lehenik bidea egiteko."</string>
-    <string name="msg_0_pair_8730dc66" formatted="false">"%1$s bikotea"</string>
+    <string name="msg_0_pair_8730dc66" formatted="false">"Bikote %1$s"</string>
     <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s inprimatuta, %2$s, %3$s oker"</string>
     <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s inprimatuta, %2$s"</string>
     <string name="msg_0_printed_522101ca" formatted="false">"%1$s inprimatuta"</string>
     <string name="msg_0_printed_clue_922b97c8" formatted="false">"%1$s, inprimatutako pista"</string>
-    <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s laukotea"</string>
+    <string name="msg_0_quad_c9dd2280" formatted="false">"Laukote %1$s"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"Baztertutako %1$s argazki, berrienak lehenik:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: kendu %2$s"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"Gelaxka kopurua: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s urratsek osatzen dute ibilbide hau; onartutako teknikarik zailena %2$s da. %3$s %4$s"</string>
-    <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s hirukotea"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s gelaxka"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"%1$s urratsek osatzen dute ibilbide hau; onartutako teknikarik zailena %2$s da. %3$s %4$s"</string>
+    <string name="msg_0_triple_ff6a8740" formatted="false">"Hirukote %1$s"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s kendu da %2$s gelaxkatik, hautagaiei buruzko aurreko arrazoibidearen bidez."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s idatzita"</string>
     <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"%1$sx%2$s irudi batek %3$s byte behar ditu, baina %4$s jaso dira"</string>
     <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"gelaxka bat ez zen digitu bat ezta puntu bat ere"</string>
-    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Hautagai bereko digituarekin hasi eta amaitzen den bi hautagaiko gelaxken kate batean, digitu hori mutur batean edo bestean dago."</string>
+    <string name="msg_a_chain_of_two_candidate_squares_that_begins__31caf763" formatted="false">"Digitu berarekin hasi eta amaitzen den bi hautagaiko gelaxken kate batean, digitu hori mutur batean edo bestean dago."</string>
     <string name="msg_a_digit_with_only_one_place_left_in_a_row_col_a11112d9" formatted="false">"Errenkada, zutabe edo bloke batean kokaleku bakarra geratzen zaion digitua kokaleku horretan doa."</string>
     <string name="msg_a_handwritten_0_31063236" formatted="false">"Eskuz idatzitako %1$s."</string>
     <string name="msg_a_printed_0_244624d9" formatted="false">"Inprimatutako %1$s."</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", zuzena dela egiaztatuta"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Aukeratu hautagai bat zure gelaxkan zergatik ezin den jarri ikusteko."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Aukeratu hizkuntza"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Aukeratu zer erakutsi"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Aukeratu zer erakutsi"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Itxi"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Itxi pista"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Tolestu irakurketaren berrikuspena"</string>
@@ -127,12 +127,12 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Alderatu behartze-kateak eta lehenetsi jarraitzeko gelaxka gutxiago dituztenak. Kate laburragoek urrats gehiago ekar ditzakete soluzio osoan."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"%2$s ondorioetatik %1$s.a · digitu hipotetikoak"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"dauka"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Eduki mota"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Jarraitu ibilbide osoarekin"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Kontraesana · suposizioak huts egin du"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", kontraesana"</string>
     <string name="msg_contradiction_the_red_0_has_nowhere_left_for__245de896" formatted="false">"Kontraesana: %1$s gorrian ez dago %2$s jartzeko kokalekurik. Hori ezinezkoa da; beraz, hasierako suposizioak huts egin behar du."</string>
-    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Kontraesana: gelaxka gorriak ez du hautagairik geratzen. Hori ezinezkoa da; beraz, hasierako suposizioak huts egin behar du."</string>
+    <string name="msg_contradiction_the_red_square_has_no_candidate_599239cb" formatted="false">"Kontraesana: gelaxka gorriari ez zaio hautagairik geratzen. Hori ezinezkoa da; beraz, hasierako suposizioak huts egin behar du."</string>
     <string name="msg_copy_deletion_request_1c03baa5" formatted="false">"Kopiatu ezabatze-eskaera"</string>
     <string name="msg_correct_compare_your_reasoning_with_the_expla_7e786f2e" formatted="false">"Zuzen. Alderatu zure arrazoibidea beheko azalpenarekin."</string>
     <string name="msg_could_not_decode_the_captured_image_fd497fa5" formatted="false">"ezin izan da ateratako irudia deskodetu"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Ezin izan da arazketarako kapturaren ebidentzia gorde"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Ezin izan da irakurketa bidali. Saiatu berriro konexioa duzunean."</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Irteerarik gabe"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"EZABATU"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Ezabatu"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Ezabatu txostena"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Ezabatu argazki hau"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Deskribatu zer gertatu den eta errepikatzeko urratsak. Adierazi ea lehenik ezagututako digituak egiaztatu eta zuzendu dituzun. Ideia bat bada, idatzi \'Ez dagokio\'."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", pista honen xedea"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Gailua: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostikoa laburtu da nabigatzaileko zirriborroan sartzeko. Aplikazioaren Bidali diagnostikoa ekintzak txosten osoa parteka dezake."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnostikoa laburtu da nabigatzaileko zirriborroan sartzeko. Aplikazioaren Bidali diagnostikoak ekintzak txosten osoa parteka dezake."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"digituak 1..9 artekoa izan behar du, baina %1$s zen"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Irakurri gabeko digituak"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Ebidentzia diskoan gordetzeak denboretan eragiten du; ez da latentzia neurtzeko erreferentzia-proba."</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Guztiek betetzen dute gelaxka bat."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Gelaxka guztiak beteta daude, baina %1$s erantzun ez datoz bat soluzioarekin."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Gelaxka guztiak beteta daude, baina erantzun bat ez dator bat soluzioarekin."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Soluzio bakarra duen sudoku oro arrazoituz ebatz daiteke; asmatzea ez da inoiz beharrezkoa, eta gutxitan laguntzen du. Hauek dira aplikazioak ezagutu eta azal ditzakeen arrazoitzeko moduak, errazenetik hasita. Horietako bat irekita duzun sudokuari aplika dakiokeenean, aplikatzen den toki guztiak erakutsiko dizkizu."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Soluzio bakarra duen sudoku oro arrazoituz ebatz daiteke; asmatzea ez da inoiz beharrezkoa, eta gutxitan laguntzen du. Hauek dira aplikazioak ezagutu eta azal ditzakeen arrazoitzeko moduak, errazenetik hasita. Horietako bat irekita duzun sudokuari aplika dakiokeenean, aplikatzen den toki guztiak erakutsiko dizkizu."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Orain arte idatzi duzun guztia zuzena da."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Une honetan erabilgarri dauden adibideak: bakoitza zure uneko taulatik abiatzen da."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"10 lerro horizontal espero ziren, %1$s jaso dira"</string>
@@ -234,14 +234,14 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Mantendu telefonoa lau"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Mantendu telefonoa lau sudokuaren gainean."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Mantendu telefonoa lau sudokuaren gainean"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontala\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Nola aurkitu"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nNola iristen garen horra:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Bilatu zehazki bi hautagai dituzten gelaxkak: Y-wing bat horrelako hiru gelaxkak osatzen dute, eta besterik ez.\n\nHartu bat pibotetzat, adibidez {2,5}. Bilatu hark ikusten duen {2,9} hautagaiko gelaxka bat, eta hark ikusten duen {5,9} hautagaiko beste bat. Pibotea 2 edo 5 da. 2 bada, lehen pintzak 9 izan behar du; 5 bada, bigarrenak 9 izan behar du. Edozein kasutan, pintzetako batean 9 agertzen da: ez dakizu zeinetan, eta ez duzu jakin beharrik.\n\nBeraz, bi pintzak ikusten dituen gelaxka batek ere ezin du 9 izan. Gelaxka horiek normalean laukizuzena osatzen duten bi izkinak dira."</string>
     <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", %1$s hipotetikoa, ez da sartutako erantzuna"</string>
     <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Errenkada, zutabe edo bloke bateko %1$s digitu %2$s gelaxka beretan baino ezin badira jarri, gelaxka horiek ezin dute beste ezer eduki."</string>
     <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Errenkada, zutabe edo bloke bateko %1$s gelaxkek guztira zehazki %2$s hautagai partekatzen badituzte, digitu horiek gelaxka horietan doaz, eta unitateko beste inon ez."</string>
-    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Digitu batek bi kokaleku baditu errenkada batean eta bi zutabe batean, eta bakoitzeko kokaleku batek bloke bera partekatzen badu, beste bietako batek digitu hori izan behar du."</string>
+    <string name="msg_if_a_digit_has_two_homes_in_a_row_and_two_in__fe828416" formatted="false">"Digitu batek bi kokaleku baditu errenkada batean eta bi zutabe batean, eta errenkadako kokaleku batek eta zutabeko batek bloke bera partekatzen badute, beste bietako batek digitu hori izan behar du."</string>
     <string name="msg_if_a_digit_has_two_homes_in_each_of_two_rows__da2395c9" formatted="false">"Digitu batek bi kokaleku baditu bi errenkadetako bakoitzean, eta kokaleku bana zutabe berean badago, beste bi kokalekuetako batek digitu hori izan behar du."</string>
     <string name="msg_if_a_digit_s_only_homes_along_a_line_all_sit__58d13af8" formatted="false">"Lerro batean digitu baten kokaleku posible guztiak bloke berean badaude, digitu hori blokearen gainerako gelaxketatik bazter daiteke."</string>
     <string name="msg_if_a_digit_s_only_homes_in_0_rows_lie_in_the__20d54b59" formatted="false">"Digitu baten kokaleku posible bakarrak %1$s errenkadatan %2$s zutabe beretan badaude, digitu hori zutabe horietako gainerako gelaxketatik bazter daiteke; gauza bera errenkadak eta zutabeak trukatuta."</string>
@@ -261,7 +261,7 @@
     <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Zutabe honetan, %1$s %2$s gelaxka hauetan baino ezin da egon; beraz, gelaxka horiek erreserbatuta daude. Horrek %3$s baztertzen du gelaxka horietatik."</string>
     <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Errenkada honetan, %1$s %2$s gelaxka hauetan baino ezin da egon; beraz, gelaxka horiek erreserbatuta daude. Horrek %3$s baztertzen du gelaxka horietatik."</string>
     <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Haien argazkiak, irakurketak eta zuzenketak barne. Desaktibatu Ezarpenetan."</string>
-    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Bloke bakar baten barruan, bilatu bi edo hiru gelaxkatan baino jarri ezin den digitu bat, eta egiaztatu guztiak errenkada berean edo zutabe berean dauden. Hala bada, digitua lerro horretako nonbait dago ziur: ez dakizu non, baina badakizu bloke honen barruan dagoela. Beraz, ezin da lerro bereko beste inon egon bloketik kanpo.\n\nHonek ez du berez digitirik jartzen. Hautagaiak kentzen ditu beste nonbait bakun bat ager dadin."</string>
+    <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Bloke bakar baten barruan, bilatu bi edo hiru gelaxkatan baino jarri ezin den digitu bat, eta egiaztatu guztiak errenkada berean edo zutabe berean dauden. Hala bada, digitua lerro horretako nonbait dago ziur: ez dakizu non, baina badakizu bloke honen barruan dagoela. Beraz, ezin da lerro bereko beste inon egon bloketik kanpo.\n\nHonek ez du berez digiturik jartzen. Hautagaiak kentzen ditu beste nonbait bakun bat ager dadin."</string>
     <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Bloke honen barruan, %1$s %2$s honetan baino ezin da jarri. Beraz, %3$s hemen nonbait dago, eta %4$s honen gainerako gelaxketatik bazter daiteke."</string>
     <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Arazoa edo ideia"</string>
     <string name="msg_it_applies_in_0_places_here_step_forward_to_w_dcda7da6" formatted="false">"Hemen %1$s tokitan aplika daiteke. Egin aurrera haietako bakoitza ikusteko."</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Mantendu behartze-kateak labur"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Hizkuntza"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Lizentziak"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Bilatu hautagai gutxi geratzen zaizkien gelaxkak errenkada, zutabe edo bloke batean. Hartu haietako %1$s eta bildu haien hautagaiak. Bildutako multzoak zehazki %2$s digitu baditu, %3$s digitu horiek erreserbatuta daude: %4$s gelaxka horietan joan behar dute, nolabaiteko ordenan, oraindik zein non doan esan ezin baduzu ere.\n\nHori nahikoa da. Unitateko beste gelaxka guztietatik digitu horiek ken daitezke, eta normalean gelaxka horietako bat bakun bihurtzen da orduan.\n\nGelaxka guztiek ez dituzte hautagai berak behar: {2,7}, {2,9} eta {7,9} hirukote guztiz balioduna da, eta jendeari oharkabean pasatzen zaiona."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Bilatu hautagai gutxi geratzen zaizkien gelaxkak errenkada, zutabe edo bloke batean. Hartu haietako %1$s eta bildu haien hautagaiak. Bildutako multzoak zehazki %2$s digitu baditu, %3$s digitu horiek erreserbatuta daude: %4$s gelaxka horietan joan behar dute, nolabaiteko ordenan, oraindik zein non doan esan ezin baduzu ere.\n\nHori nahikoa da. Unitateko beste gelaxka guztietatik digitu horiek ken daitezke, eta normalean gelaxka horietako bat bakun bihurtzen da orduan.\n\nGelaxka guztiek ez dituzte hautagai berak behar: {2,7}, {2,9} eta {7,9} hirukote guztiz balioduna da, eta jendeari oharkabean pasatzen zaiona."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Bilatu bi hautagai berak dituzten gelaxkak, adibidez {4,9}, kate bat osatzen dutenak, bakoitzak hurrengoa ikusiz. Hiru ez dira nahikoa; gutxienez lau behar dituzu.\n\nKoloreztatu txandaka aurrera egin ahala. Gelaxka bakoitzak hurrengoa ikusten duenez, ondoz ondoko bik ezin dute digitu bera eduki; beraz, katea 4, 9, 4, 9 da bide osoan, edo 9, 4, 9, 4, eta ezin duzu jakin zein.\n\nEdozein kasutan, aurkako koloreetako bi gelaxkek digitu desberdinak dituzte: bata 4 da eta bestea 9. Beraz, biak ikusten dituen edozein gelaxkak ezin du ez bata ez bestea izan, eta bi hautagaiak batera galtzen ditu.\n\nEredua erraz aurkitzen da, hain zuzen ere gelaxka guztiek itxura bera dutelako. Jarraitu bikote berdinei saretan zehar eta ikusi non ukitzen diren."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Bilatu bi hautagai berak dituzten hiru gelaxka, adibidez {1,6}, laukizuzen baten hiru izkinatan daudenak. Laukizuzenak zehazki bi bloketan egon behar du: bi errenkada eta bi zutabe bi bloke zeharkatuz, ez lau.\n\nOrain begiratu laugarren izkinari. Hark ere 1 eta 6 bakarrik balitu, sudokuak bi soluzio izango lituzke: laukizuzenean 1ak eta 6ak trukatu ahal izango zenituzke, eta gainerako guztia baliozkoa izango litzateke oraindik. Ongi prestatutako sudoku batek soluzio bakarra du; beraz, laugarren izkinak beste zerbait erabili behar du: haren beste hautagaiak geratzen dira, eta 1 eta 6 kentzen dira.\n\nHau da egileari buruzkoa den arrazoibide bakarra, saretari buruzkoa izan beharrean. Argitaratutako sudoku batean baliozkoa da, eta dagoeneko gaizki bete duzun batean ez du ezertarako balio, orduan balitekeelako soluziorik ere ez izatea, are gutxiago bakarra."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Begiratu bloke honetan. Jarraitu inguraketari pista honek azalduko duen gelaxkaraino."</string>
@@ -324,12 +324,12 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Hemen %1$s bakarrik jar daiteke. Nabarmendutako gelaxkek beste zortzi digituetatik bat baztertzen dute; %2$s lehenago baztertu ziren gelaxka honetatik, ez inguruan ikus dezakezun ezergatik."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Hemen %1$s bakarrik jar daiteke. Nabarmendutako gelaxkek beste zortzi digituetatik zazpi baztertzen dituzte; %2$s lehenago baztertu zen gelaxka honetatik, ez inguruan ikus dezakezun ezergatik."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Hemen %1$s bakarrik jar daiteke. Nabarmendutako gelaxkek beste zortzi digituetatik bost baztertzen dituzte; %2$s lehenago baztertu ziren gelaxka honetatik, ez inguruan ikus dezakezun ezergatik."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Hemen %1$s baino ezin da jarri. Nabarmendutako gelaxkek beste zortzi digituetatik %2$s hartzen dituzte; %3$s %4$s lehenago baztertu ziren gelaxka honetatik, ez inguruan ikus dezakezun ezergatik."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Hemen %1$s baino ezin da jarri. Nabarmendutako gelaxkek beste zortzi digituetatik %2$s hartzen dituzte; %3$s lehenago baztertuta geratu %4$s gelaxka honetatik, ez inguruan ikus dezakezun ezergatik."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Hemen %1$s bakarrik jar daiteke. Nabarmendutako gelaxkek beste zortzi digituetatik bi baztertzen dituzte; %2$s lehenago baztertu ziren gelaxka honetatik, ez inguruan ikus dezakezun ezergatik."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Hemen %1$s baino ezin da egon. Nabarmendutako gelaxkek beste zortzi zifretatik %2$s hartzen dituzte; %3$s lehenago baztertu ziren gelaxka honetatik, ez inguruan ikus daitekeen ezergatik."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Hemen %1$s bakarrik jar daiteke. Nabarmendutako gelaxkek beste zortzi digituetatik hiru baztertzen dituzte; %2$s lehenago baztertu ziren gelaxka honetatik, ez inguruan ikus dezakezun ezergatik."</string>
     <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Hemen %1$s baino ezin da jarri. Beste zortzi digituak baztertzen dituzte errenkada, zutabe edo bloke honetako gelaxka beteek edo behartutako hautagai bakarrek."</string>
-    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Hemen %1$s baino ezin da jarri, inguruan zergatia erakusten duen ezer ez dagoen arren: beste zortzi digituak aurreko arrazoibideak baztertu zituen gelaxka honetatik, eta ez haien errenkadan, zutabean edo blokean idatzita egoteak."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Hemen %1$s baino ezin da jarri, inguruan zergatia erakusten duen ezer ez dagoen arren: beste zortzi digituak aurreko arrazoibideak baztertu zituen gelaxka honetatik, eta ez gelaxka honen errenkadan, zutabean edo blokean idatzita egoteak."</string>
     <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"%1$s digitu inprimatu baino ez dira aurkitu, eta gutxiegi dira sudoku baterako."</string>
     <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"bira laurdenak soilik onartzen dira, ez %1$s"</string>
     <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Ireki zirriborro bat nabigatzailean, aplikazioaren bertsioa, telefonoaren modeloa, Android bertsioa eta azken eskaneatzeen diagnostikoa beteta dituela. Gehitu zeuk deskribapen osoa eta dagozkion pantaila-argazkiak.\n\nGitHub-en saioa hasi behar da. Zirriborroa berrikusi eta editatu dezakezu bidali aurretik. Bidalitako txostenak eta eranskinak publikoak dira. Ez da argazkirik automatikoki eransten."</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Zuzendu kamera sudoku baterantz."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Zuzendu kamera paperezko sudoku baterantz. Aplikazioak digitu inprimatuak eta zuk idatzitako guztia irakurtzen ditu, sudokua ebazten du, eta pista bat eman, zure erantzunak egiaztatu edo soluzio osoa erakuts diezazuke."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Bikote seinalatzailea"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"BIDALI"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Sudokua prestatzen…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Aurrekoa"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Aurreko urratsa"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Irakurketa berrikusita."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Irakurketa bidalita. Eskerrik asko!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Azken eskaneatzeen diagnostikoa (aurrez beteta)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Ezagutzeak akatsak egin ditzake, batez ere eskuzko idazkerarekin. Erabili Irakurri ezagututako digituak argazkiarekin alderatzeko, eta sakatu edozein gelaxka zuzentzeko. Aplikazioak zalantzazko irakurketak markatzen ditu berrikusteko; ziurtasunez egindako irakurketa bat ere okerra izan daiteke."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Ezagutzeak akatsak egin ditzake, batez ere eskuzko idazkerarekin. Erabili Irakurketa ezagututako digituak argazkiarekin alderatzeko, eta sakatu edozein gelaxka zuzentzeko. Aplikazioak zalantzazko irakurketak markatzen ditu berrikusteko; ziurtasunez egindako irakurketa bat ere okerra izan daiteke."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Baztertu hipotesia"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Urruneko bikoteak"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Kendu %1$s"</string>
@@ -499,7 +499,7 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Inprimatutako digituek ez dute sudoku ebazgarririk osatzen."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s gelaxkan geratzen diren hautagaiak {%2$s} dira. Jarri %3$s, %4$s. errenkadan, %5$s. zutabean."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Txostena handiegia da bidaltzeko."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-hegala, ardatzak hautagai bat gehiago duela. Bilatu zehazki hiru hautagai dituen gelaxka bat, adibidez {1,4,7}, bi hautagaiko bi gelaxka ikusten dituena: bata {1,7} eta bestea {4,7}.\n\nOrain hirurak izan daitezke 7, eta haietako batek izan behar du. Beraz, gelaxka batek hirurak ikusi behar ditu 7a baztertzeko, ez soilik bi pintzak; praktikan, ardatzaren bloke berean eta pintza batekin lerro berean egon behar du.\n\nY-hegal batek baino bazterketa gutxiago egiten ditu, eta arrazoi beragatik errazagoa da oharkabean pasatzea: ardatza ez da nabarmentzen."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-hegala, ardatzak hautagai bat gehiago duela. Bilatu zehazki hiru hautagai dituen gelaxka bat, adibidez {1,4,7}, bi hautagaiko bi gelaxka ikusten dituena: bata {1,7} eta bestea {4,7}.\n\nOrain hirurak izan daitezke 7, eta haietako batek izan behar du. Beraz, gelaxka batek hirurak ikusi behar ditu 7a baztertzeko, ez soilik bi pintzak; praktikan, ardatzaren bloke berean eta pintza batekin lerro berean egon behar du.\n\nY-hegal batek baino bazterketa gutxiago egiten ditu, eta arrazoi beragatik errazagoa da oharkabean pasatzea: ardatza ez da nabarmentzen."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Nabarmendutako blokean bete dezakezun gelaxka bat dago.\n\nSakatu Pista berriro zein teknikak aurkitzen duen jakiteko."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Hemen ez dago arrazoitzeko ezer gehiago."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"%1$s gelaxka hauek %2$s eta %3$s soilik onartzen dituzte, eta bakoitzak hurrengoa ikusten du; beraz, bide osoan txandakatzen dira. %4$s eta %5$s artean lotura kopuru bakoitia dago; hortaz, digitu desberdinak dituzte, eta horrek %6$s baztertzen du biak ikusten dituen edozein gelaxkatik."</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Zergatik gelaxka hau? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" soluzioarekin. Erabili Egiaztatu haiek aztertzeko."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Egin atzera zure gelaxkatik abiatuta. Aukeratu beheko galdera bat."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Egin lan digituz digitu, gelaxkaz gelaxka egin beharrean. Unitate batean, idatzi falta den digitu bakoitza oraindik non joan daitekeen. Ondoren, bilatu beren zerrenden artean %2$s gelaxka soilik hartzen dituzten %1$s digitu.\n\n%3$s digitu horiek %4$s gelaxka horiek bete behar dituzte; beraz, haietako gainerako hautagai guztiak ken daitezke. Horrek sarritan haietako bat bakun biluzi edo bikote biluzi bihurtzen du berehala.\n\nHau da jendeari zailena egiten zaiona, gelaxkei begiratuta ez baitago ezer ikusteko: hautagai asko dituzte oraindik. Eredua digituetan dago."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Egin lan digituz digitu, gelaxkaz gelaxka egin beharrean. Unitate batean, idatzi falta den digitu bakoitza oraindik non joan daitekeen. Ondoren, bilatu beren zerrenden artean %2$s gelaxka soilik hartzen dituzten %1$s digitu.\n\n%3$s digitu horiek %4$s gelaxka horiek bete behar dituzte; beraz, haietako gainerako hautagai guztiak ken daitezke. Horrek sarritan berehala bakun biluzi bat sortzen du gelaxka horietako batean, edo bikote biluzi bat haietako bitan.\n\nHau da jendeari zailena egiten zaiona, gelaxkei begiratuta ez baitago ezer ikusteko: hautagai asko dituzte oraindik. Eredua digituetan dago."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Egin lan zehazki bi hautagai geratzen zaizkien gelaxkekin soilik.\n\nHasi batean, adibidez {2,6}, eta demagun ez dela 2; orduan 6 da. Joan hark ikusten duen eta 6 ere duen gelaxka batera, adibidez {6,4}: hori ezin da 6 izan; beraz, 4 da. Joan horrek ikusten duen eta 4 duen gelaxka batera, eta jarraitu; urrats bakoitza aurrekoak behartzen du.\n\nBeste digitua 2 duen gelaxka batera iristen bazara —hasieran baztertu duzun digitua—, amaitu duzu. Edo lehen gelaxka azkenean 2 zen, edo kateak aurrera egin du eta azken gelaxka 2 da. Mutur batek edo besteak dauka; beraz, bi muturrak ikusten dituen edozein gelaxkak ezin du izan.\n\nMantendu kateak laburrak. Lau edo bost gelaxkakoak arkatzez aurki daitezke; hortik aurrera kontuak eramaten ari zara, eta behartze-katea da izen egokia."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"laneko ertzak positiboa eta finitua izan behar du"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Ezin izan da irakurri"</string>

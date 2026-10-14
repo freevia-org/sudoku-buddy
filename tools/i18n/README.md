@@ -59,6 +59,19 @@ match cannot consume a preceding paragraph.
 
 ## Translation quality and release review
 
+`python tools/i18n/review_cli.py --workers 3` reviews every bundled catalog using
+the signed-in Codex CLI. It submits only public English messages and their bundled
+translations, in an empty temporary workspace with tools and user configuration
+excluded. Findings are cached in the ignored `drafts/review/` directory. A second
+request independently checks proposed corrections; damaged arguments, candidate
+sets, brands and fragment spacing are rejected before application.
+
+`review_cli.py --apply-completed` copies verified findings to editorial overrides.
+Then run `prepare.py --from-resources`, `validate.py`, and the offline Python tests.
+Review uncertain findings separately; the model's coverage count is not native
+speaker certification. Preparation preserves the English boundary whitespace,
+so applying overrides repeatedly cannot duplicate tutor paragraph breaks.
+
 Initial catalogs are machine-assisted drafts. Completeness and placeholder checks
 do **not** certify linguistic quality. Native-language review is still needed,
 especially for consent/privacy notices and advanced Sudoku explanations. Do not

@@ -50,7 +50,7 @@
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s 张被拒绝的照片，按最新在前排序："</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s：排除 %2$s"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s 个格子"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"此路径共 %1$s 步，使用的最难受支持技巧为 %2$s。%3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"此路径共 %1$s 步，使用的最难受支持技巧为 %2$s。%3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s三数组"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"此前的候选数推理已从 %2$s 中排除 %1$s。"</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s 个手写答案"</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">"，已检查，正确"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"选择一个候选数，查看它为什么不能填入你的格子。"</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"选择语言"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"选择显示内容"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"选择显示内容"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"关闭"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"关闭提示"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"收起识别核对"</string>
@@ -127,7 +127,7 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"比较强制链，优先选择需要跟踪较少格子的链。较短的链可能使完整解答需要更多步骤。"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"推论 %1$s/%2$s · 假设数字"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"包含"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"内容类型"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"继续完整推导"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"矛盾 · 假设不成立"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">"，矛盾"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"无法保留调试拍摄依据"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"无法提交识别结果。请联网后重试。"</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"无路可走"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"删除"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"删除"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"删除报告"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"删除这张照片"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"每一种都能填出一个格子。"</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"所有格子都已填满，但有 %1$s 个答案与解答不符。"</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"所有格子都已填满，但有一个答案与解答不符。"</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"每道有唯一解的数独都能通过推理解决；从不需要猜测，猜测也很少有帮助。以下是本应用能识别并解释的推理方法，按从易到难排列。当某种方法适用于当前打开的题目时，应用会显示所有适用位置。"</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"每道有唯一解的数独都能通过推理解决；从不需要猜测，猜测也很少有帮助。以下是本应用能识别并解释的推理方法，按从易到难排列。当某种方法适用于当前打开的题目时，应用会显示所有适用位置。"</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"你目前填入的答案全部正确。"</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"当前可用的示例：每个都从你当前的盘面开始。"</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"应有 10 条水平线，实际为 %1$s"</string>
@@ -234,7 +234,7 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"将手机放平"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"将手机平放在题目上方。"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"将手机平放在题目上方"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"水平\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"寻找方法"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\n推导过程："</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"寻找恰好有两个候选数的格子——Y 翼由三个这样的格子组成，仅此而已。\n\n选一格作枢纽，例如 {2,5}。找一个与它相互影响、候选数为 {2,9} 的格子，再找一个与它相互影响、候选数为 {5,9} 的格子。枢纽格不是 2 就是 5。如果是 2，第一个翼格必须填 9；如果是 5，第二个翼格必须填 9。无论哪种情况，两个翼格中必有一格填 9——你不知道是哪一格，也不必知道。\n\n因此，所有同时与两个翼格相互影响的格子都不能填 9。这些格子通常是补成矩形的另外两个角。"</string>
@@ -249,9 +249,9 @@
     <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"如果假设填入某个数字会导致一个格子没有任何可填数字，则该数字是错的。"</string>
     <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"图像尺寸必须为正数"</string>
     <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"在所有格子都具有相同两个候选数的链中，奇数长度链的两端填入不同数字。"</string>
-    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"在这 %1$s 个%2$s中，%3$s 只能填在这 %4$s 个%5$s里。它们合起来占用了所有这些位置，因此可以从这些%7$s的其他位置中排除 %6$s。"</string>
-    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"在这 %1$s 列中，%2$s 只能填在这 %3$s 行内。它们会占用这些行中的所有对应位置，因此可从这些行的其他位置排除 %4$s。"</string>
-    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"在这 %1$s 行中，%2$s 只能填在这 %3$s 列内。它们会占用这些列中的所有对应位置，因此可从这些列的其他位置排除 %4$s。"</string>
+    <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"在这 %1$s 个%2$s中，%3$s 只能填在这 %4$s 个%5$s里。这些填数会分别占用上述所有单元，因此可以从这些%7$s的其他位置中排除 %6$s。"</string>
+    <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"在这 %1$s 列中，%2$s 只能填在这 %3$s 行内。每行都必有一个这样的填数，因此可从这些行的其他位置排除 %4$s。"</string>
+    <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"在这 %1$s 行中，%2$s 只能填在这 %3$s 列内。每列都必有一个这样的填数，因此可从这些列的其他位置排除 %4$s。"</string>
     <string name="msg_in_these_two_0_1_has_only_two_homes_each_and__f3b3655b" formatted="false">"在这两个%1$s中，%2$s 各只有两个可填位置，而 %3$s 和 %4$s 同处一%5$s，所以它们不能同时填 %6$s。因此，%7$s 和 %8$s 中必有一个填该数字，所有同时与两者相互影响的格子都可排除 %9$s。"</string>
     <string name="msg_in_these_two_columns_0_has_only_two_homes_eac_1d2c03ed" formatted="false">"在这两列中，%1$s 各只有两个可填位置，而 %2$s 和 %3$s 位于同一行，因此它们不可能都是 %4$s。所以 %5$s 和 %6$s 中必有一个是该数字，可从所有同时与这两个单元格互相可见的单元格中排除 %7$s。"</string>
     <string name="msg_in_these_two_rows_0_has_only_two_homes_each_a_dacfff29" formatted="false">"在这两行中，%1$s 各只有两个可填位置，而 %2$s 和 %3$s 位于同一列，因此它们不可能都是 %4$s。所以 %5$s 和 %6$s 中必有一个是该数字，可从所有同时与这两个单元格互相可见的单元格中排除 %7$s。"</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"优先使用短强制链"</string>
     <string name="msg_language_a4fe6526" formatted="false">"语言"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"许可证"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"在同一行、列或宫中寻找候选数较少的格子。取其中 %1$s 格，合并它们的候选数。如果恰好有 %2$s 个数字，这 %3$s 个数字就已被占用：它们必须以某种顺序填入这 %4$s 格，即使你还不知道各填在哪一格。\n\n这就足够了。该行、列或宫的其他格子都可以排除这些数字，通常其中一格会因此只剩一个候选数。\n\n这些格子不必具有相同候选数——{2,7}、{2,9} 和 {7,9} 就是有效的三数组，也是人们容易漏掉的一种。"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"在同一行、列或宫中寻找候选数较少的格子。取其中 %1$s 格，合并它们的候选数。如果恰好有 %2$s 个数字，这 %3$s 个数字就已被占用：它们必须以某种顺序填入这 %4$s 格，即使你还不知道各填在哪一格。\n\n这就足够了。该行、列或宫的其他格子都可以排除这些数字，通常其中一格会因此只剩一个候选数。\n\n这些格子不必具有相同候选数——{2,7}、{2,9} 和 {7,9} 就是有效的三数组，也是人们容易漏掉的一种。"</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"寻找候选数相同的双候选数格，例如 {4,9}，将它们连成链，每格都与下一格相互影响。三格不够，至少需要四格。\n\n沿链交替涂色。由于每格都与下一格相互影响，相邻两格不能填相同数字，因此整条链依次为 4, 9, 4, 9——或 9, 4, 9, 4，你无法确定是哪一种。\n\n无论哪种情况，两个颜色相反的格子都填不同数字：一个是 4，另一个是 9。因此，任何同时与这两格相互影响的格子都不能填这两个数字，可以一次排除两个候选数。\n\n这种结构容易辨认，正是因为其中每格看起来都一样。沿着盘面上相同的数对追踪，看看它们在哪里相互影响。"</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"寻找三个候选数相同的双候选数格，例如 {1,6}，位于矩形的三个角。矩形必须恰好跨两个宫：两行、两列穿过两个宫，而不是四个。\n\n再看第四个角。如果它也只有 1 和 6，题目就会有两个解——可以交换矩形中的 1 和 6，其余部分仍然成立。合格的题目有唯一解，因此第四个角必须填其他数字：保留它的其他候选数，排除 1 和 6。\n\n这是所有方法中唯一基于出题者而非盘面的论证。它适用于已发布的题目，但对你已经填错的盘面毫无作用，因为那时可能根本无解，更谈不上唯一解。"</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"看这个宫。沿轮廓找到此提示将解释的格子。"</string>
@@ -282,7 +282,7 @@
     <string name="msg_moderate_5c42afc7" formatted="false">"中等"</string>
     <string name="msg_more_d47d7cb0" formatted="false">"更多"</string>
     <string name="msg_more_light_needed_4b4480e1" formatted="false">"需要更多光线"</string>
-    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"存在多个解，因此漏识别了一个印刷数字。按“求解”查看各个解及其不同之处。"</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"存在多个解，因此漏识别了一个印刷数字。按“解答”查看各个解及其不同之处。"</string>
     <string name="msg_move_back_f4d6dba8" formatted="false">"离远一点"</string>
     <string name="msg_move_closer_1da054ae" formatted="false">"靠近一点"</string>
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"靠近一点——网格太小，无法识别。"</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"此格只能填入 %1$s。高亮单元格已占用其余八个数字中的一个；%2$s 是此前从此格中排除的，并非根据周围可见的数字排除。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"此格只能填入 %1$s。高亮单元格已占用其余八个数字中的七个；%2$s 是此前从此格中排除的，并非根据周围可见的数字排除。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"此格只能填入 %1$s。高亮单元格已占用其余八个数字中的五个；%2$s 是此前从此格中排除的，并非根据周围可见的数字排除。"</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"这里只能填 %1$s。高亮格子占用了其他八个数字中的 %2$s 个；%3$s %4$s先前已从此格排除，依据并非周围可见的内容。"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"这里只能填 %1$s。高亮格子占用了其他八个数字中的 %2$s 个；%3$s %4$s从此格排除，所依据的是先前的推理，而非周围可见的数字。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"此格只能填入 %1$s。高亮单元格已占用其余八个数字中的两个；%2$s 是此前从此格中排除的，并非根据周围可见的数字排除。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"这里只能填 %1$s。高亮的单元格排除了其余八个数字中的 %2$s 个；%3$s 已在之前从此单元格中排除，并非由周围可见的数字直接排除。"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"此格只能填入 %1$s。高亮单元格已占用其余八个数字中的三个；%2$s 是此前从此格中排除的，并非根据周围可见的数字排除。"</string>
@@ -336,7 +336,7 @@
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"打开应用设置"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"打开 GitHub"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"开源声明"</string>
-    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"打开“为什么是这一格？”查看最终填数依据，或选择已排除的候选数来追踪其证明。"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"打开“为什么是此格？”查看最终填数依据，或选择已排除的候选数来追踪其证明。"</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache 许可证 2.0。用于查找网格并校正其透视。\n\nAndroidX、Jetpack Compose 和 CameraX - Apache 许可证 2.0。\n\nKotlin - Apache 许可证 2.0。\n\n数字识别器使用 LeCun、Cortes 和 Burges 的 MNIST 手写数字数据库，以及开放系统字体渲染的数字和程序绘制的数字进行训练。"</string>
     <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"OpenCV 原生库加载失败"</string>
     <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"拍摄另一道题。"</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"将相机对准数独题目。"</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"将相机对准纸上的数独题目。应用会识别印刷数字及你填写的内容，解出题目，并可提供提示、检查答案或显示完整解答。"</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"指向数对"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"提交"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"正在准备题目…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"上一个"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"上一步"</string>
@@ -423,7 +423,7 @@
     <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"求解器辅助答案：在 %2$s 填入 %1$s。候选数为 %3$s。应用支持的技巧未能在此局面找到下一步。搜索在唯一解中找到了 %4$s；无法提供搜索分支的详细证明。"</string>
     <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\n求解器辅助得出的答案：应用支持的技巧未能找到下一步。无法提供详细证明。"</string>
     <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"求解器辅助排除：搜索排除了高亮单元格中的 %1$s，但应用无法生成可供显示的简短矛盾推导过程。无法提供详细证明。"</string>
-    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"部分单元格可能包含笔记，而非完整数字。"</string>
+    <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"部分单元格可能包含候选数标记，而非完整数字。"</string>
     <string name="msg_some_digits_were_not_read_confidently_c1fc9cd3" formatted="false">"部分数字的识别置信度不足。"</string>
     <string name="msg_something_went_wrong_reading_that_photo_749b25ab" formatted="false">"识别这张照片时出错。"</string>
     <string name="msg_square_c11092bc" formatted="false">"单元格"</string>
@@ -499,7 +499,7 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"印刷数字无法构成可解的谜题。"</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s 的剩余候选数为 {%2$s}。在第 %4$s 行、第 %5$s 列填入 %3$s。"</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"报告过大，无法提交。"</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"这是枢纽多一个候选数的 Y 翼。寻找一个恰有三个候选数的单元格，例如 {1,4,7}，它与两个双候选数单元格分别同属一行、列或宫——一个是 {1,7}，另一个是 {4,7}。\n\n这三格都可能是 7，而且至少一格必须是 7。因此，要排除某格的 7，该格必须与这三格都同属一行、列或宫，而不只是与两个翼格相连——实际布局中，这意味着它与枢纽同宫，且与一个翼格同行或同列。\n\n它比 Y 翼能排除的候选数更少，也因此更容易被忽略：枢纽并不显眼。"</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"这是枢纽多一个候选数的 Y 翼。寻找一个恰有三个候选数的单元格，例如 {1,4,7}，它与两个双候选数单元格分别同属一行、列或宫——一个是 {1,7}，另一个是 {4,7}。\n\n这三格都可能是 7，而且至少一格必须是 7。因此，要排除某格的 7，该格必须与这三格都同属一行、列或宫，而不只是与两个翼格相连——实际布局中，这意味着它与枢纽同宫，且与一个翼格同行或同列。\n\n它比 Y 翼能排除的候选数更少，也因此更容易被忽略：枢纽并不显眼。"</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"高亮的宫中有一个单元格可以填入数字。\n\n再次按“提示”，即可获知使用哪种技巧。"</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"这里已没有需要推理的内容。"</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"这 %1$s 格都只有 %2$s 和 %3$s，且每格与下一格同属一行、列或宫，因此数字沿整条链交替出现。%4$s 和 %5$s 相隔奇数条连接，所以它们的数字不同——因此，与两者都同属一行、列或宫的单元格可以排除 %6$s。"</string>
@@ -511,7 +511,7 @@
     <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"这些数字无法构成谜题，且错误过多，无法确定具体位置。点按任意单元格更正识别结果，或重新拍照。"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"这些数字无法构成谜题。更改圈出的 %1$s 个单元格即可修正——点按其中一格更正识别结果。"</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"这些数字无法构成谜题。更改圈出的单元格即可修正——点按它更正识别结果。"</string>
-    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"这些数字无法构成谜题，因此有数字被误识别。按“求解”查看需要更正的单元格。"</string>
+    <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"这些数字无法构成谜题，因此有数字被误识别。按“解答”查看需要更正的单元格。"</string>
     <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"这四格在两个宫中构成矩形，其中三格只有 %1$s。如果 %2$s 也只有这两个候选数，就可以沿矩形交换数字，使谜题有两个解。谜题只有一个解，因此 %3$s 必须使用其他数字——所以排除 %4$s。"</string>
     <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"这些步骤未能解到最后：这里有某种情况让应用完全无法继续。"</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"这一步不填入数字，而是从 %2$s 中排除 %1$s。"</string>
@@ -521,10 +521,10 @@
     <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"此证明解释一条提示，包括得出答案之前的候选数排除过程。逐步前进，在网格上跟随推理，然后继续完整解题路径。"</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"无法准备此谜题。"</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"无法保存此谜题。你现在仍可使用它。请在拍摄下一张照片前释放一些存储空间。"</string>
-    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"此谜题有多个解，因此可能漏识别了一个印刷数字。正在显示第 %1$s 个解，共 %2$s 个——再次按“求解”查看下一个。圈出的单元格在所显示的各个解中不同。"</string>
+    <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"此谜题有多个解，因此可能漏识别了一个印刷数字。正在显示第 %1$s 个解，共 %2$s 个——再次按“解答”查看下一个。圈出的单元格在所显示的各个解中不同。"</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"无法打开此谜题的照片。"</string>
     <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"此推理排除了 %1$s 个现有的 "</string>
-    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"此单元格可能包含候选数笔记，而非完整数字。请检查。"</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"此单元格可能包含候选数标记，而非完整数字。请检查。"</string>
     <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"此视图包含此前排除的候选数。在下方打开相应依据进行核查。"</string>
     <string name="msg_three_8b5b9db0" formatted="false">"三"</string>
     <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"光线太暗，无法辨认网格线"</string>
@@ -559,9 +559,9 @@
     <string name="msg_why_d3ae14a5" formatted="false">"原因"</string>
     <string name="msg_why_not_0_1_3eb81faf" formatted="false">"为什么不是 %1$s？· %2$s"</string>
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"为什么是此格？· %1$s"</string>
-    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" 与解答一致。使用“检查”查看。"</string>
+    <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" 与解答不符。使用“检查”查看。"</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"从所选单元格倒推。在下方选择一个问题。"</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"逐个数字分析，而非逐个单元格。在一个单元中，列出每个缺失数字仍可填入的位置。然后寻找 %1$s 个数字，它们的位置列表合计只覆盖 %2$s 个单元格。\n\n这 %3$s 个数字必须填满这 %4$s 格，因此可排除这些格中的其他所有候选数——这常常会立即使其中一格变成显性单数，或使两格形成显性数对。\n\n人们通常觉得这最难，因为观察单元格时看不出什么：它们仍有很多候选数。规律藏在数字中。"</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"逐个数字分析，而非逐个单元格。在一个单元中，列出每个缺失数字仍可填入的位置。然后寻找 %1$s 个数字，它们的位置列表合计只覆盖 %2$s 个单元格。\n\n这 %3$s 个数字必须填满这 %4$s 格，因此可排除这些格中的其他所有候选数——这常常会立即使其中一格只剩一个候选数，或使两格形成显性数对。\n\n人们通常觉得这最难，因为观察单元格时看不出什么：它们仍有很多候选数。规律藏在数字中。"</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"只使用恰好剩下两个候选数的单元格。\n\n从一格开始，例如 {2,6}，假设它不是 2，那么它就是 6。转到与它同属一行、列或宫且也有 6 的单元格，例如 {6,4}：此格不能是 6，因此是 4。再转到与此格同属一行、列或宫且包含 4 的单元格，依此继续，每一步都由上一步确定。\n\n如果到达一格，其另一个数字是 2——也就是最初排除的数字——链就完成了。要么起点其实是 2，要么沿链推导后终点是 2。两端至少一端是它，因此与两端都同属一行、列或宫的单元格不能是它。\n\n尽量保持链条简短。用铅笔找四五格的链尚可；再长就需要记录推导了，称为强制链才更准确。"</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"处理边长必须为有限正数"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"无法识别"</string>

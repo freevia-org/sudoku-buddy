@@ -7,7 +7,7 @@
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"%1$s-სა და %2$s-ში მხოლოდ %3$s და %4$s შეიძლება მოთავსდეს. ამ სვეტში %5$s-ს მხოლოდ ორი შესაძლო ადგილი აქვს; თითოეულ მათგანს ერთ-ერთი საწყისი უჯრა ხედავს — ამიტომ ამ ორი ადგილიდან ერთ-ერთში %6$s არის, ხოლო ჯაჭვის ის ბოლო, რომელიც მას ხედავს, აუცილებლად %7$s იქნება. ორივე შემთხვევაში ერთ-ერთ ბოლოში %8$s არის, რაც %9$s-ს გამორიცხავს ყველა უჯრიდან, რომელიც ორივე ბოლოს ხედავს."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_row_4__d9964ec9" formatted="false">"%1$s-სა და %2$s-ში მხოლოდ %3$s და %4$s შეიძლება მოთავსდეს. ამ მწკრივში %5$s-ს მხოლოდ ორი შესაძლო ადგილი აქვს; თითოეულ მათგანს ერთ-ერთი საწყისი უჯრა ხედავს — ამიტომ ამ ორი ადგილიდან ერთ-ერთში %6$s არის, ხოლო ჯაჭვის ის ბოლო, რომელიც მას ხედავს, აუცილებლად %7$s იქნება. ორივე შემთხვევაში ერთ-ერთ ბოლოში %8$s არის, რაც %9$s-ს გამორიცხავს ყველა უჯრიდან, რომელიც ორივე ბოლოს ხედავს."</string>
     <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
-    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s, რიგი %2$s, სვეტი %3$s%4$s · %5$s"</string>
+    <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s, მწკრივი %2$s, სვეტი %3$s%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s ნაბიჯზე %2$s"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s-ში მხოლოდ %2$s შეიძლება ჩაიწეროს."</string>
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s-ში %2$s ვერ იქნება, რადგან %3$s "</string>
@@ -21,10 +21,10 @@
     <string name="msg_0_empty_3b007105" formatted="false">"%1$s ცარიელია"</string>
     <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, ჩანაწერი"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s აქ უნდა მოთავსდეს: ეს ერთადერთი უჯრაა სვეტში %2$s, სადაც %3$s ჯერ კიდევ შეიძლება მოთავსდეს.\n\n%4$s\n\n%5$s-ში ამჟამად %6$s დასაშვებია, მაგრამ თითოეული სვეტი %7$s-ს ზუსტად ერთხელ უნდა შეიცავდეს. ამიტომ ჩასვით %8$s მწკრივში %9$s, სვეტში %10$s."</string>
-    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s აქ უნდა ჩაიწეროს: ეს ერთადერთი უჯრაა ამ %2$s %3$s-ში, სადაც ჯერ კიდევ შეიძლება იყოს %4$s.\n\n%5$s\n\n%6$s-ში ამჟამად დასაშვებია %7$s, მაგრამ ყოველი %8$s უნდა შეიცავდეს %9$s-ს ზუსტად ერთხელ. ამიტომ ჩაწერეთ %10$s რიგში %11$s, სვეტში %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s აქ უნდა ჩაიწეროს: ეს ერთადერთი უჯრაა ამ %2$s %3$s-ში, სადაც ჯერ კიდევ შეიძლება იყოს %4$s.\n\n%5$s\n\n%6$s-ში ამჟამად დასაშვებია %7$s, მაგრამ ყოველი %8$s უნდა შეიცავდეს %9$s-ს ზუსტად ერთხელ. ამიტომ ჩაწერეთ %10$s მწკრივში %11$s, სვეტში %12$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s აქ უნდა მოთავსდეს: ეს ერთადერთი უჯრაა ბლოკში %2$s, სადაც %3$s ჯერ კიდევ შეიძლება მოთავსდეს.\n\n%4$s\n\n%5$s-ში ამჟამად %6$s დასაშვებია, მაგრამ თითოეული ბლოკი %7$s-ს ზუსტად ერთხელ უნდა შეიცავდეს. ამიტომ ჩასვით %8$s მწკრივში %9$s, სვეტში %10$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s აქ უნდა მოთავსდეს: ეს ერთადერთი უჯრაა მწკრივში %2$s, სადაც %3$s ჯერ კიდევ შეიძლება მოთავსდეს.\n\n%4$s\n\n%5$s-ში ამჟამად %6$s დასაშვებია, მაგრამ თითოეული მწკრივი %7$s-ს ზუსტად ერთხელ უნდა შეიცავდეს. ამიტომ ჩასვით %8$s მწკრივში %9$s, სვეტში %10$s."</string>
-    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s-ს ამ რიგში ორი ადგილი აქვს და ამ სვეტშიც ორი. %2$s და %3$s ერთ ბლოკშია, ამიტომ ორივეში %4$s ვერ იქნება — შედეგად ის %5$s-სა და %6$s-დან ერთ-ერთშია, რაც %7$s-ს გამორიცხავს ყველა უჯრიდან, რომელიც ორივეს ხედავს."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s-ს ამ მწკრივში ორი ადგილი აქვს და ამ სვეტშიც ორი. %2$s და %3$s ერთ ბლოკშია, ამიტომ ორივეში %4$s ვერ იქნება — შედეგად ის %5$s-სა და %6$s-დან ერთ-ერთშია, რაც %7$s-ს გამორიცხავს ყველა უჯრიდან, რომელიც ორივეს ხედავს."</string>
     <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s იმავე %2$s-ში."</string>
     <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s იმავე ბლოკში."</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s იმავე სვეტში."</string>
@@ -37,7 +37,7 @@
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"%1$s-ს გამორიცხავს %2$s, რომელშიც იმავე ბლოკში %4$s წერია %3$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"%1$s-ს გამორიცხავს %2$s, რომელშიც იმავე სვეტში %4$s წერია %3$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"%1$s-ს გამორიცხავს %2$s, რომელშიც იმავე მწკრივში %4$s წერია %3$s."</string>
-    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"ბოლო დანომრილ უჯრაში (რიგი %2$s, სვეტი %3$s) აუცილებლად %1$s უნდა იყოს. %4$s ისარი მიუთითებს ჩაწერაზე, რომელმაც ამას ხელი შეუწყო; ადრინდელი შედეგებიც მნიშვნელოვანია."</string>
+    <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"ბოლო დანომრილ უჯრაში (მწკრივი %2$s, სვეტი %3$s) აუცილებლად %1$s უნდა იყოს. %4$s ისარი მიუთითებს ჩაწერაზე, რომელმაც ამას ხელი შეუწყო; ადრინდელი შედეგებიც მნიშვნელოვანია."</string>
     <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"%1$s classpath-ში არ არის"</string>
     <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s / %2$s"</string>
     <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"მათგან %1$s უჯრას ავსებს; დანარჩენები ჯერ კანდიდატებს გამორიცხავს."</string>
@@ -49,8 +49,8 @@
     <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s ოთხეული"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s უარყოფილი ფოტო, უახლესი პირველად:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: წაშალეთ %2$s"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"უჯრების რაოდენობა: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"ეს გზა %1$s ნაბიჯისგან შედგება; ყველაზე რთული მხარდაჭერილი ტექნიკაა %2$s. %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s უჯრა"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"ეს გზა %1$s ნაბიჯისგან შედგება; ყველაზე რთული მხარდაჭერილი ტექნიკაა %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s სამეული"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s გამოირიცხა %2$s-დან კანდიდატებზე ადრინდელი მსჯელობით."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s ხელით ჩაწერილი"</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", შემოწმებით სწორია"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"აირჩიეთ კანდიდატი, რათა ნახოთ, რატომ ვერ ჩაიწერება ის თქვენს უჯრაში."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"აირჩიეთ ენა"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"აირჩიეთ, რა გამოჩნდეს"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"აირჩიეთ, რა გამოჩნდეს"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"დახურვა"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"მინიშნების დახურვა"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"ამოკითხულის მიმოხილვის შეკეცვა"</string>
@@ -127,7 +127,7 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"შეადარეთ იძულებითი ჯაჭვები და უპირატესობა მიანიჭეთ მათ, რომლებშიც ნაკლები უჯრის გავლაა საჭირო. მოკლე ჯაჭვებმა სრულ ამოხსნაში შეიძლება მეტი ნაბიჯი გამოიწვიოს."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"შედეგი %1$s, სულ %2$s · ჰიპოთეზური ციფრები"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"შეიცავს"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"შიგთავსის ტიპი"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"სრული გზით გაგრძელება"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"წინააღმდეგობა · ვარაუდი მცდარია"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", წინააღმდეგობა"</string>
@@ -157,12 +157,12 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"აღწერეთ, რა მოხდა და როგორ გავიმეოროთ. მიუთითეთ, ჯერ შეამოწმეთ და შეასწორეთ თუ არა ამოცნობილი ციფრები. იდეის შემთხვევაში დაწერეთ „არ ეხება“."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", ამ მინიშნების სამიზნე"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- მოწყობილობა: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"დიაგნოსტიკა შემოკლდა, რათა ბრაუზერის მონახაზში ჩატეულიყო. აპის „დიაგნოსტიკის გაგზავნა“ მოქმედებით შესაძლებელია სრული ანგარიშის გაზიარება."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"დიაგნოსტიკა შემოკლდა, რათა ბრაუზერის მონახაზში ჩატეულიყო. აპის „დიაგნოსტიკური მონაცემების გაგზავნა“ მოქმედებით შესაძლებელია სრული ანგარიშის გაზიარება."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"ციფრი უნდა იყოს 1..9, მაგრამ იყო %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"ციფრები ვერ ამოიკითხა"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"მტკიცებულების დისკზე შენახვა დროზე მოქმედებს; ეს დაყოვნების საზომი ტესტი არ არის."</string>
     <string name="msg_does_not_match_the_solution_57b9c2d3" formatted="false">", არ ემთხვევა ამონახსნს"</string>
-    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"თითოეული ქვითარი თავსატეხის ერთ გაგზავნილ ვერსიას განსაზღვრავს. წაშალეთ ის აქ, რათა Freevia-დან პირადად შენახული ანგარიში წაიშალოს."</string>
+    <string name="msg_each_receipt_identifies_one_submitted_puzzle__90ff64d7" formatted="false">"თითოეული ქვითარი თავსატეხის ერთ გაგზავნილ ვერსიას განსაზღვრავს. წაშალეთ ის აქ, რათა Freevia-დან კონფიდენციალურად შენახული ანგარიში წაიშალოს."</string>
     <string name="msg_earlier_eliminations_0_use_the_earlier_step_l_7922946f" formatted="false">" ადრე გამორიცხული კანდიდატები: %1$s. მათი დასაბუთების სანახავად გამოიყენეთ წინა ნაბიჯების ბმულები."</string>
     <string name="msg_earlier_evidence_depth_0_f1200813" formatted="false">" ← ადრინდელი მტკიცებულება (სიღრმე %1$s)"</string>
     <string name="msg_earlier_hypothetical_placements_leave_it_with_cca7bdaf" formatted="false">"ადრინდელი ჰიპოთეზური ჩაწერების შემდეგ მას მხოლოდ ერთი კანდიდატი რჩება."</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"თითოეული მათგანი ერთ უჯრას ავსებს."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"ყველა უჯრა შევსებულია, მაგრამ %1$s პასუხი ამონახსნს არ ემთხვევა."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"ყველა უჯრა შევსებულია, მაგრამ ერთი პასუხი ამონახსნს არ ემთხვევა."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"ყოველი სუდოკუ, რომელსაც ერთი ამონახსნი აქვს, მსჯელობით იხსნება; გამოცნობა არასოდეს არის საჭირო და იშვიათად გვეხმარება. ეს მსჯელობის ის გზებია, რომელთა ამოცნობა და ახსნა ამ აპს შეუძლია, მარტივიდან რთულისკენ. თუ რომელიმე მათგანი გახსნილ თავსატეხს მიესადაგება, აპი გაჩვენებთ ყველა ადგილს, სადაც ის მოქმედებს."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"ყოველი სუდოკუ, რომელსაც ერთი ამონახსნი აქვს, მსჯელობით იხსნება; გამოცნობა არასოდეს არის საჭირო და იშვიათად გვეხმარება. ეს მსჯელობის ის გზებია, რომელთა ამოცნობა და ახსნა ამ აპს შეუძლია, მარტივიდან რთულისკენ. თუ რომელიმე მათგანი გახსნილ თავსატეხს მიესადაგება, აპი გაჩვენებთ ყველა ადგილს, სადაც ის მოქმედებს."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"ყველაფერი, რაც აქამდე ჩაწერეთ, სწორია."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"ახლა ხელმისაწვდომი მაგალითები: თითოეული თქვენი მიმდინარე დაფიდან იწყება."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"მოსალოდნელი იყო 10 ჰორიზონტალური ხაზი, მიღებულია %1$s"</string>
@@ -234,7 +234,7 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"ტელეფონი ბრტყლად დაიჭირეთ"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"ტელეფონი თავსატეხის ზემოთ, მის პარალელურად დაიჭირეთ."</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"ტელეფონი თავსატეხის ზემოთ, მის პარალელურად დაიჭირეთ"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"ჰორიზონტალური\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"როგორ ამოვიცნოთ"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nროგორ მივდივართ აქამდე:"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"მოძებნეთ უჯრები ზუსტად ორი კანდიდატით — Y-ფრთა მხოლოდ სამი ასეთი უჯრისგან შედგება.\n\nერთი საყრდენად აიღეთ, მაგალითად {2,5}. მოძებნეთ მის მიერ დანახული უჯრა კანდიდატებით {2,9} და კიდევ ერთი კანდიდატებით {5,9}. საყრდენი ან 2 არის, ან 5. თუ 2 არის, პირველი ფრთა აუცილებლად 9 იქნება; თუ 5 არის, მეორე ფრთა იქნება 9. ორივე შემთხვევაში ერთ-ერთ ფრთაში 9 ჩნდება — არ იცით, რომელში, და არც გჭირდებათ.\n\nამიტომ ვერცერთი უჯრა, რომელიც ორივე ფრთას ხედავს, ვერ იქნება 9. ეს უჯრები ჩვეულებრივ ის ორი კუთხეა, რომლებიც მართკუთხედს ასრულებს."</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"მოკლე იძულებითი ჯაჭვები"</string>
     <string name="msg_language_a4fe6526" formatted="false">"ენა"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"ლიცენზიები"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"ერთ მწკრივში, სვეტში ან ბლოკში მოძებნეთ უჯრები, რომლებსაც ცოტა კანდიდატი დარჩა. აიღეთ %1$s მათგანი და გააერთიანეთ მათი კანდიდატები. თუ გაერთიანებაში ზუსტად %2$s ციფრია, ეს %3$s ციფრი დაკავებულია: ისინი რაღაც თანმიმდევრობით ამ %4$s უჯრაში უნდა ჩაიწეროს, თუმცა ჯერ ვერ იტყვით, რომელი სად იქნება.\n\nეს საკმარისია. ჯგუფის ყველა სხვა უჯრას შეუძლია ეს ციფრები გამორიცხოს და, ჩვეულებრივ, ერთ-ერთი მათგანი შემდეგ ერთეულად იქცევა.\n\nყველა უჯრას ერთნაირი კანდიდატები არ სჭირდება — {2,7}, {2,9} და {7,9} სრულიად სწორი სამეულია და სწორედ ისაა, რომელსაც ხშირად ვერ ამჩნევენ."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"ერთ მწკრივში, სვეტში ან ბლოკში მოძებნეთ უჯრები, რომლებსაც ცოტა კანდიდატი დარჩა. აიღეთ %1$s მათგანი და გააერთიანეთ მათი კანდიდატები. თუ გაერთიანებაში ზუსტად %2$s ციფრია, ეს %3$s ციფრი დაკავებულია: ისინი რაღაც თანმიმდევრობით ამ %4$s უჯრაში უნდა ჩაიწეროს, თუმცა ჯერ ვერ იტყვით, რომელი სად იქნება.\n\nეს საკმარისია. ჯგუფის ყველა სხვა უჯრას შეუძლია ეს ციფრები გამორიცხოს და, ჩვეულებრივ, ერთ-ერთი მათგანი შემდეგ ერთეულად იქცევა.\n\nყველა უჯრას ერთნაირი კანდიდატები არ სჭირდება — {2,7}, {2,9} და {7,9} სრულიად სწორი სამეულია და სწორედ ისაა, რომელსაც ხშირად ვერ ამჩნევენ."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"მოძებნეთ ერთი და იმავე ორი კანდიდატის, მაგალითად {4,9}-ის, მქონე უჯრები, რომლებიც ჯაჭვს ქმნის და თითოეული მომდევნოს ხედავს. სამი არ კმარა; სულ მცირე ოთხი გჭირდებათ.\n\nსვლისას მონაცვლეობით შეღებეთ. რადგან თითოეული უჯრა მომდევნოს ხედავს, ორ მეზობელს ერთი და იგივე ციფრი ვერ ექნება, ამიტომ მთელი ჯაჭვი არის 4, 9, 4, 9 — ან 9, 4, 9, 4, და ვერ იტყვით, რომელი.\n\nორივე შემთხვევაში საპირისპირო ფერის ორ უჯრაში განსხვავებული ციფრებია: ერთში 4, მეორეში 9. ამიტომ ნებისმიერი უჯრა, რომელიც ორივეს ხედავს, ვერცერთი იქნება და ორივე კანდიდატს ერთდროულად კარგავს.\n\nამ ნიმუშის შემჩნევა მარტივია სწორედ იმიტომ, რომ მასში ყველა უჯრა ერთნაირად გამოიყურება. მიჰყევით ერთნაირ წყვილებს ბადეზე და ნახეთ, სად უკავშირდება ისინი ერთმანეთს."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"მოძებნეთ ერთი და იმავე ორი კანდიდატის, მაგალითად {1,6}-ის, მქონე სამი უჯრა მართკუთხედის სამ კუთხეში. მართკუთხედი ზუსტად ორ ბლოკში უნდა იყოს: ორი მწკრივი და ორი სვეტი უნდა კვეთდეს ორ ბლოკს და არა ოთხს.\n\nახლა მეოთხე კუთხეს შეხედეთ. მასაც მხოლოდ 1 და 6 რომ ჰქონდეს, თავსატეხს ორი ამონახსნი ექნებოდა — მართკუთხედში 1-ებისა და 6-ების ადგილების გაცვლა შეგეძლებოდათ და დანარჩენი ყველაფერი კვლავ გამართული იქნებოდა. სწორად შედგენილ თავსატეხს ერთი ამონახსნი აქვს, ამიტომ მეოთხე კუთხეში სხვა ციფრი უნდა გამოიყენებოდეს: მისი სხვა კანდიდატები რჩება, ხოლო 1 და 6 გამოირიცხება.\n\nეს ერთადერთი არგუმენტია, რომელიც ბადის ნაცვლად შემდგენელს ეხება. ის გამოქვეყნებულ თავსატეხზე სანდოა და უსარგებლოა იმაზე, რომელიც უკვე არასწორად შეავსეთ, რადგან მაშინ შეიძლება საერთოდ არ არსებობდეს ამონახსნი, რომლის ერთადერთობაზეც ვიმსჯელებთ."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"შეხედეთ ამ ბლოკს. მიჰყევით კონტურს იმ უჯრამდე, რომელსაც ეს მინიშნება ახსნის."</string>
@@ -303,7 +303,7 @@
     <string name="msg_no_technique_applies_here_4373528f" formatted="false">"აქ არცერთი ტექნიკა არ მოქმედებს"</string>
     <string name="msg_none_140bedbf" formatted="false">"არცერთი"</string>
     <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"არცერთი მათგანი უჯრაში ციფრს არ წერს: ისინი კანდიდატებს აშორებს და ასე ხსნის გზას რთული თავსატეხის ამოსახსნელად."</string>
-    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"ამჟამად თქვენს თავსატეხზე არცერთია."</string>
+    <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"ამჟამად თქვენს თავსატეხზე არცერთი არ არის."</string>
     <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"ციფრების მოდელის ფაილი არ არის"</string>
     <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"სარწმუნოდ ვერ ამოიკითხა — ყველაზე ახლო ვარაუდია %1$s %2$s, სარწმუნოობით %3$s. გთხოვთ, ეს უჯრა თავად შეავსოთ."</string>
     <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"ჯერ 9-ზე 9 ბადედ ვერ ამოიკითხა — სცადეთ კადრი მხოლოდ ბადით შეავსოთ ან უბრალოდ გადაიღეთ ფოტო"</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"აქ მხოლოდ %1$s შეიძლება ჩაიწეროს. მონიშნულ უჯრებში დანარჩენი რვა ციფრიდან ერთი უკვე არის; %2$s ამ უჯრისთვის ადრე გამოირიცხა და არა მის გარშემო ხილული ციფრების გამო."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"აქ მხოლოდ %1$s შეიძლება ჩაიწეროს. მონიშნულ უჯრებში დანარჩენი რვა ციფრიდან შვიდი უკვე არის; %2$s ამ უჯრისთვის ადრე გამოირიცხა და არა მის გარშემო ხილული ციფრების გამო."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"აქ მხოლოდ %1$s შეიძლება ჩაიწეროს. მონიშნულ უჯრებში დანარჩენი რვა ციფრიდან ხუთი უკვე არის; %2$s ამ უჯრისთვის ადრე გამოირიცხა და არა მის გარშემო ხილული ციფრების გამო."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"აქ მხოლოდ %1$s შეიძლება ჩაიწეროს. მონიშნული უჯრები დანარჩენი რვა ციფრიდან %2$s-ს იკავებს; %3$s %4$s ამ უჯრიდან ადრე გამოირიცხა და არა გარშემო ხილული ციფრებით."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"აქ მხოლოდ %1$s შეიძლება ჩაიწეროს. მონიშნული უჯრები დანარჩენი რვა ციფრიდან %2$s-ს იკავებს; %3$s ამ უჯრიდან ადრე გამორიცხული %4$s და არა გარშემო ხილული ციფრების გამო."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"აქ მხოლოდ %1$s შეიძლება ჩაიწეროს. მონიშნულ უჯრებში დანარჩენი რვა ციფრიდან ორი უკვე არის; %2$s ამ უჯრისთვის ადრე გამოირიცხა და არა მის გარშემო ხილული ციფრების გამო."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"აქ მხოლოდ %1$s შეიძლება მოთავსდეს. მონიშნულ უჯრებში დანარჩენი რვა ციფრიდან %2$s უკვე გამოყენებულია; %3$s ამ უჯრიდან ადრე გამოირიცხა და არა მის გარშემო ხილული ციფრების გამო."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"აქ მხოლოდ %1$s შეიძლება ჩაიწეროს. მონიშნულ უჯრებში დანარჩენი რვა ციფრიდან სამი უკვე არის; %2$s ამ უჯრისთვის ადრე გამოირიცხა და არა მის გარშემო ხილული ციფრების გამო."</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"მიმართეთ კამერა სუდოკუს თავსატეხისკენ."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"მიმართეთ კამერა ქაღალდზე არსებულ სუდოკუს თავსატეხისკენ. აპი ამოიკითხავს დაბეჭდილ ციფრებსა და თქვენს ჩანაწერებს, ამოხსნის თავსატეხს და შეუძლია მოგცეთ მინიშნება, შეამოწმოს თქვენი პასუხები ან გაჩვენოთ სრული ამონახსნი."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"მიმართული წყვილი"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"გაგზავნა"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"თავსატეხი მზადდება…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"წინა"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"წინა ნაბიჯი"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"ამოცნობა გადამოწმებულია."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"ამოცნობა გაგზავნილია. გმადლობთ!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## ბოლო სკანირების დიაგნოსტიკა (წინასწარ შევსებული)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"ამოცნობისას შეიძლება შეცდომები მოხდეს, განსაკუთრებით ხელნაწერში. „ამოცნობის ნახვით“ შეადარეთ ამოცნობილი ციფრები ფოტოს და შესასწორებლად შეეხეთ ნებისმიერ უჯრას. აპი გაურკვეველ ამოცნობებს გადასამოწმებლად აღნიშნავს; მაღალი სარწმუნოობით ამოცნობაც შეიძლება მცდარი იყოს."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"ამოცნობისას შეიძლება შეცდომები მოხდეს, განსაკუთრებით ხელნაწერში. გამოიყენეთ „ამოცნობა“, რათა ამოცნობილი ციფრები ფოტოს შეადაროთ, და შესასწორებლად შეეხეთ ნებისმიერ უჯრას. აპი გაურკვეველ ამოცნობებს გადასამოწმებლად აღნიშნავს; მაღალი სარწმუნოობით ამოცნობაც შეიძლება მცდარი იყოს."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"ვარაუდის უარყოფა"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"დაშორებული წყვილები"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"%1$s-ის გამორიცხვა"</string>
@@ -390,18 +390,18 @@
     <string name="msg_review_reading_f05999a4" formatted="false">"ამოცნობის გადამოწმება"</string>
     <string name="msg_right_883361d5" formatted="false">"მარჯვნივ"</string>
     <string name="msg_route_complete_go_back_to_review_any_move_or__9e33e6f9" formatted="false">"ამოხსნის გზა დასრულებულია. დაბრუნდით ნებისმიერი სვლის გადასამოწმებლად ან თავად სცადეთ ნაბიჯები."</string>
-    <string name="msg_row_0_3c9217b3" formatted="false">"რიგი %1$s"</string>
-    <string name="msg_row_0_column_1_2b075ece" formatted="false">"რიგი %1$s, სვეტი %2$s"</string>
-    <string name="msg_row_0_column_1_62476225" formatted="false">"რიგი %1$s, სვეტი %2$s, "</string>
-    <string name="msg_row_1_column_2_645d7932" formatted="false">"რიგი $1, სვეტი $2"</string>
-    <string name="msg_row_634768da" formatted="false">"რიგი"</string>
-    <string name="msg_rows_bc51e9e6" formatted="false">"რიგები"</string>
+    <string name="msg_row_0_3c9217b3" formatted="false">"მწკრივი %1$s"</string>
+    <string name="msg_row_0_column_1_2b075ece" formatted="false">"მწკრივი %1$s, სვეტი %2$s"</string>
+    <string name="msg_row_0_column_1_62476225" formatted="false">"მწკრივი %1$s, სვეტი %2$s, "</string>
+    <string name="msg_row_1_column_2_645d7932" formatted="false">"მწკრივი $1, სვეტი $2"</string>
+    <string name="msg_row_634768da" formatted="false">"მწკრივი"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"მწკრივები"</string>
     <string name="msg_ruled_out_0_99296743" formatted="false">", გამორიცხულია %1$s"</string>
     <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"სკანირების დიაგნოსტიკური მონაცემების წაკითხვა ვერ მოხერხდა."</string>
     <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## ეკრანის სურათები ან თავსატეხის მაგალითები"</string>
     <string name="msg_second_guess_0_1_43e7046c" formatted="false">"მეორე ვარიანტი: %1$s, %2$s."</string>
     <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"სავარჯიშოდ არჩევა"</string>
-    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"არჩეულია: რიგი %1$s, სვეტი %2$s"</string>
+    <string name="msg_selected_row_0_column_1_a4ce1a59" formatted="false">"არჩეულია: მწკრივი %1$s, სვეტი %2$s"</string>
     <string name="msg_send_diagnostics_0_d2d8f233" formatted="false">"დიაგნოსტიკური მონაცემების გაგზავნა (%1$s)"</string>
     <string name="msg_send_diagnostics_2d666083" formatted="false">"დიაგნოსტიკური მონაცემების გაგზავნა"</string>
     <string name="msg_send_these_scans_635ce9f0" formatted="false">"ამ სკანების გაგზავნა"</string>
@@ -493,13 +493,13 @@
     <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"კამერა მიუწვდომელია. დახურეთ კამერის სხვა აპები და ხელახლა სცადეთ."</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"მეორე"</string>
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"%1$s-ის ფოტო და მისგან ამოცნობილი ყველაფერი ამ ტელეფონიდან წაიშლება. ამის გაუქმება შეუძლებელია."</string>
-    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" ფოტო თქვენს თავსატეხთა სიაშია, განყოფილებაში „ვერ ამოიკითხა“."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" ფოტო თქვენს თავსატეხთა სიაშია, განყოფილებაში „ვერ ამოიცნო“."</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"აქ საყრდენი არის %1$s ან %2$s. ორივე შემთხვევაში დანარჩენი ორი უჯრიდან ერთში აუცილებლად არის %3$s, ამიტომ არცერთ უჯრაში, რომელიც ორივეს ხედავს, არ შეიძლება იყოს %4$s."</string>
-    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"მიმანიშნებელი წყვილი უკუღმა. აიღეთ რიგი ან სვეტი და ციფრი, რომელსაც მასში ჯერ კიდევ სჭირდება ადგილი. მონიშნეთ ამ ხაზის ყველა უჯრა, სადაც ციფრი შეიძლება ჩაიწეროს. თუ ყველა ერთ ბლოკში მოხვდა, ციფრი ამ ბლოკში ხაზის მონაკვეთზე უნდა იყოს — ამიტომ ბლოკის სხვა ადგილებში ის ვერ იქნება, მათ შორის მის იმ ორ რიგში ან სვეტში, რომლებსაც არ განიხილავდით.\n\nმიმანიშნებელი წყვილის მსგავსად, ეს თავისთავად არაფერს ავსებს; ის ადგილს ათავისუფლებს სვლისთვის, რომელიც უჯრას შეავსებს."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"მიმართული წყვილი უკუღმა. აიღეთ მწკრივი ან სვეტი და ციფრი, რომელსაც მასში ჯერ კიდევ სჭირდება ადგილი. მონიშნეთ ამ ხაზის ყველა უჯრა, სადაც ციფრი შეიძლება ჩაიწეროს. თუ ყველა ერთ ბლოკში მოხვდა, ციფრი ამ ბლოკში ხაზის მონაკვეთზე უნდა იყოს — ამიტომ ბლოკის სხვა ადგილებში ის ვერ იქნება, მათ შორის მის იმ ორ მწკრივში ან სვეტში, რომლებსაც არ განიხილავდით.\n\nმიმართული წყვილის მსგავსად, ეს თავისთავად არაფერს ავსებს; ის ადგილს ათავისუფლებს სვლისთვის, რომელიც უჯრას შეავსებს."</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"ბეჭდური ციფრები ამოსახსნელ თავსატეხს არ ქმნის."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s-ში დარჩენილი კანდიდატებია {%2$s}. ჩაწერეთ %3$s მწკრივში %4$s, სვეტში %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"ანგარიში გასაგზავნად მეტისმეტად დიდია."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-ფრთა, რომლის საყრდენს ერთი კანდიდატით მეტი აქვს. მოძებნეთ ზუსტად სამი კანდიდატის მქონე უჯრა, მაგალითად {1,4,7}, რომელიც ხედავს ორ ორკანდიდატიან უჯრას — ერთს {1,7}-ით და მეორეს {4,7}-ით.\n\nახლა სამივე მათგანში შეიძლება იყოს 7 და ერთ-ერთში აუცილებლად არის. ამიტომ გამორიცხვისთვის უჯრა სამივეს უნდა ხედავდეს და არა მხოლოდ ორ ფრთას — პრაქტიკაში ეს ნიშნავს, რომ ის საყრდენთან ერთ ბლოკშია და ერთ-ერთ ფრთასთან ერთ ხაზზე.\n\nY-ფრთაზე ნაკლებ გამორიცხვას იძლევა და იმავე მიზეზით უფრო ადვილად გამოგრჩებათ: საყრდენი თვალში არ გეცემათ."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-ფრთა, რომლის საყრდენს ერთი კანდიდატით მეტი აქვს. მოძებნეთ ზუსტად სამი კანდიდატის მქონე უჯრა, მაგალითად {1,4,7}, რომელიც ხედავს ორ ორკანდიდატიან უჯრას — ერთს {1,7}-ით და მეორეს {4,7}-ით.\n\nახლა სამივე მათგანში შეიძლება იყოს 7 და ერთ-ერთში აუცილებლად არის. ამიტომ გამორიცხვისთვის უჯრა სამივეს უნდა ხედავდეს და არა მხოლოდ ორ ფრთას — პრაქტიკაში ეს ნიშნავს, რომ ის საყრდენთან ერთ ბლოკშია და ერთ-ერთ ფრთასთან ერთ ხაზზე.\n\nY-ფრთაზე ნაკლებ გამორიცხვას იძლევა და იმავე მიზეზით უფრო ადვილად გამოგრჩებათ: საყრდენი თვალში არ გეცემათ."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"გამოყოფილ ბლოკში არის უჯრა, რომლის შევსებაც შეგიძლიათ.\n\nკიდევ დააჭირეთ „მინიშნებას“, რათა გაიგოთ, რომელი ტექნიკა პოულობს მას."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"აქ მსჯელობისთვის აღარაფერი დარჩა."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"ამ %1$s უჯრაში მხოლოდ %2$s და %3$s შეიძლება იყოს და თითოეული შემდეგს ხედავს, ამიტომ ისინი მთელ ჯაჭვში მონაცვლეობს. %4$s-სა და %5$s-ს შორის კავშირების კენტი რაოდენობაა, ამიტომ მათში სხვადასხვა ციფრია — ეს %6$s-ს გამორიცხავს ყველა უჯრიდან, რომელიც ორივეს ხედავს."</string>
@@ -523,7 +523,7 @@
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"ამ თავსატეხის შენახვა ვერ მოხერხდა. ახლავე მაინც შეგიძლიათ მისი გამოყენება. სხვა ფოტოს გადაღებამდე საცავში ადგილი გაათავისუფლეთ."</string>
     <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"ამ თავსატეხს ერთზე მეტი ამოხსნა აქვს, ამიტომ, ალბათ, ბეჭდური ციფრი გამორჩა. ნაჩვენებია ამოხსნა %1$s, სულ %2$s — შემდეგისთვის ისევ დააჭირეთ „ამოხსნას“. შემოხაზული უჯრები ნაჩვენებ ამოხსნებში განსხვავდება."</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"ამ თავსატეხის ფოტოს გახსნა ვერ მოხერხდა."</string>
-    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"ეს მსჯელობა გამორიცხავს %1$s-ს, რომელიც არის "</string>
+    <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"ეს მსჯელობა გამორიცხავს %1$s-ის არსებობას "</string>
     <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"ამ უჯრაში შეიძლება სრული ციფრის ნაცვლად კანდიდატების ჩანიშვნები იყოს. გთხოვთ, გადაამოწმოთ."</string>
     <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"ეს ხედი კანდიდატების ადრინდელ გამორიცხვებსაც მოიცავს. გადასამოწმებლად ქვემოთ გახსენით მათი მტკიცებულებები."</string>
     <string name="msg_three_8b5b9db0" formatted="false">"სამი"</string>
@@ -550,7 +550,7 @@
     <string name="msg_very_hard_9a5c2f08" formatted="false">"ძალიან რთული"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"W-ფრთა"</string>
     <string name="msg_was_b63b99f6" formatted="false">"იყო"</string>
-    <string name="msg_were_910adfb4" formatted="false">"იყვნენ"</string>
+    <string name="msg_were_910adfb4" formatted="false">"იყო"</string>
     <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"რას ელოდით, ან როგორ დაგეხმარებოდათ თქვენი იდეა სუდოკუს ამოხსნასა თუ სწავლაში?"</string>
     <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## რა მოხდა და როგორ გავიმეოროთ (ხარვეზებისთვის)"</string>
     <string name="msg_what_it_does_c74ea9dc" formatted="false">"რას აკეთებს"</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"რატომ ეს უჯრა? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" ამონახსნს. მათ სანახავად გამოიყენეთ „შემოწმება“."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"თქვენი უჯრიდან მსჯელობას უკუღმა მიჰყევით. ქვემოთ აირჩიეთ კითხვა."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"იმუშავეთ ციფრებით და არა უჯრებით. ერთი ერთეულისთვის ჩამოწერეთ, სად შეიძლება ჯერ კიდევ მოთავსდეს თითოეული გამოტოვებული ციფრი. შემდეგ მოძებნეთ %1$s ციფრი, რომელთა სიები ერთად მხოლოდ %2$s უჯრას მოიცავს.\n\nამ %3$s ციფრმა ეს %4$s უჯრა უნდა შეავსოს, ამიტომ მათში ყველა სხვა კანდიდატი შეიძლება გადაიხაზოს — რაც ხშირად ერთ-ერთს მაშინვე აშკარა ერთეულად ან აშკარა წყვილად აქცევს.\n\nეს ყველაზე რთულად მიაჩნიათ, რადგან უჯრების დათვალიერებით ვერაფერს ხედავთ: მათ ჯერ კიდევ ბევრი კანდიდატი აქვთ. ნიმუში ციფრებშია."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"იმუშავეთ ციფრებით და არა უჯრებით. ერთი ერთეულისთვის ჩამოწერეთ, სად შეიძლება ჯერ კიდევ მოთავსდეს თითოეული გამოტოვებული ციფრი. შემდეგ მოძებნეთ %1$s ციფრი, რომელთა სიები ერთად მხოლოდ %2$s უჯრას მოიცავს.\n\nამ %3$s ციფრმა ეს %4$s უჯრა უნდა შეავსოს, ამიტომ მათში ყველა სხვა კანდიდატი შეიძლება გადაიხაზოს — რაც ხშირად მაშინვე წარმოქმნის აშკარა ერთეულს ერთ-ერთ უჯრაში ან აშკარა წყვილს ორ მათგანში.\n\nეს ყველაზე რთულად მიაჩნიათ, რადგან უჯრების დათვალიერებით ვერაფერს ხედავთ: მათ ჯერ კიდევ ბევრი კანდიდატი აქვთ. ნიმუში ციფრებშია."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"იმუშავეთ მხოლოდ უჯრებით, რომლებშიც ზუსტად ორი კანდიდატი დარჩა.\n\nდაიწყეთ ერთიდან, მაგალითად {2,6}-დან, და დავუშვათ, მასში 2 არ არის — მაშინ 6 არის. გადადით უჯრაზე, რომელსაც ის ხედავს და რომელსაც ასევე აქვს 6, მაგალითად {6,4}: მასში 6 ვერ იქნება, ამიტომ 4 არის. გადადით უჯრაზე, რომელსაც ის ხედავს და რომელსაც აქვს 4, და ასე გააგრძელეთ; ყოველი ნაბიჯი წინა ნაბიჯითაა განსაზღვრული.\n\nთუ მიაღწევთ უჯრას, რომლის მეორე ციფრი 2-ია — ციფრი, რომელიც დასაწყისში გამორიცხეთ — დასრულებულია. ან პირველ უჯრაში მაინც 2 იყო, ან ჯაჭვი შესრულდა და ბოლო უჯრაში 2 არის. ის ერთ ან მეორე ბოლოშია, ამიტომ უჯრაში, რომელიც ორივე ბოლოს ხედავს, ვერ იქნება.\n\nჯაჭვები მოკლე იყოს. ოთხი ან ხუთი უჯრის პოვნა ფანქრით შესაძლებელია; მეტის შემთხვევაში უკვე აღრიცხვას აწარმოებთ და ამას მართებულად იძულებითი ჯაჭვი ეწოდება."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"სამუშაო გვერდის სიგრძე დადებითი და სასრული უნდა იყოს"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"ვერ ამოიცნო"</string>

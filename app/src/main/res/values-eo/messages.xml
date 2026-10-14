@@ -21,7 +21,7 @@
     <string name="msg_0_empty_3b007105" formatted="false">"%1$s malplenaj"</string>
     <string name="msg_0_entry_e2c9a9a9" formatted="false">"%1$s, enskribo"</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__5cdf1714" formatted="false">"%1$s devas troviĝi ĉi tie: ĉi tiu estas la sola ĉelo en ĉi tiu kolumno %2$s, kiu ankoraŭ povas enhavi %3$s.\n\n%4$s\n\n%5$s nun permesas %6$s, sed ĉiu kolumno devas enhavi %7$s ekzakte unufoje. Tial enmetu %8$s en vicon %9$s, kolumnon %10$s."</string>
-    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s devas iri ĉi tien: ĝi estas la sola ĉelo en ĉi tiu %2$s %3$s, kiu ankoraŭ povas akcepti %4$s.\n\n%5$s\n\n%6$s nun permesas %7$s, sed ĉiu %8$s devas enhavi %9$s ĝuste unufoje. Tial metu %10$s en vicon %11$s, kolumnon %12$s."</string>
+    <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s devas iri ĉi tien: ĉi tiu estas la sola ĉelo en ĉi tiu %2$s %3$s, kiu ankoraŭ povas akcepti %4$s.\n\n%5$s\n\n%6$s nun permesas %7$s, sed ĉiu %8$s devas enhavi %9$s ĝuste unufoje. Tial metu %10$s en vicon %11$s, kolumnon %12$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s devas troviĝi ĉi tie: ĉi tiu estas la sola ĉelo en ĉi tiu bloko %2$s, kiu ankoraŭ povas enhavi %3$s.\n\n%4$s\n\n%5$s nun permesas %6$s, sed ĉiu bloko devas enhavi %7$s ekzakte unufoje. Tial enmetu %8$s en vicon %9$s, kolumnon %10$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s devas troviĝi ĉi tie: ĉi tiu estas la sola ĉelo en ĉi tiu vico %2$s, kiu ankoraŭ povas enhavi %3$s.\n\n%4$s\n\n%5$s nun permesas %6$s, sed ĉiu vico devas enhavi %7$s ekzakte unufoje. Tial enmetu %8$s en vicon %9$s, kolumnon %10$s."</string>
     <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"%1$s havas du lokojn en ĉi tiu vico kaj du en ĉi tiu kolumno. %2$s kaj %3$s dividas blokon, do ili ne povas ambaŭ esti %4$s — kio lasas unu el %5$s kaj %6$s enhavanta ĝin, kaj ekskludas %7$s el ĉio, kio vidas ambaŭ."</string>
@@ -49,8 +49,8 @@
     <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s kvaropo"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s rifuzitaj fotoj, plej nova unue:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: forigi %2$s"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"Nombro de ĉeloj: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"%1$s paŝoj konsistigas ĉi tiun solvovojon; la plej malfacila subtenata tekniko estas %2$s. %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s ĉeloj"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"%1$s paŝoj konsistigas ĉi tiun solvovojon; la plej malfacila subtenata tekniko estas %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s triopo"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s estis forigita el %2$s per antaŭa rezonado pri kandidatoj."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s enskribitaj"</string>
@@ -100,12 +100,12 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"povas enhavi nur"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Nuligi"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", kandidatoj %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"KaptaPruvmaterialo"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Ĉenigu ciferon tra la unuoj, kie ĝi havas nur du eblajn lokojn, kolorigu la ĉenon per du alternaj koloroj, kaj unu koloro veras ĉie."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"Ĉenante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, oni kolorigas ĉi tiujn ĉelojn per du alternantaj koloroj, el kiuj unu validas tra la tuta ĉeno. Du ĉeloj de la alia koloro troviĝas en la sama vico, kio estas neebla - do tiu koloro estas malvalida, kaj %2$s estas forigita el ĉiu ĉelo de tiu koloro."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"Ĉenante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, oni kolorigas ĉi tiujn ĉelojn per du alternantaj koloroj, el kiuj unu validas tra la tuta ĉeno. Du ĉeloj de la alia koloro troviĝas en la sama bloko, kio estas neebla - do tiu koloro estas malvalida, kaj %2$s estas forigita el ĉiu ĉelo de tiu koloro."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0a6b650a" formatted="false">"Ĉenante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, oni kolorigas ĉi tiujn ĉelojn per du alternantaj koloroj, el kiuj unu validas tra la tuta ĉeno. Du ĉeloj de la alia koloro troviĝas en la sama kolumno, kio estas neebla - do tiu koloro estas malvalida, kaj %2$s estas forigita el ĉiu ĉelo de tiu koloro."</string>
-    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Ĉenigante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, ĉi tiuj ĉeloj ricevas du alternajn kolorojn, el kiuj unu veras ĉie. Du ĉeloj kun koloro %2$s troviĝas en la sama %3$s, kio ne eblas — do tiu koloro estas la falsa, kaj %4$s estas forigita el ĉiu ĉelo kun ĝi."</string>
+    <string name="msg_chaining_0_through_the_units_where_it_has_onl_30c96cab" formatted="false">"Ĉenigante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, ĉi tiuj ĉeloj ricevas du alternajn kolorojn, el kiuj unu veras ĉie. Du ĉeloj kun %2$s koloro troviĝas en la sama %3$s, kio ne eblas — do tiu koloro estas la falsa, kaj %4$s estas forigita el ĉiu ĉelo kun ĝi."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_3f84939f" formatted="false">"Ĉenigante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, ĉi tiuj ĉeloj ricevas du alternajn kolorojn, kaj unu koloro veras ĉie. Ĉi tiuj ĉeloj vidas ambaŭ kolorojn, do kiel ajn la ĉeno rezultos, unu el la ĉeloj, kiujn ili vidas, enhavas %2$s — kio signifas, ke ili ne povas."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"Ĉenante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, oni kolorigas ĉi tiujn ĉelojn per du alternantaj koloroj, el kiuj unu validas tra la tuta ĉeno. Du ĉeloj de unu koloro troviĝas en la sama bloko, kio estas neebla - do tiu koloro estas malvalida, kaj %2$s estas forigita el ĉiu ĉelo de tiu koloro."</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"Ĉenante %1$s tra la unuoj, kie ĝi havas nur du eblajn lokojn, oni kolorigas ĉi tiujn ĉelojn per du alternantaj koloroj, el kiuj unu validas tra la tuta ĉeno. Du ĉeloj de unu koloro troviĝas en la sama kolumno, kio estas neebla - do tiu koloro estas malvalida, kaj %2$s estas forigita el ĉiu ĉelo de tiu koloro."</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", kontrolita kiel ĝusta"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Elektu kandidaton por vidi, kial ĝi ne povas esti en via ĉelo."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Elekti lingvon"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Elekti kion montri"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Elekti kion montri"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Fermi"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Fermi sugeston"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Maletendi la legkontrolon"</string>
@@ -127,7 +127,7 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Komparu devigajn ĉenojn kaj preferu tiujn kun malpli da sekvendaj ĉeloj. Pli mallongaj ĉenoj povas signifi pli da paŝoj en la plena solvo."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Sekvo %1$s el %2$s · hipotezaj ciferoj"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"enhavas"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Enhavtipo"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Daŭrigi laŭ la plena vojo"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Kontraŭdiro · supozo malsukcesas"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", kontraŭdiro"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Ne eblis konservi la kaptan pruvmaterialon por sencimigo"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Ne eblis sendi la legrezulton. Bonvolu reprovi kiam vi havas konekton."</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Sakstrato"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"FORIGI"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Forigi"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Forigi raporton"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Forigi ĉi tiun foton"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Priskribu, kio okazis, kaj la paŝojn por ripeti ĝin. Diru, ĉu vi unue kontrolis kaj korektis la rekonitajn ciferojn. Por ideo, skribu \'Ne aplikebla\'."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", celĉelo de ĉi tiu sugesto"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Aparato: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnozoj mallongigitaj por konveni en la retumila malneto. La ago Sendi diagnozojn de la aplikaĵo povas kunhavigi la plenan raporton."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Diagnozoj mallongigitaj por konveni en la retumila malneto. La ago Sendi diagnozajn datumojn de la aplikaĵo povas kunhavigi la plenan raporton."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"la cifero devas esti 1..9, sed estis %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Ciferoj ne legitaj"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Konservado de pruvmaterialo sur disko influas la tempomezuradon; tio ne estas testo de latenteco."</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Ĉiu el ili plenigas ĉelon."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Ĉiu ĉelo estas plenigita, sed %1$s respondoj malkongruas kun la solvo."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Ĉiu ĉelo estas plenigita, sed unu respondo malkongruas kun la solvo."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Ĉiu sudokuo kun unu solvo estas solvebla per rezonado; divenado neniam necesas kaj malofte helpas. Jen la rezonmanieroj, kiujn ĉi tiu aplikaĵo povas rekoni kaj klarigi, komencante per la plej facilaj. Kiam iu el ili aplikeblas al via malfermita enigmo, ĝi montros ĉiujn lokojn, kie ĝi aplikeblas."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Ĉiu sudokuo kun unu solvo estas solvebla per rezonado; divenado neniam necesas kaj malofte helpas. Jen la rezonmanieroj, kiujn ĉi tiu aplikaĵo povas rekoni kaj klarigi, komencante per la plej facilaj. Kiam iu el ili aplikeblas al via malfermita enigmo, ĝi montros ĉiujn lokojn, kie ĝi aplikeblas."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Ĉio, kion vi ĝis nun skribis, estas ĝusta."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Nun disponeblaj ekzemploj: ĉiu komenciĝas de via nuna krado."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"atenditaj 10 horizontalaj linioj, ricevitaj %1$s"</string>
@@ -209,10 +209,10 @@
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia konfirmis la forigon, sed ĉi tiu telefono ne povis forigi la lokan kvitancon. Reprovu por fini la lokan purigon."</string>
     <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia forigos ĉi tiun raportrevizion kaj ĝian privatan trejnkopion. Estontaj korektoj povas krei novan raporton laŭ viaj kunhavigaj agordoj. Modelo jam trejnita per ĝi povas reteni lernitajn ŝanĝojn."</string>
     <string name="msg_full_route_891b475b" formatted="false">"Plena vojo"</string>
-    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Estontaj necertaj legrezultoj sendos la rektigitan enigmofoton, rekonrezultojn kaj korektojn al Freevia por analizo kaj trejnado. Trejnkopioj restos ĝis forigo per Kvitanĉoj de sendaĵoj; trejnita modelo povas reteni lernitajn ŝanĝojn. Se necerta enigmo jam estas malfermita, ĝi estos sendita nun. Vi povas malŝalti tion en Agordoj."</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Estontaj necertaj legrezultoj sendos la rektigitan enigmofoton, rekonrezultojn kaj korektojn al Freevia por analizo kaj trejnado. Trejnkopioj restos ĝis forigo per Sendokvitancoj; trejnita modelo povas reteni lernitajn ŝanĝojn. Se necerta enigmo jam estas malfermita, ĝi estos sendita nun. Vi povas malŝalti tion en Agordoj."</string>
     <string name="msg_gentle_96124817" formatted="false">"Facila"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Brilo forviŝas la liniojn — klinu la paĝon for de la lumo"</string>
-    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrizBildo(%1$sx%2$s)"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
     <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Grizaj ĉeloj enhavas krajonajn notojn, kiujn la aplikaĵo ignoras. La strio sub cifero montras la certecon de la rekono. Tuŝu ĉelon por detaloj."</string>
     <string name="msg_handwritten_6a50cef3" formatted="false">"Manskribita"</string>
     <string name="msg_hard_9e73f8fa" formatted="false">"Malfacila"</string>
@@ -231,13 +231,13 @@
     <string name="msg_hold_still_0a934617" formatted="false">"Restu senmova..."</string>
     <string name="msg_hold_still_or_tap_the_shutter_735e39d6" formatted="false">"Restu senmova, aŭ tuŝu la obturatoron"</string>
     <string name="msg_hold_still_while_the_camera_focuses_5f9d036c" formatted="false">"Restu senmova dum la fotilo enfokusigas..."</string>
-    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tenu la telefonon paralela"</string>
-    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tenu la telefonon paralela super la enigmo."</string>
-    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tenu la telefonon paralela super la enigmo"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontala\":[%1$s ]}}"</string>
+    <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Tenu la telefonon paralela al la enigmo"</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Tenu la telefonon super la enigmo kaj paralela al ĝi."</string>
+    <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Tenu la telefonon super la enigmo kaj paralela al ĝi"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Kiel rekoni ĝin"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nKiel ni atingas tion:"</string>
-    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Serĉu ĉelojn kun precize du kandidatoj — Y-flugilo konsistas el tri tiaj kaj nenio alia.\n\nPrenu unu kiel pivoton, ekzemple {2,5}. Serĉu ĉelon, kiun ĝi vidas, kun {2,9}, kaj alian, kiun ĝi vidas, kun {5,9}. La pivoto estas aŭ 2 aŭ 5. Se ĝi estas 2, la unua pinĉilo devas esti 9; se ĝi estas 5, la dua devas esti 9. Ĉiukaze 9 aperas en unu el la pinĉiloj — vi ne scias en kiu, kaj vi ne bezonas scii.\n\nDo neniu ĉelo, kiu vidas ambaŭ pinĉilojn, povas esti 9. Tiuj ĉeloj kutime estas la du anguloj, kiuj kompletigas la rektangulon."</string>
+    <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Serĉu ĉelojn kun precize du kandidatoj — Y-alo konsistas el tri tiaj kaj nenio alia.\n\nPrenu unu kiel pivoton, ekzemple {2,5}. Serĉu ĉelon, kiun ĝi vidas, kun {2,9}, kaj alian, kiun ĝi vidas, kun {5,9}. La pivoto estas aŭ 2 aŭ 5. Se ĝi estas 2, la unua pinĉilo devas esti 9; se ĝi estas 5, la dua devas esti 9. Ĉiukaze 9 aperas en unu el la pinĉiloj — vi ne scias en kiu, kaj vi ne bezonas scii.\n\nDo neniu ĉelo, kiu vidas ambaŭ pinĉilojn, povas esti 9. Tiuj ĉeloj kutime estas la du anguloj, kiuj kompletigas la rektangulon."</string>
     <string name="msg_hypothetical_0_not_an_entered_answer_fc97b0f9" formatted="false">", hipoteza %1$s, ne enigita respondo"</string>
     <string name="msg_if_0_digits_in_one_row_column_or_box_can_only_1e4d7c52" formatted="false">"Se %1$s ciferoj en unu vico, kolumno aŭ bloko povas iri nur en la samajn %2$s ĉelojn, tiuj ĉeloj povas enhavi nenion alian."</string>
     <string name="msg_if_0_squares_in_one_row_column_or_box_share_e_dabc6db3" formatted="false">"Se %1$s ĉeloj en unu vico, kolumno aŭ bloko kune havas precize %2$s kandidatojn, tiuj ciferoj apartenas al tiuj ĉeloj kaj al neniuj aliaj en la unuo."</string>
@@ -268,13 +268,13 @@
     <string name="msg_it_applies_in_one_place_here_step_forward_to__f8774f68" formatted="false">"Ĝi aplikeblas en unu loko ĉi tie. Antaŭeniru por vidi ĝin."</string>
     <string name="msg_it_does_not_apply_anywhere_in_this_position_a247d8c3" formatted="false">"Ĝi nenie aplikeblas en ĉi tiu pozicio."</string>
     <string name="msg_it_is_the_only_remaining_place_for_0_in_the_h_0fa27e6e" formatted="false">"Ĝi estas la sola restanta loko por %1$s en la emfazita %2$s."</string>
-    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Ĝi estas la ĉirkaŭringita ĉelo.\n\nPremu Sugesto denove por la cifero."</string>
+    <string name="msg_it_is_the_ringed_square_press_hint_again_for__2a11fb18" formatted="false">"Ĝi estas la ĉirkaŭringita ĉelo.\n\nPremu Indiko denove por la cifero."</string>
     <string name="msg_jellyfish_2f0a7632" formatted="false">"Meduzo"</string>
     <string name="msg_keep_183f00f4" formatted="false">"Konservi"</string>
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Teni devigajn ĉenojn mallongaj"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Lingvo"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Permesiloj"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Serĉu laŭ unu vico, kolumno aŭ bloko ĉelojn kun nur kelkaj restantaj kandidatoj. Prenu %1$s el ili kaj kunigu iliajn kandidatojn. Se la aro enhavas precize %2$s ciferojn, tiuj %3$s ciferoj estas rezervitaj: ili devas iri en tiujn %4$s ĉelojn laŭ iu ordo, kvankam vi ankoraŭ ne povas diri, kiu iras kien.\n\nTio sufiĉas. Ĉiu alia ĉelo en la unuo povas rezigni pri tiuj ciferoj, kaj kutime unu el tiuj ĉeloj tiam fariĝas unuopaĵo.\n\nLa ĉeloj ne ĉiuj bezonas la samajn kandidatojn — {2,7}, {2,9} kaj {7,9} estas tute valida triopo, kaj ĝuste ĝin oni pretervidas."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Serĉu laŭ unu vico, kolumno aŭ bloko ĉelojn kun nur kelkaj restantaj kandidatoj. Prenu %1$s el ili kaj kunigu iliajn kandidatojn. Se la aro enhavas precize %2$s ciferojn, tiuj %3$s ciferoj estas rezervitaj: ili devas iri en tiujn %4$s ĉelojn laŭ iu ordo, kvankam vi ankoraŭ ne povas diri, kiu iras kien.\n\nTio sufiĉas. Ĉiu alia ĉelo en la unuo povas rezigni pri tiuj ciferoj, kaj kutime unu el tiuj ĉeloj tiam fariĝas unuopaĵo.\n\nLa ĉeloj ne ĉiuj bezonas la samajn kandidatojn — {2,7}, {2,9} kaj {7,9} estas tute valida triopo, kaj ĝuste ĝin oni pretervidas."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Serĉu ĉelojn kun la samaj du kandidatoj — ekzemple {4,9} — kiuj formas ĉenon, en kiu ĉiu vidas la sekvan. Tri ne sufiĉas; necesas almenaŭ kvar.\n\nKolorigu ilin alterne dum vi progresas. Ĉar ĉiu ĉelo vidas la sekvan, neniuj du najbaroj povas enhavi la saman ciferon, do la ĉeno legiĝas 4, 9, 4, 9 laŭ sia tuta longo — aŭ 9, 4, 9, 4, kaj vi ne povas scii kiu.\n\nĈiukaze du ĉeloj de kontraŭaj koloroj enhavas malsamajn ciferojn: unu estas la 4 kaj unu la 9. Do ĉio, kio vidas ambaŭ, povas esti nek unu nek la alia kaj perdas ambaŭ kandidatojn samtempe.\n\nLa ŝablono estas facile rekonebla ĝuste ĉar ĉiu ĉelo en ĝi aspektas same. Sekvu la identajn parojn tra la krado kaj vidu, kie ili tuŝas unu la alian."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Serĉu tri ĉelojn kun la samaj du kandidatoj — ekzemple {1,6} — kiuj troviĝas ĉe tri anguloj de rektangulo. La rektangulo devas troviĝi en precize du blokoj: du vicoj kaj du kolumnoj trans du blokoj, ne kvar.\n\nNun rigardu la kvaran angulon. Se ankaŭ ĝi enhavus nur 1 kaj 6, la enigmo havus du solvojn — vi povus interŝanĝi la 1-ojn kaj 6-ojn ĉirkaŭ la rektangulo, kaj ĉio alia ankoraŭ funkcius. Ĝuste konstruita enigmo havas unu solvon, do la kvara angulo devas uzi ion alian: ĝiaj aliaj kandidatoj restas, kaj 1 kaj 6 estas forigitaj.\n\nĈi tiu estas la sola argumento en la libro, kiu temas pri la kreinto anstataŭ la krado. Ĝi validas por publikigita enigmo kaj estas senvalora por enigmo, kiun vi jam malĝuste plenigis, ĉar tiam eble tute ne ekzistas solvo por esti unika."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Rigardu ĉi tiun blokon. Sekvu la konturon ĝis la ĉelo, kiun ĉi tiu sugesto klarigos."</string>
@@ -306,7 +306,7 @@
     <string name="msg_none_on_your_puzzle_at_the_moment_233f1a27" formatted="false">"Nuntempe neniu en via enigmo."</string>
     <string name="msg_not_a_digit_model_file_6b7074b8" formatted="false">"ne estas dosiero de cifermodelo"</string>
     <string name="msg_not_read_with_any_confidence_the_closest_gues_741f7796" formatted="false">"Ne legita kun certeco — la plej proksima diveno estas %1$s %2$s ĉe %3$s. Bonvolu mem agordi ĉi tiun ĉelon."</string>
-    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Ankoraŭ ne rekonita kiel naŭ-obla naŭ-krado — provu plenigi la kadron per nur la krado, aŭ simple fotu"</string>
+    <string name="msg_not_reading_as_a_nine_by_nine_grid_yet_try_fi_4666622c" formatted="false">"Ankoraŭ ne rekonita kiel krado de naŭ vicoj kaj naŭ kolumnoj — provu plenigi la kadron per nur la krado, aŭ simple fotu"</string>
     <string name="msg_not_started_7a7400f4" formatted="false">"ne komencita"</string>
     <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Nenio estis sendebla de ĉi tiu telefono."</string>
     <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Restas nenio por eltrovi."</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Nur %1$s povas esti ĉi tie. La emfazitaj ĉeloj jam enhavas unu el la aliaj ok ciferoj; %2$s estis ekskluditaj el ĉi tiu ĉelo pli frue, ne pro io videbla ĉirkaŭ ĝi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Nur %1$s povas esti ĉi tie. La emfazitaj ĉeloj jam enhavas sep el la aliaj ok ciferoj; %2$s estis ekskludita el ĉi tiu ĉelo pli frue, ne pro io videbla ĉirkaŭ ĝi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Nur %1$s povas esti ĉi tie. La emfazitaj ĉeloj jam enhavas kvin el la aliaj ok ciferoj; %2$s estis ekskluditaj el ĉi tiu ĉelo pli frue, ne pro io videbla ĉirkaŭ ĝi."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Nur %1$s povas iri ĉi tien. La emfazitaj ĉeloj uzas %2$s el la aliaj ok ciferoj; %3$s %4$s eliminite el ĉi tiu ĉelo pli frue, ne pro io videbla ĉirkaŭ ĝi."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Nur %1$s povas iri ĉi tien. La emfazitaj ĉeloj uzas %2$s el la aliaj ok ciferoj; la elimino de %3$s el ĉi tiu ĉelo %4$s farita pli frue, ne pro io videbla ĉirkaŭ ĝi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Nur %1$s povas esti ĉi tie. La emfazitaj ĉeloj jam enhavas du el la aliaj ok ciferoj; %2$s estis ekskluditaj el ĉi tiu ĉelo pli frue, ne pro io videbla ĉirkaŭ ĝi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Nur %1$s povas troviĝi ĉi tie. La emfazitaj ĉeloj okupas %2$s el la aliaj ok ciferoj; %3$s estis ekskluditaj el ĉi tiu ĉelo pli frue, ne pro io videbla ĉirkaŭ ĝi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Nur %1$s povas esti ĉi tie. La emfazitaj ĉeloj jam enhavas tri el la aliaj ok ciferoj; %2$s estis ekskluditaj el ĉi tiu ĉelo pli frue, ne pro io videbla ĉirkaŭ ĝi."</string>
@@ -338,7 +338,7 @@
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"Avizoj pri malferma fontkodo"</string>
     <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Malfermu ‘Kial ĉi tiu ĉelo?’ por vidi la pruvmaterialon de la fina meto, aŭ elektu eliminitan kandidaton por sekvi ĝian pruvon."</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV - Apache-Permesilo 2.0. Uzata por trovi kaj rektigi la kradon.\n\nAndroidX, Jetpack Compose kaj CameraX - Apache-Permesilo 2.0.\n\nKotlin - Apache-Permesilo 2.0.\n\nLa ciferrekonilo estis trejnita per la MNIST-datumbazo de manskribitaj ciferoj de LeCun, Cortes kaj Burges, kune kun ciferoj bildigitaj per malfermaj sistemaj tiparoj kaj ciferoj desegnitaj programe."</string>
-    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Ne eblis ŝargi la indiĝenajn bibliotekojn de OpenCV"</string>
+    <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Ne eblis ŝargi la platformspecifajn bibliotekojn de OpenCV"</string>
     <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Fotu alian enigmon."</string>
     <string name="msg_photographs_you_keep_are_stored_in_this_app_s_e3c6305a" formatted="false">"Fotoj, kiujn vi konservas, estas stokataj en la privata stokejo de ĉi tiu aplikaĵo kaj estas forigitaj kiam vi forigas ilin aŭ malinstalas la aplikaĵon."</string>
     <string name="msg_photos_the_app_could_not_make_a_puzzle_out_of_77a03b7c" formatted="false">"Fotoj, el kiuj la aplikaĵo ne povis fari enigmon. Sendu unu, kaj ĝi povos esti ekzamenita."</string>
@@ -350,13 +350,13 @@
     <string name="msg_place_0_in_row_1_column_2_41233bf2" formatted="false">"Metu %1$s en vicon %2$s, kolumnon %3$s."</string>
     <string name="msg_place_0_in_your_outlined_square_1c6c3f36" formatted="false">"Metu %1$s en vian konturitan ĉelon."</string>
     <string name="msg_please_attach_relevant_screenshots_using_gith_4a724ab5" formatted="false">"Bonvolu aldoni koncernajn ekrankopiojn per la aldonaĵregilo de GitHub: la enigmon, rekonitajn ciferojn, rezulton de Kontroli aŭ sugestopaŝon, kiu montras la problemon. Inkluzivu atendatajn kaj efektivajn rezultojn kiam utile."</string>
-    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Bonvolu forigi miajn rekonajn sendaĵojn de Sudoku Buddy. Kvitanĉaj identigiloj: "</string>
+    <string name="msg_please_delete_my_sudoku_buddy_recognition_sub_e0321c44" formatted="false">"Bonvolu forigi miajn rekonajn sendaĵojn de Sudoku Buddy. Kvitancaj identigiloj: "</string>
     <string name="msg_please_replace_this_prompt_with_a_full_descri_a3d1862d" formatted="false">"Bonvolu anstataŭigi ĉi tiun inviton per plena priskribo de la problemo aŭ ideo. Donu al ĉi tiu raporto mallongan, priskriban titolon."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_59da9cb4" formatted="false">"Direktu la fotilon al sudoku-enigmo"</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Direktu la fotilon al sudoku-enigmo."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Direktu la fotilon al sudoku-enigmo sur papero. La aplikaĵo legas la presitajn ciferojn kaj ĉion, kion vi enskribis, solvas ĝin kaj povas doni sugeston, kontroli viajn respondojn aŭ montri la tutan solvon."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Montra paro"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"SENDI"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Preparante enigmon…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Antaŭa"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Antaŭa paŝo"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Legado reviziita."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Legado sendita. Dankon!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Lastatempaj skanaj diagnozoj (antaŭplenigitaj)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Rekonado povas erari, precipe ĉe manskribo. Uzu Legi por kompari la rekonitajn ciferojn kun la foto, kaj tuŝu ajnan ĉelon por korekti ĝin. La aplikaĵo markas necertajn legadojn por revizio; eĉ certa legado povas esti malĝusta."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Rekonado povas erari, precipe ĉe manskribo. Uzu Legado por kompari la rekonitajn ciferojn kun la foto, kaj tuŝu ajnan ĉelon por korekti ĝin. La aplikaĵo markas necertajn legadojn por revizio; eĉ certa legado povas esti malĝusta."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Malakcepti supozon"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Foraj paroj"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Forigi %1$s"</string>
@@ -466,7 +466,7 @@
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__4a46b0b8" formatted="false">"Supozu, ke ĉi tiu ĉelo enhavus %1$s. Sekvu la sagojn laŭorde: la antaŭaj enmetoj devigas la valoron de ĉiu ĉelo - aŭ tiu cifero estas la sola, kiun ĝi ankoraŭ povas enhavi, aŭ tiu ĉelo estas la sola loko, kie la cifero ankoraŭ povas troviĝi.\n\nTio lasas la ruĝe markitan blokon sen loko por %2$s. La markoj %3$s en ĝi montras la lokojn, kie tiu cifero povus troviĝi, kaj ĉiu estas ĉelo ĵus okupita de unu el la sagoj. Bloko sen loko por iu cifero estas neebla - do ĉi tiu ĉelo ne enhavas %4$s."</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__d8fbb40c" formatted="false">"Supozu, ke ĉi tiu ĉelo estus %1$s. Sekvu la sagojn laŭorde: ĉiu ĉelo estas devigita de la antaŭaj lokigoj — aŭ tiu cifero estas la sola, kiun ĝi ankoraŭ povas enhavi, aŭ tiu ĉelo estas la sola loko, kien la cifero ankoraŭ povas iri.\n\nTio lasas la ruĝan %2$s sen loko por %3$s. La %4$s-markoj en ĝi montras la lokojn, kien ĝi povus iri, kaj ĉiu estas ĉelo, kiun unu el la sagoj ĵus okupis. %5$s sen loko por cifero ne povas okazi — do ĝi ne estas %6$s."</string>
     <string name="msg_suppose_this_square_were_0_follow_the_arrows__eeddb6d4" formatted="false">"Supozu, ke ĉi tiu ĉelo enhavus %1$s. Sekvu la sagojn laŭorde: la antaŭaj enmetoj devigas la valoron de ĉiu ĉelo - aŭ tiu cifero estas la sola, kiun ĝi ankoraŭ povas enhavi, aŭ tiu ĉelo estas la sola loko, kie la cifero ankoraŭ povas troviĝi.\n\nTio lasas la ruĝe markitan kolumnon sen loko por %2$s. La markoj %3$s en ĝi montras la lokojn, kie tiu cifero povus troviĝi, kaj ĉiu estas ĉelo ĵus okupita de unu el la sagoj. Kolumno sen loko por iu cifero estas neebla - do ĉi tiu ĉelo ne enhavas %4$s."</string>
-    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Ŝanĝu al Poste por vidi la movon kaj ĝiajn sekvojn sur la krado."</string>
+    <string name="msg_switch_to_after_to_see_the_move_and_its_conse_bb327a82" formatted="false">"Ŝanĝu al Post por vidi la movon kaj ĝiajn sekvojn sur la krado."</string>
     <string name="msg_swordfish_c6afd225" formatted="false">"Spadfiŝo"</string>
     <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Fari novan foton"</string>
     <string name="msg_take_another_photo_61d1873e" formatted="false">"Fari alian foton"</string>
@@ -478,7 +478,7 @@
     <string name="msg_tap_a_square_on_the_grid_first_9e194661" formatted="false">"Unue tuŝu ĉelon sur la krado."</string>
     <string name="msg_test_0_as_an_assumption_in_the_marked_square__36129289" formatted="false">"Testu %1$s kiel supozon en la markita ĉelo. Ĝi ne estas respondo. Sekvu la sekvojn por vidi, kial ĝi malsukcesas."</string>
     <string name="msg_test_assumption_6b8b9c01" formatted="false">"Testi supozon"</string>
-    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Dankon pro helpi plibonigi rekonadon. Via enigmo-foto, legadoj kaj korektoj estos uzataj por analizo kaj trejnado."</string>
+    <string name="msg_thanks_for_helping_improve_recognition_your_p_fe6d101c" formatted="false">"Dankon pro via helpo plibonigi rekonadon. Via enigmo-foto, legadoj kaj korektoj estos uzataj por analizo kaj trejnado."</string>
     <string name="msg_that_is_also_a_valid_0_move_this_route_illust_399aee9c" formatted="false">"Ankaŭ tio estas valida movo per %1$s. Ĉi tiu solvovojo ilustras alian movon; komparu ĝian pruvon sube."</string>
     <string name="msg_that_is_not_the_move_selected_for_this_step_t_ff40c85f" formatted="false">"Tio ne estas la movo elektita por ĉi tiu paŝo. Eble ekzistas aliaj validaj movoj; rigardu denove aŭ montru la klarigon de ĉi tiu paŝo."</string>
     <string name="msg_that_is_right_b4d8e415" formatted="false">"Tio ĝustas"</string>
@@ -493,13 +493,13 @@
     <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"La fotilo ne disponeblas. Fermu aliajn fotilajn aplikaĵojn, poste reprovu."</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"la alia"</string>
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"La foto de %1$s kaj ĉio legita el ĝi estos forigitaj de ĉi tiu telefono. Tio ne povas esti malfarita."</string>
-    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" La foto estas en via enigmolisto, sub \"Ne legeblaj\"."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" La foto estas en via enigmolisto, sub \"Ne legeblis\"."</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"La pivoto ĉi tie estas %1$s aŭ %2$s. Ĉiuokaze unu el la aliaj du ĉeloj estas devigita al %3$s, do neniu ĉelo, kiu vidas ambaŭ, povas esti %4$s."</string>
-    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"La indikanta paro legata inverse. Prenu vicon aŭ kolumnon kaj ciferon, kiu ankoraŭ bezonas lokon en ĝi. Marku ĉiun ĉelon en tiu linio, kiu povus akcepti la ciferon. Se ĉiuj troviĝas en unu bloko, la cifero devas esti en la parto de la linio ene de tiu bloko — do ĝi estas nenie aliloke en la bloko, inkluzive de ĝiaj du vicoj aŭ kolumnoj, kiujn vi ne rigardis.\n\nKiel la indikanta paro, tio mem lokigas nenion; ĝi liberigas lokon por io, kio ja lokigas."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"La montra paro legata inverse. Prenu vicon aŭ kolumnon kaj ciferon, kiu ankoraŭ bezonas lokon en ĝi. Marku ĉiun ĉelon en tiu linio, kiu povus akcepti la ciferon. Se ĉiuj troviĝas en unu bloko, la cifero devas esti en la parto de la linio ene de tiu bloko — do ĝi estas nenie aliloke en la bloko, inkluzive de ĝiaj du vicoj aŭ kolumnoj, kiujn vi ne rigardis.\n\nKiel la montra paro, tio mem lokigas nenion; ĝi liberigas lokon por io, kio ja lokigas."</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"La presitaj ciferoj ne formas solveblan enigmon."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nLa restantaj kandidatoj ĉe %1$s estas {%2$s}. Metu %3$s en vicon %4$s, kolumnon %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"La raporto estas tro granda por sendi."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"La Y-alo kun unu plia kandidato en la pivoto. Serĉu ĉelon kun ĝuste tri kandidatoj, ekzemple {1,4,7}, kiu vidas du dukandidatajn ĉelojn — unu {1,7} kaj unu {4,7}.\n\nNun ĉiuj tri povas esti 7, kaj unu el ili devas esti. Do ĉelo devas vidi ĉiujn tri por ekskludi 7, ne nur la du pinĉilojn — kio praktike signifas, ke ĝi troviĝas en la sama bloko kiel la pivoto kaj sur linio kun pinĉilo.\n\nMalpli da eliminoj ol ĉe Y-alo, kaj pli facile pretervidebla pro la sama kialo: la pivoto ne elstaras."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"La Y-alo kun unu plia kandidato en la pivoto. Serĉu ĉelon kun ĝuste tri kandidatoj, ekzemple {1,4,7}, kiu vidas du dukandidatajn ĉelojn — unu {1,7} kaj unu {4,7}.\n\nNun ĉiuj tri povas esti 7, kaj unu el ili devas esti. Do ĉelo devas vidi ĉiujn tri por ekskludi 7, ne nur la du pinĉilojn — kio praktike signifas, ke ĝi troviĝas en la sama bloko kiel la pivoto kaj sur linio kun pinĉilo.\n\nMalpli da eliminoj ol ĉe Y-alo, kaj pli facile pretervidebla pro la sama kialo: la pivoto ne elstaras."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Estas ĉelo, kiun vi povas plenigi en la emfazita bloko.\n\nPremu Indiko denove por ekscii, kiu tekniko trovas ĝin."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Nenio restas ĉi tie por rezoni."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Ĉi tiuj %1$s ĉeloj ĉiuj enhavas nur %2$s kaj %3$s, kaj ĉiu vidas la sekvan, do ili alternas laŭ la tuta ĉeno. %4$s kaj %5$s estas apartigitaj per nepara nombro da ligiloj kaj tial enhavas malsamajn ciferojn — kio ekskludas %6$s el ĉio, kio vidas ambaŭ."</string>
@@ -540,7 +540,7 @@
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Unika rektangulo"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"unuo"</string>
     <string name="msg_unreadable_exposes_no_cellreading_list_exact__24e19237" formatted="false">"Nelegebla elmontras neniun liston CellReading; la precizaj enigaj ĉeloj kaj rezulto estas retenataj."</string>
-    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"EraroProNesekuraUzoDeKonsento"</string>
+    <string name="msg_unsafeoptinusageerror_b9799ace" formatted="false">"UnsafeOptInUsageError"</string>
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"nesubtenata versio de modelformato"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Necerta"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Uzi aparatan lingvon"</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Kial ĉi tiu ĉelo? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" kun la solvo. Uzu Kontroli por ekzameni ilin."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Rezonu retroen de via ĉelo. Elektu demandon sube."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Laboru cifero post cifero anstataŭ ĉelo post ĉelo. Por unu unuo, notu, kien ĉiu mankanta cifero ankoraŭ povus iri. Poste serĉu %1$s ciferojn, kies listoj kune kovras nur %2$s ĉelojn.\n\nTiuj %3$s ciferoj devas plenigi tiujn %4$s ĉelojn, do ĉio alia en ili povas esti forstrekita — kio ofte tuj igas unu el ili nuda unuopaĵo aŭ nuda paro.\n\nTion homoj trovas plej malfacila, ĉar estas nenio videbla kiam vi rigardas la ĉelojn: ili ankoraŭ havas multajn kandidatojn. La ŝablono troviĝas en la ciferoj."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Laboru cifero post cifero anstataŭ ĉelo post ĉelo. Por unu unuo, notu, kien ĉiu mankanta cifero ankoraŭ povus iri. Poste serĉu %1$s ciferojn, kies listoj kune kovras nur %2$s ĉelojn.\n\nTiuj %3$s ciferoj devas plenigi tiujn %4$s ĉelojn, do ĉio alia en ili povas esti forstrekita — kio ofte tuj igas unu el ili nuda unuopaĵo aŭ nuda paro.\n\nTion homoj trovas plej malfacila, ĉar estas nenio videbla kiam vi rigardas la ĉelojn: ili ankoraŭ havas multajn kandidatojn. La ŝablono troviĝas en la ciferoj."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Laboru nur per ĉeloj, al kiuj restas ĝuste du kandidatoj.\n\nKomencu ĉe unu, ekzemple {2,6}, kaj supozu, ke ĝi ne estas 2 — do ĝi estas 6. Iru al ĉelo, kiun ĝi vidas kaj kiu ankaŭ havas 6, ekzemple {6,4}: tiu ne povas esti 6, do ĝi estas 4. Iru al ĉelo, kiun tiu vidas kaj kiu enhavas 4, kaj daŭrigu, kun ĉiu paŝo devigita de la antaŭa.\n\nSe vi atingas ĉelon, kies alia cifero estas 2 — la cifero, kiun vi komence ekskludis — vi finis. Aŭ la unua ĉelo tamen estis 2, aŭ la ĉeno daŭris kaj la lasta ĉelo estas 2. Unu aŭ la alia fino enhavas ĝin, do ĉio vidanta ambaŭ finojn ne povas.\n\nTenu la ĉenojn mallongaj. Kvar aŭ kvin ĉeloj estas troveblaj per krajono; post tio vi faras librotenadon, kaj deviga ĉeno estas la honesta nomo por tio."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"la laborrando devas esti pozitiva kaj finia"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Ne legeblis"</string>

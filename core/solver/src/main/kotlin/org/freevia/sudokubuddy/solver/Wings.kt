@@ -89,7 +89,7 @@ object XyzWing : Technique {
     override val howTo = "The Y-wing with the pivot holding one candidate more. Look for a " +
         "square with exactly three candidates, say {1,4,7}, that can see two two-candidate " +
         "squares - one {1,7} and one {4,7}.\n\nNow all three of them can be 7, and one of " +
-        "them must be. So a square has to see all three to be ruled out, not just the two " +
+        "them must be. So a square has to see all three for 7 to be ruled out of it, not just the two " +
         "pincers - which in practice means it sits in the same box as the pivot and on a " +
         "line with a pincer.\n\nFewer eliminations than a Y-wing, and easier to miss for " +
         "the same reason: the pivot does not stand out."

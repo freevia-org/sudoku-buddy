@@ -24,7 +24,7 @@
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__72fd562c" formatted="false">"%1$s on sijoitettava tähän: tämä on yksikön %2$s %3$s ainoa ruutu, johon %4$s voi vielä tulla.\n\n%5$s\n\nRuutuun %6$s sopii tällä hetkellä %7$s, mutta jokaisen yksikön (%8$s) on sisällettävä %9$s täsmälleen kerran. Sijoita siis %10$s riville %11$s, sarakkeeseen %12$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__91ff176b" formatted="false">"%1$s on sijoitettava tähän: tämä on lohkon %2$s ainoa ruutu, johon %3$s voi vielä tulla.\n\n%4$s\n\n%5$s sallii tällä hetkellä numerot %6$s, mutta jokaisessa lohkossa on oltava %7$s täsmälleen kerran. Sijoita siis %8$s riville %9$s, sarakkeeseen %10$s."</string>
     <string name="msg_0_has_to_go_here_it_is_the_only_cell_in_this__fd0094b0" formatted="false">"%1$s on sijoitettava tähän: tämä on rivin %2$s ainoa ruutu, johon %3$s voi vielä tulla.\n\n%4$s\n\n%5$s sallii tällä hetkellä numerot %6$s, mutta jokaisella rivillä on oltava %7$s täsmälleen kerran. Sijoita siis %8$s riville %9$s, sarakkeeseen %10$s."</string>
-    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"Numerolla %1$s on kaksi paikkaa tällä rivillä ja kaksi tässä sarakkeessa. Ruudut %2$s ja %3$s ovat samassa alueessa, joten molemmissa ei voi olla %4$s – näin ollen se on jommassakummassa ruuduista %5$s ja %6$s, ja %7$s suljetaan pois kaikista molemmat näkevistä ruuduista."</string>
+    <string name="msg_0_has_two_homes_in_this_row_and_two_in_this_c_0f58e2e8" formatted="false">"Numerolla %1$s on kaksi paikkaa tällä rivillä ja kaksi tässä sarakkeessa. Ruudut %2$s ja %3$s ovat samassa lohkossa, joten molemmissa ei voi olla %4$s – näin ollen se on jommassakummassa ruuduista %5$s ja %6$s, ja %7$s suljetaan pois kaikista molemmat näkevistä ruuduista."</string>
     <string name="msg_0_in_the_same_1_77d01bfc" formatted="false">" %1$s samassa yksikössä (%2$s)."</string>
     <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s samassa lohkossa."</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s samassa sarakkeessa."</string>
@@ -50,7 +50,7 @@
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s hylättyä kuvaa, uusimmat ensin:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: poista %2$s"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"Ruutujen määrä: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Tässä ratkaisupolussa on %1$s vaihetta, ja vaikein tuettu tekniikka on %2$s. %3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"Tässä ratkaisupolussa on %1$s vaihetta, ja vaikein tuettu tekniikka on %2$s. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s kolmikko"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s poistettiin ruudusta %2$s aiemmalla ehdokaspäättelyllä."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s kirjoitettua"</string>
@@ -92,8 +92,8 @@
     <string name="msg_before_9bb72500" formatted="false">"Ennen"</string>
     <string name="msg_before_this_move_426cf416" formatted="false">"Ennen tätä siirtoa"</string>
     <string name="msg_blue_digits_are_the_solution_tap_any_square_t_4809adea" formatted="false">"Siniset numerot ovat ratkaisu. Korjaa luettu numero napauttamalla mitä tahansa ruutua."</string>
-    <string name="msg_box_0_1b64af60" formatted="false">"alue %1$s"</string>
-    <string name="msg_box_26f8567f" formatted="false">"alue"</string>
+    <string name="msg_box_0_1b64af60" formatted="false">"lohko %1$s"</string>
+    <string name="msg_box_26f8567f" formatted="false">"lohko"</string>
     <string name="msg_box_512fd3c6" formatted="false">"Lohko"</string>
     <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Lohko–linja-rajaus"</string>
     <string name="msg_camera_03494b0d" formatted="false">"Kamera"</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", tarkistettu oikeaksi"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Valitse ehdokas nähdäksesi, miksi se ei voi olla ruudussasi."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Valitse kieli"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Valitse näytettävät tiedot"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Valitse näytettävät tiedot"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Sulje"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Sulje vihje"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Supista lukutuloksen tarkastelu"</string>
@@ -127,7 +127,7 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Vertaa pakotusketjuja ja suosi niitä, joissa on vähemmän seurattavia ruutuja. Lyhyemmät ketjut voivat tarkoittaa enemmän vaiheita koko ratkaisussa."</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Seuraus %1$s/%2$s · hypoteettiset numerot"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"sisältää"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Sisältötyyppi"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Jatka koko ratkaisupolkua"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Ristiriita · oletus ei päde"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", ristiriita"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Virheenjäljityksen kuvaustodisteita ei voitu säilyttää"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Lukutulosta ei voitu lähettää. Yritä uudelleen, kun verkkoyhteys on käytettävissä."</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Umpikuja"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"POISTA"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Poista"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Poista raportti"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Poista tämä kuva"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Jokainen niistä täyttää yhden ruudun."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Kaikki ruudut on täytetty, mutta %1$s vastausta poikkeaa ratkaisusta."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Kaikki ruudut on täytetty, mutta yksi vastaus poikkeaa ratkaisusta."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Jokainen sudoku, jolla on yksi ratkaisu, voidaan ratkaista päättelemällä. Arvaaminen ei ole koskaan tarpeen ja auttaa harvoin. Nämä ovat päättelytavat, jotka sovellus tunnistaa ja osaa selittää, helpoimmasta alkaen. Jos jokin niistä soveltuu avoinna olevaan tehtävääsi, sovellus näyttää kaikki kohdat, joissa sitä voi käyttää."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Jokainen sudoku, jolla on yksi ratkaisu, voidaan ratkaista päättelemällä. Arvaaminen ei ole koskaan tarpeen ja auttaa harvoin. Nämä ovat päättelytavat, jotka sovellus tunnistaa ja osaa selittää, helpoimmasta alkaen. Jos jokin niistä soveltuu avoinna olevaan tehtävääsi, sovellus näyttää kaikki kohdat, joissa sitä voi käyttää."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Kaikki tähän mennessä kirjoittamasi on oikein."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Saatavilla olevat esimerkit: jokainen alkaa nykyisestä ruudukostasi."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"odotettiin 10 vaakaviivaa, saatiin %1$s"</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Pidä pakotusketjut lyhyinä"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Kieli"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Lisenssit"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Etsi yhdeltä riviltä, sarakkeesta tai lohkosta ruutuja, joissa on vain muutama ehdokas jäljellä. Valitse niistä %1$s ja yhdistä niiden ehdokkaat. Jos joukossa on täsmälleen %2$s numeroa, nämä %3$s numeroa on varattu: niiden on oltava näissä %4$s ruudussa jossakin järjestyksessä, vaikka et vielä tiedä, mikä kuuluu mihinkin.\n\nSe riittää. Numerot voidaan poistaa yksikön kaikista muista ruuduista, ja yleensä johonkin niistä jää silloin vain yksi ehdokas.\n\nRuuduilla ei tarvitse olla samoja ehdokkaita: {2,7}, {2,9} ja {7,9} muodostavat täysin kelvollisen kolmikon, joka jää usein huomaamatta."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Etsi yhdeltä riviltä, sarakkeesta tai lohkosta ruutuja, joissa on vain muutama ehdokas jäljellä. Valitse niistä %1$s ja yhdistä niiden ehdokkaat. Jos joukossa on täsmälleen %2$s numeroa, nämä %3$s numeroa on varattu: niiden on oltava näissä %4$s ruudussa jossakin järjestyksessä, vaikka et vielä tiedä, mikä kuuluu mihinkin.\n\nSe riittää. Numerot voidaan poistaa yksikön kaikista muista ruuduista, ja yleensä johonkin niistä jää silloin vain yksi ehdokas.\n\nRuuduilla ei tarvitse olla samoja ehdokkaita: {2,7}, {2,9} ja {7,9} muodostavat täysin kelvollisen kolmikon, joka jää usein huomaamatta."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Etsi ruutuja, joissa on samat kaksi ehdokasta, esimerkiksi {4,9}, ja jotka muodostavat ketjun niin, että jokainen näkee seuraavan. Kolme ei riitä; tarvitset vähintään neljä.\n\nVäritä ne vuorotellen edetessäsi. Koska jokainen ruutu näkee seuraavan, kahdessa vierekkäisessä ruudussa ei voi olla sama numero. Ketju on siis koko matkan 4, 9, 4, 9 tai 9, 4, 9, 4, etkä tiedä kumpi.\n\nKummassakin tapauksessa kahdessa erivärisessä ruudussa on eri numerot: toinen on 4 ja toinen 9. Siksi mikään molemmat näkevä ruutu ei voi olla kumpikaan, ja siitä poistuvat molemmat ehdokkaat kerralla.\n\nKuvio on helppo huomata juuri siksi, että sen kaikki ruudut näyttävät samoilta. Seuraa samanlaisia pareja ruudukossa ja katso, missä ne kohtaavat."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Etsi kolme ruutua, joissa on samat kaksi ehdokasta, esimerkiksi {1,6}, ja jotka ovat suorakulmion kolmessa kulmassa. Suorakulmion on oltava täsmälleen kahdessa lohkossa: kaksi riviä ja kaksi saraketta kulkevat kahden lohkon, eivät neljän, kautta.\n\nKatso sitten neljättä kulmaa. Jos siinäkin olisi vain 1 ja 6, tehtävällä olisi kaksi ratkaisua: voisit vaihtaa suorakulmion numerot 1 ja 6 keskenään, ja kaikki muu toimisi yhä. Oikein laaditulla tehtävällä on yksi ratkaisu, joten neljännessä kulmassa on oltava jokin muu numero. Sen muut ehdokkaat jäävät, ja 1 sekä 6 poistuvat.\n\nTämä on ainoa päättelytapa, joka perustuu laatijaan eikä ruudukkoon. Se pätee julkaistuun tehtävään mutta on hyödytön tehtävässä, jonka olet jo täyttänyt väärin, koska silloin yksikäsitteistä ratkaisua ei välttämättä ole lainkaan."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Katso tätä lohkoa. Seuraa ääriviivaa ruutuun, jonka tämä vihje selittää."</string>
@@ -324,12 +324,12 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Tähän voi tulla vain %1$s. Korostetuissa ruuduissa on yksi muista kahdeksasta numerosta; %2$s suljettiin pois tästä ruudusta aiemmin, ei minkään sen ympärillä näkyvän perusteella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Tähän voi tulla vain %1$s. Korostetuissa ruuduissa on seitsemän muista kahdeksasta numerosta; %2$s suljettiin pois tästä ruudusta aiemmin, ei minkään sen ympärillä näkyvän perusteella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Tähän voi tulla vain %1$s. Korostetuissa ruuduissa on viisi muista kahdeksasta numerosta; %2$s suljettiin pois tästä ruudusta aiemmin, ei minkään sen ympärillä näkyvän perusteella."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Vain %1$s voi olla tässä. Korostetut ruudut kattavat %2$s muista kahdeksasta numerosta; %3$s %4$s suljettiin tästä ruudusta pois aiemmin, ei minkään ympärillä näkyvän perusteella."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Vain %1$s voi olla tässä. Korostetut ruudut kattavat %2$s muista kahdeksasta numerosta; %3$s %4$s suljettu tästä ruudusta pois aiemmin, ei minkään ympärillä näkyvän perusteella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Tähän voi tulla vain %1$s. Korostetuissa ruuduissa on kaksi muista kahdeksasta numerosta; %2$s suljettiin pois tästä ruudusta aiemmin, ei minkään sen ympärillä näkyvän perusteella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Tähän voi tulla vain %1$s. Korostetut ruudut sulkevat pois %2$s muista kahdeksasta numerosta; %3$s suljettiin tästä ruudusta pois aiemmin, ei minkään sen ympärillä näkyvän perusteella."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Tähän voi tulla vain %1$s. Korostetuissa ruuduissa on kolme muista kahdeksasta numerosta; %2$s suljettiin pois tästä ruudusta aiemmin, ei minkään sen ympärillä näkyvän perusteella."</string>
     <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Vain %1$s voi olla tässä. Tämän rivin, sarakkeen tai lohkon täytetyt ruudut tai pakotetut yksittäiset ehdokkaat sulkevat muut kahdeksan numeroa pois."</string>
-    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Vain %1$s voi olla tässä, vaikka ympäristö ei näytä syytä: kaikki kahdeksan muuta numeroa suljettiin tästä ruudusta pois aiemmalla päättelyllä, eivätkä siksi, että ne olisi kirjoitettu sen riville, sarakkeeseen tai lohkoon."</string>
+    <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Vain %1$s voi olla tässä, vaikka ympäristö ei näytä syytä: kaikki kahdeksan muuta numeroa suljettiin tästä ruudusta pois aiemmalla päättelyllä, ei siksi, että ne olisi kirjoitettu sen riville, sarakkeeseen tai lohkoon."</string>
     <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Painettuja numeroita löytyi vain %1$s, mikä on liian vähän tehtävään."</string>
     <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"vain neljänneskierrokset ovat tuettuja, ei %1$s"</string>
     <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Avaa selaimessa luonnos, johon on täytetty sovellusversio, puhelinmalli, Android-versio ja viimeisimmät skannauksen diagnostiikkatiedot. Lisää itse kattava kuvaus ja olennaiset kuvakaappaukset.\n\nGitHubiin on kirjauduttava. Voit tarkistaa ja muokata luonnosta ennen lähettämistä. Lähetetyt raportit ja liitteet ovat julkisia. Valokuvia ei liitetä automaattisesti."</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Suuntaa kamera sudokutehtävään."</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Suuntaa kamera paperilla olevaan sudokutehtävään. Sovellus lukee painetut numerot ja kirjoittamasi vastaukset, ratkaisee tehtävän ja voi antaa vihjeen, tarkistaa vastauksesi tai näyttää koko ratkaisun."</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Osoittava pari"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"LÄHETÄ"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Valmistellaan tehtävää…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Edellinen"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Edellinen vaihe"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Tunnistus tarkistettu."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Tunnistus lähetetty. Kiitos!"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Viimeisimmät skannauksen diagnostiikkatiedot (esitäytetty)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Tunnistus voi erehtyä, etenkin käsin kirjoitettujen numeroiden kohdalla. Vertaa tunnistettuja numeroita kuvaan Lue-toiminnolla ja korjaa niitä napauttamalla ruutua. Sovellus merkitsee epävarmat tunnistukset tarkistettaviksi; myös varma tunnistus voi olla väärä."</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Tunnistus voi erehtyä, etenkin käsin kirjoitettujen numeroiden kohdalla. Vertaa tunnistettuja numeroita kuvaan Tunnistus-toiminnolla ja korjaa niitä napauttamalla ruutua. Sovellus merkitsee epävarmat tunnistukset tarkistettaviksi; myös varma tunnistus voi olla väärä."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Hylkää oletus"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Etäparit"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Poista %1$s"</string>
@@ -470,8 +470,8 @@
     <string name="msg_swordfish_c6afd225" formatted="false">"Miekkakala"</string>
     <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Ota uusi kuva"</string>
     <string name="msg_take_another_photo_61d1873e" formatted="false">"Ota toinen kuva"</string>
-    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Valitse yksi numero ja merkitse jokainen yksikkö, jossa sille on jäljellä täsmälleen kaksi ruutua. Ne muodostavat vahvan linkin: toisessa on numero ja toisessa ei.\n\nAloita mistä tahansa ja väritä ruutu vaikkapa siniseksi. Väritä sen linkkipari vihreäksi, tämän linkkipari taas siniseksi ja jatka, kunnes ketju päättyy. Numero on joko kaikissa sinisissä tai kaikissa vihreissä ruuduissa – et tiedä kummissa, ja tämä riittää kahteen päätelmään.\n\nEnsimmäinen: jos kaksi samanväristä ruutua on samalla rivillä, samassa sarakkeessa tai samassa alueessa, väri on mahdoton. Numero poistetaan kaikista sen värisistä ruuduista, ja toisen värin ruudut sisältävät numeron.\n\nToinen: ketjun ulkopuolisesta ruudusta, joka näkee sekä sinisen että vihreän ruudun, voi poistaa numeron, koska toisessa näistä kahdesta se on ketjun suunnasta riippumatta.\n\nLyijykynällä tämä on hidasta mutta vaivan arvoista: yksi väritys poistaa usein numeron puolelta ruudukosta."</string>
-    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Tarkastele yhtä numeroa ja yhtä yksikköä kerrallaan – esimerkiksi missä tämän alueen 4 voi olla? Sulje pois yksikön jokainen ruutu, jossa on jo numero tai joka näkee numeron 4 omalla rivillään tai sarakkeessaan. Jos jäljelle jää yksi ruutu, 4 tulee siihen.\n\nAnsana on, ettei tätä näe ruutua katsomalla: siihen voi sopia myös viisi muuta numeroa, joten mikään ei näytä pakotetulta. Katso numeroa ruudun sijaan, niin se näkyy heti."</string>
+    <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Valitse yksi numero ja merkitse jokainen yksikkö, jossa sille on jäljellä täsmälleen kaksi ruutua. Ne muodostavat vahvan linkin: toisessa on numero ja toisessa ei.\n\nAloita mistä tahansa ja väritä ruutu vaikkapa siniseksi. Väritä sen linkkipari vihreäksi, tämän linkkipari taas siniseksi ja jatka, kunnes ketju päättyy. Numero on joko kaikissa sinisissä tai kaikissa vihreissä ruuduissa – et tiedä kummissa, ja tämä riittää kahteen päätelmään.\n\nEnsimmäinen: jos kaksi samanväristä ruutua on samalla rivillä, samassa sarakkeessa tai samassa lohkossa, väri on mahdoton. Numero poistetaan kaikista sen värisistä ruuduista, ja toisen värin ruudut sisältävät numeron.\n\nToinen: ketjun ulkopuolisesta ruudusta, joka näkee sekä sinisen että vihreän ruudun, voi poistaa numeron, koska toisessa näistä kahdesta se on ketjun suunnasta riippumatta.\n\nLyijykynällä tämä on hidasta mutta vaivan arvoista: yksi väritys poistaa usein numeron puolelta ruudukosta."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Tarkastele yhtä numeroa ja yhtä yksikköä kerrallaan – esimerkiksi mihin numero 4 voi tulla tässä lohkossa? Sulje pois yksikön jokainen ruutu, jossa on jo numero tai joka näkee numeron 4 omalla rivillään tai sarakkeessaan. Jos jäljelle jää yksi ruutu, 4 tulee siihen.\n\nAnsana on, ettei tätä näe ruutua katsomalla: siihen voi sopia myös viisi muuta numeroa, joten mikään ei näytä pakotetulta. Katso numeroa ruudun sijaan, niin se näkyy heti."</string>
     <string name="msg_take_photo_7100ac99" formatted="false">"Ota kuva"</string>
     <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Ota kuva automaattisesti"</string>
     <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tarkista merkitty ruutu napauttamalla sitä tai vahvista, että kaikki tunnistukset ovat oikein."</string>
@@ -499,8 +499,8 @@
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Painetut numerot eivät muodosta ratkaistavaa tehtävää."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nRuudun %1$s jäljellä olevat ehdokkaat ovat {%2$s}. Aseta %3$s riville %4$s, sarakkeeseen %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Raportti on liian suuri lähetettäväksi."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-siipi, jonka keskusruudussa on yksi ehdokas enemmän. Etsi ruutu, jossa on täsmälleen kolme ehdokasta, esimerkiksi {1,4,7}, ja joka näkee kaksi kahden ehdokkaan ruutua – toisessa {1,7} ja toisessa {4,7}.\n\nNyt kaikissa kolmessa voi olla 7, ja yhdessä niistä sen on oltava. Siksi poistettavan ruudun on nähtävä kaikki kolme, ei vain kahta siipeä – käytännössä se on samassa alueessa keskusruudun kanssa ja samalla rivillä tai sarakkeella siiven kanssa.\n\nPoistoja on vähemmän kuin Y-siivessä, ja kuvio jää helpommin huomaamatta samasta syystä: keskusruutu ei erotu."</string>
-    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Korostetussa alueessa on ruutu, jonka voit täyttää.\n\nPaina Vihje uudelleen, niin näet, mikä tekniikka löytää sen."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-siipi, jonka keskusruudussa on yksi ehdokas enemmän. Etsi ruutu, jossa on täsmälleen kolme ehdokasta, esimerkiksi {1,4,7}, ja joka näkee kaksi kahden ehdokkaan ruutua – toisessa {1,7} ja toisessa {4,7}.\n\nNyt kaikissa kolmessa voi olla 7, ja yhdessä niistä sen on oltava. Siksi ruudun, josta ehdokas 7 poistetaan, on nähtävä kaikki kolme, ei vain kahta haararuutua – käytännössä se on samassa lohkossa keskusruudun kanssa ja samalla rivillä tai samassa sarakkeessa haararuudun kanssa.\n\nPoistoja on vähemmän kuin Y-siivessä, ja kuvio jää helpommin huomaamatta samasta syystä: keskusruutu ei erotu."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Korostetussa lohkossa on ruutu, jonka voit täyttää.\n\nPaina Vihje uudelleen, niin näet, mikä tekniikka löytää sen."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Tässä ei ole enää mitään pääteltävää."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Näissä %1$s ruudussa on kaikissa vain %2$s ja %3$s, ja kukin näkee seuraavan, joten numerot vuorottelevat koko ketjussa. Ruutujen %4$s ja %5$s välissä on pariton määrä linkkejä, joten niissä on eri numerot – tämä sulkee numeron %6$s pois kaikista molemmat näkevistä ruuduista."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Näissä %1$s ruudussa on yhteensä vain %2$s, joten nämä numerot täyttävät ne jossakin järjestyksessä. Siksi %3$s poistetaan tämän yksikön (%4$s) muista ruuduista."</string>
@@ -512,7 +512,7 @@
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Nämä numerot eivät voi muodostaa tehtävää. %1$s ympyröidyn ruudun muuttaminen korjaisi tilanteen – korjaa tunnistusta napauttamalla yhtä niistä."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Nämä numerot eivät voi muodostaa tehtävää. Yhden ympyröidyn ruudun muuttaminen korjaisi tilanteen – korjaa tunnistusta napauttamalla sitä."</string>
     <string name="msg_these_digits_do_not_make_a_puzzle_so_one_was__b6067f1a" formatted="false">"Nämä numerot eivät muodosta tehtävää, joten yksi tunnistettiin väärin. Paina Ratkaise nähdäksesi korjattavat ruudut."</string>
-    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Nämä neljä ruutua muodostavat suorakulmion kahden alueen yli, ja kolmessa niistä on vain %1$s. Jos myös ruudussa %2$s olisi vain nämä kaksi, numerot voisi vaihtaa keskenään suorakulmion ympäri ja tehtävällä olisi kaksi ratkaisua. Sillä on yksi, joten ruudussa %3$s on oltava jokin muu numero – ja %4$s poistetaan."</string>
+    <string name="msg_these_four_squares_make_a_rectangle_across_tw_267968c9" formatted="false">"Nämä neljä ruutua muodostavat suorakulmion kahden lohkon yli, ja kolmessa niistä on vain %1$s. Jos myös ruudussa %2$s olisi vain nämä kaksi, numerot voisi vaihtaa keskenään suorakulmion ympäri ja tehtävällä olisi kaksi ratkaisua. Sillä on yksi, joten ruudussa %3$s on oltava jokin muu numero – ja %4$s poistetaan."</string>
     <string name="msg_they_do_not_reach_the_end_something_here_has__04ffcc86" formatted="false">"Ne eivät pääse loppuun: jokin tässä on ylittänyt sovelluksen kyvyt kokonaan."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_5126453b" formatted="false">"Tämä ei täytä yhtään ruutua. Se sulkee numeron %1$s pois ruudusta %2$s."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Tämä ei täytä yhtään ruutua. Se sulkee numeron %1$s pois %2$s ruudusta."</string>
@@ -535,7 +535,7 @@
     <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Käännä puhelinta niin, että tehtävä on oikein päin."</string>
     <string name="msg_tutor_1555a832" formatted="false">"Opastaja"</string>
     <string name="msg_two_3fc4ccfe" formatted="false">"kaksi"</string>
-    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Kaksi saman parin sisältävää ruutua, jotka yhdistyvät toisen numeron vahvalla linkillä, pakottavat toisen numeron jompaankumpaan ruutuun."</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Kaksi saman parin sisältävää ruutua, jotka yhdistyvät parin yhden numeron vahvalla linkillä, pakottavat parin muun numeron jompaankumpaan ruutuun."</string>
     <string name="msg_two_string_kite_fd558e5c" formatted="false">"Kaksinaruinen leija"</string>
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Yksikäsitteinen suorakulmio"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"yksikkö"</string>
@@ -549,8 +549,8 @@
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Erittäin vaikea"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"W-siipi"</string>
-    <string name="msg_was_b63b99f6" formatted="false">"oli"</string>
-    <string name="msg_were_910adfb4" formatted="false">"olivat"</string>
+    <string name="msg_was_b63b99f6" formatted="false">"on"</string>
+    <string name="msg_were_910adfb4" formatted="false">"on"</string>
     <string name="msg_what_did_you_expect_or_how_would_your_idea_he_9eb2837a" formatted="false">"Mitä odotit, tai miten ideasi auttaisi ratkaisemaan tai oppimaan sudokua?"</string>
     <string name="msg_what_happened_and_steps_to_reproduce_for_bugs_f9c0ea39" formatted="false">"## Mitä tapahtui ja miten sen voi toistaa (virheille)"</string>
     <string name="msg_what_it_does_c74ea9dc" formatted="false">"Mitä se tekee"</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Miksi tämä ruutu? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" ratkaisun kanssa. Tarkastele niitä valitsemalla Tarkista."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Etene ruudustasi taaksepäin. Valitse kysymys alta."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Etene numero kerrallaan ruutu kerrallaan etenemisen sijaan. Kirjoita yhden yksikön osalta muistiin, mihin kukin puuttuva numero voi vielä tulla. Etsi sitten %1$s numeroa, joiden paikkalistat kattavat yhteensä vain %2$s ruutua.\n\nNäiden %3$s numeron on täytettävä nämä %4$s ruutua, joten kaikki muut ehdokkaat niissä voi poistaa – usein jokin niistä muuttuu heti paljaaksi yksittäiseksi tai paljaaksi pariksi.\n\nTätä pidetään vaikeimpana, koska ruutuja katsomalla ei näe mitään: niissä on yhä paljon ehdokkaita. Kuvio on numeroissa."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Etene numero kerrallaan ruutu kerrallaan etenemisen sijaan. Kirjoita yhden yksikön osalta muistiin, mihin kukin puuttuva numero voi vielä tulla. Etsi sitten %1$s numeroa, joiden paikkalistat kattavat yhteensä vain %2$s ruutua.\n\nNäiden %3$s numeron on täytettävä nämä %4$s ruutua, joten kaikki muut ehdokkaat niissä voi poistaa – usein johonkin niistä syntyy heti paljas yksittäinen tai kahteen niistä paljas pari.\n\nTätä pidetään vaikeimpana, koska ruutuja katsomalla ei näe mitään: niissä on yhä paljon ehdokkaita. Kuvio on numeroissa."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Käytä vain ruutuja, joissa on jäljellä täsmälleen kaksi ehdokasta.\n\nAloita yhdestä, esimerkiksi {2,6}, ja oleta, ettei siinä ole 2 – silloin siinä on 6. Siirry sen näkemään ruutuun, jossa on myös ehdokas 6, esimerkiksi {6,4}: siinä ei voi olla 6, joten siinä on 4. Siirry tämän ruudun näkemään ruutuun, jossa on ehdokas 4, ja jatka niin, että edellinen vaihe pakottaa aina seuraavan.\n\nJos pääset ruutuun, jonka toinen numero on 2 – aluksi pois sulkemasi numero – olet valmis. Joko ensimmäisessä ruudussa oli sittenkin 2 tai ketju toteutui ja viimeisessä ruudussa on 2. Se on jommassakummassa päässä, joten molemmat päät näkevässä ruudussa sitä ei voi olla.\n\nPidä ketjut lyhyinä. Neljä tai viisi ruutua löytyy lyijykynällä; sitä pidemmällä kyse on kirjanpidosta, ja pakotusketju on sille rehellinen nimi."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"käsittelyreunan pituuden on oltava positiivinen ja äärellinen"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Ei onnistunut lukemaan"</string>

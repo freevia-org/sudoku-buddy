@@ -10,7 +10,7 @@
     <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s ag ró %2$s, colún %3$s%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s ag céim %2$s"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"Ní féidir ach %2$s a bheith in %1$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"Ní féidir %2$s a bheith in %1$s toisc go %3$s "</string>
+    <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"Ní féidir %2$s a bheith in %1$s. An fhianaise ó %3$s: "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"Ní féidir %2$s a bheith in %1$s mar ní féidir ach %4$s a bheith in %3$s sa cholún céanna %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"Ní féidir %2$s a bheith in %1$s mar ní féidir ach %4$s a bheith in %3$s sa bhosca céanna %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"Ní féidir %2$s a bheith in %1$s mar ní féidir ach %4$s a bheith in %3$s sa ró céanna %5$s."</string>
@@ -30,7 +30,7 @@
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s sa cholún céanna."</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s sa ró céanna."</string>
     <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"Tá %1$s curtha as an áireamh sa chill sin cheana. Is iad a hiarrthóirí "</string>
-    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"Cuireann %2$s %1$s as an áireamh, agus déanann sé seo: "</string>
+    <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"Cuireann %2$s %1$s as an áireamh. An fhianaise: "</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"Cuirtear %1$s as an áireamh de bharr %2$s, nach féidir ach %3$s a bheith ann sa cholún céanna %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"Cuirtear %1$s as an áireamh de bharr %2$s, nach féidir ach %3$s a bheith ann sa ró céanna %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"Cuirtear %1$s as an áireamh de bharr %2$s, nach féidir ach %3$s a bheith ann sa bhosca céanna %4$s."</string>
@@ -50,7 +50,7 @@
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s grianghraf diúltaithe, an ceann is nuaí ar dtús:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: bain %2$s"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"Líon na gceall: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Tá %1$s céim sa chonair seo, agus is é %2$s an teicníc thacaithe is deacra. %3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"Tá %1$s céim sa chonair seo, agus is é %2$s an teicníc thacaithe is deacra. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"trírín %1$s"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"Baineadh %1$s as %2$s trí réasúnaíocht iarrthóirí níos luaithe."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s scríofa isteach"</string>
@@ -97,7 +97,7 @@
     <string name="msg_box_512fd3c6" formatted="false">"Bosca"</string>
     <string name="msg_box_line_reduction_3cefbeec" formatted="false">"Laghdú bosca-líne"</string>
     <string name="msg_camera_03494b0d" formatted="false">"Ceamara"</string>
-    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"ní féidir leis ach na digití seo a bheith ann:"</string>
+    <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"ní féidir a bheith inti ach"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Cealaigh"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", iarrthóirí %1$s"</string>
     <string name="msg_captureevidence_077b226e" formatted="false">"FianaiseGabhála"</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", seiceáilte agus ceart"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Roghnaigh iarrthóir chun a fheiceáil cén fáth nach féidir é a chur i do chill."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Roghnaigh teanga"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Roghnaigh cad a thaispeánfar"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Roghnaigh cad a thaispeánfar"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Dún"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Dún an leid"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Laghdaigh an t-athbhreithniú léitheoireachta"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Líonann gach ceann díobh cill."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Tá gach cill líonta, ach ní mheaitseálann %1$s freagra an réiteach."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Tá gach cill líonta, ach ní mheaitseálann freagra amháin an réiteach."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Is féidir gach sudoku a bhfuil aon réiteach amháin aige a réiteach trí réasúnú; ní gá buille faoi thuairim riamh agus is annamh a chuidíonn sé. Seo na modhanna réasúnaithe is féidir leis an aip seo a aithint agus a mhíniú, na cinn is éasca ar dtús. Má bhaineann ceann acu leis an bpuzal atá oscailte agat, taispeánfaidh sí gach áit a mbaineann sé leis."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Is féidir gach sudoku a bhfuil aon réiteach amháin aige a réiteach trí réasúnú; ní gá buille faoi thuairim riamh agus is annamh a chuidíonn sé. Seo na modhanna réasúnaithe is féidir leis an aip seo a aithint agus a mhíniú, na cinn is éasca ar dtús. Má bhaineann ceann acu leis an bpuzal atá oscailte agat, taispeánfaidh sí gach áit a mbaineann sé leis."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Tá gach rud atá scríofa agat go dtí seo ceart."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Samplaí atá ar fáil anois: tosaíonn gach ceann ó do chlár reatha."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"bhíothas ag súil le 10 líne chothrománacha, fuarthas %1$s"</string>
@@ -209,7 +209,7 @@
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Dheimhnigh Freevia an scriosadh, ach níorbh fhéidir leis an bhfón seo an admháil áitiúil a bhaint. Bain triail eile as chun an glanadh áitiúil a chríochnú."</string>
     <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Scriosfaidh Freevia an leasú tuairisce seo agus a chóip phríobháideach traenála. D\'fhéadfadh ceartúcháin amach anseo tuairisc nua a chruthú faoi do shocruithe comhroinnte. D\'fhéadfadh samhail a traenáladh air cheana athruithe foghlamtha a choinneáil."</string>
     <string name="msg_full_route_891b475b" formatted="false">"Cosán iomlán"</string>
-    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Seolfaidh léamha éiginnte amach anseo an grianghraf dírithe den phuzal, torthaí aitheanta agus ceartúcháin chuig Freevia le haghaidh anailíse agus traenála. Fanann cóipeanna traenála go dtí go scriostar iad ó Admhálacha aighneachtaí; d\'fhéadfadh samhail thraenáilte athruithe foghlamtha a choinneáil. Má tá puzal éiginnte oscailte cheana, seolfar anois é. Is féidir leat é seo a mhúchadh sna Socruithe."</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Seolfaidh léamha éiginnte amach anseo an grianghraf dírithe den phuzal, torthaí aitheanta agus ceartúcháin chuig Freevia le haghaidh anailíse agus traenála. Fanann cóipeanna traenála go dtí go scriostar iad ó Admhálacha aighneachta; d\'fhéadfadh samhail thraenáilte athruithe foghlamtha a choinneáil. Má tá puzal éiginnte oscailte cheana, seolfar anois é. Is féidir leat é seo a mhúchadh sna Socruithe."</string>
     <string name="msg_gentle_96124817" formatted="false">"Éasca"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Tá an dallrú ag ceilt na línte - claon an leathanach ón solas"</string>
     <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ÍomháLiath(%1$sx%2$s)"</string>
@@ -221,7 +221,7 @@
     <string name="msg_hidden_pair_bab0be41" formatted="false">"Péire folaithe"</string>
     <string name="msg_hidden_quad_56e6fb2c" formatted="false">"Ceathairéad folaithe"</string>
     <string name="msg_hidden_single_33cf031b" formatted="false">"Aonair folaithe"</string>
-    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Triúr folaithe"</string>
+    <string name="msg_hidden_triple_2d57cc5e" formatted="false">"Tríréad folaithe"</string>
     <string name="msg_hide_earlier_evidence_10027a6c" formatted="false">"Folaigh fianaise níos luaithe"</string>
     <string name="msg_hide_how_to_spot_one_c5e9271d" formatted="false">"Folaigh conas ceann a aithint"</string>
     <string name="msg_hint_0_bc1ead3f" formatted="false">", leid %1$s"</string>
@@ -248,7 +248,7 @@
     <string name="msg_if_a_digit_s_only_homes_inside_a_box_share_on_7a7fef90" formatted="false">"Má roinneann na háiteanna go léir do dhigit laistigh de bhosca aon líne amháin, is féidir an digit sin a eisiamh as an gcuid eile den líne."</string>
     <string name="msg_if_assuming_a_digit_leads_to_a_square_with_no_92b592b6" formatted="false">"Má bhíonn cill nach féidir aon digit a chur inti mar thoradh ar dhigit a thoimhdiú, bhí an digit sin mícheart."</string>
     <string name="msg_image_dimensions_must_be_positive_744004fe" formatted="false">"caithfidh toisí na híomhá a bheith dearfach"</string>
-    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"I slabhra de chealla a bhfuil an dá iarrthóir chéanna iontu ar fad, tá digití éagsúla ag dhá cheann slabhra ar fad corr."</string>
+    <string name="msg_in_a_chain_of_squares_that_all_hold_the_same__d532e21b" formatted="false">"I slabhra de chealla a bhfuil an dá iarrthóir chéanna iontu ar fad, tá digití éagsúla ag dhá cheann slabhra a bhfuil fad corr aige."</string>
     <string name="msg_in_these_0_1_2_can_only_go_in_these_3_4_betwe_cf564703" formatted="false">"Sna %1$s %2$s seo, ní féidir %3$s a chur ach sna %4$s %5$s seo. Eatarthu úsáideann siad gach ceann acu, mar sin is féidir %6$s a eisiamh as na %7$s sin i ngach áit eile."</string>
     <string name="msg_in_these_0_columns_1_can_only_go_in_these_2_r_9e1191a0" formatted="false">"Sna %1$s cholún seo, ní féidir %2$s a chur ach sna %3$s ró seo. Eatarthu, úsáideann siad gach ceann de na rónna sin, mar sin is féidir %4$s a chur as an áireamh i ngach áit eile sna rónna sin."</string>
     <string name="msg_in_these_0_rows_1_can_only_go_in_these_2_colu_b81ad505" formatted="false">"Sna %1$s ró seo, ní féidir %2$s a chur ach sna %3$s cholún seo. Eatarthu, úsáideann siad gach ceann de na colúin sin, mar sin is féidir %4$s a chur as an áireamh i ngach áit eile sna colúin sin."</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Coinnigh slabhraí éigeantacha gearr"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Teanga"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Ceadúnais"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Lorg cealla nach bhfuil ach cúpla iarrthóir fágtha iontu in aon ró, colún nó bosca amháin. Glac %1$s díobh agus cuir a n-iarrthóirí le chéile. Má tá %2$s digit go díreach sa chomhthiomsú, tá na %3$s digit sin curtha in áirithe: caithfidh siad dul sna %4$s chill sin in ord éigin, cé nach féidir leat a rá fós cé acu a théann cá háit.\n\nIs leor sin. Is féidir le gach cill eile san aonad na digití sin a thabhairt suas, agus de ghnáth is ceann de na cealla sin a éiríonn ina aonair ansin.\n\nNí gá na hiarrthóirí céanna a bheith sna cealla ar fad - is triúr breá bailí é {2,7}, {2,9} agus {7,9}, agus is é an ceann a chailleann daoine."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Lorg cealla nach bhfuil ach cúpla iarrthóir fágtha iontu in aon ró, colún nó bosca amháin. Glac %1$s díobh agus cuir a n-iarrthóirí le chéile. Má tá %2$s digit go díreach sa chomhthiomsú, tá na %3$s digit sin curtha in áirithe: caithfidh siad dul sna %4$s chill sin in ord éigin, cé nach féidir leat a rá fós cé acu a théann cá háit.\n\nIs leor sin. Is féidir le gach cill eile san aonad na digití sin a thabhairt suas, agus de ghnáth is ceann de na cealla sin a éiríonn ina aonair ansin.\n\nNí gá na hiarrthóirí céanna a bheith sna cealla ar fad - is tríréad breá bailí é {2,7}, {2,9} agus {7,9}, agus is é an ceann a chailleann daoine."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Lorg cealla a bhfuil an dá iarrthóir chéanna iontu - mar shampla {4,9} - a dhéanann slabhra, agus gach ceann ag feiceáil an chéad cheann eile. Ní leor trí cinn; teastaíonn ceithre cinn ar a laghad.\n\nDathaigh iad gach re seach agus tú ag dul. Toisc go bhfeiceann gach cill an chéad cheann eile, ní féidir an digit chéanna a bheith in dhá chomharsa, mar sin léann an slabhra 4, 9, 4, 9 an bealach ar fad - nó 9, 4, 9, 4, agus ní féidir leat a rá cé acu.\n\nAr aon nós, tá digití éagsúla in dhá chill ar dhathanna contrártha: tá an 4 i gceann agus an 9 sa cheann eile. Mar sin ní féidir ceachtar digit a bheith in aon chill a fheiceann an dá cheann, agus cailleann sí an dá iarrthóir ag an am céanna.\n\nTá an patrún éasca a aithint go díreach toisc go bhfuil cuma an chéanna ar gach cill ann. Lean na péirí comhionanna timpeall na heangaí agus féach cá dtagann siad le chéile."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Lorg trí chill a bhfuil an dá iarrthóir chéanna iontu - mar shampla {1,6} - ag trí chúinne dronuilleoige. Caithfidh an dronuilleog a bheith in dhá bhosca go díreach: dhá ró agus dhá cholún a thrasnaíonn dhá bhosca, seachas ceithre cinn.\n\nAnois féach ar an gceathrú cúinne. Mura mbeadh ann ach 1 agus 6 freisin, bheadh dhá réiteach ar an bpuzal - d\'fhéadfá na 1anna agus na 6anna a mhalartú timpeall na dronuilleoige agus d\'oibreodh gach rud eile fós. Tá aon réiteach amháin ar phuzal atá ceaptha i gceart, mar sin caithfidh an ceathrú cúinne rud éigin eile a úsáid: fanann a iarrthóirí eile, agus baintear 1 agus 6.\n\nSeo an t-aon argóint sa leabhar a bhaineann leis an té a cheap an puzal seachas leis an eangach. Tá sí bailí ar phuzal foilsithe agus gan fiúntas ar cheann atá líonta isteach go mícheart agat cheana, mar d\'fhéadfadh sé nach mbeadh aon réiteach air ar chor ar bith le bheith uathúil."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Féach sa bhosca seo. Lean an imlíne chuig an gcill a mhíneoidh an leid seo."</string>
@@ -290,7 +290,7 @@
     <string name="msg_naked_pair_2c93e68d" formatted="false">"Péire lom"</string>
     <string name="msg_naked_quad_73e85f9d" formatted="false">"Ceathairéad lom"</string>
     <string name="msg_naked_single_7205dfc4" formatted="false">"Aonair lom"</string>
-    <string name="msg_naked_triple_4f3cc595" formatted="false">"Triúr lom"</string>
+    <string name="msg_naked_triple_4f3cc595" formatted="false">"Tríréad lom"</string>
     <string name="msg_name_the_technique_and_show_the_squares_that__eb04bf34" formatted="false">"Ainmnigh an teicníc agus taispeáin na cealla a chruthaíonn í, seachas an digit amháin a thabhairt."</string>
     <string name="msg_need_at_least_4_points_but_got_0_b2e87ffd" formatted="false">"teastaíonn 4 phointe ar a laghad ach fuarthas %1$s"</string>
     <string name="msg_needs_confirmation_fe8ba9af" formatted="false">"Deimhniú de dhíth"</string>
@@ -299,7 +299,7 @@
     <string name="msg_next_step_298a9207" formatted="false">"An chéad chéim eile"</string>
     <string name="msg_no_images_are_attached_automatically_reports__e61a8511" formatted="false">"Ní chuirtear aon íomhánna leis go huathoibríoch. Tá na tuairiscí agus na ceangaltáin a sheoltar anseo poiblí. Seol na samplaí is fearr leat a roinnt go príobháideach chuig info@freevia.org."</string>
     <string name="msg_no_photograph_has_been_refused_since_the_app__9007f723" formatted="false">"Níor diúltaíodh d\'aon ghrianghraf ó suiteáladh an aip an uair dheireanach."</string>
-    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Níl diagnóisic scanadh ar fáil."</string>
+    <string name="msg_no_scan_diagnostics_available_8f8c809f" formatted="false">"Níl diagnóisic scanta ar fáil."</string>
     <string name="msg_no_technique_applies_here_4373528f" formatted="false">"Ní bhaineann aon teicníc leis seo"</string>
     <string name="msg_none_140bedbf" formatted="false">"ceann ar bith"</string>
     <string name="msg_none_of_them_puts_a_digit_in_a_square_they_cl_46a46b98" formatted="false">"Ní chuireann aon cheann díobh digit i gcill: baineann siad iarrthóirí, agus sin an chaoi a n-osclaítear puzal deacair."</string>
@@ -311,7 +311,7 @@
     <string name="msg_nothing_could_be_sent_from_this_phone_69e4ce4d" formatted="false">"Níorbh fhéidir aon rud a sheoladh ón bhfón seo."</string>
     <string name="msg_nothing_left_to_work_out_639e7090" formatted="false">"Níl aon rud fágtha le hoibriú amach."</string>
     <string name="msg_nothing_more_here_can_be_reasoned_out_by_the__539c8a8c" formatted="false">"Ní féidir aon rud eile anseo a oibriú amach trí réasúnú leis na teicnící atá ar eolas ag an aip seo."</string>
-    <string name="msg_nothing_unusual_43de65bb" formatted="false">"aon rud neamhghnách"</string>
+    <string name="msg_nothing_unusual_43de65bb" formatted="false">"níl aon rud neamhghnách"</string>
     <string name="msg_ok_565339bc" formatted="false">"Ceart go leor"</string>
     <string name="msg_one_7692c3ad" formatted="false">"aon"</string>
     <string name="msg_one_cell_looked_like_a_printed_digit_but_is_n_36e885c3" formatted="false">"Bhí cuma digite clóite ar chill amháin, ach ní digit chlóite í."</string>
@@ -324,7 +324,7 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Ní féidir ach %1$s a chur anseo. Úsáideann na cealla aibhsithe ceann amháin de na hocht ndigit eile; cuireadh %2$s as an áireamh don chill seo roimhe seo, agus ní de bharr aon rud atá le feiceáil timpeall uirthi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Ní féidir ach %1$s a chur anseo. Úsáideann na cealla aibhsithe seacht gcinn de na hocht ndigit eile; cuireadh %2$s as an áireamh don chill seo roimhe seo, agus ní de bharr aon rud atá le feiceáil timpeall uirthi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Ní féidir ach %1$s a chur anseo. Úsáideann na cealla aibhsithe cúig cinn de na hocht ndigit eile; cuireadh %2$s as an áireamh don chill seo roimhe seo, agus ní de bharr aon rud atá le feiceáil timpeall uirthi."</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Ní féidir ach %1$s a chur anseo. Úsáideann na cealla aibhsithe %2$s de na hocht ndigit eile; eisiadh %3$s %4$s as an gcill seo níos luaithe, seachas de bharr aon rud atá le feiceáil timpeall uirthi."</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Ní féidir ach %1$s a chur anseo. Úsáideann na cealla aibhsithe %2$s de na hocht ndigit eile; %4$s %3$s as an áireamh sa chill seo níos luaithe, seachas de bharr aon rud atá le feiceáil timpeall uirthi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Ní féidir ach %1$s a chur anseo. Úsáideann na cealla aibhsithe dhá cheann de na hocht ndigit eile; cuireadh %2$s as an áireamh don chill seo roimhe seo, agus ní de bharr aon rud atá le feiceáil timpeall uirthi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Ní féidir ach %1$s a chur anseo. Úsáideann na cealla aibhsithe %2$s de na hocht ndigit eile; cuireadh %3$s as an áireamh sa chill seo níos luaithe, seachas de bharr aon rud atá le feiceáil timpeall uirthi."</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Ní féidir ach %1$s a chur anseo. Úsáideann na cealla aibhsithe trí cinn de na hocht ndigit eile; cuireadh %2$s as an áireamh don chill seo roimhe seo, agus ní de bharr aon rud atá le feiceáil timpeall uirthi."</string>
@@ -332,7 +332,7 @@
     <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Ní féidir ach %1$s a chur anseo, cé nach léiríonn aon rud timpeall uirthi cén fáth: eisiadh na hocht ndigit eile as an gcill seo trí réasúnú níos luaithe seachas trína bheith scríofa ina ró, ina colún nó ina bosca."</string>
     <string name="msg_only_0_printed_digits_were_found_which_is_too_e2bff2be" formatted="false">"Níor aimsíodh ach %1$s digit chlóite, agus ní leor sin do phuzal."</string>
     <string name="msg_only_quarter_turns_are_supported_not_0_0dbbb733" formatted="false">"ní thacaítear ach le ceathrúchasadh, ní le %1$s"</string>
-    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Oscail dréacht i do bhrabhsálaí ina bhfuil leagan na haipe, samhail an fhóin, leagan Android agus diagnóisic scanadh le déanaí líonta isteach. Cuir cur síos iomlán agus seatanna scáileáin ábhartha leis tú féin.\n\nNí mór síniú isteach ar GitHub. Is féidir leat an dréacht a athbhreithniú agus a chur in eagar sula gcuireann tú isteach é. Tá tuairiscí agus ceangaltáin a chuirtear isteach poiblí. Ní cheanglaítear aon ghrianghraif go huathoibríoch."</string>
+    <string name="msg_open_a_draft_in_your_browser_with_the_app_ver_1ef123a6" formatted="false">"Oscail dréacht i do bhrabhsálaí ina bhfuil leagan na haipe, samhail an fhóin, leagan Android agus diagnóisic scanta le déanaí líonta isteach. Cuir cur síos iomlán agus seatanna scáileáin ábhartha leis tú féin.\n\nNí mór síniú isteach ar GitHub. Is féidir leat an dréacht a athbhreithniú agus a chur in eagar sula gcuireann tú isteach é. Tá tuairiscí agus ceangaltáin a chuirtear isteach poiblí. Ní cheanglaítear aon ghrianghraif go huathoibríoch."</string>
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"Oscail socruithe na haipe"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"Oscail GitHub"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"Fógraí foinse oscailte"</string>
@@ -374,8 +374,8 @@
     <string name="msg_read_as_pencilled_candidate_marks_and_ignored_e3a4a9b3" formatted="false">"Léite mar mharcanna iarrthóirí peann luaidhe, agus neamhaird déanta díobh."</string>
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Léamh athbhreithnithe."</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Léamh seolta. Go raibh maith agat!"</string>
-    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnóisic scanadh le déanaí (réamhlíonta)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Is féidir leis an aitheantas botúin a dhéanamh, go háirithe le lámhscríbhneoireacht. Úsáid Léigh chun na digití aitheanta a chur i gcomparáid leis an ngrianghraf, agus tapáil aon chill chun í a cheartú. Marcálann an aip léamha neamhchinnte le haghaidh athbhreithnithe; is féidir le léamh muiníneach a bheith mícheart fós."</string>
+    <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Diagnóisic scanta le déanaí (réamhlíonta)"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Is féidir leis an aitheantas botúin a dhéanamh, go háirithe le lámhscríbhneoireacht. Úsáid Léamh chun na digití aitheanta a chur i gcomparáid leis an ngrianghraf, agus tapáil aon chill chun í a cheartú. Marcálann an aip léamha neamhchinnte le haghaidh athbhreithnithe; is féidir le léamh muiníneach a bheith mícheart fós."</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Diúltaigh don toimhde"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Péirí iargúlta"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Bain %1$s"</string>
@@ -397,7 +397,7 @@
     <string name="msg_row_634768da" formatted="false">"ró"</string>
     <string name="msg_rows_bc51e9e6" formatted="false">"rónna"</string>
     <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s eisiata"</string>
-    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Níorbh fhéidir diagnóisic an scanadh a léamh."</string>
+    <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Níorbh fhéidir diagnóisic an scanta a léamh."</string>
     <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Seatanna scáileáin nó samplaí puzal"</string>
     <string name="msg_second_guess_0_1_43e7046c" formatted="false">"An dara buille faoi thuairim: %1$s, %2$s."</string>
     <string name="msg_select_for_practice_3fb8ea4d" formatted="false">"Roghnaigh le haghaidh cleachtaidh"</string>
@@ -416,7 +416,7 @@
     <string name="msg_show_me_the_one_on_your_puzzle_df0d6281" formatted="false">"Taispeáin dom an ceann ar do phuzal"</string>
     <string name="msg_simple_colouring_d9b42ba7" formatted="false">"Dathú simplí"</string>
     <string name="msg_six_44778d82" formatted="false">"sé"</string>
-    <string name="msg_skyscraper_d58752e1" formatted="false">"Scríobaire spéire"</string>
+    <string name="msg_skyscraper_d58752e1" formatted="false">"Skyscraper"</string>
     <string name="msg_solution_0_6de814bf" formatted="false">", réiteach %1$s"</string>
     <string name="msg_solve_451d387b" formatted="false">"Réitigh"</string>
     <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Réitithe, agus gach freagra ceart."</string>
@@ -471,7 +471,7 @@
     <string name="msg_take_a_new_photo_0c788c47" formatted="false">"Glac grianghraf nua"</string>
     <string name="msg_take_another_photo_61d1873e" formatted="false">"Glac grianghraf eile"</string>
     <string name="msg_take_one_digit_and_mark_every_unit_where_it_h_0cc4de85" formatted="false">"Tóg digit amháin agus marcáil gach aonad nach bhfuil ach dhá chill fágtha di ann. Tá an dá cheann sin mar mhalairtí: tá an digit i gceann acu agus níl sí sa cheann eile.\n\nTosaigh áit ar bith agus dathaigh cill, gorm mar shampla. Dathaigh a páirtí malartach glas, ansin dathaigh an chill atá péireáilte leis an gceann sin gorm arís, agus lean ort go dtí deireadh an tslabhra. Tá gach cill ghorm fíor nó tá gach cill ghlas fíor - ní féidir a rá cé acu, agus is leor sin le haghaidh dhá rud.\n\nAr dtús: má bhíonn dhá chill den dath céanna in aon ró, colún nó bosca, tá an dath sin dodhéanta, mar sin baintear an digit as gach cill den dath sin agus is é an dath eile an freagra ar fud an tslabhra.\n\nSa dara háit: is féidir an digit a bhaint as aon chill lasmuigh den slabhra a fheiceann cill ghorm agus cill ghlas, mar tá sí i gceann den dá cheann sin cibé slí a réitítear an slabhra.\n\nTá sé mall le peann luaidhe ach is fiú é: is minic a ghlanann dathú amháin digit de leath an chláir."</string>
-    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Tóg digit amháin agus aonad amháin ag an am - mar shampla, cá háit ar féidir le 4 dul sa bhosca seo? Cuir líne trí gach cill san aonad a bhfuil digit inti cheana, nó a fheiceann 4 ina ró nó ina colún féin. Má fhágtar cill amháin, téann an 4 ansin.\n\nIs é an cleas ná nach féidir é seo a fheiceáil ach féachaint ar an gcill: d\'fhéadfadh sí glacadh le cúig dhigit eile freisin, mar sin níl cuma éigeantach ar aon rud inti. Féach ar an digit seachas ar an gcill, agus feictear láithreach é."</string>
+    <string name="msg_take_one_digit_and_one_unit_at_a_time_say_whe_5a1ab89b" formatted="false">"Tóg digit amháin agus aonad amháin ag an am - mar shampla, cá háit ar féidir le 4 dul sa bhosca seo? Cuir líne trí gach cill san aonad a bhfuil digit inti cheana, nó a fheiceann 4 ina ró nó ina colún féin. Má fhágtar cill amháin, téann an 4 ansin.\n\nIs é an cleas ná nach féidir é seo a fheiceáil trí fhéachaint ar an gcill: d\'fhéadfadh sí glacadh le cúig dhigit eile freisin, mar sin níl cuma éigeantach ar aon rud inti. Féach ar an digit seachas ar an gcill, agus feictear láithreach é."</string>
     <string name="msg_take_photo_7100ac99" formatted="false">"Glac grianghraf"</string>
     <string name="msg_take_the_photo_automatically_0eb717a9" formatted="false">"Glac an grianghraf go huathoibríoch"</string>
     <string name="msg_tap_a_marked_square_to_review_it_or_confirm_a_08b1751b" formatted="false">"Tapáil cill mharcáilte chun í a athbhreithniú, nó deimhnigh go bhfuil gach léamh ceart."</string>
@@ -495,11 +495,11 @@
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Bainfear an grianghraf ó %1$s agus gach rud a léadh uaidh den fhón seo. Ní féidir é seo a chealú."</string>
     <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Tá an grianghraf i do liosta puzal, faoi \"Níorbh fhéidir é a léamh\"."</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Is é %1$s nó %2$s an chill láir anseo. Cibé acu, cuirtear iallach ar cheann den dá chill eile a bheith ina %3$s, mar sin ní féidir %4$s a bheith in aon chill a fheiceann an dá cheann acu."</string>
-    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"An péire treorach léite droim ar ais. Tóg ró nó colún agus digit a bhfuil áit de dhíth uirthi fós ann. Marcáil gach cill sa líne sin a bhféadfadh an digit a bheith inti. Má tá siad ar fad in aon bhosca amháin, caithfidh an digit a bheith sa chuid den líne atá sa bhosca sin - mar sin níl sí in aon áit eile sa bhosca, lena n-áirítear an dá ró nó colún ann nach raibh tú ag féachaint orthu.\n\nCosúil leis an bpéire treorach, ní chuireann sé seo aon digit ann as féin; déanann sé spás do rud a chuireann."</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"An péire dírithe léite droim ar ais. Tóg ró nó colún agus digit a bhfuil áit de dhíth uirthi fós ann. Marcáil gach cill sa líne sin a bhféadfadh an digit a bheith inti. Má tá siad ar fad in aon bhosca amháin, caithfidh an digit a bheith sa chuid den líne atá sa bhosca sin - mar sin níl sí in aon áit eile sa bhosca, lena n-áirítear an dá ró nó colún ann nach raibh tú ag féachaint orthu.\n\nCosúil leis an bpéire dírithe, ní chuireann sé seo aon digit ann as féin; déanann sé spás do rud a chuireann."</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Ní dhéanann na digití clóite puzal inréitithe."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nIs iad {%2$s} na hiarrthóirí atá fágtha ag %1$s. Cuir %3$s i ró %4$s, colún %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Tá an tuairisc rómhór le seoladh."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"An sciathán Y agus iarrthóir amháin sa bhreis sa chill láir. Aimsigh cill le trí iarrthóir go díreach, {1,4,7} mar shampla, a fheiceann dhá chill le dhá iarrthóir - ceann le {1,7} agus ceann le {4,7}.\n\nAnois is féidir 7 a bheith i ngach ceann den triúr, agus caithfidh sé a bheith i gceann acu. Mar sin caithfidh cill an triúr ar fad a fheiceáil chun é a chur as an áireamh, ní hamháin an dá bharr sciatháin - rud a chiallaíonn go praiticiúil go bhfuil sí sa bhosca céanna leis an gcill láir agus ar líne le barr sciatháin.\n\nNíos lú díchur ná sciathán Y, agus níos fusa gan é a thabhairt faoi deara ar an gcúis chéanna: ní sheasann an chill láir amach."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"An sciathán Y agus iarrthóir amháin sa bhreis sa chill láir. Aimsigh cill le trí iarrthóir go díreach, {1,4,7} mar shampla, a fheiceann dhá chill le dhá iarrthóir - ceann le {1,7} agus ceann le {4,7}.\n\nAnois is féidir 7 a bheith i ngach ceann den triúr, agus caithfidh sé a bheith i gceann acu. Mar sin caithfidh cill an triúr ar fad a fheiceáil chun é a chur as an áireamh, ní hamháin an dá bharr sciatháin - rud a chiallaíonn go praiticiúil go bhfuil sí sa bhosca céanna leis an gcill láir agus ar líne le barr sciatháin.\n\nNíos lú díchur ná sciathán Y, agus níos fusa gan é a thabhairt faoi deara ar an gcúis chéanna: ní sheasann an chill láir amach."</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Tá cill is féidir leat a líonadh sa bhosca aibhsithe.\n\nBrúigh Leid arís chun a fháil amach cén teicníc a aimsíonn í."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Níl aon rud fágtha anseo le réasúnú faoi."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Níl ach %2$s agus %3$s sna %1$s chill seo ar fad, agus feiceann gach ceann an chéad cheann eile, mar sin malartaíonn siad feadh an tslabhra ar fad. Tá líon corr nasc idir %4$s agus %5$s, mar sin tá digití éagsúla iontu - rud a chuireann %6$s as an áireamh in aon chill a fheiceann an dá cheann acu."</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Cén fáth an chill seo? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" leis an réiteach. Úsáid Seiceáil chun iad a scrúdú."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Oibrigh siar ó do chill. Roghnaigh ceist thíos."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Oibrigh digit ar dhigit seachas cill ar chill. I gcás aonad amháin, scríobh síos cá háit ar féidir le gach digit atá ar iarraidh dul fós. Ansin aimsigh %1$s dhigit nach gclúdaíonn a liostaí eatarthu ach %2$s chill.\n\nCaithfidh na %3$s dhigit sin na %4$s chill sin a líonadh, mar sin is féidir líne a chur trí gach rud eile iontu - rud a dhéanann singil nocht nó péire nocht de cheann acu láithreach go minic.\n\nSeo an ceann is deacra do dhaoine, mar níl aon rud le feiceáil nuair a fhéachann tú ar na cealla: tá go leor iarrthóirí iontu fós. Tá an patrún sna digití."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Oibrigh digit ar dhigit seachas cill ar chill. I gcás aonad amháin, scríobh síos cá háit ar féidir le gach digit atá ar iarraidh dul fós. Ansin aimsigh %1$s dhigit nach gclúdaíonn a liostaí eatarthu ach %2$s chill.\n\nCaithfidh na %3$s dhigit sin na %4$s chill sin a líonadh, mar sin is féidir líne a chur trí gach rud eile iontu - rud a chruthaíonn aonair lom i gceann acu nó péire lom thar dhá cheann acu láithreach go minic.\n\nSeo an ceann is deacra do dhaoine, mar níl aon rud le feiceáil nuair a fhéachann tú ar na cealla: tá go leor iarrthóirí iontu fós. Tá an patrún sna digití."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Oibrigh le cealla nach bhfuil ach dhá iarrthóir fágtha iontu.\n\nTosaigh ag ceann amháin, {2,6} mar shampla, agus cuir i gcás nach é an 2 é - ansin is é an 6 é. Téigh chuig cill a fheiceann sí agus a bhfuil 6 inti freisin, {6,4} mar shampla: ní féidir gurb é an 6 an ceann sin, mar sin is é an 4 é. Téigh chuig cill a fheiceann an ceann sin agus a bhfuil 4 inti, agus lean ort, gach céim éigeantach de bharr na céime roimpi.\n\nMá shroicheann tú cill arb é 2 a digit eile - an digit a chuir tú as an áireamh ag an tús - tá tú críochnaithe. Bhí 2 sa chéad chill tar éis an tsaoil, nó lean an slabhra agus tá 2 sa chill dheireanach. Tá sé ag ceann amháin nó ag an gceann eile, mar sin ní féidir é a bheith in aon chill a fheiceann an dá cheann.\n\nCoinnigh na slabhraí gearr. Is féidir ceithre nó cúig chill a aimsiú le peann luaidhe; thairis sin tá tú ag coinneáil cuntas, agus slabhra éigeantach an t-ainm cruinn air."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"caithfidh an imeall oibre a bheith dearfach agus críochta"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Níorbh fhéidir é a léamh"</string>

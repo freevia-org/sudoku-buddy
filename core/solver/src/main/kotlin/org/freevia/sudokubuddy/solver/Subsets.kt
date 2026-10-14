@@ -29,8 +29,8 @@ class NakedSubset(private val size: Int) : Technique {
         "those $size squares in some order, even though you cannot yet say which goes " +
         "where.\n\nThat is enough. Every other square in the unit can give those digits " +
         "up, and it is usually one of those squares that then becomes a single.\n\nThe " +
-        "squares do not all need the same candidates - {2,7}, {2,9} and {7,9} is a " +
-        "perfectly good triple, and is the one people miss."
+        "squares do not all need the same candidates - {2,7}, {2,9} and {7,9} form a " +
+        "perfectly good triple, and it is the one people miss."
 
     override fun findAll(state: SolverState): List<Deduction> {
         val out = mutableListOf<Deduction>()
@@ -85,7 +85,8 @@ class HiddenSubset(private val size: Int) : Technique {
         "write down where each missing digit could still go. Then look for $size digits " +
         "whose lists between them cover only $size squares.\n\nThose $size digits have to " +
         "fill those $size squares, so everything else in them can be crossed out - which " +
-        "often turns one of them into a naked single or a naked pair on the spot.\n\nThis " +
+        "often produces a naked single in one of them or a naked pair across two of " +
+        "them on the spot.\n\nThis " +
         "is the one people find hardest, because there is nothing to see when you look at " +
         "the squares: they still have plenty of candidates. The pattern is in the digits."
 

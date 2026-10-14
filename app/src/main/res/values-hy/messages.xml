@@ -49,8 +49,8 @@
     <string name="msg_0_quad_c9dd2280" formatted="false">"%1$s քառյակ"</string>
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s մերժված լուսանկար՝ նորագույնից սկսած․"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s՝ հեռացնել %2$s"</string>
-    <string name="msg_0_squares_57c6f9ba" formatted="false">"Վանդակների քանակը՝ %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Այս լուծման ուղին բաղկացած է %1$s քայլից, իսկ ամենադժվար աջակցվող տեխնիկան %2$s է։ %3$s %4$s"</string>
+    <string name="msg_0_squares_57c6f9ba" formatted="false">"%1$s վանդակ"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"Այս լուծման ուղին բաղկացած է %1$s քայլից, իսկ ամենադժվար աջակցվող տեխնիկան %2$s է։ %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"%1$s եռյակ"</string>
     <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"%1$s-ը հեռացվել է %2$s-ից՝ թեկնածու թվերի նախորդ հիմնավորմամբ։"</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s գրված"</string>
@@ -100,7 +100,7 @@
     <string name="msg_can_only_hold_fa9d5c8b" formatted="false">"կարող է պարունակել միայն"</string>
     <string name="msg_cancel_19766ed6" formatted="false">"Չեղարկել"</string>
     <string name="msg_candidates_0_d3efd4d2" formatted="false">", թեկնածուներ՝ %1$s"</string>
-    <string name="msg_captureevidence_077b226e" formatted="false">"ՆկարահանմանՀիմնավորում"</string>
+    <string name="msg_captureevidence_077b226e" formatted="false">"CaptureEvidence"</string>
     <string name="msg_chain_a_digit_through_the_units_where_it_has__a7131e0c" formatted="false">"Շղթայեք մի թվանշան այն միավորների միջով, որտեղ այն միայն երկու տեղ ունի, շղթան ներկեք հերթագայող երկու գույնով․ գույներից մեկը ճիշտ է ամբողջ շղթայում։"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_036551c6" formatted="false">"%1$s-ի շղթան այն խմբերով, որտեղ այն ունի միայն երկու հնարավոր տեղ, այս բջիջները ներկում է երկու հերթագայող գույներով, որոնցից մեկի բոլոր բջիջներում այն ճիշտ է։ Մյուս գույնի երկու բջիջ գտնվում են նույն տողում, ինչը հնարավոր չէ, ուստի այդ գույնը սխալն է, և %2$s-ը հեռացվում է այդ գույնի բոլոր բջիջներից։"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_0383ec9d" formatted="false">"%1$s-ի շղթան այն խմբերով, որտեղ այն ունի միայն երկու հնարավոր տեղ, այս բջիջները ներկում է երկու հերթագայող գույներով, որոնցից մեկի բոլոր բջիջներում այն ճիշտ է։ Մյուս գույնի երկու բջիջ գտնվում են նույն բլոկում, ինչը հնարավոր չէ, ուստի այդ գույնը սխալն է, և %2$s-ը հեռացվում է այդ գույնի բոլոր բջիջներից։"</string>
@@ -110,13 +110,13 @@
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_5eb3c9c1" formatted="false">"%1$s-ի շղթան այն խմբերով, որտեղ այն ունի միայն երկու հնարավոր տեղ, այս բջիջները ներկում է երկու հերթագայող գույներով, որոնցից մեկի բոլոր բջիջներում այն ճիշտ է։ Մի գույնի երկու բջիջ գտնվում են նույն բլոկում, ինչը հնարավոր չէ, ուստի այդ գույնը սխալն է, և %2$s-ը հեռացվում է այդ գույնի բոլոր բջիջներից։"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_7b60ce9d" formatted="false">"%1$s-ի շղթան այն խմբերով, որտեղ այն ունի միայն երկու հնարավոր տեղ, այս բջիջները ներկում է երկու հերթագայող գույներով, որոնցից մեկի բոլոր բջիջներում այն ճիշտ է։ Մի գույնի երկու բջիջ գտնվում են նույն սյունակում, ինչը հնարավոր չէ, ուստի այդ գույնը սխալն է, և %2$s-ը հեռացվում է այդ գույնի բոլոր բջիջներից։"</string>
     <string name="msg_chaining_0_through_the_units_where_it_has_onl_df3a1b34" formatted="false">"%1$s-ի շղթան այն խմբերով, որտեղ այն ունի միայն երկու հնարավոր տեղ, այս բջիջները ներկում է երկու հերթագայող գույներով, որոնցից մեկի բոլոր բջիջներում այն ճիշտ է։ Մի գույնի երկու բջիջ գտնվում են նույն տողում, ինչը հնարավոր չէ, ուստի այդ գույնը սխալն է, և %2$s-ը հեռացվում է այդ գույնի բոլոր բջիջներից։"</string>
-    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Ստուգման ենթակա անորոշ վանդակներ՝ %1$s։"</string>
+    <string name="msg_check_0_uncertain_squares_09b36c83" formatted="false">"Ստուգեք %1$s անորոշ բջիջ։"</string>
     <string name="msg_check_9d60841e" formatted="false">"Ստուգել"</string>
     <string name="msg_check_one_uncertain_square_b36ebd9c" formatted="false">"Ստուգեք մեկ անորոշ բջիջ։"</string>
     <string name="msg_checked_correct_c690d1c3" formatted="false">", ստուգված է՝ ճիշտ է"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Ընտրեք թեկնածու՝ տեսնելու համար, թե ինչու այն չի կարող լինել ձեր բջջում։"</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Ընտրել լեզուն"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Ընտրել՝ ինչ ցուցադրել"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Ընտրել՝ ինչ ցուցադրել"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Փակել"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Փակել հուշումը"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Ծալել ճանաչման ստուգումը"</string>
@@ -127,7 +127,7 @@
     <string name="msg_compare_forcing_chains_and_prefer_ones_with_f_a11f8b27" formatted="false">"Համեմատել պարտադրող շղթաները և նախընտրել ավելի քիչ բջիջներ ունեցողները։ Ավելի կարճ շղթաները կարող են ամբողջ լուծման մեջ ավելի շատ քայլեր պահանջել։"</string>
     <string name="msg_consequence_0_of_1_hypothetical_digits_e05885a4" formatted="false">"Հետևանք %1$s՝ %2$s-ից · ենթադրյալ թվանշաններ"</string>
     <string name="msg_contains_beeb20fb" formatted="false">"պարունակում է"</string>
-    <string name="msg_content_type_85eb0099" formatted="false">"Բովանդակության տեսակ"</string>
+    <string name="msg_content_type_85eb0099" formatted="false">"Content-Type"</string>
     <string name="msg_continue_with_the_full_route_3745afea" formatted="false">"Շարունակել ամբողջ ուղիով"</string>
     <string name="msg_contradiction_assumption_fails_b5ac48ac" formatted="false">"Հակասություն · ենթադրությունը չի հաստատվում"</string>
     <string name="msg_contradiction_d15034c8" formatted="false">", հակասություն"</string>
@@ -142,7 +142,7 @@
     <string name="msg_could_not_retain_debug_capture_evidence_0c979a6a" formatted="false">"Չհաջողվեց պահպանել վրիպազերծման նկարահանման հիմնավորումը"</string>
     <string name="msg_could_not_submit_the_reading_please_try_again_d211f747" formatted="false">"Չհաջողվեց ուղարկել ճանաչման արդյունքը։ Կրկին փորձեք, երբ կապ լինի։"</string>
     <string name="msg_dead_end_f2fd4044" formatted="false">"Փակուղի"</string>
-    <string name="msg_delete_65daeb37" formatted="false">"ՋՆՋԵԼ"</string>
+    <string name="msg_delete_65daeb37" formatted="false">"DELETE"</string>
     <string name="msg_delete_e2d0a549" formatted="false">"Ջնջել"</string>
     <string name="msg_delete_report_c3161c04" formatted="false">"Ջնջել զեկույցը"</string>
     <string name="msg_delete_this_photo_b6f68250" formatted="false">"Ջնջել այս լուսանկարը"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Նկարագրեք՝ ինչ է տեղի ունեցել և ինչպես կրկնել դա։ Նշեք՝ արդյոք նախ ստուգել և ուղղել եք ճանաչված թվանշանները։ Գաղափարի դեպքում գրեք «Կիրառելի չէ»։"</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", այս հուշման նպատակային բջիջը"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Սարք՝ %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Ախտորոշումը կրճատվել է՝ դիտարկիչի սևագրում տեղավորվելու համար։ Հավելվածի «Ուղարկել ախտորոշումը» գործողությամբ կարելի է տրամադրել ամբողջ զեկույցը։"</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Ախտորոշումը կրճատվել է՝ դիտարկիչի սևագրում տեղավորվելու համար։ Հավելվածի «Ուղարկել ախտորոշման տվյալները» գործողությամբ կարելի է տրամադրել ամբողջ զեկույցը։"</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"թիվը պետք է լինի 1..9 միջակայքում, բայց %1$s էր"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Թվանշանները չեն ճանաչվել"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Հիմնավորման պահպանումը սկավառակում ազդում է ժամանակաչափման վրա․ սա ուշացման չափանիշ չէ։"</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Դրանցից յուրաքանչյուրը լրացնում է մի բջիջ։"</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Բոլոր բջիջները լրացված են, բայց %1$s պատասխան չի համապատասխանում լուծմանը։"</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Բոլոր բջիջները լրացված են, բայց մեկ պատասխան չի համապատասխանում լուծմանը։"</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Մեկ լուծում ունեցող ցանկացած սուդոկու կարելի է լուծել տրամաբանությամբ․ գուշակելը երբեք պարտադիր չէ և հազվադեպ է օգնում։ Սրանք այն տրամաբանական մեթոդներն են, որոնք հավելվածը կարող է ճանաչել և բացատրել՝ ամենահեշտից սկսած։ Երբ դրանցից մեկը կիրառելի է բացված գլուխկոտրուկում, այն ցույց կտա կիրառման բոլոր տեղերը։"</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Մեկ լուծում ունեցող ցանկացած սուդոկու կարելի է լուծել տրամաբանությամբ․ գուշակելը երբեք պարտադիր չէ և հազվադեպ է օգնում։ Սրանք այն տրամաբանական մեթոդներն են, որոնք հավելվածը կարող է ճանաչել և բացատրել՝ ամենահեշտից սկսած։ Երբ դրանցից մեկը կիրառելի է բացված գլուխկոտրուկում, այն ցույց կտա կիրառման բոլոր տեղերը։"</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Մինչ այժմ ձեր գրած ամեն ինչ ճիշտ է։"</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Այժմ հասանելի օրինակները․ յուրաքանչյուրն սկսվում է ձեր ընթացիկ ցանցից։"</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"սպասվում էր 10 հորիզոնական գիծ, ստացվել է %1$s"</string>
@@ -209,10 +209,10 @@
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Freevia-ն հաստատել է ջնջումը, բայց այս հեռախոսը չի կարողացել հեռացնել տեղային ստացականը։ Կրկին փորձեք՝ տեղային մաքրումն ավարտելու համար։"</string>
     <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Freevia-ն կջնջի զեկույցի այս տարբերակը և դրա մասնավոր ուսուցման պատճենը։ Հետագա ուղղումները կարող են նոր զեկույց ստեղծել՝ ըստ ձեր տրամադրման կարգավորումների։ Դրանով արդեն ուսուցված մոդելը կարող է պահպանել սովորած փոփոխությունները։"</string>
     <string name="msg_full_route_891b475b" formatted="false">"Ամբողջ ուղին"</string>
-    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Հետագա անորոշ ճանաչումների դեպքում ուղղված գլուխկոտրուկի լուսանկարը, ճանաչման արդյունքները և ուղղումները կուղարկվեն Freevia-ին՝ վերլուծության և ուսուցման համար։ Ուսուցման պատճենները կմնան մինչև «Ուղարկումների ստացականներ»-ից ջնջվելը․ ուսուցված մոդելը կարող է պահպանել սովորած փոփոխությունները։ Եթե անորոշ գլուխկոտրուկն արդեն բաց է, այն կուղարկվի հիմա։ Կարող եք սա անջատել կարգավորումներում։"</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Հետագա անորոշ ճանաչումների դեպքում ուղղված գլուխկոտրուկի լուսանկարը, ճանաչման արդյունքները և ուղղումները կուղարկվեն Freevia-ին՝ վերլուծության և ուսուցման համար։ Ուսուցման պատճենները կմնան մինչև «Ուղարկման անդորրագրեր»-ից ջնջվելը․ ուսուցված մոդելը կարող է պահպանել սովորած փոփոխությունները։ Եթե անորոշ գլուխկոտրուկն արդեն բաց է, այն կուղարկվի հիմա։ Կարող եք սա անջատել կարգավորումներում։"</string>
     <string name="msg_gentle_96124817" formatted="false">"Հեշտ"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Լույսի անդրադարձը ծածկում է գծերը․ էջը թեքեք լույսից հեռու"</string>
-    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"ՄոխրագույնՊատկեր(%1$sx%2$s)"</string>
+    <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"GrayImage(%1$sx%2$s)"</string>
     <string name="msg_grey_squares_hold_pencil_marks_which_the_app__e6613a89" formatted="false">"Մոխրագույն բջիջները պարունակում են մատիտային նշումներ, որոնք հավելվածն անտեսում է։ Թվանշանի տակ գտնվող գոտին ցույց է տալիս ճանաչման վստահությունը։ Մանրամասների համար հպեք բջջին։"</string>
     <string name="msg_handwritten_6a50cef3" formatted="false">"Ձեռագիր"</string>
     <string name="msg_hard_9e73f8fa" formatted="false">"Դժվար"</string>
@@ -234,7 +234,7 @@
     <string name="msg_hold_the_phone_flat_9e9c399d" formatted="false">"Հեռախոսը պահեք հարթ"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_4dfa5d13" formatted="false">"Հեռախոսը պահեք գլուխկոտրուկի վերևում՝ դրան զուգահեռ։"</string>
     <string name="msg_hold_the_phone_flat_above_the_puzzle_f7841772" formatted="false">"Հեռախոսը պահեք գլուխկոտրուկի վերևում՝ դրան զուգահեռ"</string>
-    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"հորիզոնական\":[%1$s ]}}"</string>
+    <string name="msg_horizontal_0_b13e8aac" formatted="false">"\"horizontal\":[%1$s ]}}"</string>
     <string name="msg_how_to_spot_one_50ce1373" formatted="false">"Ինչպես հայտնաբերել"</string>
     <string name="msg_how_we_get_there_e7cb2cd1" formatted="false">"\n\nԻնչպես ենք հասնում դրան․"</string>
     <string name="msg_hunt_for_squares_with_exactly_two_candidates__095cb731" formatted="false">"Փնտրեք ճիշտ երկու թեկնածու ունեցող բջիջներ․ Y-թևը կազմված է դրանցից երեքից և ուրիշ ոչնչից։\n\nՄեկն ընտրեք որպես հենակետ, օրինակ՝ {2,5}։ Փնտրեք դրա տեսած բջիջ, որը պարունակում է {2,9}, և մեկ այլ տեսանելի բջիջ՝ {5,9}։ Հենակետը կա՛մ 2 է, կա՛մ 5։ Եթե 2 է, առաջին թևը պետք է լինի 9, եթե 5 է՝ երկրորդը պետք է լինի 9։ Երկու դեպքում էլ թևերից մեկում հայտնվում է 9․ չգիտեք՝ որում, և պետք էլ չէ իմանալ։\n\nՈւստի երկու թևերն էլ տեսնող ոչ մի բջիջ չի կարող լինել 9։ Այդ բջիջները սովորաբար ուղղանկյունը լրացնող երկու անկյուններն են։"</string>
@@ -274,10 +274,10 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Պարտադրող շղթաները կարճ պահել"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Լեզու"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Լիցենզիաներ"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Մեկ տողում, սյունակում կամ բլոկում փնտրեք քիչ թեկնածուներ ունեցող բջիջներ։ Վերցրեք դրանցից %1$s-ը և միավորեք թեկնածուները։ Եթե ստացված բազմությունն ունի ճիշտ %2$s թվանշան, ապա այդ %3$s թվանշանները վերապահված են․ դրանք պետք է որևէ հերթականությամբ տեղադրվեն այդ %4$s բջիջներում, թեև դեռ չեք կարող ասել՝ որն ուր։\n\nԴա բավական է։ Միավորի բոլոր մյուս բջիջներից կարելի է հեռացնել այդ թվանշանները, և սովորաբար դրանցից մեկում դրանից հետո մնում է միակ թեկնածու։\n\nՊարտադիր չէ, որ բոլոր բջիջներն ունենան նույն թեկնածուները․ {2,7}, {2,9} և {7,9}-ը լիովին ընդունելի եռյակ է, և մարդիկ հենց սա են բաց թողնում։"</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Մեկ տողում, սյունակում կամ բլոկում փնտրեք քիչ թեկնածուներ ունեցող բջիջներ։ Վերցրեք դրանցից %1$s-ը և միավորեք թեկնածուները։ Եթե ստացված բազմությունն ունի ճիշտ %2$s թվանշան, ապա այդ %3$s թվանշանները վերապահված են․ դրանք պետք է որևէ հերթականությամբ տեղադրվեն այդ %4$s բջիջներում, թեև դեռ չեք կարող ասել՝ որն ուր։\n\nԴա բավական է։ Միավորի բոլոր մյուս բջիջներից կարելի է հեռացնել այդ թվանշանները, և սովորաբար դրանցից մեկում դրանից հետո մնում է միակ թեկնածու։\n\nՊարտադիր չէ, որ բոլոր բջիջներն ունենան նույն թեկնածուները․ {2,7}, {2,9} և {7,9}-ը լիովին ընդունելի եռյակ է, և մարդիկ հենց սա են բաց թողնում։"</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Փնտրեք նույն երկու թեկնածուներն ունեցող բջիջներ, օրինակ՝ {4,9}, որոնք կազմում են շղթա՝ յուրաքանչյուրը տեսնելով հաջորդին։ Երեքը բավարար չէ․ պետք է առնվազն չորս։\n\nԸնթացքում դրանք ներկեք հերթագայող գույներով։ Քանի որ յուրաքանչյուր բջիջ տեսնում է հաջորդին, երկու հարևան չեն կարող նույն թվանշանը պարունակել, ուստի ամբողջ շղթան ընթանում է 4, 9, 4, 9 կամ 9, 4, 9, 4 հերթականությամբ, և չեք կարող ասել՝ որն է։\n\nԵրկու դեպքում էլ հակառակ գույների երկու բջիջները պարունակում են տարբեր թվանշաններ․ մեկը 4-ն է, մյուսը՝ 9-ը։ Ուստի երկուսին էլ տեսնող ցանկացած բջիջ չի կարող լինել դրանցից որևէ մեկը և միանգամից կորցնում է երկու թեկնածուներն էլ։\n\nՊատկերը հեշտ է նկատել հենց այն պատճառով, որ դրա բոլոր բջիջները նույն տեսքն ունեն։ Հետևեք նույնական զույգերին ցանցով և տեսեք՝ որտեղ են դրանք առնչվում։"</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Փնտրեք նույն երկու թեկնածուներն ունեցող երեք բջիջ, օրինակ՝ {1,6}, որոնք ուղղանկյան երեք անկյուններում են։ Ուղղանկյունը պետք է գտնվի ճիշտ երկու բլոկում․ երկու տող և երկու սյունակ՝ երկու բլոկով, ոչ թե չորս։\n\nԱյժմ նայեք չորրորդ անկյանը։ Եթե այն նույնպես ունենար միայն 1 և 6, գլուխկոտրուկը կունենար երկու լուծում․ ուղղանկյան շուրջ կարող էիք փոխատեղել 1-երն ու 6-երը, և մնացած ամեն ինչ դեռ ճիշտ կլիներ։ Ճիշտ կազմված գլուխկոտրուկն ունի մեկ լուծում, ուստի չորրորդ անկյունը պետք է օգտագործի ուրիշ թվանշան․ դրա մյուս թեկնածուները մնում են, իսկ 1-ը և 6-ը հեռացվում են։\n\nՍա ցանկի այն միակ փաստարկն է, որը վերաբերում է կազմողին, այլ ոչ թե ցանցին։ Այն հիմնավոր է հրապարակված գլուխկոտրուկի համար և անօգուտ՝ արդեն սխալ լրացրածի համար, քանի որ այդ դեպքում ընդհանրապես կարող է չլինել լուծում, որի միակությունը քննարկվի։"</string>
-    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Նայեք այս բլոկին։ Հետևեք եզրագծին մինչև այն բջիջը, որը կբացատրի այս հուշումը։"</string>
+    <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Նայեք այս բլոկին։ Հետևեք եզրագծին մինչև այն բջիջը, որը այս հուշումը կբացատրի։"</string>
     <string name="msg_marks_65479e3e" formatted="false">"Նշումներ"</string>
     <string name="msg_moderate_5c42afc7" formatted="false">"Միջին"</string>
     <string name="msg_more_d47d7cb0" formatted="false">"Ավելին"</string>
@@ -324,9 +324,9 @@
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_48797cdc" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված վանդակներում արդեն կա մյուս ութ թվանշաններից մեկը, իսկ %2$s թվանշաններն այս վանդակի համար բացառվել են ավելի վաղ, ոչ թե դրա շուրջ տեսանելի որևէ բանի հիման վրա։"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_52bc1ecf" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված վանդակներում արդեն կան մյուս ութ թվանշաններից յոթը, իսկ %2$s թվանշանն այս վանդակի համար բացառվել է ավելի վաղ, ոչ թե դրա շուրջ տեսանելի որևէ բանի հիման վրա։"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5787cdbe" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված վանդակներում արդեն կան մյուս ութ թվանշաններից հինգը, իսկ %2$s թվանշաններն այս վանդակի համար բացառվել են ավելի վաղ, ոչ թե դրա շուրջ տեսանելի որևէ բանի հիման վրա։"</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված բջիջները զբաղեցնում են մյուս ութ թվանշաններից %2$s-ը․ %3$s %4$s այս բջջից ավելի վաղ բացառվել է՝ շրջակայքում տեսանելի որևէ բանի պատճառով չէ։"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_5afc1d12" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված բջիջներում արդեն կան մյուս ութ թվանշաններից %2$s-ը․ %3$s %4$s ավելի վաղ բացառված այս բջջից՝ ոչ թե դրա շուրջ տեսանելի որևէ բանի պատճառով։"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_8d30b019" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված վանդակներում արդեն կան մյուս ութ թվանշաններից երկուսը, իսկ %2$s թվանշաններն այս վանդակի համար բացառվել են ավելի վաղ, ոչ թե դրա շուրջ տեսանելի որևէ բանի հիման վրա։"</string>
-    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված բջիջներում արդեն կան մյուս ութ թվանշաններից %2$s-ը։ %3$s-ը այս բջիջից բացառվել են ավելի վաղ, ոչ թե դրա շուրջ այժմ տեսանելի որևէ բանի պատճառով։"</string>
+    <string name="msg_only_0_can_go_here_the_highlighted_squares_us_9940d197" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված բջիջներում արդեն կան մյուս ութ թվանշաններից %2$s-ը։ %3$s թվանշաններն այս բջջից բացառվել են ավելի վաղ, ոչ թե դրա շուրջ այժմ տեսանելի որևէ բանի պատճառով։"</string>
     <string name="msg_only_0_can_go_here_the_highlighted_squares_us_b61d80d5" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Ընդգծված վանդակներում արդեն կան մյուս ութ թվանշաններից երեքը, իսկ %2$s թվանշաններն այս վանդակի համար բացառվել են ավելի վաղ, ոչ թե դրա շուրջ տեսանելի որևէ բանի հիման վրա։"</string>
     <string name="msg_only_0_can_go_here_the_other_eight_digits_are_ef4682d0" formatted="false">"Այստեղ կարող է լինել միայն %1$s։ Մյուս ութ թվանշանները բացառվում են այս տողի, սյունակի կամ բլոկի լրացված բջիջներով կամ պարտադրված միակ թեկնածուներով։"</string>
     <string name="msg_only_0_can_go_here_though_nothing_around_it_s_20845454" formatted="false">"Այստեղ կարող է լինել միայն %1$s, թեև շրջակայքում ոչինչ չի ցույց տալիս՝ ինչու․ մյուս ութ թվանշաններն այս բջջից բացառվել են նախորդ հիմնավորմամբ, այլ ոչ թե դրա տողում, սյունակում կամ բլոկում գրված լինելու պատճառով։"</string>
@@ -336,7 +336,7 @@
     <string name="msg_open_app_settings_df2cdb48" formatted="false">"Բացել հավելվածի կարգավորումները"</string>
     <string name="msg_open_github_0d2cda15" formatted="false">"Բացել GitHub-ը"</string>
     <string name="msg_open_source_notices_5d6f371b" formatted="false">"Բաց կոդի ծանուցումներ"</string>
-    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Բացեք «Ինչո՞ւ այս բջիջը»՝ վերջնական տեղադրման հիմնավորումը տեսնելու համար, կամ ընտրեք բացառված թեկնածու՝ դրա ապացույցին հետևելու համար։"</string>
+    <string name="msg_open_why_this_square_to_see_the_final_placeme_b87cb2d0" formatted="false">"Բացեք «Ինչո՞ւ այս վանդակը։»՝ վերջնական տեղադրման հիմնավորումը տեսնելու համար, կամ ընտրեք բացառված թեկնածու՝ դրա ապացույցին հետևելու համար։"</string>
     <string name="msg_opencv_apache_license_2_0_used_for_finding_an_907b7977" formatted="false">"OpenCV — Apache License 2.0։ Օգտագործվում է ցանցը գտնելու և ուղղելու համար։\n\nAndroidX, Jetpack Compose և CameraX — Apache License 2.0։\n\nKotlin — Apache License 2.0։\n\nԹվանշանների ճանաչիչն ուսուցվել է LeCun-ի, Cortes-ի և Burges-ի ձեռագիր թվանշանների MNIST տվյալների շտեմարանով, ինչպես նաև բաց համակարգային տառատեսակներով արտապատկերված և ծրագրային եղանակով նկարված թվանշաններով։"</string>
     <string name="msg_opencv_native_libraries_failed_to_load_525d3f38" formatted="false">"Չհաջողվեց բեռնել OpenCV-ի բնիկ գրադարանները"</string>
     <string name="msg_photograph_another_puzzle_c9f3d4b7" formatted="false">"Լուսանկարեք մեկ այլ գլուխկոտրուկ։"</string>
@@ -356,7 +356,7 @@
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_d3ac1899" formatted="false">"Տեսախցիկն ուղղեք սուդոկուի վրա։"</string>
     <string name="msg_point_the_camera_at_a_sudoku_puzzle_on_paper__a9df2e02" formatted="false">"Տեսախցիկն ուղղեք թղթի վրա գտնվող սուդոկուի վրա։ Հավելվածը ճանաչում է տպված թվանշաններն ու ձեր գրածը, լուծում է այն և կարող է հուշում տալ, ստուգել ձեր պատասխանները կամ ցույց տալ ամբողջ լուծումը։"</string>
     <string name="msg_pointing_pair_1177a4b6" formatted="false">"Մատնանշող զույգ"</string>
-    <string name="msg_post_9aee6b1b" formatted="false">"ՈՒՂԱՐԿԵԼ"</string>
+    <string name="msg_post_9aee6b1b" formatted="false">"POST"</string>
     <string name="msg_preparing_puzzle_25caea7f" formatted="false">"Գլուխկոտրուկը պատրաստվում է…"</string>
     <string name="msg_previous_a57b08a4" formatted="false">"Նախորդը"</string>
     <string name="msg_previous_step_318c1da8" formatted="false">"Նախորդ քայլը"</string>
@@ -375,7 +375,7 @@
     <string name="msg_reading_reviewed_e4f13358" formatted="false">"Ճանաչման արդյունքը վերանայված է։"</string>
     <string name="msg_reading_submitted_thank_you_48014bb8" formatted="false">"Ճանաչման արդյունքն ուղարկված է։ Շնորհակալություն։"</string>
     <string name="msg_recent_scan_diagnostics_prefilled_9e23892e" formatted="false">"## Վերջին սկանավորման ախտորոշում (նախապես լրացված)"</string>
-    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Ճանաչումը կարող է սխալվել, հատկապես ձեռագրի դեպքում։ «Դիտել» կոճակով համեմատեք ճանաչված թվերը լուսանկարի հետ և հպեք ցանկացած վանդակի՝ այն ուղղելու համար։ Հավելվածը նշում է անորոշ ճանաչման արդյունքները՝ վերանայման համար․ նույնիսկ վստահ ճանաչումը կարող է սխալ լինել։"</string>
+    <string name="msg_recognition_can_make_mistakes_especially_with_69ecd7e2" formatted="false">"Ճանաչումը կարող է սխալվել, հատկապես ձեռագրի դեպքում։ «Ճանաչում» կոճակով համեմատեք ճանաչված թվերը լուսանկարի հետ և հպեք ցանկացած վանդակի՝ այն ուղղելու համար։ Հավելվածը նշում է անորոշ ճանաչման արդյունքները՝ վերանայման համար․ նույնիսկ վստահ ճանաչումը կարող է սխալ լինել։"</string>
     <string name="msg_reject_assumption_816f515a" formatted="false">"Մերժել ենթադրությունը"</string>
     <string name="msg_remote_pairs_c62d76c2" formatted="false">"Հեռավոր զույգեր"</string>
     <string name="msg_remove_0_dfbfd0da" formatted="false">"Հեռացնել %1$s"</string>
@@ -495,11 +495,11 @@
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"%1$s-ի լուսանկարը և դրանից ճանաչված ամեն ինչ կհեռացվեն այս հեռախոսից։ Սա հնարավոր չէ հետարկել։"</string>
     <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Լուսանկարը ձեր գլուխկոտրուկների ցանկում է՝ «Չհաջողվեց ճանաչել» բաժնում։"</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Այստեղ հենակետը %1$s կամ %2$s է։ Երկու դեպքում էլ մյուս երկու վանդակներից մեկում պարտադիր %3$s է, ուստի երկուսին էլ տեսնող ոչ մի վանդակում չի կարող լինել %4$s։"</string>
-    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Ուղղորդող զույգը՝ հակառակ ուղղությամբ։ Ընտրեք տող կամ սյունակ և մի թիվ, որը դեռ պետք է տեղադրել այնտեղ։ Նշեք այդ գծի բոլոր վանդակները, որտեղ թիվը հնարավոր է։ Եթե բոլորը մեկ բլոկում են, թիվը պարտադիր այդ բլոկի՝ գծին պատկանող մասում է։ Ուստի այն բլոկի այլ տեղում չկա, ներառյալ դրա այն երկու տողերը կամ սյունակները, որոնք չէիք դիտարկում։\n\nՈւղղորդող զույգի նման՝ սա ինքնուրույն ոչինչ չի տեղադրում․ այն տեղ է բացում տեղադրում տվող քայլի համար։"</string>
+    <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Մատնանշող զույգը՝ հակառակ ուղղությամբ։ Ընտրեք տող կամ սյունակ և մի թիվ, որը դեռ պետք է տեղադրել այնտեղ։ Նշեք այդ գծի բոլոր վանդակները, որտեղ թիվը հնարավոր է։ Եթե բոլորը մեկ բլոկում են, թիվը պարտադիր այդ բլոկի՝ գծին պատկանող մասում է։ Ուստի այն բլոկի այլ տեղում չկա, ներառյալ դրա այն երկու տողերը կամ սյունակները, որոնք չէիք դիտարկում։\n\nՄատնանշող զույգի նման՝ սա ինքնուրույն ոչինչ չի տեղադրում․ այն տեղ է բացում տեղադրում տվող քայլի համար։"</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Տպագիր թվերը լուծելի գլուխկոտրուկ չեն կազմում։"</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\n%1$s-ում մնացած թեկնածուներն են {%2$s}։ Տեղադրեք %3$s-ը %4$s տողում, %5$s սյունակում։"</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Հաշվետվությունը չափազանց մեծ է ուղարկելու համար։"</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Y-թև՝ հենակետում մեկ լրացուցիչ թեկնածու թվով։ Փնտրեք ճիշտ երեք թեկնածու թվով վանդակ, օրինակ՝ {1,4,7}, որը տեսնում է երկու երկթեկնածու վանդակ՝ մեկը {1,7}, մյուսը՝ {4,7}։\n\nԱյժմ երեքն էլ կարող են լինել 7, և դրանցից մեկը պարտադիր 7 է։ Ուստի բացառման համար վանդակը պետք է տեսնի բոլոր երեքին, ոչ միայն երկու թևերին․ գործնականում դա նշանակում է, որ այն հենակետի հետ նույն բլոկում է և թևերից մեկի հետ նույն գծի վրա։\n\nԲացառումներն ավելի քիչ են, քան Y-թևի դեպքում, և նույն պատճառով այն ավելի հեշտ է բաց թողնել․ հենակետը աչքի չի ընկնում։"</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Y-թև՝ հենակետում մեկ լրացուցիչ թեկնածու թվով։ Փնտրեք ճիշտ երեք թեկնածու թվով վանդակ, օրինակ՝ {1,4,7}, որը տեսնում է երկու երկթեկնածու վանդակ՝ մեկը {1,7}, մյուսը՝ {4,7}։\n\nԱյժմ երեքն էլ կարող են լինել 7, և դրանցից մեկը պարտադիր 7 է։ Ուստի բացառման համար վանդակը պետք է տեսնի բոլոր երեքին, ոչ միայն երկու թևերին․ գործնականում դա նշանակում է, որ այն հենակետի հետ նույն բլոկում է և թևերից մեկի հետ նույն գծի վրա։\n\nԲացառումներն ավելի քիչ են, քան Y-թևի դեպքում, և նույն պատճառով այն ավելի հեշտ է բաց թողնել․ հենակետը աչքի չի ընկնում։"</string>
     <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Ընդգծված բլոկում կա վանդակ, որը կարող եք լրացնել։\n\nԿրկին սեղմեք «Հուշում»՝ իմանալու, թե որ տեխնիկան է այն գտնում։"</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Այստեղ հիմնավորելու ոչինչ չի մնացել։"</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Այս %1$s վանդակներում հնարավոր են միայն %2$s և %3$s, և յուրաքանչյուրը տեսնում է հաջորդին, ուստի դրանք հերթագայվում են ամբողջ շղթայով։ %4$s-ի և %5$s-ի միջև կապերի թիվը կենտ է, ուստի դրանցում տարբեր թվեր են․ դա բացառում է %6$s-ը երկուսին էլ տեսնող ցանկացած վանդակից։"</string>
@@ -518,7 +518,7 @@
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Սա ոչ մի վանդակ չի լրացնում։ Այն բացառում է %1$s-ը %2$s վանդակի հնարավոր թվանշաններից։"</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Սա ոչ մի վանդակ չի լրացնում։ Այն բացառում է %1$s-ը մեկ վանդակի հնարավոր թվանշաններից։"</string>
     <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nՍա պատասխանին տանող %1$s եզրահանգումներից առաջինն է։"</string>
-    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Այս ապացույցը բացատրում է մեկ հուշում, ներառյալ դրա պատասխանին բերող թեկնածու թվերի բացառումներն։ Քայլեք առաջ՝ ցանցում հիմնավորմանը հետևելու համար, ապա շարունակեք ամբողջ լուծման ուղով։"</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Այս ապացույցը բացատրում է մեկ հուշում, ներառյալ դրա պատասխանին բերող թեկնածու թվերի բացառումները։ Քայլեք առաջ՝ ցանցում հիմնավորմանը հետևելու համար, ապա շարունակեք ամբողջ լուծման ուղով։"</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Չհաջողվեց պատրաստել այս գլուխկոտրուկը։"</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Չհաջողվեց պահել այս գլուխկոտրուկը։ Այժմ դեռ կարող եք օգտագործել այն։ Նոր լուսանկար անելուց առաջ ազատեք պահեստային տարածք։"</string>
     <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Այս գլուխկոտրուկը մեկից ավելի լուծում ունի, ուստի հավանաբար տպագիր թիվ է բաց թողնվել։ Ցուցադրվում է %1$s լուծումը՝ %2$s-ից․ հաջորդի համար կրկին սեղմեք «Լուծել»։ Շրջագծված վանդակները ցուցադրված լուծումներում տարբեր են։"</string>
@@ -535,7 +535,7 @@
     <string name="msg_turn_the_phone_so_the_puzzle_is_upright_a9e8c156" formatted="false">"Շրջեք հեռախոսը, որպեսզի գլուխկոտրուկն ուղիղ լինի։"</string>
     <string name="msg_tutor_1555a832" formatted="false">"Ուսուցիչ"</string>
     <string name="msg_two_3fc4ccfe" formatted="false">"երկու"</string>
-    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Նույն զույգը պարունակող երկու վանդակ, որոնք թվերից մեկի միջոցով փոխկապակցված են, մյուս թիվը պարտադրում են դրանցից մեկում։"</string>
+    <string name="msg_two_squares_holding_the_same_pair_linked_by_a_62d06e32" formatted="false">"Նույն զույգը պարունակող երկու վանդակ, որոնք կապված են թվերից մեկի այնպիսի կապով, որի երկու բջիջներից ճիշտ մեկում է այդ թիվը, մյուս թիվը պարտադրում են դրանցից մեկում։"</string>
     <string name="msg_two_string_kite_fd558e5c" formatted="false">"Երկու լարով օդապարիկ"</string>
     <string name="msg_unique_rectangle_cc025da3" formatted="false">"Եզակի ուղղանկյուն"</string>
     <string name="msg_unit_385cfdbc" formatted="false">"միավոր"</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Ինչո՞ւ այս վանդակը։ · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" լուծման հետ։ Դրանք դիտելու համար օգտվեք «Ստուգել»-ից։"</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Ձեր վանդակից հետ գնացեք։ Ստորև ընտրեք հարց։"</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Աշխատեք թիվ առ թիվ՝ վանդակ առ վանդակ անցնելու փոխարեն։ Մեկ խմբի համար գրեք, թե յուրաքանչյուր բացակայող թիվը որտեղ դեռ կարող է լինել։ Ապա փնտրեք %1$s թիվ, որոնց ցուցակները միասին ընդգրկում են միայն %2$s վանդակ։\n\nԱյդ %3$s թվերը պարտադիր լրացնում են այդ %4$s վանդակները, ուստի դրանցից մնացած ամեն ինչ կարելի է ջնջել․ սա հաճախ անմիջապես դրանցից մեկը դարձնում է բացահայտ միայնակ կամ բացահայտ զույգի մաս։\n\nՄարդկանց համար սա ամենադժվարն է, քանի որ վանդակներին նայելիս տեսանելի ոչինչ չկա․ դրանք դեռ շատ թեկնածու թվեր ունեն։ Օրինաչափությունը թվերի մեջ է։"</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Աշխատեք թիվ առ թիվ՝ վանդակ առ վանդակ անցնելու փոխարեն։ Մեկ խմբի համար գրեք, թե յուրաքանչյուր բացակայող թիվը որտեղ դեռ կարող է լինել։ Ապա փնտրեք %1$s թիվ, որոնց ցուցակները միասին ընդգրկում են միայն %2$s վանդակ։\n\nԱյդ %3$s թվերը պարտադիր լրացնում են այդ %4$s վանդակները, ուստի դրանցից մնացած ամեն ինչ կարելի է ջնջել․ սա հաճախ անմիջապես դրանցից մեկում բացահայտ միակ է առաջացնում կամ դրանցից երկուսում՝ բացահայտ զույգ։\n\nՄարդկանց համար սա ամենադժվարն է, քանի որ վանդակներին նայելիս տեսանելի ոչինչ չկա․ դրանք դեռ շատ թեկնածու թվեր ունեն։ Օրինաչափությունը թվերի մեջ է։"</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Աշխատեք միայն այն վանդակների հետ, որտեղ մնացել է ճիշտ երկու թեկնածու թիվ։\n\nՍկսեք մեկից, օրինակ՝ {2,6}, և ենթադրեք, որ այն 2 չէ․ ուրեմն 6 է։ Անցեք նրա տեսած մի վանդակի, որտեղ նույնպես 6 կա, օրինակ՝ {6,4}․ դա չի կարող լինել 6, ուրեմն 4 է։ Անցեք դրա տեսած մի վանդակի, որտեղ 4 կա, և շարունակեք․ յուրաքանչյուր քայլը պարտադրվում է նախորդով։\n\nԵթե հասնեք վանդակի, որի մյուս թիվը 2 է՝ այն թիվը, որը սկզբում բացառեցիք, ավարտել եք։ Կամ առաջին վանդակն ի վերջո 2 էր, կամ շղթան գործեց, և վերջին վանդակը 2 է։ Երկու ծայրերից մեկում այն կա, ուստի երկուսն էլ տեսնող ոչ մի վանդակում այն չի կարող լինել։\n\nՇղթաները կարճ պահեք։ Չորս կամ հինգ վանդակ կարելի է գտնել մատիտով․ դրանից հետո արդեն հաշվառում եք անում, և դա ճիշտ է անվանել պարտադրող շղթա։"</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"աշխատանքային եզրը պետք է դրական և վերջավոր լինի"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Չհաջողվեց ճանաչել"</string>
@@ -580,6 +580,6 @@
     <string name="msg_your_puzzles_80572487" formatted="false">"Ձեր գլուխկոտրուկները"</string>
     <string name="msg_your_saved_puzzles_aa39fbaa" formatted="false">"Ձեր պահված գլուխկոտրուկները"</string>
     <string name="msg_your_square_0_4430c1c2" formatted="false">"Ձեր վանդակը ← %1$s"</string>
-    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Ձեր վանդակը մնում է եզրագծված։ Կանաչ վանդակները ցույց են տալիս հիմնավորումը․ ջնջված թվերը բացառված են։"</string>
+    <string name="msg_your_square_stays_outlined_green_squares_show_898adcb2" formatted="false">"Ձեր վանդակը մնում է եզրագծված։ Կանաչ վանդակները ցույց են տալիս հիմնավորումը․ վրայից գիծ քաշված թվերը բացառված են։"</string>
     <string name="msg_yyyy_mm_dd_hh_mm_e9e64b59" formatted="false">"yyyy-MM-dd HH:mm"</string>
 </resources>

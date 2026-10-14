@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="msg_0_1_2_android_3_c2e7a322" formatted="false">"%1$s, %2$s %3$s, Android %4$s"</string>
-    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nTa ny killagyn soilsheydagh prowal eh.\n\nBroo er Cooney reesht dy akin cre\'n killag."</string>
+    <string name="msg_0_1_the_highlighted_squares_are_what_proves_i_5b58ee60" formatted="false">"%1$s%2$s\n\nTa ny killagyn soilsheydagh prowal eh.\n\nBroo er Coyrle reesht dy akin cre\'n killag."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_4_5_ha_1ec56fc2" formatted="false">"Cha nel ayns %1$s as %2$s ny neesht agh %3$s as %4$s. Ayns yn %5$s shoh, cha nel ec %6$s agh daa ynnyd, fer ry-akin liorish dy chooilley fer jeu - myr shen ta %7$s ayns fer jeh\'n daa shen, as shegin da\'n jerrey ta fakin eh ve %8$s. Quallagh aght, ta %9$s ayns un jerrey, ta scughey %10$s veih ooilley ny ta fakin ad ny neesht."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_box_4__b35ccef4" formatted="false">"Cha vod %1$s as %2$s goaill agh %3$s as %4$s. Ayns y kishtey shoh, cha nel agh daa ynnyd son %5$s, as ta dagh fer jeu fakin unnane jeu - myr shen ta %6$s ayns unnane jeh\'n daa ynnyd shen, as she %7$s shegin ve ayns yn chione ta fakin eh. C\'red erbee taghyrtys, ta %8$s ayns unnane jeh ny kione, as ta shen cur %9$s ass dagh kill ta fakin ad ny neesht."</string>
     <string name="msg_0_and_1_both_hold_only_2_and_3_in_this_column_c4e0eef1" formatted="false">"Cha vod %1$s as %2$s goaill agh %3$s as %4$s. Ayns y colloo shoh, cha nel agh daa ynnyd son %5$s, as ta dagh fer jeu fakin unnane jeu - myr shen ta %6$s ayns unnane jeh\'n daa ynnyd shen, as she %7$s shegin ve ayns yn chione ta fakin eh. C\'red erbee taghyrtys, ta %8$s ayns unnane jeh ny kione, as ta shen cur %9$s ass dagh kill ta fakin ad ny neesht."</string>
@@ -11,11 +11,11 @@
     <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s ec kesh %2$s"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"Cha nod %1$s goaill agh %2$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"cha vod %1$s goaill %2$s er y fa dy vel %3$s "</string>
-    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"Cha nod %1$s goaill %2$s er-yn-oyr nagh vod %3$s goaill agh %4$s ayns yn chol loon cheddin %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"Cha nod %1$s goaill %2$s er-yn-oyr nagh vod %3$s goaill agh %4$s ayns yn cholloon cheddin %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__2d15ef22" formatted="false">"Cha nod %1$s goaill %2$s er-yn-oyr nagh vod %3$s goaill agh %4$s ayns yn chishtey cheddin %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__443f9513" formatted="false">"Cha nod %1$s goaill %2$s er-yn-oyr nagh vod %3$s goaill agh %4$s ayns yn raie cheddin %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_9c285fe7" formatted="false">"Cha nod %1$s goaill %2$s er-yn-oyr dy vel %4$s ayns %3$s ayns yn chishtey cheddin %5$s."</string>
-    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"Cha nod %1$s goaill %2$s er-yn-oyr dy vel %4$s ayns %3$s ayns yn chol loon cheddin %5$s."</string>
+    <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_d7d27970" formatted="false">"Cha nod %1$s goaill %2$s er-yn-oyr dy vel %4$s ayns %3$s ayns yn cholloon cheddin %5$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_contains_3_in_the_s_febd051f" formatted="false">"Cha nod %1$s goaill %2$s er-yn-oyr dy vel %4$s ayns %3$s ayns yn raie cheddin %5$s."</string>
     <string name="msg_0_contains_1_1a322cb6" formatted="false">"Ta %2$s ayns %1$s."</string>
     <string name="msg_0_empty_3b007105" formatted="false">"%1$s follym"</string>
@@ -29,18 +29,18 @@
     <string name="msg_0_in_the_same_box_4025eb88" formatted="false">" %1$s \'sy chishtey cheddin."</string>
     <string name="msg_0_in_the_same_column_70040564" formatted="false">" %1$s \'sy cholloon cheddin."</string>
     <string name="msg_0_in_the_same_row_f60b605b" formatted="false">" %1$s \'sy straih cheddin."</string>
-    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"Ta %1$s scuggit veih\'n chillag shen hannah. Ta ny iarrtee echey "</string>
+    <string name="msg_0_is_already_ruled_out_of_that_square_its_can_50440796" formatted="false">"Ta %1$s scuggit veih\'n chillag shen hannah. Ta ny cummyssyn echey "</string>
     <string name="msg_0_is_excluded_by_1_which_c332ab94" formatted="false">"Ta %1$s scuggit liorish %2$s, ta "</string>
-    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"Ta %1$s er ny chur magh liorish %2$s, nagh vod goaill agh %3$s ayns yn chol loon cheddin %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_35ce0ea3" formatted="false">"Ta %1$s er ny chur magh liorish %2$s, nagh vod goaill agh %3$s ayns yn cholloon cheddin %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_e27f6201" formatted="false">"Ta %1$s er ny chur magh liorish %2$s, nagh vod goaill agh %3$s ayns yn raie cheddin %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_can_only_hold_2_in_t_ed65685a" formatted="false">"Ta %1$s er ny chur magh liorish %2$s, nagh vod goaill agh %3$s ayns yn chishtey cheddin %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_4775265e" formatted="false">"Ta %1$s er ny chur magh liorish %2$s, ta %3$s ayn ayns yn chishtey cheddin %4$s."</string>
-    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"Ta %1$s er ny chur magh liorish %2$s, ta %3$s ayn ayns yn chol loon cheddin %4$s."</string>
+    <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_54572d15" formatted="false">"Ta %1$s er ny chur magh liorish %2$s, ta %3$s ayn ayns yn cholloon cheddin %4$s."</string>
     <string name="msg_0_is_excluded_by_1_which_contains_2_in_the_sa_64b2acb0" formatted="false">"Ta %1$s er ny chur magh liorish %2$s, ta %3$s ayn ayns yn raie cheddin %4$s."</string>
     <string name="msg_0_is_forced_in_the_newest_numbered_square_row_3dc4d3ff" formatted="false">"Ta %1$s éginagh ayns y chillag earrit s\'noa (raa %2$s, colloon %3$s). %4$s Ta\'n side eiyrt er soiaghey ta cur cooney; ta eiyrtyssyn roish scanshoil neesht."</string>
     <string name="msg_0_is_missing_from_the_classpath_0e595856" formatted="false">"Ta %1$s laccal veih\'n classpath"</string>
     <string name="msg_0_of_1_9fea8201" formatted="false">"%1$s jeh %2$s"</string>
-    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"Ta %1$s jeu lhieeney killag; ta\'n chooid elley scughey iarrtee ass y raad hoshiaght."</string>
+    <string name="msg_0_of_them_fill_a_square_in_the_rest_clear_can_44b300cb" formatted="false">"Ta %1$s jeu lhieeney killag; ta\'n chooid elley scughey cummyssyn ass y raad hoshiaght."</string>
     <string name="msg_0_pair_8730dc66" formatted="false">"cubbyl %1$s"</string>
     <string name="msg_0_printed_1_2_wrong_7d3fcd64" formatted="false">"%1$s clouit, %2$s, %3$s aggair"</string>
     <string name="msg_0_printed_1_d2b62650" formatted="false">"%1$s clouit, %2$s"</string>
@@ -50,9 +50,9 @@
     <string name="msg_0_refused_photograph_s_newest_first_07d50825" formatted="false">"%1$s fotograaf(yn) jiooldit, yn fer s\'noa hoshiaght:"</string>
     <string name="msg_0_remove_1_2fb6c331" formatted="false">"%1$s: scughey %2$s"</string>
     <string name="msg_0_squares_57c6f9ba" formatted="false">"Earroo ny kerrinyn: %1$s"</string>
-    <string name="msg_0_steps_make_up_this_route_the_hardest_suppor_d325cd7d" formatted="false">"Ta %1$s kesmadyn jannoo seose yn raad shoh, as she %2$s yn aght s\'doillee lesh cooney. %3$s %4$s"</string>
+    <string name="msg_0_steps_make_up_this_route_with_1_as_the_hard_93dd69a3" formatted="false">"Ta %1$s kesmadyn jannoo seose yn raad shoh, as she %2$s yn aght s\'doillee lesh cooney. %3$s %4$s"</string>
     <string name="msg_0_triple_ff6a8740" formatted="false">"tree %1$s"</string>
-    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"Va %1$s scuggit veih %2$s liorish resooney iarrtee roish."</string>
+    <string name="msg_0_was_removed_from_1_by_earlier_candidate_rea_eff397fb" formatted="false">"Va %1$s scuggit veih %2$s liorish resooney cummyssyn roish."</string>
     <string name="msg_0_written_in_40661e10" formatted="false">"%1$s screeuit stiagh"</string>
     <string name="msg_a_0_x_1_image_needs_2_bytes_but_got_3_c2eb9879" formatted="false">"ta jalloo %1$sx%2$s feme %3$s byteyn agh hooar eh %4$s"</string>
     <string name="msg_a_cell_was_neither_a_digit_nor_a_full_stop_48dabcc5" formatted="false">"cha row killag ny earroo ny punc slane"</string>
@@ -86,7 +86,7 @@
     <string name="msg_automatically_share_uncertain_puzzle_photos_r_e5c519ea" formatted="false">"Rheynn jallooyn dy chlouyn neu-hickyr, eiyrtyssyn lhaih as kiartaghyn cella ny s\'anmey lesh Freevia dy hene-obbragh son scrutaghey as ynsaghey aithneydys. Ass dy cadjin."</string>
     <string name="msg_avoid_the_glare_9511c059" formatted="false">"Shaghyn yn soilshey ro-ghial"</string>
     <string name="msg_back_76900f1b" formatted="false">"Er ash"</string>
-    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Er ash dys y chied feysht roish shoh"</string>
+    <string name="msg_back_to_the_previous_question_1a4530a4" formatted="false">"Er ash dys y feysht roish shoh"</string>
     <string name="msg_back_to_visual_hint_0d0729a1" formatted="false">"Er ash dys coyrle ry-akin"</string>
     <string name="msg_back_to_your_square_0f7bb45a" formatted="false">"Er ash dys dty chella"</string>
     <string name="msg_before_9bb72500" formatted="false">"Roish"</string>
@@ -116,7 +116,7 @@
     <string name="msg_checked_correct_c690d1c3" formatted="false">", scrutit as kiart"</string>
     <string name="msg_choose_a_candidate_to_see_why_it_cannot_go_in_a1a3a51e" formatted="false">"Reih cummys dy akin cre\'n fa nagh vod eh goll ayns dty chella."</string>
     <string name="msg_choose_language_bba5b40b" formatted="false">"Reih çhengey"</string>
-    <string name="msg_choose_what_to_be_shown_f65369ae" formatted="false">"Reih ny vees ry-hoilshaghey"</string>
+    <string name="msg_choose_what_to_show_baee168f" formatted="false">"Reih ny vees ry-hoilshaghey"</string>
     <string name="msg_close_7d9eb7ac" formatted="false">"Dooin"</string>
     <string name="msg_close_hint_7257ada8" formatted="false">"Dooin coyrle"</string>
     <string name="msg_collapse_reading_review_1ef8fe30" formatted="false">"Filley scrutaghey yn lhaih"</string>
@@ -157,7 +157,7 @@
     <string name="msg_describe_what_happened_and_the_steps_to_repea_dea91e8a" formatted="false">"Cur sheese ny haghyr as ny kesmadyn dy yannoo eh reesht. Insh ren oo scrutaghey as kiartaghey ny earrooyn er nyn aithney hoshiaght. Son smooinaght, screeu \'Cha nel eh bentyn\'."</string>
     <string name="msg_destination_of_this_hint_f9147869" formatted="false">", cella yn choyrle shoh"</string>
     <string name="msg_device_0_bc265ab8" formatted="false">"- Saase: %1$s"</string>
-    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Ta\'n fysseree scrutaghey er ny ghiorraghey dy chooilleeney yn dreachd ayns y jeeagheyder. Foddee jantys Cur fysseree scrutaghey yn app yn coontey slane y rheynn."</string>
+    <string name="msg_diagnostics_shortened_to_fit_the_browser_draf_ed5ef2f6" formatted="false">"Ta\'n fysseree scrutaghey er ny ghiorraghey dy chooilleeney yn dreachd ayns y jeeagheyder. Foddee jantys Cur fys faaishnee yn app yn coontey slane y rheynn."</string>
     <string name="msg_digit_must_be_1_9_but_was_0_d4e45876" formatted="false">"shegin da\'n earroo ve 1..9 agh va eh %1$s"</string>
     <string name="msg_digits_not_read_0956924a" formatted="false">"Earrooyn nagh row lhaiht"</string>
     <string name="msg_disk_evidence_retention_affects_timing_not_a__d38fdf64" formatted="false">"Ta freayll feanish er y jysk caghlaa yn traa; cha nee towse son moilley eh."</string>
@@ -179,7 +179,7 @@
     <string name="msg_every_one_of_them_fills_a_square_in_551aace5" formatted="false">"Ta dagh unnane jeu lhieeney cella."</string>
     <string name="msg_every_square_is_filled_but_0_answers_disagree_f302089b" formatted="false">"Ta dagh cella lhiant, agh cha nel %1$s freggyrtyn coardail rish y fhuaslaghey."</string>
     <string name="msg_every_square_is_filled_but_one_answer_disagre_a733b323" formatted="false">"Ta dagh cella lhiant, agh cha nel un freggyr coardail rish y fhuaslaghey."</string>
-    <string name="msg_every_sudoku_with_one_answer_can_be_reached_b_4425b947" formatted="false">"Foddee dagh sudoku lesh un freggyr ve fuaslit liorish resoonaght; cha nel barail rieau feme as cha nel eh cooney dy mennick. Shoh ny raaidyn resoonaght foddee yn app shoh aithney as soilshaghey, ny sassey hoshiaght. Raad ta unnane jeu bentyn da\'n chlou t\'ou er n\'osley, soilshaghey eh dhyt dagh ynnyd raad t\'eh bentyn."</string>
+    <string name="msg_every_sudoku_with_one_answer_can_be_solved_by_c224ded3" formatted="false">"Foddee dagh sudoku lesh un freggyr ve fuaslit liorish resoonaght; cha nel barail rieau feme as cha nel eh cooney dy mennick. Shoh ny raaidyn resoonaght foddee yn app shoh aithney as soilshaghey, ny sassey hoshiaght. Raad ta unnane jeu bentyn da\'n chlou t\'ou er n\'osley, soilshaghey eh dhyt dagh ynnyd raad t\'eh bentyn."</string>
     <string name="msg_everything_you_have_written_so_far_is_right_3990aa89" formatted="false">"Ta ooilley ny t\'ou er screeu derrey shoh kiart."</string>
     <string name="msg_examples_available_now_each_starts_from_your__b7346016" formatted="false">"Sampleyryn avail nish: ta dagh unnane toshiaght veih dty voayrd roie."</string>
     <string name="msg_expected_10_horizontal_lines_got_0_defa7dee" formatted="false">"va jerkal rish 10 linnaghyn tarsyn, hooar %1$s"</string>
@@ -209,7 +209,7 @@
     <string name="msg_freevia_confirmed_deletion_but_this_phone_cou_80ce7a45" formatted="false">"Hickyr Freevia yn scryssey, agh cha dod y çhellvane shoh yn recortys ynnydagh y scughey. Eab reesht dy chriochnaghey yn glenney ynnydagh."</string>
     <string name="msg_freevia_will_delete_this_report_revision_and__a5e4321c" formatted="false">"Scryssey Freevia yn lhieggan shoh jeh\'n choontey as e choip ynsaghey preevaadjagh. Foddee kiartaghyn ry-heet coontey noa y chroo fo dty hoieaghyn rheynn. Foddee model ta er n\'ynsaghey veih hannah caghlaaghyn ynsit y reayll."</string>
     <string name="msg_full_route_891b475b" formatted="false">"Raad slane"</string>
-    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Nee lhaihyn neu-hickyr ry-heet yn jalloo jeerit jeh\'n chlou, eiyrtyssyn aithneydys as kiartaghyn y chur dys Freevia son scrutaghey as ynsaghey. Ta coipyn ynsaghey tannaghtyn derrey t\'ad scrysst ass Recortyssyn cur stiagh; foddee model ynsit caghlaaghyn ynsit y reayll. My ta clou neu-hickyr foshlit hannah, bee eh currit nish. Foddee oo cur shoh ass ayns Soieaghyn."</string>
+    <string name="msg_future_uncertain_readings_will_send_the_strai_9cb01ee8" formatted="false">"Nee lhaihyn neu-hickyr ry-heet yn jalloo jeerit jeh\'n chlou, eiyrtyssyn aithneydys as kiartaghyn y chur dys Freevia son scrutaghey as ynsaghey. Ta coipyn ynsaghey tannaghtyn derrey t\'ad scrysst ass Recortyssyn cur-stiagh; foddee model ynsit caghlaaghyn ynsit y reayll. My ta clou neu-hickyr foshlit hannah, bee eh currit nish. Foddee oo cur shoh ass ayns Soiaghyn."</string>
     <string name="msg_gentle_96124817" formatted="false">"Aashagh"</string>
     <string name="msg_glare_is_washing_the_lines_out_tilt_the_page__7730f18a" formatted="false">"Ta soilshey ro-ghial folaaghey ny linnaghyn - claon yn duillag ersooyl veih\'n soilshey"</string>
     <string name="msg_grayimage_0_x_1_dd073136" formatted="false">"JallooLheeah(%1$sx%2$s)"</string>
@@ -260,7 +260,7 @@
     <string name="msg_in_this_box_0_can_only_go_in_these_1_squares__6caf2e25" formatted="false">"Ayns y chishtey shoh, cha vod %1$s goll agh ayns ny %2$s killagyn shoh, myr shen ta ny killagyn shen freilt daue. Ta shen cur %3$s assdoo."</string>
     <string name="msg_in_this_column_0_can_only_go_in_these_1_squar_ba002d2c" formatted="false">"Ayns y colloon shoh, cha vod %1$s goll agh ayns ny %2$s killagyn shoh, myr shen ta ny killagyn shen freilt daue. Ta shen cur %3$s assdoo."</string>
     <string name="msg_in_this_row_0_can_only_go_in_these_1_squares__8e774f9c" formatted="false">"Ayns y straih shoh, cha vod %1$s goll agh ayns ny %2$s kill shoh, myr shen ta ny kill shen freilt. Ta shen cur %3$s assdaue."</string>
-    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Goaill stiagh nyn yallooyn, lhaihyn as kiartaghyn. Cur shoh ass ayns Soieaghyn."</string>
+    <string name="msg_includes_their_photos_readings_and_correction_81013c47" formatted="false">"Goaill stiagh nyn yallooyn, lhaihyn as kiartaghyn. Cur shoh ass ayns Soiaghyn."</string>
     <string name="msg_inside_a_single_box_find_a_digit_that_can_onl_cf3dba45" formatted="false">"Çheusthie jeh un chishtey, fow earroo nagh vod goll agh ayns daa ny tree cellaghyn, as scrut my t\'ad ooilley ayns yn un raie ny yn un cholloo. My t\'ad, ta\'n earroo dy shickyr raad ennagh er y linney shen - cha s\'ayd raad, agh ta fys ayd dy vel eh çheusthie jeh\'n chishtey shoh. Myr shen cha vod eh ve ayns ynnyd elley er y linney cheddin çheumooie jeh\'n chishtey.\n\nCha nel shoh cur earroo erbee ayn liorish hene. T\'eh scughey cummyssyn ass y raad dy chur un chummys er-chee ayns ynnyd elley."</string>
     <string name="msg_inside_this_box_0_can_only_go_in_this_1_so_2__dae503c1" formatted="false">"Çheusthie jeh\'n chishtey shoh, cha vod %1$s goll agh ayns y %2$s shoh. Myr shen ta %3$s raad ennagh ayns shoh, as foddee eh ve scrysst ass y chooid elley jeh\'n %4$s."</string>
     <string name="msg_issue_or_idea_c6ec6dd8" formatted="false">"## Feysht ny smooinaght"</string>
@@ -274,7 +274,7 @@
     <string name="msg_keep_forcing_chains_short_edbf22be" formatted="false">"Freill slabhryn eginit giare"</string>
     <string name="msg_language_a4fe6526" formatted="false">"Çhengey"</string>
     <string name="msg_licenses_6d5d9004" formatted="false">"Kiedyn"</string>
-    <string name="msg_look_along_one_row_column_or_box_for_squares__4b2af927" formatted="false">"Jeeagh er un raie, colloo ny kishtey son cellaghyn lesh beggan cummyssyn faagit. Gow %1$s jeu as çhaglym ny cummyssyn oc. My ta %2$s earrooyn dy kiart ayns y çhaglym, ta ny %3$s earrooyn shen freilt: shegin daue goll ayns ny %4$s cellaghyn shen ayns order ennagh, ga nagh vod oo gra foast cre\'n earroo ta goll c\'raad.\n\nTa shen dy liooar. Foddee dagh cella elley ayns yn unnid cur ny earrooyn shen seose, as dy cadjin ta un jeh ny cellaghyn shen çheet dy ve lesh un chummys.\n\nCha nel feme er ny cellaghyn ooilley dy ghoaill ny cummyssyn cheddin - she tree mie dy liooar {2,7}, {2,9} as {7,9}, as shen ny ta sleih coayl."</string>
+    <string name="msg_look_along_one_row_column_or_box_for_squares__c32f53ea" formatted="false">"Jeeagh er un raie, colloo ny kishtey son cellaghyn lesh beggan cummyssyn faagit. Gow %1$s jeu as çhaglym ny cummyssyn oc. My ta %2$s earrooyn dy kiart ayns y çhaglym, ta ny %3$s earrooyn shen freilt: shegin daue goll ayns ny %4$s cellaghyn shen ayns order ennagh, ga nagh vod oo gra foast cre\'n earroo ta goll c\'raad.\n\nTa shen dy liooar. Foddee dagh cella elley ayns yn unnid cur ny earrooyn shen seose, as dy cadjin ta un jeh ny cellaghyn shen çheet dy ve lesh un chummys.\n\nCha nel feme er ny cellaghyn ooilley dy ghoaill ny cummyssyn cheddin - she tree mie dy liooar {2,7}, {2,9} as {7,9}, as shen ny ta sleih coayl."</string>
     <string name="msg_look_for_squares_holding_the_same_two_candida_6f9378bd" formatted="false">"Shir cellaghyn lesh yn daa chummys cheddin - myr sampleyr {4,9} - ta jannoo slabhra, dagh unnane fakin y nah unnane. Cha nel tree dy liooar; t\'ou feme kiare ec y chooid sloo.\n\nDaah ad dy caghlaa choud as t\'ou goll. Er-yn-oyr dy vel dagh cella fakin y nah chella, cha vod yn earroo cheddin ve ec daa naboo, myr shen ta\'n slabhra lhaih 4, 9, 4, 9 trooid ooilley - ny 9, 4, 9, 4, as cha vod oo gra cre\'n fer.\n\nEr yn daa aght, ta daa chella dy ghaa anchasley goaill earrooyn anchasley eddyr oc: she 4 unnane as she 9 y fer elley. Myr shen cha vod veg ta fakin ad ny neesht ve unnane erbee, as t\'eh coayl yn daa chummys ec yn un traa.\n\nTa\'n sampleyr aashagh dy chronnaghey dy kiart er-yn-oyr dy vel dagh cella ayn jeeaghyn yn aght cheddin. Eiyr er ny piyryn cheddin mygeayrt y ghreilley as jeeagh c\'raad t\'ad bentyn rish y cheilley."</string>
     <string name="msg_look_for_three_squares_holding_the_same_two_c_2ce1614a" formatted="false">"Shir tree cellaghyn lesh yn daa chummys cheddin - myr sampleyr {1,6} - ta soit ec tree corneilyn kiare-chorneilagh. Shegin da\'n kiare-chorneilagh ve ayns daa chishtey dy kiart: daa raie as daa cholloo goll trooid daa chishtey, cha nee kiare.\n\nNish jeeagh er y chiarroo corneil. My veagh eh goaill 1 as 6 ynrican myrgeddin, veagh daa fhreggyr ec y chlou - oddagh oo ny 1yn as 6yn y chaghlaa mygeayrt y kiare-chorneilagh as veagh dy chooilley red elley foast kiart. Ta un freggyr ec clou soit dy kiart, myr shen shegin da\'n chiarroo corneil ymmyd y yannoo jeh red elley: ta ny cummyssyn elley echey tannaghtyn, as ta 1 as 6 goll.\n\nShoh yn argane ynrican ayns y lioar ta mychione fer-soie yn chlou er son y ghreilley. T\'eh fondagh er clou soilshit as gyn feeuid er fer t\'ou er lhieeney dy foalsey hannah, er-yn-oyr nagh vel freggyr erbee ayn foddee ve ynrican."</string>
     <string name="msg_look_in_this_box_follow_the_outline_to_the_sq_764745f1" formatted="false">"Jeeagh ayns y chishtey shoh. Eiyr er y çheerey dys y chella nee\'n choyrle shoh soilshaghey."</string>
@@ -282,7 +282,7 @@
     <string name="msg_moderate_5c42afc7" formatted="false">"Meanagh"</string>
     <string name="msg_more_d47d7cb0" formatted="false">"Ny smoo"</string>
     <string name="msg_more_light_needed_4b4480e1" formatted="false">"Feme er ny smoo soilshey"</string>
-    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Ny smoo na un freggyr, myr shen va earroo clouit coaylt. Broo Fuaslee dy akin ny freggyrtyn as c\'raad t\'ad anchasley."</string>
+    <string name="msg_more_than_one_answer_so_a_printed_digit_was_m_0b53366f" formatted="false">"Ny smoo na un freggyr, myr shen va earroo clouit coaylt. Broo Fuasley dy akin ny freggyrtyn as c\'raad t\'ad anchasley."</string>
     <string name="msg_move_back_f4d6dba8" formatted="false">"Gow er ash"</string>
     <string name="msg_move_closer_1da054ae" formatted="false">"Gow ny s\'niessey"</string>
     <string name="msg_move_closer_the_grid_is_too_small_to_read_2b11c4a9" formatted="false">"Gow ny s\'niessey - ta\'n greilley ro-veg dy lhaih."</string>
@@ -383,7 +383,7 @@
     <string name="msg_removed_4118fb4f" formatted="false">"Scuggit"</string>
     <string name="msg_replay_reasoning_65ed4e7a" formatted="false">"Aa-chloie yn resooney"</string>
     <string name="msg_report_a_bug_or_idea_on_github_f3737cb0" formatted="false">"Cur coontey jeh marranys ny smooinaght er GitHub"</string>
-    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Prow yn shamra reesht"</string>
+    <string name="msg_retry_camera_ea2c7aee" formatted="false">"Prow yn camra reesht"</string>
     <string name="msg_return_to_step_0_7b9e40e5" formatted="false">"Çhyndaa dys kesh %1$s"</string>
     <string name="msg_reveal_explanation_f75b7c5c" formatted="false">"Taishbyney yn soilshaghey"</string>
     <string name="msg_review_or_submit_reading_88e23ff2" formatted="false">"Aa-scrutaghey ny cur stiagh lhaih"</string>
@@ -395,7 +395,7 @@
     <string name="msg_row_0_column_1_62476225" formatted="false">"Raa %1$s, colloon %2$s, "</string>
     <string name="msg_row_1_column_2_645d7932" formatted="false">"raa $1, colloon $2"</string>
     <string name="msg_row_634768da" formatted="false">"raa"</string>
-    <string name="msg_rows_bc51e9e6" formatted="false">"liggin"</string>
+    <string name="msg_rows_bc51e9e6" formatted="false">"raieyn"</string>
     <string name="msg_ruled_out_0_99296743" formatted="false">", %1$s scrysst magh"</string>
     <string name="msg_scan_diagnostics_could_not_be_read_5acf0b8e" formatted="false">"Cha dod fys faaishnee yn scann ve lhaiht."</string>
     <string name="msg_screenshots_or_puzzle_examples_8081414c" formatted="false">"## Jallooyn screen ny sampleyryn dy chlouyn"</string>
@@ -420,7 +420,7 @@
     <string name="msg_solution_0_6de814bf" formatted="false">", fuaslaghey %1$s"</string>
     <string name="msg_solve_451d387b" formatted="false">"Fuasley"</string>
     <string name="msg_solved_and_every_answer_is_right_9bf8e15e" formatted="false">"Fuaslit, as ta dy chooilley freggyrt kiart."</string>
-    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Freggyrt lesh cooney yn fhuaslagheyder: cur %1$s ayns %2$s. Ta ny iarrtee %3$s. Cha dooar ny aghtyn ta\'n app jannoo ymmyd jeu gleashaght veih\'n ynnyd shoh. Hooar yn shirrey echey %4$s ayns yn ynrican fhuaslaghey; cha nel prowal myn jeh banglaneyn yn shirrey ry-gheddyn."</string>
+    <string name="msg_solver_assisted_answer_place_0_in_1_the_candi_d24c86ad" formatted="false">"Freggyrt lesh cooney yn fhuaslagheyder: cur %1$s ayns %2$s. Ta ny cummyssyn %3$s. Cha dooar ny aghtyn ta\'n app jannoo ymmyd jeu gleashaght veih\'n ynnyd shoh. Hooar yn shirrey echey %4$s ayns yn ynrican fhuaslaghey; cha nel prowal myn jeh banglaneyn yn shirrey ry-gheddyn."</string>
     <string name="msg_solver_assisted_answer_the_app_s_supported_te_421bb81f" formatted="false">"\n\nFreggyr lesh cooney yn fhuaslagheyder: cha dooar ny cliaghtaghyn ta\'n app cur eab er gleashaght. Cha nel feanish minn avail."</string>
     <string name="msg_solver_assisted_elimination_a_search_rules_ou_a6e4db37" formatted="false">"Scughey lesh cooney yn fhuaslagheyder: ta shirrey cur %1$s ass yn killag soilsheydagh, agh cha dod yn app lorg giare jeh noi-chleayney y yannoo dy haishbyney. Cha nel prowal myn ry-gheddyn."</string>
     <string name="msg_some_cells_may_contain_notes_rather_than_a_fu_f51f961d" formatted="false">"Foddee noteyn ve ayns paart dy chillagyn ayns ynnyd earroo slane."</string>
@@ -489,25 +489,25 @@
     <string name="msg_that_square_allows_0_look_for_the_move_justif_98ac75ab" formatted="false">"Ta\'n killag shen lhiggey da %1$s. Shir son y ghleashaght ta aght yn chesh shoh prowal, ny taishbyn yn soilshaghey echey."</string>
     <string name="msg_that_square_is_already_filled_choose_an_empty_8a6c3da5" formatted="false">"Ta\'n killag shen lhieent hannah. Reih killag follym."</string>
     <string name="msg_the_assumption_has_been_rejected_we_return_to_5e5d5138" formatted="false">"Ta\'n obbyr-smooinaght er ny yioold. Ta shin çhyndaa dys ny iarrtee firrinagh as tayrn linney trooid %1$s ayns yn killag cowrit. Ta ny earrooyn obbyr-smooinaght er nyn scughey."</string>
-    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Cha dod yn shamra yn fotograaf shen y ghoaill."</string>
-    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Cha nel yn shamra ry-gheddyn. Doon appyn shamra elley, eisht prow reesht."</string>
+    <string name="msg_the_camera_could_not_take_that_photo_41435fc4" formatted="false">"Cha dod yn camra yn fotograaf shen y ghoaill."</string>
+    <string name="msg_the_camera_is_unavailable_close_other_camera__e08a05f0" formatted="false">"Cha nel yn camra ry-gheddyn. Dooin appyn camra elley, eisht prow reesht."</string>
     <string name="msg_the_other_ec8e3f15" formatted="false">"yn fer elley"</string>
     <string name="msg_the_photo_from_0_and_everything_read_from_it__d15c98e0" formatted="false">"Bee yn fotograaf veih %1$s as ooilley ny va lhaiht ass er nyn scughey veih\'n çhellvane shoh. Cha vod shoh ve neuchooilleenit."</string>
-    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Ta\'n jalloo ayns dty rolley dy chlouyn, fo \"Cha dod eh ve lhaiht\"."</string>
+    <string name="msg_the_photo_is_in_your_puzzle_list_under_would__6b009fa6" formatted="false">" Ta\'n jalloo ayns dty rolley dy chlouyn, fo \"Cha beagh eh lhaiht\"."</string>
     <string name="msg_the_pivot_here_is_0_or_1_either_way_one_of_th_54d09ee0" formatted="false">"Ta\'n keeau ayns shoh %1$s ny %2$s. Quallagh aght, ta fer jeh\'n daa chillag elley éginagh dy ve %3$s, myr shen cha vod %4$s ve ayns killag erbee ta fakin ad ny neesht."</string>
     <string name="msg_the_pointing_pair_read_backwards_take_a_row_o_348554f6" formatted="false">"Yn cubbyl cowragh lhaiht er ash. Gow raa ny colloon as earroo ta feme ynnyd ayn foast. Cowree dy chooilley chillag er y linney shen oddagh goaill yn earroo. My ta ooilley jeu ayns un chishtey, shegin da\'n earroo ve ayns cooid yn linney shen jeh\'n chishtey - myr shen cha nel eh ayns ynnyd elley ayns y chishtey, goaill stiagh yn daa raa ny colloon jeh nagh row oo jeeaghyn orroo.\n\nMyr yn cubbyl cowragh, cha nel shoh soiaghey veg er e hon hene; t\'eh jannoo rym son red ta."</string>
     <string name="msg_the_printed_digits_do_not_make_a_solvable_puz_f75c38ba" formatted="false">"Cha nel ny earrooyn clouit jannoo pussal foddee ve fuaslit."</string>
     <string name="msg_the_remaining_candidates_at_0_are_1_place_2_i_f58c18b9" formatted="false">"\n\nTa ny cummyssyn ta faagit ec %1$s {%2$s}. Cur %3$s ayns raie %4$s, colloo %5$s."</string>
     <string name="msg_the_report_is_too_large_to_submit_a87c86cd" formatted="false">"Ta\'n coontey ro voo dy chur stiagh."</string>
-    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_6ae4ef8d" formatted="false">"Yn Y-skee lesh un iarrtagh elley ayns y cheeau. Shir son killag lesh tree iarrtee dy kiart, abbyr {1,4,7}, ta fakin daa chillag lesh daa iarrtagh - fer {1,7} as fer {4,7}.\n\nNish foddee 7 ve ayns ooilley ny tree, as shegin da ve ayns fer jeu. Myr shen shegin da killag fakin ooilley ny tree dy scughey yn earroo ass, cha nee yn daa ghreimagh ny lomarcan - ayns cliaghtey, ta shen çheet dy vel eh ayns yn un chishtey as y cheeau as er linney lesh greimagh.\n\nTa ny sloo scugheeyn echey na Y-skee, as t\'eh ny sassey dy lhiggey shaghey son yn un oyr: cha nel y cheeau ry-akin dy baghtal."</string>
-    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Ta killag foddee oo lhieeney ayns yn kishtey soilsheydagh.\n\nBroo er Cooney reesht dy gheddyn fys cre\'n aght ta feddyn eh."</string>
+    <string name="msg_the_y_wing_with_the_pivot_holding_one_candida_7dabfed6" formatted="false">"Yn Y-skee lesh un iarrtagh elley ayns y cheeau. Shir son killag lesh tree iarrtee dy kiart, abbyr {1,4,7}, ta fakin daa chillag lesh daa iarrtagh - fer {1,7} as fer {4,7}.\n\nNish foddee 7 ve ayns ooilley ny tree, as shegin da ve ayns fer jeu. Myr shen shegin da killag fakin ooilley ny tree dy scughey yn earroo ass, cha nee yn daa ghreimagh ny lomarcan - ayns cliaghtey, ta shen çheet dy vel eh ayns yn un chishtey as y cheeau as er linney lesh greimagh.\n\nTa ny sloo scugheeyn echey na Y-skee, as t\'eh ny sassey dy lhiggey shaghey son yn un oyr: cha nel y cheeau ry-akin dy baghtal."</string>
+    <string name="msg_there_is_a_square_you_can_fill_in_the_highlig_29d7d1ec" formatted="false">"Ta killag foddee oo lhieeney ayns yn kishtey soilsheydagh.\n\nBroo er Coyrle reesht dy gheddyn fys cre\'n aght ta feddyn eh."</string>
     <string name="msg_there_is_nothing_left_here_to_reason_about_c54e0042" formatted="false">"Cha nel veg er mayrn ayns shoh dy resooney my-e-chione."</string>
     <string name="msg_these_0_squares_all_hold_only_1_and_2_and_eac_6a9464f2" formatted="false">"Cha nel ayns ooilley ny %1$s killagyn shoh agh %2$s as %3$s, as ta dy chooilley fer fakin yn nah fer, myr shen t\'ad malartaghey ooilley yn raad. Ta earroo corr dy chianglaghyn eddyr %4$s as %5$s, as myr shen t\'ad goaill earrooyn anchasley - ta shen scughey %6$s veih red erbee ta fakin ad ny neesht."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_3d016fba" formatted="false">"Cha nel ayns ny %1$s killagyn shoh eddyr oc agh %2$s, myr shen ta ny earrooyn shen lhieeney ad ayns oardagh ennagh. Ta shen scughey %3$s veih\'n chooid elley jeh\'n %4$s shoh."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_65ac3d66" formatted="false">"Cha vod ny %1$s kill shoh goaill agh %2$s eddyr oc, myr shen ta ny earrooyn shen lhieeney ad ayns oardagh ennagh. Ta shen cur %3$s ass y chooid elley jeh\'n straih shoh."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_cb010f99" formatted="false">"Cha vod ny %1$s kill shoh goaill agh %2$s eddyr oc, myr shen ta ny earrooyn shen lhieeney ad ayns oardagh ennagh. Ta shen cur %3$s ass y chooid elley jeh\'n cholloo shoh."</string>
     <string name="msg_these_0_squares_hold_only_1_between_them_so_t_f3313505" formatted="false">"Cha vod ny %1$s kill shoh goaill agh %2$s eddyr oc, myr shen ta ny earrooyn shen lhieeney ad ayns oardagh ennagh. Ta shen cur %3$s ass y chooid elley jeh\'n chishtey shoh."</string>
-    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Shoh ny iarrtee toshee son dty chillag. Ta Lorg soilshaghey cre ny oddaghyn foddee ve scuggit."</string>
+    <string name="msg_these_are_the_starting_candidates_for_your_sq_5bab7f8e" formatted="false">"Shoh ny cummyssyn toshee son dty chillag. Ta Lorg soilshaghey cre ny oddaghyn foddee ve scuggit."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_and_too_muc_0ea330b4" formatted="false">"Cha vod ny earrooyn shoh jannoo pussal, as ta rouyr aggair dy ghra cre ta aggair. Broo er killag erbee dy cheartaghey yn lhaih, ny gow yn fotograaf reesht."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_cdc4196a" formatted="false">"Cha vod ny earrooyn shoh jannoo pussal. Yinnagh caghlaa ny %1$s killagyn cruinnit eh y cheartaghey - broo er fer jeu dy cheartaghey yn lhaih."</string>
     <string name="msg_these_digits_cannot_make_a_puzzle_changing_th_d14afa0d" formatted="false">"Cha vod ny earrooyn shoh jannoo pussal. Yinnagh caghlaa yn ynrican chillag cruinnit eh y cheartaghey - broo er dy cheartaghey yn lhaih."</string>
@@ -518,15 +518,15 @@
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_1_squ_63112413" formatted="false">"Cha jean shoh lhieeney stiagh red erbee. T\'eh cur %1$s magh myr reih son %2$s kerrinyn."</string>
     <string name="msg_this_fills_nothing_in_it_rules_0_out_of_one_s_4b68efbd" formatted="false">"Cha jean shoh lhieeney stiagh red erbee. T\'eh cur %1$s magh myr reih son un cherrin."</string>
     <string name="msg_this_is_the_first_of_0_deductions_leading_to__1fd13bb2" formatted="false">"\n\nShoh yn chied jeh %1$s co-choyrleyn ta leeideil dys y freggyr."</string>
-    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Ta\'n prowal shoh soilshaghey un chooney, goaill stiagh scugheeyn iarrtee ta leeideil dys e freggyrt. Gow kesh er oaie dy eiyrt er y resooney er y ghreilley, eisht tannaghtyn lesh y raad slane."</string>
+    <string name="msg_this_proof_explains_one_hint_including_the_ca_3743eb49" formatted="false">"Ta\'n prowal shoh soilshaghey un choyrle, goaill stiagh scugheeyn cummyssyn ta leeideil dys e freggyrt. Gow kesh er oaie dy eiyrt er y resooney er y ghreilley, eisht tannaghtyn lesh y raad slane."</string>
     <string name="msg_this_puzzle_could_not_be_prepared_b21691aa" formatted="false">"Cha dod yn pussal shoh ve graithit."</string>
     <string name="msg_this_puzzle_could_not_be_saved_you_can_still__f5a487e3" formatted="false">"Cha dod yn pussal shoh ve sauailt. Foddee oo jannoo ymmyd jeh nish foast. Seyr paart dy stoyr roish goaill fotograaf elley."</string>
     <string name="msg_this_puzzle_has_more_than_one_answer_so_a_pri_9ebc4a41" formatted="false">"Ta ny smoo na un freggyrt ec y phussal shoh, myr shen s\'cosoylagh dy row earroo clouit lhiggit shaghey. Taishbyney freggyrt %1$s jeh %2$s - broo er Fuasley reesht son yn nah fer. Ta ny killagyn cruinnit anchasley eddyr ny freggyrtyn taishbynt."</string>
     <string name="msg_this_puzzle_s_photo_could_not_be_opened_e0595b10" formatted="false">"Cha dod fotograaf yn phussal shoh ve foshlit."</string>
     <string name="msg_this_reasoning_excludes_0_existing_78d42ca5" formatted="false">"Ta\'n resooney shoh scughey %1$s ta ayn "</string>
-    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Foddee noteyn iarrtee ve ayns yn killag shoh ayns ynnyd earroo slane. Jean scrutaghey er."</string>
-    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Ta\'n shilley shoh goaill stiagh scugheeyn iarrtee roish. Foshil yn feanish oc fo shoh dy scrutaghey ad."</string>
-    <string name="msg_three_8b5b9db0" formatted="false">"three"</string>
+    <string name="msg_this_square_may_contain_candidate_notes_rathe_b2fda100" formatted="false">"Foddee noteyn son cummyssyn ve ayns yn killag shoh ayns ynnyd earroo slane. Jean scrutaghey er."</string>
+    <string name="msg_this_view_includes_earlier_candidate_removals_c1ab7545" formatted="false">"Ta\'n shilley shoh goaill stiagh scugheeyn cummyssyn roish. Foshil yn feanish oc fo shoh dy scrutaghey ad."</string>
+    <string name="msg_three_8b5b9db0" formatted="false">"tree"</string>
     <string name="msg_too_dark_to_make_out_the_grid_lines_0e73228a" formatted="false">"Ro dorraghey dy akin linnaghyn y ghreilley"</string>
     <string name="msg_trace_7e14c3d7" formatted="false">"Lorg"</string>
     <string name="msg_tried_out_a44e90a4" formatted="false">"Prowit"</string>
@@ -544,7 +544,7 @@
     <string name="msg_unsupported_model_format_version_7e6f7d7f" formatted="false">"lhieggan aght sampleyr gyn cooney"</string>
     <string name="msg_unsure_df18af6b" formatted="false">"Mee-hickyr"</string>
     <string name="msg_use_device_language_3fb007ba" formatted="false">"Ymmyd çhengey yn ymmyrkeyder"</string>
-    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Lesh %1$s, broo er un chillag raad foddee iarrtagh ve scuggit, eisht reih yn earroo shen."</string>
+    <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Lesh %1$s, broo er un chillag raad foddee cummys ve scuggit, eisht reih yn earroo shen."</string>
     <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Lesh %1$s, broo er y chillag foddee oo lhieeney, eisht reih yn earroo echey."</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Feer doillee"</string>
@@ -561,7 +561,7 @@
     <string name="msg_why_this_square_0_a7f55a02" formatted="false">"Cre\'n fa\'n killag shoh? · %1$s"</string>
     <string name="msg_with_the_solution_use_check_to_inspect_them_d6b645e3" formatted="false">" rish y fhuaslaghey. Ymmyd jeh Scrut dy scrutaghey ad."</string>
     <string name="msg_work_backwards_from_your_square_choose_a_ques_aafdcbfd" formatted="false">"Obbree er ash veih dty chillag. Reih feysht fo shoh."</string>
-    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_64206cc0" formatted="false">"Obbree earroo lurg earroo ayns ynnyd killag lurg killag. Son un unnid, screeu sheese c\'raad foddee dy chooilley earroo laccal goll foast. Eisht shir son %1$s earrooyn nagh vel ny listyn oc eddyr oc goaill stiagh agh %2$s killagyn.\n\nShegin da ny %3$s earrooyn shen lhieeney ny %4$s killagyn shen, myr shen foddee ooilley ny earrooyn elley ayns oc ve scuggit - as dy mennick ta shen çhyndaa fer jeu dys fer lom ny cubbyl lom dy çhelleeragh.\n\nShoh yn aght ta sleih feddyn ny s\'doillee, er y fa nagh vel veg ry-akin tra t\'ou jeeaghyn er ny killagyn: ta ymmodee iarrtee oc foast. Ta\'n patron ayns ny earrooyn."</string>
+    <string name="msg_work_digit_by_digit_rather_than_square_by_squ_3c66f08b" formatted="false">"Obbree earroo lurg earroo ayns ynnyd killag lurg killag. Son un unnid, screeu sheese c\'raad foddee dy chooilley earroo laccal goll foast. Eisht shir son %1$s earrooyn nagh vel ny listyn oc eddyr oc goaill stiagh agh %2$s killagyn.\n\nShegin da ny %3$s earrooyn shen lhieeney ny %4$s killagyn shen, myr shen foddee ooilley ny earrooyn elley ayns oc ve scuggit - as dy mennick ta shen çhyndaa fer jeu dys fer lom ny cubbyl lom dy çhelleeragh.\n\nShoh yn aght ta sleih feddyn ny s\'doillee, er y fa nagh vel veg ry-akin tra t\'ou jeeaghyn er ny killagyn: ta ymmodee iarrtee oc foast. Ta\'n patron ayns ny earrooyn."</string>
     <string name="msg_work_only_with_squares_that_have_exactly_two__90ddb694" formatted="false">"Obbree lesh killagyn ny lomarcan ta lesh daa iarrtagh dy kiart er mayrn.\n\nToshee ec fer, abbyr {2,6}, as smooin nagh nee yn 2 t\'ayn - eisht she yn 6 t\'ayn. Gow dys killag t\'eh fakin ta lesh 6 neesht, abbyr {6,4}: cha vod yn 6 ve ayns shen, myr shen she yn 4 t\'ayn. Gow dys killag ta\'n fer shen fakin lesh 4 ayn, as tannaghtyn lesh, dy chooilley chesh éginagh liorish y fer roish.\n\nMy roshtys oo killag ta\'n earroo elley echey 2 - yn earroo ren oo scughey hoshiaght - t\'ou erreish. Ny she 2 va ayns yn chied chillag lurg ooilley, ny hie yn slabhra er oaie as ta 2 ayns y chillag s\'jerree. Ta\'n earroo ayns un jerrey ny\'n jerrey elley, myr shen cha vod eh ve ayns red erbee ta fakin yn daa yerrey.\n\nFreill ny slabhryn giare. Foddee oo feddyn kiare ny queig killagyn lesh penshil; ny sodjey na shen t\'ou freayll coontey, as she slabhra éginagh yn ennym firrinagh er."</string>
     <string name="msg_working_edge_must_be_positive_and_finite_99eeb34a" formatted="false">"shegin da\'n oirr obbree ve deimhinagh as caglit"</string>
     <string name="msg_would_not_read_750bc135" formatted="false">"Cha beagh eh lhaiht"</string>

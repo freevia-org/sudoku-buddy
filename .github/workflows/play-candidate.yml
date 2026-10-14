@@ -68,6 +68,10 @@ jobs:
         run: ./gradlew :app:checkReleaseSigning --console=plain
       - name: Test the offline bundle audit
         run: python3 -m unittest discover -s tools/release -p 'test_*.py' -v
+      - name: Validate bundled translations
+        run: |
+          python3 -m unittest discover -s tools/i18n -p 'test_*.py'
+          python3 tools/i18n/validate.py
       - name: Build and check final sources
         env:
           SIGNING_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}

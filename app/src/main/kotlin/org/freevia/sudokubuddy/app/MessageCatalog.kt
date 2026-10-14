@@ -29,6 +29,11 @@ internal class MessageCatalog(messages: List<Pair<String, String>>) {
             "{0} printed, {1}, {2} wrong" to setOf(0, 2),
         )
         val evidenceArguments: Map<String, Map<Int, String>> = buildMap {
+            // Outlook joins one shape sentence to an ending that may contain
+            // several sentences. A whitespace boundary splits the shape at its
+            // first word, preventing either complete message from translating.
+            put("{0} steps make up this route, with {1} as the hardest supported technique. {2} {3}",
+                mapOf(0 to "[0-9]+", 2 to "[^.]+\\.", 3 to ".+"))
             val digit = "[1-9]"
             // VisualHint expands compact coordinates before presenting its caption.
             val cell = "(?:r[1-9]c[1-9]|row [1-9], column [1-9])"
