@@ -33,7 +33,7 @@
   "Submission receipts": "Recibos de envio",
   "Freevia will delete this report revision and its private training copy. Future corrections may create a new report under your sharing settings. A model already trained on it may retain learned changes.": "A Freevia eliminará esta versão do relatório e a sua cópia privada de treino. As correções futuras podem criar um novo relatório segundo as suas definições de partilha. Um modelo já treinado com estes dados pode conservar as alterações aprendidas.",
   "finished": "concluído",
-  " The photo is in your puzzle list, under \"Would not read\".": " A fotografia está na sua lista de puzzles, em \"Não foi possível ler\".",
+  " The photo is in your puzzle list, under \"Would not read\".": " A fotografia está na sua lista de sudokus, em \"Não foi possível ler\".",
   " {0} in the same {1}.": " {0} na mesma unidade ({1}).",
   "Almost - hold the page flat and square to the camera": "Quase — mantenha a página plana e paralela ao plano da câmara",
   "Chaining {0} through the units where it has only two homes leaves these squares in two alternating colours, and one colour is true throughout. These squares can see both colours, so whichever way the chain falls one of the squares they see holds {1} - which means they cannot.": "Encadear {0} através das unidades onde tem apenas duas posições possíveis deixa estas casas com duas cores alternadas, e uma cor é verdadeira em toda a extensão. Estas casas conseguem ver ambas as cores, pelo que, qualquer que seja o desfecho da cadeia, uma das casas que veem contém {1} — o que significa que não podem conter esse dígito.",
@@ -41,8 +41,8 @@
   "Contradiction: the red {0} has nowhere left for {1}. This is impossible, so the starting assumption must fail.": "Contradição: a unidade a vermelho ({0}) não tem qualquer posição restante para {1}. Isto é impossível, pelo que a suposição inicial tem de falhar.",
   "Hint": "Pista",
   "Hold the phone flat": "Mantenha o telemóvel paralelo à página",
-  "Hold the phone flat above the puzzle": "Mantenha o telemóvel paralelo à página, por cima do puzzle",
-  "Hold the phone flat above the puzzle.": "Mantenha o telemóvel paralelo à página, por cima do puzzle.",
+  "Hold the phone flat above the puzzle": "Mantenha o telemóvel paralelo à página, por cima do sudoku",
+  "Hold the phone flat above the puzzle.": "Mantenha o telemóvel paralelo à página, por cima do sudoku.",
   "In these two {0}, {1} has only two homes each, and {2} and {3} share a {4} - so they cannot both be {5}. One of {6} and {7} therefore is, which rules {8} out of every square that sees them both.": "Nestas duas unidades ({0}), {1} tem apenas duas posições possíveis em cada uma, e {2} e {3} partilham uma unidade ({4}) — logo não podem conter ambos {5}. Uma das casas {6} e {7} contém, portanto, esse dígito, o que elimina {8} de todas as casas que veem ambas.",
   "In these {0} {1}, {2} can only go in these {3} {4}. Between them they use up every one, so {5} can be ruled out of those {6} everywhere else.": "Neste conjunto de {0} unidades ({1}), {2} só pode ir para estas {3} unidades ({4}). Entre si ocupam todas elas, pelo que {5} pode ser eliminado das restantes casas das unidades indicadas ({6}).",
   "In this {0}, {1} can only go in these {2} squares, so those squares are spoken for. That rules {3} out of them.": "Nesta unidade ({0}), {1} só pode ir para estas {2} casas, pelo que essas casas estão reservadas. Isso elimina {3} delas.",
@@ -68,5 +68,5 @@
   "{0} squares": "{0} casas",
   "{0} steps make up this route, with {1} as the hardest supported technique. {2} {3}": "{0} passos compõem este percurso, sendo {1} a técnica suportada mais difícil. {2} {3}",
   "Choose what to show": "Escolher o que mostrar",
-  "Every sudoku with one answer can be solved by reasoning; guessing is never required and rarely helps. These are the ways of reasoning this app can recognise and explain, easiest first. Where one of them applies to the puzzle you have open, it will show you every place it does.": "Todos os sudokus com uma única resposta podem ser resolvidos por dedução; adivinhar nunca é necessário e raramente ajuda. Estas são as formas de dedução que esta aplicação consegue reconhecer e explicar, das mais fáceis para as mais difíceis. Onde uma delas se aplicar ao puzzle aberto, mostrar-lhe-á todos os locais onde se aplica."
+  "Every sudoku with one answer can be solved by reasoning; guessing is never required and rarely helps. These are the ways of reasoning this app can recognise and explain, easiest first. Where one of them applies to the puzzle you have open, it will show you every place it does.": "Todos os sudokus com uma única resposta podem ser resolvidos por dedução; adivinhar nunca é necessário e raramente ajuda. Estas são as formas de dedução que esta aplicação consegue reconhecer e explicar, das mais fáceis para as mais difíceis. Onde uma delas se aplicar ao sudoku aberto, mostrar-lhe-á todos os locais onde se aplica."
 }
