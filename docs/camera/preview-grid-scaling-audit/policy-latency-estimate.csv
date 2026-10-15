@@ -1,0 +1,4 @@
+"strategy","photos","fallbackPhotos","p50Ms","p90Ms"
+"720-first, no fallback","20","0","243.9","458"
+"always 960","20","20","352.7","660"
+"720 then 960 on no-grid OR score<0.4 OR outside-frame quad","20","17","596.2","1094.4"
