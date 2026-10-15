@@ -19,18 +19,15 @@ automatically. Play reports no
 errors and the same two non-blocking warnings as before: no deobfuscation mapping and no native
 debug symbols.
 
-Firebase App Distribution is retired (PR #44); Play is the only distribution channel. Builds
-previously installed from Firebase share the release key Play signs with, so they should update
-in place to 240. That upgrade, and retention of app data across it, is not yet verified on a
-device. Linguistic review remains model-assisted and partial; locale content has not received
+Play is the only distribution channel. Linguistic review remains model-assisted and partial; locale content has not received
 native-speaker review.
 
 ## Current training-release evidence
 
 | Area | Evidence and limit |
 | --- | --- |
-| Reviewed source | Main includes PR #43 (1.0.1, merged as `091ee86`) and PR #44 (Firebase retired, merged as `af1862b`). Only `main` remains; superseded branches are archived as `archive/codex/*` tags. |
-| Packaged candidate identity | Workflow [38694510814](https://github.com/freevia-org/sudoku-buddy/actions/runs/38694510814) passed for code 240 from `091ee869f5e88e1b0fcd4f1ebcd1353c2d714240`; AAB SHA-256 `33dbbacdc38432502a641da6b667369d2c47772e92092ef682eb10de4e2e6439`. Package checks confirm the stable upload certificate and native alignment. Play-delivered installation and the Firebase-to-Play in-place upgrade remain untested. |
+| Reviewed source | Main includes PR #43 (1.0.1, merged as `091ee86`) and PR #44 (distribution moved to Play only, merged as `af1862b`). Only `main` remains; superseded branches are archived as `archive/codex/*` tags. |
+| Packaged candidate identity | Workflow [38694510814](https://github.com/freevia-org/sudoku-buddy/actions/runs/38694510814) passed for code 240 from `091ee869f5e88e1b0fcd4f1ebcd1353c2d714240`; AAB SHA-256 `33dbbacdc38432502a641da6b667369d2c47772e92092ef682eb10de4e2e6439`. Package checks confirm the stable upload certificate and native alignment. Play-delivered installation remains untested. |
 | Build and review process | After any release-relevant source or disclosure change, build with `play-candidate.yml` using a code greater than every code uploaded to Play; verify the sealed candidate and checks artifacts independently. A successful workflow does not establish device qualification, live backend behavior or Play-delivered installation. |
 | Superseded initial training build | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) built code 125 from `46831610f88d37ee4d73867da14b2bc0c182710f` before the handoff refresh. That specific package embeds the earlier documents and is superseded as a publishing handoff. This historical limitation does not describe every later package using code 125. Preserve that run's inventory unchanged and distinguish builds by source, run and AAB hash, not version code alone. |
 | Signing | Keep the existing stable upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key is needed. |
