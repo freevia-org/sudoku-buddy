@@ -6,6 +6,25 @@ from catalog import ROOT, RES, extract, resource_directory
 from prepare import bundled
 from translate_cli import brand_count, literal_notation
 
+def structural_problems(source, translated):
+    """Ways a translation can damage a message's shape that the other checks miss.
+
+    Placeholders, candidate sets, addresses, brands and boundary spacing are
+    checked below. These two are not, and both are live: 408 sources carry a
+    paragraph break and 11 carry brackets. A translation that merges two
+    paragraphs, or drops the close of a bracket, reads plausibly on its own and
+    is only wrong against the English. Brackets are compared as a balance
+    rather than a count, so a translation may add a balanced pair of its own and
+    a source fragment that is itself unbalanced must stay unbalanced the same way.
+    """
+    problems = []
+    if source.count("\n") != translated.count("\n"):
+        problems.append("changed paragraph breaks")
+    for opening, closing in (("(", ")"), ("[", "]")):
+        if source.count(opening) - source.count(closing) != translated.count(opening) - translated.count(closing):
+            problems.append(f"unbalanced {opening}{closing}")
+    return problems
+
 def validate_actions(entries, decoded, language, actions):
     keys = {entry["source"]: entry["key"] for entry in entries}
     labels = dict(zip(actions["keys"], actions["languages"][language], strict=True))
@@ -52,6 +71,8 @@ def validate():
                 assert source.count(brand) == brand_count(decoded[key], brand, language), f"{language}/{key}: changed brand"
             if "\n" in source and "\\n" not in source:
                 assert "\\n" not in decoded[key], f"{language}/{key}: literal escaped paragraph break"
+            problems = structural_problems(source, decoded[key])
+            assert not problems, f"{language}/{key}: {', '.join(problems)}"
     print(f"Validated {len(locales)} complete catalogs, {len(entries)} messages each.")
 
 if __name__ == "__main__": validate()
