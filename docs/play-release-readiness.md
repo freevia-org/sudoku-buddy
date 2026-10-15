@@ -2,34 +2,41 @@
 
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 12 October 2026 after merge of translation PR #36 and the Brazilian Portuguese
-source-override fix PR #37. **Main is at `a2e1bdf13542bb5422c0eca092d37ffdb6243ed5`. Candidate workflow
-[38266723323](https://github.com/freevia-org/sudoku-buddy/actions/runs/38266723323) passed
-for version code 131, built from merged app commit `14eb57e2dc8c66cc042e0d62860cdcc474213b6a`.
-The AAB SHA-256 is `d6e289151736ad03aa58886d327f7fa1b03b7d0dc9af8c5c2fbe9567e52764a9`; its
-checksum inventory, signing certificate and native alignment evidence were verified. Version
-131 is published to Internal testing for the five configured testers. Production version 131
-replaces 130 in review for a 100% rollout across 178 countries/regions. Managed publishing is
-off, so Google approval will publish it automatically. Quick checks are running. The release
-has no blocking errors; Play warns that deobfuscation mapping and native debug-symbol files are
-absent. The candidate's emulator check used the updated debug app with Romanian selected; this
-does not verify a Play-delivered install, physical-device behavior, or actual report submission.
-Linguistic review remains model-assisted and partial: 39 confirmed fixes were applied, but the
-other locale content, including consent/privacy and advanced tutor explanations, has not
-received equivalent native-speaker review.
+Updated 15 October 2026 for release **1.0.1 (240)**. Candidate workflow
+[38694510814](https://github.com/freevia-org/sudoku-buddy/actions/runs/38694510814) (run 21)
+passed for version code 240, built from merged commit `091ee869f5e88e1b0fcd4f1ebcd1353c2d714240`
+(PR #43). The AAB is 73,601,139 bytes with SHA-256
+`33dbbacdc38432502a641da6b667369d2c47772e92092ef682eb10de4e2e6439`; bundletool validation, the
+pinned upload certificate and native alignment passed in the workflow. Play processed it as
+API 26+, target SDK 36, four ABIs, three required features, with no change in supported devices.
+
+Version 240 was published to Internal testing on 15 October 2026, replacing `1.0.0 (132)`
+(an earlier internal-only build not otherwise recorded here). A production release of 240 at
+100% in all targeted countries was sent for review the same day. It replaces 131, whose review
+had been in progress since 12 October; Play cancelled that review and restarted it with 240,
+which adds to the wait. Managed publishing is off, so Google approval publishes
+automatically. Play reports no
+errors and the same two non-blocking warnings as before: no deobfuscation mapping and no native
+debug symbols.
+
+Firebase App Distribution is retired (PR #44); Play is the only distribution channel. Builds
+previously installed from Firebase share the release key Play signs with, so they should update
+in place to 240. That upgrade, and retention of app data across it, is not yet verified on a
+device. Linguistic review remains model-assisted and partial; locale content has not received
+native-speaker review.
 
 ## Current training-release evidence
 
 | Area | Evidence and limit |
 | --- | --- |
-| Reviewed source | Main is `a2e1bdf13542bb5422c0eca092d37ffdb6243ed5`; translation PR #36 and the Brazilian Portuguese override fix PR #37 are merged. |
-| Packaged candidate identity | Workflow [38266723323](https://github.com/freevia-org/sudoku-buddy/actions/runs/38266723323) passed for code 131 from app commit `14eb57e2dc8c66cc042e0d62860cdcc474213b6a`; AAB SHA-256 `d6e289151736ad03aa58886d327f7fa1b03b7d0dc9af8c5c2fbe9567e52764a9`. Package checks confirm the stable upload certificate and native alignment. It is live on Internal testing and in Production review; Play-delivered installation and actual report-submission behavior remain untested. |
+| Reviewed source | Main includes PR #43 (1.0.1, merged as `091ee86`) and PR #44 (Firebase retired, merged as `af1862b`). Only `main` remains; superseded branches are archived as `archive/codex/*` tags. |
+| Packaged candidate identity | Workflow [38694510814](https://github.com/freevia-org/sudoku-buddy/actions/runs/38694510814) passed for code 240 from `091ee869f5e88e1b0fcd4f1ebcd1353c2d714240`; AAB SHA-256 `33dbbacdc38432502a641da6b667369d2c47772e92092ef682eb10de4e2e6439`. Package checks confirm the stable upload certificate and native alignment. Play-delivered installation and the Firebase-to-Play in-place upgrade remain untested. |
 | Build and review process | After any release-relevant source or disclosure change, build with `play-candidate.yml` using a code greater than every code uploaded to Play; verify the sealed candidate and checks artifacts independently. A successful workflow does not establish device qualification, live backend behavior or Play-delivered installation. |
 | Superseded initial training build | [Workflow 38017589369](https://github.com/freevia-org/sudoku-buddy/actions/runs/38017589369) built code 125 from `46831610f88d37ee4d73867da14b2bc0c182710f` before the handoff refresh. That specific package embeds the earlier documents and is superseded as a publishing handoff. This historical limitation does not describe every later package using code 125. Preserve that run's inventory unchanged and distinguish builds by source, run and AAB hash, not version code alone. |
 | Signing | Keep the existing stable upload certificate: SHA-256 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`. No replacement key is needed. |
-| Play state | Internal testing has published `1.0.0 (131)` to the five configured testers. Production `1.0.0 (131)` is submitted for 100% rollout in 178 regions, replacing 130; Google quick checks are running. Managed publishing is off; approval publishes automatically. No blocking errors; two non-blocking warnings (no deobfuscation mapping and no native debug symbols). |
-| Listing and declarations | The en-US listing and Data Safety declaration are included in the version 131 submission under review; the Release session confirmed no unsent console changes. Recheck the published listing and declarations after approval. |
-| Production | Version 131 is in review for a 100% rollout across 178 countries/regions. Managed publishing is off. Google approval will publish automatically. |
+| Play state | Internal testing: `240 (1.0.1)` published 15 October 2026, replacing `1.0.0 (132)`. Production: `240 (1.0.1)` at 100% in all targeted countries, sent for review on 15 October, replacing `1.0.0 (131)`, whose review (in progress since 12 October) Play cancelled and restarted with 240. Google quick checks were running at submission. No errors; two non-blocking warnings (no deobfuscation mapping and no native debug symbols). |
+| Listing and declarations | The en-US listing, Data Safety declaration and 177-country availability were part of the 131 submission. Recheck the published listing and declarations after approval. |
+| Production | Release notes for 240 are `docs/play-release-notes-en-US.txt` (337 characters). Managed publishing is off; Google approval publishes automatically. |
 | Public copy | `https://freevia.org/sudoku-buddy/privacy/` and `docs/privacy-policy.md` were reviewed on 10 October. The page explains report payload/retention/deletion and Cloudflare's possible IP-derived approximate location handling. Recheck the live page before future release changes. |
 | Feedback API verification | The Worker passes 27/27 API tests; Wrangler 4.149.0 dry-run packages all four expected bindings. On 10 October, private Standard bucket `sudoku-buddy-training-examples` was created and Worker version `f40e9ee7-18c7-492e-96c9-e150c519a1a1` deployed. A synthetic 8-byte ZIP with exact training consent returned `201 accepted`; DELETE for its SHA-256 receipt returned `200 deleted`. A second synthetic ZIP without consent also returned `201 accepted` and `200 deleted`. No real photo was uploaded. A KV key listing found no `reports/` keys during cutover verification. The R2 dashboard confirmed public access disabled and 0 B stored after the tests. This does not test Android submission, live retries, partial failures, concurrent upload/delete, or expiry timing. |
 

@@ -1,6 +1,11 @@
 # Sudoku Buddy — Play Console submission sheet
 
-Current status snapshot (10 October 2026, after renewed release work): main is clean at
+> Current state (15 October 2026): `1.0.1 (240)` is live on Internal testing and in review for
+> Production, replacing 131. The listing, Data Safety and country answers below went out with
+> the 131 submission. `docs/play-release-readiness.md` holds the authoritative release state;
+> the snapshot that follows is kept for history.
+
+Historical status snapshot (10 October 2026, after renewed release work): main is clean at
 `786402d57b01bc623cc6940492ff75deb658e96e`. Candidate workflow [38038748245](https://github.com/freevia-org/sudoku-buddy/actions/runs/38038748245)
 passed for code 126 from that commit; its AAB SHA-256 is
 `AF1CA3B6E979745213DF54D55AFA84A518DC5AA999B8ABC2A1014A82425125F0`. It is still an offline
