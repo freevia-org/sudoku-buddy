@@ -16,7 +16,7 @@ every run. Two consecutive builds were signed by two different certificates:
 
 The app already has a stable key, now also imported into Play App Signing. Do not run
 this example to replace it. Keep the existing file and passwords safe: they are needed
-for direct Firebase/local updates. Play upload-key recovery is described below.
+for local builds. Play upload-key recovery is described below.
 
 ```bash
 keytool -genkeypair -v \
@@ -48,7 +48,7 @@ path; `app/build.gradle.kts` picks it up from there.
 
 A local build still works — it falls back to the debug key, which is what you want on a
 development machine. What it will not do is reach anybody: `checkReleaseSigning` runs
-before `appDistributionUpload` and `distributeLocal` and fails the job, because a debug-signed release that
+before `play-candidate.yml` builds a release for Play and fails the job, because a debug-signed release that
 testers cannot update is worse than no release at all.
 
 The check also requires the store password, key alias and key password. Local
@@ -86,21 +86,23 @@ over, whoever built it.
 ## Historical move from debug signing
 
 The original move from changing CI debug keys to the stable release key required a new
-installation. This is historical; do not uninstall current stable-key Firebase builds
-for the Play migration. Uninstalling removes their app data.
+installation. This is historical; do not uninstall stable-key builds installed earlier through
+Firebase App Distribution (now retired) to move to Play. Uninstalling removes their app data.
 
 ## Google Play signing
 
 Google holds the *app signing key* used for Play-delivered APKs. On 8 October 2026, the
 existing release key was imported with explicit user authorization. The same certificate
 is also registered as the *upload key*, which signs the bundles submitted to Play. Local
-and Firebase builds continue to use this stable key.
+builds, and the retired Firebase builds, use this same stable key.
 
 Google can reset the upload key on request without changing Play's app-signing identity.
-That does not recover the private key needed for direct Firebase/local updates. Keep
+That does not recover the private key needed for local updates. Keep
 the existing keystore and passwords safe and outside the repository and release handoff.
 
-The configured Play app-signing identity now matches Firebase App Distribution builds.
+The configured Play app-signing identity matches the builds testers installed through the
+retired Firebase App Distribution, so those installs update in place from Play when Play
+carries a higher version code - which is why 1.0.1 is code 240, above Firebase's last, 234.
 Verify the certificate and data retention of an actual Play-delivered upgrade before
 treating that migration as tested.
 

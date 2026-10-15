@@ -36,7 +36,7 @@ Originally prepared 8 September 2026; refreshed for the merged training-consent 
 Account setup is already saved. On 8 October, the user-authorized existing-key import
 was completed through the Console's Java-keystore/PEPK encrypted-key flow. The downloaded
 App signing key certificate and registered Upload key certificate both match the existing
-Firebase/local SHA-256:
+local and retired-Firebase SHA-256:
 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`.
 No AAB/APK, tester changes or rollout accompanied that operation. Actual Play-delivered
 installation, certificate and upgrade/data retention remain untested; follow
