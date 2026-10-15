@@ -1,5 +1,7 @@
 # Preview input scale replay
 
+Provenance: measured on 9 October 2026 against the locator at `45f562f` (a Codex worktree branch, not a `main` commit). `main` has since changed `GridLocator` (`0ec9212`, 15 October: a larger candidate wins only if it is nearly as square as the best one, which stops the keypad being taken for part of the grid). The counts and latencies below describe the earlier locator; rerun the replay before relying on them for the current one.
+
 This replay compares the live-preview locator at the 4:3 CameraX target sizes 720×540 and 960×720. It resizes a center-cropped 4:3 view of each corpus photo with OpenCV `INTER_AREA`, then calls `GridLocator.locate`. A `Found` result maps to `StructuralGate` usable; `NoGrid` maps to rejected. Corner coordinates are normalized to each input image and the maximum corresponding-corner displacement is reported in pixels on a 960×720 frame.
 
 The corpus contained 111 image files. All 111 were processed: 110 decoded directly with JVM ImageIO, and the valid 750×500 `sudoku.webp` was verified with Pillow and converted to a temporary PNG for the two locator calls. SHA-256 content hashing found 84 unique images among the 111 filenames, including 27 exact duplicate groups. The full per-file result is in `full-720-vs-960.csv`; decode handling is in `decode.csv`.
