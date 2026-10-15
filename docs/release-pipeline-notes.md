@@ -16,9 +16,9 @@ APK evidence reports are included by the existing explicit evidence allowlist. T
 signing passwords stay outside the checkout and artifacts and are removed after use.
 This does not install APKs, prove 16 KB runtime behavior, or prove Play-delivered signing.
 
-Firebase distribution in CI now requires a manual run on main with
-`distribute_firebase=true`; its default is false. Pushes and ordinary manual runs do not
-distribute. Local distribution tasks still require separate explicit authorization.
+Firebase App Distribution was retired on 15 October 2026. CI builds and tests on every push,
+but distributes nothing; Play releases are built only by `play-candidate.yml` from a
+reviewed commit on main, and uploaded through Play Console.
 
 Validation: all 20 release-tool tests passed; both workflow files parsed successfully,
 and every shell step passed `bash -n`. These are static checks, not a completed hosted

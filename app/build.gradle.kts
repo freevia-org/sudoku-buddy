@@ -5,7 +5,6 @@ import java.util.zip.ZipFile
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.firebase.appdistribution)
 }
 
 android {
@@ -121,26 +120,6 @@ kotlin {
     compilerOptions { allWarningsAsErrors.set(true) }
 }
 
-firebaseAppDistributionDefault {
-    // The app id is supplied by CI or the local environment. Keeping it out of the
-    // source tree prevents a renamed package from ever being sent to the retired
-    // Firebase registration by mistake.
-    System.getenv("FIREBASE_APP_ID")
-        ?.takeIf { it.isNotBlank() }
-        ?.let { appId = it }
-
-    // Only set this when a file is genuinely supplied. An empty string counts as a
-    // configured path, which the plugin resolves against the project directory and then
-    // fails on - before it ever falls through to FIREBASE_TOKEN.
-    System.getenv("FIREBASE_CREDENTIALS_FILE")
-        ?.takeIf { it.isNotBlank() }
-        ?.let { serviceCredentialsFile = it }
-
-    // Composed, not the source file: see composeReleaseNotes.
-    releaseNotesFile = layout.buildDirectory.file("release-notes.txt").get().asFile.path
-    groups = "testers"
-}
-
 dependencies {
     implementation(project(":core:model"))
     implementation(project(":core:solver"))
@@ -213,136 +192,34 @@ tasks.register("checkReleaseSigning") {
     }
 }
 
-tasks.matching { it.name.startsWith("appDistributionUpload") }
-    .configureEach { dependsOn("checkReleaseSigning") }
-
 /**
- * Fails fast when the release notes are too long for App Distribution to accept.
+ * Fails fast when the Play release notes are too long for Play Console to accept.
  *
- * Firebase caps them at 16,384 characters and rejects the whole upload beyond it. That
- * rejection arrives at the very end of a CI run, after the APK has been built - so this
- * runs as part of `check` instead, where it costs milliseconds and fails before anything
- * has been compiled.
+ * Play caps "What's new" at 500 characters per language and refuses the release form
+ * beyond it. That refusal arrives in the console, after a candidate has been built,
+ * signed and audited - so this runs as part of `check` instead, where it costs
+ * milliseconds and fails before anything has been compiled.
  */
-val releaseNotes = rootProject.layout.projectDirectory.file("docs/release-notes.txt")
+val releaseNotes = rootProject.layout.projectDirectory.file("docs/play-release-notes-en-US.txt")
 
 tasks.register("checkReleaseNotes") {
     group = "verification"
-    description = "Check the release notes fit inside App Distribution's limit"
+    description = "Check the Play release notes fit inside Play Console's limit"
     val notes = releaseNotes
     inputs.file(notes)
     doLast {
-        // What is uploaded is this file with a generated header on top, so the room the
-        // header takes comes off the limit here. Two lines and a blank one; 200 is
-        // several times what it needs and still leaves 16,000 characters of prose.
-        val header = 200
-        val limit = 16_384 - header
-        val length = notes.asFile.readText().length
-        check(length <= limit) {
-            "docs/release-notes.txt is $length characters, over App Distribution's " +
-                "limit of 16384 less $header for the version header. Move older entries " +
-                "to docs/changelog.md - that file is for reading and is never uploaded."
+        // Counted in characters rather than bytes, which is how Play counts them.
+        val text = notes.asFile.readText().trim()
+        val length = text.codePointCount(0, text.length)
+        check(length in 1..500) {
+            "docs/play-release-notes-en-US.txt is $length characters; Play accepts " +
+                "1 to 500 for a language. Say what changed in this release and move the " +
+                "rest to docs/changelog.md."
         }
     }
 }
 
 tasks.named("check") { dependsOn("checkReleaseNotes") }
-tasks.matching { it.name.startsWith("appDistributionUpload") }
-    .configureEach { dependsOn("checkReleaseNotes") }
-
-/**
- * Puts the version and the change that produced it at the top of the notes.
- *
- * Seventeen builds went out carrying notes about a corpus change from two days earlier,
- * because the prose is written by hand and nothing failed when it was not. Prose worth
- * reading cannot be generated, so this does not try: it prepends the two facts that can
- * be, and those two are enough to tell whether the rest is about the build in hand.
- *
- * The subject comes from git, which CI has - a shallow clone still has the commit it
- * checked out. When there is no git at all the header keeps the version and drops the
- * subject, because a release must never fail over its own notes.
- */
-val composedNotes = layout.buildDirectory.file("release-notes.txt")
-
-tasks.register("composeReleaseNotes") {
-    group = "publishing"
-    description = "Prepend the version and the last change to the notes sent to testers"
-    val source = releaseNotes
-    val target = composedNotes
-    val version = "${android.defaultConfig.versionName} (${android.defaultConfig.versionCode})"
-    val root = rootProject.layout.projectDirectory.asFile
-    inputs.file(source)
-    outputs.file(target)
-    // The git subject can change even when the handwritten notes do not. Regenerate
-    // this tiny file for each distribution so its build identity never goes stale.
-    outputs.upToDateWhen { false }
-    doLast {
-        val subject = runCatching {
-            val process = ProcessBuilder("git", "log", "-1", "--pretty=%s")
-                .directory(root)
-                .redirectErrorStream(true)
-                .start()
-            process.inputStream.bufferedReader().readText().trim()
-                .takeIf { process.waitFor() == 0 }
-        }.getOrNull()
-
-        val file = target.get().asFile
-        file.parentFile.mkdirs()
-        file.writeText(
-            buildString {
-                appendLine("Sudoku Buddy $version")
-                // Keep the generated header inside checkReleaseNotes' 200-character allowance.
-                if (!subject.isNullOrBlank()) appendLine(subject.take(150))
-                appendLine()
-                append(source.asFile.readText())
-            }
-        )
-    }
-}
-
-tasks.matching { it.name.startsWith("appDistributionUpload") }
-    .configureEach { dependsOn("composeReleaseNotes") }
-
-/**
- * Builds and distributes a release using the locally signed-in Firebase CLI.
- *
- * The App Distribution Gradle plugin cannot use the CLI's own login, so this shells out
- * to the CLI instead. It needs no service account and no token: if `firebase login:list`
- * shows an account, this works.
- */
-tasks.register<Exec>("distributeLocal") {
-    group = "publishing"
-    description = "Build a release APK and distribute it via the signed-in Firebase CLI"
-    dependsOn("assembleRelease", "checkReleaseSigning", "checkNativeAlignment", "composeReleaseNotes")
-
-    val apk = layout.buildDirectory.file("outputs/apk/release/app-arm64-v8a-release.apk")
-    val notes = composedNotes
-    dependsOn("checkReleaseNotes")
-
-    // Windows resolves `firebase` to a .cmd shim, which needs a shell to launch.
-    val firebase = if (System.getProperty("os.name").startsWith("Windows")) {
-        listOf("cmd", "/c", "firebase")
-    } else {
-        listOf("firebase")
-    }
-
-    doFirst {
-        val appId = System.getenv("FIREBASE_APP_ID")?.takeIf { it.isNotBlank() }
-            ?: error(
-                "FIREBASE_APP_ID is required for local distribution. Copy the Sudoku " +
-                    "Buddy Android App ID from Firebase project settings."
-            )
-        commandLine(
-            firebase + listOf(
-            "appdistribution:distribute", apk.get().asFile.absolutePath,
-            "--app", appId,
-            "--release-notes-file", notes.get().asFile.absolutePath,
-            "--groups", "testers",
-            "--project", "sudoku-buddy-freevia",
-            )
-        )
-    }
-}
 
 /**
  * Refuses to ship native libraries that are not 16 KB page aligned.
@@ -408,6 +285,3 @@ tasks.register("checkNativeAlignment") {
         }
     }
 }
-
-tasks.matching { it.name.startsWith("appDistributionUpload") }
-    .configureEach { dependsOn("checkNativeAlignment") }

@@ -100,8 +100,8 @@ checking handwritten answers, hints, and on-device history.
   it off for the first release, and revisit if size matters.
 - **The bundle carries all four ABIs** and is about 67 MB as a file, while each phone
   downloads only its own slice. This is the right shape for Play, and different from the
-  arm64-only APK used for Firebase distribution — that one exists to keep test downloads
-  small.
+  arm64-only APK that CI also builds — that one is for installing directly on a test phone
+  and keeps the download small.
 - **A closed test track first.** Play now expects a period of closed testing before a
   personal developer account can go to production. Starting that track early runs the
   clock down while the listing is finished.
