@@ -70,3 +70,7 @@ feedback-api/private-reports/
 # Regenerable local translation caches; bundled XML and editorial overrides are tracked.
 tools/i18n/drafts/
 tools/i18n/__pycache__/
+
+# Files Codex saves from attachments in its threads. Screenshots belong in feedback/,
+# which stays local; nothing here is ever source.
+.codex-remote-attachments/
