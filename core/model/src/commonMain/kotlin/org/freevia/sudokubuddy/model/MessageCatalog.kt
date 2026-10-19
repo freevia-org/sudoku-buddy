@@ -65,13 +65,13 @@ class MessageCatalog(messages: List<Pair<String, String>>) {
                     append(Regex.escape(source.substring(start, argument.range.first)))
                     val index = argument.groupValues[1].toInt()
                     val expression = evidenceArguments[source]?.get(index)
-                        ?: if (index in countArguments[source].orEmpty()) "[0-9]+" else ".*?"
+                        ?: if (index in countArguments[source].orEmpty()) "[0-9]+" else "[\\s\\S]*?"
                     append("($expression)")
                     start = argument.range.last + 1
                 }
                 append(Regex.escape(source.substring(start)))
             }
-            Regex(parts, RegexOption.DOT_MATCHES_ALL)
+            Regex(parts)
         }
 
         fun render(match: MatchResult, translateArgument: (String) -> String): String {
