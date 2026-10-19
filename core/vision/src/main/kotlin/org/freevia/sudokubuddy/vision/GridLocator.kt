@@ -339,19 +339,6 @@ object GridLocator {
     private fun askAgainForAnObscuredGrid(image: GrayImage, alignedOutlines: List<Quad>): Pair<Quad, Double>? {
         val full = image.toMat()
         try {
-        // A grid found by refitting the lines may still have one line hidden by glare,
-        // screen UI, or a mark. The strict refit above deliberately rejected it; only
-        // after normal contours and cell-based recovery have failed do we allow one line.
-        val aligned = alignedOutlines.distinct()
-            .map { quad ->
-                quad to rectify(full, quad, scoringSize(quad)).releasing {
-                    GridScorer.score(it, OBSCURED_LINES_ALLOWED)
-                }
-            }
-            .maxByOrNull { it.second }
-            ?.takeIf { it.second >= MIN_GRID_SCORE }
-        if (aligned != null) return aligned
-
         for (workingEdge in QuadDetector.workingEdges()) {
             val best = QuadDetector.detect(image, workingEdge)
                 .map { quad ->
@@ -392,6 +379,21 @@ object GridLocator {
             } finally { lattices.forEach { it.close() } }
             if (best != null) return best
         }
+        // Keep already accepted readings stable; rescue refitted grids only after
+        // every existing outline and lattice fallback has failed.
+        // A grid found by refitting the lines may still have one line hidden by glare,
+        // screen UI, or a mark. The strict refit above deliberately rejected it; only
+        // after normal contours and cell-based recovery have failed do we allow one line.
+        val aligned = alignedOutlines.distinct()
+            .map { quad ->
+                quad to rectify(full, quad, scoringSize(quad)).releasing {
+                    GridScorer.score(it, OBSCURED_LINES_ALLOWED)
+                }
+            }
+            .maxByOrNull { it.second }
+            ?.takeIf { it.second >= MIN_GRID_SCORE }
+        if (aligned != null) return aligned
+
         return null
         } finally { full.release() }
     }

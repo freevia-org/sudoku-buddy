@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How Sudoku Buddy keeps puzzles on your phone and handles optional private recognition reports, training examples and deletion receipts." />
+    <meta name="theme-color" content="#101827" />
+    <link rel="canonical" href="https://freevia.org/sudoku-buddy/privacy/" />
+    <title>Sudoku Buddy Privacy Policy — Freevia</title>
+    <style>
+      :root { --ink:#183c32; --muted:#5c6b61; --paper:#f5f2e9; --card:#fffefa; --line:#d8ddcf; --cyan:#d5b459; --violet:#245743; --soft:#e9efe3; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height:1.65; }
+      a { color:#245743; text-underline-offset:.18em; }
+      a:hover { text-decoration-thickness:2px; }
+      a:focus-visible { outline:3px solid var(--cyan); outline-offset:4px; border-radius:3px; }
+      .shell { width:min(920px, calc(100% - 40px)); margin:auto; }
+      nav { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:26px 0; }
+      .brand { display:inline-flex; align-items:center; gap:10px; color:var(--ink); font-size:1.15rem; font-weight:800; letter-spacing:-.04em; text-decoration:none; }
+      .brand img { width:38px; height:38px; border-radius:9px; }
+      .brand-lockup { display:flex; align-items:center; gap:11px; min-width:0; }
+      .brand-parent { color:var(--muted); font-size:.82rem; font-weight:700; text-decoration:none; white-space:nowrap; }
+      .brand-parent:hover { text-decoration:underline; text-underline-offset:4px; }
+      .back { color:var(--ink); font-size:.94rem; font-weight:700; text-decoration:none; }
+      .nav-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px 20px; }
+      header { padding:72px 0 64px; border-bottom:1px solid var(--line); }
+      .app { display:flex; align-items:center; gap:16px; }
+      .app img { width:64px; height:64px; border-radius:14px; }
+      .eyebrow { color:var(--violet); font-size:.78rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+      .app-name { margin:2px 0 0; font-weight:800; }
+      h1 { max-width:760px; margin:28px 0 18px; font-size:clamp(2.8rem, 8vw, 5.6rem); letter-spacing:-.07em; line-height:.95; }
+      .lede { max-width:720px; margin:0; color:var(--muted); font-size:clamp(1.05rem, 2vw, 1.25rem); }
+      .updated { display:inline-block; margin-top:24px; padding:.42rem .72rem; border:1px solid var(--line); border-radius:999px; background:var(--card); color:var(--ink); font-size:.82rem; font-weight:700; }
+      article { padding:58px 0 84px; }
+      article section { padding:34px 0; border-bottom:1px solid var(--line); }
+      article section:first-child { padding-top:0; }
+      article section:last-child { border-bottom:0; }
+      h2 { margin:0 0 12px; font-size:clamp(1.45rem, 3vw, 2rem); letter-spacing:-.035em; line-height:1.2; }
+      h3 { margin:28px 0 10px; font-size:1.18rem; letter-spacing:-.02em; line-height:1.3; }
+      ul { padding-left:1.35rem; }
+      li { margin:.4rem 0; }
+      p { margin:0 0 1rem; }
+      p:last-child { margin-bottom:0; }
+      .summary { padding:24px; border:1px solid #c9d9c4; border-radius:14px; background:var(--soft); font-size:1.08rem; }
+      .table-wrap { margin:24px 0; overflow-x:auto; border:1px solid var(--line); border-radius:14px; background:var(--card); }
+      table { width:100%; min-width:640px; border-collapse:collapse; }
+      th, td { padding:16px 18px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+      th { background:#edf0e7; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; }
+      tr:last-child td { border-bottom:0; }
+      .mobile-label { display:none; }
+      code { padding:.12em .34em; border-radius:4px; background:#e6ebdf; font-family:"SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size:.9em; }
+      footer { padding:30px 0 46px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+      @media (max-width:600px) {
+        nav { flex-wrap:wrap; gap:8px; padding:16px 0; }
+        .brand-lockup { width:100%; }
+        .nav-actions { justify-content:flex-start; }
+        header { padding:48px 0 46px; }
+        article { padding:42px 0 64px; }
+        article section { padding:28px 0; }
+        .summary { padding:20px; }
+        .table-wrap { overflow:visible; border:0; background:transparent; }
+        table, tbody, tr, td { display:block; min-width:0; }
+        thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); clip-path:inset(50%); white-space:nowrap; }
+        tr { margin-bottom:14px; overflow:hidden; border:1px solid var(--line); border-radius:12px; background:var(--card); }
+        td { display:grid; grid-template-columns:76px minmax(0, 1fr); gap:12px; padding:14px 16px; }
+        .mobile-label { display:block; color:var(--muted); font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }
+        tr:last-child td { border-bottom:1px solid var(--line); }
+        td:last-child, tr:last-child td:last-child { border-bottom:0; }
+      }
+      @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+      @media (max-width:600px) {
+        .table-wrap { overflow-x:auto; border:1px solid var(--line); background:var(--card); }
+        table { display:table; min-width:640px; }
+        thead { display:table-header-group; position:static; width:auto; height:auto; overflow:visible; clip:auto; clip-path:none; white-space:normal; }
+        tbody { display:table-row-group; }
+        tr { display:table-row; margin:0; overflow:visible; border:0; border-radius:0; }
+        td { display:table-cell; padding:14px 16px; border-bottom:1px solid var(--line); }
+        tr:last-child td { border-bottom:0; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="shell" aria-label="Page navigation">
+      <div class="brand-lockup"><a class="brand" href="/sudoku-buddy/" aria-label="Sudoku Buddy home"><img src="/assets/icons/sudoku-buddy.png" alt="">Sudoku Buddy</a><a class="brand-parent" href="/">by Freevia</a></div>
+      <div class="nav-actions"><a class="back" href="/sudoku-buddy/">Back to the app</a><a class="back" href="/sudoku-buddy/support/">Support</a></div>
+    </nav>
+
+    <main>
+      <header>
+        <div class="shell">
+          <div class="app">
+            <img src="/assets/icons/sudoku-buddy.png" alt="" width="64" height="64" />
+            <div>
+              <div class="eyebrow">Privacy policy</div>
+              <p class="app-name">Sudoku Buddy</p>
+            </div>
+          </div>
+          <h1>Your puzzle, your choice.</h1>
+          <p class="lede">Scanning and solving happen on your phone. This policy explains optional private reports, how submitted examples are used, and how to delete them by receipt.</p>
+          <span class="updated">Last updated 19 October 2026</span>
+        </div>
+      </header>
+
+      <article class="shell">
+<!-- Policy source SHA-256 daa2c5a51fa029b3799842ef971bc58c76598267c9724215a4a88ba98589d95f -->
+<p>Sudoku Buddy is published by <strong>Freevia</strong>.
+Questions about this policy or the app's handling of data can be sent to
+<a href="mailto:info@freevia.org">info@freevia.org</a>.</p>
+<h2 id="the-short-version">The short version</h2>
+<p>Sudoku Buddy has no account, ads, routine usage analytics, or ad tracking. Camera processing
+and puzzle history stay on your device. The app sends a puzzle report to Freevia only when
+you submit it or enable optional automatic sharing for uncertain readings. A report contains
+the straightened puzzle photo, original recognition results, uncertainty markers, and any
+corrections recorded for that reading. Submitted reports are used for recognition analysis and
+kept as private training examples until you delete them by receipt. Reports are not public.
+Sudoku Buddy does not currently train a model from submitted reports; learned changes in a
+model may remain if model training is introduced later.</p>
+<h2 id="what-stays-on-your-device">What stays on your device</h2>
+<p>The app stores the following on your phone. Sharing is optional and is described below:</p>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Where</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Straightened photographs of accepted scans</td>
+<td>the app's private files directory</td>
+<td>so a puzzle can be reopened from the history</td>
+</tr>
+<tr>
+<td>The digits read from each puzzle, reading details and your corrections</td>
+<td>the app's private files directory</td>
+<td>so the reading and your progress survive closing the app</td>
+</tr>
+<tr>
+<td>The last few photographs the app <em>refused</em> to read</td>
+<td>private app storage on iOS; app-specific external storage on Android, with a private-storage fallback</td>
+<td>so you can look at what went wrong, or choose to share it for support</td>
+</tr>
+<tr>
+<td>Your settings</td>
+<td>the app's private preferences</td>
+<td>so they persist</td>
+</tr>
+<tr>
+<td>Submission receipts for reports you sent</td>
+<td>the app's private preferences</td>
+<td>so you can identify a report revision if you ask Freevia to delete it</td>
+</tr>
+</tbody>
+</table>
+<p>On iOS, refused photographs live in the app's private storage. On Android, they normally live in the app's own folder on external storage. Access
+through a file manager or USB depends on the Android version and device. If that storage
+is unavailable, the app uses its private files directory instead. Either location supports
+the explicit sharing actions described below.</p>
+<p>The app keeps at most six refused photographs and discards the oldest beyond that. You can
+delete any of them from the puzzle history at any time.</p>
+<h2 id="network-connection-and-optional-report-submission">Network connection and optional report submission</h2>
+<p>Scanning, recognition, solving and tutoring run on the device. Report submission requires
+an internet connection (and the <code>INTERNET</code> permission on Android). Other app functions remain
+available offline. Report submission and receipt-based server deletion need a network connection.</p>
+<p>Opening a website link or choosing a receiving app in the share sheet hands that action
+to another app. That app may use the internet under its own permissions and policies.</p>
+<p>Sudoku Buddy does not run routine usage analytics, crash reporting, or ad tracking.
+If you choose to submit a puzzle report, Freevia can analyze its recognition results and any
+corrections to improve recognition, and retain the report privately until you request deletion.
+This report processing is not routine tracking of app use.</p>
+<h2 id="sharing-is-your-choice">Sharing is your choice</h2>
+<p>When you choose Share, the app can hand a saved puzzle photograph or a refused scan to
+another app, such as a mail client or messaging app. Send diagnostics can hand over the
+retained refused photographs together with a text report, or the report alone if there
+are no refused photographs. The report includes the app version, date, phone manufacturer
+and model, operating-system version, and scan outcomes. You choose the receiving app in the system
+share sheet. File access is read-only and limited to the photographs included in that
+share action.
+These share-sheet actions send nothing until you choose a receiving app. If you choose to
+send materials to Freevia for support, Freevia receives the information you include. Do not
+include photographs or other information you do not want the recipient to see. The separate
+optional automatic-submission setting for uncertain readings is described below.</p>
+<p>The receiving app's policy also applies to any copy it receives. Sharing a file does not
+give Sudoku Buddy control over the recipient's copies. If Freevia is the recipient, the
+support-sharing description above still applies to what you send to Freevia.</p>
+<h3 id="puzzle-reports-for-recognition-analysis">Puzzle reports for recognition analysis</h3>
+<p>You can submit an uncertain reading from the puzzle screen. Submitting is optional and
+requires your action; submitted reports are used for recognition analysis and private training.
+The single option on the submission dialog can also turn on automatic submission for future
+uncertain readings and corrections. You can turn automatic submission off in Settings.
+Automatic submission is off by default.</p>
+<p>A report includes the straightened square puzzle photograph, app version, original and
+current digit grids, each cell's recognition classification and confidence, uncertain cells,
+grid geometry, and the sequence of corrections with their times. This can show handwritten
+marks or other details visible on the page. Do not submit a page containing information you
+do not want Freevia to review.</p>
+<p>Reports are private and are not posted publicly. Each uploaded revision is held in a private
+Cloudflare R2 store until you delete it from <strong>Submission receipts</strong>. The same stored report
+supports recognition analysis and training; there is no separate analysis copy or automatic expiry.
+Each revision has its own receipt.
+A successful deletion removes that revision from Freevia's report service storage. Sudoku Buddy does not
+currently train a model from submitted reports; if a model is trained on an example later,
+deleting that example may not remove learned changes from the model.</p>
+<p>The app keeps receipts in Settings, even if you delete a puzzle from History. Open
+<strong>Submission receipts</strong> to delete a submitted revision. Corrected revisions have separate
+receipts and must be deleted separately. Deleting a puzzle from History removes its local
+copy but does not delete reports already sent. Cloudflare provides storage and request
+infrastructure on Freevia's behalf. When a report request passes through Cloudflare, it may
+process the request's IP address and infer an approximate location, such as country or
+region, for network routing and security under its own terms. The report service does not
+access or store the IP address or inferred location in its application records, and the
+report record does not store your identity.</p>
+<h3 id="github-feedback-drafts">GitHub feedback drafts</h3>
+<p>When you choose Report a bug or idea on GitHub and confirm Open GitHub, the app opens
+a GitHub issue URL in an external browser or another application that handles the link.
+The URL includes a prefilled title and report text with the app version/build number,
+phone manufacturer/model, operating-system version and recent scan diagnostics. GitHub receives
+this text when the link is opened, even if you do not submit the issue. No photograph
+is included in the URL or uploaded by Sudoku Buddy.</p>
+<p>You sign in on GitHub, can edit the draft, choose any screenshots to attach there, and
+decide whether to submit it. Submitted issues and attachments are public. GitHub's own
+privacy policy applies to its website and account. Use email for support examples you
+prefer to share privately.</p>
+<h2 id="camera-processing">Camera processing</h2>
+<p>The app asks for camera access because reading a puzzle from a printed page is what it
+does. Camera preview frames are processed on the phone and are not saved. A captured
+photograph can be saved as a puzzle or retained as a refused scan. Capture can be manual
+or automatic when that setting is enabled.</p>
+<h2 id="deleting-your-data">Deleting your data</h2>
+<p>You can delete saved puzzles and retained refused photographs from History. Uninstalling
+the app removes its app-specific storage, including locally retained photographs and
+settings. Deletion from the app does not delete copies you already shared or copied elsewhere.</p>
+<p>The Android app disables backup and excludes its storage from cloud backup and device
+transfer. On iOS, operating-system backups may include app data according to your device
+and iCloud backup settings. Sudoku Buddy does not provide an account-based cloud history
+or its own synchronization service.</p>
+<h2 id="children">Children</h2>
+<p>Sudoku Buddy is intended for a general audience aged 13 and over. Reports are sent only when
+a user submits them or enables optional automatic sharing. The report may include handwriting
+and other details visible in the photographed puzzle. The same choices and disclosures apply
+to all users.</p>
+<h2 id="changes-to-this-policy">Changes to this policy</h2>
+<p>If this policy changes, the date at the top changes with it, and the history of this file
+is public in the repository it lives in.</p>
+<h2 id="contact">Contact</h2>
+<p>Email <a href="mailto:info@freevia.org">info@freevia.org</a>. You can also raise a public technical
+issue at <a href="https://github.com/freevia-org/sudoku-buddy/issues">GitHub Issues</a>. Issues and
+attachments there are public, so include only information you intend to publish.</p>
+</article>
+    </main>
+
+    <footer>
+      <div class="shell">© 2026 Freevia. Sudoku Buddy is published by Freevia.</div>
+    </footer>
+  </body>
+</html>

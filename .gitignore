@@ -91,3 +91,7 @@ corpus/*.webp
 corpus-rectified/*.png
 corpus-rectified/*.jpeg
 corpus-rectified/*.heic
+
+# Local website tooling and Cloudflare cache
+/.wrangler/
+tools/site/__pycache__/

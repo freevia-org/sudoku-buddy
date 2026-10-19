@@ -199,10 +199,6 @@ inline Located locate(const Mat& rgb,const std::function<Quad(const Quad&)>& rul
         for(auto& l:found){double s=score(rectify(gray,l.quad,scoringSize(l.quad)));if(s>=.35)return {rectify(rgb,l.quad),l.quad,s,false};}
         for(auto& l:found)if(!l.curve.empty()){double s=score(flatten(gray,l.curve,scoringSize(l.quad)));if(s>=.35){Mat flat=flatten(gray,l.curve,Side),color;cvtColor(flat,color,COLOR_GRAY2RGB);return {color,l.quad,s,true,l.curve};}}
     }
-    // Preserve Android's refitted-outline retry before raw outline/lattice retries.
-    Candidate alignedBest;double alignedTop=-1;std::vector<Quad> seen;
-    for(auto q:alignedOutlines){if(std::find(seen.begin(),seen.end(),q)!=seen.end())continue;seen.push_back(q);double value=score(rectify(gray,q,scoringSize(q)),1);if(value>alignedTop){alignedTop=value;alignedBest={q,value};}}
-    if(alignedTop>=.35)return {rectify(rgb,alignedBest.quad),alignedBest.quad,alignedBest.strength,false};
     // Android returns the best acceptable candidate at the first working resolution,
     // checking all outline resolutions before any cell-lattice resolution.
     for(int edge:{1000,1600}){
@@ -215,6 +211,10 @@ inline Located locate(const Mat& rgb,const std::function<Quad(const Quad&)>& rul
         for(auto& l:lattices(gray,edge)){double value=score(rectify(gray,l.quad,scoringSize(l.quad)),1);if(value>top){top=value;best={l.quad,value};}}
         if(top>=.35)return {rectify(rgb,best.quad),best.quad,best.strength,false};
     }
+    // Rescue only after existing accepted outline/lattice fallbacks are exhausted.
+    Candidate alignedBest;double alignedTop=-1;std::vector<Quad> seen;
+    for(auto q:alignedOutlines){if(std::find(seen.begin(),seen.end(),q)!=seen.end())continue;seen.push_back(q);double value=score(rectify(gray,q,scoringSize(q)),1);if(value>alignedTop){alignedTop=value;alignedBest={q,value};}}
+    if(alignedTop>=.35)return {rectify(rgb,alignedBest.quad),alignedBest.quad,alignedBest.strength,false};
     return out;
 }
 }

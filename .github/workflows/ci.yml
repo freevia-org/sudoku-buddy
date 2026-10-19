@@ -34,6 +34,16 @@ jobs:
           python3 -m unittest discover -s tools/i18n -p 'test_*.py'
           python3 tools/i18n/validate.py
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate website and policy sources
+        run: |
+          python3 -m pip install -r tools/site/requirements.txt
+          python3 tools/site/build-site.py --check
+          python3 -m unittest discover -s tools/site -p 'test_*.py'
+
       # Keep the report intake, retention and export lifecycle covered by the same
       # required check as the app; these tests use local fakes and need no secrets.
       - uses: actions/setup-node@v4
