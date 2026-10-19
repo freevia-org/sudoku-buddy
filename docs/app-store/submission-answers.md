@@ -8,7 +8,7 @@
 | Primary language | English (U.S.) |
 | Bundle ID | org.freevia.sudokubuddy.ios (must be registered to intended team) |
 | Suggested SKU | freevia-sudoku-buddy-ios |
-| Version / current build | 1.0.1 / 1; increase build if that number was previously uploaded |
+| Version / current build | 1.0.2 / 1; increase build if that number was previously uploaded |
 | Primary category | Games > Puzzle |
 | Optional secondary game category | Board |
 | Support URL | https://freevia.org/sudoku-buddy/ (HTTP 200 verified; owner confirms support content/contact) |

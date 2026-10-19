@@ -6,4 +6,3 @@ data class RgbImage(val width: Int, val height: Int, val pixels: ByteArray) {
         require(width > 0 && height > 0 && pixels.size.toLong() == width.toLong() * height * 3)
     }
 }
-

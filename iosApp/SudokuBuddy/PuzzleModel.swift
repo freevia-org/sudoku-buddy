@@ -84,6 +84,7 @@ final class PuzzleModel: ObservableObject {
         }.value
         if let presentation = try? JSONDecoder().decode(PuzzlePresentation.self, from: Data(text.utf8)) {
             overlayPresentation = presentation; overlayMode = presentation.mode; answerShown = presentation.answerShown
+            if !pressed.isEmpty { reviewingScan = pressed == "Read" && !openQuestions.isEmpty }
             solutionDigits = presentation.mode == "Solve" && presentation.roles.contains("SOLUTION") ?
                 (0..<81).map { presentation.digits[$0] == 0 ? givens[$0] : presentation.digits[$0] } : nil
         }

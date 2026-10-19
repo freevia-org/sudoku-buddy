@@ -184,11 +184,14 @@ inline Located locate(const Mat& rgb,const std::function<Quad(const Quad&)>& rul
         for(int i=0;i<std::min(3,(int)scored.size());i++)for(double growth:{1.02,1.04}){auto q=grown(scored[i].quad,growth);double s=score(rectify(gray,q,scoringSize(q)));if(s>top){top=s;rescue={q,s};}}
         if(top>=.35)return {rectify(rgb,rescue.quad),rescue.quad,rescue.strength,false};
     }
+    std::vector<Quad> alignedOutlines;
     // Long-rule outlines before the more expensive cell lattice.
     for(int edge:{1000,1600}){
         auto candidates=detect(gray,edge),rules=detect(gray,edge,true);candidates.insert(candidates.end(),rules.begin(),rules.end());
         auto outlined=candidates;for(auto q:outlined)if(std::abs(std::atan2(q[1].y-q[0].y,q[1].x-q[0].x)*180/CV_PI)<10)candidates.push_back(bounds(q));
-        Candidate best;double top=-1;for(auto q:candidates){q=ruleAligner?ruleAligner(q):alignRules(gray,q);double strength=score(rectify(gray,q,scoringSize(q)));if(strength>top){top=strength;best={q,strength};}}
+        Candidate best;double top=-1;std::vector<Candidate> rescored;for(auto q:candidates){q=ruleAligner?ruleAligner(q):alignRules(gray,q);double strength=score(rectify(gray,q,scoringSize(q)));rescored.push_back({q,strength});if(strength>top){top=strength;best={q,strength};}}
+        std::stable_sort(rescored.begin(),rescored.end(),[](auto&a,auto&b){return a.strength>b.strength;});
+        for(int i=0;i<std::min(3,(int)rescored.size());i++)alignedOutlines.push_back(rescored[i].quad);
         if(top>=.35)return {rectify(rgb,best.quad),best.quad,best.strength,false};
     }
     std::vector<Lattice>allLattices;
@@ -196,6 +199,10 @@ inline Located locate(const Mat& rgb,const std::function<Quad(const Quad&)>& rul
         for(auto& l:found){double s=score(rectify(gray,l.quad,scoringSize(l.quad)));if(s>=.35)return {rectify(rgb,l.quad),l.quad,s,false};}
         for(auto& l:found)if(!l.curve.empty()){double s=score(flatten(gray,l.curve,scoringSize(l.quad)));if(s>=.35){Mat flat=flatten(gray,l.curve,Side),color;cvtColor(flat,color,COLOR_GRAY2RGB);return {color,l.quad,s,true,l.curve};}}
     }
+    // Preserve Android's refitted-outline retry before raw outline/lattice retries.
+    Candidate alignedBest;double alignedTop=-1;std::vector<Quad> seen;
+    for(auto q:alignedOutlines){if(std::find(seen.begin(),seen.end(),q)!=seen.end())continue;seen.push_back(q);double value=score(rectify(gray,q,scoringSize(q)),1);if(value>alignedTop){alignedTop=value;alignedBest={q,value};}}
+    if(alignedTop>=.35)return {rectify(rgb,alignedBest.quad),alignedBest.quad,alignedBest.strength,false};
     // Android returns the best acceptable candidate at the first working resolution,
     // checking all outline resolutions before any cell-lattice resolution.
     for(int edge:{1000,1600}){
