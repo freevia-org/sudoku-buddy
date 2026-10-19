@@ -48,7 +48,12 @@ final class GeometryTests: XCTestCase {
         let width=801, height=1103
         var rgb=Data(count:width*height*3), grayRGB=Data(count:width*height*3)
         for y in 0..<height { for x in 0..<width {
-            let line=(0...9).contains { abs(x-(75+$0*70))<=2 || abs(y-(170+$0*70))<=2 }
+            var line = false
+            for rule in 0...9 {
+                let vertical = 75 + rule * 70
+                let horizontal = 170 + rule * 70
+                if abs(x - vertical) <= 2 || abs(y - horizontal) <= 2 { line = true; break }
+            }
             let onGrid=x>=73 && x<=707 && y>=168 && y<=802
             let r=line && onGrid ? 20 : 200+x%45
             let g=line && onGrid ? 10 : 210+y%40

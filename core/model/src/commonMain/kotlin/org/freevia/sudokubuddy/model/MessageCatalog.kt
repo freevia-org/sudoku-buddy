@@ -87,7 +87,14 @@ class MessageCatalog(messages: List<Pair<String, String>>) {
             "{${it.groupValues[1].toInt() - 1}}"
         }
     }
-    private val exact = messages.filter { !it.first.contains(argumentPattern) }.toMap()
+    private val exact = buildMap {
+        putAll(messages.filter { !it.first.contains(argumentPattern) }.toMap())
+        // The photo guard uses the same already-reviewed error copy as iOS.
+        // Identity/English catalogs retain the more specific original sentence.
+        val overlay = "Photograph the original puzzle rather than an annotated result screen."
+        val fallback = get("Could not find the printed digits in that photo.")
+        if (!containsKey(overlay) && fallback != null) put(overlay, fallback)
+    }
     private val templates by lazy {
         messages.filter { it.first.contains(argumentPattern) }
             .map { Entry(it.first, it.second) }.sortedByDescending { it.literalSize }
