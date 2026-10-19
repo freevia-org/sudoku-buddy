@@ -5,6 +5,15 @@ import kotlin.test.assertEquals
 
 class MessageCatalogTest {
     @Test
+    fun `result-screen refusal uses approved photo copy while English keeps specific advice`() {
+        val source = "Photograph the original puzzle rather than an annotated result screen."
+        val generic = "Could not find the printed digits in that photo."
+        assertEquals(source, MessageCatalog(listOf(generic to generic)).translate(source))
+        assertEquals("Photo illisible", MessageCatalog(listOf(generic to "Photo illisible")).translate(source))
+        assertEquals("Original requis", MessageCatalog(listOf(generic to "Photo illisible", source to "Original requis")).translate(source))
+    }
+
+    @Test
     fun `route summaries translate full shape and ending sentences`() {
         val catalog = MessageCatalog(listOf(
             "{0} steps make up this route, with {1} as the hardest supported technique. {2} {3}" to

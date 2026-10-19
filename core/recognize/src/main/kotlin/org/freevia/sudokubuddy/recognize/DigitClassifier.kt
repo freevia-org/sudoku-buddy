@@ -1,8 +1,5 @@
 package org.freevia.sudokubuddy.recognize
 
-import java.io.DataInputStream
-import java.nio.ByteBuffer
-import java.nio.ByteOrder
 import kotlin.math.exp
 
 /**
@@ -133,22 +130,22 @@ class DigitClassifier private constructor(
         private const val HIDDEN = 64
         const val CLASSES = 9
 
-        private const val RESOURCE = "/digits.bin"
-
         /** Loads the weights shipped alongside this module. */
         fun load(): DigitClassifier {
-            val stream = DigitClassifier::class.java.getResourceAsStream(RESOURCE)
-                ?: error("$RESOURCE is missing from the classpath")
-            return stream.use { read(it.readBytes()) }
+            return read(loadDigitModel())
         }
 
         internal fun read(bytes: ByteArray): DigitClassifier {
-            val buffer = ByteBuffer.wrap(bytes).order(ByteOrder.LITTLE_ENDIAN)
-            val magic = ByteArray(4).also { buffer.get(it) }
-            require(String(magic) == "SUDK") { "not a digit model file" }
-            require(buffer.int == 1) { "unsupported model format version" }
-
-            fun floats(count: Int) = FloatArray(count).also { buffer.asFloatBuffer().get(it); buffer.position(buffer.position() + count * 4) }
+            require(bytes.size == 423212) { "incorrect digit model length: ${bytes.size}" }
+            require(bytes.copyOfRange(0, 4).decodeToString() == "SUDK") { "not a digit model file" }
+            var offset = 4
+            fun int(): Int {
+                var value = 0
+                repeat(4) { value = value or ((bytes[offset++].toInt() and 255) shl (it * 8)) }
+                return value
+            }
+            require(int() == 1) { "unsupported model format version" }
+            fun floats(count: Int) = FloatArray(count) { Float.fromBits(int()) }
 
             return DigitClassifier(
                 c1w = floats(C1 * 1 * 9), c1b = floats(C1),
@@ -158,8 +155,7 @@ class DigitClassifier private constructor(
             )
         }
 
-        /** Unused parameter kept for clarity at call sites that stream from a file. */
-        @Suppress("unused")
-        internal fun read(stream: DataInputStream): DigitClassifier = read(stream.readBytes())
     }
 }
+
+internal expect fun loadDigitModel(): ByteArray

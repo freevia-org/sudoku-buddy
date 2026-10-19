@@ -101,13 +101,14 @@ internal fun ColumnScope.Lesson(state: PuzzleState, trailing: @Composable () -> 
         }
     }
 
-    if (guidance.effect == null) {
+    val effect = guidance.effect
+    if (effect == null) {
         Trailing(guidance.body, MaterialTheme.typography.bodyMedium, null, trailing)
     } else {
         Text(localized(guidance.body), style = MaterialTheme.typography.bodyMedium)
         // Last, because it is the summary of a move whose reasoning is above it.
         Trailing(
-            guidance.effect,
+            effect,
             MaterialTheme.typography.bodySmall,
             MaterialTheme.colorScheme.onSurfaceVariant,
             trailing,
@@ -489,14 +490,9 @@ private fun ColumnScope.OpenPanel(
                 Text(localized("Earlier steps used in this proof"), style = MaterialTheme.typography.labelLarge)
                 for (dependency in it.sorted()) {
                     val earlier = state.walkthrough?.steps?.getOrNull(dependency)
-                    val reason = if (earlier is Deduction.Elimination) {
-                        val target = (state.currentDeduction as? Deduction.Placement)?.index
-                        if (target != null && target in earlier.fromCells) {
-                            "Why ${earlier.digit} was removed from r${target / 9 + 1}c${target % 9 + 1}"
-                        } else "${earlier.technique}: remove ${earlier.digit}"
-                    } else earlier?.technique.orEmpty()
+                    val label = PuzzleLogic.dependencyLabel(earlier, (state.currentDeduction as? Deduction.Placement)?.index, dependency)
                     TextButton(onClick = { onChange(state.visitReason(dependency + 1)) }) {
-                        Text(localized("Step ${dependency + 1}: $reason"))
+                        Text(localized(label))
                     }
                 }
             }
@@ -542,7 +538,7 @@ private fun HowTo(open: Boolean, onToggle: () -> Unit) {
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Text(
-            localized("how"),
+            localized("How to spot one"),
             style = MaterialTheme.typography.labelLarge,
             color = MaterialTheme.colorScheme.primary,
         )

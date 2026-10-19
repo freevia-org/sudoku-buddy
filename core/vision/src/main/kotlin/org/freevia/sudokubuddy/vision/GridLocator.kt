@@ -118,17 +118,14 @@ object GridLocator {
             val rescored = image.toMat().releasing { full ->
                 val candidates = QuadDetector.detect(image, workingEdge) + QuadDetector.detectRules(image, workingEdge)
                 (candidates + candidates.filter { kotlin.math.abs(it.rotationDegrees) < 10.0 }.map { bounds(it) }).map { quad ->
-                    val aligned = alignRules(full, quad) ?: quad
+                    val aligned = RuleAlignment.align(image, quad)
                     aligned to rectify(full, aligned, scoringSize(aligned)).releasing { GridScorer.score(it) }
                 }
             }
-            // The strict score above remains the ranking rule. Save only its strongest
-            // few refitted candidates for the final one-line-occlusion check below.
+            // Preserve the strongest refitted outlines for the final one-line retry.
             alignedOutlines += rescored.sortedByDescending { it.second }.take(3).map { it.first }
             val rules = rescored.maxByOrNull { it.second }?.takeIf { it.second >= MIN_GRID_SCORE } ?: continue
-            val rectified = image.toMat().releasing { full ->
-                rectify(full, rules.first).releasing { it.toGrayImage() }
-            }
+            val rectified = PerspectivePixels.gray(image, rules.first, RECTIFIED_SIZE)
             return GridLocation.Found(rules.first, rules.second, rectified)
         }
 
@@ -148,8 +145,7 @@ object GridLocator {
 
         val obscured = askAgainForAnObscuredGrid(image, alignedOutlines)
         if (obscured != null) {
-            val rectified = image.toMat().releasing { rectify(it, obscured.first, RECTIFIED_SIZE.toDouble()) }
-            return GridLocation.Found(obscured.first, obscured.second, rectified.releasing { it.toGrayImage() })
+            return GridLocation.Found(obscured.first, obscured.second, PerspectivePixels.gray(image, obscured.first, RECTIFIED_SIZE))
         }
         return nearest ?: GridLocation.NoGrid(0.0, 0)
     }
@@ -162,27 +158,6 @@ object GridLocator {
      */
     internal fun rectifyFor(image: GrayImage, quad: Quad): GrayImage =
         image.toMat().releasing { full -> rectify(full, quad, scoringSize(quad)).releasing { it.toGrayImage() } }
-
-    /** Refit the outer rules when a traced contour includes adjoining ink or annotations. */
-    private fun alignRules(full: Mat, quad: Quad): Quad? {
-        val side = scoringSize(quad)
-        val geometry = rectify(full, quad, side).releasing { GridLineFitter.fit(it.toGrayImage()) } ?: return null
-        val source = MatOfPoint2f(Point(0.0, 0.0), Point(side, 0.0), Point(side, side), Point(0.0, side))
-        val destination = MatOfPoint2f(*quad.corners.map { Point(it.x, it.y) }.toTypedArray())
-        val transform = Imgproc.getPerspectiveTransform(source, destination)
-        val x0 = geometry.verticalLines.first()
-        val x1 = geometry.verticalLines.last()
-        val y0 = geometry.horizontalLines.first()
-        val y1 = geometry.horizontalLines.last()
-        val rules = MatOfPoint2f(Point(x0, y0), Point(x1, y0), Point(x1, y1), Point(x0, y1))
-        val onPhoto = MatOfPoint2f()
-        return try {
-            org.opencv.core.Core.perspectiveTransform(rules, onPhoto, transform)
-            Quad.ordering(onPhoto.toArray().map { Corner(it.x, it.y) })
-        } finally {
-            listOf(source, destination, transform, rules, onPhoto).forEach { it.release() }
-        }
-    }
 
     /** A connected annotation can bend one contour corner without bending the grid rules. */
     private fun bounds(quad: Quad): Quad {
@@ -274,8 +249,7 @@ object GridLocator {
                 strongest?.second ?: 0.0, candidates.size, strongest?.first,
             )
 
-        val rectified = rectify(full, best.first, RECTIFIED_SIZE.toDouble())
-        return GridLocation.Found(best.first, best.second, rectified.releasing { it.toGrayImage() })
+        return GridLocation.Found(best.first, best.second, PerspectivePixels.gray(image, best.first, RECTIFIED_SIZE))
         } finally { full.release() }
     }
 
@@ -330,7 +304,7 @@ object GridLocator {
             val size = scoringSize(quad)
             val flat = rectify(full, quad, size).releasing { GridScorer.score(it) }
             if (flat >= MIN_GRID_SCORE) return FromCells(quad, flat,
-                rectify(full, quad).releasing { it.toGrayImage() }, curved = false)
+                PerspectivePixels.gray(image, quad, RECTIFIED_SIZE), curved = false)
         }
         for (lattice in lattices) {
             val quad = lattice.quad()
@@ -365,19 +339,6 @@ object GridLocator {
     private fun askAgainForAnObscuredGrid(image: GrayImage, alignedOutlines: List<Quad>): Pair<Quad, Double>? {
         val full = image.toMat()
         try {
-        // A grid found by refitting the lines may still have one line hidden by glare,
-        // screen UI, or a mark. The strict refit above deliberately rejected it; only
-        // after normal contours and cell-based recovery have failed do we allow one line.
-        val aligned = alignedOutlines.distinct()
-            .map { quad ->
-                quad to rectify(full, quad, scoringSize(quad)).releasing {
-                    GridScorer.score(it, OBSCURED_LINES_ALLOWED)
-                }
-            }
-            .maxByOrNull { it.second }
-            ?.takeIf { it.second >= MIN_GRID_SCORE }
-        if (aligned != null) return aligned
-
         for (workingEdge in QuadDetector.workingEdges()) {
             val best = QuadDetector.detect(image, workingEdge)
                 .map { quad ->
@@ -418,6 +379,21 @@ object GridLocator {
             } finally { lattices.forEach { it.close() } }
             if (best != null) return best
         }
+        // Keep already accepted readings stable; rescue refitted grids only after
+        // every existing outline and lattice fallback has failed.
+        // A grid found by refitting the lines may still have one line hidden by glare,
+        // screen UI, or a mark. The strict refit above deliberately rejected it; only
+        // after normal contours and cell-based recovery have failed do we allow one line.
+        val aligned = alignedOutlines.distinct()
+            .map { quad ->
+                quad to rectify(full, quad, scoringSize(quad)).releasing {
+                    GridScorer.score(it, OBSCURED_LINES_ALLOWED)
+                }
+            }
+            .maxByOrNull { it.second }
+            ?.takeIf { it.second >= MIN_GRID_SCORE }
+        if (aligned != null) return aligned
+
         return null
         } finally { full.release() }
     }

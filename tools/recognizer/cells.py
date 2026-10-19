@@ -12,7 +12,7 @@ So there is no longer a second implementation to keep in step. The Kotlin reader
 exports the exact 28x28 bitmaps it feeds its classifier and training reads those,
 which makes the two agree by construction rather than by vigilance:
 
-    ./gradlew :core:recognize:test --tests '*ExportNormalisedTest*' -Ddump=true --rerun-tasks
+    ./gradlew :core:recognize:jvmTest --tests '*ExportNormalisedTest*' -Ddump=true --rerun-tasks
 """
 import json
 import os
@@ -92,5 +92,11 @@ def export_is_stale():
         "CellExtractor.kt", "GridLocator.kt", "GridLineFitter.kt", "StructuralGate.kt",
         "CellGrid.kt", "GrayImage.kt", "GrayImageOps.kt", "Mats.kt", "Quad.kt",
         "QuadDetector.kt", "GridScorer.kt")]
+    image = os.path.join(REPO, "core", "image", "src", "commonMain", "kotlin",
+                         "org", "freevia", "sudokubuddy", "vision")
+    sources += [os.path.join(image, name) for name in (
+        "CellExtractor.kt", "GridLineFitter.kt", "GrayImage.kt", "GrayImageOps.kt")]
+    sources += [os.path.join(REPO, "core", "recognize", "src", "jvmMain", "kotlin",
+                             "org", "freevia", "sudokubuddy", "recognize", "CellImageOps.kt")]
     return oldest is None or any(os.path.getmtime(path) > oldest
                                  for path in sources if os.path.isfile(path))

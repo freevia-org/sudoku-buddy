@@ -45,7 +45,7 @@ object NakedSingle : Technique {
         val byDigit = mutableMapOf<Int, Int>()
         for (peer in Coordinates.peers[index]) {
             val value = state.valueAt(peer) ?: continue
-            if (value != answer) byDigit.putIfAbsent(value, peer)
+            if (value != answer) byDigit.getOrPut(value) { peer }
         }
         return Reasons(byDigit.values.toSet(), ((1..9) - answer - byDigit.keys).sorted())
     }

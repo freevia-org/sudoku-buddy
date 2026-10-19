@@ -22,6 +22,12 @@ dependencyResolutionManagement {
 
 include(":core:model")
 include(":core:solver")
-include(":core:vision")
+include(":shared")
+include(":core:presentation")
+include(":core:image")
 include(":core:recognize")
-include(":app")
+// iOS development needs neither the Android SDK nor the Java OpenCV pipeline.
+if (providers.gradleProperty("iosOnly").orNull != "true") {
+    include(":core:vision")
+    if (providers.gradleProperty("visionOnly").orNull != "true") include(":app")
+}

@@ -1,5 +1,7 @@
 package org.freevia.sudokubuddy.solver
 
+import kotlin.jvm.JvmInline
+
 /**
  * The digits `1..9` still possible in a cell, held as bits 0..8 of an `Int`.
  *

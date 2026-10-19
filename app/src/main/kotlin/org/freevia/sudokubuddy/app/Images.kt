@@ -41,6 +41,37 @@ object Images {
         val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
         BitmapFactory.decodeByteArray(bytes, 0, bytes.size, bounds)
         check(bounds.outWidth > 0 && bounds.outHeight > 0) { "could not decode the captured image" }
+        // Match iOS's bundled OpenCV codec rather than the OS-dependent JPEG decoder.
+        // Platform decoding remains available for formats such as HEIF not in OpenCV.
+        org.freevia.sudokubuddy.vision.OpenCvNatives.ensureLoaded { check(org.opencv.android.OpenCVLoader.initLocal()) }
+        val sample = CaptureSampling.sampleSize(bounds.outWidth, bounds.outHeight)
+        val encoded = org.opencv.core.MatOfByte(*bytes)
+        val decodedMat = try {
+            val reduced = when { sample >= 8 -> org.opencv.imgcodecs.Imgcodecs.IMREAD_REDUCED_COLOR_8
+                sample >= 4 -> org.opencv.imgcodecs.Imgcodecs.IMREAD_REDUCED_COLOR_4
+                sample >= 2 -> org.opencv.imgcodecs.Imgcodecs.IMREAD_REDUCED_COLOR_2
+                else -> org.opencv.imgcodecs.Imgcodecs.IMREAD_COLOR }
+            org.opencv.imgcodecs.Imgcodecs.imdecode(encoded, reduced or org.opencv.imgcodecs.Imgcodecs.IMREAD_IGNORE_ORIENTATION)
+        } finally { encoded.release() }
+        try {
+            if (!decodedMat.empty()) {
+                val rgb = org.opencv.core.Mat()
+                try {
+                    org.opencv.imgproc.Imgproc.cvtColor(decodedMat, rgb, org.opencv.imgproc.Imgproc.COLOR_BGR2RGB)
+                    if (sample > 8) org.opencv.imgproc.Imgproc.resize(rgb, rgb,
+                        org.opencv.core.Size(kotlin.math.ceil(bounds.outWidth.toDouble()/sample), kotlin.math.ceil(bounds.outHeight.toDouble()/sample)))
+                    when ((rotationDegrees % 360 + 360) % 360) {
+                        90 -> org.opencv.core.Core.rotate(rgb,rgb,org.opencv.core.Core.ROTATE_90_CLOCKWISE)
+                        180 -> org.opencv.core.Core.rotate(rgb,rgb,org.opencv.core.Core.ROTATE_180)
+                        270 -> org.opencv.core.Core.rotate(rgb,rgb,org.opencv.core.Core.ROTATE_90_COUNTERCLOCKWISE)
+                        0 -> Unit
+                        else -> error("Photograph rotation must be a quarter turn")
+                    }
+                    val pixels = ByteArray(rgb.cols()*rgb.rows()*3).also { rgb.get(0,0,it) }
+                    return Photograph(org.freevia.sudokubuddy.vision.PhotoLuma.image(rgb.cols(),rgb.rows(),pixels),RgbImage(rgb.cols(),rgb.rows(),pixels))
+                } finally { rgb.release() }
+            }
+        } finally { decodedMat.release() }
         val options = BitmapFactory.Options().apply {
             inSampleSize = CaptureSampling.sampleSize(bounds.outWidth, bounds.outHeight)
             inPreferredConfig = Bitmap.Config.ARGB_8888
@@ -67,7 +98,7 @@ object Images {
                     val r = (p shr 16) and 0xFF
                     val g = (p shr 8) and 0xFF
                     val b = p and 0xFF
-                    gray[i] = ((r * 299 + g * 587 + b * 114) / 1000).toByte()
+                    gray[i] = org.freevia.sudokubuddy.vision.PhotoLuma.pixel(r,g,b).toByte()
                     rgb[i * 3] = r.toByte()
                     rgb[i * 3 + 1] = g.toByte()
                     rgb[i * 3 + 2] = b.toByte()
@@ -95,7 +126,7 @@ object Images {
             val g = (p shr 8) and 0xFF
             val b = p and 0xFF
             // Rec. 601 luma, matching what the JVM side uses so measurements transfer.
-            pixels[i] = ((r * 299 + g * 587 + b * 114) / 1000).toByte()
+            pixels[i] = org.freevia.sudokubuddy.vision.PhotoLuma.pixel(r,g,b).toByte()
         }
         return GrayImage(width, height, pixels)
     }

@@ -1,0 +1,35 @@
+{
+  "bundle_id": "org.freevia.sudokubuddy.ios",
+  "version": "1.0.2",
+  "build": "1",
+  "minimum_ios": "16.0",
+  "sdk": "iphoneos27.1",
+  "catalogs": 71,
+  "fonts": [
+    "Roboto-Regular.ttf",
+    "Roboto-Medium.ttf",
+    "Roboto-Bold.ttf",
+    "Roboto-BoldItalic.ttf"
+  ],
+  "phone_orientations": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortraitUpsideDown",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "tablet_orientations": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortraitUpsideDown",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "models": {
+    "digits.bin": "c32e1ab751537e74e6da57455778368588718a8e0c4b4bb36246e100623e7f06"
+  },
+  "exempt_encryption": true,
+  "production_endpoint": true,
+  "debug_fixtures_absent": true,
+  "privacy_manifest_present": true,
+  "binary_sha256": "750c0e02a0156c0db2d94cde63afb583051c59e6c1f245b77d6d94b5afa64b31",
+  "qualification": "Local bundle audit; signing, upload validation and physical-device qualification remain separate."
+}

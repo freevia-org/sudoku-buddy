@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-19",
+  "ios_ui": {
+    "passed": 22,
+    "failed": 0,
+    "result_bundle": ".tools/SubmissionParityUI.xcresult",
+    "scope": "Pre-merge full suite; latest merged suite is required by PR CI"
+  },
+  "ipad_ui": {
+    "passed": 3,
+    "failed": 0,
+    "result_bundle": ".tools/SubmissionIPadUI.xcresult"
+  },
+  "storage_tests": 36,
+  "resource_replay_tests": 14,
+  "shared_presentation_tests": {
+    "jvm": 55,
+    "ios_native": 55
+  },
+  "corpus": {
+    "images": 118,
+    "matching_images": 118,
+    "equivalent": true,
+    "compared_fields": [
+      "status",
+      "givens",
+      "progress",
+      "uncertain"
+    ],
+    "differences": [],
+    "scope": "Actual offline importer outputs; not physical camera, pixel rendering, or independent OCR generalization"
+  },
+  "unsigned_archive": ".tools/SudokuBuddy-Merged.xcarchive",
+  "signed": false,
+  "physical_camera_qualified": false,
+  "live_report_delivery_qualified": false,
+  "uploaded": false,
+  "policy_source_published": true,
+  "store_screenshots": 14,
+  "normal_launch_photo_picker_and_restart_verified": true,
+  "handoff_simulator": {
+    "name": "Sudoku Buddy iPhone",
+    "id": "CF35F967-FBFC-4BD0-B2C3-A5FD9893EAA2",
+    "normal_launch": true,
+    "screen": "four-stage hint"
+  },
+  "website_publication": "website-publication.json",
+  "merged_corpus_verified": true,
+  "release_version": "1.0.2",
+  "release_source_commit": "0218a5a04aa2c32cd26a0959a6f50db2658321bb"
+}

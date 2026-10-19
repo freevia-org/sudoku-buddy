@@ -8,6 +8,11 @@ from catalog import extract, solver_variants, evidence_sources
 
 
 class CatalogTest(unittest.TestCase):
+    def test_shared_presentation_sources_remain_in_the_catalog(self):
+        sources = {entry["source"] for entry in extract(write=False)}
+        self.assertIn("Choose a candidate to see why it cannot go in your square.", sources)
+        self.assertIn("This square may contain candidate notes rather than a full digit. Please check it.", sources)
+
     def test_assembled_evidence_includes_the_verb_and_numbered_unit(self):
         sources = {entry["source"] for entry in extract(write=False)}
         self.assertEqual(14, len(evidence_sources()))

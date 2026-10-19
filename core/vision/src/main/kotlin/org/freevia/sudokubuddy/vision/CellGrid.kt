@@ -99,7 +99,7 @@ internal object CellGrid {
         Imgproc.resize(full, small, Size(
             (full.width() * scale).coerceAtLeast(1.0),
             (full.height() * scale).coerceAtLeast(1.0),
-        ))
+        ), 0.0, 0.0, Imgproc.INTER_LINEAR_EXACT)
         Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
         Imgproc.adaptiveThreshold(
             blurred, binary, 255.0,
@@ -283,6 +283,10 @@ internal object CellGrid {
         fun flatten(full: Mat, side: Double): Mat? {
             val coefficients = curve ?: return null
             val size = side.toInt()
+            if (side == GridLocator.RECTIFIED_SIZE.toDouble()) {
+                val values=DoubleArray(TERMS*2) { coefficients.get(it/2,it%2)[0] }
+                return PerspectivePixels.surface(full.toGrayImage(),values,size).toMat()
+            }
             val xs = FloatArray(size * size)
             val ys = FloatArray(size * size)
             // Pulled out of the Mat once: reading a coefficient back through OpenCV inside

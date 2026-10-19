@@ -62,7 +62,7 @@ example you do not want to post publicly.
 [Local-data deletion](https://freevia.org/sudoku-buddy/privacy#uninstalling)
 
 Camera recognition and puzzle history stay on the device. Users can submit an
-uncertain-reading report to Freevia for private recognition analysis; reports
+uncertain-reading report to Freevia for private recognition analysis and training; reports
 include the puzzle photo, recognition results and corrections. Automatic sharing
 is optional and off by default. The app has no account, ads, routine usage
 analytics or ad tracking. See the [privacy policy](https://freevia.org/sudoku-buddy/privacy)
@@ -75,6 +75,16 @@ or endorsement rights. Third-party components retain their own licenses; see
 [the notices](NOTICE) and [bundled license texts](app/src/main/assets/licenses).
 
 ## For contributors
+
+The SwiftUI iOS port shares Kotlin recognition, solver and teaching logic, with
+native scanning, durable history, localization and consent-based feedback. Open
+`iosApp/SudokuBuddy.xcodeproj`; see [iOS development](docs/ios-preparation.md)
+for setup and tests, and [App Store preparation](docs/app-store/README.md) for the submission packet and remaining account/device gates. The iOS preview supports
+camera/photo scanning, manual entry, checking, hints, and on-device history with
+automatic puzzle and progress restoration after restart. It also includes the
+71 Android language catalogs, launcher artwork, offline notices, and Android
+overlay colors in a dark SwiftUI interface. Review scanned cells
+before play; the iOS capture path still needs validation on a physical iPhone.
 
 The Android app uses Kotlin, Jetpack Compose, CameraX and OpenCV, with separate
 modules for recognition and deterministic solving. Use JDK 21 and Android SDK

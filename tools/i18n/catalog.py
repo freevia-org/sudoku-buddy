@@ -18,6 +18,11 @@ SOLVER_WORDS = set("none one two three four five six seven eight contains was we
 # localized(). Date-format patterns intentionally remain presentation resources.
 NON_PRESENTATION_LITERALS = {
     "Content-Type", "X-Sudoku-Training-Consent", "CaptureEvidence", "UnsafeOptInUsageError",
+    "Degenerate photograph quadrilateral", "Photograph rotation must be a quarter turn",
+    "incorrect digit model length: {0}",
+    # Shared MessageCatalog maps this to the same approved photo-error translation
+    # already used by the iOS resource adapter; English retains the specific advice.
+    "Photograph the original puzzle rather than an annotated result screen.",
 }
 
 def evidence_sources():
@@ -165,6 +170,8 @@ def extract(write=True):
     paths = list((ROOT / "app/src/main/kotlin").rglob("*.kt"))
     for module in ("solver", "recognize", "vision"):
         paths += list((ROOT / f"core/{module}/src/main/kotlin").rglob("*.kt"))
+    for module in ("presentation", "image"):
+        paths += list((ROOT / f"core/{module}/src/commonMain/kotlin").rglob("*.kt"))
     for path in paths:
         if path.name in {"Localization.kt", "MessageCatalog.kt", "AppLanguages.kt", "LicenseScreen.kt"}: continue
         code = path.read_text(encoding="utf-8")
@@ -187,6 +194,8 @@ def extract(write=True):
                     sources.update(solver_variants(raw, path.name))
             i += 1
     sources.update(["Language", "Use device language", "Choose language", "Cancel", "English", "finished"])
+    # Preserve the published catalog entry after the loader moved to jvmMain.
+    sources.add("{0} is missing from the classpath")
     sources.update(SOLVER_WORDS)
     sources.update(evidence_sources())
     sources.update(("This fills nothing in. It rules {0} out of one square.",

@@ -530,13 +530,13 @@ def corpus_cells():
     connectivity all at once, and not one cell in 746 came out the same on both sides.
 
     Requires the export to have been run, which is also what produces the cell PNGs:
-        ./gradlew :core:recognize:test --tests '*ExportNormalisedTest*' -Ddump=true --rerun-tasks
+        ./gradlew :core:recognize:jvmTest --tests '*ExportNormalisedTest*' -Ddump=true --rerun-tasks
     """
     if export_is_stale():
         raise SystemExit(
             "Extraction sources changed or exported bitmaps are missing/stale, so training would "
             "use images the reader no longer produces. Re-export first: ./gradlew "
-            ":core:recognize:test --tests '*ExportNormalisedTest*' -Ddump=true "
+            ":core:recognize:jvmTest --tests '*ExportNormalisedTest*' -Ddump=true "
             "--rerun-tasks")
 
     xs, ys, sources, photos, squares = [], [], [], [], []
@@ -562,7 +562,7 @@ def corpus_cells():
     if not xs:
         raise SystemExit(
             "No normalised cells found under " + NORMALISED_HINT + ". Run the "
-            "export first: ./gradlew :core:recognize:test --tests "
+            "export first: ./gradlew :core:recognize:jvmTest --tests "
             "'*ExportNormalisedTest*' -Ddump=true --rerun-tasks")
     return np.stack(xs), np.array(ys, dtype=np.int64), sources, photos, squares
 

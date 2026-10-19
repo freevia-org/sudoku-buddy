@@ -91,6 +91,8 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
             colorCells[it].width == cells[it].width && colorCells[it].height == cells[it].height
         }) { "color and grayscale cells must use the same geometry" }
 
+        if (colorCells != null && containsResultOverlays(colorCells)) return ReadResult.Unreadable("Photograph the original puzzle rather than an annotated result screen.", emptySet())
+
         val ink = CellAnalyzer.inspect(cells)
         val core = findPrintedCore(ink.mapNotNull { it?.blob })
             ?: return ReadResult.Unreadable(
@@ -98,13 +100,16 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
             )
 
         // The size and ink passes can reconsider a role, but the glyph has not changed.
-        // Infer it once; candidate-only cells still never invoke the classifier.
+        // Infer it once. Ordinary candidate-only cells skip classification; a detached
+        // bar/body glyph can be checked before deciding that it is a mark.
         val probabilities = ink.map { cell -> lazy(LazyThreadSafetyMode.NONE) {
             cell?.let { classifier.classify(it.normalised) }
         } }
 
         fun readAll(sortByInk: Boolean) = ink.mapIndexed { index, cell ->
-            val kind = if (cell == null) Ink.NONE else classify(cell, core, sortByInk)
+            val first = if (cell == null) Ink.NONE else classify(cell, core, sortByInk)
+            val kind = if (first == Ink.MARK && cell?.brokenStroke != null)
+                recoverBrokenStroke(cell,core,sortByInk,probabilities[index].value ?: FloatArray(0)) else first
             CellReading(
                 index = index,
                 ink = kind,
@@ -300,7 +305,7 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
         if (middle >= PRINTED_MIN) return readings
 
         val agreeing = rank.filter { (_, blob) ->
-            Math.abs(blob.heightRatio / core.height - middle) <= ONE_FIGURE_SPREAD
+            abs(blob.heightRatio / core.height - middle) <= ONE_FIGURE_SPREAD
         }
         if (agreeing.size < ENOUGH_FOR_A_RANK) return readings
         if (readings.count { it.ink == Ink.PRINTED } + agreeing.size > PLAUSIBLE_GIVENS) {
@@ -553,7 +558,7 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
 
     private fun between(a: FloatArray, b: FloatArray): Double {
         var sum = 0.0
-        for (i in a.indices) sum += Math.abs(a[i] - b[i]).toDouble()
+        for (i in a.indices) sum += abs(a[i] - b[i]).toDouble()
         return sum
     }
 
@@ -562,7 +567,7 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
         val width = rows.first().size
         for (column in 0 until width) {
             val mean = rows.sumOf { it[column] } / rows.size
-            val spread = Math.sqrt(rows.sumOf { (it[column] - mean) * (it[column] - mean) } / rows.size)
+            val spread = kotlin.math.sqrt(rows.sumOf { (it[column] - mean) * (it[column] - mean) } / rows.size)
             for (row in rows) row[column] = (row[column] - mean) / (spread + 1e-9)
         }
     }
@@ -654,6 +659,14 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
 
             else -> Ink.MARK
         }
+    }
+
+    /** Recover only a discarded two-piece bar/body glyph, leaving existing digits and
+     * printed-core measurements alone. Candidate rows and erased fragments stay excluded. */
+    internal fun recoverBrokenStroke(ink: CellInk,core: PrintedCore,sortByInk: Boolean,probabilities: FloatArray): Ink {
+        val restored=ink.brokenStroke ?: return Ink.MARK
+        if ((probabilities.maxOrNull() ?: 0f) < 0.95f || InkLayout.evidence(ink) != InkLayout.Evidence.SINGLE_GLYPH) return Ink.MARK
+        return classify(CellInk(restored,ink.normalised,0.0,0,ink.pieces),core,sortByInk)
     }
 
     /**

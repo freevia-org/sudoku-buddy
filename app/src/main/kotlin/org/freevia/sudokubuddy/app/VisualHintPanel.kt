@@ -28,24 +28,24 @@ internal fun VisualHintPanel(state: PuzzleState, onChange: (PuzzleState) -> Unit
     fun changeFrame(next: HintFrame) = onChange(state.copy(hintNavigation = navigation.copy(frame = next)))
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
-            listOf("Where", "Square", "Trace", "Answer").forEachIndexed { depth, label ->
+            VisualHint.stageNames.forEachIndexed { depth, label ->
                 TextButton(onClick = { onChange(state.copy(hintDepth = depth,
                     hintNavigation = HintNavigation())) }, enabled = depth != state.hintDepth) {
                     Text(localized("${depth + 1}. $label"))
                 }
             }
         }
-        Text(localized("Your square stays outlined. Green squares show evidence; crossed digits are ruled out."),
+        Text(localized(VisualHint.KEY_CAPTION),
             style = MaterialTheme.typography.bodySmall)
         when (state.hintDepth) {
-            0 -> Text(localized("Look in this box. Follow the outline to the square this hint will explain."))
-            1 -> Text(localized("These are the starting candidates for your square. Trace explains which possibilities can be ruled out."))
+            0 -> Text(localized(VisualHint.stageCaption(hint, state.hintDepth)))
+            1 -> Text(localized(VisualHint.stageCaption(hint, state.hintDepth)))
             else -> {
                 if (lesson == null) {
                     if (state.hintDepth == 3) {
-                        Text(localized("Place ${hint.digit} in your outlined square."), style = MaterialTheme.typography.titleMedium)
-                        Text(localized("Open ‘Why this square?’ to see the final placement evidence, or choose a ruled-out candidate to trace its proof."))
-                    } else Text(localized("Work backwards from your square. Choose a question below."))
+                        Text(localized(VisualHint.stageCaption(hint, state.hintDepth)), style = MaterialTheme.typography.titleMedium)
+                        Text(localized(VisualHint.ANSWER_GUIDANCE))
+                    } else Text(localized(VisualHint.stageCaption(hint, state.hintDepth)))
                     val branches = VisualHint.branches(hint)
                     for (step in branches) {
                         TextButton(onClick = { onChange(state.copy(hintNavigation = navigation.visit(step))) }) {

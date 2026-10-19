@@ -1,0 +1,51 @@
+{
+  "screen-arial-lining.jpg": {
+    "cells": 81,
+    "correct_roles": 81,
+    "correct_cells": 81,
+    "digit_cells": 30,
+    "correct_digits": 30
+  },
+  "screen-century-script-half.jpg": {
+    "cells": 81,
+    "correct_roles": 47,
+    "correct_cells": 47,
+    "digit_cells": 59,
+    "correct_digits": 59
+  },
+  "screen-consolas-marks.jpg": {
+    "cells": 81,
+    "correct_roles": 80,
+    "correct_cells": 80,
+    "digit_cells": 30,
+    "correct_digits": 30
+  },
+  "screen-garamond-oldstyle.jpg": {
+    "cells": 81,
+    "correct_roles": 80,
+    "correct_cells": 80,
+    "digit_cells": 30,
+    "correct_digits": 30
+  },
+  "screen-georgia-oldstyle.jpg": {
+    "cells": 81,
+    "correct_roles": 79,
+    "correct_cells": 79,
+    "digit_cells": 30,
+    "correct_digits": 29
+  },
+  "screen-impact-bold.jpg": {
+    "cells": 81,
+    "correct_roles": 81,
+    "correct_cells": 81,
+    "digit_cells": 30,
+    "correct_digits": 30
+  },
+  "screen-times-inkfree-solved.jpg": {
+    "cells": 81,
+    "correct_roles": 65,
+    "correct_cells": 65,
+    "digit_cells": 81,
+    "correct_digits": 81
+  }
+}

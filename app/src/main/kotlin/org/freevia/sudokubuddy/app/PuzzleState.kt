@@ -129,9 +129,8 @@ data class PuzzleState(
     /** Unresolved uncertainty starts open; a settled reading stays collapsed when restored. */
     val readingReviewExpanded: Boolean = uncertainCells.isNotEmpty(),
 ) {
-    val hasReadingReview: Boolean get() = openQuestions.isNotEmpty() || originalUncertainCells.isNotEmpty()
-    val showReadingReview: Boolean get() = hasReadingReview && readingReviewExpanded &&
-        selectedCell == null && (overlay == OverlayMode.READING || overlay == OverlayMode.NONE)
+    val hasReadingReview: Boolean get() = PuzzleLogic.hasReadingReview(openQuestions.size,originalUncertainCells.size)
+    val showReadingReview: Boolean get() = PuzzleLogic.showReadingReview(hasReadingReview,readingReviewExpanded,selectedCell!=null,overlay)
 
     // Copies made for taps and tutor navigation share grid-dependent work. The cache
     // never retains photos and is bounded so editing/reopening puzzles cannot grow it.

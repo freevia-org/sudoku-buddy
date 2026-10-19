@@ -1,7 +1,6 @@
 package org.freevia.sudokubuddy.model
 
 import org.freevia.sudokubuddy.model.Coordinates.CELL_COUNT
-import java.util.Collections
 
 /**
  * An immutable 9x9 grid. Every mutation returns a new grid.
@@ -14,7 +13,7 @@ class Grid private constructor(cells: List<Cell>) {
 
     // A Kotlin List is only a read-only view. Keep a snapshot and prevent a caller
     // from changing it through a MutableList/Java view while it is being solved.
-    val cells: List<Cell> = Collections.unmodifiableList(ArrayList(cells))
+    val cells: List<Cell> = immutableSnapshot(cells)
 
     init {
         require(cells.size == CELL_COUNT) { "a grid needs $CELL_COUNT cells but got ${cells.size}" }
