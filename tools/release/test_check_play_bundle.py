@@ -29,7 +29,7 @@ def elf(alignment=16384, relro_end=None, load_size=16384):
 
 
 MANIFEST = '''<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="org.freevia.sudokubuddy" android:versionCode="123" android:versionName="1.0.1">
+package="org.freevia.sudokubuddy" android:versionCode="123" android:versionName="1.0.2">
 <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="36"/>
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-permission android:name="android.permission.INTERNET"/>
@@ -76,7 +76,7 @@ class CandidateAuditTest(unittest.TestCase):
             MANIFEST.replace('<uses-permission android:name="android.permission.INTERNET"/>\n', ''),
             MANIFEST.replace('</manifest>', '<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/></manifest>'),
             MANIFEST.replace('android:versionCode="123"', 'android:versionCode="1"'),
-            MANIFEST.replace('android:versionName="1.0.1"', 'android:versionName="1.0.0"'),
+            MANIFEST.replace('android:versionName="1.0.2"', 'android:versionName="1.0.0"'),
             MANIFEST.replace('<application ', '<application android:debuggable="true" '),
             MANIFEST.replace('android:allowBackup="false"', 'android:allowBackup="true"'),
             MANIFEST.replace('<application ', '<application android:testOnly="true" '),
