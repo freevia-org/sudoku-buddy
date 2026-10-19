@@ -38,8 +38,6 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
-import org.freevia.sudokubuddy.solver.AnswerCheck
-import org.freevia.sudokubuddy.solver.AnswerChecker
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -349,14 +347,4 @@ private fun HistoryActions(onSend: () -> Unit, onDelete: () -> Unit, deleteLabel
 private fun thumbnailOptions() = BitmapFactory.Options().apply { inSampleSize = 16 }
 
 /** A line telling you which puzzle this is without opening it. */
-private fun summarise(entry: HistoryEntry): String {
-    val given = entry.grid.givenCount
-    val written = entry.grid.filledCount - given
-    val progress = when {
-        entry.grid.isComplete -> "finished"
-        written == 0 -> "not started"
-        else -> "$written written in"
-    }
-    val wrong = (AnswerChecker.check(entry.grid) as? AnswerCheck.Checked)?.incorrect?.size ?: 0
-    return if (wrong > 0) "$given printed, $progress, $wrong wrong" else "$given printed, $progress"
-}
+private fun summarise(entry: HistoryEntry): String = PuzzleLogic.historySummary(entry.grid)

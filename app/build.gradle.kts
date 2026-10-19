@@ -15,6 +15,7 @@ android {
         applicationId = "org.freevia.sudokubuddy"
         minSdk = 26
         targetSdk = 36
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // CI supplies a build number so every distributed build is distinct;
         // locally it stays 1.
         versionCode = (System.getenv("BUILD_NUMBER") ?: "1").toIntOrNull()
@@ -23,6 +24,19 @@ android {
         versionName = "1.0.1"
         buildConfigField("String", "MISREAD_SUBMISSION_ENDPOINT", "\"\"")
     }
+
+    sourceSets.getByName("androidTest").assets.srcDir("../iosApp/TestFixtures")
+
+    // Opt-in local diagnostic build only; the production APK never contains this shim.
+    providers.gradleProperty("emulatorHwcapShim").orNull?.let { shim ->
+        require(gradle.startParameter.taskNames.none { "release" in it.lowercase() }) {
+            "The local emulator capability workaround must not be used for Release builds"
+        }
+        sourceSets.getByName("debug").jniLibs.srcDir("$shim/jniLibs")
+        sourceSets.getByName("debug").resources.srcDir("$shim/resources")
+        packaging.jniLibs.useLegacyPackaging = true
+    }
+
 
     // OpenCV ships native libraries for four ABIs. Only arm64 matters for real phones,
     // and dropping the rest takes roughly 60MB out of the APK.
@@ -121,6 +135,7 @@ kotlin {
 }
 
 dependencies {
+    implementation(project(":core:presentation"))
     implementation(project(":core:model"))
     implementation(project(":core:solver"))
     implementation(project(":core:vision"))
@@ -143,6 +158,12 @@ dependencies {
     implementation(libs.camera.camera2)
     implementation(libs.camera.lifecycle)
     implementation(libs.camera.view)
+
+    androidTestImplementation(platform(libs.compose.bom))
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    androidTestImplementation("androidx.test.ext:junit:1.3.0")
+    androidTestImplementation("androidx.test:runner:1.7.0")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     testImplementation(libs.kotlin.test)
     testImplementation(libs.junit.jupiter)

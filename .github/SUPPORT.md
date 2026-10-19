@@ -10,7 +10,7 @@ explains the app's purpose and current availability.
 
 Use [GitHub Issues](https://github.com/freevia-org/sudoku-buddy/issues) and include:
 
-- App version and Android version.
+- App version and iOS/iPadOS or Android version.
 - Phone model, if the issue concerns the camera or layout.
 - Steps to reproduce the problem.
 - What you expected and what happened.
@@ -24,6 +24,6 @@ share privately, use email instead. Share only the materials needed to explain t
 Describe the solving or learning situation you want to improve and what would help.
 For a hint explanation, name the technique and the part of the reasoning that was unclear.
 
-Sudoku Buddy is being prepared for its first Google Play release. Support requests do
-not require an account inside the app. See the [privacy policy](https://freevia.org/sudoku-buddy/privacy)
+Android availability and the iOS release state are listed on the website. Support requests
+do not require an account inside the app. See the [privacy policy](https://freevia.org/sudoku-buddy/privacy)
 for how local data and user-initiated diagnostics sharing work.

@@ -12,6 +12,7 @@ kotlin {
 }
 
 dependencies {
+    api(project(":core:image"))
     // The OpenCV Java API is needed to compile, but the implementation is supplied by
     // whoever is running: the openpnp artifact on the JVM, the AAR on Android. Declaring
     // it compileOnly keeps the desktop natives out of the Android build.

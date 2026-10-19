@@ -184,7 +184,9 @@ object ForcingChain : Technique {
         val struck = HashMap<Int, Int>()
         val queue = ArrayDeque<Int>()
 
-        fun mark(square: Int, gone: Int, by: Int) = struck.putIfAbsent(square * 10 + gone, by)
+        fun mark(square: Int, gone: Int, by: Int) {
+            struck.getOrPut(square * 10 + gone) { by }
+        }
 
         forced[from] = digit
         order[from] = 0

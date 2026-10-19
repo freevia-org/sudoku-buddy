@@ -1,0 +1,246 @@
+{
+  "captured": "2026-10-19",
+  "app_version": "1.0.1",
+  "build": "1",
+  "scope": "Actual simulator UI with a synthetic puzzle imported by the real reader; no private corpus imagery, mock camera view or retouching.",
+  "devices": {
+    "iPhone": "iPhone 17 Pro / iOS 27.0",
+    "iPad": "iPad Pro 13-inch (M5) / iPadOS 27.0"
+  },
+  "screenshots": [
+    {
+      "family": "iPhone",
+      "file": "iphone-01-puzzle.png",
+      "pixels": [
+        1206,
+        2622
+      ],
+      "sha256": "f68756ac643c3b85e8589b0f8a3abe515006772a368cf39bec30a1a66aecd4ea",
+      "description": "An imported paper Sudoku, ready to check or ask for help.",
+      "source": ".tools/submission-phone-screens/5825234B-73D7-45B1-922F-62A252B4C40F.png",
+      "provenance": {
+        "test": "testConfidentPhotoOpensAsPuzzleWithoutForcedReview()",
+        "attachment": "5825234B-73D7-45B1-922F-62A252B4C40F.png",
+        "timestamp": 1792408745.001
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPhone",
+      "file": "iphone-02-hint-where.png",
+      "pixels": [
+        1206,
+        2622
+      ],
+      "sha256": "3adfb25309b09e3307f03d32d1a5bef387c0949ccc376bd7965cdb85a7edae2d",
+      "description": "The first hint stage identifies the next square.",
+      "source": ".tools/submission-phone-screens/BF96A761-4643-4665-953A-B7A135003E61.png",
+      "provenance": {
+        "test": "testPhotographedFourStageHint()",
+        "attachment": "BF96A761-4643-4665-953A-B7A135003E61.png",
+        "timestamp": 1792409032.52
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPhone",
+      "file": "iphone-03-hint-square.png",
+      "pixels": [
+        1206,
+        2622
+      ],
+      "sha256": "1c0588d00053911d225cbc739d746417584ff640d327c393a12f261b9a1d6d26",
+      "description": "Explore the starting candidates for the selected square.",
+      "source": ".tools/submission-phone-screens/B1DD6DF0-5AEC-4B88-9AEE-F2D082F6B8A5.png",
+      "provenance": {
+        "test": "testPhotographedFourStageHint()",
+        "attachment": "B1DD6DF0-5AEC-4B88-9AEE-F2D082F6B8A5.png",
+        "timestamp": 1792409033.139
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPhone",
+      "file": "iphone-04-hint-trace.png",
+      "pixels": [
+        1206,
+        2622
+      ],
+      "sha256": "e4bdbc01668504bbf6692fa39b301907876da8ee71a66e504f3e9500a6a75f03",
+      "description": "Trace why candidates can be ruled out.",
+      "source": ".tools/submission-phone-screens/71D43D0A-1446-4505-88C9-16990E11D030.png",
+      "provenance": {
+        "test": "testPhotographedFourStageHint()",
+        "attachment": "71D43D0A-1446-4505-88C9-16990E11D030.png",
+        "timestamp": 1792409033.687
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPhone",
+      "file": "iphone-05-hint-answer.png",
+      "pixels": [
+        1206,
+        2622
+      ],
+      "sha256": "b36b21195025428ec9f810c4ea7361f023f7411505c67c1f7dbb02fddadf9b97",
+      "description": "Reveal the answer and revisit the placement evidence.",
+      "source": ".tools/submission-phone-screens/A9123A60-74F4-49D3-B0C7-25E6FE04FF60.png",
+      "provenance": {
+        "test": "testPhotographedFourStageHint()",
+        "attachment": "A9123A60-74F4-49D3-B0C7-25E6FE04FF60.png",
+        "timestamp": 1792409059.765
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPad",
+      "file": "ipad-01-puzzle.png",
+      "pixels": [
+        2064,
+        2752
+      ],
+      "sha256": "19ce2f21fddf4382c521b77e36f655106b5e55557edc46a4cf5c5faa559de768",
+      "description": "An imported paper Sudoku, ready to check or ask for help.",
+      "source": ".tools/submission-ipad-screens/EB7ADA22-89AE-4B42-A7F6-7EFCBEE3CF98.png",
+      "provenance": {
+        "test": "testConfidentPhotoOpensAsPuzzleWithoutForcedReview()",
+        "attachment": "EB7ADA22-89AE-4B42-A7F6-7EFCBEE3CF98.png",
+        "timestamp": 1792408994.132
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPad",
+      "file": "ipad-02-hint-where.png",
+      "pixels": [
+        2064,
+        2752
+      ],
+      "sha256": "eaf9c29cfcfa784fdaf1c7603082d4c764cb93b2df87dcaab032b183b9806920",
+      "description": "The first hint stage identifies the next square.",
+      "source": ".tools/submission-ipad-screens/FA86B7CF-B92C-415D-8457-D01809CAD8C0.png",
+      "provenance": {
+        "test": "testPhotographedFourStageHint()",
+        "attachment": "FA86B7CF-B92C-415D-8457-D01809CAD8C0.png",
+        "timestamp": 1792409014.966
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPad",
+      "file": "ipad-03-hint-square.png",
+      "pixels": [
+        2064,
+        2752
+      ],
+      "sha256": "f86ca9f002ecf1fac78f6636cfd6bd401768fee4b643e3d15ac98826b4cf8b18",
+      "description": "Explore the starting candidates for the selected square.",
+      "source": ".tools/submission-ipad-screens/9F9C2042-F24A-4430-B33B-6F09A0887A10.png",
+      "provenance": {
+        "test": "testPhotographedFourStageHint()",
+        "attachment": "9F9C2042-F24A-4430-B33B-6F09A0887A10.png",
+        "timestamp": 1792409015.672
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPad",
+      "file": "ipad-04-hint-trace.png",
+      "pixels": [
+        2064,
+        2752
+      ],
+      "sha256": "25e5f21f1cb67d4dbf7df82a74077ced6cefec0cdafa4732b9e4fcee13c2d56d",
+      "description": "Trace why candidates can be ruled out.",
+      "source": ".tools/submission-ipad-screens/BAF6B604-BA6C-42C0-A907-020636969A29.png",
+      "provenance": {
+        "test": "testPhotographedFourStageHint()",
+        "attachment": "BAF6B604-BA6C-42C0-A907-020636969A29.png",
+        "timestamp": 1792409016.604
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPad",
+      "file": "ipad-05-hint-answer.png",
+      "pixels": [
+        2064,
+        2752
+      ],
+      "sha256": "c486369d501427e0d05d6e47f170c810a2411eb32870baadfcc401592f24834b",
+      "description": "Reveal the answer and revisit the placement evidence.",
+      "source": ".tools/submission-ipad-screens/BBB539FA-E45E-4531-B9BD-2BB494CDB890.png",
+      "provenance": {
+        "test": "testPhotographedFourStageHint()",
+        "attachment": "BBB539FA-E45E-4531-B9BD-2BB494CDB890.png",
+        "timestamp": 1792409042.711
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPhone",
+      "file": "iphone-06-read.png",
+      "pixels": [
+        1206,
+        2622
+      ],
+      "sha256": "dbddeb50d78f675f621295bbf4b0e2cc91f079ea04a3e8e427c57fbbb2549139",
+      "description": "Review the recognized clues and handwriting.",
+      "source": ".tools/iphone-store-read.png",
+      "provenance": {
+        "capture": "simctl screenshot after native UI interaction",
+        "normal_launch": true
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPhone",
+      "file": "iphone-07-history.png",
+      "pixels": [
+        1206,
+        2622
+      ],
+      "sha256": "2f11271372e3454cc0166920881f7943fb970a28c3811a5bde4f9fa7d0311760",
+      "description": "Reopen saved puzzle photos and progress in History.",
+      "source": ".tools/iphone-store-history.png",
+      "provenance": {
+        "capture": "simctl screenshot after native UI interaction",
+        "normal_launch": true
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPad",
+      "file": "ipad-06-read.png",
+      "pixels": [
+        2064,
+        2752
+      ],
+      "sha256": "15cd30bf3bef0bf96bf204605a678293695f283a95bc2562e5c5fff552c9a23c",
+      "description": "Review the recognized clues and handwriting.",
+      "source": ".tools/ipad-store-read.png",
+      "provenance": {
+        "capture": "simctl screenshot after native UI interaction",
+        "normal_launch": false
+      },
+      "rgb_pixels_unchanged": true
+    },
+    {
+      "family": "iPad",
+      "file": "ipad-07-history.png",
+      "pixels": [
+        2064,
+        2752
+      ],
+      "sha256": "5be4da5c1247994f354c512de1a674147fdc0bee5086afa51d9b1f969d2082b2",
+      "description": "Reopen saved puzzle photos and progress in History.",
+      "source": ".tools/ipad-store-history.png",
+      "provenance": {
+        "capture": "simctl screenshot after native UI interaction",
+        "normal_launch": false
+      },
+      "rgb_pixels_unchanged": true
+    }
+  ]
+}

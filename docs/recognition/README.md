@@ -22,6 +22,14 @@ version, not the final color behavior. The final benchmark evaluates grayscale a
 color against exactly the same accepted geometry, so their difference isolates the
 recognition contribution from any improvement in grid detection.
 
+## Cross-platform replay (19 October 2026)
+
+The actual Android and iOS importers now produce identical acceptance, digit/role
+and review-marker outputs on all 118 local images. Both score 3,299/3,402 correct
+digit-and-role cells and 2,161/2,187 nonempty digits. See the [full parity
+report](ios-corpus.md) for reproduction, the emulator workaround and evaluation
+limits. The older Android-only measurements below remain historical baselines.
+
 ## Latest replay (10 October 2026)
 
 The fresh replay detected all 110/110 corpus grids, compared with 108/110 in the
@@ -91,3 +99,9 @@ one new file to hide a stale export. It fails closed when exports are missing.
 Live focus, motion, shutter timing, camera throughput, and recognizer performance on
 new puzzles/writers require subsequent physical-device tests. The still corpus does
 not establish those results.
+
+## iOS port replay
+
+The 19 October 2026 full-corpus iOS run and matched Android comparisons are in
+[ios-corpus.md](ios-corpus.md). It includes the seven additional rectified grids,
+all labelled-cell denominators, and the deliberate result-screen refusal.

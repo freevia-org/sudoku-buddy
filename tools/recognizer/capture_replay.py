@@ -1,7 +1,7 @@
 """Validate DEBUG capture evidence and prepare byte-exact JVM inference replay.
 
 python tools/recognizer/capture_replay.py <capture-directory>
-./gradlew :core:recognize:test --tests '*ExactCaptureReplayTest*' -Dprobe=<capture-directory>/replay.tsv
+./gradlew :core:recognize:jvmTest --tests '*ExactCaptureReplayTest*' -Dprobe=<capture-directory>/replay.tsv
 
 No JPEG decoding, grid fitting, cell cropping, or classifier inference occurs here.
 """

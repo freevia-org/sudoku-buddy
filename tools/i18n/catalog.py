@@ -165,6 +165,8 @@ def extract(write=True):
     paths = list((ROOT / "app/src/main/kotlin").rglob("*.kt"))
     for module in ("solver", "recognize", "vision"):
         paths += list((ROOT / f"core/{module}/src/main/kotlin").rglob("*.kt"))
+    for module in ("presentation", "image"):
+        paths += list((ROOT / f"core/{module}/src/commonMain/kotlin").rglob("*.kt"))
     for path in paths:
         if path.name in {"Localization.kt", "MessageCatalog.kt", "AppLanguages.kt", "LicenseScreen.kt"}: continue
         code = path.read_text(encoding="utf-8")

@@ -1,23 +1,39 @@
-plugins {
-    alias(libs.plugins.kotlin.jvm)
-}
-
+import org.gradle.api.tasks.testing.Test
+plugins { alias(libs.plugins.kotlin.multiplatform) }
 kotlin {
+    jvm { testRuns["test"].executionTask.configure { useJUnitPlatform() } }
+    iosArm64()
+    iosSimulatorArm64()
+    iosX64()
     jvmToolchain(21)
     compilerOptions { allWarningsAsErrors.set(true) }
+    sourceSets {
+        commonMain {
+            kotlin.srcDir("src/main/kotlin")
+            dependencies {
+                api(project(":core:model"))
+                api(project(":core:solver"))
+                api(project(":core:image"))
+            }
+        }
+        commonTest.dependencies { implementation(kotlin("test")) }
+        jvmMain {
+            resources.srcDir("src/main/resources")
+            dependencies { compileOnly(libs.opencv.jvm) }
+        }
+        jvmTest {
+            if (providers.gradleProperty("iosOnly").orNull != "true") kotlin.srcDir("src/test/kotlin")
+            dependencies {
+                implementation(libs.opencv.jvm)
+                implementation(kotlin("test-junit5"))
+                if (providers.gradleProperty("iosOnly").orNull != "true") {
+                    implementation(project(":core:vision"))
+                }
+            }
+        }
+    }
 }
-
-dependencies {
-    api(project(":core:model"))
-    api(project(":core:solver"))
-    api(project(":core:vision"))
-    compileOnly(libs.opencv.jvm)
-    testImplementation(libs.opencv.jvm)
-    testImplementation(kotlin("test"))
-    testImplementation(testFixtures(project(":core:vision")))
-}
-
-tasks.test {
+tasks.named<Test>("jvmTest") {
     useJUnitPlatform()
     testLogging { events("failed") }
     maxHeapSize = "2g"
@@ -44,4 +60,8 @@ tasks.test {
     // Where ScanFolderDumpTest writes the straightened grid of each photograph, for
     // reading by eye. Empty means it writes none.
     systemProperty("write", providers.systemProperty("write").getOrElse(""))
+}
+
+if (providers.gradleProperty("iosOnly").orNull != "true") {
+    dependencies { add("jvmTestImplementation", testFixtures(project(":core:vision"))) }
 }

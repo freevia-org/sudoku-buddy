@@ -72,6 +72,22 @@ class WholeGlyphTest {
     }
 
     @Test
+    fun `a detached crossbar can restore a discarded digit without promoting an erasure or uncertain guess`() {
+        val stem=Mark(22,19,5,24,pen)
+        val core=GridReader.PrintedCore(32.0/side,60.0,40.0,170.0)
+        val reader=GridReader()
+        val broken=inspect(cell(stem,Mark(16,11,15,6,pen)))
+        assertTrue(broken.brokenStroke != null)
+        assertEquals(Ink.MARK,reader.classify(broken,core))
+        val sure=FloatArray(9).also { it[6]=0.999f }
+        assertEquals(Ink.PRINTED,reader.recoverBrokenStroke(broken,core,false,sure))
+        assertEquals(Ink.MARK,reader.recoverBrokenStroke(broken,core,false,FloatArray(9){1f/9}))
+        val erased=inspect(cell(stem,Mark(16,11,15,6,ghost)))
+        assertEquals(null,erased.brokenStroke)
+        assertEquals(Ink.MARK,reader.recoverBrokenStroke(erased,core,false,sure))
+    }
+
+    @Test
     fun `a stroke broken off the digit is gathered back into the picture`() {
         val alone = inspect(cell(stem()))
         val broken = inspect(cell(stem(), crossbar(pen)))

@@ -83,7 +83,7 @@ object QuadDetector {
         Imgproc.resize(full, small, Size(
             (full.width() * scale).coerceAtLeast(1.0),
             (full.height() * scale).coerceAtLeast(1.0),
-        ))
+        ), 0.0, 0.0, Imgproc.INTER_LINEAR_EXACT)
         Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
         // Inverted, so ink becomes white and the grid lines form a connected structure.
         Imgproc.adaptiveThreshold(
@@ -141,7 +141,7 @@ object QuadDetector {
                 Imgproc.resize(full, small, Size(
                     (image.width * scale).coerceAtLeast(1.0),
                     (image.height * scale).coerceAtLeast(1.0),
-                ))
+                ), 0.0, 0.0, Imgproc.INTER_LINEAR_EXACT)
                 Imgproc.adaptiveThreshold(small, binary, 255.0,
                     Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 7.0)
                 Imgproc.morphologyEx(binary, horizontal, Imgproc.MORPH_OPEN, hKernel)

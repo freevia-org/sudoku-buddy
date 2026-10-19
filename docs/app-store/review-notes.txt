@@ -1,0 +1,13 @@
+Sudoku Buddy is a standard 9x9 Sudoku scanner and tutor. No login, subscription, purchase, or special account is required.
+
+On first launch the camera scanner opens. Grant camera access and frame a printed Sudoku, or select Choose a photo to import the attached review-puzzle.png from Photos. Camera recognition runs locally. If access is denied, photo import remains available.
+
+After import, use Read to inspect the recognized digits. Tap a square to correct its digit or printed/handwritten role. Check validates progress. Hint advances through Where, Square, Trace and Answer; earlier stages remain available. Solve displays an answer without overwriting progress. History reopens saved photos and progress, including after restarting.
+
+The attached review-puzzle.png is synthetic and contains no private corpus image. Its transcription is review-puzzle.txt. It has a unique solution.
+
+Optional Submit reading is shown for readings with review questions. Its consent form explains the photo, original reading and corrections. Submission is disabled until consent. Automatic submission is off by default and can be disabled in Settings. Settings > Submission receipts supports retry and deletion of each revision. Deleting local history does not delete uploaded revisions. The production service uses HTTPS; no reviewer account is needed.
+
+Report a bug or idea offers an explicit confirmation before opening an external GitHub draft; the user chooses whether to submit publicly. GitHub login is handled externally and is not needed for Sudoku features.
+
+For support: info@freevia.org. The account holder must enter their real App Review contact name, telephone and email in App Store Connect. Mock services and automated test entry points are excluded from Release.

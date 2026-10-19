@@ -1,6 +1,6 @@
 # Privacy policy for Sudoku Buddy
 
-This is the source for the live [Sudoku Buddy privacy policy](https://freevia.org/sudoku-buddy/privacy). Last reviewed 10 October 2026. Verify the published page still matches this source before each app release.
+This is the source for the live [Sudoku Buddy privacy policy](https://freevia.org/sudoku-buddy/privacy). Last reviewed 19 October 2026. Verify the published page still matches this source before each app release.
 
 Sudoku Buddy is published by **Freevia**.
 Questions about this policy or the app's handling of data can be sent to
@@ -25,11 +25,11 @@ The app stores the following on your phone. Sharing is optional and is described
 | --- | --- | --- |
 | Straightened photographs of accepted scans | the app's private files directory | so a puzzle can be reopened from the history |
 | The digits read from each puzzle, reading details and your corrections | the app's private files directory | so the reading and your progress survive closing the app |
-| The last few photographs the app *refused* to read | the app's external files directory, or private storage if external storage is unavailable | so you can look at what went wrong, or choose to share it for support |
+| The last few photographs the app *refused* to read | private app storage on iOS; app-specific external storage on Android, with a private-storage fallback | so you can look at what went wrong, or choose to share it for support |
 | Your settings | the app's private preferences | so they persist |
 | Submission receipts for reports you sent | the app's private preferences | so you can identify a report revision if you ask Freevia to delete it |
 
-Refused photographs normally live in the app's own folder on external storage. Access
+On iOS, refused photographs live in the app's private storage. On Android, they normally live in the app's own folder on external storage. Access
 through a file manager or USB depends on the Android version and device. If that storage
 is unavailable, the app uses its private files directory instead. Either location supports
 the explicit sharing actions described below.
@@ -40,7 +40,7 @@ delete any of them from the puzzle history at any time.
 ## Network connection and optional report submission
 
 Scanning, recognition, solving and tutoring run on the device. Report submission requires
-an internet connection and the Android `INTERNET` permission. Other app functions remain
+an internet connection (and the `INTERNET` permission on Android). Other app functions remain
 available offline. Report submission and receipt-based server deletion need a network connection.
 
 Opening a website link or choosing a receiving app in the share sheet hands that action
@@ -57,7 +57,7 @@ When you choose Share, the app can hand a saved puzzle photograph or a refused s
 another app, such as a mail client or messaging app. Send diagnostics can hand over the
 retained refused photographs together with a text report, or the report alone if there
 are no refused photographs. The report includes the app version, date, phone manufacturer
-and model, Android version, and scan outcomes. You choose the receiving app in Android's
+and model, operating-system version, and scan outcomes. You choose the receiving app in the system
 share sheet. File access is read-only and limited to the photographs included in that
 share action.
 These share-sheet actions send nothing until you choose a receiving app. If you choose to
@@ -106,7 +106,7 @@ report record does not store your identity.
 When you choose Report a bug or idea on GitHub and confirm Open GitHub, the app opens
 a GitHub issue URL in an external browser or another application that handles the link.
 The URL includes a prefilled title and report text with the app version/build number,
-phone manufacturer/model, Android version and recent scan diagnostics. GitHub receives
+phone manufacturer/model, operating-system version and recent scan diagnostics. GitHub receives
 this text when the link is opened, even if you do not submit the issue. No photograph
 is included in the URL or uploaded by Sudoku Buddy.
 
@@ -128,8 +128,10 @@ You can delete saved puzzles and retained refused photographs from History. Unin
 the app removes its app-specific storage, including locally retained photographs and
 settings. Deletion from the app does not delete copies you already shared or copied elsewhere.
 
-The app disables Android backup and explicitly excludes its storage from cloud backup
-and device transfer. There is no cloud history or automatic restoration to another phone.
+The Android app disables backup and excludes its storage from cloud backup and device
+transfer. On iOS, operating-system backups may include app data according to your device
+and iCloud backup settings. Sudoku Buddy does not provide an account-based cloud history
+or its own synchronization service.
 
 ## Children
 

@@ -1,0 +1,13 @@
+{
+  "images": 118,
+  "matching_images": 118,
+  "equivalent": true,
+  "compared_fields": [
+    "status",
+    "givens",
+    "progress",
+    "uncertain"
+  ],
+  "differences": [],
+  "scope": "Actual offline importer outputs; not physical camera, pixel rendering, or independent OCR generalization"
+}

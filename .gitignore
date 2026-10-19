@@ -74,3 +74,20 @@ tools/i18n/__pycache__/
 # Files Codex saves from attachments in its threads. Screenshots belong in feedback/,
 # which stays local; nothing here is ever source.
 .codex-remote-attachments/
+
+# Local iOS build tools and Xcode output
+.tools/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Swift package build products
+.build/
+.swiftpm/
+
+# Additional local corpus image formats
+corpus/*.heic
+corpus/*.webp
+corpus-rectified/*.png
+corpus-rectified/*.jpeg
+corpus-rectified/*.heic

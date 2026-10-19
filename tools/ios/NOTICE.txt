@@ -1,0 +1,25 @@
+Sudoku Buddy for iOS
+Copyright 2026 Sudoku Buddy contributors
+Published by Freevia: https://freevia.org/
+
+Original source code is licensed under the Apache License, Version 2.0.
+Freevia and Sudoku Buddy names and artwork retain their separate trademark rights.
+This license does not authorize implying affiliation or endorsement.
+
+The iOS app uses Kotlin Multiplatform (Apache License 2.0), the shared Sudoku
+solver and recognizer, OpenCV 4.12, and Apple's SwiftUI, AVFoundation and Core Image.
+OpenCV includes its image codecs and other third-party components; their applicable
+license and attribution notices are included alongside the Kotlin and LLVM C++
+runtime notices. The iOS app does not bundle AndroidX, CameraX or Jetpack Compose.
+
+The digit recognizer was trained using the MNIST handwritten-digit database by
+Yann LeCun, Corinna Cortes and Christopher J. C. Burges, together with synthetic
+digits. Dataset attribution does not imply endorsement.
+
+Translations, launcher artwork, and recognition model are reused from Sudoku Buddy.
+Legal notices retain their original wording and are available offline.
+
+App-owned typography uses static Roboto faces derived from Android's reference
+Roboto variable font. Copyright 2011 Google Inc. All Rights Reserved. Licensed
+under the Apache License, Version 2.0; see Apache-2.0.txt. Font copyright and
+license metadata are retained in each face.

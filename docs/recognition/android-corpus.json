@@ -1,0 +1,910 @@
+{
+  "complete": true,
+  "platform": "Android emulator; production importer; debug-only invalid SVE2 capability mask",
+  "folders": {
+    "corpus": {
+      "images": 111,
+      "review": 110
+    },
+    "corpus-rectified": {
+      "images": 7,
+      "review": 7
+    }
+  },
+  "totals": {
+    "labelled_images": 42,
+    "labelled_cells": 3402,
+    "correct_cells": 3299,
+    "correct_roles": 3314,
+    "correct_digits": 2161,
+    "digit_cells": 2187
+  },
+  "by_folder": {
+    "corpus": {
+      "labelled_images": 35,
+      "labelled_cells": 2835,
+      "correct_cells": 2769,
+      "correct_roles": 2784,
+      "digit_cells": 1897,
+      "correct_digits": 1873
+    },
+    "corpus-rectified": {
+      "labelled_images": 7,
+      "labelled_cells": 567,
+      "correct_cells": 530,
+      "correct_roles": 530,
+      "digit_cells": 290,
+      "correct_digits": 288
+    }
+  },
+  "expected_result_screen": {
+    "photo": "0-02-05-3c2309bc39761674fc696fed1abdc1d89ec9436d7f340d0b6332481fc818fb42_b2fcb79a0899d6dc.jpg",
+    "correctly_refused": true
+  },
+  "refusals": [
+    {
+      "folder": "corpus",
+      "photo": "0-02-05-3c2309bc39761674fc696fed1abdc1d89ec9436d7f340d0b6332481fc818fb42_b2fcb79a0899d6dc.jpg",
+      "status": "refused",
+      "error": "Photograph the original puzzle rather than an annotated result screen. The photo is in your puzzle list, under \"Would not read\".",
+      "seconds": 0.138622416
+    }
+  ],
+  "failures": [
+    {
+      "photo": "rd-2026-09-07-illustrated-1.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 1,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 10,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GIVEN",
+          "actual_digit": 9
+        },
+        {
+          "cell": 37,
+          "expected_role": "GIVEN",
+          "expected_digit": 2,
+          "actual_role": "GUESS",
+          "actual_digit": 2
+        },
+        {
+          "cell": 64,
+          "expected_role": "EMPTY",
+          "expected_digit": 0,
+          "actual_role": "GUESS",
+          "actual_digit": 4
+        },
+        {
+          "cell": 67,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GIVEN",
+          "actual_digit": 6
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-04-newsprint-blue-1.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 21,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 31,
+          "expected_role": "GUESS",
+          "expected_digit": 7,
+          "actual_role": "GIVEN",
+          "actual_digit": 7
+        },
+        {
+          "cell": 69,
+          "expected_role": "GUESS",
+          "expected_digit": 2,
+          "actual_role": "GIVEN",
+          "actual_digit": 2
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-04-newsprint-blue-2.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 0,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "EMPTY",
+          "actual_digit": 0
+        },
+        {
+          "cell": 5,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "EMPTY",
+          "actual_digit": 0
+        },
+        {
+          "cell": 9,
+          "expected_role": "GUESS",
+          "expected_digit": 7,
+          "actual_role": "EMPTY",
+          "actual_digit": 0
+        },
+        {
+          "cell": 39,
+          "expected_role": "GIVEN",
+          "expected_digit": 4,
+          "actual_role": "GIVEN",
+          "actual_digit": 9
+        },
+        {
+          "cell": 53,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        },
+        {
+          "cell": 64,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "EMPTY",
+          "actual_digit": 0
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-04-newsprint-blue-3.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 78,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "EMPTY",
+          "actual_digit": 0
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-04-newsprint-blue-4.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 1,
+          "expected_role": "GIVEN",
+          "expected_digit": 3,
+          "actual_role": "GUESS",
+          "actual_digit": 3
+        },
+        {
+          "cell": 4,
+          "expected_role": "GIVEN",
+          "expected_digit": 4,
+          "actual_role": "GUESS",
+          "actual_digit": 4
+        },
+        {
+          "cell": 8,
+          "expected_role": "GIVEN",
+          "expected_digit": 9,
+          "actual_role": "GIVEN",
+          "actual_digit": 5
+        },
+        {
+          "cell": 37,
+          "expected_role": "GUESS",
+          "expected_digit": 6,
+          "actual_role": "GIVEN",
+          "actual_digit": 6
+        },
+        {
+          "cell": 49,
+          "expected_role": "GUESS",
+          "expected_digit": 3,
+          "actual_role": "GIVEN",
+          "actual_digit": 3
+        },
+        {
+          "cell": 60,
+          "expected_role": "GIVEN",
+          "expected_digit": 8,
+          "actual_role": "GUESS",
+          "actual_digit": 8
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-04-newsprint-curled.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 2,
+          "expected_role": "GUESS",
+          "expected_digit": 8,
+          "actual_role": "GIVEN",
+          "actual_digit": 8
+        },
+        {
+          "cell": 11,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "GIVEN",
+          "actual_digit": 5
+        },
+        {
+          "cell": 19,
+          "expected_role": "GUESS",
+          "expected_digit": 9,
+          "actual_role": "GIVEN",
+          "actual_digit": 9
+        },
+        {
+          "cell": 24,
+          "expected_role": "GUESS",
+          "expected_digit": 6,
+          "actual_role": "GIVEN",
+          "actual_digit": 6
+        },
+        {
+          "cell": 56,
+          "expected_role": "GUESS",
+          "expected_digit": 6,
+          "actual_role": "GIVEN",
+          "actual_digit": 6
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-04-newsprint-partial.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 40,
+          "expected_role": "GUESS",
+          "expected_digit": 6,
+          "actual_role": "EMPTY",
+          "actual_digit": 0
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-04-newsprint-red-2.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 46,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "GIVEN",
+          "actual_digit": 1
+        },
+        {
+          "cell": 50,
+          "expected_role": "GUESS",
+          "expected_digit": 9,
+          "actual_role": "GIVEN",
+          "actual_digit": 9
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-04-newsprint-welded-border.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 3,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 14,
+          "expected_role": "GUESS",
+          "expected_digit": 3,
+          "actual_role": "GIVEN",
+          "actual_digit": 3
+        },
+        {
+          "cell": 35,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        },
+        {
+          "cell": 69,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-05-screen-ambiguous.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 6,
+          "expected_role": "GIVEN",
+          "expected_digit": 4,
+          "actual_role": "GUESS",
+          "actual_digit": 4
+        },
+        {
+          "cell": 21,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 23,
+          "expected_role": "GIVEN",
+          "expected_digit": 6,
+          "actual_role": "GUESS",
+          "actual_digit": 6
+        },
+        {
+          "cell": 34,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        },
+        {
+          "cell": 35,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 41,
+          "expected_role": "GIVEN",
+          "expected_digit": 3,
+          "actual_role": "GUESS",
+          "actual_digit": 3
+        },
+        {
+          "cell": 42,
+          "expected_role": "GIVEN",
+          "expected_digit": 2,
+          "actual_role": "GUESS",
+          "actual_digit": 2
+        },
+        {
+          "cell": 44,
+          "expected_role": "GIVEN",
+          "expected_digit": 4,
+          "actual_role": "GUESS",
+          "actual_digit": 4
+        },
+        {
+          "cell": 51,
+          "expected_role": "GIVEN",
+          "expected_digit": 5,
+          "actual_role": "GUESS",
+          "actual_digit": 5
+        },
+        {
+          "cell": 53,
+          "expected_role": "GIVEN",
+          "expected_digit": 6,
+          "actual_role": "GUESS",
+          "actual_digit": 6
+        },
+        {
+          "cell": 61,
+          "expected_role": "GIVEN",
+          "expected_digit": 3,
+          "actual_role": "GUESS",
+          "actual_digit": 3
+        },
+        {
+          "cell": 70,
+          "expected_role": "GIVEN",
+          "expected_digit": 4,
+          "actual_role": "GUESS",
+          "actual_digit": 4
+        },
+        {
+          "cell": 71,
+          "expected_role": "GIVEN",
+          "expected_digit": 5,
+          "actual_role": "GUESS",
+          "actual_digit": 5
+        },
+        {
+          "cell": 80,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-07-booklet-pencil-4.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 6,
+          "expected_role": "EMPTY",
+          "expected_digit": 0,
+          "actual_role": "GIVEN",
+          "actual_digit": 9
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-07-newsprint-mepham-marker.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 0,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "GUESS",
+          "actual_digit": 3
+        },
+        {
+          "cell": 3,
+          "expected_role": "GUESS",
+          "expected_digit": 8,
+          "actual_role": "GUESS",
+          "actual_digit": 9
+        },
+        {
+          "cell": 7,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "GUESS",
+          "actual_digit": 2
+        },
+        {
+          "cell": 9,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 23,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "EMPTY",
+          "actual_digit": 0
+        },
+        {
+          "cell": 27,
+          "expected_role": "GUESS",
+          "expected_digit": 2,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 29,
+          "expected_role": "GUESS",
+          "expected_digit": 9,
+          "actual_role": "GUESS",
+          "actual_digit": 4
+        },
+        {
+          "cell": 39,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "GUESS",
+          "actual_digit": 3
+        },
+        {
+          "cell": 40,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 44,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "GUESS",
+          "actual_digit": 8
+        },
+        {
+          "cell": 47,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "EMPTY",
+          "actual_digit": 0
+        },
+        {
+          "cell": 50,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        },
+        {
+          "cell": 66,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        },
+        {
+          "cell": 71,
+          "expected_role": "GIVEN",
+          "expected_digit": 1,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        },
+        {
+          "cell": 77,
+          "expected_role": "GUESS",
+          "expected_digit": 3,
+          "actual_role": "GUESS",
+          "actual_digit": 8
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-09-booklet-candidates-1.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 77,
+          "expected_role": "GUESS",
+          "expected_digit": 3,
+          "actual_role": "GUESS",
+          "actual_digit": 5
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-11-booklet-candidates-2.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 77,
+          "expected_role": "GUESS",
+          "expected_digit": 3,
+          "actual_role": "GUESS",
+          "actual_digit": 5
+        }
+      ]
+    },
+    {
+      "photo": "sudoku-buddy-2026-09-12-screen-two-weights.jpg",
+      "folder": "corpus",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 75,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        }
+      ]
+    },
+    {
+      "photo": "screen-century-script-half.jpg",
+      "folder": "corpus-rectified",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 2,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "GIVEN",
+          "actual_digit": 4
+        },
+        {
+          "cell": 4,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        },
+        {
+          "cell": 6,
+          "expected_role": "GUESS",
+          "expected_digit": 9,
+          "actual_role": "GIVEN",
+          "actual_digit": 9
+        },
+        {
+          "cell": 8,
+          "expected_role": "GUESS",
+          "expected_digit": 2,
+          "actual_role": "GIVEN",
+          "actual_digit": 2
+        },
+        {
+          "cell": 10,
+          "expected_role": "GUESS",
+          "expected_digit": 7,
+          "actual_role": "GIVEN",
+          "actual_digit": 7
+        },
+        {
+          "cell": 16,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "GIVEN",
+          "actual_digit": 4
+        },
+        {
+          "cell": 18,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "GIVEN",
+          "actual_digit": 7
+        },
+        {
+          "cell": 20,
+          "expected_role": "GIVEN",
+          "expected_digit": 8,
+          "actual_role": "GUESS",
+          "actual_digit": 8
+        },
+        {
+          "cell": 22,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "GIVEN",
+          "actual_digit": 4
+        },
+        {
+          "cell": 24,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "GIVEN",
+          "actual_digit": 5
+        },
+        {
+          "cell": 26,
+          "expected_role": "GUESS",
+          "expected_digit": 7,
+          "actual_role": "GIVEN",
+          "actual_digit": 7
+        },
+        {
+          "cell": 28,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "GIVEN",
+          "actual_digit": 5
+        },
+        {
+          "cell": 30,
+          "expected_role": "GUESS",
+          "expected_digit": 7,
+          "actual_role": "GIVEN",
+          "actual_digit": 7
+        },
+        {
+          "cell": 32,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "GIVEN",
+          "actual_digit": 1
+        },
+        {
+          "cell": 34,
+          "expected_role": "GUESS",
+          "expected_digit": 2,
+          "actual_role": "GIVEN",
+          "actual_digit": 2
+        },
+        {
+          "cell": 38,
+          "expected_role": "GUESS",
+          "expected_digit": 6,
+          "actual_role": "GIVEN",
+          "actual_digit": 6
+        },
+        {
+          "cell": 39,
+          "expected_role": "GIVEN",
+          "expected_digit": 8,
+          "actual_role": "GUESS",
+          "actual_digit": 8
+        },
+        {
+          "cell": 40,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "GIVEN",
+          "actual_digit": 5
+        },
+        {
+          "cell": 46,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "GIVEN",
+          "actual_digit": 1
+        },
+        {
+          "cell": 48,
+          "expected_role": "GUESS",
+          "expected_digit": 9,
+          "actual_role": "GIVEN",
+          "actual_digit": 9
+        },
+        {
+          "cell": 50,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "GIVEN",
+          "actual_digit": 4
+        },
+        {
+          "cell": 52,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "GIVEN",
+          "actual_digit": 5
+        },
+        {
+          "cell": 54,
+          "expected_role": "GUESS",
+          "expected_digit": 9,
+          "actual_role": "GIVEN",
+          "actual_digit": 9
+        },
+        {
+          "cell": 56,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "GIVEN",
+          "actual_digit": 1
+        },
+        {
+          "cell": 58,
+          "expected_role": "GUESS",
+          "expected_digit": 3,
+          "actual_role": "GIVEN",
+          "actual_digit": 3
+        },
+        {
+          "cell": 62,
+          "expected_role": "GUESS",
+          "expected_digit": 4,
+          "actual_role": "GIVEN",
+          "actual_digit": 4
+        },
+        {
+          "cell": 66,
+          "expected_role": "GIVEN",
+          "expected_digit": 4,
+          "actual_role": "GUESS",
+          "actual_digit": 4
+        },
+        {
+          "cell": 72,
+          "expected_role": "GUESS",
+          "expected_digit": 3,
+          "actual_role": "GIVEN",
+          "actual_digit": 3
+        },
+        {
+          "cell": 74,
+          "expected_role": "GUESS",
+          "expected_digit": 5,
+          "actual_role": "GIVEN",
+          "actual_digit": 5
+        },
+        {
+          "cell": 76,
+          "expected_role": "GIVEN",
+          "expected_digit": 8,
+          "actual_role": "GUESS",
+          "actual_digit": 8
+        },
+        {
+          "cell": 78,
+          "expected_role": "GUESS",
+          "expected_digit": 1,
+          "actual_role": "GIVEN",
+          "actual_digit": 2
+        }
+      ]
+    },
+    {
+      "photo": "screen-consolas-marks.jpg",
+      "folder": "corpus-rectified",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 0,
+          "expected_role": "GIVEN",
+          "expected_digit": 5,
+          "actual_role": "GUESS",
+          "actual_digit": 5
+        }
+      ]
+    },
+    {
+      "photo": "screen-garamond-oldstyle.jpg",
+      "folder": "corpus-rectified",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 1,
+          "expected_role": "GIVEN",
+          "expected_digit": 3,
+          "actual_role": "GUESS",
+          "actual_digit": 3
+        },
+        {
+          "cell": 66,
+          "expected_role": "GIVEN",
+          "expected_digit": 4,
+          "actual_role": "GUESS",
+          "actual_digit": 4
+        },
+        {
+          "cell": 74,
+          "expected_role": "EMPTY",
+          "expected_digit": 0,
+          "actual_role": "GUESS",
+          "actual_digit": 1
+        }
+      ]
+    },
+    {
+      "photo": "screen-times-inkfree-solved.jpg",
+      "folder": "corpus-rectified",
+      "status": "review",
+      "errors": [
+        {
+          "cell": 4,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        },
+        {
+          "cell": 79,
+          "expected_role": "GIVEN",
+          "expected_digit": 7,
+          "actual_role": "GUESS",
+          "actual_digit": 7
+        }
+      ]
+    }
+  ],
+  "caveat": "Regression corpus overlaps training; these are not independent generalization scores. Refused labelled images count as errors for every cell."
+}

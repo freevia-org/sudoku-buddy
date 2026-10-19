@@ -1,8 +1,8 @@
 # Using Sudoku Buddy
 
 Sudoku Buddy helps you check and understand the standard 9×9 Sudoku already on your
-printed page. It is being prepared for its first Google Play release; the screens below
-show an existing development build.
+printed page. The illustrations below show Android. The iOS port follows the same
+puzzle workflow; see [iPhone and iPad help](ios-user-guide.md) for system-specific steps.
 
 [Website](https://freevia.org/sudoku-buddy/) · [Repository overview](../README.md) ·
 [Privacy](https://freevia.org/sudoku-buddy/privacy)

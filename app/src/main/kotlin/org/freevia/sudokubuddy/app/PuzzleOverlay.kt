@@ -282,12 +282,7 @@ private fun DrawScope.drawOverlayInLayer(state: PuzzleState, measurer: TextMeasu
             // Never invent a causal arrow for patterns whose evidence spans units.
             val support = move.supportingCells
             if (support.isNotEmpty()) for (target in move.fromCells) {
-                val group = support + target
-                val shared = group.all { it / 9 == target / 9 } ||
-                    group.all { it % 9 == target % 9 } || group.all {
-                        org.freevia.sudokubuddy.model.Coordinates.boxOf(it) ==
-                            org.freevia.sudokubuddy.model.Coordinates.boxOf(target)
-                    }
+                val shared = target in VisualHint.causalTargets(move)
                 if (shared) {
                     val centre = support.map { squares.centre(it) }.reduce { a, b -> a + b } / support.size.toFloat()
                     drawArrow(centre, squares.centre(target), squares.unit)
