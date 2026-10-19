@@ -126,8 +126,8 @@ data class PuzzleState(
     val practiceFeedback: String? = null,
     val returnToStep: Int? = null,
     val hintNavigation: HintNavigation = HintNavigation(),
-    /** A fresh uncertain scan starts open; moving on keeps review available without a banner. */
-    val readingReviewExpanded: Boolean = true,
+    /** Unresolved uncertainty starts open; a settled reading stays collapsed when restored. */
+    val readingReviewExpanded: Boolean = uncertainCells.isNotEmpty(),
 ) {
     val hasReadingReview: Boolean get() = openQuestions.isNotEmpty() || originalUncertainCells.isNotEmpty()
     val showReadingReview: Boolean get() = hasReadingReview && readingReviewExpanded &&
@@ -348,7 +348,10 @@ data class PuzzleState(
             lessonStep = if (next.mode == overlay) lessonStep else 0,
             selectedCell = null,
             hintNavigation = HintNavigation(),
-            readingReviewExpanded = mode == OverlayMode.READING,
+            // Reopening Read after accepting the reading should not resurrect an empty
+            // review banner. The app-bar review button remains the deliberate route to
+            // the optional report action when there are no questions left.
+            readingReviewExpanded = mode == OverlayMode.READING && openQuestions.isNotEmpty(),
         )
     }
 
