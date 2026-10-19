@@ -94,6 +94,11 @@ object GridLocator {
         // a large capture needs the larger, and paying for that only when the first comes
         // up empty keeps the common case as quick as it was.
         var nearest: GridLocation.NoGrid? = null
+        // Keep the best refitted outlines from the strict retry. If every line but one
+        // survives, the final occlusion-tolerant pass must check these too: the contour
+        // can enclose the screen or page around a perfectly visible grid, so forgiving a
+        // line on that larger quad still misses every actual rule.
+        val alignedOutlines = mutableListOf<Quad>()
         for (workingEdge in QuadDetector.workingEdges()) {
             when (val attempt = look(image, workingEdge)) {
                 is GridLocation.Found -> return attempt
@@ -110,13 +115,17 @@ object GridLocator {
         // Remove short digit strokes before tracing again. A grid whose border touches
         // surrounding printing can have perfectly intact rules but no usable outline.
         for (workingEdge in QuadDetector.workingEdges()) {
-            val rules = image.toMat().releasing { full ->
+            val rescored = image.toMat().releasing { full ->
                 val candidates = QuadDetector.detect(image, workingEdge) + QuadDetector.detectRules(image, workingEdge)
                 (candidates + candidates.filter { kotlin.math.abs(it.rotationDegrees) < 10.0 }.map { bounds(it) }).map { quad ->
                     val aligned = alignRules(full, quad) ?: quad
                     aligned to rectify(full, aligned, scoringSize(aligned)).releasing { GridScorer.score(it) }
-                }.maxByOrNull { it.second }?.takeIf { it.second >= MIN_GRID_SCORE }
-            } ?: continue
+                }
+            }
+            // The strict score above remains the ranking rule. Save only its strongest
+            // few refitted candidates for the final one-line-occlusion check below.
+            alignedOutlines += rescored.sortedByDescending { it.second }.take(3).map { it.first }
+            val rules = rescored.maxByOrNull { it.second }?.takeIf { it.second >= MIN_GRID_SCORE } ?: continue
             val rectified = image.toMat().releasing { full ->
                 rectify(full, rules.first).releasing { it.toGrayImage() }
             }
@@ -137,7 +146,7 @@ object GridLocator {
             )
         }
 
-        val obscured = askAgainForAnObscuredGrid(image)
+        val obscured = askAgainForAnObscuredGrid(image, alignedOutlines)
         if (obscured != null) {
             val rectified = image.toMat().releasing { rectify(it, obscured.first, RECTIFIED_SIZE.toDouble()) }
             return GridLocation.Found(obscured.first, obscured.second, rectified.releasing { it.toGrayImage() })
@@ -353,9 +362,22 @@ object GridLocator {
      * accept something nothing else would, after the outlines, the growing and the cells
      * have all come up empty.
      */
-    private fun askAgainForAnObscuredGrid(image: GrayImage): Pair<Quad, Double>? {
+    private fun askAgainForAnObscuredGrid(image: GrayImage, alignedOutlines: List<Quad>): Pair<Quad, Double>? {
         val full = image.toMat()
         try {
+        // A grid found by refitting the lines may still have one line hidden by glare,
+        // screen UI, or a mark. The strict refit above deliberately rejected it; only
+        // after normal contours and cell-based recovery have failed do we allow one line.
+        val aligned = alignedOutlines.distinct()
+            .map { quad ->
+                quad to rectify(full, quad, scoringSize(quad)).releasing {
+                    GridScorer.score(it, OBSCURED_LINES_ALLOWED)
+                }
+            }
+            .maxByOrNull { it.second }
+            ?.takeIf { it.second >= MIN_GRID_SCORE }
+        if (aligned != null) return aligned
+
         for (workingEdge in QuadDetector.workingEdges()) {
             val best = QuadDetector.detect(image, workingEdge)
                 .map { quad ->
