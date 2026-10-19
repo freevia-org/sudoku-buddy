@@ -1,6 +1,6 @@
 {
   "bundle_id": "org.freevia.sudokubuddy.ios",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "build": "1",
   "minimum_ios": "16.0",
   "sdk": "iphoneos27.1",
@@ -30,6 +30,6 @@
   "production_endpoint": true,
   "debug_fixtures_absent": true,
   "privacy_manifest_present": true,
-  "binary_sha256": "c6a9f738a5ebc068c999a9e64f01efb688576b24407d06ec5efe0eb001aea4fc",
+  "binary_sha256": "750c0e02a0156c0db2d94cde63afb583051c59e6c1f245b77d6d94b5afa64b31",
   "qualification": "Local bundle audit; signing, upload validation and physical-device qualification remain separate."
 }

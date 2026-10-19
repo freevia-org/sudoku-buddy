@@ -3,7 +3,8 @@
   "ios_ui": {
     "passed": 22,
     "failed": 0,
-    "result_bundle": ".tools/SubmissionParityUI.xcresult"
+    "result_bundle": ".tools/SubmissionParityUI.xcresult",
+    "scope": "Pre-merge full suite; latest merged suite is required by PR CI"
   },
   "ipad_ui": {
     "passed": 3,
@@ -29,7 +30,7 @@
     "differences": [],
     "scope": "Actual offline importer outputs; not physical camera, pixel rendering, or independent OCR generalization"
   },
-  "unsigned_archive": ".tools/SudokuBuddy-Submission.xcarchive",
+  "unsigned_archive": ".tools/SudokuBuddy-Merged.xcarchive",
   "signed": false,
   "physical_camera_qualified": false,
   "live_report_delivery_qualified": false,
@@ -44,5 +45,7 @@
     "screen": "four-stage hint"
   },
   "website_publication": "website-publication.json",
-  "merged_corpus_verified": true
+  "merged_corpus_verified": true,
+  "release_version": "1.0.2",
+  "release_source_commit": "0218a5a04aa2c32cd26a0959a6f50db2658321bb"
 }
