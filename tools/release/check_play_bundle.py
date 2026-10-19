@@ -17,7 +17,7 @@ def audit_manifest(xml: str, version_code: int) -> None:
         raise ValueError("Wrong application ID")
     if root.get(ANDROID + "versionCode") != str(version_code):
         raise ValueError("Wrong version code")
-    if root.get(ANDROID + "versionName") != "1.0.1":
+    if root.get(ANDROID + "versionName") != "1.0.2":
         raise ValueError("Review versionName and release materials together")
     sdk = root.find("uses-sdk")
     if sdk is None or sdk.get(ANDROID + "minSdkVersion") != "26":
