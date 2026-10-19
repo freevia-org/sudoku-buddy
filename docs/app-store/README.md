@@ -1,6 +1,6 @@
 # iOS submission preparation
 
-Prepared 19 October 2026. No Apple account, signed upload, App Store record, public report submission or publication was used. This packet separates local preparation from final owner/hardware gates.
+Prepared 19 October 2026. No Apple account, signed upload, App Store record, public report submission or App Store publication was used. This packet separates local preparation from final owner/hardware gates.
 
 ## Materials
 
@@ -11,9 +11,9 @@ Prepared 19 October 2026. No Apple account, signed upload, App Store record, pub
 - `screenshots/`: actual iPhone and 13-inch iPad simulator captures, with provenance and hashes in the screenshot manifest. Android screenshots must not be used in the iOS listing.
 - `app-icon-1024.png`: the existing bundled App Store icon; Xcode supplies it with the build.
 - `../ios-user-guide.md`: iPhone/iPad support instructions.
-- `website-update.md`: concrete updates for the current Android-only public page.
+- `website-update.md`: published website changes and release-state guidance.
 - `device-qualification.md`: exact signed-build and real-camera checks that remain.
-- `../privacy-policy.md`: revised cross-platform policy source. Publish/reconcile with live policy before submission.
+- `../privacy-policy.md`: revised cross-platform policy source. Published at https://freevia.org/sudoku-buddy/privacy/; see `website-publication.json`.
 
 ## Local release checks
 

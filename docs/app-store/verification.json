@@ -34,7 +34,7 @@
   "physical_camera_qualified": false,
   "live_report_delivery_qualified": false,
   "uploaded": false,
-  "policy_source_published": false,
+  "policy_source_published": true,
   "store_screenshots": 14,
   "normal_launch_photo_picker_and_restart_verified": true,
   "handoff_simulator": {
@@ -42,5 +42,7 @@
     "id": "CF35F967-FBFC-4BD0-B2C3-A5FD9893EAA2",
     "normal_launch": true,
     "screen": "four-stage hint"
-  }
+  },
+  "website_publication": "website-publication.json",
+  "merged_corpus_verified": true
 }

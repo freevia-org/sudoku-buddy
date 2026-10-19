@@ -1,0 +1,21 @@
+{
+  "previous": "51f629dd-4742-448b-9a98-a5c470451e9f",
+  "id": "bd6806ff-3850-4e11-912f-cf53b228a6ac",
+  "url": "https://bd6806ff.freevia.pages.dev",
+  "environment": "production",
+  "changed": [
+    "/sudoku-buddy/index.html",
+    "/sudoku-buddy/privacy/index.html",
+    "/assets/sudoku-buddy/ios-iphone-01-puzzle.png",
+    "/assets/sudoku-buddy/ios-iphone-03-hint-square.png",
+    "/assets/sudoku-buddy/ios-iphone-05-hint-answer.png",
+    "/sudoku-buddy/support/index.html"
+  ],
+  "total": 72,
+  "preserved": 66,
+  "source_commit": "12087b2b496ef99e13fa6090c32c3b7b783b2a16",
+  "status": "success",
+  "canonical_verified": true,
+  "verified_date": "2026-10-19",
+  "public_verification": "Product, privacy and support rendered in browser; deletion anchor verified."
+}
