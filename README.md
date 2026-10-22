@@ -24,16 +24,16 @@ already on your page, not replace it.
   <img src="docs/images/04-hint.webp" width="205" alt="A hint highlighting the cells behind a deduction">
 </p>
 
-These are real Android screens from a development build. The interface may
-change before release. [See more on the website](https://freevia.org/sudoku-buddy/#screenshots).
+These are real Android screens; the current release may differ slightly.
+[See more on the website](https://freevia.org/sudoku-buddy/#screenshots).
 
 ## Get the app
 
-**Google Play — Android:** [Join the internal test with an invited Google account](https://play.google.com/apps/internaltest/4701554944860354114).
-Android 1.0.0 (build 132) is available to invited testers with Android 8.0+
-and a camera. The production release is in Google review; the
-[public Play listing](https://play.google.com/store/apps/details?id=org.freevia.sudokubuddy)
-may not open until approval. No public APK is published in this repository.
+**Google Play — Android:** [Get Sudoku Buddy](https://play.google.com/store/apps/details?id=org.freevia.sudokubuddy).
+Version 1.0.2 is visible in the public listing in supported regions. It needs
+Android 8.0+ and a camera. Invited testers can use the
+[internal-test opt-in](https://play.google.com/apps/internaltest/4701554944860354114).
+No public APK is published in this repository.
 
 ## What it helps you do
 
