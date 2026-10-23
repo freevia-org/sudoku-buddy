@@ -94,10 +94,11 @@ jobs:
           with open(os.environ['GITHUB_ENV'], 'a') as file:
               file.write('IOS_TEST_DEVICE=' + device['udid'] + '\n')
           PY
+      - uses: ./.github/actions/setup-jdk-gradle
       # Booting takes minutes on hosted runners; start it now so it overlaps the build.
+      # (Started after the cache restore, which a booting simulator slowed by ~2 min.)
       - name: Start booting the simulator
         run: xcrun simctl boot "$IOS_TEST_DEVICE"
-      - uses: ./.github/actions/setup-jdk-gradle
       - name: Build app and UI tests for the simulator
         run: xcodebuild -project iosApp/SudokuBuddy.xcodeproj -scheme SudokuBuddy -configuration Debug -destination "platform=iOS Simulator,id=$IOS_TEST_DEVICE" -derivedDataPath build/DerivedData build-for-testing
       - name: Wait for the simulator to finish booting
