@@ -1,49 +1,110 @@
 name: iOS
+
+# Not a required check. Changes that cannot affect the iOS app (Android-only code,
+# docs, the feedback API, website/release tooling) skip these macOS jobs. Patterns are
+# applied in order; a later pattern re-includes what an earlier "!" pattern excluded.
 on:
   push:
     branches: [main]
+    paths: &ios-paths
+      - '**'
+      - '!**/*.md'
+      - '!docs/**'
+      - 'docs/app-store/**'
+      - '!feedback-api/**'
+      - '!corpus-labels/**'
+      - '!tools/android/**'
+      - '!tools/recognizer/**'
+      - '!tools/release/**'
+      - '!tools/site/**'
+      - '!app/**'
+      - 'app/src/main/assets/**'
+      - '!.github/workflows/ci.yml'
+      - '!.github/workflows/play-candidate.yml'
   pull_request:
+    paths: *ios-paths
   workflow_dispatch:
+
 permissions:
   contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+# Pin the toolchain instead of following the image default, so an image update cannot
+# silently change the compiler, SDK or simulator runtime under the tests.
+env:
+  DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
+
+# Two parallel macOS jobs: the simulator UI tests are the long pole, so everything else
+# (unit tests, shared Kotlin tests, unsigned release compile and audit) runs beside them
+# instead of in front of them. The release compile and audit also no longer depend on
+# the UI tests passing first.
 jobs:
-  ios:
-    runs-on: macos-15
-    timeout-minutes: 45
+  checks:
+    name: Unit tests and unsigned release
+    runs-on: macos-26
+    timeout-minutes: 40
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
         with:
-          distribution: temurin
-          java-version: '21'
-      - uses: gradle/actions/setup-gradle@v4
+          persist-credentials: false
+      - name: Show toolchain
+        run: xcodebuild -version && swift --version
       - name: Verify localization resources
         run: python3 -m unittest discover -s tools/ios -p 'test_*.py'
       - name: Verify prepared App Store material limits and screenshot integrity
         run: python3 tools/ios/check-store-materials.py
-      - name: Test native grid geometry
-        run: swift test --package-path iosApp/VisionGeometry
       - name: Test durable puzzle and feedback storage
         run: swift test --package-path iosApp/Persistence
+      - name: Test native grid geometry
+        run: swift test --package-path iosApp/VisionGeometry
+      - uses: ./.github/actions/setup-jdk-gradle
       - name: Test shared solver and native preprocessing
         run: ./gradlew -PiosOnly=true :core:model:jvmTest :core:solver:jvmTest :core:image:jvmTest :core:recognize:jvmTest :core:presentation:jvmTest :shared:jvmTest :core:image:iosSimulatorArm64Test :core:presentation:iosSimulatorArm64Test :shared:iosSimulatorArm64Test --console=plain
-      - name: Select an installed iPhone simulator
-        run: |
-          python3 - <<'PY'
-          import json, os, subprocess
-          devices = json.loads(subprocess.check_output(['xcrun', 'simctl', 'list', 'devices', 'available', '-j']))['devices']
-          candidates = [d for runtime, items in devices.items() if '.iOS-' in runtime for d in items if d['name'].startswith('iPhone') and 'Duo' not in d['name']]
-          device = next((d['udid'] for d in candidates if 'Pro' in d['name']), candidates[0]['udid'])
-          with open(os.environ['GITHUB_ENV'], 'a') as file:
-              file.write('IOS_TEST_DEVICE=' + device + '\n')
-          PY
-      - name: Test SwiftUI workflows with synthetic photos and mock feedback
-        run: xcodebuild -project iosApp/SudokuBuddy.xcodeproj -scheme SudokuBuddy -configuration Debug -destination "platform=iOS Simulator,id=$IOS_TEST_DEVICE" -resultBundlePath build/iOS-Tests.xcresult test
       - name: Compile unsigned device release
         run: xcodebuild -project iosApp/SudokuBuddy.xcodeproj -scheme SudokuBuddy -configuration Release -destination 'generic/platform=iOS' -derivedDataPath build/iOSRelease CODE_SIGNING_ALLOWED=NO build
       - name: Audit release resources, privacy and test-fixture exclusion
         run: python3 tools/ios/audit-release.py build/iOSRelease/Build/Products/Release-iphoneos/SudokuBuddy.app
-      - uses: actions/upload-artifact@v4
+
+  ui-tests:
+    name: SwiftUI workflow tests
+    runs-on: macos-26
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Show toolchain
+        run: xcodebuild -version
+      # Newest iOS runtime the pinned Xcode supports, so the choice is reproducible.
+      - name: Select an installed iPhone simulator
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          sdk = tuple(int(x) for x in subprocess.check_output(['xcrun', '--sdk', 'iphonesimulator', '--show-sdk-version'], text=True).strip().split('.'))
+          devices = json.loads(subprocess.check_output(['xcrun', 'simctl', 'list', 'devices', 'available', '-j']))['devices']
+          def version(runtime):
+              return tuple(int(x) for x in re.search(r'\.iOS-([0-9-]+)$', runtime).group(1).split('-'))
+          runtimes = sorted((r for r in devices if '.iOS-' in r and version(r) <= sdk), key=version, reverse=True)
+          candidates = [d for r in runtimes[:1] for d in devices[r] if d['name'].startswith('iPhone') and 'Duo' not in d['name']]
+          device = next((d for d in candidates if 'Pro' in d['name']), candidates[0])
+          print(f"Using {device['name']} ({device['udid']}) on {runtimes[0]}")
+          with open(os.environ['GITHUB_ENV'], 'a') as file:
+              file.write('IOS_TEST_DEVICE=' + device['udid'] + '\n')
+          PY
+      # Booting takes minutes on hosted runners; start it now so it overlaps the build.
+      - name: Start booting the simulator
+        run: xcrun simctl boot "$IOS_TEST_DEVICE"
+      - uses: ./.github/actions/setup-jdk-gradle
+      - name: Build app and UI tests for the simulator
+        run: xcodebuild -project iosApp/SudokuBuddy.xcodeproj -scheme SudokuBuddy -configuration Debug -destination "platform=iOS Simulator,id=$IOS_TEST_DEVICE" -derivedDataPath build/DerivedData build-for-testing
+      - name: Wait for the simulator to finish booting
+        run: xcrun simctl bootstatus "$IOS_TEST_DEVICE" -b
+      - name: Test SwiftUI workflows with synthetic photos and mock feedback
+        run: xcodebuild -project iosApp/SudokuBuddy.xcodeproj -scheme SudokuBuddy -configuration Debug -destination "platform=iOS Simulator,id=$IOS_TEST_DEVICE" -derivedDataPath build/DerivedData -resultBundlePath build/iOS-Tests.xcresult test-without-building
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: iOS-test-results

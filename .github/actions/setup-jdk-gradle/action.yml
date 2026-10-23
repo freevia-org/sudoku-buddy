@@ -1,0 +1,15 @@
+name: Set up JDK 21 and Gradle
+description: >-
+  Temurin 21 and Gradle with dependency/build caching, shared by the Android and iOS
+  jobs. play-candidate.yml inlines these steps instead: it checks out an arbitrary
+  reviewed revision, which may predate this action.
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-java@v6
+      with:
+        distribution: temurin
+        java-version: '21'
+    # v5 is the newest major whose caching stays MIT-licensed; v6 moves caching into a
+    # proprietary component whose terms the repository owner has to accept first.
+    - uses: gradle/actions/setup-gradle@v5
