@@ -9,22 +9,27 @@ on:
 permissions:
   contents: read
 
+# A newer push to the same pull request makes the older run pointless. Runs on main are
+# never cancelled: each one produces the APK/bundle artifacts for that commit.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
+  # Job name "build" is the required status check on main; keep it.
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
         with:
-          distribution: temurin
-          java-version: '21'
+          persist-credentials: false
 
-      - uses: android-actions/setup-android@v3
+      # Seconds-long checks run before any JDK/SDK/Gradle setup so a broken translation,
+      # site source or release safeguard fails the run in well under a minute.
+      - uses: actions/setup-python@v7
         with:
-          packages: platform-tools
-
-      - uses: gradle/actions/setup-gradle@v4
+          python-version: '3.12'
 
       - name: Test release safeguards
         run: python3 -m unittest discover -s tools/release -p 'test_*.py' -v
@@ -34,10 +39,6 @@ jobs:
           python3 -m unittest discover -s tools/i18n -p 'test_*.py'
           python3 tools/i18n/validate.py
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
       - name: Validate website and policy sources
         run: |
           python3 -m pip install -r tools/site/requirements.txt
@@ -46,17 +47,25 @@ jobs:
 
       # Keep the report intake, retention and export lifecycle covered by the same
       # required check as the app; these tests use local fakes and need no secrets.
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
 
       - name: Test feedback API
         run: npm test --prefix feedback-api
 
+      - uses: android-actions/setup-android@v4
+        with:
+          packages: platform-tools
+
+      - uses: ./.github/actions/setup-jdk-gradle
+
       # Corpus photographs are not in the repository, so every test that needs one
       # skips here. That is expected: see docs/superpowers/plans.
+      # The release APK is excluded here only because the next Gradle step builds it
+      # with the real version code and signing key; building it twice cost ~50s.
       - name: Build and test
-        run: ./gradlew build --console=plain
+        run: ./gradlew build -x :app:assembleRelease --console=plain
 
       # Without this the release is signed with a debug key generated on this runner,
       # which differs from the one the last runner made - and testers cannot update
@@ -72,43 +81,29 @@ jobs:
             echo "::warning::No ANDROID_KEYSTORE_BASE64 secret; this release is debug-signed and cannot be uploaded to Play."
           fi
 
-      - name: Assemble release APK
-        env:
-          BUILD_NUMBER: ${{ github.run_number }}
-          SIGNING_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
-          SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-        run: ./gradlew :app:assembleRelease --console=plain
-
+      # One Gradle invocation for the release APK, its alignment check and the Play
+      # bundle (checkNativeAlignment depends on assembleRelease).
       # Play refuses native libraries built for 4 KB pages, and they do not fail
       # gracefully - they fail to load on a 16 KB device, which is a phone no build here
       # runs on. The check reads the ELF headers, so it catches a dependency regressing.
-      - name: Check the native libraries are 16 KB aligned
+      # The bundle is what Play takes. The APK is for installing directly on a phone; the
+      # bundle carries all four ABIs and lets Play send each phone only its own. Releases
+      # to Play are built separately by play-candidate.yml, from a reviewed commit.
+      - name: Assemble release APK and Play bundle, check 16 KB alignment
         env:
           BUILD_NUMBER: ${{ github.run_number }}
           SIGNING_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-        run: ./gradlew :app:checkNativeAlignment --console=plain
+        run: ./gradlew :app:assembleRelease :app:checkNativeAlignment :app:bundleRelease --console=plain
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: sudoku-buddy-apk
           path: app/build/outputs/apk/release/*.apk
           if-no-files-found: error
 
-      # What Play takes. The APK above is for installing directly on a phone; the bundle
-      # carries all four ABIs and lets Play send each phone only its own. Releases to Play
-      # are built separately by play-candidate.yml, from a reviewed commit.
-      - name: Assemble the Play bundle
-        env:
-          BUILD_NUMBER: ${{ github.run_number }}
-          SIGNING_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
-          SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-        run: ./gradlew :app:bundleRelease --console=plain
-
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: sudoku-buddy-bundle
           path: app/build/outputs/bundle/release/*.aab
