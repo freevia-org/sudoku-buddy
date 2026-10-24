@@ -13,12 +13,12 @@ final class PuzzleFlowTests: XCTestCase {
         app.buttons["cell-2"].tap()
         XCTAssertTrue(app.buttons["cellEditorDone"].waitForExistence(timeout: 5))
         attachScreenshot(app, name: "Android parity - cell editor")
-        app.buttons["Enter 1"].tap(); finishCellEditing(app)
+        tapInCellEditor(app, "Enter 1", cell: 2, shows: "1, entry")
         app.buttons["checkAnswers"].tap()
         expectation(for: NSPredicate(format: "label CONTAINS %@", "A red square"), evaluatedWith: app.staticTexts["puzzleGuidance"])
         waitForExpectations(timeout: 20)
         attachScreenshot(app, name: "Android parity - check")
-        app.buttons["cell-2"].tap(); app.buttons["Erase"].tap(); finishCellEditing(app)
+        editCell(app, 2, tapping: "Erase", shows: "empty")
         app.buttons["requestHint"].tap()
         assertFourStageHint(app)
         attachScreenshot(app, name: "Android parity - four stage answer")
@@ -55,8 +55,7 @@ final class PuzzleFlowTests: XCTestCase {
         XCTAssertTrue(app.buttons["Enter 9"].isHittable)
         XCTAssertLessThan(abs(app.buttons["Enter 1"].frame.minX - app.buttons["Enter 7"].frame.minX), 1)
         attachScreenshot(app, name: "Android parity - reading correction")
-        app.buttons["Enter 4"].tap()
-        finishCellEditing(app)
+        tapInCellEditor(app, "Enter 4", cell: 2, shows: "4, entry")
         app.terminate(); app.launchArguments.removeAll { $0 == "--scan-review-fixture" }; app.launch()
         XCTAssertTrue(app.buttons["reviewReading"].waitForExistence(timeout:15))
         XCTAssertEqual(app.buttons["cell-2"].label,"Row 1, column 3, 4, entry")
@@ -71,6 +70,41 @@ final class PuzzleFlowTests: XCTestCase {
 
     private func finishCellEditing(_ app: XCUIApplication) {
         if app.buttons["cellEditorDone"].exists && app.buttons["cellEditorDone"].isHittable { app.buttons["cellEditorDone"].tap() }
+    }
+    /// Opens the editor for `cell` and applies one of its actions; see `tapInCellEditor`.
+    private func editCell(_ app: XCUIApplication, _ cell: Int, tapping control: String, shows expected: String,
+                          file: StaticString = #filePath, line: UInt = #line) {
+        app.buttons["cell-\(cell)"].tap()
+        tapInCellEditor(app, control, cell: cell, shows: expected, file: file, line: line)
+    }
+    /// Taps a digit or Erase in the open cell editor and waits for that action's own result: the editor
+    /// sheet closes and the cell's accessibility label reports the new value. Tapping `cellEditorDone`
+    /// afterwards would hide an edit that never happened (the sheet stays open, the cell keeps its old
+    /// value) and the test would fail much later on an unrelated assertion.
+    private func tapInCellEditor(_ app: XCUIApplication, _ control: String, cell: Int, shows expected: String,
+                                 file: StaticString = #filePath, line: UInt = #line) {
+        let done = app.buttons["cellEditorDone"], button = app.buttons[control]
+        XCTAssertTrue(done.waitForExistence(timeout: 10), "Cell editor did not open", file: file, line: line)
+        XCTAssertTrue(button.waitForExistence(timeout: 5), "\(control) is missing from the cell editor", file: file, line: line)
+        waitForSettledSheet(done, file: file, line: line)
+        button.tap()
+        let prefix = "Row \(cell / 9 + 1), column \(cell % 9 + 1), \(expected)"
+        let applied = NSPredicate { _, _ in !done.exists && app.buttons["cell-\(cell)"].label.hasPrefix(prefix) }
+        let result = XCTWaiter().wait(for: [XCTNSPredicateExpectation(predicate: applied, object: app)], timeout: 10)
+        XCTAssertEqual(result, .completed, "\(control) did not close the editor and set cell-\(cell) to '\(expected)'; label is '\(app.buttons["cell-\(cell)"].label)'", file: file, line: line)
+    }
+    /// The editor is a detented sheet; wait until its presentation has come to rest (Done is hittable
+    /// and has not moved for half a second) so a tap lands on content rather than on a sheet in motion.
+    private func waitForSettledSheet(_ anchor: XCUIElement, file: StaticString = #filePath, line: UInt = #line) {
+        var last = CGRect.null, since = Date()
+        let settled = NSPredicate { _, _ in
+            guard anchor.exists, anchor.isHittable else { last = .null; return false }
+            let frame = anchor.frame
+            if frame != last { last = frame; since = Date() }
+            return Date().timeIntervalSince(since) >= 0.5
+        }
+        let result = XCTWaiter().wait(for: [XCTNSPredicateExpectation(predicate: settled, object: anchor)], timeout: 10)
+        XCTAssertEqual(result, .completed, "Cell editor sheet never came to rest", file: file, line: line)
     }
     private func waitForPuzzleReady(_ app: XCUIApplication) {
         let ready = NSPredicate { _, _ in !app.buttons["startPuzzle"].exists && app.buttons["checkAnswers"].isEnabled }
@@ -568,7 +602,7 @@ final class PuzzleFlowTests: XCTestCase {
         openReadingReview(app)
         app.terminate();app.launchArguments.removeAll { $0 == "--scan-review-fixture" };app.launch()
         XCTAssertTrue(app.buttons["reportReading"].waitForExistence(timeout:15))
-        app.buttons["cell-2"].tap();app.buttons["Enter 4"].tap();finishCellEditing(app)
+        editCell(app, 2, tapping: "Enter 4", shows: "4, entry")
         XCTAssertTrue(app.buttons["reviewReading"].waitForExistence(timeout:10))
         XCTAssertFalse(app.buttons["reportReading"].exists)
         app.terminate();app.launch()
@@ -625,14 +659,13 @@ final class PuzzleFlowTests: XCTestCase {
         let status = app.staticTexts["puzzleGuidance"]
         waitForPuzzleReady(app)
 
-        app.buttons["cell-2"].tap()
-        app.buttons["Enter 1"].tap(); finishCellEditing(app)
+        editCell(app, 2, tapping: "Enter 1", shows: "1, entry")
         app.buttons["checkAnswers"].tap()
         let incorrect = NSPredicate(format: "label CONTAINS %@", "A red square")
         expectation(for: incorrect, evaluatedWith: status)
         waitForExpectations(timeout: 15)
 
-        app.buttons["cell-2"].tap(); app.buttons["Erase"].tap(); finishCellEditing(app)
+        editCell(app, 2, tapping: "Erase", shows: "empty")
         app.buttons["requestHint"].tap()
         assertFourStageHint(app)
         app.buttons["closeHint"].tap()
