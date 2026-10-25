@@ -5,7 +5,7 @@ bundle `org.freevia.sudokubuddy.ios`, Freevia EOOD team `8C782Q826S`.
 
 Version **1.0.2 (1)** was exported and uploaded on 23 October, processed, selected
 and submitted to App Review. App Store Connect was checked live on 25 October at
-11:11 UTC and showed **Waiting for Review**. Automatic release after approval is
+13:16 UTC and showed **Waiting for Review**. Automatic release after approval is
 enabled and was verified after reloading the release settings. No Apple messages or
 action requests were shown. Submission ID: `14940e4d-2614-4369-b016-e23bb890d0b0`.
 
@@ -28,7 +28,7 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-Current `main` is `33d0de3`. The prepared 1.0.3 candidate was built from `8573614`;
+Current `main` is `704234f`. The prepared 1.0.3 candidate was built from `8573614`;
 all changes merged since that candidate commit are documentation-only. Compared with
 the submitted 1.0.2 candidate baseline `16c3d46`, intervening iOS changes affect
 signing/export configuration, CI, UI tests, and documentation; application sources,
