@@ -2,7 +2,26 @@
 
 # Sudoku Buddy: final build and Google Play handoff
 
-Updated 15 October 2026 for release **1.0.1 (240)**. Candidate workflow
+## Current Play status (verified 25 October 2026)
+
+Google Play Console shows **1.0.2 (241)** serving on Internal testing and available in
+Production at **100% across 178 of 178 countries/regions**. Production was released on
+20 October; Internal testing has served the same version since 20 October. The Console
+shows no unpublished changes. The live Production release is 241 (1.0.2), available on
+17,588 devices; its app-bundle artifact ID is `4860242572940513203`.
+
+The current app code is unchanged by the later iOS port and CI/UI-test maintenance. The
+Play candidate workflow run [40035035392](https://github.com/freevia-org/sudoku-buddy/actions/runs/40035035392)
+successfully validated a signed code-241 candidate from commit `a9fc6d231b871108d5d1fed3f0fdf04b2d93713f`;
+that validation candidate is not asserted to be byte-identical to the Play-uploaded AAB.
+The 1.0.2 release notes are in `docs/play-release-notes-en-US.txt`.
+
+The Console flags DEX obfuscation at 1%, with a February 2027 deadline, and an outdated
+`androidx.fragment:fragment` 1.1.0 dependency. Address these before a future release and
+verify the resulting bundle in Play. The detailed 1.0.1/240 handoff below is retained as
+historical evidence, not the current release record.
+
+Historical handoff updated 15 October 2026 for release **1.0.1 (240)**. Candidate workflow
 [38694510814](https://github.com/freevia-org/sudoku-buddy/actions/runs/38694510814) (run 21)
 passed for version code 240, built from merged commit `091ee869f5e88e1b0fcd4f1ebcd1353c2d714240`
 (PR #43). The AAB is 73,601,139 bytes with SHA-256

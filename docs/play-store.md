@@ -4,13 +4,17 @@ The listing copy below reflects the current English store text. Check it against
 release, published privacy policy and submitted Play Data Safety answers before making future
 listing changes.
 
-Current status (12 October 2026): version 131 is live on Internal testing and in Production
-review for a 100% rollout across 178 countries/regions. Managed publishing is off; Google
-approval will publish automatically. The app supports 71 locales, with model-assisted
+Current status (25 October 2026): **1.0.2 (241)** is serving on Internal testing and is
+available in Production at 100% across 178 of 178 countries/regions. Google Play shows the
+production rollout as released on 20 October; the same version is serving on Internal
+testing. The Console has no unpublished changes. It currently flags low DEX obfuscation
+(1%, fix by February 2027) and the outdated `androidx.fragment:fragment` 1.1.0 dependency
+as items to address in a future release. The app supports 71 locales, with model-assisted
 translation review that remains partial. See [the final-build checklist](play-release-readiness.md)
-for candidate identity, validation evidence and remaining qualification limits.
+for historical candidate evidence and remaining qualification limits.
 
-This reference reflects the version 131 submission as of 12 October 2026.
+This reference reflects the live Google Play state checked on 25 October 2026. Do not
+reuse the older version-131 submission details below as current release status.
 
 ## Done in the repository
 
@@ -45,16 +49,17 @@ Note that the JVM tests link against `org.openpnp:opencv`, a different artifact,
 test suite does **not** exercise the Android library. The bump is verified for alignment
 and for compilation, not for behaviour — that check is a scan on a real phone.
 
-## Remaining account-owner steps
+## Next release owner steps
 
 The Play account, app record, listing, Play App Signing enrollment and IARC rating
-already exist. Before Play submission, merge the reviewed candidate workflow to `main`,
-dispatch a signed candidate with a version code above every uploaded code, install and
-qualify that exact candidate, then publish the matching privacy policy and reconcile the
-saved Data safety answers. Complete internal testing and Play delivery checks before
-starting review. The detailed gates are in [`play-release-readiness.md`](play-release-readiness.md).
+already exist. For a future update, address the Console's obfuscation and dependency
+notices, then build a signed candidate from reviewed `main` with a version code above
+every uploaded code. Qualify that exact candidate, reconcile the privacy policy and
+Data safety answers, upload it to Internal testing, and verify Play delivery before
+promoting the same artifact to Production. The detailed evidence and historical release
+record are in [`play-release-readiness.md`](play-release-readiness.md).
 
-## Store listing assets still to make
+## Store listing assets and source copy
 
 | Asset | Requirement | State |
 | --- | --- | --- |
