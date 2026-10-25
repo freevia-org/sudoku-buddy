@@ -12,7 +12,9 @@ automatically. Play's automated pre-review checks completed before submission.
 Internal testing now serves **1.0.3 (242)**, published on 25 October and available to
 internal testers. The current opt-in link is
 <https://play.google.com/apps/internaltest/4701554944860354114>. Verify installation and
-camera capture on the OnePlus before submitting Production for review.
+camera capture on the OnePlus when it is connected. Production 242 has already been
+submitted for review, so this device check is follow-up qualification rather than a
+submission gate.
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
@@ -26,7 +28,7 @@ Android API 36 16 KB emulator tests passed: 8 instrumentation tests, 2 optional 
 tests skipped, and unit tests passed. The optimized release APK installed and launched
 on the emulator. Real camera capture remains unverified until the OnePlus is connected.
 Play reports one non-blocking warning for missing native debug symbols; the R8 mapping is
-present. Production 241 remains live while the 242 draft waits for review submission.
+present. Production 241 remains live while 242 is in review.
 
 The detailed 1.0.1/240 handoff below is retained as historical evidence, not the current
 release record. The 1.0.2 release notes remain in the historical record; current notes are
