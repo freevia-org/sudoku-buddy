@@ -180,12 +180,13 @@ baseline is `ios-port-android-baseline.json` in that directory.
 
 ## Distribution qualification
 
-Freevia EOOD team `8C782Q826S` now has valid local signing identities and an
-App Store distribution profile. Version 1.0.2 (build 1) was exported, uploaded and
-submitted on 23 October 2026; App Store Connect showed **Waiting for Review** on
-25 October. See [release status](app-store/release-status.md). Physical camera,
-VoiceOver and thermal/memory qualification remain unrecorded. Simulator and
-corpus results do not establish those checks.
+Freevia EOOD team `8C782Q826S` has valid local signing identities and an App Store
+distribution profile. Version 1.0.2 (build 1) was submitted on 23 October 2026 and
+was **Waiting for Review** when checked on 25 October. Automatic release after
+approval is enabled. A signed 1.0.3 (build 2) App Store IPA is now prepared locally,
+but has not been uploaded; Apple requires 1.0.2 to reach Ready for Distribution
+before the next version record can be created. See [release status](app-store/release-status.md).
+Physical camera, VoiceOver and thermal/memory qualification remain unrecorded.
 
 ## Verified handoff
 
@@ -195,8 +196,9 @@ See [parity and validation](ios-port-parity.md) and the
 before installation/distribution. Its Release service endpoint, 71 locales, shared
 model, native framework, privacy manifest and absence of Debug photos were audited.
 The final receipt flow and tutor restart/proof flow passed on a standard iPhone
-17 Pro simulator (iOS 27.0). This adds simulator qualification, not physical-camera
-or signed-distribution qualification.
+17 Pro simulator (iOS 27.0). The 1.0.3 (2) signed-distribution candidate passed
+signature, provisioning, and export audits. These checks do not establish physical
+camera, VoiceOver, or thermal/memory qualification.
 
 ## App Store packet
 
