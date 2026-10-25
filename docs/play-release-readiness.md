@@ -4,10 +4,11 @@
 
 ## Current Play status (verified 25 October 2026)
 
-Production **1.0.2 (241)** remains live at **100% across 178 countries/regions** while
-Production **1.0.3 (242)** is **In review**. Submission 8 was sent on 25 October at
-12:51 PM. Managed publishing is off, so Play approval will publish the 100% rollout
-automatically. Play's automated pre-review checks completed before submission.
+Production **1.0.3 (242)** is **Published** at **100% across 178 countries/regions**.
+Submission 8 completed publication at 1:02 PM on 25 October, as shown in Play Console.
+The production dashboard showed release 242 active. Internal testing also serves
+**1.0.3 (242)**, published at 12:30 PM and available to internal testers, so both tracks
+are aligned. The dashboard showed 5 production installs at the time of verification.
 
 Internal testing now serves **1.0.3 (242)**, published on 25 October and available to
 internal testers. The current opt-in link is
@@ -16,9 +17,8 @@ was installed and launched on the OnePlus on 25 October. A printed Sudoku was ca
 a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have written so far
 is right.” This verifies a successful physical capture and that the app accepted its
 recognized entries as consistent; the grid was not independently compared cell-by-cell
-with a reference transcription or solved in this check. Production 242 has already been
-submitted for review, so this device check is follow-up qualification rather than a
-submission gate.
+with a reference transcription or solved in this check. This device check is follow-up
+qualification, not a corpus accuracy estimate.
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
@@ -36,7 +36,7 @@ captured as a 9×9 grid showing 24 empty cells; **Check** reported that all writ
 were right. This is a successful physical recognition smoke test, not a cell-by-cell
 comparison with a reference transcription or a corpus accuracy result.
 Play reports one non-blocking warning for missing native debug symbols; the R8 mapping is
-present. Production 241 remains live while 242 is in review.
+present.
 
 The detailed 1.0.1/240 handoff below is retained as historical evidence, not the current
 release record. The 1.0.2 release notes remain in the historical record; current notes are
