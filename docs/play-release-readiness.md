@@ -12,10 +12,13 @@ automatically. Play's automated pre-review checks completed before submission.
 Internal testing now serves **1.0.3 (242)**, published on 25 October and available to
 internal testers. The current opt-in link is
 <https://play.google.com/apps/internaltest/4701554944860354114>. The Play-delivered build
-was installed and launched on the OnePlus on 25 October. The camera preview opened, but
-no puzzle was in view, so recognition/capture is still unverified. Production 242 has
-already been submitted for review, so this device check is follow-up qualification rather
-than a submission gate.
+was installed and launched on the OnePlus on 25 October. A printed Sudoku was captured as
+a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have written so far
+is right.” This verifies a successful physical capture and that the app accepted its
+recognized entries as consistent; the grid was not independently compared cell-by-cell
+with a reference transcription or solved in this check. Production 242 has already been
+submitted for review, so this device check is follow-up qualification rather than a
+submission gate.
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
@@ -28,9 +31,10 @@ candidate evidence. Play Console shows it attached to bundle 242.
 Android API 36 16 KB emulator tests passed: 8 instrumentation tests, 2 optional corpus
 tests skipped, and unit tests passed. The optimized release APK installed and launched
 on the emulator. The Play-delivered 1.0.3 (242) package also installed and launched on
-the OnePlus CPH2449 (Android 16/API 36, 4 KB pages); its live camera preview opened, but
-the camera was aimed at a blank surface and no capture was made. Puzzle recognition on
-this Play build therefore remains unverified.
+the OnePlus CPH2449 (Android 16/API 36, 4 KB pages). On 25 October, a printed puzzle was
+captured as a 9×9 grid showing 24 empty cells; **Check** reported that all written entries
+were right. This is a successful physical recognition smoke test, not a cell-by-cell
+comparison with a reference transcription or a corpus accuracy result.
 Play reports one non-blocking warning for missing native debug symbols; the R8 mapping is
 present. Production 241 remains live while 242 is in review.
 
