@@ -28,10 +28,12 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-Current `main` is `8573614`. Compared with the submitted candidate baseline `16c3d46`,
-intervening iOS changes affect signing/export configuration, CI, UI tests, and
-documentation; application sources, shared functionality, and resources are unchanged.
-Android 1.0.3 changes (R8 and Android UI dependencies) do not apply to iOS.
+Current `main` is `33d0de3`. The prepared 1.0.3 candidate was built from `8573614`;
+all changes merged since that candidate commit are documentation-only. Compared with
+the submitted 1.0.2 candidate baseline `16c3d46`, intervening iOS changes affect
+signing/export configuration, CI, UI tests, and documentation; application sources,
+shared functionality, and resources are unchanged. Android 1.0.3 changes (R8 and
+Android UI dependencies) do not apply to iOS.
 
 ### Prepared 1.0.3 candidate (not uploaded)
 
