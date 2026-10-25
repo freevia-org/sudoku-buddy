@@ -21,7 +21,7 @@ android {
         versionCode = (System.getenv("BUILD_NUMBER") ?: "1").toIntOrNull()
             ?.takeIf { it in 1..2_100_000_000 }
             ?: error("BUILD_NUMBER must be a positive Play version code, at most 2100000000")
-        versionName = "1.0.2"
+        versionName = "1.0.3"
         buildConfigField("String", "MISREAD_SUBMISSION_ENDPOINT", "\"\"")
     }
 
@@ -96,7 +96,11 @@ android {
         }
 
         release {
-            isMinifyEnabled = false
+            // AGP 9.3 enables R8 code and resource optimization together here.
+            // Keep this in release only; debug remains readable for diagnosis.
+            optimization {
+                enable = true
+            }
             val endpoint = providers.gradleProperty("misreadSubmissionEndpoint")
                 .orElse("https://sudoku-buddy-feedback.antoni-ivanov.workers.dev/v1/reports")
                 .get().replace("\\", "\\\\").replace("\"", "\\\"")
@@ -135,6 +139,14 @@ kotlin {
 }
 
 dependencies {
+    constraints {
+        // CameraX camera-view 1.6.2 requests AppCompat 1.1.0 transitively. Keep the
+        // resolved AppCompat/Fragment runtime on supported stable releases.
+        implementation(libs.androidx.appcompat) {
+            because("CameraX camera-view pulls appcompat 1.1.0, whose Fragment 1.1.0 is outdated on Play")
+        }
+    }
+
     implementation(project(":core:presentation"))
     implementation(project(":core:model"))
     implementation(project(":core:solver"))

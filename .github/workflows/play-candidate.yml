@@ -103,6 +103,7 @@ jobs:
           fi
           keytool -J-Duser.language=en -J-Duser.country=US -printcert -jarfile "$bundle" > "$evidence/upload-certificate.txt"
           grep -Fqi 'A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5' "$evidence/upload-certificate.txt"
+          cp app/build/outputs/mapping/release/mapping.txt "$evidence/mapping.txt"
           # Generate all device variants locally; nothing is installed or distributed.
           umask 077
           store_password="$RUNNER_TEMP/play-store-password"

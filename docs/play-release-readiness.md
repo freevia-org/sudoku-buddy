@@ -21,6 +21,19 @@ The Console flags DEX obfuscation at 1%, with a February 2027 deadline, and an o
 verify the resulting bundle in Play. The detailed 1.0.1/240 handoff below is retained as
 historical evidence, not the current release record.
 
+## 1.0.3 release candidate in preparation
+
+The next candidate is version **1.0.3**, version code **242** (241 is already on Play).
+Its release-only R8 optimization is enabled using AGP 9.3's optimization DSL. The CameraX
+transitive AppCompat dependency is constrained to stable 1.8.0, which resolves Fragment
+to 1.5.4 instead of 1.1.0 (above Play's 1.2.1 recommendation). The candidate pipeline includes the R8
+mapping file alongside the signed AAB so crash reports can be deobfuscated.
+
+This is candidate preparation only. Do not treat code 242 as submitted or live until the
+release artifact has passed its checks, the optimized build has been exercised on-device,
+and the Console confirms the track updates. Keep 241 live on Internal testing and Production
+until the new candidate is explicitly uploaded and approved.
+
 Historical handoff updated 15 October 2026 for release **1.0.1 (240)**. Candidate workflow
 [38694510814](https://github.com/freevia-org/sudoku-buddy/actions/runs/38694510814) (run 21)
 passed for version code 240, built from merged commit `091ee869f5e88e1b0fcd4f1ebcd1353c2d714240`

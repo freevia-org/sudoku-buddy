@@ -51,6 +51,8 @@ class PlatformParityTest {
         checkNotNull(resolver.openOutputStream(uri)).use { image.compress(Bitmap.CompressFormat.PNG, 100, it) }
     }
     @Test fun fourHintStagesAndProofNavigation() {
+        val context = InstrumentationRegistry.getInstrumentation().targetContext
+        val stages = listOf("Where", "Square", "Trace", "Answer")
         var state by mutableStateOf(puzzle())
         ui.setContent {
             MaterialTheme(colorScheme = darkColorScheme()) {
@@ -61,16 +63,17 @@ class PlatformParityTest {
         }
         capture("puzzle-none")
         for (depth in 0..3) {
-            ui.onNodeWithText("Hint", useUnmergedTree = true).performClick()
-            ui.onNodeWithText("${depth + 1}. ${listOf("Where", "Square", "Trace", "Answer")[depth]}").assertExists()
+            ui.onNodeWithText(context.localized("Hint"), useUnmergedTree = true).performClick()
+            ui.onNodeWithText("${depth + 1}. ${context.localized(stages[depth])}").assertExists()
             capture("hint-$depth")
         }
-        ui.onNodeWithText("Why this square? · Naked single").performScrollTo().performClick()
-        ui.onNodeWithText("Before").assertExists()
+        val technique = (checkNotNull(state.hint) as org.freevia.sudokubuddy.solver.Hint.Explained).technique
+        ui.onNodeWithText(context.localized("Why this square? · $technique")).performScrollTo().performClick()
+        ui.onNodeWithText(context.localized("Before")).assertExists()
         capture("hint-placement-proof")
-        ui.onNodeWithText("Back to your square").performScrollTo().performClick()
-        ui.onNodeWithText("Close hint").performScrollTo().performClick()
-        ui.onNodeWithText("1. Where").assertDoesNotExist()
+        ui.onNodeWithText(context.localized("Back to your square")).performScrollTo().performClick()
+        ui.onNodeWithText(context.localized("Close hint")).performScrollTo().performClick()
+        ui.onNodeWithText("1. ${context.localized(stages.first())}").assertDoesNotExist()
     }
     @Test fun auxiliaryScreensAndTutor() {
         var screen by mutableStateOf("settings")
