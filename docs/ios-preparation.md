@@ -180,11 +180,12 @@ baseline is `ios-port-android-baseline.json` in that directory.
 
 ## Distribution qualification
 
-No physical iPhone or Apple signing identity is currently available on this Mac.
-Unsigned device compilation does not qualify real camera behavior, VoiceOver,
-thermal/memory behavior, a signed archive or TestFlight. Those checks require an
-iPhone and the intended Apple Developer team. No deployment or publication occurs
-as part of local porting and simulator tests.
+Freevia EOOD team `8C782Q826S` now has valid local signing identities and an
+App Store distribution profile. Version 1.0.2 (build 1) was exported, uploaded and
+submitted on 23 October 2026; App Store Connect showed **Waiting for Review** on
+25 October. See [release status](app-store/release-status.md). Physical camera,
+VoiceOver and thermal/memory qualification remain unrecorded. Simulator and
+corpus results do not establish those checks.
 
 ## Verified handoff
 
