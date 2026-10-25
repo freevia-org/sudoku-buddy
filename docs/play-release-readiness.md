@@ -4,11 +4,10 @@
 
 ## Current Play status (verified 25 October 2026)
 
-Production **1.0.2 (241)** remains live at **100% across 178 countries/regions**. The
-Production release for **1.0.3 (242)** is saved in Publishing overview at 100% rollout but
-has not been sent for review. Managed publishing is off, so review approval will publish
-the production change automatically. Play's automated pre-review checks have completed;
-the saved change is ready to submit once the physical-device camera check is recorded.
+Production **1.0.2 (241)** remains live at **100% across 178 countries/regions** while
+Production **1.0.3 (242)** is **In review**. Submission 8 was sent on 25 October at
+12:51 PM. Managed publishing is off, so Play approval will publish the 100% rollout
+automatically. Play's automated pre-review checks completed before submission.
 
 Internal testing now serves **1.0.3 (242)**, published on 25 October and available to
 internal testers. The current opt-in link is
