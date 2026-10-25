@@ -4,9 +4,10 @@ App Store Connect record: **Sudoku Buddy by Freevia**, Apple ID `6825975489`,
 bundle `org.freevia.sudokubuddy.ios`, Freevia EOOD team `8C782Q826S`.
 
 Version **1.0.2 (1)** was exported and uploaded on 23 October, processed, selected
-and submitted to App Review. The app list was checked live on 25 October and
-showed **Waiting for Review**. Manual release was selected at submission.
-Submission ID: `14940e4d-2614-4369-b016-e23bb890d0b0`.
+and submitted to App Review. App Store Connect was checked live on 25 October at
+11:11 UTC and showed **Waiting for Review**. Automatic release after approval is
+enabled and was verified after reloading the release settings. No Apple messages or
+action requests were shown. Submission ID: `14940e4d-2614-4369-b016-e23bb890d0b0`.
 
 The earlier preparation packet predates account setup. Local Apple Distribution
 and Apple Development identities are now available, and App Store Connect is
@@ -15,7 +16,7 @@ or reuse build 1 for a new upload.
 
 ## Candidate and verification
 
-The preserved IPA is in the MacMini release workspace at
+The submitted 1.0.2 IPA is in the MacMini release workspace at
 `apple-release/Sudoku-export/SudokuBuddy.ipa`. SHA-256:
 `43bd2836588bd9d448b2cb4c9936be306fd8ffad643f5ade5f3465cb08eb7dea`.
 Its hash matches the recorded export. On 25 October, the unpacked export passed
@@ -27,12 +28,28 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-The checkout was advanced from `16c3d46` to `3673e3a`. Those intervening changes
-affect CI, README and UI tests; application sources and resources are unchanged.
-Hosted iOS and Android CI passed for `3673e3a`. No replacement build was uploaded
-and the submitted candidate was left in review.
+Current `main` is `8573614`. Compared with the submitted candidate baseline `16c3d46`,
+intervening iOS changes affect signing/export configuration, CI, UI tests, and
+documentation; application sources, shared functionality, and resources are unchanged.
+Android 1.0.3 changes (R8 and Android UI dependencies) do not apply to iOS.
 
-## Future signed builds
+### Prepared 1.0.3 candidate (not uploaded)
+
+An iOS **1.0.3 (build 2)** candidate was prepared locally from `8573614` without
+changing tracked source or touching App Store Connect. The archive audit confirms
+version/build `1.0.3 (2)` and the expected bundle ID. Its locally exported IPA passed
+deep/strict signature verification with the Freevia EOOD App Store profile, debugging
+disabled, and the correct team. Archive and export audits passed. The IPA SHA-256 is
+`d3bd03498b5049f0ed350326418eb1d2dde9272b0fad9e17462c867418010df3`.
+
+Candidate checks passed: five simulator UI workflows, 36 storage tests, 138 shared
+JVM/native tests, 14 resource checks, and geometry checks (one optional corpus test
+skipped). No replacement build was uploaded; version 1.0.2 remains in review. Apple
+requires the current version to be **Ready for Distribution** before creating the next
+App Store version record. After that, create version 1.0.3 and upload this prepared IPA
+if its source and release notes are still current.
+
+## Signing and testing notes
 
 The Xcode app and UI-test targets now select Freevia EOOD for automatic signing.
 `iosApp/ExportOptions-AppStore.plist` exports locally using that team, preserves
@@ -52,5 +69,5 @@ be checked separately from App Store review status. The live TestFlight page on
 25 October lists build 1 as **Ready to Submit** (88 days remaining), with no
 testing groups, invites or installs shown. Creating a tester group and selecting
 testers remains necessary before collecting TestFlight hardware results; no
-invitation was sent by this check. Future archive builds also
-need additional disk space: this Mac had less than 1 GiB free at this check.
+invitation was sent by this check. The 1.0.3 (2) candidate above is a local App Store
+export; it has not been uploaded to App Store Connect or TestFlight.
