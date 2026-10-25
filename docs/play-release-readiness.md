@@ -4,35 +4,34 @@
 
 ## Current Play status (verified 25 October 2026)
 
-Google Play Console shows **1.0.2 (241)** serving on Internal testing and available in
-Production at **100% across 178 of 178 countries/regions**. Production was released on
-20 October; Internal testing has served the same version since 20 October. The Console
-shows no unpublished changes. The live Production release is 241 (1.0.2), available on
-17,588 devices; its app-bundle artifact ID is `4860242572940513203`.
+Production **1.0.2 (241)** remains live at **100% across 178 countries/regions**. The
+Production release for **1.0.3 (242)** is saved in Publishing overview at 100% rollout but
+has not been sent for review. Managed publishing is off, so review approval will publish
+the production change automatically. Play's automated pre-review checks have completed;
+the saved change is ready to submit once the physical-device camera check is recorded.
 
-The current app code is unchanged by the later iOS port and CI/UI-test maintenance. The
-Play candidate workflow run [40035035392](https://github.com/freevia-org/sudoku-buddy/actions/runs/40035035392)
-successfully validated a signed code-241 candidate from commit `a9fc6d231b871108d5d1fed3f0fdf04b2d93713f`;
-that validation candidate is not asserted to be byte-identical to the Play-uploaded AAB.
-The 1.0.2 release notes are in `docs/play-release-notes-en-US.txt`.
+Internal testing now serves **1.0.3 (242)**, published on 25 October and available to
+internal testers. The current opt-in link is
+<https://play.google.com/apps/internaltest/4701554944860354114>. Verify installation and
+camera capture on the OnePlus before submitting Production for review.
 
-The Console flags DEX obfuscation at 1%, with a February 2027 deadline, and an outdated
-`androidx.fragment:fragment` 1.1.0 dependency. Address these before a future release and
-verify the resulting bundle in Play. The detailed 1.0.1/240 handoff below is retained as
-historical evidence, not the current release record.
+Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
+passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
+66,609,178 bytes (SHA-256
+`26f90876342bcdd4c165236ce3f74aa4d3df9860aecd8705d5c18aedff25263a`). Bundle validation,
+the pinned Play upload certificate, R8 mapping capture, generated APK signatures, and
+16 KB native alignment all passed. The 40,261,757-byte R8 mapping is preserved in the
+candidate evidence. Play Console shows it attached to bundle 242.
 
-## 1.0.3 release candidate in preparation
+Android API 36 16 KB emulator tests passed: 8 instrumentation tests, 2 optional corpus
+tests skipped, and unit tests passed. The optimized release APK installed and launched
+on the emulator. Real camera capture remains unverified until the OnePlus is connected.
+Play reports one non-blocking warning for missing native debug symbols; the R8 mapping is
+present. Production 241 remains live while the 242 draft waits for review submission.
 
-The next candidate is version **1.0.3**, version code **242** (241 is already on Play).
-Its release-only R8 optimization is enabled using AGP 9.3's optimization DSL. The CameraX
-transitive AppCompat dependency is constrained to stable 1.8.0, which resolves Fragment
-to 1.5.4 instead of 1.1.0 (above Play's 1.2.1 recommendation). The candidate pipeline includes the R8
-mapping file alongside the signed AAB so crash reports can be deobfuscated.
-
-This is candidate preparation only. Do not treat code 242 as submitted or live until the
-release artifact has passed its checks, the optimized build has been exercised on-device,
-and the Console confirms the track updates. Keep 241 live on Internal testing and Production
-until the new candidate is explicitly uploaded and approved.
+The detailed 1.0.1/240 handoff below is retained as historical evidence, not the current
+release record. The 1.0.2 release notes remain in the historical record; current notes are
+in `docs/play-release-notes-en-US.txt`.
 
 Historical handoff updated 15 October 2026 for release **1.0.1 (240)**. Candidate workflow
 [38694510814](https://github.com/freevia-org/sudoku-buddy/actions/runs/38694510814) (run 21)
