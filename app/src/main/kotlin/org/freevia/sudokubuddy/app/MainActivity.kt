@@ -5,15 +5,12 @@ import android.content.pm.PackageManager
 import android.content.Intent
 import android.net.Uri
 import android.provider.Settings as AndroidSettings
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.SystemBarStyle
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -50,6 +47,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
+import androidx.core.view.WindowCompat
 import org.freevia.sudokubuddy.vision.OpenCvNatives
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.Dispatchers
@@ -72,10 +70,13 @@ class MainActivity : ComponentActivity() {
         // The bars are pinned dark rather than left on auto: this app is dark whatever
         // the phone is set to, so on a phone in light mode `auto` would put dark system
         // icons on a dark background and they would vanish.
-        enableEdgeToEdge(
-            statusBarStyle = SystemBarStyle.dark(Color.TRANSPARENT),
-            navigationBarStyle = SystemBarStyle.dark(Color.TRANSPARENT),
-        )
+        WindowCompat.enableEdgeToEdge(window)
+        WindowCompat.getInsetsController(window, window.decorView).apply {
+            // Sudoku Buddy stays dark regardless of the device theme, so keep the
+            // system-bar icons light for contrast.
+            isAppearanceLightStatusBars = false
+            isAppearanceLightNavigationBars = false
+        }
 
         // The vision module never links against a platform, so the loader is injected.
         OpenCvNatives.ensureLoaded {
