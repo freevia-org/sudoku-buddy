@@ -26,10 +26,10 @@ not a corpus accuracy estimate.
 The refreshed 1.0.4 (243) bundle is active on both Internal and Production. Play Console
 showed one non-blocking warning that native debug symbols were not uploaded.
 
-App Store Connect still shows iOS **1.0.2 (build 1) Waiting for Review**, with automatic
-release after approval selected. It says a new build requires removing 1.0.2 from review;
-per the owner's instruction, that review remains intact. The prepared iOS **1.0.3 (build 2)**
-candidate is still local and unuploaded. See the [iOS release status](app-store/release-status.md).
+The latest Publishing check found App Store Connect lists iOS **1.0.2 (build 1) Rejected**.
+A reviewer response is being prepared. The prepared iOS **1.0.3 (build 2)** candidate only
+changes About version/build display and translations, so it is not a suitable response
+candidate. See the [iOS release status](app-store/release-status.md).
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
