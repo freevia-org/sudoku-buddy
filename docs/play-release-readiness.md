@@ -92,11 +92,21 @@ no longer appears on 243.
 
 - **Edge-to-edge may not display for all users.** This remains attached to 243 even though
   the refreshed candidate includes PR #70's `WindowCompat.enableEdgeToEdge` migration.
+  The current app source still calls that recommended helper. Android 15+ also enforces
+  edge-to-edge because the app targets SDK 36. Compose screens apply status-bar,
+  navigation-bar, or safe-drawing insets as appropriate. The Play card appears stale or
+  generic for the current implementation; the code already enables edge-to-edge and handles
+  insets.
 - **Deprecated edge-to-edge APIs.** This remains attached to 243. Play identified
   `Window.setStatusBarColor`, `Window.setNavigationBarColor`, and
-  `LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES`, with call sites in AndroidX
-  `EdgeToEdgeApi26` and `EdgeToEdgeApi29`. The 243 mapping contains no `EdgeToEdgeApi`
-  classes, yet Play still lists this recommendation.
+  `LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES`, with the call site attributed to
+  `MainActivity.onCreate`. The app does not call these APIs directly; that method invokes
+  the official `WindowCompat.enableEdgeToEdge` helper. AndroidX's compatibility
+  implementation itself uses the deprecated setters and cutout mode on older platform
+  versions. This is how the helper provides edge-to-edge behavior before Android 15. The
+  recommendation's suggested migration is already present, so removing the helper would
+  regress edge-to-edge behavior on older Android versions without improving Android 15+.
+  Treat this as a dependency implementation warning, not an app-owned deprecated API call.
 - **Bitmap downsampling.** Play's R8 call site `uo0.b` mapped to
   `org.freevia.sudokubuddy.app.History.loadPhoto`; the refreshed candidate bounds restored
   photos to four megapixels using `BitmapFactory.Options.inSampleSize`.
