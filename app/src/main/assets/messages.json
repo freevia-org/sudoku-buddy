@@ -1780,6 +1780,10 @@
     "key": "msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844"
   },
   {
+    "source": "Version",
+    "key": "msg_version_dd167905"
+  },
+  {
     "source": "Very hard",
     "key": "msg_very_hard_9a5c2f08"
   },
@@ -2110,6 +2114,10 @@
   {
     "source": "{0} (API {1})",
     "key": "msg_0_api_1_4f58c1ea"
+  },
+  {
+    "source": "{0} (build {1})",
+    "key": "msg_0_build_1_31a9fb2f"
   },
   {
     "source": "{0} and {1} both hold only {2} and {3}. In this box, {4} has just two homes, one seen by each of them - so one of those two is {5}, and the end that sees it must be {6}. Either way one end is {7}, which rules {8} out of everything that sees them both.",

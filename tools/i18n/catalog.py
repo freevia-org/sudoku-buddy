@@ -18,6 +18,7 @@ SOLVER_WORDS = set("none one two three four five six seven eight contains was we
 # localized(). Date-format patterns intentionally remain presentation resources.
 NON_PRESENTATION_LITERALS = {
     "Content-Type", "X-Sudoku-Training-Consent", "CaptureEvidence", "UnsafeOptInUsageError",
+    "DEPRECATION",  # Kotlin compiler suppression annotation, not app copy.
     "Degenerate photograph quadrilateral", "Photograph rotation must be a quarter turn",
     "incorrect digit model length: {0}",
     # Shared MessageCatalog maps this to the same approved photo-error translation

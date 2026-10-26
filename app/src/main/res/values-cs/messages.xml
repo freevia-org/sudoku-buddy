@@ -9,6 +9,7 @@
     <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
     <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s v řádku %2$s, sloupci %3$s%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s v kroku %2$s"</string>
+    <string name="msg_0_build_1_31a9fb2f" formatted="false">"%1$s (sestavení %2$s)"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$s může obsahovat pouze %2$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s nemůže obsahovat %2$s, protože %3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"%1$s nemůže obsahovat %2$s, protože %3$s může obsahovat pouze %4$s ve stejném sloupci %5$s."</string>
@@ -543,6 +544,7 @@
     <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Pomocí techniky %1$s klepněte na jedno pole, kde lze kandidáta odstranit, a pak tuto číslici vyberte."</string>
     <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Pomocí techniky %1$s klepněte na pole, které můžete vyplnit, a pak vyberte jeho číslici."</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_version_dd167905" formatted="false">"Verze"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Velmi těžká"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
     <string name="msg_was_b63b99f6" formatted="false">"proběhlo"</string>
