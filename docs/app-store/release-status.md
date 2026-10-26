@@ -4,16 +4,16 @@ App Store Connect record: **Sudoku Buddy by Freevia**, Apple ID `6825975489`,
 bundle `org.freevia.sudokubuddy.ios`, Freevia EOOD team `8C782Q826S`.
 
 Version **1.0.2 (1)** was exported and uploaded on 23 October, processed, selected
-and submitted to App Review. App Store Connect was checked live on 26 October by the
-SUB iOS session and still showed **Waiting for Review**. Automatic release after
-approval remains enabled. No replacement version was uploaded or submitted.
-Submission ID: `14940e4d-2614-4369-b016-e23bb890d0b0`.
+and submitted to App Review. Earlier checks on 26 October showed **Waiting for Review**;
+a later live check by Publishing found the app list status **Rejected**. Publishing
+confirmed the reviewer requested follow-up information. A response is being prepared;
+the app is not yet available on the App Store.
 
-Publishing rechecked the version page on 26 October: it still shows **Waiting for Review**
-with build 1 attached. App Store Connect says a new build requires removing version 1.0.2
-from review. Per the owner's instruction, keep this review intact; do not withdraw or
-replace build 1. The prepared 1.0.3 (build 2) candidate remains local and unuploaded while
-Apple reviews 1.0.2.
+The prepared 1.0.3 (build 2) candidate remains local and unuploaded. Do not upload or
+resubmit it as-is: its only changes from the submitted app are About version/build display
+and translations, which do not address the review concerns. The next path is a factual,
+evidence-backed Resolution Center response, or substantial product changes followed by a
+new candidate. No App Store Connect changes have been made since the rejection was observed.
 
 The earlier preparation packet predates account setup. Local Apple Distribution
 and Apple Development identities are now available, and App Store Connect is
@@ -52,8 +52,9 @@ Six simulator UI workflows, 36 storage tests, 138 shared JVM/native tests, 14 re
 checks, and four geometry checks passed; one optional corpus test was skipped. This
 candidate remains local and has not been uploaded. Physical iOS qualification and Apple
 upload processing are outstanding. The iOS About view currently displays the version
-but not the build number. Version 1.0.3 cannot proceed while 1.0.2 is still in review;
-automatic release of 1.0.2 remains enabled.
+but not the build number. The rejection concerns product differentiation and app
+provenance, which this candidate does not change. Do not upload it as-is; respond to
+Apple through Resolution Center or make substantial product changes first.
 
 ## Signing and testing notes
 
@@ -70,10 +71,8 @@ xcodebuild -exportArchive -archivePath PATH_TO_NEW_ARCHIVE \
 ```
 
 No agreements or account permissions were changed. Hardware qualification in
-`device-qualification.md` remains unrecorded. TestFlight tester distribution must
-be checked separately from App Store review status. The live TestFlight page on
-25 October lists build 1 as **Ready to Submit** (88 days remaining), with no
-testing groups, invites or installs shown. Creating a tester group and selecting
-testers remains necessary before collecting TestFlight hardware results; no
-invitation was sent by this check. The 1.0.3 (2) candidate above is a local App Store
+`device-qualification.md` remains unrecorded. Publishing's 26 October App Store
+Connect audit found no TestFlight groups for Sudoku Buddy; the visible page offered
+**New Group**, with no group or invite entries shown. No TestFlight beta cohort or
+feedback is recorded. The prepared 1.0.3 (2) candidate above is a local App Store
 export; it has not been uploaded to App Store Connect or TestFlight.
