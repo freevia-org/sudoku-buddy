@@ -137,8 +137,18 @@ class History(context: Context) {
             ?.sortedByDescending { it.id }
             ?: emptyList()
 
-    fun loadPhoto(entry: HistoryEntry): Bitmap? =
-        runCatching { BitmapFactory.decodeFile(entry.photo.absolutePath) }.getOrNull()
+    fun loadPhoto(entry: HistoryEntry): Bitmap? = runCatching {
+        val path = entry.photo.absolutePath
+        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        BitmapFactory.decodeFile(path, bounds)
+        if (bounds.outWidth <= 0 || bounds.outHeight <= 0) return@runCatching null
+
+        val options = BitmapFactory.Options().apply {
+            inSampleSize = historyPhotoSampleSize(bounds.outWidth, bounds.outHeight)
+            inPreferredConfig = Bitmap.Config.ARGB_8888
+        }
+        BitmapFactory.decodeFile(path, options)
+    }.getOrNull()
 
     @Synchronized
     fun delete(entry: HistoryEntry) {
@@ -151,6 +161,21 @@ class History(context: Context) {
     }
 
     companion object {
+        // Restored photos are displayed with the saved grid overlay; a few megapixels
+        // remain sharp on current phones and tablets while avoiding a full-resolution
+        // decode for every reopened history entry. BitmapFactory accepts powers of two.
+        private const val MAX_HISTORY_PHOTO_PIXELS = 4L * 1024 * 1024
+
+        private fun historyPhotoSampleSize(width: Int, height: Int): Int {
+            var sample = 1
+            while (((width.toLong() + sample - 1) / sample) *
+                ((height.toLong() + sample - 1) / sample) > MAX_HISTORY_PHOTO_PIXELS
+            ) {
+                sample *= 2
+            }
+            return sample
+        }
+
         /**
          * Patterns rather than formatters, with the locale applied at the moment of use.
          *
