@@ -9,6 +9,7 @@
     <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
     <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s у радку %2$s, слупку %3$s%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s на кроку %2$s"</string>
+    <string name="msg_0_build_1_31a9fb2f" formatted="false">"%1$s (зборка %2$s)"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"У %1$s можа быць толькі %2$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$s не можа змяшчаць %2$s, таму што %3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"У %1$s не можа быць %2$s, бо ў %3$s можа быць толькі %4$s у тым самым слупку %5$s."</string>
@@ -543,6 +544,7 @@
     <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"Выкарыстоўваючы «%1$s», націсніце на адну клетку, дзе можна выдаліць кандыдата, затым выберыце гэтую лічбу."</string>
     <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"Выкарыстоўваючы «%1$s», націсніце на клетку, якую вы можаце запоўніць, затым выберыце яе лічбу."</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_version_dd167905" formatted="false">"Версія"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"Вельмі складаны"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"W-wing"</string>
     <string name="msg_was_b63b99f6" formatted="false">"было"</string>

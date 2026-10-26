@@ -1,5 +1,9 @@
 package org.freevia.sudokubuddy.app
 
+import android.content.Context
+import android.content.pm.PackageInfo
+import android.content.pm.PackageManager
+import android.os.Build
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,9 +19,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
+import androidx.core.content.pm.PackageInfoCompat
 import org.freevia.sudokubuddy.BuildConfig
 
 /**
@@ -34,12 +40,29 @@ fun AboutScreen(onClose: () -> Unit) {
         return
     }
     val uriHandler = LocalUriHandler.current
+    val context = LocalContext.current
+    val packageInfo = remember(context) { installedPackageInfo(context) }
+    val versionName = packageInfo.versionName ?: BuildConfig.VERSION_NAME
+    val buildNumber = PackageInfoCompat.getLongVersionCode(packageInfo)
     Column(modifier = Modifier.fillMaxSize()) {
-        AppBar(title = "About", subtitle = "Sudoku Buddy ${BuildConfig.VERSION_NAME}", onBack = onClose)
+        AppBar(
+            title = "About",
+            subtitle = "Sudoku Buddy $versionName",
+            onBack = onClose,
+        )
         LazyColumn(
             modifier = Modifier.fillMaxSize().navigationBarsPadding().padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(20.dp),
         ) {
+            item {
+                Section("Version") {
+                    Text(
+                        "$versionName (build $buildNumber)",
+                        style = MaterialTheme.typography.bodyMedium,
+                    )
+                }
+            }
+
             item {
                 Section("What it does") {
                     Text(
@@ -131,6 +154,17 @@ fun AboutScreen(onClose: () -> Unit) {
         }
     }
 }
+
+@Suppress("DEPRECATION")
+private fun installedPackageInfo(context: Context): PackageInfo =
+    if (Build.VERSION.SDK_INT >= 33) {
+        context.packageManager.getPackageInfo(
+            context.packageName,
+            PackageManager.PackageInfoFlags.of(0),
+        )
+    } else {
+        context.packageManager.getPackageInfo(context.packageName, 0)
+    }
 
 @Composable
 private fun Section(title: String, content: @Composable () -> Unit) {

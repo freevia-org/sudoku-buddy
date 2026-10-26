@@ -9,6 +9,7 @@
     <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s（API %2$s）"</string>
     <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%2$s行、%3$s列の%1$s%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"ステップ%2$sの%1$s"</string>
+    <string name="msg_0_build_1_31a9fb2f" formatted="false">"%1$s (ビルド %2$s)"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"%1$sには%2$sしか入りません。"</string>
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"%1$sに%2$sが入らない根拠：%3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"同じ列%5$s内の%3$sには%4$sしか入らないため、%1$sに%2$sは入りません。"</string>
@@ -543,6 +544,7 @@
     <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"%1$sを使い、候補を除外できるマスを1つタップしてから、その数字を選んでください。"</string>
     <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"%1$sを使い、埋められるマスをタップしてから、その数字を選んでください。"</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_version_dd167905" formatted="false">"バージョン"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"非常に難しい"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"Wウィング"</string>
     <string name="msg_was_b63b99f6" formatted="false">"された"</string>

@@ -9,6 +9,7 @@
     <string name="msg_0_api_1_4f58c1ea" formatted="false">"%1$s (API %2$s)"</string>
     <string name="msg_0_at_row_1_column_2_3_4_8d1bc498" formatted="false">"%1$s في الصف %2$s، العمود %3$s%4$s · %5$s"</string>
     <string name="msg_0_at_step_1_6575933c" formatted="false">"%1$s في الخطوة %2$s"</string>
+    <string name="msg_0_build_1_31a9fb2f" formatted="false">"%1$s (البنية %2$s)"</string>
     <string name="msg_0_can_only_hold_1_7d4f7900" formatted="false">"لا يمكن أن تحتوي %1$s إلا على %2$s."</string>
     <string name="msg_0_cannot_hold_1_because_2_7d7943d9" formatted="false">"لا يمكن لـ %1$s احتواء %2$s لأن %3$s "</string>
     <string name="msg_0_cannot_hold_1_because_2_can_only_hold_3_in__1a60a769" formatted="false">"لا يمكن أن تحتوي %1$s على %2$s لأن %3$s لا يمكن أن تحتوي إلا على %4$s في العمود نفسه %5$s."</string>
@@ -543,6 +544,7 @@
     <string name="msg_using_0_tap_one_square_where_a_candidate_can__9e412349" formatted="false">"باستخدام %1$s، انقر على خلية واحدة حيث يمكن إزالة مرشح، ثم اختر ذلك الرقم."</string>
     <string name="msg_using_0_tap_the_square_you_can_fill_then_choo_b7a1b844" formatted="false">"باستخدام %1$s، انقر على الخلية التي يمكنك ملؤها، ثم اختر رقمها."</string>
     <string name="msg_utf_8_3ad3031f" formatted="false">"UTF-8"</string>
+    <string name="msg_version_dd167905" formatted="false">"الإصدار"</string>
     <string name="msg_very_hard_9a5c2f08" formatted="false">"صعب جداً"</string>
     <string name="msg_w_wing_750cc106" formatted="false">"جناح W"</string>
     <string name="msg_was_b63b99f6" formatted="false">"تم"</string>
