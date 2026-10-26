@@ -97,7 +97,7 @@ def source_fingerprints(root: Path, names: set[str]) -> dict:
 
 
 def package_candidate(source: Path, bundle: Path, evidence: Path, output: Path,
-                      version_code: int, provenance: dict) -> dict:
+                      version_code: int, provenance: dict, version_name: str = "1.0.3") -> dict:
     if not 0 < version_code <= 2_100_000_000:
         raise ValueError("Invalid Play version code")
     if output.exists():
@@ -113,7 +113,7 @@ def package_candidate(source: Path, bundle: Path, evidence: Path, output: Path,
     files["app-release.aab"] = bundle
     # Validate metadata and native payload again at the handoff boundary. Manifest
     # and config must be bundletool dumps of this exact bundle, as in the CI workflow.
-    audit_manifest((evidence / "manifest.xml").read_text(encoding="utf-8-sig"), version_code)
+    audit_manifest((evidence / "manifest.xml").read_text(encoding="utf-8-sig"), version_code, version_name)
     audit_config(json.loads((evidence / "bundle-config.json").read_text(encoding="utf-8-sig")))
     audit_bundle(bundle)
     for origin in files.values():
@@ -127,7 +127,7 @@ def package_candidate(source: Path, bundle: Path, evidence: Path, output: Path,
     record = {
         "status": "NOT APPROVED FOR DISTRIBUTION",
         "prepared_at_utc": datetime.now(timezone.utc).isoformat(),
-        "package": "org.freevia.sudokubuddy", "version_name": "1.0.3",
+        "package": "org.freevia.sudokubuddy", "version_name": version_name,
         "version_code": version_code, "source": provenance,
         "bundle_sha256": digest(output / "app-release.aab"),
         "qualification": "Static metadata/native checks passed. Supplied signing evidence, device tests and Play approval need separate qualification.",
@@ -161,6 +161,7 @@ def main() -> None:
     prepare.add_argument("--evidence", type=Path, required=True)
     prepare.add_argument("--output", type=Path, required=True)
     prepare.add_argument("--version-code", type=int, required=True)
+    prepare.add_argument("--version-name", required=True)
     verify = commands.add_parser("verify")
     verify.add_argument("folder", type=Path)
     snapshot = commands.add_parser("source")
@@ -168,7 +169,7 @@ def main() -> None:
     args = parser.parse_args()
     if args.command == "prepare":
         record = package_candidate(args.source, args.bundle, args.evidence, args.output,
-                                   args.version_code, source_state(args.source))
+                                   args.version_code, source_state(args.source), args.version_name)
         print(f"Prepared {args.output}; AAB SHA-256 {record['bundle_sha256']}; NOT APPROVED FOR DISTRIBUTION")
     elif args.command == "verify":
         verify_package(args.folder)
