@@ -28,7 +28,7 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-Current `main` is `83cec3b`. The latest iOS candidate below was built from
+Current `main` is `f0b40c5`. The latest iOS candidate below was built from
 `5c615b69c6b11a2eaae86720dddf42df2514e8be`; subsequent changes through main affect
 Android Play versioning, candidate validation, and documentation, not iOS app sources.
 

@@ -2,23 +2,29 @@
 
 # Sudoku Buddy: final build and Google Play handoff
 
-## Current Play status (verified 25 October 2026)
+## Current Play status (verified 26 October 2026)
 
-Production **1.0.3 (242)** is **Published** at **100% across 178 countries/regions**.
-Submission 8 completed publication at 1:02 PM on 25 October, as shown in Play Console.
-The production dashboard showed release 242 active. Internal testing also serves
-**1.0.3 (242)**, published at 12:30 PM and available to internal testers, so both tracks
-are aligned. The dashboard showed 5 production installs at the time of verification.
+Production **1.0.4 (243)** is **Active** at **100% across 178 countries/regions**, released
+on 26 October at 5:35 PM. Internal testing also serves **1.0.4 (243)**, active since 5:05 PM,
+so both tracks are in sync. The Production dashboard showed four installs. Managed
+publishing is off. Play currently shows two recommendations attached to 243; the bitmap
+downsampling recommendation that affected 242 is no longer attached to the current release.
 
-Internal testing now serves **1.0.3 (242)**, published on 25 October and available to
-internal testers. The current opt-in link is
+Internal testing now serves **1.0.4 (243)**, released on 26 October at 5:05 PM and
+available to internal testers. The current opt-in link is
 <https://play.google.com/apps/internaltest/4701554944860354114>. The Play-delivered build
-was installed and launched on the OnePlus on 25 October. A printed Sudoku was captured as
-a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have written so far
-is right.” This verifies a successful physical capture and that the app accepted its
-recognized entries as consistent; the grid was not independently compared cell-by-cell
-with a reference transcription or solved in this check. This device check is follow-up
-qualification, not a corpus accuracy estimate.
+1.0.3 (242) was installed and launched on the OnePlus on 25 October. A printed Sudoku was
+captured as a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have
+written so far is right.” On 26 October, the Play-installed 1.0.4 (243) was also installed
+and launched on the OnePlus CPH2449. It read a 9×9 board with 23 empty cells, separated
+printed digits, written answers and pencil marks, then **Check** reported, “Everything you
+have written so far is right”; all written entries were green. This confirms that the
+recognized handwritten entries match the solution. The board was not independently
+compared cell-by-cell with a reference transcription, so this remains a device smoke test,
+not a corpus accuracy estimate.
+
+The refreshed 1.0.4 (243) bundle is active on both Internal and Production. Play Console
+showed one non-blocking warning that native debug symbols were not uploaded.
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
@@ -56,10 +62,9 @@ The downloaded candidate package's complete file set and hashes matched its
 This original candidate was not uploaded to Play. A subsequent Play Console review found
 a bitmap-downsampling recommendation on production 242 that also applied to this AAB: R8
 mapped the flagged `uo0.b` call to `History.loadPhoto`, which decoded without
-`BitmapFactory.Options`. This hash is superseded; do not upload it. The last verified Play
-state remains internal and production **1.0.3 (242)**, published on 25 October. Keep 242
-intact until the refreshed 243 is confirmed available through Internal testing, then
-promote that same AAB to Production after qualification.
+`BitmapFactory.Options`. This hash is superseded; do not upload it. At that point the last
+verified Play state was **1.0.3 (242)** on both tracks. The refreshed 243 is now active on
+both tracks after passing the OnePlus device check.
 
 ### Refreshed Android 1.0.4 candidate (26 October 2026)
 
@@ -74,24 +79,34 @@ generated APK signatures, and 16 KB native alignment passed. R8 maps the new
 `BitmapFactory.Options.inSampleSize` decode in `History.loadPhoto`; the mapping contains
 no `EdgeToEdgeApi` classes.
 
-At artifact verification time this candidate had not yet been uploaded. Publishing was
-asked to upload this exact AAB to Internal testing; Production 242 must remain active until
-Play serves 243 and it passes device qualification. The release record keeps
-`NOT APPROVED FOR DISTRIBUTION` as a workflow safeguard. No Play track changed as part of
-this build.
+Publishing uploaded this exact AAB to Internal testing, where Play shows 243 Active and
+available to testers. After device qualification passed, Publishing released the same
+bundle to Production at 100%; Play shows 243 Active across 178 countries/regions.
 
-### Play Console recommendations on Production 242 (checked 26 October 2026)
+### Play Console recommendations on 242 and 243 (checked 26 October 2026)
 
-The Production dashboard reported three recommendations, all attached to release 242:
+The Production dashboard previously reported three recommendations on release 242. The
+latest check shows two attached to current release 243: the edge-to-edge warning and the
+deprecated API warning. The bitmap-downsampling recommendation is still listed on 242 but
+no longer appears on 243.
 
-- **Edge-to-edge may not display for all users.** The refreshed 1.0.4 candidate includes
-  PR #70's `WindowCompat.enableEdgeToEdge` migration; verify whether Play clears this
-  recommendation after analyzing the refreshed candidate.
-- **Deprecated edge-to-edge APIs.** Play identified `Window.setStatusBarColor`,
-  `Window.setNavigationBarColor`, and `LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES`, with
-  call sites in AndroidX `EdgeToEdgeApi26` and `EdgeToEdgeApi29`. The current candidate's
-  mapping contains no `EdgeToEdgeApi` classes, but the recommendation is not confirmed
-  cleared until Play analyzes it.
+- **Edge-to-edge may not display for all users.** This remains attached to 243 even though
+  the refreshed candidate includes PR #70's `WindowCompat.enableEdgeToEdge` migration.
+  The current app source still calls that recommended helper. Android 15+ also enforces
+  edge-to-edge because the app targets SDK 36. Compose screens apply status-bar,
+  navigation-bar, or safe-drawing insets as appropriate. The Play card appears stale or
+  generic for the current implementation; the code already enables edge-to-edge and handles
+  insets.
+- **Deprecated edge-to-edge APIs.** This remains attached to 243. Play identified
+  `Window.setStatusBarColor`, `Window.setNavigationBarColor`, and
+  `LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES`, with the call site attributed to
+  `MainActivity.onCreate`. The app does not call these APIs directly; that method invokes
+  the official `WindowCompat.enableEdgeToEdge` helper. AndroidX's compatibility
+  implementation itself uses the deprecated setters and cutout mode on older platform
+  versions. This is how the helper provides edge-to-edge behavior before Android 15. The
+  recommendation's suggested migration is already present, so removing the helper would
+  regress edge-to-edge behavior on older Android versions without improving Android 15+.
+  Treat this as a dependency implementation warning, not an app-owned deprecated API call.
 - **Bitmap downsampling.** Play's R8 call site `uo0.b` mapped to
   `org.freevia.sudokubuddy.app.History.loadPhoto`; the refreshed candidate bounds restored
   photos to four megapixels using `BitmapFactory.Options.inSampleSize`.
