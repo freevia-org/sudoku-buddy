@@ -9,6 +9,12 @@ SUB iOS session and still showed **Waiting for Review**. Automatic release after
 approval remains enabled. No replacement version was uploaded or submitted.
 Submission ID: `14940e4d-2614-4369-b016-e23bb890d0b0`.
 
+Publishing rechecked the version page on 26 October: it still shows **Waiting for Review**
+with build 1 attached. App Store Connect says a new build requires removing version 1.0.2
+from review. Per the owner's instruction, keep this review intact; do not withdraw or
+replace build 1. The prepared 1.0.3 (build 2) candidate remains local and unuploaded while
+Apple reviews 1.0.2.
+
 The earlier preparation packet predates account setup. Local Apple Distribution
 and Apple Development identities are now available, and App Store Connect is
 accessible through the existing Freevia account. Do not create another app record
@@ -46,8 +52,8 @@ Six simulator UI workflows, 36 storage tests, 138 shared JVM/native tests, 14 re
 checks, and four geometry checks passed; one optional corpus test was skipped. This
 candidate remains local and has not been uploaded. Physical iOS qualification and Apple
 upload processing are outstanding. The iOS About view currently displays the version
-but not the build number. Apple requires version 1.0.2 to be **Ready for Distribution**
-before creating version 1.0.3; automatic release of 1.0.2 remains enabled.
+but not the build number. Version 1.0.3 cannot proceed while 1.0.2 is still in review;
+automatic release of 1.0.2 remains enabled.
 
 ## Signing and testing notes
 
