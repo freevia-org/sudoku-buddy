@@ -2,23 +2,25 @@
 
 # Sudoku Buddy: final build and Google Play handoff
 
-## Current Play status (verified 25 October 2026)
+## Current Play status (verified 26 October 2026)
 
-Production **1.0.3 (242)** is **Published** at **100% across 178 countries/regions**.
-Submission 8 completed publication at 1:02 PM on 25 October, as shown in Play Console.
-The production dashboard showed release 242 active. Internal testing also serves
-**1.0.3 (242)**, published at 12:30 PM and available to internal testers, so both tracks
-are aligned. The dashboard showed 5 production installs at the time of verification.
+Production remains **1.0.3 (242)**, **Published** at **100% across 178 countries/regions**.
+The Production dashboard checked on 26 October still showed 242 active, with four
+installs. It also showed three recommendations attached to 242 (see below).
 
-Internal testing now serves **1.0.3 (242)**, published on 25 October and available to
-internal testers. The current opt-in link is
+Internal testing now serves **1.0.4 (243)**, released on 26 October at 5:05 PM and
+available to internal testers. The current opt-in link is
 <https://play.google.com/apps/internaltest/4701554944860354114>. The Play-delivered build
-was installed and launched on the OnePlus on 25 October. A printed Sudoku was captured as
-a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have written so far
-is right.” This verifies a successful physical capture and that the app accepted its
-recognized entries as consistent; the grid was not independently compared cell-by-cell
-with a reference transcription or solved in this check. This device check is follow-up
-qualification, not a corpus accuracy estimate.
+1.0.3 (242) was installed and launched on the OnePlus on 25 October. A printed Sudoku was
+captured as a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have
+written so far is right.” This verifies successful physical capture and that the app
+accepted its recognized entries as consistent; the grid was not independently compared
+cell-by-cell with a reference transcription or solved in this check. It is a smoke test,
+not a corpus accuracy estimate. The 1.0.4 (243) physical qualification is pending.
+
+The refreshed 1.0.4 (243) bundle is now active on Internal testing. Play Console showed
+one non-blocking warning that native debug symbols were not uploaded. Production remains
+on 242 until 243 is installed and qualified on the OnePlus.
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
@@ -56,10 +58,9 @@ The downloaded candidate package's complete file set and hashes matched its
 This original candidate was not uploaded to Play. A subsequent Play Console review found
 a bitmap-downsampling recommendation on production 242 that also applied to this AAB: R8
 mapped the flagged `uo0.b` call to `History.loadPhoto`, which decoded without
-`BitmapFactory.Options`. This hash is superseded; do not upload it. The last verified Play
-state remains internal and production **1.0.3 (242)**, published on 25 October. Keep 242
-intact until the refreshed 243 is confirmed available through Internal testing, then
-promote that same AAB to Production after qualification.
+`BitmapFactory.Options`. This hash is superseded; do not upload it. At that point the last
+verified Play state was **1.0.3 (242)** on both tracks. The refreshed 243 is now active on
+Internal testing; promote that same AAB to Production after device qualification.
 
 ### Refreshed Android 1.0.4 candidate (26 October 2026)
 
@@ -74,11 +75,9 @@ generated APK signatures, and 16 KB native alignment passed. R8 maps the new
 `BitmapFactory.Options.inSampleSize` decode in `History.loadPhoto`; the mapping contains
 no `EdgeToEdgeApi` classes.
 
-At artifact verification time this candidate had not yet been uploaded. Publishing was
-asked to upload this exact AAB to Internal testing; Production 242 must remain active until
-Play serves 243 and it passes device qualification. The release record keeps
-`NOT APPROVED FOR DISTRIBUTION` as a workflow safeguard. No Play track changed as part of
-this build.
+Publishing uploaded this exact AAB to Internal testing, where Play now shows 243 Active
+and available to testers. Production 242 remains active until device qualification passes.
+The release record keeps `NOT APPROVED FOR DISTRIBUTION` as a workflow safeguard.
 
 ### Play Console recommendations on Production 242 (checked 26 October 2026)
 
