@@ -1,13 +1,13 @@
-# iOS release status — 25 October 2026
+# iOS release status — 26 October 2026
 
 App Store Connect record: **Sudoku Buddy by Freevia**, Apple ID `6825975489`,
 bundle `org.freevia.sudokubuddy.ios`, Freevia EOOD team `8C782Q826S`.
 
 Version **1.0.2 (1)** was exported and uploaded on 23 October, processed, selected
-and submitted to App Review. App Store Connect was checked live on 25 October at
-13:16 UTC and showed **Waiting for Review**. Automatic release after approval is
-enabled and was verified after reloading the release settings. No Apple messages or
-action requests were shown. Submission ID: `14940e4d-2614-4369-b016-e23bb890d0b0`.
+and submitted to App Review. App Store Connect was checked live on 26 October by the
+SUB iOS session and still showed **Waiting for Review**. Automatic release after
+approval remains enabled. No replacement version was uploaded or submitted.
+Submission ID: `14940e4d-2614-4369-b016-e23bb890d0b0`.
 
 The earlier preparation packet predates account setup. Local Apple Distribution
 and Apple Development identities are now available, and App Store Connect is
@@ -28,28 +28,26 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-Current `main` is `704234f`. The prepared 1.0.3 candidate was built from `8573614`;
-all changes merged since that candidate commit are documentation-only. Compared with
-the submitted 1.0.2 candidate baseline `16c3d46`, intervening iOS changes affect
-signing/export configuration, CI, UI tests, and documentation; application sources,
-shared functionality, and resources are unchanged. Android 1.0.3 changes (R8 and
-Android UI dependencies) do not apply to iOS.
+Current `main` is `83cec3b`. The latest iOS candidate below was built from
+`5c615b69c6b11a2eaae86720dddf42df2514e8be`; subsequent changes through main affect
+Android Play versioning, candidate validation, and documentation, not iOS app sources.
 
-### Prepared 1.0.3 candidate (not uploaded)
+### Prepared iOS 1.0.3 candidate from merged source (not uploaded)
 
-An iOS **1.0.3 (build 2)** candidate was prepared locally from `8573614` without
-changing tracked source or touching App Store Connect. The archive audit confirms
-version/build `1.0.3 (2)` and the expected bundle ID. Its locally exported IPA passed
-deep/strict signature verification with the Freevia EOOD App Store profile, debugging
-disabled, and the correct team. Archive and export audits passed. The IPA SHA-256 is
-`d3bd03498b5049f0ed350326418eb1d2dde9272b0fad9e17462c867418010df3`.
+An iOS **1.0.3 (build 2)** candidate was rebuilt from merged source commit
+`5c615b69c6b11a2eaae86720dddf42df2514e8be`. The signed IPA is preserved in the
+SUB iOS workspace at `.tools/ios-1.0.3-2-5c615b6/export/SudokuBuddy.ipa`.
+SHA-256: `a0c64500115d4b0f4eed672e0e32d6394be22cb86329c2bd0ae3ec343d018588`.
+The export passed deep/strict signature checks with the Freevia EOOD App Store
+profile, debugging disabled, and the correct team. Archive and export resource audits
+passed for the production endpoint and all 71 bundled catalogs.
 
-Candidate checks passed: five simulator UI workflows, 36 storage tests, 138 shared
-JVM/native tests, 14 resource checks, and geometry checks (one optional corpus test
-skipped). No replacement build was uploaded; version 1.0.2 remains in review. Apple
-requires the current version to be **Ready for Distribution** before creating the next
-App Store version record. After that, create version 1.0.3 and upload this prepared IPA
-if its source and release notes are still current.
+Six simulator UI workflows, 36 storage tests, 138 shared JVM/native tests, 14 resource
+checks, and four geometry checks passed; one optional corpus test was skipped. This
+candidate remains local and has not been uploaded. Physical iOS qualification and Apple
+upload processing are outstanding. The iOS About view currently displays the version
+but not the build number. Apple requires version 1.0.2 to be **Ready for Distribution**
+before creating version 1.0.3; automatic release of 1.0.2 remains enabled.
 
 ## Signing and testing notes
 
