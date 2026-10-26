@@ -21,7 +21,7 @@ android {
         versionCode = (System.getenv("BUILD_NUMBER") ?: "1").toIntOrNull()
             ?.takeIf { it in 1..2_100_000_000 }
             ?: error("BUILD_NUMBER must be a positive Play version code, at most 2100000000")
-        versionName = "1.0.3"
+        versionName = "1.0.4"
         buildConfigField("String", "MISREAD_SUBMISSION_ENDPOINT", "\"\"")
     }
 
