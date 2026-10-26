@@ -4,23 +4,30 @@
 
 ## Current Play status (verified 26 October 2026)
 
-Production remains **1.0.3 (242)**, **Published** at **100% across 178 countries/regions**.
-The Production dashboard checked on 26 October still showed 242 active, with four
-installs. It also showed three recommendations attached to 242 (see below).
+Production remains **1.0.3 (242)**, **Published** at **100% across 178 countries/regions**
+while the refreshed **1.0.4 (243)** release is reviewed. Publishing submitted the same
+bundle that is active on Internal at 100% to all targeted countries. Play Console's
+Publishing overview shows **Changes in review** and automated quick checks still running.
+Managed publishing is off, so the release will publish automatically after Google's checks
+and review pass. The Production dashboard checked on 26 October showed four installs and
+three recommendations attached to 242 (see below); recheck them after Play analyzes 243.
 
 Internal testing now serves **1.0.4 (243)**, released on 26 October at 5:05 PM and
 available to internal testers. The current opt-in link is
 <https://play.google.com/apps/internaltest/4701554944860354114>. The Play-delivered build
 1.0.3 (242) was installed and launched on the OnePlus on 25 October. A printed Sudoku was
 captured as a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have
-written so far is right.” This verifies successful physical capture and that the app
-accepted its recognized entries as consistent; the grid was not independently compared
-cell-by-cell with a reference transcription or solved in this check. It is a smoke test,
-not a corpus accuracy estimate. The 1.0.4 (243) physical qualification is pending.
+written so far is right.” On 26 October, the Play-installed 1.0.4 (243) was also installed
+and launched on the OnePlus CPH2449. It read a 9×9 board with 23 empty cells, separated
+printed digits, written answers and pencil marks, then **Check** reported, “Everything you
+have written so far is right”; all written entries were green. This confirms that the
+recognized handwritten entries match the solution. The board was not independently
+compared cell-by-cell with a reference transcription, so this remains a device smoke test,
+not a corpus accuracy estimate.
 
-The refreshed 1.0.4 (243) bundle is now active on Internal testing. Play Console showed
-one non-blocking warning that native debug symbols were not uploaded. Production remains
-on 242 until 243 is installed and qualified on the OnePlus.
+The refreshed 1.0.4 (243) bundle is active on Internal testing and submitted for Production
+review. Play Console showed one non-blocking warning that native debug symbols were not
+uploaded.
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
@@ -75,9 +82,10 @@ generated APK signatures, and 16 KB native alignment passed. R8 maps the new
 `BitmapFactory.Options.inSampleSize` decode in `History.loadPhoto`; the mapping contains
 no `EdgeToEdgeApi` classes.
 
-Publishing uploaded this exact AAB to Internal testing, where Play now shows 243 Active
-and available to testers. Production 242 remains active until device qualification passes.
-The release record keeps `NOT APPROVED FOR DISTRIBUTION` as a workflow safeguard.
+Publishing uploaded this exact AAB to Internal testing, where Play shows 243 Active and
+available to testers. After device qualification passed, Publishing submitted this same
+bundle to Production at 100%; Play currently shows the change in review. The release record
+keeps `NOT APPROVED FOR DISTRIBUTION` as a workflow safeguard.
 
 ### Play Console recommendations on Production 242 (checked 26 October 2026)
 
