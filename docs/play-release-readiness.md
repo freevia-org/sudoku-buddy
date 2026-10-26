@@ -4,13 +4,11 @@
 
 ## Current Play status (verified 26 October 2026)
 
-Production remains **1.0.3 (242)**, **Published** at **100% across 178 countries/regions**
-while the refreshed **1.0.4 (243)** release is reviewed. Publishing submitted the same
-bundle that is active on Internal at 100% to all targeted countries. Play Console's
-Publishing overview says **Your changes are now in review**; the automated pre-review
-checks completed. Managed publishing is off, so the release will publish automatically
-after Google's review passes. The Production dashboard checked on 26 October showed four installs and
-three recommendations attached to 242 (see below); recheck them after Play analyzes 243.
+Production **1.0.4 (243)** is **Active** at **100% across 178 countries/regions**, released
+on 26 October at 5:35 PM. Internal testing also serves **1.0.4 (243)**, active since 5:05 PM,
+so both tracks are in sync. The Production dashboard showed four installs. Managed
+publishing is off. Play currently shows two recommendations attached to 243; the bitmap
+downsampling recommendation that affected 242 is no longer attached to the current release.
 
 Internal testing now serves **1.0.4 (243)**, released on 26 October at 5:05 PM and
 available to internal testers. The current opt-in link is
@@ -25,9 +23,8 @@ recognized handwritten entries match the solution. The board was not independent
 compared cell-by-cell with a reference transcription, so this remains a device smoke test,
 not a corpus accuracy estimate.
 
-The refreshed 1.0.4 (243) bundle is active on Internal testing and submitted for Production
-review. Play Console showed one non-blocking warning that native debug symbols were not
-uploaded.
+The refreshed 1.0.4 (243) bundle is active on both Internal and Production. Play Console
+showed one non-blocking warning that native debug symbols were not uploaded.
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
@@ -67,7 +64,7 @@ a bitmap-downsampling recommendation on production 242 that also applied to this
 mapped the flagged `uo0.b` call to `History.loadPhoto`, which decoded without
 `BitmapFactory.Options`. This hash is superseded; do not upload it. At that point the last
 verified Play state was **1.0.3 (242)** on both tracks. The refreshed 243 is now active on
-Internal testing; promote that same AAB to Production after device qualification.
+both tracks after passing the OnePlus device check.
 
 ### Refreshed Android 1.0.4 candidate (26 October 2026)
 
@@ -83,22 +80,23 @@ generated APK signatures, and 16 KB native alignment passed. R8 maps the new
 no `EdgeToEdgeApi` classes.
 
 Publishing uploaded this exact AAB to Internal testing, where Play shows 243 Active and
-available to testers. After device qualification passed, Publishing submitted this same
-bundle to Production at 100%; Play currently shows the change in review. The release record
-keeps `NOT APPROVED FOR DISTRIBUTION` as a workflow safeguard.
+available to testers. After device qualification passed, Publishing released the same
+bundle to Production at 100%; Play shows 243 Active across 178 countries/regions.
 
-### Play Console recommendations on Production 242 (checked 26 October 2026)
+### Play Console recommendations on 242 and 243 (checked 26 October 2026)
 
-The Production dashboard reported three recommendations, all attached to release 242:
+The Production dashboard previously reported three recommendations on release 242. The
+latest check shows two attached to current release 243: the edge-to-edge warning and the
+deprecated API warning. The bitmap-downsampling recommendation is still listed on 242 but
+no longer appears on 243.
 
-- **Edge-to-edge may not display for all users.** The refreshed 1.0.4 candidate includes
-  PR #70's `WindowCompat.enableEdgeToEdge` migration; verify whether Play clears this
-  recommendation after analyzing the refreshed candidate.
-- **Deprecated edge-to-edge APIs.** Play identified `Window.setStatusBarColor`,
-  `Window.setNavigationBarColor`, and `LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES`, with
-  call sites in AndroidX `EdgeToEdgeApi26` and `EdgeToEdgeApi29`. The current candidate's
-  mapping contains no `EdgeToEdgeApi` classes, but the recommendation is not confirmed
-  cleared until Play analyzes it.
+- **Edge-to-edge may not display for all users.** This remains attached to 243 even though
+  the refreshed candidate includes PR #70's `WindowCompat.enableEdgeToEdge` migration.
+- **Deprecated edge-to-edge APIs.** This remains attached to 243. Play identified
+  `Window.setStatusBarColor`, `Window.setNavigationBarColor`, and
+  `LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES`, with call sites in AndroidX
+  `EdgeToEdgeApi26` and `EdgeToEdgeApi29`. The 243 mapping contains no `EdgeToEdgeApi`
+  classes, yet Play still lists this recommendation.
 - **Bitmap downsampling.** Play's R8 call site `uo0.b` mapped to
   `org.freevia.sudokubuddy.app.History.loadPhoto`; the refreshed candidate bounds restored
   photos to four megapixels using `BitmapFactory.Options.inSampleSize`.
