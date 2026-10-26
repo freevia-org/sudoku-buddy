@@ -11,13 +11,13 @@ ANDROID = "{http://schemas.android.com/apk/res/android}"
 PACKAGE = "org.freevia.sudokubuddy"
 
 
-def audit_manifest(xml: str, version_code: int) -> None:
+def audit_manifest(xml: str, version_code: int, version_name: str = "1.0.3") -> None:
     root = ET.fromstring(xml)
     if root.get("package") != PACKAGE:
         raise ValueError("Wrong application ID")
     if root.get(ANDROID + "versionCode") != str(version_code):
         raise ValueError("Wrong version code")
-    if root.get(ANDROID + "versionName") != "1.0.3":
+    if root.get(ANDROID + "versionName") != version_name:
         raise ValueError("Review versionName and release materials together")
     sdk = root.find("uses-sdk")
     if sdk is None or sdk.get(ANDROID + "minSdkVersion") != "26":
@@ -143,12 +143,13 @@ def main() -> None:
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--version-code", type=int, required=True)
+    parser.add_argument("--version-name", required=True)
     args = parser.parse_args()
     if not 0 < args.version_code <= 2100000000:
         parser.error("Invalid Play version code")
     config = json.loads(args.config.read_text(encoding="utf-8"))
     audit_config(config)
-    audit_manifest(args.manifest.read_text(encoding="utf-8"), args.version_code)
+    audit_manifest(args.manifest.read_text(encoding="utf-8"), args.version_code, args.version_name)
     audit_bundle(args.bundle)
     print("Static checks passed; signatures and runtime testing are separate gates")
 

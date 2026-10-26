@@ -11,6 +11,10 @@ on:
         description: Integer greater than every code already uploaded to Play
         required: true
         type: string
+      version_name:
+        description: Store version name to verify against the built bundle
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -21,6 +25,7 @@ jobs:
     timeout-minutes: 30
     env:
       BUILD_NUMBER: ${{ inputs.version_code }}
+      VERSION_NAME: ${{ inputs.version_name }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -94,7 +99,7 @@ jobs:
           java -jar "$bundletool" validate --bundle="$bundle" > "$evidence/bundle-validation.txt"
           java -jar "$bundletool" dump manifest --bundle="$bundle" --module=base > "$evidence/manifest.xml"
           java -jar "$bundletool" dump config --bundle="$bundle" > "$evidence/bundle-config.json"
-          python3 tools/release/check_play_bundle.py "$bundle" --manifest "$evidence/manifest.xml" --config "$evidence/bundle-config.json" --version-code "$BUILD_NUMBER" > "$evidence/bundle-audit.txt"
+          python3 tools/release/check_play_bundle.py "$bundle" --manifest "$evidence/manifest.xml" --config "$evidence/bundle-config.json" --version-code "$BUILD_NUMBER" --version-name "$VERSION_NAME" > "$evidence/bundle-audit.txt"
           jarsigner -J-Duser.language=en -J-Duser.country=US -verify -verbose -certs "$bundle" > "$evidence/signature-verification.txt"
           grep -Fq 'jar verified.' "$evidence/signature-verification.txt"
           # jarsigner can report success even when extra payload entries are unsigned.
@@ -128,7 +133,7 @@ jobs:
           done < <(find "$RUNNER_TEMP/candidate-apks" -type f -name '*.apk' -print0)
           test "$count" -gt 0
           printf '\nVerified %s generated APKs; no installation performed.\n' "$count" >> "$evidence/generated-apks.txt"
-          python3 tools/release/package_candidate.py prepare --bundle "$bundle" --evidence "$evidence" --output release-candidate --version-code "$BUILD_NUMBER"
+          python3 tools/release/package_candidate.py prepare --bundle "$bundle" --evidence "$evidence" --output release-candidate --version-code "$BUILD_NUMBER" --version-name "$VERSION_NAME"
           python3 tools/release/package_candidate.py verify release-candidate
       - name: Archive candidate for review only
         uses: actions/upload-artifact@v7
