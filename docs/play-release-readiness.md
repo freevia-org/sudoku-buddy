@@ -42,7 +42,7 @@ The detailed 1.0.1/240 handoff below is retained as historical evidence, not the
 release record. The 1.0.2 release notes remain in the historical record; current notes are
 in `docs/play-release-notes-en-US.txt`.
 
-## Prepared Android 1.0.4 candidate (26 October 2026)
+## Original Android 1.0.4 candidate (26 October 2026; superseded)
 
 Candidate workflow [40331220517](https://github.com/freevia-org/sudoku-buddy/actions/runs/40331220517)
 passed for version **1.0.4 (243)** from immutable main commit
@@ -53,23 +53,38 @@ and 16 KB native alignment passed. Fifteen generated APK variants were checked.
 The downloaded candidate package's complete file set and hashes matched its
 `SHA256SUMS.json` inventory.
 
-This candidate is prepared for review only; it has **not been uploaded** to Play.
-Its release record says `NOT APPROVED FOR DISTRIBUTION`. Publishing could not attach
-to the authenticated Play Console tab because the browser connection timed out; no
-store changes were made. A subsequent Play Console review found a bitmap-downsampling
-recommendation on production 242 that also applies to this candidate: R8 maps the flagged
-`uo0.b` call to `History.loadPhoto`, which decodes without `BitmapFactory.Options`. Do not
-upload this AAB. The source fix below must be merged and a replacement code-243 candidate
-built and verified first. The last verified Play state remains internal and production
-**1.0.3 (242)**, published on 25 October. Keep 242 intact until the refreshed 243 is
-confirmed available through Internal testing, then promote that same AAB to Production
-after qualification.
+This original candidate was not uploaded to Play. A subsequent Play Console review found
+a bitmap-downsampling recommendation on production 242 that also applied to this AAB: R8
+mapped the flagged `uo0.b` call to `History.loadPhoto`, which decoded without
+`BitmapFactory.Options`. This hash is superseded; do not upload it. The last verified Play
+state remains internal and production **1.0.3 (242)**, published on 25 October. Keep 242
+intact until the refreshed 243 is confirmed available through Internal testing, then
+promote that same AAB to Production after qualification.
+
+### Refreshed Android 1.0.4 candidate (26 October 2026)
+
+Candidate workflow
+[40342397868](https://github.com/freevia-org/sudoku-buddy/actions/runs/40342397868)
+passed for version **1.0.4 (243)** from merged main commit
+`e16f3e42ad0e95aa13e88e299ba8d9852e6bed75` (PR #74). The signed AAB is 66,609,785
+bytes with SHA-256
+`955749b3809dfdab0314926a0c3f4dfe35866ce351994ede0c21068334cb3e24`. The package
+inventory and every file hash verified. Manifest, target SDK, ABIs, upload certificate,
+generated APK signatures, and 16 KB native alignment passed. R8 maps the new
+`BitmapFactory.Options.inSampleSize` decode in `History.loadPhoto`; the mapping contains
+no `EdgeToEdgeApi` classes.
+
+At artifact verification time this candidate had not yet been uploaded. Publishing was
+asked to upload this exact AAB to Internal testing; Production 242 must remain active until
+Play serves 243 and it passes device qualification. The release record keeps
+`NOT APPROVED FOR DISTRIBUTION` as a workflow safeguard. No Play track changed as part of
+this build.
 
 ### Play Console recommendations on Production 242 (checked 26 October 2026)
 
 The Production dashboard reported three recommendations, all attached to release 242:
 
-- **Edge-to-edge may not display for all users.** The existing 1.0.4 candidate includes
+- **Edge-to-edge may not display for all users.** The refreshed 1.0.4 candidate includes
   PR #70's `WindowCompat.enableEdgeToEdge` migration; verify whether Play clears this
   recommendation after analyzing the refreshed candidate.
 - **Deprecated edge-to-edge APIs.** Play identified `Window.setStatusBarColor`,
@@ -77,10 +92,9 @@ The Production dashboard reported three recommendations, all attached to release
   call sites in AndroidX `EdgeToEdgeApi26` and `EdgeToEdgeApi29`. The current candidate's
   mapping contains no `EdgeToEdgeApi` classes, but the recommendation is not confirmed
   cleared until Play analyzes it.
-- **Bitmap downsampling.** Play's R8 call site `uo0.b` maps to
-  `org.freevia.sudokubuddy.app.History.loadPhoto`; the current implementation decodes
-  the saved photo at full resolution. A source fix now bounds restored-photo decoding to
-  four megapixels using `BitmapFactory.Options.inSampleSize`.
+- **Bitmap downsampling.** Play's R8 call site `uo0.b` mapped to
+  `org.freevia.sudokubuddy.app.History.loadPhoto`; the refreshed candidate bounds restored
+  photos to four megapixels using `BitmapFactory.Options.inSampleSize`.
 
 The Console listed no stability issues affecting the most users and no user reviews for
 242 at the time of this check. The listed crash and ANR metrics were unavailable because
