@@ -42,6 +42,25 @@ The detailed 1.0.1/240 handoff below is retained as historical evidence, not the
 release record. The 1.0.2 release notes remain in the historical record; current notes are
 in `docs/play-release-notes-en-US.txt`.
 
+## Prepared Android 1.0.4 candidate (26 October 2026)
+
+Candidate workflow [40331220517](https://github.com/freevia-org/sudoku-buddy/actions/runs/40331220517)
+passed for version **1.0.4 (243)** from immutable main commit
+`83cec3b97ad025b735715826954fdbd8c5403e64`. The signed AAB is 66,609,611 bytes
+with SHA-256 `4c47b667e9a90bff210a2afa25e8c433545a70b86329c2bd0ae3ec343d018588`.
+The bundle manifest, target SDK, ABIs, upload certificate, generated APK signatures,
+and 16 KB native alignment passed. Fifteen generated APK variants were checked.
+The downloaded candidate package's complete file set and hashes matched its
+`SHA256SUMS.json` inventory.
+
+This candidate is prepared for review only; it has **not been uploaded** to Play.
+Its release record says `NOT APPROVED FOR DISTRIBUTION`. Publishing could not attach
+to the authenticated Play Console tab because the browser connection timed out; no
+store changes were made. The last verified Play state remains internal and production
+**1.0.3 (242)**, published on 25 October. Keep 242 intact until 243 is confirmed
+available through Internal testing, then promote the same AAB to Production after
+qualification.
+
 Historical handoff updated 15 October 2026 for release **1.0.1 (240)**. Candidate workflow
 [38694510814](https://github.com/freevia-org/sudoku-buddy/actions/runs/38694510814) (run 21)
 passed for version code 240, built from merged commit `091ee869f5e88e1b0fcd4f1ebcd1353c2d714240`
