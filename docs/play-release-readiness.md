@@ -7,9 +7,9 @@
 Production remains **1.0.3 (242)**, **Published** at **100% across 178 countries/regions**
 while the refreshed **1.0.4 (243)** release is reviewed. Publishing submitted the same
 bundle that is active on Internal at 100% to all targeted countries. Play Console's
-Publishing overview shows **Changes in review** and automated quick checks still running.
-Managed publishing is off, so the release will publish automatically after Google's checks
-and review pass. The Production dashboard checked on 26 October showed four installs and
+Publishing overview says **Your changes are now in review**; the automated pre-review
+checks completed. Managed publishing is off, so the release will publish automatically
+after Google's review passes. The Production dashboard checked on 26 October showed four installs and
 three recommendations attached to 242 (see below); recheck them after Play analyzes 243.
 
 Internal testing now serves **1.0.4 (243)**, released on 26 October at 5:05 PM and
