@@ -1,19 +1,26 @@
-# iOS release status — 26 October 2026
+# iOS release status — 29 October 2026
 
 App Store Connect record: **Sudoku Buddy by Freevia**, Apple ID `6825975489`,
 bundle `org.freevia.sudokubuddy.ios`, Freevia EOOD team `8C782Q826S`.
 
 Version **1.0.2 (1)** was exported and uploaded on 23 October, processed, selected
-and submitted to App Review. Earlier checks on 26 October showed **Waiting for Review**;
-a later live check by Publishing found the app list status **Rejected**. Publishing
-confirmed the reviewer requested follow-up information. A response is being prepared;
-the app is not yet available on the App Store.
+and submitted to App Review. The last verified App Store Connect status, checked by
+Publishing on 26 October, was **Rejected / Unresolved Issues** under Guidelines
+4.3(a)/(b) and 4.2.6. Publishing sent the
+nine-point factual response through the Resolution Center for submission
+`14940e4d-2614-4369-b016-e23bb890d0b0`; App Store Connect shows Apple's message count
+increased to two and the developer reply under Antoni Ivanov, confirming receipt.
+At that check the submission remained rejected, and **Resubmit to App Review** was
+disabled. No build was uploaded and no new review submission was made. Publishing has
+not yet returned a new status check after the account was signed in on 29 October, so
+the current App Store Connect state is unverified. The app was not available on the App
+Store at the last verified check.
 
 The prepared 1.0.3 (build 2) candidate remains local and unuploaded. Do not upload or
 resubmit it as-is: its only changes from the submitted app are About version/build display
-and translations, which do not address the review concerns. The next path is a factual,
-evidence-backed Resolution Center response, or substantial product changes followed by a
-new candidate. No App Store Connect changes have been made since the rejection was observed.
+and translations, which do not address the review concerns. The factual, evidence-backed
+Resolution Center response has been sent. Wait for Apple's response or make substantial
+product changes before preparing and submitting a new candidate.
 
 The earlier preparation packet predates account setup. Local Apple Distribution
 and Apple Development identities are now available, and App Store Connect is
@@ -34,7 +41,7 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-Current `main` is `f0b40c5`. The latest iOS candidate below was built from
+Current `main` is `8ee7881`. The latest iOS candidate below was built from
 `5c615b69c6b11a2eaae86720dddf42df2514e8be`; subsequent changes through main affect
 Android Play versioning, candidate validation, and documentation, not iOS app sources.
 
