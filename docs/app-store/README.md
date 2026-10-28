@@ -2,8 +2,9 @@
 
 Prepared 19 October 2026. No Apple account, signed upload, App Store record, public report submission or App Store publication was used. This packet separates local preparation from final owner/hardware gates.
 
-**Update, 25 October:** signing, the App Store record, upload and review submission
-have since completed. Version 1.0.2 (1) is Waiting for Review. See
+**Update, 26 October:** signing, the App Store record, upload and review submission
+have since completed. Version 1.0.2 (1) was rejected; the developer's Resolution Center
+response was sent and received, but the submission remains unresolved. See
 [current release status](release-status.md) before following the original
 preparation steps below.
 
