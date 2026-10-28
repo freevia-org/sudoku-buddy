@@ -11,15 +11,11 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
-# Pin the toolchain instead of following the image default, so an image update cannot
-# silently change the compiler, SDK or simulator runtime under the tests.
-env:
-  DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
+# The MacMini runner uses its selected Xcode and installed iOS simulator runtimes.
 
-# Two parallel macOS jobs: the simulator UI tests are the long pole, so everything else
-# (unit tests, shared Kotlin tests, unsigned release compile and audit) runs beside them
-# instead of in front of them. The release compile and audit also no longer depend on
-# the UI tests passing first.
+# The two macOS jobs cover iOS simulator tests and the unit/release checks.
+# This repo has one local MacMini runner, so GitHub queues them serially; they
+# remain independent and neither job waits for the other to pass first.
 jobs:
   checks:
     name: Unit tests and unsigned release
