@@ -1,28 +1,7 @@
 name: iOS
 
-# Not a required check. Changes that cannot affect the iOS app (Android-only code,
-# docs, the feedback API, website/release tooling) skip these macOS jobs. Patterns are
-# applied in order; a later pattern re-includes what an earlier "!" pattern excluded.
+# Dispatch this macOS lane only when iOS validation is needed.
 on:
-  push:
-    branches: [main]
-    paths: &ios-paths
-      - '**'
-      - '!**/*.md'
-      - '!docs/**'
-      - 'docs/app-store/**'
-      - '!feedback-api/**'
-      - '!corpus-labels/**'
-      - '!tools/android/**'
-      - '!tools/recognizer/**'
-      - '!tools/release/**'
-      - '!tools/site/**'
-      - '!app/**'
-      - 'app/src/main/assets/**'
-      - '!.github/workflows/ci.yml'
-      - '!.github/workflows/play-candidate.yml'
-  pull_request:
-    paths: *ios-paths
   workflow_dispatch:
 
 permissions:
