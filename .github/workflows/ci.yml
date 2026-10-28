@@ -1,16 +1,12 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
-  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
 
-# A newer push to the same pull request makes the older run pointless. Runs on main are
-# never cancelled: each one produces the APK/bundle artifacts for that commit.
+# Keep manually dispatched builds running so each requested commit can produce artifacts.
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
