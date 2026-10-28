@@ -23,7 +23,7 @@ env:
 jobs:
   checks:
     name: Unit tests and unsigned release
-    runs-on: macos-26
+    runs-on: sudoku-buddy-macmini
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v7
@@ -49,7 +49,7 @@ jobs:
 
   ui-tests:
     name: SwiftUI workflow tests
-    runs-on: macos-26
+    runs-on: sudoku-buddy-macmini
     timeout-minutes: 50
     steps:
       - uses: actions/checkout@v7

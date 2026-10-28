@@ -14,7 +14,7 @@ concurrency:
 jobs:
   # Job name "build" is the required status check on main; keep it.
   build:
-    runs-on: ubuntu-latest
+    runs-on: sudoku-buddy-i5-linux
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
