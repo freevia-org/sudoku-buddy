@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   candidate:
-    runs-on: ubuntu-latest
+    runs-on: sudoku-buddy-i5-linux
     timeout-minutes: 30
     env:
       BUILD_NUMBER: ${{ inputs.version_code }}
