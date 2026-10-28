@@ -50,11 +50,12 @@ jobs:
       - name: Test feedback API
         run: npm test --prefix feedback-api
 
+      # setup-android invokes sdkmanager to accept licenses, which needs Java on PATH.
+      - uses: ./.github/actions/setup-jdk-gradle
+
       - uses: android-actions/setup-android@v4
         with:
           packages: platform-tools
-
-      - uses: ./.github/actions/setup-jdk-gradle
 
       # Corpus photographs are not in the repository, so every test that needs one
       # skips here. That is expected: see docs/superpowers/plans.
