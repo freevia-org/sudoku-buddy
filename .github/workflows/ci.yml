@@ -57,12 +57,27 @@ jobs:
         with:
           packages: platform-tools
 
+      # OpenPnP extracts its OpenCV test library under java.io.tmpdir. The Linux
+      # self-hosted runner mounts /tmp noexec, so use the runner's executable temp
+      # area for JVM tests instead.
+      - name: Configure executable JVM temp directory
+        run: |
+          mkdir -p "$RUNNER_TEMP/java-tmp"
+          echo "JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=$RUNNER_TEMP/java-tmp" >> "$GITHUB_ENV"
+
       # Corpus photographs are not in the repository, so every test that needs one
       # skips here. That is expected: see docs/superpowers/plans.
       # The release APK is excluded here only because the next Gradle step builds it
       # with the real version code and signing key; building it twice cost ~50s.
       - name: Build and test
         run: ./gradlew build -x :app:assembleRelease --console=plain
+
+      # Keep the underlying exception visible when a JVM test fails on a native runtime.
+      - name: Print JVM test failure details
+        if: failure()
+        run: |
+          find . -path '*/build/test-results/*Test/*.xml' -type f \
+            -exec grep -n -A 12 -B 1 '<failure' {} + || true
 
       # Without this the release is signed with a debug key generated on this runner,
       # which differs from the one the last runner made - and testers cannot update
