@@ -30,9 +30,11 @@ These are real Android screens; the current release may differ slightly.
 ## Get the app
 
 **Google Play — Android:** [Get Sudoku Buddy](https://play.google.com/store/apps/details?id=org.freevia.sudokubuddy).
-Version 1.0.2 is visible in the public listing in supported regions. It needs
-Android 8.0+ and a camera. Invited testers can use the
-[internal-test opt-in](https://play.google.com/apps/internaltest/4701554944860354114).
+As of 29 October 2026, version 1.0.4 (code 243) is active in both Production
+and Internal testing. It needs Android 8.0+ and a camera. Invited testers can use
+the [internal-test opt-in](https://play.google.com/apps/internaltest/4701554944860354114).
+Version 1.0.5 (code 244) is attached to an unsubmitted Internal testing draft
+and is not available to testers.
 No public APK is published in this repository.
 
 ## What it helps you do
