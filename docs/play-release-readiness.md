@@ -2,12 +2,13 @@
 
 # Sudoku Buddy: final build and Google Play handoff
 
-## Current Play status (verified 28 October 2026)
+## Current Play status (verified 29 October 2026)
 
 Production **1.0.4 (243)** is **Active** at **100% across 178 countries/regions**, released
 on 26 October at 5:35 PM. Internal testing also serves **1.0.4 (243)**, active since 5:05 PM,
-so both tracks are in sync. The Production dashboard showed six installs in Publishing's
-28 October check. Managed
+so both tracks are in sync. Publishing rechecked the Play Console on 29 October: the
+Production dashboard still showed six installs and 1.0.4 (243) remains active on both
+tracks. Managed
 publishing is off. Play currently shows two recommendations attached to 243; the bitmap
 downsampling recommendation that affected 242 is no longer attached to the current release.
 
@@ -27,13 +28,17 @@ not a corpus accuracy estimate.
 The refreshed 1.0.4 (243) bundle is active on both Internal and Production. Play Console
 showed one non-blocking warning that native debug symbols were not uploaded.
 
-App Store Connect lists iOS **1.0.2 (build 1) Rejected / Unresolved Issues**. On 26 October,
-Publishing sent Apple's Resolution Center the approved nine-point factual response; the
+The latest App Store Connect status remains unverified: on 29 October, the authenticated
+Publishing session opened Sudoku Buddy's version/review routes, but the page rendered only
+its shell without the review details. The last verified state was iOS **1.0.2 (build 1)
+Rejected / Unresolved Issues**. On 26 October, Publishing sent Apple's Resolution Center
+the approved nine-point factual response; the
 message count increased to two and the developer reply is visible, confirming receipt.
-The rejection remains active and **Resubmit to App Review** is disabled. No new build was
-uploaded or submitted. The prepared iOS **1.0.3 (build 2)** candidate only changes About
-version/build display and translations, so it is not a suitable response candidate. See
-the [iOS release status](app-store/release-status.md).
+At the last verified check, the rejection was active and **Resubmit to App Review** was
+disabled. No new build has been uploaded or submitted since then. The prepared iOS
+**1.0.3 (build 2)** candidate only changes About version/build display and translations,
+so it is not a suitable response candidate. See the
+[iOS release status](app-store/release-status.md).
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is

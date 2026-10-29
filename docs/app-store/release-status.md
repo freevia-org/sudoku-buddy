@@ -11,10 +11,11 @@ nine-point factual response through the Resolution Center for submission
 `14940e4d-2614-4369-b016-e23bb890d0b0`; App Store Connect shows Apple's message count
 increased to two and the developer reply under Antoni Ivanov, confirming receipt.
 At that check the submission remained rejected, and **Resubmit to App Review** was
-disabled. No build was uploaded and no new review submission was made. Publishing has
-not yet returned a new status check after the account was signed in on 29 October, so
-the current App Store Connect state is unverified. The app was not available on the App
-Store at the last verified check.
+disabled. No build was uploaded and no new review submission was made. On 29 October,
+the authenticated Publishing session opened the Sudoku version and review-submission
+routes, but App Store Connect rendered only the page shell without version or review
+details. Therefore the current App Store Connect state remains unverified. The app was
+not available on the App Store at the last verified check.
 
 The prepared 1.0.3 (build 2) candidate remains local and unuploaded. Do not upload or
 resubmit it as-is: its only changes from the submitted app are About version/build display
