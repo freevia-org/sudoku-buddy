@@ -64,6 +64,13 @@ jobs:
       - name: Build and test
         run: ./gradlew build -x :app:assembleRelease --console=plain
 
+      # Keep the underlying exception visible when a JVM test fails on a native runtime.
+      - name: Print JVM test failure details
+        if: failure()
+        run: |
+          find . -path '*/build/test-results/*Test/*.xml' -type f \
+            -exec grep -n -A 12 -B 1 '<failure' {} + || true
+
       # Without this the release is signed with a debug key generated on this runner,
       # which differs from the one the last runner made - and testers cannot update
       # across a signature change, they have to uninstall and lose everything.
