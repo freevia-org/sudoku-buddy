@@ -42,9 +42,12 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-Current `main` is `8ee7881`. The latest iOS candidate below was built from
-`5c615b69c6b11a2eaae86720dddf42df2514e8be`; subsequent changes through main affect
-Android Play versioning, candidate validation, and documentation, not iOS app sources.
+Current `main` on 29 October is `26e3ea6`. The latest signed iOS candidate below was
+built from `5c615b69c6b11a2eaae86720dddf42df2514e8be`, which is an ancestor of current
+main. A fresh comparison found no changes to `iosApp`, `shared`, or `core` since that
+candidate; later commits affect Android, CI, release tooling, feedback-service tooling,
+and documentation. The candidate matches current iOS sources, but still does not address
+Apple's review concerns and lacks physical iOS qualification. Do not submit it as-is.
 
 ### Prepared iOS 1.0.3 candidate from merged source (not uploaded)
 
