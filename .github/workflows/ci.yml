@@ -57,6 +57,14 @@ jobs:
         with:
           packages: platform-tools
 
+      # OpenPnP extracts its OpenCV test library under java.io.tmpdir. The Linux
+      # self-hosted runner mounts /tmp noexec, so use the runner's executable temp
+      # area for JVM tests instead.
+      - name: Configure executable JVM temp directory
+        run: |
+          mkdir -p "$RUNNER_TEMP/java-tmp"
+          echo "JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=$RUNNER_TEMP/java-tmp" >> "$GITHUB_ENV"
+
       # Corpus photographs are not in the repository, so every test that needs one
       # skips here. That is expected: see docs/superpowers/plans.
       # The release APK is excluded here only because the next Gradle step builds it
