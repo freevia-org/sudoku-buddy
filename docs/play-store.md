@@ -1,20 +1,18 @@
-# Getting Sudoku Buddy onto Google Play
+# Sudoku Buddy Google Play listing and release notes
 
 The listing copy below reflects the current English store text. Check it against the signed
 release, published privacy policy and submitted Play Data Safety answers before making future
 listing changes.
 
-Current status (25 October 2026): **1.0.2 (241)** is serving on Internal testing and is
-available in Production at 100% across 178 of 178 countries/regions. Google Play shows the
-production rollout as released on 20 October; the same version is serving on Internal
-testing. The Console has no unpublished changes. It currently flags low DEX obfuscation
-(1%, fix by February 2027) and the outdated `androidx.fragment:fragment` 1.1.0 dependency
-as items to address in a future release. The app supports 71 locales, with model-assisted
-translation review that remains partial. See [the final-build checklist](play-release-readiness.md)
+Current status (29 October 2026): **1.0.4 (code 243)** is active on both Production
+and Internal testing in 178 countries and regions. A **1.0.5 (code 244)** candidate
+is attached to an unsubmitted Internal testing draft and is not available to
+testers. The app supports 71 locales, with model-assisted translation review
+that remains partial. See [the final-build checklist](play-release-readiness.md)
 for historical candidate evidence and remaining qualification limits.
 
-This reference reflects the live Google Play state checked on 25 October 2026. Do not
-reuse the older version-131 submission details below as current release status.
+This is a dated status snapshot. Recheck Play Console before using it for a
+later release or listing update; older submission details below are historical.
 
 ## Done in the repository
 
@@ -67,37 +65,38 @@ record are in [`play-release-readiness.md`](play-release-readiness.md).
 | Feature graphic | 1024x500 PNG | `docs/store/feature-graphic-1024x500.png` |
 | Phone screenshots | at least 2, 16:9 or 9:16, min 320px | five physical-phone screenshots prepared in the release package |
 | Title | 30 characters | "Sudoku Buddy" |
-| Short description | 80 characters | draft below |
-| Full description | 4000 characters | draft below |
+| Short description | 80 characters | current public English (US) copy below |
+| Full description | 4000 characters | current public English (US) copy below |
 
 The five screenshots were captured on a physical phone and cover scanning, recognition,
 checking handwritten answers, hints, and on-device history.
 
 ### Short description
 
-> Scan and check paper Sudoku, with clear hints when you get stuck
+```
+Scan paper Sudoku, check your answers and get step-by-step hints.
+```
 
 ### Full description
 
-> Sudoku Buddy reads a printed sudoku through your camera and then teaches you how to solve
-> it, one step at a time, in plain language.
->
-> Photograph a puzzle from a newspaper or a book. The app finds the grid, reads the printed
-> clues, and hands you a board you can work on. Your own pencilled answers are read too, so
-> a puzzle you have already started carries on where you left it.
->
-> The tutor works through twenty-three human solving techniques, from naked singles to
-> forcing chains, and names the one it is using at every step. It shows you which squares
-> the deduction rests on rather than simply filling a number in, so the point is to
-> understand the move rather than to be given it.
->
-> Processing and puzzle history stay on your phone. If you choose to submit an uncertain
-> reading, its puzzle photo and recognition results can be sent to Freevia for private review
-> to improve recognition. Automatic submission is optional and off unless you enable it.
-> There is no account, routine usage analytics, ad tracking or advertising. Optional puzzle
-> reports are analyzed to improve recognition as described in the privacy policy.
+```
+Keep solving on paper. Sudoku Buddy helps you read, check and understand a 9×9 puzzle from a newspaper, book or magazine—without taking away the fun of figuring it out.
 
-## Deciding before the first upload
+SCAN YOUR PAGE
+• Point your camera at the grid. Sudoku Buddy reads printed clues and handwritten progress.
+• Review the reading and correct missed digits. Lighting, pencil marks and handwriting can affect recognition.
+
+CHECK AND LEARN
+• Check the answers you have written and see what needs another look.
+• When you are stuck, reveal a hint in stages: region, technique, square and digit.
+• Explore the Tutor's explanation, solve the puzzle when you choose, and reopen scans from on-device history.
+
+Scanning, checking and tutoring work offline. Unless you choose to share a report, puzzle photos and history stay on your phone. There is no account, ads, routine usage analytics, crash reporting or ad tracking.
+
+Optional sharing helps improve recognition. You can submit an uncertain reading manually or enable automatic submission for future uncertain readings; automatic sharing is off by default. A report includes the puzzle photo, reading results and corrections. Reports remain private until you delete each revision using its receipt in Settings. Sudoku Buddy does not currently train a model from submitted reports; if it does later, deleting a report may not undo what the model learned. Sharing and report deletion require an internet connection. The app works without sharing. See the privacy policy for details.
+```
+
+## Historical first-upload decisions
 
 - **Minification is off.** Turning R8 on would shrink the Kotlin code, but the app's size
   is dominated by OpenCV's native libraries, which R8 does not touch. The gain is small and
