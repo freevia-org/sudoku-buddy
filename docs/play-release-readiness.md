@@ -2,24 +2,27 @@
 
 # Sudoku Buddy: final build and Google Play handoff
 
-## Current Play status (verified 29 October 2026)
+## Current Play status (verified 30 October 2026)
 
 Production **1.0.4 (243)** is **Active** at **100% across 178 countries/regions**, released
-on 26 October at 5:35 PM. The active Internal release is also **1.0.4 (243)**, released at
-5:05 PM. Publishing rechecked the Play Console on 29 October: Production still showed six
-installs and 1.0.4 (243) remained active on both tracks. Publishing also found a separate
-**1.0.5 (244) Draft** attached to the Internal testing track; it has not been submitted and
-is not available to testers. Its Play artifact ID is `4860245793654491695`. The Play draft
-still has placeholder release notes. The artifact's uploaded SHA-256 has not yet been
-compared with the approved candidate AAB, so its exact file identity remains unverified.
-Managed publishing is off. Play currently shows two recommendations attached to 243; the
+on 26 October at 5:35 PM. Publishing confirmed on 30 October that Internal testing now has
+**1.0.5 (244) Active**, available to internal testers. Production remains **1.0.4 (243)**;
+no production promotion has occurred. Its Play artifact ID is `4860245793654491695`. The
+candidate AAB is recorded locally with SHA-256
+`e80855533dda94c6dfda176db0f4529ab01fa7e2a1d04f86c2e4cd5827f27ad6`, but Publishing has
+not yet confirmed that the Play artifact hash matches it or reported the final release
+notes shown in Console. Keep those items unverified until Publishing checks the live
+release. Managed publishing is off. Play shows two recommendations attached to 243; the
 bitmap downsampling recommendation that affected 242 is no longer attached to the current
-release.
+production release.
 
-Internal testing now serves **1.0.4 (243)**, released on 26 October at 5:05 PM and
-available to internal testers. The current opt-in link is
-<https://play.google.com/apps/internaltest/4701554944860354114>. The Play-delivered build
-1.0.3 (242) was installed and launched on the OnePlus on 25 October. A printed Sudoku was
+Internal testing serves **1.0.5 (244)**. The previously used opt-in link is
+<https://play.google.com/apps/internaltest/4701554944860354114>; Publishing has not yet
+independently re-verified the link against the current release. The OnePlus CPH2449 was
+disconnected at the latest ADB check and still had **1.0.4 (243)** installed at its last
+connected check. Install 244 from Internal and repeat the physical recognition smoke test
+before considering production promotion. The Play-delivered build 1.0.3 (242) was installed
+and launched on the OnePlus on 25 October. A printed Sudoku was
 captured as a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have
 written so far is right.” On 26 October, the Play-installed 1.0.4 (243) was also installed
 and launched on the OnePlus CPH2449. It read a 9×9 board with 23 empty cells, separated
