@@ -50,6 +50,12 @@ jobs:
       - uses: android-actions/setup-android@v4
         with:
           packages: platform-tools
+      # The self-hosted Linux runner mounts /tmp noexec. OpenCV tests and
+      # bundletool both extract native libraries there unless Java is redirected.
+      - name: Configure executable JVM temp directory
+        run: |
+          mkdir -p "$RUNNER_TEMP/java-tmp"
+          echo "JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=$RUNNER_TEMP/java-tmp" >> "$GITHUB_ENV"
       - name: Install pinned APK verification tools
         run: sdkmanager 'build-tools;36.0.0'
       - uses: gradle/actions/setup-gradle@v5
