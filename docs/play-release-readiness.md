@@ -5,12 +5,16 @@
 ## Current Play status (verified 29 October 2026)
 
 Production **1.0.4 (243)** is **Active** at **100% across 178 countries/regions**, released
-on 26 October at 5:35 PM. Internal testing also serves **1.0.4 (243)**, active since 5:05 PM,
-so both tracks are in sync. Publishing rechecked the Play Console on 29 October: the
-Production dashboard still showed six installs and 1.0.4 (243) remains active on both
-tracks. Managed
-publishing is off. Play currently shows two recommendations attached to 243; the bitmap
-downsampling recommendation that affected 242 is no longer attached to the current release.
+on 26 October at 5:35 PM. The active Internal release is also **1.0.4 (243)**, released at
+5:05 PM. Publishing rechecked the Play Console on 29 October: Production still showed six
+installs and 1.0.4 (243) remained active on both tracks. Publishing also found a separate
+**1.0.5 (244) Draft** attached to the Internal testing track; it has not been submitted and
+is not available to testers. Its Play artifact ID is `4860245793654491695`. The Play draft
+still has placeholder release notes. The artifact's uploaded SHA-256 has not yet been
+compared with the approved candidate AAB, so its exact file identity remains unverified.
+Managed publishing is off. Play currently shows two recommendations attached to 243; the
+bitmap downsampling recommendation that affected 242 is no longer attached to the current
+release.
 
 Internal testing now serves **1.0.4 (243)**, released on 26 October at 5:05 PM and
 available to internal testers. The current opt-in link is
@@ -60,7 +64,7 @@ The detailed 1.0.1/240 handoff below is retained as historical evidence, not the
 release record. The 1.0.2 release notes remain in the historical record; current notes are
 in `docs/play-release-notes-en-US.txt`.
 
-### Android 1.0.5 candidate (29 October 2026; not uploaded)
+### Android 1.0.5 candidate (29 October 2026; Internal draft attached, not submitted)
 
 Candidate workflow [40891588943](https://github.com/freevia-org/sudoku-buddy/actions/runs/40891588943)
 passed for version **1.0.5 (244)** from source commit
@@ -75,13 +79,22 @@ APK variants, and 16 KB native alignment passed. The bundle contains 20 native l
 across four ABIs. The upload certificate SHA-256 is
 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`.
 
-This was a packaging-only candidate run: it did not upload to Play or install an APK.
-The generated record remains `NOT APPROVED FOR DISTRIBUTION`; code 244 still needs a
-Play-delivered install and device qualification. The bundled `play-internal-test-results.csv`
-is an older code-120 test record and is not evidence for code 244. Production and Internal
-currently remain on 1.0.4 (243). The next store step is an Internal-only upload through
-Publishing for Play-delivered qualification; keep Production at 243 until that qualification
-passes and the public-release checks are clear.
+This was a packaging-only candidate run: it did not upload to Play or install an APK. A
+later Publishing check found the bundle attached to an Internal draft (Play artifact ID
+`4860245793654491695`); the Play-side payload hash has not yet been independently checked
+against the candidate AAB hash above. The generated record remains `NOT APPROVED FOR
+DISTRIBUTION`; code 244 still needs a Play-delivered install and device qualification. The
+draft's current release notes are a placeholder. The candidate's bundled en-US release note
+is: “You can now share a Sudoku screenshot from another app to recognize and save the puzzle
+in Sudoku Buddy.” The bundled `play-internal-test-results.csv` is an older code-120 test
+record and is not evidence for code 244.
+
+The OnePlus CPH2449 is reachable again over wireless ADB and currently has 1.0.4 (243)
+installed. Install and qualify code 244 from Internal after the draft is made available to
+testers. Keep Production at 243 until that qualification passes and the public-release checks
+are clear. The current `main` commit `264173cc` is a descendant of candidate source commit
+`13c8765`; changes since the candidate affect documentation and the candidate workflow, not
+application source files.
 
 ## Original Android 1.0.4 candidate (26 October 2026; superseded)
 
