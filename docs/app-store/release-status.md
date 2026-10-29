@@ -1,17 +1,19 @@
-# iOS release status — 29 October 2026
+# iOS release status — 30 October 2026
 
 App Store Connect record: **Sudoku Buddy by Freevia**, Apple ID `6825975489`,
 bundle `org.freevia.sudokubuddy.ios`, Freevia EOOD team `8C782Q826S`.
 
 Version **1.0.2 (1)** was exported and uploaded on 23 October, processed, selected
 and submitted to App Review. Publishing rechecked the submission from App Store Connect
-on 29 October. Current status is **Unresolved Issues**; the submitted item is **iOS App
+on 29 October. The submitted item is **iOS App
 1.0.2 (1) — Rejected** under **4.3.0 Design: Spam**. The review notice cites Guidelines
-4.3(a)/(b) and 4.2.6. Apple's latest message is dated 26 October at 6:33 PM; Antoni's
-two replies are dated 10:29 PM and 11:53 PM. There is no later Apple response. The
-nine-point factual response was sent through the Resolution Center for submission
-`14940e4d-2614-4369-b016-e23bb890d0b0`. **Resubmit to App Review** is disabled, and the
-submission contains no newer version/build. No new build was uploaded or submitted.
+4.3(a)/(b) and 4.2.6. Apple's 26 October message at 6:33 PM was followed by Antoni's
+two replies at 10:29 PM and 11:53 PM. The latest message, verified on 30 October for
+submission `14940e4d-2614-4369-b016-e23bb890d0b0`, says Apple will continue its review.
+This is a progress acknowledgment, not an approval. The nine-point factual response was
+sent through the Resolution Center for that submission. **Resubmit to App Review** was
+disabled at the last Console check; no newer version/build appears in the submission.
+No new build was uploaded or submitted.
 The app is not available on the App Store.
 
 The prepared 1.0.3 (build 2) candidate remains local and unuploaded. Do not upload or
