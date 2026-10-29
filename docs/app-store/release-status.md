@@ -26,13 +26,13 @@ and Apple Development identities are now available, and App Store Connect is
 accessible through the existing Freevia account. Do not create another app record
 or reuse build 1 for a new upload.
 
-## New local shared-image candidate — 1.0.5 (3)
+## Merged shared-image candidate — 1.0.5 (3)
 
-The `codex/ios-share-image-import` branch adds an embedded iOS Share extension and
+Merged in PR #96 at `d72c477`, iOS 1.0.5 (3) adds an embedded Share extension and
 an App Group inbox for images received from other apps. The containing app offers
 Read/Keep/Delete this photo and reuses existing recognition, correction, feedback-consent
-and history persistence. This is an unsigned local Release candidate, not an
-uploaded build. Its marketing version aligns with Android 1.0.5; build 3 supersedes
+and history persistence. It is an unsigned Release candidate, not an uploaded build.
+Its marketing version aligns with Android 1.0.5; build 3 supersedes
 the preserved, unuploaded iOS 1.0.3 (2) candidate.
 
 The app and extension build locally for simulator and device. Forty-two persistence
@@ -43,8 +43,9 @@ of Debug fixture switches. Current listing materials and fourteen screenshots
 pass validation. The host UI tests stage the inbox through a Debug-only fixture;
 they do not qualify the system share sheet or signed App Group exchange.
 
-New App Group capabilities/profiles and signed iPhone/iPad share-sheet testing are
-still required. No new signed IPA has been exported. See
+The App Group `group.org.freevia.sudokubuddy.ios` must be registered and enabled for
+the app and extension, with matching signing profiles. Signed iPhone/iPad share-sheet
+testing is still required. No signed IPA has been exported. See
 [iOS shared images](ios-shared-images.md) for behavior, limits and device checks.
 Apple's existing rejection remains unresolved; this change does not guarantee
 approval. No binary was uploaded or submitted for review.
@@ -63,12 +64,13 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-In the 29 October source audit, `origin/main` was `26e3ea6`. The latest signed iOS
-candidate below was built from `5c615b69c6b11a2eaae86720dddf42df2514e8be`, an ancestor
-of that main revision. The comparison found no changes to `iosApp`, `shared`, or `core`
-since the candidate; later commits affect Android, CI, release tooling, feedback-service
-tooling, and documentation. It matches current iOS app sources, but does not address
-Apple's review concerns and lacks physical iOS qualification. Do not submit it as-is.
+The 29 October source audit of signed candidate `5c615b69c6b11a2eaae86720dddf42df2514e8be`
+predates PR #96 and must not be used to claim that the signed IPA matches current iOS
+sources. PR #96 adds the share extension and App Group inbox. The previous 1.0.3 (2)
+candidate below remains historical and does not contain this feature. The current 1.0.5
+(3) candidate has passed local build/resource checks, but still needs App Group signing,
+physical share-sheet qualification, and Apple review strategy; the existing rejection
+remains unresolved.
 
 ### Prepared iOS 1.0.3 candidate from merged source (not uploaded)
 

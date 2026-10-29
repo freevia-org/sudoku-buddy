@@ -38,9 +38,10 @@ Guidelines 4.3(a)/(b) and 4.2.6. Apple's latest message is dated 26 October at 6
 followed by Antoni's two replies at 10:29 PM and 11:53 PM; Apple has not replied since.
 The nine requested factual answers were sent, but **Resubmit to App Review** remains
 disabled. No newer build appears in the submission, and no build has been uploaded or
-submitted since 1.0.2 (1). The prepared iOS **1.0.3 (build 2)** candidate only changes
-About version/build display and translations, so it does not address the review concerns.
-See the [iOS release status](app-store/release-status.md).
+submitted since 1.0.2 (1). iOS **1.0.5 (build 3)** is now merged in PR #96 and adds
+share-sheet image recognition to match Android. It remains unsigned and unuploaded while
+App Group capabilities/profiles and signed-device qualification are completed. This
+product change does not guarantee Apple approval. See the [iOS release status](app-store/release-status.md).
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
