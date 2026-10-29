@@ -1,10 +1,9 @@
 # iOS shared-image import — local candidate 1.0.5 (3)
 
-From another app's image share sheet, choose **Sudoku Buddy**, then **Save for
-Sudoku Buddy**. Open Sudoku Buddy and choose **Read image**. The app uses the same
+From another app's image share sheet, choose **Sudoku Buddy**, then **Keep**. Open Sudoku Buddy and choose **Read**. The app uses the same
 photo recognition, correction, refused-photo, feedback-consent and puzzle-history
-path as camera/imported photos. The current puzzle is saved first. **Later** keeps
-the handoff; **Discard image** deletes it. The extension does not launch the app.
+path as camera/imported photos. The current puzzle is saved first. **Keep** in the app keeps
+the handoff for later; **Delete this photo** discards it. The extension does not launch the app.
 
 The share extension accepts one image (not web links, text, PDFs or multiple
 images), at most 20 MiB / 40 megapixels. A private App Group holds up to five
@@ -12,7 +11,14 @@ pending images, excluded from backup with complete file protection. Expired
 handoffs are deleted on the next inbox access after seven days. The extension
 has no network or feedback code, camera access or Photos-library access. The app's
 existing explicit/optional automatic feedback policy applies after recognition.
-New share UI currently uses English fallback text.
+The app uses its selected language and existing catalogs. The extension bundles
+an identical subset for all 71 supported locales, including the shared-image label,
+existing actions, errors and privacy copy. It follows the app's selected language
+via a protected, backup-excluded language-choice file in the App Group; an empty
+choice follows the device language. Arabic, Hebrew and Persian use RTL layout.
+The extension has a separate process and cannot link the app's SwiftUI/Kotlin
+translator; its small Foundation loader reads the same generated translations.
+Brand names, numeric limits and SI unit symbols remain language-neutral.
 
 Both app and extension need the App Group
 `group.org.freevia.sudokubuddy.ios`. The new extension bundle ID is

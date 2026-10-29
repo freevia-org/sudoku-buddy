@@ -30,14 +30,14 @@ or reuse build 1 for a new upload.
 
 The `codex/ios-share-image-import` branch adds an embedded iOS Share extension and
 an App Group inbox for images received from other apps. The containing app offers
-Read/Later/Discard and reuses existing recognition, correction, feedback-consent
+Read/Keep/Delete this photo and reuses existing recognition, correction, feedback-consent
 and history persistence. This is an unsigned local Release candidate, not an
 uploaded build. Its marketing version aligns with Android 1.0.5; build 3 supersedes
 the preserved, unuploaded iOS 1.0.3 (2) candidate.
 
-The app and extension build locally for simulator and device. Forty persistence
-tests (including four inbox tests), two host-app shared-image UI workflows, and
-fourteen resource checks pass. The Release bundle audit verifies the embedded
+The app and extension build locally for simulator and device. Forty-two persistence
+tests (including four inbox and two language-choice tests), three host-app shared-image UI workflows, and
+sixteen resource/localization checks pass. The Release bundle audit verifies the embedded
 extension, matching versions, image-only activation, privacy manifests and absence
 of Debug fixture switches. Current listing materials and fourteen screenshots
 pass validation. The host UI tests stage the inbox through a Debug-only fixture;

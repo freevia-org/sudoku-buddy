@@ -130,28 +130,28 @@ struct PuzzleView: View {
                 if phase != .active { model.persist(touch: false) } else { offerSharedImage() }
             }
             .onChange(of: model.busy) { busy in if !busy { offerSharedImage() } }
-            .alert("Shared Sudoku image", isPresented: $showSharedImage) {
-                Button("Read image") {
+            .alert(tr("Shared images"), isPresented: $showSharedImage) {
+                Button(tr("Read")) {
                     guard let url = sharedImage, let inbox = sharedInbox else { return }
                     sharedImage = nil; importingSharedImage = true
                     Task {
                         defer { importingSharedImage = false }
                         do {
                             let data = try inbox.read(url)
-                            guard model.persist(touch: false) else { model.message = "Could not save the current puzzle. Try again."; return }
+                            guard model.persist(touch: false) else { model.message = tr("Changes could not be saved on this device. Keep this puzzle open and try again."); return }
                             await model.readPhoto(data)
                             try inbox.remove(url)
-                        } catch { model.message = "Could not read the shared image. You can discard it and share another image." }
+                        } catch { model.message = tr("That photo could not be opened. Try another photo.") }
                     }
                 }
-                Button("Discard image", role: .destructive) {
+                Button(tr("Delete this photo"), role: .destructive) {
                     if let url = sharedImage { try? sharedInbox?.remove(url) }
                     sharedImage = nil
                     offerSharedImage()
                 }
-                Button("Later", role: .cancel) { sharedImage = nil }
+                Button(tr("Keep"), role: .cancel) { sharedImage = nil }
             } message: {
-                Text("Read the image saved from another app? Your current puzzle stays in History. Shared images stay on this device; existing optional feedback settings still apply. Pending images expire after seven days.")
+                Text(tr("Scan another puzzle? Your current puzzle will stay in History.") + "\n\n" + tr("Photos are processed on this device. Review the reading before starting.") + "\n\n" + tr("Settings") + " → " + tr("Share automatically when uncertain") + "\n\n⏱ 7 × 24 h")
             }
             .sheet(item: $studyPresentation, onDismiss: { resumeCamera() }) {
                 StudyView(puzzle: model, mode: $0.mode, onExplore: { technique in returnToCamera = false; studyPresentation = nil; openStudy("strategy", technique: technique) })
@@ -364,9 +364,9 @@ struct PuzzleView: View {
             Button { requestScan() } label: { Image(systemName: "camera.fill").frame(width: 48, height: 48) }
                 .accessibilityLabel(tr("Take a new photo")).accessibilityIdentifier("scanPuzzle")
             Menu {
-                Button("Shared images") {
+                Button(tr("Shared images")) {
                     offerSharedImage()
-                    if sharedImage == nil { model.message = "No pending shared images. Share an image from another app to Sudoku Buddy first." }
+                    if sharedImage == nil { model.message = tr("Shared images") + ": 0" }
                 }.accessibilityIdentifier("sharedImages")
                 Button(tr("Strategies")) { openStudy("catalog") }
                 Button(tr("Settings")) { showSettings = true }.accessibilityIdentifier("appSettings")

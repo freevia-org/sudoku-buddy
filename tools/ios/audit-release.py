@@ -39,6 +39,13 @@ def audit(app):
     assert declaration['NSExtensionAttributes']['NSExtensionActivationRule'] == {'NSExtensionActivationSupportsImageWithMaxCount': 1}
     assert (extension / extension_info['CFBundleExecutable']).is_file()
     assert not any(k in extension_info for k in ['NSCameraUsageDescription', 'NSPhotoLibraryUsageDescription', 'NSMicrophoneUsageDescription'])
+    extension_catalogs = sorted(p.name for p in extension.glob('*.lproj'))
+    assert extension_catalogs == catalogs
+    for folder in extension.glob('*.lproj'):
+        translated = json.loads((folder / 'Messages.json').read_text())
+        parent = json.loads((app / folder.name / 'Messages.json').read_text())
+        assert translated and all(value and parent[key] == value for key, value in translated.items())
+        assert 'Shared images' in translated
     extension_privacy = plistlib.loads((extension / 'PrivacyInfo.xcprivacy').read_bytes())
     assert extension_privacy['NSPrivacyTracking'] is False
     assert extension_privacy['NSPrivacyCollectedDataTypes'] == []
@@ -56,7 +63,7 @@ def audit(app):
             'tablet_orientations': info['UISupportedInterfaceOrientations~ipad'],
             'models': {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in models},
             'exempt_encryption': True, 'production_endpoint': True, 'debug_fixtures_absent': True,
-            'share_extension': extension_info['CFBundleIdentifier'], 'privacy_manifest_present': True, 'binary_sha256': hashlib.sha256(binary).hexdigest(),
+            'share_extension': extension_info['CFBundleIdentifier'], 'share_catalogs': len(extension_catalogs), 'privacy_manifest_present': True, 'binary_sha256': hashlib.sha256(binary).hexdigest(),
             'qualification': 'Local bundle audit; signing, upload validation and physical-device qualification remain separate.'}
 
 
