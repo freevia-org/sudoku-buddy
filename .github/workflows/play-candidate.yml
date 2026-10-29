@@ -86,15 +86,17 @@ jobs:
         run: ./gradlew build :app:checkNativeAlignment :app:bundleRelease --console=plain
       - name: Validate bundle and record evidence
         env:
-          GH_TOKEN: ${{ github.token }}
           SIGNING_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: |
           evidence=build/play-candidate-evidence
           mkdir -p "$evidence"
-          gh release download 1.18.3 --repo google/bundletool --pattern bundletool-all-1.18.3.jar --dir "$RUNNER_TEMP"
           bundletool="$RUNNER_TEMP/bundletool-all-1.18.3.jar"
+          curl --fail --silent --show-error --location \
+            https://github.com/google/bundletool/releases/download/1.18.3/bundletool-all-1.18.3.jar \
+            --output "$bundletool"
+          echo 'a099cfa1543f55593bc2ed16a70a7c67fe54b1747bb7301f37fdfd6d91028e29  '"$bundletool" | sha256sum --check --status
           bundle=app/build/outputs/bundle/release/app-release.aab
           java -jar "$bundletool" validate --bundle="$bundle" > "$evidence/bundle-validation.txt"
           java -jar "$bundletool" dump manifest --bundle="$bundle" --module=base > "$evidence/manifest.xml"
