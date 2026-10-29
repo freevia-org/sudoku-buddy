@@ -84,12 +84,12 @@ jobs:
         run: |
           python3 -m unittest discover -s tools/i18n -p 'test_*.py'
           python3 tools/i18n/validate.py
-      - name: Build and check final sources
+      - name: Clean build and run uncached checks
         env:
           SIGNING_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-        run: ./gradlew build :app:checkNativeAlignment :app:bundleRelease --console=plain
+        run: ./gradlew --no-build-cache clean build :app:checkNativeAlignment :app:bundleRelease --console=plain
       - name: Validate bundle and record evidence
         env:
           SIGNING_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
