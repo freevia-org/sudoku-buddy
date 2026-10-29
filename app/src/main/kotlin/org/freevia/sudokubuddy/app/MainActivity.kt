@@ -6,12 +6,16 @@ import android.content.Intent
 import android.net.Uri
 import android.provider.Settings as AndroidSettings
 import android.os.Bundle
+import android.media.ExifInterface
 import android.widget.Toast
+import java.io.ByteArrayInputStream
+import java.io.ByteArrayOutputStream
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.IntentCompat
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -58,10 +62,31 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
 import org.opencv.android.OpenCVLoader
 
+private data class SharedPhotoRequest(val id: Long, val uri: Uri)
+
 class MainActivity : ComponentActivity() {
+
+    private var sharedPhotoRequest by mutableStateOf<SharedPhotoRequest?>(null)
+    private var nextSharedPhotoRequestId = 0L
+
+    private fun receiveSharedPhoto(intent: Intent?) {
+        if (intent?.action != Intent.ACTION_SEND || intent.type?.startsWith("image/") != true) return
+        val uri = IntentCompat.getParcelableExtra(intent, Intent.EXTRA_STREAM, Uri::class.java)
+            ?: intent.clipData?.takeIf { it.itemCount > 0 }?.getItemAt(0)?.uri
+            ?: intent.data
+            ?: return
+        sharedPhotoRequest = SharedPhotoRequest(++nextSharedPhotoRequestId, uri)
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        receiveSharedPhoto(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        receiveSharedPhoto(intent)
         AppLanguages.migrate(this)
 
         // Draw behind the status and navigation bars, and let each screen inset its own
@@ -86,7 +111,14 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme(colorScheme = darkColorScheme()) {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    LanguageContent { AppRoot() }
+                    LanguageContent {
+                        AppRoot(
+                            sharedPhotoRequest = sharedPhotoRequest,
+                            onSharedPhotoConsumed = { requestId ->
+                                if (sharedPhotoRequest?.id == requestId) sharedPhotoRequest = null
+                            },
+                        )
+                    }
                 }
             }
         }
@@ -94,7 +126,10 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-private fun AppRoot() {
+private fun AppRoot(
+    sharedPhotoRequest: SharedPhotoRequest?,
+    onSharedPhotoConsumed: (Long) -> Unit,
+) {
     val context = LocalContext.current
     val latestContext = rememberUpdatedState(context)
     val history = remember { History(context) }
@@ -102,6 +137,8 @@ private fun AppRoot() {
     val storage = remember { Mutex() }
     var storageBusy by remember { mutableStateOf(false) }
     var storageError by remember { mutableStateOf<String?>(null) }
+    var photoImportBusy by remember { mutableStateOf(false) }
+    var photoImportError by remember { mutableStateOf<String?>(null) }
     var puzzleGeneration by remember { mutableStateOf(0L) }
 
     var hasCamera by remember {
@@ -447,6 +484,90 @@ private fun AppRoot() {
         nav = nav.go(target)
     }
 
+    fun acceptRead(state: PuzzleState) {
+        val generation = ++puzzleGeneration
+        // Save as soon as a puzzle is read, whether it came from the camera or a shared
+        // screenshot, so backing out never loses it.
+        entryId = null
+        puzzle = state.copy(
+            hintStyle = settings.hintStyle,
+            routeStyle = settings.routeStyle,
+        )
+        go(Screen.PUZZLE)
+        storageBusy = true
+        val captured = puzzle!!
+        scope.launch {
+            val result = storage.withLock {
+                withContext(Dispatchers.IO) { runCatching { history.save(captured) to history.list() } }
+            }
+            result.onSuccess { (entry, saved) ->
+                if (generation == puzzleGeneration) entryId = entry.id
+                entries = saved
+                if (generation == puzzleGeneration && captured.originalUncertainCells.isNotEmpty()) {
+                    submitAutomatically(entry.id)
+                }
+            }
+                .onFailure {
+                    storageError = "This puzzle could not be saved. " +
+                        "You can still use it now. Free some storage before taking another photo."
+                }
+            storageBusy = false
+        }
+    }
+
+    LaunchedEffect(sharedPhotoRequest?.id) {
+        val request = sharedPhotoRequest ?: return@LaunchedEffect
+        photoImportBusy = true
+        photoImportError = null
+        try {
+            val (bytes, rotation) = withContext(Dispatchers.IO) {
+                val output = ByteArrayOutputStream()
+                val buffer = ByteArray(16 * 1024)
+                var total = 0
+                val input = context.contentResolver.openInputStream(request.uri)
+                    ?: error("Something went wrong reading that photo.")
+                input.use { stream ->
+                    while (true) {
+                        val count = stream.read(buffer)
+                        if (count < 0) break
+                        total += count
+                        check(total <= 32 * 1024 * 1024) {
+                            "Something went wrong reading that photo."
+                        }
+                        output.write(buffer, 0, count)
+                    }
+                }
+                val imageBytes = output.toByteArray()
+                check(imageBytes.isNotEmpty()) { "Something went wrong reading that photo." }
+                val degrees = runCatching {
+                    when (ExifInterface(ByteArrayInputStream(imageBytes)).getAttributeInt(
+                        ExifInterface.TAG_ORIENTATION,
+                        ExifInterface.ORIENTATION_NORMAL,
+                    )) {
+                        ExifInterface.ORIENTATION_ROTATE_90 -> 90
+                        ExifInterface.ORIENTATION_ROTATE_180 -> 180
+                        ExifInterface.ORIENTATION_ROTATE_270 -> 270
+                        else -> 0
+                    }
+                }.getOrDefault(0)
+                imageBytes to degrees
+            }
+            when (val outcome = withContext(Dispatchers.Default) {
+                PhotoReading.read(context, bytes, rotation)
+            }) {
+                is PhotoOutcome.Read -> acceptRead(outcome.state)
+                is PhotoOutcome.Refused -> photoImportError = outcome.message
+            }
+        } catch (cancelled: kotlinx.coroutines.CancellationException) {
+            throw cancelled
+        } catch (_: Exception) {
+            photoImportError = "Something went wrong reading that photo."
+        } finally {
+            photoImportBusy = false
+            onSharedPhotoConsumed(request.id)
+        }
+    }
+
     /** The close button on a screen you opened. The same thing Back does there. */
     fun leaveOverlay() {
         nav = nav.back() ?: nav.reset(if (puzzle != null) Screen.PUZZLE else Screen.CAMERA)
@@ -612,33 +733,7 @@ private fun AppRoot() {
                 autoCapture = settings.autoCapture,
                 onAutoCaptureChange = { applySettings(settings.copy(autoCapture = it)) },
                 autoCaptureAllowed = drawer.isClosed && !drawer.isAnimationRunning,
-                onRead = { state ->
-                    val generation = ++puzzleGeneration
-                    // Saved as soon as it is read, so a puzzle is never lost by backing out.
-                    entryId = null
-                    puzzle = state.copy(
-                        hintStyle = settings.hintStyle,
-                        routeStyle = settings.routeStyle,
-                    )
-                    go(Screen.PUZZLE)
-                    storageBusy = true
-                    val captured = puzzle!!
-                    scope.launch {
-                        val result = storage.withLock {
-                            withContext(Dispatchers.IO) { runCatching { history.save(captured) to history.list() } }
-                        }
-                        result.onSuccess { (entry, saved) ->
-                            if (generation == puzzleGeneration) entryId = entry.id
-                            entries = saved
-                            if (generation == puzzleGeneration && captured.originalUncertainCells.isNotEmpty()) {
-                                submitAutomatically(entry.id)
-                            }
-                        }
-                            .onFailure { storageError = "This puzzle could not be saved. " +
-                                "You can still use it now. Free some storage before taking another photo." }
-                        storageBusy = false
-                    }
-                },
+                onRead = ::acceptRead,
                 onMenu = ::openDrawer,
                 onStrategies = { go(Screen.STRATEGIES) },
                 onSettings = { go(Screen.SETTINGS) },
@@ -648,12 +743,22 @@ private fun AppRoot() {
         if (storageBusy) Surface(Modifier.fillMaxSize()) {
             Box(contentAlignment = Alignment.Center) { CircularProgressIndicator() }
         }
+        if (photoImportBusy) Surface(Modifier.fillMaxSize()) {
+            Box(contentAlignment = Alignment.Center) { CircularProgressIndicator() }
+        }
         }
     }
     storageError?.let { message ->
         AlertDialog(onDismissRequest = { storageError = null }, title = { Text(localized("Puzzle storage")) },
             text = { Text(localized(message)) }, confirmButton = {
                 TextButton(onClick = { storageError = null }) { Text(localized("OK")) }
+            })
+    }
+    photoImportError?.let { message ->
+        AlertDialog(onDismissRequest = { photoImportError = null },
+            text = { Text(localized(message)) },
+            confirmButton = {
+                TextButton(onClick = { photoImportError = null }) { Text(localized("OK")) }
             })
     }
 }
