@@ -28,17 +28,15 @@ not a corpus accuracy estimate.
 The refreshed 1.0.4 (243) bundle is active on both Internal and Production. Play Console
 showed one non-blocking warning that native debug symbols were not uploaded.
 
-The latest App Store Connect status remains unverified: on 29 October, the authenticated
-Publishing session opened Sudoku Buddy's version/review routes, but the page rendered only
-its shell without the review details. The last verified state was iOS **1.0.2 (build 1)
-Rejected / Unresolved Issues**. On 26 October, Publishing sent Apple's Resolution Center
-the approved nine-point factual response; the
-message count increased to two and the developer reply is visible, confirming receipt.
-At the last verified check, the rejection was active and **Resubmit to App Review** was
-disabled. No new build has been uploaded or submitted since then. The prepared iOS
-**1.0.3 (build 2)** candidate only changes About version/build display and translations,
-so it is not a suitable response candidate. See the
-[iOS release status](app-store/release-status.md).
+Publishing rechecked App Store Connect on 29 October: iOS **1.0.2 (build 1)** is still
+**Rejected / Unresolved Issues** under **4.3.0 Design: Spam**; the review notice also cites
+Guidelines 4.3(a)/(b) and 4.2.6. Apple's latest message is dated 26 October at 6:33 PM,
+followed by Antoni's two replies at 10:29 PM and 11:53 PM; Apple has not replied since.
+The nine requested factual answers were sent, but **Resubmit to App Review** remains
+disabled. No newer build appears in the submission, and no build has been uploaded or
+submitted since 1.0.2 (1). The prepared iOS **1.0.3 (build 2)** candidate only changes
+About version/build display and translations, so it does not address the review concerns.
+See the [iOS release status](app-store/release-status.md).
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is

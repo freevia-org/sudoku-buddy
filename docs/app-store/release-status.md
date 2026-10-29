@@ -4,24 +4,22 @@ App Store Connect record: **Sudoku Buddy by Freevia**, Apple ID `6825975489`,
 bundle `org.freevia.sudokubuddy.ios`, Freevia EOOD team `8C782Q826S`.
 
 Version **1.0.2 (1)** was exported and uploaded on 23 October, processed, selected
-and submitted to App Review. The last verified App Store Connect status, checked by
-Publishing on 26 October, was **Rejected / Unresolved Issues** under Guidelines
-4.3(a)/(b) and 4.2.6. Publishing sent the
-nine-point factual response through the Resolution Center for submission
-`14940e4d-2614-4369-b016-e23bb890d0b0`; App Store Connect shows Apple's message count
-increased to two and the developer reply under Antoni Ivanov, confirming receipt.
-At that check the submission remained rejected, and **Resubmit to App Review** was
-disabled. No build was uploaded and no new review submission was made. On 29 October,
-the authenticated Publishing session opened the Sudoku version and review-submission
-routes, but App Store Connect rendered only the page shell without version or review
-details. Therefore the current App Store Connect state remains unverified. The app was
-not available on the App Store at the last verified check.
+and submitted to App Review. Publishing rechecked the submission from App Store Connect
+on 29 October. Current status is **Unresolved Issues**; the submitted item is **iOS App
+1.0.2 (1) — Rejected** under **4.3.0 Design: Spam**. The review notice cites Guidelines
+4.3(a)/(b) and 4.2.6. Apple's latest message is dated 26 October at 6:33 PM; Antoni's
+two replies are dated 10:29 PM and 11:53 PM. There is no later Apple response. The
+nine-point factual response was sent through the Resolution Center for submission
+`14940e4d-2614-4369-b016-e23bb890d0b0`. **Resubmit to App Review** is disabled, and the
+submission contains no newer version/build. No new build was uploaded or submitted.
+The app is not available on the App Store.
 
 The prepared 1.0.3 (build 2) candidate remains local and unuploaded. Do not upload or
 resubmit it as-is: its only changes from the submitted app are About version/build display
-and translations, which do not address the review concerns. The factual, evidence-backed
-Resolution Center response has been sent. Wait for Apple's response or make substantial
-product changes before preparing and submitting a new candidate.
+and translations, which do not address the review concerns. Apple's notice says not to
+resubmit until significant changes if the cited duplication/template concerns apply; the
+nine requested factual answers have already been sent. Wait for Apple's response or make
+substantial product changes before preparing and submitting a new candidate.
 
 The earlier preparation packet predates account setup. Local Apple Distribution
 and Apple Development identities are now available, and App Store Connect is
@@ -42,11 +40,11 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-Current `main` on 29 October is `26e3ea6`. The latest signed iOS candidate below was
-built from `5c615b69c6b11a2eaae86720dddf42df2514e8be`, which is an ancestor of current
-main. A fresh comparison found no changes to `iosApp`, `shared`, or `core` since that
-candidate; later commits affect Android, CI, release tooling, feedback-service tooling,
-and documentation. The candidate matches current iOS sources, but still does not address
+In the 29 October source audit, `origin/main` was `26e3ea6`. The latest signed iOS
+candidate below was built from `5c615b69c6b11a2eaae86720dddf42df2514e8be`, an ancestor
+of that main revision. The comparison found no changes to `iosApp`, `shared`, or `core`
+since the candidate; later commits affect Android, CI, release tooling, feedback-service
+tooling, and documentation. It matches current iOS app sources, but does not address
 Apple's review concerns and lacks physical iOS qualification. Do not submit it as-is.
 
 ### Prepared iOS 1.0.3 candidate from merged source (not uploaded)
