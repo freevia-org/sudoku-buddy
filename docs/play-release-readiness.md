@@ -60,6 +60,29 @@ The detailed 1.0.1/240 handoff below is retained as historical evidence, not the
 release record. The 1.0.2 release notes remain in the historical record; current notes are
 in `docs/play-release-notes-en-US.txt`.
 
+### Android 1.0.5 candidate (29 October 2026; not uploaded)
+
+Candidate workflow [40891588943](https://github.com/freevia-org/sudoku-buddy/actions/runs/40891588943)
+passed for version **1.0.5 (244)** from source commit
+`13c8765bf098a18ee5643cb070b426891f16ca3c`. The workflow ran a clean build with Gradle's
+build cache disabled. Fresh reports show **389 tests, 0 failures and 9 skipped** across the
+app and shared JVM test suites. Debug lint reported **0 errors** (168 warnings and 4 hints).
+
+The signed AAB is 66,616,559 bytes with SHA-256
+`e80855533dda94c6dfda176db0f4529ab01fa7e2a1d04f86c2e4cd5827f27ad6`. Bundle validation,
+package/version metadata, the pinned upload certificate, signatures for all 15 generated
+APK variants, and 16 KB native alignment passed. The bundle contains 20 native libraries
+across four ABIs. The upload certificate SHA-256 is
+`A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`.
+
+This was a packaging-only candidate run: it did not upload to Play or install an APK.
+The generated record remains `NOT APPROVED FOR DISTRIBUTION`; code 244 still needs a
+Play-delivered install and device qualification. The bundled `play-internal-test-results.csv`
+is an older code-120 test record and is not evidence for code 244. Production and Internal
+currently remain on 1.0.4 (243). The next store step is an Internal-only upload through
+Publishing for Play-delivered qualification; keep Production at 243 until that qualification
+passes and the public-release checks are clear.
+
 ## Original Android 1.0.4 candidate (26 October 2026; superseded)
 
 Candidate workflow [40331220517](https://github.com/freevia-org/sudoku-buddy/actions/runs/40331220517)
