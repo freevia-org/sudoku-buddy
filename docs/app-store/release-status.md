@@ -26,6 +26,29 @@ and Apple Development identities are now available, and App Store Connect is
 accessible through the existing Freevia account. Do not create another app record
 or reuse build 1 for a new upload.
 
+## New local shared-image candidate — 1.0.5 (3)
+
+The `codex/ios-share-image-import` branch adds an embedded iOS Share extension and
+an App Group inbox for images received from other apps. The containing app offers
+Read/Keep/Delete this photo and reuses existing recognition, correction, feedback-consent
+and history persistence. This is an unsigned local Release candidate, not an
+uploaded build. Its marketing version aligns with Android 1.0.5; build 3 supersedes
+the preserved, unuploaded iOS 1.0.3 (2) candidate.
+
+The app and extension build locally for simulator and device. Forty-two persistence
+tests (including four inbox and two language-choice tests), three host-app shared-image UI workflows, and
+sixteen resource/localization checks pass. The Release bundle audit verifies the embedded
+extension, matching versions, image-only activation, privacy manifests and absence
+of Debug fixture switches. Current listing materials and fourteen screenshots
+pass validation. The host UI tests stage the inbox through a Debug-only fixture;
+they do not qualify the system share sheet or signed App Group exchange.
+
+New App Group capabilities/profiles and signed iPhone/iPad share-sheet testing are
+still required. No new signed IPA has been exported. See
+[iOS shared images](ios-shared-images.md) for behavior, limits and device checks.
+Apple's existing rejection remains unresolved; this change does not guarantee
+approval. No binary was uploaded or submitted for review.
+
 ## Candidate and verification
 
 The submitted 1.0.2 IPA is in the MacMini release workspace at

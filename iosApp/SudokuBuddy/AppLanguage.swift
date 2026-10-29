@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import SudokuShared
+import PuzzlePersistence
 
 struct AppLocale: Codable, Identifiable {
     let id: String
@@ -48,6 +49,9 @@ final class AppLanguage: ObservableObject {
     }
 
     private func reload() {
+        if let container = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: SharedImageInbox.group) {
+            try? SharedImageLanguage.save(selection: selection, container: container)
+        }
         resolved = selection.isEmpty
             ? Bundle.preferredLocalizations(from: languages.map(\.id), forPreferences: Locale.preferredLanguages).first ?? "en"
             : selection
