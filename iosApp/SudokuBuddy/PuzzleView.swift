@@ -6,6 +6,20 @@ struct PuzzleView: View {
     @ObservedObject private var language = AppLanguage.shared
     @StateObject private var model = PuzzleModel()
     @ObservedObject private var feedback = FeedbackModel.shared
+    @State private var sharedImage: URL?
+    @State private var showSharedImage = false
+    @State private var importingSharedImage = false
+    private var sharedInbox: SharedImageInbox? {
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--shared-image-test") {
+            let args = ProcessInfo.processInfo.arguments
+            let index = args.firstIndex(of: "--history-test-session")
+            let session = index.flatMap { args.indices.contains($0 + 1) ? args[$0 + 1] : nil } ?? "default"
+            return SharedImageInbox(container: FileManager.default.temporaryDirectory.appendingPathComponent("ShareUITest-" + session))
+        }
+        #endif
+        return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: SharedImageInbox.group).map { SharedImageInbox(container: $0) }
+    }
     @State private var reportRevision: String?
     @State private var showReadingReceipts = false
     @Environment(\.scenePhase) private var scenePhase
@@ -28,6 +42,15 @@ struct PuzzleView: View {
     private var layer: String { get { model.overlayMode } nonmutating set { model.overlayMode = newValue } }
     @State private var showEarlierHint = false
     @ScaledMetric private var textScale: CGFloat = 1
+
+    private func offerSharedImage() {
+        guard !model.busy, !importingSharedImage, !showSharedImage, sharedImage == nil,
+              let url = try? sharedInbox?.pending().first else { return }
+        sharedImage = url
+        returnToCamera = false; showScan = false; showHistory = false
+        studyPresentation = nil; showInfo = false; showSettings = false
+        showSharedImage = true
+    }
 
     var body: some View {
         NavigationStack {
@@ -76,7 +99,13 @@ struct PuzzleView: View {
                 if layer == "Hint" { await model.refreshHint() } else { await model.refreshOverlay() }
                 await FeedbackModel.shared.resumeAutomatic()
                 if let snapshot = model.reportSnapshot(automatic: true) { FeedbackModel.shared.offerAutomatic(snapshot) }
-                var startCamera = model.currentID == nil
+                #if DEBUG
+                if ProcessInfo.processInfo.arguments.contains("--shared-image-fixture"),
+                   let url = Bundle.main.url(forResource: "scan-fixture", withExtension: "png"),
+                   let data = try? Data(contentsOf: url) { try? sharedInbox?.enqueue(data) }
+                #endif
+                offerSharedImage()
+                var startCamera = model.currentID == nil && sharedImage == nil
                 #if DEBUG
                 startCamera = startCamera && (!ProcessInfo.processInfo.arguments.contains("--history-test-session") || ProcessInfo.processInfo.arguments.contains("--camera-test-start"))
                 #endif
@@ -97,7 +126,33 @@ struct PuzzleView: View {
                 if let study = inlineStudy, study.givens != model.cluesText || study.progress != model.answersText { closeStudy() }
             }
             .toolbar(.hidden, for: .navigationBar)
-            .onChange(of: scenePhase) { phase in if phase != .active { model.persist(touch: false) } }
+            .onChange(of: scenePhase) { phase in
+                if phase != .active { model.persist(touch: false) } else { offerSharedImage() }
+            }
+            .onChange(of: model.busy) { busy in if !busy { offerSharedImage() } }
+            .alert("Shared Sudoku image", isPresented: $showSharedImage) {
+                Button("Read image") {
+                    guard let url = sharedImage, let inbox = sharedInbox else { return }
+                    sharedImage = nil; importingSharedImage = true
+                    Task {
+                        defer { importingSharedImage = false }
+                        do {
+                            let data = try inbox.read(url)
+                            guard model.persist(touch: false) else { model.message = "Could not save the current puzzle. Try again."; return }
+                            await model.readPhoto(data)
+                            try inbox.remove(url)
+                        } catch { model.message = "Could not read the shared image. You can discard it and share another image." }
+                    }
+                }
+                Button("Discard image", role: .destructive) {
+                    if let url = sharedImage { try? sharedInbox?.remove(url) }
+                    sharedImage = nil
+                    offerSharedImage()
+                }
+                Button("Later", role: .cancel) { sharedImage = nil }
+            } message: {
+                Text("Read the image saved from another app? Your current puzzle stays in History. Shared images stay on this device; existing optional feedback settings still apply. Pending images expire after seven days.")
+            }
             .sheet(item: $studyPresentation, onDismiss: { resumeCamera() }) {
                 StudyView(puzzle: model, mode: $0.mode, onExplore: { technique in returnToCamera = false; studyPresentation = nil; openStudy("strategy", technique: technique) })
                     .presentationDetents([.large]).presentationDragIndicator(.visible)
@@ -309,6 +364,10 @@ struct PuzzleView: View {
             Button { requestScan() } label: { Image(systemName: "camera.fill").frame(width: 48, height: 48) }
                 .accessibilityLabel(tr("Take a new photo")).accessibilityIdentifier("scanPuzzle")
             Menu {
+                Button("Shared images") {
+                    offerSharedImage()
+                    if sharedImage == nil { model.message = "No pending shared images. Share an image from another app to Sudoku Buddy first." }
+                }.accessibilityIdentifier("sharedImages")
                 Button(tr("Strategies")) { openStudy("catalog") }
                 Button(tr("Settings")) { showSettings = true }.accessibilityIdentifier("appSettings")
                 Button(tr("About")) { showInfo = true }.accessibilityIdentifier("appInfo")

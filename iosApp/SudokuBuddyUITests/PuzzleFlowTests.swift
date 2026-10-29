@@ -1,6 +1,37 @@
 import XCTest
 
 final class PuzzleFlowTests: XCTestCase {
+    func testSharedImageLaterAndDiscardDoNotImport() {
+        continueAfterFailure = false
+        let app = isolatedApp()
+        app.launchArguments += ["--shared-image-test", "--shared-image-fixture"]
+        app.launch()
+        XCTAssertTrue(app.alerts["Shared Sudoku image"].waitForExistence(timeout: 15))
+        app.buttons["Later"].tap()
+        app.buttons["moreMenu"].tap(); app.buttons["sharedImages"].tap()
+        XCTAssertTrue(app.alerts["Shared Sudoku image"].waitForExistence(timeout: 5))
+        app.buttons["Discard image"].tap()
+        app.terminate(); app.launchArguments.removeAll { $0 == "--shared-image-fixture" }; app.launch()
+        XCTAssertTrue(app.buttons["loadExample"].waitForExistence(timeout: 15))
+        XCTAssertFalse(app.alerts["Shared Sudoku image"].exists)
+    }
+
+    func testSharedImageImportUsesRecognitionAndSurvivesRelaunch() {
+        continueAfterFailure = false
+        let app = isolatedApp()
+        app.launchArguments += ["--shared-image-test", "--shared-image-fixture"]
+        app.launch()
+        XCTAssertTrue(app.alerts["Shared Sudoku image"].waitForExistence(timeout: 15))
+        app.buttons["Read image"].tap()
+        waitForPuzzleReady(app)
+        XCTAssertTrue(app.buttons["cell-0"].label.contains("5"))
+        app.terminate()
+        app.launchArguments.removeAll { $0 == "--shared-image-fixture" }
+        app.launch()
+        XCTAssertTrue(app.buttons["checkAnswers"].waitForExistence(timeout: 15))
+        XCTAssertFalse(app.alerts["Shared Sudoku image"].exists)
+    }
+
     func testAndroidLayoutPortraitLandscapeAndEditing() {
         continueAfterFailure = false
         let app = isolatedApp(); app.launch()
