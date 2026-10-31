@@ -5,10 +5,20 @@ struct AppInfoView: View {
     @ObservedObject var puzzle: PuzzleModel
     @ObservedObject private var language = AppLanguage.shared
     @Environment(\.dismiss) private var dismiss
+
+    private var installedVersionLabel: String {
+        let info = Bundle.main.infoDictionary ?? [:]
+        let version = info["CFBundleShortVersionString"] as? String ?? ""
+        guard let build = info["CFBundleVersion"] as? String, !build.isEmpty else {
+            return "Sudoku Buddy " + version
+        }
+        return "Sudoku Buddy \(version) (build \(build))"
+    }
+
     var body: some View {
         NavigationStack {
             List {
-                Section { Text("Sudoku Buddy " + (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")).foregroundStyle(AppStyle.secondary) }
+                Section { Text(installedVersionLabel).foregroundStyle(AppStyle.secondary) }
                 Section(tr("What it does")) {
                     Text(tr("Point the camera at a sudoku puzzle on paper. The app reads the printed digits and anything you have written in, solves it, and can give you a hint, check your answers, or show the whole solution."))
                     Text(tr("Recognition can make mistakes, especially with handwriting. Use Read to compare the recognised digits with the photo, and tap any square to correct it. The app marks uncertain readings for review; a confident reading can still be wrong."))
