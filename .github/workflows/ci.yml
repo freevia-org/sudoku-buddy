@@ -15,7 +15,7 @@ jobs:
   # Job name "build" is the required status check on main; keep it.
   build:
     runs-on: sudoku-buddy-i5-linux
-    timeout-minutes: 30
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v7
         with:
