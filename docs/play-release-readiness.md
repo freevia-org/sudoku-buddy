@@ -95,6 +95,15 @@ APK variants, and 16 KB native alignment passed. The bundle contains 20 native l
 across four ABIs. The upload certificate SHA-256 is
 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`.
 
+An earlier no-distribution candidate run [40869583024](https://github.com/freevia-org/sudoku-buddy/actions/runs/40869583024)
+failed in `bundletool validate`: bundletool could not execute its extracted `aapt2` under
+`/tmp` (`Permission denied`). This matches the self-hosted runner's documented `/tmp`
+`noexec` mount; the run log itself does not include a mount-table capture. The workflow now
+redirects Java's temporary directory to the executable `$RUNNER_TEMP/java-tmp`. The later
+successful run above validated and packaged code 244, which is active on both Play tracks.
+Run 40869583024 did not archive a candidate package and is superseded by 40891588943; treat
+it as a runner temporary-directory failure, not an application or bundle-content failure.
+
 This was a packaging-only candidate run: it did not upload to Play or install an APK. A
 later Publishing check found the bundle active on Internal (Play artifact ID
 `4860245793654491695`); the Play Console does not expose the uploaded AAB hash, so an
