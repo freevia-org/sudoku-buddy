@@ -48,13 +48,15 @@ Publishing checked App Store Connect on 1 November: iOS **1.0.2 (build 1)** is *
 the submission history includes its initial rejection under **4.3.0 Design: Spam** and the
 review notice's references to Guidelines 4.3(a)/(b) and 4.2.6. Apple later messaged submission
 `14940e4d-2614-4369-b016-e23bb890d0b0` that it will continue review. This is a progress
-acknowledgment, not approval. The nine requested factual answers were sent. No newer build
-appears in the submission, and Publishing confirmed that iOS **1.0.5 (build 3)** is not in
-TestFlight/Build Uploads. Build 3 is merged in PR #96 and adds share-sheet image recognition to
-match Android. It remains unsigned and unuploaded. Publishing registered and enabled the App
-Group and generated profiles on 1 November, but the Mac iOS release session does not yet have
-the profile files; signed-device qualification also remains. This
-product change does not guarantee Apple approval. See the [iOS release status](app-store/release-status.md).
+acknowledgment, not approval. The nine requested factual answers were sent. Publishing confirmed
+on 1 November that iOS **1.0.5 (build 3)** was not in TestFlight/Build Uploads. Build 3 is
+merged in PR #96 and adds share-sheet image recognition to match Android. A signed App Store
+IPA was exported from current main, audited, and staged in the private Publishing handoff; it
+has not been uploaded to App Store Connect. Publishing registered and enabled the App Group and
+generated matching App Store profiles on 1 November. The signed Simulator share-sheet check
+passed (Keep across relaunch, Read and consume, Delete); physical iPhone/iPad qualification
+remains. This product change does not guarantee Apple approval. See the [iOS release
+status](app-store/release-status.md) and [shared-image qualification notes](app-store/ios-shared-images.md).
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
 passed for merged commit `ac0742dc687f6bb4253dd8279bc8bc9dd50a925b`. The signed AAB is
