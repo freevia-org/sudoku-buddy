@@ -22,24 +22,24 @@ Brand names, numeric limits and SI unit symbols remain language-neutral.
 
 Both app and extension need the App Group
 `group.org.freevia.sudokubuddy.ios`. The new extension bundle ID is
-`org.freevia.sudokubuddy.ios.share`. Register these capabilities and regenerate
-profiles before signed device installation/export. Existing distribution profiles
-for build 2 do not establish this candidate's App Group signing readiness.
+`org.freevia.sudokubuddy.ios.share`. On 1 November, Publishing registered the group,
+enabled it for both bundle IDs, and generated matching App Store profiles. A signed
+1.0.5 (3) archive and IPA were exported; both bundles carry the expected App Group
+entitlement and Freevia EOOD distribution signature. The private handoff copy was
+verified byte-for-byte. It has not been uploaded to App Store Connect.
 
-Provisioning inspection on 29 October 2026: the signed-in Freevia EOOD team
-`8C782Q826S` App Groups list shows **Getting Started with App Groups**, with no
+Historical provisioning inspection on 29 October 2026: the signed-in Freevia EOOD
+team `8C782Q826S` App Groups list showed **Getting Started with App Groups**, with no
 registered groups. The installed Sudoku Store profile
-`3e6bbf27-d022-45b6-a458-f60b34a12f2f` (expires 22 October 2027) covers
-`8C782Q826S.org.freevia.sudokubuddy.ios`, has no App Group entitlement, no device
-list, and debugging disabled. No installed profile covers the share extension.
-No Developer portal capabilities or profiles were changed.
+`3e6bbf27-d022-45b6-a458-f60b34a12f2f` covered the app but had no App Group entitlement,
+and no installed profile covered the share extension. This was superseded on
+1 November by the registered group and matching App Store profiles above.
 
-Publishing must register the App Group and the extension App ID, enable the group
-on both `org.freevia.sudokubuddy.ios` and `org.freevia.sudokubuddy.ios.share`, then
-create matching development/ad hoc profiles with the qualification devices (or
-App Store profiles for a later authorized TestFlight upload). Regenerate the main
-app profile too. Verify signed entitlements on both bundles match the profiles
-before device qualification. Do not reuse the old Store profile as proof of this.
+The signed archive's app and extension entitlements were verified against the new
+App Store profiles. The signed simulator share-sheet check passed on 1 November:
+Keep retained the photo across relaunch, Read recognized the 30-clue fixture and
+consumed it, and Delete removed a second shared image. The simulator inbox ended
+empty. This does not replace physical-device qualification.
 
 Required physical checks before release:
 
@@ -55,7 +55,9 @@ Required physical checks before release:
 Apple's 1.0.2 (1) rejection under 4.3.0 Design: Spam remains unresolved. The sent
 nine-point response includes the approved external-beta and third-party provenance
 facts. This feature does not guarantee approval or establish that Apple's concerns
-are resolved. No upload or review submission is authorized by this change.
+are resolved. Follow the current release-status record and Publishing handoff for
+store actions; this implementation note does not itself authorize an upload or review
+submission.
 
 Implementation references: [Apple share-extension declarations](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html)
 and [required-reason API declarations](https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitypereasons).

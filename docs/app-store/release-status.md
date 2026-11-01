@@ -32,7 +32,8 @@ or reuse build 1 for a new upload.
 Merged in PR #96 at `d72c477`, iOS 1.0.5 (3) adds an embedded Share extension and
 an App Group inbox for images received from other apps. The containing app offers
 Read/Keep/Delete this photo and reuses existing recognition, correction, feedback-consent
-and history persistence. It is an unsigned Release candidate, not an uploaded build.
+and history persistence. A signed App Store IPA is prepared locally and staged in the
+owner-only private Drive handoff folder; it has not been uploaded to App Store Connect.
 Its marketing version aligns with Android 1.0.5; build 3 supersedes
 the preserved, unuploaded iOS 1.0.3 (2) candidate.
 
@@ -42,15 +43,21 @@ sixteen resource/localization checks pass. The Release bundle audit verifies the
 extension, matching versions, image-only activation, privacy manifests and absence
 of Debug fixture switches. Current listing materials and fourteen screenshots
 pass validation. The host UI tests stage the inbox through a Debug-only fixture;
-they do not qualify the system share sheet or signed App Group exchange.
+they do not qualify the system share sheet or signed App Group exchange. On 1 November,
+a signed iPhone Simulator build exercised the real Photos share sheet and App Group inbox:
+Keep retained the image across relaunch, Read recognized the 30-clue fixture and consumed
+the queued item, and Delete removed a second shared image. The final inbox was empty.
+An earlier simulator build with `CODE_SIGNING_ALLOWED=NO` failed because it had no App Group
+entitlement; the signed simulator run passed. This simulator result does not replace the
+physical iPhone/iPad qualification below.
 
 On 1 November, Publishing registered App Group `group.org.freevia.sudokubuddy.ios`, enabled
 it on the app and share extension, and generated App Store profiles for both identifiers.
-The profiles have not yet reached the Mac iOS release workspace, so a signed archive and
-IPA are not ready. Signed iPhone/iPad share-sheet testing is still required. See
-[iOS shared images](ios-shared-images.md) for behavior, limits and device checks.
+The signed archive and IPA were exported and audited; both bundles carry the App Group and
+Freevia EOOD distribution signature. Signed iPhone/iPad share-sheet testing is still required.
+See [iOS shared images](ios-shared-images.md) for behavior, limits and device checks.
 Apple's existing rejection remains unresolved; this change does not guarantee
-approval. No binary was uploaded or submitted for review.
+approval. No binary was uploaded or submitted for review as of this status record.
 
 ### Current-source rebuild (1 November 2026)
 
@@ -62,12 +69,14 @@ embedded share extension, matching app/extension versions, all 71 locale catalog
 privacy manifest and production endpoint, and no Debug fixtures. The unsigned app binary's
 SHA-256 is `82156de5dbe1ba4a8f97966e567e7703ba5552e5f2cf4ed38652baf7392b24a2`.
 
-This is an unsigned local candidate, not an IPA for distribution. On 1 November, Publishing
-registered `group.org.freevia.sudokubuddy.ios`, enabled it for the main app and share extension,
-and generated App Store profiles for both identifiers with Freevia EOOD's distribution
-certificate. The iOS release session still needs to obtain those profiles, sign and audit a new
-archive, and confirm that a distributable IPA is ready. No signed archive or IPA was produced by
-the current-source rebuild; no upload or review submission occurred.
+The unsigned device rebuild is the audited source build for the signed distribution archive
+below. The archive/export was built from `5bb97a7dee3b97a2935a5e12b8ae76a83f8db6b9` with the
+App Store profiles and App Group entitlement. The IPA SHA-256 is
+`9b5223671fbeb32173349e3a036866fb29cd0d425b4ab3d48a1258b8947256a2` (11,192,736 bytes).
+The IPA is staged in the private Publishing handoff folder; its copy was verified byte-for-byte
+against the exported file. It has not been uploaded to App Store Connect or submitted for review.
+Current `main` (`8ab873c`) has no Android, iOS, or shared application-source changes after the
+IPA's source commit.
 
 ## Candidate and verification
 
@@ -83,13 +92,11 @@ the correct bundle/team, with debugging disabled and no device list.
 The upload succeeded with one non-blocking warning: the pinned OpenCV framework
 has no matching dSYM. Preserve this limitation for crash-symbolication work.
 
-The 29 October source audit of signed candidate `5c615b69c6b11a2eaae86720dddf42df2514e8be`
-predates PR #96 and must not be used to claim that the signed IPA matches current iOS
-sources. PR #96 adds the share extension and App Group inbox. The previous 1.0.3 (2)
-candidate below remains historical and does not contain this feature. The current 1.0.5
-(3) candidate has passed local build/resource checks, but still needs App Group signing,
-physical share-sheet qualification, and Apple review strategy; the existing rejection
-remains unresolved.
+The 29 October signed candidate `5c615b69c6b11a2eaae86720dddf42df2514e8be` predates PR #96
+and does not contain the share extension; do not use it for the current release. The previous
+1.0.3 (2) candidate below remains historical. The current 1.0.5 (3) candidate has passed
+App Group signing, export audit, and signed simulator share-sheet verification. Physical-device
+qualification and Apple review strategy remain outstanding; the existing rejection is unresolved.
 
 ### Prepared iOS 1.0.3 candidate from merged source (not uploaded)
 
