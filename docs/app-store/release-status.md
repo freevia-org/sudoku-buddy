@@ -11,9 +11,14 @@ and 4.2.6. Apple's 26 October message at 6:33 PM was followed by Antoni's two re
 10:29 PM and 11:53 PM. The latest message, verified on 30 October for submission
 `14940e4d-2614-4369-b016-e23bb890d0b0`, says Apple will continue its review. This is a
 progress acknowledgment, not an approval. The nine-point factual response was sent through
-the Resolution Center. Publishing also confirmed that build **1.0.5 (3)** is not present in
-TestFlight/Build Uploads and has not been uploaded or submitted.
-The app is not available on the App Store.
+the Resolution Center. On 1 November, build **1.0.5 (3)** was uploaded to App Store Connect,
+processed, and is **Ready to Submit**. Its IPA is not attached to a new App Store version and
+has not been submitted for App Review. No TestFlight tester group has been created. The app
+is not available on the App Store.
+
+Publishing preference: upload the latest qualified iOS build for internal TestFlight
+processing when it is available. Keep public App Review submission and release as separate
+decisions; do not interrupt the active 1.0.2 review.
 
 The prepared 1.0.3 (build 2) candidate remains local and unuploaded. Do not upload or
 resubmit it as-is: its only changes from the submitted app are About version/build display
@@ -32,10 +37,10 @@ or reuse build 1 for a new upload.
 Merged in PR #96 at `d72c477`, iOS 1.0.5 (3) adds an embedded Share extension and
 an App Group inbox for images received from other apps. The containing app offers
 Read/Keep/Delete this photo and reuses existing recognition, correction, feedback-consent
-and history persistence. A signed App Store IPA is prepared locally and staged in the
-owner-only private Drive handoff folder; it has not been uploaded to App Store Connect.
-Its marketing version aligns with Android 1.0.5; build 3 supersedes
-the preserved, unuploaded iOS 1.0.3 (2) candidate.
+and history persistence. The signed App Store IPA was uploaded to App Store Connect on
+1 November and processed as **Ready to Submit**. It is not attached to an App Store version
+and has not been submitted for App Review. Its marketing version aligns with Android 1.0.5;
+build 3 supersedes the preserved, unuploaded iOS 1.0.3 (2) candidate.
 
 The app and extension build locally for simulator and device. Forty-two persistence
 tests (including four inbox and two language-choice tests), three host-app shared-image UI workflows, and
@@ -56,8 +61,8 @@ it on the app and share extension, and generated App Store profiles for both ide
 The signed archive and IPA were exported and audited; both bundles carry the App Group and
 Freevia EOOD distribution signature. Signed iPhone/iPad share-sheet testing is still required.
 See [iOS shared images](ios-shared-images.md) for behavior, limits and device checks.
-Apple's existing rejection remains unresolved; this change does not guarantee
-approval. No binary was uploaded or submitted for review as of this status record.
+Apple's existing rejection remains unresolved; this change does not guarantee approval.
+The active 1.0.2 (1) review remains in progress; build 3 has not been submitted for review.
 
 ### Current-source rebuild (1 November 2026)
 
@@ -73,11 +78,11 @@ The unsigned device rebuild is the audited source build for the signed distribut
 below. The archive/export was built from `5bb97a7dee3b97a2935a5e12b8ae76a83f8db6b9` with the
 App Store profiles and App Group entitlement. The IPA SHA-256 is
 `9b5223671fbeb32173349e3a036866fb29cd0d425b4ab3d48a1258b8947256a2` (11,192,736 bytes).
-The IPA is staged in the private Publishing handoff folder; its copy was verified byte-for-byte
-against the exported file. It has not been uploaded to App Store Connect or submitted for review.
-Current `main` (`5dba36d`) has no Android, iOS, or shared application-source changes after the
-IPA's source commit; PRs #104–#106 since then updated release documentation only. The IPA's
-source commit remains `5bb97a7`.
+The IPA was staged in the private Publishing handoff folder, then uploaded to App Store Connect
+on 1 November. App Store Connect processed it and shows **Ready to Submit**. The uploaded build
+is not attached to an App Store version or submitted for review. The IPA's source commit remains
+`5bb97a7`; current `main` (`f151e36`) adds documentation and workflow updates only after that
+source commit. The existing 1.0.2 (1) review remains in progress.
 
 ## Candidate and verification
 
