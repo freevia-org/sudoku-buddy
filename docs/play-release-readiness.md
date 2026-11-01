@@ -2,26 +2,33 @@
 
 # Sudoku Buddy: final build and Google Play handoff
 
-## Current Play status (verified 30 October 2026)
+## Current Play status (Console and device verified 1 November 2026)
 
-Production **1.0.4 (243)** is **Active** at **100% across 178 countries/regions**, released
-on 26 October at 5:35 PM. Publishing confirmed on 30 October that Internal testing now has
-**1.0.5 (244) Active**, available to internal testers. Production remains **1.0.4 (243)**;
-no production promotion has occurred. Its Play artifact ID is `4860245793654491695`. The
-candidate AAB is recorded locally with SHA-256
-`e80855533dda94c6dfda176db0f4529ab01fa7e2a1d04f86c2e4cd5827f27ad6`, but Publishing has
-not yet confirmed that the Play artifact hash matches it or reported the final release
-notes shown in Console. Keep those items unverified until Publishing checks the live
-release. Managed publishing is off. Play shows two recommendations attached to 243; the
-bitmap downsampling recommendation that affected 242 is no longer attached to the current
-production release.
+Production **1.0.5 (244)** is **Active** at **100% across 178 countries/regions**. Publishing
+verified on 1 November that Internal testing and Production both serve artifact ID
+`4860245793654491695`, with no unpublished changes. The Console shows the release note:
+“You can now share a Sudoku screenshot from another app to recognize and save the puzzle in
+Sudoku Buddy.” Managed publishing is off. The locally verified candidate AAB has SHA-256
+`e80855533dda94c6dfda176db0f4529ab01fa7e2a1d04f86c2e4cd5827f27ad6`; Play Console does not
+display the uploaded AAB hash, so exact server-side hash equality cannot be proven from its UI.
+Publishing confirmed this local candidate was selected for the authorized Internal upload and
+that both tracks use the same artifact ID. Play shows two non-blocking edge-to-edge
+recommendations; the rollout is active.
 
 Internal testing serves **1.0.5 (244)**. The previously used opt-in link is
 <https://play.google.com/apps/internaltest/4701554944860354114>; Publishing has not yet
-independently re-verified the link against the current release. The OnePlus CPH2449 was
-disconnected at the latest ADB check and still had **1.0.4 (243)** installed at its last
-connected check. Install 244 from Internal and repeat the physical recognition smoke test
-before considering production promotion. The Play-delivered build 1.0.3 (242) was installed
+independently re-verified the link against the current release. On 1 November, ADB verified
+that OnePlus CPH2449 (Android 16/API 36) has **1.0.5 (244)** installed by Google Play
+(`com.android.vending`) and open in the app. The review screen for the user's supplied Sudoku
+showed 3/81 empty cells and 9 uncertain squares; it warned that the printed digits did not
+make a solvable puzzle and said a printed digit may have been missed. This is **not a passing
+recognition qualification**. No correction, confirmation, or reading submission was made for
+that sample. After the user supplied a clean puzzle, the same build recognized **25 clues / 56
+empty cells** without an uncertainty or solvability warning. An independent solver found one
+solution for the recognized grid, and the user confirmed that its printed clues match the source
+puzzle. This passes the physical recognition check on a known-valid printed puzzle. No reading
+was submitted. This is a single-device qualification result, not a corpus accuracy estimate.
+The Play-delivered build 1.0.3 (242) was installed
 and launched on the OnePlus on 25 October. A printed Sudoku was
 captured as a 9×9 grid showing 24 empty cells. **Check** reported, “Everything you have
 written so far is right.” On 26 October, the Play-installed 1.0.4 (243) was also installed
@@ -32,19 +39,20 @@ recognized handwritten entries match the solution. The board was not independent
 compared cell-by-cell with a reference transcription, so this remains a device smoke test,
 not a corpus accuracy estimate.
 
-The refreshed 1.0.4 (243) bundle is active on both Internal and Production. Play Console
-showed one non-blocking warning that native debug symbols were not uploaded.
+The 1.0.4 (243) bundle was previously active on both Internal and Production; it has been
+superseded by 1.0.5 (244). Play Console showed one non-blocking warning that native debug
+symbols were not uploaded for 243.
 
-Publishing rechecked App Store Connect on 29 October: iOS **1.0.2 (build 1)** was
-**Rejected / Unresolved Issues** under **4.3.0 Design: Spam**; the review notice also cites
-Guidelines 4.3(a)/(b) and 4.2.6. Apple later messaged submission
+Publishing checked App Store Connect on 1 November: iOS **1.0.2 (build 1)** is **In Review**;
+the submission history includes its initial rejection under **4.3.0 Design: Spam** and the
+review notice's references to Guidelines 4.3(a)/(b) and 4.2.6. Apple later messaged submission
 `14940e4d-2614-4369-b016-e23bb890d0b0` that it will continue review. This is a progress
-acknowledgment, not approval. The nine requested factual answers were sent. **Resubmit to
-App Review** was disabled at the last Console check. No newer build appears in the
-submission, and no build has been uploaded or submitted since 1.0.2 (1). iOS **1.0.5
-(build 3)** is now merged in PR #96 and adds share-sheet image recognition to match Android.
-It remains unsigned and unuploaded while
-App Group capabilities/profiles and signed-device qualification are completed. This
+acknowledgment, not approval. The nine requested factual answers were sent. No newer build
+appears in the submission, and Publishing confirmed that iOS **1.0.5 (build 3)** is not in
+TestFlight/Build Uploads. Build 3 is merged in PR #96 and adds share-sheet image recognition to
+match Android. It remains unsigned and unuploaded. Publishing registered and enabled the App
+Group and generated profiles on 1 November, but the Mac iOS release session does not yet have
+the profile files; signed-device qualification also remains. This
 product change does not guarantee Apple approval. See the [iOS release status](app-store/release-status.md).
 
 Candidate workflow [40184234786](https://github.com/freevia-org/sudoku-buddy/actions/runs/40184234786)
@@ -69,7 +77,7 @@ The detailed 1.0.1/240 handoff below is retained as historical evidence, not the
 release record. The 1.0.2 release notes remain in the historical record; current notes are
 in `docs/play-release-notes-en-US.txt`.
 
-### Android 1.0.5 candidate (29 October 2026; Internal draft attached, not submitted)
+### Android 1.0.5 candidate (29 October 2026; active on both tracks, physical qualification passed)
 
 Candidate workflow [40891588943](https://github.com/freevia-org/sudoku-buddy/actions/runs/40891588943)
 passed for version **1.0.5 (244)** from source commit
@@ -85,21 +93,23 @@ across four ABIs. The upload certificate SHA-256 is
 `A5:10:D8:2B:87:E7:06:9B:53:D5:20:BE:CA:91:5B:35:2A:E9:6C:EA:85:0C:68:CA:00:61:17:E3:5D:75:D3:E5`.
 
 This was a packaging-only candidate run: it did not upload to Play or install an APK. A
-later Publishing check found the bundle attached to an Internal draft (Play artifact ID
-`4860245793654491695`); the Play-side payload hash has not yet been independently checked
-against the candidate AAB hash above. The generated record remains `NOT APPROVED FOR
-DISTRIBUTION`; code 244 still needs a Play-delivered install and device qualification. The
-draft's current release notes are a placeholder. The candidate's bundled en-US release note
+later Publishing check found the bundle active on Internal (Play artifact ID
+`4860245793654491695`); the Play Console does not expose the uploaded AAB hash, so an
+independent server-side hash comparison is unavailable. Publishing confirmed that the local AAB
+above was selected for the Internal upload and that Internal and Production share this artifact
+ID. The generated record remains `NOT APPROVED FOR DISTRIBUTION`, which is the local packaging
+record and does not reflect the later Play release state. Code 244 is installed from Play and
+passed the clean-grid camera check above. The candidate's bundled en-US release note
 is: “You can now share a Sudoku screenshot from another app to recognize and save the puzzle
 in Sudoku Buddy.” The bundled `play-internal-test-results.csv` is an older code-120 test
 record and is not evidence for code 244.
 
-The OnePlus CPH2449 is reachable again over wireless ADB and currently has 1.0.4 (243)
-installed. Install and qualify code 244 from Internal after the draft is made available to
-testers. Keep Production at 243 until that qualification passes and the public-release checks
-are clear. The current `main` commit `264173cc` is a descendant of candidate source commit
-`13c8765`; changes since the candidate affect documentation and the candidate workflow, not
-application source files.
+The OnePlus CPH2449 is reachable again over wireless ADB and currently has 1.0.5 (244)
+installed from Play. Physical recognition passed on a known-valid printed puzzle, with the user
+confirming that the recognized clues match. Internal and Production are now in sync on 244 with
+no unpublished changes. Current `main` commit `5bb97a7` is a descendant of candidate source
+commit `13c8765`;
+no Android app source paths changed after that candidate source commit.
 
 ## Original Android 1.0.4 candidate (26 October 2026; superseded)
 

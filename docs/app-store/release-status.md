@@ -1,19 +1,18 @@
-# iOS release status — 30 October 2026
+# iOS release status — 1 November 2026
 
 App Store Connect record: **Sudoku Buddy by Freevia**, Apple ID `6825975489`,
 bundle `org.freevia.sudokubuddy.ios`, Freevia EOOD team `8C782Q826S`.
 
 Version **1.0.2 (1)** was exported and uploaded on 23 October, processed, selected
-and submitted to App Review. Publishing rechecked the submission from App Store Connect
-on 29 October. The submitted item is **iOS App
-1.0.2 (1) — Rejected** under **4.3.0 Design: Spam**. The review notice cites Guidelines
-4.3(a)/(b) and 4.2.6. Apple's 26 October message at 6:33 PM was followed by Antoni's
-two replies at 10:29 PM and 11:53 PM. The latest message, verified on 30 October for
-submission `14940e4d-2614-4369-b016-e23bb890d0b0`, says Apple will continue its review.
-This is a progress acknowledgment, not an approval. The nine-point factual response was
-sent through the Resolution Center for that submission. **Resubmit to App Review** was
-disabled at the last Console check; no newer version/build appears in the submission.
-No new build was uploaded or submitted.
+and submitted to App Review. Publishing checked App Store Connect on 1 November: the
+submission is currently **In Review**, still using build 1. The review history includes an
+initial rejection under **4.3.0 Design: Spam**, with the notice citing Guidelines 4.3(a)/(b)
+and 4.2.6. Apple's 26 October message at 6:33 PM was followed by Antoni's two replies at
+10:29 PM and 11:53 PM. The latest message, verified on 30 October for submission
+`14940e4d-2614-4369-b016-e23bb890d0b0`, says Apple will continue its review. This is a
+progress acknowledgment, not an approval. The nine-point factual response was sent through
+the Resolution Center. Publishing also confirmed that build **1.0.5 (3)** is not present in
+TestFlight/Build Uploads and has not been uploaded or submitted.
 The app is not available on the App Store.
 
 The prepared 1.0.3 (build 2) candidate remains local and unuploaded. Do not upload or
@@ -45,12 +44,30 @@ of Debug fixture switches. Current listing materials and fourteen screenshots
 pass validation. The host UI tests stage the inbox through a Debug-only fixture;
 they do not qualify the system share sheet or signed App Group exchange.
 
-The App Group `group.org.freevia.sudokubuddy.ios` must be registered and enabled for
-the app and extension, with matching signing profiles. Signed iPhone/iPad share-sheet
-testing is still required. No signed IPA has been exported. See
+On 1 November, Publishing registered App Group `group.org.freevia.sudokubuddy.ios`, enabled
+it on the app and share extension, and generated App Store profiles for both identifiers.
+The profiles have not yet reached the Mac iOS release workspace, so a signed archive and
+IPA are not ready. Signed iPhone/iPad share-sheet testing is still required. See
 [iOS shared images](ios-shared-images.md) for behavior, limits and device checks.
 Apple's existing rejection remains unresolved; this change does not guarantee
 approval. No binary was uploaded or submitted for review.
+
+### Current-source rebuild (1 November 2026)
+
+The unsigned Release device build was rebuilt from current `main` commit
+`5bb97a7dee3b97a2935a5e12b8ae76a83f8db6b9`, including PR #101's About screen build-number
+display. The 1.0.5 (3) device build succeeded; the 16 resource/localization tests, App Store
+materials check (14 screenshots), and release bundle audit passed. The audit confirmed the
+embedded share extension, matching app/extension versions, all 71 locale catalogs, expected
+privacy manifest and production endpoint, and no Debug fixtures. The unsigned app binary's
+SHA-256 is `82156de5dbe1ba4a8f97966e567e7703ba5552e5f2cf4ed38652baf7392b24a2`.
+
+This is an unsigned local candidate, not an IPA for distribution. On 1 November, Publishing
+registered `group.org.freevia.sudokubuddy.ios`, enabled it for the main app and share extension,
+and generated App Store profiles for both identifiers with Freevia EOOD's distribution
+certificate. The iOS release session still needs to obtain those profiles, sign and audit a new
+archive, and confirm that a distributable IPA is ready. No signed archive or IPA was produced by
+the current-source rebuild; no upload or review submission occurred.
 
 ## Candidate and verification
 
