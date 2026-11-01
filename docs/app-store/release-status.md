@@ -13,8 +13,13 @@ and 4.2.6. Apple's 26 October message at 6:33 PM was followed by Antoni's two re
 progress acknowledgment, not an approval. The nine-point factual response was sent through
 the Resolution Center. On 1 November, build **1.0.5 (3)** was uploaded to App Store Connect,
 processed, and is **Ready to Submit**. Its IPA is not attached to a new App Store version and
-has not been submitted for App Review. No TestFlight tester group has been created. The app
-is not available on the App Store.
+has not been submitted for App Review. The last console audit found no manually created
+TestFlight groups. Apple defines **Ready to Submit** as eligible for internal distribution and
+says eligible builds are automatically available to users in the App Store Connect Users group;
+whether those account users can install build 3 was not verified. See [Apple's build-status
+reference](https://developer.apple.com/help/app-store-connect/reference/app-uploads/app-build-statuses)
+and [internal tester guidance](https://developer.apple.com/help/app-store-connect/test-a-beta-version/add-testers-to-builds).
+The app is not available on the App Store.
 
 Publishing preference: upload the latest qualified iOS build for internal TestFlight
 processing when it is available. Keep public App Review submission and release as separate
