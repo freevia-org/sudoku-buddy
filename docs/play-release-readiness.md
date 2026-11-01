@@ -112,6 +112,18 @@ no unpublished changes. Current `main` commit `5bb97a7` is a descendant of candi
 commit `13c8765`;
 no Android app source paths changed after that candidate source commit.
 
+**Screenshot-share qualification (30 October).** The Play-installed 1.0.5 (244) on OnePlus
+CPH2449 received a Sudoku image through Android's share sheet, recognized 30 printed clues,
+and saved the puzzle in history as “30 printed, not started.” The temporary test entry and
+sample image were removed afterward; pre-existing history was preserved, and no app data was
+cleared or APK sideloaded. On the Android 16/API 36 16 KB emulator, an `ACTION_SEND image/png`
+test using split APKs generated from the exact candidate AAB also recognized 30 printed clues
+and saved the puzzle. The emulator splits were locally re-signed because the Play upload key
+was unavailable, so this confirms the flow and 16 KB runtime smoke test, not Play-signature
+behavior. Android System UI initially showed an “isn't responding” prompt during that emulator
+run; choosing **Wait** let the app continue, and no app crash occurred. Local screenshots and
+test artifacts remain untracked and are not included in this public record.
+
 ## Original Android 1.0.4 candidate (26 October 2026; superseded)
 
 Candidate workflow [40331220517](https://github.com/freevia-org/sudoku-buddy/actions/runs/40331220517)
