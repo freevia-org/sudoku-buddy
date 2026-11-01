@@ -4,12 +4,15 @@ The listing copy below reflects the current English store text. Check it against
 release, published privacy policy and submitted Play Data Safety answers before making future
 listing changes.
 
-Current status (29 October 2026): **1.0.4 (code 243)** is active on both Production
-and Internal testing in 178 countries and regions. A **1.0.5 (code 244)** candidate
-is attached to an unsubmitted Internal testing draft and is not available to
-testers. The app supports 71 locales, with model-assisted translation review
-that remains partial. See [the final-build checklist](play-release-readiness.md)
-for historical candidate evidence and remaining qualification limits.
+Current status (verified 1 November 2026): **1.0.5 (code 244)** is Active on Production
+across 178 countries/regions. Google Play Console reports no unpublished changes. Internal
+testing also serves 244; Publishing confirmed both tracks use artifact ID
+`4860245793654491695`. The Play-delivered build passed the screenshot-share → recognize →
+save smoke test on a OnePlus CPH2449. A 16 KB Android 16 emulator run also exercised the
+flow using locally re-signed APK splits generated from the candidate AAB. The app supports
+71 locales, with model-assisted translation review that remains partial. See [the
+final-build checklist](play-release-readiness.md) for detailed release status and
+qualification limits.
 
 This is a dated status snapshot. Recheck Play Console before using it for a
 later release or listing update; older submission details below are historical.
