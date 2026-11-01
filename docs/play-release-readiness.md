@@ -110,9 +110,9 @@ record and is not evidence for code 244.
 The OnePlus CPH2449 is reachable again over wireless ADB and currently has 1.0.5 (244)
 installed from Play. Physical recognition passed on a known-valid printed puzzle, with the user
 confirming that the recognized clues match. Internal and Production are now in sync on 244 with
-no unpublished changes. Current `main` commit `5bb97a7` is a descendant of candidate source
-commit `13c8765`;
-no Android app source paths changed after that candidate source commit.
+no unpublished changes. Current `main` commit `5dba36d` is a descendant of candidate source
+commit `13c8765`; no Android app source paths changed after that candidate source commit. The
+later PRs #104–#106 changed release documentation only.
 
 **Screenshot-share qualification (30 October).** The Play-installed 1.0.5 (244) on OnePlus
 CPH2449 received a Sudoku image through Android's share sheet, recognized 30 printed clues,
