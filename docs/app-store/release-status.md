@@ -75,8 +75,9 @@ App Store profiles and App Group entitlement. The IPA SHA-256 is
 `9b5223671fbeb32173349e3a036866fb29cd0d425b4ab3d48a1258b8947256a2` (11,192,736 bytes).
 The IPA is staged in the private Publishing handoff folder; its copy was verified byte-for-byte
 against the exported file. It has not been uploaded to App Store Connect or submitted for review.
-Current `main` (`8ab873c`) has no Android, iOS, or shared application-source changes after the
-IPA's source commit.
+Current `main` (`5dba36d`) has no Android, iOS, or shared application-source changes after the
+IPA's source commit; PRs #104–#106 since then updated release documentation only. The IPA's
+source commit remains `5bb97a7`.
 
 ## Candidate and verification
 
