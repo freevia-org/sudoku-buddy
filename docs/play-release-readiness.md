@@ -13,7 +13,8 @@ Sudoku Buddy.” Managed publishing is off. The locally verified candidate AAB h
 display the uploaded AAB hash, so exact server-side hash equality cannot be proven from its UI.
 Publishing confirmed this local candidate was selected for the authorized Internal upload and
 that both tracks use the same artifact ID. Play shows two non-blocking edge-to-edge
-recommendations; the rollout is active.
+recommendations; the rollout is active. The source-level review below found the app already
+uses the recommended AndroidX edge-to-edge helper, with no direct deprecated calls in app code.
 
 Internal testing serves **1.0.5 (244)**. The previously used opt-in link is
 <https://play.google.com/apps/internaltest/4701554944860354114>; Publishing has not yet
@@ -146,21 +147,21 @@ Publishing uploaded this exact AAB to Internal testing, where Play shows 243 Act
 available to testers. After device qualification passed, Publishing released the same
 bundle to Production at 100%; Play shows 243 Active across 178 countries/regions.
 
-### Play Console recommendations on 242 and 243 (checked 26 October 2026)
+### Play Console recommendations on 242–244 (checked 1 November 2026)
 
-The Production dashboard previously reported three recommendations on release 242. The
-latest check shows two attached to current release 243: the edge-to-edge warning and the
-deprecated API warning. The bitmap-downsampling recommendation is still listed on 242 but
-no longer appears on 243.
+Play currently shows two non-blocking edge-to-edge recommendations on 244. Source review
+found no app-owned deprecated calls, and Android app files have not changed since the 244
+candidate was built. The bitmap-downsampling recommendation from 242 was resolved in 243 and
+is not attached to the current release.
 
-- **Edge-to-edge may not display for all users.** This remains attached to 243 even though
-  the refreshed candidate includes PR #70's `WindowCompat.enableEdgeToEdge` migration.
+- **Edge-to-edge may not display for all users.** This remains attached to 244 even though
+  the current source includes PR #70's `WindowCompat.enableEdgeToEdge` migration.
   The current app source still calls that recommended helper. Android 15+ also enforces
   edge-to-edge because the app targets SDK 36. Compose screens apply status-bar,
   navigation-bar, or safe-drawing insets as appropriate. The Play card appears stale or
   generic for the current implementation; the code already enables edge-to-edge and handles
   insets.
-- **Deprecated edge-to-edge APIs.** This remains attached to 243. Play identified
+- **Deprecated edge-to-edge APIs.** This remains attached to 244. Play identified
   `Window.setStatusBarColor`, `Window.setNavigationBarColor`, and
   `LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES`, with the call site attributed to
   `MainActivity.onCreate`. The app does not call these APIs directly; that method invokes
