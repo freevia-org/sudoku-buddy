@@ -85,9 +85,12 @@ in `docs/play-release-notes-en-US.txt`.
 ### Android 1.0.5 candidate (29 October 2026; active on both tracks, physical qualification passed)
 
 Candidate workflow [40891588943](https://github.com/freevia-org/sudoku-buddy/actions/runs/40891588943)
-passed for version **1.0.5 (244)** from source commit
-`13c8765bf098a18ee5643cb070b426891f16ca3c`. The workflow ran a clean build with Gradle's
-build cache disabled. Fresh reports show **389 tests, 0 failures and 9 skipped** across the
+passed for version **1.0.5 (244)** on workflow revision
+`707a54569443bf45017aa11392bf078663cc906d` (`codex/play-candidate-fresh-tests`). Its only
+file difference from Android source commit `13c8765bf098a18ee5643cb070b426891f16ca3c` was
+`.github/workflows/play-candidate.yml`; the packaged Android app source therefore matches
+that release source commit. The workflow ran a clean build with Gradle's build cache disabled.
+Fresh reports show **389 tests, 0 failures and 9 skipped** across the
 app and shared JVM test suites. Debug lint reported **0 errors** (168 warnings and 4 hints).
 
 The signed AAB is 66,616,559 bytes with SHA-256
@@ -121,9 +124,9 @@ record and is not evidence for code 244.
 The OnePlus CPH2449 is reachable again over wireless ADB and currently has 1.0.5 (244)
 installed from Play. Physical recognition passed on a known-valid printed puzzle, with the user
 confirming that the recognized clues match. Internal and Production are now in sync on 244 with
-no unpublished changes. Current `main` commit `5dba36d` is a descendant of candidate source
-commit `13c8765`; no Android app source paths changed after that candidate source commit. The
-later PRs #104–#106 changed release documentation only.
+no unpublished changes. No Android application source paths have changed on `main` since
+candidate source commit `13c8765`; later changes include release documentation, workflow
+updates, and iOS shared-image work.
 
 **Screenshot-share qualification (30 October).** The Play-installed 1.0.5 (244) on OnePlus
 CPH2449 received a Sudoku image through Android's share sheet, recognized 30 printed clues,

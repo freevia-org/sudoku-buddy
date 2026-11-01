@@ -81,8 +81,9 @@ App Store profiles and App Group entitlement. The IPA SHA-256 is
 The IPA was staged in the private Publishing handoff folder, then uploaded to App Store Connect
 on 1 November. App Store Connect processed it and shows **Ready to Submit**. The uploaded build
 is not attached to an App Store version or submitted for review. The IPA's source commit remains
-`5bb97a7`; current `main` (`f151e36`) adds documentation and workflow updates only after that
-source commit. The existing 1.0.2 (1) review remains in progress.
+`5bb97a7`; no Android, iOS, or shared application source files have changed on `main` since that
+commit. Subsequent changes have been repository documentation updates only. The existing
+1.0.2 (1) review remains in progress.
 
 ## Candidate and verification
 
