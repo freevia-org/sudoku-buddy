@@ -7,14 +7,6 @@ on:
         description: Final reviewed commit SHA to build
         required: true
         type: string
-      version_code:
-        description: Integer greater than every code already uploaded to Play
-        required: true
-        type: string
-      version_name:
-        description: Store version name to verify against the built bundle
-        required: true
-        type: string
 
 permissions:
   contents: read
@@ -23,9 +15,6 @@ jobs:
   candidate:
     runs-on: sudoku-buddy-i5-linux
     timeout-minutes: 90
-    env:
-      BUILD_NUMBER: ${{ inputs.version_code }}
-      VERSION_NAME: ${{ inputs.version_name }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -36,8 +25,17 @@ jobs:
           CANDIDATE_REVISION: ${{ inputs.revision }}
         run: |
           [[ "$CANDIDATE_REVISION" =~ ^[0-9a-fA-F]{40}$ ]] || { echo 'Use a full commit SHA'; exit 1; }
-          [[ "$BUILD_NUMBER" =~ ^[1-9][0-9]*$ ]] || { echo 'Use a positive version code'; exit 1; }
-          test "$BUILD_NUMBER" -le 2100000000
+          RELEASE_VERSION="$(python3 -c 'import json; print(json.load(open("release-version.json", encoding="utf-8"))["canonical"])')"
+          [[ "$RELEASE_VERSION" =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)\+([1-9][0-9]{0,2})$ ]] || { echo 'Use MAJOR.MINOR.CODE+BUILD in release-version.json'; exit 1; }
+          major=${BASH_REMATCH[1]}; minor=${BASH_REMATCH[2]}; code=${BASH_REMATCH[3]}; BUILD_NUMBER=${BASH_REMATCH[4]}
+          test "$major" -le 20 && test "$minor" -le 99 && test "$code" -le 999
+          play_code=$((major * 100000000 + minor * 1000000 + code * 1000 + BUILD_NUMBER))
+          test "$play_code" -le 2100000000
+          VERSION_NAME="$major.$minor.$code"
+          echo "RELEASE_VERSION=$RELEASE_VERSION" >> "$GITHUB_ENV"
+          echo "VERSION_NAME=$VERSION_NAME" >> "$GITHUB_ENV"
+          echo "BUILD_NUMBER=$BUILD_NUMBER" >> "$GITHUB_ENV"
+          echo "PLAY_VERSION_CODE=$play_code" >> "$GITHUB_ENV"
           test "$(git rev-parse HEAD)" = "${CANDIDATE_REVISION,,}"
           git fetch origin main --no-tags
           git merge-base --is-ancestor "$CANDIDATE_REVISION" origin/main || {
@@ -107,7 +105,7 @@ jobs:
           java -jar "$bundletool" validate --bundle="$bundle" > "$evidence/bundle-validation.txt"
           java -jar "$bundletool" dump manifest --bundle="$bundle" --module=base > "$evidence/manifest.xml"
           java -jar "$bundletool" dump config --bundle="$bundle" > "$evidence/bundle-config.json"
-          python3 tools/release/check_play_bundle.py "$bundle" --manifest "$evidence/manifest.xml" --config "$evidence/bundle-config.json" --version-code "$BUILD_NUMBER" --version-name "$VERSION_NAME" > "$evidence/bundle-audit.txt"
+          python3 tools/release/check_play_bundle.py "$bundle" --manifest "$evidence/manifest.xml" --config "$evidence/bundle-config.json" --version-code "$PLAY_VERSION_CODE" --version-name "$VERSION_NAME" > "$evidence/bundle-audit.txt"
           jarsigner -J-Duser.language=en -J-Duser.country=US -verify -verbose -certs "$bundle" > "$evidence/signature-verification.txt"
           grep -Fq 'jar verified.' "$evidence/signature-verification.txt"
           # jarsigner can report success even when extra payload entries are unsigned.
@@ -141,19 +139,19 @@ jobs:
           done < <(find "$RUNNER_TEMP/candidate-apks" -type f -name '*.apk' -print0)
           test "$count" -gt 0
           printf '\nVerified %s generated APKs; no installation performed.\n' "$count" >> "$evidence/generated-apks.txt"
-          python3 tools/release/package_candidate.py prepare --bundle "$bundle" --evidence "$evidence" --output release-candidate --version-code "$BUILD_NUMBER" --version-name "$VERSION_NAME"
+          python3 tools/release/package_candidate.py prepare --bundle "$bundle" --evidence "$evidence" --output release-candidate --version-code "$PLAY_VERSION_CODE" --version-name "$VERSION_NAME"
           python3 tools/release/package_candidate.py verify release-candidate
       - name: Archive candidate for review only
         uses: actions/upload-artifact@v7
         with:
-          name: sudoku-buddy-play-candidate-${{ inputs.version_code }}
+          name: sudoku-buddy-play-candidate-${{ github.run_id }}
           path: release-candidate/
           if-no-files-found: error
       - name: Archive tests and lint
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: sudoku-buddy-candidate-checks-${{ inputs.version_code }}
+          name: sudoku-buddy-candidate-checks-${{ github.run_id }}
           path: |
             **/build/reports/tests/**
             app/build/reports/lint-results*

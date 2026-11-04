@@ -7,6 +7,26 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+private data class ReleaseIdentity(val canonical: String, val marketingVersion: String, val build: Int, val playVersionCode: Int)
+
+private fun releaseIdentity(): ReleaseIdentity {
+    val manifest = rootProject.file("release-version.json")
+    require(manifest.isFile) { "Missing canonical release-version.json" }
+    val canonical = Regex("\"canonical\"\\s*:\\s*\"([^\"]+)\"")
+        .find(manifest.readText())?.groupValues?.get(1)
+        ?: throw GradleException("release-version.json must contain canonical MAJOR.MINOR.CODE+BUILD")
+    val parts = Regex("^(\\d+)\\.(\\d+)\\.(\\d+)\\+([1-9]\\d{0,2})$").matchEntire(canonical)
+        ?.groupValues?.drop(1)?.map { it.toLong() }
+        ?: throw GradleException("Release version must be MAJOR.MINOR.CODE+BUILD: $canonical")
+    val (major, minor, code, build) = parts
+    require(major in 0L..20L && minor in 0L..99L && code in 0L..999L && build in 1L..999L) {
+        "Release version components exceed the supported Play versionCode range"
+    }
+    val value = major * 100_000_000L + minor * 1_000_000L + code * 1_000L + build
+    require(value <= 2_100_000_000L) { "Derived Play versionCode exceeds Google's limit" }
+    return ReleaseIdentity(canonical, "$major.$minor.$code", build.toInt(), value.toInt())
+}
+
 android {
     namespace = "org.freevia.sudokubuddy"
     compileSdk = 36
@@ -16,12 +36,10 @@ android {
         minSdk = 26
         targetSdk = 36
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        // CI supplies a build number so every distributed build is distinct;
-        // locally it stays 1.
-        versionCode = (System.getenv("BUILD_NUMBER") ?: "1").toIntOrNull()
-            ?.takeIf { it in 1..2_100_000_000 }
-            ?: error("BUILD_NUMBER must be a positive Play version code, at most 2100000000")
-        versionName = System.getenv("VERSION_NAME") ?: "1.0.5"
+        // All store counters are derived from one source-controlled identity.
+        val release = releaseIdentity()
+        versionName = release.marketingVersion
+        versionCode = release.playVersionCode
         buildConfigField("String", "MISREAD_SUBMISSION_ENDPOINT", "\"\"")
     }
 
