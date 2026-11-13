@@ -27,4 +27,24 @@ class AtomicStorageTest {
             directory.delete()
         }
     }
+
+    @Test
+    fun `only stale temporaries of a killed write are swept`() {
+        val directory = Files.createTempDirectory("sudoku-history").toFile()
+        try {
+            val now = 10_000_000_000L
+            val saved = directory.resolve("123.jpg").apply { writeText("photo"); setLastModified(1_000L) }
+            val abandoned = directory.resolve("123.jpg456.pending")
+                .apply { writeText("half"); setLastModified(now - 2 * 60 * 60 * 1000L) }
+            val inFlight = directory.resolve("124.txt789.pending")
+                .apply { writeText("writing"); setLastModified(now - 1_000L) }
+            sweepAbandonedWrites(directory, now)
+            assertEquals(false, abandoned.exists())
+            assertEquals(true, inFlight.exists())
+            assertEquals("photo", saved.readText())
+        } finally {
+            directory.listFiles()?.forEach { it.delete() }
+            directory.delete()
+        }
+    }
 }

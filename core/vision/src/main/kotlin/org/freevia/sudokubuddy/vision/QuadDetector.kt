@@ -67,34 +67,13 @@ object QuadDetector {
     /** Every working size worth trying, cheapest first. */
     fun workingEdges(): List<Double> = WORKING_EDGES
 
-    fun detect(image: GrayImage, workingEdge: Double): List<Quad> {
-        require(workingEdge.isFinite() && workingEdge > 0.0) { "working edge must be positive and finite" }
-        val full = image.toMat()
-        val scale = workingEdge / maxOf(full.width(), full.height()).toDouble()
-
-        val small = Mat()
-        val blurred = Mat()
-        val binary = Mat()
-        val closed = Mat()
-        val kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(3.0, 3.0))
+    fun detect(image: GrayImage, workingEdge: Double): List<Quad> = closedInk(image, workingEdge) { closed, scale ->
         val contours = mutableListOf<MatOfPoint>()
         val hierarchy = Mat()
         try {
-        Imgproc.resize(full, small, Size(
-            (full.width() * scale).coerceAtLeast(1.0),
-            (full.height() * scale).coerceAtLeast(1.0),
-        ), 0.0, 0.0, Imgproc.INTER_LINEAR_EXACT)
-        Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
-        // Inverted, so ink becomes white and the grid lines form a connected structure.
-        Imgproc.adaptiveThreshold(
-            blurred, binary, 255.0,
-            Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 7.0,
-        )
-        // Close small gaps where a printed line is broken by paper texture or a fold.
-        Imgproc.morphologyEx(binary, closed, Imgproc.MORPH_CLOSE, kernel)
         Imgproc.findContours(closed, contours, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE)
 
-        val frameArea = small.width().toDouble() * small.height()
+        val frameArea = closed.width().toDouble() * closed.height()
 
         // Sorted by size, but filtered for shape first. Taking the ten largest contours
         // and hoping one is the grid works on a clean table and fails on a patterned one:
@@ -112,15 +91,57 @@ object QuadDetector {
         //
         // Deciding which shape is a grid is exactly what [GridScorer] is for, and it
         // answers with a number rather than a guess. This stage only has to not lose it.
-        return contours
-            .filter { Imgproc.contourArea(it) > MIN_AREA_FRACTION * frameArea }
-            .sortedByDescending { Imgproc.contourArea(it) }
-            .take(MAX_CANDIDATES)
-            .map { contour -> toQuad(contour, scale) }
+        largest(contours, MIN_AREA_FRACTION * frameArea).map { contour -> toQuad(contour, scale) }
         } finally {
             contours.forEach { it.release() }
-            listOf(full, small, blurred, binary, closed, kernel, hierarchy).forEach { it.release() }
+            hierarchy.release()
         }
+    }
+
+    /**
+     * The frame at one working size with its ink closed up, and the scale that took it there.
+     *
+     * Shared with [CellGrid], which traces the same picture for its holes instead of its
+     * outlines. The two must not drift apart, because a grid's cells are looked for
+     * exactly where its border was not found.
+     */
+    internal fun <T> closedInk(image: GrayImage, workingEdge: Double, block: (closed: Mat, scale: Double) -> T): T {
+        require(workingEdge.isFinite() && workingEdge > 0.0) { "working edge must be positive and finite" }
+        val mats = mutableListOf<Mat>()
+        try {
+            val full = image.toMat().also { mats += it }
+            val scale = workingEdge / maxOf(full.width(), full.height()).toDouble()
+            val small = Mat().also { mats += it }
+            val blurred = Mat().also { mats += it }
+            val binary = Mat().also { mats += it }
+            val closed = Mat().also { mats += it }
+            val kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(3.0, 3.0)).also { mats += it }
+            Imgproc.resize(full, small, Size(
+                (full.width() * scale).coerceAtLeast(1.0),
+                (full.height() * scale).coerceAtLeast(1.0),
+            ), 0.0, 0.0, Imgproc.INTER_LINEAR_EXACT)
+            Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
+            // Inverted, so ink becomes white and the grid lines form a connected structure.
+            Imgproc.adaptiveThreshold(
+                blurred, binary, 255.0,
+                Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 7.0,
+            )
+            // Close small gaps where a printed line is broken by paper texture or a fold.
+            Imgproc.morphologyEx(binary, closed, Imgproc.MORPH_CLOSE, kernel)
+            return block(closed, scale)
+        } finally {
+            mats.forEach { it.release() }
+        }
+    }
+
+    /** The largest contours over [minimum] in area, largest first, each measured once. */
+    private fun largest(contours: List<MatOfPoint>, minimum: Double): List<MatOfPoint> {
+        val areas = DoubleArray(contours.size) { Imgproc.contourArea(contours[it]) }
+        return contours.indices
+            .filter { areas[it] > minimum }
+            .sortedByDescending { areas[it] }
+            .take(MAX_CANDIDATES)
+            .map { contours[it] }
     }
 
     /** Long rules survive where thresholding welds a grid border to surrounding ink. */
@@ -149,9 +170,7 @@ object QuadDetector {
                 org.opencv.core.Core.bitwise_or(horizontal, vertical, rules)
                 Imgproc.findContours(rules, contours, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE)
                 val minimum = small.total() * MIN_AREA_FRACTION
-                contours.filter { Imgproc.contourArea(it) > minimum }
-                    .sortedByDescending { Imgproc.contourArea(it) }
-                    .take(MAX_CANDIDATES).map { toQuad(it, scale) }
+                largest(contours, minimum).map { toQuad(it, scale) }
             } finally {
                 contours.forEach { it.release() }
                 listOf(small, binary, horizontal, vertical, rules, hierarchy, hKernel, vKernel)

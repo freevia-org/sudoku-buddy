@@ -27,7 +27,7 @@ public struct RefusedScanStore: Sendable {
         try bytes.write(to: photoURL(scan.id), options: .atomic)
         do { try JSONEncoder().encode(scan).write(to: recordURL(scan.id), options: .atomic) }
         catch { try? FileManager.default.removeItem(at: photoURL(scan.id)); throw error }
-        for old in list().dropFirst(6) { try discard(old) }
+        for old in list().dropFirst(6) { try? discard(old) }
         return scan
     }
     public func photo(_ scan: RefusedScan) throws -> Data { try Data(contentsOf: photoURL(scan.id)) }

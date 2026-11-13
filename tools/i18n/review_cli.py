@@ -178,9 +178,6 @@ def main():
     parser.add_argument("--apply-completed", action="store_true",
                         help="Apply verified completed reports to editorial overrides without model requests")
     args = parser.parse_args()
-    cli = shutil.which("codex.exe") or shutil.which("codex")
-    if not cli:
-        raise RuntimeError("Codex CLI is not installed")
     entries = read(ROOT / "app/src/main/assets/messages.json")
     languages = read(HERE / "languages.json")
     cache = HERE / "drafts/review"
@@ -188,6 +185,9 @@ def main():
     if args.apply_completed:
         apply_completed(entries, args.languages or languages, cache)
         return
+    cli = shutil.which("codex.exe") or shutil.which("codex")
+    if not cli:
+        raise RuntimeError("Codex CLI is not installed")
     failed = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         pending = {pool.submit(review, cli, tag, languages[tag], entries, cache): tag

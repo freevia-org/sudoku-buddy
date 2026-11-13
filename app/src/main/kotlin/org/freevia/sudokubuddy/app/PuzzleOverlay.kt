@@ -14,6 +14,7 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
+import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.drawText
@@ -175,15 +176,7 @@ private fun DrawScope.drawGhost(
             drawStyle = Stroke(width = squares.unit * 0.045f),
         ),
     )
-    val at = squares.topLeft(index)
-    val cell = squares.size(index)
-    drawText(
-        layout,
-        topLeft = Offset(
-            at.x + (cell.width - layout.size.width) / 2f,
-            at.y + (cell.height - layout.size.height) / 2f,
-        ),
-    )
+    drawInMiddle(layout, squares, index)
 }
 
 /**
@@ -281,13 +274,13 @@ private fun DrawScope.drawOverlayInLayer(state: PuzzleState, measurer: TextMeasu
             // A shared unit connects a reserved pattern with the cells it excludes.
             // Never invent a causal arrow for patterns whose evidence spans units.
             val support = move.supportingCells
-            if (support.isNotEmpty()) for (target in move.fromCells) {
-                val shared = target in VisualHint.causalTargets(move)
-                if (shared) {
-                    val centre = support.map { squares.centre(it) }.reduce { a, b -> a + b } / support.size.toFloat()
-                    drawArrow(centre, squares.centre(target), squares.unit)
+            if (support.isNotEmpty()) {
+                val causal = VisualHint.causalTargets(move)
+                val centre = support.map { squares.centre(it) }.reduce { a, b -> a + b } / support.size.toFloat()
+                for (target in move.fromCells) {
+                    if (target in causal) drawArrow(centre, squares.centre(target), squares.unit)
+                    squares.outline(this, target, HINT_EVIDENCE, squares.unit * 0.04f, 0.10f)
                 }
-                squares.outline(this, target, HINT_EVIDENCE, squares.unit * 0.04f, 0.10f)
             }
         }
     }
@@ -534,16 +527,7 @@ private fun DrawScope.drawReadDigit(
             fontWeight = FontWeight.Bold,
         ),
     )
-    val at = squares.topLeft(index)
-    val cell = squares.size(index)
-    drawText(
-        layout,
-        topLeft = Offset(
-            at.x + (cell.width - layout.size.width) / 2f,
-            at.y + (cell.height - layout.size.height) / 2f,
-        ),
-        blendMode = BlendMode.Clear,
-    )
+    drawInMiddle(layout, squares, index, BlendMode.Clear)
 }
 
 /**
@@ -605,6 +589,15 @@ private fun DrawScope.drawCentred(
             fontStyle = if (hypothetical) androidx.compose.ui.text.font.FontStyle.Italic else androidx.compose.ui.text.font.FontStyle.Normal,
         ),
     )
+    drawInMiddle(layout, squares, index)
+}
+
+private fun DrawScope.drawInMiddle(
+    layout: TextLayoutResult,
+    squares: Squares,
+    index: Int,
+    blendMode: BlendMode = DrawScope.DefaultBlendMode,
+) {
     val at = squares.topLeft(index)
     val cell = squares.size(index)
     drawText(
@@ -613,5 +606,6 @@ private fun DrawScope.drawCentred(
             at.x + (cell.width - layout.size.width) / 2f,
             at.y + (cell.height - layout.size.height) / 2f,
         ),
+        blendMode = blendMode,
     )
 }

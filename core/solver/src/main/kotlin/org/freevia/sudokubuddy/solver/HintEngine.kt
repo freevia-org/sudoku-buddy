@@ -69,15 +69,16 @@ interface HintEngine {
  * produces wrong advice. Checking answers is a separate question with its own answer.
  */
 internal fun progressGrid(grid: Grid, solution: Grid): Grid {
-    var out = grid.givensOnly()
-    for (i in 0 until Coordinates.CELL_COUNT) {
+    return Grid.of(List(Coordinates.CELL_COUNT) { i ->
         val cell = grid[i]
         val digit = cell.digit
-        if (cell.source == CellSource.GUESS && digit != null && digit == solution[i].digit) {
-            out = out.with(i, Cell.given(digit))
+        when {
+            cell.source == CellSource.GIVEN -> cell
+            cell.source == CellSource.GUESS && digit != null && digit == solution[i].digit ->
+                Cell.given(digit)
+            else -> Cell.Empty
         }
-    }
-    return out
+    })
 }
 
 /** Cells with nothing written in them at all - the only place a hint is worth putting. */
@@ -92,6 +93,11 @@ object RevealHintEngine : HintEngine {
 
     override fun nextHint(grid: Grid): Hint? {
         val solution = (Solver.solve(grid) as? SolveResult.Unique)?.solution ?: return null
+        return reveal(grid, solution)
+    }
+
+    /** [nextHint] for a caller that has already solved [grid]. */
+    internal fun reveal(grid: Grid, solution: Grid): Hint? {
         val state = SolverState.candidatesOnly(progressGrid(grid, solution)) ?: return null
 
         val target = openCells(grid).minByOrNull { state.candidatesAt(it).size } ?: return null
@@ -124,11 +130,11 @@ object ExplainedHintEngine : HintEngine {
         // on the board, so this cannot run longer than there are candidates.
         repeat(Coordinates.CELL_COUNT * 9) {
             val deduction = TechniqueSolver.nextDeduction(state)
-                ?: return RevealHintEngine.nextHint(grid)
+                ?: return RevealHintEngine.reveal(grid, solution)
 
             if (deduction is Deduction.Placement && deduction.index in open) {
                 val recorded = teachingStep(state, deduction, proof)
-                    ?: return RevealHintEngine.nextHint(grid)
+                    ?: return RevealHintEngine.reveal(grid, solution)
                 proof += recorded
                 return Hint.Explained(
                     technique = deduction.technique,
@@ -141,8 +147,8 @@ object ExplainedHintEngine : HintEngine {
                 )
             }
             proof += teachingStep(state, deduction, proof)
-                ?: return RevealHintEngine.nextHint(grid)
+                ?: return RevealHintEngine.reveal(grid, solution)
         }
-        return RevealHintEngine.nextHint(grid)
+        return RevealHintEngine.reveal(grid, solution)
     }
 }

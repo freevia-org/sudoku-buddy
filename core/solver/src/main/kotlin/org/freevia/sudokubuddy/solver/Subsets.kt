@@ -93,16 +93,16 @@ class HiddenSubset(private val size: Int) : Technique {
     override fun findAll(state: SolverState): List<Deduction> {
         val out = mutableListOf<Deduction>()
         for (unit in Coordinates.units) {
-            val missing = (1..9).filter { digit ->
-                unit.none { state.valueAt(it) == digit } && state.placesFor(unit, digit).isNotEmpty()
+            // Each digit must still fit somewhere, or this is not a subset at all.
+            val places = (1..9).associateWith { digit ->
+                if (unit.none { state.valueAt(it) == digit }) state.placesFor(unit, digit) else emptyList<Int>()
             }
+            val missing = (1..9).filter { places.getValue(it).isNotEmpty() }
             if (missing.size <= size) continue
 
             for (group in combinations(missing, size)) {
-                val homes = group.flatMap { state.placesFor(unit, it) }.toSet()
+                val homes = group.flatMap { places.getValue(it) }.toSet()
                 if (homes.size != size) continue
-                // Each digit must still fit somewhere, or this is not a subset at all.
-                if (group.any { state.placesFor(unit, it).isEmpty() }) continue
 
                 val reserved = CandidateSet(group.fold(0) { bits, d -> bits or CandidateSet.of(d).bits })
                 for (digit in 1..9) {

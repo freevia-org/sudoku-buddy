@@ -1,22 +1,19 @@
 @file:OptIn(kotlinx.cinterop.ExperimentalForeignApi::class)
 package org.freevia.sudokubuddy.shared
 
-import kotlinx.cinterop.*
 import platform.Foundation.NSData
-import platform.posix.memcpy
 import org.freevia.sudokubuddy.vision.*
 
 /** Stateful, camera-queue-owned bridge to the exact Android capture policy. */
 class IosCaptureAdvisor {
     private val policy = CapturePolicy()
     fun reset() = policy.reset()
+    // A frame that cannot be judged is skipped by the caller, which cannot catch an exception.
     fun observe(width: Int, height: Int, luminance: NSData, corners: String,
-                gridSide: Int, gridLuminance: NSData, candidates: Int, nearGrid: Boolean): String {
+                gridSide: Int, gridLuminance: NSData, candidates: Int, nearGrid: Boolean): String = runCatching {
         fun gray(w: Int, h: Int, data: NSData): GrayImage {
             require(w > 0 && h > 0 && w <= 1600 && h <= 1600 && data.length.toLong() == w.toLong() * h)
-            val bytes = ByteArray(data.length.toInt())
-            bytes.usePinned { memcpy(it.addressOf(0), data.bytes, data.length) }
-            return GrayImage(w, h, bytes)
+            return GrayImage(w, h, data.toByteArray())
         }
         val points = corners.split(',').mapNotNull { it.toDoubleOrNull() }
         val quad = if (points.size == 8 && points.all { it.isFinite() && it in 0.0..1.0 })
@@ -26,7 +23,7 @@ class IosCaptureAdvisor {
             policy.adviseLocated(width, height, quad, CapturePhotometry.of(gray(gridSide, gridSide, gridLuminance)))
         else policy.missed(width, height, CapturePhotometry.of(gray(width, height, luminance)), candidates, nearGrid,
             quad?.corners?.map { Corner(it.x/width, it.y/height) })
-        return "{\"message\":" + jsonString(advice.message) + ",\"ready\":" + advice.readyToCapture +
+        "{\"message\":" + jsonString(advice.message) + ",\"ready\":" + advice.readyToCapture +
             ",\"accepted\":" + advice.outlineAccepted + "}"
-    }
+    }.getOrElse { policy.reset(); "{}" }
 }

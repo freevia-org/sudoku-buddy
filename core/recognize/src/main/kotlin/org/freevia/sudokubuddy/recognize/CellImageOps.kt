@@ -9,6 +9,24 @@ internal fun labelCellInk(cell: GrayImage): InkMask = PortableCellOps.label(cell
 internal fun resizeCellGlyph(glyph: FloatArray, width: Int, height: Int, newWidth: Int, newHeight: Int): FloatArray =
     PortableCellOps.resize(glyph,width,height,newWidth,newHeight)
 
+/** The level at index size/2 of the sorted samples, counted rather than sorted. */
+internal fun medianLevel(pixels: ByteArray, offset: Int = 0, step: Int = 1): Int {
+    val histogram = IntArray(256)
+    var samples = 0
+    var at = offset
+    while (at < pixels.size) {
+        histogram[pixels[at].toInt() and 0xFF]++
+        samples++
+        at += step
+    }
+    var remaining = samples / 2
+    for (level in 0..255) {
+        remaining -= histogram[level]
+        if (remaining < 0) return level
+    }
+    return 0
+}
+
 /** Native equivalents of OpenCV's reflected box mean, 2x2 opening and 8-connected labeling. */
 internal object PortableCellOps {
     fun label(cell: GrayImage): InkMask {
@@ -23,11 +41,14 @@ internal object PortableCellOps {
             while (at < 0 || at >= size) at = if (at < 0) -at - 1 else 2 * size - at - 1
             return at
         }
+        val xs = IntArray(pw) { reflected(it - pad, w) }
+        val source = cell.pixels
         val integral = LongArray((pw + 1) * (ph + 1))
         for (y in 0 until ph) {
             var row = 0L
+            val from = reflected(y - pad, h) * w
             for (x in 0 until pw) {
-                row += cell[reflected(x - pad, w), reflected(y - pad, h)]
+                row += source[from + xs[x]].toInt() and 0xFF
                 integral[(y + 1) * (pw + 1) + x + 1] = integral[y * (pw + 1) + x + 1] + row
             }
         }
@@ -57,7 +78,7 @@ internal object PortableCellOps {
         }
         val labels = IntArray(w * h)
         val queue = IntArray(w * h)
-        val stats = mutableListOf(0, 0, 0, 0, 0)
+        var stats = IntArray(5 * 16)
         var count = 1
         for (start in labels.indices) {
             if (!opened[start] || labels[start] != 0) continue
@@ -79,9 +100,13 @@ internal object PortableCellOps {
                     }
                 }
             }
-            stats.addAll(listOf(left, top, right - left + 1, bottom - top + 1, tail))
+            val slot = label * 5
+            if (slot + 5 > stats.size) stats = stats.copyOf(stats.size * 2)
+            stats[slot] = left; stats[slot + 1] = top
+            stats[slot + 2] = right - left + 1; stats[slot + 3] = bottom - top + 1
+            stats[slot + 4] = tail
         }
-        return InkMask(labels, stats.toIntArray(), count)
+        return InkMask(labels, stats.copyOf(count * 5), count)
     }
 
     /** Pixel-area averaging, preserving thin strokes when shrinking a glyph. */

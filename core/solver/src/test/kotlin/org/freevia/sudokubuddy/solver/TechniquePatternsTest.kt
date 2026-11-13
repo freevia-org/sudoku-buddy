@@ -37,6 +37,24 @@ class TechniquePatternsTest {
         assertIs(found.filterIsInstance<Deduction.Elimination>().first { it.digit == digit })
 
     /**
+     * 1 and 2 have only r1c1 and r1c2 left, so those two squares are theirs and every
+     * other candidate goes from them.
+     */
+    @Test
+    fun `a hidden pair clears every other digit from its two squares`() {
+        val state = board {
+            only(1, at(0, 0), at(0, 1))
+            only(2, at(0, 0), at(0, 1))
+        }
+        val found = HiddenPair.findAll(state).filterIsInstance<Deduction.Elimination>()
+        assertEquals((3..9).toSet(), found.map { it.digit }.toSet())
+        for (step in found) {
+            assertEquals(setOf(at(0, 0), at(0, 1)), step.fromCells)
+            assertEquals(setOf(at(0, 0), at(0, 1)), step.supportingCells)
+        }
+    }
+
+    /**
      * Two rows where 5 has two homes each, sharing column 0. One of the far ends holds it,
      * so r2c6 - which sees both - cannot.
      */

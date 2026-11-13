@@ -56,7 +56,7 @@ enum PhotoScanner {
         guard let located = SudokuGridGeometry.locateRGB(sourceRGB, width: fullWidth, height: fullHeight,ruleAligner: { corners in
             let text=corners.flatMap { $0 }.map { $0.stringValue }.joined(separator:",")
             let values=aligner.align(corners:text).split(separator:",").compactMap { Double($0) }
-            return stride(from:0,to:values.count,by:2).map { [NSNumber(value:values[$0]),NSNumber(value:values[$0+1])] }
+            return stride(from:0,to:values.count-1,by:2).map { [NSNumber(value:values[$0]),NSNumber(value:values[$0+1])] }
         }),
               let pixels = located["rgb"] as? Data, let gray = located["gray"] as? Data, let side = located["side"] as? Int else {
             throw ScanFailure.message("Point the camera at a sudoku puzzle.")
@@ -91,7 +91,7 @@ enum PhotoScanner {
     }
 }
 
-private extension PhotoScanner {
+extension PhotoScanner {
     static func renderRGB(_ image: CIImage, width: Int, height: Int, context: CIContext) -> Data {
         var rgba = [UInt8](repeating: 0, count: width * height * 4)
         rgba.withUnsafeMutableBytes { bytes in

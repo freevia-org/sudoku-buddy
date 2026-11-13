@@ -15,19 +15,17 @@ internal object InkColor {
     }
 
     fun chroma(cell: RgbImage, ink: CellInk): Double {
-        val channels = Array(3) { IntArray(cell.width * cell.height) }
-        for (pixel in channels[0].indices) for (channel in 0..2) {
-            channels[channel][pixel] = cell.pixels[pixel * 3 + channel].toInt() and 255
-        }
-        val paper = channels.map { it.sorted()[it.size / 2].coerceAtLeast(1).toDouble() }
+        val pixels = cell.pixels
+        val paper = DoubleArray(3) { medianLevel(pixels, it, 3).coerceAtLeast(1).toDouble() }
         val blob = ink.blob
         val weighted = DoubleArray(3)
+        val density = DoubleArray(3)
         var weight = 0.0
         for (y in blob.top.coerceAtLeast(0) until (blob.top + blob.height).coerceAtMost(cell.height)) {
             for (x in blob.left.coerceAtLeast(0) until (blob.left + blob.width).coerceAtMost(cell.width)) {
-                val index = y * cell.width + x
-                val density = DoubleArray(3) { channel ->
-                    (1.0 - channels[channel][index] / paper[channel]).coerceAtLeast(0.0)
+                val index = (y * cell.width + x) * 3
+                for (channel in 0..2) {
+                    density[channel] = (1.0 - (pixels[index + channel].toInt() and 255) / paper[channel]).coerceAtLeast(0.0)
                 }
                 val dark = density.average()
                 // Weight dark pixels quadratically; background and JPEG fringe carry little evidence.

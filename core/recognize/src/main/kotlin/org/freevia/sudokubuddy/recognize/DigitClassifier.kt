@@ -131,9 +131,10 @@ class DigitClassifier private constructor(
         const val CLASSES = 9
 
         /** Loads the weights shipped alongside this module. */
-        fun load(): DigitClassifier {
-            return read(loadDigitModel())
-        }
+        fun load(): DigitClassifier = bundled
+
+        // Immutable once parsed, so every reader can share the one copy.
+        private val bundled by lazy { read(loadDigitModel()) }
 
         internal fun read(bytes: ByteArray): DigitClassifier {
             require(bytes.size == 423212) { "incorrect digit model length: ${bytes.size}" }

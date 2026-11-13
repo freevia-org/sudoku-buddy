@@ -57,4 +57,15 @@ class PresentationBridgeTest {
         assertEquals("", engine.secondGuess(0, 3, 0.5))
     }
 
+    @Test fun malformedSavedDataAnswersWithoutThrowingIntoSwift() {
+        val engine = PuzzlePresentationEngine()
+        assertEquals("{}", engine.snapshot("bad", empty, "Read", "", 0, false))
+        assertEquals("{}", engine.snapshot("x".repeat(81), empty, "Read", "", 0, false))
+        assertEquals("", engine.historySummary(clues, "short"))
+        assertEquals("30 printed, not started", engine.historySummary(clues, empty))
+        assertEquals("", engine.describeReading("SMUDGE", 5, 0.9, 3, 0.02, false))
+        assertEquals(1, CaptureSamplingEngine().sampleSize(0, 4000))
+        assertEquals(2, CaptureSamplingEngine().sampleSize(8000, 6000))
+        assertEquals("plain", MessageTranslator(listOf("a"), emptyList()).translate("plain"))
+    }
 }
