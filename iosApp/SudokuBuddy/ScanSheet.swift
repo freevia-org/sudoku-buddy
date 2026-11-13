@@ -73,7 +73,10 @@ struct ScanSheet: View {
                         guard let data = try await item.loadTransferable(type: Data.self) else { throw ScanFailure.message("That photo could not be opened.") }
                         guard !Task.isCancelled else { return }
                         onPhoto(data); dismiss()
-                    } catch { complaint = error.localizedDescription }
+                    } catch {
+                        guard !Task.isCancelled else { return }
+                        complaint = error.localizedDescription
+                    }
                     loading = false
                     photo = nil
                 }

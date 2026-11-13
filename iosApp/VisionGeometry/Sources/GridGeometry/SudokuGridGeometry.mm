@@ -13,7 +13,9 @@
         if(ruleAligner)align=[&](const sudoku::Quad& quad){
             NSMutableArray *corners=[NSMutableArray array];for(auto p:quad)[corners addObject:@[@(p.x),@(p.y)]];
             NSArray *result=ruleAligner(corners);if(result.count!=4)return quad;
-            sudoku::Quad out;for(int i=0;i<4;i++)out[i]=cv::Point2d([result[i][0] doubleValue],[result[i][1] doubleValue]);return out;
+            sudoku::Quad out;for(int i=0;i<4;i++){NSArray<NSNumber *> *corner=result[i];if(corner.count<2)return quad;
+                out[i]=cv::Point2d([corner[0] doubleValue],[corner[1] doubleValue]);if(!std::isfinite(out[i].x)||!std::isfinite(out[i].y))return quad;}
+            return out;
         };
         auto located=sudoku::locate(source,align);if(located.rgb.empty())return nil;
         NSData *pixels=[NSData dataWithBytes:located.rgb.data length:located.rgb.total()*3];
@@ -50,16 +52,18 @@
 + (NSDictionary<NSString *,NSData *> *)diagnosticStagesRGB:(NSData *)rgb width:(NSInteger)width height:(NSInteger)height {
     NSMutableDictionary *result=[NSMutableDictionary dictionary];
     if(width<1||height<1||rgb.length!=(NSUInteger)(width*height*3))return result;
+    try {
     cv::Mat source((int)height,(int)width,CV_8UC3,const_cast<void *>(rgb.bytes));auto full=sudoku::photoLuma(source);
     for(int edge:{1000,1600}){
         double scale=(double)edge/std::max(width,height);cv::Mat small,blur,binary,closed;
-        cv::resize(full,small,cv::Size((int)(width*scale),(int)(height*scale)),0,0,cv::INTER_LINEAR_EXACT);
+        cv::resize(full,small,cv::Size(std::max(1,(int)(width*scale)),std::max(1,(int)(height*scale))),0,0,cv::INTER_LINEAR_EXACT);
         cv::GaussianBlur(small,blur,cv::Size(5,5),0);
         cv::adaptiveThreshold(blur,binary,255,cv::ADAPTIVE_THRESH_MEAN_C,cv::THRESH_BINARY_INV,31,7);
         cv::morphologyEx(binary,closed,cv::MORPH_CLOSE,cv::getStructuringElement(cv::MORPH_RECT,cv::Size(3,3)));
         for(auto item:std::vector<std::pair<std::string,cv::Mat>>{{"small",small},{"blur",blur},{"binary",binary},{"closed",closed}})
             result[[NSString stringWithFormat:@"native-%d-%s.gray",edge,item.first.c_str()]]=[NSData dataWithBytes:item.second.data length:item.second.total()];
     }
+    } catch(const cv::Exception&) {} catch(const std::exception&) {}
     return result;
 }
 + (NSDictionary<NSString *,id> *)decodePhoto:(NSData *)data orientation:(NSInteger)orientation sample:(NSInteger)sample {
@@ -80,6 +84,6 @@
             case 8:cv::rotate(pixels,pixels,cv::ROTATE_90_COUNTERCLOCKWISE);break;
         }
         return @{@"rgb":[NSData dataWithBytes:pixels.data length:pixels.total()*3],@"width":@(pixels.cols),@"height":@(pixels.rows)};
-    }catch(const cv::Exception&){return nil;}
+    }catch(const cv::Exception&){return nil;}catch(const std::exception&){return nil;}
 }
 @end

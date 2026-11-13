@@ -19,16 +19,22 @@ object Degrade {
 
     fun blur(image: GrayImage, radius: Int): GrayImage {
         val kernel = (radius * 2 + 1).toDouble()
-        val out = Mat()
-        Imgproc.GaussianBlur(image.toMat(), out, Size(kernel, kernel), 0.0)
-        return out.toGrayImage()
+        return image.toMat().releasing { input ->
+            Mat().releasing { out ->
+                Imgproc.GaussianBlur(input, out, Size(kernel, kernel), 0.0)
+                out.toGrayImage()
+            }
+        }
     }
 
     /** Shrinks the whole photo, so the grid falls below the pixels-per-cell floor. */
     fun shrink(image: GrayImage, factor: Double): GrayImage {
-        val out = Mat()
-        Imgproc.resize(image.toMat(), out, Size(image.width * factor, image.height * factor))
-        return out.toGrayImage()
+        return image.toMat().releasing { input ->
+            Mat().releasing { out ->
+                Imgproc.resize(input, out, Size(image.width * factor, image.height * factor))
+                out.toGrayImage()
+            }
+        }
     }
 
     /** Crops away a fraction of the left side, cutting the grid out of frame. */
@@ -66,12 +72,16 @@ object Degrade {
     /** Rotates about the centre, to push the grid past the upright tolerance. */
     fun rotate(image: GrayImage, degrees: Double): GrayImage {
         val centre = Point(image.width / 2.0, image.height / 2.0)
-        val rotation = Imgproc.getRotationMatrix2D(centre, degrees, 1.0)
-        val out = Mat()
-        Imgproc.warpAffine(
-            image.toMat(), out, rotation, Size(image.width.toDouble(), image.height.toDouble()),
-            Imgproc.INTER_LINEAR, Core.BORDER_CONSTANT, Scalar(255.0),
-        )
-        return out.toGrayImage()
+        return Imgproc.getRotationMatrix2D(centre, degrees, 1.0).releasing { rotation ->
+            image.toMat().releasing { input ->
+                Mat().releasing { out ->
+                    Imgproc.warpAffine(
+                        input, out, rotation, Size(image.width.toDouble(), image.height.toDouble()),
+                        Imgproc.INTER_LINEAR, Core.BORDER_CONSTANT, Scalar(255.0),
+                    )
+                    out.toGrayImage()
+                }
+            }
+        }
     }
 }

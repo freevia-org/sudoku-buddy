@@ -81,11 +81,16 @@ public enum ReportArchive {
         body.le32(UInt32(directory.count)); body.le32(start); body.le16(0)
         return body
     }
+    private static let crcTable: [UInt32] = (0..<256).map { index -> UInt32 in
+        var crc = UInt32(index)
+        for _ in 0..<8 { crc = (crc >> 1) ^ (crc & 1 == 1 ? 0xedb88320 : 0) }
+        return crc
+    }
     private static func crc32(_ data: Data) -> UInt32 {
+        let table = crcTable
         var crc: UInt32 = 0xffffffff
-        for byte in data {
-            crc ^= UInt32(byte)
-            for _ in 0..<8 { crc = (crc >> 1) ^ (crc & 1 == 1 ? 0xedb88320 : 0) }
+        data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) -> Void in
+            for byte in bytes { crc = table[Int((crc ^ UInt32(byte)) & 0xff)] ^ (crc >> 8) }
         }
         return ~crc
     }

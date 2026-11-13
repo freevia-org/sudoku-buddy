@@ -15,6 +15,7 @@ import org.freevia.sudokubuddy.solver.SolveResult
 import org.freevia.sudokubuddy.solver.Solver
 import org.freevia.sudokubuddy.solver.Techniques
 import org.freevia.sudokubuddy.solver.Walkthrough
+import kotlin.concurrent.Volatile
 
 /** Which help the user has asked for. Exactly one at a time, so nothing has to blend. */
 enum class OverlayMode { NONE, HINT, CHECK, SOLUTION, READING, LESSON }
@@ -131,6 +132,26 @@ data class Guidance(
 )
 
 /**
+ * The latest answer to a pure question about an immutable grid.
+ *
+ * One screen asks the same grid for its overlay, guidance, status and key in turn, and
+ * each of those ran the search again. The entry is immutable and replaced whole, so a
+ * reader on another thread sees either the previous answer or the new one.
+ */
+class Memo<K, V>(private val compute: (K) -> V) {
+    private class Entry<K, V>(val key: K, val value: V)
+
+    @Volatile
+    private var last: Entry<K, V>? = null
+
+    operator fun invoke(key: K): V {
+        val seen = last
+        if (seen != null && seen.key == key) return seen.value
+        return compute(key).also { last = Entry(key, it) }
+    }
+}
+
+/**
  * Everything the puzzle screen derives from a grid.
  *
  * Kept free of Android types on purpose: this is the part with rules in it, so it is the
@@ -138,6 +159,23 @@ data class Guidance(
  * device.
  */
 object PuzzleLogic {
+    private val solve = Memo<Grid, SolveResult> { Solver.solve(it) }
+    private val answerCheck = Memo<Grid, AnswerCheck> { AnswerChecker.check(it) }
+    private val solutions = Memo<Grid, List<Grid>> { Solver.solutions(it, MOST_ANSWERS_OFFERED) }
+    private val minimalFix = Memo<Grid, Set<Int>?> { MinimalFix.find(it) }
+    private val hints = Memo<Pair<Grid, HintStyle>, Hint?> { (grid, style) ->
+        when (style) {
+            HintStyle.REVEAL -> RevealHintEngine.nextHint(grid)
+            HintStyle.EXPLAIN -> ExplainedHintEngine.nextHint(grid)
+        }
+    }
+
+    /** The solver's verdict, shared with every layer asking about the same position. */
+    fun solveResult(grid: Grid): SolveResult = solve(grid)
+
+    /** The answers Solve pages through, at most [MOST_ANSWERS_OFFERED] of them. */
+    fun offeredAnswers(grid: Grid): List<Grid> = solutions(grid)
+
     fun dependencyLabel(earlier: Deduction?, target: Int?, index: Int): String {
         val reason = if (earlier is Deduction.Elimination) {
             if (target != null && target in earlier.fromCells) "Why ${earlier.digit} was removed from r${target / 9 + 1}c${target % 9 + 1}"
@@ -177,7 +215,7 @@ object PuzzleLogic {
     }
 
     fun reasoningNote(grid: Grid): String? {
-        val wrong = (AnswerChecker.check(grid) as? AnswerCheck.Checked)?.incorrect?.size ?: 0
+        val wrong = (answerCheck(grid) as? AnswerCheck.Checked)?.incorrect?.size ?: 0
         if (wrong == 0) return null
         return "This reasoning excludes $wrong existing " +
             (if (wrong == 1) "entry that disagrees" else "entries that disagree") +
@@ -229,10 +267,7 @@ object PuzzleLogic {
         else -> LayerPress(OverlayMode.NONE, 0)
     }
 
-    fun hint(grid: Grid, style: HintStyle): Hint? = when (style) {
-        HintStyle.REVEAL -> RevealHintEngine.nextHint(grid)
-        HintStyle.EXPLAIN -> ExplainedHintEngine.nextHint(grid)
-    }
+    fun hint(grid: Grid, style: HintStyle): Hint? = hints(grid to style)
 
     /** True when there is still something to hint at. Drives whether the button is live. */
     /**
@@ -305,7 +340,7 @@ object PuzzleLogic {
      */
     private fun solutionLayer(grid: Grid, answerShown: Int): Overlay {
         val digits = mutableMapOf<Int, OverlayDigit>()
-        when (val solved = Solver.solve(grid)) {
+        when (val solved = solve(grid)) {
             is SolveResult.Unique -> {
                 for (i in 0 until 81) {
                     if (grid[i].source != CellSource.GIVEN) {
@@ -319,7 +354,7 @@ object PuzzleLogic {
             // squares that differ between answers marked so it is clear which parts are
             // chosen rather than deduced.
             is SolveResult.Multiple -> {
-                val answers = Solver.solutions(grid, MOST_ANSWERS_OFFERED)
+                val answers = solutions(grid)
                 val chosen = answers.getOrNull(answerShown.mod(answers.size.coerceAtLeast(1)))
                     ?: return NOTHING
                 for (i in 0 until 81) {
@@ -338,7 +373,7 @@ object PuzzleLogic {
             // Those are the squares to look at, and they are marked as evidence because
             // that is what they are - the reason it will not solve.
             is SolveResult.None -> {
-                val evidence = MinimalFix.find(grid).orEmpty()
+                val evidence = minimalFix(grid).orEmpty()
                 return Overlay(digits, evidence, focus = evidence.minOrNull())
             }
         }
@@ -352,7 +387,7 @@ object PuzzleLogic {
      * correct answer wrong.
      */
     private fun checkLayer(grid: Grid): Overlay {
-        val checked = AnswerChecker.check(grid) as? AnswerCheck.Checked ?: return NOTHING
+        val checked = answerCheck(grid) as? AnswerCheck.Checked ?: return NOTHING
         val digits = mutableMapOf<Int, OverlayDigit>()
         for (i in checked.correct) {
             digits[i] = OverlayDigit(grid[i].digit!!, OverlayRole.CORRECT)
@@ -503,7 +538,7 @@ object PuzzleLogic {
             written == 0 -> "not started"
             else -> "$written written in"
         }
-        val wrong = (AnswerChecker.check(grid) as? AnswerCheck.Checked)?.incorrect?.size ?: 0
+        val wrong = (answerCheck(grid) as? AnswerCheck.Checked)?.incorrect?.size ?: 0
         return if (wrong > 0) "$given printed, $progress, $wrong wrong" else "$given printed, $progress"
     }
 
@@ -539,7 +574,7 @@ object PuzzleLogic {
         reports: List<CellReport?>?,
         grid: Grid,
     ): Set<Int> {
-        if (Solver.solve(grid) !is SolveResult.Unique) return flagged
+        if (solve(grid) !is SolveResult.Unique) return flagged
         return flagged.filterTo(mutableSetOf()) { index ->
             val report = reports?.getOrNull(index) ?: return@filterTo true
             report.roleUncertain || report.confidence < CellReport.SURE_ENOUGH_TO_SAY
@@ -570,13 +605,13 @@ object PuzzleLogic {
      * corrections ago.
      */
     fun readingNote(framing: String?, complaint: String?, grid: Grid): String? {
-        val live = complaint?.takeIf { Solver.solve(grid) !is SolveResult.Unique }
+        val live = complaint?.takeIf { solve(grid) !is SolveResult.Unique }
         return listOfNotNull(framing, live).joinToString(" ").ifEmpty { null }
     }
 
-    fun status(grid: Grid): Status? = when (Solver.solve(grid)) {
+    fun status(grid: Grid): Status? = when (solve(grid)) {
         is SolveResult.Unique -> {
-            val wrong = (AnswerChecker.check(grid) as? AnswerCheck.Checked)?.incorrect?.size ?: 0
+            val wrong = (answerCheck(grid) as? AnswerCheck.Checked)?.incorrect?.size ?: 0
             when {
                 // Whether an answer is right is the Check button's business, and marking
                 // one wrong the moment it is written turns every square into a test the
@@ -775,12 +810,12 @@ object PuzzleLogic {
         OverlayMode.NONE -> null
 
         OverlayMode.SOLUTION -> Guidance(
-            when (val solved = Solver.solve(grid)) {
+            when (val solved = solve(grid)) {
                 is SolveResult.Unique ->
                     "Blue digits are the solution. Tap any square to correct what was read."
 
                 is SolveResult.Multiple -> {
-                    val many = Solver.solutions(grid, MOST_ANSWERS_OFFERED).size
+                    val many = solutions(grid).size
                     val nth = answerShown.mod(many.coerceAtLeast(1)) + 1
                     val count = if (many < MOST_ANSWERS_OFFERED) "$many" else "at least $many"
                     "This puzzle has more than one answer, so a printed digit was probably " +
@@ -788,7 +823,7 @@ object PuzzleLogic {
                         "next. The ringed squares differ among the answers shown."
                 }
 
-                is SolveResult.None -> when (val fix = MinimalFix.find(grid)) {
+                is SolveResult.None -> when (val fix = minimalFix(grid)) {
                     null ->
                         "These digits cannot make a puzzle, and too much is wrong to say " +
                             "which. Tap any square to correct what was read, or take the " +
@@ -811,7 +846,7 @@ object PuzzleLogic {
         )
 
         OverlayMode.CHECK -> Guidance(
-            if ((AnswerChecker.check(grid) as? AnswerCheck.Checked)?.incorrect.isNullOrEmpty()) {
+            if ((answerCheck(grid) as? AnswerCheck.Checked)?.incorrect.isNullOrEmpty()) {
                 "Everything you have written so far is right."
             } else {
                 "A red square shows the digit the app read there. If that is not what you " +

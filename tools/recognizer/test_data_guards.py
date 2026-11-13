@@ -14,6 +14,10 @@ class DataGuardsTest(unittest.TestCase):
     def test_current_analyzer_source_path_exists(self):
         self.assertTrue(Path(cells.ANALYZER).is_file())
 
+    def test_every_guarded_source_name_resolves_to_a_real_file(self):
+        found = {Path(path).name for path in cells.extraction_sources() if Path(path).is_file()}
+        self.assertEqual({Path(path).name for path in cells.extraction_sources()}, found)
+
     def test_one_fresh_file_does_not_hide_a_stale_export(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

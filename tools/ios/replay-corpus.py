@@ -16,11 +16,14 @@ BUNDLE = 'org.freevia.sudokubuddy.ios'
 
 
 def sim(*args, check=True):
-    return subprocess.run(['xcrun', 'simctl', *args], text=True, capture_output=True, check=check).stdout.strip()
+    done = subprocess.run(['xcrun', 'simctl', *args], text=True, capture_output=True)
+    if check and done.returncode:
+        raise SystemExit(f"simctl {args[0]} failed ({done.returncode}): {done.stderr.strip() or done.stdout.strip()}")
+    return done.stdout.strip()
 
 
 def collect(replay, output, platform='iOS simulator; native OpenCV geometry + portable Kotlin recognition'):
-    rows = [json.loads(line) for line in (replay / 'results.jsonl').read_text().splitlines()]
+    rows = [json.loads(line) for line in (replay / 'results.jsonl').read_text().splitlines() if line.strip()]
     expected = {(folder, p.name) for folder in ['corpus', 'corpus-rectified'] for p in (ROOT / folder).iterdir() if p.suffix.lower() in ['.jpg', '.jpeg', '.png', '.webp']}
     actual = {(r['folder'], r['photo']) for r in rows}
     if (replay / 'complete').exists() and (expected != actual or len(actual) != len(rows)):
@@ -86,6 +89,8 @@ def main():
     parser.add_argument('--collect', action='store_true')
     parser.add_argument('--output', type=Path, default=ROOT / 'docs/recognition/ios-corpus.json')
     args = parser.parse_args()
+    if not (args.prepare or args.collect):
+        parser.error('Choose --prepare and/or --collect')
     if args.prepare:
         sim('boot', args.device, check=False)
         sim('bootstatus', args.device, '-b')

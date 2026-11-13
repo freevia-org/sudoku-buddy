@@ -89,6 +89,42 @@ object GridLocator {
     private const val OBSCURED_LINES_ALLOWED = 1
 
     fun locate(image: GrayImage): GridLocation {
+        val sight = Sight(image)
+        try {
+            return locate(sight)
+        } finally {
+            sight.close()
+        }
+    }
+
+    /**
+     * One photograph, and what has already been traced out of it.
+     *
+     * A frame with no grid in it is put the same questions several times over - its
+     * outlines at each working size by three of the passes below, its cells by two - and
+     * tracing a photograph gives the same answer however often it is asked. Most frames a
+     * camera sees have no grid in them, so asking once is most of what this path costs.
+     */
+    private class Sight(val image: GrayImage) : AutoCloseable {
+        val full: Mat = image.toMat()
+        private val traced = mutableMapOf<Double, List<Quad>>()
+        private val fitted = mutableMapOf<Double, List<CellGrid.Lattice>>()
+
+        fun outlines(workingEdge: Double): List<Quad> =
+            traced.getOrPut(workingEdge) { QuadDetector.detect(image, workingEdge) }
+
+        fun lattices(workingEdge: Double): List<CellGrid.Lattice> =
+            fitted.getOrPut(workingEdge) { CellGrid.lattices(image, workingEdge) }
+
+        override fun close() {
+            full.release()
+            fitted.values.forEach { lattices -> lattices.forEach { it.close() } }
+        }
+    }
+
+    private fun locate(sight: Sight): GridLocation {
+        val image = sight.image
+        val full = sight.full
         // Each working size in turn, stopping at the first that finds a grid. A grid that
         // fills the frame is found at the smallest and cheapest; one that takes a sixth of
         // a large capture needs the larger, and paying for that only when the first comes
@@ -100,7 +136,7 @@ object GridLocator {
         // line on that larger quad still misses every actual rule.
         val alignedOutlines = mutableListOf<Quad>()
         for (workingEdge in QuadDetector.workingEdges()) {
-            when (val attempt = look(image, workingEdge)) {
+            when (val attempt = look(sight, workingEdge)) {
                 is GridLocation.Found -> return attempt
                 is GridLocation.NoGrid ->
                     // Starting from a made-up miss and only replacing it on a better score
@@ -115,12 +151,12 @@ object GridLocator {
         // Remove short digit strokes before tracing again. A grid whose border touches
         // surrounding printing can have perfectly intact rules but no usable outline.
         for (workingEdge in QuadDetector.workingEdges()) {
-            val rescored = image.toMat().releasing { full ->
-                val candidates = QuadDetector.detect(image, workingEdge) + QuadDetector.detectRules(image, workingEdge)
-                (candidates + candidates.filter { kotlin.math.abs(it.rotationDegrees) < 10.0 }.map { bounds(it) }).map { quad ->
-                    val aligned = RuleAlignment.align(image, quad)
-                    aligned to rectify(full, aligned, scoringSize(aligned)).releasing { GridScorer.score(it) }
-                }
+            val candidates = sight.outlines(workingEdge) + QuadDetector.detectRules(image, workingEdge)
+            val rescored = (candidates + candidates.filter { kotlin.math.abs(it.rotationDegrees) < 10.0 }.map { bounds(it) }).mapNotNull { quad ->
+                // A shape with three corners in a line has no rules to be aligned to, and
+                // the warp refuses it outright. It is not a grid; it is not a crash either.
+                val aligned = try { RuleAlignment.align(image, quad) } catch (degenerate: IllegalArgumentException) { return@mapNotNull null }
+                aligned to rectify(full, aligned, scoringSize(aligned)).releasing { GridScorer.score(it) }
             }
             // Preserve the strongest refitted outlines for the final one-line retry.
             alignedOutlines += rescored.sortedByDescending { it.second }.take(3).map { it.first }
@@ -137,13 +173,13 @@ object GridLocator {
         // success the better answer is never reached. The cells are there for a photograph
         // no outline fits at any size.
         for (workingEdge in QuadDetector.workingEdges()) {
-            val cells = image.toMat().releasing { askTheCells(image, it, workingEdge) } ?: continue
+            val cells = askTheCells(sight, workingEdge) ?: continue
             return GridLocation.Found(
                 cells.quad, cells.score, cells.rectified, cells.curved,
             )
         }
 
-        val obscured = askAgainForAnObscuredGrid(image, alignedOutlines)
+        val obscured = askAgainForAnObscuredGrid(sight, alignedOutlines)
         if (obscured != null) {
             return GridLocation.Found(obscured.first, obscured.second, PerspectivePixels.gray(image, obscured.first, RECTIFIED_SIZE))
         }
@@ -168,10 +204,10 @@ object GridLocator {
         return Quad(Corner(left, top), Corner(right, top), Corner(right, bottom), Corner(left, bottom))
     }
 
-    private fun look(image: GrayImage, workingEdge: Double): GridLocation {
-        val full = image.toMat()
-        try {
-        val candidates = QuadDetector.detect(image, workingEdge)
+    private fun look(sight: Sight, workingEdge: Double): GridLocation {
+        val image = sight.image
+        val full = sight.full
+        val candidates = sight.outlines(workingEdge)
 
         // Scored at the size the grid actually is in the photograph, not blown up to the
         // working size first.
@@ -250,7 +286,6 @@ object GridLocator {
             )
 
         return GridLocation.Found(best.first, best.second, PerspectivePixels.gray(image, best.first, RECTIFIED_SIZE))
-        } finally { full.release() }
     }
 
     /**
@@ -296,9 +331,10 @@ object GridLocator {
      * plane had it right, and the surface bought a better score with a worse rectification.
      * So the surface is only reached when the plane has not cleared the bar at all.
      */
-    private fun askTheCells(image: GrayImage, full: Mat, workingEdge: Double): FromCells? {
-        val lattices = CellGrid.lattices(image, workingEdge)
-        try {
+    private fun askTheCells(sight: Sight, workingEdge: Double): FromCells? {
+        val image = sight.image
+        val full = sight.full
+        val lattices = sight.lattices(workingEdge)
         for (lattice in lattices) {
             val quad = lattice.quad()
             val size = scoringSize(quad)
@@ -310,12 +346,11 @@ object GridLocator {
             val quad = lattice.quad()
             val curved = lattice.flatten(full, scoringSize(quad))?.releasing { GridScorer.score(it) }
             if (curved != null && curved >= MIN_GRID_SCORE) {
-                return FromCells(quad, curved,
-                    lattice.flatten(full, RECTIFIED_SIZE.toDouble())!!.releasing { it.toGrayImage() }, curved = true)
+                val flattened = lattice.flattened(image) ?: continue
+                return FromCells(quad, curved, flattened, curved = true)
             }
         }
         return null
-        } finally { lattices.forEach { it.close() } }
     }
 
     /**
@@ -336,11 +371,10 @@ object GridLocator {
      * accept something nothing else would, after the outlines, the growing and the cells
      * have all come up empty.
      */
-    private fun askAgainForAnObscuredGrid(image: GrayImage, alignedOutlines: List<Quad>): Pair<Quad, Double>? {
-        val full = image.toMat()
-        try {
+    private fun askAgainForAnObscuredGrid(sight: Sight, alignedOutlines: List<Quad>): Pair<Quad, Double>? {
+        val full = sight.full
         for (workingEdge in QuadDetector.workingEdges()) {
-            val best = QuadDetector.detect(image, workingEdge)
+            val best = sight.outlines(workingEdge)
                 .map { quad ->
                     quad to rectify(full, quad, scoringSize(quad)).releasing {
                         GridScorer.score(it, OBSCURED_LINES_ALLOWED)
@@ -366,8 +400,7 @@ object GridLocator {
         // that is plainly a grid comes back as no grid at all. With one rule forgiven it
         // scores 0.89.
         for (workingEdge in QuadDetector.workingEdges()) {
-            val lattices = CellGrid.lattices(image, workingEdge)
-            val best = try { lattices
+            val best = sight.lattices(workingEdge)
                 .map { lattice ->
                     val quad = lattice.quad()
                     quad to rectify(full, quad, scoringSize(quad)).releasing {
@@ -376,7 +409,6 @@ object GridLocator {
                 }
                 .maxByOrNull { it.second }
                 ?.takeIf { it.second >= MIN_GRID_SCORE }
-            } finally { lattices.forEach { it.close() } }
             if (best != null) return best
         }
         // Keep already accepted readings stable; rescue refitted grids only after
@@ -395,7 +427,6 @@ object GridLocator {
         if (aligned != null) return aligned
 
         return null
-        } finally { full.release() }
     }
 
     /** A grid the cells found, and the straightening that scored best on it. */
@@ -428,19 +459,20 @@ object GridLocator {
         val destination = MatOfPoint2f(
             Point(0.0, 0.0), Point(side, 0.0), Point(side, side), Point(0.0, side),
         )
-        val transform = Imgproc.getPerspectiveTransform(
-            source, destination,
-        )
+        var transform: Mat? = null
         val out = Mat()
         try {
-            Imgproc.warpPerspective(full, out, transform, Size(side, side))
+            val solved = Imgproc.getPerspectiveTransform(
+                source, destination,
+            ).also { transform = it }
+            Imgproc.warpPerspective(full, out, solved, Size(side, side))
         } catch (failure: Throwable) {
             out.release()
             throw failure
         } finally {
             source.release()
             destination.release()
-            transform.release()
+            transform?.release()
         }
         return out
     }

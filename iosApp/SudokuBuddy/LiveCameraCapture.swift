@@ -191,9 +191,15 @@ private final class LiveCameraSession: NSObject, AVCaptureVideoDataOutputSampleB
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         queue.async { [self] in
             guard active else { captured = false; return }
-            if error != nil || photo.fileDataRepresentation() == nil {
-                captured = false; advisor.reset(); onFrame?([], "The camera could not take that photo.", false)
-            } else { onPhoto?(photo.fileDataRepresentation()) }
+            if error == nil, let data = photo.fileDataRepresentation() { onPhoto?(data) }
+            else { captured = false; advisor.reset(); onFrame?([], "The camera could not take that photo.", false) }
+        }
+    }
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {
+        guard error != nil else { return }
+        queue.async { [self] in
+            guard active, captured else { return }
+            captured = false; advisor.reset(); onFrame?([], "The camera could not take that photo.", false)
         }
     }
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -205,14 +211,8 @@ private final class LiveCameraSession: NSObject, AVCaptureVideoDataOutputSampleB
             let scale = min(1, 720 / min(frame.width, frame.height))
             let width = Int(frame.width * scale), height = Int(frame.height * scale)
             let reduced = CIImage(cvPixelBuffer: buffer).transformed(by: CGAffineTransform(scaleX: scale, y: scale))
-            var rgba = [UInt8](repeating: 0, count: width * height * 4)
-            rgba.withUnsafeMutableBytes { bytes in context.render(reduced, toBitmap: bytes.baseAddress!, rowBytes: width * 4,
-                bounds: CGRect(x: 0, y: 0, width: width, height: height), format: .RGBA8, colorSpace: CGColorSpace(name: CGColorSpace.sRGB)) }
-            var rgb = Data(count: width * height * 3)
-            rgb.withUnsafeMutableBytes { target in
-                let dst = target.bindMemory(to: UInt8.self)
-                for i in 0..<(width * height) { for c in 0..<3 { dst[i*3+c] = rgba[i*4+c] } }
-            }
+            guard width > 0, height > 0 else { return }
+            let rgb = PhotoScanner.renderRGB(reduced, width: width, height: height, context: context)
             guard let found = SudokuGridGeometry.framingRGB(rgb, width: width, height: height),
                   let gray = found["luminance"] as? Data, let grid = found["gridLuminance"] as? Data else { return }
             let corners = (found["corners"] as? [[NSNumber]] ?? []).compactMap { pair -> CGPoint? in

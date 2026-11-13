@@ -647,4 +647,18 @@ class PuzzleLogicTest {
         assertEquals("30 printed, 1 written in", PuzzleLogic.historySummary(puzzle.with(2, Cell.guess(4))))
     }
 
+    @Test fun `a remembered answer is never served for a different position`() {
+        var calls = 0
+        val memo = Memo<Int, Int> { calls++; it * 2 }
+        assertEquals(4, memo(2)); assertEquals(4, memo(2)); assertEquals(1, calls)
+        assertEquals(6, memo(3)); assertEquals(4, memo(2)); assertEquals(3, calls)
+        val wrong = puzzle.with(2, Cell.guess(1))
+        assertEquals("30 printed, 1 written in, 1 wrong", PuzzleLogic.historySummary(wrong))
+        assertEquals("30 printed, not started", PuzzleLogic.historySummary(puzzle))
+        assertEquals(PuzzleLogic.hint(puzzle, HintStyle.EXPLAIN), PuzzleLogic.hint(puzzle, HintStyle.EXPLAIN))
+        assertIs<SolveResult.Multiple>(PuzzleLogic.solveResult(Grid.Empty))
+        assertIs<SolveResult.Unique>(PuzzleLogic.solveResult(puzzle))
+        assertEquals(PuzzleLogic.MOST_ANSWERS_OFFERED, PuzzleLogic.offeredAnswers(Grid.Empty).size)
+        assertEquals(1, PuzzleLogic.offeredAnswers(puzzle).size)
+    }
 }

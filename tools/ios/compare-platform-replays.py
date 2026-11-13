@@ -13,7 +13,7 @@ FIELDS = ('status', 'givens', 'progress', 'uncertain')
 
 
 def read(path, expected):
-    rows = [json.loads(line) for line in path.read_text().splitlines()]
+    rows = [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
     indexed = {(row['folder'], row['photo']): row for row in rows}
     if len(rows) != len(indexed) or indexed.keys() != expected:
         raise ValueError(f'{path}: incomplete or duplicate corpus inventory')
