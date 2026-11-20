@@ -22,11 +22,12 @@ public struct SharedImageInbox {
     public func pending(now: Date = Date()) throws -> [URL] {
         guard FileManager.default.fileExists(atPath: directory.path) else { return [] }
         let files = try FileManager.default.contentsOfDirectory(at: directory, includingPropertiesForKeys: [.creationDateKey, .isRegularFileKey, .isSymbolicLinkKey])
-        return try files.filter { url in
+        return files.filter { url in
             guard url.pathExtension == "image", UUID(uuidString: url.deletingPathExtension().lastPathComponent) != nil else { return false }
-            let values = try url.resourceValues(forKeys: [.creationDateKey, .isRegularFileKey, .isSymbolicLinkKey])
-            guard values.isRegularFile == true, values.isSymbolicLink != true else { return false }
-            if now.timeIntervalSince(values.creationDate ?? now) > 7 * 86400 { try FileManager.default.removeItem(at: url); return false }
+            // The app and the Share extension use this folder concurrently; a file may vanish mid-listing.
+            guard let values = try? url.resourceValues(forKeys: [.creationDateKey, .isRegularFileKey, .isSymbolicLinkKey]),
+                  values.isRegularFile == true, values.isSymbolicLink != true else { return false }
+            if now.timeIntervalSince(values.creationDate ?? now) > 7 * 86400 { try? FileManager.default.removeItem(at: url); return false }
             return true
         }.sorted { $0.lastPathComponent < $1.lastPathComponent }
     }

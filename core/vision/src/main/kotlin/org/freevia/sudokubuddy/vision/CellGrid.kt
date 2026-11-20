@@ -6,7 +6,6 @@ import org.opencv.core.Mat
 import org.opencv.core.MatOfPoint
 import org.opencv.core.MatOfPoint2f
 import org.opencv.core.Point
-import org.opencv.core.Size
 import org.opencv.imgproc.Imgproc
 
 /**
@@ -82,38 +81,27 @@ internal object CellGrid {
         }
 
     /** The same, with each cell's place still attached, for measuring what went on. */
-    internal fun lattices(image: GrayImage, workingEdge: Double): List<Lattice> {
-        require(workingEdge.isFinite() && workingEdge > 0.0) { "working edge must be positive and finite" }
-        val full = image.toMat()
-        val scale = workingEdge / maxOf(full.width(), full.height()).toDouble()
+    internal fun lattices(image: GrayImage, workingEdge: Double): List<Lattice> =
+        QuadDetector.closedInk(image, workingEdge) { closed, scale -> latticesIn(closed, scale) }
 
-        val small = Mat()
-        val blurred = Mat()
-        val binary = Mat()
-        val closed = Mat()
-        val kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, Size(3.0, 3.0))
+    private fun latticesIn(closed: Mat, scale: Double): List<Lattice> {
         val contours = mutableListOf<MatOfPoint>()
         val hierarchy = Mat()
         val found = mutableListOf<Lattice>()
         try {
-        Imgproc.resize(full, small, Size(
-            (full.width() * scale).coerceAtLeast(1.0),
-            (full.height() * scale).coerceAtLeast(1.0),
-        ), 0.0, 0.0, Imgproc.INTER_LINEAR_EXACT)
-        Imgproc.GaussianBlur(small, blurred, Size(5.0, 5.0), 0.0)
-        Imgproc.adaptiveThreshold(
-            blurred, binary, 255.0,
-            Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY_INV, 31, 7.0,
-        )
-        Imgproc.morphologyEx(binary, closed, Imgproc.MORPH_CLOSE, kernel)
         Imgproc.findContours(closed, contours, hierarchy, Imgproc.RETR_CCOMP, Imgproc.CHAIN_APPROX_SIMPLE)
-        val frameArea = small.width().toDouble() * small.height()
+        val frameArea = closed.width().toDouble() * closed.height()
 
         // A cell is a hole in the grid: in two-level hierarchy terms, a contour with a
         // parent. That is the signature which survives the border being welded to the
         // print beside it.
+        //
+        // Read out in one go: next, previous, first child and parent for every contour,
+        // and asking OpenCV for them a contour at a time is a call for each of thousands.
+        val links = IntArray(contours.size * 4)
+        if (contours.isNotEmpty()) hierarchy.get(0, 0, links)
         val holes = contours.indices
-            .filter { hierarchy.get(0, it)[3] >= 0.0 }
+            .filter { links[it * 4 + 3] >= 0 }
             .map { contours[it] to Imgproc.contourArea(contours[it]) }
             .filter { it.second > frameArea * MIN_CELL_FRACTION }
         if (holes.size < ENOUGH_CELLS) return emptyList()
@@ -133,7 +121,7 @@ internal object CellGrid {
             throw failure
         } finally {
             contours.forEach { it.release() }
-            listOf(full, small, blurred, binary, closed, kernel, hierarchy).forEach { it.release() }
+            hierarchy.release()
         }
     }
 
@@ -191,17 +179,19 @@ internal object CellGrid {
      * Measured off the picture rather than assumed: the cells sit a pitch apart and are
      * narrower than the pitch by exactly the rule between them.
      */
-    private fun ruleInset(cells: List<Cell>): Double {
-        val centres = cells.map { it.centre }
+    private fun ruleInset(cells: List<Cell>, pitch: Double): Double {
+        if (pitch <= 0.0) return 0.0
+        val span = cells.map { it.span }.sorted()[cells.size / 2]
+        return ((pitch - span) / (2 * pitch)).coerceIn(0.0, 0.2)
+    }
+
+    /** How far apart neighbouring cells sit: the middle distance from a cell to its nearest. */
+    private fun pitchOf(centres: List<Point>): Double {
         val gaps = centres.indices.mapNotNull { i ->
             centres.indices.filter { it != i }
                 .minOfOrNull { Math.hypot(centres[i].x - centres[it].x, centres[i].y - centres[it].y) }
-        }
-        if (gaps.isEmpty()) return 0.0
-        val pitch = gaps.sorted()[gaps.size / 2]
-        val span = cells.map { it.span }.sorted()[cells.size / 2]
-        if (pitch <= 0.0) return 0.0
-        return ((pitch - span) / (2 * pitch)).coerceIn(0.0, 0.2)
+        }.sorted()
+        return gaps.getOrElse(gaps.size / 2) { 0.0 }
     }
 
     /** Cells split into puzzles: cells within [reach] of one another are the same puzzle. */
@@ -284,8 +274,7 @@ internal object CellGrid {
             val coefficients = curve ?: return null
             val size = side.toInt()
             if (side == GridLocator.RECTIFIED_SIZE.toDouble()) {
-                val values=DoubleArray(TERMS*2) { coefficients.get(it/2,it%2)[0] }
-                return PerspectivePixels.surface(full.toGrayImage(),values,size).toMat()
+                return PerspectivePixels.surface(full.toGrayImage(), interleaved(coefficients), size).toMat()
             }
             val xs = FloatArray(size * size)
             val ys = FloatArray(size * size)
@@ -344,6 +333,20 @@ internal object CellGrid {
                 mapY.release()
             }
         }
+
+        /**
+         * [flatten] at the size the grid is read at, taken straight from the photograph.
+         *
+         * The same pixels as flattening its Mat to [GridLocator.RECTIFIED_SIZE], without
+         * copying the whole photograph out of OpenCV and the answer into it and back.
+         */
+        fun flattened(image: GrayImage): GrayImage? {
+            val coefficients = curve ?: return null
+            return PerspectivePixels.surface(image, interleaved(coefficients), GridLocator.RECTIFIED_SIZE)
+        }
+
+        private fun interleaved(coefficients: Mat): DoubleArray =
+            DoubleArray(TERMS * 2) { coefficients.get(it / 2, it % 2)[0] }
     }
 
     /**
@@ -418,10 +421,10 @@ internal object CellGrid {
         val (across, down) =
             if (Math.abs(first.second) <= Math.abs(second.second)) first to second else second to first
 
-        val alongRow = centres.map { it.x * across.first + it.y * across.second }
-        val downColumn = centres.map { it.x * down.first + it.y * down.second }
+        val alongRow = spread(centres.map { it.x * across.first + it.y * across.second })
+        val downColumn = spread(centres.map { it.x * down.first + it.y * down.second })
         var places = claimPlaces(
-            centres.indices.map { Point(spread(alongRow, it), spread(downColumn, it)) }
+            centres.indices.map { Point(alongRow[it], downColumn[it]) }
         )
 
         var fitted: Mat? = null
@@ -465,23 +468,26 @@ internal object CellGrid {
         }
 
         val solved = fitted ?: return null
-        val pitch = centres.indices.mapNotNull { i ->
-            centres.indices.filter { it != i }
-                .minOfOrNull { Math.hypot(centres[i].x - centres[it].x, centres[i].y - centres[it].y) }
-        }.sorted().let { it.getOrElse(it.size / 2) { 0.0 } }
+        // A fit that came back with a NaN or an infinity in it has no corners to offer,
+        // and a quad made of them would go on to be warped and scored as though it had.
+        if (!Core.checkRange(solved)) {
+            solved.release()
+            return null
+        }
+        val pitch = pitchOf(centres)
 
-        return Lattice(centres, places, solved, pitch, scale, curveThrough(cells, places, scale))
+        return Lattice(centres, places, solved, pitch, scale, curveThrough(cells, places, scale, pitch))
         } catch (failure: Throwable) {
             fitted?.release()
             throw failure
         }
     }
 
-    /** Where a cell falls along one direction, with the cells spread evenly over the nine. */
-    private fun spread(values: List<Double>, of: Int): Double {
+    /** Where each cell falls along one direction, with the cells spread evenly over the nine. */
+    private fun spread(values: List<Double>): List<Double> {
         val low = values.min()
         val span = (values.max() - low).coerceAtLeast(1e-6)
-        return (values[of] - low) / span * 8
+        return values.map { (it - low) / span * 8 }
     }
     /**
      * Order of the surface fitted through the cells, and the powers that make it up.
@@ -543,8 +549,9 @@ internal object CellGrid {
         cells: List<Cell>,
         places: List<Pair<Int, Int>?>,
         scale: Double,
+        pitch: Double,
     ): Mat? {
-        val inset = ruleInset(cells)
+        val inset = ruleInset(cells, pitch)
         val rows = mutableListOf<DoubleArray>()
         val targets = mutableListOf<Point>()
         val taken = mutableSetOf<Int>()
@@ -589,12 +596,5 @@ internal object CellGrid {
             a.release()
             b.release()
         }
-    }
-
-    /** Which of the nine a cell falls in, along one direction. */
-    private fun place(values: List<Double>, of: Int): Int {
-        val low = values.min()
-        val span = (values.max() - low).coerceAtLeast(1e-6)
-        return Math.round((values[of] - low) / span * 8).toInt()
     }
 }

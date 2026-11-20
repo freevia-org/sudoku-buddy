@@ -158,6 +158,8 @@ object GridLineFitter {
 
     private fun fitAxis(profile: DoubleArray): List<Double>? {
         val size = profile.size
+        // One pixel has no spacing to search over, and the search below would never end.
+        if (size < 2) return null
         val strongest = profile.max()
         if (strongest <= 0.0) return null
 

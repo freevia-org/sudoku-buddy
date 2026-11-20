@@ -75,7 +75,15 @@ class MainActivity : ComponentActivity() {
             ?: intent.clipData?.takeIf { it.itemCount > 0 }?.getItemAt(0)?.uri
             ?: intent.data
             ?: return
+        // Only another app's provider. A file or resource address would have this app
+        // read from its own private storage on the sender's say-so.
+        if (uri.scheme != "content") return
         sharedPhotoRequest = SharedPhotoRequest(++nextSharedPhotoRequestId, uri)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putBoolean(SHARED_PHOTO_PENDING, sharedPhotoRequest != null)
     }
 
     override fun onNewIntent(intent: Intent) {
@@ -86,7 +94,16 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        receiveSharedPhoto(intent)
+        // The launching intent outlives the import it asked for: it is handed back on
+        // every recreation and when the task is reopened from recents. Read it only for
+        // a fresh launch, or when the previous instance was destroyed mid-import.
+        if (savedInstanceState == null) {
+            if ((intent.flags and Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY) == 0) {
+                receiveSharedPhoto(intent)
+            }
+        } else if (savedInstanceState.getBoolean(SHARED_PHOTO_PENDING)) {
+            receiveSharedPhoto(intent)
+        }
         AppLanguages.migrate(this)
 
         // Draw behind the status and navigation bars, and let each screen inset its own
@@ -122,6 +139,10 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    private companion object {
+        const val SHARED_PHOTO_PENDING = "sharedPhotoPending"
     }
 }
 
@@ -301,10 +322,13 @@ private fun AppRoot(
                 trainingConsent = snapshot.trainingConsent)
         }
         if (id != null) {
-            storage.withLock {
-                withContext(Dispatchers.IO) {
-                    history.markSubmitted(id, snapshot.readingCorrections.size, receipt,
-                        snapshot.trainingConsent)
+            // The upload succeeded either way; a full disk must not turn that into a crash.
+            runCatching {
+                storage.withLock {
+                    withContext(Dispatchers.IO) {
+                        history.markSubmitted(id, snapshot.readingCorrections.size, receipt,
+                            snapshot.trainingConsent)
+                    }
                 }
             }
             entries = withContext(Dispatchers.IO) { history.list() }
@@ -368,8 +392,10 @@ private fun AppRoot(
                             it.copy(trainingConsent = snapshot.trainingConsent)
                         }
                         if (id != null) {
-                            storage.withLock {
-                                withContext(Dispatchers.IO) { history.update(id, snapshot) }
+                            runCatching {
+                                storage.withLock {
+                                    withContext(Dispatchers.IO) { history.update(id, snapshot) }
+                                }
                             }
                         }
                     }
@@ -420,8 +446,10 @@ private fun AppRoot(
         scope.launch {
             try {
                 if (submissionId != null) {
-                    storage.withLock {
-                        withContext(Dispatchers.IO) { history.update(submissionId, reportSnapshot) }
+                    runCatching {
+                        storage.withLock {
+                            withContext(Dispatchers.IO) { history.update(submissionId, reportSnapshot) }
+                        }
                     }
                 }
                 if (uploadSnapshot(reportSnapshot, submissionId)) {
@@ -473,8 +501,10 @@ private fun AppRoot(
         puzzle = changed
         if (changed != null && changed != current) entryId?.let { id ->
             scope.launch {
-                storage.withLock {
-                    withContext(Dispatchers.IO) { history.update(id, changed) }
+                runCatching {
+                    storage.withLock {
+                        withContext(Dispatchers.IO) { history.update(id, changed) }
+                    }
                 }
             }
         }
@@ -560,7 +590,8 @@ private fun AppRoot(
             }
         } catch (cancelled: kotlinx.coroutines.CancellationException) {
             throw cancelled
-        } catch (_: Exception) {
+        } catch (_: Throwable) {
+            // Throwable, not Exception: an oversized shared image fails as OutOfMemoryError.
             photoImportError = "Something went wrong reading that photo."
         } finally {
             photoImportBusy = false
@@ -732,7 +763,8 @@ private fun AppRoot(
             else -> CameraScreen(
                 autoCapture = settings.autoCapture,
                 onAutoCaptureChange = { applySettings(settings.copy(autoCapture = it)) },
-                autoCaptureAllowed = drawer.isClosed && !drawer.isAnimationRunning,
+                autoCaptureAllowed = drawer.isClosed && !drawer.isAnimationRunning &&
+                    !photoImportBusy,
                 onRead = ::acceptRead,
                 onMenu = ::openDrawer,
                 onStrategies = { go(Screen.STRATEGIES) },

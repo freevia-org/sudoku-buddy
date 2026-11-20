@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import UIKit
+import ImageIO
 import SudokuShared
 import PuzzlePersistence
 
@@ -169,6 +170,21 @@ final class PuzzleModel: ObservableObject {
     func historyThumbnail(_ entry: SavedPuzzle) -> UIImage? {
         guard entry.hasPhoto, let data = try? store.photo(entry.id) else { return nil }
         return UIImage(data: data)
+    }
+
+    private let rowThumbnails = NSCache<NSUUID, UIImage>()
+    /// A saved photo never changes for its id, so each history row decodes one small copy once.
+    func historyRowThumbnail(_ entry: SavedPuzzle) -> UIImage? {
+        guard entry.hasPhoto else { return nil }
+        let key = entry.id as NSUUID
+        if let cached = rowThumbnails.object(forKey: key) { return cached }
+        let options: [CFString: Any] = [kCGImageSourceCreateThumbnailFromImageAlways: true,
+                                        kCGImageSourceCreateThumbnailWithTransform: true, kCGImageSourceThumbnailMaxPixelSize: 208]
+        guard let data = try? store.photo(entry.id), let source = CGImageSourceCreateWithData(data as CFData, nil),
+              let small = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary) else { return nil }
+        let image = UIImage(cgImage: small)
+        rowThumbnails.setObject(image, forKey: key)
+        return image
     }
 
     func digit(at index: Int) -> Int { givens[index] == 0 ? progress[index] : givens[index] }
@@ -401,6 +417,7 @@ final class PuzzleModel: ObservableObject {
         do {
             try store.delete(record.id)
             FeedbackModel.shared.cancelQueued(record.id)
+            rowThumbnails.removeObject(forKey: record.id as NSUUID)
             history.removeAll { $0.id == record.id }
             if currentID == record.id { clearCurrent() }
         } catch {

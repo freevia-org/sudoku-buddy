@@ -1,17 +1,18 @@
-const RECEIPT_PATTERN = /^[a-f0-9]{64}$/;
+export const RECEIPT_PATTERN = /^[a-f0-9]{64}$/;
 const REPORT_PREFIX = "reports/";
 
-function json(status, body) {
+export function json(status, body, headers = {}) {
   return new Response(JSON.stringify(body), {
     status,
     headers: {
       "content-type": "application/json; charset=utf-8",
       "cache-control": "no-store",
+      ...headers,
     },
   });
 }
 
-async function digestHex(bytes) {
+export async function digestHex(bytes) {
   const digest = await crypto.subtle.digest("SHA-256", bytes);
   return [...new Uint8Array(digest)]
     .map((byte) => byte.toString(16).padStart(2, "0"))

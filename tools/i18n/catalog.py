@@ -74,6 +74,7 @@ def literals(source):
         elif source.startswith("/*", i):
             depth, i = 1, i + 2
             while depth:
+                if i >= len(source): raise ValueError("Unclosed Kotlin block comment")
                 if source.startswith("/*", i): depth += 1; i += 2
                 elif source.startswith("*/", i): depth -= 1; i += 2
                 else: i += 1

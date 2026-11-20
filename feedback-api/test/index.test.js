@@ -205,6 +205,27 @@ test("stops reading a streaming body as soon as it exceeds the declared length",
   assert.equal(writes.length, 0);
 });
 
+test("an upload stream that fails mid-body is a client error, not an unhandled exception", async () => {
+  const { env, trainingWrites } = makeEnv();
+  const request = new Request("https://x/v1/reports", {
+    method: "POST",
+    headers: { "content-type": "application/zip", "content-length": "12" },
+    body: new ReadableStream({
+      start(controller) {
+        controller.enqueue(makeZip());
+      },
+      pull(controller) {
+        controller.error(new Error("connection reset"));
+      },
+    }),
+    duplex: "half",
+  });
+  const response = await worker.fetch(request, env);
+  assert.equal(response.status, 400);
+  assert.deepEqual(await response.json(), { error: "body_length_mismatch" });
+  assert.equal(trainingWrites.length, 0);
+});
+
 test("one R2 report has no expiry or KV copy and survives restart/retry", async () => {
   const s = makeEnv(),
     body = makeZip();

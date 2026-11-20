@@ -44,4 +44,13 @@ class TeachingEngineTest {
         val wrong = empty.toMutableList().also { it[2] = '1' }.joinToString("")
         assertEquals(solution, engine.solution(givens, wrong))
     }
+    @Test fun practiceJudgesTheRouteTheLessonShowed() {
+        val lesson = engine.lessonJson(givens, empty, "route", "", true)
+        assertEquals(lesson, engine.lessonJson(givens, empty, "route", "", true))
+        val index = Regex("\"index\":(-?\\d+)").find(lesson)!!.groupValues[1].toInt()
+        val digit = Regex("\"digit\":(\\d)").find(lesson)!!.groupValues[1].toInt()
+        if (index >= 0) assertTrue("\"correct\":true" in engine.practiceJson(givens, empty, "route", "", true, 0, index, digit))
+        assertTrue("\"correct\":false" in engine.practiceJson(givens, empty, "route", "", true, 999, 0, 1))
+        assertTrue("\"correct\":false" in engine.practiceJson(givens, empty, "nonsense", "", true, 0, 0, 1))
+    }
 }

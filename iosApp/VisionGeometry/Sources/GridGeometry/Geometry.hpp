@@ -176,9 +176,9 @@ inline Mat flatten(const Mat& full,const Mat& curve,double extent) {
 }
 struct Located {Mat rgb;Quad quad;double strength=0;bool curved=false;Mat surface;};
 inline Located locate(const Mat& rgb,const std::function<Quad(const Quad&)>& ruleAligner={}) {
-    Mat gray=photoLuma(rgb);Located out;std::vector<Candidate>all;
+    Mat gray=photoLuma(rgb);Located out;std::vector<Candidate>all;std::map<int,std::vector<Quad>>outlines;
     for(int edge:{1000,1600}){
-        std::vector<Candidate>scored;for(auto q:detect(gray,edge)){Candidate c{q,score(rectify(gray,q,scoringSize(q)))};scored.push_back(c);all.push_back(c);}
+        std::vector<Candidate>scored;for(auto q:outlines[edge]=detect(gray,edge)){Candidate c{q,score(rectify(gray,q,scoringSize(q)))};scored.push_back(c);all.push_back(c);}
         Candidate best;if(winner(scored,best)){out={rectify(rgb,best.quad),best.quad,best.strength,false};return out;}
         std::stable_sort(scored.begin(),scored.end(),[](auto&a,auto&b){return a.strength>b.strength;});Candidate rescue;double top=-1;
         for(int i=0;i<std::min(3,(int)scored.size());i++)for(double growth:{1.02,1.04}){auto q=grown(scored[i].quad,growth);double s=score(rectify(gray,q,scoringSize(q)));if(s>top){top=s;rescue={q,s};}}
@@ -187,15 +187,15 @@ inline Located locate(const Mat& rgb,const std::function<Quad(const Quad&)>& rul
     std::vector<Quad> alignedOutlines;
     // Long-rule outlines before the more expensive cell lattice.
     for(int edge:{1000,1600}){
-        auto candidates=detect(gray,edge),rules=detect(gray,edge,true);candidates.insert(candidates.end(),rules.begin(),rules.end());
+        auto candidates=outlines[edge],rules=detect(gray,edge,true);candidates.insert(candidates.end(),rules.begin(),rules.end());
         auto outlined=candidates;for(auto q:outlined)if(std::abs(std::atan2(q[1].y-q[0].y,q[1].x-q[0].x)*180/CV_PI)<10)candidates.push_back(bounds(q));
         Candidate best;double top=-1;std::vector<Candidate> rescored;for(auto q:candidates){q=ruleAligner?ruleAligner(q):alignRules(gray,q);double strength=score(rectify(gray,q,scoringSize(q)));rescored.push_back({q,strength});if(strength>top){top=strength;best={q,strength};}}
         std::stable_sort(rescored.begin(),rescored.end(),[](auto&a,auto&b){return a.strength>b.strength;});
         for(int i=0;i<std::min(3,(int)rescored.size());i++)alignedOutlines.push_back(rescored[i].quad);
         if(top>=.35)return {rectify(rgb,best.quad),best.quad,best.strength,false};
     }
-    std::vector<Lattice>allLattices;
-    for(int edge:{1000,1600}){auto found=lattices(gray,edge);allLattices.insert(allLattices.end(),found.begin(),found.end());
+    std::map<int,std::vector<Lattice>>allLattices;
+    for(int edge:{1000,1600}){auto& found=allLattices[edge]=lattices(gray,edge);
         for(auto& l:found){double s=score(rectify(gray,l.quad,scoringSize(l.quad)));if(s>=.35)return {rectify(rgb,l.quad),l.quad,s,false};}
         for(auto& l:found)if(!l.curve.empty()){double s=score(flatten(gray,l.curve,scoringSize(l.quad)));if(s>=.35){Mat flat=flatten(gray,l.curve,Side),color;cvtColor(flat,color,COLOR_GRAY2RGB);return {color,l.quad,s,true,l.curve};}}
     }
@@ -203,12 +203,12 @@ inline Located locate(const Mat& rgb,const std::function<Quad(const Quad&)>& rul
     // checking all outline resolutions before any cell-lattice resolution.
     for(int edge:{1000,1600}){
         Candidate best;double top=-1;
-        for(auto q:detect(gray,edge)){double value=score(rectify(gray,q,scoringSize(q)),1);if(value>top){top=value;best={q,value};}}
+        for(auto q:outlines[edge]){double value=score(rectify(gray,q,scoringSize(q)),1);if(value>top){top=value;best={q,value};}}
         if(top>=.35)return {rectify(rgb,best.quad),best.quad,best.strength,false};
     }
     for(int edge:{1000,1600}){
         Candidate best;double top=-1;
-        for(auto& l:lattices(gray,edge)){double value=score(rectify(gray,l.quad,scoringSize(l.quad)),1);if(value>top){top=value;best={l.quad,value};}}
+        for(auto& l:allLattices[edge]){double value=score(rectify(gray,l.quad,scoringSize(l.quad)),1);if(value>top){top=value;best={l.quad,value};}}
         if(top>=.35)return {rectify(rgb,best.quad),best.quad,best.strength,false};
     }
     // Rescue only after existing accepted outline/lattice fallbacks are exhausted.

@@ -124,7 +124,17 @@ class History(context: Context) {
 
     /** Newest first. */
     @Synchronized
-    fun list(): List<HistoryEntry> =
+    fun list(): List<HistoryEntry> {
+        if (!swept) {
+            swept = true
+            runCatching { sweepAbandonedWrites(directory) }
+        }
+        return entries()
+    }
+
+    private var swept = false
+
+    private fun entries(): List<HistoryEntry> =
         directory.listFiles { f: File -> f.extension == "txt" }
             ?.mapNotNull { text ->
                 val id = text.nameWithoutExtension.toLongOrNull() ?: return@mapNotNull null

@@ -1,18 +1,10 @@
 import { MAX_REPORT_BYTES } from "./limits.js";
-import { ReportReceipt } from "./report-receipt.js";
-
-const RECEIPT_PATTERN = /^[a-f0-9]{64}$/;
-
-function json(status, body, headers = {}) {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: {
-      "content-type": "application/json; charset=utf-8",
-      "cache-control": "no-store",
-      ...headers,
-    },
-  });
-}
+import {
+  RECEIPT_PATTERN,
+  ReportReceipt,
+  digestHex,
+  json,
+} from "./report-receipt.js";
 
 function isZipSignature(bytes) {
   if (bytes.length < 4) return false;
@@ -61,13 +53,6 @@ async function readBoundedBody(request, expectedLength) {
     offset += chunk.byteLength;
   }
   return body;
-}
-
-async function sha256Hex(bytes) {
-  const digest = await crypto.subtle.digest("SHA-256", bytes);
-  return [...new Uint8Array(digest)]
-    .map((byte) => byte.toString(16).padStart(2, "0"))
-    .join("");
 }
 
 export default {
@@ -145,12 +130,18 @@ export default {
     if (contentLength > MAX_REPORT_BYTES)
       return json(413, { error: "report_too_large" });
 
-    const bytes = await readBoundedBody(request, contentLength);
+    let bytes;
+    try {
+      bytes = await readBoundedBody(request, contentLength);
+    } catch {
+      // An aborted or failing upload stream is a client error, not a Worker crash.
+      bytes = null;
+    }
     if (!bytes) return json(400, { error: "body_length_mismatch" });
     if (!isZipSignature(bytes))
       return json(415, { error: "zip_signature_required" });
 
-    const digest = await sha256Hex(bytes);
+    const digest = await digestHex(bytes);
     const trainingConsent =
       request.headers.get("X-Sudoku-Training-Consent") === "yes";
     if (!env.REPORT_RECEIPTS) {

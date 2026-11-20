@@ -478,12 +478,13 @@ class GridReader(private val classifier: DigitClassifier = DigitClassifier.load(
         // starting split about. It lands in exactly the same place - 57 either way - so the
         // simpler of the two is here.
         var labels = considered.map { if (readings[it].ink == Ink.PRINTED) 1 else 0 }.toIntArray()
-        repeat(SETTLING_ROUNDS) {
+        var rounds = 0
+        while (rounds++ < SETTLING_ROUNDS) {
             val centres = Array(2) { group -> centre(features, labels, group) }
             val moved = IntArray(labels.size) { i ->
                 if (apart(features[i], centres[1]) < apart(features[i], centres[0])) 1 else 0
             }
-            if (moved.contentEquals(labels)) return@repeat
+            if (moved.contentEquals(labels)) break
             labels = moved
         }
 

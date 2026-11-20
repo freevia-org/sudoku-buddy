@@ -2,8 +2,6 @@ package org.freevia.sudokubuddy.recognize
 
 import org.freevia.sudokubuddy.vision.GrayImage
 import org.freevia.sudokubuddy.vision.OpenCvNatives
-import org.opencv.core.CvType
-import org.opencv.core.Mat
 import kotlin.test.Test
 import kotlin.test.assertContentEquals
 import kotlin.test.assertEquals
@@ -121,9 +119,7 @@ class WholeGlyphTest {
         // blob finder directly, which sees every piece of ink whatever is later made of it.
         OpenCvNatives.ensureLoaded { nu.pattern.OpenCV.loadShared() }
         val image = cell(stem(), crossbar(ghost))
-        val mat = Mat(image.height, image.width, CvType.CV_8UC1)
-            .also { it.put(0, 0, image.pixels) }
-        val blobs = CellAnalyzer.findBlobs(mat, image)
+        val blobs = CellAnalyzer.findBlobs(image)
 
         assertEquals(2, blobs.size, "both the stem and the faint mark are ink")
         val faint = blobs.minBy { it.area }

@@ -125,6 +125,9 @@ internal object AppLanguages {
                 locale.language == "zh" -> if (locale.script == "Hant" || locale.country in setOf("TW", "HK", "MO")) "zh-TW" else "zh-CN"
                 locale.language == "pt" && locale.country == "BR" -> "pt-BR"
                 locale.language == "no" -> "nb"
+                // Older Android runtimes still report the pre-1989 codes.
+                locale.language == "iw" -> "he"
+                locale.language == "in" -> "id"
                 else -> locale.language
             }
             supported.firstOrNull { it.first == preferred }?.let { return it.first }

@@ -39,7 +39,7 @@ internal object Localization {
 internal fun rememberMessageCatalog(): MessageCatalog {
     val context = LocalContext.current
     val configuration = LocalConfiguration.current
-    return remember(configuration.locales.toLanguageTags()) { Localization.catalog(context) }
+    return remember(configuration.locales) { Localization.catalog(context) }
 }
 
 @Composable

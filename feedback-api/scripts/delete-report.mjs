@@ -17,7 +17,7 @@ const valueUrl = `${api}/accounts/${encodeURIComponent(accountId)}/storage/kv/na
 
 async function deleteRemoteValue() {
   const headers = { authorization: `Bearer ${token}` };
-  const deleted = await fetch(valueUrl, { method: "DELETE", headers });
+  const deleted = await fetch(valueUrl, { method: "DELETE", headers, signal: AbortSignal.timeout(30_000) });
   if (!deleted.ok) throw new Error(`Cloudflare deletion failed (${deleted.status}).`);
   const result = await deleted.json();
   if (result.success !== true) throw new Error("Cloudflare did not confirm the KV deletion.");
@@ -25,7 +25,7 @@ async function deleteRemoteValue() {
   // Verify against the API, not a Worker edge cache. KV is eventually consistent;
   // keep the request open briefly and fail visibly if the value still appears.
   for (let attempt = 0; attempt < 10; attempt += 1) {
-    const check = await fetch(valueUrl, { headers });
+    const check = await fetch(valueUrl, { headers, signal: AbortSignal.timeout(30_000) });
     if (check.status === 404) return;
     if (!check.ok) throw new Error(`Cloudflare deletion verification failed (${check.status}).`);
     await check.body?.cancel(); // Only the status matters; do not download another report copy.

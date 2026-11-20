@@ -12,6 +12,8 @@ data class HintNavigation(val frame: HintFrame = HintFrame(), val parents: List<
 }
 
 object VisualHint {
+    private val CELL_NAME = Regex("r(\\d)c(\\d)")
+
     /** Only a pattern in one shared unit warrants a causal arrow to an exclusion. */
     fun causalTargets(move: Deduction.Elimination): Set<Int> = if (move.chain != null || move.supportingCells.isEmpty()) emptySet() else move.fromCells.filter { target ->
         val group = move.supportingCells + target
@@ -134,7 +136,7 @@ object VisualHint {
         val lesson = frame.step?.let { hint.proof.getOrNull(it) } ?: return "Choose a candidate to see why it cannot go in your square."
         val move = lesson.deduction
         val chain = (move as? Deduction.Elimination)?.chain
-        if (chain == null) return move.explanation.replace(Regex("r(\\d)c(\\d)"), "row $1, column $2")
+        if (chain == null) return move.explanation.replace(CELL_NAME, "row $1, column $2")
         if (frame.before) return "Test ${move.digit} as an assumption in the marked square. It is not an answer. Follow the consequences to see why it fails."
         if (frame.consequence > chain.links.size) return "The assumption has been rejected. We return to the real candidates and cross out ${move.digit} in the marked square. The hypothetical digits are cleared."
         if (frame.consequence >= chain.links.size) return if (chain.missing == null) {

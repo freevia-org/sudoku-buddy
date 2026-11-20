@@ -17,7 +17,7 @@ class ScanEngine {
             ?: if (verifiedGeometry) CellGeometry.evenNinths(width) else null
             ?: return ScanReading("unreadable", "Could not find nine rows and columns. Photograph the whole grid on a flat page, in good light.")
         val cells = CellExtractor.extract(gray, geometry)
-        val color = (0 until 81).map { index ->
+        val color = if (colorAvailable) (0 until 81).map { index ->
             val bounds = geometry.cellBounds(index)
             val left = bounds.left.coerceIn(0, width - 1)
             val top = bounds.top.coerceIn(0, height - 1)
@@ -27,8 +27,8 @@ class ScanEngine {
             val bytes = ByteArray(w * h * 3)
             repeat(h) { y -> rgb.copyInto(bytes, y * w * 3, ((top + y) * width + left) * 3, ((top + y) * width + right) * 3) }
             RgbImage(w, h, bytes)
-        }
-        val result = GridReader().read(cells, if (colorAvailable) color else null)
+        } else null
+        val result = GridReader().read(cells, color)
         val grid = when (result) {
             is ReadResult.Accepted -> result.grid
             is ReadResult.NeedsConfirmation -> result.grid

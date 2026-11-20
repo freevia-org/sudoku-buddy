@@ -45,7 +45,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - uses: android-actions/setup-android@v4
+      - uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4.0.4
         with:
           packages: platform-tools
       # The self-hosted Linux runner mounts /tmp noexec. OpenCV tests and
@@ -56,7 +56,7 @@ jobs:
           echo "JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=$RUNNER_TEMP/java-tmp" >> "$GITHUB_ENV"
       - name: Install pinned APK verification tools
         run: sdkmanager 'build-tools;36.0.0'
-      - uses: gradle/actions/setup-gradle@v5
+      - uses: gradle/actions/setup-gradle@0723195856401067f7a2779048b490ace7a47d7c # v5.0.2
       - name: Restore required signing key
         env:
           KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}

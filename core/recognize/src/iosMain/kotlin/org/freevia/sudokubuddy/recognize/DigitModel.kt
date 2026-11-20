@@ -8,7 +8,9 @@ internal actual fun loadDigitModel(): ByteArray {
         "digits.bin is missing from the app bundle"
     }
     val data = checkNotNull(NSData.dataWithContentsOfFile(path))
-    return ByteArray(data.length.toInt()).also { bytes ->
+    val size = data.length.toInt()
+    if (size == 0) return ByteArray(0)
+    return ByteArray(size).also { bytes ->
         bytes.usePinned { memcpy(it.addressOf(0), data.bytes, data.length) }
     }
 }

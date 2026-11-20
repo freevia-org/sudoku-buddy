@@ -15,6 +15,9 @@ import org.freevia.sudokubuddy.vision.RgbImage
  */
 object Images {
 
+    private const val MAX_UNREDUCED_PIXELS = 64L * 1024 * 1024
+    private val UNREDUCED_TYPES = setOf("image/png", "image/webp", "image/bmp", "image/x-ms-bmp")
+
     /** The luma plane of a camera frame, honouring its row stride. */
     fun fromPreview(proxy: ImageProxy): GrayImage {
         val plane = proxy.planes[0]
@@ -24,12 +27,10 @@ object Images {
         val height = proxy.height
 
         val pixels = ByteArray(width * height)
-        val row = ByteArray(rowStride)
+        val visible = minOf(width, rowStride)
         for (y in 0 until height) {
             buffer.position(y * rowStride)
-            val available = minOf(rowStride, buffer.remaining())
-            buffer.get(row, 0, available)
-            System.arraycopy(row, 0, pixels, y * width, minOf(width, available))
+            buffer.get(pixels, y * width, minOf(visible, buffer.remaining()))
         }
         return GrayImage(width, height, pixels)
     }
@@ -41,6 +42,13 @@ object Images {
         val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
         BitmapFactory.decodeByteArray(bytes, 0, bytes.size, bounds)
         check(bounds.outWidth > 0 && bounds.outHeight > 0) { "could not decode the captured image" }
+        // JPEG is reduced while it is decoded, and HEIF by the platform decoder below. These
+        // are expanded whole by OpenCV first, so a shared image of absurd dimensions would
+        // exhaust memory before it is shrunk.
+        check(bounds.outMimeType !in UNREDUCED_TYPES ||
+            bounds.outWidth.toLong() * bounds.outHeight <= MAX_UNREDUCED_PIXELS) {
+            "could not decode the captured image"
+        }
         // Match iOS's bundled OpenCV codec rather than the OS-dependent JPEG decoder.
         // Platform decoding remains available for formats such as HEIF not in OpenCV.
         org.freevia.sudokubuddy.vision.OpenCvNatives.ensureLoaded { check(org.opencv.android.OpenCVLoader.initLocal()) }

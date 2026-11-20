@@ -89,9 +89,12 @@ class GridLocatorTest {
         OpenCvNatives.ensureLoaded { nu.pattern.OpenCV.loadShared() }
 
         val image = CorpusFixtures.photo("welded-border")
-        val full = image.toMat()
-        val fromOutlines = QuadDetector.workingEdges().flatMap { edge ->
-            QuadDetector.detect(image, edge).map { GridScorer.score(GridLocator.rectify(full, it)) }
+        val fromOutlines = image.toMat().releasing { full ->
+            QuadDetector.workingEdges().flatMap { edge ->
+                QuadDetector.detect(image, edge).map { quad ->
+                    GridLocator.rectify(full, quad).releasing { GridScorer.score(it) }
+                }
+            }
         }
         assertTrue(
             fromOutlines.none { it >= GridLocator.MIN_GRID_SCORE },
@@ -120,12 +123,17 @@ class GridLocatorTest {
         OpenCvNatives.ensureLoaded { nu.pattern.OpenCV.loadShared() }
 
         val image = CorpusFixtures.photo("curled")
-        val full = image.toMat()
-        val flat = QuadDetector.workingEdges().flatMap { edge ->
-            QuadDetector.detect(image, edge).map { GridScorer.score(GridLocator.rectify(full, it)) } +
-                CellGrid.lattices(image, edge).map {
-                    GridScorer.score(GridLocator.rectify(full, it.quad()))
+        val flat = image.toMat().releasing { full ->
+            QuadDetector.workingEdges().flatMap { edge ->
+                val lattices = CellGrid.lattices(image, edge)
+                try {
+                    (QuadDetector.detect(image, edge) + lattices.map { it.quad() }).map { quad ->
+                        GridLocator.rectify(full, quad).releasing { GridScorer.score(it) }
+                    }
+                } finally {
+                    lattices.forEach { it.close() }
                 }
+            }
         }
         assertTrue(
             flat.none { it >= GridLocator.MIN_GRID_SCORE },
@@ -153,13 +161,46 @@ class GridLocatorTest {
         CorpusFixtures.requireCorpus()
         OpenCvNatives.ensureLoaded { nu.pattern.OpenCV.loadShared() }
 
-        val lattice = CellGrid.lattices(CorpusFixtures.photo("curled"), 1600.0)
-            .maxByOrNull { it.centres.size }
-        assertTrue(lattice != null, "no cell cluster found on the curled page")
-        val placed = lattice.places.count { it != null }
-        assertEquals(81, lattice.centres.size, "expected the whole grid to be found")
-        assertEquals(81, placed, "cells were dropped for want of a free place")
-        assertEquals(81, lattice.places.filterNotNull().distinct().size, "two cells share a place")
+        val lattices = CellGrid.lattices(CorpusFixtures.photo("curled"), 1600.0)
+        try {
+            val lattice = lattices.maxByOrNull { it.centres.size }
+            assertTrue(lattice != null, "no cell cluster found on the curled page")
+            val placed = lattice.places.count { it != null }
+            assertEquals(81, lattice.centres.size, "expected the whole grid to be found")
+            assertEquals(81, placed, "cells were dropped for want of a free place")
+            assertEquals(81, lattice.places.filterNotNull().distinct().size, "two cells share a place")
+        } finally {
+            lattices.forEach { it.close() }
+        }
+    }
+
+    /**
+     * The curled page read straight from the photograph is the page read through a Mat.
+     *
+     * The locator takes the first and used to take the second, and what it hands on is
+     * what every digit on that page is read from.
+     */
+    @Test
+    fun `the surface straightens the photograph to the same pixels with or without a Mat`() {
+        CorpusFixtures.requireCorpus()
+        OpenCvNatives.ensureLoaded { nu.pattern.OpenCV.loadShared() }
+
+        val image = CorpusFixtures.photo("curled")
+        val lattices = CellGrid.lattices(image, 1600.0)
+        try {
+            val lattice = lattices.maxByOrNull { it.centres.size }
+            assertTrue(lattice != null, "no cell cluster found on the curled page")
+            val direct = lattice.flattened(image)
+            assertTrue(direct != null, "no surface was fitted to the curled page")
+            val throughMat = image.toMat().releasing { full ->
+                lattice.flatten(full, GridLocator.RECTIFIED_SIZE.toDouble())!!.releasing { it.toGrayImage() }
+            }
+            assertEquals(throughMat.width, direct.width)
+            assertEquals(throughMat.height, direct.height)
+            assertTrue(throughMat.pixels.contentEquals(direct.pixels), "the two straightenings differ")
+        } finally {
+            lattices.forEach { it.close() }
+        }
     }
 
     @Test

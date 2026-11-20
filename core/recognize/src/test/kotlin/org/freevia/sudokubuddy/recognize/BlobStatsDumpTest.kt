@@ -42,9 +42,7 @@ class BlobStatsDumpTest {
                 // Every other blob in the same square. If something smaller is markedly
                 // darker than the biggest thing here, the biggest thing is not the ink
                 // that was written last.
-                val mat = org.opencv.core.Mat(cell.height, cell.width, org.opencv.core.CvType.CV_8UC1)
-                    .also { it.put(0, 0, cell.pixels) }
-                val others = CellAnalyzer.findBlobs(mat, cell).filter { it.area >= 12 }
+                val others = CellAnalyzer.findBlobs(cell).filter { it.area >= 12 }
                 val darkest = others.minOfOrNull { it.darkness } ?: blob.darkness
                 // How many other pieces of ink in the square are a serious size beside
                 // the biggest. Candidate marks come in groups; an answer is usually alone.

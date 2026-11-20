@@ -3,6 +3,9 @@
 import argparse, hashlib, json, plistlib
 from pathlib import Path
 
+if not __debug__:
+    raise SystemExit('Run without -O: every check in this audit is an assert.')
+
 
 def audit(app):
     info = plistlib.loads((app / 'Info.plist').read_bytes())

@@ -68,9 +68,12 @@ def summarize(path):
     }
     labels = Path(__file__).resolve().parents[2] / "corpus-labels"
     annotation_counts = Counter()
+    label_cache = {}
     for row in cells:
-        path = labels / (Path(row["photo"]).stem + ".json")
-        label = json.loads(path.read_text(encoding="utf-8"))
+        stem = Path(row["photo"]).stem
+        if stem not in label_cache:
+            label_cache[stem] = json.loads((labels / (stem + ".json")).read_text(encoding="utf-8"))
+        label = label_cache[stem]
         index = int(row["cell"])
         if index in label.get("candidateCells", []):
             annotation_counts["candidate_cells"] += 1

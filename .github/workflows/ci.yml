@@ -53,7 +53,7 @@ jobs:
       # setup-android invokes sdkmanager to accept licenses, which needs Java on PATH.
       - uses: ./.github/actions/setup-jdk-gradle
 
-      - uses: android-actions/setup-android@v4
+      - uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4.0.4
         with:
           packages: platform-tools
 
@@ -120,3 +120,7 @@ jobs:
           name: sudoku-buddy-bundle
           path: app/build/outputs/bundle/release/*.aab
           if-no-files-found: error
+
+      - name: Remove temporary signing key
+        if: always()
+        run: rm -f "$RUNNER_TEMP/release.jks"
