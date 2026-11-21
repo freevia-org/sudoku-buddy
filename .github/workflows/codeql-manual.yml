@@ -12,6 +12,7 @@ permissions:
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
+    if: github.ref == 'refs/heads/main'
     runs-on: ${{ matrix.runner }}
     timeout-minutes: ${{ contains(matrix.runner, '-i5-') && 180 || 120 }}
     strategy:
