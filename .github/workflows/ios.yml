@@ -81,8 +81,9 @@ jobs:
       - name: Test SwiftUI workflows with synthetic photos and mock feedback
         run: xcodebuild -project iosApp/SudokuBuddy.xcodeproj -scheme SudokuBuddy -configuration Debug -destination "platform=iOS Simulator,id=$IOS_TEST_DEVICE" -derivedDataPath build/DerivedData -resultBundlePath build/iOS-Tests.xcresult test-without-building
       - uses: actions/upload-artifact@v7
-        if: always()
+        if: failure()
         with:
           name: iOS-test-results
           path: build/iOS-Tests.xcresult
+          retention-days: 7
           if-no-files-found: ignore

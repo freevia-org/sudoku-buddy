@@ -146,9 +146,10 @@ jobs:
         with:
           name: sudoku-buddy-play-candidate-${{ github.run_id }}
           path: release-candidate/
+          retention-days: 14
           if-no-files-found: error
       - name: Archive tests and lint
-        if: always()
+        if: failure()
         uses: actions/upload-artifact@v7
         with:
           name: sudoku-buddy-candidate-checks-${{ github.run_id }}
@@ -156,6 +157,7 @@ jobs:
             **/build/reports/tests/**
             app/build/reports/lint-results*
             build/play-candidate-evidence/**
+          retention-days: 7
           if-no-files-found: warn
       - name: Remove temporary signing key
         if: always()
