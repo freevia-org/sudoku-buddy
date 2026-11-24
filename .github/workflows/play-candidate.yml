@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   candidate:
-    runs-on: sudoku-buddy-i5-linux
+    runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v7
@@ -147,6 +147,13 @@ jobs:
           name: sudoku-buddy-play-candidate-${{ github.run_id }}
           path: release-candidate/
           if-no-files-found: error
+      - name: Archive signed APK set for 16 KB emulator qualification
+        uses: actions/upload-artifact@v7
+        with:
+          name: sudoku-buddy-signed-device-apks-${{ github.run_id }}
+          path: ${{ runner.temp }}/candidate.apks
+          if-no-files-found: error
+          retention-days: 14
       - name: Archive tests and lint
         if: always()
         uses: actions/upload-artifact@v7
