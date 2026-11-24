@@ -2,6 +2,15 @@ name: Manual CodeQL security scan
 
 on:
   workflow_dispatch:
+    inputs:
+      runner_mode:
+        description: "Runner pool for this manual CodeQL scan"
+        required: true
+        default: local
+        type: choice
+        options:
+          - local
+          - hosted
 
 permissions:
   contents: read
@@ -12,7 +21,7 @@ permissions:
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
-    runs-on: ${{ matrix.runner }}
+    runs-on: ${{ inputs.runner_mode == 'hosted' && matrix.hosted_runner || matrix.runner }}
     timeout-minutes: ${{ contains(matrix.runner, '-i5-') && 180 || 120 }}
     strategy:
       fail-fast: false
@@ -21,21 +30,27 @@ jobs:
         include:
           - language: actions
             runner: sudoku-buddy-i5-linux
+            hosted_runner: ubuntu-24.04
             build-mode: none
           - language: c-cpp
             runner: sudoku-buddy-i5-linux
+            hosted_runner: ubuntu-24.04
             build-mode: none
           - language: java-kotlin
             runner: sudoku-buddy-i5-linux
+            hosted_runner: ubuntu-24.04
             build-mode: none
           - language: javascript-typescript
             runner: sudoku-buddy-i5-linux
+            hosted_runner: ubuntu-24.04
             build-mode: none
           - language: python
             runner: sudoku-buddy-i5-linux
+            hosted_runner: ubuntu-24.04
             build-mode: none
           - language: swift
             runner: sudoku-buddy-macmini
+            hosted_runner: macos-15
             build-mode: autobuild
     steps:
       - name: Checkout repository
