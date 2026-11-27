@@ -56,7 +56,7 @@ jobs:
           echo "JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=$RUNNER_TEMP/java-tmp" >> "$GITHUB_ENV"
       - name: Install pinned APK verification tools
         run: sdkmanager 'build-tools;36.0.0'
-      - uses: gradle/actions/setup-gradle@v5
+      - uses: gradle/actions/setup-gradle@v6
       - name: Restore required signing key
         env:
           KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
