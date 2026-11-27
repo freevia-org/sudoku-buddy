@@ -28,7 +28,8 @@ struct PuzzleView: View {
     @State private var inlineStudy: StudyModel?
     @State private var studyPresentation: StudyPresentation?
     @State private var reportToSubmit: ReportPresentation?
-    @State private var shareDiagnostics = false
+    private struct DiagnosticShare: Identifiable { let id = UUID(); let items: [Any] }
+    @State private var diagnosticShare: DiagnosticShare?
     @State private var showInfo = false
     @State private var showHistory = false
     @State private var confirmReset = false
@@ -97,7 +98,6 @@ struct PuzzleView: View {
                 if let bookmark = model.study, bookmark.open { openStudy(bookmark.mode, technique: bookmark.technique) }
                 restoreLayer()
                 if layer == "Hint" { await model.refreshHint() } else { await model.refreshOverlay() }
-                await FeedbackModel.shared.resumeAutomatic()
                 if let snapshot = model.reportSnapshot(automatic: true) { FeedbackModel.shared.offerAutomatic(snapshot) }
                 #if DEBUG
                 if ProcessInfo.processInfo.arguments.contains("--shared-image-fixture"),
@@ -110,6 +110,7 @@ struct PuzzleView: View {
                 startCamera = startCamera && (!ProcessInfo.processInfo.arguments.contains("--history-test-session") || ProcessInfo.processInfo.arguments.contains("--camera-test-start"))
                 #endif
                 if startCamera { showScan = true }
+                await FeedbackModel.shared.resumeAutomatic()
             }
             .task(id: (model.currentID?.uuidString ?? "") + model.cluesText + model.answersText + String(model.recognition?.corrections.count ?? 0)) {
                 guard let snapshot = model.reportSnapshot() else { reportRevision = nil; return }
@@ -136,6 +137,8 @@ struct PuzzleView: View {
                     sharedImage = nil; importingSharedImage = true
                     Task {
                         defer { importingSharedImage = false }
+                        // readPhoto ignores a call made while busy; keep the image queued so it is offered again.
+                        guard !model.busy else { return }
                         do {
                             let data = try inbox.read(url)
                             guard model.persist(touch: false) else { model.message = tr("Changes could not be saved on this device. Keep this puzzle open and try again."); return }
@@ -158,7 +161,7 @@ struct PuzzleView: View {
                     .presentationDetents([.large]).presentationDragIndicator(.visible)
             }
             .sheet(item: $reportToSubmit) { ReportConsentView(snapshot: $0.snapshot) }
-            .sheet(isPresented: $shareDiagnostics, onDismiss: { resumeCamera() }) { ShareSheet(items: diagnosticShareItems) }
+            .sheet(item: $diagnosticShare, onDismiss: { resumeCamera() }) { ShareSheet(items: $0.items) }
             .sheet(isPresented: $showReadingReceipts) { NavigationStack { ReceiptsView().toolbar { ToolbarItem(placement: .confirmationAction) { Button(tr("Done")) { showReadingReceipts = false } } } } }
             .sheet(isPresented: $showInfo, onDismiss: { resumeCamera() }) { AppInfoView(puzzle: model) }
             .sheet(isPresented: $showSettings, onDismiss: { resumeCamera() }) {
@@ -188,7 +191,7 @@ struct PuzzleView: View {
                 case "settings": showSettings = true
                 case "about": showInfo = true
                 case "bug": showBugReport = true
-                case "diagnostics": model.reloadRefusedScans(); shareDiagnostics = true
+                case "diagnostics": model.reloadRefusedScans(); diagnosticShare = DiagnosticShare(items: diagnosticShareItems)
                 default: break
                 }
                 cameraDestination = nil
@@ -231,7 +234,7 @@ struct PuzzleView: View {
         if let study = inlineStudy {
             StudyView(puzzle: model, study: study, onClose: { closeStudy() }, onExplore: { technique in
                 if technique.isEmpty { openStudy("catalog") } else { openStudy("strategy", technique: technique) }
-            }).clipShape(UnevenTutorShape())
+            }).clipShape(UnevenTutorShape()).id(ObjectIdentifier(study))
         } else { controls }
     }
 
@@ -373,7 +376,7 @@ struct PuzzleView: View {
                 Button(tr("About")) { showInfo = true }.accessibilityIdentifier("appInfo")
                 Divider()
                 Button(tr("Report a bug or idea on GitHub")) { showBugReport = true }.accessibilityIdentifier("reportBug")
-                Button(tr("Send diagnostics")) { model.reloadRefusedScans(); shareDiagnostics = true }
+                Button(tr("Send diagnostics")) { model.reloadRefusedScans(); diagnosticShare = DiagnosticShare(items: diagnosticShareItems) }
                 #if DEBUG
                 if ProcessInfo.processInfo.arguments.contains("--history-test-session") {
                     Button(tr("New puzzle")) { confirmReset = true }

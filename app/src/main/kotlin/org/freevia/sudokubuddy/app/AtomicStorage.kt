@@ -24,3 +24,14 @@ internal fun atomicWrite(file: File, write: (FileOutputStream) -> Unit) {
         temporary.delete()
     }
 }
+
+private const val ABANDONED_AFTER_MILLIS = 60L * 60 * 1000
+
+/**
+ * Removes temporaries left by a process killed mid-write. Nothing else ever does, and one
+ * holding a photograph is megabytes. The age keeps a write still in flight out of reach.
+ */
+internal fun sweepAbandonedWrites(directory: File, nowMillis: Long = System.currentTimeMillis()) {
+    directory.listFiles { file: File -> file.isFile && file.name.endsWith(".pending") }
+        ?.forEach { if (nowMillis - it.lastModified() > ABANDONED_AFTER_MILLIS) it.delete() }
+}

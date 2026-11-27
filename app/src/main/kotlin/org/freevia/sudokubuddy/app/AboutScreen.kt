@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.Modifier
@@ -34,7 +35,7 @@ import org.freevia.sudokubuddy.BuildConfig
  */
 @Composable
 fun AboutScreen(onClose: () -> Unit) {
-    var licensesOpen by remember { mutableStateOf(false) }
+    var licensesOpen by rememberSaveable { mutableStateOf(false) }
     if (licensesOpen) {
         LicenseScreen(onClose = { licensesOpen = false })
         return

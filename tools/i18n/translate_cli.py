@@ -14,17 +14,13 @@ import tempfile
 from pathlib import Path
 
 from catalog import ROOT, extract
+from prepare import HERE, normalize_message, read
 
-HERE = ROOT / "tools/i18n"
 CACHE_DIR = HERE / "drafts/gemini"
 PROMPT_VERSION = "sudoku-context-v1"
 
 class TranslationRejected(ValueError):
     """A terminal per-message rejection must not resend the valid parent batch."""
-
-
-def read(path):
-    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def brand_count(value, brand, tag):
@@ -226,9 +222,7 @@ def request(cli, model, tag, name, entries):
         if not valid:
             damaged.append(entry)
             continue
-        if "\n" in source and "\\n" not in source:
-            value = value.replace("\\n", "\n")
-        output[entry["key"]] = re.match(r"\s*", source)[0] + value.strip() + re.search(r"\s*$", source)[0]
+        output[entry["key"]] = normalize_message(source, value)
     if output and all(entry["key"].startswith("msg_") for entry in entries):
         # A later provider failure must not discard the valid part of this batch.
         cache_path = CACHE_DIR / f"{tag}.json"

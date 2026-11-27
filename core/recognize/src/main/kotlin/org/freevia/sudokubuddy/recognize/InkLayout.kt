@@ -13,7 +13,7 @@ internal object InkLayout {
     fun evidence(ink: CellInk): Evidence {
         // The same-pen criterion used to gather broken glyphs. Faint erased notes beside
         // a fresh answer are not competing current glyphs.
-        val regions = ink.pieces.filter { it.contrast >= ink.blob.contrast * 0.80 }
+        val regions = ink.pieces.filter { it.contrast >= ink.blob.contrast * CellAnalyzer.SAME_INK_FRACTION }
             .map { Region(it.left, it.top, it.width, it.height, it.area) }.toMutableList()
         // Overlapping pieces can be fragments of a candidate. Join their boxes before
         // counting; a broken5 must not disappear merely because each half is short.

@@ -115,7 +115,7 @@ struct HistoryView: View {
         .tint(AppStyle.primary)
     }
     @ViewBuilder private func thumbnail(_ entry: SavedPuzzle) -> some View {
-        if let photo = model.historyThumbnail(entry) {
+        if let photo = model.historyRowThumbnail(entry) {
             Image(uiImage: photo).resizable().scaledToFill().frame(width: 52, height: 52).clipped()
         } else {
             Image(systemName: "square.grid.3x3").frame(width: 52, height: 52).background(AppStyle.surface)

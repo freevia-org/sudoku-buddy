@@ -191,7 +191,7 @@ object CellAnalyzer {
      * to 19 as it stops gathering anything at all, which is the check that the two ends
      * behave as they should. Confirmed over the whole corpus at 0.80.
      */
-    private const val SAME_INK_FRACTION = 0.80
+    internal const val SAME_INK_FRACTION = 0.80
 
     /**
      * Every piece of the digit, for the picture the classifier is shown.
@@ -247,7 +247,7 @@ object CellAnalyzer {
     private fun findBlobs(ink: InkMask, cell: GrayImage, combed: Boolean): List<Blob> {
         // The median of the cell is its paper: ink is the minority of any square, even a
         // crowded one.
-        val paper = cell.pixels.map { it.toInt() and 0xFF }.sorted()[cell.pixels.size / 2]
+        val paper = medianLevel(cell.pixels)
         val labels = ink.labels
         val stats = ink.stats
         val count = ink.count
@@ -422,6 +422,8 @@ object CellAnalyzer {
      */
     private fun normalise(ink: InkMask, blob: Blob, parts: Set<Int>, cell: GrayImage): FloatArray {
         val labels = ink.labels
+        val member = BooleanArray(ink.count)
+        for (part in parts) member[part] = true
 
         var left = blob.left
         var top = blob.top
@@ -429,7 +431,7 @@ object CellAnalyzer {
         var bottom = blob.top + blob.height
         for (y in 0 until cell.height) {
             for (x in 0 until cell.width) {
-                if (labels[y * cell.width + x] in parts) {
+                if (member[labels[y * cell.width + x]]) {
                     if (x < left) left = x
                     if (y < top) top = y
                     if (x + 1 > right) right = x + 1
@@ -443,7 +445,7 @@ object CellAnalyzer {
         val glyph = FloatArray(height * width)
         for (y in 0 until height) {
             for (x in 0 until width) {
-                if (labels[(top + y) * cell.width + left + x] in parts) glyph[y * width + x] = 1f
+                if (member[labels[(top + y) * cell.width + left + x]]) glyph[y * width + x] = 1f
             }
         }
 

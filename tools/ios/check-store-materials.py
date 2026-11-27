@@ -3,6 +3,9 @@
 import hashlib, json, struct
 from pathlib import Path
 
+if not __debug__:
+    raise SystemExit('Run without -O: every check in this audit is an assert.')
+
 ROOT = Path(__file__).resolve().parents[2]
 PACKET = ROOT / 'docs/app-store'
 

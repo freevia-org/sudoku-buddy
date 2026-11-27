@@ -92,11 +92,16 @@ fun PreparedPuzzleScreen(
     deleteError: String?,
     onSubmitReading: (PuzzleState, Boolean) -> Unit,
 ) {
-    var prepared by remember { mutableStateOf<PuzzleState?>(null) }
+    // A state that was already prepared - coming back from Settings or About - is shown
+    // at once instead of flashing the progress screen for a frame.
+    var prepared by remember { mutableStateOf<PuzzleState?>(state.takeIf { it.isPreparedForDisplay }) }
+    val catalog = rememberMessageCatalog()
     var failed by remember(state) { mutableStateOf(false) }
     var showProgress by remember(state) { mutableStateOf(prepared?.photo !== state.photo) }
     LaunchedEffect(state) {
-        val result = withContext(Dispatchers.Default) { runCatching { state.prepareForDisplay() } }
+        val result = withContext(Dispatchers.Default) { runCatching {
+            state.prepareForDisplay().also { warmTranslations(it, catalog) }
+        } }
         result.onSuccess { prepared = it }.onFailure { failed = true }
     }
     val ready = prepared
@@ -138,6 +143,20 @@ fun PreparedPuzzleScreen(
     }
 }
 
+/**
+ * A long explanation is matched against every message template the first time it is
+ * translated, which belongs on the worker that prepared it rather than in composition.
+ */
+private fun warmTranslations(state: PuzzleState, catalog: MessageCatalog) {
+    runCatching {
+        val guidance = state.guidance
+        for (text in listOfNotNull(guidance?.body, guidance?.effect, guidance?.howTo,
+            state.status?.text, state.reasoningNote, state.liveNote, state.readingHeadline)) {
+            catalog.translate(text)
+        }
+    }
+}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PuzzleScreen(
@@ -156,7 +175,9 @@ fun PuzzleScreen(
     onSubmitReading: (PuzzleState, Boolean) -> Unit,
     showCellEditor: Boolean = true,
 ) {
-    val measurer = rememberTextMeasurer()
+    // One draw of a chain measures every digit in three styles plus its step numbers; the
+    // default of eight entries re-laid most of them out on every draw.
+    val measurer = rememberTextMeasurer(cacheSize = 64)
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     var submitOpen by remember(state.photo) { mutableStateOf(false) }
     var receiptsOpen by remember(state.photo) { mutableStateOf(false) }
@@ -262,6 +283,7 @@ private fun PhotoPane(
     // before the square was settled and every issue already dealt with came back.
     val latest = rememberUpdatedState(state)
     val latestOnChange = rememberUpdatedState(onChange)
+    val photo = remember(state.photo) { state.photo.asImageBitmap() }
     fun selectCell(index: Int) {
         val now = latest.value
         latestOnChange.value(if (now.practicing) {
@@ -293,7 +315,7 @@ private fun PhotoPane(
                 },
         ) {
             Image(
-                bitmap = state.photo.asImageBitmap(),
+                bitmap = photo,
                 contentDescription = null,
                 contentScale = ContentScale.FillBounds,
                 modifier = Modifier.fillMaxSize(),
@@ -309,6 +331,13 @@ private fun PhotoPane(
 private fun AccessiblePuzzleCells(state: PuzzleState, onSelect: (Int) -> Unit, modifier: Modifier) {
     val catalog = rememberMessageCatalog()
     val shown = state.overlayDigits()
+    val hintTarget = state.hintTarget()
+    val evidence = state.evidenceCells()
+    val candidates = state.candidateMarks()
+    val removed = state.removedCandidates()
+    val chain = state.chain()
+    val practicing = state.practicing
+    val openQuestions = state.openQuestions
     BoxWithConstraints(modifier.semantics {
         collectionInfo = CollectionInfo(9, 9)
         isTraversalGroup = true
@@ -339,16 +368,16 @@ private fun AccessiblePuzzleCells(state: PuzzleState, onSelect: (Int) -> Unit, m
                         OverlayRole.WRITTEN -> ""
                     }))
                 }
-                if (state.hintTarget() == index) append(catalog.translate(", destination of this hint"))
-                if (index in state.evidenceCells()) append(catalog.translate(", supporting evidence"))
-                state.candidateMarks()[index]?.takeIf { it.isNotEmpty() }?.let {
+                if (hintTarget == index) append(catalog.translate(", destination of this hint"))
+                if (index in evidence) append(catalog.translate(", supporting evidence"))
+                candidates[index]?.takeIf { it.isNotEmpty() }?.let {
                     append(catalog.translate(", candidates ${it.joinToString(", ")}"))
                 }
-                state.removedCandidates()[index]?.let { append(catalog.translate(", ruled out ${it.joinToString(", ")}")) }
-                state.chain()?.links?.firstOrNull { it.index == index }?.let {
+                removed[index]?.let { append(catalog.translate(", ruled out ${it.joinToString(", ")}")) }
+                chain?.links?.firstOrNull { it.index == index }?.let {
                     append(catalog.translate(", hypothetical ${it.digit}, not an entered answer"))
                 }
-                if (index in state.chain()?.deadEnd.orEmpty()) append(catalog.translate(", contradiction"))
+                if (index in chain?.deadEnd.orEmpty()) append(catalog.translate(", contradiction"))
             }
             Box(Modifier
                 .absoluteOffset(maxWidth * left, maxHeight * top)
@@ -358,9 +387,9 @@ private fun AccessiblePuzzleCells(state: PuzzleState, onSelect: (Int) -> Unit, m
                     role = Role.Button
                     collectionItemInfo = CollectionItemInfo(row, 1, column, 1)
                     traversalIndex = index.toFloat()
-                    selected = if (state.practicing) state.practiceCell == index else state.selectedCell == index
-                    if (index in state.openQuestions) stateDescription = catalog.translate("Needs confirmation")
-                    onClick(catalog.translate(if (state.practicing) "Select for practice" else "Edit cell")) {
+                    selected = if (practicing) state.practiceCell == index else state.selectedCell == index
+                    if (index in openQuestions) stateDescription = catalog.translate("Needs confirmation")
+                    onClick(catalog.translate(if (practicing) "Select for practice" else "Edit cell")) {
                         onSelect(index)
                         true
                     }

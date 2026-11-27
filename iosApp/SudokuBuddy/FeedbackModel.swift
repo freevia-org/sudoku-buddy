@@ -52,6 +52,7 @@ final class FeedbackModel: ObservableObject {
             if receipt.state == .deleted || receipt.deletionRequested { return }
             if receipt.state == .accepted { notice = "Reading submitted. Thank you!"; return }
             try await send(receipt)
+        } catch is CancellationError {
         } catch { notice = error.localizedDescription }
     }
     private func send(_ receipt: SubmissionReceipt) async throws {

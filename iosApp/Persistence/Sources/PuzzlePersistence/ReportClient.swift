@@ -28,7 +28,7 @@ public final class ReceiptStore {
                 guard ReportArchive.validDigest(receipt.id), receipt.id == url.deletingPathExtension().lastPathComponent,
                       ReportClient.validEndpoint(receipt.endpoint) else { throw FeedbackError.invalidResponse }
                 receipts.append(receipt)
-            } catch { warnings.append("Some submission receipts could not be opened. Their files have been kept.") }
+            } catch { if warnings.isEmpty { warnings.append("Some submission receipts could not be opened. Their files have been kept.") } }
         }
         return receipts.sorted { $0.consentedAt > $1.consentedAt }
     }
@@ -48,7 +48,8 @@ public final class ReceiptStore {
         let receipt = SubmissionReceipt(id: digest, endpoint: endpoint, puzzleID: puzzleID,
                                         consentedAt: Date(), automatic: automatic, state: .pending,
                                         consentVersion: "2026-10-10-analysis-training")
-        try save(receipt)
+        do { try save(receipt) }
+        catch { try? files.removeItem(at: archiveURL(digest)); throw error }
         return receipt
     }
     public func save(_ receipt: SubmissionReceipt) throws {

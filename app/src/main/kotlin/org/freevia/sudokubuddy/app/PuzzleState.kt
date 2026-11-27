@@ -257,6 +257,11 @@ data class PuzzleState(
         }
     }
 
+    @Volatile private var displayPrepared = false
+
+    /** True once [prepareForDisplay] has finished, so a screen coming back need not wait again. */
+    val isPreparedForDisplay: Boolean get() = displayPrepared
+
     /** Call on a worker dispatcher before handing this immutable state to Compose. */
     fun prepareForDisplay(): PuzzleState {
         hint
@@ -275,6 +280,7 @@ data class PuzzleState(
         computed
         evidenceLabel
         if (practicing) practiceAlternatives
+        displayPrepared = true
         return this
     }
 

@@ -27,10 +27,10 @@ def android_values(tag):
 
 
 def resources():
-    languages = json.loads((ROOT / 'tools/i18n/languages.json').read_text())
-    definitions = json.loads((ROOT / 'app/src/main/assets/messages.json').read_text())
-    aliases = json.loads((ROOT / 'tools/ios/ios-messages.json').read_text())
-    share_labels = json.loads((ROOT / 'tools/ios/share-image-labels.json').read_text())
+    languages = json.loads((ROOT / 'tools/i18n/languages.json').read_text(encoding='utf-8'))
+    definitions = json.loads((ROOT / 'app/src/main/assets/messages.json').read_text(encoding='utf-8'))
+    aliases = json.loads((ROOT / 'tools/ios/ios-messages.json').read_text(encoding='utf-8'))
+    share_labels = json.loads((ROOT / 'tools/ios/share-image-labels.json').read_text(encoding='utf-8'))
     assert share_labels.keys() == languages.keys(), 'Incomplete shared-image labels'
     keys = {e['source']: e['key'] for e in definitions}
     output = {}

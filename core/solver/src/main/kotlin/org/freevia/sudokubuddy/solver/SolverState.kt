@@ -71,11 +71,20 @@ class SolverState private constructor(private val candidates: IntArray) {
         }
 
         // (2) The eliminated digit may now have only one home left in a unit.
+        // Counted rather than collected: this is the innermost loop of the search.
+        val mask = 1 shl (digit - 1)
         for (unit in Coordinates.unitsOf[index]) {
-            val places = unit.filter { digit in CandidateSet(candidates[it]) }
-            when (places.size) {
+            var count = 0
+            var only = -1
+            for (cell in unit) {
+                if (candidates[cell] and mask != 0) {
+                    count++
+                    only = cell
+                }
+            }
+            when (count) {
                 0 -> return false
-                1 -> if (!assign(places[0], digit)) return false
+                1 -> if (!assign(only, digit)) return false
             }
         }
         return true

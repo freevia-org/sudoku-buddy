@@ -1,8 +1,6 @@
 package org.freevia.sudokubuddy.shared
 
 import org.freevia.sudokubuddy.app.*
-import org.freevia.sudokubuddy.model.Cell
-import org.freevia.sudokubuddy.model.Grid
 import org.freevia.sudokubuddy.solver.*
 
 /** Native views consume Android's actual presentation decisions, rather than retelling them. */
@@ -17,12 +15,7 @@ class HintPresentationEngine {
     }
 
     fun snapshot(givens: String, progress: String, depth: Int, step: Int, consequence: Int, before: Boolean, explain: Boolean, enteredCells: String = ""): String = runCatching {
-        require(givens.length == 81 && progress.length == 81)
-        var grid = Grid.fromGivens(givens)
-        for (index in 0 until 81) {
-            val digit = progress[index].digitToIntOrNull()?.takeIf { it != 0 } ?: continue
-            if (!grid[index].isFilled) grid = grid.with(index, Cell.guess(digit))
-        }
+        val grid = gridOf(givens, progress)
         val style = if (explain) HintStyle.EXPLAIN else HintStyle.REVEAL
         val key = "$givens:$progress:$explain"
         if (cachedKey != key) { cachedHint = PuzzleLogic.hint(grid, style); cachedKey = key }
@@ -31,7 +24,7 @@ class HintPresentationEngine {
         val frame = HintFrame(step.takeIf { it >= 0 }, consequence.coerceAtLeast(0), before)
         val drawn = visual?.let { VisualHint.overlay(it, depth.coerceIn(0, 3), frame) }
             ?: PuzzleLogic.overlay(grid, OverlayMode.HINT, style, 3)
-        val overlay = VisualHint.withWritten(drawn, grid, enteredCells.split(',').mapNotNull { it.toIntOrNull() }.filter { it in 0..80 }.toSet())
+        val overlay = VisualHint.withWritten(drawn, grid, cellSet(enteredCells))
         val lesson = visual?.proof?.getOrNull(step)
         val chain = (lesson?.deduction as? Deduction.Elimination)?.chain
         val target = when (val move = lesson?.deduction) {
@@ -62,12 +55,6 @@ class HintPresentationEngine {
             "evidence" to ints(overlay.evidence), "focus" to (overlay.focus?.toString() ?: "null"),
             "candidates" to array((0 until 81).map { ints(overlay.candidates[it].orEmpty()) }),
             "removed" to array((0 until 81).map { ints(overlay.removed[it].orEmpty()) }),
-            "chain" to (overlay.chain?.let { c -> obj("links" to array(c.links.map { link ->
-                obj("index" to link.index.toString(), "digit" to link.digit.toString(), "from" to (link.from?.toString() ?: "null"))
-            }), "deadEndFrom" to (c.deadEndFrom?.toString() ?: "null"), "deadEnd" to ints(c.deadEnd), "blocked" to ints(c.blocked), "missing" to (c.missing?.toString() ?: "null")) } ?: "null"))
+            "chain" to chainJson(overlay.chain))
     }.getOrElse { obj("available" to "false") }
-
-    private fun ints(values: Collection<Int>): String = values.sorted().joinToString(",", "[", "]")
-    private fun array(values: List<String>): String = values.joinToString(",", "[", "]")
-    private fun obj(vararg fields: Pair<String, String>): String = fields.joinToString(",", "{", "}") { jsonString(it.first) + ":" + it.second }
 }

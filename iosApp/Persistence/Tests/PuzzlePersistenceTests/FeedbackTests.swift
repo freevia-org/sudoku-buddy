@@ -92,6 +92,13 @@ final class FeedbackTests: XCTestCase {
         XCTAssertEqual(try store.list(), [receipt]); XCTAssertFalse(store.warnings.isEmpty)
         XCTAssertEqual(try Data(contentsOf: damaged), Data("broken".utf8))
     }
+    func testSeveralCorruptReceiptsProduceOneWarning() throws {
+        let (receipt, _) = try staged()
+        for letter in ["a", "b", "c"] {
+            try Data("broken".utf8).write(to: root.appendingPathComponent(String(repeating: letter, count: 64) + ".json"))
+        }
+        XCTAssertEqual(try store.list(), [receipt]); XCTAssertEqual(store.warnings.count, 1)
+    }
     func testServerRepliesMustMatchReceiptAndHTTPStatus() throws {
         let digest = String(repeating: "a", count: 64)
         func json(_ status: String, _ id: String = String(repeating: "a", count: 64)) -> Data { Data("{\"receipt\":\"\(id)\",\"status\":\"\(status)\"}".utf8) }

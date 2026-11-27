@@ -73,7 +73,9 @@ jobs:
       # Booting takes minutes on hosted runners; start it now so it overlaps the build.
       # (Started after the cache restore, which a booting simulator slowed by ~2 min.)
       - name: Start booting the simulator
-        run: xcrun simctl boot "$IOS_TEST_DEVICE"
+        run: |
+          # The self-hosted Mac keeps simulators between runs; booting a booted one is an error.
+          xcrun simctl boot "$IOS_TEST_DEVICE" || xcrun simctl list devices booted | grep -Fq "$IOS_TEST_DEVICE"
       - name: Build app and UI tests for the simulator
         run: xcodebuild -project iosApp/SudokuBuddy.xcodeproj -scheme SudokuBuddy -configuration Debug -destination "platform=iOS Simulator,id=$IOS_TEST_DEVICE" -derivedDataPath build/DerivedData build-for-testing
       - name: Wait for the simulator to finish booting

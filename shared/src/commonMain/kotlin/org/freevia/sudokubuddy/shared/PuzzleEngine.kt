@@ -1,14 +1,11 @@
 package org.freevia.sudokubuddy.shared
 
-import org.freevia.sudokubuddy.model.Cell
-import org.freevia.sudokubuddy.model.Grid
+import org.freevia.sudokubuddy.app.HintStyle
+import org.freevia.sudokubuddy.app.PuzzleLogic
 import org.freevia.sudokubuddy.solver.AnswerCheck
 import org.freevia.sudokubuddy.solver.AnswerChecker
-import org.freevia.sudokubuddy.solver.ExplainedHintEngine
-import org.freevia.sudokubuddy.solver.RevealHintEngine
 import org.freevia.sudokubuddy.solver.Hint
 import org.freevia.sudokubuddy.solver.SolveResult
-import org.freevia.sudokubuddy.solver.Solver
 
 /** A small Swift-facing boundary: no solver internals or mutable state cross it. */
 class PuzzleEngine {
@@ -16,12 +13,14 @@ class PuzzleEngine {
         if (!validText(givens) || !validText(progress)) {
             return PuzzleEvaluation("invalid", "Enter exactly 81 cells using digits or dots.")
         }
-        var grid = Grid.fromGivens(givens)
-        for (index in 0 until 81) {
-            val digit = progress[index].digitToIntOrNull()?.takeIf { it != 0 } ?: continue
-            if (!grid[index].isFilled) grid = grid.with(index, Cell.guess(digit))
-        }
-        when (Solver.solve(grid)) {
+        // An exception leaving Kotlin ends the iOS process.
+        return runCatching { evaluated(givens, progress, includeHint, explainHints) }
+            .getOrElse { PuzzleEvaluation("invalid", "This puzzle could not be prepared.") }
+    }
+
+    private fun evaluated(givens: String, progress: String, includeHint: Boolean, explainHints: Boolean): PuzzleEvaluation {
+        val grid = gridOf(givens, progress)
+        when (PuzzleLogic.solveResult(grid)) {
             SolveResult.None -> return PuzzleEvaluation("impossible", "The clues have no solution. Check the entered puzzle.")
             is SolveResult.Multiple -> return PuzzleEvaluation("ambiguous", "The clues allow more than one solution. Add the remaining printed clues.")
             is SolveResult.Unique -> Unit
@@ -29,7 +28,7 @@ class PuzzleEngine {
         val check = AnswerChecker.check(grid) as AnswerCheck.Checked
         val incorrect = check.incorrect.sorted().joinToString(",")
         val complete = grid.isComplete && check.incorrect.isEmpty()
-        val hint = if (includeHint && check.incorrect.isEmpty()) (if (explainHints) ExplainedHintEngine.nextHint(grid) else RevealHintEngine.nextHint(grid)) else null
+        val hint = if (includeHint && check.incorrect.isEmpty()) PuzzleLogic.hint(grid, if (explainHints) HintStyle.EXPLAIN else HintStyle.REVEAL) else null
         return PuzzleEvaluation(
             status = if (complete) "complete" else "ready",
             message = when {

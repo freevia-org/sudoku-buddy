@@ -15,9 +15,9 @@ def render(text):
 
 def build():
     files={}
-    policy=(ROOT/'docs/privacy-policy.md').read_text()
+    policy=(ROOT/'docs/privacy-policy.md').read_text(encoding='utf-8')
     body=policy[policy.index('Sudoku Buddy is published'):]
-    template=(HERE/'templates/policy.html').read_text()
+    template=(HERE/'templates/policy.html').read_text(encoding='utf-8')
     body_html='<!-- Policy source SHA-256 '+hashlib.sha256(policy.encode()).hexdigest()+' -->\n'+render(body)
     files['sudoku-buddy/privacy/index.html']=template.replace('<!-- CONTENT -->',body_html).encode()
     support='''## Sudoku Buddy support
@@ -32,7 +32,7 @@ Use the [usage guide](https://github.com/freevia-org/sudoku-buddy/blob/main/docs
 
 ## iPhone and iPad preview
 
-'''+(ROOT/'docs/ios-user-guide.md').read_text().split('\n',2)[2]+'''
+'''+(ROOT/'docs/ios-user-guide.md').read_text(encoding='utf-8').split('\n',2)[2]+'''
 
 ## Reporting a problem
 
@@ -53,7 +53,7 @@ Delete saved puzzles and refused scans from History. To delete a previously subm
         files[target]=(ROOT/'docs/app-store/screenshots'/filename).read_bytes()
         gallery+='<figure class="screen-card"><div class="screen-window"><img src="/'+target+'" alt="'+html.escape(title+' — '+description)+'" loading="lazy"></div><figcaption><strong>'+title+'</strong><span>'+description+'</span></figcaption></figure>'
     gallery+='</div><p class="screen-note">Recognition, checking, solving and tutoring run on the device. Reports are optional and can be deleted by receipt. <a href="/sudoku-buddy/support/">Read the support guide</a>.</p></div></section>'
-    files['sudoku-buddy/index.html']=(HERE/'templates/product.html').read_text().replace('<!-- IOS_SCREENSHOTS -->',gallery).encode()
+    files['sudoku-buddy/index.html']=(HERE/'templates/product.html').read_text(encoding='utf-8').replace('<!-- IOS_SCREENSHOTS -->',gallery).encode()
     return files
 
 

@@ -154,9 +154,12 @@ object Diagnostics {
     fun share(context: Context, files: List<File>, note: String? = null): Boolean {
         if (files.isEmpty()) return false
 
-        val uris = ArrayList(
-            files.map { FileProvider.getUriForFile(context, "${context.packageName}.scans", it) }
-        )
+        // A file outside the provider's declared folders throws rather than returning null.
+        val uris = runCatching {
+            ArrayList(
+                files.map { FileProvider.getUriForFile(context, "${context.packageName}.scans", it) }
+            )
+        }.getOrElse { return false }
         val send = if (uris.size == 1) {
             Intent(Intent.ACTION_SEND).apply {
                 type = "image/jpeg"

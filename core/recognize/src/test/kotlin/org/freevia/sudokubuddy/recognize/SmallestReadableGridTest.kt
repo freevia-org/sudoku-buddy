@@ -34,14 +34,19 @@ class SmallestReadableGridTest {
         val target = Mat()
         // Area averaging going down: the same filter the cell normaliser settled on, and
         // for the same reason - anything else aliases a thin printed stroke away.
-        Imgproc.resize(
-            source, target,
-            Size(image.width * factor, image.height * factor),
-            0.0, 0.0, Imgproc.INTER_AREA,
-        )
-        val bytes = ByteArray(target.rows() * target.cols())
-        target.get(0, 0, bytes)
-        return GrayImage(target.cols(), target.rows(), bytes)
+        try {
+            Imgproc.resize(
+                source, target,
+                Size(image.width * factor, image.height * factor),
+                0.0, 0.0, Imgproc.INTER_AREA,
+            )
+            val bytes = ByteArray(target.rows() * target.cols())
+            target.get(0, 0, bytes)
+            return GrayImage(target.cols(), target.rows(), bytes)
+        } finally {
+            source.release()
+            target.release()
+        }
     }
 
     @Test

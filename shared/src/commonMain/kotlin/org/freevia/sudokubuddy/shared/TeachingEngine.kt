@@ -1,9 +1,23 @@
 package org.freevia.sudokubuddy.shared
 
 import org.freevia.sudokubuddy.app.*
-import org.freevia.sudokubuddy.model.Cell
 import org.freevia.sudokubuddy.model.Grid
 import org.freevia.sudokubuddy.solver.*
+
+private data class RouteRequest(val grid: Grid, val mode: String, val technique: String, val shortChains: Boolean)
+
+// Practice answers ask about the route the lesson was just drawn from.
+private val routes = Memo<RouteRequest, Walkthrough?> { request ->
+    when (request.mode) {
+        "route" -> TechniqueSolver.walkthrough(request.grid, if (request.shortChains) RouteStyle.SHORT_CHAINS else RouteStyle.FIRST_FOUND)
+        "strategy" -> Techniques.byName(request.technique)?.let { TechniqueSolver.findings(request.grid, it) }
+        "proof" -> (PuzzleLogic.hint(request.grid, HintStyle.EXPLAIN) as? Hint.Explained)?.let { hint ->
+            Walkthrough(hint.proof.map { it.deduction }, hint.difficulty, false,
+                hardestTechnique = hint.technique, lessons = hint.proof)
+        }
+        else -> null
+    }
+}
 
 /** Immutable JSON snapshots keep the same candidate proofs on both native interfaces. */
 class TeachingEngine {
@@ -19,17 +33,9 @@ class TeachingEngine {
 
     fun lessonJson(givens: String, progress: String, mode: String, technique: String, shortChains: Boolean): String = safe {
         val grid = parse(givens, progress)
-        val solution = (Solver.solve(grid) as? SolveResult.Unique)?.solution
+        val solution = (PuzzleLogic.solveResult(grid) as? SolveResult.Unique)?.solution
             ?: return@safe obj("error" to jsonString("The printed digits do not make a solvable puzzle."))
-        val route = when (mode) {
-            "route" -> TechniqueSolver.walkthrough(grid, if (shortChains) RouteStyle.SHORT_CHAINS else RouteStyle.FIRST_FOUND)
-            "strategy" -> Techniques.byName(technique)?.let { TechniqueSolver.findings(grid, it) }
-            "proof" -> (ExplainedHintEngine.nextHint(grid) as? Hint.Explained)?.let { hint ->
-                Walkthrough(hint.proof.map { it.deduction }, hint.difficulty, false,
-                    hardestTechnique = hint.technique, lessons = hint.proof)
-            }
-            else -> null
-        }
+        val route = routes(RouteRequest(grid, mode, technique, shortChains))
         val known = IntArray(81) { index -> grid[index].digit ?: 0 }
         val initial = known.copyOf()
         val steps = route?.steps?.mapIndexed { at, deduction ->
@@ -58,9 +64,7 @@ class TeachingEngine {
                 "dependencyLinks" to array(lesson?.dependencies?.sorted()?.map { dependency ->
                     obj("step" to dependency.toString(), "label" to jsonString(PuzzleLogic.dependencyLabel(route.steps.getOrNull(dependency), (deduction as? Deduction.Placement)?.index, dependency)))
                 }.orEmpty()),
-                "chain" to (chain?.let { c -> obj("links" to array(c.links.map { link ->
-                    obj("index" to link.index.toString(), "digit" to link.digit.toString(), "from" to (link.from?.toString() ?: "null"))
-                }), "deadEndFrom" to (c.deadEndFrom?.toString() ?: "null"), "deadEnd" to ints(c.deadEnd), "blocked" to ints(c.blocked), "missing" to (c.missing?.toString() ?: "null")) } ?: "null"),
+                "chain" to chainJson(chain),
             )
         }.orEmpty()
         val counts = TechniqueSolver.findingCounts(grid)
@@ -74,22 +78,16 @@ class TeachingEngine {
 
     fun practiceJson(givens: String, progress: String, mode: String, technique: String, shortChains: Boolean, step: Int, cell: Int, digit: Int): String = safe {
         val grid = parse(givens, progress)
-        val route = when (mode) {
-            "route" -> TechniqueSolver.walkthrough(grid, if (shortChains) RouteStyle.SHORT_CHAINS else RouteStyle.FIRST_FOUND)
-            "strategy" -> Techniques.byName(technique)?.let { TechniqueSolver.findings(grid, it) }
-            "proof" -> (ExplainedHintEngine.nextHint(grid) as? Hint.Explained)?.let { hint ->
-                Walkthrough(hint.proof.map { it.deduction }, hint.difficulty, false, hardestTechnique = hint.technique, lessons = hint.proof)
-            }
-            else -> null
-        } ?: return@safe obj("correct" to "false", "message" to jsonString("This puzzle could not be prepared."))
+        val route = routes(RouteRequest(grid, mode, technique, shortChains))
+            ?: return@safe obj("correct" to "false", "message" to jsonString("This puzzle could not be prepared."))
         val move = route.steps.getOrNull(step) ?: return@safe obj("correct" to "false", "message" to jsonString("This puzzle could not be prepared."))
-        val result = org.freevia.sudokubuddy.app.PuzzleLogic.practiceAnswer(move, cell, digit,
+        val result = PuzzleLogic.practiceAnswer(move, cell, digit,
             route.lessons.getOrNull(step)?.before.orEmpty(), TechniqueSolver.alternativesAt(grid, route, step))
         obj("correct" to result.correct.toString(), "message" to jsonString(result.message))
     }
 
     fun solution(givens: String, progress: String): String = runCatching {
-        val solved = Solver.solve(parse(givens, progress)) as? SolveResult.Unique ?: return@runCatching ""
+        val solved = PuzzleLogic.solveResult(parse(givens, progress)) as? SolveResult.Unique ?: return@runCatching ""
         digits(IntArray(81) { solved.solution[it].digit ?: 0 })
     }.getOrDefault("")
 
@@ -99,24 +97,14 @@ class TeachingEngine {
         "roles" to array((0 until 81).map { jsonString(value.digits[it]?.role?.name.orEmpty()) }),
         "evidence" to ints(value.evidence), "focus" to (value.focus?.toString() ?: "null"),
         "candidates" to candidates(value.candidates), "removed" to array((0 until 81).map { ints(value.removed[it].orEmpty()) }),
-        "chain" to (value.chain?.let { c -> obj("links" to array(c.links.map { link ->
-            obj("index" to link.index.toString(), "digit" to link.digit.toString(), "from" to (link.from?.toString() ?: "null"))
-        }), "deadEndFrom" to (c.deadEndFrom?.toString() ?: "null"), "deadEnd" to ints(c.deadEnd), "blocked" to ints(c.blocked), "missing" to (c.missing?.toString() ?: "null")) } ?: "null"),
+        "chain" to chainJson(value.chain),
     )
 
     private fun parse(givens: String, progress: String): Grid {
         require(listOf(givens, progress).all { it.length == 81 && it.all { c -> c == '.' || c in '0'..'9' } })
-        var grid = Grid.fromGivens(givens)
-        for (index in 0 until 81) {
-            val digit = progress[index].digitToIntOrNull()?.takeIf { it != 0 } ?: continue
-            if (!grid[index].isFilled) grid = grid.with(index, Cell.guess(digit))
-        }
-        return grid
+        return gridOf(givens, progress)
     }
     private fun safe(block: () -> String): String = runCatching(block).getOrElse { obj("error" to jsonString("This puzzle could not be prepared.")) }
     private fun candidates(values: Map<Int, List<Int>>): String = array((0 until 81).map { ints(values[it].orEmpty()) })
     private fun digits(values: IntArray): String = values.joinToString("") { if (it == 0) "." else it.toString() }
-    private fun ints(values: Collection<Int>): String = values.sorted().joinToString(",", "[", "]")
-    private fun array(values: List<String>): String = values.joinToString(",", "[", "]")
-    private fun obj(vararg fields: Pair<String, String>): String = fields.joinToString(",", "{", "}") { jsonString(it.first) + ":" + it.second }
 }

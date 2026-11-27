@@ -72,6 +72,23 @@ ANALYZER = os.path.join(
     "freevia", "sudokubuddy", "recognize", "CellAnalyzer.kt")
 
 
+def extraction_sources():
+    """The Kotlin whose edits change the exported bitmaps, wherever each file now lives."""
+    vision = os.path.join(REPO, "core", "vision", "src", "main", "kotlin",
+                          "org", "freevia", "sudokubuddy", "vision")
+    sources = [ANALYZER] + [os.path.join(vision, name) for name in (
+        "CellExtractor.kt", "GridLocator.kt", "GridLineFitter.kt", "StructuralGate.kt",
+        "CellGrid.kt", "GrayImage.kt", "GrayImageOps.kt", "Mats.kt", "Quad.kt",
+        "QuadDetector.kt", "GridScorer.kt")]
+    image = os.path.join(REPO, "core", "image", "src", "commonMain", "kotlin",
+                         "org", "freevia", "sudokubuddy", "vision")
+    sources += [os.path.join(image, name) for name in (
+        "CellExtractor.kt", "GridLineFitter.kt", "GrayImage.kt", "GrayImageOps.kt", "Quad.kt")]
+    sources += [os.path.join(REPO, "core", "recognize", "src", "main", "kotlin",
+                             "org", "freevia", "sudokubuddy", "recognize", "CellImageOps.kt")]
+    return sources
+
+
 def export_is_stale():
     """Whether any extraction input is newer than any exported bitmap.
 
@@ -86,17 +103,5 @@ def export_is_stale():
         (os.path.getmtime(os.path.join(root, name))
          for root, _, names in os.walk(NORMALISED) for name in names if name.endswith(".f32")),
         default=None)
-    vision = os.path.join(REPO, "core", "vision", "src", "main", "kotlin",
-                          "org", "freevia", "sudokubuddy", "vision")
-    sources = [ANALYZER] + [os.path.join(vision, name) for name in (
-        "CellExtractor.kt", "GridLocator.kt", "GridLineFitter.kt", "StructuralGate.kt",
-        "CellGrid.kt", "GrayImage.kt", "GrayImageOps.kt", "Mats.kt", "Quad.kt",
-        "QuadDetector.kt", "GridScorer.kt")]
-    image = os.path.join(REPO, "core", "image", "src", "commonMain", "kotlin",
-                         "org", "freevia", "sudokubuddy", "vision")
-    sources += [os.path.join(image, name) for name in (
-        "CellExtractor.kt", "GridLineFitter.kt", "GrayImage.kt", "GrayImageOps.kt")]
-    sources += [os.path.join(REPO, "core", "recognize", "src", "jvmMain", "kotlin",
-                             "org", "freevia", "sudokubuddy", "recognize", "CellImageOps.kt")]
     return oldest is None or any(os.path.getmtime(path) > oldest
-                                 for path in sources if os.path.isfile(path))
+                                 for path in extraction_sources() if os.path.isfile(path))

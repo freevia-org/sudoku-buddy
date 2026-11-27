@@ -75,6 +75,7 @@ fun HistoryList(
     // looks exactly like the photograph never having been kept.
     val context = LocalContext.current
     val locale = LocalConfiguration.current.locales[0]
+    val days = remember(entries, locale) { History.byDay(entries, locale) }
 
     LazyColumn(
         // No inset padding here: ModalDrawerSheet already applies the system bars, and
@@ -134,7 +135,7 @@ fun HistoryList(
 
         item { HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp)) }
 
-        for ((day, group) in History.byDay(entries, locale)) {
+        for ((day, group) in days) {
             item {
                 Text(
                     localized(day),

@@ -26,6 +26,8 @@ class CandidatePackageTest(unittest.TestCase):
                     if abi in ("armeabi-v7a", "x86"):
                         data[4] = 1
                     archive.writestr(f"base/lib/{abi}/{name}", data)
+            archive.writestr("META-INF/UPLOAD.SF", "signature file")
+            archive.writestr("META-INF/UPLOAD.RSA", "signature block")
         for name in MATERIALS:
             file = self.source / name
             file.parent.mkdir(parents=True, exist_ok=True)
@@ -94,6 +96,17 @@ class CandidatePackageTest(unittest.TestCase):
         (self.evidence / "manifest.xml").write_text(MANIFEST)
         (self.evidence / "bundle-config.json").write_text('{}')
         with self.assertRaisesRegex(ValueError, "PAGE_ALIGNMENT_16K"):
+            self.prepare()
+        self.assertFalse(self.output.exists())
+
+    def test_unsigned_bundle_creates_no_candidate(self):
+        unsigned = self.root / "unsigned.aab"
+        with zipfile.ZipFile(self.bundle) as signed, zipfile.ZipFile(unsigned, "w") as archive:
+            for name in signed.namelist():
+                if not name.endswith(".RSA"):
+                    archive.writestr(name, signed.read(name))
+        self.bundle = unsigned
+        with self.assertRaisesRegex(ValueError, "no JAR signature"):
             self.prepare()
         self.assertFalse(self.output.exists())
 

@@ -6,6 +6,7 @@ import json
 import os
 import shutil
 import subprocess
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -50,6 +51,15 @@ def contained_file(root: Path, relative: str) -> Path:
     if candidate.is_symlink():
         raise ValueError(f"Symlinked material is not allowed: {relative}")
     return candidate
+
+
+def require_signature_block(bundle: Path) -> None:
+    """Refuse a bundle nobody signed. Whose key signed it is the supplied evidence's job."""
+    with zipfile.ZipFile(bundle) as archive:
+        names = [name.upper() for name in archive.namelist() if name.upper().startswith("META-INF/")]
+    if not (any(name.endswith(".SF") for name in names)
+            and any(name.endswith((".RSA", ".DSA", ".EC")) for name in names)):
+        raise ValueError("Candidate bundle carries no JAR signature; refusing an unsigned artifact")
 
 
 def source_state(root: Path) -> dict:
@@ -116,6 +126,7 @@ def package_candidate(source: Path, bundle: Path, evidence: Path, output: Path,
     audit_manifest((evidence / "manifest.xml").read_text(encoding="utf-8-sig"), version_code, version_name)
     audit_config(json.loads((evidence / "bundle-config.json").read_text(encoding="utf-8-sig")))
     audit_bundle(bundle)
+    require_signature_block(bundle)
     for origin in files.values():
         if origin.resolve().is_relative_to(output.resolve()):
             raise ValueError("The output folder must not contain a source artifact")
